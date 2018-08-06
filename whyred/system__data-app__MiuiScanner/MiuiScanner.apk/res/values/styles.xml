@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeCameraNaviBar" parent="@miui:style/Theme.Dark.NoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="miui:windowActionBar">false</item>
+    </style>
+    <style name="DocumentTextStyle" parent="@style/DocumentTextCommon">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:minWidth">70.0dip</item>
+    </style>
+    <style name="LanguageItem" parent="@style/LanguageItemCommon">
+        <item name="android:layout_width">@dimen/translation_language_item_width</item>
+    </style>
+    <style name="Animation_OnScreenHint">
+        <item name="android:windowEnterAnimation">@anim/on_screen_hint_enter</item>
+        <item name="android:windowExitAnimation">@anim/on_screen_hint_exit</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@style/WaitingDialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#ff565656</item>
+    </style>
+    <style name="DocumentTextCommon">
+        <item name="android:textSize">@dimen/text_size_34</item>
+        <item name="android:textColor">@color/white_80_transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/document_action_panel_drawable_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="LanguageItemCommon">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/module_item_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MultiTextStyle">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:textSize">@dimen/text_size_45</item>
+        <item name="android:padding">@dimen/translation_sentence_padding</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingExtra">8.0dip</item>
+    </style>
+    <style name="OcrResultTextStyle">
+        <item name="android:scrollbarStyle">insideInset</item>
+        <item name="android:textSize">@dimen/text_size_45</item>
+        <item name="android:paddingTop">@dimen/size_80</item>
+        <item name="android:paddingBottom">@dimen/size_40</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingExtra">8.0dip</item>
+        <item name="android:paddingStart">@dimen/size_80</item>
+        <item name="android:paddingEnd">@dimen/size_40</item>
+    </style>
+    <style name="OnScreenHintTextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:textColorHighlight">#ffff9200</item>
+        <item name="android:textColorHint">#ff808080</item>
+        <item name="android:textColorLink">#ff5c5cff</item>
+    </style>
+    <style name="OnScreenHintTextAppearance.Small" parent="@style/OnScreenHintTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/secondary_text_dark</item>
+    </style>
+    <style name="ScanBarcodeTipsStyle">
+        <item name="android:textSize">@dimen/barcode_tips_textView_fontsize</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@color/black_70_transparent</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">7.0</item>
+    </style>
+    <style name="TextButtonStyle">
+        <item name="android:textSize">@dimen/text_size_34</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/touch_expend_size</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ThemeCamera" parent="@miui:style/Theme.Dark.NoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="miui:windowActionBar">false</item>
+    </style>
+    <style name="WaitingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="ali_auth_qr_activity_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="alibc_auth_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/alibc_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@color/alibc_transparent</item>
+        <item name="android:height">268.0dip</item>
+        <item name="android:width">268.0dip</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="com_taobao_tae_sdk_pailitao_LoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="feedback_title" parent="@android:style/Theme">
+        <item name="android:windowTitleSize">50.0dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+    <style name="myDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

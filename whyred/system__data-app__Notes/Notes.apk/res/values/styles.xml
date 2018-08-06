@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.List.Primary" parent="@miui:style/TextAppearance.Widget.List.Primary">
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.List.Secondary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+    <style name="Widget.ListView.Item.SingleLine" parent="@miui:style/Widget.ListView.Item.DoubleLine" />
+    <style name="ActionBar.Custom.Editor" parent="@style/ActionBar.Custom">
+        <item name="android:height">@dimen/notes_edit_header_height</item>
+    </style>
+    <style name="NoteTheme.List" parent="@miui.system:style/Theme.Light.System">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarStyle">@style/ActionBar.List</item>
+    </style>
+    <style name="NoteTheme.Root" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:windowActionBar">false</item>
+        <item name="miui:navigationLayoutStyle">@style/NavigationLayout</item>
+    </style>
+    <style name="TextAppearance.Title.Large" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textSize">@dimen/title_primary_text_size</item>
+        <item name="android:textColor">@color/title_primary_text_light</item>
+    </style>
+    <style name="TextAppearance.Title.Large.Subtitle" parent="@miui:style/TextAppearance.WindowTitle.Subtitle">
+        <item name="android:textSize">@dimen/title_secondary_text_size</item>
+    </style>
+    <style name="ActionBar.CloudTrashBin" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="ActionBar.Custom" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="ActionBar.List" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="ActionBar.Root" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="ActionBar.Sns" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="EditToolBarGapStyle">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EditToolBarIconStyle">
+        <item name="android:layout_width">69.29999dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="HeaderIconStyle">
+        <item name="android:layout_width">@dimen/notes_edit_header_ic_size</item>
+        <item name="android:layout_height">@dimen/notes_edit_header_ic_size</item>
+    </style>
+    <style name="NavigationLayout" parent="@miui:style/Widget.NavigationLayout">
+        <item name="miui:portraitNavigationWidth">300.0dip</item>
+        <item name="miui:landscapeNavigationWidth">350.0dip</item>
+        <item name="miui:drawerEnabledOrientation">landscape|portrait</item>
+        <item name="miui:drawerMode">squeezed</item>
+    </style>
+    <style name="None" />
+    <style name="NoteInfoHeaderDividerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/vertical_line_light</item>
+        <item name="android:rotation">90.0</item>
+        <item name="android:layout_marginStart">3.0dip</item>
+        <item name="android:layout_marginEnd">3.0dip</item>
+    </style>
+    <style name="NoteInfoHeaderTextStyle">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/header_info_text_color_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="NoteTheme" parent="@miui:style/Theme.Light" />
+    <style name="NoteTheme.Alarm" parent="@style/NoteTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="NoteTheme.Alarm.Tip" parent="@style/NoteTheme.Alarm">
+        <item name="android:windowBackground">@color/note_tip_bgcolor</item>
+    </style>
+    <style name="NoteTheme.CloudTrashBin" parent="@style/NoteTheme">
+        <item name="android:actionBarStyle">@style/ActionBar.CloudTrashBin</item>
+    </style>
+    <style name="NoteTheme.DarkActionBar" parent="@miui:style/Theme.Light.DarkActionBar" />
+    <style name="NoteTheme.DialogActivity" parent="@miui:style/Theme.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="NoteTheme.Edit" parent="@style/NoteTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Custom.Editor</item>
+    </style>
+    <style name="NoteTheme.Settings" parent="@miui:style/Theme.Light.NoTitle" />
+    <style name="NoteTheme.Sns" parent="@miui:style/Theme.Light" />
+    <style name="NoteTheme.SubFolder.ActionMode1" parent="@miui:style/Widget.ActionMode">
+        <item name="android:background">@color/subfolder_actionbar_background_color1</item>
+        <item name="android:height">@dimen/action_bar_default_height</item>
+    </style>
+    <style name="NoteTheme.SubFolder.ActionMode2" parent="@style/NoteTheme.SubFolder.ActionMode1">
+        <item name="android:background">@color/subfolder_actionbar_background_color2</item>
+    </style>
+    <style name="NoteTheme.SubFolder.ActionMode3" parent="@style/NoteTheme.SubFolder.ActionMode1">
+        <item name="android:background">@color/subfolder_actionbar_background_color3</item>
+    </style>
+    <style name="NoteTheme.SubFolder.ActionMode4" parent="@style/NoteTheme.SubFolder.ActionMode1">
+        <item name="android:background">@color/subfolder_actionbar_background_color4</item>
+    </style>
+    <style name="NoteTheme.SubFolder1" parent="@style/NoteTheme.DarkActionBar">
+        <item name="android:actionBarSize">@dimen/theme_subfolder_actionbar_height</item>
+        <item name="android:actionModeStyle">@style/NoteTheme.SubFolder.ActionMode1</item>
+    </style>
+    <style name="NoteTheme.SubFolder2" parent="@style/NoteTheme.SubFolder1">
+        <item name="android:actionModeStyle">@style/NoteTheme.SubFolder.ActionMode2</item>
+    </style>
+    <style name="NoteTheme.SubFolder3" parent="@style/NoteTheme.SubFolder1">
+        <item name="android:actionModeStyle">@style/NoteTheme.SubFolder.ActionMode3</item>
+    </style>
+    <style name="NoteTheme.SubFolder4" parent="@style/NoteTheme.SubFolder1">
+        <item name="android:actionModeStyle">@style/NoteTheme.SubFolder.ActionMode4</item>
+    </style>
+    <style name="TextAppearance" parent="@miui:style/TextAppearance" />
+    <style name="TextAppearance.Editor" parent="@style/TextAppearance">
+        <item name="android:textColor">@color/editor_text</item>
+        <item name="android:textColorLink">@color/link_text</item>
+    </style>
+    <style name="TextAppearance.Editor.Info" parent="@style/TextAppearance.Editor">
+        <item name="android:textSize">@dimen/text_default_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance.Header" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_default_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/header_text_dark</item>
+    </style>
+    <style name="TextAppearance.HighLight" parent="@style/None">
+        <item name="android:textColor">@color/user_query_highlight</item>
+    </style>
+    <style name="TextAppearance.Reminder" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/reminder_view_text_size</item>
+        <item name="android:textColor">@color/reminder_view_color</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/trash_reminder_bar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/reminder_view_height</item>
+    </style>
+    <style name="TextAppearance.Sns.Description" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/sns_description_font_size</item>
+        <item name="android:textColor">@color/text_appearance_sns_subject_hint_and_description_color</item>
+    </style>
+    <style name="TextAppearance.Sns.Subject" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/text_appearance_sns_subject_color</item>
+        <item name="android:textColorHint">@color/text_appearance_sns_subject_hint_and_description_color</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@miui:style/TextAppearance.WindowTitle" />
+    <style name="TextAppearance.Toggle" parent="@style/TextAppearance">
+        <item name="android:textColor">@color/toggle_style_text</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+    <style name="TextAppearance.Widget.Snippet" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/widget_text_size</item>
+        <item name="android:textColor">@color/editor_text</item>
+    </style>
+    <style name="TextAppearance.Widget.Title" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/widget_title_text_size</item>
+        <item name="android:textColor">@color/title_primary_text_light</item>
+    </style>
+    <style name="V8.ActionBar.List" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="V8.DefaultTheme.TextAppearance.Grid.Primary.Light" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v8_default_grid_primary_title_color</item>
+    </style>
+    <style name="V8.DefaultTheme.TextAppearance.Grid.Secondary.Light" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v8_default_grid_body_color</item>
+    </style>
+    <style name="V8.NoteTheme.Folder" parent="@style/NoteTheme">
+        <item name="android:actionBarStyle">@miui:style/Widget.ActionBar</item>
+    </style>
+    <style name="V8.NoteTheme.List" parent="@style/NoteTheme.List">
+        <item name="android:actionBarStyle">@style/V8.ActionBar.List</item>
+        <item name="miui:colorPrimary">@color/homepage_primary_color</item>
+        <item name="miui:colorDividerLine">@android:color/transparent</item>
+    </style>
+    <style name="V8.NoteTheme.ThemeChooserPanel" parent="@miui:style/Theme.Light.Dialog.Alert">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="V8.TextAppearance" parent="@miui:style/TextAppearance" />
+    <style name="V8.TextAppearance.Grid.Primary.Blue" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/theme_blue_grid_primary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Primary.Candy" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_primary_candy_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Primary.Dark" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_primary_dark_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Primary.Green" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/theme_green_grid_primary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Primary.Light" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_primary_light_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Primary.Red" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/theme_red_grid_primary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Primary.Yellow" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_primary_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/theme_yellow_grid_primary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Blue" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/theme_blue_grid_secondary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Candy" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_secondary_candy_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Dark" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Green" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/theme_green_grid_secondary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Light" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_secondary_light_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Red" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/theme_red_grid_secondary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Secondary.Yellow" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_secondary_size</item>
+        <item name="android:textColor">@color/theme_yellow_grid_secondary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Antique" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_tertiary_antique_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Arty" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_tertiary_arty_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Blue" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/theme_blue_grid_tertiary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Candy" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_tertiary_candy_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Dark" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Green" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/theme_green_grid_tertiary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Light" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_grid_tertiary_light_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Red" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/theme_red_grid_tertiary_color</item>
+    </style>
+    <style name="V8.TextAppearance.Grid.Tertiary.Yellow" parent="@style/V8.TextAppearance">
+        <item name="android:textSize">@dimen/grid_text_tertiary_size</item>
+        <item name="android:textColor">@color/theme_yellow_grid_tertiary_color</item>
+    </style>
+    <style name="V8.TextAppearance.List.Primary" parent="@miui:style/TextAppearance.Widget.List.Primary">
+        <item name="android:textSize">@dimen/list_item_primary_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v8_text_appearance_list_primary_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.List.Secondary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/list_item_secondary_text_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_list_secondary_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.List.Section" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/list_section_title_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_list_section_text_color</item>
+    </style>
+    <style name="V8.TextAppearance.List.Tertiary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/list_item_tertiary_text_size</item>
+        <item name="android:textColor">@color/v8_text_appearance_list_tertiary_text_color</item>
+    </style>
+    <style name="V8.Widget.FolderItem" parent="@miui:style/Widget.ListView.Item.DoubleLine">
+        <item name="android:background">@drawable/v8_ic_folder_bg</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.ListView.Item.ColorBar" parent="@miui:style/Widget.ListView.Item.Immersion" />
+    <style name="Widget.ListView.Item.DoubleLine" parent="@style/Widget.ListView.Item.SingleLine" />
+    <style name="Widget.Sns.Description" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Sns.Description</item>
+    </style>
+    <style name="Widget.Sns.Subject" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Sns.Subject</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="shareWindowTranslate">
+        <item name="android:windowEnterAnimation">@anim/share_window_trans_in</item>
+        <item name="android:windowExitAnimation">@anim/share_window_trans_out</item>
+    </style>
+</resources>

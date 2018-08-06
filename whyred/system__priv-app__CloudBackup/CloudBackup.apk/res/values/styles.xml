@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar.Show.Title" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.Button" parent="@style/Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Widget.Button.Action" parent="@miui:style/Widget.Button.Positive">
+        <item name="android:textAppearance">@style/TextAppearance.Button.Action</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/action_btn</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">@dimen/action_button_width</item>
+    </style>
+    <style name="Widget.Button.Next" parent="@style/Widget.Button">
+        <item name="android:textColor">@color/btn_next</item>
+        <item name="android:background">@drawable/btn_next</item>
+        <item name="android:text">@string/button_next</item>
+    </style>
+    <style name="TextAppearance.Button" parent="@miui:style/TextAppearance.Widget.Button" />
+    <style name="TextAppearance.Button.Action" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@miui:dimen/small_text_size</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+    </style>
+    <style name="Theme.Light.Show.Title" parent="@miui:style/Theme.Light.ActionBar.TabShowTitle">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="QueryRestoreInSystemActivityTheme" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="ListItemStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">13.0dip</item>
+        <item name="android:paddingRight">13.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Title.Big" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_big_text_color</item>
+    </style>
+    <style name="TextAppearance.Title.Medium" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ActionBar.Show.Custom" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="CloudAppBatchTheme" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+    <style name="CloudAppBatchTheme.Event" parent="@style/CloudAppBatchTheme">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+    <style name="Widget.Button.ProvisionNext" parent="@style/Widget.Button">
+        <item name="android:textColor">@color/btn_next</item>
+        <item name="android:background">@drawable/btn_next</item>
+    </style>
+    <style name="CustomActionBarStyle" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="EditorActivityTheme" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Show.Custom</item>
+    </style>
+    <style name="BackupActivityTheme" parent="@miui:style/Theme.Light.ActionBarMovable">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Movable</item>
+        <item name="android:actionModeBackground">@drawable/backup_action_mode_bg</item>
+        <item name="android:actionModeStyle">@style/ActionModeStyle</item>
+        <item name="miui:actionModeCancelButtonStyle">@style/ActionModeCancelButtonStyle</item>
+        <item name="miui:actionBarMovableLayoutStyle">@style/ActionBarMovableLayout</item>
+    </style>
+    <style name="ActionBarStyle.Movable" parent="@style/ActionBarStyle">
+        <item name="android:height">400.0dip</item>
+    </style>
+    <style name="ActionBarMovableLayout" parent="@miui:style/Widget.ActionBarMovableLayout">
+        <item name="miui:overScrollRange">0.0dip</item>
+        <item name="miui:scrollRange">@dimen/movable_action_bar_scroll_range</item>
+        <item name="miui:scrollStart">100.0dip</item>
+    </style>
+    <style name="ActionModeStyle" parent="@miui:style/Widget.ActionMode">
+        <item name="android:titleTextStyle">@style/ActionModeTitleStyle</item>
+    </style>
+    <style name="ActionModeCancelButtonStyle" parent="@miui:style/Widget.Dark.ActionMode.Button">
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+    <style name="ActionModeTitleStyle" parent="@miui:style/TextAppearance.Widget.ActionMode.Title">
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+    <style name="ButtonRestore">
+        <item name="android:background">@drawable/cloud_restore_btn_bg</item>
+    </style>
+    <style name="ButtonRemove" parent="@miui:style/Widget.Button">
+        <item name="android:background">@drawable/btn_bg_negative_warn_light</item>
+    </style>
+    <style name="BackupRestoreTheme" parent="@miui:style/Theme.Light.Settings">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@miui:drawable/action_bar_back_dark</item>
+    </style>
+    <style name="ActionBarStyle" parent="@miui:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+    <style name="TitleTextStyle" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="cloud_app_fragment_style" parent="@miui:style/Theme.Light">
+        <item name="miui:immersionMenuEnabled">true</item>
+    </style>
+    <style name="Widget.ProgressBar" parent="@miui:style/Widget.ProgressBar">
+        <item name="android:maxWidth">47.299988dip</item>
+        <item name="android:maxHeight">47.299988dip</item>
+        <item name="android:indeterminateDrawable">@drawable/progressbar_indeterminate</item>
+        <item name="android:minWidth">47.299988dip</item>
+        <item name="android:minHeight">47.299988dip</item>
+    </style>
+    <style name="Widget.Button.Main" parent="@style/Widget.Button">
+        <item name="android:textSize">@dimen/logo_title_size</item>
+        <item name="android:textColor">#e6ffffff</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="RadioButtonTitle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="QueryRestoreActivityTheme" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="ProvisionTitleTextStyle" parent="@miui:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/provision_title_text_size</item>
+        <item name="android:textColor">@color/provision_title_text_color</item>
+    </style>
+    <style name="ProvisionDspTextStyle" parent="@miui:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/provision_dsp_text_size</item>
+        <item name="android:textColor">@color/provision_dsp_text_color</item>
+    </style>
+    <style name="ProvisionMsgTextStyle" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/provision_msg_text_size</item>
+        <item name="android:textColor">@color/provision_msg_text_color</item>
+    </style>
+    <style name="ProvisionStepTextStyle" parent="@miui:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/provision_step_text_size</item>
+    </style>
+    <style name="HeaderTitleTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/header_title_text_size</item>
+        <item name="android:textColor">@color/header_title_text_color</item>
+    </style>
+    <style name="HeaderMsgTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/header_msg_text_size</item>
+        <item name="android:textColor">@color/header_msg_text_color</item>
+    </style>
+    <style name="HandleButtonStyle" parent="@miui:style/Widget.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/handle_btn</item>
+    </style>
+    <style name="StateButtonTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/state_btn_text_size</item>
+        <item name="android:textColor">@color/state_btn_text_color</item>
+    </style>
+    <style name="Item_Selected_Text_Style" parent="@miui:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/item_selected_textSize</item>
+        <item name="android:textColor">@color/item_selected_textColor</item>
+    </style>
+    <style name="Check_Data_Text_Style" parent="@miui:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/check_data_textSize</item>
+        <item name="android:textColor">@color/check_data_textColor</item>
+    </style>
+    <style name="Item_Selected_Time_Text_Style" parent="@miui:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/item_selected_textSize</item>
+        <item name="android:textColor">@color/item_selected_textColor</item>
+    </style>
+    <style name="Item_Selected_Device_Text_Style" parent="@miui:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/item_selected_device_textSize</item>
+        <item name="android:textColor">@color/item_selected_device_textColor</item>
+    </style>
+    <style name="BackupDetailActivityTheme" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="RestoreActivityTheme" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+</resources>
