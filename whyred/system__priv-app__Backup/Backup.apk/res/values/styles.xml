@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ScanQRTheme" parent="@miui:style/Theme.Dark.NoTitle" />
+    <style name="Theme.Light.Show.Title" parent="@miui:style/Theme.Light.ActionBar.TabShowTitle">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="ListItemStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">13.0dip</item>
+        <item name="android:paddingRight">13.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Title.Big" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textSize">35.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_big_text_color</item>
+    </style>
+    <style name="TextAppearance.Title.Medium" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="ActionBar.Show.Custom" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="CloudAppBatchTheme" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+    <style name="CloudAppBatchTheme.Event" parent="@style/CloudAppBatchTheme">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+    <style name="CustomActionBarStyle" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="EditorActivityTheme" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Show.Custom</item>
+    </style>
+    <style name="BackupActivityTheme" parent="@miui:style/Theme.Light.ActionBarMovable">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Movable</item>
+        <item name="android:actionModeBackground">@drawable/backup_action_mode_bg</item>
+        <item name="android:actionModeStyle">@style/ActionModeStyle</item>
+        <item name="miui:actionModeCancelButtonStyle">@style/ActionModeButtonStyle</item>
+        <item name="miui:actionModeSelectButtonStyle">@style/ActionModeButtonStyle</item>
+        <item name="miui:actionBarMovableLayoutStyle">@style/ActionBarMovableLayout</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+        <item name="miui:windowDisablePreview">true</item>
+    </style>
+    <style name="ActionBarStyle.Movable" parent="@style/ActionBarStyle">
+        <item name="android:height">325.0dip</item>
+    </style>
+    <style name="ActionBarMovableLayout" parent="@miui:style/Widget.ActionBarMovableLayout">
+        <item name="miui:overScrollRange">0.0dip</item>
+        <item name="miui:scrollRange">100.0dip</item>
+        <item name="miui:scrollStart">100.0dip</item>
+    </style>
+    <style name="ActionModeStyle" parent="@miui:style/Widget.ActionMode">
+        <item name="android:titleTextStyle">@style/ActionModeTitleStyle</item>
+    </style>
+    <style name="ActionModeButtonStyle" parent="@miui:style/Widget.Dark.ActionMode.Button">
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+    <style name="ActionModeTitleStyle" parent="@miui:style/TextAppearance.Widget.ActionMode.Title">
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+    <style name="TextPrimary">
+        <item name="android:textSize">@miui:dimen/normal_text_size</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+    </style>
+    <style name="BackupRestoreTheme" parent="@miui:style/Theme.Light.Settings">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@miui:drawable/action_bar_back_dark</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="ActionBarStyle" parent="@miui:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+    <style name="TitleTextStyle" parent="@miui:style/TextAppearance.WindowTitle">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ActionBar.Show.Title" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="IntroTextQuestion">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#e6000000</item>
+        <item name="android:paddingTop">16.669983dip</item>
+    </style>
+    <style name="IntroTextTitle">
+        <item name="android:textSize">13.329987sp</item>
+        <item name="android:textColor">#e6000000</item>
+        <item name="android:paddingTop">14.329987dip</item>
+    </style>
+    <style name="IntroTextDesc">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+        <item name="android:paddingTop">6.669983dip</item>
+    </style>
+    <style name="Divider">
+        <item name="android:background">#26000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:layout_marginTop">18.329987dip</item>
+    </style>
+    <style name="Transparent" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#e6000000</item>
+        <item name="android:textColorHint">#4d000000</item>
+        <item name="android:layout_height">40.69998dip</item>
+    </style>
+    <style name="ICloudImportActivityStyle" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="Theme.OneKeyMigrate" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Show.Title</item>
+    </style>
+</resources>

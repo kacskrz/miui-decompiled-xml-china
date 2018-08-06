@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="TextAppearance.Compat.Notification.Info" parent="@style/TextAppearance.Compat.Notification">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time" parent="@style/TextAppearance.Compat.Notification">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="Widget.Compat.NotificationActionContainer" parent="" />
+    <style name="Widget.Compat.NotificationActionText" parent="" />
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/nativestory_checkbox_style</item>
+    </style>
+    <style name="NativeStoryTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+    <style name="RemoteWebViewBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="RemoteWebViewMenuTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textColorNormal</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+    </style>
+    <style name="TextAppearance.Button" parent="@style/TextAppearance.Widget.Button" />
+    <style name="TextAppearance.Button.MainAction" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textColor">@color/action_button_text_dark</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Line2" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="TextAppearance.DesktopRecommendSummary" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#80000000</item>
+    </style>
+    <style name="TextAppearance.DetailCard" parent="@style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TextAppearance.DetailCard.Secondary" parent="@style/TextAppearance.DetailCard">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#99000000</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textColorList</item>
+    </style>
+    <style name="TextAppearance.Widget" parent="@style/TextAppearance" />
+    <style name="TextAppearance.Widget.Button" parent="@style/TextAppearance.Widget">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textColorButton</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.Button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Widget.Button</item>
+        <item name="android:textColor">?textColorButton</item>
+        <item name="android:background">?buttonBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.Button.MainAction" parent="@style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Button.MainAction</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textColor">@color/action_button_text_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_bg_main_action_light</item>
+        <item name="android:layout_width">@dimen/main_action_button_width</item>
+        <item name="android:layout_height">@dimen/main_action_button_height</item>
+    </style>
+    <style name="Widget.ProgressBar.Button" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:max">100</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+    <style name="ad_service_introduction_style">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="default_splash">
+        <item name="android:windowEnterAnimation">@anim/white_splash_enter</item>
+        <item name="android:windowExitAnimation">@anim/white_splash_exit</item>
+    </style>
+    <style name="feedback_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="internal_web_view_activity_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="menu_item_layout">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">53.0dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="mimo_download_card_anim">
+        <item name="android:windowEnterAnimation">@anim/mimo_download_card_enter</item>
+        <item name="android:windowExitAnimation">@anim/mimo_download_card_exit</item>
+    </style>
+    <style name="popup_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="splash_alpha">
+        <item name="android:windowEnterAnimation">@anim/splash_enter_alpha</item>
+        <item name="android:windowExitAnimation">@anim/splash_exit</item>
+    </style>
+    <style name="splash_alpha_translate">
+        <item name="android:windowEnterAnimation">@anim/splash_enter_alpha_translate</item>
+        <item name="android:windowExitAnimation">@anim/splash_exit</item>
+    </style>
+    <style name="splash_virtual_alpha">
+        <item name="android:windowEnterAnimation">@anim/splash_enter_alpha</item>
+        <item name="android:windowExitAnimation">@anim/splash_virtual_exit</item>
+    </style>
+    <style name="splash_virtual_alpha_translate">
+        <item name="android:windowEnterAnimation">@anim/splash_enter_alpha_translate</item>
+        <item name="android:windowExitAnimation">@anim/splash_virtual_exit</item>
+    </style>
+    <style name="white_background_splash">
+        <item name="android:windowEnterAnimation">@anim/white_splash_enter</item>
+        <item name="android:windowExitAnimation">@anim/white_splash_exit</item>
+    </style>
+</resources>

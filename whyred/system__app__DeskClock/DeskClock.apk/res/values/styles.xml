@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionModeCheckboxStyle">
+        <item name="android:layout_gravity">end|center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:clickable">false</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AlarmAlertFullScreenTheme" parent="@miui:style/Theme.Dark.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="AlarmClockTheme" parent="@android:style/Theme.Holo.DialogWhenLarge" />
+    <style name="AlarmTimeInfoText" parent="@style/ClockItemSecondary" />
+    <style name="AlertFullScreenTextView">
+        <item name="android:textSize">@dimen/alert_screen_textsize</item>
+        <item name="android:textColor">@color/time_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AlertFullScreenTextView.SmartCover" parent="@style/AlertFullScreenTextView">
+        <item name="android:textSize">@dimen/alert_screen_textsize_gemini</item>
+    </style>
+    <style name="AlertFullScreenTextView.Snooze" parent="@style/AlertFullScreenTextView">
+        <item name="android:maxWidth">@dimen/alert_screen_snooze_text_max_width</item>
+    </style>
+    <style name="AmNumberPickerStyle" parent="@style/Widget.NumberPicker">
+        <item name="android:background">@color/drop_down_popup_window_bg_color</item>
+        <item name="textSizeHighlight">@dimen/numberpicker_am_text_size_highlight</item>
+        <item name="textSizeHint">@dimen/numberpicker_am_text_size_hint</item>
+    </style>
+    <style name="BaseTheme" parent="@miui:style/Theme.Dark" />
+    <style name="BottomBarStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BottomButtonRoundNormalStyle">
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:background">@drawable/btn_bg_circle</item>
+        <item name="android:layout_width">@dimen/bottom_round_button_size_normal</item>
+        <item name="android:layout_height">@dimen/bottom_round_button_size_normal</item>
+        <item name="android:layout_marginBottom">@dimen/btn_add_margin_bottom_small</item>
+        <item name="android:layout_marginStart">@dimen/bottom_round_button_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/bottom_round_button_margin_end</item>
+    </style>
+    <style name="ClockActionBar" parent="@miui:style/Widget.ActionBar">
+        <item name="android:background">@color/black_main_bg</item>
+        <item name="android:displayOptions">none</item>
+        <item name="miui:actionBarEmbededTabsBackground">@null</item>
+        <item name="miui:actionBarStackedBackground">@null</item>
+    </style>
+    <style name="ClockItemPrimary" parent="@miui:style/TextAppearance.Widget.List.Primary">
+        <item name="android:textSize">@dimen/alarm_clock_primary_size</item>
+        <item name="android:textColor">@color/black_clock_item_text_color_normal</item>
+    </style>
+    <style name="ClockItemSecondary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/alarm_clock_secondary_size</item>
+        <item name="android:textColor">@color/black_clock_item_text_color_normal</item>
+    </style>
+    <style name="ClockItemThirdary" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/alarm_clock_thirdary_size</item>
+        <item name="android:textColor">@color/black_clock_item_text_color_normal</item>
+    </style>
+    <style name="ClockListStyle">
+        <item name="android:paddingBottom">60.0dip</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="ClockNumberStyle" parent="@miui:style/TextAppearance" />
+    <style name="ClockNumberStyle.Large" parent="@style/ClockNumberStyle">
+        <item name="android:textSize">@dimen/clock_number_large</item>
+        <item name="android:textColor">@color/black_clock_large_number_color</item>
+    </style>
+    <style name="ClockNumberStyle.Small" parent="@style/ClockNumberStyle">
+        <item name="android:textSize">@dimen/clock_number_small</item>
+        <item name="android:textColor">@color/clock_small_number_color</item>
+    </style>
+    <style name="DarkSlidingButton">
+        <item name="android:background">@drawable/sliding_btn_bg_dark</item>
+        <item name="frame">@drawable/sliding_btn_frame_dark</item>
+        <item name="sliderOn">@drawable/sliding_btn_slider_on_dark</item>
+        <item name="sliderOff">@drawable/sliding_btn_slider_off_dark</item>
+        <item name="mask">@drawable/sliding_btn_mask_dark</item>
+        <item name="barOff">@drawable/sliding_btn_bar_off_dark</item>
+        <item name="barOn">@drawable/sliding_btn_bar_on_dark</item>
+    </style>
+    <style name="DeskClockListItemDoubleLineStyle" parent="@miui:style/Widget.ListView.Item.DoubleLine">
+        <item name="android:layout_height">@dimen/clock_item_height</item>
+        <item name="android:minHeight">@dimen/clock_item_height</item>
+    </style>
+    <style name="DeskClockListViewTheme" parent="@miui:style/Widget.ListView">
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="DeskClockSingleLine">
+        <item name="android:background">@color/drop_down_popup_window_stroke_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/drop_down_popup_window_stroke_width</item>
+    </style>
+    <style name="DeskClockTheme" parent="@style/BaseTheme">
+        <item name="android:listViewStyle">@style/DeskClockListViewTheme</item>
+        <item name="android:actionBarStyle">@style/ClockActionBar</item>
+        <item name="android:actionModeBackground">@color/black_main_bg</item>
+        <item name="miui:windowActionBarOverlay">true</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+        <item name="miui:immersionWindowBackground">@drawable/immersion_window_bg_dark</item>
+        <item name="miui:colorAccent">@color/black_accent_color_light</item>
+    </style>
+    <style name="DeskClockTimezoneItemStyle" parent="@miui:style/Widget.ListView.Item.DoubleLine" />
+    <style name="DivideViewStyle">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">10.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="DropDownPopupWindowMoreSettingTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/drop_down_popup_window_more_setting_size</item>
+        <item name="android:textColor">@color/drop_down_popup_window_more_setting_color</item>
+    </style>
+    <style name="EditActionBar" parent="@miui:style/Widget.ActionBar.EditModeTitle">
+        <item name="android:background">@color/black_main_bg</item>
+        <item name="android:customNavigationLayout">@layout/edit_mode_title</item>
+    </style>
+    <style name="EmptyActionBar" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">none</item>
+    </style>
+    <style name="LifePostMarginBorderStyle">
+        <item name="android:layout_marginStart">@dimen/life_post_content_margin_border</item>
+        <item name="android:layout_marginEnd">@dimen/life_post_content_margin_border</item>
+    </style>
+    <style name="LifePostSettingTheme" parent="@miui:style/Theme.Dark.Settings">
+        <item name="android:windowBackground">@color/black_main_bg</item>
+        <item name="miui:colorAccent">@color/black_accent_color_light</item>
+    </style>
+    <style name="LifePostWakeUpDescTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/life_post_weather_textsize</item>
+        <item name="android:textColor">@color/life_post_wake_up_desc_color</item>
+        <item name="android:layout_marginTop">3.2999878dip</item>
+    </style>
+    <style name="LifePostWakeUpItemDataTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff33b4ff</item>
+    </style>
+    <style name="LifePostWakeUpItemTextSignStyle" parent="@style/LifePostWakeUpItemTextStyle">
+        <item name="android:textSize">11.0sp</item>
+    </style>
+    <style name="LifePostWakeUpItemTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/life_post_wakeup_text_color</item>
+        <item name="android:fontFamily">miui-light</item>
+    </style>
+    <style name="LifePostWakeUpItemTitleTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/life_post_wakeup_item_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="LifePostWakeUpTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/life_post_wake_up_data_textsize</item>
+        <item name="android:textColor">@color/life_post_wake_up_data_color</item>
+    </style>
+    <style name="LifePostWakeUpTitleStyle" parent="@miui:style/Widget.ListView.Item.SingleLine">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/life_post_wakeup_text_color</item>
+        <item name="android:background">@drawable/setting_title</item>
+    </style>
+    <style name="LifePostWeatherDegreeStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/life_post_weather_degree_textsize</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">miui-light</item>
+    </style>
+    <style name="LifePostWeatherTextStyle" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/life_post_weather_textsize</item>
+        <item name="android:textColor">@color/life_post_weather_text_color</item>
+    </style>
+    <style name="NumberPickerStyle" parent="@style/Widget.NumberPicker">
+        <item name="android:background">@color/drop_down_popup_window_bg_color</item>
+    </style>
+    <style name="PreferenceCategory">
+        <item name="android:layout">@layout/black_preference_category</item>
+        <item name="android:selectable">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="PreferenceItem" parent="@miui:style/Widget.PreferenceItem">
+        <item name="miui:preferencePrimaryTextColor">@color/primary_text_color_dark</item>
+        <item name="miui:preferenceSecondaryTextColor">@color/secondary_text_color_dark</item>
+    </style>
+    <style name="SearchActionBarStyle" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">homeAsUp</item>
+    </style>
+    <style name="SearchTitleTxt" parent="@style/ClockItemThirdary">
+        <item name="android:textColor">@color/black_time_zone_search_text_color</item>
+    </style>
+    <style name="SetAlarmAmNumberPickerStyle" parent="@style/Widget.NumberPicker">
+        <item name="textSizeHighlight">@dimen/set_alarm_numberpicker_am_text_size_highlight</item>
+        <item name="textSizeHint">@dimen/set_alarm_numberpicker_am_text_size_hint</item>
+    </style>
+    <style name="SetAlarmNumberPicker" parent="@style/Widget.NumberPicker">
+        <item name="android:labelTextSize">@dimen/set_alarm_numberpicker_label_text_size</item>
+        <item name="textSizeHighlight">@dimen/set_alarm_numberpicker_text_size_highlight</item>
+        <item name="textSizeHint">@dimen/set_alarm_numberpicker_text_size_hint</item>
+    </style>
+    <style name="SetAlarmTextSmall" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/set_alarm_small_text_size</item>
+        <item name="android:textColor">@color/black_set_alarm_small_text_color</item>
+    </style>
+    <style name="SetAlarmTheme" parent="@miui:style/Theme.Dark">
+        <item name="android:actionBarStyle">@style/EditActionBar</item>
+        <item name="miui:preferencePrimaryTextColor">@color/primary_text_color_dark</item>
+        <item name="miui:preferenceSecondaryTextColor">@color/secondary_text_color_dark</item>
+        <item name="miui:preferenceBackground">@drawable/preference_set_alarm_item_bg</item>
+        <item name="miui:startingWindowOverlay">@null</item>
+    </style>
+    <style name="SettingTheme" parent="@miui:style/Theme.Dark.Settings">
+        <item name="android:windowBackground">@color/black_main_bg</item>
+        <item name="android:preferenceCategoryStyle">@style/PreferenceCategory</item>
+        <item name="android:cacheColorHint">@color/black_main_bg</item>
+        <item name="android:actionBarStyle">@style/SearchActionBarStyle</item>
+        <item name="miui:preferencePrimaryTextColor">@color/primary_text_color_dark</item>
+        <item name="miui:preferenceSecondaryTextColor">@color/secondary_text_color_dark</item>
+        <item name="miui:preferenceBackground">@drawable/preference_item_bg</item>
+    </style>
+    <style name="SlidingButton" parent="@miui:style/Widget.SlidingButton" />
+    <style name="SmartCoverButton" parent="@miui:style/Widget.Button">
+        <item name="android:textSize">@dimen/smart_cover_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_bg_transparent_light_single</item>
+    </style>
+    <style name="SmartCoverButtonWarn" parent="@miui:style/Widget.Button.Warning" />
+    <style name="StopWatchClockNum" parent="@style/ClockItemPrimary" />
+    <style name="StopWatchClockSmall" parent="@style/ClockItemSecondary" />
+    <style name="StopWatchIndex" parent="@style/ClockItemPrimary" />
+    <style name="StopWatchText" parent="@style/ClockItemThirdary" />
+    <style name="StopwatchListItemStyle" parent="@miui:style/Widget.ListView.Item.DoubleLine">
+        <item name="android:layout_height">@dimen/stopwatch_item_height</item>
+        <item name="android:minHeight">@dimen/stopwatch_item_height</item>
+    </style>
+    <style name="TabViewStyle">
+        <item name="android:textSize">@dimen/tab_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_tab_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">@dimen/tab_text_view_max_width</item>
+        <item name="android:minHeight">@dimen/action_bar_height</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="TimerNumberPicker" parent="@style/Widget.NumberPicker">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:labelTextSize">@dimen/timer_numberpicker_label_text_size</item>
+        <item name="textSizeHighlight">@dimen/timer_numberpicker_text_size_highlight</item>
+        <item name="textSizeHint">@dimen/timer_numberpicker_text_size_hint</item>
+    </style>
+    <style name="TimerTypeTextView">
+        <item name="android:textSize">@dimen/timer_type_text_size</item>
+        <item name="android:textColor">@color/black_timer_type_text_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">@dimen/timer_type_padding</item>
+        <item name="android:layout_marginStart">@dimen/timer_type_margin_left</item>
+        <item name="android:layout_marginEnd">@dimen/timer_type_margin_left</item>
+    </style>
+    <style name="TimezoneSearchAlphabetIndexerStyle" parent="@miui:style/Widget.AlphabetFastIndexer.Dark">
+        <item name="android:layout_marginTop">@dimen/timezone_item_fast_indexer_margin</item>
+        <item name="android:layout_marginBottom">@dimen/timezone_item_fast_indexer_margin</item>
+    </style>
+    <style name="TimezoneSearchDarkItemThirdary" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/time_zone_search_thirdary_size</item>
+        <item name="android:textColor">@color/black_time_zone_search_dark_item_thirdary_text_color</item>
+    </style>
+    <style name="TimezoneSearchItemSecondary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/alarm_clock_secondary_size</item>
+        <item name="android:textColor">@color/black_time_zone_search_item_text_color_normal</item>
+    </style>
+    <style name="TimezoneSearchLightItemThirdary" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/time_zone_search_thirdary_size</item>
+        <item name="android:textColor">@color/black_time_zone_search_light_item_thirdary_text_color</item>
+    </style>
+    <style name="TimezoneSearchListItemDoubleLineStyle" parent="@miui:style/Widget.ListView.Item.DoubleLine">
+        <item name="android:layout_height">@dimen/time_zone_search_item_height</item>
+        <item name="android:minHeight">@dimen/time_zone_search_item_height</item>
+    </style>
+    <style name="TimezoneSearchTheme" parent="@miui:style/Theme.Dark">
+        <item name="android:actionBarStyle">@style/SearchActionBarStyle</item>
+    </style>
+    <style name="ViewPagerStyle">
+        <item name="android:background">@drawable/fragment_bg</item>
+    </style>
+    <style name="Widget.NumberPicker" parent="@android:style/Widget">
+        <item name="android:textColorHighlight">@color/numberpicker_highlight_text</item>
+        <item name="android:textColorHint">@color/numberpicker_hint_text</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/black_main_bg</item>
+        <item name="android:labelTextSize">@dimen/numberpicker_label_text_size</item>
+        <item name="labelTextColor">@color/numberpicker_label</item>
+        <item name="textSizeHighlight">@dimen/numberpicker_text_size_highlight</item>
+        <item name="textSizeHint">@dimen/numberpicker_text_size_hint</item>
+        <item name="labelPadding">@dimen/numberpicker_label_padding</item>
+    </style>
+    <style name="WorldClockItemAmPm" parent="@style/ClockItemSecondary" />
+    <style name="WorldClockItemDoubleLineStyle" parent="@miui:style/Widget.ListView.Item.DoubleLine">
+        <item name="android:layout_height">@dimen/worldclock_item_height</item>
+        <item name="android:minHeight">@dimen/worldclock_item_height</item>
+    </style>
+    <style name="WorldClockItemPrimary" parent="@miui:style/TextAppearance.Widget.List.Primary">
+        <item name="android:textSize">@dimen/worldclock_item_primary_size</item>
+        <item name="android:textColor">@color/black_worldclock_primary_text_color</item>
+    </style>
+    <style name="WorldClockItemSecondary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/worldclock_item_secondary_size</item>
+        <item name="android:textColor">@color/black_worldclock_primary_text_color</item>
+    </style>
+    <style name="WorldClockItemThirdary" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textSize">@dimen/worldclock_item_thirdary_size</item>
+        <item name="android:textColor">@color/black_worldclock_secondary_text_color</item>
+    </style>
+    <style name="WorldClockLocalTime">
+        <item name="android:textSize">@dimen/worldclock_local_item_textSize</item>
+        <item name="android:textColor">@color/black_worldclock_third_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="TextAppearance.Compat.Notification.Info" parent="@style/TextAppearance.Compat.Notification">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="TextAppearance.Compat.Notification.Media" parent="@style/TextAppearance.Compat.Notification" />
+    <style name="TextAppearance.Compat.Notification.Time" parent="@style/TextAppearance.Compat.Notification">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time" />
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title" />
+    <style name="Widget.Compat.NotificationActionContainer" parent="" />
+    <style name="Widget.Compat.NotificationActionText" parent="" />
+    <style name="AlertDialog">
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+    </style>
+    <style name="Animation" />
+    <style name="Animation.Dialog" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="CircularProgressBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="stroke_width">5.0dip</item>
+        <item name="progress">0.1</item>
+        <item name="progress_color">#ffff4444</item>
+        <item name="progress_background_color">#ff898989</item>
+        <item name="thumb_visible">false</item>
+        <item name="marker_visible">false</item>
+    </style>
+    <style name="CircularProgressBarLight">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="stroke_width">5.0dip</item>
+        <item name="progress">0.1</item>
+        <item name="progress_color">#ffff4444</item>
+        <item name="progress_background_color">#ffaaaaaa</item>
+        <item name="thumb_visible">false</item>
+        <item name="marker_visible">false</item>
+    </style>
+    <style name="CustomProgressBar">
+        <item name="android:maxWidth">35.0dip</item>
+        <item name="android:maxHeight">35.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/style_custom_progress_large</item>
+        <item name="android:minWidth">35.0dip</item>
+        <item name="android:minHeight">35.0dip</item>
+    </style>
+    <style name="Preference">
+        <item name="android:layout">@layout/preference</item>
+    </style>
+    <style name="Preference.Category" parent="@style/Preference">
+        <item name="android:layout">@layout/preference_category</item>
+        <item name="android:selectable">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="Preference.CheckBoxPreference" parent="@style/Preference">
+        <item name="android:widgetLayout">@layout/preference_widget_checkbox</item>
+    </style>
+    <style name="Preference.PreferenceScreen" parent="@style/Preference" />
+    <style name="TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+        <item name="android:fontFamily">@string/font_family</item>
+    </style>
+    <style name="TextAppearance.BlankPage" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">?textColorBlankPage</item>
+    </style>
+    <style name="TextAppearance.Button" parent="@style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="TextAppearance.Button.OptiomMenuItem" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/action_button_text_light</item>
+    </style>
+    <style name="TextAppearance.CheckBoxHint" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/dialog_message_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Line2" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="@style/TextAppearance.Compat.Notification.Info.Media" />
+    <style name="TextAppearance.DesktopLyricText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/desktop_lyric_textSize</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance.DialogMessage" parent="@style/TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/black_50_transparent</item>
+    </style>
+    <style name="TextAppearance.Display" parent="@style/TextAppearance" />
+    <style name="TextAppearance.Display.Action" parent="@style/TextAppearance.Display">
+        <item name="android:textSize">@dimen/display_action_text_size</item>
+        <item name="android:textColor">@color/display_action_text_color</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem" parent="@style/TextAppearance.Display" />
+    <style name="TextAppearance.Display.GridItem.Primary" parent="@style/TextAppearance.Display.GridItem">
+        <item name="android:textSize">@dimen/display_griditem_primary_text_size</item>
+        <item name="android:textColor">@color/black_90_transparent</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem.Primary.Light" parent="@style/TextAppearance.Display.GridItem.Primary">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem.Primary.SongGroupTitle" parent="@style/TextAppearance.Display.GridItem.Primary">
+        <item name="android:textSize">@dimen/display_griditem_songgroup_title_text_size</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem.Primary.SpecialTitle" parent="@style/TextAppearance.Display.GridItem.Primary">
+        <item name="android:textSize">@dimen/display_griditem_special_title_text_size</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem.Secondary" parent="@style/TextAppearance.Display.GridItem">
+        <item name="android:textSize">@dimen/display_griditem_second_text_size</item>
+        <item name="android:textColor">@color/black_60_transparent</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem.Secondary.Light" parent="@style/TextAppearance.Display.GridItem.Secondary">
+        <item name="android:textColor">@color/white_60_transparent</item>
+    </style>
+    <style name="TextAppearance.Display.GridItem.SongGroupCommentCount" parent="@style/TextAppearance.Display.GridItem.Secondary.Light">
+        <item name="android:textSize">@dimen/display_griditem_songgroup_comment_text_size</item>
+        <item name="android:textColor">@color/white_60_transparent</item>
+    </style>
+    <style name="TextAppearance.Display.ListItem" parent="@style/TextAppearance.Display" />
+    <style name="TextAppearance.Display.ListItem.Primary" parent="@style/TextAppearance.Display.ListItem">
+        <item name="android:textSize">@dimen/display_normal_text_size</item>
+        <item name="android:textColor">@color/display_list_primary_text_color</item>
+    </style>
+    <style name="TextAppearance.Display.ListItem.Primary.Large" parent="@style/TextAppearance.Display.ListItem.Primary">
+        <item name="android:textSize">@dimen/display_big_text_size</item>
+    </style>
+    <style name="TextAppearance.Display.ListItem.Secondary" parent="@style/TextAppearance.Display.ListItem">
+        <item name="android:textSize">@dimen/display_secondary_text_size</item>
+        <item name="android:textColor">@color/display_list_secondary_text_color</item>
+    </style>
+    <style name="TextAppearance.Display.ListItem.Secondary.Small" parent="@style/TextAppearance.Display.ListItem.Secondary">
+        <item name="android:textSize">@dimen/display_listitem_second_text_small_size</item>
+        <item name="android:textColor">@color/black_40_transparent</item>
+    </style>
+    <style name="TextAppearance.Display.More" parent="@style/TextAppearance.Display">
+        <item name="android:textSize">@dimen/display_more_text_size</item>
+        <item name="android:textColor">@color/display_more_text_color</item>
+    </style>
+    <style name="TextAppearance.Display.SubTitle" parent="@style/TextAppearance.Display">
+        <item name="android:textSize">@dimen/display_subtitle_text_size</item>
+        <item name="android:textColor">@color/display_subtitle_text_color</item>
+    </style>
+    <style name="TextAppearance.Display.Title" parent="@style/TextAppearance.Display">
+        <item name="android:textSize">@dimen/display_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/display_title_text_color</item>
+    </style>
+    <style name="TextAppearance.EditText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">?android:editTextColor</item>
+        <item name="android:textColorHint">?editTextColorHint</item>
+    </style>
+    <style name="TextAppearance.EditText.Search" parent="@style/TextAppearance.EditText">
+        <item name="android:textColor">?searchEditTextColor</item>
+        <item name="android:textColorHint">?searchEditTextHintColor</item>
+    </style>
+    <style name="TextAppearance.Grid.Primary" parent="@style/TextAppearance.List.Primary">
+        <item name="android:textSize">@dimen/grid_item_primary_text_size</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="TextAppearance.Grid.Secondary" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textSize">@dimen/grid_item_secondary_text_size</item>
+        <item name="android:textColor">@color/black_50_transparent</item>
+    </style>
+    <style name="TextAppearance.Indicator.Time" parent="@style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/nowplaying_page_time_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_50_transparent</item>
+    </style>
+    <style name="TextAppearance.Indicator.Time.Light" parent="@style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/light_nowplaying_page_time_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_60_transparent</item>
+    </style>
+    <style name="TextAppearance.Large" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextAppearance.List" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">?textColorList</item>
+    </style>
+    <style name="TextAppearance.List.Primary" parent="@style/TextAppearance.List">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.List.Secondary" parent="@style/TextAppearance.List">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?listSubTitleColor</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.LoadingPage" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/loading_Page_text_size</item>
+        <item name="android:textColor">@color/loading_page_text_color_light</item>
+    </style>
+    <style name="TextAppearance.Lyric" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/lyric_normal_text_size</item>
+        <item name="android:textColor">@color/white_70_transparent</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="TextAppearance.Lyric.HighLight" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/lyric_high_light_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/lyric_current_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/lyric_current_margin_bottom</item>
+    </style>
+    <style name="TextAppearance.Medium" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+    <style name="TextAppearance.PreferenceCategory" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/preference_category_text_color_light</item>
+    </style>
+    <style name="TextAppearance.PreferenceList" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/preference_normal_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/preference_primary_text_light</item>
+    </style>
+    <style name="TextAppearance.PreferenceList.Summary" parent="@style/TextAppearance.PreferenceList">
+        <item name="android:textSize">@dimen/preference_secondary_text_size</item>
+        <item name="android:textColor">@color/preference_secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.RadarState" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/display_griditem_songgroup_comment_text_size</item>
+    </style>
+    <style name="TextAppearance.Secondary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/black_50_transparent</item>
+    </style>
+    <style name="TextAppearance.Secondary.ArtistPage" parent="@style/TextAppearance.Secondary">
+        <item name="android:textSize">@dimen/artist_page_secondary_text_size</item>
+        <item name="android:textColor">@color/white_90_transparent</item>
+    </style>
+    <style name="TextAppearance.Secondary.Dark" parent="@style/TextAppearance.Secondary">
+        <item name="android:textColor">@color/white_50_transparent</item>
+    </style>
+    <style name="TextAppearance.Secondary.SongGroup" parent="@style/TextAppearance.Secondary">
+        <item name="android:textSize">@dimen/display_header_secondary_text_size</item>
+        <item name="android:textColor">@color/white_70_transparent</item>
+    </style>
+    <style name="TextAppearance.Secondary.SongGroupFloat" parent="@style/TextAppearance.Secondary">
+        <item name="android:textSize">@dimen/display_normal_text_size</item>
+        <item name="android:textColor">@color/white_70_transparent</item>
+    </style>
+    <style name="TextAppearance.ShareItem" parent="@style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@color/share_item_text_light</item>
+    </style>
+    <style name="TextAppearance.Small" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent" parent="@android:style/TextAppearance.StatusBar.EventContent">
+        <item name="android:textSize">10.0sp</item>
+    </style>
+    <style name="TextAppearance.TabText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/tab_text_size</item>
+        <item name="android:textColor">@color/tab_text_light</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.TabText.ArtistPage" parent="@style/TextAppearance.TabText">
+        <item name="android:textSize">@dimen/artist_page_tab_text_size</item>
+        <item name="android:textColor">@color/artist_page_tab_text_light</item>
+    </style>
+    <style name="TextAppearance.TabText.HomePage" parent="@style/TextAppearance.TabText">
+        <item name="android:textSize">@dimen/home_page_tab_text_size</item>
+        <item name="android:textColor">@color/home_page_tab_text_dark</item>
+    </style>
+    <style name="TextAppearance.TabText.OnlinePage" parent="@style/TextAppearance.TabText">
+        <item name="android:textSize">@dimen/online_page_tab_text_size</item>
+        <item name="android:textColor">@color/online_page_tab_text_dark</item>
+    </style>
+    <style name="TextAppearance.TabText.SearchInstant" parent="@style/TextAppearance.TabText">
+        <item name="android:textSize">@dimen/search_instant_tab_text_size</item>
+        <item name="android:textColor">@color/search_instant_tab_text</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@style/TextAppearance.Medium" />
+    <style name="TextAppearance.Title.ActionMode" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?actionModeTitleColor</item>
+    </style>
+    <style name="TextAppearance.Title.ArtistPage" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/artist_page_title_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance.Title.Large" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="TextAppearance.Title.NavigatorView" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/text_size_navigator_view_title_normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_70_transparent</item>
+    </style>
+    <style name="TextAppearance.Title.Settings" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/settings_action_bar_title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextAppearance.Title.SongGroup" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/display_normal_text_size</item>
+        <item name="android:textColor">@color/white_100_transparent</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textColorPrimary">@color/normal_text_light</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Medium</item>
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:windowBackground">@color/music_background_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:alertDialogStyle">@style/AlertDialog</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_thumb_horizontal_light</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb_vertical_light</item>
+        <item name="android:editTextStyle">@style/Widget.EditText</item>
+        <item name="android:listViewStyle">@style/Widget.ListView</item>
+        <item name="android:textColorHighlight">@color/text_color_highlight</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_light</item>
+        <item name="android:listDividerAlertDialog">@null</item>
+        <item name="android:alertDialogTheme">@style/Theme.Light.Dialog.Alert</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_back_light</item>
+        <item name="android:buttonBarStyle">@style/Widget.DialogButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_light</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:editTextColor">@color/edit_text_light</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="actionBarFavoriteIcon">@drawable/action_button_favorite_light</item>
+        <item name="actionBarRemoveIcon">@drawable/action_button_remove_light</item>
+        <item name="folderIcon">@drawable/folder_icon_light</item>
+        <item name="listItemDownload">@drawable/track_list_item_download_light</item>
+        <item name="listItemFavorite">@drawable/track_list_item_favorite_light</item>
+        <item name="listItemNumber">@array/number_value_entries_light</item>
+        <item name="listItemHQ">@drawable/list_hq_light</item>
+        <item name="listItemMore">@drawable/action_button_more_light</item>
+        <item name="textSeparator">@drawable/text_separator_light</item>
+        <item name="listSubTitleColor">@color/black_50_transparent</item>
+        <item name="slidingButtonStyle">@style/Widget.SlidingButton.Light</item>
+        <item name="listViewItemBackground">@drawable/list_item_bg_light</item>
+        <item name="textColorList">@color/list_text_light</item>
+        <item name="textColorBlankPage">@color/blank_page_text_color_light</item>
+        <item name="textColorButton">@color/button_text_light</item>
+        <item name="buttonBarDefaultButtonStyle">@style/Widget.Button.Dialog.Default</item>
+        <item name="actionModeCancelButtonStyle">@style/Widget.Button.ActionMode</item>
+        <item name="actionModeSelectButtonStyle">@style/Widget.Button.ActionMode.Default</item>
+        <item name="actionModeTitleColor">@color/action_mode_title_text_color_light</item>
+        <item name="immersionTextColor">@color/immersion_text_light</item>
+        <item name="immersionViewItemBackground">@drawable/immersion_item_bg_light</item>
+        <item name="editTextColorHint">@color/hint_edit_text_color_light</item>
+        <item name="searchEditTextHintColor">@color/edit_text_search_hint_color_light</item>
+        <item name="searchEditTextColor">@color/edit_text_search_color_light</item>
+        <item name="progressBarStyle">@style/Widget.ProgressBar</item>
+        <item name="checkboxDrawable">@drawable/btn_checkbox_light</item>
+        <item name="immersionTheme">Light</item>
+        <item name="contentBackgroundColor">@color/music_background_color</item>
+        <item name="navigatorBarBackground">@drawable/action_bar_bg_light</item>
+        <item name="st_play">@drawable/st_play</item>
+        <item name="st_pause">@drawable/st_pause</item>
+        <item name="st_next">@drawable/st_next</item>
+        <item name="st_close">@drawable/st_close</item>
+        <item name="st_desktop_lyric_unlock">@drawable/st_desktop_lyric_unlock</item>
+        <item name="st_desktop_lyric_show">@drawable/st_desktop_lyric_show</item>
+        <item name="st_desktop_lyric_show_p">@drawable/st_desktop_lyric_show_p</item>
+        <item name="st_desktop_lyric_show_en">@drawable/st_desktop_lyric_show_en</item>
+        <item name="st_desktop_lyric_show_en_p">@drawable/st_desktop_lyric_show_en_p</item>
+        <item name="media_btn_pre">@drawable/media_btn_pre</item>
+        <item name="media_btn_favorite">@drawable/media_btn_favorite</item>
+        <item name="media_btn_favorite_selected">@drawable/media_btn_favorite_selected</item>
+        <item name="media_btn_play">@drawable/media_btn_play</item>
+        <item name="media_btn_pause">@drawable/media_btn_pause</item>
+        <item name="media_btn_next">@drawable/media_btn_next</item>
+        <item name="media_btn_lyric_unlock">@drawable/media_btn_lyric_unlock</item>
+        <item name="media_btn_lyric_show_zh_n">@drawable/media_btn_lyric_show_zh_n</item>
+        <item name="media_btn_lyric_show_zh_p">@drawable/media_btn_lyric_show_zh_p</item>
+        <item name="media_btn_lyric_show_en_n">@drawable/media_btn_lyric_show_en_n</item>
+        <item name="media_btn_lyric_show_en_p">@drawable/media_btn_lyric_show_en_p</item>
+    </style>
+    <style name="Theme.Alert" parent="@style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:listViewStyle">@style/Widget.ListView.NoFastScroll</item>
+        <item name="listViewItemBackground">@drawable/list_item_bg_dialog_light</item>
+    </style>
+    <style name="Theme.AudioPicker" parent="@style/Theme.Dark">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="Theme.Dark" parent="@android:style/Theme.Holo">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textColorPrimary">@color/normal_text_dark</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Medium</item>
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:alertDialogStyle">@style/AlertDialog</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_thumb_horizontal_dark</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb_vertical_dark</item>
+        <item name="android:editTextStyle">@style/Widget.EditText</item>
+        <item name="android:listViewStyle">@style/Widget.ListView</item>
+        <item name="android:textColorHighlight">@color/text_color_highlight</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_light</item>
+        <item name="android:listDividerAlertDialog">@null</item>
+        <item name="android:alertDialogTheme">@style/Theme.Light.Dialog.Alert</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_back_dark</item>
+        <item name="android:buttonBarStyle">@style/Widget.DialogButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_dark</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:editTextColor">@color/edit_text_dark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="actionBarFavoriteIcon">@drawable/action_button_favorite_dark</item>
+        <item name="actionBarRemoveIcon">@drawable/action_button_remove_dark</item>
+        <item name="folderIcon">@drawable/folder_icon_dark</item>
+        <item name="listItemDownload">@drawable/track_list_item_download_dark</item>
+        <item name="listItemFavorite">@drawable/track_list_item_favorite_dark</item>
+        <item name="listItemNumber">@array/number_value_entries_dark</item>
+        <item name="listItemHQ">@drawable/list_hq_dark</item>
+        <item name="listItemMore">@drawable/action_button_more_dark</item>
+        <item name="textSeparator">@drawable/text_separator_dark</item>
+        <item name="listSubTitleColor">@color/white_40_transparent</item>
+        <item name="slidingButtonStyle">@style/Widget.SlidingButton.Dark</item>
+        <item name="listViewItemBackground">@drawable/list_item_bg_dark</item>
+        <item name="textColorList">@color/list_text_dark</item>
+        <item name="textColorBlankPage">@color/blank_page_text_color_dark</item>
+        <item name="textColorButton">@color/button_text_dark</item>
+        <item name="buttonBarDefaultButtonStyle">@style/Widget.Button.Dialog.Default</item>
+        <item name="actionModeCancelButtonStyle">@style/Widget.Button.ActionMode.Dark</item>
+        <item name="actionModeSelectButtonStyle">@style/Widget.Button.ActionMode.Default.Dark</item>
+        <item name="actionModeTitleColor">@color/action_mode_title_text_color_dark</item>
+        <item name="immersionTextColor">@color/immersion_text_dark</item>
+        <item name="immersionViewItemBackground">@drawable/immersion_item_bg_dark</item>
+        <item name="editTextColorHint">@color/hint_edit_text_color_dark</item>
+        <item name="searchEditTextHintColor">@color/edit_text_search_hint_color_dark</item>
+        <item name="searchEditTextColor">@color/edit_text_search_color_dark</item>
+        <item name="progressBarStyle">@style/Widget.ProgressBar.Dark</item>
+        <item name="checkboxDrawable">@drawable/btn_checkbox_dark</item>
+        <item name="immersionTheme">Dark</item>
+        <item name="contentBackgroundColor">@android:color/transparent</item>
+        <item name="navigatorBarBackground">@drawable/action_mode_bg</item>
+        <item name="st_play">@drawable/st_play_dark</item>
+        <item name="st_pause">@drawable/st_pause_dark</item>
+        <item name="st_next">@drawable/st_next_dark</item>
+        <item name="st_close">@drawable/st_close</item>
+        <item name="st_desktop_lyric_unlock">@drawable/st_desktop_lyric_unlock_dark</item>
+        <item name="st_desktop_lyric_show">@drawable/st_desktop_lyric_show_dark</item>
+        <item name="st_desktop_lyric_show_p">@drawable/st_desktop_lyric_show_p_dark</item>
+        <item name="st_desktop_lyric_show_en">@drawable/st_desktop_lyric_show_en_dark</item>
+        <item name="st_desktop_lyric_show_en_p">@drawable/st_desktop_lyric_show_en_p_dark</item>
+        <item name="media_btn_pre">@drawable/media_btn_pre</item>
+        <item name="media_btn_favorite">@drawable/media_btn_favorite</item>
+        <item name="media_btn_favorite_selected">@drawable/media_btn_favorite_selected</item>
+        <item name="media_btn_play">@drawable/media_btn_play</item>
+        <item name="media_btn_pause">@drawable/media_btn_pause</item>
+        <item name="media_btn_next">@drawable/media_btn_next</item>
+        <item name="media_btn_lyric_unlock">@drawable/media_btn_lyric_unlock</item>
+        <item name="media_btn_lyric_show_zh_n">@drawable/media_btn_lyric_show_zh_n</item>
+        <item name="media_btn_lyric_show_zh_p">@drawable/media_btn_lyric_show_zh_p</item>
+        <item name="media_btn_lyric_show_en_n">@drawable/media_btn_lyric_show_en_n</item>
+        <item name="media_btn_lyric_show_en_p">@drawable/media_btn_lyric_show_en_p</item>
+    </style>
+    <style name="Theme.Dark.Translucent" parent="@style/Theme.Dark">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Theme.Light" parent="@style/Theme">
+        <item name="android:windowAnimationStyle">@style/WindowAnimation</item>
+    </style>
+    <style name="Theme.Light.Cloud" parent="@style/Theme.Light">
+        <item name="listItemDownload">@drawable/track_list_item_download_cloud_light</item>
+    </style>
+    <style name="Theme.Light.Dialog" parent="@style/Theme.Light">
+        <item name="android:textColorPrimary">@color/dialog_message_text_color_light</item>
+        <item name="android:windowBackground">@drawable/dialog_bg_light</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/Widget.DialogTitle</item>
+        <item name="android:listViewStyle">@style/Widget.ListView.NoFastScroll</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="listViewItemBackground">@drawable/list_item_bg_dialog_light</item>
+    </style>
+    <style name="Theme.Light.Dialog.Alert" parent="@style/Theme.Light.Dialog">
+        <item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="Theme.Light.NoTranslucentStatus" parent="@style/Theme.Light">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+    <style name="Theme.Settings" parent="@style/Theme.Light">
+        <item name="android:windowBackground">@color/music_background_color</item>
+        <item name="android:preferenceScreenStyle">@style/Preference.PreferenceScreen</item>
+        <item name="android:preferenceCategoryStyle">@style/Preference.Category</item>
+        <item name="android:preferenceStyle">@style/Preference</item>
+        <item name="android:checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference</item>
+        <item name="android:fastScrollThumbDrawable">@android:color/transparent</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.AlphabetFastIndexer" parent="@style/Widget">
+        <item name="android:background">@android:color/white</item>
+        <item name="indexerTable">@array/alphabet_table</item>
+        <item name="indexerTextSize">@dimen/alphabet_indexer_text_size</item>
+        <item name="indexerTextActivatedColor">@color/alphabet_indexer_activated_text_color</item>
+        <item name="indexerTextHighlightColor">@color/alphabet_indexer_highlight_text_color</item>
+        <item name="indexerTextHighligtBackground">@drawable/alphabet_indexer_text_highlight_bg</item>
+        <item name="overlayBackground">@drawable/alphabet_indexer_overlay</item>
+        <item name="overlayMarginLeft">0.0dip</item>
+        <item name="overlayMarginTop">@dimen/alphabet_indexer_overlay_padding_top</item>
+        <item name="overlayTextSize">@dimen/alphabet_indexer_overlay_text_size</item>
+        <item name="overlayTextColor">@color/alphabet_indexer_overlay_text_color</item>
+    </style>
+    <style name="Widget.Button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:textColor">?textColorButton</item>
+        <item name="android:background">@drawable/btn_bg_light</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.Button.ActionMode" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/action_mode_title_button_text_light</item>
+        <item name="android:background">@drawable/action_mode_title_button_bg_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+    <style name="Widget.Button.ActionMode.Dark" parent="@style/Widget.Button.ActionMode">
+        <item name="android:textColor">@color/action_mode_title_button_text_dark</item>
+        <item name="android:background">@drawable/action_mode_title_button_bg_dark</item>
+    </style>
+    <style name="Widget.Button.ActionMode.Default" parent="@style/Widget.Button.ActionMode">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/action_mode_title_default_button_text_light</item>
+        <item name="android:background">@drawable/action_mode_title_default_button_bg_light</item>
+    </style>
+    <style name="Widget.Button.ActionMode.Default.Dark" parent="@style/Widget.Button.ActionMode.Default">
+        <item name="android:textColor">@color/action_mode_title_default_button_text_dark</item>
+        <item name="android:background">@drawable/action_mode_title_default_button_bg_dark</item>
+    </style>
+    <style name="Widget.Button.BlankPage" parent="@style/Widget.Button">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:background">@drawable/btn_bg_rect_light</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">39.0dip</item>
+    </style>
+    <style name="Widget.Button.BlankPage.Dark" parent="@style/Widget.Button.BlankPage">
+        <item name="android:background">@drawable/btn_bg_rect_dark</item>
+    </style>
+    <style name="Widget.Button.DesktopLyricButton" parent="@style/Widget.Button">
+        <item name="android:textSize">@dimen/desktop_lyric_textSize</item>
+        <item name="android:textColor">@color/desktop_lyric_button_text_color</item>
+    </style>
+    <style name="Widget.Button.Dialog" parent="@style/Widget.Button">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:background">@drawable/btn_bg_dialog_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.Button.Dialog.Default" parent="@style/Widget.Button.Dialog">
+        <item name="android:textColor">@color/button_text_color_guide_light</item>
+    </style>
+    <style name="Widget.Button.OptionMenuItem" parent="@style/Widget.Button">
+        <item name="android:textAppearance">@style/TextAppearance.Button.OptiomMenuItem</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:background">@drawable/action_button_bg_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:drawablePadding">@dimen/action_button_drawable_padding</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+        <item name="android:paddingStart">@dimen/action_menu_item_view_padding_left</item>
+        <item name="android:paddingEnd">@dimen/action_menu_item_view_padding_right</item>
+    </style>
+    <style name="Widget.DialogButtonBar" parent="@style/Widget">
+        <item name="android:background">@drawable/dialog_button_bar_bg</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerPadding">0.0dip</item>
+    </style>
+    <style name="Widget.DialogTitle" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dialog_title_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Widget.EditText" parent="@android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/TextAppearance.EditText</item>
+        <item name="android:textColorHighlight">@color/text_color_highlight_edittext</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:background">@drawable/edit_text_bg_light</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.EditText.Search" parent="@style/Widget.EditText">
+        <item name="android:textAppearance">@style/TextAppearance.EditText.Search</item>
+        <item name="android:background">@drawable/edit_text_search_input_bg_light</item>
+        <item name="android:imeOptions">actionSearch</item>
+    </style>
+    <style name="Widget.Frame" parent="@style/Widget" />
+    <style name="Widget.Frame.Navigator" parent="@style/Widget.Frame">
+        <item name="android:background">?navigatorBarBackground</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <style name="Widget.Frame.Navigator.Selection" parent="@style/Widget.Frame.Navigator">
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingStart">@dimen/select_padding_start</item>
+        <item name="android:paddingEnd">@dimen/select_padding_start</item>
+    </style>
+    <style name="Widget.Frame.Navigator_special" parent="@style/Widget.Frame">
+        <item name="android:background">?navigatorBarBackground</item>
+        <item name="android:paddingTop">28.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <style name="Widget.GridItem" parent="@style/Widget" />
+    <style name="Widget.GridItem.RoundRect" parent="@style/Widget.GridItem">
+        <item name="cornerRadii">@integer/roundrect_corner_radii</item>
+        <item name="foreground">@drawable/roundrect_mask</item>
+    </style>
+    <style name="Widget.GridView" parent="@style/Widget.ListView" />
+    <style name="Widget.ImageView.Item" parent="@style/Widget" />
+    <style name="Widget.ImageView.Item.Circle" parent="@style/Widget">
+        <item name="android:scaleType">fitXY</item>
+        <item name="circle">true</item>
+        <item name="mask">@drawable/circle_mask</item>
+    </style>
+    <style name="Widget.ImageView.Item.Preference" parent="@style/Widget">
+        <item name="android:maxHeight">@dimen/preference_icon_max_height</item>
+        <item name="android:minWidth">@dimen/preference_icon_min_width</item>
+    </style>
+    <style name="Widget.ImageView.Item.RoundRect" parent="@style/Widget">
+        <item name="android:scaleType">fitXY</item>
+        <item name="cornerRadii">@integer/roundrect_corner_radii</item>
+        <item name="mask">@drawable/roundrect_mask</item>
+    </style>
+    <style name="Widget.ImageView.Item.RoundRect.AD" parent="@style/Widget.ImageView.Item.RoundRect">
+        <item name="cornerRadii">@integer/ad_roundrect_corner_radii</item>
+        <item name="mask">@drawable/ad_roundrect_mask</item>
+    </style>
+    <style name="Widget.Line" parent="@style/Widget" />
+    <style name="Widget.Line.Horizontal" parent="@style/Widget.Line">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Widget.Line.Vertical" parent="@style/Widget.Line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Widget.ListItem" parent="@style/Widget">
+        <item name="android:gravity">start|center</item>
+        <item name="android:background">?listViewItemBackground</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/list_preferred_item_height</item>
+    </style>
+    <style name="Widget.ListItem.Display" parent="@style/Widget.ListItem">
+        <item name="android:gravity">start|center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/display_list_item_height</item>
+    </style>
+    <style name="Widget.ListItem.Display.DoubleLine" parent="@style/Widget.ListItem.Display">
+        <item name="android:layout_height">@dimen/list_preferred_item_height</item>
+        <item name="android:minHeight">@dimen/list_preferred_item_height</item>
+    </style>
+    <style name="Widget.ListItem.Display.More" parent="@style/Widget.ListItem.Display">
+        <item name="android:layout_height">@dimen/display_more_height</item>
+    </style>
+    <style name="Widget.ListItem.Display.Title" parent="@style/Widget.ListItem.Display">
+        <item name="android:layout_height">@dimen/display_title_height</item>
+    </style>
+    <style name="Widget.ListItem.Display.TripleLine" parent="@style/Widget.ListItem.Display">
+        <item name="android:layout_height">@dimen/list_preferred_item_height_large</item>
+        <item name="android:minHeight">@dimen/list_preferred_item_height</item>
+    </style>
+    <style name="Widget.ListItem.DoubleLine" parent="@style/Widget.ListItem">
+        <item name="android:textAppearance">@style/TextAppearance.List.Primary</item>
+        <item name="android:layout_height">@dimen/list_preferred_item_height</item>
+        <item name="android:minHeight">@dimen/list_preferred_item_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.ListItem.Immersion" parent="@style/Widget.ListItem.SingleLine">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">?immersionTextColor</item>
+        <item name="android:background">?immersionViewItemBackground</item>
+        <item name="android:layout_height">@dimen/dialog_list_preferred_item_height_small</item>
+    </style>
+    <style name="Widget.ListItem.Preference" parent="@style/Widget">
+        <item name="android:paddingTop">@dimen/preference_item_padding_top</item>
+        <item name="android:paddingBottom">@dimen/preference_item_padding_bottom</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">@dimen/preference_item_padding_inner</item>
+    </style>
+    <style name="Widget.ListItem.SingleLine" parent="@style/Widget.ListItem">
+        <item name="android:textAppearance">@style/TextAppearance.List</item>
+        <item name="android:layout_height">@dimen/list_preferred_item_height_small</item>
+        <item name="android:minHeight">@dimen/list_preferred_item_height_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.ListItem.Title" parent="@style/Widget.ListItem.DoubleLine">
+        <item name="android:layout_height">@dimen/download_item_title_height</item>
+        <item name="android:minHeight">@dimen/download_item_title_height</item>
+    </style>
+    <style name="Widget.ListView" parent="@style/Widget">
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:fastScrollEnabled">true</item>
+    </style>
+    <style name="Widget.ListView.NoFastScroll" parent="@style/Widget.ListView">
+        <item name="android:fastScrollEnabled">false</item>
+    </style>
+    <style name="Widget.ProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">@dimen/progressbar_size</item>
+        <item name="android:maxHeight">@dimen/progressbar_size</item>
+        <item name="android:indeterminateDrawable">@drawable/progressbar_indeterminate_light</item>
+        <item name="android:minWidth">@dimen/progressbar_size</item>
+        <item name="android:minHeight">@dimen/progressbar_size</item>
+    </style>
+    <style name="Widget.ProgressBar.Dark" parent="@style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progressbar_indeterminate_dark</item>
+    </style>
+    <style name="Widget.SeekBar" parent="@style/Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">@dimen/seekbar_height</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_light</item>
+        <item name="android:minHeight">@dimen/seekbar_height</item>
+        <item name="android:thumb">@drawable/seekbar_thumb_light</item>
+        <item name="android:thumbOffset">@dimen/seekbar_padding_size</item>
+        <item name="android:paddingStart">@dimen/seekbar_padding_size</item>
+        <item name="android:paddingEnd">@dimen/seekbar_padding_size</item>
+    </style>
+    <style name="Widget.SeekBar.Dark" parent="@style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_progress_dark</item>
+        <item name="android:thumb">@drawable/seekbar_thumb_dark</item>
+    </style>
+    <style name="Widget.SeekBar.Equalizer" parent="@style/Widget">
+        <item name="android:background">@drawable/eq_progress_bg</item>
+        <item name="android:paddingTop">@dimen/eq_seekbar_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/eq_seekbar_padding_vertical</item>
+        <item name="android:layout_width">@dimen/eq_seekbar_width</item>
+        <item name="android:layout_height">@dimen/eq_seekbar_height</item>
+        <item name="android:thumb">@drawable/eq_thumb</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="Widget.SlidingButton" parent="@style/Widget">
+        <item name="android:background">@drawable/btn_transparent_dark</item>
+        <item name="slide_frame">@drawable/sliding_btn_frame_light</item>
+        <item name="slide_sliderOn">@drawable/sliding_btn_slider_on_light</item>
+        <item name="slide_sliderOff">@drawable/sliding_btn_slider_off_light</item>
+        <item name="slide_mask">@drawable/sliding_btn_mask_light</item>
+        <item name="slide_barOff">@drawable/sliding_btn_bar_off_light</item>
+        <item name="slide_barOn">@drawable/sliding_btn_bar_on_light</item>
+    </style>
+    <style name="Widget.SlidingButton.Dark" parent="@style/Widget.SlidingButton" />
+    <style name="Widget.SlidingButton.Light" parent="@style/Widget.SlidingButton" />
+    <style name="Widget.Support.CoordinatorLayout" parent="@android:style/Widget">
+        <item name="statusBarBackground">#ff000000</item>
+    </style>
+    <style name="Widget.TabView" parent="@style/Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">@integer/action_bar_tab_layout_weight</item>
+    </style>
+    <style name="Widget.TextView.Item" parent="@style/Widget">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.TextView.Item.DoubleLine" parent="@style/Widget.TextView.Item">
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingExtra">0.0sp</item>
+    </style>
+    <style name="Widget.TextView.Item.DoubleLine.GridItem" parent="@style/Widget.TextView.Item.DoubleLine">
+        <item name="android:paddingRight">4.0dip</item>
+    </style>
+    <style name="WindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/activity_close_exit</item>
+    </style>
+</resources>

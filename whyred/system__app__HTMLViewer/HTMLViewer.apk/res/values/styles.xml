@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MainPageDisablePreview" parent="@style/Theme.MainPage">
+        <item name="miui:windowDisablePreview">true</item>
+    </style>
+    <style name="Theme.MainPage" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="Theme.TabPage" parent="@miui:style/Theme.Light.Settings">
+        <item name="android:actionBarStyle">@style/Style.ActionBar.Tab</item>
+    </style>
+    <style name="Style.ActionBar.Tab" parent="@miui:style/Widget.ActionBar">
+        <item name="android:displayOptions">@null</item>
+    </style>
+    <style name="Theme.ListPageDisablePreview" parent="@style/Theme.ListPage">
+        <item name="miui:windowDisablePreview">true</item>
+    </style>
+    <style name="Theme.ListPage" parent="@miui:style/Theme.Light.Settings" />
+    <style name="Theme.Panel" parent="@miui:style/Theme.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="ActionBar.Show.Custom" parent="@miui:style/Widget.ActionBar">
+        <item name="android:background">?android:actionModeBackground</item>
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="EditorActivityTheme" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Show.Custom</item>
+    </style>
+</resources>

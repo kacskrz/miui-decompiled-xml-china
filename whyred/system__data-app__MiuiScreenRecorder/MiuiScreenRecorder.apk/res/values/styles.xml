@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Gallery.TextAppearance.List.GroupHeader" parent="@miui:style/TextAppearance.Widget.List.Secondary" />
+    <style name="Gallery.TextAppearance.List.GroupHeader.Date" parent="@style/Gallery.TextAppearance.List.GroupHeader">
+        <item name="android:textColor">@color/list_group_header_light</item>
+    </style>
+    <style name="Gallery.TextAppearance.Small.Inverse" parent="@miui:style/TextAppearance.Small.Inverse" />
+    <style name="NavigationLayout" parent="@miui:style/Widget.NavigationLayout">
+        <item name="miui:drawerEnabledOrientation">portrait</item>
+    </style>
+    <style name="Theme" parent="@miui:style/Theme.Light">
+        <item name="miui:navigationLayoutStyle">@style/NavigationLayout</item>
+        <item name="miui:contentAutoFitSystemWindow">true</item>
+    </style>
+    <style name="Theme.EditModeTitle" parent="@style/Theme">
+        <item name="android:actionBarStyle">@miui:style/Widget.ActionBar.EditModeTitle</item>
+    </style>
+    <style name="Theme.Light" parent="@miui:style/Theme.Light" />
+    <style name="Theme.Light.NoTitle" parent="@miui:style/Theme.Light.NoTitle" />
+    <style name="Theme.NoTitle" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:navigationLayoutStyle">@style/NavigationLayout</item>
+    </style>
+    <style name="TranslucentActivityStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialog_file_info_style" parent="@miui:style/TextAppearance.Widget.List.Secondary">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="dialog_file_info_title_style" parent="@style/dialog_file_info_style">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+</resources>
