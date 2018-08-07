@@ -21,6 +21,7 @@
         <item name="android:paddingLeft">@dimen/large_margin</item>
         <item name="android:paddingRight">@dimen/large_margin</item>
         <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
     </style>
     <style name="Account_Home_Theme" parent="@style/Vip_Default_NoTitle_Theme">
         <item name="android:windowBackground">@color/divider_color</item>
@@ -285,6 +286,15 @@
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
+    <style name="Vip_Trend_ActionBar_Style" parent="@style/Vip_ActionBar_Style">
+        <item name="android:background">@color/trend_header_color</item>
+    </style>
+    <style name="Vip_Trend_Theme" parent="@style/Vip_Gray_Theme">
+        <item name="android:windowBackground">@color/trend_header_color</item>
+        <item name="android:actionBarStyle">@style/Vip_Trend_ActionBar_Style</item>
+        <item name="android:homeAsUpIndicator">@drawable/action_bar_back_white</item>
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
     <style name="app_theme" parent="@miui:style/Theme.Dark">
         <item name="android:windowBackground">@color/bg_grey</item>
     </style>
@@ -335,6 +345,13 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginEnd">@dimen/margin22</item>
+    </style>
+    <style name="health_level_info_style">
+        <item name="android:textColor">@color/black_alpha_40</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
     </style>
     <style name="image_news_title_bottom_line">
         <item name="android:background">@android:color/white</item>
@@ -390,6 +407,46 @@
         <item name="android:layout_marginStart">@dimen/large_margin</item>
         <item name="android:layout_marginEnd">@dimen/large_margin</item>
     </style>
+    <style name="style_health_header_item_layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/margin5</item>
+        <item name="android:paddingBottom">@dimen/margin5</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_health_header_item_value" parent="@style/style_single_line_text">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:textColor">@color/white_alpha_90</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="style_health_header_text_item">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_health_input_sleep_label_text">
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="style_number_btn">
+        <item name="android:textSize">@dimen/text_size_8</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/number_btn_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
     <style name="style_search_view_bar">
         <item name="android:textSize">@dimen/text_size_2</item>
         <item name="android:textColorHint">@color/black_alpha_40</item>
@@ -407,6 +464,7 @@
     <style name="style_single_line_text">
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
     </style>
     <style name="tv_footer_health_home">
         <item name="android:textSize">@dimen/text_size_dp_3</item>
