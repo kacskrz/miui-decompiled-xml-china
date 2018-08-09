@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Animation.SuwWindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/suw_slide_next_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/suw_slide_next_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/suw_slide_back_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/suw_slide_back_out</item>
+    </style>
+    <style name="SuwContentFrame">
+        <item name="android:paddingLeft">@dimen/suw_layout_margin_sides</item>
+        <item name="android:paddingTop">@dimen/suw_content_frame_padding_top</item>
+        <item name="android:paddingRight">@dimen/suw_layout_margin_sides</item>
+        <item name="android:paddingBottom">@dimen/suw_content_frame_padding_bottom</item>
+    </style>
+    <style name="SuwDescription">
+        <item name="android:textAppearance">@style/TextAppearance.SuwDescription</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_marginTop">@dimen/suw_description_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/suw_description_margin_bottom</item>
+        <item name="android:lineSpacingExtra">@dimen/suw_description_line_spacing_extra</item>
+    </style>
+    <style name="TextAppearance.SuwDescription.Light" parent="@style/TextAppearance.SuwDescription">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="SuwRadioButton">
+        <item name="android:textAppearance">@style/TextAppearance.SuwDescription</item>
+        <item name="android:paddingLeft">@dimen/suw_radio_button_padding_start</item>
+        <item name="android:layout_marginLeft">@dimen/suw_radio_button_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/suw_radio_button_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/suw_radio_button_margin_bottom</item>
+        <item name="android:lineSpacingExtra">@dimen/suw_radio_button_line_spacing_extra</item>
+        <item name="android:paddingStart">@dimen/suw_radio_button_padding_start</item>
+        <item name="android:layout_marginStart">@dimen/suw_radio_button_margin_start</item>
+    </style>
+    <style name="SuwCheckBox">
+        <item name="android:textAppearance">@style/TextAppearance.SuwDescription.Light</item>
+        <item name="android:textSize">@dimen/suw_check_box_text_size</item>
+        <item name="android:paddingLeft">@dimen/suw_check_box_padding_start</item>
+        <item name="android:layout_marginLeft">@dimen/suw_check_box_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/suw_check_box_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/suw_check_box_margin_bottom</item>
+        <item name="android:lineSpacingExtra">@dimen/suw_check_box_line_spacing_extra</item>
+        <item name="android:paddingStart">@dimen/suw_check_box_padding_start</item>
+        <item name="android:layout_marginStart">@dimen/suw_check_box_margin_start</item>
+    </style>
+    <style name="SuwCheckBox.Multiline" parent="@style/SuwCheckBox">
+        <item name="android:gravity">top</item>
+    </style>
+    <style name="SuwBaseCardTitle">
+        <item name="android:textAppearance">@style/TextAppearance.SuwCardTitle</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/suw_card_title_padding_start</item>
+        <item name="android:paddingTop">@dimen/suw_card_title_padding_top</item>
+        <item name="android:paddingRight">@dimen/suw_card_title_padding_end</item>
+        <item name="android:paddingBottom">@dimen/suw_card_title_padding_bottom</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:paddingStart">@dimen/suw_card_title_padding_start</item>
+        <item name="android:paddingEnd">@dimen/suw_card_title_padding_end</item>
+    </style>
+    <style name="SuwCardTitle" parent="@style/SuwBaseCardTitle" />
+    <style name="SuwHeaderTitle">
+        <item name="android:textSize">@dimen/suw_header_title_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:paddingTop">@dimen/suw_header_title_padding_top</item>
+        <item name="android:paddingBottom">@dimen/suw_header_title_padding_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/suw_layout_margin_sides</item>
+        <item name="android:layout_marginRight">@dimen/suw_layout_margin_sides</item>
+        <item name="android:layout_marginBottom">@dimen/suw_header_title_margin_bottom</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">@dimen/suw_header_title_line_spacing_extra</item>
+    </style>
+    <style name="SuwNavBarTheme">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?suwNavBarBackgroundColor</item>
+        <item name="android:paddingLeft">@dimen/suw_navbar_padding_sides</item>
+        <item name="android:paddingRight">@dimen/suw_navbar_padding_sides</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="SetupWorkSpaceTheme" parent="@style/SuwThemeMaterial.Light">
+        <item name="android:windowBackground">@color/light_gray</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/orange</item>
+        <item name="android:colorPrimaryDark">@color/orange</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:indeterminateTint">@color/teal</item>
+        <item name="suwLayoutTheme">@style/SetupIllustrationTheme</item>
+    </style>
+    <style name="SetupIllustrationTheme">
+        <item name="suwBackground">@color/orange</item>
+        <item name="suwIllustrationHorizontalTile">@color/orange</item>
+        <item name="suwIllustrationImage">@drawable/setup_illustration</item>
+    </style>
+    <style name="ControlOverlayTheme">
+        <item name="android:colorControlNormal">@color/orange</item>
+    </style>
+    <style name="MainText">
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:paddingTop">@dimen/main_text_padding_between_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="TransparentButton" parent="@android:style/Widget.Material.Light.Button">
+        <item name="android:textColorPrimary">@color/colored_button</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/colored_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="MainTextContainer">
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:paddingLeft">@dimen/main_text_padding_left_right</item>
+        <item name="android:paddingTop">@dimen/main_text_padding_top</item>
+        <item name="android:paddingRight">@dimen/main_text_padding_left_right</item>
+        <item name="android:paddingBottom">@dimen/main_text_padding_bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="DialogFragmentTextContainer">
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingTop">@dimen/dialog_text_padding_top</item>
+        <item name="android:paddingBottom">@dimen/dialog_text_padding_bottom</item>
+        <item name="android:layout_width">@dimen/dialog_fragment_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dialog_fragment_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_fragment_margin_top_bottom</item>
+    </style>
+    <style name="DialogFragmentScrollView" parent="@android:style/Widget.Material.Light.ScrollView">
+        <item name="android:theme">@style/ControlOverlayTheme</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:paddingLeft">@dimen/dialog_text_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/dialog_text_padding_left_right</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:fadeScrollbars">false</item>
+    </style>
+    <style name="ManagedProvisioningDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

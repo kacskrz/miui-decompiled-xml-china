@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Component" />
+    <style name="Component.MenuDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Component.ContactPhoneListView" parent="@style/Component">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="Component.ChoosePhoneNumberText" parent="@style/Component">
+        <item name="android:textSize">@dimen/jj_popup_item_text_font_size</item>
+        <item name="android:textColor">@color/jj_popup_item_text_font_color</item>
+    </style>
+    <style name="Component.MenuCancelText" parent="@style/Component">
+        <item name="android:textSize">@dimen/text_menu_cancel</item>
+        <item name="android:textColor">@color/menu_cancel_text_color</item>
+    </style>
+    <style name="Component.MenuTitleText" parent="@style/Component">
+        <item name="android:textSize">@dimen/text_menu_title</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Component.AlertDialogOk" parent="@style/Component">
+        <item name="android:textSize">@dimen/jj_popup_item_text_font_size</item>
+        <item name="android:textColor">@color/jj_popup_item_text_font_color</item>
+        <item name="android:background">@drawable/jeejen_common_alert_dialog_btn_ok_selector</item>
+    </style>
+    <style name="Component.AlertDialogCancel" parent="@style/Component">
+        <item name="android:textSize">@dimen/jj_popup_item_text_font_size</item>
+        <item name="android:textColor">@color/jj_popup_item_text_font_color</item>
+        <item name="android:background">@drawable/jeejen_common_alert_dialog_btn_cancel_selector</item>
+    </style>
+    <style name="Component.AlertDialogInfo" parent="@style/Component">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/contact_choose_phone_number_text_color</item>
+    </style>
+    <style name="Component.ProgressDialogMessage" parent="@style/Component">
+        <item name="android:textSize">@dimen/default_font_size</item>
+    </style>
+    <style name="Component.JeejenToastText" parent="@style/Component">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Component.JeejenLoadingText" parent="@style/Component">
+        <item name="android:textSize">@dimen/jeejen_loading_text_size</item>
+        <item name="android:textColor">@color/jeejen_loading_grey</item>
+    </style>
+    <style name="Component.ListviewDefault" parent="@style/Component">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+    <style name="Component.InfosDialogItemText" parent="@style/Component">
+        <item name="android:textSize">@dimen/jeejen_infos_dialog_item_text_size</item>
+        <item name="android:textColor">@color/jeejen_white</item>
+    </style>
+    <style name="Component.InfosDialogOk" parent="@style/Component">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/jeejen_common_alert_dialog_btn_ok_color_selector</item>
+        <item name="android:background">@drawable/jeejen_common_infos_dialog_btn_ok_selector</item>
+    </style>
+    <style name="Component.InfosDialogCancel" parent="@style/Component">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/alert_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/jeejen_common_infos_dialog_btn_cancel_selector</item>
+    </style>
+    <style name="Component.InfosDialogBtnFull" parent="@style/Component">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/alert_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/jeejen_common_infos_dialog_btn_full_selector</item>
+    </style>
+    <style name="Component.ListviewFlexible" parent="@style/Component">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="PopTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="BtnStyle">
+        <item name="android:textSize">@dimen/btn_font_size</item>
+        <item name="android:textColor">@color/color_font_black</item>
+    </style>
+    <style name="BtnOkStyle" parent="@style/BtnStyle">
+        <item name="android:background">@drawable/common_ok_btn_bg_selector</item>
+    </style>
+    <style name="BtnCancelStyle" parent="@style/BtnStyle">
+        <item name="android:background">@drawable/common_cancel_btn_bg_selector</item>
+    </style>
+    <style name="BtnKnowStyle" parent="@style/BtnStyle">
+        <item name="android:background">@drawable/common_know_btn_bg_selector</item>
+    </style>
+    <style name="ListCategoryTitleStyle">
+        <item name="android:textSize">@dimen/jj_title_bar_title_font_size</item>
+        <item name="android:textColor">@color/jj_title_bar_title_color</item>
+    </style>
+    <style name="ListItemMsgStyle">
+        <item name="android:textSize">@dimen/jj_single_line_single_text_item_primary_text_font_size</item>
+        <item name="android:textColor">@color/jj_single_line_single_text_item_text_color_black_primary</item>
+    </style>
+    <style name="MessageListItemStyle" parent="@style/ListItemMsgStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="ListItemDateStyle">
+        <item name="android:textSize">@dimen/jj_single_line_single_text_item_secondary_text_font_size</item>
+        <item name="android:textColor">@color/jj_single_line_single_text_item_text_color_black_secondary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SepLineStyle">
+        <item name="android:background">@color/jj_sep_line_bg_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:layout_marginLeft">@dimen/jj_single_line_single_text_item_left_space</item>
+        <item name="android:layout_marginRight">@dimen/jj_single_line_single_text_item_right_space</item>
+    </style>
+    <style name="DelBtnStyle">
+        <item name="android:textSize">@dimen/jj_tool_bar_text_font_size</item>
+        <item name="android:textColor">@color/del_btn_disabled</item>
+        <item name="android:background">@drawable/common_bottom_btn</item>
+    </style>
+    <style name="MenuDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ContactTopbarTitle">
+        <item name="android:textSize">@dimen/topbar_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ContactFootbarTitle">
+        <item name="android:textSize">@dimen/activity_bottombar_text_size</item>
+        <item name="android:textColor">@color/contact_bottombar_title_color_selector</item>
+    </style>
+    <style name="PhoneDialNumEditView">
+        <item name="android:textSize">@dimen/phone_dial_num</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">5.0</item>
+        <item name="android:shadowDy">5.0</item>
+    </style>
+    <style name="PhoneDialContactName">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="PhoneListView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="PhoneListContactName">
+        <item name="android:textSize">@dimen/list_view_font_size</item>
+        <item name="android:textColor">@color/phone_list_contact_name_text_color</item>
+    </style>
+    <style name="PhoneListContactNameUnread">
+        <item name="android:textSize">@dimen/list_view_font_size</item>
+        <item name="android:textColor">@color/phone_list_contact_name_text_color</item>
+    </style>
+    <style name="PhoneListMessageCenterUnread">
+        <item name="android:textSize">@dimen/list_view_font_size</item>
+        <item name="android:textColor">@color/phone_list_contact_name_unread_text_color</item>
+    </style>
+    <style name="PhoneListTime">
+        <item name="android:textSize">@dimen/list_view_time_font_size</item>
+        <item name="android:textColor">@color/phone_list_time_text_color</item>
+    </style>
+    <style name="PhoneListUnread">
+        <item name="android:textSize">@dimen/list_view_time_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ListSelectView">
+        <item name="android:textSize">@dimen/list_view_time_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ContactPhoneListView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="MmsEditText">
+        <item name="android:textSize">@dimen/mms_sms_edit_text</item>
+        <item name="android:textColor">@color/mms_edittext_color</item>
+        <item name="android:textColorHint">@color/mms_edittext_hint_color</item>
+    </style>
+    <style name="MmsVoiceText">
+        <item name="android:textSize">@dimen/mms_sms_edit_text</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MmsItemTime">
+        <item name="android:textSize">@dimen/mms_list_item_time</item>
+        <item name="android:textColor">@color/mms_list_item_time</item>
+    </style>
+    <style name="MmsItemSelfSms">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@color/mms_list_item_self_color</item>
+    </style>
+    <style name="MmsItemOtherSms">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@color/mms_list_item_other_color</item>
+    </style>
+    <style name="MmsItemNotDownloadedMms">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@color/mms_mms_not_downloaded_hint_color</item>
+    </style>
+    <style name="MmsItemSelfNotDownloadedMms">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MmsItemInsertContact">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MmsListView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="MmsSelectContactBtn">
+        <item name="android:textSize">@dimen/mms_new_sms_phone_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/mms_new_sms_select_edit_text_hint_color</item>
+    </style>
+    <style name="MmsSelectedDescBtn">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@color/mms_selected_desc_text_color</item>
+        <item name="android:textColorHint">@color/mms_selected_desc_text_color</item>
+    </style>
+    <style name="MmsConversationSelfTime">
+        <item name="android:textSize">@dimen/mms_conversation_time_size</item>
+        <item name="android:textColor">@color/mms_conversation_self_time_color</item>
+    </style>
+    <style name="MmsConversationOtherTime">
+        <item name="android:textSize">@dimen/mms_conversation_time_size</item>
+        <item name="android:textColor">@color/mms_conversation_other_time_color</item>
+    </style>
+    <style name="MmsSendSmsBtnText">
+        <item name="android:textSize">@dimen/mms_sms_btn_send_text_size</item>
+        <item name="android:textColor">@color/mms_send_sms_btn_text_color_selector</item>
+    </style>
+    <style name="MmsSelectListBtnCompleted">
+        <item name="android:textSize">@dimen/mms_sms_btn_send_text_size</item>
+        <item name="android:textColor">@color/mms_new_sms_select_contact_selected_color</item>
+    </style>
+    <style name="MmsAsrPanelBtnCancel">
+        <item name="android:textSize">@dimen/mms_sms_btn_send_text_size</item>
+        <item name="android:textColor">@color/mms_asr_panel_btn_cancel_color</item>
+    </style>
+    <style name="MmsAsrPanelHint">
+        <item name="android:textSize">@dimen/mms_sms_btn_send_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SmsContentName_Black">
+        <item name="android:textSize">@dimen/mms_sms_content_contact_name</item>
+        <item name="android:textColor">@color/mms_sms_content_contact_name_black</item>
+    </style>
+    <style name="SmsContentTime">
+        <item name="android:textSize">@dimen/mms_sms_content_time</item>
+        <item name="android:textColor">@color/mms_sms_content_time</item>
+    </style>
+    <style name="SmsContentName_White">
+        <item name="android:textSize">@dimen/mms_sms_content_contact_name</item>
+        <item name="android:textColor">@color/mms_sms_content_contact_name_white</item>
+    </style>
+    <style name="SmsContent_Black">
+        <item name="android:textSize">@dimen/mms_sms_content_size</item>
+        <item name="android:textColor">@color/mms_sms_content_contact_name_black</item>
+    </style>
+    <style name="SmsContent_White">
+        <item name="android:textSize">@dimen/mms_sms_content_size</item>
+        <item name="android:textColor">@color/mms_sms_content_contact_name_white</item>
+    </style>
+    <style name="MMSSelectContactTitle">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="NewSmsSelectView">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="NewSmsTitleView">
+        <item name="android:textSize">@dimen/mms_new_sms_title</item>
+        <item name="android:textColor">@color/mms_new_sms_title</item>
+        <item name="android:background">@color/mms_new_sms_title_bg</item>
+    </style>
+    <style name="NewSmsKeyboardView">
+        <item name="android:textSize">@dimen/mms_new_sms_keyboard</item>
+        <item name="android:textColor">@color/mms_new_sms_keyboard_color</item>
+    </style>
+    <style name="ContactInsertToScreen">
+        <item name="android:textSize">@dimen/activity_bottombar_text_size</item>
+        <item name="android:textColor">@color/contact_insert_to_screen_text_color</item>
+    </style>
+    <style name="ContactNameText">
+        <item name="android:textSize">@dimen/contact_contact_name_text</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ContactPhoneText">
+        <item name="android:textSize">@dimen/contact_contact_phone_text</item>
+        <item name="android:textColor">@color/contact_phone_number_text_color</item>
+    </style>
+    <style name="ContactEditContactBtnText">
+        <item name="android:textSize">@dimen/contact_edit_contact_btn_text_size</item>
+        <item name="android:textColor">@color/contact_edit_contact_btn_color</item>
+    </style>
+    <style name="ContactEditContactInsertFaceText">
+        <item name="android:textSize">@dimen/contact_edit_contact_btn_text_size</item>
+        <item name="android:textColor">@color/contact_edit_contact_insert_face_color</item>
+    </style>
+    <style name="ContactEditContactEditText">
+        <item name="android:textSize">@dimen/contact_edit_contact_btn_text_size</item>
+        <item name="android:textColor">@color/contact_edit_contact_insert_face_color</item>
+        <item name="android:textColorHint">@color/contact_edit_contact_hint_text_color</item>
+    </style>
+    <style name="ContactPhoneBtnAddText">
+        <item name="android:textSize">@dimen/contact_edit_contact_btn_text_size</item>
+        <item name="android:textColor">@color/contact_edit_contact_insert_face_color</item>
+    </style>
+    <style name="ContactEditContactDeleteContactText">
+        <item name="android:textSize">@dimen/contact_edit_contact_btn_text_size</item>
+        <item name="android:textColor">@color/contact_edit_contact_delete_contact_text_color</item>
+    </style>
+    <style name="ChoosePhoneNumberText">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/contact_choose_phone_number_text_color</item>
+    </style>
+    <style name="ContactIndexText">
+        <item name="android:textSize">@dimen/contact_index_text_size</item>
+        <item name="android:textColor">@color/contact_index_color</item>
+    </style>
+    <style name="ContactListNameText">
+        <item name="android:textSize">@dimen/contact_name_text_size</item>
+        <item name="android:textColor">@color/contact_list_color_selector</item>
+    </style>
+    <style name="ContactSelectionTitle">
+        <item name="android:textSize">@dimen/mms_sms_content</item>
+        <item name="android:textColor">@color/contact_selection_title_color</item>
+    </style>
+    <style name="SelectContactListNameText">
+        <item name="android:textSize">@dimen/contact_name_text_size</item>
+        <item name="android:textColor">@color/mms_new_sms_select_contact_item_color_selector</item>
+    </style>
+    <style name="MenuCancelText">
+        <item name="android:textSize">@dimen/text_menu_cancel</item>
+        <item name="android:textColor">@color/menu_cancel_text_color</item>
+    </style>
+    <style name="MenuTitleText">
+        <item name="android:textSize">@dimen/text_menu_title</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AlertDialogOk">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/common_alert_dialog_btn_ok_color_selector</item>
+        <item name="android:background">@drawable/common_alert_dialog_btn_ok_selector</item>
+    </style>
+    <style name="AlertDialogCancel">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/alert_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/common_alert_dialog_btn_cancel_selector</item>
+    </style>
+    <style name="AlertDialogNewOk">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/common_alert_dialog_btn_ok_color_selector</item>
+        <item name="android:background">@drawable/common_alert_dialog_btn_ok_new_selector</item>
+    </style>
+    <style name="AlertDialogNewCancel">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/alert_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/common_alert_dialog_btn_cancel_new_selector</item>
+    </style>
+    <style name="AlertDialogInfo">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/contact_choose_phone_number_text_color</item>
+    </style>
+    <style name="CameraWhiteText">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CameraBigWhite">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CameraBigWhiteNew">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/contact_text_title_color</item>
+    </style>
+    <style name="LauncherSelectContactTitleStyle">
+        <item name="android:textSize">@dimen/launcher_select_guide_title_text_size</item>
+        <item name="android:textColor">@color/contact_text_title_color</item>
+    </style>
+    <style name="LauncherSelectContactDescStyle">
+        <item name="android:textSize">@dimen/launcher_select_guide_title_desc_size</item>
+        <item name="android:textColor">@color/contact_text_title_color</item>
+    </style>
+    <style name="LauncherSelectContactBtnTextStyle">
+        <item name="android:textSize">@dimen/launcher_select_guide_btn_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TopbarTitle">
+        <item name="android:textSize">@dimen/topbar_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="HintText">
+        <item name="android:textSize">@dimen/hint_font_size</item>
+        <item name="android:textColor">@color/hint_text_color</item>
+    </style>
+    <style name="PostHintText">
+        <item name="android:textSize">@dimen/hint_font_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SubAppTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="WorkspaceIcoTitle">
+        <item name="android:textSize">@dimen/workspace_ico_title_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="LoadingTitle">
+        <item name="android:textSize">@dimen/loading_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="DeleteZoneTitle">
+        <item name="android:textSize">@dimen/delete_zone_title_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="UninstallDialogBtnText">
+        <item name="android:textSize">@dimen/uninstall_dialog_btn_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="UninstallDialogText">
+        <item name="android:textSize">@dimen/uninstall_dialog_text_size</item>
+        <item name="android:textColor">@color/uninstall_text_color</item>
+    </style>
+    <style name="ClockText">
+        <item name="android:textSize">@dimen/clock_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AppMsgText">
+        <item name="android:textSize">@dimen/app_msg_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CommonToastText">
+        <item name="android:textSize">@dimen/toast_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AboutVersionDesc">
+        <item name="android:textSize">@dimen/about_version_text_size</item>
+        <item name="android:textColor">@color/about_version_desc_color</item>
+    </style>
+    <style name="AboutText">
+        <item name="android:textSize">@dimen/about_text_size</item>
+        <item name="android:textColor">@color/about_text_color</item>
+    </style>
+    <style name="ExitText">
+        <item name="android:textSize">@dimen/about_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SettingDescText">
+        <item name="android:textSize">@dimen/settings_desc_text_size</item>
+        <item name="android:textColor">@color/setting_desc_color_selector</item>
+    </style>
+    <style name="PhoneIncomeBtnStyle">
+        <item name="android:textSize">@dimen/delete_zone_title_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="LauncherWeatherTemp">
+        <item name="android:textSize">@dimen/launcher_weather_temp_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WelcomeDescriptStyle">
+        <item name="android:textSize">@dimen/welcome_font_size</item>
+        <item name="android:textColor">@color/welcome_descript_font_color</item>
+    </style>
+    <style name="WelcomeBtnStyle">
+        <item name="android:textSize">@dimen/welcome_font_size</item>
+        <item name="android:textColor">@color/welcome_btn_color</item>
+    </style>
+    <style name="WelcomeLauncherBtnStyle">
+        <item name="android:textSize">@dimen/welcome_font_size</item>
+        <item name="android:textColor">@color/welcome_launcher_btn_color</item>
+    </style>
+    <style name="jeejen_lockscreen_text_style">
+        <item name="android:textSize">25.5dip</item>
+        <item name="android:textColor">#ccffffff</item>
+    </style>
+    <style name="jeejen_lockscreen_line">
+        <item name="android:background">#30ffffff</item>
+    </style>
+    <style name="theme_transparent_background" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="LauncherDefaultSettingDescText">
+        <item name="android:textSize">@dimen/topbar_font_size</item>
+        <item name="android:textColor">@color/setting_desc_enable_text_color</item>
+    </style>
+    <style name="NewVersionDialogOk">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/common_alert_dialog_btn_ok_color_selector</item>
+        <item name="android:background">@drawable/common_alert_dialog_btn_ok_new_selector</item>
+    </style>
+    <style name="NewVersionDialogCancel">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@color/alert_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/common_alert_dialog_btn_cancel_new_selector</item>
+    </style>
+    <style name="HaveNewVersionRemindTextStyle">
+        <item name="android:textSize">@dimen/have_new_version_remind_text</item>
+        <item name="android:textColor">@color/have_new_version_remind_text_color</item>
+    </style>
+    <style name="NewVersionActivityTheme" parent="@android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/camera_half_transparent_black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="WorkspaceIcoTitle_4_1">
+        <item name="android:textSize">@dimen/workspace_ico_title_text_size_4_1</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WorkspaceIcoTitle_4_2">
+        <item name="android:textSize">@dimen/workspace_ico_title_text_size_4_2</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ClockText_4_2">
+        <item name="android:textSize">@dimen/clock_text_size_4_2</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SettingSwitchLayoutTextTitleStyle">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="SettingSwitchLayoutTextDescStyle">
+        <item name="android:textSize">@dimen/launcher_switch_layout_text_desc_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="V3" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="V3.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="V3.Dialog.Msg" parent="@style/V3.Dialog">
+        <item name="android:textSize">@dimen/v3_common_widget_dialog_text_size</item>
+        <item name="android:textColor">@color/contact_choose_phone_number_text_color</item>
+    </style>
+    <style name="V3.ConfirmDialog" parent="@style/V3.Dialog" />
+    <style name="V3.ConfirmDialog.OkBtn" parent="@style/V3.ConfirmDialog">
+        <item name="android:textSize">@dimen/v3_common_widget_dialog_text_size</item>
+        <item name="android:textColor">@color/v3_common_confirm_dialog_btn_ok_color_selector</item>
+        <item name="android:background">@drawable/v3_common_confirm_dialog_btn_ok_selector</item>
+    </style>
+    <style name="V3.ConfirmDialog.CancelBtn" parent="@style/V3.ConfirmDialog">
+        <item name="android:textSize">@dimen/v3_common_widget_dialog_text_size</item>
+        <item name="android:textColor">@color/v3_common_widget_dialog_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/v3_common_confirm_dialog_btn_cancel_selector</item>
+    </style>
+    <style name="V3.AlertDialog" parent="@style/V3.Dialog" />
+    <style name="V3.AlertDialog.OkBtn" parent="@style/V3.AlertDialog">
+        <item name="android:textSize">@dimen/v3_common_widget_dialog_text_size</item>
+        <item name="android:textColor">@color/v3_common_widget_dialog_btn_cancel_text_color</item>
+        <item name="android:background">@drawable/v3_common_alert_dialog_btn_cancel_selector</item>
+    </style>
+</resources>

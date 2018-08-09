@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RecipientEditTextViewBase" parent="@android:attr/autoCompleteTextViewStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/chip_height</item>
+        <item name="android:popupBackground">@android:color/white</item>
+        <item name="android:inputType">textEmailAddress|textMultiLine</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="RecipientEditTextView" parent="@style/RecipientEditTextViewBase">
+        <item name="android:imeOptions">actionNext|flagNoFullscreen</item>
+    </style>
+    <style name="ChipAutocompleteWrapperStyle">
+        <item name="android:paddingLeft">@dimen/chip_wrapper_start_padding</item>
+        <item name="android:paddingTop">@dimen/chip_wrapper_top_padding</item>
+        <item name="android:paddingRight">@dimen/chip_wrapper_end_padding</item>
+        <item name="android:paddingBottom">@dimen/chip_wrapper_bottom_padding</item>
+    </style>
+    <style name="ChipAutocompleteDividerStyle">
+        <item name="android:background">@color/autocomplete_divider_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/chip_custom_divider_height</item>
+        <item name="android:layout_marginLeft">@dimen/chip_wrapper_start_padding</item>
+    </style>
+    <style name="ChipTextViewLayoutStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ChipTitleStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/chips_dropdown_text</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:id">@android:id/title</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="ChipSubtitleStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/chips_dropdown_text</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:id">@android:id/text1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="ChipIconBaseStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:id">@android:id/icon</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="ChipStartIconStyle" parent="@style/ChipIconBaseStyle">
+        <item name="android:layout_marginRight">@dimen/chip_icon_margin_end</item>
+    </style>
+    <style name="ChipEndIconStyle" parent="@style/ChipIconBaseStyle">
+        <item name="android:layout_marginLeft">@dimen/chip_icon_margin_end</item>
+    </style>
+    <style name="ChipDeleteIconBaseStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:id">@android:id/icon1</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="ChipDeleteIconStyle" parent="@style/ChipDeleteIconBaseStyle">
+        <item name="android:paddingLeft">8.0dip</item>
+    </style>
+    <style name="DialpadSpaceStyle">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="DialpadKeyNumberStyle">
+        <item name="android:textSize">@dimen/dialpad_key_numbers_size</item>
+        <item name="android:textColor">?dialpad_text_color_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dialpad_key_number_margin_bottom</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="DialpadBottomKeyNumberStyle" parent="@style/DialpadKeyNumberStyle">
+        <item name="android:layout_marginBottom">@dimen/dialpad_zero_key_number_margin_bottom</item>
+    </style>
+    <style name="DialpadKeyStarStyle">
+        <item name="android:textSize">@dimen/dialpad_key_star_size</item>
+        <item name="android:textColor">?dialpad_text_color_secondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dialpad_symbol_margin_bottom</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="DialpadKeyPoundStyle">
+        <item name="android:textSize">@dimen/dialpad_key_pound_size</item>
+        <item name="android:textColor">?dialpad_text_color_secondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dialpad_symbol_margin_bottom</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="DialpadKeyLettersStyle">
+        <item name="android:textSize">@dimen/dialpad_key_letters_size</item>
+        <item name="android:textColor">?dialpad_text_color_secondary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="DialpadKeyButtonStyle">
+        <item name="android:background">@drawable/btn_dialpad_key</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minHeight">@dimen/dialpad_key_height</item>
+        <item name="android:layout_weight">13.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="DialpadBottomKeyButtonStyle" parent="@style/DialpadKeyButtonStyle">
+        <item name="android:layout_height">@dimen/dialpad_bottom_key_height</item>
+    </style>
+    <style name="DialpadKeyInternalLayoutStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Dialpad_Light">
+        <item name="dialpad_text_color">@color/dialpad_digits_text_color</item>
+        <item name="dialpad_text_color_primary">@color/dialpad_primary_text_color</item>
+        <item name="dialpad_text_color_secondary">@color/dialpad_secondary_text_color</item>
+        <item name="dialpad_icon_tint">@color/dialpad_icon_tint</item>
+        <item name="dialpad_voicemail_tint">@color/dialpad_voicemail_tint</item>
+        <item name="dialpad_background">@color/background_dialpad</item>
+    </style>
+    <style name="Dialpad_Dark">
+        <item name="dialpad_text_color">@android:color/white</item>
+        <item name="dialpad_text_color_primary">@android:color/white</item>
+        <item name="dialpad_text_color_secondary">#ffd4d6d7</item>
+        <item name="dialpad_icon_tint">@android:color/white</item>
+        <item name="dialpad_voicemail_tint">?dialpad_text_color_secondary</item>
+        <item name="dialpad_background">#00000000</item>
+    </style>
+    <style name="DirectoryHeader">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="SectionHeaderStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/section_header_text_color</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="DirectoryHeaderStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/dialtacts_secondary_text_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="ContactListSeparatorTextViewStyle">
+        <item name="android:textAppearance">@style/DirectoryHeaderStyle</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/list_section_divider_holo_custom</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/list_section_divider_min_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingStart">8.0dip</item>
+    </style>
+    <style name="TextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TextAppearanceSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff737373</item>
+    </style>
+    <style name="ListViewStyle" parent="@android:style/Widget.Material.Light.ListView">
+        <item name="android:overScrollMode">always</item>
+    </style>
+    <style name="ContactListFilterTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+    <style name="CustomContactListFilterView" parent="@style/ContactListFilterTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="BackgroundOnlyTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">false</item>
+    </style>
+    <style name="Theme.CallSubjectDialogTheme" parent="@android:style/Theme.Material.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowElevation">0.0dip</item>
+    </style>
+    <style name="ConferDialerTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:textColorPrimary">@color/conferdialer_primary_text_color</item>
+        <item name="android:textColorSecondary">@color/conferdialer_secondary_text_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="android:actionBarStyle">@style/ConferDialerActionBarStyle</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/ConferDialerActionBarOverflow</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
+        <item name="android:colorControlActivated">@color/dialer_theme_color</item>
+        <item name="android:colorPrimary">@color/dialer_theme_color</item>
+        <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+        <item name="android:overlapAnchor">true</item>
+        <item name="dialpad_key_button_touch_tint">@color/dialer_dialpad_touch_tint</item>
+        <item name="list_section_header_height">32.0dip</item>
+        <item name="activated_background">@drawable/list_item_activated_background</item>
+        <item name="section_header_background">@drawable/list_title_holo</item>
+        <item name="list_item_padding_top">12.0dip</item>
+        <item name="list_item_padding_right">32.0dip</item>
+        <item name="list_item_padding_bottom">12.0dip</item>
+        <item name="list_item_padding_left">16.0dip</item>
+        <item name="list_item_gap_between_image_and_text">@dimen/contact_browser_list_item_gap_between_image_and_text</item>
+        <item name="list_item_gap_between_label_and_data">5.0dip</item>
+        <item name="list_item_presence_icon_margin">4.0dip</item>
+        <item name="list_item_presence_icon_size">16.0dip</item>
+        <item name="list_item_photo_size">@dimen/contact_browser_list_item_photo_size</item>
+        <item name="list_item_profile_photo_size">70.0dip</item>
+        <item name="list_item_prefix_highlight_color">@color/people_app_theme_color</item>
+        <item name="list_item_background_color">@color/background_dialer_light</item>
+        <item name="list_item_header_text_indent">8.0dip</item>
+        <item name="list_item_header_text_color">@color/conferdialer_secondary_text_color</item>
+        <item name="list_item_header_text_size">14.0sp</item>
+        <item name="list_item_header_height">30.0dip</item>
+        <item name="list_item_name_text_color">@color/contact_list_name_text_color</item>
+        <item name="list_item_name_text_size">16.0sp</item>
+        <item name="list_item_text_indent">@dimen/contact_browser_list_item_text_indent</item>
+        <item name="list_item_text_offset_top">-2.0dip</item>
+        <item name="list_item_data_width_weight">5</item>
+        <item name="list_item_label_width_weight">3</item>
+        <item name="contact_browser_list_padding_left">0.0dip</item>
+        <item name="contact_browser_list_padding_right">0.0dip</item>
+        <item name="contact_browser_background">@color/background_dialer_results</item>
+        <item name="favorites_padding_bottom">?android:actionBarSize</item>
+    </style>
+    <style name="ConferDialerActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@color/actionbar_background_color</item>
+        <item name="android:height">56.0dip</item>
+        <item name="android:titleTextStyle">@style/ConferDialerActionBarTitleText</item>
+        <item name="android:elevation">2.0dip</item>
+        <item name="android:contentInsetStart">72.0dip</item>
+    </style>
+    <style name="ConferDialerActionBarWithoutTitleStyle" parent="@style/ConferDialerActionBarStyle">
+        <item name="android:height">64.0dip</item>
+        <item name="android:displayOptions">none</item>
+        <item name="android:contentInsetStart">0.0px</item>
+    </style>
+    <style name="ConferDialerActionBarTitleText" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
+    <style name="ConferDialerActionBarOverflow" parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_overflow_menu</item>
+    </style>
+    <style name="ConferDialerActionBarOverflowWhite" parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/overflow_menu</item>
+    </style>
+    <style name="ConferDialerThemeWithoutActionBarOverlay" parent="@style/ConferDialerTheme">
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:actionOverflowButtonStyle">@style/ConferDialerActionBarOverflowWhite</item>
+    </style>
+    <style name="ConfereenceDialerStyle" parent="@style/ConferDialerThemeWithoutActionBarOverlay">
+        <item name="android:textColorSecondary">@color/setting_secondary_color</item>
+        <item name="android:windowBackground">@color/setting_background_color</item>
+        <item name="android:textColor">@color/setting_primary_color</item>
+        <item name="android:textColorLink">@color/dialtacts_theme_color</item>
+        <item name="android:colorAccent">@color/dialtacts_theme_color</item>
+    </style>
+</resources>

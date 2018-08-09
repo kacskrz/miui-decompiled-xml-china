@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Light.Spash" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@drawable/spash</item>
+    </style>
+    <style name="AccountItem" parent="@miui:style/Widget.ListView.Item.GroupHeader">
+        <item name="android:background">@drawable/list_item_no_margin_selector</item>
+        <item name="android:paddingLeft">@dimen/main_padding</item>
+        <item name="android:paddingRight">@dimen/main_padding</item>
+        <item name="android:layout_height">@dimen/account_item_height</item>
+    </style>
+    <style name="ActionBar" parent="@miui:style/Widget.ActionBar" />
+    <style name="ActionBar.MarketTab" parent="@style/ActionBar">
+        <item name="android:logo">@null</item>
+        <item name="android:displayOptions">showTitle|useLogo</item>
+    </style>
+    <style name="ActionBar.Search" parent="@style/ActionBar">
+        <item name="android:logo">@drawable/empty</item>
+        <item name="android:displayOptions">useLogo</item>
+    </style>
+    <style name="ActionBar.Web" parent="@style/ActionBar">
+        <item name="android:logo">@drawable/empty</item>
+        <item name="android:displayOptions">disableHome|homeAsUp|showHome|showTitle|useLogo</item>
+    </style>
+    <style name="ActionBarStyle.ActionBarMovableTitle" parent="@miui:style/Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:height">@dimen/welcome_actionbar_height</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+    </style>
+    <style name="ActionBar_Search_Dark" parent="@miui:style/Widget.Dark.ActionBar">
+        <item name="android:logo">@drawable/empty</item>
+        <item name="android:displayOptions">useLogo</item>
+    </style>
+    <style name="Animations" />
+    <style name="CustomActioMode" parent="@miui:style/Widget.ActionMode">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/action_bar_title_bg</item>
+    </style>
+    <style name="HotWordItem">
+        <item name="android:background">@drawable/hot_word_selector</item>
+        <item name="android:paddingLeft">@dimen/hot_word_left_padding</item>
+        <item name="android:paddingRight">@dimen/hot_word_left_padding</item>
+        <item name="android:layout_height">@dimen/hot_word_layout_height</item>
+        <item name="android:maxWidth">@dimen/hot_word_max_width</item>
+        <item name="android:minWidth">@dimen/hot_word_min_width</item>
+    </style>
+    <style name="HotWordListView" parent="@style/ListView">
+        <item name="android:background">#fffbfbfb</item>
+        <item name="android:layout_marginBottom">@dimen/hint_list_margins_bottom</item>
+    </style>
+    <style name="ListView" parent="@miui:style/Widget.ListView">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+    </style>
+    <style name="ListViewItem" parent="@miui:style/Widget.ListView.Item.SingleLine">
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="ListViewItem.DoubleLine" parent="@miui:style/Widget.ListView.Item.DoubleLine">
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="ListViewItemText" parent="@style/ListViewItem">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/main_padding</item>
+        <item name="android:paddingRight">@dimen/main_padding</item>
+    </style>
+    <style name="MLListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:animationCache">false</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="MiuiShare.TextAppearance.ShareItem" parent="@miui:style/TextAppearance.List.Secondary">
+        <item name="android:textColor">@color/list_secondary_text_light</item>
+    </style>
+    <style name="MiuiShare.Theme.Light.Alert" parent="@miui:style/Theme.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="MiuiShare.Theme.NoDisplay" parent="@miui:style/Theme.NoDisplay" />
+    <style name="MiuiShare.Widget.Button.Dialog.Default" parent="@miui:style/Widget.Button.Dialog.Default" />
+    <style name="MiuiShare.Widget.ButtonBar" parent="@miui:style/Widget.ButtonBar" />
+    <style name="NavigationLayout" parent="@miui:style/Widget.NavigationLayout">
+        <item name="miui:drawerEnabledOrientation">portrait</item>
+    </style>
+    <style name="NewAccountItem" parent="@miui:style/Widget.ListView.Item.GroupHeader">
+        <item name="android:background">@drawable/common_item_noframe_bg</item>
+        <item name="android:paddingLeft">@dimen/main_padding_25</item>
+        <item name="android:paddingRight">@dimen/main_padding_25</item>
+        <item name="android:layout_height">@dimen/account_item_height</item>
+    </style>
+    <style name="Phone.Theme.Dialog" parent="@style/Phone.Theme.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="Phone.Theme.Dialog.Dim" parent="@style/Phone.Theme.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Phone.Theme.Dialog.Popup" parent="@style/Phone.Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Phone.Theme.Dialog.Webkit" parent="@style/Phone.Theme.Dialog">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="Phone.Theme.NoTitle" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@color/dark_theme_background_color</item>
+    </style>
+    <style name="PhoneTab.Theme" parent="@miui:style/Theme.Light">
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:actionBarSize">@dimen/action_bar_custom_height</item>
+        <item name="android:actionBarTabTextStyle">@style/Widget.Dark.ActionBar.TabText.Custom</item>
+        <item name="android:homeAsUpIndicator">@null</item>
+        <item name="miui:navigationLayoutStyle">@style/NavigationLayout</item>
+    </style>
+    <style name="PluginItem" parent="@style/AccountItem">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="ProgressBar" />
+    <style name="ProgressBar.Download" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/game_download_progress_bg</item>
+        <item name="android:minHeight">1.3299866dip</item>
+    </style>
+    <style name="ProgressBar.Download.Banner" parent="@style/ProgressBar.Download">
+        <item name="android:progressDrawable">@drawable/banner_download_progress_bg</item>
+    </style>
+    <style name="ProgressBar.Download.Pause" parent="@style/ProgressBar.Download">
+        <item name="android:progressDrawable">@drawable/game_download_progress_pause_bg</item>
+    </style>
+    <style name="ProgressBar.Download.SimpleBanner" parent="@style/ProgressBar.Download">
+        <item name="android:progressDrawable">@drawable/banner_download_progress_bg</item>
+    </style>
+    <style name="ProgressBar.Download.rectangle" parent="@style/ProgressBar.Download">
+        <item name="android:progressDrawable">@drawable/game_download_progress_bg_rectangle</item>
+        <item name="android:minHeight">@dimen/view_dimen_120</item>
+        <item name="android:height">@dimen/view_dimen_120</item>
+    </style>
+    <style name="ProgressBar.Download3rdApp" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/download_3rd_app_progress_style</item>
+        <item name="android:minWidth">@dimen/view_dimen_500</item>
+        <item name="android:minHeight">@dimen/main_padding_14</item>
+    </style>
+    <style name="ProgressBar.DownloadDetail" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/app_bottom_progress_style</item>
+        <item name="android:minHeight">@dimen/view_dimen_120</item>
+        <item name="android:height">@dimen/view_dimen_120</item>
+    </style>
+    <style name="ProgressBar.DownloadDetail.Dark" parent="@style/ProgressBar.DownloadDetail">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/app_bottom_progress_dark_style</item>
+        <item name="android:minHeight">@dimen/view_dimen_120</item>
+        <item name="android:height">@dimen/view_dimen_120</item>
+    </style>
+    <style name="ProgressBar.DownloadListItem" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/listitem_app_download_progress_style</item>
+        <item name="android:minWidth">@dimen/action_button_width</item>
+        <item name="android:minHeight">@dimen/action_button_height</item>
+    </style>
+    <style name="ProgressBar.DownloadListItem.Dark" parent="@style/ProgressBar.DownloadListItem">
+        <item name="android:progressDrawable">@drawable/listitem_app_download_progress_dark_style</item>
+    </style>
+    <style name="ProgressBar.DownloadSubjecTaptitude" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/game_download_progress_tatitude</item>
+    </style>
+    <style name="ProgressBar.ReadOnly" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">@dimen/comment_progressbar_height</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/progressbar_readonly</item>
+        <item name="android:minHeight">@dimen/comment_progressbar_height</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ProgressBar.WhiteStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/game_download_progress_white_style</item>
+        <item name="android:minWidth">@dimen/action_button_width</item>
+        <item name="android:minHeight">@dimen/action_button_height</item>
+    </style>
+    <style name="RatingBar.Edit" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/ratingbar_size</item>
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">@dimen/ratingbar_size</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+    <style name="RatingBar.ReadOnly" parent="@miui:style/Widget.RatingBar.Small">
+        <item name="android:focusable">false</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="RatingBar.ReadOnly.Dark" parent="@miui:style/Widget.Dark.RatingBar.Small">
+        <item name="android:focusable">false</item>
+        <item name="android:maxHeight">@dimen/ratingbar_readonly_size</item>
+        <item name="android:minHeight">@dimen/ratingbar_readonly_size</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="RatingBar.ReadOnly.Large" parent="@style/RatingBar.ReadOnly">
+        <item name="android:maxHeight">@dimen/ratingbar_size</item>
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">@dimen/ratingbar_size</item>
+    </style>
+    <style name="RatingBar.ReadOnly.Small" parent="@style/RatingBar.ReadOnly">
+        <item name="android:maxHeight">@dimen/ratingbar_small_height</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_small</item>
+        <item name="android:minHeight">@dimen/ratingbar_small_height</item>
+    </style>
+    <style name="ReportRadioButton">
+        <item name="android:textSize">@dimen/text_font_size_36</item>
+        <item name="android:textColor">@color/text_color_black_60</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingBottom">@dimen/main_padding_60</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/report_popup_radio_btn</item>
+        <item name="android:drawablePadding">@dimen/main_padding_30</item>
+    </style>
+    <style name="SearchListView" parent="@style/ListView">
+        <item name="android:background">@color/color_title_back</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="SearchListViewItem" parent="@style/ListViewItem">
+        <item name="android:background">@drawable/search_list_item_selector</item>
+        <item name="android:paddingLeft">@dimen/search_list_item_padding</item>
+        <item name="android:paddingRight">@dimen/search_list_item_padding</item>
+        <item name="android:layout_height">@dimen/search_list_item_height</item>
+    </style>
+    <style name="TextAppearance">
+        <item name="android:textColorHighlight">@color/text_color_highlight</item>
+        <item name="android:textColorLink">@color/text_color_link</item>
+    </style>
+    <style name="TextAppearance.Button" parent="@style/TextAppearance.Primary" />
+    <style name="TextAppearance.Button.Action" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_32</item>
+        <item name="android:textColor">@color/action_button_text_color</item>
+    </style>
+    <style name="TextAppearance.Button.Action.Banner" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textColor">@color/text_color_white_80</item>
+    </style>
+    <style name="TextAppearance.Button.Action.Dark" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textColor">@color/text_color_white_80</item>
+    </style>
+    <style name="TextAppearance.Button.Action.ListRecommend" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textSize">@dimen/text_font_size_38</item>
+        <item name="android:textColor">@color/text_color_recommend_list</item>
+    </style>
+    <style name="TextAppearance.Button.Action.Price" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textColor">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.Button.Action.Recommend" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textSize">@dimen/text_font_size_38</item>
+        <item name="android:textColor">@color/text_color_white_80</item>
+    </style>
+    <style name="TextAppearance.Button.Action.SimpleBanner" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textSize">@dimen/text_font_size_32</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextAppearance.Button.BottomAction" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextAppearance.Button.Comment" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_36</item>
+        <item name="android:textColor">@color/comments_button_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/detail_comment_button_selector</item>
+        <item name="android:layout_width">@dimen/detail_comment_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/detail_comment_button_height</item>
+    </style>
+    <style name="TextAppearance.Button.CommonRankTab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_40</item>
+        <item name="android:textColor">@color/common_rank_tab_text_item</item>
+    </style>
+    <style name="TextAppearance.Button.DetailDarkTab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_40</item>
+        <item name="android:textColor">@color/detail_tab_dark_text</item>
+    </style>
+    <style name="TextAppearance.Button.DetailTab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_40</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/detail_tab_text</item>
+    </style>
+    <style name="TextAppearance.Button.DownloadTab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_42</item>
+        <item name="android:textColor">@color/download_tab_text</item>
+    </style>
+    <style name="TextAppearance.Button.HomeRankTabUnselected" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_36</item>
+        <item name="android:textColor">@color/rank_tab_text_item</item>
+    </style>
+    <style name="TextAppearance.Button.Knights" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_36</item>
+        <item name="android:textColor">@color/knights_buttontext_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/knights_button_selector</item>
+        <item name="android:layout_width">@dimen/main_padding_300</item>
+        <item name="android:layout_height">@dimen/main_padding_75</item>
+    </style>
+    <style name="TextAppearance.Button.Large" parent="@style/TextAppearance.Button" />
+    <style name="TextAppearance.Button.Large.Primary" parent="@style/TextAppearance.Button.Large">
+        <item name="android:textSize">@dimen/text_font_size_large</item>
+    </style>
+    <style name="TextAppearance.Button.Large.Primary.Price" parent="@style/TextAppearance.Button.Large.Primary">
+        <item name="android:textColor">@color/highlight_text</item>
+    </style>
+    <style name="TextAppearance.Button.Large.Secondary" parent="@style/TextAppearance.Button.Large">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+    </style>
+    <style name="TextAppearance.Button.PluginTab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/rank_tab_text_size</item>
+        <item name="android:textColor">@color/plugin_tab_text_color</item>
+    </style>
+    <style name="TextAppearance.Button.RankTab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_34</item>
+        <item name="android:textColor">@color/rank_tab_text_item</item>
+    </style>
+    <style name="TextAppearance.Button.Sign" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_36</item>
+        <item name="android:textColor">@color/thread_list_sign_color</item>
+    </style>
+    <style name="TextAppearance.Button.SignCancel" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_36</item>
+        <item name="android:textColor">@color/thread_list_cancel_sign_color</item>
+    </style>
+    <style name="TextAppearance.Button.Tab" parent="@style/TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@color/tab_text</item>
+    </style>
+    <style name="TextAppearance.Category" parent="@style/TextAppearance" />
+    <style name="TextAppearance.Category.BarText" parent="@style/TextAppearance.Category">
+        <item name="android:textSize">@dimen/text_font_size_48</item>
+        <item name="android:textColor">@color/category_bar_text_normal</item>
+    </style>
+    <style name="TextAppearance.CategoryItemText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/category_item_text_size</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="TextAppearance.CommonTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/common_title_color</item>
+    </style>
+    <style name="TextAppearance.Content" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+    <style name="TextAppearance.Detail" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/common_title_color</item>
+    </style>
+    <style name="TextAppearance.DetailSecondary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/common_title_color</item>
+    </style>
+    <style name="TextAppearance.DetailTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/font_size_list_title</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.Editor" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:textSize">@dimen/text_font_size_large</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+    <style name="TextAppearance.EmptyText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@color/empty_text</item>
+    </style>
+    <style name="TextAppearance.Gift" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_44</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.Gift.Content" parent="@style/TextAppearance.Gift" />
+    <style name="TextAppearance.Gift.Title" parent="@style/TextAppearance.Gift">
+        <item name="android:textSize">@dimen/text_font_size_48</item>
+    </style>
+    <style name="TextAppearance.GiftRemain" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/gift_remain_text_size</item>
+        <item name="android:textColor">@color/gift_remain_count_color</item>
+    </style>
+    <style name="TextAppearance.GiftRemain.Gray" parent="@style/TextAppearance.GiftRemain">
+        <item name="android:textSize">@dimen/gift_remain_text_size</item>
+        <item name="android:textColor">@color/text_color_black_40</item>
+    </style>
+    <style name="TextAppearance.GridViewExtendSubTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">#ffabb0ab</item>
+    </style>
+    <style name="TextAppearance.GridViewExtendTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_huge_2</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffdedbde</item>
+    </style>
+    <style name="TextAppearance.Header" parent="@style/TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+    <style name="TextAppearance.HotWord" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/hot_word_text_size</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.Intergral" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/intergral_text_size</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="TextAppearance.KnightsContent" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_40</item>
+        <item name="android:textColor">@color/color_black_tran_70</item>
+        <item name="android:gravity">top</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">@dimen/main_padding_50</item>
+        <item name="android:paddingBottom">@dimen/main_padding_50</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+    <style name="TextAppearance.KnightsTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_40</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_black_tran_90</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="TextAppearance.List" parent="@style/TextAppearance" />
+    <style name="TextAppearance.List.GroupHeader" parent="@miui:style/TextAppearance.List.GroupHeader">
+        <item name="android:textSize">@dimen/list_view_item_group_header_text</item>
+        <item name="android:textColor">@color/text_color_black_50</item>
+    </style>
+    <style name="TextAppearance.List.Summary" parent="@style/TextAppearance.List">
+        <item name="android:textSize">@dimen/text_font_size_34</item>
+        <item name="android:textColor">@color/text_color_black_40</item>
+    </style>
+    <style name="TextAppearance.List.Title" parent="@style/TextAppearance.List">
+        <item name="android:textSize">@dimen/text_font_size_50</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.MiuiRecommendTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/miui_recommend_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TextAppearance.MiuiRecommendTitle.Statics" parent="@style/TextAppearance.MiuiRecommendTitle">
+        <item name="android:textSize">@dimen/miui_recommend_title_text_size_2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+    <style name="TextAppearance.PageIndicatorNumber1" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_large</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.PageIndicatorNumber2" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@color/text_color_black_50</item>
+    </style>
+    <style name="TextAppearance.Percentage" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_tiny</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+    <style name="TextAppearance.Primary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="TextAppearance.Primary.Bold" parent="@style/TextAppearance.Primary">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Primary.Green" parent="@style/TextAppearance.Primary">
+        <item name="android:textSize">@dimen/text_font_size_huge</item>
+        <item name="android:textColor">@color/text_color_inverse</item>
+    </style>
+    <style name="TextAppearance.PullDownGiftDesc" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_34</item>
+        <item name="android:textColor">@color/text_color_black_40</item>
+    </style>
+    <style name="TextAppearance.PullDownGiftTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_50</item>
+        <item name="android:textColor">@color/recommend_pull_down_gift_name_text_color</item>
+    </style>
+    <style name="TextAppearance.PullDownSummary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_34</item>
+        <item name="android:textColor">@color/text_color_black_40</item>
+    </style>
+    <style name="TextAppearance.Recommend" parent="@style/TextAppearance" />
+    <style name="TextAppearance.Recommend.ActionButton" parent="@style/TextAppearance.Button.Action">
+        <item name="android:textSize">@dimen/font_size_recommend_title_righttext</item>
+    </style>
+    <style name="TextAppearance.Recommend.RightText" parent="@style/TextAppearance.Recommend">
+        <item name="android:textSize">@dimen/font_size_recommend_title_righttext</item>
+        <item name="android:textColor">@color/recommend_title_righttext</item>
+    </style>
+    <style name="TextAppearance.Recommend.Tittle" parent="@style/TextAppearance.Recommend">
+        <item name="android:textSize">@dimen/font_size_recommend_title_text</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.Search" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_huge</item>
+        <item name="android:textColor">@color/search_text</item>
+    </style>
+    <style name="TextAppearance.Secondary" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="TextAppearance.Secondary.Bold" parent="@style/TextAppearance.Secondary">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Secondary.MessageCenter" parent="@style/TextAppearance.Secondary">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="TextAppearance.SubCategoryItemText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/sub_categry_item_text_size</item>
+        <item name="android:textColor">@color/sub_category_item_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.Subject" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@color/text_color_secondary</item>
+    </style>
+    <style name="TextAppearance.SubjectDataLoadText" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_large</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+    <style name="TextAppearance.SubjectGameSize" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_medium</item>
+        <item name="android:textColor">@color/text_color_black_50</item>
+    </style>
+    <style name="TextAppearance.SubjectGameTitle" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="TextAppearance.Title.AverageScore" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/text_font_size_comment_score</item>
+        <item name="android:textColor">@color/secondary_text_light</item>
+    </style>
+    <style name="TextAppearance.Title.AverageScoreText" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/prefences_secondary_size</item>
+        <item name="android:textColor">@color/primary_text_light</item>
+    </style>
+    <style name="TextAppearance.Title.Percentage" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@color/text_color_black_90</item>
+    </style>
+    <style name="TextAppearance.Title.TotalScoreCount" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@color/tertiary_text_light</item>
+    </style>
+    <style name="TextAppearance.TopCue" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/head_cue_text_size</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TextAppearance.Widget.EditText" parent="@miui:style/TextAppearance.Widget.EditText" />
+    <style name="TextAppearance.Widget.EditText.Search" parent="@style/TextAppearance.Widget.EditText">
+        <item name="android:textColor">@color/text_color_black_30</item>
+        <item name="android:textColorHint">@color/text_color_black_30</item>
+    </style>
+    <style name="TextViewV6ListItemBbs">
+        <item name="android:textSize">@dimen/list_item_main</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+    </style>
+    <style name="TextViewV6ListItemBbsSub">
+        <item name="android:textSize">@dimen/main_padding</item>
+        <item name="android:textColor">@color/text_color_black_60</item>
+    </style>
+    <style name="TextViewV6ListItemBbsTitle">
+        <item name="android:textSize">18.329987dip</item>
+        <item name="android:textColor">@color/color_black_tran_90</item>
+    </style>
+    <style name="TextViewV6ListItemGroup">
+        <item name="android:textSize">@dimen/list_item_group</item>
+        <item name="android:textColor">@color/color_black_tran_40</item>
+    </style>
+    <style name="TextViewV6ListItemMain">
+        <item name="android:textSize">@dimen/list_item_main</item>
+        <item name="android:textColor">@color/color_black_tran_90</item>
+    </style>
+    <style name="TextViewV6ListItemSub">
+        <item name="android:textSize">@dimen/list_item_sub</item>
+        <item name="android:textColor">@color/color_black_tran_50</item>
+    </style>
+    <style name="TextViewV6WallItemMain">
+        <item name="android:textSize">@dimen/wall_item_main</item>
+        <item name="android:textColor">@color/color_black_tran_80</item>
+    </style>
+    <style name="TextViewV6WallItemSub">
+        <item name="android:textSize">@dimen/wall_item_sub</item>
+        <item name="android:textColor">@color/color_black_tran_40</item>
+    </style>
+    <style name="Theme.ActionBarTitleDemo.NoTitle" parent="@miui:style/Theme.Light.ActionBar.NoTitle" />
+    <style name="Theme.BbsUser" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@drawable/color_title_bg</item>
+    </style>
+    <style name="Theme.Dark" parent="@miui:style/Theme.Dark">
+        <item name="android:windowBackground">@drawable/color_title_bg</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="miui:actionBarSplitBackground">@drawable/color_title_bg</item>
+    </style>
+    <style name="Theme.Dark.FullScreen" parent="@style/Theme.Dark">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="miui:windowActionBar">false</item>
+        <item name="miui:windowActionBarOverlay">false</item>
+    </style>
+    <style name="Theme.Dark.FullScreen.Video" parent="@style/Theme.Dark.FullScreen">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="Theme.Dark.MachineRank" parent="@style/Theme.Dark">
+        <item name="android:actionBarSize">@dimen/view_dimen_354</item>
+    </style>
+    <style name="Theme.DarkNoTitle" parent="@miui:style/Theme.Dark.NoTitle">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="Theme.DarkTranslucentNoTitle" parent="@miui:style/Theme.Dark.NoTitle">
+        <item name="android:windowBackground">@drawable/color_title_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="miui:windowActionBar">false</item>
+        <item name="miui:windowActionBarOverlay">false</item>
+        <item name="miui:actionBarSplitBackground">@drawable/color_title_bg</item>
+    </style>
+    <style name="Theme.Light" parent="@miui:style/Theme.Light">
+        <item name="android:windowBackground">@color/color_efefef</item>
+        <item name="android:autoCompleteTextViewStyle">@android:style/Widget.AutoCompleteTextView</item>
+        <item name="android:editTextStyle">@miui:style/Widget.EditText</item>
+        <item name="android:textColor">@color/text_color_black_80</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="android:actionButtonStyle">@miui:style/Widget.ActionButton</item>
+        <item name="android:actionBarTabTextStyle">@style/Widget.ActionBar.TabText.Custom</item>
+        <item name="android:editTextColor">@color/edit_text_light</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_light</item>
+        <item name="miui:actionBarDeleteIcon">@miui:drawable/action_button_delete_light</item>
+        <item name="miui:actionBarDiscardIcon">@miui:drawable/action_button_discard_light</item>
+        <item name="miui:actionBarSplitBackground">@drawable/color_title_bg</item>
+        <item name="miui:editTextSearchStyle">@miui:style/Widget.EditText.Search</item>
+    </style>
+    <style name="Theme.Light.AlertDialog" parent="@miui:style/Theme.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.Light.Detail" parent="@style/Theme.Light">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="Theme.Light.Dialog" parent="@miui:style/Theme.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.Light.Dialog.NoTitle" parent="@miui:style/Theme.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="miui:windowActionBar">false</item>
+    </style>
+    <style name="Theme.Light.Fullscreen" parent="@style/Theme.Light">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.Light.NoTitle" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@color/color_efefef</item>
+    </style>
+    <style name="Theme.Light.Search" parent="@miui:style/Theme.Light.ActionBar.EmbedTabs">
+        <item name="android:actionBarStyle">@style/ActionBar_Search_Dark</item>
+        <item name="miui:editTextSearchStyle">@style/actionbar_search_text</item>
+    </style>
+    <style name="Theme.Light.Settings.NoTitle" parent="@miui:style/Theme.Light.Settings.NoTitle" />
+    <style name="Theme.Light.Tab" parent="@miui:style/Theme.Light.ActionBar.EmbedTabs">
+        <item name="android:actionBarTabStyle">@style/Widget.ActionBar.TabView</item>
+    </style>
+    <style name="Theme.Light.Tab.NoTitle" parent="@style/Theme.Light.Tab">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Custom</item>
+        <item name="android:actionBarTabBarStyle">@style/Widget.ActionBar.TabBar</item>
+    </style>
+    <style name="Theme.Light.Translucent" parent="@style/Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.Light.White" parent="@style/Theme.Light">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="Theme.LightTranslucentNoTitle" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="android:windowBackground">@drawable/color_title_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="miui:windowActionBar">false</item>
+        <item name="miui:windowActionBarOverlay">false</item>
+        <item name="miui:actionBarSplitBackground">@drawable/color_title_bg</item>
+    </style>
+    <style name="Theme.NoScroll" parent="@style/Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Web</item>
+    </style>
+    <style name="Theme.NoTitle" parent="@miui:style/Theme.Light.HidePopupArrow">
+        <item name="miui:windowActionBar">false</item>
+        <item name="miui:windowActionBarOverlay">false</item>
+    </style>
+    <style name="Theme.NoTitle.Edit" parent="@style/Theme.NoTitle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.Settings" parent="@miui:style/Theme.Light.Settings" />
+    <style name="ThemeDarkNoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="miui:windowActionBar">false</item>
+        <item name="miui:windowActionBarOverlay">false</item>
+    </style>
+    <style name="ThemeWebkitDark" parent="@miui:style/Theme.Dark">
+        <item name="android:windowBackground">@color/dark_theme_background_color</item>
+    </style>
+    <style name="VipTextAppearance">
+        <item name="android:textColorHighlight">@color/text_color_highlight</item>
+        <item name="android:textColorLink">@color/text_color_link</item>
+        <item name="android:shadowColor">@color/text_color_shadow</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="VipTextAppearance.More" parent="@style/VipTextAppearance">
+        <item name="android:textSize">@dimen/vip_text_font_size_large</item>
+        <item name="android:textColor">@color/more_text</item>
+    </style>
+    <style name="VipTextAppearance.More.Number" parent="@style/VipTextAppearance.More">
+        <item name="android:textSize">@dimen/vip_text_font_size_large</item>
+        <item name="android:textColor">@color/more_num_text</item>
+    </style>
+    <style name="VipTextAppearance.Primary" parent="@style/TextAppearance.Primary" />
+    <style name="VipTextAppearance.Primary.Mypage" parent="@style/VipTextAppearance.Primary">
+        <item name="android:textSize">@dimen/primary_text_size</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="VipTextAppearance.Primary.Mypage.Info" parent="@style/VipTextAppearance.Primary.Mypage">
+        <item name="android:textSize">@dimen/text_font_size_huge</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    <style name="VipTextAppearance.Secondary" parent="@style/VipTextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="VipTextAppearance.Secondary.Mypage" parent="@style/VipTextAppearance.Secondary">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+    </style>
+    <style name="VipTitleTextAppearance">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="Widget" parent="@miui:style/Widget" />
+    <style name="Widget.ActionBar" parent="@miui:style/Widget.ActionBar">
+        <item name="android:background">@drawable/action_bar_title_bg</item>
+    </style>
+    <style name="Widget.ActionBar.Custom" parent="@style/Widget.ActionBar">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="Widget.ActionBar.TabBar" parent="@miui:style/Widget.ActionBar.TabBar">
+        <item name="android:paddingLeft">@dimen/common_padding</item>
+    </style>
+    <style name="Widget.ActionBar.TabText" parent="@miui:style/Widget.ActionBar.TabText" />
+    <style name="Widget.ActionBar.TabText.Custom" parent="@miui:style/Widget.ActionBar.TabText">
+        <item name="android:textColor">@color/main_tab_text_color</item>
+    </style>
+    <style name="Widget.ActionBar.TabView" parent="@miui:style/Widget.ActionBar.TabView">
+        <item name="android:background">@null</item>
+        <item name="android:paddingRight">20.0dip</item>
+    </style>
+    <style name="Widget.BottomBar" parent="@miui:style/Widget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/detail_bottom_bar_height</item>
+    </style>
+    <style name="Widget.BottomBar.TopLine" parent="@miui:style/Widget">
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/divider</item>
+    </style>
+    <style name="Widget.BottomBarButton" parent="@miui:style/Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/bottom_middle_btn</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+    </style>
+    <style name="Widget.BottomBarIcon" parent="@miui:style/Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="Widget.Button" parent="@miui:style/Widget.Button" />
+    <style name="Widget.Button.Action" parent="@miui:style/Widget.Button.Positive">
+        <item name="android:textAppearance">@style/TextAppearance.Button.Action</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/action_btn</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/action_button_width</item>
+        <item name="android:minHeight">@dimen/action_button_height</item>
+    </style>
+    <style name="Widget.Button.Action.Banner" parent="@style/Widget.Button.Action">
+        <item name="android:textAppearance">@style/TextAppearance.Button.Action.Banner</item>
+        <item name="android:background">@drawable/simple_banner_action_btn_bg</item>
+    </style>
+    <style name="Widget.Button.Action.Common" parent="@style/Widget.Button.Action">
+        <item name="android:background">@drawable/action_btn_common</item>
+    </style>
+    <style name="Widget.Button.Action.CommonDark" parent="@style/Widget.Button.Action">
+        <item name="android:textAppearance">@style/TextAppearance.Button.Action.Dark</item>
+        <item name="android:background">@drawable/action_btn_dark</item>
+    </style>
+    <style name="Widget.Button.Action.Giftpack" parent="@style/Widget.Button.Action">
+        <item name="android:textSize">@dimen/text_font_size_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/action_fill_btn</item>
+        <item name="android:paddingLeft">@dimen/main_padding_medium</item>
+        <item name="android:paddingTop">@dimen/main_padding_medium</item>
+        <item name="android:paddingRight">@dimen/main_padding_medium</item>
+        <item name="android:paddingBottom">@dimen/main_padding_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/gift_action_button_width</item>
+    </style>
+    <style name="Widget.Button.Action.NoBound" parent="@style/Widget.Button.Action">
+        <item name="android:background">@drawable/action_btn_common_no_bound</item>
+    </style>
+    <style name="Widget.Button.Action.SimpleBanner" parent="@style/Widget.Button.Action">
+        <item name="android:textAppearance">@style/TextAppearance.Button.Action.SimpleBanner</item>
+        <item name="android:background">@drawable/simple_banner_action_btn_bg</item>
+    </style>
+    <style name="Widget.Button.Action.SingleGame" parent="@style/Widget.Button.Action">
+        <item name="android:textSize">@dimen/text_font_size_tiny</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/color_replace_bonus_tiptext</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/view_dimen_172</item>
+        <item name="android:minHeight">@dimen/view_dimen_80</item>
+    </style>
+    <style name="Widget.Button.Action.subjec_taptitude_btn" parent="@style/Widget.Button.Action">
+        <item name="android:background">@drawable/simple_taptitude_action_btn_bg</item>
+    </style>
+    <style name="Widget.Button.Negative" parent="@miui:style/Widget.Button.Negative" />
+    <style name="Widget.Button.Positive" parent="@miui:style/Widget.Button.Positive" />
+    <style name="Widget.Button.Tab" parent="@style/Widget.Button">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Widget.CommentsHeaderRatingList" parent="@style/Widget">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/comment_padding_rating_list</item>
+        <item name="android:layout_marginRight">@dimen/main_padding_35</item>
+        <item name="android:layout_toRightOf">@id/container</item>
+        <item name="android:layout_alignTop">@id/container</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="Widget.CommentsHeaderRatingListItem" parent="@style/Widget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginBottom">@dimen/rating_list_gap</item>
+    </style>
+    <style name="Widget.CommentsHeaderScoreAverageScore" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Title.AverageScore</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/comment_padding_summary_score_top</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.CommentsHeaderScoreAverageText" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Title.AverageScoreText</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/comment_padding_summary_title_top</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.CommentsHeaderScoreContainer" parent="@style/Widget">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/average_score_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/system_list_padding</item>
+        <item name="android:layout_marginTop">@dimen/comment_padding_summary</item>
+        <item name="android:layout_marginBottom">@dimen/comment_padding_summary</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="Widget.CommentsHeaderScoreTotalCount" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Title.TotalScoreCount</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Widget.Dark.ActionBar.TabText.Custom" parent="@miui:style/Widget.Dark.ActionBar.TabText">
+        <item name="android:textSize">@dimen/text_font_size_48</item>
+    </style>
+    <style name="Widget.DetailTabGroup" parent="@style/Widget.TabGroup">
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+    </style>
+    <style name="Widget.EditText.Search" parent="@miui:style/Widget.AutoCompleteTextView.Search">
+        <item name="android:layout_width">@dimen/action_search_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:completionThreshold">1</item>
+        <item name="android:popupBackground">@drawable/list_all_bg</item>
+    </style>
+    <style name="Widget.GridView" parent="@style/Widget">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/recommend_grid_padding</item>
+        <item name="android:paddingRight">@dimen/recommend_grid_padding</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:horizontalSpacing">@dimen/recommend_grid_gap</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:numColumns">2</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+        <item name="miui:children_sequence_state">false</item>
+    </style>
+    <style name="Widget.GridView.Subject" parent="@style/Widget.GridView">
+        <item name="android:paddingLeft">@dimen/main_padding_24</item>
+        <item name="android:paddingRight">@dimen/main_padding_24</item>
+        <item name="android:horizontalSpacing">@dimen/main_padding_18</item>
+        <item name="android:verticalSpacing">0.0dip</item>
+    </style>
+    <style name="Widget.GridView.Subject.Taptitude" parent="@style/Widget.GridView">
+        <item name="android:paddingLeft">@dimen/main_padding_40</item>
+        <item name="android:paddingRight">@dimen/main_padding_40</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:horizontalSpacing">@dimen/main_padding_40</item>
+        <item name="android:verticalSpacing">@dimen/main_padding_40</item>
+    </style>
+    <style name="Widget.ListView.Item.SingleLine" parent="@miui:style/Widget.ListView.Item.SingleLine">
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="Widget.ProgressBar.Comment" parent="@miui:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">171.34dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+    </style>
+    <style name="Widget.ProgressBar.ReadOnly" parent="@miui:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">@dimen/comment_progressbar_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+    </style>
+    <style name="Widget.ProgressBar.ReadOnly.Dark" parent="@style/Widget.ProgressBar.ReadOnly">
+        <item name="android:background">@drawable/progressbar_horizontal_dark_bg</item>
+    </style>
+    <style name="Widget.RatingBar.Small" parent="@android:style/Widget.RatingBar">
+        <item name="android:focusable">false</item>
+        <item name="android:maxHeight">@dimen/ratingbar_size_small</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_indicator_small</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_indicator_small</item>
+        <item name="android:minHeight">@dimen/ratingbar_size_small</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="Widget.RatingBar.Small.Dark" parent="@style/Widget.RatingBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_indicator_small_dark</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_indicator_small_dark</item>
+    </style>
+    <style name="Widget.ScrollView" parent="@style/Widget">
+        <item name="android:fadingEdgeLength">50.0dip</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+    </style>
+    <style name="Widget.SearchActionMode" parent="@style/Widget">
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/search_mode_bg_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Widget.SeekBar.Media" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">@dimen/main_padding_8</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/video_progressbar</item>
+        <item name="android:minHeight">@dimen/main_padding_8</item>
+        <item name="android:thumb">@drawable/media_thumb</item>
+        <item name="android:thumbOffset">@dimen/main_padding_15</item>
+    </style>
+    <style name="Widget.TabGroup" parent="@style/Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/system_list_padding</item>
+        <item name="android:layout_marginRight">@dimen/system_list_padding</item>
+    </style>
+    <style name="account_localgametitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff3e3e3e</item>
+    </style>
+    <style name="actionbar_search_text" parent="@miui:style/Widget.EditText.Search">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="animate_dialog">
+        <item name="android:windowEnterAnimation">@anim/appear</item>
+        <item name="android:windowExitAnimation">@anim/dialog_disappear</item>
+    </style>
+    <style name="pullToRefreshProg">
+        <item name="android:background">@null</item>
+        <item name="android:maxWidth">21.329987dip</item>
+        <item name="android:maxHeight">21.329987dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/pull_to_refresh_progress</item>
+        <item name="android:progressDrawable">@drawable/pull_to_refresh_progress</item>
+        <item name="android:minWidth">21.329987dip</item>
+        <item name="android:minHeight">21.329987dip</item>
+    </style>
+    <style name="pullToRefreshProgLight">
+        <item name="android:background">@null</item>
+        <item name="android:maxWidth">21.329987dip</item>
+        <item name="android:maxHeight">21.329987dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/pull_to_refresh_progress_light</item>
+        <item name="android:progressDrawable">@drawable/pull_to_refresh_progress_light</item>
+        <item name="android:minWidth">21.329987dip</item>
+        <item name="android:minHeight">21.329987dip</item>
+    </style>
+    <style name="translucent_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>
