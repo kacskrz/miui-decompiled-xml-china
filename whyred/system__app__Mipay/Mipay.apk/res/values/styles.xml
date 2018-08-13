@@ -693,8 +693,14 @@
     </style>
     <style name="AlertDialog.AppCompat" parent="@style/Base.AlertDialog.AppCompat" />
     <style name="AlertDialog.AppCompat.Light" parent="@style/Base.AlertDialog.AppCompat.Light" />
+    <style name="Animation" />
     <style name="Animation.AppCompat.Dialog" parent="@style/Base.Animation.AppCompat.Dialog" />
     <style name="Animation.AppCompat.DropDownUp" parent="@style/Base.Animation.AppCompat.DropDownUp" />
+    <style name="Animation.PopupWindow" parent="@style/Animation" />
+    <style name="Animation.PopupWindow.ImmersionMenu" parent="@style/Animation.PopupWindow">
+        <item name="android:windowEnterAnimation">@anim/mipay_immersion_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/mipay_immersion_menu_exit</item>
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="@android:style/Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>
@@ -1552,12 +1558,10 @@
     <style name="Mipay.Widget.EditText.Background.Transparent" parent="@style/Mipay.Widget.EditText">
         <item name="android:background">@null</item>
     </style>
-    <style name="Mipay.Widget.List.popup.menu.item" parent="@miui:style/Widget.PopupMenu">
-        <item name="android:background">?miui:listPopupItemBackground</item>
-        <item name="android:minHeight">?android:listPreferredItemHeightSmall</item>
-    </style>
     <style name="Mipay.Widget.ListView.Item.DoubleLine" parent="@miui:style/Widget.ListView.Item.DoubleLine" />
-    <style name="Mipay.Widget.ListView.Item.Immersion" parent="@miui:style/Widget.ListView.Item.Immersion" />
+    <style name="Mipay.Widget.ListView.Item.Immersion" parent="@miui:style/Widget.ListView.Item.Immersion">
+        <item name="android:background">@drawable/immersion_item_bg_light</item>
+    </style>
     <style name="Mipay.Widget.ListView.Item.SingleLine" parent="@miui:style/Widget.ListView.Item.SingleLine" />
     <style name="Mipay.Widget.NumberEditText" parent="@style/Mipay.Widget">
         <item name="numberBackground">@drawable/mipay_number_edit_bg</item>
