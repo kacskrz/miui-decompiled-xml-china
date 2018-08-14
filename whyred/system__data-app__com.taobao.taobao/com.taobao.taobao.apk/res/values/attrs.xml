@@ -5,6 +5,10 @@
     <attr name="borderThickness" format="dimension" />
     <attr name="centered1" format="boolean" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="custom_attr_color" format="reference|color" />
+    <attr name="custom_attr_gradient_end" format="reference|color" />
+    <attr name="custom_attr_gradient_start" format="reference|color" />
+    <attr name="custom_attr_record_line" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="height" format="dimension" />
     <attr name="isLightTheme" format="boolean" />
@@ -16,6 +20,7 @@
     </attr>
     <attr name="strokeWidth" format="dimension" />
     <attr name="title" format="string" />
+    <attr name="uikActionViewStyle" format="reference" />
     <attr name="uik_clickMaskColor" format="color" />
     <attr name="uik_clickMaskEnable" format="boolean" />
     <attr name="uik_error_background" format="reference" />
@@ -79,6 +84,7 @@
     <attr name="uik_shadowDrawable" format="reference" />
     <attr name="uik_shadowHeight" format="dimension" />
     <attr name="uik_strokeColor" format="reference|color" />
+    <attr name="uik_strokeEnable" format="boolean" />
     <attr name="uik_strokeWidth" format="dimension" />
     <attr name="unselectedColor" format="color" />
     <attr name="navigationMode">
@@ -115,6 +121,8 @@
     <attr name="contentInsetEnd" format="dimension" />
     <attr name="contentInsetLeft" format="dimension" />
     <attr name="contentInsetRight" format="dimension" />
+    <attr name="contentInsetStartWithNavigation" format="dimension" />
+    <attr name="contentInsetEndWithActions" format="dimension" />
     <attr name="elevation" format="dimension" />
     <attr name="popupTheme" format="reference" />
     <attr name="closeItemLayout" format="reference" />
@@ -125,6 +133,7 @@
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="singleChoiceItemLayout" format="reference" />
     <attr name="listItemLayout" format="reference" />
+    <attr name="showTitle" format="boolean" />
     <attr name="ak_loop" format="boolean" />
     <attr name="ak_autoPlay" format="boolean" />
     <attr name="ak_jsonFilePath" format="string" />
@@ -135,6 +144,8 @@
         <enum name="voice_thinking" value="3" />
     </attr>
     <attr name="expanded" format="boolean" />
+    <attr name="state_collapsed" format="boolean" />
+    <attr name="state_collapsible" format="boolean" />
     <attr name="layout_scrollFlags">
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
@@ -144,6 +155,16 @@
     </attr>
     <attr name="layout_scrollInterpolator" format="reference" />
     <attr name="srcCompat" format="reference" />
+    <attr name="tickMark" format="reference" />
+    <attr name="tickMarkTint" format="color" />
+    <attr name="tickMarkTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="textAllCaps" format="reference|boolean" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
@@ -187,6 +208,7 @@
     <attr name="actionModePopupWindowStyle" format="reference" />
     <attr name="textAppearanceLargePopupMenu" format="reference" />
     <attr name="textAppearanceSmallPopupMenu" format="reference" />
+    <attr name="textAppearancePopupMenuHeader" format="reference" />
     <attr name="dialogTheme" format="reference" />
     <attr name="dialogPreferredPadding" format="dimension" />
     <attr name="listDividerAlertDialog" format="reference" />
@@ -236,6 +258,7 @@
     <attr name="colorButtonNormal" format="color" />
     <attr name="colorSwitchThumbNormal" format="color" />
     <attr name="controlBackground" format="reference" />
+    <attr name="colorBackgroundFloating" format="color" />
     <attr name="alertDialogStyle" format="reference" />
     <attr name="alertDialogButtonGroupStyle" format="reference" />
     <attr name="alertDialogCenterButtons" format="boolean" />
@@ -257,12 +280,16 @@
     <attr name="seekBarStyle" format="reference" />
     <attr name="spinnerStyle" format="reference" />
     <attr name="switchStyle" format="reference" />
+    <attr name="listMenuViewStyle" format="reference" />
     <attr name="uik_minTextSize" format="dimension" />
     <attr name="uik_autoScrollInterval" format="integer" />
     <attr name="uik_autoScroll" format="boolean" />
     <attr name="imageViewBorderColor" format="color" />
-    <attr name="behavior_peekHeight" format="dimension" />
+    <attr name="behavior_peekHeight" format="dimension">
+        <enum name="auto" value="-1" />
+    </attr>
     <attr name="behavior_hideable" format="boolean" />
+    <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="uik_maxRatio" format="float" />
     <attr name="uik_brickGap" format="dimension" />
     <attr name="uik_brickMaxLines" format="integer" />
@@ -286,12 +313,6 @@
     <attr name="radius1" format="dimension" />
     <attr name="snap" format="boolean" />
     <attr name="strokeColor" format="color" />
-    <attr name="layout_collapseMode">
-        <enum name="none" value="0" />
-        <enum name="parallax" value="2" />
-        <enum name="pin" value="1" />
-    </attr>
-    <attr name="layout_collapseParallaxMultiplier" format="float" />
     <attr name="expandedTitleMargin" format="dimension" />
     <attr name="expandedTitleMarginStart" format="dimension" />
     <attr name="expandedTitleMarginTop" format="dimension" />
@@ -302,6 +323,8 @@
     <attr name="contentScrim" format="color" />
     <attr name="statusBarScrim" format="color" />
     <attr name="toolbarId" format="reference" />
+    <attr name="scrimVisibleHeightTrigger" format="dimension" />
+    <attr name="scrimAnimationDuration" format="integer" />
     <attr name="collapsedTitleGravity">
         <flag name="center" value="0x00000011" />
         <flag name="end" value="0x00800005" />
@@ -327,6 +350,13 @@
         <flag name="top" value="0x00000030" />
     </attr>
     <attr name="titleEnabled" format="boolean" />
+    <attr name="layout_collapseMode">
+        <enum name="none" value="0" />
+        <enum name="parallax" value="2" />
+        <enum name="pin" value="1" />
+    </attr>
+    <attr name="layout_collapseParallaxMultiplier" format="float" />
+    <attr name="alpha" format="float" />
     <attr name="buttonTint" format="color" />
     <attr name="buttonTintMode">
         <enum name="multiply" value="14" />
@@ -355,6 +385,25 @@
         <flag name="clip_horizontal" value="0x00000008" />
         <flag name="clip_vertical" value="0x00000080" />
         <flag name="fill_horizontal" value="0x00000007" />
+    </attr>
+    <attr name="layout_insetEdge">
+        <enum name="end" value="8388613" />
+        <enum name="start" value="8388611" />
+        <enum name="none" value="0" />
+        <enum name="bottom" value="80" />
+        <enum name="left" value="3" />
+        <enum name="right" value="3" />
+        <enum name="top" value="48" />
+    </attr>
+    <attr name="layout_dodgeInsetEdges">
+        <flag name="end" value="0x00800005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="none" value="0x00000000" />
+        <flag name="bottom" value="0x00000050" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000003" />
+        <flag name="top" value="0x00000030" />
+        <flag name="all" value="0x00000077" />
     </attr>
     <attr name="millisecondsLeft" format="integer" />
     <attr name="refreshThreshHold" format="integer" />
@@ -399,17 +448,10 @@
     <attr name="barLength" format="dimension" />
     <attr name="thickness" format="dimension" />
     <attr name="cols" format="integer" />
-    <attr name="app_action_front_icon" format="string" />
-    <attr name="app_action_back_icon" format="string" />
-    <attr name="app_action_icon_size" format="dimension" />
-    <attr name="app_action_icon_color" format="reference|color" />
-    <attr name="app_action_icon_padding" format="dimension" />
-    <attr name="app_action_icon_bg" format="reference|color" />
-    <attr name="app_action_dot_num_bg" format="color" />
-    <attr name="app_action_num_size" format="dimension" />
-    <attr name="app_action_num_color" format="reference|color" />
-    <attr name="app_action_stroke_width" format="dimension" />
-    <attr name="app_action_stroke_color" format="reference|color" />
+    <attr name="uik_imagesavefeature" format="boolean" />
+    <attr name="uik_imageShapeFeature" format="boolean" />
+    <attr name="uik_smoothScrollFeature" format="boolean" />
+    <attr name="uik_smoothRecyclerScrollFeature" format="boolean" />
     <attr name="uik_clickDrawableMaskFeature" format="boolean" />
     <attr name="uik_ratioFeature" format="boolean" />
     <attr name="uik_roundFeature" format="boolean" />
@@ -424,19 +466,19 @@
     <attr name="uik_pencilShapeFeature" format="boolean" />
     <attr name="uik_autoScaleFeature" format="boolean" />
     <attr name="uik_rotateFeature" format="boolean" />
-    <attr name="uik_imagesavefeature" format="boolean" />
     <attr name="uik_cellAnimatorFeature" format="boolean" />
     <attr name="uik_recyclerCellAnimatorFeature" format="boolean" />
     <attr name="uik_dragToRefreshFeature" format="boolean" />
-    <attr name="uik_imageShapeFeature" format="boolean" />
     <attr name="rippleColor" format="color" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
+        <enum name="auto" value="-1" />
         <enum name="mini" value="1" />
     </attr>
     <attr name="pressedTranslationZ" format="dimension" />
     <attr name="borderWidth" format="dimension" />
     <attr name="useCompatPadding" format="boolean" />
+    <attr name="behavior_autoHide" format="boolean" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="gif" format="reference" />
     <attr name="paused" format="boolean" />
@@ -476,6 +518,7 @@
     <attr name="homeTxHeight" format="dimension" />
     <attr name="uik_fade_in" format="boolean" />
     <attr name="uik_skip_auto_size" format="boolean" />
+    <attr name="uik_auto_release_image" format="boolean" />
     <attr name="uik_when_null_clear_img" format="boolean" />
     <attr name="uik_place_hold_foreground" format="reference" />
     <attr name="uik_shapeType">
@@ -526,19 +569,13 @@
     <attr name="actionViewClass" format="string" />
     <attr name="actionProviderClass" format="string" />
     <attr name="preserveIconSpacing" format="boolean" />
+    <attr name="subMenuArrow" format="reference" />
     <attr name="menu" format="reference" />
     <attr name="itemIconTint" format="color" />
     <attr name="itemTextColor" format="color" />
     <attr name="itemBackground" format="reference" />
     <attr name="itemTextAppearance" format="reference" />
     <attr name="headerLayout" format="reference" />
-    <attr name="newMemberPageName">
-        <enum name="NewMember_DetailPage" value="3" />
-        <enum name="NewMember_DiscoveryPage" value="2" />
-        <enum name="NewMember_HomePage" value="1" />
-        <enum name="NewMember_SearchPage" value="4" />
-        <enum name="NewMember_WeiTaoPage" value="5" />
-    </attr>
     <attr name="animationDuration" format="integer" />
     <attr name="position">
         <enum name="bottom" value="1" />
@@ -565,6 +602,8 @@
     <attr name="interval" format="dimension" />
     <attr name="supportGestureRating" format="boolean" />
     <attr name="aspectRatio" format="float" />
+    <attr name="paddingBottomNoButtons" format="dimension" />
+    <attr name="paddingTopNoTitle" format="dimension" />
     <attr name="layoutManager" format="string" />
     <attr name="spanCount" format="integer" />
     <attr name="reverseLayout" format="boolean" />
@@ -582,7 +621,6 @@
     <attr name="isRound" format="boolean" />
     <attr name="uik_shadowOffset" format="dimension" />
     <attr name="shadow" format="reference" />
-    <attr name="uik_strokeEnable" format="boolean" />
     <attr name="roundx" format="float" />
     <attr name="roundy" format="float" />
     <attr name="roundcolor" format="reference|color" />
@@ -635,13 +673,54 @@
     <attr name="scale" format="float" />
     <attr name="hourHandSize" format="integer" />
     <attr name="minuteHandSize" format="integer" />
+    <attr name="thumbTint" format="color" />
+    <attr name="thumbTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="track" format="reference" />
+    <attr name="trackTint" format="color" />
+    <attr name="trackTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="thumbTextPadding" format="dimension" />
     <attr name="switchTextAppearance" format="reference" />
     <attr name="switchMinWidth" format="dimension" />
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
+    <attr name="uikMinHeight" format="dimension" />
+    <attr name="uikMinWidth" format="dimension" />
+    <attr name="uikIcon" format="reference" />
+    <attr name="uikTitle" format="string" />
+    <attr name="uikIconColor" format="reference|color" />
+    <attr name="uikIconSize" format="dimension" />
+    <attr name="uikMessageDotHeight" format="dimension" />
+    <attr name="uikMessageDotWidth" format="dimension" />
+    <attr name="uikMessageOneNumWidth" format="dimension" />
+    <attr name="uikMessageOneNumHeight" format="dimension" />
+    <attr name="uikMessageTwoNumWidth" format="dimension" />
+    <attr name="uikMessageTwoNumHeight" format="dimension" />
+    <attr name="uikMessageDotMarginTop" format="dimension" />
+    <attr name="uikMessageDotMarginRight" format="dimension" />
+    <attr name="uikMessageOneNumMarginTop" format="dimension" />
+    <attr name="uikMessageOneNumMarginLeft" format="dimension" />
+    <attr name="uikMessageTwoNumMarginTop" format="dimension" />
+    <attr name="uikMessageTwoNumMarginLeft" format="dimension" />
+    <attr name="uikMessageTextSize" format="dimension" />
+    <attr name="uikMessageTextColor" format="reference|color" />
+    <attr name="uikMessageBackgroundColor" format="reference|color" />
+    <attr name="uikMessageBorderWidth" format="dimension" />
+    <attr name="uikMessageBorderColor" format="reference|color" />
     <attr name="uik_ringColor" format="reference|color" />
     <attr name="uik_ringWidth" format="dimension" />
     <attr name="uik_ringSize" format="dimension" />
@@ -705,6 +784,17 @@
     <attr name="counterTextAppearance" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="hintAnimationEnabled" format="boolean" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="clipPadding" format="dimension" />
     <attr name="footerColor" format="color" />
     <attr name="footerLineHeight" format="dimension" />
@@ -725,12 +815,17 @@
     <attr name="topPadding" format="dimension" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
-    <attr name="titleMargins" format="dimension" />
+    <attr name="titleMargin" format="dimension" />
     <attr name="titleMarginStart" format="dimension" />
     <attr name="titleMarginEnd" format="dimension" />
     <attr name="titleMarginTop" format="dimension" />
     <attr name="titleMarginBottom" format="dimension" />
+    <attr name="titleMargins" format="dimension" />
     <attr name="maxButtonHeight" format="dimension" />
+    <attr name="buttonGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="top" value="0x00000030" />
+    </attr>
     <attr name="collapseIcon" format="reference" />
     <attr name="collapseContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
@@ -738,7 +833,6 @@
     <attr name="logoDescription" format="string" />
     <attr name="titleTextColor" format="color" />
     <attr name="subtitleTextColor" format="color" />
-    <attr name="bottomDivider" format="boolean" />
     <attr name="fades" format="boolean" />
     <attr name="fadeDelay" format="integer" />
     <attr name="fadeLength" format="integer" />
