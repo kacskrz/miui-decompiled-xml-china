@@ -361,6 +361,9 @@
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
+    <style name="AppSettingTheme" parent="@style/BaseAppTheme">
+        <item name="android:windowBackground">@color/c_white</item>
+    </style>
     <style name="AppTheme" parent="@style/BaseAppTheme" />
     <style name="AuthorDetailTheme" parent="@style/BaseAppTheme">
         <item name="vpiTabPageIndicatorStyle">@style/AuthorDetailIndicator</item>
@@ -1286,6 +1289,10 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+    <style name="FullScreenTheme" parent="@style/AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
     <style name="Information">
         <item name="android:enabled">false</item>
         <item name="android:layout">@layout/ui_preference_information</item>
@@ -1724,7 +1731,7 @@
         <item name="android:textColor">@color/c_preference_category_text_light</item>
     </style>
     <style name="TextAppearance.PreferenceList" parent="@style/TextAppearance">
-        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textSize">@dimen/sp_15</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@drawable/selector_preference_primary_text_color</item>
     </style>
@@ -1818,6 +1825,9 @@
     <style name="TitleTextViewStyle" parent="@android:style/Widget.TextView">
         <item name="android:textSize">@dimen/sp_14</item>
         <item name="android:textColor">@color/text_color_deep_dark</item>
+    </style>
+    <style name="TranslucentFullScreenTheme" parent="@style/FullScreenTheme">
+        <item name="android:windowIsTranslucent">true</item>
     </style>
     <style name="V8ShortTitleTextViewStyle" parent="@android:style/Widget.TextView">
         <item name="android:textSize">@dimen/size_42</item>
@@ -1995,6 +2005,26 @@
         <item name="android:background">@null</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
+    <style name="c_dialog_cancel">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/c_black_60</item>
+    </style>
+    <style name="c_dialog_content">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">#cd000000</item>
+    </style>
+    <style name="c_dialog_ok">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/c_black_60</item>
+    </style>
+    <style name="c_dialog_tips">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/c_black_40</item>
+    </style>
+    <style name="c_dialog_title">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/c_black</item>
+    </style>
     <style name="comment_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2036,10 +2066,14 @@
         <item name="android:windowEnterAnimation">@anim/local_video_appear</item>
         <item name="android:windowExitAnimation">@anim/local_video_disappear</item>
     </style>
-    <style name="local_play_activity_style" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+    <style name="local_play_activity_style" parent="@android:style/Theme.NoTitleBar.Fullscreen">
         <item name="android:listViewStyle">@style/ListViewStyle</item>
         <item name="android:windowAnimationStyle">@style/localVideo_translucent</item>
         <item name="android:fontFamily">@string/font_family</item>
+    </style>
+    <style name="local_player_activity_style" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
     </style>
     <style name="local_title1">
         <item name="android:textSize">@dimen/sp_12</item>
@@ -2207,7 +2241,7 @@
         <item name="android:layout_weight">1.0</item>
     </style>
     <style name="switch_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:layout_margin">10.0dip</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
         <item name="android:button">@drawable/selector_switch_check</item>
         <item name="android:layout_weight">1.0</item>
     </style>

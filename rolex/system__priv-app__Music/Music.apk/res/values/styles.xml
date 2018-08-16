@@ -122,6 +122,9 @@
     <style name="TextAppearance.Display.GridItem.Primary.SongGroupTitle" parent="@style/TextAppearance.Display.GridItem.Primary">
         <item name="android:textSize">@dimen/display_griditem_songgroup_title_text_size</item>
     </style>
+    <style name="TextAppearance.Display.GridItem.Primary.SpecialTitle" parent="@style/TextAppearance.Display.GridItem.Primary">
+        <item name="android:textSize">@dimen/display_griditem_special_title_text_size</item>
+    </style>
     <style name="TextAppearance.Display.GridItem.Secondary" parent="@style/TextAppearance.Display.GridItem">
         <item name="android:textSize">@dimen/display_griditem_second_text_size</item>
         <item name="android:textColor">@color/black_60_transparent</item>
@@ -232,12 +235,12 @@
         <item name="android:textColor">@color/preference_category_text_color_light</item>
     </style>
     <style name="TextAppearance.PreferenceList" parent="@style/TextAppearance">
-        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textSize">@dimen/preference_normal_text_size</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/preference_primary_text_light</item>
     </style>
     <style name="TextAppearance.PreferenceList.Summary" parent="@style/TextAppearance.PreferenceList">
-        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textSize">@dimen/preference_secondary_text_size</item>
         <item name="android:textColor">@color/preference_secondary_text_light</item>
     </style>
     <style name="TextAppearance.RadarState" parent="@style/TextAppearance">
@@ -314,6 +317,11 @@
         <item name="android:textSize">@dimen/text_size_navigator_view_title_normal</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black_70_transparent</item>
+    </style>
+    <style name="TextAppearance.Title.Settings" parent="@style/TextAppearance.Title">
+        <item name="android:textSize">@dimen/settings_action_bar_title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
     </style>
     <style name="TextAppearance.Title.SongGroup" parent="@style/TextAppearance.Title">
         <item name="android:textSize">@dimen/display_normal_text_size</item>
@@ -781,19 +789,17 @@
         <item name="android:paddingStart">0.0dip</item>
         <item name="android:paddingEnd">0.0dip</item>
     </style>
-    <style name="Widget.SlidingButton" parent="@style/Widget" />
-    <style name="Widget.SlidingButton.Dark" parent="@style/Widget.SlidingButton">
-        <item name="slide_frame">@drawable/sliding_btn_frame_dark</item>
-        <item name="slide_sliderOn">@drawable/sliding_btn_slider_on_dark</item>
-        <item name="slide_sliderOff">@drawable/sliding_btn_slider_off_dark</item>
-        <item name="slide_mask">@drawable/sliding_btn_mask_dark</item>
-    </style>
-    <style name="Widget.SlidingButton.Light" parent="@style/Widget.SlidingButton">
+    <style name="Widget.SlidingButton" parent="@style/Widget">
+        <item name="android:background">@drawable/btn_transparent_dark</item>
         <item name="slide_frame">@drawable/sliding_btn_frame_light</item>
         <item name="slide_sliderOn">@drawable/sliding_btn_slider_on_light</item>
         <item name="slide_sliderOff">@drawable/sliding_btn_slider_off_light</item>
         <item name="slide_mask">@drawable/sliding_btn_mask_light</item>
+        <item name="slide_barOff">@drawable/sliding_btn_bar_off_light</item>
+        <item name="slide_barOn">@drawable/sliding_btn_bar_on_light</item>
     </style>
+    <style name="Widget.SlidingButton.Dark" parent="@style/Widget.SlidingButton" />
+    <style name="Widget.SlidingButton.Light" parent="@style/Widget.SlidingButton" />
     <style name="Widget.Support.CoordinatorLayout" parent="@android:style/Widget">
         <item name="statusBarBackground">#ff000000</item>
     </style>

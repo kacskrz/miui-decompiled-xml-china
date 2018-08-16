@@ -1222,18 +1222,18 @@
     <style name="hybrid_notification_ambient">
         <item name="android:orientation">vertical</item>
         <item name="android:paddingBottom">23.5dip</item>
-        <item name="android:paddingStart">@android:dimen/notification_extra_margin_ambient</item>
-        <item name="android:paddingEnd">@android:dimen/notification_extra_margin_ambient</item>
+        <item name="android:paddingStart">@android:dimen/datepicker_list_year_activated_label_size</item>
+        <item name="android:paddingEnd">@android:dimen/datepicker_list_year_activated_label_size</item>
     </style>
     <style name="hybrid_notification">
-        <item name="android:paddingStart">@android:dimen/notification_content_margin_start</item>
+        <item name="android:paddingStart">@android:dimen/datepicker_selected_date_year_size</item>
         <item name="android:paddingEnd">12.0dip</item>
     </style>
     <style name="hybrid_notification_title_ambient">
         <item name="android:textSize">20.0sp</item>
         <item name="android:textColor">#ffffffff</item>
-        <item name="android:paddingStart">@android:dimen/notification_content_margin_start</item>
-        <item name="android:paddingEnd">@android:dimen/notification_content_margin_end</item>
+        <item name="android:paddingStart">@android:dimen/datepicker_selected_date_year_size</item>
+        <item name="android:paddingEnd">@android:dimen/datepicker_header_height</item>
     </style>
     <style name="hybrid_notification_title">
         <item name="android:paddingEnd">4.0dip</item>
@@ -1242,8 +1242,8 @@
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#eeffffff</item>
         <item name="android:layout_marginTop">4.0dip</item>
-        <item name="android:paddingStart">@android:dimen/notification_content_margin_start</item>
-        <item name="android:paddingEnd">@android:dimen/notification_content_margin_end</item>
+        <item name="android:paddingStart">@android:dimen/datepicker_selected_date_year_size</item>
+        <item name="android:paddingEnd">@android:dimen/datepicker_header_height</item>
     </style>
     <style name="hybrid_notification_text">
         <item name="android:paddingEnd">4.0dip</item>
@@ -1252,8 +1252,8 @@
     <style name="TextAppearance.StatusBar" parent="@style/TextAppearance">
         <item name="android:textAppearance">?android:textAppearanceSmall</item>
     </style>
-    <style name="TextAppearance.StatusBar.HeadsUp" parent="@android:style/TextAppearance.StatusBar" />
-    <style name="TextAppearance.StatusBar.SystemPanel" parent="@android:style/TextAppearance.StatusBar">
+    <style name="TextAppearance.StatusBar.HeadsUp" parent="@android:style/Animation.ZoomButtons" />
+    <style name="TextAppearance.StatusBar.SystemPanel" parent="@android:style/Animation.ZoomButtons">
         <item name="android:textAppearance">?android:textAppearance</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">#ff808080</item>
@@ -1272,7 +1272,7 @@
         <item name="android:textSize">@dimen/statusbar_battery_digit_size</item>
         <item name="android:textColor">@color/status_bar_textColor</item>
     </style>
-    <style name="TextAppearance.StatusBar.Carrier" parent="@android:style/TextAppearance.StatusBar">
+    <style name="TextAppearance.StatusBar.Carrier" parent="@android:style/Animation.ZoomButtons">
         <item name="android:textSize">@dimen/statusbar_carrier_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/status_bar_textColor</item>
@@ -1287,7 +1287,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/status_bar_textColor</item>
     </style>
-    <style name="TextAppearance.StatusBar.Expanded" parent="@android:style/TextAppearance.StatusBar">
+    <style name="TextAppearance.StatusBar.Expanded" parent="@android:style/Animation.ZoomButtons">
         <item name="android:textColor">?android:textColorTertiary</item>
     </style>
     <style name="TextAppearance.StatusBar.Expanded.Clock" parent="@style/TextAppearance.StatusBar.Expanded">
@@ -1396,12 +1396,12 @@
     </style>
     <style name="Animation" />
     <style name="Animation.ShirtPocketPanel" parent="@style/Animation">
-        <item name="android:windowEnterAnimation">@android:anim/grow_fade_in_from_bottom</item>
-        <item name="android:windowExitAnimation">@android:anim/shrink_fade_out_from_bottom</item>
+        <item name="android:windowEnterAnimation">@android:anim/dock_bottom_enter</item>
+        <item name="android:windowExitAnimation">@android:anim/push_up_out</item>
     </style>
     <style name="Animation.RecentPanel" parent="@style/Animation">
-        <item name="android:windowEnterAnimation">@android:anim/grow_fade_in_from_bottom</item>
-        <item name="android:windowExitAnimation">@android:anim/shrink_fade_out_from_bottom</item>
+        <item name="android:windowEnterAnimation">@android:anim/dock_bottom_enter</item>
+        <item name="android:windowExitAnimation">@android:anim/push_up_out</item>
     </style>
     <style name="Animation.NavigationBarFadeIn" parent="@style/Animation">
         <item name="android:windowEnterAnimation">@anim/navbar_fade_in</item>
@@ -1566,12 +1566,12 @@
     <style name="QuickSettingsTheme" parent="@android:style/Theme.Material" />
     <style name="QuickSettingsTheme.Dialog" parent="@android:style/Theme.Material.Dialog" />
     <style name="ThemeOverlay.DeviceDefault.Accent" parent="@android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorAccent">@android:color/accent_material_dark</item>
+        <item name="android:colorAccent">@android:color/legacy_control_activated</item>
     </style>
     <style name="ThemeOverlay.DeviceDefault.Accent.Light" parent="@android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorAccent">@android:color/accent_material_light</item>
+        <item name="android:colorAccent">@android:color/legacy_primary</item>
     </style>
-    <style name="Theme.DeviceDefault.Settings.Dialog" parent="@android:style/Theme.Material.Settings.Dialog" />
+    <style name="Theme.DeviceDefault.Settings.Dialog" parent="@android:style/Theme.IconMenu" />
     <style name="PipTheme" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">false</item>
