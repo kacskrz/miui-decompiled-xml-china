@@ -528,6 +528,21 @@
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
+    <style name="AppTabLayout" parent="@style/Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?colorAccent</item>
+        <item name="tabIndicatorHeight">4.0dip</item>
+        <item name="tabBackground">?selectableItemBackground</item>
+        <item name="tabMaxWidth">@dimen/side_kick_dimens_12sp</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/text_color_gray</item>
+        <item name="tabPaddingStart">6.0dip</item>
+        <item name="tabPaddingEnd">6.0dip</item>
+    </style>
+    <style name="AppTabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/text_black_opacity_40</item>
+        <item name="textAllCaps">false</item>
+    </style>
     <style name="AppTextAppearance.Dialog" parent="@style/TextAppearance.AppCompat.Medium">
         <item name="android:fontFamily">@null</item>
     </style>
@@ -539,9 +554,8 @@
         <item name="android:textColorHint">?android:textColorHint</item>
         <item name="android:textColorLink">?android:textColorLink</item>
     </style>
-    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:textColor">#ff2d2d2d</item>
-        <item name="alertDialogTheme">@style/StyledDialog</item>
+    <style name="AppTheme" parent="@style/Base.AppTheme">
+        <item name="android:listDivider">@drawable/divider_vertical_dark</item>
     </style>
     <style name="AppTheme.ActionBar" parent="@style/Theme.AppCompat.Light">
         <item name="android:windowBackground">@color/bg_window</item>
@@ -634,6 +648,11 @@
     <style name="Base.Animation.AppCompat.DropDownUp" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
         <item name="android:windowExitAnimation">@anim/abc_shrink_fade_out_from_bottom</item>
+    </style>
+    <style name="Base.AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="Base.DialogWindowTitle.AppCompat" parent="@android:style/Widget">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
