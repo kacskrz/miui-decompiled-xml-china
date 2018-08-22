@@ -58,7 +58,8 @@
     <public type="anim" name="calibration_tutorial_out" id="0x09040003" />
     <public type="anim" name="camera_mask_in" id="0x09040004" />
     <public type="anim" name="camera_mask_out" id="0x09040005" />
-    <public type="xml" name="mi_quicksearch_hints" id="0x09050000" />
+    <public type="xml" name="compass_settings" id="0x09050000" />
+    <public type="xml" name="mi_quicksearch_hints" id="0x09050001" />
     <public type="style" name="CompassTheme" id="0x09060000" />
     <public type="style" name="TextAppearance" id="0x09060001" />
     <public type="style" name="TextAppearance.text_unit" id="0x09060002" />
@@ -154,55 +155,58 @@
     <public type="string" name="open_perm_title" id="0x090b003b" />
     <public type="string" name="cancel" id="0x090b003c" />
     <public type="string" name="allow" id="0x090b003d" />
-    <public type="string" name="APKTOOL_DUMMY_3e" id="0x090b003e" />
-    <public type="string" name="APKTOOL_DUMMY_3f" id="0x090b003f" />
+    <public type="string" name="preference_other" id="0x090b003e" />
+    <public type="string" name="preference_privacy_title" id="0x090b003f" />
     <public type="string" name="APKTOOL_DUMMY_40" id="0x090b0040" />
+    <public type="string" name="APKTOOL_DUMMY_41" id="0x090b0041" />
+    <public type="string" name="APKTOOL_DUMMY_42" id="0x090b0042" />
     <public type="id" name="camera_view" id="0x090c0000" />
     <public type="id" name="camera_mask" id="0x090c0001" />
     <public type="id" name="scv_screen" id="0x090c0002" />
     <public type="id" name="compass_screen" id="0x090c0003" />
     <public type="id" name="view_stub_tutorial" id="0x090c0004" />
     <public type="id" name="view_stub_tilt_rotate" id="0x090c0005" />
-    <public type="id" name="view_stub_gradient_screen" id="0x090c0006" />
-    <public type="id" name="bottom_unit" id="0x090c0007" />
-    <public type="id" name="textview_location_latitude" id="0x090c0008" />
-    <public type="id" name="textview_location_latitude_degree" id="0x090c0009" />
-    <public type="id" name="textview_location_longitude" id="0x090c000a" />
-    <public type="id" name="textview_location_longitude_degree" id="0x090c000b" />
-    <public type="id" name="view_stub_unit_pressure" id="0x090c000c" />
-    <public type="id" name="view_stub_unit_altitude" id="0x090c000d" />
-    <public type="id" name="status_bar_blur" id="0x090c000e" />
-    <public type="id" name="compass_screen_lying" id="0x090c000f" />
-    <public type="id" name="compass_layout_lying" id="0x090c0010" />
-    <public type="id" name="pressure_altitude" id="0x090c0011" />
-    <public type="id" name="pressure_show" id="0x090c0012" />
-    <public type="id" name="altitude_show" id="0x090c0013" />
-    <public type="id" name="compass_view" id="0x090c0014" />
-    <public type="id" name="txt_direction_lying" id="0x090c0015" />
-    <public type="id" name="layout_direction_lying" id="0x090c0016" />
-    <public type="id" name="compass_screen_portrait" id="0x090c0017" />
-    <public type="id" name="direction" id="0x090c0018" />
-    <public type="id" name="layout_direction_portrait" id="0x090c0019" />
-    <public type="id" name="direction_left" id="0x090c001a" />
-    <public type="id" name="direction_right" id="0x090c001b" />
-    <public type="id" name="txt_direction_portrait" id="0x090c001c" />
-    <public type="id" name="gradienter_layout_lying" id="0x090c001d" />
-    <public type="id" name="layout_angle_lying" id="0x090c001e" />
-    <public type="id" name="gradienter_view_lying" id="0x090c001f" />
-    <public type="id" name="gradienter_layout_portrait" id="0x090c0020" />
-    <public type="id" name="layout_angle_portrait" id="0x090c0021" />
-    <public type="id" name="gradienter_view_portrait" id="0x090c0022" />
-    <public type="id" name="gradienter_screen" id="0x090c0023" />
-    <public type="id" name="tilt_rotate_view_layout" id="0x090c0024" />
-    <public type="id" name="tv_tilt_rotate_title" id="0x090c0025" />
-    <public type="id" name="img_tilt_rotate" id="0x090c0026" />
-    <public type="id" name="lyt_tutorial" id="0x090c0027" />
-    <public type="id" name="img_tutorial" id="0x090c0028" />
-    <public type="id" name="shake_enter_tip" id="0x090c0029" />
-    <public type="id" name="bottom_unit_altitude" id="0x090c002a" />
-    <public type="id" name="textview_altitude" id="0x090c002b" />
-    <public type="id" name="tip_altitude" id="0x090c002c" />
-    <public type="id" name="bottom_unit_pressure" id="0x090c002d" />
-    <public type="id" name="textview_pressure" id="0x090c002e" />
-    <public type="id" name="ckb_not_show_next_time" id="0x090c002f" />
+    <public type="id" name="more" id="0x090c0006" />
+    <public type="id" name="view_stub_gradient_screen" id="0x090c0007" />
+    <public type="id" name="bottom_unit" id="0x090c0008" />
+    <public type="id" name="textview_location_latitude" id="0x090c0009" />
+    <public type="id" name="textview_location_latitude_degree" id="0x090c000a" />
+    <public type="id" name="textview_location_longitude" id="0x090c000b" />
+    <public type="id" name="textview_location_longitude_degree" id="0x090c000c" />
+    <public type="id" name="view_stub_unit_pressure" id="0x090c000d" />
+    <public type="id" name="view_stub_unit_altitude" id="0x090c000e" />
+    <public type="id" name="status_bar_blur" id="0x090c000f" />
+    <public type="id" name="compass_screen_lying" id="0x090c0010" />
+    <public type="id" name="compass_layout_lying" id="0x090c0011" />
+    <public type="id" name="pressure_altitude" id="0x090c0012" />
+    <public type="id" name="pressure_show" id="0x090c0013" />
+    <public type="id" name="altitude_show" id="0x090c0014" />
+    <public type="id" name="compass_view" id="0x090c0015" />
+    <public type="id" name="txt_direction_lying" id="0x090c0016" />
+    <public type="id" name="layout_direction_lying" id="0x090c0017" />
+    <public type="id" name="compass_screen_portrait" id="0x090c0018" />
+    <public type="id" name="direction" id="0x090c0019" />
+    <public type="id" name="layout_direction_portrait" id="0x090c001a" />
+    <public type="id" name="direction_left" id="0x090c001b" />
+    <public type="id" name="direction_right" id="0x090c001c" />
+    <public type="id" name="txt_direction_portrait" id="0x090c001d" />
+    <public type="id" name="gradienter_layout_lying" id="0x090c001e" />
+    <public type="id" name="layout_angle_lying" id="0x090c001f" />
+    <public type="id" name="gradienter_view_lying" id="0x090c0020" />
+    <public type="id" name="gradienter_layout_portrait" id="0x090c0021" />
+    <public type="id" name="layout_angle_portrait" id="0x090c0022" />
+    <public type="id" name="gradienter_view_portrait" id="0x090c0023" />
+    <public type="id" name="gradienter_screen" id="0x090c0024" />
+    <public type="id" name="tilt_rotate_view_layout" id="0x090c0025" />
+    <public type="id" name="tv_tilt_rotate_title" id="0x090c0026" />
+    <public type="id" name="img_tilt_rotate" id="0x090c0027" />
+    <public type="id" name="lyt_tutorial" id="0x090c0028" />
+    <public type="id" name="img_tutorial" id="0x090c0029" />
+    <public type="id" name="shake_enter_tip" id="0x090c002a" />
+    <public type="id" name="bottom_unit_altitude" id="0x090c002b" />
+    <public type="id" name="textview_altitude" id="0x090c002c" />
+    <public type="id" name="tip_altitude" id="0x090c002d" />
+    <public type="id" name="bottom_unit_pressure" id="0x090c002e" />
+    <public type="id" name="textview_pressure" id="0x090c002f" />
+    <public type="id" name="ckb_not_show_next_time" id="0x090c0030" />
 </resources>

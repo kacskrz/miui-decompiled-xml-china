@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="KeyboardIcons.LXX_Light" parent="@style/KeyboardIcons">
+        <item name="iconShiftKey">@drawable/security_ime_shift</item>
+        <item name="iconDeleteKey">@drawable/security_ime_delete</item>
+        <item name="iconSpaceKey">@drawable/security_ime_space</item>
+        <item name="iconEnterKey">@drawable/security_ime_enter</item>
+        <item name="iconGoKey">@drawable/security_ime_enter</item>
+        <item name="iconSearchKey">@null</item>
+        <item name="iconSendKey">@drawable/security_ime_enter</item>
+        <item name="iconNextKey">@drawable/security_ime_enter</item>
+        <item name="iconDoneKey">@drawable/security_ime_enter</item>
+        <item name="iconPreviousKey">@drawable/security_ime_enter</item>
+        <item name="iconTabKey">@null</item>
+        <item name="iconShiftKeyShifted">@drawable/security_ime_shift_shifted</item>
+        <item name="iconShiftKeyLocked">@drawable/security_ime_shift_locked</item>
+        <item name="iconSymbolsLock">@drawable/security_ime_symbols_lock</item>
+        <item name="iconSymbolsLocked">@drawable/security_ime_symbols_locked</item>
+    </style>
+    <style name="KeyboardIcons" />
+    <style name="InputView" />
+    <style name="Keyboard">
+        <item name="touchPositionCorrectionData">@array/touch_position_correction_data_holo</item>
+        <item name="keyboardTopPadding">@fraction/config_keyboard_top_padding_holo</item>
+        <item name="keyboardBottomPadding">@fraction/config_keyboard_bottom_padding_holo</item>
+        <item name="keyboardLeftPadding">@fraction/config_keyboard_left_padding</item>
+        <item name="keyboardRightPadding">@fraction/config_keyboard_right_padding</item>
+        <item name="keyboardBottomPaddingNotch">@fraction/config_keyboard_bottom_padding_holo_north</item>
+        <item name="keyboardLeftPaddingNotch">@fraction/config_keyboard_left_padding_notch</item>
+        <item name="keyboardRightPaddingNotch">@fraction/config_keyboard_right_padding_notch</item>
+        <item name="rowHeight">@fraction/config_row_height</item>
+        <item name="horizontalGap">@fraction/config_key_horizontal_gap_holo</item>
+        <item name="verticalGap">@fraction/config_key_vertical_gap_holo</item>
+    </style>
+    <style name="KeyboardView">
+        <item name="keyBackground">@drawable/btn_keyboard_key_lxx_light</item>
+        <item name="keyTextShadowRadius">-1.0</item>
+        <item name="verticalCorrection">@dimen/config_keyboard_vertical_correction</item>
+        <item name="keyHysteresisDistance">@dimen/config_key_hysteresis_distance</item>
+        <item name="keyHysteresisDistanceForSlidingModifier">@dimen/config_key_hysteresis_distance_for_sliding_modifier</item>
+        <item name="touchNoiseThresholdTime">@integer/config_touch_noise_threshold_time</item>
+        <item name="touchNoiseThresholdDistance">@dimen/config_touch_noise_threshold_distance</item>
+        <item name="keySelectionByDraggingFinger">@bool/config_key_selection_by_dragging_finger</item>
+        <item name="keyRepeatStartTimeout">@integer/config_key_repeat_start_timeout</item>
+        <item name="keyRepeatInterval">@integer/config_key_repeat_interval</item>
+        <item name="longPressShiftLockTimeout">@integer/config_longpress_shift_lock_timeout</item>
+        <item name="ignoreAltCodeKeyTimeout">@integer/config_ignore_alt_code_key_timeout</item>
+        <item name="backgroundDimAlpha">128</item>
+        <item name="keyTypeface">normal</item>
+    </style>
+    <style name="MainKeyboardView" parent="@style/KeyboardView" />
+    <style name="KeyboardTheme.LXX_Light" parent="@style/KeyboardIcons.LXX_Light">
+        <item name="inputViewStyle">@style/InputView.LXX</item>
+        <item name="keyboardStyle">@style/Keyboard.LXX_Light</item>
+        <item name="keyboardViewStyle">@style/KeyboardView.LXX_Light</item>
+        <item name="mainKeyboardViewStyle">@style/MainKeyboardView.LXX_Light</item>
+    </style>
+    <style name="Keyboard.LXX_Light" parent="@style/Keyboard">
+        <item name="themeId">LXXLight</item>
+    </style>
+    <style name="KeyboardView.LXX_Light" parent="@style/KeyboardView.LXX">
+        <item name="keyBackground">@drawable/btn_keyboard_key_lxx_light</item>
+        <item name="keyNumberBackground">@drawable/btn_keyboard_key_number</item>
+        <item name="functionalKeyBackground">@drawable/btn_keyboard_key_functional_lxx_light</item>
+        <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_lxx_light</item>
+        <item name="keyTextColor">@color/key_text_color_lxx_light</item>
+        <item name="keyTextInactivatedColor">@color/key_text_inactive_color_lxx_light</item>
+        <item name="functionalTextColor">@color/key_functional_text_color_lxx_light</item>
+    </style>
+    <style name="MainKeyboardView.LXX_Light" parent="@style/KeyboardView.LXX_Light" />
+    <style name="InputView.LXX" parent="@style/InputView" />
+    <style name="KeyboardView.LXX" parent="@style/KeyboardView">
+        <item name="spacebarIconWidthRatio">0.9</item>
+        <item name="keyTypeface">normal</item>
+        <item name="keyLetterSize">@dimen/config_key_letter_ratio_lxx</item>
+        <item name="keyLabelSize">@fraction/config_key_label_ratio_lxx</item>
+        <item name="keyLargeLetterRatio">@fraction/config_key_large_letter_ratio_lxx</item>
+        <item name="keyLabelOffCenterRatio">-79.99999%</item>
+    </style>
+</resources>

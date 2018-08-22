@@ -10,7 +10,7 @@
     </style>
     <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar" />
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/color_303133</item>
         <item name="colorPrimary">@color/liveColorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>
@@ -37,6 +37,9 @@
     <style name="AppThemeStart" parent="@style/AppTheme">
         <item name="android:windowBackground">@drawable/splash</item>
         <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppThemeSubChannelWithHead" parent="@style/AppTheme">
+        <item name="colorPrimaryDark">@color/color_white</item>
     </style>
     <style name="AppThemeWatch" parent="@style/AppTheme">
         <item name="android:windowBackground">@android:color/black</item>
@@ -977,6 +980,16 @@
         <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
         <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
     </style>
+    <style name="BrowseActivityStyle" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
     <style name="CheckBoxBlack" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@drawable/checkbox_black</item>
     </style>
@@ -1124,6 +1137,13 @@
     <style name="OriginPicCheckBoxForPreviewImage" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@null</item>
         <item name="android:drawableRight">@drawable/checkbox_origin_for_priview_pic</item>
+    </style>
+    <style name="OriginPicLoadProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">@dimen/view_dimen_96</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/origin_pic_load_progress_bg</item>
+        <item name="android:minHeight">@dimen/view_dimen_340</item>
     </style>
     <style name="PKDialog" parent="@style/Theme.AppCompat.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
@@ -1610,6 +1630,9 @@
     <style name="ThemeOverlay.AppCompat.Dialog" parent="@style/Base.ThemeOverlay.AppCompat.Dialog" />
     <style name="ThemeOverlay.AppCompat.Dialog.Alert" parent="@style/Base.ThemeOverlay.AppCompat.Dialog.Alert" />
     <style name="ThemeOverlay.AppCompat.Light" parent="@style/Base.ThemeOverlay.AppCompat.Light" />
+    <style name="Toolbar.TitleText" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_54</item>
+    </style>
     <style name="ToolbarTitleAppearance" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">@dimen/text_size_60</item>
         <item name="android:textStyle">normal</item>
@@ -1758,16 +1781,8 @@
         <item name="android:thumb">@drawable/cross_adjust_yuan_button</item>
         <item name="android:thumbOffset">0.0dip</item>
     </style>
-    <style name="alibc_auth_dialog" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@color/alibc_transparent</item>
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">false</item>
-        <item name="android:background">@color/alibc_transparent</item>
-        <item name="android:height">268.0dip</item>
-        <item name="android:width">268.0dip</item>
-        <item name="android:backgroundDimEnabled">true</item>
+    <style name="barrage_tip_popup_win_anim_style">
+        <item name="android:windowExitAnimation">@anim/barrage_tip_popup_win_eixt_anim</item>
     </style>
     <style name="circle_progressbar">
         <item name="android:scaleType">fitCenter</item>
@@ -1816,6 +1831,13 @@
         <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
         <item name="android:drawableLeft">@null</item>
     </style>
+    <style name="def_sign">
+        <item name="sign_in_bg_color">#ff000000</item>
+        <item name="sign_in_check_color">@android:color/white</item>
+        <item name="sign_in_pb_color">@android:color/holo_orange_dark</item>
+        <item name="sign_in_text_color">@android:color/holo_purple</item>
+        <item name="sign_in_text_siz">12.0sp</item>
+    </style>
     <style name="dgts__ButtonText">
         <item name="android:textAppearance">?android:textAppearanceButton</item>
         <item name="android:textSize">@dimen/tw__login_btn_text_size</item>
@@ -1851,7 +1873,18 @@
         <item name="android:windowEnterAnimation">@anim/float_notification_enter</item>
         <item name="android:windowExitAnimation">@anim/float_notification_exit</item>
     </style>
-    <style name="gt3Widget.GifView" parent="@android:style/Widget" />
+    <style name="gold_coin_tip_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
     <style name="michannel_count">
         <item name="android:textSize">@dimen/text_size_34</item>
         <item name="android:textColor">@color/color_white_trans_80</item>
@@ -1859,11 +1892,20 @@
         <item name="android:layout_marginBottom">@dimen/view_dimen_12</item>
     </style>
     <style name="michannel_count_bottom">
-        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textSize">@dimen/text_size_39</item>
         <item name="android:textColor">@color/color_white</item>
         <item name="android:ellipsize">end</item>
         <item name="android:layout_marginRight">@dimen/view_dimen_24</item>
         <item name="android:layout_marginBottom">@dimen/view_dimen_18</item>
+        <item name="android:maxWidth">@dimen/view_dimen_240</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="michannel_count_bottom_big">
+        <item name="android:textSize">@dimen/text_size_45</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">@dimen/view_dimen_24</item>
+        <item name="android:layout_marginBottom">@dimen/view_dimen_24</item>
         <item name="android:maxWidth">@dimen/view_dimen_240</item>
         <item name="android:singleLine">true</item>
         <item name="android:shadowColor">@color/color_black_trans_80</item>
@@ -1947,6 +1989,20 @@
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowActionBarOverlay">true</item>
     </style>
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
     <style name="picture_popwin_anim_style">
         <item name="android:windowEnterAnimation">@anim/picture_folder_enter</item>
         <item name="android:windowExitAnimation">@anim/picture_folder_exit</item>
@@ -1977,7 +2033,32 @@
         <item name="android:minWidth">21.329987dip</item>
         <item name="android:minHeight">21.329987dip</item>
     </style>
-    <style name="red_envelop_verify_dialog" parent="@android:style/Theme.Dialog">
+    <style name="release_menu_anim_item">
+        <item name="android:windowEnterAnimation">@anim/release_menu_item_enter</item>
+        <item name="android:windowExitAnimation">@anim/release_menu_item_exit</item>
+    </style>
+    <style name="release_menu_anim_style">
+        <item name="android:windowEnterAnimation">@anim/release_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/release_menu_exit</item>
+    </style>
+    <style name="rq_dailog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="sign_days_progress" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">@dimen/view_dimen_20</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/sign_days_progress_bg</item>
+        <item name="android:minHeight">@dimen/view_dimen_6</item>
+    </style>
+    <style name="sign_result_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -1988,14 +2069,6 @@
         <item name="android:windowSoftInputMode">stateHidden</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowActionBarOverlay">true</item>
-    </style>
-    <style name="release_menu_anim_item">
-        <item name="android:windowEnterAnimation">@anim/release_menu_item_enter</item>
-        <item name="android:windowExitAnimation">@anim/release_menu_item_exit</item>
-    </style>
-    <style name="release_menu_anim_style">
-        <item name="android:windowEnterAnimation">@anim/release_menu_enter</item>
-        <item name="android:windowExitAnimation">@anim/release_menu_exit</item>
     </style>
     <style name="tooltip_bubble_text">
         <item name="android:textSize">12.0sp</item>
