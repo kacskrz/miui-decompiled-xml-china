@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="ExoMediaButton">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:layout_width">@dimen/exo_media_button_width</item>
+        <item name="android:layout_height">@dimen/exo_media_button_height</item>
+    </style>
+    <style name="ExoMediaButton.FastForward" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_fastforward</item>
+        <item name="android:contentDescription">@string/exo_controls_fastforward_description</item>
+    </style>
+    <style name="ExoMediaButton.Next" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_next</item>
+        <item name="android:contentDescription">@string/exo_controls_next_description</item>
+    </style>
+    <style name="ExoMediaButton.Pause" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_pause</item>
+        <item name="android:contentDescription">@string/exo_controls_pause_description</item>
+    </style>
+    <style name="ExoMediaButton.Play" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_play</item>
+        <item name="android:contentDescription">@string/exo_controls_play_description</item>
+    </style>
+    <style name="ExoMediaButton.Previous" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_previous</item>
+        <item name="android:contentDescription">@string/exo_controls_previous_description</item>
+    </style>
+    <style name="ExoMediaButton.Rewind" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_rewind</item>
+        <item name="android:contentDescription">@string/exo_controls_rewind_description</item>
+    </style>
+    <style name="ExoMediaButton.Shuffle" parent="@style/ExoMediaButton">
+        <item name="android:src">@drawable/exo_controls_shuffle</item>
+        <item name="android:contentDescription">@string/exo_controls_shuffle_description</item>
+    </style>
     <style name="ActionBarStyle" parent="@miui:style/Widget.ActionBar">
         <item name="android:height">@dimen/log_detail_title_height</item>
         <item name="android:displayOptions">showCustom</item>
@@ -151,6 +184,9 @@
         <item name="android:windowBackground">@drawable/splash_main</item>
         <item name="miui:windowTranslucentStatus">transparentLight</item>
     </style>
+    <style name="Theme.Light.NoTitile.TransparentDark2" parent="@miui:style/Theme.Light.NoTitle">
+        <item name="miui:windowTranslucentStatus">transparentLight</item>
+    </style>
     <style name="ActionBar.ActionMode.ActionButton" parent="@miui:style/Widget.ActionMode.ActionButton">
         <item name="android:textColor">@android:color/transparent</item>
         <item name="android:text">@null</item>
@@ -270,6 +306,11 @@
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@color/result_blue_button_text</item>
         <item name="android:background">@drawable/common_button_blue2</item>
+    </style>
+    <style name="FirstAidKitResultButtonBlue">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/result_blue_button_text</item>
+        <item name="android:background">@drawable/firstaidkit_button_blue</item>
     </style>
     <style name="MarketText">
         <item name="android:textColor">#ff7c7c7c</item>
@@ -503,6 +544,22 @@
     <style name="gamebox_anim_view_right">
         <item name="android:windowEnterAnimation">@anim/monitor_window_open_right_enter</item>
         <item name="android:windowExitAnimation">@anim/monitor_window_open_right_exit</item>
+    </style>
+    <style name="ExoMediaTimeBar">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="bar_height">@dimen/timeBar_bar_height</item>
+        <item name="touch_target_height">2.0dip</item>
+        <item name="scrubber_enabled_size">2.0dip</item>
+        <item name="scrubber_disabled_size">2.0dip</item>
+        <item name="scrubber_dragged_size">2.0dip</item>
+        <item name="played_color">@color/timeBar_played_color</item>
+        <item name="scrubber_color">@color/timeBar_scrubber_color</item>
+        <item name="buffered_color">@color/timeBar_buffered_color</item>
+        <item name="unplayed_color">@color/timeBar_unplayed_color</item>
     </style>
     <style name="Fod_Dialog_Fullscreen">
         <item name="android:windowNoTitle">false</item>
