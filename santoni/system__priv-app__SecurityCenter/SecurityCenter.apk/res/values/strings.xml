@@ -214,7 +214,7 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="report_only">Choose a message to report</string>
     <string name="report_success">Message reported</string>
     <string name="report_error">"Couldn't report message"</string>
-    <string name="report_warning">"Report %1$s SMS to Mi? These messages and the phone numbers they were sent from will be uploaded to Mi's servers for review. Any personal info associated with these messages is always kept anonymous."</string>
+    <string name="report_warning">"Report %1$s SMS to Mi? These messages and phone numbers they were sent from will be uploaded to Mi's servers for review. Any personal info associated with these messages is always kept anonymous."</string>
     <string name="report_warning_title">Attention</string>
     <string name="st_sub_title_customize_mode_name">Name</string>
     <string name="read_all_sms">Read all</string>
@@ -362,7 +362,6 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="st_antispam_mode_only_whitelist_state">11000000</string>
     <string name="st_antispam_mode_only_all_deny_state">10000000</string>
     <string name="empty_activity_title">" "</string>
-    <string name="later">稍后处理</string>
     <string name="open_right_now">立刻抢红包</string>
     <string name="open_right_now_short">立刻抢</string>
     <string name="group_have_hongbao">来自“%1$s”%2$d个红包</string>
@@ -472,11 +471,12 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="fast_open_dialog_message_summary">注意：建议关闭导航类、视频类、游戏类应用的速抢模式，以免影响应用的正常操作。手机锁屏状态下不会进行红包速抢。</string>
     <string name="fast_open_dialog_ok">开启</string>
     <string name="fast_open_noti_summary">%s给你发来一个红包</string>
-    <string name="lucky_sound_mode_no">静音</string>
-    <string name="lucky_sound_mode_gold">金币</string>
     <string name="lucky_sound_mode_lucky">红包来了</string>
     <string name="lucky_str_yuan">%s元</string>
     <string name="lucky_my_luckymoney">我的红包战绩</string>
+    <string name="create_table_oaid">CREATE TABLE OAID( _id INTEGER PRIMARY KEY AUTOINCREMENT, oaid TEXT NOT NULL );</string>
+    <string name="create_table_vaid">CREATE TABLE VAID( _id INTEGER PRIMARY KEY AUTOINCREMENT, package_name TEXT NOT NULL, vaid TEXT NOT NULL );</string>
+    <string name="create_table_aaid">CREATE TABLE AAID( _id INTEGER PRIMARY KEY AUTOINCREMENT, package_name TEXT NOT NULL, aaid TEXT NOT NULL );</string>
     <string name="app_name_na">Data usage</string>
     <string name="list_empty_text">Empty</string>
     <string name="dialog_title_attention">Attention</string>
@@ -509,7 +509,6 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="main_month_used">Data plan</string>
     <string name="main_leisure_remained">Off-peak data remaining</string>
     <string name="main_bill_remained">Phone balance</string>
-    <string name="main_used_bill">%s CNY</string>
     <string name="main_no_info">No data</string>
     <string name="guide_quck_open">Turn on</string>
     <string name="guide_wait_setting">Not now</string>
@@ -517,13 +516,6 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="guide_second_text">"After you set your carrier, MIUI will monitor your mobile data usage daily by sending free carrier SMS. When MIUI detects you've gone over your data limit, it will disconnect from the network and notify you."</string>
     <string name="guide_get_operator_error">"&lt;font color='#33b4ff'>&lt;U>Wrong carrier?&lt;/U>&lt;/font>"</string>
     <string name="card_tc_failed">"Couldn't calibrate"</string>
-    <string name="card_tc_failed_content">"Possible reasons:
- 1. Carriers respond slower at the beginning and at the end of a month. Try again in a couple of days.
- 2. A network request template is required when you calibrate for the first time. Connect to the network and try again.
- 3. Your carrier may not support sending text messages with the remaining data and phone balance. Contact your carrier to learn more.
- 4. There may be an error in the carrier data. Try carrier diagnostics to solve this.
- 5. Nothing seems to help? Tap \"Report via SMS\" to send your feedback to Xiaomi in a text message."</string>
-    <string name="card_sms_report">Report via SMS</string>
     <string name="main_normal_data_usage">Used mobile data</string>
     <string name="main_tc_send_sms">"Send SMS
 to calibrate"</string>
@@ -604,7 +596,7 @@ to respond"</string>
     <string name="pref_title_declaration">Important disclaimer</string>
     <string name="pref_new_installed_preconfig_title">"New apps' default settings"</string>
     <string name="pref_bg_network_title">Background connection</string>
-    <string name="pref_mi_sim_settings">%spackage settings</string>
+    <string name="pref_mi_sim_settings">%s package settings</string>
     <string name="pref_title_upload_data_usage">Report data usage info</string>
     <string name="pref_summary_upload_data_usage">Report your data usage info to help us improve MIUI services. The reporting process will be carried out in accordance with our Privacy Policy.</string>
     <string name="pref_manual_adjust">Set data usage stats manually</string>
@@ -689,7 +681,6 @@ to respond"</string>
     <string name="traffic_setting_fragment_send_num_tips">Enter phone number</string>
     <string name="traffic_setting_fragment_sms_content_tips">Write your message here</string>
     <string name="traffic_setting_fragment_loacation_alert_nomore">"Don't show again"</string>
-    <string name="traffic_setting_fragment_find_brand">"&lt;font color='#33b4ff'>&lt;U>Not sure about the carrier?&lt;/U>&lt;/font>"</string>
     <string name="data_usage_warning_body">Tap to view data usage details.</string>
     <string name="data_usage_mobile_limit_title">Reached mobile data limit</string>
     <string name="data_usage_limit_body">Tap to turn on mobile data.</string>
@@ -768,7 +759,6 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="operator_number_cmcc">10086</string>
     <string name="operator_number_unicom">10010</string>
     <string name="operator_number_telcom">10000</string>
-    <string name="operator_mi_sim">Mi SIM</string>
     <string name="dual_setting_simcard1">SIM 1</string>
     <string name="dual_setting_simcard2">SIM 2</string>
     <string name="mi_service_app_detail">Data usage details</string>
@@ -802,7 +792,7 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="tc_sms_report_notify_correction_body">Go to the Data usage app in Security Center and try again manually.</string>
     <string name="tc_sms_report_notify_get_failure_body">"Couldn't submit data usage report. Make sure that you're connected to a mobile network."</string>
     <string name="tc_sms_report_tips_dialog_title">Data usage SMS</string>
-    <string name="tc_sms_report_tips_dialog_message">"An SMS is sent to to get the latest data usage info from your carrier. If you think the info isn't correct, send us your feedback."</string>
+    <string name="tc_sms_report_tips_dialog_message">"An SMS is sent to get the latest data usage info from your carrier. If you think the info isn't correct, send us your feedback."</string>
     <string name="tc_sms_report_get_sms_failure">"Couldn't get data usage info"</string>
     <string name="tc_sms_report_get_sms_timeout">Request timed out</string>
     <string name="tc_sms_report_get_sms_successs">Updated data usage info successfully</string>
@@ -822,7 +812,6 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="pref_roaming_setting_gategory">Settings</string>
     <string name="pref_allow_connect_network_title">Overseas data roaming</string>
     <string name="pref_whitelist_setting">Data roaming exceptions</string>
-    <string name="firewall_rule_group_title_roaming">Overseas roaming</string>
     <string name="dialog_roaming_title">Overseas roaming</string>
     <string name="dialog_roaming_message">Allow this app to use mobile data when roaming overseas?</string>
     <string name="add_to_whitelist_button">Data roaming exceptions</string>
@@ -836,7 +825,6 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="add_miservice_dialog_content">"%s requires you to add MIUI service framework to exceptions. You may receive notifications from MIUI's built-in apps and other third-party apps."</string>
     <string name="pref_roaming_daily_limit_setting_cat_title">Daily data limit</string>
     <string name="pref_roaming_daily_limit_setting">Set daily data limit while roaming</string>
-    <string name="mian_page_primary_txt">Overseas roaming</string>
     <string name="hints_input_roaming_daily_limit">Enter data usage limit</string>
     <string name="roaming_limit_notification_title">Reached daily roaming data limit</string>
     <string name="roaming_limit_warning_notification_body">Tap to view data usage.</string>
@@ -874,9 +862,6 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="btn_start_diagnostic">Test network</string>
     <string name="btn_stop_diagnostic">Stop</string>
     <string name="btn_finish_diagnostic">OK</string>
-    <string name="main_toolbar_internet_by_pc_brige">USB internet</string>
-    <string name="main_toolbar_internet_by_wifi">WLAN</string>
-    <string name="main_toolbar_internet_by_mobiledata">Mobile data</string>
     <string name="connect_internet_by_usbshare">Shared internet over USB</string>
     <string name="connect_internet_by_mobiledata">Mobile data connection</string>
     <string name="connect_internet_by_wifi">WLAN</string>
@@ -884,7 +869,6 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="enable_network">Turn network on first</string>
     <string name="disable_air_mode">Turn Airplane mode off first</string>
     <string name="repair">Repair</string>
-    <string name="check_network_state">Test network</string>
     <string name="current_network_state_not_need_diagnose">Internet connection is normal.</string>
     <string name="apn_exception_title">Check APN configurations</string>
     <string name="apn_exception_summary">"Test carrier's Access Point Name configurations"</string>
@@ -1046,7 +1030,6 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="status_bar_network_flow_exceed_content">Today: %1$s&amp;nbsp;&amp;nbsp;&amp;nbsp;Plan exceeded: &lt;font color=%2$s>%3$s&lt;/font></string>
     <string name="status_bar_network_flow_content">Today: %1$s&amp;nbsp;&amp;nbsp;&amp;nbsp;Remaining: %2$s</string>
     <string name="status_bar_network_flow_content_not_setting">Today: %1$s&amp;nbsp;&amp;nbsp;&amp;nbsp;This month: %2$s</string>
-    <string name="status_bar_network_flow_today">Today: %1$s</string>
     <string name="status_bar_network_flow_content_virtual_card">%1$s&amp;nbsp;&amp;nbsp;&amp;nbsp;%2$s&amp;nbsp;&amp;nbsp;&amp;nbsp;</string>
     <string name="pref_key_tethering_setting">One-time data limit</string>
     <string name="pref_key_tethering_title">One-time data limit</string>
@@ -1169,7 +1152,7 @@ your device"</string>
     <string name="menu_item_force_stop">Force stop</string>
     <string name="menu_item_uninstall">Uninstall</string>
     <string name="menu_item_app_details">Details</string>
-    <string name="details_subtitle">Use details</string>
+    <string name="details_subtitle">Usage details</string>
     <string name="packages_subtitle">Included packages</string>
     <string name="battery_desc_standby">Battery used when phone is idle</string>
     <string name="battery_desc_radio">Battery used by radio</string>
@@ -1262,6 +1245,7 @@ your device"</string>
     <string name="btn_text_goto_setup">Go to Settings</string>
     <string name="power_save_title_text">Battery saver</string>
     <string name="power_save_summary_text">"Turn on Battery saver to reduce apps' background activity, stop sync, and minimize system animations."</string>
+    <string name="power_save_started_summary_text">"Battery saver is on. It reduces apps' background activity, stops sync, and minimizes system animations."</string>
     <string name="hide_mode_summary_text">"Manage apps' background activity to save battery"</string>
     <string name="hide_mode_app_background_setting_text">App battery saver</string>
     <string name="battery_estimate_usage_time_title">Usage time</string>
@@ -1277,7 +1261,6 @@ your device"</string>
     <string name="deep_save_ontime_boot_shutdown_summary">Schedule time to turn device on and off</string>
     <string name="btn_text_quick_save_power">Cool down</string>
     <string name="notification_battery_consume_abnormal_title">Battery is being drained too fast</string>
-    <string name="notification_battery_consume_abnormal_summary">Drained %2$s of the battery during last %1$d minutes</string>
     <string name="app_check_no_issue">Looks like there are no battery issues. Cool!</string>
     <string name="power_save_mode_enable">Battery saver</string>
     <string name="power_save_mode_summary">Monitor background processes and turn off sync.</string>
@@ -1388,6 +1371,39 @@ your device"</string>
     <string name="notification_open_extreme_mode_text">Turned on Extreme battery saver</string>
     <string name="notification_exit_extreme_mode_title">Turned off Extreme battery saver</string>
     <string name="notification_exit_extreme_mode_text">Battery is more than %s charged</string>
+    <string name="handle_title_app">Apps</string>
+    <string name="handle_title_abnormal">Draining battery</string>
+    <string name="handle_title_system">System battery usage</string>
+    <string name="handle_title_details">Battery usage details</string>
+    <string name="power_center_scan_result_safe">No battery issues found</string>
+    <string name="power_center_scan_item_title_clean_memory">Clear memory</string>
+    <string name="power_center_scan_item_title_brightness">Adjust screen brightness</string>
+    <string name="power_center_scan_item_title_hide">Manage battery usage</string>
+    <string name="power_center_scan_item_title_power_saver">Turn on Battery saver</string>
+    <string name="power_center_scan_item_title_GPS">Adjust GPS accuracy</string>
+    <string name="power_center_scan_item_title_abnormal">Battery issues</string>
+    <string name="power_center_scan_item_title_abnormal_apps">Apps that drain battery</string>
+    <string name="power_center_scan_item_title_auto_start">Autostart</string>
+    <string name="power_center_scan_item_title_auto_invoke">Chain start</string>
+    <string name="power_center_scan_item_title_battery_details">Battery usage details</string>
+    <string name="power_center_hints_scan_danger_result">You can fix battery issues now</string>
+    <string name="power_center_scan_item_title_running_app">Apps running in the background</string>
+    <string name="power_center_list_item_close_bluetooth">Turn off Bluetooth</string>
+    <string name="power_center_list_item_set_lockscreen_time">Put screen to sleep after 30 seconds of inactivity</string>
+    <string name="power_center_list_item_auto_brightness">Adjust screen brightness automatically</string>
+    <string name="power_center_list_item_deep_save_title">Advanced settings</string>
+    <string name="power_center_list_item_battery_status_time">h</string>
+    <string name="power_center_list_item_battery_status_temperature">℃</string>
+    <string name="power_center_list_item_battery_status_capacity">mAh</string>
+    <string name="power_center_stop_scan_title">Stop scanning</string>
+    <string name="hide_mode_result_summary_text">Customize Battery saver settings for individual apps</string>
+    <string name="auto_task_result_summary_text">Set automated tasks for Battery saver</string>
+    <string name="pc_settings_title">Battery usage settings</string>
+    <string name="pc_main_activity_back">Back</string>
+    <string name="extreme_power_save_mode_card_summary">Turn on Extreme mode to save power when the battery is low.</string>
+    <string name="power_center_list_item_battery_health_model_voltage">%s V</string>
+    <string name="power_center_list_item_battery_health_model_temperature">%d ℃</string>
+    <string name="power_center_list_item_battery_health_model_volume">%s mAh</string>
     <string name="handle_bar_title_system">System</string>
     <string name="apps_list_header_title_sms">Check messaging app</string>
     <string name="apps_list_header_title_sms_access">Restrict access to verification codes</string>
@@ -1772,7 +1788,7 @@ your device"</string>
     <string name="monitor_requests_from_pc">Manage installation of the apps via USB</string>
     <string name="app_install_intercept">Block installation</string>
     <string name="pc_to_phone_install">Blocked installation of %s via USB</string>
-    <string name="recently_reject_message_one">Rejected %1$s installation requests</string>
+    <string name="recently_reject_message_one">Rejected %1$s installation request</string>
     <string name="recently_reject_message">Rejected installation of %1$s and %2$d other apps</string>
     <string name="delete_from_manual_item_white_list">Remove from exceptions</string>
     <string name="button_text_ignore">Ignore</string>
@@ -1819,6 +1835,8 @@ your device"</string>
     <string name="summary_cloud_space_full">Get more storage space and access to more features</string>
     <string name="title_auto_update">Update automatically</string>
     <string name="summary_auto_update">MIUI will select the most suitable time to download and install updates.</string>
+    <string name="title_rcs_switch">Turn on China Mobile Messaging</string>
+    <string name="summary_rcs_switch">Send SMS to China Mobile users without incurring charges</string>
     <string name="title_miui_update_latest">MIUI is up to date</string>
     <string name="title_miui_update">Update available</string>
     <string name="summary_miui_update">Update available for %s.</string>
@@ -2020,7 +2038,7 @@ your device"</string>
     <string name="ac_notification_contentTitle">Protect apps with App lock</string>
     <string name="ac_pre_notification_contentTitle">Try App Lock</string>
     <string name="ac_post_notification_contentTitle">Turn on App Lock</string>
-    <string name="midrop_post_notification_contentTitle">Need to transfer files?</string>
+    <string name="midrop_post_notification_contentTitle">Need to share files?</string>
     <string name="notification_masked_item">Hide notifications</string>
     <string name="lock_mode_title">Lock settings</string>
     <string name="after_the_lock_screen">Lock apps together with the screen</string>
@@ -2030,7 +2048,7 @@ your device"</string>
     <string name="ac_notification_contentText">Tap to turn on</string>
     <string name="ac_pre_notification_contentText">Protect your personal info</string>
     <string name="ac_post_notification_contentText">Get system-level protection</string>
-    <string name="midrop_post_notification_contentText">"Try Mi Drop. It's fast and ad-free."</string>
+    <string name="midrop_post_notification_contentText">Transfer files at speeds up to 50 Mbps in Mi Drop.</string>
     <string name="notification_masked_subtitle">Hide notifications from apps protected with App lock</string>
     <string name="ac_enter_applock">Enter App lock</string>
     <string name="ac_mask_all_apps">Hide for all apps</string>
@@ -2148,8 +2166,9 @@ your device"</string>
     <string name="set_numeric_password_name">Set PIN</string>
     <string name="set_mixed_password_name">Set password</string>
     <string name="reset_data_title">"Can't restore password"</string>
-    <string name="reset_data_dialog_message">"This device isn't associated with your Mi Account. Can't restore or reset password. Back up all imporant items and perform a facory reset. All data will be permanently deleted and your SD card will be formatted during the factory reset."</string>
+    <string name="reset_data_dialog_message">"This device isn't associated with your Mi Account. Can't restore or reset password. Back up all imporant items and perform a factory reset. All data will be permanently deleted and your SD card will be formatted during the factory reset."</string>
     <string name="reset_data_dialog_ok">Factory reset</string>
+    <string name="ad_split_screen_title">Please switch to full screen mode to unlock</string>
     <string name="wakepath_confirm_start_activity">Allow %1$s to open %2$s?</string>
     <string name="unlike">No thanks</string>
     <string name="toast_network_eror">"Can't connect to network"</string>
@@ -2361,6 +2380,7 @@ your device"</string>
     <string name="gs_call_handsfree_mute">Silent mode</string>
     <string name="gs_gamebox">In-game shortcuts</string>
     <string name="gs_gamebox_detail">Show in-game shortcut panel</string>
+    <string name="gs_gamebox_slip">Push the screen down to open</string>
     <string name="gs_forbid_autosync">Restrict background sync</string>
     <string name="gs_app_back_self_start">Battery saver</string>
     <string name="gs_only_self_start_for_list">Restrict background processes to save battery for gaming</string>
@@ -2512,13 +2532,14 @@ your device"</string>
     <string name="screenrecord_not_find">Install the latest version of Screen Recorder and try again.</string>
     <string name="gamebox_qq_not_find">Install QQ and try again.</string>
     <string name="gamebox_wechat_not_find">Install WeChat and try again.</string>
+    <string name="gamebox_app_not_find">Install the app first.</string>
     <string name="gamebox_type_close">"Don't show"</string>
     <string name="gamebox_type_float">Fixed shortcut</string>
     <string name="gamebox_type_gesture">Swipe to show</string>
     <string name="gb_first_window_title">Game speed booster</string>
     <string name="gb_first_window_summary">Boost speed and performance on a system level</string>
-    <string name="gb_first_window_gamebox_summary_four">Use quick replies, make screen recordings and screenshots</string>
-    <string name="gb_first_window_gamebox_summary_six">Clear cache, make screen recordings and screenshots</string>
+    <string name="gb_first_window_gamebox_summary_four">Clear cache, make screen recordings and screenshots</string>
+    <string name="gb_first_window_gamebox_summary_six">Use quick replies, make screen recordings and screenshots</string>
     <string name="gb_first_window_handsfree_title">Hands-free calls</string>
     <string name="gb_first_window_handsfree_summary">Turn on speaker automatically</string>
     <string name="gb_first_window_antimsg_title">Convenient notifications</string>
@@ -2533,19 +2554,19 @@ your device"</string>
     <string name="game_wid_viewpoint_buttom">Take a short break.</string>
     <string name="video_repeat">Play again</string>
     <string name="game_video_network_eror">"Couldn't connect to the network. Check your network settings and try again."</string>
-    <string name="see_more_content">Update game center to see more highlights</string>
+    <string name="see_more_content">Update Games to see more highlights</string>
     <string name="notify_channel_name_security">System security</string>
     <string name="privacy_apps_category_title">Hidden apps</string>
     <string name="privacy_apps">Hidden apps</string>
     <string name="privacy_apps_enable_summary">Move apps to a hidden folder and remove their Home screen shortcuts</string>
     <string name="privacy_apps_manage">Manage hidden apps</string>
     <string name="privacy_apps_tutorial">Tutorial</string>
-    <string name="privacy_apps_tutorial_prompt_pageone">"When you hide an app, it's moved to a hidden folder. Its Home screen shortcut is hidden is well.
+    <string name="privacy_apps_tutorial_prompt_pageone">"When you hide an app, it's moved to a hidden folder. Its Home screen shortcut is hidden as well.
 This feature isn't supported for system apps."</string>
     <string name="privacy_apps_tutorial_prompt_pagetwo">"Spread two fingers on the screen. You'll see a message asking you to enter your App lock password."</string>
     <string name="privacy_apps_tutorial_prompt_pagethree">After you enter your password, the folder with hidden apps will appear.</string>
     <string name="privacy_apps_manage_dialog_title">About hidden apps</string>
-    <string name="privacy_apps_manager_dialog_message">Hiding apps requires setting your App screen lock. Notifications for hidden apps will be turned off. Hide this app?</string>
+    <string name="privacy_apps_manager_dialog_message">"This app's icon won't be displayed on the Home screen after you hide this app. Hide this app now?"</string>
     <string name="privacy_apps_checkbox_remind_choice">"Don't show again"</string>
     <string name="privacy_apps_go_to_use">Start</string>
     <string name="privacy_apps_close">Close</string>
@@ -2566,31 +2587,24 @@ This feature isn't supported for system apps."</string>
     <string name="first_aid_card_consume_power_button1">Restrict</string>
     <string name="first_aid_card_consume_power_summary2">Turn off portable hotspot to save battery</string>
     <string name="first_aid_card_consume_power_button2">Turn off</string>
-    <string name="first_aid_card_consume_power_summary3">Turn off Bluetooth to save battery</string>
-    <string name="first_aid_card_consume_power_button3">Turn off</string>
-    <string name="first_aid_card_consume_power_summary4">Turn off GPS to save battery</string>
-    <string name="first_aid_card_consume_power_button4">Turn off</string>
     <string name="first_aid_card_system_root_title">You allowed root access</string>
     <string name="first_aid_card_system_root_summary">Restrict root access to prevent security risks</string>
     <string name="first_aid_card_system_root_button">Restrict</string>
     <string name="first_aid_card_float_window_title">You allowed floating notifications</string>
-    <string name="first_aid_card_float_window_summary">%s may be displayed incorrectly. Restrict floating notifications.</string>
-    <string name="first_aid_card_float_window_button">Restrit</string>
+    <string name="first_aid_card_float_window_button">Restrict</string>
     <string name="first_aid_card_wifi_or_flow_title">"Can't connect to the internet"</string>
     <string name="first_aid_card_wifi_or_flow_summary">Turn on WLAN or mobile data to connect</string>
     <string name="first_aid_card_wifi_or_flow_button">Connect</string>
     <string name="first_aid_card_airplane_title">"Can't make calls or connect to the network"</string>
     <string name="first_aid_card_airplane_summary">Turn off Airplane mode to be able to make calls and connect to the network</string>
     <string name="first_aid_card_airplane_button">Turn off</string>
-    <string name="first_aid_card_apn_title">"Can't connect to the network"</string>
-    <string name="first_aid_card_apn_summary">APNs were changed. Fix to be able to connect to the network.</string>
-    <string name="first_aid_card_apn_button">Fix</string>
     <string name="first_aid_card_unable_install_title">"Can't install apps"</string>
     <string name="first_aid_card_unable_install_summary">Only %s of storage is available. Free up space to be able to install apps.</string>
     <string name="first_aid_card_unable_install_button">Free up space</string>
     <string name="first_aid_result_summary_normal">Everything looks good!</string>
+    <string name="first_aid_result_summary_not_finished">"Scan wasn't completed. Some risks may be undetected."</string>
     <string name="first_aid_result_feedback_title">Feedback</string>
-    <string name="first_aid_result_feedback_summary">"I can't solve issues on my device."</string>
+    <string name="first_aid_result_feedback_summary">"First aid scan couldn't find any problems. However, I spotted some."</string>
     <string name="first_aid_result_feedback_button">Submit</string>
     <string name="first_aid_card_kadun_title">Device slows down</string>
     <string name="first_aid_card_kadun_summary1">Free up storage space so your device could work normally.</string>
@@ -2601,31 +2615,16 @@ This feature isn't supported for system apps."</string>
     <string name="first_aid_card_kadun_button3">Turn off</string>
     <string name="first_aid_dialog_title_stop_scan">Stop scanning</string>
     <string name="first_aid_dialog_msg_stop_scan">Stop scanning now?</string>
-    <item type="string" name="APKTOOL_DUMMY_9e0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_9e1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_9e2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a52">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a75">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a76">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a77">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a78">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a79">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a80">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a81">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a82">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a83">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a84">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a85">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a86">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a87">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a88">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a89">false</item>
+    <string name="device_manager_apply_step_1">Activate device administrator for this app?</string>
+    <string name="device_manager_apply_step_2">"Activating device administrator for this app might lead to the exposure of your personal data.
+All data on your device might be erased and your Lock screen password might be reset."</string>
+    <string name="device_manager_apply_step_3">Make sure you understand all the possible risks before you proceed. Activate device administrator for this app now?</string>
+    <string name="firewall_rule_group_title_roaming">Overseas roaming</string>
+    <string name="mian_page_primary_txt">Overseas roaming</string>
+    <item type="string" name="APKTOOL_DUMMY_9f5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9f6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_9f7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a67">false</item>
     <item type="string" name="APKTOOL_DUMMY_a8a">false</item>
     <item type="string" name="APKTOOL_DUMMY_a8b">false</item>
     <item type="string" name="APKTOOL_DUMMY_a8c">false</item>
@@ -2857,4 +2856,25 @@ This feature isn't supported for system apps."</string>
     <item type="string" name="APKTOOL_DUMMY_b6e">false</item>
     <item type="string" name="APKTOOL_DUMMY_b6f">false</item>
     <item type="string" name="APKTOOL_DUMMY_b70">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b71">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b72">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b73">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b74">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b75">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b76">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b77">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b78">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b79">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b80">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b81">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b82">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b83">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b84">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b85">false</item>
 </resources>

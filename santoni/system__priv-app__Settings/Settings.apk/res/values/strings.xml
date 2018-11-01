@@ -445,8 +445,9 @@
     <string name="bootloader_locked_answer_1_warning">"Remember: You won't be able to use \"Find device\" after the phone is unlocked."</string>
     <string name="bootloader_locked_question_2">I understand the risks, but still want to unlock my device.</string>
     <string name="bootloader_locked_answer_2">"1. Make sure you've already inserted a SIM card into your device.
-2. Tap \"Add account\" below to associate your Mi Account with this device.
-3. Download the unlock tool from our website. Note that you should unlock devices using a computer. Download here:"</string>
+2. Turn off WLAN and turn on mobile data. Make sure your device can connect to the internet using mobile data.
+3. Tap \"Add account\" below to associate your Mi Account with this device.
+4. Download the unlock tool from our website. Note that you should unlock devices using a computer. Download here:"</string>
     <string name="bootloader_locked_answer_2_no_sim">"1. Tap \"Add account\" below to associate your Mi Account with this device.
 2. Download the unlock tool from our website. Note that you should unlock devices using a computer. Download here:"</string>
     <string name="bootloader_unlock_webhome">https://unlock.update.miui.com</string>
@@ -457,14 +458,78 @@
     <string name="bootloader_device_bind_sim_invalid">SIM card is invalid. Replace it and try again.</string>
     <string name="bootloader_device_bind_no_account">Sign in to your Mi Account first</string>
     <string name="bootloader_device_bind_no_network">Connect to the network and try again</string>
+    <string name="bootloader_device_bind_no_data_network">Turn off WLAN and add your account and device using mobile data.</string>
     <string name="bootloader_device_bind_fail">"Couldn't verify, wait a minute or two and try again"</string>
     <string name="bootloader_device_bind_msg">Preparing to add account and device…</string>
     <string name="bootloader_device_bind_server_code">"Couldn't add. Error code:"</string>
+    <string name="bootloader_device_bind_server_token_expired_1">"Couldn't verify. Try adding your account and device again."</string>
+    <string name="bootloader_device_bind_server_token_expired_2">"Couldn't verify. Sign in to your account again and start over."</string>
     <string name="bootloader_status_privacy_dialog_title">Permissions required</string>
     <string name="bootloader_status_privacy_dialog_url_text">Privacy Policy</string>
     <string name="bootloader_status_privacy_dialog_message">Mi Unlock needs access to your Mi Account, CPU ID, IMEI, IMSI to work normally. We collect, use, and process your data in accordance with our %s. Agree?</string>
     <string name="bootloader_status_privacy_dialog_yes">Agree</string>
     <string name="bootloader_status_privacy_dialog_no">Cancel</string>
+    <string name="miui_sos_enable_switch_title">Emergency SOS</string>
+    <string name="miui_sos_enable_switch_summary">Rapidly press the Power button 5 times to send a SOS text message with your location to your emergency contacts</string>
+    <string name="miui_sos_settings_category">SOS settings</string>
+    <string name="miui_sos_calling_title">Auto call</string>
+    <string name="miui_sos_calling_summary">Your device will make automatic calls to your emergency contacts playing the SOS voice message you recorded. The call will be ended after your message is finished playing. Auto call will stop after the first successful attempt.</string>
+    <string name="miui_sos_audio_title">SOS voice message</string>
+    <string name="miui_sos_audio_summary">Play SOS message after emergency contact picks up</string>
+    <string name="miui_sos_call_log_title">Send call history</string>
+    <string name="miui_sos_call_log_summary">Send the call history for the last 1 hour to your emergency contact</string>
+    <string name="miui_sos_contacts_category">Emergency contacts</string>
+    <string name="miui_sos_contacts_add">Emergency contacts</string>
+    <string name="miui_sos_green_guard_title">Parental controls</string>
+    <string name="miui_sos_green_guard_summary">Share location info in real time</string>
+    <string name="miui_sos_statusbar_title">Emergency SOS is activated</string>
+    <string name="miui_sos_statusbar_summary">Tap to turn off</string>
+    <string name="miui_sos_launching_title">SOS</string>
+    <string name="miui_sos_launching_summary">Activating Emergency SOS in %ds</string>
+    <string name="miui_sos_play_voice">Play SOS message</string>
+    <string name="miui_sos_remind_title">Attention</string>
+    <string name="miui_sos_remind_open">Emergency SOS needs at least 1 emergency contact to work normally.</string>
+    <string name="miui_sos_remind_sendinfo">"Don't forget to tell these people that they are your emergency contacts now. Thus, they will be able to help you faster in case of emergency."</string>
+    <string name="miui_sos_remind_infocontent">"I added you as my emergency contact. You'll receive a message with my location info in case I'm in danger. [Mi Emergency SOS]"</string>
+    <string name="miui_sos_remind_add">Add</string>
+    <string name="miui_sos_menu_add">Add</string>
+    <string name="miui_sos_menu_edit">Edit</string>
+    <string name="miui_sos_remind_sendnow">Send now</string>
+    <string name="miui_sos_emergency_contacts">Emergency contacts</string>
+    <string name="miui_sos_msg_call_log_prefix">"Here's my call history for the last hour:"</string>
+    <string name="miui_sos_call_log_stranger">Stranger</string>
+    <string name="miui_sos_call_log_duration">Duration</string>
+    <string name="miui_sos_call_log_min">min</string>
+    <string name="miui_sos_call_log_sec">s</string>
+    <string name="miui_sos_call_warning_sim_unable">"No signal. Can't send SMS."</string>
+    <string name="miui_sos_settings_alert_contacts_repeat">"Can't add duplicate contacts."</string>
+    <string name="miui_sos_settings_alert_contacts_too_many">You can add up to 3 emergency contacts.</string>
+    <string name="miui_sos_exit_dialog_ok">OK</string>
+    <string name="miui_sos_exit_dialog_cancel">Cancel</string>
+    <string name="miui_sos_exit_dialog_title">Turning off Emergency SOS</string>
+    <string name="miui_sos_exit_dialog_message">You activated Emergency SOS. Your location info is being sent to your emergency contacts. Turn off anyway?</string>
+    <string name="miui_sos_launch_error">"Couldn't activate Emergency SOS"</string>
+    <string name="miui_sos_launch_error_message">"Can't connect to the mobile network. Can't use Emergency SOS."</string>
+    <string name="miui_sos_launch_error_confirm">Got it</string>
+    <string name="miui_sos_call_log_none">I have no call history for the last hour.</string>
+    <string name="miui_sos_emergency_contacts_quantity">%dadded</string>
+    <string name="miui_sos_emergency_delivered_sms_noname">%1shas already accepted</string>
+    <string name="miui_sos_emergency_delivered_sms" formatted="false">%1s(%2s)has already accepted</string>
+    <string name="miui_sos_emergency_failed_sms_noname">%1ssos message sending failed.</string>
+    <string name="miui_sos_emergency_failed_sms" formatted="false">%1s(%2s)sos message sending failed.</string>
+    <string name="sos_privacy_dialog_title">Terms and Conditions</string>
+    <string name="sos_privacy_and_content_policy">User Agreement and Privacy Policy</string>
+    <string name="sos_privacy_dialog_message">"Enable the SOS emergency help function, please confirm and read the %s. 
+ In order to ensure the normal use of the SOS emergency help function, it may need to obtain your location, use the mobile network, and read your address book, do you confirm?"</string>
+    <string name="sos_privacy_dialog_button_ok">Continue</string>
+    <string name="sos_privacy_dialog_button_cancel">Cancel</string>
+    <string name="device_id">Device identification</string>
+    <string name="restore_device_id_title">Restore device identification</string>
+    <string name="restore_device_id_content">Reset personalized recommendation</string>
+    <string name="allow_device_id_access">Apps with device identification</string>
+    <string name="restore_dialog_title">Reminder</string>
+    <string name="restore_dialog_content">Restoring device identification will reset your personalized recommendation.</string>
+    <string name="restore_dialog_positive">Restore</string>
     <string name="status_bar_and_notification_bar">Notification shade and status bar</string>
     <string name="status_bar_settings_manage_notification">App notifications</string>
     <string name="status_bar_settings_all_app_display_loading">Just a sec…</string>
@@ -482,11 +547,14 @@
     <string name="status_bar_settings_notification_bar">Notification shade</string>
     <string name="status_bar_settings_app_notification_preferences">App settings</string>
     <string name="status_bar_settings_notification_shade_shortcut">Notification shade shortcut</string>
+    <string name="status_bar_settings_notification_style">Notification style</string>
     <string name="status_bar_settings_toggle_collapse_after_clicked">Collapse after touch</string>
     <string name="status_bar_settings_status_bar">Status bar</string>
     <string name="status_bar_settings_show_notification_icon">Show notification icons</string>
+    <string name="status_bar_settings_peek_notification_icon">Show icons for incoming notifications</string>
     <string name="status_bar_settings_show_network_speed">Show connection speed</string>
     <string name="status_bar_settings_show_carrier_under_keyguard">Show carrier when device is locked</string>
+    <string name="status_bar_settings_expandable_under_keyguard">Show on lock screen</string>
     <string name="status_bar_settings_basic_settings">Basic settings</string>
     <string name="status_bar_settings_advanced">Additional settings</string>
     <string name="status_bar_settings_show_flow_info">Show data usage</string>
@@ -530,6 +598,13 @@
     <string name="settings_toggle_position_divider_list">Toggles placed above bar are active</string>
     <string name="status_bar_settings_user_fold">Notifications folder</string>
     <string name="status_bar_settings_user_fold_summary">All unimportant notifications will appear in a separate folder</string>
+    <string name="status_bar_settings_user_fold_enable">On</string>
+    <string name="status_bar_settings_user_fold_disable">Off</string>
+    <string name="status_bar_settings_function_description">About this feature</string>
+    <string name="status_bar_settings_user_fold_description1">Notifications folder was introduced in MIUI 9. This feature filters unimportant notifications and places them into a separate folder.</string>
+    <string name="status_bar_settings_user_fold_description2">MIUI will remember which notifications you tap, and then use multiple criteria to determine whether they are important.</string>
+    <string name="status_bar_settings_user_fold_description3">"If the notifications you consider important still go into the Notifications folder, make sure that you report such issues to us. We'd appreciate your feedback."</string>
+    <string name="status_bar_settings_customer_feedback">feedback</string>
     <string name="status_bar_style_list">Combined</string>
     <string name="status_bar_style_page">Separate</string>
     <string name="status_bar_settings_style">Notifications &amp; toggles layout</string>
@@ -564,10 +639,11 @@
     <string name="status_bar_carrier_settings_no_sim_card">No SIM card</string>
     <string name="navigation_guide_appswitch_title">Switch to previous app</string>
     <string name="navigation_guide_appswitch_summary">Swipe left or right from the edge of the screen and hold for a while</string>
-    <string name="navigation_guide_appswitch_anim_title">Switch to previous app</string>
+    <string name="navigation_guide_appswitch_anim_title">Go back to previous app</string>
     <string name="navigation_guide_appswitch_anim_summary">Swipe across the screen starting from the edge to go back to previous app</string>
     <string name="navigation_guide_appswitch_click">Turn on \"Go back to previous app\" first</string>
     <string name="check_importance_dialog_cancel">Cancel</string>
+    <string name="mipush_fake_channel_group_name">Mi Push</string>
     <string name="abc_font_family_display_4_material">sans-serif-light</string>
     <string name="abc_font_family_display_3_material">sans-serif</string>
     <string name="abc_font_family_display_2_material">sans-serif</string>
@@ -1028,7 +1104,7 @@ To resume using your phone, you need to perform a factory reset. When you set up
     <string name="unlock_set_unlock_pattern_title">Pattern</string>
     <string name="unlock_set_unlock_pattern_summary">Draw a simple pattern with your finger to unlock device</string>
     <string name="unlock_set_unlock_pin_title">PIN</string>
-    <string name="unlock_set_unlock_pin_summary">Enter 4 numbers to unlock device</string>
+    <string name="unlock_set_unlock_pin_summary" formatted="false">Enter %d-%d numbers to unlock device</string>
     <string name="unlock_set_unlock_password_title">Password</string>
     <string name="unlock_set_unlock_password_summary">Enter 4 or more letters or numbers to unlock device</string>
     <string name="unlock_set_do_later_title">Not now</string>
@@ -4062,6 +4138,7 @@ This helps protect data on lost or stolen devices."</string>
     <string name="max_cpu10_info">"Deca-core Max "</string>
     <string name="instruction_title">Important safety information</string>
     <string name="my_device_disclaimer">Note: Hardware info, including CPU, battery capacity, screen size and resolution, and camera, is provided by Xiaomi labs, designers, and suppliers.</string>
+    <string name="credentials_title_verification">Verification</string>
     <string name="approve_title">Certification</string>
     <string name="update_new_version">Update is available</string>
     <string name="notification_update_new_version">Update is available</string>
@@ -4393,8 +4470,8 @@ This helps protect data on lost or stolen devices."</string>
     <string name="erase_internal_storage_description">Erase music, photos, videos, and other user data</string>
     <string name="storage_format">Format</string>
     <string name="system_storage">System storage</string>
-    <string name="failed_to_erase_title">Forbidden operation</string>
-    <string name="failed_to_erase_text">Please turn off lock screen password before performing 1217 operation.</string>
+    <string name="failed_to_erase_title">"Can't complete this action"</string>
+    <string name="failed_to_erase_text">Turn off your Lock screen password before entering the \"1217\" code.</string>
     <string name="usage_log">App usage statistics</string>
     <string name="bluetooth_device_searchable">Discoverable</string>
     <string name="usb_charging_title">Speed up charge</string>
@@ -4975,6 +5052,7 @@ as your First space PIN."</string>
     <string name="power_mgr">Battery</string>
     <string name="secondspace_category">Second space</string>
     <string name="secondspace_delete_space_title">Delete Second space</string>
+    <string name="child_mode_settings">Parental controls</string>
     <string name="symbols_not_allowed_for_password">"Password can't contain symbols"</string>
     <string name="reset_legacy_password_settings_preface_text">You need to reset your lock screen password.</string>
     <string name="lock_intro_message">Lock_intro_message</string>
@@ -5416,8 +5494,16 @@ as your First space PIN."</string>
     <string name="voice_assist">Mi AI</string>
     <string name="taplus_title">Taplus</string>
     <string name="delete_sound_effect">\"Delete\" sound</string>
-    <string name="security_input">Security input</string>
-    <string name="security_input_hint">Using security keyboard enter password</string>
+    <string name="security_input">Secure keyboard</string>
+    <string name="security_input_hint">Use secure keyboard when you enter passwords</string>
+    <string name="following_us_title">Follow us</string>
+    <string name="emergency_sos_title">Emergency SOS</string>
+    <string name="accessibility_summary_source">Provided by %s</string>
+    <string name="mi_service">Mi Service</string>
+    <string name="talkback_watermark_enable">TalkBack watermark</string>
+    <string name="device_camera">Camera</string>
+    <string name="camera_front">Front %s</string>
+    <string name="camera_rear">Rear %s</string>
     <string name="music_audio_effect_optimize">Audio settings</string>
     <string name="music_audio_effect_optimize_summary">Dirac, headphones, and other audio settings</string>
     <string name="music_audio_effect_optimize_summary_with_hifi">Dirac, Hi-Fi, headphones, and other audio settings</string>
@@ -5465,6 +5551,10 @@ as your First space PIN."</string>
     <string name="music_dirac_mode_headset_comfort">Mi Comfort</string>
     <string name="music_dirac_mode_reduction_noise">Mi Noise Cancelling Type-C</string>
     <string name="music_dirac_mode_cancelling">Mi Noise Cancelling 3.5mm</string>
+    <string name="music_dirac_mode_half_in_ear">Mi Half in Ear</string>
+    <string name="music_dirac_mode_in_ear2">Mi In-Ear 2</string>
+    <string name="music_dirac_mode_india_earphones_basic">Mi Earphones Basic</string>
+    <string name="music_dirac_mode_india_earphones">Mi Earphones</string>
     <string name="music_audio_effect_settings">Effects settings</string>
     <string name="music_equalizer_summary">Adjust individual levels for different types of music</string>
     <string name="music_unsupport_effect_summary">"USB headsets aren't supported"</string>
@@ -5496,7 +5586,7 @@ as your First space PIN."</string>
     <string name="eq_cancel">Cancel</string>
     <string name="eq_ok">OK</string>
     <string name="input_hint_prefix">Enter %1$s</string>
-    <string name="lockpassword_choose_your_pin_title">Enter 4-16 digits</string>
+    <string name="lockpassword_choose_your_pin_title" formatted="false">Enter %d-%d digits</string>
     <string name="lockpassword_confirm_workspace_password">Verify Work space password</string>
     <string name="turn_on_keyguard_password_alert_forget_title">Remember your password</string>
     <string name="turn_on_keyguard_password_alert_forget_content">"Remember your Lock screen password. If you forget it, you'll have to erase all data on your device, including photos and contacts, and then set a new one."</string>
@@ -5673,8 +5763,19 @@ as your First space PIN."</string>
     <string name="gxzw_add_fingerprint_continue">Continue</string>
     <string name="gxzw_add_fingerprint_finish">Done!</string>
     <string name="add_fingerprint_cancel_button_text">Back</string>
+    <string name="gxzw_anim_title">Fingerprint animation</string>
+    <string name="gxzw_anim_rhythm">Rhythm</string>
+    <string name="gxzw_anim_light">Neon</string>
+    <string name="gxzw_anim_metal">Metal</string>
+    <string name="gxzw_anim_pulse">Pulse</string>
+    <string name="fingerprint_others_title">Other</string>
+    <string name="digital_clock_dot">:</string>
     <string name="add_fingerprint_move_fast">Keep your finger on the screen a bit longer</string>
     <string name="add_fingerprint_dirty_fingerprint">Make sure the surface of the screen is clean. Try recording your fingerprint again.</string>
+    <string name="gxzw_dialog_title">About in-screen fingerprint sensor</string>
+    <string name="gxzw_dialog_message">"To be able to use in-screen fingerprint sensor normally, don't use screen protectors. If you think that a screen protector is still necessary, choose among authorized compatible options."</string>
+    <string name="gxzw_dialog_not_show_again">"Don't show again"</string>
+    <string name="gxzw_dialog_ok">Got it</string>
     <string name="wakeup_for_keyguard_notification_title">Wake Lock screen for notifications</string>
     <string name="secure_keyguard_business_title">Set screen lock</string>
     <string name="fingerprint_and_password_entrance_title">Screen lock &amp; fingerprint</string>
@@ -5712,40 +5813,23 @@ as your First space PIN."</string>
     <string name="forget_password_dialog_content_three"><Data>"1. Turn off your device. Press the &lt;font color=#e6e6e6>[Power]&lt;/font> button and the &lt;font color=#e6e6e6>[Volume+]&lt;/font> button simultaneously, and hold them until you see the &lt;img src=''> icon."</Data></string>
     <string name="forget_password_dialog_content_four"><Data>2. Select &lt;font color=#e6e6e6>[Wipe data]&lt;/font>, and wait until your device reboots.</Data></string>
     <string name="forget_password_dialog_button_text">Back</string>
+    <string name="pref_show_lunar_calendar_title">Show traditional Chinese calendar on Lock screen</string>
     <string name="keyguard_setting_privacy_policy_url">http://www.miui.com/res/doc/privacy.html?region=%1$s&amp;lang=%2$s</string>
     <string name="keyguard_security_setting_privacy_policy">Privacy Policy</string>
     <string name="keyguard_security_setting_others">Others</string>
-    <item type="string" name="APKTOOL_DUMMY_1597">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1598">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1599">false</item>
-    <item type="string" name="APKTOOL_DUMMY_159a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_159b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_159c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_159d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_159e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_159f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15a0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15a1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15a2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15a4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15a5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15cb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15cc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15cd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15ce">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15cf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15d0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15d1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15d2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_15ee">false</item>
+    <item type="string" name="APKTOOL_DUMMY_15fb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_15fc">false</item>
     <item type="string" name="APKTOOL_DUMMY_15fd">false</item>
     <item type="string" name="APKTOOL_DUMMY_15fe">false</item>
     <item type="string" name="APKTOOL_DUMMY_15ff">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1620">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1621">false</item>
-    <item type="string" name="APKTOOL_DUMMY_162b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_162c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_162d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1600">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1601">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1602">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1603">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1604">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1605">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1607">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1608">false</item>
     <item type="string" name="APKTOOL_DUMMY_162e">false</item>
     <item type="string" name="APKTOOL_DUMMY_162f">false</item>
     <item type="string" name="APKTOOL_DUMMY_1630">false</item>
@@ -5754,87 +5838,10 @@ as your First space PIN."</string>
     <item type="string" name="APKTOOL_DUMMY_1633">false</item>
     <item type="string" name="APKTOOL_DUMMY_1634">false</item>
     <item type="string" name="APKTOOL_DUMMY_1635">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1636">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1637">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1638">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1639">false</item>
-    <item type="string" name="APKTOOL_DUMMY_163a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_163b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_163c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_163d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_163e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_163f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1640">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1641">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1642">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1643">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1644">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1645">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1646">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1647">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1648">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1649">false</item>
-    <item type="string" name="APKTOOL_DUMMY_164a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_164b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_164c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_164d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_164e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_164f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1650">false</item>
     <item type="string" name="APKTOOL_DUMMY_1651">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1652">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1653">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1654">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1655">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1656">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1657">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1658">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1659">false</item>
-    <item type="string" name="APKTOOL_DUMMY_165a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_165b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_165c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_165d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_165e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_165f">false</item>
     <item type="string" name="APKTOOL_DUMMY_1660">false</item>
     <item type="string" name="APKTOOL_DUMMY_1661">false</item>
     <item type="string" name="APKTOOL_DUMMY_1662">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1663">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1664">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1665">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1666">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1667">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1668">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1669">false</item>
-    <item type="string" name="APKTOOL_DUMMY_166a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_166b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_166c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_166d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_166e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_166f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1670">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1671">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1672">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1673">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1674">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1675">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1676">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1677">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1678">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1679">false</item>
-    <item type="string" name="APKTOOL_DUMMY_167a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_167b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_167c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_167d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_167e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_167f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1680">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1681">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1682">false</item>
     <item type="string" name="APKTOOL_DUMMY_1683">false</item>
     <item type="string" name="APKTOOL_DUMMY_1684">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1685">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1686">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1687">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1688">false</item>
 </resources>
