@@ -313,7 +313,9 @@ Keep devices close to each other."</string>
     <string name="trans_detail_app_data_useless_tip">You can restore these from the app, no need to transfer.</string>
     <string name="trans_detail_item_app_data_too_large_tip">Looks like the item is too big to transfer.</string>
     <string name="trans_detail_item_app_data_selected_tip">Selected corresponding apps as well.</string>
-    <string name="trans_detail_list_footer">Note: You can choose to transfer apps separately. However, if you select app data, corresponding apps will be transfered as well.</string>
+    <string name="trans_detail_list_footer">"1. You can select individual apps you want to transfer.
+2. If you select app data, corresponding apps will be selected as well.
+3. WeChat and QQ app data might not be transferred due to compatibility issues. You can try in-app transfer features."</string>
     <string name="trans_detail_page_tip">The more items you select the longer the transfer will last.</string>
     <string name="trans_detail_sys_data_list_title">System apps</string>
     <string name="trans_detail_app_data_list_title">App data</string>
@@ -373,8 +375,9 @@ Then tap \"Connect again\" to scan the QR code."</string>
     <string name="trans_wait_trans_data">"Connected to the old device.
 Waiting for the transfer…"</string>
     <string name="trans_select_data">Select items to send</string>
-    <string name="trans_select_data_tips">"Select items to transfer
-Similar files on the new device will be overwritten"</string>
+    <string name="trans_select_data_tips">"Select items to transfer.
+Similar items on the new device will be overwritten.
+(The size of the transferred items you see now is a rough estimate.)"</string>
     <string name="trans_select_data_no_space">"There isn't enough storage space on the new device (%s available).
 Free up storage space or transfer only important items."</string>
     <string name="trans_select_data_too_large">"You selected too many items to transfer.
@@ -390,6 +393,22 @@ Free up storage space or transfer only important items."</string>
     <string name="trans_old_phone_low_space_msg">"Mi Mover needs some storage space to package the transferred data, but it looks like there isn't enough space available on the old device. Free up space in \"Security\" or transfer only important items."</string>
     <string name="button_clean_garbage">Free up space</string>
     <string name="button_quit">Exit</string>
+    <string name="soft_ap_creating">Creating hotspot…</string>
+    <string name="wait_link">"Connect your old device to this hotspot.
+Don't leave this page until the connection is established."</string>
+    <string name="old_way">You can also connect using a QR code. Tap to generate the code.</string>
+    <string name="soft_ap_create_failed">"Couldn't create hotspot"</string>
+    <string name="scan_soft_ap_label">Connect to the old device</string>
+    <string name="scan_soft_ap">Searching for the new device…</string>
+    <string name="click_soft_ap_to_link">Select a hotspot to connect</string>
+    <string name="waiting">Just a sec…</string>
+    <string name="old_soft_name">Connect via QR code</string>
+    <string name="confirm_exit_link_title">Interrupting the transfer</string>
+    <string name="confirm_exit_link_msg">"Leaving the app now will interrupt the ongoing transfer. You'll have to establish connection between the two devices again. Leave the app anyway?"</string>
+    <string name="confirm_exit_link">Leave</string>
+    <string name="confirm_exit_link_cancel">"Don't leave"</string>
+    <string name="connect_soft_ap_label">Connecting to new device…</string>
+    <string name="recreate_soft_ap_tips">Tap the button below to try again.</string>
     <string name="trans_install_guide_page_title">Install Mi Mover on your old phone</string>
     <string name="trans_install_guide_scan_install_tip">"Scan this QR code with your old phone
 to download and install Mi Mover."</string>
@@ -422,6 +441,8 @@ to download and install Mi Mover."</string>
     <string name="trans_intro_title_old">On an old phone:</string>
     <string name="trans_intro_desc_old">"Tap \"I'm a sender\". Scan the QR code on the new phone, wait until Mi Mover figures out which files to send, and tap \"Send\"."</string>
     <string name="trans_intro_desc_old_market">Tap \"Start\". Scan the QR code on the new phone, wait until Mi Mover figures out which files to send, and tap \"Send\".</string>
+    <string name="trans_intro_question_10">"%d. Can't find the hotspot on the old device?"</string>
+    <string name="trans_intro_desc_10">Tap \"Connect via QR code\" on the new device and scan the QR code to establish connection.</string>
     <string name="trans_intro_question_3">%d. What should I do if Mi Mover got stuck on a certain step?</string>
     <string name="trans_intro_desc_3">Cancel the transfer, exit Mi Mover, and start over. Duplicate files will be overwritten during the new transfer.</string>
     <string name="trans_intro_question_4">"%d. Why can't I use WLAN during transfers?"</string>
@@ -444,6 +465,8 @@ to download and install Mi Mover."</string>
     <string name="trans_intro_desc_multiuser">"Mi Mover can't access items in Second space. Move items to First space and launch Mi Mover there."</string>
     <string name="trans_intro_title_multiapp">Dual apps data:</string>
     <string name="trans_intro_desc_multiapp">"Mi Mover doesn't transfer Dual apps data to avoid conflicts between files."</string>
+    <string name="trans_intro_title_gms">Data generated by Google apps:</string>
+    <string name="trans_intro_desc_gms">"Due to high probability of unsuccessful transfers caused by compatibility issues, Mi Mover doesn't support transferring the data generated by Google apps."</string>
     <string name="trans_intro_question_9_market">%d. Feedback.</string>
     <string name="trans_intro_desc_9_method_1_title">1. Share your feedback using the \"Feedback\" app.</string>
     <string name="trans_intro_desc_9_method_1_dec">Go to Home screen > Tools > Feedback.</string>
@@ -475,7 +498,6 @@ Did you like Mi Mover?"</string>
     <string name="trans_success_dialog_button_survey">Survey</string>
     <string name="trans_success_dialog_survey_title">We appreciate your feedback</string>
     <string name="trans_success_survey_hint">Fill in all fields first.</string>
-    <string name="trans_cancel_dialog_survey_title">Why did you interrupt the transfer?</string>
     <string name="trans_dialog_survey_finish">Send</string>
     <string name="trans_failed_details_page_title">Unsuccessful transfers</string>
     <string name="close_twice_auth_tutor">Turn off Apple ID two-factor authentication</string>
@@ -618,13 +640,13 @@ Restoring only important items will be faster."</string>
 Free up space or make multiple smaller transfers."</string>
     <string name="usb_trans_old_phone_low_space_title">Not enough storage space</string>
     <string name="usb_trans_old_phone_low_space_msg">"Additional storage is required to package your backups. There's not enough storage space to continue the transfer. You can free up space and delete unnecessary files in Security or try tranfering only important items."</string>
-    <item type="string" name="APKTOOL_DUMMY_243">false</item>
-    <item type="string" name="APKTOOL_DUMMY_244">false</item>
-    <item type="string" name="APKTOOL_DUMMY_245">false</item>
-    <item type="string" name="APKTOOL_DUMMY_246">false</item>
-    <item type="string" name="APKTOOL_DUMMY_247">false</item>
-    <item type="string" name="APKTOOL_DUMMY_248">false</item>
-    <item type="string" name="APKTOOL_DUMMY_249">false</item>
-    <item type="string" name="APKTOOL_DUMMY_24a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_24b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_256">false</item>
+    <item type="string" name="APKTOOL_DUMMY_257">false</item>
+    <item type="string" name="APKTOOL_DUMMY_258">false</item>
+    <item type="string" name="APKTOOL_DUMMY_259">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_25e">false</item>
 </resources>
