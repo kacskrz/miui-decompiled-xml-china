@@ -52,7 +52,7 @@
     <string name="sync_dspt_entrance_provision_confirm_title">"Don't use Mi Cloud?"</string>
     <string name="sync_dspt_entrance_provision_confirm_content">"MIUI's built-in apps need Mi Cloud to back up your photos, contacts, notes, and more. Mi Cloud is free and ready to use out of the box."</string>
     <string name="sync_dspt_entrance_provision_skip">Skip this step</string>
-    <string name="sync_dspt_entrance_provision_network">This app needs to connect to the internet to work normally.Sync data may be connected to the data network and open WLAN.</string>
+    <string name="sync_dspt_entrance_provision_network">This app needs to connect to the internet to work normally. Syncing data may require mobile data connection and turning on WLAN.</string>
     <string name="find_device_dspt_provision">If you lose your device, you can go to %s to locate, lock, or reset it. You can turn this feature on or off anytime in Settings.</string>
     <string name="find_device_dspt_provision_2">i.mi.com</string>
     <string name="find_device_dspt_provision_2_int">www.mi.com/micloud</string>
@@ -98,10 +98,10 @@ This feature encrypts and sends your device's ID to Mi's servers."</string>
     <string name="micloud_dspt_provision">Use Mi Cloud to sync data, locate your device, and share things with friends.</string>
     <string name="micloud_dspt_provision_xms">Use Mi Cloud to sync data.</string>
     <string name="micloud_proceed">Continue</string>
-    <string name="master_alert_notif_title">Turn on MiCloud</string>
-    <string name="master_alert_notif_content">data did not sync.</string>
+    <string name="master_alert_notif_title">Turn on sync with Mi Cloud</string>
+    <string name="master_alert_notif_content">"Can't sync"</string>
     <string name="sub_alert_notif_title">Sync with Mi Cloud</string>
-    <string name="sub_alert_notif_content">Turn on MiCloud</string>
+    <string name="sub_alert_notif_content">Turn on sync with Mi Cloud to back up your data</string>
     <string name="cloudservice_new_sync">Sync %s with Mi Cloud</string>
     <string name="click_to_enabled">Touch to sync.</string>
     <string name="calendar_sync">Calendar</string>
@@ -139,13 +139,24 @@ This feature encrypts and sends your device's ID to Mi's servers."</string>
     <string name="micloud_all_sub_2_intl_sms">2 international text messages will be sent to activate your SIM card. You will be charged by the carrier.</string>
     <string name="micloud_all_sub_1_sms_1_intl_sms">2 text messages (regular and international) will be sent to activate your SIM card. You will be charged by the carrier.</string>
     <string name="micloud_all_sub_resend_sms">"When you turn on 'Find device', an activation SMS may be sent after you switch SIM cards."</string>
-    <string name="micloud_sync_prompt_for_no_gallery_sync">Sync only on Contacts, Calendar and Notes, to Sync more items go to Mi Cloud setting.</string>
+    <string name="micloud_sync_prompt_for_no_gallery_sync">Contacts, Calendar, and Notes are synced automatically. Go to Mi Cloud settings to sync more items.</string>
     <string name="sync_item_calllog_title">Sync call history</string>
     <string name="sync_item_calllog_summary">Sync records of calls made and received on this phone</string>
     <string name="micloud_main_network_error">"Can't connect to the network"</string>
     <string name="micloud_main_manual_sync">Sync manually</string>
     <string name="micloud_main_sync_mode_title">Power-saving sync</string>
     <string name="micloud_main_sync_mode_summary">Sync most items when charger is connected and screen is off</string>
+    <string name="micloud_main_wait_wlan">Waiting for WLAN</string>
+    <string name="micloud_main_wait_wlan_charge_sleep">Connect to WLAN, turn off screen, and fully charge your device to resume sync.</string>
+    <string name="micloud_main_wait_wlan_charge">Connect to WLAN and fully charge your device to resume sync.</string>
+    <string name="micloud_main_wait_charge_sleep">Turn off screen and fully charge your device to resume sync.</string>
+    <string name="micloud_main_wait_charge">Fully charge your device to resume sync.</string>
+    <string name="micloud_main_button_set_internet">Setting</string>
+    <string name="micloud_main_simple_off">Sync Off</string>
+    <string name="micloud_main_simple_last_sync_time">Last sync time： %s</string>
+    <string name="micloud_detail_fail">"Can't sync"</string>
+    <string name="micloud_detail_not_syncable">Not syncable</string>
+    <string name="micloud_detail_query_error">"Can't obtain sync state"</string>
     <string name="micloud_privacy_cloud_off">Sync is off</string>
     <string name="micloud_privacy_licence_agreed">Agree to Mi Cloud &lt;a href=app://com.miui.cloudservice.gdpr.license>&lt;u>Privacy Policy&lt;/u>&lt;/a>.</string>
     <string name="micloud_privacy_licence_privacy_policy">Privacy Policy</string>
@@ -215,6 +226,8 @@ to your Mi Account to reactivate Mi Cloud."</string>
     <string name="micloud_sync_alert_dialog_message">Sync your photos, contacts, notes, and more across all your devices.</string>
     <string name="micloud_sync_alert_dialog_negative">Cancel</string>
     <string name="micloud_sync_alert_dialog_positive">OK</string>
+    <string name="micloud_battery_low_notification_title">Low battery</string>
+    <string name="micloud_battery_low_notification_message">Connect charger to sync</string>
     <string name="micloud_upgrade_member">Get storage</string>
     <string name="micloud_notif_content_depend_wifi">Connect to WLAN to sync.</string>
     <string name="micloud_notif_title_master_depend_wifi">"Can't sync with Mi Cloud"</string>
@@ -240,7 +253,7 @@ to your Mi Account to reactivate Mi Cloud."</string>
     <string name="micloud_find_device_close_progress">Turning off Find device…</string>
     <string name="micloud_find_device_opened">Find device on</string>
     <string name="micloud_find_device_open_fail">"Couldn't turn on Find device"</string>
-    <string name="micloud_find_device_opened_content">Sign in to %s to find your device</string>
+    <string name="micloud_find_device_opened_content">Find your device at %s</string>
     <string name="micloud_find_device_opened_content_url">i.mi.com</string>
     <string name="micloud_find_device_verify_fail">"Couldn't reactivate Find device"</string>
     <string name="micloud_find_device_close_fail">"Couldn't turn off Find device"</string>
@@ -262,11 +275,11 @@ to your Mi Account to reactivate Mi Cloud."</string>
     <string name="micloud_find_device_guide_alert_negtive">No thanks</string>
     <string name="micloud_find_device_guide_alert_negtive_activate">No thanks</string>
     <string name="micloud_find_device_close_alert_title">Turn off Find device?</string>
-    <string name="micloud_find_device_close_alert_content">"If you turn this feature off, you wan't be able to locate your device in case it's lost."</string>
+    <string name="micloud_find_device_close_alert_content">"If you turn this feature off, you won't be able to locate your device in case it's lost."</string>
     <string name="micloud_find_device_close_alert_positive">Keep on</string>
     <string name="micloud_find_device_close_alert_negtive">Turn off anyway</string>
     <string name="find_device_gdpr_prompt">By turning on Find device, you agree to our Privacy Policy. If you need to revoke authorization, turn this feature off.</string>
-    <string name="find_device_gdpr_prompt_policy_doc_name">\"Privacy Policy\"</string>
+    <string name="find_device_gdpr_prompt_policy_doc_name">Privacy Policy</string>
     <string name="activate_finddevice">Connect to the network to activate device</string>
     <string name="account_related">Your device is associated with an existing Mi Account(%s). Connect to the network to verify the device.</string>
     <string name="connect_network">Connect to WLAN or insert a SIM card</string>
@@ -304,8 +317,8 @@ to your Mi Account to reactivate Mi Cloud."</string>
     <string name="micloud_footer_international_url">mi.com/micloud</string>
     <string name="ks_fingerprint_payment">Fingerprint payments</string>
     <string name="ks_name_fido">FIDO</string>
-    <string name="ks_name_alipay">Alipay</string>
-    <string name="ks_name_soter">WeChat Pay</string>
+    <string name="ks_name_alipay">IFAA</string>
+    <string name="ks_name_soter">Soter</string>
     <string name="ks_name_widevine">Widevine (L1)</string>
     <string name="ks_status_available">Available</string>
     <string name="ks_status_unavailable">Not available</string>
@@ -329,12 +342,12 @@ to your Mi Account to reactivate Mi Cloud."</string>
     <string name="reading_status">Loading status…</string>
     <string name="reading_status_failure">"Couldn't load status."</string>
     <string name="micloud_alert_dialog_positive">OK</string>
-    <string name="micloud_storage_unit_mb">%sMB</string>
-    <string name="micloud_storage_unit_gb">%sGB</string>
     <string name="member_menu_vipname_free">Free</string>
     <string name="member_menu_vipname_premium">Premium</string>
     <string name="member_menu_vipname_mega">Mega</string>
     <string name="member_menu_vipname_ultra">Ultra</string>
+    <string name="micloud_storage_unit_mb">%sMB</string>
+    <string name="micloud_storage_unit_gb">%sGB</string>
     <string name="micloud_manual_title">Manual sync</string>
     <string name="micloud_manual_sync_now">Sync</string>
     <string name="micloud_manual_sync_pause">Pause sync</string>
@@ -407,16 +420,70 @@ to your Mi Account to reactivate Mi Cloud."</string>
     <string name="member_entrance_title_ultra_high_case_b">Renewal</string>
     <string name="last_sync_time_just_now">Just now</string>
     <string name="last_sync_time_yesterday">Yesterday</string>
-    <string name="user_detail_agreement">User Agreement</string>
-    <string name="user_detail_privacy_policy">Privacy Policy</string>
     <string name="sync_detail_text">Sync details</string>
     <string name="sync_detail_summary_off">Off</string>
-    <string name="enable_sync_setting_title">Enable Sync items...</string>
-    <string name="provision_sync_items_loading">Loading sync items</string>
     <string name="micloud_main_memory_low_title">"Phone's internal storage is almost full"</string>
     <string name="micloud_notif_title_memory_low">"Can't sync with Mi Cloud"</string>
     <string name="find_device_service_title">Find device</string>
     <string name="micloud_wipe_data_confirm_title">Remove items synced with Mi Cloud from the phone after you sign out?</string>
     <string name="wipe_data_dialog_msg">"Some items %s aren't synced. They will be saved on your device and won't be deleted."</string>
     <string name="micloud_manual_all_sync_off_summary">Restore synced data on new devices using Mi Cloud</string>
+    <item type="string" name="APKTOOL_DUMMY_1a3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1aa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ab">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ac">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ad">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ae">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1af">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ba">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1bb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1bc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1bd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1be">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1bf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ca">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1d9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1da">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1db">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1dc">false</item>
 </resources>
