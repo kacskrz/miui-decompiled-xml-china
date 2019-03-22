@@ -38,12 +38,14 @@
     <string name="pref_video_quality_entry_value_4kuhd">8</string>
     <string name="pref_video_quality_entry_value_4kuhd_60fps">8,60</string>
     <string name="pref_video_quality_entry_value_1080p_60fps">6,60</string>
+    <string name="pref_video_quality_entry_value_720p_60fps">5,60</string>
     <string name="pref_video_quality_value_autozoom">6</string>
     <string name="pref_video_quality_entry_4kuhd">UHD 4K, 30fps</string>
     <string name="pref_video_quality_entry_4kuhd_60fps">UHD 4K, 60fps</string>
     <string name="pref_video_quality_entry_1080p">FHD 1080p, 30fps</string>
     <string name="pref_video_quality_entry_1080p_60fps">FHD 1080p, 60fps</string>
     <string name="pref_video_quality_entry_720p">HD 720p</string>
+    <string name="pref_video_quality_entry_720p_60fps">HD 720p, 60fps</string>
     <string name="pref_video_quality_entry_480p">SD 480p</string>
     <string name="pref_new_slow_motion_video_quality_entry_1080p">FHD 1080p</string>
     <string name="pref_new_slow_motion_video_quality_entry_720p">HD 720p</string>
@@ -542,7 +544,7 @@ in Portrait mode"</string>
     <string name="lighting_pattern_shutter">Blinds</string>
     <string name="lighting_pattern_holi">Holi</string>
     <string name="pref_camera_video_bokeh_on">Video bokeh</string>
-    <string name="pref_camera_video_bokeh_off">Video bokeh is closed</string>
+    <string name="pref_camera_video_bokeh_off">Video bokeh is off</string>
     <string name="view_privacy_policy">View Privacy Policy</string>
     <string name="provider_authority">com.xiaomi.camera.parallelservice.provider.SpecialTypesProvider</string>
     <string name="beauty_reset">Reset</string>
@@ -656,7 +658,7 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="zoom_no_support_tip_48M">"Zoom doesn't work in 48MP mode"</string>
     <string name="autozoom_hint">Track moving object</string>
     <string name="autozoom_disabled_hint">Stopped tracking moving object</string>
-    <string name="autozoom_click_hint">Tap an object to start tracking. Stay at least 3 meters away for best effect.</string>
+    <string name="autozoom_click_hint">"Tap an object to keep it in focus while it's moving. Stay at least 3 meters away for best effect."</string>
     <string name="autozoom_landscape_hint">建议横屏下拍摄</string>
     <string name="hand_gesture_open_tip">Show your palm to the camera to start timer</string>
     <string name="hand_gesture_tip">Palm shutter</string>
@@ -673,7 +675,9 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="pref_camera_long_press_viewfinder_title">Press &amp; hold Viewfinder</string>
     <string name="pref_camera_long_pressing_viewfinder_entry_google_lens">Google Lens</string>
     <string name="pref_camera_long_pressing_viewfinder_entry_lock_ae_af">AE &amp; AF Lock</string>
-    <string name="pref_camera_long_press_viewfinder_default">lens</string>
+    <string name="pref_camera_long_press_viewfinder_default">Google Lens</string>
+    <string name="macro_mode">Macro</string>
+    <string name="macro_mode_tip">"Distance between the lens and the object shouldn't exceed 10cm"</string>
     <string name="pref_camera_live_sticker_internal_title">Internal magic tools</string>
     <string name="hint_ae_lock">Auto exposure has been locked</string>
     <string name="wideselfie_press_shoot_key_to_start">按下快门键</string>
@@ -682,8 +686,6 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="wideselfie_rotate_to_right_slowly">向右缓慢旋转手机</string>
     <string name="wideselfie_rotate_to_front">向前倾斜设备</string>
     <string name="wideselfie_rotate_to_back">向后倾斜设备</string>
-    <string name="macro_mode">微距模式</string>
-    <string name="macro_mode_tip">请将拍摄对象置于10cm内</string>
     <string name="device_watermark_default_text">AI TRIPLE CAMERA</string>
     <string name="device_48m_watermark_default_text">48MP TRIPLE CAMERA</string>
     <string name="live_share_tik">TikTok</string>
@@ -692,11 +694,9 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="live_share_qq">QQ</string>
     <string name="live_share_qzone">QZone</string>
     <string name="live_share_weibo">WeiBo</string>
-    <item type="string" name="APKTOOL_DUMMY_2b3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_333">false</item>
-    <item type="string" name="APKTOOL_DUMMY_334">false</item>
-    <item type="string" name="APKTOOL_DUMMY_354">false</item>
-    <item type="string" name="APKTOOL_DUMMY_355">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2b5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_335">false</item>
+    <item type="string" name="APKTOOL_DUMMY_336">false</item>
     <item type="string" name="APKTOOL_DUMMY_356">false</item>
     <item type="string" name="APKTOOL_DUMMY_357">false</item>
     <item type="string" name="APKTOOL_DUMMY_358">false</item>
@@ -819,8 +819,8 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <item type="string" name="APKTOOL_DUMMY_3cd">false</item>
     <item type="string" name="APKTOOL_DUMMY_3ce">false</item>
     <item type="string" name="APKTOOL_DUMMY_3cf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3d0">false</item>
     <item type="string" name="APKTOOL_DUMMY_3d1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_3d2">false</item>
     <item type="string" name="APKTOOL_DUMMY_3d3">false</item>
     <item type="string" name="APKTOOL_DUMMY_3d4">false</item>
     <item type="string" name="APKTOOL_DUMMY_3d5">false</item>
@@ -836,11 +836,11 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <item type="string" name="APKTOOL_DUMMY_3df">false</item>
     <item type="string" name="APKTOOL_DUMMY_3e0">false</item>
     <item type="string" name="APKTOOL_DUMMY_3e1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e2">false</item>
     <item type="string" name="APKTOOL_DUMMY_3e3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_3e4">false</item>
     <item type="string" name="APKTOOL_DUMMY_3e5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e6">false</item>
     <item type="string" name="APKTOOL_DUMMY_3e7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_3e8">false</item>
     <item type="string" name="APKTOOL_DUMMY_3e9">false</item>
     <item type="string" name="APKTOOL_DUMMY_3ea">false</item>
     <item type="string" name="APKTOOL_DUMMY_3eb">false</item>
@@ -851,8 +851,8 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <item type="string" name="APKTOOL_DUMMY_3f0">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f1">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3f3">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_3f5">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f6">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f7">false</item>
     <item type="string" name="APKTOOL_DUMMY_3f8">false</item>
@@ -871,13 +871,13 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <item type="string" name="APKTOOL_DUMMY_405">false</item>
     <item type="string" name="APKTOOL_DUMMY_406">false</item>
     <item type="string" name="APKTOOL_DUMMY_407">false</item>
+    <item type="string" name="APKTOOL_DUMMY_408">false</item>
     <item type="string" name="APKTOOL_DUMMY_409">false</item>
     <item type="string" name="APKTOOL_DUMMY_40b">false</item>
     <item type="string" name="APKTOOL_DUMMY_40d">false</item>
     <item type="string" name="APKTOOL_DUMMY_40f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_410">false</item>
-    <item type="string" name="APKTOOL_DUMMY_416">false</item>
-    <item type="string" name="APKTOOL_DUMMY_417">false</item>
+    <item type="string" name="APKTOOL_DUMMY_411">false</item>
+    <item type="string" name="APKTOOL_DUMMY_412">false</item>
     <item type="string" name="APKTOOL_DUMMY_418">false</item>
     <item type="string" name="APKTOOL_DUMMY_419">false</item>
     <item type="string" name="APKTOOL_DUMMY_41a">false</item>
@@ -893,8 +893,8 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <item type="string" name="APKTOOL_DUMMY_424">false</item>
     <item type="string" name="APKTOOL_DUMMY_425">false</item>
     <item type="string" name="APKTOOL_DUMMY_426">false</item>
+    <item type="string" name="APKTOOL_DUMMY_427">false</item>
     <item type="string" name="APKTOOL_DUMMY_428">false</item>
-    <item type="string" name="APKTOOL_DUMMY_429">false</item>
     <item type="string" name="APKTOOL_DUMMY_42a">false</item>
     <item type="string" name="APKTOOL_DUMMY_42b">false</item>
     <item type="string" name="APKTOOL_DUMMY_42c">false</item>
@@ -975,4 +975,6 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <item type="string" name="APKTOOL_DUMMY_477">false</item>
     <item type="string" name="APKTOOL_DUMMY_478">false</item>
     <item type="string" name="APKTOOL_DUMMY_479">false</item>
+    <item type="string" name="APKTOOL_DUMMY_47a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_47b">false</item>
 </resources>
