@@ -30,7 +30,6 @@
     <string name="screen_on_proximity_sensor_hint">To turn this feature off, press the Volume up and Back buttons simultaneously.</string>
     <string name="pref_front_mirror_title">Mirror front camera</string>
     <string name="pref_video_quality_title">Video quality</string>
-    <string name="pref_video_quality_summary">4K video cannot be supported in 120FPS mode</string>
     <string name="pref_video_hfr_title">Video HFR</string>
     <string name="pref_video_quality_default">6</string>
     <string name="pref_mi_front_video_quality_default">6</string>
@@ -44,9 +43,9 @@
     <string name="pref_video_quality_entry_4kuhd_60fps">UHD 4K, 60fps</string>
     <string name="pref_video_quality_entry_1080p">FHD 1080p, 30fps</string>
     <string name="pref_video_quality_entry_1080p_60fps">FHD 1080p, 60fps</string>
-    <string name="pref_video_quality_entry_720p">HD 720p</string>
+    <string name="pref_video_quality_entry_720p">HD 720p, 30fps</string>
     <string name="pref_video_quality_entry_720p_60fps">HD 720p, 60fps</string>
-    <string name="pref_video_quality_entry_480p">SD 480p</string>
+    <string name="pref_video_quality_entry_480p">SD 480p, 30fps</string>
     <string name="pref_new_slow_motion_video_quality_entry_1080p">FHD 1080p</string>
     <string name="pref_new_slow_motion_video_quality_entry_720p">HD 720p</string>
     <string name="pref_new_slow_motion_video_quality_240_720only">You can only record 720p videos with 240fps</string>
@@ -204,7 +203,7 @@
     <string name="pref_camera_antibanding_entry_2">60 Hz</string>
     <string name="pref_camera_antibanding_entry_3">Auto</string>
     <string name="dialog_ok">OK</string>
-    <string name="dialog_ok_time">OK (<g id="NUMBER">%d</g>s)</string>
+    <string name="dialog_ok_time">OK(%ds)</string>
     <string name="spaceIsLow_content_primary_storage_priority">USB storage is running out of space</string>
     <string name="spaceIsLow_content_external_storage_priority">SD card is running out of space</string>
     <string name="image_file_name_format">"'IMG'_yyyyMMdd_HHmmss"</string>
@@ -473,7 +472,6 @@ and then create a shot with a minimal amount of noise."</string>
     <string name="module_name_manual">Manual</string>
     <string name="module_name_portrait">Portrait</string>
     <string name="module_name_pixel_48M">48M</string>
-    <string name="module_name_fun_ar">萌拍</string>
     <string name="config_name_setting">Settings</string>
     <string name="config_name_straighten">Straighten</string>
     <string name="config_name_hht">HHT</string>
@@ -482,7 +480,6 @@ and then create a shot with a minimal amount of noise."</string>
     <string name="config_name_scene">Scene</string>
     <string name="config_name_magic">Magic</string>
     <string name="config_name_super_resolution">Super resolution</string>
-    <string name="config_name_ratio">Ratio</string>
     <string name="beauty_fragment_tab_name_beauty">Beauty</string>
     <string name="beauty_fragment_tab_name_makeup">Advanced</string>
     <string name="beauty_fragment_tab_name_3d_beauty">Beauty</string>
@@ -666,7 +663,7 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="autozoom_hint">Track moving object</string>
     <string name="autozoom_disabled_hint">Stopped tracking moving object</string>
     <string name="autozoom_click_hint">"Tap an object to keep it in focus while it's moving. Stay at least 3 meters away for best effect."</string>
-    <string name="autozoom_landscape_hint">建议横屏下拍摄</string>
+    <string name="autozoom_landscape_hint">Shoot in landscape mode for best effect</string>
     <string name="hand_gesture_open_tip">Show your palm to the camera to start timer</string>
     <string name="hand_gesture_tip">Palm shutter</string>
     <string name="permission_contacts">android.permission-group.CONTACTS@1</string>
@@ -689,7 +686,20 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="pref_camera_long_press_viewfinder_default">@string/pref_camera_long_press_viewfinder_google_lens</string>
     <string name="macro_mode">Macro</string>
     <string name="macro_mode_tip">"Distance between the lens and the object shouldn't exceed 10cm"</string>
-    <string name="mimoji_on_create">创建拟我表情</string>
+    <string name="hint_ae_lock">Automatic exposure is locked</string>
+    <string name="wideselfie_press_shoot_key_to_start">Tap the shutter button</string>
+    <string name="wideselfie_rotate_slowly">Rotate the phone sideways slowly</string>
+    <string name="wideselfie_rotate_to_left_slowly">Rotate the phone to the left slowly</string>
+    <string name="wideselfie_rotate_to_right_slowly">Rotate the phone to the right slowly</string>
+    <string name="wideselfie_rotate_to_front">Tilt the phone forward</string>
+    <string name="wideselfie_rotate_to_back">Tilt the phone backward</string>
+    <string name="wideselfie_result_image_lossless">"Couldn't save panorama"</string>
+    <string name="beauty_body_whole">Body</string>
+    <string name="ultra_wide_mode_use_hint_text_sat">"Try 0.6X Ultra wide angle mode to include more of the scene in your photo.
+Ultra wide angle mode comes to help when you can't move farther from the scene."</string>
+    <string name="module_name_fun_ar">萌拍</string>
+    <string name="mimoji_fragment_tab_name">Mimoji</string>
+    <string name="mimoji_on_create">创建Mimoji</string>
     <string name="mimoji_check_normal">请按下拍照键</string>
     <string name="mimoji_check_no_face">未识别到面部</string>
     <string name="mimoji_check_low_light">请移至明亮处，便于识别面部</string>
@@ -713,28 +723,18 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="mimoji_tips">轻触拍照，长按录像</string>
     <string name="mimoji_detect_tips">请把脸放在取景框内</string>
     <string name="mimoji_edit_whether_abandon">是否放弃编辑</string>
-    <string name="mimoji_cancle">cancle</string>
-    <string name="mimoji_back">back</string>
-    <string name="mimoji_confirm">confirm</string>
-    <string name="mimoji_editor">edit</string>
-    <string name="mimoji_save">save</string>
-    <string name="mimoji_recapture">recapture</string>
-    <string name="mimoji_selected">select</string>
-    <string name="mimoji_edit_mimoji">edit emoji</string>
-    <string name="mimoji_delete_mimoji">delete emoji</string>
-    <string name="mimoji_delete_success">delete success</string>
-    <string name="mimoji_save_success">save success</string>
-    <string name="hint_ae_lock">Automatic exposure is locked</string>
-    <string name="wideselfie_press_shoot_key_to_start">Tap the shutter button</string>
-    <string name="wideselfie_rotate_slowly">Rotate the phone sideways slowly</string>
-    <string name="wideselfie_rotate_to_left_slowly">Rotate the phone to the left slowly</string>
-    <string name="wideselfie_rotate_to_right_slowly">Rotate the phone to the right slowly</string>
-    <string name="wideselfie_rotate_to_front">Tilt the phone forward</string>
-    <string name="wideselfie_rotate_to_back">Tilt the phone backward</string>
-    <string name="wideselfie_result_image_lossless">"Couldn't save panorama"</string>
+    <string name="mimoji_cancle">取消</string>
+    <string name="mimoji_back">返回</string>
+    <string name="mimoji_confirm">确认</string>
+    <string name="mimoji_editor">编辑</string>
+    <string name="mimoji_save">保存</string>
+    <string name="mimoji_recapture">重拍</string>
+    <string name="mimoji_selected">请选择</string>
+    <string name="mimoji_edit_mimoji">编辑拟我表情</string>
+    <string name="mimoji_delete_mimoji">删除拟我表情</string>
+    <string name="mimoji_delete_success">删除成功</string>
+    <string name="mimoji_save_success">保存成功</string>
     <string name="pref_camera_live_sticker_internal_title">Internal magic tools</string>
-    <string name="ultra_wide_mode_use_hint_text_sat">"开启0.6X超广角，为您记录更广阔的视野
-探索更多精彩的美"</string>
     <string name="device_watermark_default_text">AI DUAL CAMERA</string>
     <string name="device_48m_watermark_default_text">48MP DUAL CAMERA</string>
     <string name="live_share_tik">TikTok</string>
