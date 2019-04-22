@@ -38,46 +38,77 @@
         <item>Custom</item>
     </string-array>
     <array name="config_keySystemUuidMapping" />
-    <string-array name="app_ops_labels">
-        <item>Trying to enable WLAN</item>
-        <item>Trying to enable BT</item>
-    </string-array>
     <array name="carrier_properties" />
     <array name="common_nicknames" />
     <array name="config_allowedGlobalInstantAppSettings" />
+    <array name="config_allowedManagedServicesOnLowRamDevices" />
     <array name="config_allowedSecureInstantAppSettings" />
     <array name="config_allowedSystemInstantAppSettings" />
+    <integer-array name="config_apfEthTypeBlackList">
+        <item>0x000088A2</item>
+        <item>0x000088A4</item>
+        <item>0x000088B8</item>
+        <item>0x000088CD</item>
+        <item>0x000088E3</item>
+    </integer-array>
     <string-array name="config_appsToPin">
         <item>com.tencent.mm</item>
     </string-array>
     <array name="config_autoBrightnessButtonBacklightValues" />
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>10</item>
+        <item>10</item>
+        <item>23</item>
+        <item>23</item>
+        <item>38</item>
+        <item>38</item>
+        <item>73</item>
+        <item>73</item>
+        <item>80</item>
+        <item>80</item>
+        <item>101</item>
+        <item>101</item>
+        <item>115</item>
+        <item>115</item>
+        <item>151</item>
+        <item>167</item>
+        <item>190</item>
+        <item>345</item>
+        <item>408</item>
+        <item>432</item>
+    </integer-array>
     <array name="config_autoBrightnessKeyboardBacklightValues" />
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>2</item>
-        <item>2</item>
-        <item>2</item>
-        <item>3</item>
-        <item>3</item>
-        <item>5</item>
-        <item>5</item>
-        <item>12</item>
-        <item>12</item>
-        <item>20</item>
-        <item>20</item>
-        <item>39</item>
-        <item>39</item>
-        <item>43</item>
-        <item>43</item>
-        <item>55</item>
-        <item>55</item>
-        <item>63</item>
-        <item>63</item>
-        <item>84</item>
-        <item>93</item>
-        <item>105</item>
-        <item>200</item>
-        <item>240</item>
-        <item>255</item>
+        <item>32</item>
+        <item>32</item>
+        <item>32</item>
+        <item>48</item>
+        <item>48</item>
+        <item>80</item>
+        <item>80</item>
+        <item>192</item>
+        <item>192</item>
+        <item>320</item>
+        <item>320</item>
+        <item>624</item>
+        <item>624</item>
+        <item>688</item>
+        <item>688</item>
+        <item>880</item>
+        <item>880</item>
+        <item>1008</item>
+        <item>1008</item>
+        <item>1344</item>
+        <item>1488</item>
+        <item>1688</item>
+        <item>3200</item>
+        <item>3840</item>
+        <item>4095</item>
     </integer-array>
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
@@ -105,15 +136,6 @@
         <item>3500</item>
         <item>4000</item>
     </integer-array>
-    <integer-array name="config_autoBrightnessLuxLevels">
-        <item>2</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>800</item>
-        <item>2000</item>
-        <item>4000</item>
-    </integer-array>
     <integer-array name="config_autoRotationTiltTolerance">
         <item>-25</item>
         <item>70</item>
@@ -124,6 +146,7 @@
         <item>-25</item>
         <item>65</item>
     </integer-array>
+    <array name="config_availableColorModes" />
     <array name="config_batteryPackageTypeService" />
     <string-array name="config_batteryPackageTypeSystem">
         <item>com.android.providers.calendar</item>
@@ -145,18 +168,14 @@
         <item>353</item>
     </string-array>
     <array name="config_cdma_dun_supported_types" />
-    <array name="config_cdma_home_system" />
+    <string-array name="config_cdma_home_system">
+        <item>1</item>
+    </string-array>
     <array name="config_cdma_international_roaming_indicators" />
     <array name="config_cell_retries_per_error_code" />
     <integer-array name="config_clockTickVibePattern">
         <item>125</item>
         <item>30</item>
-    </integer-array>
-    <integer-array name="config_contextClickVibePattern">
-        <item>0</item>
-        <item>1</item>
-        <item>20</item>
-        <item>21</item>
     </integer-array>
     <array name="config_convert_to_emergency_number_map" />
     <array name="config_defaultFirstUserRestrictions" />
@@ -188,55 +207,65 @@
         <item>/system/lib64/libblas.so</item>
     </string-array>
     <array name="config_default_vm_number" />
-    <array name="config_disabledUntilUsedPreinstalledCarrierApps" />
+    <array name="config_deviceSpecificSystemServices" />
+    <array name="config_disableApkUnlessMatchedSku_skus_list" />
+    <array name="config_disableApksUnlessMatchedSku_apk_list" />
     <string-array name="config_disabledUntilUsedPreinstalledImes">
         <item>com.android.inputmethod.latin</item>
     </string-array>
-    <integer-array name="config_dynamicBrightLevels">
-        <item>5</item>
-        <item>10</item>
-        <item>50</item>
-        <item>70</item>
-        <item>100</item>
-        <item>400</item>
-        <item>600</item>
-        <item>1000</item>
-    </integer-array>
-    <integer-array name="config_dynamicDarkLevels">
-        <item>8</item>
-        <item>8</item>
-        <item>8</item>
-        <item>8</item>
-        <item>8</item>
-        <item>5</item>
-        <item>5</item>
-        <item>5</item>
-    </integer-array>
     <integer-array name="config_dynamicHysteresisBrightLevels">
-        <item>100</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </integer-array>
     <integer-array name="config_dynamicHysteresisDarkLevels">
-        <item>200</item>
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </integer-array>
-    <array name="config_dynamicHysteresisLuxLevels" />
+    <integer-array name="config_dynamicHysteresisLuxLevels">
+        <item>2</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>800</item>
+        <item>2000</item>
+        <item>4000</item>
+    </integer-array>
     <integer-array name="config_emergency_mcc_codes">
         <item>404</item>
         <item>405</item>
     </integer-array>
     <array name="config_ephemeralResolverPackage" />
+    <array name="config_ethernet_interfaces" />
     <string-array name="config_globalActionsList">
         <item>power</item>
         <item>restart</item>
+        <item>lockdown</item>
+        <item>logout</item>
         <item>bugreport</item>
-        <item>users</item>
+        <item>screenshot</item>
     </string-array>
     <string-array name="config_gpsParameters">
         <item>SUPL_HOST=supl.google.com</item>
         <item>SUPL_PORT=7275</item>
-        <item>NTP_SERVER=north-america.pool.ntp.org</item>
         <item>SUPL_VER=0x20000</item>
         <item>SUPL_MODE=1</item>
         <item>SUPL_ES=1</item>
+        <item>LPP_PROFILE=0</item>
+        <item>USE_EMERGENCY_PDN_FOR_EMERGENCY_SUPL=1</item>
+        <item>A_GLONASS_POS_PROTOCOL_SELECT=0</item>
+        <item>GPS_LOCK=0</item>
     </string-array>
     <array name="config_hideWhenDisabled_packageNames" />
     <integer-array name="config_keyboardTapVibePattern">
@@ -268,24 +297,16 @@
         <item>-102</item>
         <item>-44</item>
     </integer-array>
-    <integer-array name="config_manualBrightnessRemapIn">
-        <item>0</item>
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>128</item>
-        <item>192</item>
-        <item>255</item>
-    </integer-array>
-    <integer-array name="config_manualBrightnessRemapOut">
-        <item>0</item>
-        <item>1</item>
-        <item>8</item>
-        <item>20</item>
-        <item>60</item>
-        <item>120</item>
-        <item>255</item>
-    </integer-array>
+    <array name="config_minimumBrightnessCurveLux">
+        <item>0.0</item>
+        <item>2000.0</item>
+        <item>4000.0</item>
+    </array>
+    <array name="config_minimumBrightnessCurveNits">
+        <item>0.0</item>
+        <item>50.0</item>
+        <item>90.0</item>
+    </array>
     <string-array name="config_miuiNonBlockableNotificationPackages">
         <item>android</item>
         <item>com.android.incallui</item>
@@ -299,8 +320,9 @@
     </string-array>
     <array name="config_mobile_hotspot_provision_app" />
     <string-array name="config_mobile_tcp_buffers">
+        <item>5gnr:2097152,6291456,16777216,512000,2097152,8388608</item>
         <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
-        <item>lte_ca:2097152,4194304,8388608,4096,1048576,2097152</item>
+        <item>lte_ca:4096,6291456,12582912,4096,1048576,2097152</item>
         <item>umts:4094,87380,1220608,4096,16384,1220608</item>
         <item>hspa:4094,87380,1220608,4096,16384,1220608</item>
         <item>hsupa:4094,87380,1220608,4096,16384,1220608</item>
@@ -311,6 +333,28 @@
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
     <array name="config_networkNotifySwitches" />
+    <string-array name="config_nightDisplayColorTemperatureCoefficients">
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>1.0</item>
+        <item>-0.00000000962353339</item>
+        <item>0.000153045476</item>
+        <item>0.390782778</item>
+        <item>-0.0000000189359041</item>
+        <item>0.000302412211</item>
+        <item>-0.198650895</item>
+    </string-array>
+    <string-array name="config_nightDisplayColorTemperatureCoefficientsNative">
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>1.0</item>
+        <item>-0.00000000962353339</item>
+        <item>0.000153045476</item>
+        <item>0.390782778</item>
+        <item>-0.0000000189359041</item>
+        <item>0.000302412211</item>
+        <item>-0.198650895</item>
+    </string-array>
     <array name="config_nonBlockableNotificationPackages" />
     <integer-array name="config_notificationFallbackVibePattern">
         <item>0</item>
@@ -319,15 +363,17 @@
         <item>100</item>
     </integer-array>
     <string-array name="config_notificationSignalExtractors">
+        <item>com.android.server.notification.NotificationChannelExtractor</item>
+        <item>com.android.server.notification.NotificationAdjustmentExtractor</item>
         <item>com.android.server.notification.ValidateNotificationPeople</item>
         <item>com.android.server.notification.PriorityExtractor</item>
+        <item>com.android.server.notification.ZenModeExtractor</item>
         <item>com.android.server.notification.ImportanceExtractor</item>
         <item>com.android.server.notification.NotificationIntrusivenessExtractor</item>
         <item>com.android.server.notification.VisibilityExtractor</item>
         <item>com.android.server.notification.BadgeExtractor</item>
     </string-array>
     <array name="config_oemUsbModeOverride" />
-    <array name="config_operatorConsideredNonRoaming" />
     <integer-array name="config_protectedNetworks">
         <item>10</item>
         <item>11</item>
@@ -335,12 +381,7 @@
         <item>14</item>
         <item>15</item>
     </integer-array>
-    <integer-array name="config_safeModeDisabledVibePattern">
-        <item>0</item>
-        <item>1</item>
-        <item>20</item>
-        <item>21</item>
-    </integer-array>
+    <array name="config_ringtoneEffectUris" />
     <integer-array name="config_safeModeEnabledVibePattern">
         <item>0</item>
         <item>1</item>
@@ -349,7 +390,8 @@
         <item>500</item>
         <item>600</item>
     </integer-array>
-    <array name="config_sameNamedOperatorConsideredRoaming" />
+    <array name="config_screenBrightnessBacklight" />
+    <array name="config_screenBrightnessNits" />
     <integer-array name="config_scrollBarrierVibePattern">
         <item>0</item>
         <item>15</item>
@@ -398,6 +440,7 @@
         <item>schedule</item>
         <item>event</item>
     </string-array>
+    <array name="config_telephonyEuiccDeviceCapabilities" />
     <string-array name="config_telephonyHardware">
         <item>0,modem,0,0,0,1,1,1</item>
         <item>1,sim,0,modem</item>
@@ -456,8 +499,14 @@
     <string-array name="config_vvmSmsFilterRegexes">
         <item>310004,310010,310012,310013,310590,310890,310910,311110,311270,311271,311272,311273,311274,311275,311276,311277,311278,311279,311280,311281,311282,311283,311284,311285,311286,311287,311288,311289,311390,311480,311481,311482,311483,311484,311485,311486,311487,311488,311489;^//VZWVVM.*</item>
     </string-array>
+    <string-array name="config_wearActivityModeRadios">
+        <item>wifi</item>
+    </string-array>
     <array name="config_wifi_dual_sap_interfaces" />
     <array name="dial_string_replace" />
+    <array name="disallowed_apps_managed_device" />
+    <array name="disallowed_apps_managed_profile" />
+    <array name="disallowed_apps_managed_user" />
     <string-array name="fingerprint_acquired_vendor">
         <item>Try again</item>
         <item></item>
@@ -629,6 +678,33 @@
         <item>7,1</item>
         <item>9,1</item>
     </string-array>
+    <string-array name="required_apps_managed_device">
+        <item>com.android.settings</item>
+        <item>com.android.contacts</item>
+        <item>com.android.dialer</item>
+        <item>com.android.stk</item>
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.android.documentsui</item>
+        <item>com.miui.securitycenter</item>
+        <item>com.android.thememanager</item>
+    </string-array>
+    <string-array name="required_apps_managed_profile">
+        <item>com.android.contacts</item>
+        <item>com.android.settings</item>
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.android.documentsui</item>
+    </string-array>
+    <string-array name="required_apps_managed_user">
+        <item>com.android.settings</item>
+        <item>com.android.contacts</item>
+        <item>com.android.dialer</item>
+        <item>com.android.stk</item>
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.android.documentsui</item>
+    </string-array>
     <string-array name="resolver_target_actions_pin">
         <item>@string/pin_target</item>
         <item>@string/app_info</item>
@@ -662,33 +738,60 @@
         <item>ak-GH</item>
         <item>am-ET</item>
         <item>ar-AE</item>
+        <item>ar-AE-u-nu-latn</item>
         <item>ar-BH</item>
+        <item>ar-BH-u-nu-latn</item>
         <item>ar-DJ</item>
+        <item>ar-DJ-u-nu-latn</item>
         <item>ar-DZ</item>
+        <item>ar-DZ-u-nu-arab</item>
         <item>ar-EG</item>
+        <item>ar-EG-u-nu-latn</item>
         <item>ar-EH</item>
+        <item>ar-EH-u-nu-arab</item>
         <item>ar-ER</item>
+        <item>ar-ER-u-nu-latn</item>
         <item>ar-IL</item>
+        <item>ar-IL-u-nu-latn</item>
         <item>ar-IQ</item>
+        <item>ar-IQ-u-nu-latn</item>
         <item>ar-JO</item>
+        <item>ar-JO-u-nu-latn</item>
         <item>ar-KM</item>
+        <item>ar-KM-u-nu-latn</item>
         <item>ar-KW</item>
+        <item>ar-KW-u-nu-latn</item>
         <item>ar-LB</item>
+        <item>ar-LB-u-nu-latn</item>
         <item>ar-LY</item>
+        <item>ar-LY-u-nu-arab</item>
         <item>ar-MA</item>
+        <item>ar-MA-u-nu-arab</item>
         <item>ar-MR</item>
+        <item>ar-MR-u-nu-latn</item>
         <item>ar-OM</item>
+        <item>ar-OM-u-nu-latn</item>
         <item>ar-PS</item>
+        <item>ar-PS-u-nu-latn</item>
         <item>ar-QA</item>
+        <item>ar-QA-u-nu-latn</item>
         <item>ar-SA</item>
+        <item>ar-SA-u-nu-latn</item>
         <item>ar-SD</item>
+        <item>ar-SD-u-nu-latn</item>
         <item>ar-SO</item>
+        <item>ar-SO-u-nu-latn</item>
         <item>ar-SS</item>
+        <item>ar-SS-u-nu-latn</item>
         <item>ar-SY</item>
+        <item>ar-SY-u-nu-latn</item>
         <item>ar-TD</item>
+        <item>ar-TD-u-nu-latn</item>
         <item>ar-TN</item>
+        <item>ar-TN-u-nu-arab</item>
         <item>ar-XB</item>
         <item>ar-YE</item>
+        <item>ar-YE-u-nu-latn</item>
         <item>as-IN</item>
         <item>asa-TZ</item>
         <item>az-Cyrl-AZ</item>
@@ -700,7 +803,9 @@
         <item>bg-BG</item>
         <item>bm-ML</item>
         <item>bn-BD</item>
+        <item>bn-BD-u-nu-latn</item>
         <item>bn-IN</item>
+        <item>bn-IN-u-nu-latn</item>
         <item>bo-CN</item>
         <item>bo-IN</item>
         <item>br-FR</item>
@@ -867,7 +972,9 @@
         <item>eu-ES</item>
         <item>ewo-CM</item>
         <item>fa-AF</item>
+        <item>fa-AF-u-nu-latn</item>
         <item>fa-IR</item>
+        <item>fa-IR-u-nu-latn</item>
         <item>ff-CM</item>
         <item>ff-GN</item>
         <item>ff-MR</item>
@@ -1005,6 +1112,7 @@
         <item>ms-SG</item>
         <item>mt-MT</item>
         <item>my-MM</item>
+        <item>my-MM-u-nu-latn</item>
         <item>mzn-IR</item>
         <item>naq-NA</item>
         <item>nb-NO</item>
@@ -1019,7 +1127,6 @@
         <item>nl-NL</item>
         <item>nl-SR</item>
         <item>nl-SX</item>
-        <item>nmg-CM</item>
         <item>nn-NO</item>
         <item>nnh-CM</item>
         <item>nus-SS</item>
@@ -1102,8 +1209,6 @@
         <item>teo-KE</item>
         <item>teo-UG</item>
         <item>th-TH</item>
-        <item>ti-ER</item>
-        <item>ti-ET</item>
         <item>to-TO</item>
         <item>tr-CY</item>
         <item>tr-TR</item>
@@ -1112,7 +1217,9 @@
         <item>ug-CN</item>
         <item>uk-UA</item>
         <item>ur-IN</item>
+        <item>ur-IN-u-nu-latn</item>
         <item>ur-PK</item>
+        <item>ur-PK-u-nu-arabext</item>
         <item>uz-Arab-AF</item>
         <item>uz-Cyrl-UZ</item>
         <item>uz-Latn-UZ</item>
@@ -1134,11 +1241,18 @@
         <item>zh-Hant-TW</item>
         <item>zu-ZA</item>
     </string-array>
+    <array name="unloggable_phone_numbers" />
+    <array name="vendor_disallowed_apps_managed_device" />
+    <array name="vendor_disallowed_apps_managed_profile" />
+    <array name="vendor_disallowed_apps_managed_user" />
+    <array name="vendor_required_apps_managed_device" />
+    <array name="vendor_required_apps_managed_profile" />
+    <array name="vendor_required_apps_managed_user" />
     <string-array name="wfcOperatorErrorAlertMessages">
-        <item>To make calls and send messages over WLAN, first ask your carrier to set up this service. Then turn on WLAN calling again from Settings.</item>
+        <item>To make calls and send messages over WLAN, first ask your carrier to set up this service. Then turn on WLAN calling again from Settings. (Error code: %1$s)</item>
     </string-array>
     <string-array name="wfcOperatorErrorNotificationMessages">
-        <item>Register with your carrier</item>
+        <item>Issue registering Wi‑Fi calling with your carrier: %1$s</item>
     </string-array>
     <string-array name="wfcSpnFormats">
         <item>%s</item>
