@@ -341,9 +341,14 @@
     <string name="battery_info_status_full">Full</string>
     <string name="battery_info_status_not_charging">"Plugged in, can't charge right now"</string>
     <string name="battery_info_status_unknown">Unknown</string>
+    <string name="battery_low_button_not_open_power_save">Not now</string>
+    <string name="battery_low_button_open_power_save">Turn on</string>
     <string name="battery_low_percent_format">%d%% remaining</string>
+    <string name="battery_low_percent_format_save_mode_closed">Less than %d%% of battery remaining. Charge your device.</string>
+    <string name="battery_low_percent_format_save_mode_open">Less than %d%% of battery remaining. Turn on Battery saver to save power.</string>
     <string name="battery_low_percent_format_saver_started">%s remaining. Battery saver is on.</string>
     <string name="battery_low_title">Battery is low</string>
+    <string name="battery_low_title_power_save">Battery saver</string>
     <string name="battery_low_why">Settings</string>
     <string name="battery_meter_charging_mask">M44.98169 12.995727L27.492101 31.243375c-0.382155 0.398719 -0.368727 1.031741 0.02999 1.413896 0.184016 0.17637 0.428434 0.275817 0.683313 0.278019l8.295572 0.07167 -3.523194 10.060547 7.10315 0 17.347191 -18.375047c0.379131 -0.401595 0.36092 -1.034498 -0.04068 -1.413628 -0.185614 -0.175232 -0.431214 -0.272849 -0.686477 -0.272849l-8.119673 0 3.481811 -10.010254 -7.08142 0z</string>
     <string name="battery_meter_progress_mask">M2.5638852 0C1.6723665 0 1.3490802 0.09282561 1.0231543 0.2671327 0.69722837 0.4414398 0.4414398 0.69722837 0.2671327 1.0231543 0.09282561 1.3490802 0 1.6723665 0 2.5638852L0 0 2.5638852 0Zm0 18L0 18 0 15.436115c0 0.891518 0.09282561 1.214805 0.2671327 1.540731 0.1743071 0.325926 0.43009567 0.581714 0.7560216 0.756021C1.3490802 17.907174 1.6723665 18 2.5638852 18Z</string>
@@ -613,6 +618,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="dlg_summary_nfc">Turn off NFC</string>
     <string name="dlg_summary_title">Extreme battery saver stops all background activity after you leave an app and go back to the Home screen. If you want an app to be running in the background, add it to background exceptions.</string>
     <string name="dnd_is_off">DND is off</string>
+    <string name="dnd_notification_warnings_title">Calls and notifications will be silenced until you turn off DND</string>
     <string name="do_disclosure_generic">This device is managed by your organization</string>
     <string name="do_disclosure_with_name">This device is managed by %s</string>
     <string name="do_not_silence">"Don't silence"</string>
@@ -692,6 +698,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="face_data_manage_delete_msg">Delete face data</string>
     <string name="face_data_manage_delete_sure">"You won't be able to unlock device using your face data after you delete it."</string>
     <string name="face_data_manage_delete_title">Face data</string>
+    <string name="face_data_manage_unlock_liftcamera_msg">After the screen lights up, swipe up to unlock the device using face data.</string>
     <string name="face_data_manage_unlock_msg">Unlock device using your face data</string>
     <string name="face_data_manage_unlock_slide_msg">Replace slider shortcuts with face unlock</string>
     <string name="face_data_manage_unlock_title">Unlock using face data</string>
@@ -707,7 +714,8 @@ If you resume, charges may apply for data usage."</string>
     <string name="face_unlock_close_screen">Get closer to the screen</string>
     <string name="face_unlock_down">Raise your head</string>
     <string name="face_unlock_fail">"Couldn't verify face"</string>
-    <string name="face_unlock_fail_retry">"Couldn't verify your face. Tap the icon to try again."</string>
+    <string name="face_unlock_fail_retry">"Couldn't verify your face. Tap above to try again."</string>
+    <string name="face_unlock_fail_retry_global">Tap above to use Face unlock</string>
     <string name="face_unlock_identify_error">A recognition error occurred</string>
     <string name="face_unlock_not_found">"Couldn't recognize you"</string>
     <string name="face_unlock_not_roi">Keep your face inside the frame</string>
@@ -1200,6 +1208,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="notification_channel_controls_closed_accessibility">Notification controls for %1$s closed</string>
     <string name="notification_channel_controls_opened_accessibility">Notification controls for %1$s opened</string>
     <string name="notification_channel_disabled">"You won't get these notifications anymore."</string>
+    <string name="notification_channel_dnd">DND</string>
     <string name="notification_channel_general">General messages</string>
     <string name="notification_channel_location">Location</string>
     <string name="notification_channel_screenbutton">Buttons</string>
@@ -1350,6 +1359,10 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="power_remaining_more_than_subtext">More than %1$s remaining (%2$s)</string>
     <string name="power_remaining_only_more_than_subtext">More than %1$s remaining</string>
     <string name="power_remaining_settings_home_page">%1$s - %2$s</string>
+    <string name="power_save_ps_clean">Clear cache whenever device is locked</string>
+    <string name="power_save_ps_close_setting">Turn off background services (sync, GPS) to save battery</string>
+    <string name="power_save_ps_freeze">Freeze apps in the background</string>
+    <string name="power_save_ps_limit">Restrict the activity of system apps</string>
     <string name="preference_summary_default_combination">%1$s / %2$s</string>
     <string name="private_dns_mode_off">Off</string>
     <string name="private_dns_mode_opportunistic">Automatic</string>
@@ -2072,13 +2085,13 @@ Looks like credential storage isn't enabled."</string>
     <string name="zen_priority_introduction">"You won’t be disturbed by sounds and vibrations, except from alarms, reminders, events, and callers you specify. You'll still hear anything you choose to play including music, videos, and games."</string>
     <string name="zen_silence_introduction">This blocks ALL sounds and vibrations, including from alarms, music, videos, and games.</string>
     <string name="zen_silence_introduction_voice">This blocks ALL sounds and vibrations, including from alarms, music, videos, and games. You’ll still be able to make phone calls.</string>
-    <item type="string" name="APKTOOL_DUMMY_315">false</item>
-    <item type="string" name="APKTOOL_DUMMY_316">false</item>
-    <item type="string" name="APKTOOL_DUMMY_317">false</item>
-    <item type="string" name="APKTOOL_DUMMY_337">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4a3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4b6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4b7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_5f2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_626">false</item>
+    <item type="string" name="APKTOOL_DUMMY_31d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_31e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_31f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_33f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4ac">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4bf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5ff">false</item>
+    <item type="string" name="APKTOOL_DUMMY_633">false</item>
 </resources>
