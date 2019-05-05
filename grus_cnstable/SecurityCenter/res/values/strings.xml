@@ -353,7 +353,9 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="st_confirm_dialog_summary_oversea_call">Turn on to block all incoming calls from foreign phone numbers.</string>
     <string name="dynamic_md5">cf22c9ca95b12a9404c0b7c59515f3e3</string>
     <string name="cta_dialog_title">Internet connection</string>
-    <string name="cta_dialog_msg">Security requires internet connection to get updates, as well as access to location to work normally.</string>
+    <string name="cta_dialog_msg"><Data>You must agree to our &lt;a href=\"http://www.miui.com/res/doc/privacy.html?region=%1$s&amp;lang=%2$s\">Privacy policy&lt;/a> before using Security. Security also needs to connect to the internet and access your location to work normally and keep antivirus definitions up to date. Agree?</Data></string>
+    <string name="cta_dialog_negative">Exit</string>
+    <string name="cta_dialog_positive">Agree</string>
     <string name="cta_settings">Allow internet connection</string>
     <string name="gdpr_msg"><Data>"In order to use the basic features of Security, you must agree that Xiaomi will collect, process, and use your personal data, including information about the ways you use Security's features (e.g., mobile data usage stats, info about malware, as well as basic info about your device) and other types of information specified in our &lt;a href=\"http://www.miui.com/res/doc/privacy.html?region=%1$s&amp;lang=%2$s\">Privacy Policy&lt;/a>."</Data></string>
     <string name="st_antispam_mode_smart_state">11111111</string>
@@ -374,12 +376,11 @@ It will be added to exceptions, but previously blocked items won't appear in cal
 微信/QQ/米聊抢红包神器
 不支持提醒被屏蔽的群，以及开启电脑登录免打扰功能的软件"</string>
     <string name="float_window">桌面悬浮窗</string>
-    <string name="random_expression">随机表情</string>
+    <string name="random_expression">速抢模式</string>
     <string name="give_lucky_money">红包大派送</string>
     <string name="lucky_alarm">红包闹钟</string>
     <string name="shoop_again_float">咻一咻</string>
     <string name="cmd_lucky_float">摇一摇</string>
-    <string name="shake_send_sticker">摇一摇发表情</string>
     <string name="shake_send_sticker_summary">在微信与QQ中，摇一摇随机出现搞笑表情。逢年过节拼表情，从此易如反掌！</string>
     <string name="lucky_sound_warn">红包声音提醒</string>
     <string name="wechat_lucky_warning">微信红包</string>
@@ -651,6 +652,9 @@ to respond"</string>
     <string name="pkg_traffic">Set data usage limit</string>
     <string name="dialog_change_package_type_title">Changing data plan type</string>
     <string name="dialog_change_package_type_summary">Changing data plan type will reset all data usage settings (e.g. data limits) to their default values. Change data plan type now?</string>
+    <string name="traffic_usage_warning_limit">Data usage warning limit</string>
+    <string name="traffic_usage_warning_title">Data usage warning</string>
+    <string name="traffic_usage_warning_body">"You've already used %s of mobile data this month."</string>
     <string name="free_traffic_settings">Off-peak data usage settings</string>
     <string name="free_time_traffic">Off-peak data limit</string>
     <string name="power_save_on_time_start_time_summary_na">From</string>
@@ -678,6 +682,7 @@ to respond"</string>
     <string name="pref_key_direction_traffic">Designated mobile data</string>
     <string name="pref_key_daily_package_summary">Turn on to reset data plan daily</string>
     <string name="traffic_setting_fragment_title">Data usage query</string>
+    <string name="traffic_setting_fragment_title_guide">Carriers and data plans</string>
     <string name="traffic_setting_fragment_button1_text">Cancel</string>
     <string name="traffic_setting_fragment_button2_text">Save</string>
     <string name="traffic_setting_fragment_area">Locale</string>
@@ -1100,7 +1105,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="celcius_symbol">℃</string>
     <string name="voltage_symbol">V</string>
     <string name="percent_symbol">%</string>
-    <string name="power_center_title">Battery usage</string>
+    <string name="power_center_title">Battery optimization</string>
     <string name="power_center_back">Back</string>
     <string name="power_center_auto_shutdown">Schedule power on/off</string>
     <string name="power_center_ontime_boot">Power on time</string>
@@ -1113,7 +1118,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="power_center_charge_time">%1$suntil full</string>
     <string name="power_dialog_cancel">Cancel</string>
     <string name="power_dialog_ok">OK</string>
-    <string name="power_consume_rank_title">Battery use</string>
+    <string name="power_consume_rank_title">Power usage</string>
     <string name="power_consume_rank_software">Apps</string>
     <string name="power_consume_rank_hardware">Hardware</string>
     <string name="power_consume_software_total_format">Apps: %s</string>
@@ -1239,6 +1244,12 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="btn_text_quick_save_power">Cool down</string>
     <string name="notification_battery_consume_abnormal_title">Battery is being drained too fast</string>
     <string name="app_check_no_issue">Looks like there are no battery issues. Cool!</string>
+    <string name="deep_power_save_item_title_auto_brightness">Turn on auto brightness</string>
+    <string name="deep_power_save_item_summary_auto_brightness">Adjust screen brightness automatically to save battery</string>
+    <string name="deep_power_save_item_title_bluetooth">Turn off Bluetooth</string>
+    <string name="deep_power_save_item_summary_bluetooth">Turn off Bluetooth to save battery</string>
+    <string name="deep_power_save_item_title_lock_screen_time">Put screen to sleep</string>
+    <string name="deep_power_save_item_summary_lock_screen_time">Put screen to sleep after 30 seconds of inactivity to save battery</string>
     <string name="power_save_mode_enable">Battery saver</string>
     <string name="power_save_mode_summary">Monitor background processes and turn off sync.</string>
     <string name="power_optimize_save_mode_not_opened">Battery saver off</string>
@@ -1365,9 +1376,9 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="power_center_stop_scan_title">Stop scanning</string>
     <string name="hide_mode_result_summary_text">Customize Battery saver settings for individual apps</string>
     <string name="auto_task_result_summary_text">Set automated tasks for Battery saver</string>
-    <string name="pc_settings_title">Battery usage settings</string>
+    <string name="pc_settings_title">Battery optimization settings</string>
     <string name="pc_main_activity_back">Back</string>
-    <string name="extreme_power_save_mode_card_summary">Turn on Extreme mode to save power when the battery is low.</string>
+    <string name="extreme_power_save_mode_card_summary">Turn on Extreme battery saver to save power when the battery is low.</string>
     <string name="power_center_list_item_battery_health_model_voltage">%s V</string>
     <string name="power_center_list_item_battery_health_model_temperature">%d ℃</string>
     <string name="power_center_list_item_battery_health_model_volume">%s mAh</string>
@@ -1464,7 +1475,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="sp_background_risk_type_sign">Unofficial app is running</string>
     <string name="sp_background_risk_type_root">System has been rooted</string>
     <string name="resource_securitycenter_settings">Security</string>
-    <string name="keywords_securitycenter_settings">Battery usage;Manage autostart;Install via USB;App permissions;Buy mobile data;Blocklist;Data usage;Calibrate data plan;Test network; Save battery;Heating;Turn on;Turn off;Battery;Draining;Battery issues;Energy;Battery saver;Energy saver;Energy saving;Battery saving; Autostart;Permissions;Auto start;MIUI autostart; App autostart; autostart apps;Chain start;chained start;triggered start; USB install;install from computer;ADB install; Location;Access contacts; data;mobile data;buy data;topup data;data plan; Block;Black list;Smart blocklist;Fraud;Sales;Agents;Call blocklist;Message blocklist;Messaging blocklist;SMS blocklist;blacklist;black list;blocklist;block list;fraud;block contact;block contacts; Traffic; Calibrate; Connection;Internet;Test; Battery use; Game;speed booster;Glory of the king;Performance mode;DND</string>
+    <string name="keywords_securitycenter_settings">Battery usage;Manage autostart;Install via USB;App permissions;Buy mobile data;Blocklist;Data usage;Calibrate data plan;Test network; Save battery;Heating;Turn on;Turn off;Battery;Draining;Battery issues;Energy;Battery saver;Energy saver;Energy saving;Battery saving; Autostart;Permissions;Auto start;MIUI autostart; App autostart; autostart apps;Chain start;chained start;triggered start; USB install;install from computer;ADB install; Location;Access contacts; data;mobile data;buy data;topup data;data plan; Block;Black list;Smart blocklist;Fraud;Sales;Agents;Call blocklist;Message blocklist;Messaging blocklist;SMS blocklist;blacklist;black list;blocklist;block list;fraud;block contact;block contacts; Traffic; Calibrate; Connection;Internet;Test; Battery use;Battery optimization;Power usage; Game;speed booster;Glory of the king;Performance mode;DND</string>
     <string name="path_securitycenter_settings">System apps/Security</string>
     <string name="resource_securitycenter">Security</string>
     <string name="keywords_securitycenter">Security;Check;Scan</string>
@@ -1475,9 +1486,9 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="resource_antivirus">Virus scan</string>
     <string name="keywords_antivirus">Virus;Risk;Antivirus;Scan;Check payment security;payment security;secure payment;secure payments;payment protection;protect payments;protected payments;secure zone;payment zone</string>
     <string name="path_antivirus">System apps/Security/Virus scan</string>
-    <string name="resource_powercenter">Battery usage</string>
+    <string name="resource_powercenter">Battery optimization</string>
     <string name="keywords_powercenter">Save battery;Heating;Turn on;Turn off;Battery;Draining;Battery;Battery issues;Energy;Draining;Heating;Battery saver;Energy saver;Energy saving;Battery saving</string>
-    <string name="path_powercenter">System apps/Security/Battery usage</string>
+    <string name="path_powercenter">System apps/Security/Battery optimization</string>
     <string name="resource_auto_restart">Manage autostart</string>
     <string name="keywords_auto_restart">Autostart; Permissions;Auto start;Autostart; Manage autostart; MIUI autostart; App autostart; autostart apps;Chain start;chained start;triggered start</string>
     <string name="path_auto_restart">System apps/Security/Permissions/Autostart</string>
@@ -1503,7 +1514,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="keywords_networkassistant_4">Connection;Internet;Test</string>
     <string name="path_networkassistant_4">System apps/Security/Data usage/Test network</string>
     <string name="resource_powercenter_powerrank">Battery &amp; performance</string>
-    <string name="keywords_powercenter_powerrank">Battery use</string>
+    <string name="keywords_powercenter_powerrank">Power usage</string>
     <string name="path_powercenter_powerrank">Battery &amp; performance/Battery use</string>
     <string name="resource_gamebooster">Game speed booster</string>
     <string name="keywords_gamebooster">Game;speed booster;King of Glory;Performance mode;DND;Games;Gaming;Gaming speed;boost</string>
@@ -1580,7 +1591,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="menu_summary_garbage_cleanup_2">Trash size</string>
     <string name="menu_summary_garbage_cleanup_3">Clear trash now</string>
     <string name="menu_text_garbage_cleanup_danger">%s</string>
-    <string name="menu_text_power_manager">Battery usage</string>
+    <string name="menu_text_power_manager">Battery optimization</string>
     <string name="menu_summary_power_manager">Battery saver gives you more time between charges</string>
     <string name="menu_summary_power_manager_1">Battery is fully charged</string>
     <string name="menu_summary_power_manager_2">%s remaining</string>
@@ -1599,7 +1610,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="activity_title_networkassistants">Data usage</string>
     <string name="activity_title_antispam">Blocklist</string>
     <string name="activity_title_license_manager">Permissions</string>
-    <string name="activity_title_power_manager">Battery usage</string>
+    <string name="activity_title_power_manager">Battery optimization</string>
     <string name="activity_title_garbage_cleanup">Cleaner</string>
     <string name="menu_summary_app_manager">Update and uninstall apps</string>
     <string name="menu_summary_app_manager_2">Updates are available</string>
@@ -1655,7 +1666,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="activity_title_create_shortcut">Manage shortcuts</string>
     <string name="menu_item_notification_title">Show menu in notification shade</string>
     <string name="menu_item_notification_garbage_text">%s</string>
-    <string name="menu_item_notification_power_text">Power</string>
+    <string name="menu_item_notification_power_text">Battery optimization</string>
     <string name="menu_item_notification_antispam_text_normal">Blocklist</string>
     <string name="menu_item_notification_antispam_text_avail">Blocklist</string>
     <string name="pref_category_title_securitycenter_settings">General</string>
@@ -1663,7 +1674,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="Settings_title_garbage_cleanup">Cleaner settings</string>
     <string name="Settings_title_network_assistants">Data usage settings</string>
     <string name="Settings_title_anti_spam">Blocklist settings</string>
-    <string name="Settings_title_power_center">Battery settings</string>
+    <string name="Settings_title_power_center">Battery optimization settings</string>
     <string name="Settings_title_anti_virus">Security scan settings</string>
     <string name="menu_item_virus_cloud_scan_title">Online definitions</string>
     <string name="menu_item_virus_cloud_scan_summary">Upload app names and details and scan using online virus definitions</string>
@@ -1821,8 +1832,8 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="toast_garbage_lib">Turned on automatic updates for Cleaner</string>
     <string name="title_app_lock_disable">Lock apps</string>
     <string name="summary_app_lock_disable">Protect your data with App lock</string>
-    <string name="title_first_aid_kit">First aid</string>
-    <string name="summary_first_aid_kit">Fix issues using our First aid kit</string>
+    <string name="title_first_aid_kit">Solve problems</string>
+    <string name="summary_first_aid_kit">Solve the problems on your device now</string>
     <string name="button_first_aid_kit">Fix now</string>
     <string name="info_and_call">Calls and messaging</string>
     <string name="SMS_and_MMS">SMS and MMS</string>
@@ -1830,7 +1841,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="call_and_contact">Calls and Contacts</string>
     <string name="permission_with_call_and_contact">Permissions related to phone calls, contact info, and call history.</string>
     <string name="title_flow_rank">Mobile data usage</string>
-    <string name="title_consume_power_rank">Battery usage</string>
+    <string name="title_consume_power_rank">App power usage</string>
     <string name="title_payment_protection">Payments are secured</string>
     <string name="title_payment_risk">Payment risks found</string>
     <string name="summary_payment_risk">"Looks like payment environment isn't secure"</string>
@@ -1952,6 +1963,8 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="preferred_app_entries_gallery">Gallery</string>
     <string name="preferred_app_entries_music">Music</string>
     <string name="preferred_app_entries_email">Email</string>
+    <string name="notify_channel_optimize">Security notifications</string>
+    <string name="notify_channel_mipush">Security push messages</string>
     <string name="card_main_applock_title">App lock</string>
     <string name="card_main_applock_summary">Protect selected apps with a password.</string>
     <string name="card_main_applock_action">Turn on</string>
@@ -2059,9 +2072,6 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="lockpattern_settings_help_how_to_record">Draw a pattern</string>
     <string name="numeric_settings_help_how_to_record">How to set PIN</string>
     <string name="mixed_settings_help_how_to_record">How to set password</string>
-    <string name="lockpattern_recording_incorrect_too_short">Connect at least %d dots</string>
-    <string name="numeric_recording_incorrect_too_short">Enter at least %d digits.</string>
-    <string name="mixed_recording_incorrect_too_short">Enter at least %d characters.</string>
     <string name="lockpattern_recording_intro_header">Connect at least 4 dots to create a pattern</string>
     <string name="numeric_recording_intro_header">Enter password</string>
     <string name="mixed_recording_intro_header">Enter at least 4 characters</string>
@@ -2137,6 +2147,27 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="reset_data_dialog_ok">Factory reset</string>
     <string name="ad_split_screen_title">Exit Split screen to unlock</string>
     <string name="applock_toast_tip">Verified App lock successfully</string>
+    <string name="face_unlock_be_on_the_screen">Hold the device in front of your face</string>
+    <string name="face_unlock_check_failed">"Couldn't recognize you"</string>
+    <string name="face_unlock_reveal_eye">Make your eyes visible</string>
+    <string name="face_unlock_open_eye">Open your eyes a bit wider</string>
+    <string name="face_unlock_reveal_mouth">Make your lips visible</string>
+    <string name="face_unlock_not_found">"Couldn't recognize you"</string>
+    <string name="unlock_failed">Internal error</string>
+    <string name="face_unlock_face_start_title">Verifying face data…</string>
+    <string name="face_unlock_face_auth_failed_title">"Couldn't verify face data. Switching to other unlock methods…"</string>
+    <string name="face_unlock_finger_or_password_switch">Use your fingerprint or enter password to unlock</string>
+    <string name="applock_function_base_settings">App lock</string>
+    <string name="applock_function_pwd_settings">Password</string>
+    <string name="applock_face_unlock_title">Face unlock</string>
+    <string name="applock_face_unlock_summary">Unlock apps using face data</string>
+    <string name="fingerprint_to_lock_summary">Unlock apps using your fingerprint</string>
+    <string name="face_unlock_guide_confirm">Use Face unlock</string>
+    <string name="face_unlock_guide_dialog_summary">You can use face data to unlock your device. Turn on Face unlock?</string>
+    <string name="face_unlock_verity_dialog_summary">Verify face data</string>
+    <string name="face_unlock_verity_dialog_title_failed">"Couldn't recognize you"</string>
+    <string name="face_unlock_verity_dialog_title_succeed">Verified successfully</string>
+    <string name="face_unlock_toast_verity_failed">"Couldn't verify face data. Go to App lock settings and try verifying your face data again there."</string>
     <string name="wakepath_confirm_start_activity">Allow %1$s to open %2$s?</string>
     <string name="unlike">No thanks</string>
     <string name="toast_network_eror">"Can't connect to network"</string>
@@ -2259,9 +2290,6 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="app_manager_net_wifi">WLAN</string>
     <string name="app_manger_des_separator">", "</string>
     <string name="app_manager_disable">"Don't allow"</string>
-    <string name="app_manager_notify_bar">Badges</string>
-    <string name="app_manager_notify_floating">Floating notifications</string>
-    <string name="app_manager_notify_keyguard">Lock screen</string>
     <string name="app_manager_factory_reset">Uninstall updates</string>
     <string name="app_manager_factory_reset_dlg_title">Uninstall updates?</string>
     <string name="app_manager_factory_reset_dlg_msg">All updates to this Android system app will be uninstalled.</string>
@@ -2325,6 +2353,8 @@ You will not lose any app data."</string>
     <string name="app_manager_mobile_slot2">Mobile data (SIM 2)</string>
     <string name="app_manager_details_title">App info</string>
     <string name="manage_hybrid_permissions">"Manage app's permissions"</string>
+    <string name="app_manager_full_screen_title">Fullscreen mode</string>
+    <string name="app_manager_full_screen_summary">Allow selected apps to work in fullscreen mode</string>
     <string name="ad_btn_default_text">Learn more</string>
     <string name="open_activity_err">The application was not found</string>
     <string name="low_memory_warning_dialog_title">Not enough free space</string>
@@ -2343,11 +2373,11 @@ You will not lose any app data."</string>
     <string name="game_setting">Game settings</string>
     <string name="gs_auto_clean_memory">Clear cache</string>
     <string name="gs_auto_clean_memory_detail">Clear cache automatically to optimize gaming</string>
-    <string name="gs_anto_clean_memory_whitelist">Exceptions</string>
+    <string name="gs_anto_clean_memory_whitelist">Memory exceptions</string>
     <string name="gs_call_handsfree">Answer calls hands free</string>
     <string name="gs_call_handsfree_mute">Silent mode</string>
     <string name="gs_gamebox">In-game shortcuts</string>
-    <string name="gs_gamebox_detail">Show in-game shortcut panel</string>
+    <string name="gs_gamebox_detail">Swipe from the top side edge of the screen to view</string>
     <string name="gs_slip_gamebox_detail">Use slider to make the shortcut panel appear. Quick replies and screen recording options are available.</string>
     <string name="gs_gamebox_slip">Push the screen down to open</string>
     <string name="gs_forbid_autosync">Restrict background sync</string>
@@ -2357,7 +2387,7 @@ You will not lose any app data."</string>
     <string name="gs_game_net_priority">Connection priority</string>
     <string name="gs_game_net_priority_detail">Limit download speed to have enough bandwidth for gaming</string>
     <string name="gs_performance_mode">Performance mode</string>
-    <string name="gs_performance_mode_detail">Increase CPU usage to ensure seamless performance</string>
+    <string name="gs_performance_mode_detail">Optimize system performance for gaming</string>
     <string name="gs_open_game_booster">Boost speed</string>
     <string name="gs_dialog_confirm_close_title">Turn off</string>
     <string name="gs_dialog_confirm_close_msg">The shortcut will be removed from your Home screen. Go to Security > Settings to restore it.</string>
@@ -2396,7 +2426,8 @@ You will not lose any app data."</string>
     <string name="application_item_already_permission">Allowed</string>
     <string name="man_add_application">Add autostart apps manually</string>
     <string name="power_autorun_apps_empty">No autostart apps</string>
-    <string name="shield_keyboard_title">Turn off buttons</string>
+    <string name="shield_keyboard_title">Restrict buttons and gestures</string>
+    <string name="shield_keyboard_summary">Restrict buttons and full screen gestures during games</string>
     <string name="shield_keyboard_detail">Double tap the buttons to turn them back on</string>
     <string name="anti_disturb_msg_title">DND</string>
     <string name="anti_disturb_msg_detail">Turn off all notifications except for incoming calls</string>
@@ -2409,7 +2440,9 @@ You will not lose any app data."</string>
     <string name="boostering">Boosting speed…</string>
     <string name="booster_suc">Boosted successfully</string>
     <string name="auto_booster_suc">Boosted successfully</string>
+    <string name="auto_data_booster_suc">Game speed booster is on. Switched to Immersive mode.</string>
     <string name="auto_back_booster">Stop boosting</string>
+    <string name="auto_data_back_booster">Game speed booster is off. Communication features are restored.</string>
     <string name="support_game_booster_tips">Boost speed &amp; improve gaming experience</string>
     <string name="setting">Settings</string>
     <string name="loading">Just a sec…</string>
@@ -2455,6 +2488,12 @@ You will not lose any app data."</string>
     <string name="thermal_tips_message">Playing games in the Performance mode may lead to overheating issues.</string>
     <string name="forbid_autobright_title">Fix screen brightness</string>
     <string name="forbid_autobright_summary">"Auto brightness will be turned off while you're playing and restored after you finish"</string>
+    <string name="function_shield_title">Enhanced experience</string>
+    <string name="function_shield_summary">Restrict auto brightness, screenshot gestures, and Reading mode</string>
+    <string name="function_shield_summary_m">Restrict auto brightness and screenshot gestures</string>
+    <string name="game_else_function">Other</string>
+    <string name="gs_advanced_setting_title">Additional settings</string>
+    <string name="gs_advanced_setting_summary">Settings for individual games</string>
     <string name="gamebooster_lowbattery_notification_title">Battery is lower than 5%%</string>
     <string name="gamebooster_lowbattery_notification_summary">Charge your device before it turns off.</string>
     <string name="game_ad_recommendation">Everybody is playing</string>
@@ -2505,6 +2544,12 @@ You will not lose any app data."</string>
     <string name="gamebox_type_close">"Don't show"</string>
     <string name="gamebox_type_float">Fixed shortcut</string>
     <string name="gamebox_type_gesture">Swipe to show</string>
+    <string name="gamebox_browser_not_find">Install Mi Browser first</string>
+    <string name="gamebox_dnd">DND</string>
+    <string name="gamebox_wifi">WLAN</string>
+    <string name="gamebox_simcard">Switch SIM cards</string>
+    <string name="gamebox_immersion">Immersive mode</string>
+    <string name="gamebox_hangup">Turn off screen</string>
     <string name="gb_first_window_title">Game speed booster</string>
     <string name="gb_first_window_summary">Boost speed and performance on a system level</string>
     <string name="gb_first_window_gamebox_summary_four">Clear cache, make screen recordings and screenshots</string>
@@ -2516,6 +2561,27 @@ You will not lose any app data."</string>
     <string name="gb_first_window_antimsg_summary_transparent_show">See text on transparent background</string>
     <string name="gb_first_window_start">Start playing</string>
     <string name="gb_create_icon_summary">Create Home screen shortcut</string>
+    <string name="gb_advance_settings_touch">Touch controls</string>
+    <string name="gb_advance_settings_follow_up">Touch response</string>
+    <string name="gb_advance_settings_finger_up">Sensitivity to repeated taps</string>
+    <string name="gb_advance_settings_edge_suppression">Touch-resistant area</string>
+    <string name="gb_advance_settings_edge_suppression_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls. Hold your device by the highlighted areas to keep speakers uncovered.</string>
+    <string name="gb_advance_settings_edge_gear1">None</string>
+    <string name="gb_advance_settings_edge_gear2">Small</string>
+    <string name="gb_advance_settings_edge_gear3">Medium</string>
+    <string name="gb_advance_settings_edge_gear4">Large</string>
+    <string name="gb_advance_settings_screen_display">Display</string>
+    <string name="gb_advance_settings_screen_hdr">Enhanced visuals</string>
+    <string name="gb_advance_settings_screen_hdr_summary">Increase contrast and enhance details for games</string>
+    <string name="gb_advance_settings_screen_hdr_gear1">Original</string>
+    <string name="gb_advance_settings_screen_hdr_gear2">Moderate</string>
+    <string name="gb_advance_settings_screen_hdr_gear3">Strong</string>
+    <string name="gb_advance_settings_screen_hdr_gear4">Extreme</string>
+    <string name="gb_advance_settings_vibration_4d">4D vibration</string>
+    <string name="gb_advance_settings_vibration_4d_summary">Illustrate in-game actions using vibration</string>
+    <string name="gb_advance_settings_reset">Restore default settings</string>
+    <string name="gb_advance_settings_reset_dialog_title">Default settings</string>
+    <string name="gb_advance_settings_reset_dialog_content">Restore default settings now?</string>
     <string name="title_reply">Comment</string>
     <string name="title_like">Like</string>
     <string name="ellipsis">…</string>
@@ -2524,6 +2590,38 @@ You will not lose any app data."</string>
     <string name="video_repeat">Play again</string>
     <string name="game_video_network_eror">"Couldn't connect to the network. Check your network settings and try again."</string>
     <string name="see_more_content">Update Games to see more highlights</string>
+    <string name="wlan_optimization_title">WLAN optimization</string>
+    <string name="wlan_optimization_summary">Reduce WLAN network delay</string>
+    <string name="forground_network_optimization_title">Bandwidth priority</string>
+    <string name="forground_network_optimization_summary">Give more bandwidth to the games running in the foreground</string>
+    <string name="doze_optimization_title">Optimized touch controls</string>
+    <string name="doze_optimization_summary">Increase touch response and sensitivity</string>
+    <string name="audio_optimization_title">Enhanced audio</string>
+    <string name="audio_optimization_summary">Enhance audio and reduce ambient noise in conversations</string>
+    <string name="perfermance_optimization_title">Performance optimization</string>
+    <string name="perfermance_optimization_summary">Avoid overheating and hardware-related issues</string>
+    <string name="gamebox_positive_button_text">OK (%1$ds)</string>
+    <string name="gamebox_hangup_tips_title">Turn off screen</string>
+    <string name="gamebox_hangup_tips_content">This feature allows you to turn off screen, but keep the game running in the background. It turns off automatically once you unlock your device.</string>
+    <string name="gamebox_immersion_tips_title">Attention</string>
+    <string name="gamebox_immersion_tips_content">Immersive mode restricts all SIM card functionality except for the mobile data connection. You will neither be interrupted by calls nor receive notifications about missed calls. All SIM card features will be restored when Immersive mode is turned off. Turn on Immersive mode?</string>
+    <string name="gamebox_func_antimsg_open">Floating notifications are restricted now</string>
+    <string name="gamebox_func_antimsg_close">Floating notifications are allowed now</string>
+    <string name="gamebox_func_wlan_open">WLAN is on now</string>
+    <string name="gamebox_func_wlan_close">WLAN is off now</string>
+    <string name="gamebox_func_switch_simcard">Switched to SIM card %1$d for data</string>
+    <string name="gamebox_func_switch_simcard_immersion">"Can't switch SIM cards in Immersive mode"</string>
+    <string name="gamebox_func_immersion_open">Immersive mode is on now</string>
+    <string name="gamebox_func_immersion_close">Immersive mode is off now</string>
+    <string name="noti_back_diving_mode_title">Turned on Immersive mode. Tap to turn off.</string>
+    <string name="alert_back_diving_mode_title">Immersive mode</string>
+    <string name="alert_back_diving_mode_summary">Turn off Immersive mode now?</string>
+    <string name="gamebox_immerson_open">"Turning on Immersive mode, don't switch networks…"</string>
+    <string name="create_gamebooster_destop">Created Home screen shortcut successfully</string>
+    <string name="notify_diving_mode_exception_close">Turned off Immersive mode successfully</string>
+    <string name="notify_diving_mode_exception_open_fail">"A SIM card error occurred. Couldn't turn on Immersive mode."</string>
+    <string name="notify_diving_mode_exception_close_fail">"A SIM card error occurred. Couldn't turn off Immersive mode."</string>
+    <string name="gamebox_recent_task_expand_fail">"Apps that work with shortcuts aren't installed"</string>
     <string name="notify_channel_name_security">System security</string>
     <string name="privacy_apps_category_title">Hidden apps</string>
     <string name="privacy_apps">Hidden apps</string>
@@ -2545,7 +2643,7 @@ This feature isn't supported for system apps."</string>
     <string name="first_aid_scanning_item3">Checking for incorrect settings…</string>
     <string name="first_aid_scanning_item4">Checking for battery issues…</string>
     <string name="first_aid_scanning_item5">Checking for other issues…</string>
-    <string name="first_aid_activity_title">First aid</string>
+    <string name="first_aid_activity_title">Solve problems</string>
     <string name="first_aid_item1_content">Performance</string>
     <string name="first_aid_item2_content">Network</string>
     <string name="first_aid_item3_content">Settings</string>
@@ -2559,8 +2657,6 @@ This feature isn't supported for system apps."</string>
     <string name="first_aid_card_system_root_title">You allowed root access</string>
     <string name="first_aid_card_system_root_summary">Restrict root access to prevent security risks</string>
     <string name="first_aid_card_system_root_button">Restrict</string>
-    <string name="first_aid_card_float_window_title">You allowed floating notifications</string>
-    <string name="first_aid_card_float_window_button">Restrict</string>
     <string name="first_aid_card_wifi_or_flow_title">"Can't connect to the internet"</string>
     <string name="first_aid_card_wifi_or_flow_summary">Turn on WLAN or mobile data to connect</string>
     <string name="first_aid_card_wifi_or_flow_button">Connect</string>
@@ -2573,7 +2669,7 @@ This feature isn't supported for system apps."</string>
     <string name="first_aid_result_summary_normal">Everything looks good!</string>
     <string name="first_aid_result_summary_not_finished">"Scan wasn't completed. Some risks may be undetected."</string>
     <string name="first_aid_result_feedback_title">Feedback</string>
-    <string name="first_aid_result_feedback_summary">"First aid scan couldn't find any problems. However, I spotted some."</string>
+    <string name="first_aid_result_feedback_summary">"Couldn't find any problems. However, I spotted some."</string>
     <string name="first_aid_result_feedback_button">Submit</string>
     <string name="first_aid_card_kadun_title">Device slows down</string>
     <string name="first_aid_card_kadun_summary1">Free up storage space so your device could work normally.</string>
@@ -2588,126 +2684,33 @@ This feature isn't supported for system apps."</string>
     <string name="device_manager_apply_step_2">"Activating device administrator for this app might lead to the exposure of your personal data.
 All data on your device might be erased and your Lock screen password might be reset."</string>
     <string name="device_manager_apply_step_3">Make sure you understand all the possible risks before you proceed. Activate device administrator for this app now?</string>
+    <string name="app_permission_use_neccesary">Required permissions</string>
+    <string name="app_permission_use_no_neccesary">Optional permissions</string>
+    <string name="app_permission_use_title">Permissions</string>
+    <string name="app_permission_use_group_location">Location info</string>
+    <string name="app_permission_use_group_location_des">Accurate and approximate location</string>
+    <string name="app_permission_use_group_calendar">Calendar</string>
+    <string name="app_permission_use_group_calendar_des">Read and add calendar info</string>
+    <string name="app_permission_use_group_camera">Camera</string>
+    <string name="app_permission_use_group_camera_des">Use camera</string>
+    <string name="app_permission_use_group_contact">Contacts</string>
+    <string name="app_permission_use_group_contact_des">Read and add contact info</string>
+    <string name="app_permission_use_group_sensor">Body sensors</string>
+    <string name="app_permission_use_group_sensor_des">Read the data generated by body sensors</string>
+    <string name="app_permission_use_group_mic">Microphone</string>
+    <string name="app_permission_use_group_mic_des">Record audio</string>
+    <string name="app_permission_use_group_phone">Phone</string>
+    <string name="app_permission_use_group_phone_des">Read and add items to call history, make calls, and access call status</string>
+    <string name="app_permission_use_group_sms">Messaging</string>
+    <string name="app_permission_use_group_sms_des">Send, receive, and read messages</string>
+    <string name="app_permission_use_group_storage">Storage</string>
+    <string name="app_permission_use_group_storage_des">Access and save items to storage</string>
     <string name="firewall_rule_group_title_roaming">Overseas roaming</string>
     <string name="mian_page_primary_txt">Overseas roaming</string>
-    <item type="string" name="APKTOOL_DUMMY_9db">false</item>
-    <item type="string" name="APKTOOL_DUMMY_9dc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_9dd">false</item>
     <item type="string" name="APKTOOL_DUMMY_a50">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a73">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a74">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a75">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a76">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a77">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a78">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a79">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a7f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a80">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a81">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a82">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a83">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a84">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a85">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a86">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a87">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a88">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a89">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a8a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a8b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a8c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a8d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a8e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a8f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a90">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a91">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a92">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a93">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a94">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a95">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a96">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a97">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a98">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a99">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a9a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a9b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a9c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a9d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a9e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_a9f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aa9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aaa">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aab">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aac">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aad">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aae">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aaf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ab9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aba">false</item>
-    <item type="string" name="APKTOOL_DUMMY_abb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_abc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_abd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_abe">false</item>
-    <item type="string" name="APKTOOL_DUMMY_abf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a51">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a52">false</item>
     <item type="string" name="APKTOOL_DUMMY_ac2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ac9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_aca">false</item>
-    <item type="string" name="APKTOOL_DUMMY_acb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_acc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_acd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ace">false</item>
-    <item type="string" name="APKTOOL_DUMMY_acf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ad9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ada">false</item>
-    <item type="string" name="APKTOOL_DUMMY_adb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_adc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_add">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ade">false</item>
-    <item type="string" name="APKTOOL_DUMMY_adf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ae0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ae1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ae2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ae3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ae4">false</item>
     <item type="string" name="APKTOOL_DUMMY_ae5">false</item>
     <item type="string" name="APKTOOL_DUMMY_ae6">false</item>
     <item type="string" name="APKTOOL_DUMMY_ae7">false</item>
@@ -2846,4 +2849,118 @@ All data on your device might be erased and your Lock screen password might be r
     <item type="string" name="APKTOOL_DUMMY_b6c">false</item>
     <item type="string" name="APKTOOL_DUMMY_b6d">false</item>
     <item type="string" name="APKTOOL_DUMMY_b6e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b6f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b70">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b71">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b72">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b73">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b74">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b75">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b76">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b77">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b78">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b79">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b7f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b80">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b81">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b82">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b83">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b84">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b85">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b86">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b87">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b88">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b89">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b8f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b90">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b91">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b92">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b93">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b94">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b95">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b96">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b97">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b98">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b99">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ba9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_baa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bab">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bac">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bad">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bae">false</item>
+    <item type="string" name="APKTOOL_DUMMY_baf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bb9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bba">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bbb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bbc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bbd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bbe">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bbf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bc9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bca">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bcb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bcc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bcd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bce">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bcf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bd9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bda">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bdb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bdc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bdd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bde">false</item>
+    <item type="string" name="APKTOOL_DUMMY_bdf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_be0">false</item>
 </resources>

@@ -3,7 +3,6 @@
     <string name="access_change_text" formatted="false">当前选中的是第%d项, 与第%d项交换位置.</string>
     <string name="access_select">Selected %s</string>
     <string name="access_unselect">Deselected %s</string>
-    <string name="accessibility_title">App vault</string>
     <string name="accessibilty_back_button">返回</string>
     <string name="accessibilty_move_down">下移</string>
     <string name="accessibilty_move_up">上移</string>
@@ -546,6 +545,9 @@
     <string name="express_banner_header">%1$s / Tracking number</string>
     <string name="express_booking_txt">Order express delivery</string>
     <string name="express_cancel_order">Cancel</string>
+    <string name="express_card_item_desc_no_info">No info</string>
+    <string name="express_card_item_number_prefix">Order Number: %s</string>
+    <string name="express_card_item_source_prefix">From %s</string>
     <string name="express_code_txt">Code:</string>
     <string name="express_company_list_empty">No companies</string>
     <string name="express_company_phone_prefix">"Contact: "</string>
@@ -613,13 +615,11 @@ Check your tracking number."</string>
     <string name="express_mi_shop">Mi Store</string>
     <string name="express_more_service">More services</string>
     <string name="express_no_address">Empty</string>
-    <string name="express_no_info">No info</string>
     <string name="express_no_order">No orders</string>
     <string name="express_no_order_info">No order info</string>
     <string name="express_not_authorized">Restricted</string>
     <string name="express_num_setting_des">Receive order numbers from the delivery apps installed on your phone.</string>
     <string name="express_num_setting_title">Access order info</string>
-    <string name="express_number_txt">Order Number:</string>
     <string name="express_open">Show delivery tracking cards</string>
     <string name="express_open_locker">一键开柜</string>
     <string name="express_open_txt">Open</string>
@@ -643,7 +643,6 @@ Check your tracking number."</string>
     <string name="express_order_state_unknown">Unknown</string>
     <string name="express_order_state_wait_picking">Await picking</string>
     <string name="express_order_succeeded">Completed</string>
-    <string name="express_origin_prev">From</string>
     <string name="express_other_app">Allow MIUI to access the order info from other apps.</string>
     <string name="express_phone">Telephone</string>
     <string name="express_phone_tip">Delivering, stay tuned</string>
@@ -782,6 +781,7 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="favorite_main">History</string>
     <string name="favorite_title_limit">Enter up to 40 characters</string>
     <string name="favorite_title_modify">Modify</string>
+    <string name="favorite_title_modify_failed">"Couldn't change title"</string>
     <string name="favorite_title_modify_success">Modified successfully</string>
     <string name="feedback_cancel">取消</string>
     <string name="feedback_ok">反馈</string>
@@ -1277,13 +1277,15 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="not_installed">Not installed</string>
     <string name="note_name">Create</string>
     <string name="note_parent">Notes</string>
-    <string name="notification_channel_card">Cards</string>
     <string name="notification_channel_default">Default</string>
+    <string name="notification_channel_default_description">Other notifications</string>
+    <string name="notification_channel_favorite_description">Notifications about items added to favorites in different apps</string>
+    <string name="notification_channel_payment_description">Notifications about payments</string>
+    <string name="notification_channel_shopping_description">Notifications about products added to favorites or your shopping cart</string>
     <string name="notification_content_fail_not_support">"Couldn't get payment info, add the record manually."</string>
     <string name="notification_content_fail_stay_longer">Stay on the payment page for at least 1 second</string>
     <string name="notification_content_success">%2$s CNY payment in %1$s</string>
     <string name="notification_express_app_open">Turn on</string>
-    <string name="notification_express_content">Track orders using App vault</string>
     <string name="notification_express_title">Turn on cards from shopping apps</string>
     <string name="notification_title">Added to favorites</string>
     <string name="notification_title_fail">"Couldn't add payment"</string>
@@ -1338,7 +1340,6 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="payment_pref_source_wechat_summary">Get payment info from WeChat</string>
     <string name="payment_pref_source_wechat_title">WeChat</string>
     <string name="payment_privacy_dialog_cancel">Exit</string>
-    <string name="payment_privacy_dialog_message">"\"My payments\" allows you to collect bills from major payment apps in one place. All yout payment info will be encrypted and securely stored on your device. It won't be synced with Mi Cloud or uploaded to any other server. You can turn off \"My payments\" in the Settings or simply remove this card from App vault to stop using this service. Agree?"</string>
     <string name="payment_privacy_dialog_ok">Agree</string>
     <string name="payment_privacy_dialog_title">\"My payments\" Privacy Policy</string>
     <string name="payment_record_add">Add payment</string>
@@ -1514,6 +1515,7 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="shopping_enable">Shopping is on</string>
     <string name="shopping_label">Shopping</string>
     <string name="shopping_notification_title">Added to Shopping</string>
+    <string name="shopping_rmb">￥%s</string>
     <string name="shopping_search">购物搜索</string>
     <string name="shopping_setting_authorize">Allow exporting info about purchases</string>
     <string name="shopping_setting_authorize_sub">App vault will have access to your favorites and shopping cart items.</string>
@@ -1527,7 +1529,7 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="shopping_setting_remove">After you revoke authorization, App vault will stop collecting the info about your purchases, and the Shopping card will be removed. Revoke anyway?</string>
     <string name="shopping_setting_taobao">Taobao</string>
     <string name="shopping_setting_tmall">Tmall</string>
-    <string name="shopping_source">From</string>
+    <string name="shopping_source">From %s</string>
     <string name="shopping_support">Supported apps</string>
     <string name="shortcut">Shortcuts</string>
     <string name="show_more">Show more</string>
@@ -1655,7 +1657,6 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="upgrade_log_default">"1. Improved performance.
 2. Fixed bugs."</string>
     <string name="upgrade_log_subtitle">(Downloaded using Wi-Fi)</string>
-    <string name="upgrade_log_title">App vault update</string>
     <string name="upgrade_now">Install now</string>
     <string name="upgrade_now_bottom">Install now</string>
     <string name="uploads_disabled">"Can't upload files"</string>
@@ -1686,17 +1687,13 @@ Several orders sent via SF Express from the vendors outside of Taobao, Tmall, an
     <string name="year_month_day_all_format_en">MM/dd/yyyy HH:mm:ss</string>
     <string name="year_month_day_format">MM/dd/yyyy</string>
     <string name="yesterday">Yesterday</string>
-    <item type="string" name="APKTOOL_DUMMY_1f7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_30c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4fc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4fd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4fe">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4ff">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1f6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_53d">false</item>
     <item type="string" name="APKTOOL_DUMMY_541">false</item>
-    <item type="string" name="APKTOOL_DUMMY_545">false</item>
-    <item type="string" name="APKTOOL_DUMMY_546">false</item>
-    <item type="string" name="APKTOOL_DUMMY_547">false</item>
-    <item type="string" name="APKTOOL_DUMMY_594">false</item>
+    <item type="string" name="APKTOOL_DUMMY_542">false</item>
+    <item type="string" name="APKTOOL_DUMMY_543">false</item>
+    <item type="string" name="APKTOOL_DUMMY_590">false</item>
+    <item type="string" name="APKTOOL_DUMMY_592">false</item>
     <item type="string" name="APKTOOL_DUMMY_596">false</item>
-    <item type="string" name="APKTOOL_DUMMY_59a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_653">false</item>
 </resources>
