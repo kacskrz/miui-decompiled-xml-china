@@ -350,8 +350,11 @@
     <string name="battery_low_title">Battery is low</string>
     <string name="battery_low_title_power_save">Battery saver</string>
     <string name="battery_low_why">Settings</string>
+    <string name="battery_meter_bg_path">M23 13l38 0c8.284271 0 15 6.715729 15 15 0 8.284271 -6.715729 15 -15 15L23 43C14.715729 43 8 36.284271 8 28 8 19.715729 14.715729 13 23 13Zm0 3c-6.627417 0 -12 5.372583 -12 12 0 6.627417 5.372583 12 12 12l38 0C67.627417 40 73 34.627417 73 28 73 21.372583 67.627417 16 61 16l-38 0z</string>
     <string name="battery_meter_charging_mask">M44.98169 12.995727L27.492101 31.243375c-0.382155 0.398719 -0.368727 1.031741 0.02999 1.413896 0.184016 0.17637 0.428434 0.275817 0.683313 0.278019l8.295572 0.07167 -3.523194 10.060547 7.10315 0 17.347191 -18.375047c0.379131 -0.401595 0.36092 -1.034498 -0.04068 -1.413628 -0.185614 -0.175232 -0.431214 -0.272849 -0.686477 -0.272849l-8.119673 0 3.481811 -10.010254 -7.08142 0z</string>
+    <string name="battery_meter_charging_path">M40.571 30.474L40.329 30 33 30 49 13 44.428 25.526 44.671 26 52 26 36 43Z</string>
     <string name="battery_meter_progress_mask">M2.5638852 0C1.6723665 0 1.3490802 0.09282561 1.0231543 0.2671327 0.69722837 0.4414398 0.4414398 0.69722837 0.2671327 1.0231543 0.09282561 1.3490802 0 1.6723665 0 2.5638852L0 0 2.5638852 0Zm0 18L0 18 0 15.436115c0 0.891518 0.09282561 1.214805 0.2671327 1.540731 0.1743071 0.325926 0.43009567 0.581714 0.7560216 0.756021C1.3490802 17.907174 1.6723665 18 2.5638852 18Z</string>
+    <string name="battery_meter_progress_path">M9 0l38 0c4.986 0 9 4.014 9 9 0 4.986 -4.014 9 -9 9L9 18C4.014 18 0 13.986 0 9 0 4.014 4.014 0 9 0Z</string>
     <string name="battery_meter_very_low_overlay_symbol">!</string>
     <string name="battery_panel_title">Battery usage</string>
     <string name="battery_profiles">Use battery profiles</string>
@@ -494,6 +497,9 @@ Selection"</string>
     <string name="change_theme_reboot">Changing the theme requires a restart.</string>
     <string name="charge_length_format">%1$s ago</string>
     <string name="chooseUsbActivity">Select an app for the USB device</string>
+    <string name="choose_clock_title_left_top">Left-aligned</string>
+    <string name="choose_clock_title_middle">Centered</string>
+    <string name="choose_clock_title_vertical">Vertical</string>
     <string name="choose_profile">Choose profile</string>
     <string name="clear_adb_keys">Revoke USB debugging authorizations</string>
     <string name="clear_all_notifications_text">Clear all</string>
@@ -618,7 +624,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="dlg_summary_nfc">Turn off NFC</string>
     <string name="dlg_summary_title">Extreme battery saver stops all background activity after you leave an app and go back to the Home screen. If you want an app to be running in the background, add it to background exceptions.</string>
     <string name="dnd_is_off">DND is off</string>
-    <string name="dnd_notification_warnings_title">Calls and notifications will be silenced until you turn off DND</string>
+    <string name="dnd_notification_warnings_title">DND is on. Calls and notifications will be silenced.</string>
     <string name="do_disclosure_generic">This device is managed by your organization</string>
     <string name="do_disclosure_with_name">This device is managed by %s</string>
     <string name="do_not_silence">"Don't silence"</string>
@@ -737,6 +743,13 @@ If you resume, charges may apply for data usage."</string>
     <string name="face_unlock_sc_status">Push the screen down to open camera</string>
     <string name="face_unlock_stay_away_screen">Stay 25 to 40cm away from the screen</string>
     <string name="face_unlock_success">Verified face data successfully</string>
+    <string name="face_unlock_success_show_message_dialog_msg">Allow Lock screen notifications to be able to view them on your Lock screen.</string>
+    <string name="face_unlock_success_show_message_dialog_negative_btn">No thanks</string>
+    <string name="face_unlock_success_show_message_dialog_positive_btn">Allow</string>
+    <string name="face_unlock_success_show_message_dialog_title">Lock screen notifications</string>
+    <string name="face_unlock_success_show_message_msg">Show only notification source when device is locked and add notification details after face data is verified</string>
+    <string name="face_unlock_success_show_message_title">Show notification details after verifying face data</string>
+    <string name="face_unlock_success_show_message_toast">Notifications will be shown on Lock screen</string>
     <string name="face_unlock_success_stay_screen_msg">Stay on the Lock screen after your face is verified. Swipe up to open the Home screen.</string>
     <string name="face_unlock_success_stay_screen_title">Stay on Lock screen after unlocking</string>
     <string name="failed_to_open_app_settings_toast">Failed to open settings for %1$s</string>
@@ -2094,13 +2107,13 @@ Looks like credential storage isn't enabled."</string>
     <string name="zen_priority_introduction">"You won’t be disturbed by sounds and vibrations, except from alarms, reminders, events, and callers you specify. You'll still hear anything you choose to play including music, videos, and games."</string>
     <string name="zen_silence_introduction">This blocks ALL sounds and vibrations, including from alarms, music, videos, and games.</string>
     <string name="zen_silence_introduction_voice">This blocks ALL sounds and vibrations, including from alarms, music, videos, and games. You’ll still be able to make phone calls.</string>
-    <item type="string" name="APKTOOL_DUMMY_31d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_31e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_31f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_33f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4ac">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4bf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4c0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_5ff">false</item>
-    <item type="string" name="APKTOOL_DUMMY_633">false</item>
+    <item type="string" name="APKTOOL_DUMMY_32a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_32b">false</item>
+    <item type="string" name="APKTOOL_DUMMY_32c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_34c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4b9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4cc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_60c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_640">false</item>
 </resources>
