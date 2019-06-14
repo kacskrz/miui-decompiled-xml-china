@@ -347,9 +347,9 @@
     <string name="battery_low_title_power_save">Battery saver</string>
     <string name="battery_low_why">Settings</string>
     <string name="battery_meter_bg_path">M23 13l38 0c8.284271 0 15 6.715729 15 15 0 8.284271 -6.715729 15 -15 15L23 43C14.715729 43 8 36.284271 8 28 8 19.715729 14.715729 13 23 13Zm0 3c-6.627417 0 -12 5.372583 -12 12 0 6.627417 5.372583 12 12 12l38 0C67.627417 40 73 34.627417 73 28 73 21.372583 67.627417 16 61 16l-38 0z</string>
-    <string name="battery_meter_charging_mask">M44.98169 12.995727L27.492101 31.243375c-0.382155 0.398719 -0.368727 1.031741 0.02999 1.413896 0.184016 0.17637 0.428434 0.275817 0.683313 0.278019l8.295572 0.07167 -3.523194 10.060547 7.10315 0 17.347191 -18.375047c0.379131 -0.401595 0.36092 -1.034498 -0.04068 -1.413628 -0.185614 -0.175232 -0.431214 -0.272849 -0.686477 -0.272849l-8.119673 0 3.481811 -10.010254 -7.08142 0z</string>
+    <string name="battery_meter_charging_mask_path">M44.98169 12.995727L27.492101 31.243375c-0.382155 0.398719 -0.368727 1.031741 0.02999 1.413896 0.184016 0.17637 0.428434 0.275817 0.683313 0.278019l8.295572 0.07167 -3.523194 10.060547 7.10315 0 17.347191 -18.375047c0.379131 -0.401595 0.36092 -1.034498 -0.04068 -1.413628 -0.185614 -0.175232 -0.431214 -0.272849 -0.686477 -0.272849l-8.119673 0 3.481811 -10.010254 -7.08142 0z</string>
     <string name="battery_meter_charging_path">M40.571 30.474L40.329 30 33 30 49 13 44.428 25.526 44.671 26 52 26 36 43Z</string>
-    <string name="battery_meter_progress_mask">M2.5638852 0C1.6723665 0 1.3490802 0.09282561 1.0231543 0.2671327 0.69722837 0.4414398 0.4414398 0.69722837 0.2671327 1.0231543 0.09282561 1.3490802 0 1.6723665 0 2.5638852L0 0 2.5638852 0Zm0 18L0 18 0 15.436115c0 0.891518 0.09282561 1.214805 0.2671327 1.540731 0.1743071 0.325926 0.43009567 0.581714 0.7560216 0.756021C1.3490802 17.907174 1.6723665 18 2.5638852 18Z</string>
+    <string name="battery_meter_progress_mask_path">M2.5638852 0C1.6723665 0 1.3490802 0.09282561 1.0231543 0.2671327 0.69722837 0.4414398 0.4414398 0.69722837 0.2671327 1.0231543 0.09282561 1.3490802 0 1.6723665 0 2.5638852L0 0 2.5638852 0Zm0 18L0 18 0 15.436115c0 0.891518 0.09282561 1.214805 0.2671327 1.540731 0.1743071 0.325926 0.43009567 0.581714 0.7560216 0.756021C1.3490802 17.907174 1.6723665 18 2.5638852 18Z</string>
     <string name="battery_meter_progress_path">M9 0l38 0c4.986 0 9 4.014 9 9 0 4.986 -4.014 9 -9 9L9 18C4.014 18 0 13.986 0 9 0 4.014 4.014 0 9 0Z</string>
     <string name="battery_meter_very_low_overlay_symbol">!</string>
     <string name="battery_panel_title">Battery usage</string>
@@ -1066,6 +1066,7 @@ MMMM d"</string>
     <string name="lock_screen_magazine_default_content">Daily portion of fresh images</string>
     <string name="lock_screen_magazine_default_title">Wallpaper Carousel</string>
     <string name="lock_screen_magazine_global_button_text">More</string>
+    <string name="lock_screen_magazine_label">Open Wallpaper Carousel</string>
     <string name="lock_screen_magazine_preview_fullscreen_bottom_button_global_text">More</string>
     <string name="lock_screen_magazine_preview_fullscreen_bottom_button_text">Enter</string>
     <string name="lock_screen_no_sim_card_emergency_only">Emergency calls only</string>
@@ -1089,6 +1090,8 @@ MMMM d"</string>
     <string name="lockscreen_sim_error_message_short">SIM card is invalid.</string>
     <string name="lockscreen_unlock_left">Left shortcut also unlocks</string>
     <string name="lockscreen_unlock_right">Right shortcut also unlocks</string>
+    <string name="long_screenshot_guide_text">"Tap to make
+a scrolling screenshot"</string>
     <string name="long_screenshot_not_support_msg">"Current app doesn't support scrolling screenshots"</string>
     <string name="long_screenshot_out_of_memory_error">Image is too big</string>
     <string name="long_screenshot_processing">Processing…</string>
@@ -1491,9 +1494,9 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="quick_settings_sync_label">Sync</string>
     <string name="quick_settings_tethering_label">Tethering</string>
     <string name="quick_settings_tiles">default</string>
-    <string name="quick_settings_tiles_default">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,quietmode,batterysaver,extremebatterysaver,drivemode,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit</string>
+    <string name="quick_settings_tiles_default">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,quietmode,batterysaver,extremebatterysaver,custom(com.milink.service/com.milink.ui.service.MiLinkTileService),drivemode,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit</string>
     <string name="quick_settings_tiles_retail_mode">cell,batterysaver,powermode,flashlight,rotation,location</string>
-    <string name="quick_settings_tiles_stock">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,quietmode,batterysaver,extremebatterysaver,drivemode,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit</string>
+    <string name="quick_settings_tiles_stock">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,quietmode,batterysaver,extremebatterysaver,custom(com.milink.service/com.milink.ui.service.MiLinkTileService),drivemode,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit</string>
     <string name="quick_settings_time_label">Time</string>
     <string name="quick_settings_toast_drag_to_enable_custom_tile">To add an item, press and hold it, and then drag it to the upper part of the panel.</string>
     <string name="quick_settings_user_label">Me</string>
@@ -2100,9 +2103,9 @@ Looks like credential storage isn't enabled."</string>
     <item type="string" name="APKTOOL_DUMMY_326">false</item>
     <item type="string" name="APKTOOL_DUMMY_327">false</item>
     <item type="string" name="APKTOOL_DUMMY_347">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4b7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4ca">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4cb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_60a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_63e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4b9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4cc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_60c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_640">false</item>
 </resources>
