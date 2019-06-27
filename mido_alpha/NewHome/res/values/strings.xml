@@ -42,6 +42,7 @@
     <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btn_reload">Try again</string>
     <string name="channel_edit_hint">点击进入频道/长按拖动可排序</string>
+    <string name="channel_empty_hint">已添加所有频道</string>
     <string name="channel_more">更多频道</string>
     <string name="channel_more_hint">点击添加频道</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
@@ -58,7 +59,7 @@
     <string name="circle_news_count">%1$d篇文章</string>
     <string name="circle_see_more">查看更多</string>
     <string name="circle_tip_no">还没有关注的圈子，为你推荐热门内容</string>
-    <string name="circle_tip_some">已关注%s个圈子·刷新看动态</string>
+    <string name="circle_tip_some">已加入%s个圈子·刷新看动态</string>
     <string name="circle_title">圈子</string>
     <string name="circle_user">发布</string>
     <string name="cllapsible_text_state">Collapse</string>
@@ -91,9 +92,11 @@
     <string name="cta_title">Welcome to Media Center</string>
     <string name="debug_candidate_key">召回队列</string>
     <string name="debug_category">一级分类</string>
-    <string name="debug_keywords">关键词</string>
+    <string name="debug_keywords">标题tags</string>
     <string name="debug_new_category">新一级分类</string>
     <string name="debug_new_subcategory">新二级分类</string>
+    <string name="debug_rankedtags">rankedTags</string>
+    <string name="debug_sourcelevel">作者权威度</string>
     <string name="debug_subcategory">二级分类</string>
     <string name="debug_trackext">召回方式</string>
     <string name="detail_author_hap">进入快应用</string>
@@ -121,6 +124,13 @@
     <string name="dialog_complaint_success">Reported successfully</string>
     <string name="dialog_delete">Removed from favorites</string>
     <string name="dialog_delete_favorite">Removed from favorites</string>
+    <string name="dialog_post_complaint_content">投诉该内容</string>
+    <string name="dialog_post_delete">删除</string>
+    <string name="dialog_post_delete_failed">删除失败，请稍后再试</string>
+    <string name="dialog_post_delete_success">删除成功</string>
+    <string name="dialog_post_irrelevant">内容与圈子主旨无关</string>
+    <string name="dialog_post_shield_circle">屏蔽圈子：%1$s</string>
+    <string name="dialog_post_shield_user">屏蔽用户：%1$s</string>
     <string name="dialog_remove_item_slogan">"You'll see fewer items of this kind."</string>
     <string name="dialog_share">Share</string>
     <string name="dialog_share_succedd">分享成功</string>
@@ -136,7 +146,7 @@
     <string name="dkplayer_replay">重新播放</string>
     <string name="dkplayer_retry">重 试</string>
     <string name="dkplayer_unlocked">已解锁</string>
-    <string name="dkplayer_wifi_tip">您正在使用移动网络，继续播放将消耗流量</string>
+    <string name="dkplayer_wifi_tip">正在使用移动网络，继续播放将消耗数据流量</string>
     <string name="dynamic">动态</string>
     <string name="empty_content_tips">请输入内容</string>
     <string name="empty_fans_tip">关注你的人正在路上</string>
@@ -168,7 +178,7 @@
     <string name="has_follow_no_author">"You aren't following any accounts yet."</string>
     <string name="has_follow_no_circle">"You aren't following any circles yet."</string>
     <string name="home_feed_no_news">暂无更新</string>
-    <string name="home_page">首页</string>
+    <string name="home_page">发现</string>
     <string name="hot_search">热门搜索</string>
     <string name="ijkplayer_dummy" />
     <string name="image_pick_done">Done</string>
@@ -179,6 +189,8 @@
     <string name="load_more">Loading</string>
     <string name="load_more_failed_try_again">"Couldn't load items. Try refreshing the page."</string>
     <string name="load_no_more">"That's all for now."</string>
+    <string name="more_recommend_circle">"点击查看
+更多圈子"</string>
     <string name="more_str">more</string>
     <string name="my_channel">我的频道</string>
     <string name="my_comment">我的评论</string>
@@ -198,6 +210,9 @@ Check your network settings and try again."</string>
     <string name="no_news">No new items for now.</string>
     <string name="notification">消息</string>
     <string name="notification_comment">评论你</string>
+    <string name="notification_comment_deleted">该评论已被删除</string>
+    <string name="notification_content_deleted">该内容已被删除</string>
+    <string name="notification_empty">暂无消息</string>
     <string name="notification_forward">\@我</string>
     <string name="notification_forward_dynamic">转发了你的动态</string>
     <string name="notification_like_comment">赞了你的评论</string>
@@ -270,8 +285,8 @@ Check your network settings and try again."</string>
     <string name="setting_key_pull">setting_key_pull</string>
     <string name="setting_key_reboot_home">setting_key_reboot_home</string>
     <string name="setting_key_refresh_on_back">setting_refresh_on_back</string>
+    <string name="setting_key_scroll_to_hide">setting_key_scroll_to_hide</string>
     <string name="setting_key_size_bigger">setting_key_size_bigger</string>
-    <string name="setting_key_update">setting_key_update</string>
     <string name="setting_key_vibrate">setting_key_vibrate</string>
     <string name="setting_key_video">setting_key_video</string>
     <string name="setting_key_video_remind">setting_key_video_remind</string>
@@ -287,12 +302,16 @@ Check your network settings and try again."</string>
     <string name="setting_refresh_type2">Tapping the button</string>
     <string name="setting_refresh_type3">Swiping down + Tapping the button</string>
     <string name="setting_reg_login">Sign in/Create account</string>
+    <string name="setting_scroll_to_hide">上滑时首页动效设置</string>
+    <string name="setting_scroll_type0">隐藏搜索框</string>
+    <string name="setting_scroll_type1">隐藏底部导航</string>
+    <string name="setting_scroll_type2">同时隐藏搜索框和底部导航</string>
+    <string name="setting_scroll_type3">无</string>
     <string name="setting_turn_off">turn off</string>
     <string name="setting_turn_on">turn on</string>
     <string name="setting_update_deviceid">统计DeviceID</string>
     <string name="setting_update_imei">随机更换身份</string>
     <string name="setting_update_imei_reset">还原身份</string>
-    <string name="setting_update_title">检查更新</string>
     <string name="setting_vibrate">震动</string>
     <string name="setting_vibrate_summary">下拉操作时震动</string>
     <string name="setting_video_dialog_close">Close</string>
@@ -317,6 +336,7 @@ Check your network settings and try again."</string>
     <string name="system_lab_agree">同意并开启</string>
     <string name="system_lab_authorize">参与内容中心内测</string>
     <string name="system_lab_authorized">已开启，从桌面上滑开始体验吧</string>
+    <string name="system_lab_close">（若要关闭，可前往设置-桌面与最近任务-桌面上滑）</string>
     <string name="system_lab_content">内容中心是一款聚合多渠道内容的应用，在桌面除了负一屏以外的任意一屏上滑即可呼出，您可以在这里一站式获取原来分散在各个APP中的内容。</string>
     <string name="system_lab_introduce">《内容中心详细介绍》</string>
     <string name="tab_follow_str">Following</string>
