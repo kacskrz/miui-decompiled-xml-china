@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="action_firewall_setting">Blocklist</string>
+    <string name="action_get_otp">Get OTP</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
     <string name="activity_not_found">No app was found to handle this action</string>
     <string name="activity_not_found_uri">No app was found to handle this action</string>
     <string name="addBlackList">Block</string>
@@ -29,6 +32,8 @@
     <string name="app_label">Messaging</string>
     <string name="app_name">Devices</string>
     <string name="application_list_title">Mini apps</string>
+    <string name="area_code_hot">FREQUENTLY USED</string>
+    <string name="area_code_title">Country code</string>
     <string name="attach_group_chat">Group chat</string>
     <string name="attach_image">Pictures</string>
     <string name="attach_rcs_file">File</string>
@@ -57,7 +62,9 @@
     <string name="batch_deleting_progress_message">Deleting…</string>
     <string name="bcc_label">"Bcc: "</string>
     <string name="block_messaging_entry_title">Blocked SMS</string>
+    <string name="block_number_message">This phone number will be added to blocklist. All messages sent from this number will be blocked.</string>
     <string name="block_support_text">Supported by Antiy.</string>
+    <string name="block_tag_message">All messages sent from %s will be blocked. You might not be able to receive verification codes or bills sent by this service.</string>
     <string name="bookmark">Added to favorites</string>
     <string name="bookmark_confirm_delete_message">Remove selected messages from favorites?</string>
     <string name="bookmark_empty">No messages in favorites</string>
@@ -118,7 +125,7 @@
     <string name="confirm_export_dialog_description">Previous conversations with this contact will no longer be hidden.</string>
     <string name="confirm_export_dialog_title">Remove from private contacts</string>
     <string name="confirm_no_block_positive">Unblock</string>
-    <string name="confirm_no_block_title">"Unblock selected numbers? They will be added to exceptions, but previously blocked items won't appear in Messaging inbox."</string>
+    <string name="confirm_no_block_title">Stop blocking such messages? Previously blocked messages will appear in your inbox.</string>
     <string name="confirm_rate_limit">A large number of multimedia messages are being sent.</string>
     <string name="confirm_restore_all_title">Restore all messages sent from this number?</string>
     <string name="confirm_restore_checkbox">Restore blocked messages</string>
@@ -126,6 +133,7 @@
     <string name="confirm_restore_positive">Restore</string>
     <string name="confirm_restore_title">Restore messages</string>
     <string name="confirm_send_mms">One of your recipients includes an email address. This message will be sent as an MMS, which may result in extra charges from you carrier.</string>
+    <string name="confirm_upload_sms">Upload messages to improve blocklist functionality</string>
     <string name="contact_not_exists">"This person isn't in your contacts."</string>
     <string name="context_menu_add_calendar">Add to Calendar</string>
     <string name="context_menu_add_contact">Add to contacts</string>
@@ -153,6 +161,7 @@
     <string name="copy_to_sdcard_success">Attachment saved as %s</string>
     <string name="current_data_version">Mi Message version</string>
     <string name="delete">Delete</string>
+    <string name="delete_block_conversation">Delete this conversation</string>
     <string name="delete_bookmark">Remove from favorites</string>
     <string name="delete_message">Delete</string>
     <string name="delete_phrase">Delete reply</string>
@@ -200,6 +209,11 @@
     <string name="english_subject_limit">40 characters</string>
     <string name="enter_edit_mode">Edit messages</string>
     <string name="error_code_label">"Error code: "</string>
+    <string name="error_field_required">Required</string>
+    <string name="error_incorrect_otp">Incorrect OTP</string>
+    <string name="error_invalid_otp">Invalid OTP</string>
+    <string name="error_invalid_phone">Invalid phone number</string>
+    <string name="error_login">login failed</string>
     <string name="error_state">Inconsistent state</string>
     <string name="error_state_text">The state of threads and recipients is inconsistent. Capture a bug report and report it via http://go/droidanizer</string>
     <string name="error_timed_msg">Invalid time</string>
@@ -240,9 +254,12 @@
     <string name="found_wild_messages_title">Sync messages from Mi Cloud</string>
     <string name="from_label">"From: "</string>
     <string name="from_pkg_name">From the app:</string>
+    <string name="ft_cfs_dialog_content">There are undelivered rcs files, do you want to resend them as SMS links?</string>
+    <string name="ft_cfs_dialog_title">RCS files fallback</string>
     <string name="group_already_kicked_hint">"Can't send messages. You aren't a member of this group chat."</string>
+    <string name="group_member_is_composing">group member is typing...</string>
     <string name="group_message">Group message</string>
-    <string name="group_message_title">Group chats</string>
+    <string name="group_message_title">Group chat message</string>
     <string name="group_not_exist_hint">"Can't send messages. This group chat was deleted."</string>
     <string name="group_notify_message_title">Group chat notifications</string>
     <string name="group_rejoin_failed">"Couldn't join group chat"</string>
@@ -278,6 +295,7 @@
     <string name="invalid_destination">Invalid destination address.</string>
     <string name="invalid_private_contact">Invalid contact</string>
     <string name="invalid_recipient_message">"Correct the recipients or they won't receive the message."</string>
+    <string name="is_composing">typing...</string>
     <string name="kilobyte">KB</string>
     <string name="layout_selector_title">"Slideshow layout "</string>
     <string name="loading_all_messages">Just a sec…</string>
@@ -303,6 +321,7 @@
     <string name="menu_pick_from_contact">Select from contacts</string>
     <string name="menu_preferences">Settings</string>
     <string name="menu_send_as_common">Send as SMS</string>
+    <string name="menu_sms_block">Blocklist</string>
     <string name="menu_traffic_destination">Destination</string>
     <string name="menu_unlock">Remove from favorites</string>
     <string name="menu_view_contact">View contact</string>
@@ -544,6 +563,12 @@
     <string name="private_protect">Privacy protection</string>
     <string name="private_settings">Settings</string>
     <string name="processing">Working…</string>
+    <string name="prompt_area_code">+86</string>
+    <string name="prompt_otp">OTP</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_summary">Open RCS service, you can send SMS, pictures, videos and other messages free of charge through the network, and you can also establish group chats with your friends.</string>
+    <string name="prompt_title">Log in to use the RCS service</string>
+    <string name="prompt_user_agreement">Landing means to agree with the RCS User Agreement and Privacy Policy</string>
     <string name="prvate_contact">Private contacts</string>
     <string name="quick_reply">Reply</string>
     <string name="rate_limit_surpassed">OK</string>
@@ -554,22 +579,45 @@
     <string name="rcs_auto_resend_sms">Convert to SMS</string>
     <string name="rcs_auto_resume">Resume interrupted uploads automatically</string>
     <string name="rcs_auto_resume_only_by_wifi">Resume uploads only when connected to Wi-Fi</string>
+    <string name="rcs_cfs_dialog_content">There are undelivered rcs messages, do you want to resend them as SMS?</string>
+    <string name="rcs_cfs_dialog_title">RCS messages fallback</string>
     <string name="rcs_create_new_group">Create group chat</string>
     <string name="rcs_dspt">Send and recieve messages using Wi-Fi or China Mobile network</string>
     <string name="rcs_dspt_unavailable">"Can't use this feature now. China Mobile SIM card isn't your default data card."</string>
+    <string name="rcs_file_link_as_sms">please visit %s to visit the file details</string>
     <string name="rcs_forward_faild">"Couldn't forward"</string>
     <string name="rcs_forward_successful">Forwarded successfully</string>
+    <string name="rcs_group_chat_closed">( Closed )</string>
     <string name="rcs_group_notification_invitation">Group chat invitation</string>
     <string name="rcs_hello_from_pc">Sign in to Fetion on your computer to transfer files.</string>
-    <string name="rcs_message">China Mobile Messaging</string>
+    <string name="rcs_message">RCS messages</string>
     <string name="rcs_message_disable">"Can't view this message in Second space"</string>
     <string name="rcs_msg">China Mobile Messaging</string>
     <string name="rcs_not_online">"Can't use China Mobile Messaging. Check your network settings and try again."</string>
     <string name="rcs_offline">Not signed in to UC. Wait a minute or two and try again.</string>
     <string name="rcs_offline_hint">"China Mobile Messaging is offline. Can't forward this message."</string>
+    <string name="rcs_pref_button_login">Login</string>
+    <string name="rcs_pref_button_logout">Logout</string>
+    <string name="rcs_pref_category_rcs">RCS message</string>
+    <string name="rcs_pref_category_rcs_message">RCS Message</string>
+    <string name="rcs_pref_category_set_alias">Show alias to the other user when using RCS communication</string>
+    <string name="rcs_pref_cfs">RCS message fallback</string>
+    <string name="rcs_pref_default_sending_method">Default sending method</string>
+    <string name="rcs_pref_ft_auto_download">Auto download files</string>
+    <string name="rcs_pref_ft_auto_download_details">Auto download when file size is not too big</string>
+    <string name="rcs_pref_ft_auto_download_roaming">Auto download files when roaming if file size is not too big</string>
+    <string name="rcs_pref_ft_cfs">RCS file transfer fallback</string>
+    <string name="rcs_pref_login_rcs">RCS message</string>
+    <string name="rcs_pref_picture_message_default_quality">Image resizing options</string>
+    <string name="rcs_pref_send_display_report">Send display report to the sender</string>
+    <string name="rcs_pref_send_display_report_detail">when sender will see an the read status</string>
+    <string name="rcs_pref_setting_entrance">RCS settings</string>
+    <string name="rcs_pref_user_alias_title">Alias</string>
+    <string name="rcs_pref_video_message_default_quality">Video resizing options</string>
     <string name="rcs_recipient_type_contact">Forward to contact</string>
     <string name="rcs_recipient_type_group">Forward to group chat</string>
     <string name="rcs_recipient_type_pc">Forward to computer</string>
+    <string name="rcs_remember_my_choice">remember my choice</string>
     <string name="rcs_resend_not_online">"Can't use China Mobile Messaging"</string>
     <string name="rcs_resend_sim_card_not_insert">"Looks like your SIM card isn't installed"</string>
     <string name="rcs_send_rms_remind_change">Settings</string>
@@ -577,11 +625,13 @@
     <string name="rcs_send_rms_remind_title">Send messages using China Mobile Messaging</string>
     <string name="rcs_service_agreement">Service Agreement</string>
     <string name="rcs_setting">China Mobile Messaging settings</string>
+    <string name="rcs_setting_tips">You can change the setting in Messaging setting at any time</string>
     <string name="rcs_silence_message">Silence message notifications</string>
     <string name="rcs_summary_auto_resend_mms">"Convert China Mobile multimedia messages to MMS after the original message couldn't be sent. Your carrier will charge you for this message."</string>
     <string name="rcs_summary_auto_resend_sms">"Convert China Mobile text messages to SMS after the original message couldn't be sent. Your carrier will charge you for this message."</string>
     <string name="rcs_summary_silence_message">Silence message notifications when desktop client is working</string>
     <string name="rcs_unavailable">"Can't use China Mobile Messaging now. China Mobile SIM card isn't your default data card."</string>
+    <string name="rcs_up_not_online">RCS is not online, please check the network status</string>
     <string name="rcs_wait_for_retry_text">Waiting…</string>
     <string name="received_at_time">Received at: %1s</string>
     <string name="received_label">"Received: "</string>
@@ -625,6 +675,7 @@
     <string name="rms_audio_file_length_too_large">"Can't send audio larger than %1$dMB"</string>
     <string name="rms_card_body">[Card]</string>
     <string name="rms_cloud_file_body">[Cloud file]</string>
+    <string name="rms_editor_hints">Chat</string>
     <string name="rms_emoticon_body">[Emoji]</string>
     <string name="rms_file_body">[File]</string>
     <string name="rms_file_not_exist">"File doesn't exist"</string>
@@ -771,6 +822,7 @@
     <string name="subject_hint">Subject</string>
     <string name="subject_label">"Subject: "</string>
     <string name="subscribe">Subscribe</string>
+    <string name="success_login">login success</string>
     <string name="summary_pref_cm_smart_sms">Card templates, SMS service numbers, and more.</string>
     <string name="switch_to_editor">Editor mode</string>
     <string name="switch_to_menu">Menu mode</string>
@@ -778,6 +830,8 @@
     <string name="text_message">Text message</string>
     <string name="timed_message_expired_title_2">Send them now?</string>
     <string name="timed_message_to">to</string>
+    <string name="title_activity_rcs_login">Login</string>
+    <string name="title_activity_rcs_maps">Location</string>
     <string name="title_allow_network_access">Update info automatically</string>
     <string name="title_collapse_sp_messages">Notifications group</string>
     <string name="title_hide_verification_code">Auto hide OTP on Lock screen</string>
@@ -841,71 +895,71 @@ Attempt made: %s."</string>
     <string name="yes">OK</string>
     <string name="yesterday">Yesterday</string>
     <string name="you_have_new_message">You have new messages</string>
-    <item type="string" name="APKTOOL_DUMMY_5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_8">false</item>
     <item type="string" name="APKTOOL_DUMMY_a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_39">false</item>
-    <item type="string" name="APKTOOL_DUMMY_5b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_9e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ca">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ce">false</item>
-    <item type="string" name="APKTOOL_DUMMY_cf">false</item>
-    <item type="string" name="APKTOOL_DUMMY_d9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ea">false</item>
-    <item type="string" name="APKTOOL_DUMMY_eb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ec">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ed">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_fc">false</item>
-    <item type="string" name="APKTOOL_DUMMY_105">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_62">false</item>
+    <item type="string" name="APKTOOL_DUMMY_a6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_d8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_fa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_fb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ff">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10a">false</item>
     <item type="string" name="APKTOOL_DUMMY_116">false</item>
-    <item type="string" name="APKTOOL_DUMMY_117">false</item>
-    <item type="string" name="APKTOOL_DUMMY_182">false</item>
-    <item type="string" name="APKTOOL_DUMMY_184">false</item>
-    <item type="string" name="APKTOOL_DUMMY_18c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_19b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1a1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1ad">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1ba">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1d3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1f1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_201">false</item>
-    <item type="string" name="APKTOOL_DUMMY_206">false</item>
-    <item type="string" name="APKTOOL_DUMMY_20b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_20d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_211">false</item>
-    <item type="string" name="APKTOOL_DUMMY_215">false</item>
-    <item type="string" name="APKTOOL_DUMMY_216">false</item>
-    <item type="string" name="APKTOOL_DUMMY_218">false</item>
-    <item type="string" name="APKTOOL_DUMMY_21d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_127">false</item>
+    <item type="string" name="APKTOOL_DUMMY_128">false</item>
+    <item type="string" name="APKTOOL_DUMMY_195">false</item>
+    <item type="string" name="APKTOOL_DUMMY_197">false</item>
+    <item type="string" name="APKTOOL_DUMMY_19f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1ae">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1b4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1cd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1e6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_204">false</item>
+    <item type="string" name="APKTOOL_DUMMY_214">false</item>
+    <item type="string" name="APKTOOL_DUMMY_219">false</item>
+    <item type="string" name="APKTOOL_DUMMY_21e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_220">false</item>
+    <item type="string" name="APKTOOL_DUMMY_224">false</item>
+    <item type="string" name="APKTOOL_DUMMY_228">false</item>
+    <item type="string" name="APKTOOL_DUMMY_229">false</item>
     <item type="string" name="APKTOOL_DUMMY_22b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_280">false</item>
-    <item type="string" name="APKTOOL_DUMMY_281">false</item>
-    <item type="string" name="APKTOOL_DUMMY_297">false</item>
-    <item type="string" name="APKTOOL_DUMMY_2c8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_2d4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_2e1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_2e9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_230">false</item>
+    <item type="string" name="APKTOOL_DUMMY_23e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2b2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2b3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2c9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_2fb">false</item>
     <item type="string" name="APKTOOL_DUMMY_307">false</item>
     <item type="string" name="APKTOOL_DUMMY_314">false</item>
-    <item type="string" name="APKTOOL_DUMMY_316">false</item>
-    <item type="string" name="APKTOOL_DUMMY_317">false</item>
-    <item type="string" name="APKTOOL_DUMMY_33b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_33d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_341">false</item>
-    <item type="string" name="APKTOOL_DUMMY_34c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_34f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_350">false</item>
-    <item type="string" name="APKTOOL_DUMMY_351">false</item>
-    <item type="string" name="APKTOOL_DUMMY_352">false</item>
-    <item type="string" name="APKTOOL_DUMMY_374">false</item>
-    <item type="string" name="APKTOOL_DUMMY_375">false</item>
-    <item type="string" name="APKTOOL_DUMMY_376">false</item>
+    <item type="string" name="APKTOOL_DUMMY_31c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_33a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_347">false</item>
+    <item type="string" name="APKTOOL_DUMMY_349">false</item>
+    <item type="string" name="APKTOOL_DUMMY_34a">false</item>
+    <item type="string" name="APKTOOL_DUMMY_36f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_371">false</item>
     <item type="string" name="APKTOOL_DUMMY_377">false</item>
-    <item type="string" name="APKTOOL_DUMMY_378">false</item>
-    <item type="string" name="APKTOOL_DUMMY_37d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_383">false</item>
+    <item type="string" name="APKTOOL_DUMMY_382">false</item>
+    <item type="string" name="APKTOOL_DUMMY_385">false</item>
+    <item type="string" name="APKTOOL_DUMMY_386">false</item>
+    <item type="string" name="APKTOOL_DUMMY_387">false</item>
+    <item type="string" name="APKTOOL_DUMMY_388">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3aa">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ab">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ac">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ad">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3ae">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3b3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_3b9">false</item>
 </resources>
