@@ -1161,8 +1161,11 @@ Selection"</string>
     <string name="bootloader_status_unlocked">Unlocked</string>
     <string name="bootloader_status_unlocked_info">This device is unlocked</string>
     <string name="bootloader_summary">Flash your device via USB</string>
-    <string name="bootloader_tips">"After you add your Mi Account, don't sign out of it, perform a factory reset, or clear system apps' data. If you do any of the above, add your account again or you won't be able to unlock your device."</string>
+    <string name="bootloader_tips">"%s
+
+If you've already done any of the above, add your Mi Account again; otherwise, you won't be able to unlock your device."</string>
     <string name="bootloader_tips_ok">Got it</string>
+    <string name="bootloader_tips_warning">"Don't disconnect from the network, sign out of your Mi Account, perform a factory reset, or erase system data."</string>
     <string name="bootloader_unlock_webhome">https://unlock.update.miui.com</string>
     <string name="breathing_light_color_menu_title">Light color</string>
     <string name="breathing_light_color_summary">Light color when receiving new notification</string>
@@ -1948,6 +1951,7 @@ If this keeps happening, you may need to uninstall the app to improve battery pe
     <string name="disabled_dependent_setting_summary">Depends on another setting</string>
     <string name="disabled_for_user_setting_summary">Setting can’t be changed by current user</string>
     <string name="disabled_low_ram_device">This feature is not available on this device</string>
+    <string name="disallow_lock_screen_summary">Allow notifications in \"App notifications\" first</string>
     <string name="disconnect">disconnect</string>
     <string name="disconnected">Not connected</string>
     <string name="display_auto_rotate_rotate">On</string>
@@ -2519,7 +2523,8 @@ When you turn on automatic backup, device and app data is periodically saved rem
     <string name="gesture_setting_off">Off</string>
     <string name="gesture_setting_on">On</string>
     <string name="gesture_w">W pattern</string>
-    <string name="gesture_wakeup_title">Double tap screen to wake</string>
+    <string name="gesture_wakeup_summary">You can double tap to turn the screen off when either Default or Classic theme is applied</string>
+    <string name="gesture_wakeup_title">Double tap to wake or turn off screen</string>
     <string name="gesture_z">Z pattern</string>
     <string name="getConfiguredNetworks">getConfiguredNetworks</string>
     <string name="getConnectionInfo">getConnectionInfo</string>
@@ -3086,9 +3091,9 @@ You can change this later from Settings > Apps &amp; notifications."</string>
     <string name="lock_screen_notifications_summary_show">Show all notifications and their contents</string>
     <string name="lock_screen_notifications_summary_show_profile">Show all work notification content</string>
     <string name="lock_screen_notifications_title">On lock screen</string>
+    <string name="lock_screen_settings_title">Lock screen</string>
     <string name="lock_screen_signature_summary">This message will be displayed on the Lock screen</string>
     <string name="lock_screen_signature_title">Lock screen owner info</string>
-    <string name="lock_screen_tip_toast">please allow first in notification application settings</string>
     <string name="lock_screen_unlock_show">Skip Lock screen</string>
     <string name="lock_screen_unlock_show_summary">Open Home screen or enter password directly</string>
     <string name="lock_secure_after_timeout_click_me_to_change_text">Tap to change</string>
@@ -3265,6 +3270,8 @@ as your First space PIN."</string>
     <string name="manage_notification_access_summary_zero">Apps cannot read notifications</string>
     <string name="manage_notification_access_title">Notification access</string>
     <string name="manage_notification_title">App notifications</string>
+    <string name="manage_password">Manage passwords</string>
+    <string name="manage_password_summary">Autofill saved accounts and passwords</string>
     <string name="manage_space_text">Manage space</string>
     <string name="manage_trust_agents">Trust agents</string>
     <string name="manage_trust_agents_summary">None</string>
@@ -3794,15 +3801,20 @@ Select your operating system:"</string>
     <string name="notch_force_black_desc">Turn on to darken the area around the notch</string>
     <string name="notch_force_black_title">Hide notch</string>
     <string name="notch_settings">Notch</string>
+    <string name="notch_style_mod_description">Notch and status bar display options</string>
+    <string name="notch_style_mod_title">Hide notch</string>
+    <string name="notch_style_show">"Don't hide"</string>
+    <string name="notch_style_status_bar_inside">Hide without moving status bar</string>
+    <string name="notch_style_status_bar_outside">Hide and move status bar</string>
     <string name="notes_privacy_password_role_instruction">Your private notes will be stored here.</string>
     <string name="notifi_channels">Notification categories</string>
     <string name="notifi_channels_other">Other</string>
-    <string name="notifi_importance_default">Play sound and show on the Lock screen</string>
-    <string name="notifi_importance_high">Play sound, show on the Lock screen, allow using fullscreen options</string>
-    <string name="notifi_importance_low">"Don't play sound"</string>
-    <string name="notifi_importance_min">"Don't show on the Lock screen, don't play sound"</string>
-    <string name="notifi_importance_none">Off</string>
-    <string name="notifi_importance_unspecified">Let the app decide</string>
+    <string name="notifi_importance_default">Make sound</string>
+    <string name="notifi_importance_high">Make sound and pop on screen</string>
+    <string name="notifi_importance_low">Show silently</string>
+    <string name="notifi_importance_min">Show silently and minimize</string>
+    <string name="notifi_importance_none">Never show notifications</string>
+    <string name="notifi_importance_unspecified">Allow sound</string>
     <string name="notifi_no_channels">"This app hasn't received any notifications yet"</string>
     <string name="notification_app_settings_button">Notification settings</string>
     <string name="notification_badge_title">Allow notification dot</string>
@@ -4107,7 +4119,7 @@ OTG turns off automatically after 10 minutes of inactivity."</string>
     <string name="pointer_location_summary">Show touch coordinates</string>
     <string name="pointer_settings_category">Mouse/track pad</string>
     <string name="pointer_speed">Pointer speed</string>
-    <string name="popup_gesture_summary">Lift the phone and look at the screen to open the front camera automatically</string>
+    <string name="popup_gesture_summary">Go back to Home screen, lift the phone, and look at the screen to open the front camera automatically</string>
     <string name="popup_gesture_title">Lift to open front camera</string>
     <string name="popup_led_summary">Show animation when the front camera appears and retracts</string>
     <string name="popup_led_title">Visual effect</string>
@@ -5745,7 +5757,7 @@ Try using a faster ^3, or use this ^4 for portable storage instead."</string>
 %1$s"</string>
     <string name="sync_plug"><font fgcolor="#ffffffff">Welcome to Google sync!</font>" 
 A Google approach to syncing data to allow access to your contacts, appointments, and more from wherever you are. "</string>
-    <string name="sync_settings">Sync</string>
+    <string name="sync_settings">Accounts &amp; sync</string>
     <string name="sync_wifi_label">WLAN</string>
     <string name="sync_wifi_only">WLAN only</string>
     <string name="system">System</string>
@@ -7068,10 +7080,17 @@ Looks like credential storage isn't enabled."</string>
     <string name="wifi_wps_setup_title">WLAN Protected Setup</string>
     <string name="window_animation_scale_title">Window animation scale</string>
     <string name="winscope_trace_quick_settings_title">Winscope Trace</string>
+    <string name="wireless_button">Charge other devices wirelessly</string>
+    <string name="wireless_charging_settings">Charge other devices wirelessly</string>
+    <string name="wireless_closed">Off</string>
     <string name="wireless_connected">Connected</string>
     <string name="wireless_networks_settings_title">Wireless &amp; networks</string>
     <string name="wireless_off">Off</string>
     <string name="wireless_on">On</string>
+    <string name="wireless_opened">On</string>
+    <string name="wireless_tip">"Use your phone to charge other devices wirelessly.
+
+This feature will be turned off automatically if charging doesn't start within 90 seconds."</string>
     <string name="wizard_back">Back</string>
     <string name="wizard_finish">Finish</string>
     <string name="wizard_next">Next</string>
@@ -7114,6 +7133,8 @@ Looks like credential storage isn't enabled."</string>
     <string name="xiaomi_account">Mi Account</string>
     <string name="xiaomi_cloud_service">Mi Cloud</string>
     <string name="xiaomi_cloud_service_description">Mi Cloud syncs your contacts and photos, backs up your apps and settings, and helps you find your phone using Find device.</string>
+    <string name="xiaomi_cloud_service_description_contact">contacts and</string>
+    <string name="xiaomi_cloud_service_description_format">Mi Cloud syncs your %s photos, backs up your apps and settings, and helps you find your phone using Find device.</string>
     <string name="xiaomi_cloud_service_disabled">Off</string>
     <string name="xiaomi_cloud_service_unknown">Unknown</string>
     <string name="xiaomi_money_service">Mi Credit</string>
@@ -7353,12 +7374,11 @@ Update settings to:
     <item type="string" name="APKTOOL_DUMMY_2f2">false</item>
     <item type="string" name="APKTOOL_DUMMY_367">false</item>
     <item type="string" name="APKTOOL_DUMMY_368">false</item>
-    <item type="string" name="APKTOOL_DUMMY_5ac">false</item>
     <item type="string" name="APKTOOL_DUMMY_5ad">false</item>
     <item type="string" name="APKTOOL_DUMMY_5ae">false</item>
-    <item type="string" name="APKTOOL_DUMMY_618">false</item>
-    <item type="string" name="APKTOOL_DUMMY_6b0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_73c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_5af">false</item>
+    <item type="string" name="APKTOOL_DUMMY_619">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6b1">false</item>
     <item type="string" name="APKTOOL_DUMMY_73d">false</item>
     <item type="string" name="APKTOOL_DUMMY_73e">false</item>
     <item type="string" name="APKTOOL_DUMMY_73f">false</item>
@@ -7369,56 +7389,57 @@ Update settings to:
     <item type="string" name="APKTOOL_DUMMY_744">false</item>
     <item type="string" name="APKTOOL_DUMMY_745">false</item>
     <item type="string" name="APKTOOL_DUMMY_746">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7b0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7de">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7f4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_8c7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_934">false</item>
-    <item type="string" name="APKTOOL_DUMMY_935">false</item>
+    <item type="string" name="APKTOOL_DUMMY_747">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7b2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7e0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7f6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_8c9">false</item>
     <item type="string" name="APKTOOL_DUMMY_936">false</item>
     <item type="string" name="APKTOOL_DUMMY_937">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b63">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b64">false</item>
-    <item type="string" name="APKTOOL_DUMMY_da6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f0e">false</item>
-    <item type="string" name="APKTOOL_DUMMY_f0f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ff1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_10dd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_129b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_142a">false</item>
-    <item type="string" name="APKTOOL_DUMMY_142d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_142f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14bb">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c2">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c4">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c7">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14c9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14ca">false</item>
+    <item type="string" name="APKTOOL_DUMMY_938">false</item>
+    <item type="string" name="APKTOOL_DUMMY_939">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b66">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b67">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dab">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f18">false</item>
+    <item type="string" name="APKTOOL_DUMMY_f19">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ffb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_10e7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_12a5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1434">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1437">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1439">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14c5">false</item>
     <item type="string" name="APKTOOL_DUMMY_14cc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14cd">false</item>
     <item type="string" name="APKTOOL_DUMMY_14ce">false</item>
     <item type="string" name="APKTOOL_DUMMY_14d0">false</item>
     <item type="string" name="APKTOOL_DUMMY_14d1">false</item>
     <item type="string" name="APKTOOL_DUMMY_14d2">false</item>
     <item type="string" name="APKTOOL_DUMMY_14d3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14d5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14d7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14d4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14d6">false</item>
     <item type="string" name="APKTOOL_DUMMY_14d8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14d9">false</item>
     <item type="string" name="APKTOOL_DUMMY_14da">false</item>
     <item type="string" name="APKTOOL_DUMMY_14db">false</item>
     <item type="string" name="APKTOOL_DUMMY_14dc">false</item>
     <item type="string" name="APKTOOL_DUMMY_14dd">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14de">false</item>
-    <item type="string" name="APKTOOL_DUMMY_14e0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14df">false</item>
     <item type="string" name="APKTOOL_DUMMY_14e1">false</item>
     <item type="string" name="APKTOOL_DUMMY_14e2">false</item>
     <item type="string" name="APKTOOL_DUMMY_14e3">false</item>
     <item type="string" name="APKTOOL_DUMMY_14e4">false</item>
     <item type="string" name="APKTOOL_DUMMY_14e5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1a08">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1a09">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1ba3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14e6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14e7">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14e8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14ea">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14eb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14ec">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14ed">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14ee">false</item>
+    <item type="string" name="APKTOOL_DUMMY_14ef">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a12">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1a13">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1bb4">false</item>
 </resources>
