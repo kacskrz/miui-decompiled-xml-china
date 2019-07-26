@@ -181,7 +181,7 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="sms_filter">Smart filter</string>
     <string name="sms_keywords">Keyword blocklist</string>
     <string name="sms_service">Block service SMS</string>
-    <string name="sms_stranger_block">Block SMS from strangers</string>
+    <string name="sms_stranger_block">Blocked</string>
     <string name="sms_contact_block">Block SMS from contacts</string>
     <string name="sms_malicious_url">Block SMS with malicious URLs</string>
     <string name="sms_cloud_block">Cloud blocklist</string>
@@ -209,6 +209,7 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="sms_delete_hint">Delete all blocked messages from this number?</string>
     <string name="sms_delete_all_hint">Delete all messages now?</string>
     <string name="call_delete_hint">Delete all blocked calls from this number?</string>
+    <string name="call_delete_all_hint">Delete all blocked calls?</string>
     <string name="backsound_set_hint">Set your away message to %s?</string>
     <string name="report">Report</string>
     <string name="report_only">Choose a message to report</string>
@@ -248,6 +249,7 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="st_antispam_title_anoy_incoming">Calls from strangers</string>
     <string name="st_antispam_title_null_incoming">Private numbers</string>
     <string name="st_antispam_title_service_sms">Service notifications</string>
+    <string name="st_antispam_title_mms">MMS</string>
     <string name="st_summary_keywords_blacklist">Add keywords to block messages</string>
     <string name="st_summary_blacklist_numbers">Block calls and messages from specific numbers and areas</string>
     <string name="st_summary_whitelist_numbers">Allow calls and messages from specific numbers and areas</string>
@@ -331,7 +333,7 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="st_share_settings">Use SIM 1 settings</string>
     <string name="st_msg_settings">SMS blocklist</string>
     <string name="st_msg_intercept_contacts">Block SMS from contacts</string>
-    <string name="st_msg_stranger_group">Block SMS from strangers</string>
+    <string name="st_msg_stranger_group">Block messages from strangers</string>
     <string name="st_msg_other_group">Other</string>
     <string name="st_msg_keyword_group">Keywords</string>
     <string name="st_msg_keyword_black">Keyword blocklist</string>
@@ -1159,6 +1161,8 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="power_cell">Cell standby</string>
     <string name="power_phone">Voice calls</string>
     <string name="power_idle">Phone idle</string>
+    <string name="power_ambient_display">Ambient display</string>
+    <string name="battery_desc_ambient_display">Power consumed by Ambient display</string>
     <string name="usage_type_cpu">CPU total</string>
     <string name="usage_type_cpu_foreground">CPU foreground</string>
     <string name="usage_type_wake_lock">Keep awake</string>
@@ -1427,6 +1431,33 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="pc_abnormal_scan_reason_wake_system">Wakes the system too frequently</string>
     <string name="pc_abnormal_scan_reason_reconnect">Tries to connect to the network too frequently</string>
     <string name="pc_abnormal_scan_button_text">Close apps</string>
+    <string name="superpower_settings">Ultra battery saver</string>
+    <string name="superpower_notification_time_12">MMMM dd, EEEE</string>
+    <string name="superpower_notification_time_24">MMMM dd, EEEE</string>
+    <string name="superpower_notification_hint_enter">Turn on</string>
+    <string name="superpower_savemode_limit1">Dark theme</string>
+    <string name="superpower_savemode_limit2">Restrict background activity</string>
+    <string name="superpower_savemode_limit3">Restrict power-consuming activity (sync, GPS, vibration, Ambient display, etc.)</string>
+    <string name="superpower_savemode_limit4">Allow selected apps to work normally</string>
+    <string name="superpower_settins_switch_summary">Restricts most power-consuming features in order to leave basic functionality (e.g. calls, SMS, and selected apps) available as long as possible</string>
+    <string name="superpower_settins_autoleave_title">Turn off automatically</string>
+    <string name="superpower_settins_autoleave_summary">Turn off Ultra battery saver automatically when the battery is 50% charged</string>
+    <string name="superpower_settins_other">Additional settings</string>
+    <string name="superpower_settins_autoenter_title">Turn on automatically</string>
+    <string name="superpower_settins_autoenter_summary">Turn on Ultra battery saver automatically when the battery is only 10% charged</string>
+    <string name="superpower_notification_title">Less than 10% of battery remaining</string>
+    <string name="superpower_notification_summary">Turn on Ultra battery saver</string>
+    <string name="superpower_dialog_title">Ultra battery saver</string>
+    <string name="superpower_dialog_massage">"Ultra battery saver restricts most power-consuming features and decreases your device's performance in order to leave basic functionality (e.g. calls, SMS, and connecting to the network) available as long as possible. Turn on Ultra battery saver?"</string>
+    <string name="superpower_dialog_button_ok">OK</string>
+    <string name="superpower_dialog_button_disable_dialog">"Don't show again"</string>
+    <string name="superpower_progress_title">Remaining time</string>
+    <string name="superpower_progress_content">Turning on Ultra battery saver…</string>
+    <string name="superpower_progress_turnoff_items">Restricting power-consuming activity</string>
+    <string name="superpower_progress_turnoff_process">Restrict background activity</string>
+    <string name="superpower_progress_turndown_brightness">Decreasing screen brightness</string>
+    <string name="superpower_progress_switch_home">Switching to Dark theme</string>
+    <string name="superpower_progress_left_time">%1$dh %2$dm</string>
     <string name="handle_bar_title_system">System</string>
     <string name="apps_list_header_title_sms">Check messaging app</string>
     <string name="apps_list_header_title_sms_access">Restrict access to verification codes</string>
@@ -1888,7 +1919,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="antivirus_none_engine_dialog_ok">OK</string>
     <string name="antivirus_privacy_dialog_title">Privacy Policy</string>
     <string name="antivirus_privacy_dialog_summary">"This feature encrypts and uploads your device's ID to Avast, AVL and Tencent's servers (%s)."</string>
-    <string name="antivirus_privacy_dialog_summary_link">view Privacy Policy</string>
+    <string name="antivirus_privacy_dialog_summary_link">Privacy Policy</string>
     <string name="antivirus_privacy_dialog_cloudscan">Upload app names and details</string>
     <string name="antivirus_privacy_dialog_cloudscan_description">Upload and scan app names and details using online virus definitions.</string>
     <string name="antivirus_privacy_dialog_ok">OK</string>
@@ -2037,7 +2068,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="ac_enter_applock">Enter App lock</string>
     <string name="ac_mask_all_apps">Hide for all apps</string>
     <string name="ac_unmask_all_apps">Unhide for all apps</string>
-    <string name="ac_summaryOn">Turned on, password is required to open apps</string>
+    <string name="ac_summaryOn">Enter password to open protected apps</string>
     <string name="ac_summaryOff">Turned off, no password is required to open apps</string>
     <string name="lockpattern_tutorial_cancel_label">Cancel</string>
     <string name="lockpattern_tutorial_continue_label">Next</string>
@@ -2051,8 +2082,8 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="modifypassword">Change password type</string>
     <string name="back_modifypassword">Go back to changing password type</string>
     <string name="showpattern">Show pattern</string>
-    <string name="notification_mask_title">Hide content</string>
-    <string name="notification_mask_summary">Hide notification content on the Lock screen and in the Notification shade</string>
+    <string name="notification_mask_title">Hide notification content</string>
+    <string name="notification_mask_summary">"Don't display notification content for protected apps"</string>
     <string name="convenient_mode">Unlock all apps at once</string>
     <string name="convenient_summary">Enter password once to unlock all apps</string>
     <string name="suggest_app_tolock">Suggestions</string>
@@ -2564,6 +2595,7 @@ You will not lose any app data."</string>
     <string name="gamebox_display_3">Bright</string>
     <string name="gamebox_display_4">Bright &amp; saturated</string>
     <string name="gamebox_display_set">"Visual enhancement: "</string>
+    <string name="gamebox_milink">Cast</string>
     <string name="gb_first_window_title">Game speed booster</string>
     <string name="gb_first_window_summary">Boost speed and performance on a system level</string>
     <string name="gb_first_window_gamebox_summary_four">Clear cache, make screen recordings and screenshots</string>
@@ -2660,6 +2692,9 @@ You will not lose any app data."</string>
     <string name="gb_first_guide_handsfree_des">Answer calls in the background</string>
     <string name="gb_first_guide_shortcut_des">A Home screen shortcut for Game Turbo has been created</string>
     <string name="gb_first_guide_function_shiled_title">Turn off system features when Game Turbo is on</string>
+    <string name="stop_milink_connect">Stopped casting</string>
+    <string name="other_milink_connect">"Can't cast. Another feature is being cast now."</string>
+    <string name="alert_back_milink_hangup_tips_content">"Casting won't be interrupted while you're ending a call. You can press the Power button to wake the screen."</string>
     <string name="notify_channel_name_security">System security</string>
     <string name="privacy_apps_category_title">Hidden apps</string>
     <string name="privacy_apps">Hidden apps</string>
@@ -2674,6 +2709,12 @@ You will not lose any app data."</string>
     <string name="privacy_apps_checkbox_remind_choice">"Don't show again"</string>
     <string name="privacy_apps_go_to_use">Start</string>
     <string name="privacy_apps_close">Close</string>
+    <string name="privacy_apps_shield_message_title">"Don't show notifications"</string>
+    <string name="privacy_apps_shield_message_summary">"Don't show notifications for protected apps"</string>
+    <string name="privacy_apps_begin_use">Start</string>
+    <string name="privacy_apps_next_stup">Next</string>
+    <string name="privacy_apps_button_know">Got it</string>
+    <string name="privacy_apps_tutorial_dlg_title">How to find hidden apps</string>
     <string name="first_aid_stop_scan">Stop scanning</string>
     <string name="first_aid_scanning_item1">Checking for performance issues…</string>
     <string name="first_aid_scanning_item2">Checking for network problems…</string>
@@ -2747,6 +2788,25 @@ All data on your device might be erased and your Lock screen password might be r
     <string name="third_desktop_dialog_ok">Got it</string>
     <string name="user_guide">Swipe up to discover more fresh games</string>
     <string name="user_guide_title">Joystick Picks</string>
+    <string name="system_permission_declare_main_purpose" formatted="false">Welcome to %1s! This app allows you to use the following feature: %2s.</string>
+    <string name="system_permission_declare_privacy_declare">"We respect and protect your privacy.
+Note that %1s needs to collect your data and requires the following permissions to work normally:"</string>
+    <string name="system_permission_declare_privacy_no_permission">"Note that %1s needs to collect your data to work normally.
+We respect and protect your privacy."</string>
+    <string name="system_permission_declare_use_network">Connect to the network</string>
+    <string name="system_permission_declare_use_network_no_permission">Connect to the network</string>
+    <string name="system_permission_declare_no_say_no">"If you choose not to give the required permissions or don't allow us to collect and use your data, this app won't be able to work normally."</string>
+    <string name="system_permission_declare_revoke_uninstallable">You can uninstall this app or manage your permissions and authorization in Security > Manage apps > Permissions > Other permissions.</string>
+    <string name="system_permission_declare_revoke_system">You can exit this app.</string>
+    <string name="system_permission_declare_double_link"><Data>Read and agree to our &lt;a href=\"%1$s\">User Agreement&lt;/a> and &lt;a href=\"%2$s\">Privacy Policy&lt;/a> before using this feature.</Data></string>
+    <string name="system_permission_declare_user_agreement"><Data>Read and agree to our &lt;a href=\"%1$s\">User Agreement&lt;/a> before using this feature.</Data></string>
+    <string name="system_permission_declare_privacy_policy"><Data>Read and agree to our &lt;a href=\"%1$s\">Privacy Policy&lt;/a> before using this feature.</Data></string>
+    <string name="system_permission_declare_agree">Agree</string>
+    <string name="system_permission_declare_disagree">Disagree</string>
+    <string name="system_permission_perm_send_mms">Send MMS</string>
+    <string name="system_permission_perm_read_mms">Read MMS</string>
+    <string name="system_permission_perm_answer_call">Make calls</string>
+    <string name="system_permission_perm_read_numbers">Read phone numbers</string>
     <string name="firewall_rule_group_title_roaming">Overseas roaming</string>
     <string name="mian_page_primary_txt">Overseas roaming</string>
 </resources>
