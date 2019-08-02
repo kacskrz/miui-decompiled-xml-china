@@ -905,6 +905,8 @@ Apps:
     <string name="bluetooth_disable_absolute_volume_summary">Disables the Bluetooth absolute volume feature in case of volume issues with remote devices such as unacceptably loud volume or lack of control.</string>
     <string name="bluetooth_disable_inband_ringing">Disable in-band ringing</string>
     <string name="bluetooth_disable_inband_ringing_summary">Don’t play custom phone ringtones on Bluetooth headsets</string>
+    <string name="bluetooth_disable_mi_fast_connect">Disable Mi Link</string>
+    <string name="bluetooth_disable_mi_fast_connect_summary">Disable Mi Link functionality</string>
     <string name="bluetooth_disable_profile_message">This will disable:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>From:&lt;br>&lt;b>%2$s&lt;/b></string>
     <string name="bluetooth_disable_profile_title">Disable profile?</string>
     <string name="bluetooth_disabled">Off</string>
@@ -1055,6 +1057,12 @@ Selection: Channel Mode"</string>
     <string name="bluetooth_select_a2dp_codec_ldac_playback_quality">Bluetooth Audio LDAC Codec: Playback Quality</string>
     <string name="bluetooth_select_a2dp_codec_ldac_playback_quality_dialog_title">"Select Bluetooth audio LDAC codec:
 Playback quality"</string>
+    <string name="bluetooth_select_a2dp_codec_lhdc_latency">Bluetooth Audio LHDC Codec: Latency</string>
+    <string name="bluetooth_select_a2dp_codec_lhdc_latency_dialog_title">"Select Bluetooth Audio LHDC Codec:
+Latency"</string>
+    <string name="bluetooth_select_a2dp_codec_lhdc_playback_quality">Bluetooth Audio LHDC Codec: Playback Quality</string>
+    <string name="bluetooth_select_a2dp_codec_lhdc_playback_quality_dialog_title">"Select Bluetooth Audio LHDC Codec:
+Playback Quality"</string>
     <string name="bluetooth_select_a2dp_codec_sample_rate">Bluetooth Audio Sample Rate</string>
     <string name="bluetooth_select_a2dp_codec_sample_rate_dialog_title">"Trigger Bluetooth Audio Codec
 Selection: Sample Rate"</string>
@@ -1196,6 +1204,14 @@ This feature can be turned off in [Settings]"</string>
     <string name="bt_ldac_open_dialog_title">Turn on LDAC?</string>
     <string name="bt_ldac_pre_title">LDAC</string>
     <string name="bt_ldac_property">Attributes</string>
+    <string name="bt_lhdc_declaration">When a Bluetooth device supports LHDC, it will be connected by default. LHDC provides a high-quality audio experience, but also increases power consumption. Issues may occur during playback due to Bluetooth hardware limitations.</string>
+    <string name="bt_lhdc_dialog_summary">"LHDC provides a high-quality audio experience and also brings higher power consumption
+This feature can be turned off in [Settings]"</string>
+    <string name="bt_lhdc_dialog_title">The current device supports LHDC, which has been connected by default:</string>
+    <string name="bt_lhdc_open_dialog_summary">LHDC provides a high-quality audio experience, but also increases power consumption. Issues may occur during playback due to Bluetooth hardware limitations.</string>
+    <string name="bt_lhdc_open_dialog_title">Turn on LHDC?</string>
+    <string name="bt_lhdc_pre_title">LHDC</string>
+    <string name="bt_lhdc_property">Attributes</string>
     <string name="bt_pre_summary">Provide a high-quality audio experience</string>
     <string name="bt_rarely_used_device_title">Rarely used devices (%d)</string>
     <string name="bt_trace_log">Bluetooth trace log</string>
@@ -1379,18 +1395,23 @@ This feature can be turned off in [Settings]"</string>
     <string name="color_led_applications_title">Select apps</string>
     <string name="color_led_applications_title_summary">You can restrict using LED light for individual apps</string>
     <string name="color_led_battery_title">Keep on while charging</string>
+    <string name="color_led_charging_summary">Will be turned off when the battery is charged</string>
     <string name="color_led_end_time">End time</string>
-    <string name="color_led_game_mode_title">Game Turbo</string>
+    <string name="color_led_game_mode_summary">Show effects for games when Game Turbo is on</string>
+    <string name="color_led_game_mode_title">Use for Game Turbo</string>
     <string name="color_led_hint">Select the scenarios when LED light should be used. LED light will light up when the screen is facing down and DND is off.</string>
-    <string name="color_led_incall_pulse_title">Flash for incoming calls</string>
+    <string name="color_led_incall_pulse_title">Use for incoming calls</string>
     <string name="color_led_lucky_dialog_message">This feature requires using Red envelope assistant. Turn on now?</string>
     <string name="color_led_lucky_dialog_title">Turn on Red envelope assistant</string>
-    <string name="color_led_music_mode_summary">Show rhythmic light effects when playing music</string>
-    <string name="color_led_music_mode_title">Music</string>
-    <string name="color_led_notification_pulse_title">Pulse for notifications</string>
+    <string name="color_led_music_mode_summary">"Show rhythmic light effects when playing music. Doesn't work in Silent mode."</string>
+    <string name="color_led_music_mode_title">Use for music</string>
+    <string name="color_led_notification_pulse_title">Pulse for notifications when the screen is off</string>
     <string name="color_led_red_more_feature">Special effects</string>
-    <string name="color_led_red_package_title">Red envelopes</string>
+    <string name="color_led_red_package_title">Use for red envelopes</string>
+    <string name="color_led_red_packets_summary">Show effects for red envelopes from WeChat and QQ when Red envelope assistant is on</string>
+    <string name="color_led_special_scene_title">Special effects</string>
     <string name="color_led_start_time">Start time</string>
+    <string name="color_led_summary">"Doesn't work in DND mode"</string>
     <string name="color_led_title">LED light</string>
     <string name="color_magenta">Magenta</string>
     <string name="color_mode_option_automatic">Automatic</string>
@@ -2543,6 +2564,7 @@ When you turn on automatic backup, device and app data is periodically saved rem
     <string name="google_title">Google</string>
     <string name="got_it">Got it</string>
     <string name="gsm_to_wifi_connect_type_title">GSM to WLAN</string>
+    <string name="gxzw_add_fingerprint_area">Fingerprint scanner</string>
     <string name="gxzw_add_fingerprint_continue">Continue</string>
     <string name="gxzw_add_fingerprint_edge_message">Move your finger to record the edges of your fingerprint</string>
     <string name="gxzw_add_fingerprint_edge_title">Adjust your grip</string>
@@ -2915,6 +2937,7 @@ You can change this later from Settings > Apps &amp; notifications."</string>
     <string name="keywords_wifi_calling">wifi, wi-fi, call, calling</string>
     <string name="keywords_write_settings">write modify system settings</string>
     <string name="keywords_zen_mode_settings">dnd, schedule, notifications, block, silence, vibrate, sleep, work, focus, sound, mute, day, weekday, weekend, weeknight, event</string>
+    <string name="kid_space_settings">Kid space</string>
     <string name="kilobyteShort">KB</string>
     <string name="kilobyte_per_second">KB/s</string>
     <string name="label_mi_stats">Mi analytics</string>
@@ -3418,6 +3441,7 @@ There are other users present on this device.
     <string name="mi_service">Mi Service</string>
     <string name="mi_service_app_detail">Data usage details</string>
     <string name="mi_shopping_mall">Mi Store</string>
+    <string name="mi_transfer">Mi Mover</string>
     <string name="mi_upi_settings">Mi Pay Account</string>
     <string name="mipush_fake_channel_group_name">Mi Push</string>
     <string name="misc_files">Misc files</string>
@@ -7081,17 +7105,10 @@ Looks like credential storage isn't enabled."</string>
     <string name="wifi_wps_setup_title">WLAN Protected Setup</string>
     <string name="window_animation_scale_title">Window animation scale</string>
     <string name="winscope_trace_quick_settings_title">Winscope Trace</string>
-    <string name="wireless_button">Charge other devices wirelessly</string>
-    <string name="wireless_charging_settings">Charge other devices wirelessly</string>
-    <string name="wireless_closed">Off</string>
     <string name="wireless_connected">Connected</string>
     <string name="wireless_networks_settings_title">Wireless &amp; networks</string>
     <string name="wireless_off">Off</string>
     <string name="wireless_on">On</string>
-    <string name="wireless_opened">On</string>
-    <string name="wireless_tip">"Use your phone to charge other devices wirelessly.
-
-This feature will be turned off automatically if charging doesn't start within 90 seconds."</string>
     <string name="wizard_back">Back</string>
     <string name="wizard_finish">Finish</string>
     <string name="wizard_next">Next</string>
