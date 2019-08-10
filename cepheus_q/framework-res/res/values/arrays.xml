@@ -45,12 +45,34 @@
     <array name="config_allowedSecureInstantAppSettings" />
     <array name="config_allowedSystemInstantAppSettings" />
     <integer-array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
         <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
     </integer-array>
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>200</item>
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </integer-array>
-    <array name="config_ambientThresholdLevels" />
+    <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>800</item>
+        <item>2000</item>
+        <item>4000</item>
+    </integer-array>
     <array name="config_apexBootImagePinnerServiceFiles" />
     <integer-array name="config_apfEthTypeBlackList">
         <item>0x000088A2</item>
@@ -64,7 +86,6 @@
     </string-array>
     <array name="config_autoBrightnessButtonBacklightValues" />
     <integer-array name="config_autoBrightnessDisplayValuesNits">
-        <item>4</item>
         <item>5</item>
         <item>9</item>
         <item>16</item>
@@ -74,6 +95,7 @@
         <item>48</item>
         <item>61</item>
         <item>83</item>
+        <item>87</item>
         <item>87</item>
         <item>87</item>
         <item>88</item>
@@ -185,16 +207,16 @@
     </integer-array>
     <array name="config_autoBrightnessKeyboardBacklightValues" />
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>17</item>
         <item>21</item>
         <item>40</item>
         <item>77</item>
         <item>111</item>
-        <item>144</item>
+        <item>133</item>
         <item>175</item>
         <item>245</item>
         <item>302</item>
-        <item>348</item>
+        <item>322</item>
+        <item>358</item>
         <item>382</item>
         <item>404</item>
         <item>406</item>
@@ -420,35 +442,6 @@
         <item>system_server_strictmode</item>
         <item>system_server_wtf</item>
     </string-array>
-    <integer-array name="config_dynamicHysteresisBrightLevels">
-        <item>5</item>
-        <item>5</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>400</item>
-        <item>600</item>
-        <item>1000</item>
-    </integer-array>
-    <integer-array name="config_dynamicHysteresisDarkLevels">
-        <item>800</item>
-        <item>800</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-    </integer-array>
-    <integer-array name="config_dynamicHysteresisLuxLevels">
-        <item>2</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>800</item>
-        <item>2000</item>
-        <item>4000</item>
-    </integer-array>
     <integer-array name="config_emergency_mcc_codes">
         <item>404</item>
         <item>405</item>
@@ -527,7 +520,7 @@
     <array name="config_mobile_tcp_buffers" />
     <array name="config_networkNotifySwitches" />
     <string-array name="config_networkSupportedKeepaliveCount">
-        <item>0,3</item>
+        <item>0,1</item>
         <item>1,3</item>
     </string-array>
     <string-array name="config_nightDisplayColorTemperatureCoefficients">
@@ -597,12 +590,12 @@
         <item>600</item>
     </integer-array>
     <integer-array name="config_screenBrighteningThresholds">
-        <item>100</item>
+        <item>0</item>
     </integer-array>
     <array name="config_screenBrightnessBacklight" />
     <array name="config_screenBrightnessNits" />
     <integer-array name="config_screenDarkeningThresholds">
-        <item>200</item>
+        <item>0</item>
     </integer-array>
     <array name="config_screenThresholdLevels" />
     <integer-array name="config_scrollBarrierVibePattern">
@@ -702,12 +695,12 @@
         <item>com.tencent.tmgp.sgame</item>
     </string-array>
     <array name="correct_brightness_video">
-        <item>0.0733</item>
-        <item>0.0733</item>
-        <item>0.0733</item>
-        <item>0.0782</item>
-        <item>0.0879</item>
-        <item>0.0938</item>
+        <item>0.0425</item>
+        <item>0.0425</item>
+        <item>0.0425</item>
+        <item>0.0582</item>
+        <item>0.0679</item>
+        <item>0.0838</item>
         <item>0.0977</item>
         <item>0.1075</item>
         <item>0.1075</item>
@@ -1505,5 +1498,6 @@
         <item>@string/wfcSpnFormat_wifi</item>
         <item>@string/wfcSpnFormat_wifi_calling_wo_hyphen</item>
         <item>@string/wfcSpnFormat_vowifi</item>
+        <item>@string/wfcSpnFormat_spn_wifi_calling_vo_hyphen</item>
     </string-array>
 </resources>
