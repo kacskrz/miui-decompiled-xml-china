@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">algoengine</string>
+    <string name="app_name">EffectManager</string>
     <string name="device_feature_configuration_file_name">default</string>
     <string name="camera_setting">Camera</string>
     <string name="path_settings">System apps/Camera/Settings</string>
@@ -393,7 +393,6 @@
     <string name="pref_camera_snap_value_take_picture">Picture</string>
     <string name="pref_camera_snap_value_take_movie">Movie</string>
     <string name="pref_camera_snap_value_off">Off</string>
-    <string name="pref_camera_snap_toast_when_volume_can_wake_screen">"Can't use Quick snap mode while \"Wake with Volume buttons\" is on."</string>
     <string name="pref_camera_tilt_shift_title">Tilt-shift</string>
     <string name="pref_camera_magic_mirror_title">Magic mirror</string>
     <string name="pano_how_to_use_prompt_align_reference_line">Align the arrow with the reference line</string>
@@ -407,6 +406,7 @@
     <string name="pref_camera_zoom_mode_title">LENS</string>
     <string name="pref_camera_zoom_mode_entry_wide">WIDE</string>
     <string name="pref_camera_zoom_mode_entry_tele">TELE</string>
+    <string name="pref_camera_zoom_mode_entry_tele_2X">TELE 2X</string>
     <string name="pref_camera_zoom_value_title">Zoom</string>
     <string name="pref_camera_portrait_mode_title">Portrait mode</string>
     <string name="portrait_mode_lowlight_hint">"It's too dark now"</string>
@@ -560,6 +560,7 @@ in Portrait mode"</string>
     <string name="close_front_flash_toast">"Your device is overheated. Can't use flash now."</string>
     <string name="close_back_flash_toast">"Your device is overheated. Can't use flash now."</string>
     <string name="live_sticker_fragment_tab_name">TikTok effects</string>
+    <string name="live_sticker_tab_name">TikTok Magic Sticker</string>
     <string name="live_speed_fragment_tab_name">Speed</string>
     <string name="live_speed_extreme_slow">Super slow</string>
     <string name="live_speed_slow">Slow</string>
@@ -606,10 +607,15 @@ in Portrait mode"</string>
     <string name="accessibility_camera_ultra_wide_bokeh_on">Full body mode is on</string>
     <string name="accessibility_camera_ultra_wide_bokeh_off">Full body mode is off</string>
     <string name="ai_scene_top_moon_off">Low light mode</string>
-    <string name="ultra_pixel_photography_48mp_open_tip">48MP</string>
-    <string name="ultra_pixel_photography_48mp_close_tip">48MP is off</string>
-    <string name="accessibility_ultra_pixel_photography_48mp_on">48MP is on</string>
-    <string name="accessibility_ultra_pixel_photography_48mp_off">48MP is off</string>
+    <string name="ultra_pixel_32mp">32MP</string>
+    <string name="ultra_pixel_48mp">48MP</string>
+    <string name="ultra_pixel_64mp">64MP</string>
+    <string name="ultra_pixel_photography_open_tip">%s Ultra HD is on</string>
+    <string name="ultra_pixel_photography_close_tip">%s Ultra HD is off</string>
+    <string name="accessibility_ultra_pixel_photography_on">%s Ultra HD is on</string>
+    <string name="accessibility_ultra_pixel_photography_off">%s Ultra HD is off</string>
+    <string name="pref_menu_ultra_pixel_photography">%s Ultra HD</string>
+    <string name="ultra_pixel_zoom_no_support_tip">"Zoom doesn't work in %s Ultra HD mode"</string>
     <string name="module_name_professional">Pro</string>
     <string name="beauty_reset_toast">Reset Beautify effects successfully</string>
     <string name="beauty_clear_toast">Cleared Beautify effects successfully</string>
@@ -625,7 +631,6 @@ in Portrait mode"</string>
     <string name="pref_camera_ultra_wide_mode_title">Ultra wide angle mode</string>
     <string name="ultra_wide_mode_use_hint_text">"Use this mode to include more of the scene in your photo.
 Ultra wide angle mode comes to help when you can't move farther from the scene."</string>
-    <string name="pref_menu_ultra_pixel_photography_48mp">48MP</string>
     <string name="accessibility_lighting_panel_on">Showing studio lighting bar</string>
     <string name="accessibility_lighting_panel_off">Studio lighting bar is hidden</string>
     <string name="beauty_body_slim_count_tip">Figure effects work only for one person shots</string>
@@ -646,12 +651,6 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="live_error_title">"System time isn't correct"</string>
     <string name="live_error_message">Some features might not work properly when system time is incorrect.</string>
     <string name="live_error_confirm">Adjust time</string>
-    <string name="pref_menu_ultra_pixel_photography_32mp">32MP</string>
-    <string name="ultra_pixel_photography_32mp_open_tip">32MP</string>
-    <string name="ultra_pixel_photography_32mp_close_tip">32MP is off</string>
-    <string name="accessibility_ultra_pixel_photography_32mp_on">32MP is on</string>
-    <string name="accessibility_ultra_pixel_photography_32mp_off">32MP is off</string>
-    <string name="zoom_no_support_tip_48M">"Zoom doesn't work in 48MP mode"</string>
     <string name="autozoom_hint">Track moving object</string>
     <string name="autozoom_disabled_hint">Stopped tracking moving object</string>
     <string name="autozoom_click_hint">"Tap an object to keep it in focus while it's moving. Stay at least 3 meters away for best effect."</string>
@@ -903,25 +902,34 @@ the background on your photos"</string>
     <string name="mimoji_mouth_type">Mouth</string>
     <string name="mimoji_nose">Nose</string>
     <string name="mimoji_earring">Earrings</string>
+    <string name="mimoji_app_name">Fun Cam</string>
     <string name="ultra_wide_recommend_tip_hint_sat">Try 0.6X ultra wide angle mode</string>
     <string name="lying_direct_hint">Current orientation</string>
     <string name="pref_watermark_title">Watermark</string>
-    <string name="user_define_watermark_save">save</string>
-    <string name="user_define_watermark_cancel">cancel</string>
+    <string name="user_define_watermark_save">Save</string>
+    <string name="user_define_watermark_cancel">Cancel</string>
     <string name="pref_watermark_on">On</string>
     <string name="pref_watermark_off">Off</string>
-    <string name="pref_camera_lying_title">横竖屏引导提示</string>
-    <string name="pref_camera_lying_summary">手机平行于地平面时，会在拍照界面实时给出照片方向的提示</string>
+    <string name="pref_camera_lying_title">Notify about orientation</string>
+    <string name="pref_camera_lying_summary">Notify about current orientation when the phone is parallel to the ground</string>
+    <string name="pref_camera_snap_entry_summary">Press and hold the Volume down button when the screen is off to take a photo</string>
+    <string name="pref_camera_touch_focus_delay_title">延长触摸对焦超时时间</string>
+    <string name="ultra_pixel_portrait_hint">超清人像</string>
     <string name="pref_camera_live_sticker_internal_title">Internal magic tools</string>
+    <string name="super_night_hint">画质优化中</string>
     <string name="edit_hairline">Hairline</string>
-    <string name="ultra_pixel_photography_64mp_open_tip">6400万超清</string>
-    <string name="ultra_pixel_photography_64mp_close_tip">6400万超清已关闭</string>
-    <string name="accessibility_ultra_pixel_photography_64mp_on">6400万超清,开启状态</string>
-    <string name="accessibility_ultra_pixel_photography_64mp_off">6400万超清,关闭状态</string>
-    <string name="pref_menu_ultra_pixel_photography_64mp">6400万超清</string>
+    <string name="ultra_pixel_device">64MP</string>
+    <string name="macro_mode_use_hint_text_title">微距模式</string>
+    <string name="macro_mode_use_hint_text_body">"开启微距模式，为您记录更微观的世界
+探索更多细节的美"</string>
+    <string name="vv_start">开拍VV</string>
+    <string name="recommend_portrait">建议使用人像模式</string>
+    <string name="recommend_super_night">建议使用夜景模式</string>
+    <string name="recommend_macro_mode">建议开启微距</string>
     <string name="device_watermark_default_text">AI DUAL CAMERA</string>
     <string name="device_ultra_pixel_watermark_default_text">48MP DUAL CAMERA</string>
     <string name="device_ultra_pixel_app_watermark_family_name_suffix">_48m</string>
+    <string name="device_india_watermark_default_text" />
     <string name="live_share_tik">TikTok</string>
     <string name="live_share_wechat">WeChat</string>
     <string name="live_share_moments">Moments</string>

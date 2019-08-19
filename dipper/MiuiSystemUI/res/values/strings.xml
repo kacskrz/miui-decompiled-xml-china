@@ -351,6 +351,8 @@
     <string name="battery_meter_charging_path">M40.571 30.474L40.329 30 33 30 49 13 44.428 25.526 44.671 26 52 26 36 43Z</string>
     <string name="battery_meter_progress_mask_path">M2.5638852 0C1.6723665 0 1.3490802 0.09282561 1.0231543 0.2671327 0.69722837 0.4414398 0.4414398 0.69722837 0.2671327 1.0231543 0.09282561 1.3490802 0 1.6723665 0 2.5638852L0 0 2.5638852 0Zm0 18L0 18 0 15.436115c0 0.891518 0.09282561 1.214805 0.2671327 1.540731 0.1743071 0.325926 0.43009567 0.581714 0.7560216 0.756021C1.3490802 17.907174 1.6723665 18 2.5638852 18Z</string>
     <string name="battery_meter_progress_path">M9 0l38 0c4.986 0 9 4.014 9 9 0 4.986 -4.014 9 -9 9L9 18C4.014 18 0 13.986 0 9 0 4.014 4.014 0 9 0Z</string>
+    <string name="battery_meter_quick_charging_mask_path">M44.4006489,17.7753262 L48.9816895,12.9957275 L56.0631104,12.9957275 L52.5812988,23.0059814 L60.7009725,23.0059814 C60.9562352,23.0059814 61.2018346,23.1035978 61.3874492,23.2788297 C61.7890441,23.6579603 61.8072549,24.2908633 61.4281243,24.6924582 L44.0809326,43.0675049 L36.9777832,43.0675049 L38.6860448,38.1895308 L34.0809326,43.0675049 L26.9777832,43.0675049 L30.5009766,33.006958 L22.2054052,32.9352898 C21.9505261,32.9330878 21.7061075,32.8336414 21.5220923,32.6572707 C21.1233739,32.2751161 21.1099462,31.6420936 21.4921007,31.2433751 L38.9816895,12.9957275 L46.0631104,12.9957275 L44.4006489,17.7753262 Z</string>
+    <string name="battery_meter_quick_charging_path">M40.7647059,26 L53,13 L48.428,25.526 L48.671,26 L56,26 L40,43 L44.571,30.474 L44.329,30 L42.2352941,30 L30,43 L34.571,30.474 L34.329,30 L27,30 L43,13 L38.428,25.526 L38.671,26 L40.7647059,26 Z</string>
     <string name="battery_meter_very_low_overlay_symbol">!</string>
     <string name="battery_panel_title">Battery usage</string>
     <string name="battery_profiles">Use battery profiles</string>
@@ -364,14 +366,12 @@
     <string name="block_notification_content_text">"%1$s's notifications won't be shown again. You can change this in the Settings."</string>
     <string name="block_notification_desc">"The app's notifications won't be shown again. You can change this in the Settings."</string>
     <string name="block_notification_text">Hide</string>
-    <string name="block_record_notification_text">Hiding notifications from %1$s.</string>
-    <string name="block_record_notification_title">Notifications hidden</string>
     <string name="bluetooth_a2dp_profile_summary_connected">Connected to media audio</string>
     <string name="bluetooth_a2dp_profile_summary_use_for">Use for media audio</string>
     <string name="bluetooth_active_battery_level">Active, %1$s battery</string>
     <string name="bluetooth_active_no_battery_level">Active</string>
     <string name="bluetooth_battery_level">%1$s battery</string>
-    <string name="bluetooth_connected">Connected%1$s</string>
+    <string name="bluetooth_connected">Connected %1$s</string>
     <string name="bluetooth_connected_battery_level">Connected | Battery %1$s%2$s</string>
     <string name="bluetooth_connected_no_a2dp">Connected (no media) %1$s</string>
     <string name="bluetooth_connected_no_a2dp_battery_level">Connected (no media) | Battery %1$s%2$s</string>
@@ -581,6 +581,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="description_direction_left">Swipe left for %s.</string>
     <string name="description_direction_up">Swipe up for %s.</string>
     <string name="description_image_button_answer">Answer</string>
+    <string name="description_image_button_bubble_answer">Speaker</string>
     <string name="description_image_button_reject">Decline</string>
     <string name="description_image_icon_sim_card">SIM %1$d</string>
     <string name="description_target_search">Search</string>
@@ -595,7 +596,6 @@ If you resume, charges may apply for data usage."</string>
     <string name="development_settings_title">Developer options</string>
     <string name="digital_clock_dot">:</string>
     <string name="direct_boot_unaware_dialog_message">"Note: After a reboot, this app can't start until you unlock your phone"</string>
-    <string name="disable_notification_summary">Never show notifications from selected apps</string>
     <string name="disable_notification_title">Hide notifications</string>
     <string name="disable_overlays">Disable HW overlays</string>
     <string name="disable_overlays_summary">Always use GPU for screen compositing</string>
@@ -657,7 +657,6 @@ If you resume, charges may apply for data usage."</string>
     <string name="enabled_by_admin">Enabled by admin</string>
     <string name="ethernet_label">Ethernet</string>
     <string name="expand_button_title">Advanced</string>
-    <string name="expanded_confirm_disable_notification">Hide</string>
     <string name="expanded_header_battery_charged">Charged</string>
     <string name="expanded_header_battery_charging">Charging</string>
     <string name="expanded_header_battery_charging_with_time">%s until full</string>
@@ -764,7 +763,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="flash_device">/sys/class/leds/flashlight/brightness</string>
     <string name="float_incall_ignore">Ignore</string>
     <string name="float_incall_message">Message</string>
-    <string name="force_allow_on_external">Force allow apps on external</string>
+    <string name="force_allow_on_external">Force allow apps to write on external storage</string>
     <string name="force_allow_on_external_summary">Makes any app eligible to be written to external storage, regardless of manifest values</string>
     <string name="force_hw_ui">Force GPU rendering</string>
     <string name="force_hw_ui_summary">Force use of GPU for 2d drawing</string>
@@ -848,6 +847,7 @@ Once your phone has cooled down, it will run normally."</string>
     <string name="input_password_after_boot_msg">To unlock device, enter your password</string>
     <string name="input_password_after_boot_msg_can_not_switch_when_calling">"Can't switch between spaces during a call"</string>
     <string name="input_password_after_boot_msg_can_not_switch_when_greenkid_active">"Can't switch between spaces when parental controls are on"</string>
+    <string name="input_password_after_boot_msg_can_not_switch_when_superpower_active">"Can't switch between spaces when Ultra battery saver is on"</string>
     <string name="input_password_after_boot_msg_must_enter_owner_space">You need to enter First space after the device was rebooted</string>
     <string name="input_password_hint_text">Enter password</string>
     <string name="input_pattern_hint_text">Draw your unlock pattern</string>
@@ -1129,12 +1129,12 @@ a scrolling screenshot"</string>
     <string name="miui_ringer_total">DND</string>
     <string name="miui_ringer_total_description">Silence sounds and turn off vibration for all items except the alarm clock</string>
     <string name="miui_screen_rotation_freeze_message">Auto-rotate disabled.</string>
-    <string name="miui_toast_zen_dnd_to_off">Sounds and vibration restored to normal</string>
-    <string name="miui_toast_zen_standard_to_off">Ringtones restored to normal</string>
-    <string name="miui_toast_zen_standard_to_off_when_shield_media">Ringtones, as well as notification and media sounds, will be played.</string>
-    <string name="miui_toast_zen_to_dnd">Sounds silenced and vibration turned off</string>
-    <string name="miui_toast_zen_to_standard">Ringtones for calls and notifications silenced</string>
-    <string name="miui_toast_zen_to_standard_when_shield_media">Ringtones, as well as notification and media sounds, will be silenced.</string>
+    <string name="miui_toast_zen_dnd_to_off">DND is off now. Sounds and vibration are restored to normal.</string>
+    <string name="miui_toast_zen_standard_to_off">DND is off now. Ringtones are restored to normal.</string>
+    <string name="miui_toast_zen_standard_to_off_when_shield_media">DND is off now. Ringtones, as well as notification and media sounds, will be played.</string>
+    <string name="miui_toast_zen_to_dnd">Switched to DND. Sounds are silenced and vibration is off now.</string>
+    <string name="miui_toast_zen_to_standard">Switched to DND. Ringtones for calls and notifications are silenced now.</string>
+    <string name="miui_toast_zen_to_standard_when_shield_media">Switched to DND. Ringtones, as well as notification and media sounds, are silenced now.</string>
     <string name="mland">Marshmallow Land</string>
     <string name="mobile_data">Mobile data</string>
     <string name="mobile_data_always_on">Mobile data always active</string>
@@ -1284,10 +1284,10 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="okay">OK</string>
     <string name="oldman_airplane_mode_text">Airplane mode</string>
     <string name="oldman_incall_text">Back to call</string>
-    <string name="open_camera_hint_text">Swipe left to open camera</string>
+    <string name="open_camera_hint_text">Drag the icon to open Camera</string>
     <string name="open_extreme_power_save_mode_title">Turn on Extreme battery saver</string>
     <string name="open_lock_screen_magazine_hint_text">Swipe right for more options</string>
-    <string name="open_remote_center_hint_text">Swipe right to open Control center</string>
+    <string name="open_remote_center_hint_text">Swipe right to view controls</string>
     <string name="other">Other</string>
     <string name="overlay_display_devices_title">Simulate secondary displays</string>
     <string name="overview">Overview</string>
@@ -1404,6 +1404,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="qs_dnd_replace">Replace</string>
     <string name="qs_dnd_until">Until %s</string>
     <string name="qs_edit">Edit</string>
+    <string name="qs_open_night_mode_alert_summary">"Certain display settings aren't compatible with Dark mode. However, they will be restored once you turn Dark mode off."</string>
     <string name="qs_paging">Use the new Quick settings</string>
     <string name="qs_rearrange">Rearrange Quick settings</string>
     <string name="quick_settings">Quick settings</string>
@@ -1473,6 +1474,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="quick_settings_night_secondary_label_on_at">On at %s</string>
     <string name="quick_settings_night_secondary_label_on_at_sunset">On at sunset</string>
     <string name="quick_settings_night_secondary_label_until_sunrise">Until sunrise</string>
+    <string name="quick_settings_nightmode_label">Dark mode</string>
     <string name="quick_settings_notifications_label">Notifications</string>
     <string name="quick_settings_papermode_label">Reading mode</string>
     <string name="quick_settings_powermode_label">Performance mode</string>
@@ -1494,9 +1496,9 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="quick_settings_sync_label">Sync</string>
     <string name="quick_settings_tethering_label">Tethering</string>
     <string name="quick_settings_tiles">default</string>
-    <string name="quick_settings_tiles_default">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,quietmode,batterysaver,extremebatterysaver,custom(com.milink.service/com.milink.ui.service.MiLinkTileService),drivemode,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit</string>
+    <string name="quick_settings_tiles_default">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,night,quietmode,batterysaver,extremebatterysaver,custom(com.milink.service/com.milink.ui.service.MiLinkTileService),powermode,custom(com.miui.screenrecorder/.service.QuickService),vibrate,hotspot,sync,screenbutton,nfc,edit</string>
     <string name="quick_settings_tiles_retail_mode">cell,batterysaver,powermode,flashlight,rotation,location</string>
-    <string name="quick_settings_tiles_stock">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,quietmode,batterysaver,extremebatterysaver,custom(com.milink.service/com.milink.ui.service.MiLinkTileService),drivemode,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit</string>
+    <string name="quick_settings_tiles_stock">cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,night,quietmode,batterysaver,extremebatterysaver,powermode,vibrate,hotspot,sync,screenbutton,nfc,edit,drivemode</string>
     <string name="quick_settings_time_label">Time</string>
     <string name="quick_settings_toast_drag_to_enable_custom_tile">To add an item, press and hold it, and then drag it to the upper part of the panel.</string>
     <string name="quick_settings_user_label">Me</string>
@@ -1527,11 +1529,13 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="recents_accessibility_split_screen_top">Split screen to the top</string>
     <string name="recents_app_info_button_label">App info</string>
     <string name="recents_caption_resize">Select new task layout</string>
+    <string name="recents_dimiss_task">Clear</string>
     <string name="recents_drag_hint_message">Press and hold an app, then drag it here.</string>
     <string name="recents_empty_message">No recent items</string>
     <string name="recents_empty_message_dismissed_all">"You've cleared everything"</string>
     <string name="recents_empty_message_multi_window">Open apps from the Home screen</string>
     <string name="recents_exit_multi_window_mode">Exit</string>
+    <string name="recents_forbid_dock_when_screening_toast_text">"Can't use Split screen while casting"</string>
     <string name="recents_incompatible_app_message">"This app doesn't support Split screen"</string>
     <string name="recents_launch_disabled_message">%s is disabled in safe-mode.</string>
     <string name="recents_launch_error_message">"Couldn't start %s."</string>
@@ -1542,6 +1546,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="recents_multistack_add_stack_dialog_split_vertical">Split vertically</string>
     <string name="recents_search_bar_label">Search</string>
     <string name="recents_stack_action_button_label">Clear all</string>
+    <string name="recents_task_screening">Casting</string>
     <string name="recents_title_app_manager">Manage apps</string>
     <string name="recents_title_game">Games</string>
     <string name="recents_title_garbage_cleanup">Cleaner</string>
