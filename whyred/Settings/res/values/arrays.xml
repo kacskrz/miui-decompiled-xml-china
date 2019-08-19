@@ -485,6 +485,39 @@
         <item>1002</item>
         <item>1003</item>
     </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_latency_summaries">
+        <item>Short latency</item>
+        <item>Middle latency</item>
+        <item>Long latency</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_latency_titles">
+        <item>Short latency (50~100ms)</item>
+        <item>Middle latency (150~200ms)</item>
+        <item>Long latency (300~500ms)</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_latency_values">
+        <item>49152</item>
+        <item>49153</item>
+        <item>49154</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_summaries">
+        <item>Optimized for connection quality</item>
+        <item>Balanced audio and connection quality</item>
+        <item>Optimized for audio quality</item>
+        <item>Best effort (Auto bit rate)</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_titles">
+        <item>Optimized for connection quality (400kbps)</item>
+        <item>Balanced audio and connection quality (500/560kbps)</item>
+        <item>Optimized for audio quality (900kbps)</item>
+        <item>Best effort (Auto bit rate)</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_values">
+        <item>32768</item>
+        <item>32769</item>
+        <item>32770</item>
+        <item>32771</item>
+    </string-array>
     <string-array name="bluetooth_a2dp_codec_sample_rate_summaries">
         <item>Use System Selection (Default)</item>
         <item>44.1 kHz</item>
@@ -514,6 +547,7 @@
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
+        <item>LHDC</item>
         <item>Enable optional codecs</item>
         <item>Disable optional codecs</item>
     </string-array>
@@ -525,6 +559,7 @@
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
+        <item>LHDC</item>
         <item>Enable optional codecs</item>
         <item>Disable optional codecs</item>
     </string-array>
@@ -538,6 +573,7 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -1531,6 +1567,18 @@
         <item>yes</item>
         <item>no</item>
     </string-array>
+    <string-array name="data_network_type_name_default">
+        <item>4G</item>
+        <item>4G+</item>
+    </string-array>
+    <array name="data_type_name_cus_reg_key" />
+    <array name="data_type_name_cus_reg_value" />
+    <array name="data_type_name_mcc_key" />
+    <array name="data_type_name_mcc_mnc_key" />
+    <array name="data_type_name_mcc_mnc_value" />
+    <array name="data_type_name_mcc_value" />
+    <array name="data_type_name_miui_mcc_key" />
+    <array name="data_type_name_miui_mcc_value" />
     <string-array name="data_usage_data_range">
         <item>Last 30 days</item>
         <item>Set usage cycle...</item>
@@ -1641,11 +1689,6 @@
         <item>300000</item>
         <item>600000</item>
         <item>1800000</item>
-    </string-array>
-    <string-array name="drip_battery_indicator_style_entries">
-        <item>Graphical</item>
-        <item>Percentage (in the icon)</item>
-        <item>Percentage (next to the icon)</item>
     </string-array>
     <string-array name="eap_method_without_sim_auth">
         <item>PEAP</item>
@@ -2108,7 +2151,8 @@ Note: Only for Ubuntu 8.04!"</item>
     </string-array>
     <string-array name="notch_battery_indicator_style_entries">
         <item>Graphical</item>
-        <item>Percentage</item>
+        <item>Percentage (in the icon)</item>
+        <item>Percentage (next to the icon)</item>
     </string-array>
     <string-array name="notifi_importance_entries">
         <item>@string/importance_high</item>
@@ -2509,6 +2553,41 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@drawable/powerclick05</item>
         <item>@drawable/powerclick06</item>
         <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+    </array>
+    <array name="power_long_press">
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick02</item>
+        <item>@drawable/powerclick03</item>
+        <item>@drawable/powerclick04</item>
+        <item>@drawable/powerclick05</item>
+        <item>@drawable/powerclick06</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick03</item>
+        <item>@drawable/powerclick02</item>
         <item>@drawable/powerclick01</item>
         <item>@drawable/powerclick01</item>
         <item>@drawable/powerclick01</item>
@@ -3130,6 +3209,11 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+    <string-array name="wide_notch_battery_indicator_style_entries">
+        <item>Graphical</item>
+        <item>Percentage (in the icon)</item>
+        <item>Percentage (next to the icon in the Notification shade)</item>
     </string-array>
     <string-array name="wifi_ap_band_config_2G_5G">
         <item>@string/wifi_ap_choose_2G</item>
