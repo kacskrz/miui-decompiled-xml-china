@@ -218,7 +218,7 @@
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
-        <item>Qualcomm® aptX™ TWS+ audio</item>
+        <item>LHDC</item>
         <item>Enable Optional Codecs</item>
         <item>Disable Optional Codecs</item>
     </string-array>
@@ -230,7 +230,7 @@
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
-        <item>Qualcomm® aptX™ TWS+ audio</item>
+        <item>LHDC</item>
         <item>Enable Optional Codecs</item>
         <item>Disable Optional Codecs</item>
     </string-array>
@@ -244,6 +244,7 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -263,38 +264,6 @@
         <item>AVRCP 1.5</item>
         <item>AVRCP 1.6</item>
     </string-array>
-    <string-array name="bt_hci_snoop_log_entries">
-        <item>Disabled</item>
-        <item>Enabled Filtered</item>
-        <item>Enabled Headers Filtered</item>
-        <item>Enabled Media Pkts Filtered</item>
-        <item>Enabled</item>
-    </string-array>
-    <string-array name="bt_hci_snoop_log_values">
-        <item>disabled</item>
-        <item>filtered</item>
-        <item>snoopheadersfiltered</item>
-        <item>mediapktsfiltered</item>
-        <item>full</item>
-    </string-array>
-    <array name="bt_icon_bg_colors">
-        <item>@color/bt_color_bg_1</item>
-        <item>@color/bt_color_bg_2</item>
-        <item>@color/bt_color_bg_3</item>
-        <item>@color/bt_color_bg_4</item>
-        <item>@color/bt_color_bg_5</item>
-        <item>@color/bt_color_bg_6</item>
-        <item>@color/bt_color_bg_7</item>
-    </array>
-    <array name="bt_icon_fg_colors">
-        <item>@color/bt_color_icon_1</item>
-        <item>@color/bt_color_icon_2</item>
-        <item>@color/bt_color_icon_3</item>
-        <item>@color/bt_color_icon_4</item>
-        <item>@color/bt_color_icon_5</item>
-        <item>@color/bt_color_icon_6</item>
-        <item>@color/bt_color_icon_7</item>
-    </array>
     <array name="car_facet_category_filters" />
     <array name="car_facet_icons" />
     <array name="car_facet_intent_uris" />
@@ -414,12 +383,6 @@
         <item>com.google.android.dialer</item>
         <item>com.miui.miservice</item>
         <item>com.miui.mishare.connectivity</item>
-        <item>com.mi.oa</item>
-        <item>com.miui.huanji</item>
-        <item>com.amazon.dee.app</item>
-        <item>com.xiaomi.misettings</item>
-        <item>com.miui.cleanmaster</item>
-        <item>com.xiaomi.market</item>
     </string-array>
     <string-array name="config_allowKeyguardPackages">
         <item>com.google.android.apps.messaging</item>
@@ -490,9 +453,6 @@
         <item>com.xiaomi.account</item>
         <item>com.zing.zalo</item>
         <item>com.miui.mishare.connectivity</item>
-        <item>com.mi.oa</item>
-        <item>com.amazon.dee.app</item>
-        <item>com.miui.smarttravel</item>
     </string-array>
     <integer-array name="config_cameraLaunchGestureVibePattern">
         <item>0</item>
@@ -580,10 +540,6 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
-    <string-array name="config_pluginWhitelist">
-        <item>com.android.systemui</item>
-        <item>miui.systemui.plugin</item>
-    </string-array>
     <string-array name="config_prioritizedPackages">
         <item>android</item>
         <item>com.android.systemui</item>
@@ -651,6 +607,28 @@
         <item>cereus</item>
         <item>lotus</item>
     </string-array>
+    <string-array name="device_support_screen_on_delayed">
+        <item>dipper</item>
+        <item>polaris</item>
+        <item>wayne</item>
+        <item>sagit</item>
+        <item>chiron</item>
+        <item>nitrogen</item>
+        <item>whyred</item>
+        <item>equuleus</item>
+        <item>perseus</item>
+        <item>platina</item>
+        <item>beryllium</item>
+        <item>capricorn</item>
+        <item>natrium</item>
+        <item>jason</item>
+        <item>sirius</item>
+        <item>lavender</item>
+        <item>cepheus</item>
+        <item>grus</item>
+        <item>andromeda</item>
+        <item>ursa</item>
+    </string-array>
     <string-array name="device_support_slide_camera">
         <item>perseus</item>
         <item>andromeda</item>
@@ -697,7 +675,6 @@
         <item>com.tencent.mobileqq</item>
         <item>com.tencent.qqlite</item>
         <item>com.tencent.mm</item>
-        <item>com.android.deskclock</item>
     </string-array>
     <string-array name="locale_carrier_names">
         <item>China_Mobile</item>
@@ -937,11 +914,6 @@
         <item>1920x1080/320|3840x2160/640,secure</item>
         <item>1280x720/213;1920x1080/320</item>
     </string-array>
-    <string-array name="promote_tiles_on_update_successed">
-        <item>custom(com.milink.service/com.milink.ui.service.MiLinkTileService)</item>
-        <item>custom(com.miui.mishare.connectivity/.tile.MiShareTileService)</item>
-        <item>custom(com.miui.securitycenter/com.miui.superpower.notification.SuperPowerTileService)</item>
-    </string-array>
     <array name="recents_blacklist_array" />
     <string-array name="recents_thumbnail_blur_white_pkgs">
         <item>com.android.camera</item>
@@ -1005,14 +977,14 @@
     <string-array name="select_logpersist_summaries">
         <item>Off</item>
         <item>All log buffers</item>
-        <item>All but radio log buffers</item>
-        <item>kernel log buffer only</item>
+        <item>All except radio log buffers</item>
+        <item>Kernel log buffer only</item>
     </string-array>
     <string-array name="select_logpersist_titles">
         <item>Off</item>
         <item>All</item>
-        <item>All but radio</item>
-        <item>kernel only</item>
+        <item>All except radio</item>
+        <item>Kernel only</item>
     </string-array>
     <string-array name="select_logpersist_values">
         <item></item>
@@ -1419,9 +1391,6 @@
         <item>@drawable/stat_sys_signal_4_3g_fully</item>
         <item>@drawable/stat_sys_signal_4_4g_fully</item>
     </array>
-    <string-array name="system_alert_window_notification_whitelist">
-        <item>com.miui.notes</item>
-    </string-array>
     <string-array name="system_foreground_notification_whitelist">
         <item>com.xiaomi.joyose</item>
         <item>com.miui.home</item>
@@ -1443,9 +1412,6 @@
         <item>com.xiaomi.mipicks</item>
         <item>com.xiaomi.discover</item>
         <item>com.miui.mishare.connectivity</item>
-        <item>com.qualcomm.wfd.service</item>
-        <item>com.miui.notes</item>
-        <item>com.miui.tsmclient</item>
     </string-array>
     <string-array name="telephony_data_activity_1x_sim1">
         <item>0</item>
