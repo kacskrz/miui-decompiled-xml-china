@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="CronetProviderClassName">com.google.android.gms.net.GmsCoreCronetProvider</string>
+    <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -131,6 +131,7 @@ A management tool will be downloaded and used by your IT admin to manage your wo
     <string name="auth_device_management_update_description_kids">To add the account to this device, first install the latest version of <b>^1</b>". 
 
 ^1 helps you set up this device for your kid. "</string>
+    <string name="auth_device_policy_settings_entry">Device Policy</string>
     <string name="auth_doesnt_use_gmail">" "<b>^1</b>" doesn't use Gmail. "</string>
     <string name="auth_error_account_disabled">"This account has been disabled. 
 
@@ -257,13 +258,14 @@ You need a license from Google to distribute Google apps and services. Apply at 
 To use Google apps and services during development, register the device. Reach out to your Google Business Development Manager for more info.
 
 "<b>Custom ROM users:</b>"
-To use Google apps and services with a custom ROM, register this device. Learn more at g.co/apps-custom. "</string>
+To use Google apps and services with a custom ROM, register this device. Learn more at g.co/AndroidDeviceRegistration. "</string>
     <string name="auth_uncertified_notification_title">Device is not certified by Google</string>
     <string name="auth_username">Email</string>
     <string name="auth_work_authenticator_label">Managed Account</string>
     <string name="authorization_dialog">Authorization dialog</string>
-    <string name="backup_services_process">@string/common_persistent_process</string>
+    <string name="backup_services_process">@string/common_default_process</string>
     <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
     <string name="chrome_privacy_title">Chrome Privacy Notice</string>
     <string name="chrome_tos_title">Chrome Terms of Service</string>
@@ -280,6 +282,7 @@ To use Google apps and services with a custom ROM, register this device. Learn m
     <string name="common_app_name">Google Play services</string>
     <string name="common_application_info">Application info</string>
     <string name="common_application_info_composed_string">application info</string>
+    <string name="common_asm_google_account_product_name">Google Account</string>
     <string name="common_asm_google_account_title">Google Account</string>
     <string name="common_asm_manage_google_account_title">Manage your Google Account</string>
     <string name="common_asm_preferences_settings_title">Account preferences</string>
@@ -304,6 +307,7 @@ To use Google apps and services with a custom ROM, register this device. Learn m
     <string name="common_connected">Connected</string>
     <string name="common_connected_apps_settings_title">Connected apps</string>
     <string name="common_connecting">Connecting…</string>
+    <string name="common_connecting_to_your_device">Connecting to your device…</string>
     <string name="common_continue">Continue</string>
     <string name="common_default_process">com.google.android.gms</string>
     <string name="common_deny">Deny</string>
@@ -473,31 +477,28 @@ Google Play services"</string>
     <string name="fido_ble_select_device_body">From the list below select the Security Key you wish to pair with your device. The name may be printed on the back of the key.</string>
     <string name="fido_ble_select_device_title">Select your Security Key</string>
     <string name="fido_instructions_title">Allow using your Security Key?</string>
+    <string name="fido_lock_description">Google Lock Icon</string>
     <string name="fido_nfc_enable_body">"Your Security Key only works when your device's NFC is on"</string>
     <string name="fido_nfc_enable_turn_on_button">Turn on</string>
     <string name="fido_nfc_instructions_body">Hold your key flat against the back of your device until it stops vibrating</string>
-    <string name="fido_paask_body">A nearby device is trying to sign in with your Google Account</string>
-    <string name="fido_paask_checkbox">"Got it, don't show me this message again"</string>
+    <string name="fido_paask_body">Someone on a nearby device is trying to sign into your Google Account</string>
     <string name="fido_paask_chip">user@gmail.com</string>
-    <string name="fido_paask_footer">This is an enhanced sign-in protection using an encrypted bluetooth connection to a nearby device.</string>
-    <string name="fido_paask_header">Trying to sign in on a nearby device?</string>
+    <string name="fido_paask_error_toast">An error occurred</string>
+    <string name="fido_paask_header">Is it you trying to sign in?</string>
     <string name="fido_paask_no_body">"You stopped someone from signing in to your Google Account, but they know your password. 
 
 Change your password as soon as possible to keep your account safe."</string>
     <string name="fido_paask_no_button">Change password</string>
     <string name="fido_paask_no_header">Your account may be at risk</string>
     <string name="fido_paask_no_text">"No, it's not me"</string>
-    <string name="fido_paask_notification_channel">Pollux</string>
-    <string name="fido_paask_notification_title">Trying to sign in on a nearby device?</string>
-    <string name="fido_paask_yes_body">Your nearby device can now use your Google Account. You can manage your devices at <b>My Google</b> (<a href="https://myaccount.google.com/device-activity">myaccount.google.com/device-activity</a>"). 
-
-Keep bluetooth on so Google can make a secure connection to nearby devices. "</string>
-    <string name="fido_paask_yes_button">Done</string>
-    <string name="fido_paask_yes_header">Sign-in approved</string>
+    <string name="fido_paask_notification_channel">Sign in requests from nearby devices</string>
+    <string name="fido_paask_notification_title">Someone is trying to sign in</string>
+    <string name="fido_paask_progress_message">This may take a minute</string>
+    <string name="fido_paask_sign_in_toast">Sign-in approved</string>
     <string name="fido_paask_yes_text">"Yes, it's me"</string>
     <string name="fido_pair_another_security_key">Pair another Security Key</string>
-    <string name="fido_passk_communicating">Communicating with nearby device…</string>
     <string name="fido_processing">Verifying your Security Key…</string>
+    <string name="fido_progressbar_description">Google Progress Bar</string>
     <string name="fido_transport_selection_bluetooth">Use Security Key with Bluetooth</string>
     <string name="fido_transport_selection_body">Security Keys work with Bluetooth, NFC, and USB. Choose how you want to use your key.</string>
     <string name="fido_transport_selection_fingerprint">Use Security Key with Fingerprint</string>
@@ -524,7 +525,7 @@ Keep bluetooth on so Google can make a secure connection to nearby devices. "</s
     <string name="google_terms_of_service_title">Google Terms of Service</string>
     <string name="hide_bottom_view_on_scroll_behavior">android.support.design.widget.HideBottomViewOnScrollBehavior</string>
     <string name="location_process">com.google.android.gms.persistent</string>
-    <string name="mtrl_chip_close_icon_content_description">Close icon</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="nearby_setup_transfer_wifi_credential_permission_description">"Allow an app to transfer a network's Wi-Fi credential to another device."</string>
     <string name="nearby_setup_transfer_wifi_credential_permission_label">Transfer Wi-Fi credential</string>
     <string name="network_recommendation_service_label">Google</string>
@@ -533,7 +534,11 @@ Keep bluetooth on so Google can make a secure connection to nearby devices. "</s
     <string name="notification_ticker">Access Requested</string>
     <string name="open_source_activity_prompt_heading">Open Application</string>
     <string name="open_source_activity_prompt_text">"Open SourceResponseActivity on your phone to complete the authentication process. "</string>
-    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="opensearchbar_scrolling_view_behavior">com.google.android.libraries.material.opensearchbar.OpenSearchBar$ScrollingViewBehavior</string>
+    <string name="opensearchview_behavior">com.google.android.libraries.material.opensearchbar.OpenSearchView$Behavior</string>
+    <string name="opensearchview_clear_text_content_description">Clear text</string>
+    <string name="opensearchview_navigation_content_description">Back</string>
+    <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -553,7 +558,7 @@ Keep bluetooth on so Google can make a secure connection to nearby devices. "</s
     <string name="plus_network_unreliable">"Can't establish a reliable connection to the server."</string>
     <string name="plus_oob_interstitial_loading_text">This can take a few minutes.</string>
     <string name="primes_marker">PrImEs</string>
-    <string name="primes_version">192383314</string>
+    <string name="primes_version">201275026</string>
     <string name="search_menu_title">Search</string>
     <string name="set_up">SET UP</string>
     <string name="setupservices_additional_privacy_title">Additional Privacy Information</string>
@@ -565,7 +570,7 @@ Keep bluetooth on so Google can make a secure connection to nearby devices. "</s
     <string name="setupservices_google_play_tos_title">Google Play Terms of Service</string>
     <string name="setupservices_google_plus_privacy_policy_title">Google Plus Privacy Policy</string>
     <string name="setupservices_google_privacy_policy_title">Google Privacy Policy</string>
-    <string name="setupservices_google_services_agreement">By continuing, you agree that this device may also automatically download and install updates and apps from Google, your carrier, and your device’s manufacturer, possibly using cellular data. Some of these apps may offer in-app purchases. You can remove these apps at any time.</string>
+    <string name="setupservices_google_services_agreement">By continuing, you agree that this device may also automatically download and install updates and apps from Google, your carrier, and your device’s manufacturer, possibly using cellular data. Some of these apps may offer in-app purchases.</string>
     <string name="setupservices_google_services_agreement_dialog_text">To remove apps, go to Settings > Apps or Application manager. Then tap the app you want to uninstall (you may need to swipe right or left to find the app). Then tap Uninstall or Disable.</string>
     <string name="setupservices_google_services_agreement_korea">You also hereby consent and grant preloaded Google apps permission to access information and functions on your device. See <annotation link="app_permissions">this page</annotation> for more information on usage of these permissions.</string>
     <string name="setupservices_google_services_agreement_title">Install updates &amp; apps</string>
@@ -577,6 +582,7 @@ Keep bluetooth on so Google can make a secure connection to nearby devices. "</s
 
 Backup data will not count toward your Drive storage quota."</string>
     <string name="setupservices_google_services_backup_dialog_text_app_data">App data can be any data that an app has saved (based on developer settings), including potentially sensitive data such as contacts, messages, and photos.</string>
+    <string name="setupservices_google_services_backup_dialog_text_app_data_v28">App data can be any data that an app has saved (based on developer settings), including data such as contacts, messages, and photos.</string>
     <string name="setupservices_google_services_backup_dialog_text_turn_off">You can turn this service off in Settings.</string>
     <string name="setupservices_google_services_backup_dialog_text_with_photos">"^1
 
@@ -596,12 +602,6 @@ Your backups are uploaded to Google and encrypted using your Google Account pass
     <string name="setupservices_google_services_data_policy">Data will be used according to Google’s <annotation link="google_privacy">Privacy Policy</annotation>.</string>
     <string name="setupservices_google_services_data_policy_korea">Data will be used according to Google’s <annotation link="google_privacy">Privacy Policy</annotation> (including <annotation link="additional_privacy">collection, storage and usage of personal information</annotation>) and the <annotation link="location_tos">Location Terms of Service</annotation>.</string>
     <string name="setupservices_google_services_description">Tap to learn more about each service, such as how to turn it on or off later. ^1</string>
-    <string name="setupservices_google_services_instant_apps_learn_more">"App details including in-app purchases can be found in the Play Store. App data &amp; settings sync to devices signed in with your Google Account. 
-
-Use of instant apps is governed by the "<a href="https://play.google.com/about/play-terms.html">Google Play Terms of Service</a>". 
-"<a href="https://support.google.com/googleplay/?p=instant_apps">Learn more</a>". "</string>
-    <string name="setupservices_google_services_instant_apps_summary">When you tap a link, Google Play checks if an Instant app exists and runs it without installation. Instant apps are kept on your device temporarily.</string>
-    <string name="setupservices_google_services_instant_apps_title">Use apps without installation</string>
     <string name="setupservices_google_services_location_sharing">Use Google’s location service to help apps determine your location. Google may collect location data periodically and use this data in an anonymous way to improve location accuracy and location-based services.</string>
     <string name="setupservices_google_services_location_sharing_details">"Google’s location service uses sources like Wi‑Fi, mobile networks, and sensors to help estimate your device’s location. This service is active when your device’s Location setting is on and in a mode that uses Wi‑Fi or mobile networks to estimate location, such as either the High accuracy or Battery saving mode.
 
@@ -621,33 +621,33 @@ You can turn off Location by turning off the main Location setting on your devic
     <string name="setupservices_google_services_location_wireless_scan_title">Improve location accuracy</string>
     <string name="setupservices_google_services_location_wireless_scan_title_v28">Allow scanning</string>
     <string name="setupservices_google_services_location_wireless_scan_v23">Allow apps and services to scan for Wi‑Fi and Bluetooth signals, even when these settings are off.</string>
-    <string name="setupservices_google_services_location_wireless_scan_v28">Allow apps and services to scan for Wi‑Fi networks and nearby devices at any time (even when Wi‑Fi or Bluetooth is off).</string>
-    <string name="setupservices_google_services_next_button_label">I agree</string>
+    <string name="setupservices_google_services_location_wireless_scan_v28">Allow apps and services to scan for Wi‑Fi networks and nearby devices at any time, even when Wi‑Fi or Bluetooth is off.</string>
+    <string name="setupservices_google_services_next_button_label">Accept</string>
     <string name="setupservices_google_services_play">Keep me up to date with news and offers from Google Play.</string>
     <string name="setupservices_google_services_safety_net" />
     <string name="setupservices_google_services_safety_net_dialog_text" />
     <string name="setupservices_google_services_section_backup_and_storage">Backup &amp; storage</string>
     <string name="setupservices_google_services_section_device_maintenance">Device maintenance</string>
-    <string name="setupservices_google_services_tos">If you continue, you also agree to the <annotation link="tos">Google Terms of Service</annotation>.</string>
-    <string name="setupservices_google_services_tos_agree">By clicking the “I agree” button, you agree to the processing described above for these Google services.</string>
-    <string name="setupservices_google_services_tos_germany">When you use this device we abide by our <annotation link="google_privacy">Privacy Policy</annotation> and <annotation link="tos">additional terms</annotation> apply.</string>
-    <string name="setupservices_google_services_usage_reporting">Help improve your Android experience by automatically sending diagnostic and device and app usage data to Google. This will help improve battery life, app stability, network connectivity, and more. If you turned on additional Web &amp; App Activity, this information will be stored with your account so you can manage it in My Activity.</string>
-    <string name="setupservices_google_services_usage_reporting_details">"This is general information about your device and how you use it (such as battery level, app usage, and network connectivity). The data will be used to improve Google’s products and services for everyone. Some aggregated information will help partners, such as Android developers, make their apps and products better, too.
+    <string name="setupservices_google_services_tos_account">Tap “Accept” to confirm your selection of these Google services settings.</string>
+    <string name="setupservices_google_services_tos_no_account">By tapping “Accept,” you agree to the <annotation link="tos">Google Terms of Service</annotation>. You also confirm your selection of these Google services settings. Note: The <annotation link="google_privacy">Google Privacy Policy</annotation> describes how data is handled when using Google services.</string>
+    <string name="setupservices_google_services_tos_no_account_policy_only">By tapping “Accept,” you confirm your selection of these Google services settings. Note: The <annotation link="google_privacy">Google Privacy Policy</annotation> describes how data is handled when using Google services.</string>
+    <string name="setupservices_google_services_usage_reporting">Help improve your Android experience by automatically sending diagnostic, device, and app usage data to Google. This will help battery life, system and app stability, and other improvements. Some aggregate data will also help Google apps and partners, such as Android developers. If your additional Web &amp; App Activity setting is turned on, this data may be saved to your Google Account.</string>
+    <string name="setupservices_google_services_usage_reporting_details">"This is general information about your device and how you use it (such as battery level, system and app activity, and errors). The data will be used to improve Android, and some aggregated information will also help Google apps and partners, such as Android developers, make their apps and products better.
 
 Turning off this feature doesn’t affect your device’s ability to send the information needed for essential services such as system updates and security."</string>
-    <string name="setupservices_google_services_usage_reporting_my_activity_settings">You can update My Activity settings at myactivity.google.com.</string>
+    <string name="setupservices_google_services_usage_reporting_my_activity_settings">If your additional Web &amp; App Activity setting is turned on, this data may be saved to your Google Account. You can see your data, delete it, and change your account settings at account.google.com</string>
     <string name="setupservices_google_services_usage_reporting_settings">You can control this feature from Google Settings. Select Usage &amp; diagnostics from the menu.</string>
     <string name="setupservices_google_services_usage_reporting_settings_v23">You can control this feature from Settings > Google. Select Usage &amp; diagnostics from the menu.</string>
-    <string name="setupservices_google_services_usage_reporting_title">Send system data</string>
+    <string name="setupservices_google_services_usage_reporting_title">Send usage and diagnostic data</string>
     <string name="setupservices_google_services_wallpaper_permission">Allow Google Live wallpapers to respond to your location by accessing Google’s location service.</string>
     <string name="setupservices_google_services_wallpaper_permission_details">You can turn access to Google’s location service for Live wallpapers on or off by going to Settings > Apps &amp; notifications > App info. In the overflow menu, tap Show system > Live data wallpapers or Live Earth Wallpapers > Permissions.</string>
     <string name="setupservices_google_services_wallpaper_permission_title">Let wallpapers use location</string>
     <string name="setupservices_google_terms_of_service_title">Google Terms of Service</string>
-    <string name="setupservices_kids_google_services_agreement">By continuing, you agree that this device may also automatically download and install updates and apps from Google, your carrier, and this device’s manufacturer, possibly using cellular data. Some of these apps may offer in-app purchases. You can remove these apps at any time.</string>
+    <string name="setupservices_kids_google_services_agreement">By continuing, you agree that this device may also automatically download and install updates and apps from Google, your carrier, and this device’s manufacturer, possibly using cellular data. Some of these apps may offer in-app purchases.</string>
     <string name="setupservices_kids_google_services_backup">Easily restore data or switch phones at any time. This backup includes apps, app data, and device settings (including Wi‑Fi passwords).</string>
     <string name="setupservices_kids_google_services_backup_dialog_text">"^1
 
-Backup data will not count towards your child’s Drive storage quota."</string>
+Backup data will not count toward your child’s Drive storage quota."</string>
     <string name="setupservices_kids_google_services_backup_dialog_text_with_photos">"^1
 
 Photos and videos on this device sync to your child’s Google Photos library so your child can search, edit, delete, and share from any of their devices. By default, full-resolution photos and videos are uploaded to Google Photos.
@@ -657,12 +657,13 @@ Backup data will not count toward your child’s Drive storage quota."</string>
     <string name="setupservices_kids_google_services_backup_v26">Easily restore data or switch phones at any time. This backup includes apps, app data, call history, contacts, device settings (including Wi‑Fi passwords and permissions), and SMS.</string>
     <string name="setupservices_kids_google_services_backup_v26_encrypted">"Easily restore data or switch phones at any time. This backup includes apps, app data, call history, contacts, device settings (including Wi‑Fi passwords and permissions), and SMS.
 
-This backup is uploaded to Google and encrypted using your child’s Google Account password. For some data, this device’s screen lock PIN, pattern, or password is also used for encryption."</string>
+Backups are uploaded to Google and encrypted using your child’s Google Account password. For some data, the device’s screen lock PIN, pattern, or password is also used for encryption."</string>
     <string name="setupservices_kids_google_services_backup_v26_with_photos">Easily restore data or switch phones at any time. This backup includes apps, app data, call history, contacts, device settings (including Wi‑Fi passwords and permissions), photos, videos, and SMS. Photos and videos sync to your child’s Google Photos library and may be used across services.</string>
     <string name="setupservices_kids_google_services_backup_v26_with_photos_encrypted">"Easily restore data or switch phones at any time. This backup includes apps, app data, call history, contacts, device settings (including Wi‑Fi passwords and permissions), photos, videos, and SMS. Photos and videos sync to your child’s Google Photos library and may be used across services.
 
-This backup is uploaded to Google and encrypted using your child’s Google Account password. For some data, this device’s screen lock PIN, pattern, or password is also used for encryption."</string>
+Backups are uploaded to Google and encrypted using your child’s Google Account password. For some data, the device’s screen lock PIN, pattern, or password is also used for encryption."</string>
     <string name="setupservices_kids_google_services_description">As a parent, you can tap to learn more about each service, such as how to turn it on or off later. ^1</string>
+    <string name="setupservices_kids_google_services_kids_account_label">Child’s account: ^1</string>
     <string name="setupservices_kids_google_services_location_sharing">Use Google’s location service to help apps determine this device’s location. Google may collect location data periodically and use this data in an anonymous way to improve location accuracy and location-based services.</string>
     <string name="setupservices_kids_google_services_location_sharing_details">"Google’s location service uses sources like Wi‑Fi, mobile networks, and sensors to help estimate this device’s location. This service is active when this device’s Location setting is on and in a mode that uses Wi‑Fi or mobile networks to estimate location, such as either the High accuracy or Battery saving mode.
 
@@ -675,10 +676,11 @@ You can turn off this service by either:
 
 You can turn off Location by turning off the main Location setting on this device. You can also turn off the use of Wi‑Fi, mobile networks, and sensors for location in location settings."</string>
     <string name="setupservices_kids_google_services_location_sharing_v28">Allow apps and services with location permission to use this device’s location. Google may collect location data periodically and use this data in an anonymous way to improve location accuracy and location-based services.</string>
-    <string name="setupservices_kids_google_services_usage_reporting">Help improve Android by automatically sending diagnostic and device and app usage data to Google. This won’t be used to identify your child and will help improve battery life, app stability, network connectivity, and more. If additional Web &amp; App Activity is turned on for your child, this information will be stored with your child’s account.</string>
-    <string name="setupservices_kids_google_services_usage_reporting_details">"This is general information about this device and how it’s used (such as battery level, app usage, and network connectivity). The data will be used to improve Google’s products and services for everyone. Some aggregated information will help partners, such as Android developers, make their apps and products better, too.
+    <string name="setupservices_kids_google_services_usage_reporting">Help improve the Android experience by automatically sending diagnostic, device, and app usage data to Google. This won’t be used to identify your child and will help battery life, system and app stability, and other improvements. Some aggregate data will also help Google apps and partners, such as Android developers. If additional Web &amp; App Activity is turned on for your child, this data may be saved to their Google Account.</string>
+    <string name="setupservices_kids_google_services_usage_reporting_details">"This is general information about this device and how it’s used (such as battery level, system and app activity, and errors). The data will be used to improve Android, and some aggregated information will also help Google apps and partners, such as Android developers, make their apps and products better.
 
 Turning off this feature doesn’t affect this device’s ability to send the information needed for essential services such as system updates and security."</string>
+    <string name="setupservices_kids_google_services_usage_reporting_my_activity_settings">If additional Web &amp; App Activity is turned on for your child, this data may be saved to their Google Account. Learn more about these settings and how to adjust them at families.google.com</string>
     <string name="setupservices_location_tos_title">Location Terms of Service</string>
     <string name="sid_lsid_grant_detail">Much like a password, Session Identification (SID) and Local Session Identification (LSID) cookies associate your identity with a series of requests from a browser. They allow full access to all of your account data. Only browsers have a legitimate use for these cookies.</string>
     <string name="sid_lsid_grant_label">Use SID and LSID cookies to gain access to all your Google account data.</string>
@@ -695,7 +697,6 @@ Turning off this feature doesn’t affect this device’s ability to send the in
     <string name="smartdevice_alert_no_accounts_text">To setup your %s, you need at least one Google account.</string>
     <string name="smartdevice_alert_no_accounts_title">No accounts to copy</string>
     <string name="smartdevice_alert_quit_button">Quit</string>
-    <string name="smartdevice_alert_restart_setup_button">Restart setup</string>
     <string name="smartdevice_alert_setup_incomplete">Setup was not complete</string>
     <string name="smartdevice_alert_start_over_button">Start over</string>
     <string name="smartdevice_alert_work_profile_message">"Work accounts can't be copied yet. After copying your other Google Accounts and data, go to Settings on your new device to add your work account."</string>
@@ -706,7 +707,6 @@ Turning off this feature doesn’t affect this device’s ability to send the in
     <string name="smartdevice_connect_to_wifi">Connect your device</string>
     <string name="smartdevice_connection_error">There was a problem connecting to your other device</string>
     <string name="smartdevice_connection_error_title">"Couldn't connect"</string>
-    <string name="smartdevice_d2d_connecting_to_device_text">Connecting to your device…</string>
     <string name="smartdevice_d2d_copy_3p_account_text">Copy your Google Accounts, other accounts, and restore your Google Drive backup, if available</string>
     <string name="smartdevice_d2d_copy_account_text">Copy your Google Accounts and restore your Google Drive backup, if available</string>
     <string name="smartdevice_d2d_copy_account_title">Copy to your other device?</string>
@@ -720,8 +720,8 @@ Turning off this feature doesn’t affect this device’s ability to send the in
     <string name="smartdevice_d2d_source_nfc_handler_title">Set up new device</string>
     <string name="smartdevice_d2d_source_notification_generic_title">Device setup</string>
     <string name="smartdevice_d2d_source_notification_title">^1 setup</string>
-    <string name="smartdevice_d2d_source_pin_verification_different_code_dialog_message">Restart setup and choose your ^1 to make sure you copy your Google Accounts, apps, and data to the right device.</string>
-    <string name="smartdevice_d2d_source_pin_verification_different_code_link">"Don't see the code?"</string>
+    <string name="smartdevice_d2d_source_pin_verification_different_code_dialog_message">You can try to verify again. You will see a different code.</string>
+    <string name="smartdevice_d2d_source_pin_verification_different_code_link">Not sure?</string>
     <string name="smartdevice_d2d_source_restricted_user_text">Cannot set up a new device from a restricted user profile.</string>
     <string name="smartdevice_d2d_source_setup_continue_on_target">Continue setup on your %s</string>
     <string name="smartdevice_d2d_source_setup_success">Almost done!</string>
@@ -752,6 +752,7 @@ Turning off this feature doesn’t affect this device’s ability to send the in
     <string name="smartdevice_do_unsupported_message">"Data can't be transferred from managed devices"</string>
     <string name="smartdevice_install_app">Install the app</string>
     <string name="smartdevice_install_app_reason">Get the %1$s app to control and manage your new %2$s from this device</string>
+    <string name="smartdevice_intro_text_bt_only">"To set up your other device, your phone's Bluetooth will be turned on, if it isn't on already"</string>
     <string name="smartdevice_look_for_other_device">Look for this name on your other device</string>
     <string name="smartdevice_magicwand_cancel_signin">"Don't Sign In"</string>
     <string name="smartdevice_magicwand_confirm_signin">Sign-in started</string>
@@ -780,7 +781,6 @@ For your security, enter your screen lock pattern to show that it's you signing 
     <string name="smartdevice_setup_google_app_trigger" />
     <string name="smartdevice_setup_info_installing_app">Installing the app…</string>
     <string name="smartdevice_setup_intro_text">To set up your other device, your phone’s Bluetooth and your Wi-Fi data will be used</string>
-    <string name="smartdevice_setup_intro_text_nfc">To set up your other device, your phone’s Bluetooth will be used</string>
     <string name="smartdevice_setup_intro_title">Getting started</string>
     <string name="smartdevice_setup_password_hint">Enter WiFi password</string>
     <string name="smartdevice_setup_show_password">Show password</string>
@@ -794,6 +794,9 @@ For your security, enter your screen lock pattern to show that it's you signing 
 
 You can always change this later in Settings."</string>
     <string name="smartdevice_wifi_unavailable_due_to_location_title">"Can't search for Wi-Fi networks"</string>
+    <string name="smartdevice_wifi_unavailable_text">"To search for networks, Wi-Fi and location need to be turned on, if they aren’t on already.
+
+You can always change this later in Settings."</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="storage_management_wear_descriptive_text">Apps use your device storage to replicate data to a wearable.</string>
     <string name="storage_management_wear_manage_size_label">Manage wearable storage</string>
