@@ -46,7 +46,7 @@ To clear your Browser history, use the Browser's settings."</string>
 Use shortcuts in the Notification shade and App vault, or just swipe on your Home screen to open search.
 Search among all items saved on your device: apps, settings, contacts, messages, notes, emails, files, and more.
 With third-party search engine support, you can also search for news, videos, books, apps, and music online.
-If you have any questions, feel free to drop us a line:"</string>
+If you have any questions, feel free to drop us a line: misearch-feedback@xiaomi.com"</string>
     <string name="apk_name">Global search %s</string>
     <string name="apk_pre_code">Version: %s</string>
     <string name="apk_size">"Size: %sMB
@@ -65,7 +65,7 @@ If you have any questions, feel free to drop us a line:"</string>
     <string name="cannot_download">Can only download \"http\" or \"https\" URLs</string>
     <string name="category_preference_activity_title">Search categories</string>
     <string name="change_setting_engine">Select search engine</string>
-    <string name="choose_search_engine">Select default web search engine</string>
+    <string name="choose_search_engine_toast">Switched to %s</string>
     <string name="clear_history_cancel">Cancel</string>
     <string name="clear_history_ok">OK</string>
     <string name="clear_input_description">Clear</string>
@@ -82,11 +82,12 @@ If you have any questions, feel free to drop us a line:"</string>
     <string name="common_background_light">White</string>
     <string name="common_category_entrance_subtitle">Show search categories on the start page</string>
     <string name="common_category_entrance_title">Show categories</string>
+    <string name="common_clear_operate_log_title">Clear logs</string>
     <string name="common_clear_search_history_title">Clear search history</string>
     <string name="common_clear_webview_history_title">Clear cache and browsing history</string>
     <string name="common_debug_mode">Developer options</string>
     <string name="common_home_screen_search_box">Home screen search bar</string>
-    <string name="common_home_screen_search_box_subtitle">Use this search bar to find items on your device</string>
+    <string name="common_home_screen_search_box_subtitle">Search for apps, articles, and more</string>
     <string name="common_hot">Popular</string>
     <string name="common_hot_subtitle">View popular search requests</string>
     <string name="common_modify_download_path_title">Modify download location</string>
@@ -125,6 +126,7 @@ If you have any questions, feel free to drop us a line:"</string>
     <string name="debug_mode_toast">Developer options are on. You can turn this feature off in the Settings.</string>
     <string name="default_download_path_dialog_title">Restore the default download location?</string>
     <string name="default_download_path_prefix">Default location:</string>
+    <string name="default_hf_hint">Search news, videos, articles…</string>
     <string name="default_hint">Search apps, music, videos, books…</string>
     <string name="delete_description">Delete</string>
     <string name="delete_history">Delete this item</string>
@@ -215,6 +217,12 @@ If you have any questions, feel free to drop us a line:"</string>
     <string name="miui_autologin_bar_error">"Can't sign in"</string>
     <string name="miui_autologin_bar_title">Sign in with Mi Account</string>
     <string name="network_unavailable">"Couldn't connect to the network"</string>
+    <string name="new_cta_declaration_location">For providing accurate weather info, relevant local services, and offline stores</string>
+    <string name="new_cta_declaration_read_contacts">For searching contacts</string>
+    <string name="new_cta_main_purpose">Searching for items on your device and online (including contacts, messages, notes, browser bookmarks, settings, news, apps, music, videos, etc.)</string>
+    <string name="new_cta_permission_get_accounts">For signing in and managing system account</string>
+    <string name="new_cta_permission_group_storage">For accessing items stored on your device and including them into search results</string>
+    <string name="new_cta_permission_read_phone_state">For accessing IMEI in order to identify your device and provide services</string>
     <string name="new_version_found">An update is available</string>
     <string name="no_space_alert_cancel">Later</string>
     <string name="no_space_alert_clean">Free up space</string>
@@ -223,6 +231,9 @@ If you have any questions, feel free to drop us a line:"</string>
     <string name="ok">OK</string>
     <string name="one">1</string>
     <string name="open_app_confirm_message">Allow this page to open %s?</string>
+    <string name="operate_log_clear_des">1. If you want to delete search logs generated on our servers, send the IMEI of your device to misearch-service@xiaomi.com.</string>
+    <string name="operate_log_email">misearch-service@xiaomi.com</string>
+    <string name="operate_log_revoke_des">"2. If you want to revoke your authorization, go to Settings > Apps > Manage apps > Search > Clear data > Clear all data. You'll have to grant authorization again when you launch search next time.​"</string>
     <string name="other">Other</string>
     <string name="page_search_hint">Searching…</string>
     <string name="permission_prompt_detail">Search for movies, books, music, and more.</string>
@@ -255,6 +266,7 @@ You can change this in Settings > Installed apps > Search"</string>
     <string name="recent_filter_functions">Turned off features</string>
     <string name="release_to_exit">Release to exit</string>
     <string name="release_to_input">Release to reveal the search bar</string>
+    <string name="required_permissions">android.permission.GET_ACCOUNTS;android.permission.READ_PHONE_STATE;android.permission.READ_EXTERNAL_STORAGE;android.permission.WRITE_EXTERNAL_STORAGE;</string>
     <string name="right_protection_title">Special statement</string>
     <string name="save_apk">Save APK files</string>
     <string name="save_audio">Save music</string>
@@ -389,6 +401,7 @@ Make sure you understand the risks before visiting it."</string>
     <string name="app_download_exits">任务存在</string>
     <string name="app_install_fail">安装失败</string>
     <string name="app_installing">安装中</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="applications_authority">com.android.quicksearchbox.applications</string>
     <string name="apps_search_activity" />
     <string name="baidu_search_url_from_default">https://m.baidu.com/s?from=1002253t&amp;word={searchTerms}&amp;tn=ins</string>
@@ -396,17 +409,28 @@ Make sure you understand the risks before visiting it."</string>
     <string name="baidu_search_url_from_launcher">https://m.baidu.com/s?from=1002253t&amp;word=%s&amp;tn=ins</string>
     <string name="baidu_search_url_from_minus_one">https://m.baidu.com/s?from=1013672k&amp;word=%s&amp;tn=ins</string>
     <string name="baidu_search_url_from_systemui">https://m.baidu.com/s?from=1013672c&amp;word=%s&amp;tn=ins</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
     <string name="browser_search_component">com.android.browser/.BookmarkSearch</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="debug_server_preview_mode">服务端Preview环境</string>
     <string name="download_fail">下载失败</string>
     <string name="download_ing">正在下载</string>
     <string name="download_pause">下载暂停</string>
     <string name="download_start">立即下载</string>
     <string name="google_authority">com.android.quicksearchbox.google</string>
     <string name="history_item_sub">%s…</string>
+    <string name="home_feed_url">https://search.browser.miui.com/v5/hf/#page=homefeed</string>
+    <string name="hot_word_list_foot">榜单有底, 搜索无限</string>
+    <string name="hot_word_tab_title_update_status">实时热搜 %s 更新</string>
     <string name="miui_privacy_policy_url" formatted="false">https://www.miui.com/res/doc/privacy.html?region=%s&amp;lang=%s</string>
     <string name="miui_user_agreement_url">https://www.miui.com/res/doc/eula/%s.html</string>
     <string name="open_app">立即打开</string>
     <string name="page_search_result" formatted="false">%d/%d</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="search_result_skip_timer_text">(%d)</string>
     <string name="search_uri_back_from_webview">qsb://query?words={searchTerms}&amp;web_search=true&amp;ref=web_url_back_</string>
     <string name="system_hint_uri">content://com.android.quicksearchbox.xiaomi/suggest_last_access_hint</string>
