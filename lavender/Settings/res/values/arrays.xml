@@ -109,6 +109,21 @@
         <item>5</item>
         <item>10</item>
     </string-array>
+    <string-array name="aod_notification_status_entries">
+        <item>@string/aod_notification_style_none</item>
+        <item>@string/aod_notification_style_screen_on</item>
+        <item>@string/aod_notification_style_animation</item>
+    </string-array>
+    <string-array name="aod_show_style_entries">
+        <item>@string/temporary_style</item>
+        <item>@string/scheduled_style</item>
+        <item>@string/always_style</item>
+    </string-array>
+    <string-array name="aod_show_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <string-array name="ap_identify">
         <item>Default</item>
         <item>Portable hotspot</item>
@@ -485,6 +500,39 @@
         <item>1002</item>
         <item>1003</item>
     </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_latency_summaries">
+        <item>Short latency</item>
+        <item>Middle latency</item>
+        <item>Long latency</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_latency_titles">
+        <item>Short latency (50~100ms)</item>
+        <item>Middle latency (150~200ms)</item>
+        <item>Long latency (300~500ms)</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_latency_values">
+        <item>49152</item>
+        <item>49153</item>
+        <item>49154</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_summaries">
+        <item>Optimized for connection quality</item>
+        <item>Balanced audio and connection quality</item>
+        <item>Optimized for audio quality</item>
+        <item>Best effort (Auto bit rate)</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_titles">
+        <item>Optimized for connection quality (400kbps)</item>
+        <item>Balanced audio and connection quality (500/560kbps)</item>
+        <item>Optimized for audio quality (900kbps)</item>
+        <item>Best effort (Auto bit rate)</item>
+    </string-array>
+    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_values">
+        <item>32768</item>
+        <item>32769</item>
+        <item>32770</item>
+        <item>32771</item>
+    </string-array>
     <string-array name="bluetooth_a2dp_codec_sample_rate_summaries">
         <item>Use System Selection (Default)</item>
         <item>44.1 kHz</item>
@@ -514,6 +562,7 @@
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
+        <item>LHDC</item>
         <item>Enable optional codecs</item>
         <item>Disable optional codecs</item>
     </string-array>
@@ -525,6 +574,7 @@
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
+        <item>LHDC</item>
         <item>Enable optional codecs</item>
         <item>Disable optional codecs</item>
     </string-array>
@@ -538,6 +588,7 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -1531,6 +1582,18 @@
         <item>yes</item>
         <item>no</item>
     </string-array>
+    <string-array name="data_network_type_name_default">
+        <item>4G</item>
+        <item>4G+</item>
+    </string-array>
+    <array name="data_type_name_cus_reg_key" />
+    <array name="data_type_name_cus_reg_value" />
+    <array name="data_type_name_mcc_key" />
+    <array name="data_type_name_mcc_mnc_key" />
+    <array name="data_type_name_mcc_mnc_value" />
+    <array name="data_type_name_mcc_value" />
+    <array name="data_type_name_miui_mcc_key" />
+    <array name="data_type_name_miui_mcc_value" />
     <string-array name="data_usage_data_range">
         <item>Last 30 days</item>
         <item>Set usage cycle...</item>
@@ -1612,6 +1675,27 @@
         <item>0,4,2,0,-2,-2,4</item>
         <item>2,0,0,-2,-4,0,0</item>
     </string-array>
+    <string-array name="disable_apptitmer_device_list">
+        <item>cactus</item>
+        <item>pine</item>
+        <item>rosy</item>
+        <item>ginkgo</item>
+        <item>willow</item>
+        <item>olive</item>
+        <item>tiare</item>
+        <item>cereus</item>
+        <item>riva</item>
+        <item>rolex</item>
+        <item>markw</item>
+        <item>santoni</item>
+        <item>land</item>
+        <item>vince</item>
+        <item>nikel</item>
+        <item>ugglite</item>
+        <item>ugg</item>
+        <item>kate</item>
+        <item>prada</item>
+    </string-array>
     <string-array name="dndm_auto_time_trun_on_off">
         <item>@string/dndm_auto_time_turn_on</item>
         <item>@string/dndm_auto_time_turn_off</item>
@@ -1641,11 +1725,6 @@
         <item>300000</item>
         <item>600000</item>
         <item>1800000</item>
-    </string-array>
-    <string-array name="drip_battery_indicator_style_entries">
-        <item>Graphical</item>
-        <item>Percentage (in the icon)</item>
-        <item>Percentage (next to the icon)</item>
     </string-array>
     <string-array name="eap_method_without_sim_auth">
         <item>PEAP</item>
@@ -1819,14 +1898,14 @@
         <item>slide_zippo_close.ogg</item>
     </string-array>
     <string-array name="keyguard_notification_status_entries">
+        <item>"Don't wake screen"</item>
         <item>Wake screen</item>
         <item>Show animation</item>
-        <item>"Don't wake screen"</item>
     </string-array>
     <string-array name="keyguard_notification_status_values">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
-        <item>0</item>
     </string-array>
     <string-array name="led_color_entries">
         <item>Blue</item>
@@ -2108,7 +2187,8 @@ Note: Only for Ubuntu 8.04!"</item>
     </string-array>
     <string-array name="notch_battery_indicator_style_entries">
         <item>Graphical</item>
-        <item>Percentage</item>
+        <item>Percentage (in the icon)</item>
+        <item>Percentage (next to the icon)</item>
     </string-array>
     <string-array name="notifi_importance_entries">
         <item>@string/importance_high</item>
@@ -2518,6 +2598,41 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@drawable/powerclick01</item>
         <item>@drawable/powerclick01</item>
     </array>
+    <array name="power_long_press">
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick02</item>
+        <item>@drawable/powerclick03</item>
+        <item>@drawable/powerclick04</item>
+        <item>@drawable/powerclick05</item>
+        <item>@drawable/powerclick06</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick07</item>
+        <item>@drawable/powerclick03</item>
+        <item>@drawable/powerclick02</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+        <item>@drawable/powerclick01</item>
+    </array>
     <string-array name="power_mode_entries">
         <item>Performance</item>
         <item>Balanced</item>
@@ -2633,13 +2748,13 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>show_menu</item>
     </string-array>
     <string-array name="screen_optimize_summary">
-        <item>Optimize contrast for available light</item>
-        <item>"Increase display's contrast"</item>
+        <item>Adjust colors based on the current lighting</item>
+        <item>Always enhance colors</item>
         <item>Contrast will remain constant</item>
     </string-array>
     <string-array name="screen_optimize_title">
-        <item>Automatic contrast</item>
-        <item>Increased contrast</item>
+        <item>Auto (recommended)</item>
+        <item>Saturated</item>
         <item>Standard</item>
     </string-array>
     <integer-array name="screen_resolution">
@@ -2862,6 +2977,11 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>2</item>
         <item>0</item>
     </string-array>
+    <string-array name="support_speaker_auto_clean_device_list">
+        <item>ginkgo</item>
+        <item>olive</item>
+        <item>olivelite</item>
+    </string-array>
     <string-array name="systemui_theme_entries">
         <item>@string/systemui_theme_wallpaper</item>
         <item>@string/systemui_theme_light</item>
@@ -2957,6 +3077,16 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>2</item>
         <item>5</item>
         <item>10</item>
+    </string-array>
+    <string-array name="true_color_screen_optimize_summary">
+        <item>Adjust colors based on the current lighting</item>
+        <item>Always enhance colors</item>
+        <item>Restore standard color of screen content with color calibration</item>
+    </string-array>
+    <string-array name="true_color_screen_optimize_title">
+        <item>Auto (recommended)</item>
+        <item>Saturated</item>
+        <item>Original color</item>
     </string-array>
     <string-array name="tts_demo_string_langs">
         <item>eng</item>
@@ -3130,6 +3260,11 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+    <string-array name="wide_notch_battery_indicator_style_entries">
+        <item>Graphical</item>
+        <item>Percentage (in the icon)</item>
+        <item>Percentage (next to the icon in the Notification shade)</item>
     </string-array>
     <string-array name="wifi_ap_band_config_2G_5G">
         <item>@string/wifi_ap_choose_2G</item>
