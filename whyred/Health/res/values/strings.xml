@@ -36,6 +36,8 @@
     <string name="all_records">All records</string>
     <string name="app_name">wcdb-room</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="auto_start_fail">"Couldn't grant permission"</string>
+    <string name="auto_start_success">Granted permission successfully</string>
     <string name="auto_start_tips">Tap \"Settings\" below to open Mi Health settings and give the required permissions.</string>
     <string name="average_cycle_days">Avg cycle</string>
     <string name="average_menstruation_days">Avg period duration</string>
@@ -52,8 +54,8 @@
     <string name="bg_control_dialog_title">Background restrictions</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="cancel">Cancel</string>
-    <string name="cancel_mark_end">Remove the \"End\" tag</string>
-    <string name="cancel_mark_start">Remove the \"Start\" tag</string>
+    <string name="cancel_mark_end">"Period hasn't ended"</string>
+    <string name="cancel_mark_start">Delete this record</string>
     <string name="channel_id_background_service">Background services</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
@@ -79,19 +81,23 @@
     <string name="dialog_abandon">Discard</string>
     <string name="dialog_abandon_sleep_edit">Discard changes?</string>
     <string name="dialog_agree_and_continue">Agree</string>
+    <string name="dialog_auto_start_detail">"Allow Mi Health to autostart to be able to receive notifications.
+Mi Health will only notify you about important items."</string>
     <string name="dialog_auto_start_title">Allow Mi Health to autostart</string>
+    <string name="dialog_auto_start_title2">Allow Mi Health to autostart</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_confirm">OK</string>
     <string name="dialog_date_select">Select date</string>
     <string name="dialog_delete">Delete</string>
-    <string name="dialog_exercise_purpose">You are welcome to use the Mi Health Sports Steps Service. You can use this service to view the functions of sports step data and sports target management. Your data is stored only on the phone and you can manage it yourself.</string>
+    <string name="dialog_exercise_purpose">Welcome to Mi Health! \"Step counter\" allows you to see how many steps you make during the day, as well as set and manage your activity goals. All the related data will be stored locally on your device, which allows you to manage it easily.</string>
     <string name="dialog_exit">Exit</string>
     <string name="dialog_juveniles_details">According to our Privacy Policy, the minimum age for using this product is 18 years old.</string>
     <string name="dialog_juveniles_link">According to our &lt;font color=\"#FE6D67\">&lt;a href=\"%1$s\">Privacy Policy&lt;/a>&lt;/font>, the minimum age for using this product is 18 years old.</string>
     <string name="dialog_known">Got it</string>
-    <string name="dialog_main_purpose">Record health behaviors, health status, and get health advice</string>
-    <string name="dialog_menstruation_purpose">You are welcome to use the Mi Health Menstrual Assistant Service. You can use this service to realize the function of period record, prediction and reminder. Your data is only stored locally on the mobile phone. You can manage it yourself.</string>
+    <string name="dialog_menstruation_purpose">Welcome to Mi Health! \"Menstruation\" allows you to record periods, determine estimated dates of upcoming periods, and receive reminders. All the related data will be stored locally on your device, which allows you to manage it easily.</string>
+    <string name="dialog_no_more_prompt">"Don't show again"</string>
     <string name="dialog_ok">OK</string>
+    <string name="dialog_open">Allow</string>
     <string name="dialog_permission_loading_msg">Checking…</string>
     <string name="dialog_privacy_description">"Welcome to Mi Health! You can use this app to record your activity, track your sleep, and more.
 Mi Health needs to connect to the network, as well as collect, process, and use your personal information to work normally.
@@ -103,9 +109,9 @@ Your personal information will be collected, processed, and used in accordance w
     &lt;font color=\"#0000FF\">&lt;a href=\"%2$s\">Privacy Policy&lt;/a >&lt;/font> for more details."</string>
     <string name="dialog_privacy_policy_statement">Privacy Policy statement</string>
     <string name="dialog_privacy_title">Terms and conditions</string>
-    <string name="dialog_read_phone_perm_desc">"The device IMEI identification identifier is obtained to provide a corresponding service. 
-If you do not agree to call the above permissions, it does not affect your use of the service. Once you agree, you can choose to go to Settings > Passwords, Privacy Security > System Security > User Experience Program to terminate the User Experience Program."</string>
-    <string name="dialog_sure">Sure</string>
+    <string name="dialog_read_phone_perm_desc">For accessing IMEI to identify your device and provide services.</string>
+    <string name="dialog_sleep_purpose">Welcome to Mi Health sleep tracking service! You can use this service to record your sleep and manage your sleep data. Mi Health will automatically record your sleep based on your phone usage, activity stats, as well as fall asleep and wake up time you set. To ensure the accuracy of the sleep data, Mi Health needs permission to autostart. All the data related to this feature will be stored locally on your device.</string>
+    <string name="dialog_sure">OK</string>
     <string name="drink_water">Drink some water and take a walk.</string>
     <string name="edit_basic_info_desc">Basic info</string>
     <string name="empty_data">-</string>
@@ -127,6 +133,7 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="gender_female">Female</string>
     <string name="gender_male">Male</string>
     <string name="gender_other">Other</string>
+    <string name="go_back_to_today">Back to today</string>
     <string name="go_setting">Settings</string>
     <string name="goto_setting_auto_start">Settings</string>
     <string name="guide_setting">Provide the following information to get accurate menstrual stats</string>
@@ -136,7 +143,7 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="health_score">Health score</string>
     <string name="health_score_tips">Health score is calculated based on your BMI (body mass index), as well as your sleep and activity steps. The closer you are to your goals, the higher your health score is.</string>
     <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
-    <string name="history_statistics">History</string>
+    <string name="history_statistics">Stats</string>
     <string name="hour_in_day_format">%1$d</string>
     <string name="hour_in_day_format_short">%1$d</string>
     <string name="icon_content_description">Dialog Icon</string>
@@ -146,24 +153,28 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="key_sedentary_toggle">sedentary_toggle</string>
     <string name="label_average_daily_sleep_duration">Avg sleep duration</string>
     <string name="label_average_daily_sleep_time">Avg fall asleep time</string>
-    <string name="label_average_daily_wake_up_time">Avg get up time</string>
+    <string name="label_average_daily_sleep_time2">Avg fall asleep time</string>
+    <string name="label_average_daily_wake_up_time">Avg wake up time</string>
     <string name="label_duration">Duration</string>
     <string name="label_exercise_goal">Goal</string>
     <string name="label_get_device_id">Get device ID</string>
     <string name="label_got_up">Got up</string>
     <string name="label_sleep">Fell asleep</string>
+    <string name="label_sleep2">Fell asleep</string>
     <string name="label_sleep_duration">Sleep duration</string>
     <string name="label_sleep_intercept">Interrupted</string>
-    <string name="label_sleep_time">Sleep time</string>
+    <string name="label_sleep_time">Fell asleep</string>
+    <string name="label_sleep_time2">Fell asleep time</string>
     <string name="label_today_exercise_consumption">Burned</string>
     <string name="label_today_exercise_summary">"Today's steps"</string>
     <string name="label_today_sleep_summary">Sleep last night</string>
     <string name="label_wake_up">Woke up</string>
-    <string name="label_wake_up_time">Wake up time</string>
+    <string name="label_wake_up_time">Woke up</string>
     <string name="light_sleep">Light sleep</string>
     <string name="manual_adjust">Adjust</string>
-    <string name="mark_end">End</string>
+    <string name="mark_end">Period ended</string>
     <string name="mark_start">Start</string>
+    <string name="menses_auto_start_description">Turning on reminders will allow Mi Health to autostart.</string>
     <string name="menstrual_assistant">Menstruation</string>
     <string name="menstruation_cycle">Menstrual cycle</string>
     <string name="menstruation_cycle_description">Interval between the start dates of 2 consecutive cycles</string>
@@ -188,7 +199,7 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="mtrl_picker_range_header_selected">%1$s - %2$s</string>
     <string name="mtrl_picker_range_header_title">Select a Date Range</string>
     <string name="mtrl_picker_range_header_unselected">Start Date - End Date</string>
-    <string name="name_title_menstruation_today_end">Period ends today</string>
+    <string name="name_title_menstruation_today_end">Period is expected to end today</string>
     <string name="need_auto_start_permission">To get more accurate stats, allow Mi Health to autostart.</string>
     <string name="need_unrestricted_permission">To get more accurate stats, allow Mi Health to always run in the background.</string>
     <string name="next_step">Next</string>
@@ -203,9 +214,10 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="permission_check_result">Set successfully</string>
+    <string name="permission_check_result_failed">"Couldn't set"</string>
     <string name="permission_manage">Manage permissions</string>
     <string name="permission_tip">Give Mi Health the following permissions to allow it to track your sleep accurately</string>
-    <string name="predict_menstruation">Estimated period</string>
+    <string name="predict_menstruation">Expected period</string>
     <string name="preference_about">About</string>
     <string name="preference_basic_info">Basic info</string>
     <string name="preference_feedback">Feedback</string>
@@ -223,6 +235,7 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="remind">Remind</string>
     <string name="remind_goto_sleep">"It's late now. Time to go to bed."</string>
     <string name="remind_menstruation_acquired_start">Your period might start in 2 days</string>
+    <string name="remind_open_tips">Allow Mi Health to remind you about upcoming periods</string>
     <string name="remind_query_menstruation_end">"Has your period ended? Don't forget to record it."</string>
     <string name="remind_query_menstruation_start">"Has your period started? Don't forget to record it."</string>
     <string name="remind_sleep_report_complete">Sleep stats are ready</string>
@@ -261,6 +274,9 @@ If you do not agree to call the above permissions, it does not affect your use o
     <string name="sleep_goal_maybe_compliance">Relatively good sleep</string>
     <string name="sleep_goal_not_compliance">Not enough sleep</string>
     <string name="sleep_month">Month</string>
+    <string name="sleep_need_auto_start">Allow Mi Health to autostart to make sleep data more accurate</string>
+    <string name="sleep_need_background_run">Select \"No restrictions\" to make sleep data more accurate</string>
+    <string name="sleep_need_necessary_permissions">Grant required permissions to make sleep data more accurate</string>
     <string name="sleep_no_data_info">"Go through a complete
 sleep cycle"</string>
     <string name="sleep_no_generate_report">"Couldn't find
