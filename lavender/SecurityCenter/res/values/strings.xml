@@ -1299,6 +1299,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="power_optimize_close_app">Close apps consuming excessive power</string>
     <string name="power_optimize_disable_app_autostart">Prevent apps from opening automatically</string>
     <string name="power_optimize_disable_start_other_app">Prevent apps from opening other apps</string>
+    <string name="power_optimize_disable_5g">Restrict 5G connectivity</string>
     <string name="power_optimize_brightness">Screen brightness</string>
     <string name="power_optimize_open_hide_mode">Turn on Battery saver</string>
     <string name="power_optimize_auto_catagory_title">Battery issues</string>
@@ -1463,6 +1464,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="power_center_scan_item_title_battery_details">Battery usage details</string>
     <string name="power_center_hints_scan_danger_result">You can fix battery issues now</string>
     <string name="power_center_scan_item_title_running_app">Apps running in the background</string>
+    <string name="power_center_scan_item_title_5g">5G connectivity</string>
     <string name="power_center_list_item_close_bluetooth">Turn off Bluetooth</string>
     <string name="power_center_list_item_set_lockscreen_time">Put screen to sleep after 30 seconds of inactivity</string>
     <string name="power_center_list_item_set_lockscreen_time_holder">Lock device after %d seconds of inactivity</string>
@@ -1484,9 +1486,11 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="power_save_ps_freeze">Freeze apps in the background</string>
     <string name="power_save_ps_clean">Clear cache whenever device is locked</string>
     <string name="power_save_ps_close_setting">Turn off background services (sync, GPS) to save battery</string>
+    <string name="power_save_ps_close_setting_5g">Restrict power consuming features (sync, 5G connectivity, GPS)</string>
     <string name="power_center_dialog_msg_top">When Battery saver is on, MIUI will perform the following optimizations:</string>
     <string name="power_center_dialog_msg_bottom">You can increase battery life up to %1$dh %2$dm. Turn on Battery saver?</string>
     <string name="power_dialog_super_save_msg">"Ultra battery saver restricts most power-consuming features and decreases your device's performance in order to leave basic functionality (e.g. calls, SMS, and connecting to the network) available as long as possible. Turn on Ultra battery saver?"</string>
+    <string name="power_dialog_super_save_msg_5g">"Ultra battery saver restricts most power consuming features (e.g. 5G connectivity) lowering your device's performance. Only calls, messages, and network connectivity won't be affected. Turn on Ultra battery saver?"</string>
     <string name="power_dialog_super_save_title">Ultra battery saver</string>
     <string name="power_center_power_save_title_text">Battery saver</string>
     <string name="power_center_super_save_title_text">Ultra battery saver</string>
@@ -2174,7 +2178,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="ac_pre_notification_contentTitle">Try App Lock</string>
     <string name="ac_post_notification_contentTitle">Turn on App Lock</string>
     <string name="midrop_post_notification_contentTitle">Need to share files?</string>
-    <string name="notification_masked_item">Hide notifications</string>
+    <string name="notification_masked_item">How to hide notification content?</string>
     <string name="lock_mode_title">Lock settings</string>
     <string name="after_the_lock_screen">Lock apps together with the screen</string>
     <string name="set_applock_password">Set password</string>
@@ -2184,10 +2188,10 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="ac_pre_notification_contentText">Protect your personal info</string>
     <string name="ac_post_notification_contentText">Get system-level protection</string>
     <string name="midrop_post_notification_contentText">Transfer files at speeds up to 50 Mbps in Mi Drop.</string>
-    <string name="notification_masked_subtitle">Hide notifications from apps protected with App lock</string>
+    <string name="notification_masked_subtitle">Use App lock to hide notification content for selected apps</string>
     <string name="ac_enter_applock">Enter App lock</string>
-    <string name="ac_mask_all_apps">Hide for all apps</string>
-    <string name="ac_unmask_all_apps">Unhide for all apps</string>
+    <string name="ac_mask_all_apps">Hide for all</string>
+    <string name="ac_unmask_all_apps">Show for all</string>
     <string name="ac_summaryOn">Enter password to open protected apps</string>
     <string name="ac_summaryOff">Turned off, no password is required to open apps</string>
     <string name="lockpattern_tutorial_cancel_label">Cancel</string>
@@ -2208,7 +2212,7 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="convenient_summary">Enter password once to unlock all apps</string>
     <string name="lock_all_title">Lock all apps</string>
     <string name="suggest_app_tolock">Suggestions</string>
-    <string name="suggest_app_tolock_masked">Hidden</string>
+    <string name="suggest_app_tolock_masked">Content hidden</string>
     <string name="suggest_app_tolock_unmasked">Visible notifications</string>
     <string name="forget_password_button_text"><u>Forgot password</u></string>
     <string name="forget_password_button_text_normal">Forgot password</string>
@@ -2326,6 +2330,8 @@ T"</b>"ry using another Ethernet cable to connect your router. If you suspect th
     <string name="face_unlock_verity_dialog_title_failed">"Couldn't recognize you"</string>
     <string name="face_unlock_verity_dialog_title_succeed">Verified successfully</string>
     <string name="face_unlock_toast_verity_failed">"Couldn't verify face data. Go to App lock settings and try verifying your face data again there."</string>
+    <string name="privacyapp_number_masked_text">Notification content is hidden</string>
+    <string name="privacyapp_number_unmasked_text">Notification content can be hidden</string>
     <string name="wakepath_confirm_start_activity">Allow %1$s to open %2$s?</string>
     <string name="unlike">No thanks</string>
     <string name="toast_network_eror">"Can't connect to network"</string>
@@ -2926,9 +2932,9 @@ All data on your device might be erased and your Lock screen password might be r
     <string name="user_guide">Swipe up to discover more fresh games</string>
     <string name="user_guide_title">Joystick Picks</string>
     <string name="system_permission_declare_main_purpose" formatted="false">Welcome to %1s! This app allows you to use the following feature: %2s.</string>
-    <string name="system_permission_declare_privacy_declare">We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies. Note that Security needs to connect to the internet and requires the following permissions to collect your personal information:</string>
+    <string name="system_permission_declare_privacy_declare">We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies. Note that this app needs to connect to the internet and requires the following permissions to collect your personal information:</string>
     <string name="system_permission_declare_analytics_declare">"Thank you for enrolling in our User Experience Program. Your device needs to be connected to the internet to allow this feature to work normally. You're also required to grant the following permissions to allow us to collect the data that will help us improve our products and services. This data is collected for statistical purposes only. We won't be able to use this data to identify you personally."</string>
-    <string name="system_permission_declare_privacy_no_permission">Note that Security needs to connect to the internet and collect the required personal information in order to provide services to you. We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies.</string>
+    <string name="system_permission_declare_privacy_no_permission">Note that this app needs to connect to the internet and collect the required personal information in order to provide services to you. We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies.</string>
     <string name="system_permission_declare_use_network">Connect to the network</string>
     <string name="system_permission_declare_use_network_no_permission">Connect to the network</string>
     <string name="system_permission_declare_no_say_no">"If you choose not to give the required permissions or don't allow us to collect and use your data, this app won't be able to work normally."</string>
