@@ -44,6 +44,7 @@
     <string name="add_travel_fetch_none_flight">"Couldn't find %s. Make sure the flight number and date are correct."</string>
     <string name="add_travel_fetch_none_stations">"Couldn't find train %2$s on %1$s. Make sure that the train number and departure date are correct."</string>
     <string name="add_travel_flight">Add flight</string>
+    <string name="add_travel_flight_cancelled">"Can't add flights that are already cancelled."</string>
     <string name="add_travel_flight_num">Flight number</string>
     <string name="add_travel_flight_num_demo">E.g. CA1102</string>
     <string name="add_travel_permission_deny_tip">"Can't add trips due to restricted permissions"</string>
@@ -55,6 +56,7 @@
     <string name="add_travel_time_expired">"Can't add trips that are already over. Select time again."</string>
     <string name="add_travel_title">Add trip</string>
     <string name="add_travel_train">Add train</string>
+    <string name="add_travel_train_cancelled">列车已停运，无法添加</string>
     <string name="add_travel_train_dep_station_demo">Beijing South</string>
     <string name="add_travel_train_num">Train number</string>
     <string name="add_travel_train_num_demo">E.g. G1</string>
@@ -86,7 +88,9 @@
     <string name="all_travels_edit">Edit</string>
     <string name="all_travels_edit_select_def_title">Select trips</string>
     <string name="all_travels_select_limit_tips">You can select up to 10 items</string>
+    <string name="all_travels_state_flight_cancelled">Cancelled</string>
     <string name="all_travels_state_rebooked">Rescheduled</string>
+    <string name="all_travels_state_train_cancelled">已停运</string>
     <string name="all_travels_state_withdrawn">Returned</string>
     <string name="all_travels_tab_completed">Completed</string>
     <string name="all_travels_tab_pending">Pending</string>
@@ -96,12 +100,25 @@
     <string name="car_no_suffix">车</string>
     <string name="center_dot">·</string>
     <string name="center_dot_large_interval"> · </string>
+    <string name="covid19_daily_card_confirm">确诊</string>
+    <string name="covid19_daily_card_cure">治愈</string>
+    <string name="covid19_daily_card_dead">死亡</string>
+    <string name="covid19_daily_card_more">查看全国疫情</string>
+    <string name="covid19_daily_card_title">肺炎疫情动态</string>
+    <string name="covid19_daily_card_update_time">截止</string>
+    <string name="covid19_news_card_bottom_txt_1">以上数据由</string>
+    <string name="covid19_news_card_bottom_txt_2">百度地图提供</string>
+    <string name="covid19_news_card_title">出行实时资讯</string>
+    <string name="covid19_search_travel_btn">搜索其他行程</string>
+    <string name="covid19_search_travel_footer_txt">确诊患者行程数据源于</string>
+    <string name="covid19_search_travel_update_time">更新时间：%s</string>
     <string name="currency">Currencies</string>
     <string name="currency_type_pick">Select currency</string>
     <string name="currency_update_connect_to_get_data">Data provided by Webull. Connect to the network to update.</string>
     <string name="currency_update_support">"Data provided by Webull. "</string>
     <string name="currency_update_time_format">Data provided by Webull. Updated on %s</string>
     <string name="currency_update_updating">Updating…</string>
+    <string name="defalut_text_none">--</string>
     <string name="delete_travel_content">"You won't receive any information or services related to this trip if you delete it. Delete anyway?"</string>
     <string name="delete_travel_fail">Failed to delete. Please try again.</string>
     <string name="delete_travel_success">Deleted successfully</string>
@@ -148,7 +165,6 @@
     <string name="main_menu_delete">Delete this trip</string>
     <string name="main_menu_settings">Settings</string>
     <string name="more_func_dialog_bottom_tips">You can turn this feature off and revoke your authorization in Trips > Settings.</string>
-    <string name="more_func_dialog_item_poi_desc">允许开启定点服务功能，到达景点时，为您提供相关服务，如景点介绍、语音导览等。</string>
     <string name="more_func_dialog_item_resident_desc">Toggle the \"Recognize destination\" switch to allow Trips to determine where you go often and provide relevant services.</string>
     <string name="more_func_dialog_msg">You need to grant your authorization to be able to use additional features.</string>
     <string name="more_func_dialog_title">More features</string>
@@ -178,6 +194,11 @@
     <string name="notify_pack_for_today_content_flight">%1$s flight %2$s takes off on %3$s at %4$s</string>
     <string name="notify_pack_for_today_content_train">Train %1$s departs on %2$s at %3$s</string>
     <string name="notify_pack_for_today_title">Get ready for your trip</string>
+    <string name="perm_notify_content_dialog">缺少必要权限，无法开启智能出行，请前往“智能出行应用管理-权限管理-获取手机信息”选择“允许”。</string>
+    <string name="perm_notify_negative_dialog">退出</string>
+    <string name="perm_notify_positive_dialog">去设置</string>
+    <string name="perm_notify_title_dialog">无法进入智能出行</string>
+    <string name="play_tips_card_title">Travel tips</string>
     <string name="privacy_main_purpose">Manage your itinerary information and get all the services related to your itinerary</string>
     <string name="privacy_perm_calendar_desc">Read your calendar itinerary information and provide itinerary service</string>
     <string name="privacy_perm_location_desc">Provide you with destination-related travel services based on your geographic location</string>
@@ -243,8 +264,6 @@
     <string name="setting_get_device_id_desc">Used for authorization and revocation. Refer to our Privacy Policy for details.</string>
     <string name="setting_interest_screen_display">Show Trips when the screen is turned off</string>
     <string name="setting_lock_screen_display">Show Trips on Lock screen</string>
-    <string name="setting_poi_service">定点服务</string>
-    <string name="setting_poi_service_desc">到达景点时，为您提供相关服务，如景点介绍、语音导览等</string>
     <string name="setting_privacy">Privacy Policy</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="time_base_1">%s</string>
@@ -252,7 +271,6 @@
     <string name="time_base_3" formatted="false">%1s %2s %3s</string>
     <string name="time_base_prefix">time_base_</string>
     <string name="time_pattern_md">MMM dd</string>
-    <string name="tips_card_title">Travel tips</string>
     <string name="tips_more_text">More</string>
     <string name="todo_list_card_btn_add">Add</string>
     <string name="todo_list_card_btn_all">Check all</string>
@@ -267,7 +285,6 @@
     <string name="traffic_choose_destination">Select destination</string>
     <string name="traffic_duration_dec">---</string>
     <string name="traffic_flight_no">"Flight "</string>
-    <string name="traffic_none">--</string>
     <string name="traffic_seat_no_desc">Seat %s</string>
     <string name="traffic_seat_no_split">, </string>
     <string name="traffic_seat_num">Seat</string>
@@ -283,6 +300,7 @@
     <string name="transportation_card_activated">on</string>
     <string name="transportation_card_buy_now">Purchase</string>
     <string name="transportation_use_tips">Double press the Power button to open the transport card</string>
+    <string name="travel_tips_card_title">旅行贴士</string>
     <string name="unit_data_default_currency_0">CNY</string>
     <string name="unit_data_default_currency_1">USD</string>
     <string name="unit_data_display_currency_aed">United Arab Emirates dirham</string>
