@@ -9,7 +9,7 @@
     <string name="app_search">Search apps</string>
     <string name="btn_send">Send</string>
     <string name="bugreport_dialog_not_show_again">"Don't show again"</string>
-    <string name="bugreport_dialog_submit_content"><Data>"You're saving software logs on this device now. Logs may contain personal info and your location data. Don't share logs with anyone else if you don't want this info to be exposed. Selecting \"Agree\" means that you've read and agreed to our &lt;a href=\"http://www.miui.com/res/doc/privacy.html?region=%1$s&amp;lang=%2$s\">Privacy Policy&lt;/a> and &lt;a href=\"http://www.miui.com/res/doc/eula.html?region=%3$s&amp;lang=%4$s\">User Agreement&lt;/a>."</Data></string>
+    <string name="bugreport_dialog_submit_content"><Data>"You're saving software logs on this device now. Logs may contain personal info and your location data. Don't share logs with anyone else if you don't want this info to be exposed. Selecting \"Agree\" means that you've read and agreed to our &lt;a href=\"%1$s\">Privacy Policy&lt;/a> and &lt;a href=\"%2$s\">User Agreement&lt;/a>."</Data></string>
     <string name="bugreport_dump_complete_notification_summary">Tap to view.</string>
     <string name="bugreport_dump_complete_notification_title">Created bug report</string>
     <string name="bugreport_dump_start_notification_summary">This might take several minutes.</string>
@@ -102,9 +102,23 @@
     <string name="feedback_description_hint_suggestion">"Tell us how you'd like to improve MIUI."</string>
     <string name="feedback_description_label">Description</string>
     <string name="feedback_description_suggest_hint">"I'd like you to add a new feature () because I need ()."</string>
-    <string name="feedback_detail_tile">Progress</string>
+    <string name="feedback_detail_copy_toast">Copied to clipboard</string>
+    <string name="feedback_detail_feedback_attach">Attachments</string>
+    <string name="feedback_detail_feedback_attach_upload_failed">"Couldn't upload"</string>
+    <string name="feedback_detail_feedback_attach_uploading">Uploading…</string>
+    <string name="feedback_detail_feedback_category">Category</string>
+    <string name="feedback_detail_feedback_id">Report ID: %d</string>
+    <string name="feedback_detail_feedback_reply_hint">Reply</string>
+    <string name="feedback_detail_feedback_summary">Feedback</string>
+    <string name="feedback_detail_need_content">Enter content first</string>
+    <string name="feedback_detail_title">Details</string>
+    <string name="feedback_detail_upload_generate_log">Generate logs</string>
+    <string name="feedback_detail_upload_image">Upload images/videos</string>
+    <string name="feedback_detail_upload_local_log">Upload file</string>
+    <string name="feedback_detail_upload_log">Upload logs</string>
+    <string name="feedback_detail_waiting">Generating…</string>
     <string name="feedback_empty_report_list">No reports yet</string>
-    <string name="feedback_guess">Our guess</string>
+    <string name="feedback_guess">Our guess:</string>
     <string name="feedback_history_remind_login_desc">"Sign in with your Mi Account to view details and your report's progress"</string>
     <string name="feedback_id">ID: %d</string>
     <string name="feedback_jira_key">JIRA Key: %s</string>
@@ -181,12 +195,13 @@
     <string name="issue_search">Search</string>
     <string name="kr_authorization_agree">Accept</string>
     <string name="kr_authorization_contact">Accounts</string>
-    <string name="kr_authorization_contact_desc">For getting Mi Account info and verifying your account</string>
+    <string name="kr_authorization_contact_desc">For accessing Mi Account info in order to identify device</string>
     <string name="kr_authorization_exit">Exit</string>
+    <string name="kr_authorization_function">Submitting feedback, generating logs, viewing frequently asked questions</string>
     <string name="kr_authorization_log_protocol">Log Protocol (optional)</string>
     <string name="kr_authorization_log_protocol_desc">"In order to improve the services provided to you, we'll upload usage stats and system logs to our servers. These items may include your personal information, as well as the information about your device and networks. We'll use uploaded items to locate and analyze the problems in the system."</string>
     <string name="kr_authorization_phone">Phone</string>
-    <string name="kr_authorization_phone_desc">For identifying device using IMEI and model number, as well as locating and analyzing issues</string>
+    <string name="kr_authorization_phone_desc">For accessing device model, IMEI, and device ID in order to locate and solve issues</string>
     <string name="kr_authorization_privacy_policy">Privacy Policy (mandatory)</string>
     <string name="kr_authorization_select_all">Select all</string>
     <string name="kr_authorization_storage">Storage</string>
@@ -199,6 +214,10 @@
     <string name="max_error">Your %1$s should be shorter.</string>
     <string name="menu_copy">Copy</string>
     <string name="message_label">Message</string>
+    <string name="mi_service_dialog_cancel">Exit</string>
+    <string name="mi_service_dialog_confirm">Open</string>
+    <string name="mi_service_dialog_content">All feedback features were moved to the new \"Services &amp; feedback\" app. The Feedback app will be removed from your Home screen. Tap \"Open\" to try \"Services &amp; feedback\".</string>
+    <string name="mi_service_dialog_title">Introducing \"Services &amp; feedback\"</string>
     <string name="michat_app_name">Online support</string>
     <string name="michat_artificial_customer_phone">4001005678</string>
     <string name="michat_artificial_customer_phone_dial_error">"If you can't call the 400 hotline, dial %1$s using a different phone"</string>
@@ -282,7 +301,7 @@
     <string name="module_more">More</string>
     <string name="module_network">Network</string>
     <string name="module_search">Search</string>
-    <string name="module_security">Security &amp; Mi Cloud</string>
+    <string name="module_security">Security &amp; Xiaomi Cloud</string>
     <string name="module_system">System</string>
     <string name="module_tools">System tools</string>
     <string name="modules">Select item</string>
@@ -493,8 +512,8 @@ To activate your account, follow the
     <string name="select_system_app_tag">Select an issue</string>
     <string name="submit_dialog_cancel">"Don't agree"</string>
     <string name="submit_dialog_confirm">Agree</string>
-    <string name="submit_dialog_content"><Data>"You must agree to our &lt;a href=\"http://www.miui.com/res/doc/privacy.html?region=%1$s&amp;lang=%2$s\">Privacy Policy&lt;/a> and &lt;a href=\"http://www.miui.com/res/doc/eula.html?region=%3$s&amp;lang=%4$s\">User Agreement&lt;/a> to be able to use Feedback. The issues you report along with the items you attach (might contain personal information, as well as the information about your device and network) will be uploaded to MIUI's servers. This will help us locate and solve the problems you report."</Data></string>
-    <string name="submit_dialog_content_global"><Data>"Your feedback, along with attachments (if any) and logs (you can uncheck the corresponding boxes for the items you don't want to upload) will be sent to MIUI's servers and a restricted section of MIUI Forum for developers. The information about your threads and forum activity will also be collected for analysis and further communication. Logs may contain personal info and your location data. Selecting \"Agree\" means that you've read and agreed to our &lt;a href=\"http://www.miui.com/res/doc/privacy.html?region=%1$s&amp;lang=%2$s\">Privacy Policy&lt;/a> and &lt;a href=\"http://www.miui.com/res/doc/eula.html?region=%3$s&amp;lang=%4$s\">User Agreement&lt;/a>."</Data></string>
+    <string name="submit_dialog_content"><Data>"You must agree to our &lt;a href=\"%1$s\">Privacy Policy&lt;/a> and &lt;a href=\"%2$s\">User Agreement&lt;/a> to be able to use Feedback. The issues you report along with the items you attach (might contain personal information, as well as the information about your device and network) will be uploaded to MIUI's servers. This will help us locate and solve the problems you report."</Data></string>
+    <string name="submit_dialog_content_global"><Data>"Your feedback, along with attachments (if any) and logs (you can uncheck the corresponding boxes for the items you don't want to upload) will be sent to MIUI's servers. Logs may contain personal info and your location data. Selecting \"Agree\" means that you've read and agreed to our &lt;a href=\"%1$s\">Privacy Policy&lt;/a> and &lt;a href=\"%2$s\">User Agreement&lt;/a>."</Data></string>
     <string name="submit_dialog_title">Send report</string>
     <string name="submit_feedback_info_failed">"Couldn't send report"</string>
     <string name="suggestion_description">Add description here</string>
@@ -544,4 +563,7 @@ To activate your account, follow the
     <string name="upload_log_failed">"Couldn't send logs"</string>
     <string name="warning_field_empty">Enter %1$s</string>
     <string name="warning_field_invalid">Select a valid %1$s</string>
+    <string name="feedback_choose_occurrence_time">Time</string>
+    <string name="feedback_hint_optional">Select</string>
+    <string name="feedback_title_occurrence_time">Select time</string>
 </resources>

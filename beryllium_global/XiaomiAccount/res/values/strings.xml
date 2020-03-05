@@ -83,7 +83,7 @@
     <string name="passport_login">Sign in</string>
     <string name="passport_relogin">Sign in again</string>
     <string name="passport_skip_login">Skip</string>
-    <string name="passport_skip_setup_account_title">"Don't use Mi Cloud?"</string>
+    <string name="passport_skip_setup_account_title">"Don't use Xiaomi Cloud?"</string>
     <string name="passport_skip_setup_account_msg">You can set up a Mi Account later in Settings.</string>
     <string name="passport_confirm_login">Continue</string>
     <string name="passport_find_password_on_web_msg">Visit account.mi.com to reset your password.</string>
@@ -132,6 +132,7 @@
     <string name="passport_change_phone_number">Switch numbers</string>
     <string name="passport_forget_password"><u>Forgot password</u></string>
     <string name="passport_forget_password_no_underline">Forgot password</string>
+    <string name="passport_can_not_receive_verification_code">"Can't receive verification code?"</string>
     <string name="passport_reg_type_email">Email address</string>
     <string name="passport_register_by_email"><u>Create an account using email address</u></string>
     <string name="passport_international_register_by_email">Create an account using email address</string>
@@ -211,12 +212,14 @@ To activate your account, follow the
     <string name="passport_getting_activator_phone">Getting SIM info…</string>
     <string name="passport_verifying_activator_phone">Verifying phone security…</string>
     <string name="passport_querying_phone_info">Requesting account info…</string>
+    <string name="passport_debug_china_successfully_got_phone_from_sim_activate_with_count">国内:SIM卡激活取号成功(成功%s张)</string>
+    <string name="passport_debug_china_failed_to_get_phone_from_sim_activate_but_successfully_from_operator_with_count">国内:SIM卡激活取号失败,运营商取号成功(成功%s张)</string>
+    <string name="passport_debug_china_failed_to_get_phone_from_both_sim_activate_and_operator">国内:SIM卡激活取号失败,运营商取号失败</string>
+    <string name="passport_debug_international_successfully_got_phone_from_sim_activate_with_count">国际:SIM卡激活取号成功(成功%s张)</string>
+    <string name="passport_debug_international_failed_to_get_phone_from_sim_activate">国际:SIM卡激活取号失败</string>
     <string name="passport_area_code_title">Country code</string>
     <string name="passport_area_code_hot">FREQUENTLY USED</string>
-    <string name="passport_user_agreement_p1">Agree to </string>
-    <string name="passport_user_agreement_p2">User Agreement</string>
-    <string name="passport_user_agreement_p3"> and </string>
-    <string name="passport_user_agreement_p4">Privacy Policy</string>
+    <string name="passport_user_agreement_link"><Data>"I've read and agreed to Xiaomi's &lt;a href=%1$s>User Agreement&lt;/a> and &lt;a href=%2$s>Privacy Policy&lt;/a>."</Data></string>
     <string name="passport_privacy_policy">Privacy Policy</string>
     <string name="passport_user_agreement">User Agreement</string>
     <string name="passport_license_host_unreachable">"Can't connect to the network. You can view this page at %s."</string>
@@ -286,21 +289,22 @@ To activate your account, follow the
     <string name="passport_get_innetdate_msg">&lt;font color=Red>Looks like&lt;/font> the number %s has been recycled by your carrier. Check when the number went online?</string>
     <string name="passport_get_innetdate_agree">Check</string>
     <string name="passport_get_innetdate_disagree">No</string>
-    <string name="passport_extra_gdpr_license">Creating your Mi Account means that you agree that Xiaomi will collect, process, and use your personal data, including verification data (e.g., verification codes), Second space data (e.g., information about the ways you use Second space, IDs used in First and Second spaces), and other data specified in our Privacy Policy. Refer to our Privacy Policy to learn how we process and use personal data.</string>
     <string name="passport_talkback_image_captcha">Image verification code</string>
     <string name="passport_talkback_voice_captcha">Play voice verification code</string>
     <string name="passport_talkback_switch_voice_captcha">Switch to voice verification code</string>
     <string name="passport_talkback_switch_image_captcha">Switch to image verification code</string>
-    <string name="passport_license_info_open">Details</string>
-    <string name="passport_license_info_collapse">Collapse</string>
     <string name="passport_first_login_prompt">Mi Account will be created automatically when you sign in for the first time.</string>
     <string name="passport_wx_bind_account_limit">"Can't create account now. Try other sign-in methods."</string>
     <string name="facebook_app_id">2263965750590514</string>
     <string name="fb_login_protocol_scheme">fb2263965750590514</string>
     <string name="server_client_id">29336734752-hkhmuft60qa4qn1ual7etmp6pfo0ib54.apps.googleusercontent.com</string>
+    <string name="passport_ticket_login_select_sim_card">Select SIM card</string>
+    <string name="passport_ticket_login_select_sim_card_cancel">Cancel</string>
+    <string name="passport_ticket_login_select_sim_card_1">SIM 1</string>
+    <string name="passport_ticket_login_select_sim_card_2">SIM 2</string>
     <string name="search_app_name">Mi Account</string>
     <string name="search_mi_account">Mi Account</string>
-    <string name="search_mi_account_key_words">Mi Cloud,Account Setting,Mi Pay Info,Sign out</string>
+    <string name="search_mi_account_key_words">Xiaomi Cloud,Account settings,Mi Pay info,Sign out</string>
     <string name="search_mi_account_desc">Mi Account</string>
     <string name="search_mi_account_path">Settings/Mi Account</string>
     <string name="search_user_detail">Personal info</string>
@@ -425,7 +429,7 @@ You can sign in to your Mi Account using %s now."</string>
     <string name="account_mibi_charge">Top up</string>
     <string name="account_mipay_info">Mi Pay</string>
     <string name="account_xiaomi_service">Services</string>
-    <string name="cloud_service">Mi Cloud</string>
+    <string name="cloud_service">Xiaomi Cloud</string>
     <string name="vip_account_settings">VIP Settings</string>
     <string name="xiao_mi_vip">Mi VIP</string>
     <string name="mi_vip_info">View privileges</string>
@@ -437,8 +441,11 @@ You can sign in to your Mi Account using %s now."</string>
     <string name="activity_not_found_notice">"Can't find the app"</string>
     <string name="scan_barcode_title">To sign in to your Mi Account, scan the QR code</string>
     <string name="talkback_scan_barcode">Scan QR code</string>
-    <string name="scan_barcode">Scan QR code to sign in</string>
     <string name="agreement_and_privacy">Privacy Policy and User Agreement</string>
+    <string name="system_ad">Ads in system apps</string>
+    <string name="system_ad_switch">Ads in system apps</string>
+    <string name="system_ad_summary">"Turn this feature on to allow showing a small number of ads in system apps. These ads help us develop and improve our products and services. You can choose to turn this feature off anytime. Thanks for your support! "</string>
+    <string name="system_ad_list">View related apps.</string>
     <string name="authorize_title">Authorization</string>
     <string name="my_device_title">Current device</string>
     <string name="device_list_title">My devices</string>
@@ -450,6 +457,13 @@ You can sign in to your Mi Account using %s now."</string>
     <string name="device_delete_success_title">Signed out</string>
     <string name="device_delete_success_message">"If you didn't sign in on this device, change your password immediately."</string>
     <string name="change_password">Change password</string>
+    <string name="two_factor_auth">Two factor authentication</string>
+    <string name="two_factor_auth_summary">"When you try to sign in on a new device or in a new location, you'll be notified about this on other connected devices. You'll have to confirm whether such sign-in attempts are authorized by you."</string>
+    <string name="two_factor_auth_method">Authentication method</string>
+    <string name="two_factor_auth_click_confirm">Confirm to sign in</string>
+    <string name="two_factor_auth_click_confirm_summary">"You'll see a notification on other connected Mi devices. Tap the notification to allow signing in on a new device."</string>
+    <string name="two_factor_auth_need_code">Enter code</string>
+    <string name="two_factor_auth_need_code_summary">"You'll see a code on other connected Mi devices. Enter this code on a new device to sign in."</string>
     <string name="completed">All set!</string>
     <string name="no_network_title">"Can't connect to the network."</string>
     <string name="no_network_btn">Refresh</string>
@@ -458,9 +472,9 @@ You can sign in to your Mi Account using %s now."</string>
     <string name="empty_device_list_notice">No devices</string>
     <string name="device_name">Device name</string>
     <string name="sim_card">SIM card</string>
-    <string name="multi_user_not_show_sync_activity_title">"Don't turn on sync with Mi Cloud"</string>
+    <string name="multi_user_not_show_sync_activity_title">"Don't turn on sync with the cloud"</string>
     <string name="multi_user_not_show_sync_activity_message_1">"Looks like you're using your First space Mi Account."</string>
-    <string name="multi_user_not_show_sync_activity_message_2">"In such case, all the data will be synced to your Second space. To avoid this, don't turn on sync with Mi Cloud."</string>
+    <string name="multi_user_not_show_sync_activity_message_2">"In such case, all the data will be synced to your Second space. To avoid this, don't turn on sync with the cloud."</string>
     <string name="find_device_access_denied">"Can't get status, access denied"</string>
     <string name="find_device_account_error">"Can't get status due to account error"</string>
     <string name="find_device_null_credential_error">"Can't get device info, contact Xiaomi customer service"</string>
@@ -510,7 +524,9 @@ You can sign in to your Mi Account using %s now."</string>
     <string name="input_new_pwd">Enter new password</string>
     <string name="confirm_new_pwd">Confirm new password</string>
     <string name="inconsistent_pwd">"Passwords don't match"</string>
-    <string name="same_new_and_old_pwd">"Can't be the same as current password"</string>
+    <string name="same_new_and_old_pwd">New password must be different from the old one</string>
+    <string name="pwd_width_phone_number_or_mail_num">"Password can't contain your phone number, email, or Mi Account ID"</string>
+    <string name="risky_pwd_not_allow">"New password isn't secure. Set a different one."</string>
     <string name="account_security_info_pref_title">Security info</string>
     <string name="account_bind_settings">Accounts</string>
     <string name="account_bind_devices">Devices</string>
@@ -548,7 +564,7 @@ Send this code to the supervisor."</string>
     <string name="exit">Exit</string>
     <string name="passport_privacy_policy_required">Privacy Policy (mandatory)</string>
     <string name="passport_user_agreement_required">User Agreement (mandatory)</string>
-    <string name="kr_license_desc">You must agree to our User Agreement and Privacy Policy before using Mi Account and Mi Cloud services.</string>
+    <string name="kr_license_desc">You must agree to our User Agreement and Privacy Policy before using Mi Account and Xiaomi Cloud services.</string>
     <string name="kr_permission_desc">Permissions required</string>
     <string name="optional_permissions">Optional permissions</string>
     <string name="permission_group_contacts">Contacts</string>
@@ -559,4 +575,6 @@ Send this code to the supervisor."</string>
     <string name="kr_permission_phone_desc">For protecting your account</string>
     <string name="kr_permission_storage_desc">For saving diagnostics</string>
     <string name="kr_permission_sms_desc">For autofilling verification codes</string>
+    <string name="system_ad_switch_failed">"Couldn't apply setting"</string>
+    <string name="ep_unsupported">"Can't sign in to Mi Account on your device"</string>
 </resources>

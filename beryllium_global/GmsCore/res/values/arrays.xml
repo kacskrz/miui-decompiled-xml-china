@@ -85,9 +85,6 @@
         <item>mx</item>
         <item>ru</item>
     </string-array>
-    <string-array name="authentication_scopes">
-        <item>https://www.googleapis.com/auth/abuse.reporting</item>
-    </string-array>
     <string-array name="car_app_mode_labels">
         <item>Release</item>
         <item>Developer</item>
@@ -100,6 +97,12 @@
         <item>Phone-controlled</item>
         <item>Day</item>
         <item>Night</item>
+    </string-array>
+    <string-array name="car_video_resolution_labels">
+        <item>Allow car and phone to negotiate</item>
+        <item>Allow only 480p</item>
+        <item>Allow up to 720p</item>
+        <item>Allow up to 1080p</item>
     </string-array>
     <string-array name="category_descriptions">
         <item>Airport</item>
@@ -218,7 +221,7 @@
     </array>
     <string-array name="login_choices">
         <item>@string/autofill_username_option</item>
-        <item>@string/autofill_password_option</item>
+        <item>@string/common_password</item>
     </string-array>
     <array name="material_google_colors">
         <item>@color/quantum_googblue</item>
@@ -227,20 +230,10 @@
         <item>@color/quantum_googgreen</item>
     </array>
     <string-array name="phone_frequencies">
-        <item>DEFAULT: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,2467,2472,5180,5200,5220,5240,5260, 5280,5300,5320,5500,5520,5540,5560,5580,5600,5620,5640,5660,5680,5700,5720,5745,5765,5785, 5805,5825</item>
-    </string-array>
-    <string-array name="photo_connection_preference_entry_labels">
-        <item>@string/photo_connection_wifi_and_mobile</item>
-        <item>@string/photo_connection_wifi_only</item>
-    </string-array>
-    <string-array name="photo_upload_size_preference_entry_labels">
-        <item>@string/photo_upload_size_standard</item>
-        <item>@string/photo_upload_size_full</item>
-    </string-array>
-    <string-array name="region_frequencies">
-        <item>USA: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,5180,5190,5200,521,5220,5230,5240, 5250,5260,5270,5280,5290,5300,5310,5320,5500,5510,5520,5530,5540,5550,5560,5570,5580,5590, 5600,5610,5620,5630,5640,5660,5670,5680,5690,5700,5710,5720,5745,5755,5765,5775,5785,5795, 5805,5825</item>
-        <item>CAN: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,5250,5260,5270,5280,5290,5300,5310, 5320,5500,5510,5520,5530,5540,5550,5560,5580,5660,5670,5680,5690,5700,5710,5720,5745,5755, 5765,5775,5785,5795,5805,5825</item>
-        <item>EUR: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,2467,2472</item>
+        <item>EUR/Google/Pixel 3: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,2467,2472,5745,5765,5785,5805,5825</item>
+        <item>EUR/*/*: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,2467,2472</item>
+        <item>USA/*/*: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,5180,5200,5220,5240,5260,5280,5300, 5320,5500,5520,5540,5560,5580,5600,5620,5640,5660,5680,5700,5720,5745,5765,5785,5805,5825</item>
+        <item>CAN/*/*: 2412,2417,2422,2427,2432,2437,2442,2447,2452,2457,2462,5260,5280,5300,5320,5500,5520,5540, 5560,5580,5660,5680,5700,5720,5745,5765,5785,5805,5825</item>
     </string-array>
     <string-array name="region_locale_mapping">
         <item>USA:USA</item>
@@ -250,70 +243,101 @@
     <string-array name="setupservices_google_services_agreement">
         <item>@string/setupservices_google_services_agreement</item>
         <item>@string/setupservices_kids_google_services_agreement</item>
+        <item>@string/setupservices_auto_google_services_agreement</item>
+    </string-array>
+    <string-array name="setupservices_google_services_agreement_title">
+        <item>@string/setupservices_google_services_agreement_title</item>
+        <item>@string/setupservices_google_services_agreement_title</item>
+        <item>@string/setupservices_auto_google_services_agreement_title</item>
     </string-array>
     <string-array name="setupservices_google_services_automatic_storage_manager">
+        <item>@string/setupservices_google_services_automatic_storage_manager</item>
         <item>@string/setupservices_google_services_automatic_storage_manager</item>
         <item>@string/setupservices_google_services_automatic_storage_manager</item>
     </string-array>
     <string-array name="setupservices_google_services_backup_dialog_text">
         <item>@string/setupservices_google_services_backup_dialog_text</item>
         <item>@string/setupservices_kids_google_services_backup_dialog_text</item>
+        <item>@string/setupservices_google_services_backup_dialog_text</item>
     </string-array>
     <string-array name="setupservices_google_services_backup_dialog_text_with_photos_v26">
         <item>@string/setupservices_google_services_backup_dialog_text_with_photos_v26</item>
         <item>@string/setupservices_kids_google_services_backup_dialog_text_with_photos_v26</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_v26">
-        <item>@string/setupservices_google_services_backup_v26</item>
-        <item>@string/setupservices_kids_google_services_backup_v26</item>
+        <item>@string/setupservices_google_services_backup_dialog_text_with_photos_v26</item>
     </string-array>
     <string-array name="setupservices_google_services_backup_v26_encrypted">
         <item>@string/setupservices_google_services_backup_v26_encrypted</item>
         <item>@string/setupservices_kids_google_services_backup_v26_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_v26_with_photos">
-        <item>@string/setupservices_google_services_backup_v26_with_photos</item>
-        <item>@string/setupservices_kids_google_services_backup_v26_with_photos</item>
+        <item>@string/setupservices_google_services_backup_v26_encrypted</item>
     </string-array>
     <string-array name="setupservices_google_services_backup_v26_with_photos_encrypted">
         <item>@string/setupservices_google_services_backup_v26_with_photos_encrypted</item>
         <item>@string/setupservices_kids_google_services_backup_v26_with_photos_encrypted</item>
+        <item>@string/setupservices_google_services_backup_v26_with_photos_encrypted</item>
     </string-array>
     <string-array name="setupservices_google_services_description">
         <item>@string/setupservices_google_services_description</item>
         <item>@string/setupservices_kids_google_services_description</item>
+        <item>@string/setupservices_auto_google_services_description</item>
     </string-array>
     <string-array name="setupservices_google_services_location_sharing_details_v28">
         <item>@string/setupservices_google_services_location_sharing_details_v28</item>
         <item>@string/setupservices_kids_google_services_location_sharing_details_v28</item>
+        <item>@string/setupservices_google_services_location_sharing_details_v28</item>
+    </string-array>
+    <string-array name="setupservices_google_services_location_sharing_title_v28">
+        <item>@string/setupservices_google_services_location_sharing_title_v28</item>
+        <item>@string/setupservices_google_services_location_sharing_title_v28</item>
+        <item>@string/setupservices_auto_google_services_location_sharing_title_v28</item>
     </string-array>
     <string-array name="setupservices_google_services_location_sharing_v28">
         <item>@string/setupservices_google_services_location_sharing_v28</item>
         <item>@string/setupservices_kids_google_services_location_sharing_v28</item>
+        <item>@string/setupservices_auto_google_services_location_sharing_v28</item>
     </string-array>
     <string-array name="setupservices_google_services_play">
+        <item>@string/setupservices_google_services_play</item>
         <item>@string/setupservices_google_services_play</item>
         <item>@string/setupservices_google_services_play</item>
     </string-array>
     <string-array name="setupservices_google_services_safety_net">
         <item>@string/setupservices_google_services_safety_net</item>
         <item>@string/setupservices_google_services_safety_net</item>
+        <item>@string/setupservices_google_services_safety_net</item>
     </string-array>
     <string-array name="setupservices_google_services_safety_net_dialog_text">
+        <item>@string/setupservices_google_services_safety_net_dialog_text</item>
         <item>@string/setupservices_google_services_safety_net_dialog_text</item>
         <item>@string/setupservices_google_services_safety_net_dialog_text</item>
     </string-array>
     <string-array name="setupservices_google_services_usage_reporting">
         <item>@string/setupservices_google_services_usage_reporting</item>
         <item>@string/setupservices_kids_google_services_usage_reporting</item>
+        <item>@string/setupservices_auto_google_services_usage_reporting</item>
     </string-array>
     <string-array name="setupservices_google_services_usage_reporting_details">
         <item>@string/setupservices_google_services_usage_reporting_details</item>
         <item>@string/setupservices_kids_google_services_usage_reporting_details</item>
+        <item>@string/setupservices_google_services_usage_reporting_details</item>
     </string-array>
     <string-array name="setupservices_google_services_usage_reporting_my_activity_settings">
         <item>@string/setupservices_google_services_usage_reporting_my_activity_settings</item>
         <item>@string/setupservices_kids_google_services_usage_reporting_my_activity_settings</item>
+        <item>@string/setupservices_google_services_usage_reporting_my_activity_settings</item>
+    </string-array>
+    <string-array name="setupservices_google_services_usage_reporting_title">
+        <item>@string/setupservices_google_services_usage_reporting_title</item>
+        <item>@string/setupservices_google_services_usage_reporting_title</item>
+        <item>@string/setupservices_auto_google_services_usage_reporting_title</item>
+    </string-array>
+    <string-array name="sharing_index_settings_keywords">
+        <item>Nearby</item>
+        <item>Sharing</item>
+        <item>Bluetooth</item>
+        <item>Wifi</item>
+        <item>Wi-Fi</item>
+        <item>File</item>
+        <item>Fast Share</item>
     </string-array>
     <array name="smartdevice_google_500_colors">
         <item>@color/smartdevice_google_blue_500</item>
@@ -321,14 +345,6 @@
         <item>@color/smartdevice_google_green_500</item>
         <item>@color/smartdevice_google_yellow_500</item>
     </array>
-    <string-array name="video_connection_preference_entry_labels">
-        <item>@string/photo_connection_wifi_and_mobile</item>
-        <item>@string/photo_connection_wifi_only</item>
-    </string-array>
-    <string-array name="video_connection_preference_entry_summaries">
-        <item>@string/photo_video_connection_preference_entry_summary_wifi_and_mobile</item>
-        <item>@null</item>
-    </string-array>
     <array name="wallet_progress_spinner_colors">
         <item>@color/material_google_blue_500</item>
         <item>@color/material_google_red_500</item>

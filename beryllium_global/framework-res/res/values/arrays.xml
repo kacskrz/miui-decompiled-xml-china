@@ -44,6 +44,36 @@
     <array name="config_allowedManagedServicesOnLowRamDevices" />
     <array name="config_allowedSecureInstantAppSettings" />
     <array name="config_allowedSystemInstantAppSettings" />
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>5</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
+    </integer-array>
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+    </integer-array>
+    <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>800</item>
+        <item>2000</item>
+        <item>4000</item>
+    </integer-array>
+    <array name="config_apexBootImagePinnerServiceFiles" />
     <integer-array name="config_apfEthTypeBlackList">
         <item>0x000088A2</item>
         <item>0x000088A4</item>
@@ -231,9 +261,6 @@
         <item>353</item>
     </string-array>
     <array name="config_cdma_dun_supported_types" />
-    <string-array name="config_cdma_home_system">
-        <item>1</item>
-    </string-array>
     <array name="config_cdma_international_roaming_indicators" />
     <array name="config_cell_retries_per_error_code" />
     <integer-array name="config_clockTickVibePattern">
@@ -241,6 +268,9 @@
         <item>30</item>
     </integer-array>
     <array name="config_convert_to_emergency_number_map" />
+    <string-array name="config_defaultCellBroadcastReceiverPkgs">
+        <item>com.android.cellbroadcastreceiver</item>
+    </string-array>
     <array name="config_defaultFirstUserRestrictions" />
     <integer-array name="config_defaultNotificationVibePattern">
         <item>0</item>
@@ -271,46 +301,63 @@
     </string-array>
     <array name="config_default_vm_number" />
     <array name="config_deviceSpecificSystemServices" />
+    <array name="config_disableApkUnlessMatchedSku_skus_list" />
+    <array name="config_disableApksUnlessMatchedSku_apk_list" />
     <string-array name="config_disabledUntilUsedPreinstalledImes">
         <item>com.android.inputmethod.latin</item>
     </string-array>
-    <integer-array name="config_dynamicHysteresisBrightLevels">
-        <item>2000</item>
-        <item>2000</item>
-        <item>1000</item>
-        <item>1000</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-    </integer-array>
-    <integer-array name="config_dynamicHysteresisDarkLevels">
-        <item>800</item>
-        <item>800</item>
-        <item>800</item>
-        <item>800</item>
-        <item>800</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-    </integer-array>
-    <integer-array name="config_dynamicHysteresisLuxLevels">
-        <item>2</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>800</item>
-        <item>2000</item>
-        <item>4000</item>
-    </integer-array>
+    <array name="config_displayWhiteBalanceAmbientColorTemperatures" />
+    <array name="config_displayWhiteBalanceBaseThresholds">
+        <item>0.0</item>
+    </array>
+    <array name="config_displayWhiteBalanceDecreaseThresholds">
+        <item>0.1</item>
+    </array>
+    <array name="config_displayWhiteBalanceDisplayColorTemperatures" />
+    <string-array name="config_displayWhiteBalanceDisplayNominalWhite">
+        <item>0.950456</item>
+        <item>1.000000</item>
+        <item>1.089058</item>
+    </string-array>
+    <string-array name="config_displayWhiteBalanceDisplayPrimaries">
+        <item>0.412315</item>
+        <item>0.212600</item>
+        <item>0.019327</item>
+        <item>0.357600</item>
+        <item>0.715200</item>
+        <item>0.119200</item>
+        <item>0.180500</item>
+        <item>0.072200</item>
+        <item>0.950633</item>
+        <item>0.950456</item>
+        <item>1.000000</item>
+        <item>1.089058</item>
+    </string-array>
+    <array name="config_displayWhiteBalanceIncreaseThresholds">
+        <item>0.1</item>
+    </array>
+    <string-array name="config_dropboxLowPriorityTags">
+        <item>data_app_strictmode</item>
+        <item>data_app_wtf</item>
+        <item>keymaster</item>
+        <item>netstats</item>
+        <item>system_app_strictmode</item>
+        <item>system_app_wtf</item>
+        <item>system_server_strictmode</item>
+        <item>system_server_wtf</item>
+    </string-array>
     <integer-array name="config_emergency_mcc_codes">
         <item>404</item>
         <item>405</item>
     </integer-array>
-    <string-array name="config_ephemeralResolverPackage">
-        <item>com.google.android.gms</item>
-    </string-array>
+    <array name="config_ephemeralResolverPackage" />
     <array name="config_ethernet_interfaces" />
+    <array name="config_face_acquire_biometricprompt_ignorelist" />
+    <array name="config_face_acquire_enroll_ignorelist" />
+    <array name="config_face_acquire_keyguard_ignorelist" />
+    <array name="config_face_acquire_vendor_biometricprompt_ignorelist" />
+    <array name="config_face_acquire_vendor_enroll_ignorelist" />
+    <array name="config_face_acquire_vendor_keyguard_ignorelist" />
     <string-array name="config_globalActionsList">
         <item>power</item>
         <item>restart</item>
@@ -318,17 +365,7 @@
         <item>logout</item>
         <item>bugreport</item>
         <item>screenshot</item>
-    </string-array>
-    <string-array name="config_gpsParameters">
-        <item>SUPL_HOST=supl.google.com</item>
-        <item>SUPL_PORT=7275</item>
-        <item>SUPL_VER=0x20000</item>
-        <item>SUPL_MODE=1</item>
-        <item>SUPL_ES=1</item>
-        <item>LPP_PROFILE=0</item>
-        <item>USE_EMERGENCY_PDN_FOR_EMERGENCY_SUPL=1</item>
-        <item>A_GLONASS_POS_PROTOCOL_SELECT=0</item>
-        <item>GPS_LOCK=0</item>
+        <item>emergency</item>
     </string-array>
     <array name="config_hideWhenDisabled_packageNames" />
     <integer-array name="config_keyboardTapVibePattern">
@@ -342,6 +379,8 @@
         <item>/system/framework/oat/arm64/services.odex</item>
         <item>/system/framework/oat/arm/services.odex</item>
     </string-array>
+    <array name="config_localPrivateDisplayPorts" />
+    <array name="config_locationExtraPackageNames" />
     <string-array name="config_locationProviderPackageNames">
         <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
@@ -382,20 +421,12 @@
         <item>com.xiaomi.xmsf</item>
     </string-array>
     <array name="config_mobile_hotspot_provision_app" />
-    <string-array name="config_mobile_tcp_buffers">
-        <item>5gnr:2097152,6291456,16777216,512000,2097152,8388608</item>
-        <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
-        <item>lte_ca:4096,6291456,12582912,4096,1048576,2097152</item>
-        <item>umts:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hspa:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hsupa:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hsdpa:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hspap:4094,87380,1220608,4096,16384,1220608</item>
-        <item>edge:4093,26280,35040,4096,16384,35040</item>
-        <item>gprs:4092,8760,11680,4096,8760,11680</item>
-        <item>evdo:4094,87380,524288,4096,16384,262144</item>
-    </string-array>
+    <array name="config_mobile_tcp_buffers" />
     <array name="config_networkNotifySwitches" />
+    <string-array name="config_networkSupportedKeepaliveCount">
+        <item>0,1</item>
+        <item>1,3</item>
+    </string-array>
     <string-array name="config_nightDisplayColorTemperatureCoefficients">
         <item>0.0</item>
         <item>0.0</item>
@@ -419,8 +450,8 @@
         <item>-0.198650895</item>
     </string-array>
     <string-array name="config_nonBlockableNotificationPackages">
-        <item>com.google.android.setupwizard</item>
-        <item>com.google.android.apps.restore</item>
+        <item>com.android.dialer</item>
+        <item>com.android.messaging</item>
     </string-array>
     <integer-array name="config_notificationFallbackVibePattern">
         <item>0</item>
@@ -431,6 +462,7 @@
     <string-array name="config_notificationSignalExtractors">
         <item>com.android.server.notification.NotificationChannelExtractor</item>
         <item>com.android.server.notification.NotificationAdjustmentExtractor</item>
+        <item>com.android.server.notification.BubbleExtractor</item>
         <item>com.android.server.notification.ValidateNotificationPeople</item>
         <item>com.android.server.notification.PriorityExtractor</item>
         <item>com.android.server.notification.ZenModeExtractor</item>
@@ -438,8 +470,12 @@
         <item>com.android.server.notification.NotificationIntrusivenessExtractor</item>
         <item>com.android.server.notification.VisibilityExtractor</item>
         <item>com.android.server.notification.BadgeExtractor</item>
+        <item>com.android.server.notification.CriticalNotificationExtractor</item>
     </string-array>
     <array name="config_oemUsbModeOverride" />
+    <string-array name="config_priorityOnlyDndExemptPackages">
+        <item>com.android.dialer</item>
+    </string-array>
     <integer-array name="config_protectedNetworks">
         <item>10</item>
         <item>11</item>
@@ -447,6 +483,8 @@
         <item>14</item>
         <item>15</item>
     </integer-array>
+    <array name="config_restrictedImagesServices" />
+    <array name="config_restrictedPreinstalledCarrierApps" />
     <array name="config_ringtoneEffectUris" />
     <integer-array name="config_safeModeEnabledVibePattern">
         <item>0</item>
@@ -456,8 +494,15 @@
         <item>500</item>
         <item>600</item>
     </integer-array>
+    <integer-array name="config_screenBrighteningThresholds">
+        <item>0</item>
+    </integer-array>
     <array name="config_screenBrightnessBacklight" />
     <array name="config_screenBrightnessNits" />
+    <integer-array name="config_screenDarkeningThresholds">
+        <item>0</item>
+    </integer-array>
+    <array name="config_screenThresholdLevels" />
     <integer-array name="config_scrollBarrierVibePattern">
         <item>0</item>
         <item>15</item>
@@ -512,43 +557,15 @@
         <item>1,sim,0,modem</item>
     </string-array>
     <array name="config_testLocationProviders" />
-    <array name="config_tether_apndata" />
-    <string-array name="config_tether_bluetooth_regexs">
-        <item>bnep\\d</item>
-        <item>bt-pan</item>
-    </string-array>
-    <string-array name="config_tether_dhcp_range">
-        <item>192.168.42.2</item>
-        <item>192.168.42.254</item>
-        <item>192.168.43.2</item>
-        <item>192.168.43.254</item>
-        <item>192.168.44.2</item>
-        <item>192.168.44.254</item>
-        <item>192.168.45.2</item>
-        <item>192.168.45.254</item>
-        <item>192.168.46.2</item>
-        <item>192.168.46.254</item>
-        <item>192.168.47.2</item>
-        <item>192.168.47.254</item>
-        <item>192.168.48.2</item>
-        <item>192.168.48.254</item>
-        <item>192.168.49.2</item>
-        <item>192.168.49.254</item>
-        <item>192.168.50.2</item>
-        <item>192.168.50.254</item>
-        <item>192.168.51.2</item>
-        <item>192.168.51.254</item>
-    </string-array>
+    <array name="config_tether_bluetooth_regexs" />
+    <array name="config_tether_dhcp_range" />
     <integer-array name="config_tether_upstream_types">
         <item>1</item>
         <item>0</item>
         <item>5</item>
         <item>7</item>
     </integer-array>
-    <string-array name="config_tether_usb_regexs">
-        <item>usb\\d</item>
-        <item>rndis\\d</item>
-    </string-array>
+    <array name="config_tether_usb_regexs" />
     <string-array name="config_tether_wifi_regexs">
         <item>softap0</item>
         <item>wigig0</item>
@@ -573,10 +590,45 @@
         <item>softap1</item>
         <item>softap2</item>
     </string-array>
+    <array name="config_wifi_fatal_firmware_alert_error_code_list" />
+    <array name="correct_brightness_game">
+        <item>0.0733</item>
+        <item>0.0733</item>
+        <item>0.0733</item>
+        <item>0.0782</item>
+        <item>0.0879</item>
+        <item>0.0938</item>
+        <item>0.0977</item>
+        <item>0.1075</item>
+        <item>0.1075</item>
+    </array>
+    <string-array name="correct_brightness_game_white_list">
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.tmgp.sgame</item>
+    </string-array>
+    <array name="correct_brightness_video">
+        <item>0.0425</item>
+        <item>0.0425</item>
+        <item>0.0425</item>
+        <item>0.0582</item>
+        <item>0.0679</item>
+        <item>0.0838</item>
+        <item>0.0977</item>
+        <item>0.1075</item>
+        <item>0.1075</item>
+    </array>
+    <string-array name="correct_brightness_video_white_list">
+        <item>com.qiyi.video</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.youku.phone</item>
+        <item>tv.danmaku.bili</item>
+    </string-array>
     <array name="dial_string_replace" />
     <array name="disallowed_apps_managed_device" />
     <array name="disallowed_apps_managed_profile" />
     <array name="disallowed_apps_managed_user" />
+    <array name="face_acquired_vendor" />
+    <array name="face_error_vendor" />
     <string-array name="fingerprint_acquired_vendor">
         <item>Try again</item>
         <item></item>
@@ -613,6 +665,16 @@
         <item>Other</item>
         <item>Custom</item>
     </string-array>
+    <integer-array name="low_lux_level">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </integer-array>
     <integer-array name="maps_starting_lat_lng">
         <item>36149777</item>
         <item>-95993398</item>
@@ -649,6 +711,7 @@
     <string-array name="no_ems_support_sim_operators">
         <item>20404;suffix;BAE0000000000000</item>
     </string-array>
+    <array name="non_removable_euicc_slots" />
     <array name="preloaded_color_state_lists" />
     <array name="preloaded_drawables">
         <item>@drawable/btn_default_pressed_holo_light</item>
@@ -775,12 +838,7 @@
         <item>com.android.providers.downloads.ui</item>
         <item>com.android.documentsui</item>
     </string-array>
-    <string-array name="resolver_target_actions_pin">
-        <item>@string/pin_target</item>
-        <item>@string/app_info</item>
-    </string-array>
-    <string-array name="resolver_target_actions_unpin">
-        <item>@string/unpin_target</item>
+    <string-array name="resolver_target_actions">
         <item>@string/app_info</item>
     </string-array>
     <array name="sim_colors">
@@ -863,7 +921,9 @@
         <item>ar-YE</item>
         <item>ar-YE-u-nu-latn</item>
         <item>as-IN</item>
+        <item>as-IN-u-nu-latn</item>
         <item>asa-TZ</item>
+        <item>ast-ES</item>
         <item>az-Cyrl-AZ</item>
         <item>az-Latn-AZ</item>
         <item>bas-CM</item>
@@ -898,6 +958,7 @@
         <item>de-BE</item>
         <item>de-CH</item>
         <item>de-DE</item>
+        <item>de-IT</item>
         <item>de-LI</item>
         <item>de-LU</item>
         <item>dje-NE</item>
@@ -1015,6 +1076,8 @@
         <item>en-ZW</item>
         <item>es-AR</item>
         <item>es-BO</item>
+        <item>es-BR</item>
+        <item>es-BZ</item>
         <item>es-CL</item>
         <item>es-CO</item>
         <item>es-CR</item>
@@ -1114,20 +1177,20 @@
         <item>ha-NE</item>
         <item>ha-NG</item>
         <item>haw-US</item>
-        <item>iw-IL</item>
         <item>hi-IN</item>
         <item>hr-BA</item>
         <item>hr-HR</item>
         <item>hsb-DE</item>
         <item>hu-HU</item>
         <item>hy-AM</item>
-        <item>in-ID</item>
         <item>ig-NG</item>
         <item>ii-CN</item>
+        <item>in-ID</item>
         <item>is-IS</item>
         <item>it-CH</item>
         <item>it-IT</item>
         <item>it-SM</item>
+        <item>iw-IL</item>
         <item>ja-JP</item>
         <item>jgo-CM</item>
         <item>jmc-TZ</item>
@@ -1300,7 +1363,8 @@
         <item>yav-CM</item>
         <item>yo-BJ</item>
         <item>yo-NG</item>
-        <item>yue-HK</item>
+        <item>yue-Hans-CN</item>
+        <item>yue-Hant-HK</item>
         <item>zgh-MA</item>
         <item>zh-Hans-CN</item>
         <item>zh-Hans-HK</item>
@@ -1311,6 +1375,13 @@
         <item>zh-Hant-TW</item>
         <item>zu-ZA</item>
     </string-array>
+    <string-array name="target_activity">
+        <item>org.iqiyi.video.activity.PlayerActivity</item>
+        <item>com.tencent.qqlive.ona.activity.VideoDetailActivity</item>
+        <item>com.youku.ui.activity.DetailActivity</item>
+        <item>tv.danmaku.bili.ui.video.VideoDetailsActivity</item>
+    </string-array>
+    <array name="unloggable_phone_numbers" />
     <string-array name="update_brightness_configuration_white_list">
         <item>com.tencent.tmgp.pubgmhd</item>
         <item>com.tencent.tmgp.sgame</item>
@@ -1332,22 +1403,8 @@
         <item>com.miui.home</item>
         <item>com.mi.android.globallauncher</item>
     </string-array>
-    <string-array name="vendor_required_apps_managed_profile">
-        <item>com.android.vending</item>
-        <item>com.google.android.gms</item>
-        <item>com.google.android.contacts</item>
-    </string-array>
-    <string-array name="vendor_required_apps_managed_user">
-        <item>com.android.vending</item>
-        <item>com.google.android.gms</item>
-        <item>com.google.android.contacts</item>
-        <item>com.google.android.googlequicksearchbox</item>
-        <item>com.google.android.launcher</item>
-        <item>com.android.launcher</item>
-        <item>com.google.android.dialer</item>
-        <item>com.google.android.apps.messaging</item>
-    </string-array>
-    <array name="webview_list" />
+    <array name="vendor_required_apps_managed_profile" />
+    <array name="vendor_required_apps_managed_user" />
     <string-array name="wfcOperatorErrorAlertMessages">
         <item>To make calls and send messages over Wi-Fi, first ask your carrier to set up this service. Then turn on Wi-Fi calling again from Settings. (Error code: %1$s)</item>
     </string-array>
@@ -1355,7 +1412,17 @@
         <item>Issue registering Wi‑Fi calling with your carrier: %1$s</item>
     </string-array>
     <string-array name="wfcSpnFormats">
-        <item>%s</item>
-        <item>%s Wi-Fi Calling</item>
+        <item>@string/wfcSpnFormat_spn</item>
+        <item>@string/wfcSpnFormat_spn_wifi_calling</item>
+        <item>@string/wfcSpnFormat_wlan_call</item>
+        <item>@string/wfcSpnFormat_spn_wlan_call</item>
+        <item>@string/wfcSpnFormat_spn_wifi</item>
+        <item>@string/wfcSpnFormat_wifi_calling_bar_spn</item>
+        <item>@string/wfcSpnFormat_spn_vowifi</item>
+        <item>@string/wfcSpnFormat_wifi_calling</item>
+        <item>@string/wfcSpnFormat_wifi</item>
+        <item>@string/wfcSpnFormat_wifi_calling_wo_hyphen</item>
+        <item>@string/wfcSpnFormat_vowifi</item>
+        <item>@string/wfcSpnFormat_spn_wifi_calling_vo_hyphen</item>
     </string-array>
 </resources>

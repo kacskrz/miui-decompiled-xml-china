@@ -4,6 +4,10 @@
         <item quantity="other">Features for %1$s</item>
         <item quantity="one">Feature for %1$s</item>
     </plurals>
+    <plurals name="apps_scanned_days_ago">
+        <item quantity="other">Apps scanned %1$d days ago</item>
+        <item quantity="one">1 day ago</item>
+    </plurals>
     <plurals name="content_description_rated">
         <item quantity="other">Your rating: %1$s stars</item>
         <item quantity="one">Your rating: %1$s star</item>
@@ -56,10 +60,6 @@
         <item quantity="other">%1$d minutes left</item>
         <item quantity="one">1 minute left</item>
     </plurals>
-    <plurals name="myapps_security_last_scanned_days_ago">
-        <item quantity="other">Apps scanned %1$d days ago</item>
-        <item quantity="one"></item>
-    </plurals>
     <plurals name="myapps_security_recently_removed_message">
         <item quantity="other">%1$d harmful apps removed. %2$s.</item>
         <item quantity="one">%1$d harmful app removed. %2$s.</item>
@@ -84,6 +84,54 @@
         <item quantity="other">%1$d apps updated</item>
         <item quantity="one">%1$d app updated</item>
     </plurals>
+    <plurals name="play_protect_found_harmful_apps_with_count_msg">
+        <item quantity="other">%1$s harmful apps found</item>
+        <item quantity="one">Harmful app found</item>
+    </plurals>
+    <plurals name="protect_app_installation_permissions_page_body">
+        <item quantity="other">These apps can install unknown apps, which could put your device and personal information at risk. Deny permission to prevent them from installing.</item>
+        <item quantity="one">This app can install unknown apps, which could put your device and personal information at risk. Deny permission to prevent them from installing.</item>
+    </plurals>
+    <plurals name="protect_home_review_installation_permissions_body_pre_o">
+        <item quantity="other">%1$d apps can install unknown apps, which could put your device and personal information at risk</item>
+        <item quantity="one">1 app can install unknown apps, which could put your device and personal information at risk</item>
+    </plurals>
+    <plurals name="protect_home_security_summary_app_installation_permissions_body">
+        <item quantity="other">%1$d permissions reminders. &lt;a href=\"\">View&lt;/a></item>
+        <item quantity="one">1 permissions reminder. &lt;a href=\"\">View&lt;/a></item>
+    </plurals>
+    <plurals name="protect_home_security_summary_app_installation_permissions_body_content_description">
+        <item quantity="other">%1$d permissions reminders. View reminders</item>
+        <item quantity="one">1 permissions reminder. View reminder</item>
+    </plurals>
+    <plurals name="protect_home_security_summary_detoxed_suspended_app_warning_body">
+        <item quantity="other">%1$d unsafe apps found. &lt;a href=\"\">View&lt;/a></item>
+        <item quantity="one">1 unsafe app found. &lt;a href=\"\">View&lt;/a></item>
+    </plurals>
+    <plurals name="protect_home_security_summary_detoxed_suspended_app_warning_body_content_description">
+        <item quantity="other">%1$d unsafe apps found. View warnings</item>
+        <item quantity="one">1 unsafe app found. View warning</item>
+    </plurals>
+    <plurals name="protect_home_security_summary_muws_warning_body">
+        <item quantity="other">%1$d security warnings. &lt;a href=\"\">View&lt;/a></item>
+        <item quantity="one">1 security warning. &lt;a href=\"\">View&lt;/a></item>
+    </plurals>
+    <plurals name="protect_home_security_summary_muws_warning_body_content_description">
+        <item quantity="other">%1$d security warnings. View warnings</item>
+        <item quantity="one">1 security warning. View warning</item>
+    </plurals>
+    <plurals name="protect_home_security_summary_non_detoxed_suspended_app_warning_body">
+        <item quantity="other">%1$d privacy warnings. &lt;a href=\"\">View&lt;/a></item>
+        <item quantity="one">1 privacy warning. &lt;a href=\"\">View&lt;/a></item>
+    </plurals>
+    <plurals name="protect_home_security_summary_non_detoxed_suspended_app_warning_body_content_description">
+        <item quantity="other">%1$d privacy warnings. View warnings</item>
+        <item quantity="one">1 privacy warning. View warning</item>
+    </plurals>
+    <plurals name="protect_home_security_summary_privacy_alert_body">
+        <item quantity="other">%1$d privacy warnings</item>
+        <item quantity="one">1 privacy warning</item>
+    </plurals>
     <plurals name="review_feedback_helpful_icon_description">
         <item quantity="other">%1$d users found this review helpful. Mark comment as helpful</item>
         <item quantity="one">%1$d user found this review helpful. Mark comment as helpful</item>
@@ -91,6 +139,10 @@
     <plurals name="review_feedback_unmark_helpful_icon_description">
         <item quantity="other">%1$d users found this review helpful. Unmark comment as helpful</item>
         <item quantity="one">%1$d user found this review helpful. Unmark comment as helpful</item>
+    </plurals>
+    <plurals name="review_helpful_count_label">
+        <item quantity="other">%1$s people found this helpful</item>
+        <item quantity="one">%1$s person found this helpful</item>
     </plurals>
     <plurals name="review_snippet_count">
         <item quantity="other">in %1$s reviews</item>
@@ -125,9 +177,13 @@
         <item quantity="other">Download %1$d new features?</item>
         <item quantity="one">Download new feature?</item>
     </plurals>
-    <plurals name="stars_without_numbers">
-        <item quantity="other">stars</item>
-        <item quantity="one">star</item>
+    <plurals name="star_rating_star_selected">
+        <item quantity="other">%1$s stars selected</item>
+        <item quantity="one">%1$s star selected</item>
+    </plurals>
+    <plurals name="star_rating_star_unselected">
+        <item quantity="other">%1$s stars unselected</item>
+        <item quantity="one">%1$s star unselected</item>
     </plurals>
     <plurals name="unauth_updates_cancellation_progress_text">
         <item quantity="other">Updating Google apps…%1$d apps left</item>
@@ -150,15 +206,19 @@
         <item quantity="one">Last used %1$d month ago</item>
     </plurals>
     <plurals name="uninstall_manager_subtitle_accessibility_v2">
-        <item quantity="other">To install apps or updates on this device, delete apps you no longer need. You can also free up space by deleting media files in Storage Settings.</item>
-        <item quantity="one">To install app or update on this device, delete apps you no longer need. You can also free up space by deleting media files in Storage Settings.</item>
+        <item quantity="other">To install apps or updates on this device, remove apps you no longer need. You can also free up space by deleting media files in Storage Settings.</item>
+        <item quantity="one">To install app or update on this device, remove apps you no longer need. You can also free up space by deleting media files in Storage Settings.</item>
     </plurals>
     <plurals name="uninstall_manager_subtitle_exact_v2">
-        <item quantity="other">To install apps or updates on this device, delete apps you no longer need. You can also free up space by deleting media files in &lt;a href=\"\">Settings > Storage&lt;/a>.</item>
-        <item quantity="one">To install app or update on this device, delete apps you no longer need. You can also free up space by deleting media files in &lt;a href=\"\">Settings > Storage&lt;/a>.</item>
+        <item quantity="other">To install apps or updates on this device, remove apps you no longer need. You can also free up space by deleting media files in &lt;a href=\"\">Settings > Storage&lt;/a>.</item>
+        <item quantity="one">To install app or update on this device, remove apps you no longer need. You can also free up space by deleting media files in &lt;a href=\"\">Settings > Storage&lt;/a>.</item>
     </plurals>
     <plurals name="uninstall_manager_subtitle_fallback_v2">
-        <item quantity="other">To install apps or updates on this device, delete apps you no longer need. You can also free up space by deleting media files in Settings > Storage.</item>
-        <item quantity="one">To install app or update on this device, delete apps you no longer need. You can also free up space by deleting media files in Settings > Storage.</item>
+        <item quantity="other">To install apps or updates on this device, remove apps you no longer need. You can also free up space by deleting media files in Settings > Storage.</item>
+        <item quantity="one">To install app or update on this device, remove apps you no longer need. You can also free up space by deleting media files in Settings > Storage.</item>
+    </plurals>
+    <plurals name="uninstall_suggestions_notification_var_a_body">
+        <item quantity="other">"We found %1$d apps you haven't used in a while. Removing them would give you %2$dMB of storage space"</item>
+        <item quantity="one">"We found %1$d app you haven't used in a while. Removing it would give you %2$dMB of storage space"</item>
     </plurals>
 </resources>
