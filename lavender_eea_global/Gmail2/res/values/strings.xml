@@ -2,7 +2,6 @@
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
-    <string name="abc_action_menu_overflow_description">More options</string>
     <string name="abc_action_mode_done">Done</string>
     <string name="abc_capital_off">OFF</string>
     <string name="abc_capital_on">ON</string>
@@ -243,7 +242,6 @@ Contact your IT admin for help."</string>
     <string name="account_waiting_for_folders_msg">Loading folder list…</string>
     <string name="accountprovider_gmail_account_list_uri">content://com.google.android.gm.sapi/accounts</string>
     <string name="accountprovider_nongmail_account_list_uri">content://com.google.android.gm.email.provider/uiaccts?suppress_combined=true</string>
-    <string name="action_label">Return</string>
     <string name="activity_create_label_shortcut">Gmail label</string>
     <string name="activity_folder_selection">Choose folder</string>
     <string name="activity_gmail">@string/app_name</string>
@@ -305,10 +303,10 @@ Contact your IT admin for help."</string>
     <string name="address_print_display_format">%1$s &amp;lt;%2$s&amp;gt;</string>
     <string name="address_spoofing">Be careful with this message. Someone might be trying to trick you by using similar-looking characters (such as Σ and E) in the email addresses contained in this message.</string>
     <string name="admin_support_msg">This action has been disabled. Contact your IT admin to learn more.</string>
+    <string name="ag_search_hint">Search mail</string>
     <string name="all_folders_heading">All labels</string>
     <string name="always_show_images">Always show pictures from this sender</string>
     <string name="always_show_images_toast">Pictures from this sender will be shown automatically.</string>
-    <item type="string" name="ampm_circle_radius_multiplier">0.19</item>
     <string name="anomalous_replyto">This email claims to come from %2$s, but replies will go to an email address at another domain.</string>
     <string name="antivirus">Be careful with this message. It might contain a virus or a malicious link.</string>
     <string name="app_hint_text">You will be able to read your email through the %1$s app.</string>
@@ -323,6 +321,10 @@ Contact your IT admin for help."</string>
     <string name="app_restrictions_default_signature_title">Default Email Signature</string>
     <string name="app_restrictions_email_address_description">A variable field that supports a specific email address (janedoe@company.com) or templated value ($emailaddress$). EMMs can use this field to pull user credentials from Active Directory.</string>
     <string name="app_restrictions_email_address_title">Email Address</string>
+    <string name="app_restrictions_exchange_authentication_type_description">A list of strings that contains the allowed authentication types, which are Modern Authentication (allow_modern_authentication) and Basic Authentication (allow_basic_authentication). If nothing is provided, both Basic and Modern Authentication are allowed.</string>
+    <string name="app_restrictions_exchange_authentication_type_title">Authentication Types</string>
+    <string name="app_restrictions_exchange_authentication_type_value_basic">allow_basic_authentication</string>
+    <string name="app_restrictions_exchange_authentication_type_value_modern">allow_modern_authentication</string>
     <string name="app_restrictions_exchange_device_id_description">A string containing the EAS (Exchange ActiveSync) device ID, which may be used by some EMM gateways to correlate devices. (This setting is ignored when set to empty or an Exchange account is already presented in the managed profile).</string>
     <string name="app_restrictions_exchange_device_id_title">Device Identifier</string>
     <string name="app_restrictions_exchange_host_description">The complete hostname for the ActiveSync server, such as hostname.company.com:443/path. The hostname may be accessed through an EMM on-site proxy server, a load-balanced VIP (virtual IP) serving multiple ActiveSync servers, or directly to the public CAS (client access server). Specified host should not be redirected to another host. Defaults to port 443 unless specified otherwise.</string>
@@ -331,8 +333,8 @@ Contact your IT admin for help."</string>
     <string name="app_restrictions_exchange_login_certificate_alias_title">Login Certificate Alias</string>
     <string name="app_restrictions_exchange_ssl_required_description">A boolean value that enables and requires SSL on port numbers used with Hostname when set to True (default). (This setting is ignored when port 443 is used in Hostname).</string>
     <string name="app_restrictions_exchange_ssl_required_title">SSL Required</string>
-    <string name="app_restrictions_exchange_trust_all_certificates_description">A boolean value that disables validation checks on SSL certificates used in communications between ActiveSync servers, proxies, or gateways, and other email servers. Set to True to disable validation checks when using self-signed Certificates or for testing purposes. By default, this value is False: validation checks are performed.</string>
-    <string name="app_restrictions_exchange_trust_all_certificates_title">Trust all Certificates</string>
+    <string name="app_restrictions_exchange_trust_all_certificates_description">A boolean value that disables validation checks on SSL certificates used in communications between ActiveSync servers, proxies, or gateways, and other email servers. Set to True to disable validation checks when using self-signed Certificates or for testing purposes only. By default, this value is False: validation checks are performed. This value must always be set to False in production. When set to True, Gmail is vulnerable to man-in-the-middle attacks, and communication with servers and proxies may be insecure.</string>
+    <string name="app_restrictions_exchange_trust_all_certificates_title">Trust all Certificates (Warning: for testing purposes only)</string>
     <string name="app_restrictions_exchange_username_description">"A variable field for user's Active Directory username that can be specified as a direct username (janedoe) or templated value ($username$). The username and user's email address may be different."</string>
     <string name="app_restrictions_exchange_username_title">Username</string>
     <string name="application_mime_type">application/gm-email-ls</string>
@@ -417,7 +419,7 @@ Contact your IT admin for help."</string>
     <string name="calendar_permission_no_thanks">No thanks</string>
     <string name="calendar_permission_recommendation_text">"Without access, your calendar won't sync with your phone. Change permissions in your device's app settings."</string>
     <string name="calendar_permission_settings">Settings</string>
-    <string name="calendar_promotion_font_medium">sans-serif</string>
+    <string name="calendar_promotion_font_medium">sans-serif-medium</string>
     <string name="calendar_promotion_font_regular">sans-serif</string>
     <string name="cancel_button_label">Cancel</string>
     <string name="cancel_confirmation_in_conversation_view">Scheduled send canceled and message reverted to draft</string>
@@ -431,6 +433,7 @@ Contact your IT admin for help."</string>
     <string name="cannot_connect">"Couldn't connect to network"</string>
     <string name="cannot_delete_when_offline">Scheduled message cannot be deleted when offline</string>
     <string name="cant_access_certificate">"Can't access certificate"</string>
+    <string name="cant_access_certificate_body">"Your email can't sync without this certificate"</string>
     <string name="cant_connect_server_explanation">Try again later, or contact your IT admin</string>
     <string name="cant_connect_server_header">"Can't reach the server"</string>
     <string name="cant_move_or_change_labels">"Can't move because selection contains multiple accounts."</string>
@@ -490,6 +493,9 @@ Contact your IT admin for help."</string>
     <string name="change_folders_selection_dialog_title">Label as</string>
     <string name="change_sync_settings">Change sync settings</string>
     <string name="channel_assist_dismiss_button_text">Dismiss</string>
+    <string name="channel_assist_info_button_text">More information</string>
+    <string name="channel_assist_info_description">Availability information pulled from Google Calendar</string>
+    <string name="channel_assist_info_title">Recipient availability</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d / %2$d</string>
@@ -499,8 +505,6 @@ Contact your IT admin for help."</string>
     <string name="chips_permission_text">Allow contacts suggestions</string>
     <string name="chips_permission_text_local_store_only">Show phone contacts</string>
     <string name="choosertitle_sharevia">Share via</string>
-    <item type="string" name="circle_radius_multiplier">0.82</item>
-    <item type="string" name="circle_radius_multiplier_24HourMode">0.85</item>
     <string name="clear">Clear</string>
     <string name="clear_authentication_label">Clear authentication</string>
     <string name="clear_display_images_whitelist_dialog_message">Stop displaying inline images from senders you previously allowed.</string>
@@ -595,8 +599,6 @@ Contact your IT admin for help."</string>
     <string name="datetimepicker_dialog_title">Pick date &amp; time</string>
     <string name="datetimepicker_drop_down_list">Drop down list</string>
     <string name="datetimepicker_spinner_item_custom_time">Custom</string>
-    <string name="day_of_week_label_typeface">sans-serif-light</string>
-    <string name="day_picker_description">Month grid of days</string>
     <string name="debug_ui_disabled">Debugging UI disabled</string>
     <string name="debug_ui_enabled">Debugging UI enabled</string>
     <string name="default_reply_action_reply">Reply</string>
@@ -609,7 +611,6 @@ Contact your IT admin for help."</string>
     <string name="delete_and_cancel_send_menu_item">Delete and cancel send</string>
     <string name="delete_and_cancel_send_success_confirmation">Scheduled send canceled</string>
     <string name="deleted">Deleted</string>
-    <string name="deleted_key">%1$s deleted</string>
     <string name="density_dialog_button_text">OK</string>
     <string name="density_dialog_title_text">Choose a view</string>
     <string name="density_option_comfortable">Comfortable</string>
@@ -644,7 +645,6 @@ Contact your IT admin for help."</string>
     <string name="discard_drafts">Discard drafts</string>
     <string name="dismiss_tip_hover_text">Dismiss tip</string>
     <string name="done">Done</string>
-    <string name="done_label">Done</string>
     <string name="download_again">Download again</string>
     <string name="download_disabled">Cannot download due to account security policy.</string>
     <string name="draft_attachment_download_failed_ticker">"Couldn't load one or more attachments."</string>
@@ -680,6 +680,8 @@ Contact your IT admin for help."</string>
     <string name="eaaur_connecting_to_email_server">Connecting to email server…</string>
     <string name="eaaur_tap_to_complete_auto_activation">Tap to complete auto activation</string>
     <string name="eas_account_setup_basics_email_label">Email</string>
+    <string name="eas_account_setup_basics_error_duplicate_email">You have already added this account</string>
+    <string name="eas_account_setup_basics_error_personal_email">To use this account, go back to the previous screen and choose \"Outlook, Hotmail, and Live\"</string>
     <string name="eas_account_setup_basics_headline">Enter your email address</string>
     <string name="eas_account_setup_basics_manual_setup_action">Set up manually</string>
     <string name="eas_account_setup_permanent_server_error">"Can't connect to server."</string>
@@ -743,7 +745,7 @@ Contact your IT admin for help."</string>
     <string name="exit_cab_mode_desc">Toolbar for bulk actions hidden</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="failed">"Couldn't load image"</string>
-    <string name="fetching_attachment">Fetching attachment…</string>
+    <string name="fetching_attachment">Downloading file…</string>
     <string name="file_sharing_permission_message">Gmail needs Storage permission to complete action. Please enable it in Settings.</string>
     <string name="filtered_tag">[%1$s]%2$s</string>
     <string name="finish_button_label">Done</string>
@@ -792,7 +794,6 @@ Contact your IT admin for help."</string>
     <string name="fz_dialog_message_standard">All recipients use services that support standard encryption. ^1</string>
     <string name="fz_dialog_title_enhanced">Your message will be secure during delivery</string>
     <string name="fz_dialog_title_initial">Gmail protects your messages during delivery</string>
-    <string name="fz_dialog_title_none">Your message will not be encrypted during delivery.</string>
     <string name="fz_dialog_title_standard">Your message will be sent with regular security</string>
     <string name="fz_enhanced">Enhanced encryption (S/MIME)</string>
     <string name="fz_failure_subtitle_admin">Please contact your administrator to confirm that the proper keys needed to decrypt have been set up correctly.</string>
@@ -945,7 +946,6 @@ Contact your IT admin for help."</string>
     <string name="hierarchical_folder_parent_top_ellip">"%1$s /…/ %2$s / "</string>
     <string name="hierarchical_folder_top">"%1$s / "</string>
     <string name="high_priority_content_desc">High</string>
-    <string name="hour_picker_description">Hours circular slider</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string name="icr_accepted">%1$s has &lt;b>accepted&lt;/b> this event.</string>
     <string name="icr_add">Add to calendar</string>
@@ -1155,7 +1155,6 @@ Contact your IT admin for help."</string>
     <string name="message_uploading_attachments">Uploading</string>
     <string name="message_view_forwarded_attachment_background_load">One or more attachments in your forwarded message will be downloaded prior to sending.</string>
     <string name="message_view_synced_draft_attachment_background_load">One or more attachments in your message will be downloaded prior to sending.</string>
-    <string name="minute_picker_description">Minutes circular slider</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="more_info_attachment">Info</string>
     <string name="more_string">+%1$d</string>
@@ -1210,9 +1209,6 @@ Contact your IT admin for help."</string>
     <string name="notify_attachment_send_error">"Couldn't send attachment"</string>
     <string name="nudge_dismiss_button_text">Dismiss</string>
     <string name="nudge_dismiss_success_message">Nudge dismissed.</string>
-    <item type="string" name="numbers_radius_multiplier_inner">0.6</item>
-    <item type="string" name="numbers_radius_multiplier_normal">0.81</item>
-    <item type="string" name="numbers_radius_multiplier_outer">0.83</item>
     <string name="oauth_authentication_title">Requesting authorization…</string>
     <string name="oauth_error_description">Unable to authenticate</string>
     <string name="oauth_server_error">Server is unavailable, please try again later</string>
@@ -1225,18 +1221,15 @@ Contact your IT admin for help."</string>
     <string name="og_choose_an_account">Choose an account</string>
     <string name="og_close_icon_a11y">Close</string>
     <string name="og_expand_account_menu_a11y">Expand account menu.</string>
-    <string name="og_incognito_disc">In incognito mode, open incognito mode menu.</string>
     <string name="og_manage_accounts">Manage accounts on this device</string>
     <string name="og_my_account_desc_long_length">Manage your Google Account</string>
     <string name="og_my_account_desc_meduim_length">Google Account</string>
     <string name="og_my_account_desc_short_length">Account</string>
     <string name="og_privacy_policy">Privacy Policy</string>
     <string name="og_sign_in">Sign in</string>
-    <string name="og_signed_in_user_a11y">Signed in as %1$s.</string>
+    <string name="og_signed_in_user_a11y_">Signed in as %1$s.</string>
     <string name="og_switch_account_to_recent_a11y">Switch to %1$s account</string>
     <string name="og_terms_of_service">Terms of Service</string>
-    <string name="og_turn_off_incognito">Turn off incognito</string>
-    <string name="og_turn_on_incognito">Turn on incognito</string>
     <string name="og_use_account_a11y">Use %1$s.</string>
     <string name="og_use_without_an_account">Use without an account</string>
     <string name="on_item_deselected_desc">Deselected %s</string>
@@ -1460,14 +1453,12 @@ Tap to turn on."</string>
     <string name="quoted_text">Include quoted text</string>
     <string name="quoted_text_hidden_print">Quoted text hidden</string>
     <string name="quoted_text_label">Quote text</string>
-    <string name="radial_numbers_typeface">sans-serif</string>
     <string name="read_perm_desc">Allows the app to read your Gmail.</string>
     <string name="read_perm_label">read Gmail</string>
     <string name="read_provider_perm_desc">Allows the app to access information about your mail.</string>
     <string name="read_provider_perm_label">access mail information</string>
     <string name="recent_folders_heading">Recent labels</string>
     <string name="recipient_needed">Add at least one recipient.</string>
-    <string name="reconciliation_compose_activity_name" />
     <string name="recurrence_month_pattern_last_day">on the last day of the month</string>
     <string name="redirect_uri_host">enterprise.google.com</string>
     <string name="redirect_uri_path_prefix">/exchangeoauth2redirect</string>
@@ -1556,9 +1547,6 @@ Tap to turn on."</string>
     <string name="rtf_confirm_discard_text_formatting">This account can only send plain text. All formatting will be removed.</string>
     <string name="s4_encrypt_sign_message" />
     <string name="s4_loading" />
-    <string name="s4_no_recipients" />
-    <string name="s4_recipients_encryption_not_supported" />
-    <string name="s4_recipients_encryption_supported" />
     <string name="sans_serif">sans-serif</string>
     <string name="sans_serif_light">sans-serif-light</string>
     <string name="sans_serif_medium">sans-serif-medium</string>
@@ -1586,7 +1574,6 @@ Tap to turn on."</string>
     <string name="scheduling_limit_reached">Cannot schedule send. You have reached the limit of scheduled sends. Cancel existing scheduled messages or wait until they are sent to schedule new ones.</string>
     <string name="search">Search</string>
     <string name="search_clear_desc">Clear search text</string>
-    <string name="search_hint">Search mail</string>
     <string name="search_history_cleared">Search history cleared.</string>
     <string name="search_history_cleared_failure">Something went wrong. Please try again later.</string>
     <string name="search_results_header">Results</string>
@@ -1597,26 +1584,17 @@ Tap to turn on."</string>
     <string name="sectioned_inbox_welcome_change_categories">Change categories</string>
     <string name="sectioned_inbox_welcome_title">Welcome to your new Inbox</string>
     <string name="security_activity_title">Exchange security setup</string>
-    <string name="security_changed_ticker_fmt">Account \"%s\" changed its security settings; no user action is required.</string>
     <string name="security_details_title">Security details</string>
     <string name="security_hold_required_text">Security update required</string>
     <string name="security_link">^1</string>
-    <string name="security_needed_ticker_fmt">Account \"%s\" requires security settings update.</string>
-    <string name="security_notification_content_change_title">Security policies have changed</string>
     <string name="security_notification_content_unsupported_title">"Security policies can't be met"</string>
-    <string name="security_notification_content_update_title">Security update required</string>
     <string name="security_setup_finished_header">Your account is ready to go!</string>
     <string name="security_unsupported_ticker_fmt">"Account \"%s\" can't be synced due to security requirements."</string>
     <string name="security_update_enforcing_progress_label">Updating security policy...</string>
     <string name="security_update_request_explanation">"Your IT admin needs Gmail to access this phone. You'll need to review and approve permissions on the next screen."</string>
     <string name="security_update_request_header">Gmail needs access to this phone</string>
     <string name="select_attachment_type">Choose type of attachment</string>
-    <string name="select_day">Select month and day</string>
-    <string name="select_hours">Select hours</string>
-    <string name="select_minutes">Select minutes</string>
-    <string name="select_year">Select year</string>
     <string name="selected_account">Signed in to %1$s</string>
-    <item type="string" name="selection_radius_multiplier">0.16</item>
     <string name="send">Send</string>
     <string name="send_anyway">Send anyway</string>
     <string name="send_failed">"Message wasn't sent."</string>
@@ -1684,9 +1662,6 @@ Tap to turn on."</string>
     <string name="similar_messages_phishy">"Be careful with this message. Similar messages were used to steal people's personal information. Unless you trust the sender, don't click links or reply with personal information."</string>
     <string name="single_new_message_notification_big_text">"%1$s
 %2$s"</string>
-    <string name="slp_body">Protect your device and sensitive emails with a screen lock</string>
-    <string name="slp_teaser_positive_button">Set it now</string>
-    <string name="slp_title">Set screen lock</string>
     <string name="slv2_generic_untrusted">This link leads to an untrusted site. Are you sure you want to proceed to %1$s?</string>
     <string name="slv2_low_reputation">Malicious emails often link to this site. Are you sure you want to proceed to %1$s?</string>
     <string name="slv2_title">Suspicious link</string>
@@ -1724,6 +1699,7 @@ Tap to turn on."</string>
     <string name="sr_no_browser_found">Browser not found. Cannot report bad suggestions.</string>
     <string name="sr_smartreply_bad_suggestion"><u>Bad suggestions?</u></string>
     <string name="sr_summary">Show suggested replies when available</string>
+    <string name="stark_ad_badge_separator">·</string>
     <string name="starred_string">Starred</string>
     <string name="storage">Storage</string>
     <string name="subject_hint">Subject</string>
@@ -1777,8 +1753,6 @@ Tap to turn on."</string>
     <string name="t4_account_setup_options_sync_label">@string/t4_account_settings_sync_summary</string>
     <string name="t4_compose_button">Compose Task</string>
     <string name="t4_detail_body_content_description">Notes: %1$s</string>
-    <string name="t4_detail_high_priority_label">High priority</string>
-    <string name="t4_detail_low_priority_label">Low priority</string>
     <string name="t4_detail_mark_as_done">Mark as done</string>
     <string name="t4_detail_mark_as_not_done">Mark as not done</string>
     <string name="t4_detail_notification_time_content_description">Reminder: %1$s</string>
@@ -1830,12 +1804,7 @@ Tap to turn on."</string>
     <string name="tasks_edit_segment_reminder_label">Reminder</string>
     <string name="tasks_edit_segment_title_hint">Add title</string>
     <string name="terms_of_service_link">Terms of Service</string>
-    <item type="string" name="text_size_multiplier_inner">0.14</item>
-    <item type="string" name="text_size_multiplier_normal">0.17</item>
-    <item type="string" name="text_size_multiplier_outer">0.11</item>
     <string name="thank_you">Thank you!</string>
-    <string name="time_placeholder">--</string>
-    <string name="time_separator">:</string>
     <string name="time_zone_info">All times are in %1$s</string>
     <string name="title_snooze">Snoozed</string>
     <string name="titles" formatted="false">%s, %s</string>
@@ -1870,6 +1839,8 @@ Tap to turn on."</string>
     <string name="turn_auto_sync_on_dialog_confirm_btn">Turn on</string>
     <string name="turn_auto_sync_on_dialog_title">Turn auto-sync on?</string>
     <string name="ui_provider_label">UI Content Provider</string>
+    <string name="unable_to_download_remote_attachment_before_send_dialog_body">Remove the attachment, or try sending from the device with the original attachment</string>
+    <string name="unable_to_download_remote_attachment_before_send_dialog_title">"Can't download attachment"</string>
     <string name="unauth_message">"Gmail couldn't verify that &lt;b>%2$s&lt;/b> actually sent this message (and not a spammer)."</string>
     <string name="unauth_message_plain">"Gmail couldn't verify that %2$s actually sent this message (and not a spammer)."</string>
     <string name="unblock_sender_menu_item">Unblock \"%s\"</string>
@@ -1896,6 +1867,7 @@ Tap to turn on."</string>
     <string name="vacation_responder_body_hint_text">Message</string>
     <string name="vacation_responder_changes_discarded">Vacation responder changes discarded</string>
     <string name="vacation_responder_changes_saved">Vacation responder changes saved</string>
+    <string name="vacation_responder_done">Done</string>
     <string name="vacation_responder_empty_subject_and_body_warning">Add a subject or message</string>
     <string name="vacation_responder_loading">Loading…</string>
     <string name="vacation_responder_off">Off</string>
@@ -1928,9 +1900,6 @@ Tap to turn on."</string>
 Tap "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up this account to sync mail automatically.</string>
     <string name="wait_for_sync_title">Waiting for sync…</string>
     <string name="wait_for_unsynced_contacts">"Sorry but we can't change your email address while you are syncing your contacts. Please wait for it to finish and try again"</string>
-    <string name="warm_welcome_button_text">Next</string>
-    <string name="warm_welcome_text">Your favorite email has a fresh new look</string>
-    <string name="warm_welcome_title_text">Welcome</string>
     <string name="warning_banner_address_spoofing">"The sender's email address uses abnormal characters, which might be used to spoof real addresses. Avoid clicking links, downloading attachments, or replying to this message."</string>
     <string name="warning_banner_anomalous_replyto">This email claims to come from &lt;b>%1$s&lt;/b>, but replies will go to an email address at another domain.</string>
     <string name="warning_banner_antivirus">It might contain attachments with a virus or malicious link. Avoid downloading or opening the attachment.</string>
@@ -1993,6 +1962,5 @@ Tap "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up
     <string name="with_option_unsubscribe">Why is this message in Spam? You tried to unsubscribe from this sender but they continued to send you email, so new messages are put directly in Spam to keep them out of your inbox.</string>
     <string name="write_perm_desc">Allows the app to modify your Gmail, including sending and deleting mail.</string>
     <string name="write_perm_label">modify Gmail</string>
-    <string name="year_picker_description">Year list</string>
     <string name="yes">Yes</string>
 </resources>

@@ -25,8 +25,8 @@
         <item quantity="one">Item was permanently deleted</item>
     </plurals>
     <plurals name="add_collaborators_invalid_contact_address">
-        <item quantity="other">%s are not valid email addresses.</item>
-        <item quantity="one">%s is not a valid email address.</item>
+        <item quantity="other">Invalid emails %s</item>
+        <item quantity="one">Invalid email %s</item>
     </plurals>
     <plurals name="add_confirm_dialog_message_share_files">
         <item quantity="other">Adding these files will share them with everyone who can access the shared folder %1$s</item>
@@ -49,8 +49,8 @@
         <item quantity="one">%1$d folder updated. Color set to %2$s.</item>
     </plurals>
     <plurals name="apply_filters">
-        <item quantity="other">Apply filters:</item>
-        <item quantity="one">Apply filter:</item>
+        <item quantity="other">Did you mean:</item>
+        <item quantity="one">Did you mean:</item>
     </plurals>
     <plurals name="backup_entity_expires_in">
         <item quantity="other">Expires in %1$d days</item>
@@ -80,10 +80,6 @@
         <item quantity="other">%1$d rows.</item>
         <item quantity="one">%1$d row.</item>
     </plurals>
-    <plurals name="detail_preview_folder_file_size_and_file_count">
-        <item quantity="other">%1$s for %2$d items</item>
-        <item quantity="one">%1$s for %2$d item</item>
-    </plurals>
     <plurals name="discussion_card_replies_summary">
         <item quantity="other">%1$s replies</item>
         <item quantity="one">%1$s reply</item>
@@ -91,6 +87,10 @@
     <plurals name="discussion_comment_count_title">
         <item quantity="other">%1$s Comments</item>
         <item quantity="one">%1$s Comment</item>
+    </plurals>
+    <plurals name="discussion_resolved_header">
+        <item quantity="other">%1$s Resolved</item>
+        <item quantity="one">%1$s Resolved</item>
     </plurals>
     <plurals name="download_message_all_failed">
         <item quantity="other">Items could not be downloaded</item>
@@ -117,9 +117,29 @@
         <item quantity="other">%1$d more items</item>
         <item quantity="one">%1$d more item</item>
     </plurals>
+    <plurals name="download_notification_partial_failure_title">
+        <item quantity="other">%1$d of %2$d downloads failed</item>
+        <item quantity="one">1 of %2$d downloads failed</item>
+    </plurals>
     <plurals name="download_notification_partial_success_title">
         <item quantity="other">%1$d of %2$d downloads failed</item>
         <item quantity="one">%1$d of %2$d download failed</item>
+    </plurals>
+    <plurals name="download_notification_title_total_failure">
+        <item quantity="other">%1$d downloads failed</item>
+        <item quantity="one">1 download failed</item>
+    </plurals>
+    <plurals name="download_notification_title_total_success">
+        <item quantity="other">Downloaded %1$d files</item>
+        <item quantity="one">Downloaded 1 file</item>
+    </plurals>
+    <plurals name="duo_notification_list_summary">
+        <item quantity="other">and %1$d more files</item>
+        <item quantity="one">and %1$d more file</item>
+    </plurals>
+    <plurals name="duo_notification_locate_file">
+        <item quantity="other">Locate files</item>
+        <item quantity="one">Locate file</item>
     </plurals>
     <plurals name="error_moving_file">
         <item quantity="other">Error moving files.</item>
@@ -158,8 +178,8 @@
         <item quantity="one">Moving this item will share it with everyone who can see the shared folder \"%1$s\". Members of \"%2$s\" will lose access unless this item is shared with them.</item>
     </plurals>
     <plurals name="move_confirm_dialog_message_lose_access_shared_folders">
-        <item quantity="other">You are moving some items out of shared folders, so people will lose access to these items.</item>
-        <item quantity="one">You are moving an item out of a shared folder, so people will lose access to this item.</item>
+        <item quantity="other">You are moving some items out of shared folders, so people may lose access to these items.</item>
+        <item quantity="one">You are moving an item out of a shared folder, so people may lose access to this item.</item>
     </plurals>
     <plurals name="move_confirm_dialog_message_lose_restrictions">
         <item quantity="other">Additional restrictions will be removed from these items.</item>
@@ -213,6 +233,42 @@
         <item quantity="other">%1$d items</item>
         <item quantity="one">%1$d item</item>
     </plurals>
+    <plurals name="notification_completed_pin_title">
+        <item quantity="other">%1$d files now available offline</item>
+        <item quantity="one">1 file now available offline</item>
+    </plurals>
+    <plurals name="notification_failed_pin_title">
+        <item quantity="other">Failed to make %1$d files available offline</item>
+        <item quantity="one">Failed to make 1 file available offline</item>
+    </plurals>
+    <plurals name="notification_ongoing_pin_title">
+        <item quantity="other">Making %1$d files available offline</item>
+        <item quantity="one">Making 1 file available offline</item>
+    </plurals>
+    <plurals name="notification_ongoing_pin_title_with_bytes">
+        <item quantity="other">Making %1$d files available offline (%2$s)</item>
+        <item quantity="one">Making 1 file available offline (%2$s)</item>
+    </plurals>
+    <plurals name="notification_partially_failed_pin_title">
+        <item quantity="other">Failed to make %1$d of %2$d files available offline</item>
+        <item quantity="one">Failed to make 1 of %2$d files available offline</item>
+    </plurals>
+    <plurals name="notification_pin_waiting_for_connectivity_partial_sync_title">
+        <item quantity="other">Paused making %1$d of %2$d files available offline</item>
+        <item quantity="one">Paused making 1 of %2$d files available offline</item>
+    </plurals>
+    <plurals name="notification_pin_waiting_for_connectivity_partial_sync_title_with_bytes">
+        <item quantity="other">Paused making %1$d of %2$d files available offline (%3$s)</item>
+        <item quantity="one">Paused making 1 of %2$d files available offline (%3$s)</item>
+    </plurals>
+    <plurals name="notification_pin_waiting_for_connectivity_title">
+        <item quantity="other">Paused making %1$d files available offline</item>
+        <item quantity="one">Paused making 1 file available offline</item>
+    </plurals>
+    <plurals name="notification_pin_waiting_for_connectivity_title_with_bytes">
+        <item quantity="other">Paused making %1$d files available offline (%2$s)</item>
+        <item quantity="one">Paused making 1 file available offline (%2$s)</item>
+    </plurals>
     <plurals name="number_of_approvers">
         <item quantity="other">%1$d approvers</item>
         <item quantity="zero">No approvers specified</item>
@@ -238,14 +294,6 @@
         <item quantity="other">Items were permanently deleted</item>
         <item quantity="one">Item was permanently deleted</item>
     </plurals>
-    <plurals name="pin_notification_detailed_sync_completed">
-        <item quantity="other">"'%1$s' and %2$d other files available offline"</item>
-        <item quantity="one">"'%1$s' available offline"</item>
-    </plurals>
-    <plurals name="pin_notification_detailed_sync_progress">
-        <item quantity="other">"Making '%1$s' and %2$d other files available offline"</item>
-        <item quantity="one">"Making '%1$s' available offline"</item>
-    </plurals>
     <plurals name="pin_notification_sync_completed">
         <item quantity="other">%1$d out of %2$s are now available offline.</item>
         <item quantity="one">%1$d out of %2$s is now available offline.</item>
@@ -265,10 +313,6 @@
     <plurals name="pin_notification_sync_queued_files">
         <item quantity="other">%1$d files</item>
         <item quantity="one">%1$d file</item>
-    </plurals>
-    <plurals name="pin_notification_waiting_for_connectivity_title">
-        <item quantity="other">Paused making %1$d files available offline</item>
-        <item quantity="one">Paused making file available offline</item>
     </plurals>
     <plurals name="pin_notification_waiting_network_ticker">
         <item quantity="other">Downloads paused, waiting for network…</item>
@@ -467,8 +511,8 @@
         <item quantity="one">Item will be moved to the %2$s Trash and deleted forever after 30 days</item>
     </plurals>
     <plurals name="remove_dialog_delete_permanently_for_everyone_text_multiple">
-        <item quantity="other">"These %1$d files will be &lt;b>permanently deleted for everyone.&lt;/b> You can't undo this action."</item>
-        <item quantity="one">"This file will be &lt;b>permanently deleted for everyone.&lt;/b> You can't undo this action."</item>
+        <item quantity="other">"These %1$d files will be permanently deleted for everyone. You can't undo this action."</item>
+        <item quantity="one">"This file will be permanently deleted for everyone. You can't undo this action."</item>
     </plurals>
     <plurals name="remove_dialog_delete_permanently_text_multiple">
         <item quantity="other">"These %1$d files will be permanently deleted. You can't undo this action."</item>
@@ -633,13 +677,25 @@
         <item quantity="other">Resume all now</item>
         <item quantity="one">Resume now</item>
     </plurals>
+    <plurals name="upload_notification_detailed_sync_completed_all_failed">
+        <item quantity="other">%1$d uploads failed</item>
+        <item quantity="one">1 upload failed</item>
+    </plurals>
     <plurals name="upload_notification_detailed_sync_completed_successfully">
-        <item quantity="other">"'%1$s' and %2$d other files uploaded"</item>
-        <item quantity="one">"'%1$s' uploaded"</item>
+        <item quantity="other">Uploaded %1$d files</item>
+        <item quantity="one">Uploaded 1 file</item>
     </plurals>
     <plurals name="upload_notification_detailed_sync_progress">
-        <item quantity="other">"Uploading '%1$s' and %2$d other files"</item>
-        <item quantity="one">"Uploading '%1$s'"</item>
+        <item quantity="other">Uploading %1$d files</item>
+        <item quantity="one">Uploading 1 file</item>
+    </plurals>
+    <plurals name="upload_notification_detailed_waiting_partial_title">
+        <item quantity="other">%1$d of %2$d uploads paused</item>
+        <item quantity="one">1 of %2$d uploads paused</item>
+    </plurals>
+    <plurals name="upload_notification_detailed_waiting_title">
+        <item quantity="other">%1$d uploads paused</item>
+        <item quantity="one">1 upload paused</item>
     </plurals>
     <plurals name="upload_notification_prepare_upload_canceled">
         <item quantity="other">Canceled uploading %1$d files.</item>

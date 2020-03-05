@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="a11y_drag_positional_anchor_selection">Drag</string>
     <string name="a11y_g1_icon_message">Backed up by Google One</string>
     <string name="a11y_positional_anchor_left_bottom_corner">Comment area left bottom corner: left %1$d percent, bottom %2$d percent</string>
@@ -103,6 +104,7 @@
     <string name="add_approvers_title">Add approvers</string>
     <string name="add_collaborators">Share</string>
     <string name="add_collaborators_acl_list_title">Who has access</string>
+    <string name="add_collaborators_button_label">Share button</string>
     <string name="add_collaborators_content_desc">Add collaborators</string>
     <string name="add_collaborators_message_hint">Add a message</string>
     <string name="add_collaborators_send_button_content_desc">Confirm sharing and send to collaborators</string>
@@ -159,7 +161,6 @@
     <string name="approval_detail_due_date_removed">%1$s removed the due date</string>
     <string name="approval_detail_multiple_approvers_added">%1$s added approvers</string>
     <string name="approval_error_acl_fixer_error">An error was encountered while attempting to modify access for the given set of reviewers.</string>
-    <string name="approval_error_generic_error">Unable to send request. Try again.</string>
     <string name="approval_grant_access_dialog_comment">Comment</string>
     <string name="approval_grant_access_dialog_edit">Edit</string>
     <string name="approval_grant_access_dialog_title">Share with reviewers</string>
@@ -176,8 +177,6 @@
     <string name="approvals_add_comment">Add a comment</string>
     <string name="approvals_approve">Approve</string>
     <string name="approvals_approve_this_request">Approve this request</string>
-    <string name="approvals_cancel_approver_change">Cancel approver change</string>
-    <string name="approvals_cancel_new_request">Cancel new request</string>
     <string name="approvals_close">Close</string>
     <string name="approvals_decline">Decline</string>
     <string name="approvals_decline_this_request">Decline this request</string>
@@ -185,9 +184,7 @@
     <string name="approvals_invalid_reviewer_error">The list of approvers may not contain duplicates and may not include the original requester</string>
     <string name="approvals_more_actions">More actions</string>
     <string name="approvals_new_approval_request">New approval request</string>
-    <string name="approvals_no_approvals_yet">Approvals, no approvals yet</string>
     <string name="approvals_not_enabled">Approvals are not enabled</string>
-    <string name="approvals_request_approval_description">Request approval. Everyone must approve for full approval.</string>
     <string name="approvals_send_feedback">Send feature feedback</string>
     <string name="approvals_too_many_reviewers_error">You can request approval from 25 people. Remove people to send</string>
     <string name="approvers_approver_changed">Approver changed from %1$s to %2$s</string>
@@ -226,6 +223,7 @@
     <string name="button_open">Open</string>
     <string name="button_retry">Retry</string>
     <string name="buy_content_description">Buy %1$s for %2$s</string>
+    <string name="buy_storage_button_label">Buy storage</string>
     <string name="bytes_in_gb">%.1f GB</string>
     <string name="bytes_in_kb">%.1f KB</string>
     <string name="bytes_in_mb">%.1f MB</string>
@@ -298,6 +296,8 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="contact_sharing_reader">Can view</string>
     <string name="contact_sharing_reader_site">Can view published</string>
     <string name="contact_sharing_reader_td">View</string>
+    <string name="contact_sharing_remove_person">Remove Person</string>
+    <string name="contact_sharing_restricted">Restricted</string>
     <string name="contact_sharing_td_remove">Remove member</string>
     <string name="contact_sharing_td_remove_visitor">Remove</string>
     <string name="contact_sharing_td_writer">Edit</string>
@@ -317,6 +317,7 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="copy_link_completed">Link copied to clipboard</string>
     <string name="copy_link_file_label">File URL</string>
     <string name="copy_link_folder_label">Folder URL</string>
+    <string name="copy_of_title">Copy of %1$s</string>
     <string name="create_bottom_sheet_title">Create new</string>
     <string name="create_new">Create</string>
     <string name="create_new_button_content_description">Create</string>
@@ -359,9 +360,13 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="cross_app_promo_view_only_button_text">View only</string>
     <string name="cross_domain_error">"You can't move files outside of %s."</string>
     <string name="cross_domain_generic_error">"You can't move files outside of their domain."</string>
+    <string name="cross_no_domain_error">"You can't move files outside of domain."</string>
     <string name="current_device">This device</string>
+    <string name="dark_theme_dark_applied">Applied dark theme</string>
+    <string name="dark_theme_default_applied">Applied default theme</string>
     <string name="dark_theme_follow_battery_title">Set by Battery Saver</string>
     <string name="dark_theme_follow_system_title">System default</string>
+    <string name="dark_theme_light_applied">Applied light theme</string>
     <string name="dark_theme_no_title">Light</string>
     <string name="dark_theme_yes_title">Dark</string>
     <string name="decline_approval">Decline request</string>
@@ -387,6 +392,7 @@ New backup data will be created if backup is still turned on for %s."</string>
     <string name="delete_multiple_backup_error_message">Some backups could not be deleted.</string>
     <string name="delete_offline_error_team_drive_updated">Please go online to delete the shared drive</string>
     <string name="delete_single_backup_error_message">Backup could not be deleted.</string>
+    <string name="delete_td_nonempty_error">A shared drive must be empty to delete it.</string>
     <string name="delete_whatsapp_backup_after_turnoff_confirmation_message">"Do you also want to permanently delete backup of WhatsApp chat and media for:
 
 %s"</string>
@@ -531,7 +537,6 @@ This action cannot be undone."</string>
     <string name="discussion_assign_as_a_task_to_a11y_spinner">Chosen assignee: %1$s</string>
     <string name="discussion_close">Close</string>
     <string name="discussion_close_comments">Close comments</string>
-    <string name="discussion_collapsed_replies_label">See more replies</string>
     <string name="discussion_comment">Comment</string>
     <string name="discussion_comment_added">Comment added</string>
     <string name="discussion_comment_attribution_comparison">From comparison</string>
@@ -542,11 +547,13 @@ This action cannot be undone."</string>
     <string name="discussion_comment_reopened">Comment Re-opened</string>
     <string name="discussion_comment_replied">Replied to comment</string>
     <string name="discussion_comment_resolved">Comment resolved</string>
+    <string name="discussion_comment_text_hint">Add a comment</string>
     <string name="discussion_comment_view_all">View all</string>
     <string name="discussion_comments">All comments</string>
     <string name="discussion_comments_title">Comments</string>
     <string name="discussion_contact_autocomplete_suggestion">Contact Autocomplete Suggestion</string>
     <string name="discussion_contact_picture">Contact picture</string>
+    <string name="discussion_delete">Delete</string>
     <string name="discussion_delete_comment_text">Do you really want to delete this comment?</string>
     <string name="discussion_delete_comment_title">Delete comment</string>
     <string name="discussion_delete_discussion_text">Do you really want to delete this comment and all replies in this thread?</string>
@@ -568,6 +575,7 @@ This action cannot be undone."</string>
     <string name="discussion_me">Me</string>
     <string name="discussion_new">Add new</string>
     <string name="discussion_no_comments">No comments in this document</string>
+    <string name="discussion_options">Options</string>
     <string name="discussion_pager_bar_next">Next</string>
     <string name="discussion_pager_bar_previous">Previous</string>
     <string name="discussion_pager_bar_text">%1$d of %2$d</string>
@@ -579,9 +587,10 @@ This action cannot be undone."</string>
     <string name="discussion_reopen">Re-open</string>
     <string name="discussion_reopen_reply_text_hint">Re-open and reply</string>
     <string name="discussion_reply">Reply</string>
+    <string name="discussion_reply_expanded_text_hint">Add a reply</string>
     <string name="discussion_reply_text_hint">Reply</string>
     <string name="discussion_resolve">Resolve</string>
-    <string name="discussion_resolved">Resolved</string>
+    <string name="discussion_resolved_comments_title">Resolved</string>
     <string name="discussion_save">Save</string>
     <string name="discussion_send_reply">Send reply</string>
     <string name="discussion_server_failure">Failed to sync comment due to a network error. Commenting is now disabled.</string>
@@ -687,6 +696,7 @@ This action cannot be undone."</string>
     <string name="download_message_download_manager_unavailable">Cannot download. Download Manager is unavailable</string>
     <string name="download_message_failures">%1$d of %2$d items will be downloaded. See notification for details</string>
     <string name="download_message_failures_no_notification">%1$d of %2$d items will be downloaded.</string>
+    <string name="download_notification_action_retry">Retry</string>
     <string name="download_notification_complete_text">Downloaded, %1$s</string>
     <string name="download_notification_error_already_exists">File already exists</string>
     <string name="download_notification_error_cannot_resume">Could not resume download</string>
@@ -705,6 +715,7 @@ This action cannot be undone."</string>
     <string name="download_restricted">Protected file</string>
     <string name="download_resume">Resume download</string>
     <string name="download_retry_failed">Download could not be retried.</string>
+    <string name="draft">Draft</string>
     <string name="draft_access_anyone">Anyone on the internet can find and edit</string>
     <string name="draft_access_anyone_in_audience">%s can find and edit</string>
     <string name="draft_access_anyone_in_audience_with_link">%s can edit</string>
@@ -715,6 +726,7 @@ This action cannot be undone."</string>
     <string name="draft_permission_change_domain_warning">Changing to this draft site setting will allow anyone in %s to view when published.</string>
     <string name="draft_permission_downgrade_domain_warning">Changing this draft site setting will make it so the published link can only be viewed by %1$s</string>
     <string name="draft_permission_downgrade_specific_warning">Changing this draft site setting will make it so the published link can only be viewed by specific people</string>
+    <string name="draft_site_settings">Draft site settings</string>
     <string name="drive_file_stream_disabled_updated">Prevent people from opening files in this shared drive using Drive File Stream or similar applications</string>
     <string name="drive_file_stream_enabled_updated">Allow people to open files in this shared drive using Drive File Stream or similar applications</string>
     <string name="drive_file_stream_title">Drive File Stream</string>
@@ -781,6 +793,7 @@ This action cannot be undone."</string>
     <string name="ds_shutter">Take picture button</string>
     <string name="ds_title_activity_capture">Scan</string>
     <string name="ds_title_activity_editor">Scan</string>
+    <string name="due_date_picker_title">Due date</string>
     <string name="dump_database_dialog_continue">Continue</string>
     <string name="dump_database_dialog_description">"This will dump the local database, which may contain personal data for this account and any other account shown in Drive on this device. Be aware that you are dumping your private data. If you feel comfortable, please share the database with cakemix-db-dump@google.com
 
@@ -788,6 +801,7 @@ This action cannot be undone."</string>
 
  IMPORTANT! After you send the feedback, make sure you clear your application cache (Settings -> Apps -> Drive -> Clear CACHE), otherwise the dumped data may be accessed by other malicious apps. Are you sure you want to continue?"</string>
     <string name="dump_database_dialog_title">Dogfood Feedback. Help us improve our app</string>
+    <string name="duo_notification_default_error_title">An error occurred</string>
     <string name="edit_action_local_editing_label_drive">Google Drive</string>
     <string name="edit_action_local_editing_label_generic">Edit with this app</string>
     <string name="edit_actions_bottomsheet_header_text">Edit with</string>
@@ -812,6 +826,7 @@ Try uploading a file."</string>
     <string name="empty_recent_doclist_message_subtitle">"Anything you create or edit will appear here.
 Click + to create a new drawing."</string>
     <string name="empty_recent_doclist_message_title">Welcome to Google Docs!</string>
+    <string name="empty_search_title">No results</string>
     <string name="empty_sharing_list">Sharing information unavailable</string>
     <string name="empty_team_drives_doclist_can_add">Try adding relevant files so everyone has access &amp; you can start collaborating.</string>
     <string name="empty_team_drives_doclist_cannot_add_updated">Any files that are added to this shared drive will appear here.</string>
@@ -884,8 +899,6 @@ Click + to create a new drawing."</string>
     <string name="fav_type">Type: %1$s.</string>
     <string name="fav_unknown">unknown</string>
     <string name="fav_value">Value: %1$s.</string>
-    <string name="fetching_notifications_text">Syncing your Google Drive notifications</string>
-    <string name="fetching_notifications_title">Syncing</string>
     <string name="file_in_trash_subtitle">In Trash</string>
     <string name="file_locked_subtitle">Locked</string>
     <string name="file_organizer_default_members">By default, new members can add edit, move, and delete files</string>
@@ -943,6 +956,12 @@ Click + to create a new drawing."</string>
     <string name="form_filling_mode_save_success_message">Document Saved.</string>
     <string name="form_filling_mode_subtitle">Form Filling</string>
     <string name="form_filling_save_copy_name_suffix">_copy</string>
+    <string name="g1_quota_buy_storage_button">Buy storage</string>
+    <string name="g1_quota_description_text_100">"Your storage is full - You can't upload new files to Drive and may not be able to send or receive emails in Gmail"</string>
+    <string name="g1_quota_description_text_80">"You've used 80% of your storage - If you run out of storage, you won't be able to upload new files"</string>
+    <string name="g1_quota_description_text_90">"Your storage is almost full (90%) - Soon you won't be able to upload new files and send or receive emails in Gmail"</string>
+    <string name="g1_quota_description_text_95">"You're running out of storage (95%) - Soon you won't be able to upload new files and send or receive emails in Gmail"</string>
+    <string name="g1_quota_dismiss_button_content_description">Dismiss</string>
     <string name="gallery_select_error">Error selecting image for upload.</string>
     <string name="gcm_defaultSenderId">378076965553</string>
     <string name="getting_authentication_information">Opening document</string>
@@ -959,7 +978,6 @@ Click + to create a new drawing."</string>
     <string name="google_docs_long">Google Docs</string>
     <string name="google_docs_short">Docs</string>
     <string name="google_drive_product_name">Google Drive</string>
-    <string name="google_play_services_not_found">Google Drive requires Google Play Services</string>
     <string name="google_sheets_long">Google Sheets</string>
     <string name="google_sheets_short">Sheets</string>
     <string name="google_slides_long">Google Slides</string>
@@ -999,9 +1017,9 @@ Click + to create a new drawing."</string>
     <string name="internal_release_dialog_line_1">This version of Google Drive is internal only.</string>
     <string name="internal_release_dialog_line_2">"Please don't talk about it or show people outside Google."</string>
     <string name="internal_release_dialog_title">THIS IS CONFIDENTIAL</string>
-    <string name="justification_modified_by_other">Edited by %2$s %1$s</string>
-    <string name="justification_modified_by_you">Edited by you %1$s</string>
-    <string name="justification_opened_by_you">Opened by you %1$s</string>
+    <string name="justification_modified_by_other">%2$s edited %1$s</string>
+    <string name="justification_modified_by_you">You edited %1$s</string>
+    <string name="justification_opened_by_you">You opened %1$s</string>
     <string name="justification_shared_with_you">%2$s shared with you %1$s</string>
     <string name="justification_time_recently">recently</string>
     <string name="justification_time_today">today</string>
@@ -1031,9 +1049,12 @@ Click + to create a new drawing."</string>
     <string name="location_removed_entry_content_description_unclickable">Removed from %1$s.</string>
     <string name="logo_title">@string/app_name_drive</string>
     <string name="make_a_copy_action">Make a copy</string>
-    <string name="make_shorcut_selection_button">Add</string>
-    <string name="make_shorcut_undo">Undo</string>
     <string name="make_shortcut_action">Add shortcut to Drive</string>
+    <string name="make_shortcut_selection_button">Add</string>
+    <string name="make_shortcut_shared_folder_message">Only the owner of \"%s\" can delete shortcuts added to this folder</string>
+    <string name="make_shortcut_shared_folder_positive_button">Create</string>
+    <string name="make_shortcut_shared_folder_title">Create shortcut in shared folder?</string>
+    <string name="make_shortcut_undo">Undo</string>
     <string name="manage_accounts">Manage accounts</string>
     <string name="manage_members_default_members">By default, members can upload/edit/delete files &amp; invite other members</string>
     <string name="manage_members_dialog_title">Member access</string>
@@ -1062,9 +1083,9 @@ Click + to create a new drawing."</string>
     <string name="menu_empty_trash_too_many_items">Some items could not be emptied, too many items in Trash.</string>
     <string name="menu_filter_by">Filter by</string>
     <string name="menu_help_and_feedback">Help &amp; feedback</string>
-    <string name="menu_item_disable_email_notification">"Don't notify people"</string>
-    <string name="menu_item_enable_email_notification">Notify people</string>
+    <string name="menu_item_dont_notify_people">"Don't notify people"</string>
     <string name="menu_item_manage_members">Manage members</string>
+    <string name="menu_item_notify_people">Notify people</string>
     <string name="menu_item_skip_email_notification">Skip sending notifications</string>
     <string name="menu_item_use_advanced_permission">Set access for new members</string>
     <string name="menu_link_share">Link sharing</string>
@@ -1133,12 +1154,14 @@ Click + to create a new drawing."</string>
     <string name="move_confirm_dialog_message_protected_td_domain_updated">This shared drive has additional restrictions on it. People outside of %1$s will lose access.</string>
     <string name="move_confirm_dialog_message_protected_td_team_members_updated">This shared drive has additional restrictions on it. Non-shared drive members will lose access.</string>
     <string name="move_confirm_dialog_message_share_files_and_folders">Moving these files and folders will share them with everyone who can access the shared folder %1$s</string>
+    <string name="move_confirm_dialog_message_shortcuts">Only the owner of \"%s\" can delete shortcuts added to this folder</string>
     <string name="move_confirm_dialog_title_between_tds_updated">Move between shared drives?</string>
     <string name="move_confirm_dialog_title_cannot_undo">"You can't undo this action"</string>
     <string name="move_confirm_dialog_title_from_td_to_my_drive">Move to My Drive?</string>
     <string name="move_confirm_dialog_title_into_td_updated">Move into shared drive?</string>
-    <string name="move_confirm_dialog_title_lose_access">Some people will lose access</string>
+    <string name="move_confirm_dialog_title_lose_access">Some people may lose access</string>
     <string name="move_confirm_dialog_title_share_files_and_folders">Share these files and folders?</string>
+    <string name="move_confirm_dialog_title_shortcuts">Move to shared folder?</string>
     <string name="move_confirm_dialog_title_unshare">Move out of shared folder?</string>
     <string name="move_dialog_title">Select destination</string>
     <string name="move_error_cannot_move_in_folders_updated">"Folders can't be moved into shared drives yet."</string>
@@ -1162,29 +1185,33 @@ Click + to create a new drawing."</string>
     <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
     <string name="mtrl_picker_a11y_next_month">Change to next month</string>
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
-    <string name="mtrl_picker_announce_current_selection">Current Selection: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
     <string name="mtrl_picker_cancel">@android:string/cancel</string>
     <string name="mtrl_picker_confirm">@android:string/ok</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
-    <string name="mtrl_picker_date_header_unselected">Selected Date</string>
+    <string name="mtrl_picker_date_header_title">Select a Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
     <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
-    <string name="mtrl_picker_invalid_format">"Invalid Format.
-Use: %1$s"</string>
-    <string name="mtrl_picker_invalid_range">Invalid Range.</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
-    <string name="mtrl_picker_out_of_range">Out of Range: %1$s</string>
-    <string name="mtrl_picker_range_header_only_end_selected">Start Date – %1$s</string>
-    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End Date</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
     <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
-    <string name="mtrl_picker_range_header_unselected">Start Date – End Date</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
     <string name="mtrl_picker_save">Save</string>
-    <string name="mtrl_picker_text_input_date_format">MM/dd/yyyy</string>
     <string name="mtrl_picker_text_input_date_hint">Date</string>
-    <string name="mtrl_picker_text_input_date_range_end_hint">End Date</string>
-    <string name="mtrl_picker_text_input_date_range_start_hint">Start Date</string>
-    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to Calendar Input mode</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
-    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to Text Input mode</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
     <string name="nav_drawer_title">Navigation drawer opened. Showing account %1$s</string>
     <string name="nav_panel_more_storage_pending">Redeemed storage pending</string>
@@ -1252,18 +1279,14 @@ Use: %1$s"</string>
     <string name="notification_home_unread">Unread</string>
     <string name="notification_message">Message: %1$s</string>
     <string name="notification_open_document">File %1$s. Double tap to open.</string>
-    <string name="notification_setting_access_request_title">Access request notifications</string>
-    <string name="notification_setting_comment_title">Comment notifications</string>
-    <string name="notification_setting_keep_on">Keep on</string>
-    <string name="notification_setting_share_title">Shared item notifications</string>
-    <string name="notification_setting_turn_off">Turn off</string>
-    <string name="notification_setting_turn_off_summary">If these notifications are unhelpful, you can turn them off.</string>
     <string name="notification_settings">Notification settings</string>
     <string name="notification_text_content_syncing">Drive is syncing your files and folders</string>
     <string name="notification_title">"Can't access file from Drive."</string>
     <string name="notification_title_content_syncing">Syncing items</string>
     <string name="notification_toolbar_icon_arrow_content_description">Back</string>
-    <string name="notification_upload_send_link">Send link</string>
+    <string name="notification_waiting_network_content">Waiting for network</string>
+    <string name="notification_waiting_resume">Resume</string>
+    <string name="notification_waiting_wifi_content">Waiting for Wi-Fi</string>
     <string name="notify_access_request_description_many_files_many_users_icu">{RECIPIENT_GENDER,select,female{Requested access to many files}male{Requested access to many files}other{Requested access to many files}}</string>
     <string name="notify_access_request_description_many_files_one_user_icu">{RECIPIENT_GENDER,select,female{{SENDER_GENDER,select,female{Requested access to many files}male{Requested access to many files}other{Requested access to many files}}}male{{SENDER_GENDER,select,female{Requested access to many files}male{Requested access to many files}other{Requested access to many files}}}other{{SENDER_GENDER,select,female{Requested access to many files}male{Requested access to many files}other{Requested access to many files}}}}</string>
     <string name="notify_access_request_description_many_folders_many_users_icu">{RECIPIENT_GENDER,select,female{Requested access to many folders}male{Requested access to many folders}other{Requested access to many folders}}</string>
@@ -1382,18 +1405,15 @@ Use: %1$s"</string>
     <string name="og_collapse_account_menu_a11y">Collapse account menu.</string>
     <string name="og_expand_account_menu_a11y">Expand account menu.</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
-    <string name="og_incognito_disc">In incognito mode, open incognito mode menu.</string>
     <string name="og_manage_accounts">Manage accounts on this device</string>
     <string name="og_my_account_desc_long_length">Manage your Google Account</string>
     <string name="og_my_account_desc_meduim_length">Google Account</string>
     <string name="og_my_account_desc_short_length">Account</string>
     <string name="og_privacy_policy">Privacy Policy</string>
     <string name="og_sign_in">Sign in</string>
-    <string name="og_signed_in_user_a11y">Signed in as %1$s.</string>
+    <string name="og_signed_in_user_a11y_">Signed in as %1$s.</string>
     <string name="og_switch_account_to_recent_a11y">Switch to %1$s account</string>
     <string name="og_terms_of_service">Terms of Service</string>
-    <string name="og_turn_off_incognito_mode">Turn off incognito mode</string>
-    <string name="og_turn_on_incognito_mode">Turn on incognito mode</string>
     <string name="og_use_account_a11y">Use %1$s.</string>
     <string name="og_use_without_an_account">Use without an account</string>
     <string name="ok_button">OK</string>
@@ -1550,7 +1570,6 @@ all your files"</string>
     <string name="prefs_notification_comment">Comments</string>
     <string name="prefs_notification_enable">Show notifications</string>
     <string name="prefs_notification_enable_summary">Show Drive, Docs, Sheets, and Slides notifications for %1$s</string>
-    <string name="prefs_notification_no_account">Please add a Google account to configure notification settings for Drive</string>
     <string name="prefs_notification_ringtone">Sound</string>
     <string name="prefs_notification_ringtone_silent">Silent</string>
     <string name="prefs_notification_shared_items">Shared items</string>
@@ -1572,6 +1591,7 @@ all your files"</string>
     <string name="preview_open_in_docs_app_description">Tap here to open this file in the Docs application</string>
     <string name="preview_open_in_sheets_app_description">Tap here to open this file in the Sheets application</string>
     <string name="pride_query_toast_message">Celebrate diversity &amp; LGBT pride with Google. Use #prideforeveryone on social media.</string>
+    <string name="primes_marker">PrImEs</string>
     <string name="print_cancelled">Print job cancelled.</string>
     <string name="print_failure">Printing document was unsuccessful.</string>
     <string name="priority_bullet">" • "</string>
@@ -1579,6 +1599,7 @@ all your files"</string>
     <string name="prioritydocs_promo_bodycopy">To view follow-ups, install the %1$s app.</string>
     <string name="prioritydocs_promo_headline">Get the %1$s app?</string>
     <string name="prioritydocs_promo_positive">Install</string>
+    <string name="private_link_description">Only people added can open</string>
     <string name="problem_with_file">Problem with file</string>
     <string name="project_id">google.com:cakemix</string>
     <string name="published_access_anyone">Anyone on the internet can find and view this site</string>
@@ -1589,6 +1610,8 @@ all your files"</string>
     <string name="published_message_for_anyone_with_link_can_edit">Since anyone with link can edit, anyone can view when published.</string>
     <string name="published_message_for_anyone_with_link_in_domain_can_edit">Since anyone in %1$s with link can edit, anyone at %1$s can view when published.</string>
     <string name="published_options_dialog_title">Published site settings</string>
+    <string name="published_site">Published Site</string>
+    <string name="published_site_settings">Published site settings</string>
     <string name="punctuation_period">.</string>
     <string name="purchase_dialog_how_storage_used">Storage is shared across Gmail, Google Photos and Google Drive</string>
     <string name="purchase_dialog_manage">Manage storage</string>
@@ -1615,6 +1638,19 @@ comment"</string>
     <string name="quota_range_small">Under 1 MB</string>
     <string name="quota_range_undefined">Zero Storage Used</string>
     <string name="quota_zero">none</string>
+    <string name="recent_activity_approval_added_approver">%1$s &lt;font color=#9aa0a6>added an approver&lt;/font></string>
+    <string name="recent_activity_approval_added_approvers">%1$s &lt;font color=#9aa0a6>added approvers&lt;/font></string>
+    <string name="recent_activity_approval_added_date">%1$s &lt;font color=#9aa0a6>added a due date&lt;/font></string>
+    <string name="recent_activity_approval_approved">%1$s &lt;font color=#34a853>approved&lt;/font></string>
+    <string name="recent_activity_approval_cancelled">%1$s &lt;font color=#9aa0a6>cancelled an approval&lt;/font></string>
+    <string name="recent_activity_approval_changed_approver">%1$s &lt;font color=#9aa0a6>changed an approver&lt;/font></string>
+    <string name="recent_activity_approval_changed_date">%1$s &lt;font color=#9aa0a6>changed a due date&lt;/font></string>
+    <string name="recent_activity_approval_commented">%1$s &lt;font color=#9aa0a6>commented on the approval&lt;/font></string>
+    <string name="recent_activity_approval_declined">%1$s &lt;font color=#ea4335>declined&lt;/font></string>
+    <string name="recent_activity_approval_removed_approver">%1$s &lt;font color=#9aa0a6>removed an approver&lt;/font></string>
+    <string name="recent_activity_approval_removed_approvers">%1$s &lt;font color=#9aa0a6>removed approvers&lt;/font></string>
+    <string name="recent_activity_approval_removed_date">%1$s &lt;font color=#9aa0a6>removed a due date&lt;/font></string>
+    <string name="recent_activity_approval_requested">%1$s &lt;font color=#9aa0a6>requested approval&lt;/font></string>
     <string name="recent_activity_button_show_all">Show more activity</string>
     <string name="recent_activity_button_show_more_files">Show more…</string>
     <string name="recent_activity_card_title">Activity</string>
@@ -1625,6 +1661,7 @@ comment"</string>
     <string name="recent_activity_users_more">%1$s and %2$d others</string>
     <string name="recent_activity_users_one">%1$s</string>
     <string name="recent_activity_users_two">%1$s and %2$s</string>
+    <string name="reject_entry_action">Not a helpful suggestion</string>
     <string name="remove_button">Remove</string>
     <string name="remove_button_confirm">Move to trash</string>
     <string name="remove_button_shared_item_confirm">Remove</string>
@@ -1637,7 +1674,7 @@ comment"</string>
     <string name="remove_dialog_delete_different_permissions_items">You have different permissions on these items. Some will be moved to the Trash and deleted forever after 30 days. Others will be removed.</string>
     <string name="remove_dialog_delete_different_permissions_title">Only some items will be deleted</string>
     <string name="remove_dialog_delete_for_everyone_title">Delete for everyone?</string>
-    <string name="remove_dialog_delete_permanently_for_everyone_text_single">"This file will be &lt;b>permanently deleted for everyone.&lt;/b> You can't undo this action."</string>
+    <string name="remove_dialog_delete_permanently_for_everyone_text_single">"This file will be permanently deleted for everyone. You can't undo this action."</string>
     <string name="remove_dialog_delete_permanently_text_single">"This file will be permanently deleted. You can't undo this action."</string>
     <string name="remove_dialog_delete_permanently_title">Delete?</string>
     <string name="remove_dialog_team_drive_placeholder_name_updated">Shared drive</string>
@@ -1674,9 +1711,9 @@ comment"</string>
     <string name="request_access_message">The owner will receive an email notification for the person requesting access.</string>
     <string name="request_access_send_button_content_desc">Confirm request access and send to owner</string>
     <string name="request_access_sent">Your request for access has been sent.</string>
-    <string name="request_approval_title">Request approval</string>
     <string name="requesting_access">Requesting access</string>
     <string name="retry_button_text">Retry</string>
+    <string name="role_published_viewer">Published Viewer</string>
     <string name="save_as_workspace">Save as workspace</string>
     <string name="save_comment_content_description">Save comment</string>
     <string name="save_request">Send request</string>
@@ -1760,8 +1797,10 @@ comment"</string>
     <string name="share_card_title">Who has access</string>
     <string name="share_outside_dlp_domain_error">This item cannot be shared with users outside of %s. This restriction applies to files with sensitive content, sending copies of files or opening files in other applications.</string>
     <string name="share_outside_dlp_error">This item contains restricted content and therefore cannot be shared outside its domain.</string>
+    <string name="share_outside_dlp_no_domain_error">This item cannot be shared with users outside of the domain. This restriction applies to files with sensitive content, sending copies of files or opening files in other applications.</string>
     <string name="share_outside_generic_domain_error">"Can't share outside %s."</string>
     <string name="share_outside_generic_error">This item cannot be shared</string>
+    <string name="share_outside_no_domain_error">"Can't share outside of domain."</string>
     <string name="share_psyncho_warning_description">"Sharing this folder will allow the people you share it with to see your current and future photos and videos from Google Photos. If you've turned on Auto Backup, this includes photos and videos currently stored on or captured in the future with your mobile device."</string>
     <string name="share_psyncho_warning_header">Share %1$s folder?</string>
     <string name="share_psyncho_warning_learnmore">Learn more</string>
@@ -1769,6 +1808,7 @@ comment"</string>
     <string name="sharing_cannot_change">You are not allowed to modify sharing of this document.</string>
     <string name="sharing_error">Server error: Sharing information cannot be retrieved.</string>
     <string name="sharing_error_modifying">"Can't change permission. Try again later."</string>
+    <string name="sharing_fileinfopermissions_get_failure">Failed to retrieve file permissions.</string>
     <string name="sharing_info_loading">Sharing information still loading…</string>
     <string name="sharing_link_title">Link</string>
     <string name="sharing_list_offline">Sharing list unavailable in offline mode.</string>
@@ -1817,14 +1857,8 @@ comment"</string>
     <string name="sharing_outside_domain_title">Sharing outside %1$s</string>
     <string name="sharing_progress_loading_message">Loading sharing information.</string>
     <string name="sharing_progress_saving_message">Saving sharing information.</string>
-    <string name="sharing_role_commenter">Can comment</string>
     <string name="sharing_role_content_description">%1$s button for %2$s</string>
-    <string name="sharing_role_contributor">Can organize, add, and edit</string>
-    <string name="sharing_role_no_access">No access</string>
     <string name="sharing_role_owner">Owner</string>
-    <string name="sharing_role_reader">Can view</string>
-    <string name="sharing_role_unknown">Unknown access</string>
-    <string name="sharing_role_writer">Can edit</string>
     <string name="sharing_server_error_generic_all">"This item can't be shared."</string>
     <string name="sharing_server_error_more">"This item can't be shared with %1$s."</string>
     <string name="sharing_server_error_one">"This item can't be shared with %1$s."</string>
@@ -1905,6 +1939,7 @@ comment"</string>
     <string name="storage_title">Storage</string>
     <string name="storage_upgrade">Upgrade storage</string>
     <string name="storage_usage_message">"You've used %1$s of %2$s (%3$s%%)"</string>
+    <string name="storage_usage_title">Storage (%1$d%% full)</string>
     <string name="storage_used">%1$s of %2$s used</string>
     <string name="storage_used_unlimited">%1$s used</string>
     <string name="storage_used_upgrade">%1$s of %2$s used. Upgrade now.</string>
@@ -1914,6 +1949,7 @@ comment"</string>
     <string name="suggested_files_header">Suggested files</string>
     <string name="suggested_name_selected_accessibility_announcement">%1$s, selected</string>
     <string name="suggested_workspace_create_failed">There was an issue saving the suggested workspace.</string>
+    <string name="suggested_workspace_dismissed">Suggested workspace dismissed</string>
     <string name="suggested_workspace_header">Suggested Workspaces</string>
     <string name="suggested_workspace_saved">Suggested workspace saved</string>
     <string name="suggested_workspace_saved_file_failure">There was an issue adding files to your new workspace.</string>
@@ -1921,6 +1957,8 @@ comment"</string>
 
 Green is from the cache. Blue is from the network. Red is a fallback."</string>
     <string name="suggestion_debug_title">Turn on suggestion result debug indicators</string>
+    <string name="suggestion_dismiss_fail">"Couldn't dismiss suggestion"</string>
+    <string name="suggestion_dismissed">Suggestion dismissed</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="switch_account_help_card_button">Change account</string>
     <string name="switch_account_help_card_content">This device is backed up to a different account. %s</string>
@@ -1976,7 +2014,6 @@ Green is from the cache. Blue is from the network. Red is a fallback."</string>
     <string name="toolbar_search_hint">Search Drive</string>
     <string name="transfer_notification_waiting_content">Waiting for Wi-Fi network.</string>
     <string name="transfer_notification_waiting_network_content">Waiting for network.</string>
-    <string name="transfer_notification_waiting_resume_with_bytes">Force resume (%1$s)</string>
     <string name="trash_name">Deleted from %s</string>
     <string name="trash_selected">%s trash currently showing</string>
     <string name="turn_off_link_sharing">Turning off link sharing</string>
@@ -2029,6 +2066,7 @@ You can turn backup on again by going to Settings > Chats > Chat backup in Whats
     <string name="untrash_and_open_title">File is in trash</string>
     <string name="untrash_and_open_title_folder">Folder is in trash</string>
     <string name="untrash_dismiss">Dismiss</string>
+    <string name="updating_role">Updating…</string>
     <string name="upgrade_storage">Upgrade storage</string>
     <string name="upload_account">Account</string>
     <string name="upload_completed_announcement">%1$s has uploaded successfully.</string>
@@ -2040,11 +2078,16 @@ You can turn backup on again by going to Settings > Chats > Chat backup in Whats
     <string name="upload_incomplete">Incomplete upload</string>
     <string name="upload_multiple_document_titles">Document titles</string>
     <string name="upload_notification_cancel_title">Upload canceled</string>
+    <string name="upload_notification_detailed_sync_completed_some_failed">%1$d of %2$d uploads failed</string>
     <string name="upload_notification_failure_folder">Cannot upload a folder</string>
     <string name="upload_notification_failure_no_retry_title">Upload was unsuccessful</string>
     <string name="upload_notification_failure_ticker">Upload failed</string>
     <string name="upload_notification_more_files">+%1$d more</string>
-    <string name="upload_notification_waiting_for_connectivity_title">Upload paused</string>
+    <string name="upload_over_quota_link_anchor">Learn more</string>
+    <string name="upload_over_quota_message">Buy storage or clear up space to upload new files.</string>
+    <string name="upload_over_quota_negative_button">Not now</string>
+    <string name="upload_over_quota_positive_button">Buy storage</string>
+    <string name="upload_over_quota_title">"Can't upload new files"</string>
     <string name="upload_pause">Pause upload</string>
     <string name="upload_paused">Upload paused</string>
     <string name="upload_remove">Cancel upload</string>
@@ -2121,8 +2164,7 @@ To turn backup on again, go to Settings > Chats in WhatsApp."</string>
     <string name="workspace_archived">Workspace hidden</string>
     <string name="workspace_contains_file">File already in workspace</string>
     <string name="workspace_detail_empty_call_to_action">Add files</string>
-    <string name="workspace_detail_empty_subtitle">Start by adding files</string>
-    <string name="workspace_detail_empty_title">This workspace is empty</string>
+    <string name="workspace_detail_empty_title">Get started by adding files to your workspace</string>
     <string name="workspace_empty_create_message">"Keep files you're working on in the same place so you can pick up where you left off."</string>
     <string name="workspace_empty_message">To create a workspace, go to drive.google.com on the web</string>
     <string name="workspace_empty_title">Create your own personal workspace</string>
@@ -2131,10 +2173,14 @@ To turn backup on again, go to Settings > Chats in WhatsApp."</string>
     <string name="workspace_list_empty_slice">No files in workspace</string>
     <string name="workspace_remove_failed">Failed to remove workspace</string>
     <string name="workspace_removed">Workspace removed</string>
+    <string name="workspace_suggestion_dismiss">Dismiss</string>
+    <string name="workspace_suggestion_feedback_failed">Unable to dismiss suggested workspace</string>
     <string name="workspace_suggestion_feedback_submitted">Feedback submitted</string>
     <string name="workspace_suggestion_not_helpful">Not helpful</string>
+    <string name="workspace_suggestion_save">Save</string>
     <string name="workspace_unarchived">Workspace unhidden</string>
     <string name="write_access_denied">Write access to the document denied.</string>
+    <string name="writer_folder_description">Organize, add, and edit files</string>
     <string name="zss_accessibility_searching">Searching for %1$s</string>
     <string name="zss_date_range_header_title">Date modified</string>
     <string name="zss_date_range_month">Last 30 days</string>
