@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">UniPlay Service</string>
+    <string name="actionbar_button_up_description">Back</string>
+    <string name="app_name">clientSDK</string>
     <string name="app_pkg_name">com.milink.service</string>
     <string name="app_ver_code">1</string>
     <string name="app_ver_name">1.0</string>
@@ -20,14 +21,13 @@
     <string name="dialog_ok">OK</string>
     <string name="dialog_only_suport_content">Stream photos, videos, or music</string>
     <string name="dialog_open_wifi_bt">Turn on</string>
-    <string name="dialog_please_make_sure_tv_ok">Target device needs to turn on wireless screencast.</string>
-    <string name="dialog_please_make_sure_tv_ok_or_help">"Please check if the target device has the wireless screencast function enabled.
-For more questions, please see the help."</string>
+    <string name="dialog_please_make_sure_tv_ok_or_help">"Make sure that the wireless casting feature is turned on on the target device.
+View help if you have problems connecting."</string>
     <string name="dialog_recent_connected">Recent</string>
     <string name="dialog_retry">Try again</string>
     <string name="dialog_scanning_device">Searching for devices nearby…</string>
     <string name="dialog_scanning_precondition">Turn on Wi-Fi and Bluetooth on your phone to use Wireless Display.</string>
-    <string name="dialog_select_tv">Select device to connect</string>
+    <string name="dialog_select_tv">Select device (%d)</string>
     <string name="dialog_show_help">Help</string>
     <string name="disconnect">Stop casting</string>
     <string name="hang_up">Cast with screen off</string>
@@ -42,6 +42,11 @@ For more questions, please see the help."</string>
     <string name="help_page_text_05">Step 1: Check your devices and network environment</string>
     <string name="help_page_text_06">"1. You don't need to connect to the internet if you want to cast something from a Mi phone to a Mi TV.
 2. If you can't establish connection between the two devices, try connecting both of them to the same Wi-Fi network."</string>
+    <string name="help_page_text_06_global">"1. Mi TVs, Mi Boxes, and Mi Projectors:
+Connect both your phone and external monitor to the same Wi-Fi network for best effect. If they are connected to different networks, it might take more time to find the external monitor and connect.
+Note: Older Mi TVs might not support casting across different networks.
+2. If you're using TVs, set-top boxes, or projectors of other brands, connect both your phone and external monitor to the same Wi-Fi network.
+If the two devices can't be connected to the same network, turn on Miracast on your external monitor. The naming of Miracast functionality might vary."</string>
     <string name="help_page_text_08">Step 2: Turn on casting</string>
     <string name="help_page_text_09">"Tap the \"Cast\" toggle on your phone's Notification shade. Turn on both Wi-Fi and Bluetooth for a more stable connection."</string>
     <string name="help_page_text_10">If you want to cast items from Gallery or Mi Video, you can use built-in casting features in these apps.</string>
@@ -82,20 +87,20 @@ If you need to turn on Miracast, press the [MENU] button and select My apps > Ca
     <string name="help_page_text_34">First, make sure that Miracast functionality is supported on your device. On some of the models, you can select Apps > Casting > Android device > Miracast.</string>
     <string name="help_page_text_35">Skyworth customer support: 95105555</string>
     <string name="help_page_text_36">Sony</string>
-    <string name="help_page_text_37">First, make sure that Miracast functionality is supported on your device. On some of the models, you can press the [SOURCE] button on the remote control and then select \"Screen Mirroring\";Some models can be selected by the network > WIFIDirect setting; This feature is turned on by default on various models.</string>
+    <string name="help_page_text_37">First, make sure that Miracast functionality is supported on your device. On some of the models, you can press the [SOURCE] button on the remote control and then select \"Screen Mirroring\". On some other models, you can turn this feature on in Networks > Wi-Fi Direct. This feature is turned on by default on various models.</string>
     <string name="help_page_text_38">Sony customer support: 400-810-9000</string>
     <string name="help_page_text_39">Panasonic</string>
     <string name="help_page_text_40">First, make sure that Miracast functionality is supported on your device. On some of the models, you can select Apps > Screen Mirroring.</string>
     <string name="help_page_text_41">Panasonic customer support: 400-881-1315</string>
     <string name="help_page_text_42">Changhong</string>
-    <string name="help_page_text_43">First, make sure that Miracast functionality is supported on your device. On some of the models, you can select System > System Tools > Multiple Screens > Screen Mirroring.</string>
+    <string name="help_page_text_43">Check the settings of your TV to make sure that your external monitor supports Miracast functionality.</string>
     <string name="help_page_text_44">Changhong customer support: 400-811-1666</string>
     <string name="help_page_text_45">TCL</string>
     <string name="help_page_text_46">First, make sure that Miracast functionality is supported on your device. On some of the models, you can select Apps > Wireless Display.</string>
     <string name="help_page_text_47">TCL customer support: 400-812-3456</string>
     <string name="help_page_text_48">AODIN</string>
     <string name="help_page_text_49">First, make sure that Miracast functionality is supported on your device. To turn this feature on, go to My Apps > WiFi Display.</string>
-    <string name="help_page_text_50">AODIN customer support:400-810-5858</string>
+    <string name="help_page_text_50">AODIN customer support: 400-810-5858</string>
     <string name="help_page_text_51">LeEco</string>
     <string name="help_page_text_52">First, make sure that Miracast functionality is supported on your device. On some of the models, you can turn this feature on in Settings > Networks > Multiple screens > Wireless Display.</string>
     <string name="help_page_text_53">LeEco customer support: 10109000</string>
@@ -104,24 +109,29 @@ If you need to turn on Miracast, press the [MENU] button and select My apps > Ca
     <string name="help_page_text_55_global">"If you can't connect to the network, make sure your external monitor supports Miracast functionality and it's turned on. On some models, this feature is called Wireless Display, Screen Mirroring, or Multiple screens.
 4. If you encounter any issues, you can report them using our \"Services &amp; feedback\" app."</string>
     <string name="help_page_text_end">"If the brand of your device isn't listed here, contact the manufacturer to learn more about casting functionality."</string>
-    <string name="notification_rc_desc">The best TV Assistant for your mobile to cast video, photo and application to XiaoMi Box (or TV), just try it now!</string>
+    <string name="nfc_connect_failed_toast">"Couldnt't cast. Try again."</string>
     <string name="notification_rc_title">XiaoMi TV Assistant</string>
     <string name="notification_show_more">Tap to view more features</string>
     <string name="privacy_agree">Agree</string>
-    <string name="privacy_text_1">"　　Welcome to Casting! Casting allows projecting the items from your phone's screen on a bigger external monitor. We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies. Some features are provided by a third party service provider LeEco. Before using this feature, read and agree to "<a href="http://cdn.hpplay.com.cn/xm/lawer.html">LeEco Casting Legal Statement</a> and <a href="http://cdn.hpplay.com.cn/xm/privacy.html">LeEco Casting Privacy Policy</a>.</string>
-    <string name="privacy_text_2">"　　If you don't agree to grant such permissions or share and upload your personal information, you won't be able to use this app. You can choose to uninstall this app, sign out, or restrict permissions in the Settings in such cases. Read and agree to our "<a href="http://www.miui.com/res/doc/eula/en.html">User Agreement</a> and <a href="https://privacy.mi.com/all/en_US/">Privacy Policy</a> before using this feature.</string>
+    <string name="privacy_link_1">http://cdn.hpplay.com.cn/xm/lbprivacy/index.html?langType=en</string>
+    <string name="privacy_link_2">http://cdn.hpplay.com.cn/xm/lbservice/index.html?langType=en</string>
+    <string name="privacy_text_1"><Data>"Welcome to Casting! Casting allows projecting the items from your phone's screen on a bigger external monitor.
+We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies. Some features are provided by a third party service provider HappyCast. Before using this feature, read and agree to &lt;a href=%2$s>HappyCast Legal Statement&lt;/a> and &lt;a href=%1$s>HappyCast Privacy Policy&lt;/a>.
+To be able to work normally, this app needs to connect to the internet and requires the following permissions in order to collect your personal information:"</Data></string>
+    <string name="privacy_text_2"><Data>"If you don't agree to grant such permissions or share and upload your personal information, you won't be able to use this app. You can choose to uninstall this app, sign out, or restrict permissions in the Settings in such cases.
+Read and agree to our &lt;a href=%1$s>User Agreement&lt;/a> and &lt;a href=%2$s>Privacy Policy&lt;/a> before using this feature."</Data></string>
     <string name="privacy_text_pemission">"　　•Access and save images on your device in order to project these items on external monitors
 　　•Record calls and audio in order to cast audio on external devices
 　　•Access phone number, IMEI, and IMSI to identify your device
 　　•Access your location to find devices nearby"</string>
     <string name="private_protect">Hide private items</string>
-    <string name="san_wait_msg_1">Target device needs to turn on wireless screencast</string>
+    <string name="san_wait_msg_1">Turn on wireless casting on the target device</string>
     <string name="san_wait_msg_2">Searching for devices might take some time…</string>
     <string name="san_wait_msg_3">"External devices are easier to find when they're connected to the same network as your phone"</string>
     <string name="san_wait_msg_4">"View \"Help\" if you can't find devices"</string>
     <string name="sdk_name">lebo</string>
-    <string name="service_name">UniPlay Service</string>
     <string name="small_window">Minimize window</string>
+    <string name="small_window_not_supported">"Can't minimize this app while it's being cast"</string>
     <string name="status_bar_in_casting">Casting…</string>
     <string name="status_bar_in_casting_long">Tap to view more casting features</string>
     <string name="status_bar_notification_info_overflow">999+</string>

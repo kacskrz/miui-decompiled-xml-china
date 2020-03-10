@@ -2,6 +2,7 @@
 <resources>
     <string name="tsm_name">MiSmartCards</string>
     <string name="trans_card_title">Mi Transit</string>
+    <string name="door_card_title">Mi Door</string>
     <string name="bank_card_title">Mi Pay</string>
     <string name="bank_card_intro_nfc_title">Mi Pay is supported by most POS systems</string>
     <string name="trans_card_intro_nfc_title">Use your phone to pay for public transport rides</string>
@@ -12,6 +13,8 @@
     <string name="confirm">OK</string>
     <string name="recharge">Top up</string>
     <string name="retry">Try again</string>
+    <string name="install">Install</string>
+    <string name="open">Open</string>
     <string name="loading">Just a sec…</string>
     <string name="refunding">Getting a refund…</string>
     <string name="retrying">Trying again…</string>
@@ -24,6 +27,7 @@
     <string name="have_finished">Done</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="re_login">Please login again.</string>
     <string name="set_default_card">Set default card</string>
     <string name="setting">Processing…</string>
     <string name="service_unavailable">"Service isn't available."</string>
@@ -36,7 +40,7 @@
     <string name="finger_printer_failed">"Couldn't verify fingerprint, try again."</string>
     <string name="finger_printer_error">Too many unsuccessful attempts</string>
     <string name="finger_printer_ok">Verified fingerprint successfully</string>
-    <string name="transaction_success">Closed transaction successfully</string>
+    <string name="transaction_success">Done</string>
     <string name="check_find_phone_title">Checking phone status…</string>
     <string name="find_phone_open_failure">"Couldn't launch \"Find device\""</string>
     <string name="verify_finger_nfc_exception_hint">"Couldn't read the card. Make sure NFC is turned on."</string>
@@ -65,6 +69,10 @@
     <string name="card_unit">cards</string>
     <string name="active_time">Validity period: %1$sms</string>
     <string name="banner_accessibility_description">Activity</string>
+    <string name="card_travel_tips_start">going</string>
+    <string name="card_travel_tips_end">trade success : %1$s CNY</string>
+    <string name="card_travel_tips_end_default">%1$s : %2$s CNY</string>
+    <string name="card_travel_tips_end_details">%1$s -> %2$s : %3$s CNY</string>
     <string name="switch_card_other_card_tips">Other cards, double click to show all cards</string>
     <string name="accessibility_content_desc_bank_card">%1$s Mi Pay Card,Tail number %2$s</string>
     <string name="accessibility_content_desc_payable_card">%1$s，Balance RMB %2$.2f</string>
@@ -403,10 +411,14 @@ Bring the card close to your phone's NFC reader to record info."</string>
     <string name="bank_card_open_success_password_hint">"You might need to enter your payment password while paying with this card.
 Contact your bank for details: "<a href="tel:">%1$s</a></string>
     <string name="bank_card_uptsmaddon_exception_message">An error occurred. Continue anyway?</string>
+    <string name="bank_card_certificate_type">Choose certificate type</string>
+    <string name="bank_card_change_certificate_type">change certificate type</string>
+    <string name="bank_card_bind_device_hint">Mi Pay bank card binds with current device. Reopen if the device is replaced</string>
     <string name="bank_card_choose_valid_date">Select expiration date</string>
     <string name="bank_card_input_error_num">The bank card number you entered is invalid.</string>
     <string name="bank_card_input_error_cvn2">The CVN2 you entered is incorrect.</string>
     <string name="bank_card_input_error_valid_date">The expiration date you entered is incorrect.</string>
+    <string name="bank_card_input_error_id_card">The ID card you enter is incorrect</string>
     <string name="bank_card_input_error_pin">The password you entered is incorrect.</string>
     <string name="bank_card_pan">Bank card number</string>
     <string name="bank_card_verify_failed">The card info you entered is incorrect.</string>
@@ -430,6 +442,14 @@ Contact your bank for details: "<a href="tel:">%1$s</a></string>
     <string name="bank_card_webView_support_list">Supported banks</string>
     <string name="bind_bank_card_num_title_normal">Bank card number</string>
     <string name="bind_bank_card_num_hint">Enter your bank card number</string>
+    <string name="bind_bank_card_owner_title">Bank card account owner</string>
+    <string name="bind_bank_card_owner_hint">Bank card account owner，identity information is only used for payment scenarios</string>
+    <string name="bind_bank_card_owner_sex">Sex</string>
+    <string name="bind_bank_card_owner_birthday">Birthday</string>
+    <string name="bind_bank_card_owner_address">Address</string>
+    <string name="bind_bank_card_owner_id_card_num">Citizen identity card number</string>
+    <string name="bind_bank_card_owner_identity_card_num_title">Identity card number</string>
+    <string name="bind_bank_card_owner_identity_card_num_hint">"Bank card account owner's identity card number"</string>
     <string name="bind_bank_card_valid_title">Validity</string>
     <string name="bind_bank_card_valid_hint">Month/Year</string>
     <string name="bind_bank_card_cvn2_title">CVN2</string>
@@ -709,7 +729,7 @@ Just bring your phone next to a reader to pay."</string>
     <string name="card_invalid">"This card isn't supported. Try a different card."</string>
     <string name="entrance_card_not_supported">"This card isn't supported."</string>
     <string name="entrance_card_cancel_finger_title">Cancel fingerprint verification</string>
-    <string name="entrance_card_cancel_finger_msg">" "<Data>"&lt;font color=#9B9B9B>From now on, you should use your card keys&lt;/font> &lt;font color=#FF7700>without fingerprint verification&lt;/font>&lt;font color=#9B9B9B>. &lt;br>If you disagree, you won't be able to use your card keys and have to delete them.&lt;/font>"</Data>" "</string>
+    <string name="entrance_card_cancel_finger_msg"><Data>"&lt;font color=#9B9B9B>From now on, you should use your card keys&lt;/font> &lt;font color=#FF7700>without fingerprint verification&lt;/font>&lt;font color=#9B9B9B>. &lt;br>If you disagree, you won't be able to use your card keys and have to delete them.&lt;/font>"</Data></string>
     <string name="entrance_card_cancel_finger_yes">Agree</string>
     <string name="entrance_card_cancel_finger_no">Disagree</string>
     <string name="id_check_title">Verify ID</string>
@@ -724,24 +744,33 @@ Just bring your phone next to a reader to pay."</string>
     <string name="identity_tag_not_check">Not verified</string>
     <string name="identity_tag_has_checked">Verified</string>
     <string name="double_press_power_guide_title">Double press the Power button to open Mi Wallet</string>
-    <string name="double_press_power_guide_subtitle">" "<Data>&lt;font color=#9B9B9B>Double pressing the Power button will open&lt;/font> &lt;font color=#FF7700>Mi Wallet&lt;/font>&lt;font color=#9B9B9B> now. You can change this in Settings > Button and gesture shortcuts.&lt;/font></Data>" "</string>
+    <string name="double_press_power_guide_subtitle"><Data>&lt;font color=#9B9B9B>Double pressing the Power button will open&lt;/font> &lt;font color=#FF7700>Mi Wallet&lt;/font>&lt;font color=#9B9B9B> now. You can change this in Settings > Button and gesture shortcuts.&lt;/font></Data></string>
     <string name="use_theme_card_logo_type">light</string>
     <string name="trans_card_balance_reminder_content">Balance: %1$.2f CNY</string>
     <string name="trans_card_balance_reminder_tips_left">(</string>
     <string name="trans_card_balance_reminder_tips_right">)</string>
-    <string name="inapp_change_pay_card">Switch</string>
-    <string name="inapp_pay_succeed">Paid %1$.2f CNY successfully</string>
-    <string name="inapp_pay_succeed_no_currency">Completed payment successfully</string>
     <string name="inapp_pay_failed">"Couldn't complete payment"</string>
     <string name="inapp_pay_discount">Discount</string>
     <string name="inapp_add_card">Add card</string>
     <string name="inapp_input_trans_password">"Enter your bank card's PIN"</string>
-    <string name="inapp_order_amount">Original price: %1$.2f CNY</string>
-    <string name="inapp_pay_amount">%1$.2f CNY</string>
     <string name="inapp_pay_card_limit_alert">"This card type isn't supported"</string>
     <string name="inapp_pay_card_limit_unavailable">Not supported</string>
-    <string name="inapp_merchant_name">Merchant Name</string>
     <string name="inapp_trade_time">Trade Time</string>
+    <string name="inapp_container_discount_info">Discount info</string>
+    <string name="inapp_container_pay_method">Pay method</string>
+    <string name="inapp_result_pay_success">Pay success</string>
+    <string name="inapp_result_pay_failed">Pay failed</string>
+    <string name="inapp_result_discount_amount">Discount amount</string>
+    <string name="inapp_result_merchant_name">Merchat name</string>
+    <string name="inapp_order_amount">Original price: %1$.2f CNY</string>
+    <string name="inapp_pay_amount">%1$.2f</string>
+    <string name="inapp_pay_amount_unit">CNY</string>
+    <string name="inapp_container_discount_amount_format">Has been reduced%1$.2fCNY</string>
+    <string name="inapp_result_discount_amount_format">-%1$.2f</string>
+    <string name="inapp_bank_card_format">%1$s %2$s (%3$s)</string>
+    <string name="wx_pay_success">Pay success</string>
+    <string name="wx_pay_cancel">Pay cancel</string>
+    <string name="wx_pay_error">Unknown error</string>
     <string name="loading_cards">Loading. Please keep network alive…</string>
     <string name="retry_later">Retry later</string>
     <string name="loading_cards_alert_title">Quit loading?</string>
@@ -772,6 +801,18 @@ Just bring your phone next to a reader to pay."</string>
     <string name="door_card_product_empty">Card product list is empty</string>
     <string name="foreground_service_notification_title">Mi Wallet</string>
     <string name="foreground_service_notification_content">MiSmartCards is in operation…</string>
+    <string name="card_detail_switch_card_city_positive">Go to Switch</string>
+    <string name="card_detail_switch_card_city_message">" Switch the card city to the current location city %1$s to enhance the card experience"</string>
+    <string name="switch_card_problem_repair">Click repair</string>
+    <string name="switch_card_problem_repair_tips">"In the bug fix, please don't quit the page"</string>
+    <string name="switch_card_problem_repair_subway">The cards currently in use have incomplete subway credit card transactions, please go to the local subway service desk for processing.</string>
+    <string name="switch_card_problem_repair_choose_city">Will the card city switch the current city %1$s?</string>
+    <string name="switch_card_problem_repair_finish">Repair is complete, please swipe card again</string>
+    <string name="switch_card_problem_repair_failed">Repair failed, please retry after reboot device</string>
+    <string name="identity_type_id_card">ID Card</string>
+    <string name="identity_type_passport">Passport</string>
+    <string name="identity_type_mainland_travel_permit_for_HongKong_and_Macao_residents">Mainland Travel Permit for Hong Kong and Macao Residents</string>
+    <string name="identity_type_mainland_travel_permit_for_Taiwan_residents">Mainland Travel Permit for Taiwan Residents</string>
     <string name="app_name">NextPay</string>
     <string name="nextpay_card_recharge_recharge_info">Select amount (CNY)</string>
     <string name="nextpay_custom_fee_dialog_title">Enter amount (CNY)</string>
@@ -792,8 +833,10 @@ Just bring your phone next to a reader to pay."</string>
     <string name="nextpay_card_custom_issue_item_default_text_title">Service fee</string>
     <string name="nextpay_card_recharge_btn_unit_text">Pay %1$.2f CNY</string>
     <string name="nextpay_card_recharge_coupon_item_text_not_coupon">None</string>
+    <string name="nextpay_card_recharge_wx_pay_recharge">You have not installed wechat, unable to complete payment</string>
     <string name="nextpay_card_issue_fee_null_tip">Enter custom amount</string>
     <string name="nextpay_card_issue_fee_over_tip">Enter custom amount</string>
+    <string name="nextpay_card_issue_fee_less_tip">Less custom amount, please retry</string>
     <string name="nextpay_more_settings_title">Settings</string>
     <string name="nextpay_more_settings_inquiry">Settings</string>
     <string name="nextpay_more_settings_toggle_default_card">Change default card</string>
@@ -812,6 +855,9 @@ Just bring your phone next to a reader to pay."</string>
     <string name="nextpay_choose_city_title">Select city</string>
     <string name="nextpay_choose_city_current">Current city</string>
     <string name="nextpay_choose_city_shift">Switch cities</string>
+    <string name="nextpay_choose_city_auto_choose_dialog">Choose switch card city at %1$s,Improve experience</string>
+    <string name="nextpay_choose_city_auto_choose">Already auto choose switch card city</string>
+    <string name="nextpay_choose_city_get_failed">Get city list failed</string>
     <string name="paynext_result_issue_success_content">Created successfully</string>
     <string name="paynext_result_issue_success_content_detail">Bring your device next to a wireless reader to pay. You can also double press the Power button to switch between cards.</string>
     <string name="paynext_result_issue_success_footer_op_text">How to use your transport card</string>
@@ -911,6 +957,7 @@ Just bring your phone next to a reader to pay."</string>
     <string name="qr_code_loading">QR code loading…</string>
     <string name="qr_pay_notice">Please bring your phone closer to reader or show the QR code</string>
     <string name="qr_scan_finished">Pay Finished</string>
+    <string name="only_qr_pay_notice">Please show the QR code</string>
     <string name="bind_bank_mipay_add">Add Mi Pay</string>
     <string name="bind_bank_mipay_add_bank_card">add Mi Pay bank card</string>
     <string name="mipay_more_settings_title">More settings</string>
@@ -923,4 +970,21 @@ Just bring your phone next to a reader to pay."</string>
     <string name="mipay_more_settings_num_star">****</string>
     <string name="mipay_service_unavailable">Service unavailable</string>
     <string name="mipay_list_empty">Mi Pay not added</string>
+    <string name="geo_fence_service_not_ready">The service is starting, retry later.</string>
+    <string name="intelligent_card_selection">Smart Switch</string>
+    <string name="intelligent_card_selection_desc">Wallet will help find the right card for you based on your reader and location. Cards that require identity verification are not supported.</string>
+    <string name="swiping_setting_card_replace_intelligent_card_waring_message">Set Smart Switch? Default card settings will be discard. To improve swipe experience, the wallet service may upload card usage data.</string>
+    <string name="swiping_location_setting_title">Swipe location</string>
+    <string name="swiping_location_search_hint">Enter address</string>
+    <string name="swiping_intelligent_setting_title">Smart Switch</string>
+    <string name="swiping_intelligent_selection_fence_number">%1$d locations</string>
+    <string name="swiping_intelligent_fence_list_title">Swipe locations</string>
+    <string name="swiping_intelligent_fence_list_add_fence">To improve swipe experience, please set swipe location for your Key Card</string>
+    <string name="swiping_intelligent_fence_list_tips">You can add up to %1$d swipe locations</string>
+    <string name="swiping_intelligent_fence_add">Add location</string>
+    <string name="swiping_intelligent_selection_about_trans_category_title">Mi Transit (Please select one transit card)</string>
+    <string name="swiping_intelligent_selection_about_door_category_title">Key Card (Please set swipe locations)</string>
+    <string name="swiping_intelligent_selection_about">"About Smart Switch:
+1、Smart Switch do not support cards that require identity verification
+2、Smart Switch supports the car key by default"</string>
 </resources>
