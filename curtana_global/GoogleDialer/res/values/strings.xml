@@ -11,6 +11,7 @@
     <string name="a11y_call_duration_short_format">%1$d %2$s</string>
     <string name="a11y_call_incoming_answer_description">Answer</string>
     <string name="a11y_call_incoming_decline_description">Decline</string>
+    <string name="a11y_callscreen_animation">Call Screen Animation</string>
     <string name="a11y_conversation_history_entry_answered_call">The latest is an answered call from ^1</string>
     <string name="a11y_conversation_history_entry_blocked_call">The latest is a blocked call from ^1</string>
     <string name="a11y_conversation_history_entry_missed_call">The latest is a missed call from ^1</string>
@@ -108,6 +109,7 @@
     <string name="audioroute_headset">Wired headset</string>
     <string name="audioroute_phone">Phone</string>
     <string name="audioroute_speaker">Speaker</string>
+    <string name="auto_call_screen_animation_key">auto_call_screen_animation_key</string>
     <string name="avatar_description">Image avatar of caller</string>
     <string name="battery_saver_theme_label">Set by Battery Saver</string>
     <string name="block_list">Blocked numbers</string>
@@ -139,6 +141,9 @@
     <string name="call">Voice call</string>
     <string name="callFailed_simError">No SIM or SIM error</string>
     <string name="callHistoryIconLabel">Call history</string>
+    <string name="call_action_label_automatically_screen">Automatically screen. Decline robocalls.</string>
+    <string name="call_action_label_ring_phone">Ring phone (default)</string>
+    <string name="call_action_label_silently_decline">Silently decline</string>
     <string name="call_assistant">Call %s</string>
     <string name="call_blocking_disabled_notification_text">Disabled because an emergency call was made.</string>
     <string name="call_blocking_disabled_notification_title">Call blocking disabled for 48 hours</string>
@@ -291,6 +296,8 @@ Neither the call audio nor the transcript of the call is sent to anyone, includi
     <string name="call_work">Call work</string>
     <string name="call_work_mobile">Call work mobile</string>
     <string name="call_work_pager">Call work pager</string>
+    <string name="caller_action_error_cant_load_value">Unable to fetch current %1$s value</string>
+    <string name="caller_action_error_cant_set_value">Unable to save %1$s value</string>
     <string name="caller_id_instruction_text_key">google_caller_id_instruction_key</string>
     <string name="caller_id_preference_summary">Identify business and spam numbers</string>
     <string name="caller_id_preference_title">See caller and spam ID</string>
@@ -298,6 +305,10 @@ Neither the call audio nor the transcript of the call is sent to anyone, includi
     <string name="caller_id_settings_text">Google will attempt to show you useful information when you make or receive a call, such as a name for a number not in your contacts or a warning when an incoming call is suspected to be spam. &lt;a href=%1$s>Learn more&lt;/a> &lt;br>&lt;br></string>
     <string name="caller_id_settings_text2">Data being used in these features is provided by Google and its licensors. &lt;a href=%1$s>Learn more&lt;/a></string>
     <string name="caller_id_settings_title">Caller ID &amp; spam</string>
+    <string name="callscreen_settings_call_screen_activation_status_title">Activating Call Screen (requires WiFi)</string>
+    <string name="callscreen_settings_call_screen_status_key">revelio_settings_call_screen_status_key</string>
+    <string name="callscreen_settings_voice_key">callscreen_settings_voice_key</string>
+    <string name="callscreen_settings_voice_setting_title">Voice</string>
     <string name="camera_privacy_text">Camera permission enabled</string>
     <string name="cannot_understand">"It's difficult to understand you at the moment. Could you repeat what you just said?"</string>
     <string name="cannot_understand_description">"I can't understand"</string>
@@ -356,7 +367,7 @@ Please send help."</string>
     <string name="contact_grid_incoming_suspected_spam_230151">Suspected junk caller</string>
     <string name="contact_grid_incoming_suspected_spam_230153">Suspected unwanted caller</string>
     <string name="contact_grid_incoming_suspected_spam_230155">Suspected junk/unwanted caller</string>
-    <string name="contact_grid_incoming_validated_call">%1$s Verified ‧ %2$s</string>
+    <string name="contact_grid_incoming_validated_call">"%1$s Verified  ·  %2$s"</string>
     <string name="contact_grid_incoming_validated_call_default_carrier_name">Carrier</string>
     <string name="contact_grid_incoming_via_template">Call via %s from</string>
     <string name="contact_grid_incoming_video_call">Carrier video call from</string>
@@ -392,7 +403,8 @@ Please send help."</string>
     <string name="conversation_history_call_details_header_today">Today</string>
     <string name="conversation_history_call_details_snack_bar_deleted">Call deleted</string>
     <string name="conversation_history_call_details_snack_bar_undo">Undo</string>
-    <string name="conversation_history_dropdown_menu_full_transcript_link_text">See full transcript</string>
+    <string name="conversation_history_dropdown_menu_full_transcript_link_text_with_audio">Transcript and audio</string>
+    <string name="conversation_history_dropdown_menu_full_transcript_link_text_without_audio">Transcript</string>
     <string name="conversation_history_dropdown_menu_transcript_title">Call Screen</string>
     <string name="copy">Copy</string>
     <string name="copy_number">Copy number</string>
@@ -555,6 +567,9 @@ Please send help."</string>
     <string name="feedback_notification_content">"We'll use your feedback to improve."</string>
     <string name="feedback_title_no_contact_info">How was the quality on your last call?</string>
     <string name="feedback_title_with_contact_info">How was the quality on your call with %1$s?</string>
+    <string name="first_time_callers_action_preference_description">Callers not in your call log</string>
+    <string name="first_time_callers_action_preference_key">first_time_callers_action_preference_key</string>
+    <string name="first_time_callers_action_preference_title">First-time callers</string>
     <string name="frequent_contact_suggestion">Frequently called</string>
     <string name="full_name">Name</string>
     <string name="general_learn_more">Learn more</string>
@@ -620,6 +635,8 @@ Please send help."</string>
     <string name="incall_video_call_requesting">Carrier video calling…</string>
     <string name="incall_video_call_upgrade_request">Switching to carrier video…</string>
     <string name="incall_wifi_video_call_requesting">Wi-Fi carrier video calling…</string>
+    <string name="incoming_call">Incoming call • %s</string>
+    <string name="incoming_call_from">Incoming call from %s</string>
     <string name="invalidNumber">%1$sis invalid.</string>
     <string name="invite_video">Invite to video call</string>
     <string name="japanese_emergency_location_share_warning_toast">緊急機関要請に応じ位置情報を提供する事があります</string>
@@ -640,6 +657,7 @@ Please send help."</string>
     <string name="location_loading">Finding your location…</string>
     <string name="location_map_description">Emergency Location Map</string>
     <string name="location_title">You are here</string>
+    <string name="low_confidence_revelio_summary_prefix">"(Audio wasn't clear) "</string>
     <string name="main_activity_label">Phone</string>
     <string name="main_menu_call_history">Call history</string>
     <string name="main_menu_debug_options">Debug options</string>
@@ -744,6 +762,10 @@ Please send help."</string>
     <string name="notification_missedCallsMsg">%d missed calls</string>
     <string name="notification_missedCallsTitle">Missed calls</string>
     <string name="notification_missedWorkCallTitle">Missed work call</string>
+    <string name="notification_missed_call_call_back">Call back</string>
+    <string name="notification_missed_call_message">Message</string>
+    <string name="notification_missed_call_revelio_summary_title">Missed call from %s</string>
+    <string name="notification_missed_call_title">Missed call</string>
     <string name="notification_new_voicemail_ticker">New voicemail from %1$s</string>
     <string name="notification_on_hold">On hold</string>
     <string name="notification_ongoing_call">Ongoing call</string>
@@ -782,6 +804,9 @@ Please send help."</string>
     <string name="phoneLabelsGroup">Phone</string>
     <string name="phone_account_settings_label">Calling accounts</string>
     <string name="plus_code_line_format">Plus code: %1$s</string>
+    <string name="possibly_faked_numbers_action_preference_description">Callers that may be spammers using an altered number</string>
+    <string name="possibly_faked_numbers_action_preference_key">possibly_faked_numbers_action_preference_key</string>
+    <string name="possibly_faked_numbers_action_preference_title">Possibly faked numbers</string>
     <string name="post_call_message">Say why you called</string>
     <string name="post_call_message_1">This is urgent. Call me back.</string>
     <string name="post_call_message_2">Call me back when you have some time.</string>
@@ -814,6 +839,9 @@ Please send help."</string>
     <string name="privacy_policy_url">http://www.google.com/policies/privacy</string>
     <string name="private_num_non_verizon">Private number</string>
     <string name="private_num_verizon">Restricted</string>
+    <string name="private_or_hidden_action_preference_description">Callers hiding their caller ID</string>
+    <string name="private_or_hidden_action_preference_key">private_or_hidden_action_preference_key</string>
+    <string name="private_or_hidden_action_preference_title">Private or hidden</string>
     <string name="ready_for_recording">Ready…</string>
     <string name="record_greeting_cancel_label">Cancel</string>
     <string name="record_greeting_discard_header">Discard greeting?</string>
@@ -843,7 +871,42 @@ Please send help."</string>
     <string name="request_email_description">Email me</string>
     <string name="respond_via_sms_setting_title">Quick responses</string>
     <string name="resume_call">Thanks for holding.</string>
+    <string name="revelio_callers_how_it_works_text">"To turn off automatic screening select the \"Ring phone (default)\" setting for unknown calls. Your contacts are never automatically screened. Automatic screening won't work if your phone is connected to headphones or speakers.
+    
+Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</string>
+    <string name="revelio_demo_audio_button_text">Hear what the caller hears</string>
+    <string name="revelio_demo_key">revelio_demo_key</string>
+    <string name="revelio_demo_page_1_description">Your Assistant automatically answers unknown calls. Detected robocalls are silently declined; other unknown calls ring a few moments later with a transcript of the call. %1$s</string>
+    <string name="revelio_demo_page_1_title">Robocalls are declined without interrupting you</string>
+    <string name="revelio_demo_page_2_description">Your Assistant never automatically screens your contacts, so you receive their calls immediately.</string>
+    <string name="revelio_demo_page_2_title">Calls from your contacts are never delayed</string>
+    <string name="revelio_demo_page_3_description">"If a call isn't automatically screened, you can tap to have your Assistant find out who's calling so you can decide to answer or decline."</string>
+    <string name="revelio_demo_page_3_title">You can always screen other incoming calls</string>
+    <string name="revelio_demo_setting_title">See how Call Screen works</string>
+    <string name="revelio_demo_title">How Call Screen works</string>
+    <string name="revelio_demo_unable_to_fetch_audio">Unable to fetch sample audio</string>
+    <string name="revelio_demo_unable_to_play_audio">Unable to play sample audio</string>
+    <string name="revelio_dialog_button_cancel_call">Cancel</string>
+    <string name="revelio_dialog_button_end_screen">End current call, start new call</string>
+    <string name="revelio_dialog_description">Your Assistant is automatically screening an unknown call. To start a new call, end the current call.</string>
+    <string name="revelio_dialog_header">End current call?</string>
+    <string name="revelio_end_call_after_voicemail">"Thanks, I'll pass along your message. Goodbye."</string>
     <string name="revelio_end_call_user_missed_internal_message">The call was missed</string>
+    <string name="revelio_google_help_fallback_uri">https://support.google.com/phoneapp</string>
+    <string name="revelio_how_it_works_key">revelio_how_it_works_key</string>
+    <string name="revelio_intro">"Hi. This is the Google Assistant. Can I ask what you're calling about?[sonic branding]"</string>
+    <string name="revelio_no_response_from_caller_ui_text">No response from caller</string>
+    <string name="revelio_pref_title">Call Screen</string>
+    <string name="revelio_preference_summary_automatic_screening_off">Automatic screening off</string>
+    <string name="revelio_preference_summary_screening">Screening %1$s</string>
+    <string name="revelio_promotion_details">Turn on automatic Call Screen to let your Google Assistant screen unknown calls automatically. Detected robocalls will be declined without interrupting you.</string>
+    <string name="revelio_promotion_title">Try automatic screening</string>
+    <string name="revelio_save_audio_setting_key">revelio_save_audio_key</string>
+    <string name="revelio_save_audio_setting_summary">Save the audio from calls answered by your Assistant</string>
+    <string name="revelio_save_audio_setting_title">Save Call Screen audio</string>
+    <string name="revelio_setting_title">Call Screen</string>
+    <string name="revelio_transfer_to_voicemail">"Sorry, but I couldn't get ahold of them. If there's anything else you'd like to let them know, go ahead and do so after the tone."</string>
+    <string name="revelio_try_to_reach">All right, hang on while I try to reach them.</string>
     <string name="rtt_button_back">Back</string>
     <string name="rtt_button_downgrade">Switch to voice call</string>
     <string name="rtt_call_not_available_toast">RTT is not available for this call. Your call has been connected as a voice-only call.</string>
@@ -858,13 +921,17 @@ Please send help."</string>
     <string name="rtt_merge_positive_button">Merge</string>
     <string name="rtt_merge_remember_this_choice">Remember this choice</string>
     <string name="rtt_merge_title">Merge calls?</string>
+    <string name="rtt_on_hold_or_remotely_held">" / On hold"</string>
     <string name="rtt_request_dialog_details">%1$s wants to use messaging within your voice call.</string>
     <string name="rtt_request_dialog_more_information">RTT assists callers who are deaf, hard of hearing, have a speech disability, or need more than voice alone.</string>
     <string name="rtt_status_banner_text">Waiting for %s to join RTT call…</string>
     <string name="rtt_transcript_advisory">The other party can see you typing. Transcripts are stored on your device in the call history.</string>
     <string name="rtt_transcript_link">See transcript</string>
     <string name="rtt_transcript_not_available">Transcript available only for calls with messaging</string>
+    <string name="save_audio_error_cant_load_value">Unable to fetch current Save Call Screen audio value</string>
+    <string name="save_audio_error_cant_set_value">Unable to save Save Call Screen audio value</string>
     <string name="save_button_text">Save</string>
+    <string name="screening_unknown_caller">Screening an unknown call</string>
     <string name="search_location_permission">To get contact information for places near you, allow access to your location.</string>
     <string name="search_shortcut_add_to_contact">Add to a contact</string>
     <string name="search_shortcut_create_new_contact">Create new contact</string>
@@ -911,6 +978,9 @@ Please send help."</string>
     <string name="snackbar_undo">Undo</string>
     <string name="snackbar_voicemail_deleted">Voicemail deleted</string>
     <string name="sounds_and_vibration_title">Sounds and vibration</string>
+    <string name="spam_action_preference_description">"Numbers that match Google's spam database"</string>
+    <string name="spam_action_preference_key">spam_action_preference_key</string>
+    <string name="spam_action_preference_title">Spam</string>
     <string name="spam_and_call_screen_settings_title">Spam and Call Screen</string>
     <string name="spam_blocking_promo_action_dismiss">Dismiss</string>
     <string name="spam_blocking_promo_action_filter_spam">Filter Spam</string>
@@ -968,6 +1038,7 @@ Please send help."</string>
     <string name="start_call_non_contacts">"Hi, the person you're calling is using a screening service from Google, and will get a copy of this conversation. Go ahead and say your name, and why you're calling."</string>
     <string name="start_call_non_contacts_donation_off">"Hi, the person you've reached is using a screening service from Google, and will get a transcript of this call. Go ahead and say your name, and why you're calling."</string>
     <string name="start_call_non_contacts_donation_on">"Hi, the person you've reached is using a screening service from Google, and will get a recording and transcript of this call. Go ahead and say your name, and why you're calling."</string>
+    <string name="start_duo_call_failed">Unable to start a Duo call</string>
     <string name="strictmode_notification_stacktrace_empty">See LogCat</string>
     <string name="strictmode_notification_title">StrictMode</string>
     <string name="strictmode_stack_trace_title">Stack Trace</string>
@@ -985,6 +1056,7 @@ Please send help."</string>
     <string name="terms_of_service_url">http://www.google.com/policies/terms</string>
     <string name="textmessage_button_label">Message</string>
     <string name="theme_preference_label">Choose theme</string>
+    <string name="time_content_description">%1$d %2$s, %3$d %4$s</string>
     <string name="toast_cannot_write_system_settings">Phone app does not have permission to write to system settings.</string>
     <string name="toast_text_copied">Text copied</string>
     <string name="toolbar_back">Back</string>
@@ -1012,8 +1084,12 @@ Please send help."</string>
     <string name="unblock_number_ok">Unblock</string>
     <string name="unblock_report_number_alert_title">Unblock %1$s?</string>
     <string name="unknown">Unknown</string>
+    <string name="unknown_call_settings_category_key">unknown_call_settings_category_key</string>
+    <string name="unknown_call_settings_category_preference_title">Unknown Call Settings</string>
     <string name="unknown_counter">%1$s %2$d</string>
+    <string name="unknown_number">Unknown</string>
     <string name="unmute_incoming_audio_description">Unmute incoming audio</string>
+    <string name="unnamed_caller_said">Caller said</string>
     <string name="user_is_busy_description">"I'll call you back"</string>
     <string name="user_will_call_back">"They can't talk right now, but they'll give you a call later. Thanks, and goodbye."</string>
     <string name="user_will_send_message">"They can't talk right now, but they'll send you a message later. Thanks, and goodbye."</string>
