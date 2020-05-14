@@ -140,39 +140,6 @@
         <item>1002</item>
         <item>1003</item>
     </string-array>
-    <string-array name="bluetooth_a2dp_codec_lhdc_latency_summaries">
-        <item>Short latency</item>
-        <item>Middle latency</item>
-        <item>Long latency</item>
-    </string-array>
-    <string-array name="bluetooth_a2dp_codec_lhdc_latency_titles">
-        <item>Short latency (50~100ms)</item>
-        <item>Middle latency (150~200ms)</item>
-        <item>Long latency (300~500ms)</item>
-    </string-array>
-    <string-array name="bluetooth_a2dp_codec_lhdc_latency_values">
-        <item>49152</item>
-        <item>49153</item>
-        <item>49154</item>
-    </string-array>
-    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_summaries">
-        <item>Optimized for Connection Quality</item>
-        <item>Balanced Audio And Connection Quality</item>
-        <item>Optimized for Audio Quality</item>
-        <item>Best Effort (Auto Bit Rate)</item>
-    </string-array>
-    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_titles">
-        <item>Optimized for Connection Quality (400kbps)</item>
-        <item>Balanced Audio And Connection Quality (500/560kbps)</item>
-        <item>Optimized for Audio Quality (900kbps)</item>
-        <item>Best Effort (Auto Bit Rate)</item>
-    </string-array>
-    <string-array name="bluetooth_a2dp_codec_lhdc_playback_quality_values">
-        <item>32768</item>
-        <item>32769</item>
-        <item>32770</item>
-        <item>32771</item>
-    </string-array>
     <string-array name="bluetooth_a2dp_codec_sample_rate_summaries">
         <item>Use System Selection (Default)</item>
         <item>44.1 kHz</item>
@@ -203,7 +170,6 @@
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
         <item>Qualcomm® aptX™ TWS+ audio</item>
-        <item>LHDC</item>
         <item>Enable Optional Codecs</item>
         <item>Disable Optional Codecs</item>
     </string-array>
@@ -216,7 +182,6 @@
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
         <item>Qualcomm® aptX™ TWS+ audio</item>
-        <item>LHDC</item>
         <item>Enable Optional Codecs</item>
         <item>Disable Optional Codecs</item>
     </string-array>
@@ -230,7 +195,6 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
-        <item>8</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -250,8 +214,45 @@
         <item>AVRCP 1.5</item>
         <item>AVRCP 1.6</item>
     </string-array>
+    <string-array name="bt_hci_snoop_log_entries">
+        <item>Disabled</item>
+        <item>Enabled Filtered</item>
+        <item>Enabled Headers Filtered</item>
+        <item>Enabled Media Pkts Filtered</item>
+        <item>Enabled</item>
+    </string-array>
+    <string-array name="bt_hci_snoop_log_values">
+        <item>disabled</item>
+        <item>filtered</item>
+        <item>snoopheadersfiltered</item>
+        <item>mediapktsfiltered</item>
+        <item>full</item>
+    </string-array>
+    <array name="bt_icon_bg_colors">
+        <item>@color/bt_color_bg_1</item>
+        <item>@color/bt_color_bg_2</item>
+        <item>@color/bt_color_bg_3</item>
+        <item>@color/bt_color_bg_4</item>
+        <item>@color/bt_color_bg_5</item>
+        <item>@color/bt_color_bg_6</item>
+        <item>@color/bt_color_bg_7</item>
+    </array>
+    <array name="bt_icon_fg_colors">
+        <item>@color/bt_color_icon_1</item>
+        <item>@color/bt_color_icon_2</item>
+        <item>@color/bt_color_icon_3</item>
+        <item>@color/bt_color_icon_4</item>
+        <item>@color/bt_color_icon_5</item>
+        <item>@color/bt_color_icon_6</item>
+        <item>@color/bt_color_icon_7</item>
+    </array>
+    <string-array name="buffer_size_names">
+        <item>@string/eight_thousand_kb</item>
+        <item>@string/sixteen_thousand_kb</item>
+        <item>@string/thirtytwo_thousand_kb</item>
+        <item>@string/sixtyfive_thousand_kb</item>
+    </string-array>
     <string-array name="buffer_size_values">
-        <item>4096</item>
         <item>8192</item>
         <item>@string/default_buffer_size</item>
         <item>32768</item>
@@ -308,6 +309,36 @@
         <item>never</item>
         <item>drm-only</item>
         <item>always</item>
+    </string-array>
+    <string-array name="long_trace_duration_names">
+        <item>@string/ten_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/one_hour</item>
+        <item>@string/eight_hours</item>
+        <item>@string/twelve_hours</item>
+        <item>@string/twentyfour_hours</item>
+    </string-array>
+    <string-array name="long_trace_duration_values">
+        <item>10</item>
+        <item>@string/default_long_trace_duration</item>
+        <item>60</item>
+        <item>480</item>
+        <item>720</item>
+        <item>1440</item>
+    </string-array>
+    <string-array name="long_trace_size_names">
+        <item>@string/two_hundred_mb</item>
+        <item>@string/one_gb</item>
+        <item>@string/five_gb</item>
+        <item>@string/ten_gb</item>
+        <item>@string/twenty_gb</item>
+    </string-array>
+    <string-array name="long_trace_size_values">
+        <item>200</item>
+        <item>1024</item>
+        <item>5120</item>
+        <item>@string/default_long_trace_size</item>
+        <item>20480</item>
     </string-array>
     <string-array name="overlay_display_devices_entries">
         <item>None</item>
