@@ -39,67 +39,51 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">Log generator</string>
-    <string name="battery_info">Charging and battery info</string>
-    <string name="catch_log_disable_bt_log">Finished saving Bluetooth logs</string>
-    <string name="catch_log_enable_bt_log">Saving Bluetooth logs…</string>
-    <string name="catch_log_start_dump_audio_log">Saving audio logs to sdcard/diag_logs…</string>
-    <string name="catch_log_start_dump_gps_log">Saving GPS logs to sdcard/diag_logs…</string>
-    <string name="catch_log_start_dump_moderm_log">Saving modem logs to sdcard/diag_logs…</string>
-    <string name="catch_log_start_dump_sensor_log">Saving sensor logs to sdcard/diag_logs…</string>
-    <string name="catch_log_start_dump_wifi_log">Saving WLAN logs to sdcard/diag_logs…</string>
-    <string name="catch_log_stop_dump_audio_log">Finished saving audio logs to sdcard/diag_logs</string>
-    <string name="catch_log_stop_dump_gps_log">Finished saving GPS logs to sdcard/diag_logs</string>
-    <string name="catch_log_stop_dump_moderm_log">Finished saving modem logs to sdcard/diag_logs</string>
-    <string name="catch_log_stop_dump_sensor_log">Finished saving sensor logs to sdcard/diag_logs</string>
-    <string name="catch_log_stop_dump_wifi_log">Finished saving WLAN logs to sdcard/diag_logs</string>
-    <string name="cit_bluetooth_logging_confirm_info">"Bluetooth logs will collect the Bluetooth protocol communication data from your device. The following records will be collected: downloading contacts, call history, and messages using Bluetooth, file transfers, media playback, and other sensitive items. These logs will only be used at Xiaomi internally in order to locate and solve issues, and won't be used for any other purposes."</string>
-    <string name="cit_bluetooth_logging_confirm_ng">Restrict</string>
-    <string name="cit_bluetooth_logging_confirm_notify">Start collecting these items?</string>
-    <string name="cit_bluetooth_logging_confirm_ok">Allow</string>
-    <string name="cit_bluetooth_logging_confirm_title">Privacy statement on collecting Bluetooth logs</string>
-    <string name="cit_kernel_log_txt">Kernel log</string>
+    <string name="app_name">CatchLog</string>
+    <string name="battery_info">Battery and Charger Info</string>
+    <string name="cit_bluetooth_logging_confirm_info">开启蓝牙日志功能将会收集您设备上蓝牙协议通信数据,只记录当前您的蓝牙设备操作数据，如有以下操作：蓝牙下载电话本/通话记录和短信彩信、文件传输、播放歌曲信息等涉及隐私信息数据也会记录在此日志中，此数据只限于小米公司内部协助用户分析解决问题，不会用于其他用途。</string>
+    <string name="cit_bluetooth_logging_confirm_ng">拒绝</string>
+    <string name="cit_bluetooth_logging_confirm_notify">是否同意开始收集？</string>
+    <string name="cit_bluetooth_logging_confirm_ok">同意</string>
+    <string name="cit_bluetooth_logging_confirm_title">蓝牙日志收集隐私提醒</string>
+    <string name="cit_kernel_log_txt">kernel log</string>
     <string name="cit_logcat_txt">Logcat log</string>
-    <string name="cit_mtdoops_log_get_begin">Exporting mtdoops logs…</string>
-    <string name="cit_mtdoops_log_get_confirm">Export mtdoops logs?</string>
-    <string name="cit_mtdoops_log_get_fail">"Couldn't export mtdoops logs to /data/local/log"</string>
-    <string name="cit_mtdoops_log_get_ok">Exported mtdoops logs to /data/local/log successfully</string>
-    <string name="cit_mtdoops_log_get_txt">Exported mtdoops logs to /data/local/log</string>
-    <string name="cit_offline_log_del_begin">Deleting offline logs…</string>
-    <string name="cit_offline_log_del_confirm">Delete all offline logs?</string>
-    <string name="cit_offline_log_del_fail">"Couldn't delete offline logs"</string>
-    <string name="cit_offline_log_del_ok">Deleted offline logs successfully</string>
-    <string name="cit_offline_log_del_txt">Delete local offline logs</string>
+    <string name="cit_offline_log_del_begin">Start to delete offline log..</string>
+    <string name="cit_offline_log_del_confirm">Do you want to delete all offline logs?</string>
+    <string name="cit_offline_log_del_fail">Delete offline log fail!</string>
+    <string name="cit_offline_log_del_ok">Delete offline log sucessfully!</string>
+    <string name="cit_offline_log_del_txt">Delete local offline log</string>
     <string name="cit_offline_log_filter_hint">"[Optional]
-If you follow the instructions, only logcat logs with keywords will be saved. If there are no keywords, logs won't be filtered."</string>
-    <string name="cit_offline_log_filter_info">"Example: #tag:priority //Remarks start with \"#\".
-NfcService: D
-BatteryInfoReceiver: I
-SurfaceFlinger: W
+If type multi-keyword as tips, logcat only store logs with these keywords, filter does not work if blank here"</string>
+    <string name="cit_offline_log_filter_info">"Example:
+#tag:priority // beginning with # means annotation line
+NfcService:D
+BatteryInfoReceiver:I
+SurfaceFlinger:W
 
-%1$d. Select logcat log again to apply changes.
-%2$d. If there are too many keywords, you can also change the configurations file in /data/local/log/keyword_logcat.cfg."</string>
-    <string name="cit_offline_log_filter_txt">Logcat keyword filter settings</string>
-    <string name="cit_offline_log_out_begin">Saving offline logs…</string>
-    <string name="cit_offline_log_out_confirm">Save all offline logs to SD card?</string>
-    <string name="cit_offline_log_out_fail">"Couldn't save offline logs"</string>
-    <string name="cit_offline_log_out_ok">Saved offline logs successfully</string>
-    <string name="cit_offline_log_output_txt">Save offline logs to SD card</string>
-    <string name="cit_offline_log_size_alert_empty">"Log size isn't set. Ignore."</string>
-    <string name="cit_offline_log_size_alert_oversize">The size value exceeds the upper limit. Reset to the maximum value.</string>
-    <string name="cit_offline_log_size_alert_undersize">"The size value didn't reach the lower limit. Reset to the minimum value."</string>
-    <string name="cit_offline_log_size_info">"%1$d. The available range is between %2$d and %3$dMB.
-%4$d. Select items again to apply changes."</string>
-    <string name="cit_offline_log_size_txt">Log size limit</string>
-    <string name="cit_offline_log_title">Offline log status</string>
+Note1:You need to re-click the checkbox to go into effect
+Note2: If there are too many keywords, you can also edit the conf file /data/local/log/keyword_logcat.cfg directly"</string>
+    <string name="cit_offline_log_filter_txt">Logcat Multi-keyword Filter Setting</string>
+    <string name="cit_offline_log_out_begin">Start to output offline log..</string>
+    <string name="cit_offline_log_out_confirm">Do you want to output all offline logs?</string>
+    <string name="cit_offline_log_out_fail">Output offline log fail!</string>
+    <string name="cit_offline_log_out_ok">Output offline log sucessfully!</string>
+    <string name="cit_offline_log_output_txt">Output offline log to /sdcard</string>
+    <string name="cit_offline_log_size_alert_empty">Setting log size is empty, ignore it</string>
+    <string name="cit_offline_log_size_alert_oversize">Setting log size is too large, reset it to max</string>
+    <string name="cit_offline_log_size_alert_undersize">Setting log size is too small, reset it to min</string>
+    <string name="cit_offline_log_size_info">"Note1: setting range is [160, 1280]M
+Note2: You need to re-click the checkbox to go into effect"</string>
+    <string name="cit_offline_log_size_txt">Log Size Limit</string>
+    <string name="cit_offline_log_title">Offline Log Status</string>
     <string name="cit_tool_log_bugreport">Bug report</string>
     <string name="cit_tool_log_dmesg">DMESG</string>
-    <string name="cit_tool_log_file_not_exist">"%1$s file doesn't exist"</string>
-    <string name="cit_tool_log_generate_bugreport">Creating bug report…</string>
+    <string name="cit_tool_log_file_not_exist">%s文件不存在</string>
+    <string name="cit_tool_log_generate_bugreport">正在生成bug报告...</string>
     <string name="cit_tool_log_kmsg">Last kernel log</string>
     <string name="cit_tool_log_modem">Modem log</string>
-    <string name="cit_tool_log_toast">Saved log to %1$s</string>
-    <string name="cit_tool_log_toast_generate_bugreport">It takes around %1$d minute to create a bug report</string>
+    <string name="cit_tool_log_toast">Log已保存到%s</string>
+    <string name="cit_tool_log_toast_generate_bugreport">正在生成bug报告，大概需要1分钟</string>
     <string name="no">No</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
