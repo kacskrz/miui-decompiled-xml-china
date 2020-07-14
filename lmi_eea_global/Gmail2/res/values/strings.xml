@@ -61,7 +61,7 @@
     <string name="account_settings_background_attachments_label">Download attachments</string>
     <string name="account_settings_background_attachments_summary">Auto-download attachments to recent messages via Wi-Fi</string>
     <string name="account_settings_conversation_view_cancel_dialog_message">This seems to be taking longer than expected. Would you like to continue?</string>
-    <string name="account_settings_conversation_view_no_connection">This action requires an internet connection.</string>
+    <string name="account_settings_conversation_view_no_connection">This action requires an internet connection</string>
     <string name="account_settings_conversation_view_progress_dialog_message">Updating account settings…</string>
     <string name="account_settings_conversation_view_summary">Group emails with the same topic together. This setting may take some time to apply</string>
     <string name="account_settings_conversation_view_title">Conversation view</string>
@@ -244,7 +244,7 @@ Contact your IT admin for help."</string>
     <string name="accountprovider_nongmail_account_list_uri">content://com.google.android.gm.email.provider/uiaccts?suppress_combined=true</string>
     <string name="activity_create_label_shortcut">Gmail label</string>
     <string name="activity_folder_selection">Choose folder</string>
-    <string name="activity_gmail">@string/app_name</string>
+    <string name="activity_gmail">@string/ag_app_name</string>
     <string name="activity_label">Gmail</string>
     <string name="activity_mailbox_selection">Choose account</string>
     <string name="activity_preferences">Settings</string>
@@ -269,7 +269,6 @@ Contact your IT admin for help."</string>
     <string name="ad_formfill_prefill_source_help_icon_description">Where does the data come from?</string>
     <string name="ad_info_description">Why this ad?</string>
     <string name="ad_install_advertiser_app">Install</string>
-    <string name="ad_navigator_cta_text">See More</string>
     <string name="ad_rich_teaser_card_image_description">Advertisement image</string>
     <string name="ad_survey_done_rv">Thank you for your feedback.</string>
     <string name="ad_survey_policy_link">"All information collected is subject to Google's %1$s."</string>
@@ -303,7 +302,9 @@ Contact your IT admin for help."</string>
     <string name="address_print_display_format">%1$s &amp;lt;%2$s&amp;gt;</string>
     <string name="address_spoofing">Be careful with this message. Someone might be trying to trick you by using similar-looking characters (such as Σ and E) in the email addresses contained in this message.</string>
     <string name="admin_support_msg">This action has been disabled. Contact your IT admin to learn more.</string>
-    <string name="ag_search_hint">Search mail</string>
+    <string name="ag_app_name">Gmail</string>
+    <string name="ag_phone">phone</string>
+    <string name="ag_search_hint">Search in mail</string>
     <string name="all_folders_heading">All labels</string>
     <string name="always_show_images">Always show pictures from this sender</string>
     <string name="always_show_images_toast">Pictures from this sender will be shown automatically.</string>
@@ -312,7 +313,6 @@ Contact your IT admin for help."</string>
     <string name="app_hint_text">You will be able to read your email through the %1$s app.</string>
     <string name="app_install_ad_teaser_rating_bar_description">star rating %.1f</string>
     <string name="app_install_ad_teaser_rating_count_description">%1$s reviews</string>
-    <string name="app_name">Gmail</string>
     <string name="app_restrictions_allow_unmanaged_accounts_description">"Allow users to add or remove any Exchange account, other than the account specified in this managed configuration. If this setting is enabled, you can't prevent users from adding other Exchange accounts to Gmail. You also can't control data sharing between other apps and Exchange accounts added by users. This setting should be enabled only if your users need to maintain more than one work Exchange account in Gmail."</string>
     <string name="app_restrictions_allow_unmanaged_accounts_title">Allow Unmanaged Accounts</string>
     <string name="app_restrictions_default_exchange_sync_window_description">A value from 0-5 that represents the time window for syncing with EAS (Exchange ActiveSync). Defaults to one week (value=3). [0=No filter, synchronize all items. 1=1 day. 2=3 days. 3=1 week. 4=2 weeks. 5=1 month.] See https://msdn.microsoft.com/en-us/library/gg709713(v=exchg.80).aspx for complete information about sync window settings.</string>
@@ -378,7 +378,7 @@ Contact your IT admin for help."</string>
     <string name="auto_send_perm_label">Send Gmail</string>
     <string name="auto_sync_off">Auto-sync is off. Tap to turn on.</string>
     <string name="available_addons">Available add-ons:</string>
-    <string name="bad_card_nav_action">Failed to complete your action because the add-on will be in bad state.</string>
+    <string name="bad_card_nav_action_legacy">Failed to complete your action because the add-on will be in bad state.</string>
     <string name="badge_and_subject">%1$s %2$s</string>
     <string name="banner_content_mid_way_account_setup">Finish the last few steps to add %s to Gmail</string>
     <string name="banner_content_update_account_policy">"%s can't be synced"</string>
@@ -442,6 +442,8 @@ Contact your IT admin for help."</string>
     <string name="cc_attribution">Cc: %1$s&lt;br></string>
     <string name="cc_heading">Cc:</string>
     <string name="cc_heading_gm">Cc</string>
+    <string name="cd_smartmail_card_collapsed">%1$s, %2$s - Card Collapsed</string>
+    <string name="cd_smartmail_card_expanded">%1$s, %2$s - Card Expanded</string>
     <string name="cd_snooze_option_menu">Snooze until menu</string>
     <string name="cert_contact">Contact your email provider for more information.</string>
     <string name="cert_details_title">Certificate information</string>
@@ -498,7 +500,7 @@ Contact your IT admin for help."</string>
     <string name="channel_assist_info_title">Recipient availability</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
-    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
     <string name="check_data_connection">Please check your data connection and try again.</string>
     <string name="chips_action_cancel">Cancel</string>
     <string name="chips_action_copy">Copy</string>
@@ -548,8 +550,6 @@ Contact your IT admin for help."</string>
     <string name="confirm_unsubscribe_conversation_sender_unknown">"Are you sure you'd like to stop receiving similar messages from this sender?"</string>
     <string name="contact_info_string">Show contact information for %1$s</string>
     <string name="contact_info_string_default">Show contact information</string>
-    <string name="contact_photo_selected_desc">Deselect this conversation</string>
-    <string name="contact_photo_unselected_desc">Select this conversation</string>
     <string name="contacts_permission_required">Gmail needs permission to access your contacts. Please enable Contacts permission in Settings.</string>
     <string name="content_description">%1$s %2$s%3$s, %4$s, %5$s, %6$s, %7$s on %8$s</string>
     <string name="content_description_for_conversation_header_summary">%1$s, %2$s, %3$s</string>
@@ -619,13 +619,16 @@ Contact your IT admin for help."</string>
     <string name="density_setting_title_text">Conversation list density</string>
     <string name="detail_content_description">%1$s %2$s</string>
     <string name="device_admin_description">Enables server-specified security policies</string>
-    <string name="device_admin_label">@string/app_name</string>
+    <string name="device_admin_label">@string/ag_app_name</string>
     <string name="device_id_label">Mobile Device ID: %1$s</string>
     <string name="dfp_body">Be the first to test new features and give feedback.</string>
     <string name="dfp_promo_teaser_positive_button">Join dogfood</string>
     <string name="dfp_title">Want more of a good thing?</string>
     <string name="dialog_calendar_not_installed_download_button">Download Google Calendar</string>
     <string name="dialog_calendar_not_installed_message">This action requires a calendar app.</string>
+    <string name="dialog_header_calendar_title">Choose calendar</string>
+    <string name="dialog_header_email_title">Choose email address</string>
+    <string name="dialog_header_phone_title">Choose phone number</string>
     <string name="dialog_report_spam_mute_negative_button">Report spam</string>
     <string name="dialog_report_spam_mute_positive_button">Mute</string>
     <string name="dialog_report_spam_mute_text">Use mute to silence all future replies to this conversation. Reporting spam both mutes and reports this conversation.</string>
@@ -640,6 +643,8 @@ Contact your IT admin for help."</string>
     <string name="disabled_by_policy_title">Action not allowed</string>
     <string name="disabled_shortcut_clicked_dialog">%s has been removed from your device. To view your messages, re-add your account.</string>
     <string name="disabled_shortcut_error_message">%s has been removed from your device</string>
+    <string name="disambiguation_email_content_description">Email %1$d of %2$d. Email %3$s: %4$s</string>
+    <string name="disambiguation_phone_content_description">Phone number %1$d of %2$d. Call %3$s: %4$s</string>
     <string name="discard">Discard</string>
     <string name="discard_changes">Discard changes?</string>
     <string name="discard_drafts">Discard drafts</string>
@@ -678,7 +683,6 @@ Contact your IT admin for help."</string>
     <string name="eaaur_account_setup_security_update_explanation">%1$s requires that you update your security settings</string>
     <string name="eaaur_account_setup_security_update_headline">Security update</string>
     <string name="eaaur_connecting_to_email_server">Connecting to email server…</string>
-    <string name="eaaur_tap_to_complete_auto_activation">Tap to complete auto activation</string>
     <string name="eas_account_setup_basics_email_label">Email</string>
     <string name="eas_account_setup_basics_error_duplicate_email">You have already added this account</string>
     <string name="eas_account_setup_basics_error_personal_email">To use this account, go back to the previous screen and choose \"Outlook, Hotmail, and Live\"</string>
@@ -839,11 +843,7 @@ Contact your IT admin for help."</string>
     <string name="getting_account_info_label">Getting account info…</string>
     <string name="getting_messages">Getting your messages…</string>
     <string name="gm_i18n_draft">Draft</string>
-    <string name="gm_i18n_forwarded_message_cc_string">"Cc: "</string>
-    <string name="gm_i18n_forwarded_message_date_string">"Date: "</string>
     <string name="gm_i18n_forwarded_message_from_string">"From: "</string>
-    <string name="gm_i18n_forwarded_message_subject_string">"Subject: "</string>
-    <string name="gm_i18n_forwarded_message_to_string">"To: "</string>
     <string name="gm_i18n_label_inbox_section_forums">Forums</string>
     <string name="gm_i18n_label_inbox_section_personal">Primary</string>
     <string name="gm_i18n_label_inbox_section_promo">Promotions</string>
@@ -946,6 +946,10 @@ Contact your IT admin for help."</string>
     <string name="hierarchical_folder_parent_top_ellip">"%1$s /…/ %2$s / "</string>
     <string name="hierarchical_folder_top">"%1$s / "</string>
     <string name="high_priority_content_desc">High</string>
+    <string name="hub_search_results_header" />
+    <string name="hub_search_suggestion_header" />
+    <string name="hub_search_suggestion_header_with_icon" />
+    <string name="hub_search_zero_state_suggestion_header" />
     <string name="icon_content_description">Dialog Icon</string>
     <string name="icr_accepted">%1$s has &lt;b>accepted&lt;/b> this event.</string>
     <string name="icr_add">Add to calendar</string>
@@ -1014,6 +1018,8 @@ Contact your IT admin for help."</string>
     <string name="label_inbox_section_promo">@string/gm_i18n_label_inbox_section_promo</string>
     <string name="label_inbox_section_social">@string/gm_i18n_label_inbox_section_social</string>
     <string name="label_magic_inbox">Priority Inbox</string>
+    <string name="label_name_purchases">Purchases</string>
+    <string name="label_name_travel">Travel</string>
     <string name="label_notification_summary_ring">Sound on</string>
     <string name="label_notification_summary_ring_notify_once">Sound on, notify once</string>
     <string name="label_notification_summary_ring_vibe">Sound on, vibrate</string>
@@ -1126,7 +1132,6 @@ Contact your IT admin for help."</string>
     <string name="menu_manage_folders">Manage labels</string>
     <string name="menu_move_to">Move to</string>
     <string name="menu_move_to_inbox">Move to Inbox</string>
-    <string name="menu_move_to_state">0</string>
     <string name="menu_photo_print">Print</string>
     <string name="menu_photo_save_all">Save all</string>
     <string name="menu_photo_share">Share</string>
@@ -1145,6 +1150,10 @@ Contact your IT admin for help."</string>
     <string name="message_invite_accept">@string/yes</string>
     <string name="message_invite_decline">@string/no</string>
     <string name="message_invite_tentative">Maybe</string>
+    <string name="message_marked_as_not_phishy">Message reported as not a phishing attack.</string>
+    <string name="message_marked_as_phishy">Message reported as a phishing attack and moved to spam.</string>
+    <string name="message_marked_dangerous">Conversation marked as sent from a compromised account and moved to spam.</string>
+    <string name="message_marked_not_suspicious">Message marked not suspicious.</string>
     <string name="message_priority">Message priority</string>
     <string name="message_queued">Queued</string>
     <string name="message_saved">Message saved as draft.</string>
@@ -1162,9 +1171,32 @@ Contact your IT admin for help."</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_picker_a11y_next_month">Change to next month</string>
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_cancel">@android:string/cancel</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
     <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
     <string name="multiple_new_message_notification_item"><b>%1$s</b>"   %2$s"</string>
     <string name="mute">Mute</string>
@@ -1181,10 +1213,10 @@ Contact your IT admin for help."</string>
     <string name="no_option_unsubscribe">"Why is this message in Spam? You tried to unsubscribe from this sender but they didn't provide a way to do that, so new messages are put directly in Spam to keep them out of your inbox."</string>
     <string name="no_subject">(no subject)</string>
     <string name="no_thanks">No thanks</string>
-    <string name="no_title">(no title)</string>
     <string name="non_synced_folder_description">To view conversations, sync this folder.</string>
     <string name="not_now_option_subtitle">Add later in Gmail app</string>
     <string name="not_now_option_title">Not now</string>
+    <string name="not_set">Not set</string>
     <string name="not_synced">Not synced</string>
     <string name="not_synced_title">Account not synced</string>
     <string name="notificationLevelDefaultValue">all</string>
@@ -1214,7 +1246,6 @@ Contact your IT admin for help."</string>
     <string name="oauth_server_error">Server is unavailable, please try again later</string>
     <string name="offline_alert_dialog_message">You must be online in order to perform this operation</string>
     <string name="offline_cancel_fail">Cancel send unavailable when offline</string>
-    <string name="og_account_disabled_a11y">Account disabled %1$s.</string>
     <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
     <string name="og_account_particle_disc_not_signed_in_a11y">Open account menu</string>
     <string name="og_add_another_account">Add another account</string>
@@ -1279,7 +1310,6 @@ Contact your IT admin for help."</string>
     <string name="permissions_needed_text" formatted="false">Tap to allow Gmail to sync %s for %s</string>
     <string name="permissions_needed_title">Unable to sync %s</string>
     <string name="phishy_outbreak">Be careful with this message. One or more members of your organization have marked this email as suspicious. Avoid clicking links, downloading attachments, or replying with personal information.</string>
-    <string name="phone">phone</string>
     <string name="photo_attachment_failed_to_open">"Couldn't open photo"</string>
     <string name="photo_load_failed">"Couldn't load image"</string>
     <string name="photo_view_activity">com.google.android.gm.photo.GmailPhotoViewActivity</string>
@@ -1298,7 +1328,6 @@ Contact your IT admin for help."</string>
     <string name="pnt_response_detail_tentative">%1$s has tentatively accepted and proposed a new time to meet.</string>
     <string name="pnt_retry">Retry</string>
     <string name="pnt_show_event">Show event</string>
-    <string name="pntg_propose_time">Propose time</string>
     <string name="pntg_snackbar_accept_proposal">Accepting the proposal…</string>
     <string name="pntg_snackbar_description_accept">Responding yes…</string>
     <string name="pntg_snackbar_description_decline">Responding no…</string>
@@ -1359,6 +1388,8 @@ Contact your IT admin for help."</string>
     <string name="preferences_g6y_linked_address">Linked with %1$s</string>
     <string name="preferences_g6y_summary">Link this account with a Gmail account</string>
     <string name="preferences_g6y_title">Link Account</string>
+    <string name="preferences_hb_toggle_summary" />
+    <string name="preferences_hb_toggle_title" />
     <string name="preferences_inbox_categories_starred_category_title">Starred messages</string>
     <string name="preferences_inbox_categories_starred_checkbox">Include in Primary</string>
     <string name="preferences_inbox_categories_starred_subtitle">Show all starred messages in Primary</string>
@@ -1398,6 +1429,8 @@ Turn on account notifications?"</string>
     <string name="preferences_manage_inbox_label_title">Inbox notifications</string>
     <string name="preferences_manage_labels_title">Manage labels</string>
     <string name="preferences_manage_notifications_title">Manage notifications</string>
+    <string name="preferences_meet_toggle_summary" />
+    <string name="preferences_meet_toggle_title" />
     <string name="preferences_notifications_disable_dialog_action">Turn off</string>
     <string name="preferences_notifications_disable_dialog_message">Affects all labels in this account.</string>
     <string name="preferences_notifications_disable_dialog_title">Turn off notifications?</string>
@@ -1431,6 +1464,9 @@ Tap to turn on."</string>
     <string name="print_html_message">Print HTML message</string>
     <string name="print_job_name">Gmail - %1$s</string>
     <string name="print_preview_loading_message">Please wait…</string>
+    <string name="privacy_disclaimer">Privacy disclaimer</string>
+    <string name="privacy_disclaimer_dismiss">Dismiss</string>
+    <string name="privacy_disclaimer_line_two">Your data is being temporarily shared with Google to give you more information about your contacts.</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="proceed">Proceed</string>
     <string name="profile_email_forced_spam_label">Why is this message in Spam? &lt;b>%1$s&lt;/b> cannot reach you via your Google+ profile at this time.</string>
@@ -1450,6 +1486,14 @@ Tap to turn on."</string>
     <string name="protocol_legacy_imap">gLegacyImap</string>
     <string name="protocol_pop3">gPop3</string>
     <string name="public_provider_label">Gmail Content Provider</string>
+    <string name="quick_actions_call_content_description">Call %s.</string>
+    <string name="quick_actions_chat_content_description">Send a Chat message to %s</string>
+    <string name="quick_actions_email_content_description">Email %s.</string>
+    <string name="quick_actions_schedule_content_description">Schedule a meeting with %s</string>
+    <string name="quick_actions_type_call">Call</string>
+    <string name="quick_actions_type_chat">Chat</string>
+    <string name="quick_actions_type_email">Email</string>
+    <string name="quick_actions_type_schedule">Schedule</string>
     <string name="quoted_text">Include quoted text</string>
     <string name="quoted_text_hidden_print">Quoted text hidden</string>
     <string name="quoted_text_label">Quote text</string>
@@ -1595,6 +1639,7 @@ Tap to turn on."</string>
     <string name="security_update_request_header">Gmail needs access to this phone</string>
     <string name="select_attachment_type">Choose type of attachment</string>
     <string name="selected_account">Signed in to %1$s</string>
+    <string name="self_view_format_string">%s (You)</string>
     <string name="send">Send</string>
     <string name="send_anyway">Send anyway</string>
     <string name="send_failed">"Message wasn't sent."</string>
@@ -1666,7 +1711,10 @@ Tap to turn on."</string>
     <string name="slv2_low_reputation">Malicious emails often link to this site. Are you sure you want to proceed to %1$s?</string>
     <string name="slv2_title">Suspicious link</string>
     <string name="slv2_url_redirector">This link has been flagged as suspicious. Are you sure you want to proceed to %1$s?</string>
+    <string name="smart_mail_contact_call_action">Call</string>
     <string name="smart_profile_unauth_card_title">Unauthenticated Mail</string>
+    <string name="smartmail_card_flight_arrival">Arrival</string>
+    <string name="smartmail_card_flight_departure">Departure</string>
     <string name="snooze_datepicker_done">Save</string>
     <string name="snooze_datepicker_drop_down_list">Drop down list</string>
     <string name="snooze_info_time">Snoozed until %s</string>
@@ -1691,6 +1739,8 @@ Tap to turn on."</string>
     <string name="snoozed_date_less_than_one_hour_ago">Snoozed &lt; 1 hour ago</string>
     <string name="snoozed_folder_feature_highlight_body">Everything you snooze goes into Snoozed until returning to the inbox</string>
     <string name="snoozed_folder_feature_highlight_title">Access snoozed messages</string>
+    <string name="spam_message_marked_as_not_phishy">Message reported as not a phishing attack and moved to Inbox.</string>
+    <string name="spam_message_marked_as_phishy">Message reported as a phishing attack.</string>
     <string name="spam_warning_similar_messages_to_obtain_personal_info">"Similar messages were used to steal people's personal information. Unless you trust the sender, don't click links or reply with personal information."</string>
     <string name="sr_callout">Tap to edit a reply</string>
     <string name="sr_cd_smartreply_bad_suggestion">Send feedback about suggestions</string>
@@ -1776,6 +1826,7 @@ Tap to turn on."</string>
     <string name="t4_list_recurrence_content_description">Repeats</string>
     <string name="t4_list_reminder_set_content_description">Reminder</string>
     <string name="t4_list_t4_due_date_label">Due %1$s</string>
+    <string name="t4_no_title">(no title)</string>
     <string name="t4_reminder_notification_done_button">Done</string>
     <string name="t4_reminder_notification_snooze_button">Snooze</string>
     <string name="t4_section_title_done">Done</string>
@@ -1796,6 +1847,8 @@ Tap to turn on."</string>
     <string name="t4_toolbar_title_create_task">New task</string>
     <string name="t4_view_conversation">View conversation</string>
     <string name="tablet">tablet</string>
+    <string name="talkback_activity_title">Contact information for %s</string>
+    <string name="talkback_activity_title_no_id">Contact information</string>
     <string name="tap_to_configure">Tap to set up</string>
     <string name="tap_to_configure_folder_sync">Sync Folder</string>
     <string name="tap_to_verify">Tap to verify</string>
@@ -1834,6 +1887,7 @@ Tap to turn on."</string>
     <string name="trigger_settings_char">,</string>
     <string name="trigger_toggle_drawer_char">m</string>
     <string name="trigger_toggle_read_unread_char">i</string>
+    <string name="trips_uri" formatted="false">https://www.google.com/travel/trips/trip?msg_id=%s&amp;hl=%s&amp;dest_src=agm</string>
     <string name="turn_auto_sync_on_dialog_body">Changes you make to all apps and accounts, not just Gmail, will be synchronized between the web, your other devices, and your %1$s.</string>
     <string name="turn_auto_sync_on_dialog_body_learn_more_url">https://support.google.com/android/answer/2840875</string>
     <string name="turn_auto_sync_on_dialog_confirm_btn">Turn on</string>
@@ -1909,6 +1963,7 @@ Tap "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up
     <string name="warning_banner_be_careful_header">Be careful with this message.</string>
     <string name="warning_banner_block_button">Block sender</string>
     <string name="warning_banner_bogus_bounce">It seems to be an auto-reply to a message that pretended to be sent from your email address.</string>
+    <string name="warning_banner_confirm_phishing_button">Confirm phishing</string>
     <string name="warning_banner_contains_links_to_websites_hosting_malware">It contains links to websites hosting malware. Avoid clicking links in the message.</string>
     <string name="warning_banner_dangerous_header">This message seems dangerous</string>
     <string name="warning_banner_employee_name_spoofing">"&lt;b>%1$s&lt;/b> is similar to a name in your organization, but the email address does not belong to your domain or Gmail couldn't verify that it actually came from &lt;b>%2$s&lt;/b>."</string>
@@ -1921,14 +1976,19 @@ Tap "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up
     <string name="warning_banner_invalid_sender_address">"The sender's email address is invalid."</string>
     <string name="warning_banner_language">"It's written in a different language than your messages typically use."</string>
     <string name="warning_banner_looks_like_spam">It is similar to messages that were identified as spam in the past.</string>
+    <string name="warning_banner_looks_safe_button">Looks safe</string>
     <string name="warning_banner_looks_suspicious">Many people marked similar messages as phishing scams, so this might contain unsafe content. Avoid clicking links, downloading attachments, or replying with personal information.</string>
     <string name="warning_banner_mail_not_sent_from_user_account">"This may be a spoofed message. The message claims to have been sent from your account, but Gmail couldn't verify the actual source. Avoid clicking links or replying with sensitive information, unless you are sure you actually sent this message. (No need to reset your password, the real sender does not actually have access to your account!)"</string>
     <string name="warning_banner_never_send_to_spam_filter">This message was not sent to Spam because of a filter you created.</string>
     <string name="warning_banner_only_display_name_in_addressbook">&lt;b>%1$s&lt;/b> has never sent you messages using this email address.</string>
     <string name="warning_banner_others_marked_as_phishy">Many people marked similar messages as phishing scams, so this might contain unsafe content. Avoid clicking links, downloading attachments, or replying with personal information.</string>
+    <string name="warning_banner_outbreak_looks_safe_button">"I'm sure it's safe"</string>
     <string name="warning_banner_phishy_outbreak">One or more members of your organization have marked this email as suspicious. Avoid clicking links, downloading attachments, or replying with personal information.</string>
     <string name="warning_banner_policy_removed_spam_label">"This message was not sent to Spam based on your organization's settings."</string>
     <string name="warning_banner_profile_email_forced_spam_label">&lt;b>%1$s&lt;/b> cannot reach you via your Google+ profile at this time.</string>
+    <string name="warning_banner_report_dangerous_button">Report dangerous</string>
+    <string name="warning_banner_report_not_phishing_button">Report not phishing</string>
+    <string name="warning_banner_report_phishing_button">Report phishing</string>
     <string name="warning_banner_sender_blocked">You blocked &lt;b>%1$s&lt;/b>.</string>
     <string name="warning_banner_sender_is_a_known_spammer">Lots of messages from &lt;b>%1$s&lt;/b> were identified as spam in the past.</string>
     <string name="warning_banner_sender_unsubscribed">You unsubscribed from &lt;b>%1$s&lt;/b>.</string>
