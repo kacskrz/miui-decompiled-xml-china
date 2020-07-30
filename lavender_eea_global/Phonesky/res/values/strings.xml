@@ -24,7 +24,6 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about_this_app">About this app</string>
     <string name="about_this_game">About this game</string>
-    <string name="abridged_duration">Abridged · %1$s</string>
     <string name="accept">Accept</string>
     <string name="accessibility_announcement_episode_expanded">Episode description shown</string>
     <string name="accessibility_auto_update_google_apps">Auto-update Google apps, Checked:%1$b</string>
@@ -144,9 +143,7 @@
     <string name="audiobook_sample_add">Add</string>
     <string name="audiobook_sample_adding_toast">Adding sample to library...</string>
     <string name="audiobook_sample_view">View</string>
-    <string name="auth_challenge_info_link">&lt;a href=\"%1$s\">Learn more&lt;/a></string>
     <string name="auth_challenge_opt_out_info">Disabling authentication may result in unauthorized purchases. You assume responsibility for all charges. &lt;a href=\"%1$s\">Learn more&lt;/a></string>
-    <string name="auth_challenge_opt_out_title">Never ask me again</string>
     <string name="auth_required_error">Authentication is required. You need to sign into your Google Account.</string>
     <string name="auto_add_shortcuts_description">For new apps</string>
     <string name="auto_add_shortcuts_label">Add icon to Home screen</string>
@@ -167,9 +164,12 @@
 You can always change this in Settings. Data charges may apply."</string>
     <string name="auto_update_google_apps">Auto-update Google apps</string>
     <string name="auto_update_label">Auto-update apps</string>
+    <string name="auto_update_value_always_subtext">Auto-update apps whenever there’s a connection. Data charges may apply.</string>
     <string name="auto_update_value_disabled">"Don't auto-update apps"</string>
+    <string name="auto_update_value_disabled_subtext">Manually update in Google Play</string>
     <string name="auto_update_value_enabled">Auto-update apps at any time. Data charges may apply.</string>
     <string name="auto_update_value_wifi_only">Auto-update apps over Wi-Fi only</string>
+    <string name="auto_update_value_wifi_only_subtext">Only use Wi-Fi or data connections provided by your car or carrier</string>
     <string name="autoplay_setting_tooltip">You can control video autoplay in Settings</string>
     <string name="availability_restriction_carrier">"This item isn't available on your carrier."</string>
     <string name="availability_restriction_country">"This item isn't available in your country."</string>
@@ -209,6 +209,8 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="browse_music">Browse music</string>
     <string name="budget_progress_bar_description">%1$d percent of %2$s budget spent</string>
     <string name="build_a_series_bundle">Build a series bundle</string>
+    <string name="build_a_series_bundle_and_save">Build a series bundle and save</string>
+    <string name="build_series_bundle_cta">Build</string>
     <string name="bulleted_line_item">• %1$s</string>
     <string name="buy">Buy %1$s</string>
     <string name="buy_hd">Buy HD %1$s</string>
@@ -231,8 +233,6 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="canceled">Purchase canceled</string>
     <string name="canceling">Canceling…</string>
     <string name="canceling_download">Canceled…</string>
-    <string name="cart_discounted_price">(%1$s)</string>
-    <string name="cart_original_price">Original %1$s</string>
     <string name="catalog_card_button_text">Explore</string>
     <string name="category_spinner_label">Filter Option</string>
     <string name="cdp_open_app">Open app</string>
@@ -280,7 +280,6 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="clear_wishlist_summary">Tap to clear everything out of your wishlist</string>
     <string name="clear_wishlist_title">Clear wishlist</string>
     <string name="close">Close</string>
-    <string name="comma_separator">", "</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -331,10 +330,9 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="content_description_book_title">Book: %1$s</string>
     <string name="content_description_cancel_download">Cancel this download</string>
     <string name="content_description_collapse_button">Collapse</string>
+    <string name="content_description_collapse_button_with_title">Collapse %s</string>
     <string name="content_description_collapse_reply">Collapse reply</string>
-    <string name="content_description_current_price">Current price %1$s</string>
-    <string name="content_description_current_price_toggle_collapse">Current price %1$s, hide details</string>
-    <string name="content_description_current_price_toggle_expand">Current price %1$s, show details</string>
+    <string name="content_description_collapsed_button">Collapsed %s</string>
     <string name="content_description_d30_discover_tag_title">%1$s tag</string>
     <string name="content_description_details_page">Details for %1$s</string>
     <string name="content_description_developer_title">Developer: %1$s</string>
@@ -342,11 +340,13 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="content_description_exit_vr">Exit VR</string>
     <string name="content_description_exoplayer_fallback_image">Image with a button</string>
     <string name="content_description_expand_button">Expand</string>
+    <string name="content_description_expand_button_with_title">Expand %s</string>
     <string name="content_description_expand_reply">Expand reply</string>
+    <string name="content_description_expanded_button">Expanded %s</string>
     <string name="content_description_featured_prefix">Featured</string>
-    <string name="content_description_generic_trailer">Trailer for \"%1$s\"</string>
+    <string name="content_description_generic_trailer">Play trailer for \"%1$s\"</string>
     <string name="content_description_info_button">Info</string>
-    <string name="content_description_more_button">More</string>
+    <string name="content_description_more_button">More results for %s</string>
     <string name="content_description_movie_bundle_list_collapse">Collapse movie bundle list</string>
     <string name="content_description_movie_bundle_list_expand">Expand movie bundle list</string>
     <string name="content_description_movie_title">Movie: %1$s</string>
@@ -358,8 +358,6 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="content_description_ongoing_install">Install in progress</string>
     <string name="content_description_options">Options</string>
     <string name="content_description_parental_controls_switch">Parental controls</string>
-    <string name="content_description_password_help">Password help</string>
-    <string name="content_description_pin_help">PIN help</string>
     <string name="content_description_play_pause_trailer">Play Trailer</string>
     <string name="content_description_publication_title">Publication: %1$s</string>
     <string name="content_description_reset_pin">Reset PIN</string>
@@ -370,7 +368,6 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="content_description_screenshot">Screenshot \"%1$d\" of \"%2$d\"</string>
     <string name="content_description_screenshot_for_app">Screenshot for \"%1$s\"</string>
     <string name="content_description_selected_billing_profile_entry">Selected</string>
-    <string name="content_description_selected_voucher_entry">Selected</string>
     <string name="content_description_thumbnail_album">Image of album cover art %1$s</string>
     <string name="content_description_thumbnail_application">Image of app or game icon for %1$s</string>
     <string name="content_description_thumbnail_artist">Image of artist %1$s</string>
@@ -395,7 +392,6 @@ You can always change this in Settings. Data charges may apply."</string>
     <string name="content_description_tv_episode_title">Episode: %1$s</string>
     <string name="content_description_tv_season_title">Season: %1$s</string>
     <string name="content_description_tv_show_title">Show: %1$s</string>
-    <string name="content_description_unselected_voucher_entry">Unselected</string>
     <string name="content_description_wishlist_add">Include in wishlist</string>
     <string name="content_description_wishlist_remove">Remove from wishlist</string>
     <string name="content_filter_cancel">Cancel</string>
@@ -526,6 +522,7 @@ The app will now restart."</string>
     <string name="debug_volley_logging_on">Verbose logging is enabled</string>
     <string name="debug_volley_logging_title">Volley logging state</string>
     <string name="decline">Decline</string>
+    <string name="decrease_quantity_button_content_description">Decrease quantity by %1$d</string>
     <string name="deeplink_account_mismatch_title">Switch to the right account</string>
     <string name="deeplink_account_missing_content">Add your account to your Android settings and try again</string>
     <string name="deeplink_account_missing_title">"Can't find your account"</string>
@@ -608,6 +605,8 @@ The app will now restart."</string>
     <string name="download_settings_value_download_always">Over any network</string>
     <string name="download_settings_value_wifi_only">Over Wi-Fi only</string>
     <string name="download_size_requires_wifi_title">Download size requires Wi-Fi.</string>
+    <string name="download_value_always_subtext">Download apps whenever there’s a connection. Data charges may apply.</string>
+    <string name="download_value_wifi_only_subtext">Only use Wi-Fi or data connections provided by your car or carrier</string>
     <string name="downloading_subtext">Downloading</string>
     <string name="dump_family_status_summary">Dump family status to logcat.</string>
     <string name="dump_family_status_title">Dump family status</string>
@@ -663,6 +662,8 @@ The app will now restart."</string>
     <string name="episodes_title">Episodes (%1$d)</string>
     <string name="error">Error</string>
     <string name="error_family_refresh_failed">Error while retrieving information from server.</string>
+    <string name="error_generic_retry_message">Try again</string>
+    <string name="error_generic_title">Something went wrong</string>
     <string name="error_icon_content_description">Error</string>
     <string name="error_while_downloading_insufficient_zero_rating_quota_message">This download will put you over the free data limit for Play apps and games. If you decide to download it, data charges may apply.</string>
     <string name="error_while_downloading_insufficient_zero_rating_quota_title">Download paused for %1$s</string>
@@ -747,10 +748,7 @@ The app will now restart."</string>
     <string name="fingerprint_auth_settings_description">For Google Play purchases on this device</string>
     <string name="fingerprint_failed_first_attempt">"Try again. Fingerprint not recognized. Be sure you're using the correct finger."</string>
     <string name="fingerprint_failed_last_attempt">"Try one last time. If the next attempt fails, you'll need to enter your password."</string>
-    <string name="fingerprint_locked_password">A new fingerprint was added to this device, so a password is required</string>
-    <string name="fingerprint_locked_pin">A new fingerprint was added to this device, so a PIN is required</string>
     <string name="fingerprint_not_recognized">Try again. Fingerprint not recognized.</string>
-    <string name="fingerprint_opt_in">Use fingerprint for future purchases</string>
     <string name="fingerprint_scan_successful">Scan successful</string>
     <string name="fingerprint_scanning">Touch the sensor to continue</string>
     <string name="fingerprint_title">Touch sensor</string>
@@ -784,6 +782,9 @@ The app will now restart."</string>
     <string name="foreground_hygiene">Checking for system and security updates</string>
     <string name="formatted_budget_amount">Budget %1$s</string>
     <string name="french_digital_republic_law_help">Consumer Information</string>
+    <string name="frictionless_game_explanation_message_1">"Full game is loading — instant play games don't need installation"</string>
+    <string name="frictionless_game_explanation_message_2">"Instant play games don't use permanent space on your device"</string>
+    <string name="frictionless_game_explanation_message_3">Your data is saved to the cloud when you see \"Progress saved by Play Games\"</string>
     <string name="full_page_replaced_question">Showing results for:</string>
     <string name="game_loading_confirm_button">Start</string>
     <string name="game_loading_progress_percentage">%1$d%% loaded</string>
@@ -808,6 +809,7 @@ The app will now restart."</string>
     <string name="got_it_card_edit_review_title">Edit history is public</string>
     <string name="got_it_card_new_review_title">Reviews are public and editable</string>
     <string name="gplus_public_reviews_confirmed">Thanks. Ready to start rating.</string>
+    <string name="hab_title">Hot Air Balloon</string>
     <string name="head_of_household_role">Family Manager</string>
     <string name="help_and_feedback">Help &amp; feedback</string>
     <string name="high_priority_notification_channel">High priority</string>
@@ -847,8 +849,8 @@ The app will now restart."</string>
     <string name="in_app_review_thanks_image">Thank You Image for writing a review on the app</string>
     <string name="in_app_review_undo">Undo</string>
     <string name="in_progress_season">This season is in progress. Buy the season to get new episodes as they become available.</string>
+    <string name="increase_quantity_button_content_description">Increase quantity by %1$d</string>
     <string name="inline_details_announce_app_installing">%1$s is currently installing</string>
-    <string name="inline_details_announce_init_app_install">Initializing installation of %1$s</string>
     <string name="inline_details_task_affinity">com.android.vending.inlinedetails</string>
     <string name="install">Install</string>
     <string name="install_app_in_personal_profile">Install in personal profile</string>
@@ -880,6 +882,8 @@ The app will now restart."</string>
     <string name="install_failed_update_preview_apk_title">"Can't update %1$s"</string>
     <string name="install_invalid_install_location">"There's a problem with your device's default install location. Learn how to &lt;a href=\"%3$s\">change settings for device storage&lt;/a>."</string>
     <string name="install_parse_failed_mismatched_certificates">Uninstall the previous version of the app and try again</string>
+    <string name="install_play_version_dialog_body">The current version of %1$s on your device will be removed, along with any other associated data.</string>
+    <string name="install_play_version_dialog_title">Install official Play version?</string>
     <string name="install_with_size">Install (%1$s)</string>
     <string name="installed_app_toggle_button_description">Show installed apps</string>
     <string name="installed_list_state">Installed</string>
@@ -891,12 +895,6 @@ The app will now restart."</string>
     <string name="instant_app_launch_button_label_try_now">Try now</string>
     <string name="instant_apps_excluded_app_remove_button_label">Remove %s app from list</string>
     <string name="instant_apps_excluded_apps_title">Manage links</string>
-    <string name="instant_apps_intent_discovery_go_to_play_store_action_text">Go to Play Store</string>
-    <string name="instant_apps_intent_discovery_header_text">Open instantly in</string>
-    <string name="instant_apps_intent_discovery_internal_error">Something went wrong. Please try again.</string>
-    <string name="instant_apps_intent_discovery_no_apps_found_error">We couldn’t find any apps for that. You can browse apps in the Play Store.</string>
-    <string name="instant_apps_intent_discovery_no_internet_error">No network connection was detected. Check your connection and try again.</string>
-    <string name="instant_apps_intent_discovery_retryable_action_text">Retry</string>
     <string name="instant_apps_label">Upgrade web links</string>
     <string name="instant_apps_play_store_settings_description">Use apps and games without installation</string>
     <string name="instant_apps_play_store_settings_label">Google Play Instant</string>
@@ -929,7 +927,6 @@ The app will now restart."</string>
     <string name="instant_apps_tos_content">Google Play gives you access to millions of apps to use or install. Links to instant apps will open without requiring installation, when available. &lt;a href=\"%1$s\">Learn more&lt;/a></string>
     <string name="instant_apps_tos_title">Terms of Service</string>
     <string name="instant_cta_label">Try</string>
-    <string name="instant_games_explanation_message">Did you know Instant games can save your progress in the cloud?</string>
     <string name="internal_sharing_details_nothing_installed">This app is an internal test version that has been shared with you. If you install it, your email address will be shared with the developer.</string>
     <string name="internal_sharing_details_prod_installed">A public version of this app is already installed on this device. Uninstall it and try again.</string>
     <string name="internal_sharing_details_reinstall">A newer version of this app (version %1$d) is already installed on this device. Installing this older version will uninstall the current version, and your app data will be deleted.</string>
@@ -1177,9 +1174,9 @@ The app will now restart."</string>
     <string name="network_dialog_ok_button">OK</string>
     <string name="network_error">No internet connection. Make sure Wi‑Fi or cellular data is turned on, then try again.</string>
     <string name="network_error_linked">No internet connection. Make sure &lt;a href=\"settings_wifi_link\">Wi‑Fi&lt;/a> or &lt;a href=\"settings_data_link\">cellular data&lt;/a> is turned on, then try again.</string>
-    <string name="network_error_notify">Check your mobile data or Wi‑Fi or get a notification when your connection comes back</string>
+    <string name="network_error_notify">"Check your connection or get a notification when you're back online"</string>
     <string name="network_error_notify_requested">"We'll notify you when your connection is back"</string>
-    <string name="network_error_title">No internet connection</string>
+    <string name="network_error_title">"You're offline"</string>
     <string name="network_notification_request_button">NOTIFY</string>
     <string name="network_notification_request_txt">No internet connection. Get notified when it is restored.</string>
     <string name="network_notification_requested_txt">You will be notified when connection is restored.</string>
@@ -1207,8 +1204,6 @@ The app will now restart."</string>
     <string name="no_purchase_history_tab_content_title">Keep track of purchases</string>
     <string name="no_results">No results found.</string>
     <string name="no_results_for_query">No results found for \"%1$s\".</string>
-    <string name="no_results_v1">No results</string>
-    <string name="no_results_v1_details">Too many filters for one search to handle</string>
     <string name="no_reviews">No reviews</string>
     <string name="no_reviews_in_current_language">No reviews in your language</string>
     <string name="no_reviews_label">No reviews yet</string>
@@ -1249,6 +1244,11 @@ The app will now restart."</string>
     <string name="notification_installing_status">Installing \"%1$s\"…</string>
     <string name="notification_multiple_updates_more">%1$s, %2$s, %3$s, %4$s, and %5$d others</string>
     <string name="notification_new_updates_available_status">New updates available</string>
+    <string name="notification_opt_in_notification_body">You can choose which notifications you receive, such as security updates, in Settings</string>
+    <string name="notification_opt_in_notification_title">Turn on only important notifications</string>
+    <string name="notification_prereg_auto_install_success">%1$s is installed.</string>
+    <string name="notification_prereg_auto_install_success_explanation_app">"You pre-registered for this app and it's now installed on your device. Enjoy the app!"</string>
+    <string name="notification_prereg_auto_install_success_explanation_game">"You pre-registered for this game and it's now installed on your device. Enjoy the game!"</string>
     <string name="notification_preregistration_released_subtitle">You pre-registered for this app. Tap to install</string>
     <string name="notification_preregistration_released_title">%1$s is available!</string>
     <string name="notification_rapid_update_content">Installing required app update…</string>
@@ -1278,7 +1278,9 @@ The app will now restart."</string>
     <string name="offline_install_ready">Ready to install</string>
     <string name="offline_install_tooltip_text">"You can still install while offline, we'll take care of it when connection restores"</string>
     <string name="offline_install_waiting">Waiting for connection…</string>
-    <string name="og_account_disabled_a11y">Account disabled %1$s.</string>
+    <string name="offline_page_game_list_title">Play while you wait</string>
+    <string name="offline_page_more_games_subtitle">Play more games like Minesweeper and PAC-MAN</string>
+    <string name="offline_page_more_games_title">More offline games</string>
     <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
     <string name="og_account_particle_disc_not_signed_in_a11y">Open account menu</string>
     <string name="og_add_another_account">Add another account</string>
@@ -1369,12 +1371,8 @@ The app will now restart."</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="pause_sample">Pause</string>
     <string name="payment_methods">Payment methods</string>
-    <string name="payment_success">Payment successful</string>
-    <string name="payment_success_auth_choices_description">Require authentication for purchases?</string>
-    <string name="payment_success_auth_choices_footer">To prevent unauthorized purchases, you can require authentication for purchases through this Google Play account on this device. This is important if you share your device with others or want to prevent purchases in kid-friendly apps. &lt;a href=\"%1$s\">Learn more&lt;/a> about changing authentication settings.</string>
     <string name="pe__wishlist">Wishlist</string>
     <string name="pe_cd_minimize_player">Minimize player</string>
-    <string name="pending_download_title">Pending download</string>
     <string name="pending_install">Pending…</string>
     <string name="per_source_installation_consent_dialog_message">Allow installation from this source?</string>
     <string name="per_source_installation_consent_uninstallation_dialog_message">Uninstall this app?</string>
@@ -1471,8 +1469,10 @@ The app will now restart."</string>
     <string name="play_pass_setup_page_deeplink_account_mismatch_content">Switch to &lt;b>%1$s&lt;/b>, and then return to Play Pass. &lt;a href=\"https://support.google.com/googleplay/answer/2521798\">Learn about switching accounts&lt;/a>.</string>
     <string name="play_pass_setup_page_deeplink_account_mismatch_title">Switch accounts to join Play Pass</string>
     <string name="play_pass_side_nav_new">New</string>
+    <string name="play_pass_strikethrough_price">%1$s. Now free with Play Pass.</string>
     <string name="play_points">Play Points</string>
     <string name="play_protect_already_enabled">Play Protect is already enabled.</string>
+    <string name="play_protect_dismiss_content_description">Dismiss</string>
     <string name="play_protect_enable_app_dialog_enable_app_button">ENABLE</string>
     <string name="play_protect_enable_app_dialog_title">Enable %1$s?</string>
     <string name="play_protect_enable_suspended_app_dialog_body">This app is not safe and has been removed from Google Play. Consider uninstalling it.</string>
@@ -1518,6 +1518,7 @@ more"</string>
     <string name="prepare_to_install">Preparing to install…</string>
     <string name="preregistration_add">Pre-register</string>
     <string name="preregistration_add_error">%1$s could not be pre-registered</string>
+    <string name="preregistration_auto_install_confirmed">"Will automatically install when it's available."</string>
     <string name="preregistration_coming_soon">Coming Soon</string>
     <string name="preregistration_dialog_message">"You'll be notified when the app is released. Share the news with your friends!"</string>
     <string name="preregistration_dialog_negative_button_v2">Share with friends</string>
@@ -1530,6 +1531,8 @@ more"</string>
     <string name="preregistration_dialog_title_v2_aia">Google Play will notify you when this game is released</string>
     <string name="preregistration_extra_label">Coming Soon</string>
     <string name="preregistration_iap_reward_label">If you pre-register, you will get:</string>
+    <string name="preregistration_install_when_available">Install when available</string>
+    <string name="preregistration_install_when_available_message">"You will get a notification when it's available.&lt;br/>&lt;b>&lt;font color=\"#01875F\">Install when available&lt;/font>&lt;/b>"</string>
     <string name="preregistration_milestone_rewards_terms_label">See full terms</string>
     <string name="preregistration_registered">Registered</string>
     <string name="preregistration_remove">Unregister</string>
@@ -1573,8 +1576,6 @@ more"</string>
     <string name="protect_home_could_not_keep_suspended_app">There was an error processing your request.</string>
     <string name="protect_home_disable_harmful_app">Disable harmful app?</string>
     <string name="protect_home_enable_app_button">Enable app</string>
-    <string name="protect_home_gpp_turned_off">Full scanning turned off</string>
-    <string name="protect_home_gpp_turned_off_description">Only Play Store apps will be checked</string>
     <string name="protect_home_harmful_app_disabled">Harmful app disabled</string>
     <string name="protect_home_harmful_app_found">Uninstall harmful app?</string>
     <string name="protect_home_harmful_app_removed">Harmful app removed</string>
@@ -1586,6 +1587,8 @@ more"</string>
     <string name="protect_home_review_installation_permissions_button_plural">Review apps</string>
     <string name="protect_home_review_installation_permissions_button_single">Review app</string>
     <string name="protect_home_review_installation_permissions_title">Review app installation permissions</string>
+    <string name="protect_home_scanning_enabled_for_advanced_protection_card_body">Play Protect automatically scans apps that come from outside the Play Store. You’ll get a notification if there’s a potential security threat.</string>
+    <string name="protect_home_scanning_enabled_for_advanced_protection_card_title">Advanced Protection requires app scanning through Play Protect</string>
     <string name="protect_home_security_summary_multiple_warnings_body">%1$d warnings. &lt;a href=\"\">View&lt;/a></string>
     <string name="protect_home_security_summary_multiple_warnings_body_content_description">%1$d warnings. View warnings</string>
     <string name="protect_home_security_summary_privacy_alert_title">Privacy alert</string>
@@ -1599,6 +1602,9 @@ more"</string>
     <string name="protect_home_unsafe_app_disabled_generic_card_title">Unsafe app disabled</string>
     <string name="protect_keep_app_button">Keep app</string>
     <string name="protect_learn_more_button">Learn more</string>
+    <string name="protect_notification_go_to_play_protect">Go to Play Protect</string>
+    <string name="protect_notification_scanning_enabled_for_advanced_protection_body">Play Protect will automatically scan for potential security threats</string>
+    <string name="protect_notification_scanning_enabled_for_advanced_protection_title">Advanced Protection requires app scanning</string>
     <string name="protect_play_notification_review_installation_permissions_body">Some apps on this device can install unknown apps, which could put your device and personal information at risk</string>
     <string name="protect_play_notification_review_installation_permissions_button">Review apps</string>
     <string name="protect_play_notification_review_installation_permissions_title">Review app installation permissions</string>
@@ -1627,20 +1633,13 @@ more"</string>
     <string name="public_reviews_disclaimer">The name and photo on your Google Profile will appear with your review. Past edits are visible to users and the app developer unless you delete them.</string>
     <string name="public_reviews_edit_history_message">Edit history is public to anyone who can see this review.</string>
     <string name="publisher_name_instant_app">Instant App</string>
-    <string name="purchase_auth_choice_no_thanks">No, thanks</string>
-    <string name="purchase_auth_choice_yes_always">Yes, always</string>
     <string name="purchase_auth_dialog_label">Require authentication</string>
     <string name="purchase_auth_disclaimer">To protect your account, authentication may be required for purchases in some apps regardless of settings.</string>
-    <string name="purchase_auth_message_always">Based on your current settings, authentication is required for every digital content purchase through Google Play (including within apps) on this device. &lt;a href=\"%1$s\">Change settings&lt;/a> or &lt;a href=\"%2$s\">learn more&lt;/a>.</string>
-    <string name="purchase_auth_message_never">Disabling authentication may result in unauthorized purchases. You assume responsibility for all charges. &lt;a href=\"%1$s\">Change settings&lt;/a> or &lt;a href=\"%2$s\">learn more&lt;/a>.</string>
-    <string name="purchase_auth_message_session">Every time you authenticate for a purchase, you can continue to buy all forms of digital content through Google Play (including within apps) for the next 30 minutes without authenticating again. However, authentication is always required for purchases through Google Play within apps designated for ages 12 and under. &lt;a href=\"%1$s\">Change settings&lt;/a> or &lt;a href=\"%2$s\">learn more&lt;/a>.</string>
     <string name="purchase_auth_settings_label">Require authentication for purchases</string>
     <string name="purchase_auth_underage_disclaimer">Authentication is always required for purchases through Google Play within apps designated for ages 12 and under.</string>
     <string name="purchase_auth_value_always">For all purchases through Google Play on this device</string>
     <string name="purchase_auth_value_never">Never</string>
     <string name="purchase_auth_value_session">Every 30 minutes</string>
-    <string name="purchase_flow_ask_to_buy_prompt">%1$s. %2$s</string>
-    <string name="purchase_flow_start_description">%1$s, %2$s</string>
     <string name="purchase_or_rent_movies">Buy or rent</string>
     <string name="purchase_or_rent_resolution">From %1$s</string>
     <string name="purchase_resolution">Buy from %1$s</string>
@@ -1663,12 +1662,13 @@ more"</string>
     <string name="reactivate_subscription_okay">Subscription restored</string>
     <string name="read">Read</string>
     <string name="read_more">READ MORE</string>
-    <string name="read_more_content_description">Read more link</string>
+    <string name="read_more_content_description">Read more</string>
     <string name="reconnection_notification_message">You tried to view this when you were offline.</string>
     <string name="reconnection_notification_title">View the page on Google Play</string>
     <string name="reconnection_notification_title_details">View %1$s now</string>
     <string name="recover_pin_help_text">&lt;a href=\"%1$s\">Forgot PIN?&lt;/a></string>
     <string name="redeem_gift_card_menu">Redeem</string>
+    <string name="refine_button_content_description">Refine</string>
     <string name="refund">Refund</string>
     <string name="refund_policy_title">Google Play refund policy</string>
     <string name="refunded">Your purchase has been refunded.</string>
@@ -1819,6 +1819,7 @@ more"</string>
     <string name="see_episodes">See episodes</string>
     <string name="see_history">See history</string>
     <string name="see_more_options">see more options</string>
+    <string name="select_any_combination">Select any combination</string>
     <string name="select_carrier">Select carrier</string>
     <string name="select_environment">Select environment</string>
     <string name="select_ip_address">Select IP address country</string>
@@ -1878,7 +1879,7 @@ more"</string>
     <string name="share_dialog_title">Share \"%1$s\" via</string>
     <string name="share_subject">Check out \"%1$s\"</string>
     <string name="share_subject_preregistration">\"%1$s\" is coming soon. Pre-register today.</string>
-    <string name="show_all_search_results_title">Show all results</string>
+    <string name="show_all_search_results_title">Show unfiltered results</string>
     <string name="show_android_modules_installing">Google System Update</string>
     <string name="show_dev_already">No need, you are already a developer.</string>
     <string name="show_dev_on">You are now a developer!</string>
@@ -2034,8 +2035,8 @@ download paused"</string>
     <string name="try_button">Try Button</string>
     <string name="tv_install_pending">Install pending…</string>
     <string name="tv_package_malware_consent_text">Google Play Protect regularly checks your apps and device for harmful behavior. You will be notified of any security risks found. Learn more at https://support.google.com/googleplay/answer/2812853.</string>
-    <string name="tvseason_buy">Buy full season %1$s</string>
-    <string name="tvseason_purchase_resolution">Buy full season from %1$s</string>
+    <string name="tvseason_buy">Buy season %1$s</string>
+    <string name="tvseason_purchase_resolution">Buy season from %1$s</string>
     <string name="uinstall_manager_last_used_today">Last used today</string>
     <string name="unable_to_play_video">An error occurred when launching %1$s</string>
     <string name="unauth_launch_error">%1$s cannot be launched.</string>
@@ -2051,8 +2052,6 @@ download paused"</string>
     <string name="uninstall_app_msg">Do you want to uninstall this app?</string>
     <string name="uninstall_app_msg_active_subscriptions">Your active subscriptions will not be canceled. Do you still want to uninstall?</string>
     <string name="uninstall_blocked_warning">Per your administrator, this app may not be uninstalled.</string>
-    <string name="uninstall_done">Uninstall finished.</string>
-    <string name="uninstall_failed">Uninstall unsuccessful.</string>
     <string name="uninstall_manager_all_apps">All apps</string>
     <string name="uninstall_manager_app_deselected_accessibility">%1$s deselected for removal.</string>
     <string name="uninstall_manager_app_selected_accessibility">%1$s selected for removal.</string>
@@ -2093,6 +2092,7 @@ download paused"</string>
     <string name="uninstall_suggestions_notification_var_b_title">Tidy up your device</string>
     <string name="uninstall_system_updates_msg">Do you want to uninstall all updates to this Android system app?</string>
     <string name="uninstalling">Uninstalling…</string>
+    <string name="unrecognized_app_warning_message">"The version installed on your device didn't come from Google Play and won't get updates from Play"</string>
     <string name="unreviewed_item_from_your_library">From your library</string>
     <string name="unsupported_page">"This page isn't supported by this client."</string>
     <string name="unvote">CANCEL</string>
@@ -2108,6 +2108,9 @@ download paused"</string>
     <string name="update_subscription_instrument">Update payment method</string>
     <string name="update_subscription_primary_instrument">Primary payment method</string>
     <string name="update_with_size">Update (%1$s)</string>
+    <string name="update_youtube_dialog_message">Videos will play here automatically instead of opening YouTube.</string>
+    <string name="update_youtube_dialog_title">Update YouTube to allow in-app video</string>
+    <string name="update_youtube_watch_on_youtube">Watch on YouTube</string>
     <string name="updates_list_state">Update</string>
     <string name="updating">Updating…</string>
     <string name="url_less_opt_in_negative">No thanks</string>
@@ -2181,8 +2184,6 @@ download paused"</string>
     <string name="voting_remaining_number_of_votes">You can vote for %1$d more</string>
     <string name="voting_thanks">Thanks for voting</string>
     <string name="voting_winner">WINNER</string>
-    <string name="voucher_section_has_selected">Choose or remove reward</string>
-    <string name="voucher_section_none_selected">Choose a reward</string>
     <string name="vpa_install_notification_install_all_button">Install all</string>
     <string name="vpa_install_notification_review_button">Review</string>
     <string name="vpa_install_notification_text">Get the most out of your device</string>
