@@ -34,6 +34,21 @@
         <item>@string/wifi_security_eap</item>
         <item>@string/wifi_security_sae</item>
     </string-array>
+    <string-array name="aggregate_entries">
+        <item>Group</item>
+        <item>Group and lower priority</item>
+        <item>"Don't group"</item>
+    </string-array>
+    <string-array name="aggregate_summaries">
+        <item>Promotional and content-related push notifications will be grouped</item>
+        <item>Push notifications will be grouped and shown below other notifications</item>
+        <item>"Push notifications won't be grouped"</item>
+    </string-array>
+    <string-array name="aggregate_values">
+        <item>0</item>
+        <item>-1</item>
+        <item>1</item>
+    </string-array>
     <string-array name="agps_apn_entries">
         <item>CMWAP</item>
         <item>CMNET</item>
@@ -380,6 +395,12 @@
         <item>Percentage (next to the icon)</item>
         <item>Top bar</item>
     </string-array>
+    <array name="battery_indicator_style_icons">
+        <item>@drawable/battery_indicator_graphic</item>
+        <item>@drawable/battery_indicator_percent_in</item>
+        <item>@drawable/battery_indicator_percent_out</item>
+        <item>@drawable/battery_indicator_top</item>
+    </array>
     <string-array name="battery_indicator_style_values">
         <item>0</item>
         <item>1</item>
@@ -647,6 +668,7 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+        <item>11</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -988,6 +1010,11 @@
         <item>pattern</item>
         <item>numerical</item>
         <item>mixed</item>
+    </string-array>
+    <string-array name="choose_dns_mode">
+        <item>@string/private_dns_mode_off</item>
+        <item>@string/private_dns_mode_opportunistic</item>
+        <item>@string/private_dns_mode_provider</item>
     </string-array>
     <string-array name="city_name">
         <item>Abidjan</item>
@@ -1694,6 +1721,7 @@
     <string-array name="data_network_type_name_default">
         <item>4G</item>
         <item>4G+</item>
+        <item>5G</item>
     </string-array>
     <array name="data_type_name_cus_reg_key" />
     <array name="data_type_name_cus_reg_value" />
@@ -1758,31 +1786,9 @@
         <item>cereus</item>
         <item>lotus</item>
     </string-array>
-    <string-array name="dirac_equalizer_preset_names">
-        <item>@string/eq_flat</item>
-        <item>@string/eq_rock</item>
-        <item>@string/eq_jazz</item>
-        <item>@string/eq_pop</item>
-        <item>@string/eq_classical</item>
-        <item>@string/eq_hiphop</item>
-        <item>@string/eq_blues</item>
-        <item>@string/eq_electronic</item>
-        <item>@string/eq_country</item>
-        <item>@string/eq_dance</item>
-        <item>@string/eq_metal</item>
-    </string-array>
-    <string-array name="dirac_equalizer_preset_values">
-        <item>0,0,0,0,0,0,0</item>
-        <item>4,2,-2,0,-2,-2,4</item>
-        <item>0,0,0,-2,-3,0,0</item>
-        <item>0,-3,-5,0,0,-3,0</item>
-        <item>0,0,0,0,3,6,6</item>
-        <item>3,3,-3,0,-3,0,2</item>
-        <item>2,4,-6,4,0,1,2</item>
-        <item>3,3,-1,0,-3,0,0</item>
-        <item>0,0,-2,-2,2,2,0</item>
-        <item>0,4,2,0,-2,-2,4</item>
-        <item>2,0,0,-2,-4,0,0</item>
+    <string-array name="device_support_slide_camera">
+        <item>perseus</item>
+        <item>andromeda</item>
     </string-array>
     <string-array name="disable_apptitmer_device_list">
         <item>cactus</item>
@@ -1803,6 +1809,11 @@
         <item>ugg</item>
         <item>kate</item>
         <item>prada</item>
+        <item>dandelion</item>
+        <item>lime</item>
+        <item>citrus</item>
+        <item>cannon</item>
+        <item>lemon</item>
     </string-array>
     <string-array name="dndm_auto_time_trun_on_off">
         <item>@string/dndm_auto_time_turn_on</item>
@@ -1999,9 +2010,9 @@
         <item>27</item>
     </integer-array>
     <string-array name="font_size_title">
+        <item>@string/layout_size_extral_small</item>
         <item>@string/layout_size_small</item>
         <item>@string/layout_size_normal</item>
-        <item>@string/layout_size_medium</item>
         <item>@string/layout_size_large</item>
         <item>@string/layout_size_huge</item>
         <item>@string/layout_size_exhuge</item>
@@ -2034,6 +2045,16 @@
         <item>1</item>
         <item>2</item>
         <item>0</item>
+    </string-array>
+    <string-array name="gradient_colors">
+        <item>\#88C2FF</item>
+        <item>\#C8F4E4</item>
+        <item>\#FFCEA0</item>
+    </string-array>
+    <string-array name="gradient_positions">
+        <item>0f</item>
+        <item>0.53f</item>
+        <item>1f</item>
     </string-array>
     <string-array name="handy_mode_size_text_entries">
         <item>4.5 inches</item>
@@ -2075,6 +2096,27 @@
     <string-array name="hide_account_list">
         <item>com.android.localphone</item>
         <item>com.android.sim</item>
+    </string-array>
+    <string-array name="input_method_function_des">
+        <item>@string/input_method_function_voice_des</item>
+        <item>@string/input_method_function_xiaoai_des</item>
+        <item>@string/input_method_function_switch_des</item>
+        <item>@string/input_method_function_clipboard_des</item>
+        <item>@string/input_method_function_no_function_des</item>
+    </string-array>
+    <array name="input_method_function_icons">
+        <item>@drawable/input_method_voice_function_selector</item>
+        <item>@drawable/input_method_xiaoai_function_selector</item>
+        <item>@drawable/input_method_switch_function_selector</item>
+        <item>@drawable/input_method_clipboard_function_selector</item>
+        <item>@drawable/input_method_no_function_selector</item>
+    </array>
+    <string-array name="input_method_function_title">
+        <item>@string/input_method_function_voice</item>
+        <item>@string/input_method_function_xiaoai</item>
+        <item>@string/input_method_function_switch</item>
+        <item>@string/input_method_function_clipboard</item>
+        <item>@string/input_method_function_no_function</item>
     </string-array>
     <string-array name="input_method_selector_titles">
         <item>@string/input_method_selector_show_automatically_title</item>
@@ -2250,7 +2292,7 @@
         <item>Long</item>
     </string-array>
     <string-array name="long_press_timeout_selector_values">
-        <item>400</item>
+        <item>300</item>
         <item>1000</item>
         <item>1500</item>
     </string-array>
@@ -2319,12 +2361,12 @@
         <item>WAPI CERT</item>
     </string-array>
     <string-array name="miui_entries_font_size">
+        <item>XS</item>
         <item>S</item>
         <item>M</item>
         <item>L</item>
         <item>XL</item>
         <item>XXL</item>
-        <item>XXXL</item>
     </string-array>
     <string-array name="miui_entryvalues_font_size">
         <item>small</item>
@@ -2333,6 +2375,11 @@
         <item>large</item>
         <item>huge</item>
         <item>godzilla</item>
+    </string-array>
+    <string-array name="modem_perm_action_items">
+        <item>@string/allow</item>
+        <item>@string/permission_action_prompt</item>
+        <item>@string/deny</item>
     </string-array>
     <string-array name="msd_pc_system">
         <item>Windows XP and older</item>
@@ -2408,11 +2455,23 @@ Note: Only for Ubuntu 8.04!"</item>
     <string-array name="nfc_se_route_values">
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
     <string-array name="notch_battery_indicator_style_entries">
         <item>Graphical</item>
         <item>Percentage (in the icon)</item>
         <item>Percentage (next to the icon)</item>
+    </string-array>
+    <array name="notch_battery_indicator_style_icons">
+        <item>@drawable/battery_indicator_graphic</item>
+        <item>@drawable/battery_indicator_percent_in</item>
+        <item>@drawable/battery_indicator_percent_out</item>
+    </array>
+    <string-array name="notch_battery_indicator_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
     </string-array>
     <string-array name="notifi_importance_entries">
         <item>@string/importance_high</item>
@@ -2697,6 +2756,16 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>1920x1080/320|3840x2160/640</item>
         <item>1920x1080/320|3840x2160/640,secure</item>
         <item>1280x720/213;1920x1080/320</item>
+    </string-array>
+    <string-array name="paper_color_index">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="paper_color_values">
+        <item>Full colors</item>
+        <item>Light colors</item>
+        <item>Black and white</item>
     </string-array>
     <string-array name="perm_hips_action">
         <item>Allow</item>
@@ -3275,7 +3344,6 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>excalibur</item>
         <item>joyeuse</item>
         <item>lancelot</item>
-        <item>galahad</item>
     </string-array>
     <string-array name="swipe_direction_titles">
         <item>@string/swipe_direction_rtl</item>
@@ -3300,6 +3368,32 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@drawable/threedrop04</item>
         <item>@drawable/threedrop05</item>
         <item>@drawable/threedrop06</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+        <item>@drawable/threedrop07</item>
+    </array>
+    <array name="three_long_press">
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/three_fingers_long_press</item>
+        <item>@drawable/threedrop07</item>
         <item>@drawable/threedrop07</item>
         <item>@drawable/threedrop07</item>
         <item>@drawable/threedrop07</item>
