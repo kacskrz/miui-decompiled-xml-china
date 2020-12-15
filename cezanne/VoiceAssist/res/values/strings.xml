@@ -36,6 +36,7 @@
     <string name="accessbilityop_finish">Done</string>
     <string name="accessbilityop_only_support_chinese">This skill currently supports only Mandarin Chinese</string>
     <string name="accessbilityop_record_excute_finish">Done</string>
+    <string name="action_login">登录</string>
     <string name="actionbar_button_up_description">Back</string>
     <string name="activity_more_setting">More Setting</string>
     <string name="activity_title_ai_ask_reply">AI Ask Reply</string>
@@ -49,6 +50,11 @@
     <string name="add_device_explan">"Turn on the speaker
 and tap \"Next\""</string>
     <string name="add_device_other_device">去米家添加更多设备</string>
+    <string name="add_device_request_location_hint">获取定位权限失败，无法扫描附近的蓝牙设备开启后再来试试吧</string>
+    <string name="add_request_location_cancel">取消</string>
+    <string name="add_request_location_message">依据系统要求，蓝牙扫描功能需要开启位置权限后方可使用</string>
+    <string name="add_request_location_open">前往开启</string>
+    <string name="add_request_location_title">请求位置权限</string>
     <string name="add_tts_vendor_tips">"快去“添加我的音色”吧，
 完成后还可分享给好友哦！"</string>
     <string name="add_tts_vendor_tips_other">"此机型暂不支持声音定制，
@@ -315,6 +321,8 @@ Maintain a certain distance from the microphone while speaking to keep volume pr
     <string name="apk_upgrade_lastest">No updates available</string>
     <string name="apk_upgrade_lastest_toast">Downloading</string>
     <string name="apk_upgrade_sure">Download update</string>
+    <string name="app_description_content">"Mi AI is a system app. It allows you to use customized alarms, check weather, control smart devices, and more. You'll still be able to your selected method to trigger Mi AI after you remove the Home screen shortcut."</string>
+    <string name="app_description_title">Remove \"Mi AI\" from Home screen?</string>
     <string name="app_name">Mi AI</string>
     <string name="app_not_installed">"The app isn't installed."</string>
     <string name="app_open_failed">小爱暂不支持打开该应用</string>
@@ -328,16 +336,18 @@ Maintain a certain distance from the microphone while speaking to keep volume pr
     <string name="app_xspace_others">应用</string>
     <string name="app_xspace_weixin">微信</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="append">添加</string>
+    <string name="append">Add</string>
     <string name="append_shortcut">添加捷径</string>
     <string name="asr_baidu">Baidu</string>
     <string name="asr_detect_fail_bg_noise_toast">背景噪声过大，请重新录制</string>
     <string name="asr_detect_fail_mic_toast">有爆破音哦，请与麦克风保持10cm的距离</string>
+    <string name="asr_detect_fail_network_timeout">网络异常，上传失败</string>
     <string name="asr_detect_fail_noize_toast">当前环境噪音过大，找个安静的地方吧</string>
     <string name="asr_detect_fail_read_more_toast">多读了，请重新录制</string>
     <string name="asr_detect_fail_record_time_long_toast">录音时间太长啦，请按正常语速读完哦</string>
     <string name="asr_detect_fail_record_time_short_toast">录音时间太短啦，请按正常语速读完哦</string>
     <string name="asr_detect_fail_text_toast">出现了一些小错误，请重新录制</string>
+    <string name="asr_detect_fail_upload_fail">音频上传失败</string>
     <string name="asr_detect_fail_volume_bigger_toast">声音太大啦，请小点声哦</string>
     <string name="asr_detect_fail_volume_smaller_toast">声音太小啦，请大点声哦</string>
     <string name="asr_detection_failed_dialog_text">读的内容与文本不一致，请重新录制</string>
@@ -349,7 +359,7 @@ Maintain a certain distance from the microphone while speaking to keep volume pr
     <string name="asr_detection_failed_dialog_text_6">赞，情感再丰富一些就更完美了</string>
     <string name="asr_detection_failed_dialog_text_7">感觉你的声音被天使吻过</string>
     <string name="asr_detection_failed_dialog_text_8">你的声音真好听</string>
-    <string name="asr_detection_start_dialog_text">音质检测中...</string>
+    <string name="asr_detection_start_dialog_text">音频检测及上传中...</string>
     <string name="asr_detection_success_dialog_text">你的声音简直完美！</string>
     <string name="asr_mi">Mi</string>
     <string name="asr_ms">Microsoft</string>
@@ -659,7 +669,6 @@ Taobao, Tmall, and other express packages."</string>
     <string name="default_filedownloader_notification_content">FileDownloader is running.</string>
     <string name="default_filedownloader_notification_title">FileDownloader</string>
     <string name="default_music_setting_string">Music service settings</string>
-    <string name="default_offline_setting_string">离线设置</string>
     <string name="default_value">Default</string>
     <string name="delete_dialog">Delete</string>
     <string name="deny">Cancel</string>
@@ -796,6 +805,37 @@ Please send this code to the technician."</string>
     <string name="err_not_supported">应用已经不支持这个功能啦</string>
     <string name="err_version_too_old">应用版本太低啦，快去升级吧</string>
     <string name="error_box_low_power">电池盒电量低，请充电</string>
+    <string name="error_hint_backend_request_err">请求出错了，小爱的工程师努力修复中</string>
+    <string name="error_hint_client_default_tips">小爱出错啦，请重试一下吧</string>
+    <string name="error_hint_content_sensitive">请求中包含敏感信息哦，小爱听不懂</string>
+    <string name="error_hint_error_and_try_later">小爱遇到了点问题，请稍候再试</string>
+    <string name="error_hint_need_kkbox_account">请先与kkbox账号进行绑定哦</string>
+    <string name="error_hint_need_relogin">登录过程遇到了点问题，请重新登录下吧</string>
+    <string name="error_hint_need_unlock">请先解锁哦</string>
+    <string name="error_hint_not_implimented">小爱暂未实现此功能</string>
+    <string name="error_hint_occured_problem">小爱出了点问题，工程师正在努力修复中</string>
+    <string name="error_hint_oral_examination_service_error">口语测评服务出了点问题，工程师正在努力修复中</string>
+    <string name="error_hint_quick_phrase_duplicated">该快捷短语的名称重复了，换一个吧</string>
+    <string name="error_hint_quick_phrase_service_error">小爱在调用快捷短语服务时出现了些问题，请重试</string>
+    <string name="error_hint_quick_phrases_content_sensitive">该快捷短语中包含敏感词，换一个吧</string>
+    <string name="error_hint_relogin">需要重新登录哦</string>
+    <string name="error_hint_resource_expired">你购买的资源已经过期啦</string>
+    <string name="error_hint_resource_forbidden">你购买的资源暂时还不能在这个设备上使用哦</string>
+    <string name="error_hint_resource_need_buy">你还没有购买此资源哦</string>
+    <string name="error_hint_resource_not_found">找不到相关资源</string>
+    <string name="error_hint_service_timeout">请求服务超时，请稍候再试</string>
+    <string name="error_hint_service_unavailable">当前服务不可用，工程师正在努力修复中</string>
+    <string name="error_hint_smart_devices_unauthorized">智能设备未授权哦</string>
+    <string name="error_hint_third_service_timeout">请求第三方服务超时，请稍候再试</string>
+    <string name="error_hint_too_many_quick_phrases">快捷短语数超过限额</string>
+    <string name="error_hint_too_many_request_by_day">请求次数达到当天限额，请明天再用小爱吧</string>
+    <string name="error_hint_too_many_request_by_minute">你请求的太快了，请稍候再试吧</string>
+    <string name="error_hint_too_many_voiceprint">注册的声纹太多了，请先删减已有的声纹</string>
+    <string name="error_hint_translation_error">请求翻译服务错误，请重试</string>
+    <string name="error_hint_trip_access_unauthorized">出行信息未授权哦</string>
+    <string name="error_hint_unsupported">小爱不支持此功能哦</string>
+    <string name="error_hint_wakeup_user_agrrement_needed">需要先同意唤醒音频上传，才能使用此功能哦</string>
+    <string name="error_hit_account_changed">小爱检测到你改了账号密码，重新登录下吧</string>
     <string name="error_icon_content_description">Error</string>
     <string name="error_report">报错</string>
     <string name="evening">Afternoon</string>
@@ -845,6 +885,7 @@ Please send this code to the technician."</string>
     <string name="feedback_description">&lt;font color=#FF001F >* &lt;/font>反馈详细描述</string>
     <string name="feedback_dialog_message">您已经编辑过用户反馈，点确定将舍弃本条反馈。</string>
     <string name="feedback_dialog_title">舍弃反馈</string>
+    <string name="feedback_fail_reason_log_file_too_large">日志文件过大，上传失败</string>
     <string name="feedback_hint">请详细描述您遇到的问题</string>
     <string name="feedback_network_error">网络不好，请检查网络</string>
     <string name="feedback_nlp">小爱回答/执行有问题</string>
@@ -932,7 +973,7 @@ Please send this code to the technician."</string>
     <string name="function_introduction_text">Mi AI is your smart assistant. Use Mi AI to set alarms, check weather, make calls, and more.</string>
     <string name="gb_play_mode_cancel">取消</string>
     <string name="gb_play_mode_confirm">确认</string>
-    <string name="gb_play_mode_start_message">自动游戏模式功能会读取您游戏加速应用程序识别到的游戏应用，如果同意使用该功能，手机进入被识别的游戏时自动触发声音超低延迟和游戏音效增强，退出游戏则恢复到耳机默认的延迟和音箱设置。</string>
+    <string name="gb_play_mode_start_message">该功能会读取和识别您的游戏应用，在您进入游戏时触发声音超低延迟和音效增强，退出游戏会恢复到耳机默认设置。</string>
     <string name="gb_play_mode_start_miui_hint">请在手机设置搜索“游戏加速”，并开启改功能</string>
     <string name="gb_play_mode_start_title">开启游戏模式</string>
     <string name="gb_play_model_kown">我知道了</string>
@@ -942,7 +983,6 @@ Please send this code to the technician."</string>
     <string name="get_verify_code_too_often">Too many attempts. Try again tomorrow.</string>
     <string name="give_up_create_warn">Confirm to abandon editing?</string>
     <string name="go_back">返回</string>
-    <string name="goon">继续</string>
     <string name="green_channel_command">读出来</string>
     <string name="group_achievement_board_loss">败</string>
     <string name="group_achievement_board_score">积分</string>
@@ -1072,7 +1112,6 @@ Please send this code to the technician."</string>
     <string name="install">Install</string>
     <string name="install_app">安装APP</string>
     <string name="install_baidu_map_tip">Install Baidu map.</string>
-    <string name="installed">已安装</string>
     <string name="intelligence_scene_custom">自定义场景</string>
     <string name="intelligent_predict_address">智能推测地址</string>
     <string name="intent_uri_feedback">intent:#Intent;action=miui.intent.action.BUGREPORT;S.packageName=com.miui.voiceassist;S.appTitle=%s;end</string>
@@ -1417,6 +1456,7 @@ We shall protect your personal information in accordance with the relevant laws,
 
 You can change this in the settings."</string>
     <string name="notification_creating_shortcut_for">Creating shortcut for %s…</string>
+    <string name="notification_shortcut_title">Add a Home screen shortcut for Mi AI</string>
     <string name="notification_text_learning_background">Mi AI is learning new skills in the background</string>
     <string name="notification_title_skills_learning">Mi AI is learning</string>
     <string name="notify_des">"Press the button on the device
@@ -1430,10 +1470,6 @@ or use your phone to trigger Mi AI"</string>
     <string name="official_vendor">官方出品</string>
     <string name="official_vendor_tts">官方音色</string>
     <string name="offline">离线</string>
-    <string name="offline_setting_auto_update_summary">wifi、电量≥20%下，小爱会自动帮你升级</string>
-    <string name="offline_setting_auto_update_title">WiFi下自动更新</string>
-    <string name="offline_setting_general_summary">通用离线识别模型可以在网络不好时更精确的识别你的话</string>
-    <string name="offline_setting_general_title">通用离线识别模型</string>
     <string name="offline_tts_vendor_tts_text_change_define">当前已是这个音色了</string>
     <string name="offline_tts_vendor_tts_text_change_mitang">当前已是蜜糖</string>
     <string name="offline_tts_vendor_tts_text_change_moli">当前已是茉莉</string>
@@ -1587,6 +1623,8 @@ or use your phone to trigger Mi AI"</string>
     <string name="pref_voicetrigger_low_power_summary">Say \"Mi AI\" into your phone to activate Mi AI voice assistant</string>
     <string name="pref_voicetrigger_low_power_summary_udk">Trigger Mi AI with a voice greeting</string>
     <string name="pref_voicetrigger_summary">Say \"Mi AI\" into your phone when the screen is on to activate Mi AI voice assistant</string>
+    <string name="pref_xiaoai_shortcut_summary">A Home screen shortcut allows you to access Mi AI faster</string>
+    <string name="pref_xiaoai_shortcut_title">Home screen shortcut</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="preview_save_failed">"Couldn't save"</string>
     <string name="preview_save_successfully">Saved successfully</string>
@@ -1598,6 +1636,19 @@ or use your phone to trigger Mi AI"</string>
     <string name="privacy_asr_dialog_msg">关闭后，小爱将不再使用您的语音数据进行AI效果升级，可能影响您的使用体验。</string>
     <string name="privacy_asr_summary">开启后，会使用您的语音数据进行AI效果升级，可更好的识别你的指令</string>
     <string name="privacy_asr_title">语音识别优化</string>
+    <string name="privacy_calendar_account_content">可以在设置中登录小米账号</string>
+    <string name="privacy_calendar_account_msg">您还没有登录小米账号哦，先去登录小米账号吧</string>
+    <string name="privacy_calendar_account_title">小米账号未登录</string>
+    <string name="privacy_calendar_dialog_msg">关闭后，您将无法通过您的音箱设备查询您手机设置的日程或通过手机查询音响设备设置的日程，可能会影响功能使用体验</string>
+    <string name="privacy_calendar_guide_content">在小爱同学设置中“关于小爱-隐私开关-日程信息获取”中对权限进行管理</string>
+    <string name="privacy_calendar_guide_msg">允许小爱访问您的小米云日程信息后，您可以在多个设备中通过小爱同学来查询您的日程信息。</string>
+    <string name="privacy_calendar_guide_title">允许小爱访问小米云日程信息</string>
+    <string name="privacy_calendar_info_msg">开启后将授权小爱同学从小米云服务中获取您的日程信息</string>
+    <string name="privacy_calendar_info_title">日程信息获取</string>
+    <string name="privacy_calendar_open">前往开启</string>
+    <string name="privacy_calendar_sync_cloud_content">在设置中的“账号与同步-小米云服务-日历”中开启日历云同步服务</string>
+    <string name="privacy_calendar_sync_cloud_msg">您需要先开启日历云同步服务，才能开启日程信息授权</string>
+    <string name="privacy_calendar_sync_cloud_title">未开启日历云同步服务</string>
     <string name="privacy_contact_dialog_msg">关闭后，小爱将不再获取你的电话联系人姓名，用于训练语音识别模型，联系人识别准确性将有较大幅度下降。</string>
     <string name="privacy_contact_summary">开启后有助于更好地识别出联系人姓名</string>
     <string name="privacy_contact_title">电话联系人识别优化</string>
@@ -2455,7 +2506,7 @@ to control me remotely"</string>
     <string name="xm_connect_guide_hot_world">语音热词</string>
     <string name="xm_connect_guide_hot_world_message">"开启该功能后，无需双击直接对着耳机说话即可实现功能。
 
-支持的热词：小爱同学，上一曲，上一首，下一曲，下一首"</string>
+支持的热词：小爱同学，上一曲，上一首，下一曲，下一首,音量增加,音量减少"</string>
     <string name="xm_connect_guide_long_press">长按手势</string>
     <string name="xm_connect_guide_long_press_message">选择长按左右耳需要用到的降噪功能，并至少选择2个</string>
     <string name="xm_connect_guide_look_more">查看更多</string>
@@ -2485,6 +2536,7 @@ to control me remotely"</string>
     <string name="xm_connect_success">连接成功</string>
     <string name="xm_connect_timeout">连接超时，请重试</string>
     <string name="xm_connect_tw100_guide_click_message">双击左右耳默认为下一曲，可自定义为以下功能</string>
+    <string name="xm_connect_tw101_guide_click_message">双击左耳默认为唤醒小爱，双击右耳默认为播放暂停，可自定义为以下功能</string>
     <string name="xm_connect_wait">休眠中</string>
     <string name="xm_connected">已连接</string>
     <string name="xm_create_alarm_fail">创建闹钟失败，请重试</string>
@@ -2493,6 +2545,7 @@ to control me remotely"</string>
     <string name="xm_delete_alarm_fail">修改失败</string>
     <string name="xm_delete_remind_fail">删除提醒失败</string>
     <string name="xm_device_close_to">请将设备开机靠近</string>
+    <string name="xm_device_connect_power">设备已连接电源</string>
     <string name="xm_device_disconnect">未连接</string>
     <string name="xm_device_disconnect_go_connect">当前设备离线，点击前往连接。</string>
     <string name="xm_device_found">扫描到%d款设备</string>
@@ -2500,6 +2553,8 @@ to control me remotely"</string>
     <string name="xm_device_manage_size">我的设备(%1$s)</string>
     <string name="xm_device_need_ota_for_function">设备需要升级才能使用该功能</string>
     <string name="xm_device_otaing">设备升级中</string>
+    <string name="xm_device_otaing_no_operation">升级中，请勿操作APP和设备</string>
+    <string name="xm_device_reset_name">设备重命名</string>
     <string name="xm_device_speak_guide_tip">"实用的小技巧，在特定场景下开启人声提示
 再也不用担心忘事情啦"</string>
     <string name="xm_device_syning">同步中，请勿操作设备等待自动重连</string>
@@ -2592,6 +2647,10 @@ to control me remotely"</string>
     <string name="xm_setactive_fail_normal">设置失败，请重试或重新连接</string>
     <string name="xm_setactive_fail_ota">正在升级，请稍后</string>
     <string name="xm_start_time">开始时间</string>
+    <string name="xm_tab_close_noise_reduction">关闭</string>
+    <string name="xm_tab_noise_reduction_model">降噪</string>
+    <string name="xm_tab_transparent_model">通透</string>
+    <string name="xm_tab_wind_noise">抗风噪</string>
     <string name="xm_time">时间</string>
     <string name="xm_toolbar_back">返回</string>
     <string name="xm_transparent_model">通透模式</string>
@@ -2599,11 +2658,13 @@ to control me remotely"</string>
     <string name="xm_update_alarm_fail">修改失败</string>
     <string name="xm_update_count_down_fail">修改倒计时失败</string>
     <string name="xm_update_remind_fail">修改提醒失败</string>
-    <string name="xm_useing">使用</string>
+    <string name="xm_useing">切换</string>
     <string name="xm_version_not_sup">当前版本不支持该功能</string>
     <string name="xm_wait_device_syn_go_more_setting">单耳不支持</string>
     <string name="xm_wake_up">唤醒</string>
     <string name="xm_wake_up_device">请唤醒该设备</string>
+    <string name="xm_wakeup_error_fail">设备唤醒失败，请重试</string>
+    <string name="xm_wakeup_error_please_disconnect_device">请断开一个设备后重试</string>
     <string name="xmbluetooth_allow_in_notification">通知栏弹出配对请求时，请点击配对</string>
     <string name="xmbluetooth_and">和</string>
     <string name="xmbluetooth_ble">BLE</string>
