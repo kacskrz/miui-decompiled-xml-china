@@ -57,7 +57,6 @@
     <string name="action_notification_on">Turn on notifications</string>
     <string name="action_people_and_options">Details</string>
     <string name="action_people_and_options_group">Group details</string>
-    <string name="action_privacy">Privacy</string>
     <string name="action_report_spam">Report spam</string>
     <string name="action_scan_qr_code">Messages for web</string>
     <string name="action_search">Search</string>
@@ -110,7 +109,6 @@
     <string name="advanced_settings_activity_title">Advanced</string>
     <string name="alternate_p2p_conversation_suggestion_add_to_calendar_action_text">Add to calendar</string>
     <string name="and_n_more">and %d more</string>
-    <string name="and_one_more">and 1 more</string>
     <string name="announcement_sticker_added_to_favorites">Added to favorites</string>
     <string name="announcement_sticker_removed_from_favorites">Removed from favorites</string>
     <string name="apn_mcc">MCC</string>
@@ -157,6 +155,9 @@
     <string name="audio_recording_error">"Couldn't save audio. Try again."</string>
     <string name="audio_recording_replay_failed">"Can't play audio. Try again."</string>
     <string name="audio_recording_start_failed">"Can't record audio. Try again."</string>
+    <string name="auto_delete_otps">Auto-delete OTPs after 24 hrs</string>
+    <string name="auto_delete_otps_key">auto_delete_otps</string>
+    <string name="auto_delete_otps_summary">Current and future OTPs will be permanently deleted after 24 hrs</string>
     <string name="auto_detected_country">Automatically detected</string>
     <string name="auto_retrieve_mms_pref_key">buglesub_auto_retrieve_mms</string>
     <string name="auto_retrieve_mms_pref_title">Auto-download MMS</string>
@@ -176,9 +177,8 @@
     <string name="backup_detected">Backup detected</string>
     <string name="bad_custom_theme">"The custom theme you're using caused a problem with this app"</string>
     <string name="bad_custom_theme_close_button">Exit</string>
-    <string name="block_confirmation_message">"You'll continue to receive messages from %1$s but won't be notified anymore. This conversation will be archived."</string>
+    <string name="banner_description">Conversation banner</string>
     <string name="block_confirmation_message_spam_folder">"You'll continue to receive messages from %1$s but won't be notified anymore. This conversation will be moved to “Spam &amp; blocked.”"</string>
-    <string name="block_confirmation_message_system">"You won't receive calls or texts from %1$s. This conversation will be archived."</string>
     <string name="block_confirmation_message_system_spam_folder">"You won't receive calls or texts from %1$s. This conversation will be moved to “Spam &amp; blocked.”"</string>
     <string name="block_confirmation_title">Block &amp; report spam</string>
     <string name="block_contact_title">Block &amp; report spam</string>
@@ -195,6 +195,7 @@
     <string name="boew_promo_text">To get chat features like messaging over Wi‑Fi and data, allow Messages to continue in the background</string>
     <string name="boew_promo_title">Do more with Messages</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="broadcast_receiver_notification_text_extra_info">Messages is doing work in the background. Please file a bug report if you see this notification for over a minute. Receiver name: %1$s</string>
     <string name="broadcast_sms_text">SMS mass text</string>
     <string name="browse">Open</string>
@@ -205,13 +206,12 @@
     <string name="bugle_notification_category_default_settings">Default settings</string>
     <string name="bugle_notification_category_reminders">Reminders</string>
     <string name="bugle_notification_category_web">Messages for web</string>
-    <string name="bugle_notification_default_channel_name">Other notifications</string>
     <string name="bugle_notification_default_incoming_message_channel_name">Incoming messages</string>
-    <string name="bugle_notification_ditto_channel_name">Connected to Messages for web</string>
+    <string name="bugle_notification_ditto_channel_name">Messages for web</string>
     <string name="bugle_notification_foreground_service_channel_name">Background tasks</string>
     <string name="bugle_notification_miscellaneous_channel_name">Other notifications</string>
     <string name="bugle_notification_reminders_channel_name">Reminders</string>
-    <string name="bugle_notification_report_issue_channel_name">Messages is requesting feedback</string>
+    <string name="bugle_notification_report_issue_channel_name">Messages feedback request</string>
     <string name="bugle_notification_silent_default_channel_name">Get notifications while using web</string>
     <string name="business_action_call_full_content_description">Call %1$s (%2$s)</string>
     <string name="business_action_call_short_content_description">Call</string>
@@ -290,19 +290,23 @@
     <string name="c2o_video_button_text">Video</string>
     <string name="calendar_event_added">Event saved</string>
     <string name="calendar_file_content_description">Calendar file</string>
+    <string name="calendar_suggestion_event_chat_title">Android Messages Chat</string>
     <string name="calendar_suggestion_event_description">This event was created from a message.</string>
+    <string name="calendar_suggestions_tooltip_text">Save time with prefilled details such as date, location &amp; title from recent messages</string>
+    <string name="calendar_suggestions_tooltip_title_text">Schedule as you chat</string>
     <string name="calligraphy">Calligraphy</string>
     <string name="camera_attach_media">Attach</string>
     <string name="camera_attach_media_description">Attach to Message</string>
     <string name="camera_back_switch_button">Back camera switch</string>
     <string name="camera_effects_mode_button_description">Effects mode</string>
     <string name="camera_effects_mode_button_text">Effects</string>
-    <string name="camera_error_video_init_fail">Video capture not available</string>
     <string name="camera_flash_off">Flash off</string>
     <string name="camera_flash_on">Flash on</string>
     <string name="camera_front_switch_button">Front camera switch</string>
     <string name="camera_fullscreen_does_not_work_in_split_screen">Fullscreen camera does not work with split screen</string>
-    <string name="camera_media_failure">"Couldn't load camera image"</string>
+    <string name="camera_media_attach_failure">Trouble adding media</string>
+    <string name="camera_media_capture_failure">Something went wrong. Try again.</string>
+    <string name="camera_photo_capture_failure">Trouble taking photo. Try again.</string>
     <string name="camera_photo_mode_button_description">Photo mode</string>
     <string name="camera_photo_mode_button_text">Photo</string>
     <string name="camera_save_media">Save</string>
@@ -313,6 +317,7 @@
     <string name="camera_switch_to_still_mode">Capture a still image</string>
     <string name="camera_switch_to_video_mode">Capture video</string>
     <string name="camera_take_photo">Take photo</string>
+    <string name="camera_video_capture_failure">Trouble recording video. Try again.</string>
     <string name="camera_video_mode_button_description">Video mode</string>
     <string name="camera_video_mode_button_text">Video</string>
     <string name="cancel_send_to_emergency_number">Edit message</string>
@@ -337,6 +342,10 @@
     <string name="cd_sticker_favorite_off_icon">Mark as favorite</string>
     <string name="cd_sticker_favorite_on_icon">Unmark as favorite</string>
     <string name="cd_sticker_gallery_close">Close sticker gallery</string>
+    <string name="change_category">Change category</string>
+    <string name="change_category_dialog_current">Current:</string>
+    <string name="change_category_dialog_submit_button">Submit</string>
+    <string name="change_category_snackbar_message">Category changed to %1$s</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
@@ -403,6 +412,8 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="confirm_sms_7bit_encoding_dialog_text">"To ensure delivery by your carrier, some characters in this message will be converted. You can change this behavior in Settings. "</string>
     <string name="confirm_sms_7bit_encoding_dialog_title">Simple characters only</string>
     <string name="connect_to_gaia_title">Connect your Google Account</string>
+    <string name="connected_half_banner_next_description">Next</string>
+    <string name="connected_half_banner_previous_description">Previous</string>
     <string name="contact_has_multiple_destinations_phone">%1$s (+%2$s more)</string>
     <string name="contact_has_multiple_destinations_type">Multiple</string>
     <string name="contact_list_add_people">Add %s</string>
@@ -436,12 +447,12 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="conversation_creation_failed">Failed to create conversation, please try again later.</string>
     <string name="conversation_creation_failure">Could not start conversation</string>
     <string name="conversation_deletion_failed">"Couldn't delete conversation"</string>
-    <string name="conversation_label_offers">Offers</string>
+    <string name="conversation_label_all">All</string>
+    <string name="conversation_label_more">More</string>
+    <string name="conversation_label_otp">OTPs</string>
     <string name="conversation_label_personal">Personal</string>
+    <string name="conversation_label_promotions">Offers</string>
     <string name="conversation_label_transactions">Transactions</string>
-    <string name="conversation_label_updates">Updates</string>
-    <string name="conversation_list_default_chat_app_screen_button_text">Set default chat app</string>
-    <string name="conversation_list_default_chat_app_screen_sub_text">To use Messages, make it your default chat app</string>
     <string name="conversation_list_default_sms_app_screen_button_text">Set default SMS app</string>
     <string name="conversation_list_default_sms_app_screen_sub_text">To use Messages, make it your default SMS app</string>
     <string name="conversation_list_description">Conversation list</string>
@@ -452,7 +463,6 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="conversation_list_guest_cloud_onboarding_features">Chat over Wi‑Fi and data, share higher quality photos, and more with others who have chat features</string>
     <string name="conversation_list_guest_cloud_onboarding_negative_link_text">Use Messages without chat features</string>
     <string name="conversation_list_guest_cloud_onboarding_title_messages_just_got_better">Messages just got better</string>
-    <string name="conversation_list_guest_cloud_onboarding_tos_with_sms_charges">To turn on chat features from Google, you agree to the %1$s and %2$s. Google will occasionally verify your number by exchanging your device info with your carrier (SMS charges may apply).</string>
     <string name="conversation_list_item_view_draft_message">Draft</string>
     <string name="conversation_list_item_view_sent_from_other_prefix">"%s: "</string>
     <string name="conversation_list_item_view_sent_from_you_prefix">"You: "</string>
@@ -465,7 +475,6 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="conversation_list_rcs_welcome_message_button_positive">Got It</string>
     <string name="conversation_list_rcs_welcome_message_button_settings">Settings</string>
     <string name="conversation_list_snippet_link">Link</string>
-    <string name="conversation_list_snippet_payment_receipt">Payment receipt</string>
     <string name="conversation_list_spam_popup_negative">Manage in Settings</string>
     <string name="conversation_list_spam_popup_paragraph">To help prevent spam, Google uses the phone numbers of unknown senders and recipients. Your messages and contacts are not sent to Google. %1$s</string>
     <string name="conversation_list_spam_popup_paragraph_on_device">Messages uses on-device intelligence to detect spam, and sends some data about these messages to Google without including your phone number or message content. %1$s</string>
@@ -495,7 +504,6 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="country_code_format">(+%s)</string>
     <string name="country_code_hint">Country code</string>
     <string name="country_code_picker_title">Select a country</string>
-    <string name="create_group_info_rcs_warning">Everyone in the group will see this name</string>
     <string name="create_group_info_title">Add group name</string>
     <string name="create_new_group_message">Adding this person will start a new group without chat features</string>
     <string name="current_country_pref_key">current_country</string>
@@ -505,7 +513,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="dasher_account_restricted_toast">"Can't use Google Messages with %s. Use a different Google Account or contact your system administrator for more information."</string>
     <string name="dasher_disabled_notification_body">Contact your system administrator or sign in with a different account.</string>
     <string name="dasher_disabled_notification_title">%s removed</string>
-    <string name="database_version">52030</string>
+    <string name="database_version">55030</string>
     <string name="datetime_formatter_today_format">today, %1$s</string>
     <string name="datetime_formatter_tomorrow_format">tomorrow, %1$s</string>
     <string name="datetime_picker_back_button">Back</string>
@@ -526,7 +534,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="default_web_client_id">357317899610-mmkil88m446a92gnoamashgtha20obai.apps.googleusercontent.com</string>
     <string name="delete_all_media">Delete all messages with media</string>
     <string name="delete_all_media_confirmation">Delete all messages with media?</string>
-    <string name="delete_all_paired_desktops_dialog_title">Sign out of all computers?</string>
+    <string name="delete_all_paired_desktops_dialog_title">Unpair all computers?</string>
     <string name="delete_conversation_confirmation_button">Delete</string>
     <string name="delete_conversation_decline_button">Cancel</string>
     <string name="delete_message_confirmation_button">Delete</string>
@@ -534,9 +542,9 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="delete_oldest_messages">Delete messages older than %s</string>
     <string name="delete_oldest_messages_confirmation">Delete messages older than %s?</string>
     <string name="delete_paired_desktop_button_content_description">Delete paired desktop: %s</string>
-    <string name="delete_paired_desktop_dialog_title">Sign out from this computer?</string>
+    <string name="delete_paired_desktop_dialog_title">Unpair this computer?</string>
     <string name="delete_paired_desktop_negative_button_text">Cancel</string>
-    <string name="delete_paired_desktop_positive_button_text">Sign out</string>
+    <string name="delete_paired_desktop_positive_button_text">Unpair</string>
     <string name="delete_subject_and_reset_message_priority_content_description">Delete subject and clear urgent status</string>
     <string name="delete_subject_content_description">Delete subject</string>
     <string name="delivering_dialog_body">This message is still trying to be delivered to the recipient. You can also send the message as SMS/MMS instead.</string>
@@ -574,17 +582,39 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="dismiss_button">Dismiss</string>
     <string name="ditto_activity_label">Messages for web</string>
     <string name="ditto_cros_pairing_foreground_service_notification_title">Pairing with Chromebook</string>
-    <string name="ditto_foreground_service_notification_text">"Your messages may show on a computer you've paired"</string>
-    <string name="ditto_foreground_service_notification_title">Connected to Messages for web</string>
-    <string name="ditto_foreground_service_sign_out">Sign out</string>
+    <string name="ditto_foreground_service_notification_text">"Your messages are available on the computer you've paired"</string>
+    <string name="ditto_foreground_service_notification_title">Messages for web</string>
+    <string name="ditto_foreground_service_sign_out">Unpair</string>
     <string name="ditto_persistent_notification_settings">Notifications</string>
     <string name="ditto_settings_action_bar_title">Notifications</string>
-    <string name="ditto_settings_connected_to_web_notification_description">“Connected to Messages for web” appears when your device is online</string>
+    <string name="ditto_settings_connected_to_web_notification_description">“Messages for web” appears when your device is online</string>
     <string name="ditto_settings_connected_to_web_notification_title">Show persistent notification</string>
     <string name="ditto_settings_while_using_web_notification_description">Stop ringtone &amp; vibration when your device is online</string>
     <string name="ditto_settings_while_using_web_notification_title">Silence notifications</string>
     <string name="dogfood_dialog_message">This Dogfood version may not be available to everyone in the group</string>
     <string name="dogfood_dialog_positive_button_text">OK</string>
+    <string name="donation_conversation_selected_count">%1$d/%2$d</string>
+    <string name="donation_donate_action_label">Confirm</string>
+    <string name="donation_donate_dialog_body_text">"You're donating %1$s from %2$s. Donating messages is permanent and can't be undone. The original messages are unchanged."</string>
+    <string name="donation_donate_dialog_positive_button_label">Donate</string>
+    <string name="donation_donate_dialog_title">Ready to donate?</string>
+    <string name="donation_donate_error">Trouble donating, try again later</string>
+    <string name="donation_edit_button_content_description">More options</string>
+    <string name="donation_edit_dialog_body_text">Some sensitive info, like account numbers, was automatically redacted. You can remove more by editing.</string>
+    <string name="donation_edit_dialog_positive_button_label">Save</string>
+    <string name="donation_edit_dialog_title">Edit message</string>
+    <string name="donation_edit_input_label">Your message</string>
+    <string name="donation_flow_complete">Thanks for donating!</string>
+    <string name="donation_header">"[Googlers] To help improve the Messages app, you can donate your business messages from short codes (see email). You can edit or uncheck selected messages. 
+
+Messages has tried to redact sensitive info, and donated messages are not identified by your phone number or device ID. Donated messages are reviewed by people and include the business sender’s number. %1$s"</string>
+    <string name="donation_menu_button_label">Donate messages</string>
+    <string name="donation_no_messages_error">You have no business message</string>
+    <string name="donation_notification_body">Tap to choose, edit &amp; donate business messages</string>
+    <string name="donation_notification_title">[Googlers] Help improve the Messages app</string>
+    <string name="donation_query_error">Trouble loading, try again later</string>
+    <string name="donation_toolbar_deselect">Uncheck all</string>
+    <string name="donation_toolbar_select">Check all</string>
     <string name="done">Done</string>
     <string name="download_message_failure">Message could not be downloaded</string>
     <string name="download_message_failure_airplane_mode">You are in airplane mode. You may be able to download after turning it off.</string>
@@ -595,16 +625,19 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="draft_indicator">Draft</string>
     <string name="draw_button_action">Draw mode</string>
     <string name="dropdown_delete_button_desc">Remove %s from recipients</string>
+    <string name="dump_info_option_title">Dump Info to Log</string>
     <string name="dump_mms_pref_key">dump_mms</string>
     <string name="dump_mms_pref_summary">Dump received MMS raw data into external storage file</string>
     <string name="dump_mms_pref_title">Dump MMS</string>
     <string name="dump_sms_pref_key">dump_sms</string>
     <string name="dump_sms_pref_summary">Dump received SMS raw data into external storage file</string>
     <string name="dump_sms_pref_title">Dump SMS</string>
-    <string name="edit_group_info_local_only_warning">Only you can see this group name</string>
+    <string name="edit_conversation_profile_fragment_menu_next">Next</string>
+    <string name="edit_conversation_profile_fragment_menu_save">Save</string>
+    <string name="edit_conversation_profile_fragment_menu_skip">Skip</string>
+    <string name="edit_conversation_profile_fragment_menu_waiting_content_description">Name change is in progress.</string>
     <string name="edit_group_info_rcs_failure_message">Trouble connecting, changes may not be visible to everyone.</string>
     <string name="edit_group_info_rcs_failure_try_again_button">Try again</string>
-    <string name="edit_group_info_rcs_warning">This name is shared with everyone in the group</string>
     <string name="edit_group_info_title">Change group name</string>
     <string name="edit_group_title_description">Edit the group name</string>
     <string name="effect_base_uri">https://www.gstatic.com/smart_messaging/expressivecamera/am/icons/</string>
@@ -617,16 +650,25 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="email_sms_mms_from_dump_file_dialog_title">Email dump file</string>
     <string name="emergency_sms">Send emergency text</string>
     <string name="emergency_sms_button_description">Send emergency text</string>
+    <string name="emoji_category_activities">Activities &amp; Events</string>
     <string name="emoji_category_activities_and_events">Activities &amp; Events</string>
     <string name="emoji_category_animals_and_nature">Animals &amp; Nature</string>
     <string name="emoji_category_flags">Flags</string>
     <string name="emoji_category_food_and_beverage">Food &amp; Beverage</string>
+    <string name="emoji_category_food_and_drink">Food &amp; Beverage</string>
     <string name="emoji_category_objects">Objects</string>
     <string name="emoji_category_people">People</string>
     <string name="emoji_category_recent">Recently Used</string>
+    <string name="emoji_category_smileys_and_emotion">Smileys &amp; Emotions</string>
     <string name="emoji_category_smileys_and_emotions">Smileys &amp; Emotions</string>
     <string name="emoji_category_symbols">Symbols</string>
     <string name="emoji_category_travel_and_places">Travel &amp; Places</string>
+    <string name="emoji_gallery_backspace_content_description">Backspace</string>
+    <string name="emoji_screen_title">Emoji</string>
+    <string name="emoji_search_hint">Search emoji</string>
+    <string name="emoji_search_unavailable_try_later">Emoji search temporarily unavailable. Try again later.</string>
+    <string name="emotion_suggestions_tooltip_text">" Expressive sticker suggestions that match the conversation. "<br></br>" Manage in &lt;a href>Settings&lt;/a> "</string>
+    <string name="emotion_suggestions_tooltip_title_text">Sticker Smart Reply</string>
     <string name="empty_custom_smsc_number_pref_display_value">None</string>
     <string name="empty_favorites_message">Your favorite stickers will show up here!</string>
     <string name="enable_group_mms">Send an MMS reply to all recipients (group MMS)</string>
@@ -644,10 +686,10 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="enter_phone_number_title_for_sim">Confirm phone number for %1$s</string>
     <string name="enter_self_phone_number_suggestion">Enter your phone number in Advanced Settings.</string>
     <string name="enumeration_comma">", "</string>
+    <string name="error_failed_to_save_setting">Trouble saving. Try again.</string>
     <string name="error_icon_content_description">Error</string>
     <string name="error_premium_sms_needs_permission">"To send this message, visit your device's settings and turn on Premium SMS access"</string>
     <string name="etouffee_to_telephony_enabled_pref_key">etouffee_to_telephony_enabled</string>
-    <string name="etouffee_to_telephony_setting_summary">Without access to your messages, some features in other apps may not work.</string>
     <string name="example_assistant_action_text">Movies near me</string>
     <string name="example_assistant_action_text_variant">Weather this weekend</string>
     <string name="example_smart_reply_text">Thank you</string>
@@ -657,10 +699,10 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="exit_button_action">Close editor</string>
     <string name="exo_controls_fastforward_description">Fast forward</string>
     <string name="exo_controls_hide">Hide player controls</string>
-    <string name="exo_controls_next_description">Next track</string>
+    <string name="exo_controls_next_description">Next</string>
     <string name="exo_controls_pause_description">Pause</string>
     <string name="exo_controls_play_description">Play</string>
-    <string name="exo_controls_previous_description">Previous track</string>
+    <string name="exo_controls_previous_description">Previous</string>
     <string name="exo_controls_repeat_all_description">Repeat all</string>
     <string name="exo_controls_repeat_off_description">Repeat none</string>
     <string name="exo_controls_repeat_one_description">Repeat one</string>
@@ -675,8 +717,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="expand_button_title">Advanced</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fail_to_send_delete_description">Delete</string>
-    <string name="fail_to_send_fallback_description">Send as text (SMS/MMS) instead</string>
-    <string name="fail_to_send_fallback_during_sent_description">Send as text (SMS/MMS)</string>
+    <string name="fail_to_send_fallback_description">Switch to text (SMS/MMS)</string>
     <string name="fail_to_send_retry_description">Resend as chat</string>
     <string name="failed">"Couldn't load image"</string>
     <string name="failed_loading_vcard">"Couldn't load contact card"</string>
@@ -709,10 +750,10 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="fi_account_confirmation_hangouts_cancel_button">Cancel</string>
     <string name="fi_account_confirmation_hangouts_description">"Before Hangouts SMS/MMS stops working, sync your conversation histories with Messages
 %1$s"</string>
-    <string name="fi_account_confirmation_hangouts_dialog_message">"Your Hangouts SMS/MMS won't transfer to Messages. Your calls &amp; voicemail histories also won't be available on the web."</string>
+    <string name="fi_account_confirmation_hangouts_dialog_message">"Your Hangouts SMS/MMS won't sync to Messages. Your calls &amp; voicemail histories also won't be available on the web."</string>
     <string name="fi_account_confirmation_hangouts_dialog_negative">Not now</string>
-    <string name="fi_account_confirmation_hangouts_dialog_positive">Transfer conversations</string>
-    <string name="fi_account_confirmation_hangouts_dialog_title">"Don't transfer your conversations?"</string>
+    <string name="fi_account_confirmation_hangouts_dialog_positive">Sync conversations</string>
+    <string name="fi_account_confirmation_hangouts_dialog_title">"Don't sync your conversations?"</string>
     <string name="fi_account_confirmation_hangouts_ok_button">Sync conversations</string>
     <string name="fi_account_confirmation_hangouts_phone_link">Enjoy texts, calls &amp; voicemail on the web even when your phone is off</string>
     <string name="fi_account_confirmation_hangouts_security">Conversations stay synced &amp; secure on Google servers</string>
@@ -735,6 +776,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="fi_account_verify_fail_message">Failed to validate Google Fi account</string>
     <string name="fi_current_sync_pref_key">fi_current_sync</string>
     <string name="fi_enable_download_over_wifi_pref_key">fi_enable_download_over_wifi</string>
+    <string name="fi_growthkit_flow_cancelled_message">You can set this up later in Settings</string>
     <string name="fi_pref_key">fi_pref_key</string>
     <string name="fi_pref_summary">Sync texts, calls &amp; voicemail across screens</string>
     <string name="fi_pref_title">Google Fi settings</string>
@@ -782,7 +824,9 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="forward_activity_label">Forward message</string>
     <string name="forward_message_activity_title">Forward message</string>
     <string name="from_label">"From: "</string>
+    <string name="full_banner_close_icon_description">Close</string>
     <string name="full_banner_expand_chip_description">Expand chip button</string>
+    <string name="full_screen_gallery_action_attach">Add</string>
     <string name="gcm_defaultSenderId">357317899610</string>
     <string name="general_settings">General</string>
     <string name="general_settings_activity_title">General settings</string>
@@ -791,6 +835,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="get_messenger_notification_body">Read and send text messages from your watch or phone</string>
     <string name="get_messenger_notification_header">Get Messages</string>
     <string name="get_sticker_packs_error_msg">Failed to load stickers.</string>
+    <string name="gif_screen_title">GIFs</string>
     <string name="google_account_pref_key">google_account</string>
     <string name="google_account_pref_title">Google Account</string>
     <string name="google_api_key">AIzaSyDLfkKklEMnVwwf0fUBbU2h5hZxM8jlpZg</string>
@@ -800,6 +845,18 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="google_crash_reporting_api_key">AIzaSyDLfkKklEMnVwwf0fUBbU2h5hZxM8jlpZg</string>
     <string name="google_fi_text">Google Fi</string>
     <string name="google_storage_bucket">zillatest-20296.appspot.com</string>
+    <string name="google_tos_animation_json">google_tos_animation.json</string>
+    <string name="google_tos_chat_features_learn_more_url">https://support.google.com/messages/answer/9592174?hl=%1$s</string>
+    <string name="google_tos_chat_features_tooltip">"See when someone is typing, get read receipts, and send messages, files &amp; high-resolution photos with chat features via Rich Communication Services (RCS). This uses data to send messages.
+
+You can turn this off in settings. %1$s"</string>
+    <string name="google_tos_legal_text_multi_sim">"By using chat features, you agree to the %1$s. Google will occasionally verify your number(s) by exchanging your device info with your carrier(s). SMS charges may apply. Google's %2$s describes how data is handled."</string>
+    <string name="google_tos_legal_text_single_sim">"By using chat features, you agree to the %1$s. Google will occasionally verify your number by exchanging your device info with your carrier. SMS charges may apply. Google's %2$s describes how data is handled."</string>
+    <string name="google_tos_multisim_text">Currently available for SIM %1$s: %2$s</string>
+    <string name="google_tos_multisim_tooltip_text">"Chat features are available for your default or preferred call SIM at this time and may be available for other SIMs later.
+
+You can change your default call SIM in System settings. %1$s"</string>
+    <string name="group_conversation_title_everyone_else_left">Me</string>
     <string name="group_incoming_failed_message_prefix">Failed message from %1$s: %2$s, %3$s. Time: %4$s. %5$s.</string>
     <string name="group_incoming_successful_message_prefix">Message from %1$s: %2$s, %3$s. Time: %4$s. %5$s.</string>
     <string name="group_incoming_unread_message_prefix">Unread message from %1$s: %2$s, %3$s. Time: %4$s. %5$s.</string>
@@ -814,7 +871,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="group_outgoing_successful_message_prefix">Message to %1$s: %2$s, %3$s. Time: %4$s.</string>
     <string name="group_outgoing_urgent_successful_message_prefix">Urgent message to %1$s: %2$s, %3$s. Time: %4$s.</string>
     <string name="guest_cloud_preview">PREVIEW</string>
-    <string name="hangouts_syncing_conversations">Transferring your Hangouts conversations</string>
+    <string name="hangouts_syncing_conversations">Syncing your Hangouts conversations</string>
     <string name="hats_lib_close_button_description">Close</string>
     <string name="hats_lib_default_prompt_title">Please help us improve Google.</string>
     <string name="hats_lib_default_star_rating_bar_description">Star Rating Bar</string>
@@ -864,6 +921,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="invalid_qr_code_dialog_message">To sign in, scan the QR code on %s</string>
     <string name="invalid_qr_code_dialog_positive_button_text">OK</string>
     <string name="invalid_qr_code_dialog_title">Incorrect code</string>
+    <string name="item_view_role_description">Tab</string>
     <string name="jibe_tos_link">Terms of Service.</string>
     <string name="jibe_tos_title">Chat features from Google provided by Jibe Mobile. Terms of Service.</string>
     <string name="jibe_tos_url">https://jibe.google.com/policies/terms/</string>
@@ -916,6 +974,9 @@ give access to your location"</string>
     <string name="location_attachment_picker_send_sms_content_description">Send SMS with selected location %1$s</string>
     <string name="location_attachment_picker_title">Send location</string>
     <string name="location_attachment_picker_updating_location">Updating your location…</string>
+    <string name="location_feedback_data_description">Your location at the time you filed feedback. The location includes the latitude, the longitude and the coarse place of the current location.</string>
+    <string name="location_feedback_data_name">current location</string>
+    <string name="location_feedback_data_rationale">"During a failure, the device’s location lets us know if the message sending/receiving/downloading problem is caused by faulty radio towers at specific locations. The device’s location also lets us aggregate failures in a heat map to determine carriers' blind spots."</string>
     <string name="low_storage_space_notification_and_dialog_title">Storage space running out</string>
     <string name="low_storage_space_notification_text">Messages might not send or receive messages until more space is available on your device.</string>
     <string name="low_storage_space_notification_ticker">Storage is low on your phone. You might not be able to send or receive text messages unless you free up space.</string>
@@ -927,13 +988,15 @@ give access to your location"</string>
     <string name="manual_fallback_dialog_title">Recipient is offline</string>
     <string name="manual_fallback_dialog_wait_button">OK</string>
     <string name="manual_msisdn_skipped_snack_bar_text">Enhanced chat features have not been enabled. Enable anytime in settings.</string>
-    <string name="manual_msisdn_skipped_snack_bar_text_b155475148">"Messages will verify your number with your carrier. You'll be notified when chat features are available."</string>
+    <string name="manual_msisdn_skipped_snack_bar_text_b155475148">Messages will try to verify your number with your carrier. Manage in Settings.</string>
+    <string name="manual_msisdn_verify_now_snack_bar_text_b155475148">Messages will try to verify your number with your carrier. Manage in Settings.</string>
     <string name="manually_override_rcs_flags">Manually override RCS Flags</string>
     <string name="mark_all_messages_as_read_confirmation">All messages marked as read</string>
-    <string name="mdd_debug_info_title">MDD Debug Info</string>
+    <string name="mdd_debug_info_nav_title">Debug Info</string>
     <string name="mdd_debug_ui_title">MDD Debug</string>
     <string name="mdd_download_notification_channel_name">Data Download Notification Channel</string>
     <string name="mdd_file_group_list_title">Current File Groups - Pull Down to Refresh</string>
+    <string name="mdd_file_groups_nav_title">File Groups</string>
     <string name="mdd_foreground_service_notification_title">Downloading</string>
     <string name="mdd_notification_action_cancel">Cancel</string>
     <string name="mdd_notification_download_failed">Download failed</string>
@@ -987,11 +1050,8 @@ give access to your location"</string>
     <string name="message_status_download_failed">Tap to try again</string>
     <string name="message_status_download_failed_sim_has_no_data">Ready to download using mobile data. Tap for info.</string>
     <string name="message_status_download_failed_sim_has_no_data_popup">To download, first change your settings to use \"%1$s\" instead of \"%2$s\"</string>
-    <string name="message_status_download_image">%s image</string>
     <string name="message_status_download_image_too_large">Image too large to download</string>
-    <string name="message_status_download_other">%s</string>
     <string name="message_status_download_too_large">Message too large</string>
-    <string name="message_status_download_video">%s video</string>
     <string name="message_status_download_video_too_large">Video too large to download</string>
     <string name="message_status_downloading">Downloading…</string>
     <string name="message_status_error">%1$s (%2$s)</string>
@@ -1065,8 +1125,12 @@ give access to your location"</string>
     <string name="mms_text">MMS</string>
     <string name="money_attachment_request_type_label">Request</string>
     <string name="money_attachment_send_type_label">Send</string>
+    <string name="more_content_description">This message is not a personal message, but it also is not a promotion, transaction, nor one-time password</string>
     <string name="more_string">+%1$d</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
     <string name="mtrl_picker_a11y_next_month">Change to next month</string>
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
     <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
@@ -1081,10 +1145,7 @@ give access to your location"</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
     <string name="multimedia_message">Multimedia message</string>
     <string name="muted_conversation_content_description">Notifications disabled.</string>
-    <string name="name_edit_fragment_menu_next">Next</string>
-    <string name="name_edit_fragment_menu_save">Save</string>
-    <string name="name_edit_fragment_menu_skip">Skip</string>
-    <string name="name_edit_fragment_menu_waiting_content_description">Name change is in progress.</string>
+    <string name="nav_app_bar_navigate_up_description">Navigate up</string>
     <string name="navigate_up_button_content_description">Navigate up</string>
     <string name="new_file_name_format">yyyyMMdd_HHmmss</string>
     <string name="new_image_file_name_format">"'IMG'_yyyyMMdd_HHmmss"</string>
@@ -1147,8 +1208,6 @@ give access to your location"</string>
     <string name="og_choose_an_account_">Choose an account</string>
     <string name="og_close_icon_a11y">Close</string>
     <string name="og_collapse_account_menu_a11y">Collapse account menu.</string>
-    <string name="og_count_decoration">%1$d</string>
-    <string name="og_count_decoration_max">%1$d+</string>
     <string name="og_expand_account_menu_a11y">Expand account menu.</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
     <string name="og_manage_accounts">Manage accounts on this device</string>
@@ -1159,11 +1218,9 @@ give access to your location"</string>
     <string name="og_privacy_policy">Privacy Policy</string>
     <string name="og_sign_in">Sign in</string>
     <string name="og_sign_in_">Sign In</string>
-    <string name="og_signed_in_user_a11y">Signed in as %1$s.</string>
+    <string name="og_signed_in_as_account">Signed in as %1$s</string>
     <string name="og_terms_of_service">Terms of Service</string>
-    <string name="og_use_account_a11y">Use %1$s.</string>
-    <string name="onboarding_google_tos">To turn on chat features from Google, you agree to the %1$s and %2$s.</string>
-    <string name="onboarding_google_tos_with_learn_more">To turn on chat features from Google, you agree to the %1$s and %2$s. %3$s.</string>
+    <string name="og_use_account_a11y_no_period">Use %1$s</string>
     <string name="onboarding_google_tos_with_sms_charges">To turn on chat features from Google, you agree to the %1$s and %2$s. Google will occasionally verify your number by exchanging your device info with your carrier (SMS charges may apply).</string>
     <string name="onboarding_google_tos_with_sms_charges_and_learn_more">To turn on chat features from Google, you agree to the %1$s and %2$s. Google will occasionally verify your number by exchanging your device info with your carrier (SMS charges may apply). %3$s.</string>
     <string name="one_on_one_conversation_created">Conversation with %s</string>
@@ -1178,6 +1235,15 @@ give access to your location"</string>
     <string name="one_on_one_outgoing_successful_message_prefix">Message to %1$s: %2$s, %3$s. Time: %4$s.</string>
     <string name="one_on_one_outgoing_urgent_successful_message_prefix">Urgent message to %1$s: %2$s, %3$s. Time: %4$s.</string>
     <string name="original_media_saved_info">Saved %1$s &amp; %2$s to your %3$s folder</string>
+    <string name="otp_auto_deletion_opt_in_dialog_body_text">Current and future OTPs will be permanently deleted after 24 hrs. Manage in Settings.</string>
+    <string name="otp_auto_deletion_opt_in_dialog_negative_button_text">Cancel</string>
+    <string name="otp_auto_deletion_opt_in_dialog_positive_button_text">Auto-delete OTPs</string>
+    <string name="otp_auto_deletion_opt_in_dialog_title_text">Auto-delete OTPs after 24 hrs?</string>
+    <string name="otp_auto_deletion_opt_in_snackbar_message">OTPs will be auto-deleted after 24 hrs. Manage in Settings.</string>
+    <string name="otp_auto_deletion_promo_banner_negative_button_text">No thanks</string>
+    <string name="otp_auto_deletion_promo_banner_positive_button_text">Continue</string>
+    <string name="otp_auto_deletion_promo_banner_title_text">Auto-delete OTPs after 24 hrs?</string>
+    <string name="otp_content_description">This message is categorized as a one-time password</string>
     <string name="otp_copied_to_clipboard">Code copied</string>
     <string name="otp_pattern_dropdown_hint">Set OTP Pattern</string>
     <string name="otp_pattern_dropdown_title">OTP Pattern</string>
@@ -1213,13 +1279,14 @@ give access to your location"</string>
     <string name="paginator_next_page">Next page</string>
     <string name="paginator_page_number">Page %1$d</string>
     <string name="paginator_previous_page">Previous page</string>
-    <string name="paired_desktops_header_text">Signed in computers</string>
+    <string name="paired_desktops_header_text">Paired computers</string>
     <string name="paired_desktops_last_connection_time">Last active %s</string>
     <string name="paired_desktops_last_connection_time_unknown">unknown</string>
     <string name="participant_count_label"> (%1$d)</string>
     <string name="participant_joined_group">%s joined this group</string>
     <string name="participant_left_group">%s left this group</string>
     <string name="participant_list_add">Add people</string>
+    <string name="participant_list_count_title_icu">{count, plural, =0{0 other people} =1{1 other person} other{# other people}}</string>
     <string name="participant_list_leave">Leave Group</string>
     <string name="participant_list_title_m2">People</string>
     <string name="password_toggle_content_description">Show password</string>
@@ -1238,7 +1305,7 @@ give access to your location"</string>
     <string name="permission_promo_negative_button_text">EXIT</string>
     <string name="permission_promo_positive_button_text">NEXT</string>
     <string name="phone_number_input_hint">Your phone number</string>
-    <string name="phone_number_input_subtitle_b155475148">You can skip this step and Messages will try to verify your number with your carrier and turn chat features on for you later</string>
+    <string name="phone_number_input_subtitle_b155475148">You can skip this step and Messages will try to verify your number with your carrier and turn chat features on for you later. Manage chat features anytime in Settings.</string>
     <string name="phone_number_input_subtitle_single_sim">"You're a step away from enabling the enhanced chat features you selected earlier"</string>
     <string name="phone_number_input_title_multi_sim">Enter your phone number for the following SIM to finish setting up chat features:</string>
     <string name="phone_number_input_title_multi_sim_b155475148">To get chat features faster, verify your phone number now for SIM %1$d: %2$s</string>
@@ -1260,7 +1327,6 @@ give access to your location"</string>
     <string name="play_store_link_msg">More</string>
     <string name="please_try_again_later">Please try again later.</string>
     <string name="plus_n">+%d</string>
-    <string name="plus_one">+1</string>
     <string name="posted_just_now">Just now</string>
     <string name="posted_now">Now</string>
     <string name="posted_over_a_year">%1$s%2$s%3$s</string>
@@ -1279,17 +1345,19 @@ give access to your location"</string>
     <string name="priority_low">Low</string>
     <string name="priority_normal">Normal</string>
     <string name="privacy_policy_pref_key">privacy_policy</string>
-    <string name="privacy_setting_top_level_title">Privacy</string>
     <string name="project_id">zillatest-20296</string>
-    <string name="pwg_logo_content_description">Google Pay</string>
+    <string name="promotion_content_description">This message is categorized as a promotion</string>
+    <string name="proxy_screen_clear_search">Clear search</string>
+    <string name="proxy_screen_search">Search</string>
+    <string name="proxy_screen_title">Proxy</string>
     <string name="qr_action_bar_title">Messages for web</string>
     <string name="qr_code_scanner_hint_text">Scan the QR code shown on&lt;br/>&lt;b>%s&lt;/b></string>
     <string name="qr_code_scanner_preference_button">QR code scanner</string>
-    <string name="qr_delete_all_paired_desktops_button_text">Sign out of all computers</string>
+    <string name="qr_delete_all_paired_desktops_button_text">Unpair all computers</string>
     <string name="qr_simplified_welcome_banner_url_text">Go to &lt;b>%s&lt;/b> on your computer</string>
     <string name="qr_success_text_view">"You're all set!"</string>
     <string name="qr_welcome_banner_url_text">Send &amp; receive messages on your computer</string>
-    <string name="qr_welcome_bottom_text">To pair your phone and computer, scan the QR code found only at %s</string>
+    <string name="qr_welcome_bottom_text">First, pair your computer with your phone by scanning the QR code found only at %s</string>
     <string name="qr_welcome_button_text">QR code scanner</string>
     <string name="qr_welcome_footer_text">"By continuing, you agree to the Google 
 %1$s and %2$s"</string>
@@ -1300,10 +1368,7 @@ give access to your location"</string>
     <string name="qr_welcome_hangouts_unpair_devices_text">Unpair all devices</string>
     <string name="qr_welcome_privacy">Privacy Policy</string>
     <string name="qr_welcome_terms_of_service">Terms of Service</string>
-    <string name="rbm_block_confirmation_message">"You'll no longer be notified when you receive messages from %1$s. This conversation will be archived. %2$s"</string>
     <string name="rbm_block_confirmation_message_spam_folder">"You'll no longer be notified when you receive messages from %1$s. This conversation will be moved to “Spam &amp; blocked.” %2$s"</string>
-    <string name="rbm_payments_receipt_title">Payment receipt</string>
-    <string name="rbm_payments_receipt_total_label">Total</string>
     <string name="rbm_platform_generalized_verifier_title">Verified by %s</string>
     <string name="rbm_platform_verified_by_google">Verified by Google</string>
     <string name="rbm_platform_verified_by_vodafone">Verified by Vodafone</string>
@@ -1394,12 +1459,15 @@ give access to your location"</string>
     <string name="rcs_setup_verifying">Verifying…</string>
     <string name="rcs_status">rcs_status</string>
     <string name="rcs_status_connected">Connected</string>
-    <string name="rcs_status_connected_desc">Chat features are ready for use.</string>
+    <string name="rcs_status_connected_desc">Chat features are ready to use</string>
+    <string name="rcs_status_connected_desc_phone_number">Chat features are ready to use for %1$s</string>
     <string name="rcs_status_connecting">Connecting…</string>
     <string name="rcs_status_connecting_desc">Connection in progress</string>
     <string name="rcs_status_disconnected">Disconnected</string>
     <string name="rcs_status_disconnected_desc">Chat features are temporarily unavailable. Check your internet connection or try again later.</string>
     <string name="rcs_status_label">"Status: "</string>
+    <string name="rcs_status_mo_sms">Trying to verify</string>
+    <string name="rcs_status_mo_sms_desc">Chat features require a verified number</string>
     <string name="rcs_status_setting_up">Setting up…</string>
     <string name="rcs_status_setting_up_desc">Trying to verify your phone number…</string>
     <string name="rcs_status_setting_up_desc_max_amount">Maximum number of retry attempts reached, please try again tomorrow.</string>
@@ -1412,6 +1480,7 @@ give access to your location"</string>
     <string name="rcs_success_popup_title_single_sim">Chat features are ready</string>
     <string name="rcs_terms_and_conditions_promo_text">Messages now offers chat features, like messaging over Wi‑Fi and data and improved photo sharing</string>
     <string name="rcs_turned_off_from_preferences">To send messages to %s, turn on chat features</string>
+    <string name="rcs_verify_number">Verify your number</string>
     <string name="reaction_angry_content_description">Angry face</string>
     <string name="reaction_dislike_content_description">Thumbs down</string>
     <string name="reaction_instance_content_description">%1$s reacted with %2$s</string>
@@ -1421,6 +1490,8 @@ give access to your location"</string>
     <string name="reaction_sad_content_description">Crying face</string>
     <string name="reaction_selection_content_description">React with %1$s</string>
     <string name="reaction_surprised_content_description">Face with open mouth</string>
+    <string name="recategorize_donate_checkbox_label">Share this message with Google to help improve the app for you</string>
+    <string name="recategorize_donate_input_text_label">Message</string>
     <string name="received_label">"Received: "</string>
     <string name="recipient_hint">Type a name, phone number, or email</string>
     <string name="recipient_label">To</string>
@@ -1454,6 +1525,12 @@ give access to your location"</string>
     <string name="reminder_suggestions_tooltip_title_text">Set reminders</string>
     <string name="reminder_text_today">today</string>
     <string name="reminder_text_tomorrow">tomorrow</string>
+    <string name="reminders_banner_body">%1$s: %2$s</string>
+    <string name="reminders_banner_done_button">Done</string>
+    <string name="reminders_banner_remind_button">Remind 1 hr</string>
+    <string name="reminders_banner_self_sender_name">You</string>
+    <string name="reminders_banner_title">Reminder: %s</string>
+    <string name="reminders_snackbar_action_text">Undo</string>
     <string name="remove_account">Disconnect</string>
     <string name="remove_account_content_description">Disconnect Google account</string>
     <string name="remove_reaction_from_assistant_card_rcs_fallback_text">Removed ‌%1$s‌ from assistant card</string>
@@ -1469,7 +1546,6 @@ give access to your location"</string>
     <string name="rename_group_title_m2">Group name</string>
     <string name="reply_activity_title">Reply</string>
     <string name="report_contact_title">Report spam</string>
-    <string name="report_group_spam_body">The numbers and recent texts of other group members will go to Google for review and may go to your carrier (charges may apply). This conversation will stay archived, without notifications. %1$s</string>
     <string name="report_group_spam_body_spam_folder">The numbers and recent texts of other group members will go to Google for review and may go to your carrier (charges may apply). This conversation will stay in “Spam &amp; blocked,” without notifications. %1$s</string>
     <string name="report_issue_action_text">Send feedback</string>
     <string name="report_issue_notification_text">Messages detected an error. Tap to send feedback.</string>
@@ -1493,7 +1569,6 @@ give access to your location"</string>
     <string name="resize_service_notification_text">Tap to view conversation</string>
     <string name="restore">Restore</string>
     <string name="restore_description">Restore your previous backup. Backups will discontinue from occuring on any of your other devices.</string>
-    <string name="retry">Retry</string>
     <string name="rich_cards_opt_in_banner_dismissed">rich_cards_opt_in_banner_dismissed</string>
     <string name="rich_cards_opt_in_dialog_dismissed_pref_key">rich_cards_opt_in_dialog_dismissed</string>
     <string name="rich_cards_preference_info_text">For all previews, Google uses select info from your chat history without identifying you. %1$s</string>
@@ -1520,6 +1595,9 @@ your phone"</string>
     <string name="search_no_result_text">"No results found for '%1$s'"</string>
     <string name="search_prev_content_description">Previous result</string>
     <string name="search_query_hint">Search stickers</string>
+    <string name="security_pref_key">security_pref_key</string>
+    <string name="security_setting_top_level_title">Security</string>
+    <string name="security_settings">Security</string>
     <string name="see_newest_message">See latest message</string>
     <string name="selected_sim_content_message">%s selected</string>
     <string name="self_left_group_conversation_failed">Failed to leave group, please try again later.</string>
@@ -1547,11 +1625,11 @@ your phone"</string>
     <string name="send_error_contact_manufacturer">"Can't send. Contact your device manufacturer."</string>
     <string name="send_error_network_error">"Can't send. There's a problem with the network."</string>
     <string name="send_error_network_error_or_check_prepaid_balance">Trouble sending. Check your network or account balance if you have a prepaid plan.</string>
-    <string name="send_error_recipient_blocked_or_unable">"Can't send. The recipient blocked or is not able to receive this message."</string>
-    <string name="send_error_recipient_has_too_many_unread_messages">Trouble sending. The recipient has too many unread messages.</string>
-    <string name="send_error_recipient_not_confirmed">"Can't send. The recipient can't be confirmed."</string>
-    <string name="send_error_recipient_not_confirmed_or_changed">"Can't send. The recipient's phone number can't be confirmed or may have changed."</string>
-    <string name="send_error_recipient_unreachable">"Trouble sending. The recipient can't be reached right now."</string>
+    <string name="send_error_recipient_blocked_or_unable">"Can't send. This recipient is not able to receive your message."</string>
+    <string name="send_error_recipient_has_too_many_unread_messages">Trouble sending. This recipient has too many unread messages.</string>
+    <string name="send_error_recipient_not_confirmed">"Can't send. This recipient's phone number can't be confirmed."</string>
+    <string name="send_error_recipient_not_confirmed_or_changed">"Can't send. This recipient's phone number can't be confirmed or may have changed."</string>
+    <string name="send_error_recipient_unreachable">"Trouble sending. The carrier can't reach this recipient right now."</string>
     <string name="send_message_failure">Message could not be sent</string>
     <string name="send_message_failure_airplane_mode">You are in airplane mode. You may be able to send after turning it off.</string>
     <string name="send_message_failure_no_data">Mobile data is turned off. Check your settings.</string>
@@ -1567,12 +1645,10 @@ your phone"</string>
     <string name="sending_timeout_failure_dialog_resend_button">Resend</string>
     <string name="sending_timeout_failure_dialog_title">Message not sent</string>
     <string name="sent_label">"Sent: "</string>
-    <string name="set_as_default_sms_app_title">Set Messages as your default</string>
     <string name="set_default_sms_sim_suggestion">Set a default SMS SIM.</string>
     <string name="set_message_priority_description">Set urgent status</string>
     <string name="set_rcs_flags">Set RCS Flags</string>
     <string name="set_rcs_mobile_data_auto_download_limit_title">Auto-download files you receive over mobile data</string>
-    <string name="setting_fast_track_body">By continuing, you agree to the %1$s and %2$s.</string>
     <string name="setting_fast_track_body_with_cost">By continuing, you agree to the %1$s and %2$s. For phone number based message delivery, Google may occasionally verify your number by exchanging your device info with your carrier or via SMS (charges may apply). You can disable chat features from Settings. %3$s</string>
     <string name="settings_activity_title">Settings</string>
     <string name="settings_fast_track_dialog_title">Enable chat features from Google?</string>
@@ -1585,6 +1661,10 @@ your phone"</string>
     <string name="share_typing_status_rcs_summary">"Let others know when you're typing"</string>
     <string name="share_typing_status_rcs_title">Show typing indicators</string>
     <string name="shared_location">Shared location</string>
+    <string name="sharing_scope_warning_text_non_rcs">Only you can see this group name</string>
+    <string name="sharing_scope_warning_text_rcs_global_disabled_creation">This name is shared with everyone in the group and can’t be changed later</string>
+    <string name="sharing_scope_warning_text_rcs_global_disabled_existing">Only you can see this new group name</string>
+    <string name="sharing_scope_warning_text_rcs_global_enabled">This name is shared with everyone in the group</string>
     <string name="shortcut_disabled_text">This shortcut no longer works because the conversation was deleted</string>
     <string name="shortcut_new_message_text">New conversation</string>
     <string name="show_sms_link_warning_change_label">Change</string>
@@ -1671,6 +1751,9 @@ Replies will appear in individual conversations"</string>
     <string name="someone_else_created_rcs_group">%1$s created this group chat with %2$s</string>
     <string name="someone_joined_group">Someone joined this group</string>
     <string name="someone_left_group">Someone left this group</string>
+    <string name="sort_messages">Sort messages by category</string>
+    <string name="sort_messages_key">sort_messages</string>
+    <string name="sort_messages_summary">Automatically sort messages by Personal, Transactions, OTP, Offers and More</string>
     <string name="spam_animation_json">spam_animation.json</string>
     <string name="spam_auto_reply_heuristic_number">number</string>
     <string name="spam_auto_reply_heuristic_reply">reply</string>
@@ -1684,13 +1767,10 @@ Replies will appear in individual conversations"</string>
     <string name="spam_detection_pref_title">Enable spam protection</string>
     <string name="spam_dialog_block_checkbox_body">"You won't get texts or calls from this number"</string>
     <string name="spam_dialog_block_checkbox_title">Block %s</string>
-    <string name="spam_dialog_body">"The sender's number and recent texts will go to Google and may go to your carrier (charges may apply). This conversation will stay archived, without notifications. %1$s"</string>
     <string name="spam_dialog_body_spam_folder">"The sender's number and recent texts will go to Google and may go to your carrier (charges may apply). This conversation will stay in “Spam &amp; blocked,” without notifications. %1$s"</string>
     <string name="spam_dialog_positive_button_label">Report spam</string>
-    <string name="spam_dialog_title">Report spam &amp; archive?</string>
     <string name="spam_dialog_title_spam_folder">Report spam?</string>
     <string name="spam_folder_activity_title">Spam &amp; blocked</string>
-    <string name="spam_folder_conversation_list_empty_text">Spam &amp; blocked conversations will appear here</string>
     <string name="spam_folder_conversation_list_empty_text_v2">Spam &amp; blocked conversations appear here</string>
     <string name="spam_image_json">spam_image.json</string>
     <string name="spam_preference_info_text">To detect spam, some info about your messages is sent to Google without including the actual content or your phone number. %1$s</string>
@@ -1704,6 +1784,7 @@ Replies will appear in individual conversations"</string>
     <string name="sticker_gallery_label">Stickers</string>
     <string name="sticker_gallery_view_pager_browse_label">Browse</string>
     <string name="sticker_gallery_view_pager_favorite_label">Favorites</string>
+    <string name="sticker_screen_title">Stickers</string>
     <string name="stickers_error_alert_ok">Ok</string>
     <string name="stickers_no_connection_alert_message">Check your Wi-Fi or data connection and try again</string>
     <string name="stickers_no_connection_alert_title">No internet connection</string>
@@ -1724,6 +1805,9 @@ Replies will appear in individual conversations"</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="summary_notification_inbox_style_summary_text">+%d more</string>
     <string name="super_details">Message history</string>
+    <string name="super_sort_pref_key">super_sort_pref_key</string>
+    <string name="super_sort_pref_title">Message Organization</string>
+    <string name="super_sort_settings_title">Message Organization</string>
     <string name="take_bug_report_dialog_cancel_button">Cancel</string>
     <string name="take_bug_report_dialog_category_mms_issue">MMS issue</string>
     <string name="take_bug_report_dialog_category_notification_issue">Notification issue</string>
@@ -1756,7 +1840,12 @@ Settings > Advanced > Chat features"</string>
     <string name="to_address_label">"To: "</string>
     <string name="toast_after_entered_phone_number_for_sending">All set. Tap Send again.</string>
     <string name="toast_after_setting_default_sms_app">Messages successfully set as the default SMS app.</string>
-    <string name="tombstone_group_renamed_global">This group was named %s</string>
+    <string name="tombstone_group_name_cleared_global_by_participant">%s cleared the group name</string>
+    <string name="tombstone_group_name_cleared_global_by_unknown">The group name was cleared</string>
+    <string name="tombstone_group_name_cleared_global_by_you">You cleared the group name</string>
+    <string name="tombstone_group_renamed_global_by_participant">%1$s renamed this group %2$s</string>
+    <string name="tombstone_group_renamed_global_by_unknown">This group was renamed %s</string>
+    <string name="tombstone_group_renamed_global_by_you">You renamed this group %s</string>
     <string name="tombstone_group_renamed_local">"Group name changed to \"%s\"
 Only you can see this name"</string>
     <string name="tombstone_self">you</string>
@@ -1765,6 +1854,7 @@ Only you can see this name"</string>
     <string name="too_many_participants">Too many participants in a conversation</string>
     <string name="top_contacts_grid_name">★</string>
     <string name="top_contacts_title">Top contacts</string>
+    <string name="transaction_content_description">This message is categorized as a transaction</string>
     <string name="turn_off_airplane_mode_suggestion">Turn off airplane mode.</string>
     <string name="typing_indicator_one">%s is typing</string>
     <string name="unarchive_conversation_snackbar">Conversation unarchived</string>
@@ -1791,7 +1881,6 @@ Only you can see this name"</string>
     <string name="unspam_banner_end_button">Not spam</string>
     <string name="unspam_banner_positive_button">Not spam</string>
     <string name="unspam_banner_title">Reported as spam</string>
-    <string name="unspam_conversation_banner_body">To move this conversation out of Archived and get notifications again, report it as not spam</string>
     <string name="unspam_conversation_banner_body_spam_folder">To move this conversation out of “Spam &amp; blocked” and get notifications again, report it as not spam</string>
     <string name="unspam_detected_body">Similar messages were identified as spam</string>
     <string name="unspam_detected_title">Why is this spam?</string>
@@ -1825,6 +1914,8 @@ Only you can see this name"</string>
     <string name="vcard_detail_website_label">Website</string>
     <string name="vcard_expand">Tap to expand the detail.</string>
     <string name="vcs_file_extensions">.vcs</string>
+    <string name="verified_sms_diagnostic_report_setting_summary">"[Googlers] When this feature is enabled and you receive a Verified SMS message that your device can't verify, your device sends message metadata to Verified SMS. This metadata includes your phone number and the phone number of the business that sent the message. Verified SMS doesn't collect message content and deletes this metadata within 7 days. Message metadata for unverified messages provides insight that isn't normally visible to Verified SMS and can help Google improve verification consistency. %1$s"</string>
+    <string name="verified_sms_diagnostic_report_setting_title">Report Diagnostic Information (Dogfooders Only)</string>
     <string name="verified_sms_user_setting_disabled_snippet">Do not verify business message sender</string>
     <string name="verified_sms_user_setting_enabled_snippet">Verify business message sender</string>
     <string name="verified_sms_user_setting_summary">"For incoming SMS messages from businesses, Google can check if the sender is verified or not. Google won't see your message content. Verifying the sender may use data. %1$s"</string>
@@ -1882,8 +1973,7 @@ Only you can see this name"</string>
     <string name="video_media_failure">To create a video, try recording longer</string>
     <string name="video_taken">Video taken</string>
     <string name="video_thumbnail_view_play_button_content_description">Play video</string>
-    <string name="view_apps_with_sms_permissions_link">See what applications have access</string>
-    <string name="voice_messages_cancel_locked_record_button_text">Cancel</string>
+    <string name="view_apps_with_sms_permissions_link">Learn more</string>
     <string name="voice_messages_hold_to_record_tooltip_text">Touch and hold to record audio</string>
     <string name="voice_messages_slide_to_cancel_text">Slide to cancel</string>
     <string name="vsms_dialog_message_spam">"%1$s %2$s
@@ -1897,10 +1987,23 @@ In this conversation, Google has verified that %1$s sent the last message receiv
     <string name="vsms_dialog_title_unverified">Sender could not be verified</string>
     <string name="vsms_dialog_title_verified">Verified SMS</string>
     <string name="vsms_dialog_title_verifying">Verifying sender…</string>
+    <string name="vsms_enabled_diagnostic_pref_key">verified_sms_diagnostic_enabled</string>
     <string name="vsms_enabled_pref_key">verified_sms_enabled</string>
+    <string name="vsms_message_status_new_text_unverified">Sender could not be verified.</string>
+    <string name="vsms_message_status_new_text_verification_in_progress">Verifying sender…</string>
+    <string name="vsms_message_status_new_text_waiting_for_connection">Waiting for connection to verify sender…</string>
     <string name="vsms_message_status_text_unverified">Sender could not be verified</string>
     <string name="vsms_message_status_text_verification_in_progress">Verifying sender</string>
     <string name="vsms_message_status_text_waiting_for_connection">Waiting for connection to verify sender</string>
+    <string name="vsms_new_dialog_message_unverified">"A sender might not be verified because:
+
+ • %1$s didn't ask Google to verify the message
+ • Technical errors prevented Google from verifying the message
+ • Someone attempted to impersonate %1$s
+
+Use your best judgement with the content of this message."</string>
+    <string name="vsms_new_dialog_message_verifying">We are in the process of verifying whether %1$s sent this message. %2$s</string>
+    <string name="vsms_new_dialog_title_unverified">"Couldn't verify the sender of this message"</string>
     <string name="vsms_settings_root_id">verified_sms_settings_root_id</string>
     <string name="wap_push_from">Service messages</string>
     <string name="wap_push_si_pref_key">buglesub_wap_push_si</string>
@@ -1940,7 +2043,6 @@ by Google"</string>
     <string name="zero_state_search_action_jump_to_chat">See in chat</string>
     <string name="zero_state_search_action_maps">Maps</string>
     <string name="zero_state_search_action_open_link">Open link</string>
-    <string name="zero_state_search_action_play_video">Play video</string>
     <string name="zero_state_search_action_share">Share</string>
     <string name="zero_state_search_addresses">Addresses</string>
     <string name="zero_state_search_back_button_content_description">Go back</string>
