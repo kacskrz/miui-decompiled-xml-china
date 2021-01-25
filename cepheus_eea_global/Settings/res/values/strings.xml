@@ -267,6 +267,8 @@ To switch between services, swipe up with two fingers and hold."</string>
     <string name="activating">Activating…</string>
     <string name="active_device_admin_msg">Device admin app</string>
     <string name="active_input_method_subtypes">Active input methods</string>
+    <string name="activity_check_context">"Your device is trying to connect to the internet now. This process might take longer than expected if you're using mobile data. You can go back and connect to a Wi-Fi network instead, or keep waiting until the mobile data connection is established."</string>
+    <string name="activity_check_title">Connecting to the internet</string>
     <string name="activity_not_found">Application is not installed on your phone.</string>
     <string name="activity_picker_label">Choose activity</string>
     <string name="activity_title_power_manager">Battery saver;Save battery</string>
@@ -468,6 +470,7 @@ Your admin has the ability to monitor and manage settings, access, apps, and dat
     <string name="app_and_notification_dashboard_summary">Recent apps, default apps</string>
     <string name="app_and_notification_dashboard_title">Apps &amp; notifications</string>
     <string name="app_backup">Backup</string>
+    <string name="app_bluetooth_device_blacklist">Bluetooth blocklist</string>
     <string name="app_cellular_data_usage">App data usage</string>
     <string name="app_default_dashboard_title">Default apps</string>
     <string name="app_detail">Details</string>
@@ -475,6 +478,7 @@ Your admin has the ability to monitor and manage settings, access, apps, and dat
     <string name="app_disable_dlg_text">If you disable this app, Android and other apps may no longer function as intended. Keep in mind, you can’t delete this app since it came pre-installed on your device. By disabling, you turn this app off and hide it on your device.</string>
     <string name="app_disable_dlg_title">Disable built-in app?</string>
     <string name="app_disable_notifications_dlg_title">Turn off notifications?</string>
+    <string name="app_enable_bluetooth_record">Apps turning on Bluetooth</string>
     <string name="app_factory_reset">Uninstall updates</string>
     <string name="app_factory_reset_dlg_text">All updates to this Android system app will be uninstalled.</string>
     <string name="app_factory_reset_dlg_title">Uninstall updates?</string>
@@ -982,6 +986,8 @@ Apps:
     <string name="bluetooth_ask_lasting_discovery_no_name">An app wants to make your phone visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
     <string name="bluetooth_battery_level">%1$s battery</string>
     <string name="bluetooth_battery_level_untethered">L: %1$s battery, R: %2$s battery</string>
+    <string name="bluetooth_blacklist_cancel_remove_device">Cancel</string>
+    <string name="bluetooth_blacklist_remove_device">Unblock</string>
     <string name="bluetooth_broadcasting">Broadcasting</string>
     <string name="bluetooth_confirm_passkey_msg">To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Make sure it is showing this passkey:&lt;br>&lt;b>%2$s&lt;/b></string>
     <string name="bluetooth_connect_failed">"Couldn't connect. Try again."</string>
@@ -1011,6 +1017,8 @@ Apps:
     <string name="bluetooth_device_advanced_profile_header_title">Use for</string>
     <string name="bluetooth_device_advanced_rename_device">Rename</string>
     <string name="bluetooth_device_advanced_title">Paired Bluetooth device</string>
+    <string name="bluetooth_device_blacklist_summary">Manage blocked Bluetooth devices</string>
+    <string name="bluetooth_device_blacklist_tital">Bluetooth blocklist</string>
     <string name="bluetooth_device_context_connect">Connect</string>
     <string name="bluetooth_device_context_connect_advanced">Options…</string>
     <string name="bluetooth_device_context_disconnect">Disconnect</string>
@@ -1094,9 +1102,11 @@ Here's what might be wrong:
     <string name="bluetooth_max_connected_audio_devices_dialog_title">Select maximum number of connected Bluetooth audio devices</string>
     <string name="bluetooth_max_connected_audio_devices_string">Maximum connected Bluetooth audio devices</string>
     <string name="bluetooth_menu_advanced">Advanced</string>
+    <string name="bluetooth_message_move_out_of_blacklist">Unblock %1$s now?</string>
     <string name="bluetooth_mi_fast_connect">Pair compatible devices</string>
     <string name="bluetooth_mi_fast_connect_summary">Connect to nearby devices using a simplified pairing process</string>
     <string name="bluetooth_middle_name">Case</string>
+    <string name="bluetooth_move_out_of_blacklist">Unblock device</string>
     <string name="bluetooth_name_not_set">No name set, using account name</string>
     <string name="bluetooth_no_devices_found">No nearby Bluetooth devices were found.</string>
     <string name="bluetooth_not_visible_to_other_devices">Not visible to other Bluetooth devices</string>
@@ -1114,6 +1124,7 @@ Here's what might be wrong:
     <string name="bluetooth_pairing">Pairing…</string>
     <string name="bluetooth_pairing_accept">Pair</string>
     <string name="bluetooth_pairing_accept_all_caps">PAIR</string>
+    <string name="bluetooth_pairing_add_to_blackfile">Block</string>
     <string name="bluetooth_pairing_decline">Cancel</string>
     <string name="bluetooth_pairing_device_down_error_message">"Can't communicate with %1$s."</string>
     <string name="bluetooth_pairing_dialog_contants_request">%1$s wants to access your contacts and call history.</string>
@@ -1128,6 +1139,7 @@ Here's what might be wrong:
     <string name="bluetooth_pairing_rejected_error_message">Pairing rejected by %1$s.</string>
     <string name="bluetooth_pairing_request">Pair with %1$s?</string>
     <string name="bluetooth_pairing_shares_phonebook">Allow access to your contacts and call history</string>
+    <string name="bluetooth_pairing_toast_add_to_blackfile">Blocked successfully. You can manage blocked items in \"Additional settings\".</string>
     <string name="bluetooth_pairing_will_share_phonebook">Pairing grants access to your contacts and call history when connected.</string>
     <string name="bluetooth_pan_nap_profile_summary_connected">Sharing local internet connection with device</string>
     <string name="bluetooth_pan_profile_summary_use_for">Use for internet access</string>
@@ -1334,6 +1346,10 @@ You can change this in the Settings."</string>
 You can turn this feature off in the Settings > Bluetooth > Paired devices."</string>
     <string name="bt_aac_open_dialog_title">Switching to AAC codec</string>
     <string name="bt_aac_pre_title">AAC</string>
+    <string name="bt_absVolume_open_dialog_summary">Due to compatibility issues, some Bluetooth devices may have abnormal volume levels, which can be resolved by turning this feature off.</string>
+    <string name="bt_absVolume_open_dialog_title">Attention</string>
+    <string name="bt_absVolume_pre_title">Absolute volume</string>
+    <string name="bt_absVolume_summary">"Keep the volume of Bluetooth devices and the phone strictly consistent. You can turn this feature on and off when media isn't playing in the background."</string>
     <string name="bt_dialog_remember_choice">Remember choice</string>
     <string name="bt_dialog_settings">Settings</string>
     <string name="bt_hci_snoop_log">Bluetooth HCI snoop log</string>
@@ -1354,6 +1370,8 @@ You can turn this feature off in the Settings > Bluetooth > Paired devices."</st
     <string name="bt_lhdc_property">Attributes</string>
     <string name="bt_pre_summary">Provide a high-quality audio experience</string>
     <string name="bt_rarely_used_device_title">Rarely used devices (%d)</string>
+    <string name="bt_show_notification_summary">Show a permanent notification in the Notification shade</string>
+    <string name="bt_show_notification_title">Notify about Bluetooth connections</string>
     <string name="bt_trace_log">Bluetooth trace log</string>
     <string name="bt_trace_log_summary">Bluetooth trace log</string>
     <string name="btn_back">Back</string>
@@ -1533,7 +1551,7 @@ You can turn this feature off in the Settings > Bluetooth > Paired devices."</st
     <string name="clear_adb_keys">Revoke USB debugging authorizations</string>
     <string name="clear_all_data">Erase all data</string>
     <string name="clear_cache_btn_text">Clear cache</string>
-    <string name="clear_data_alert_info">All backups stored on this device will be deleted permanently. Back up important items to your computer and Xiaomi Cloud before you continue.</string>
+    <string name="clear_data_alert_info">All backups stored on this device will be deleted permanently. Back up important items to your computer and Xiaomi Cloud before performing a factory reset.</string>
     <string name="clear_data_dlg_text">All this app’s data will be deleted permanently. This includes all files, settings, accounts, databases, etc.</string>
     <string name="clear_data_dlg_title">Delete app data?</string>
     <string name="clear_failed_dlg_text">Couldn’t clear storage for app.</string>
@@ -1859,8 +1877,10 @@ To resume using your phone, you need to perform a factory reset. When you set up
     <string name="dark_color_mode">Dark mode</string>
     <string name="dark_color_summary_lcd">"Use darker color palette for system backgrounds and compatible apps. Dark mode can help you to relieve eye strain when you're using your device in the dark."</string>
     <string name="dark_color_summary_oled">Use darker color palette for system backgrounds and compatible apps. Dark mode reduces power consumption and helps to relieve eye strain.</string>
+    <string name="dark_mode_apps_header">Individual apps</string>
     <string name="dark_mode_contrast">Adjust contrast automatically</string>
     <string name="dark_mode_contrast_hint">Adjust colors and lower contrast automatically when brightness is reduced</string>
+    <string name="dark_mode_font_background_title">Adjust text and backgrounds automatically</string>
     <string name="dark_ui_mode">Dark theme</string>
     <string name="dark_ui_mode_disabled_summary_dark_theme_off">Temporarily turned on due to Battery Saver</string>
     <string name="dark_ui_mode_disabled_summary_dark_theme_on">On / Temporarily disabled due to Battery Saver</string>
@@ -2130,7 +2150,7 @@ Since data usage is measured by your phone, and your carrier may account for usa
     <string name="device_oaid_desc">Instead of your unique identifier, MIUI will provide a virtual ID (OAID) to installed apps. It prevents apps from tracking your behavior and preferences, and protects your privacy.</string>
     <string name="device_oaid_title">Virtual ID</string>
     <string name="device_of_someone">"%1$s's %2$s"</string>
-    <string name="device_opcust_version">Customized version</string>
+    <string name="device_opcust_version">Operator version</string>
     <string name="device_picker">Choose Bluetooth device</string>
     <string name="device_rear_camera">Rear camera</string>
     <string name="device_screen_resolution">Screen resolution</string>
@@ -2152,7 +2172,13 @@ Since data usage is measured by your phone, and your carrier may account for usa
 To try to fix this issue, you can stop %1$s and prevent it from running in the background."</string>
     <string name="dialog_background_check_ok">Turn off</string>
     <string name="dialog_background_check_title">Turn off background usage &amp; stop app?</string>
-    <string name="dialog_backup_title">Update backups before performing the factory reset?</string>
+    <string name="dialog_backup_title">Back up items first?</string>
+    <string name="dialog_check_button_negative">Try again</string>
+    <string name="dialog_check_button_positive">Connect to Wi-Fi</string>
+    <string name="dialog_check_context">"Your device can't connect to the internet now.
+1. Tap \"Connect to Wi-Fi\" to select one of the available networks.
+2. If you want to use mobile data, tap \"Try again\" or remove and reinsert your SIM card."</string>
+    <string name="dialog_check_title">"Can't connect to the internet"</string>
     <string name="dialog_chose_item">Select an item to display</string>
     <string name="dialog_content_login">Sign in to your Mi Account to update?</string>
     <string name="dialog_location_message">"Your phone can't manage battery normally because %1$s keeps requesting your location when you're not using the app.
@@ -2185,6 +2211,10 @@ If this keeps happening, you may need to uninstall the app to improve battery pe
     <string name="dialog_title_color_calibration">Color correction preset</string>
     <string name="dialog_title_hdmi_color_calibration">Color correction preset</string>
     <string name="dialog_title_login">Sign in to your Mi Account</string>
+    <string name="dialog_wifi_button_negative">No</string>
+    <string name="dialog_wifi_button_positive">Yes</string>
+    <string name="dialog_wifi_context">You need to connect to the internet to set up your device. Unless you connect to Wi-Fi, mobile data might be used. Using mobile data might generate additional carrier fees. Use mobile data anyway?</string>
+    <string name="dialog_wifi_title">Using mobile data</string>
     <string name="dialog_yes">Yes</string>
     <string name="digital_clock_dot">:</string>
     <string name="direct_boot_unaware_dialog_message">"Note: After a reboot, this app can't start until you unlock your phone"</string>
@@ -2218,6 +2248,9 @@ If this keeps happening, you may need to uninstall the app to improve battery pe
     <string name="disconnected">Not connected</string>
     <string name="display_advanced_mode_summary">Color gamut options</string>
     <string name="display_advanced_mode_title">Advanced settings</string>
+    <string name="display_animate_category">Animated effects</string>
+    <string name="display_animate_content">Reduce animated effects that are displayed while the device is being unlocked</string>
+    <string name="display_animate_title">Reduce animations</string>
     <string name="display_auto_rotate_rotate">On</string>
     <string name="display_auto_rotate_stay_in_current">Off</string>
     <string name="display_auto_rotate_stay_in_landscape">Lock landscape</string>
@@ -2548,6 +2581,7 @@ For more details, contact your organization's admin."</string>
     <string name="error_mnc_not23">MNC field must be 2 or 3 digits.</string>
     <string name="error_name_empty">The Name field can’t be empty.</string>
     <string name="error_title" />
+    <string name="error_xcap_not_add">The APN Type cannot be XCAP type.</string>
     <string name="estimated_charging_time_left">Until fully charged</string>
     <string name="estimated_time_description">Estimate may change based on usage</string>
     <string name="estimated_time_left">Estimated time left</string>
@@ -2559,6 +2593,7 @@ For more details, contact your organization's admin."</string>
     <string name="expandable_under_keyguard_title">Show on Lock screen</string>
     <string name="experimental_category_title">Experimental</string>
     <string name="experimental_preference">(Experimental)</string>
+    <string name="exterior">Color scheme</string>
     <string name="external_code_size_label">USB storage app</string>
     <string name="external_data_size_label">USB storage data</string>
     <string name="external_source_switch_title">Allow from this source</string>
@@ -2757,6 +2792,7 @@ For more details, contact your organization's admin."</string>
     <string name="fold_title">Rules for grouped notifications</string>
     <string name="font_size_exhuge">Extra Huge</string>
     <string name="font_size_huge">Huge</string>
+    <string name="font_size_kddi">Medium</string>
     <string name="font_size_large">Larger</string>
     <string name="font_size_make_larger_desc">Make larger</string>
     <string name="font_size_make_smaller_desc">Make smaller</string>
@@ -3209,11 +3245,18 @@ Open Xiaomi Cloud and restore items from there."</string>
     <string name="input_method_function_no_function_des">"Don't show any shortcuts"</string>
     <string name="input_method_function_switch">Switch between keyboards</string>
     <string name="input_method_function_switch_des">Tap to switch to a different keyboard</string>
+    <string name="input_method_function_switch_keyboard_language">Switch languages</string>
+    <string name="input_method_function_switch_keyboard_language_des">Tap to switch between input languages</string>
+    <string name="input_method_function_switch_keyboard_type">Switch keyboards</string>
+    <string name="input_method_function_switch_keyboard_type_des">Tap to switch between different keyboards</string>
     <string name="input_method_function_voice">Voice input</string>
     <string name="input_method_function_voice_des">Tap to use voice input</string>
     <string name="input_method_function_xiaoai">Mi AI voice input</string>
     <string name="input_method_function_xiaoai_des">Tap to use Mi AI voice input</string>
     <string name="input_method_manage">Manage keyboards</string>
+    <string name="input_method_middle_function_move_cursor">Move cursor</string>
+    <string name="input_method_middle_function_move_cursor_des">Press and hold the central area to move the cursor</string>
+    <string name="input_method_middle_function_no_function_des">"Don't assign any actions"</string>
     <string name="input_method_quick_access">Quick access</string>
     <string name="input_method_quick_cloud_mode_title">Notifications about new clipboard content</string>
     <string name="input_method_quick_cloud_summary">Copy items on compatible computers and paste them on your device</string>
@@ -3449,6 +3492,9 @@ Open Xiaomi Cloud and restore items from there."</string>
     <string name="launch_google_search">Launch Google Assistant</string>
     <string name="launch_instant_app">Open</string>
     <string name="launch_mdp_app_text">View plan</string>
+    <string name="launch_noapp_dialog_cancel">Cancel</string>
+    <string name="launch_noapp_dialog_install">Install</string>
+    <string name="launch_noapp_dialog_replace">Settings</string>
     <string name="launch_notification_center">Notification shade</string>
     <string name="launch_recents">Launch Recents</string>
     <string name="launch_voice_assistant">Launch Voice assistant</string>
@@ -3492,6 +3538,7 @@ Open Xiaomi Cloud and restore items from there."</string>
     <string name="legal_written_offer">Written Offer</string>
     <string name="license_title">License</string>
     <string name="lift_to_wake_title">Lift to wake</string>
+    <string name="light_color_mode">Light mode</string>
     <string name="lights_title">LED light</string>
     <string name="line_breaking_summary">Optimize paragraph line breaking</string>
     <string name="line_breaking_title">Optimize text</string>
@@ -3991,6 +4038,7 @@ There are other users present on this device.
     <string name="mi_upi_settings">Mi Pay Account</string>
     <string name="micloud_service_summary">Sync the list of apps, back up system settings and Home screen layout</string>
     <string name="micloud_service_title">Xiaomi Cloud</string>
+    <string name="middle_function_key">Central area</string>
     <string name="mipush_fake_channel_group_name">Mi Push</string>
     <string name="misc_files">Misc files</string>
     <string name="misc_files_selected_count">selected %1$d out of %2$d</string>
@@ -4160,6 +4208,7 @@ Switching to %1$s won't cancel your %2$s service."</string>
     <string name="module_version">Google Play system update</string>
     <string name="more_account_settings_title">Other accounts</string>
     <string name="more_dangerous_option_hint">High-risk features including \"%1$s\" are enabled. Tap to change settings.</string>
+    <string name="more_dark_mode_settings">More Dark mode options</string>
     <string name="more_installed_services_title">More downloaded services</string>
     <string name="move_app">Move</string>
     <string name="move_app_failed_dlg_text">Couldn’t move app. %1$s</string>
@@ -4838,7 +4887,7 @@ Read and agree to %s before using this service."</string>
     <string name="picture_color_mode">Picture color mode</string>
     <string name="picture_color_mode_desc">Use sRGB</string>
     <string name="picture_in_picture_app_detail_summary">"Allow this app to create a picture-in-picture window while the app is open or after you leave it (for example, to continue watching a video). This window displays on top of other apps you're using."</string>
-    <string name="picture_in_picture_app_detail_switch">Allow picture-in-picture</string>
+    <string name="picture_in_picture_app_detail_switch">Allow Picture-in-picture</string>
     <string name="picture_in_picture_app_detail_title">Picture-in-picture</string>
     <string name="picture_in_picture_empty_text">No installed apps support Picture-in-picture</string>
     <string name="picture_in_picture_keywords">pip picture in</string>
@@ -5487,14 +5536,12 @@ This setting affects all users on this phone."</string>
     <string name="screen_compatibility_label">Screen compatibility</string>
     <string name="screen_compatibility_text">This app may not be designed for your screen. You can control how it adjusts to your screen here.</string>
     <string name="screen_confirm">Turn on</string>
-    <string name="screen_dark_mode_advanced_title">Advanced</string>
     <string name="screen_dark_mode_select_time_error_summary">"Start time and end time can't be the same"</string>
-    <string name="screen_dark_mode_smart_dark_3rd_apps_list">Third party apps</string>
     <string name="screen_dark_mode_smart_dark_apps_setting_summary">Some apps might be displayed incorrectly in Dark mode. You can restrict using Dark mode for individual apps here.</string>
     <string name="screen_dark_mode_smart_dark_apps_setting_title">Individual apps</string>
     <string name="screen_dark_mode_smart_dark_summary">Apply dark mode to third party apps as well. Some apps might be displayed incorrectly.</string>
     <string name="screen_dark_mode_smart_dark_title">Global dark mode</string>
-    <string name="screen_dark_mode_time_title">Schedule</string>
+    <string name="screen_dark_mode_time_title">Schedule Dark mode</string>
     <string name="screen_effect">Color scheme</string>
     <string name="screen_fps_summary_power_save">Using fixed rate consumes less power</string>
     <string name="screen_fps_summary_smooth">Some apps will increase refresh rate automatically to improve picture quality</string>
@@ -6725,6 +6772,7 @@ Try using a faster ^3, or use this ^4 for portable storage instead."</string>
     <string name="swipe_up_to_switch_apps_suggestion_title">Try the new Home button</string>
     <string name="swipe_up_to_switch_apps_summary">To switch apps, swipe up on the Home button. To see all apps, swipe up again. To go back, tap the back button.</string>
     <string name="swipe_up_to_switch_apps_title">2-button navigation</string>
+    <string name="switchNetworkToast">Connecting to mobile networks may generate additional fees</string>
     <string name="switch_access_service_on">Switch Access</string>
     <string name="switch_off_text">Off</string>
     <string name="switch_on_text">On</string>
@@ -6784,7 +6832,7 @@ A Google approach to syncing data to allow access to your contacts, appointments
     <string name="tap_to_wake">Tap to wake</string>
     <string name="tap_to_wake_summary">Double-tap anywhere on the screen to wake device</string>
     <string name="taplus_title">Taplus</string>
-    <string name="temporary_style">10 seconds after tapping the screen</string>
+    <string name="temporary_style">For 10 seconds after tapping</string>
     <string name="terms_title">Terms and conditions</string>
     <string name="testing">Testing</string>
     <string name="testing_phone_info">Phone information</string>
@@ -7213,6 +7261,7 @@ or earphones with 3.5mm plug."</string>
     <string name="usb_preference">USB Preferences</string>
     <string name="usb_ptp_summary">Lets you transfer photos using camera software, and transfer any files on computers that don’t support MTP</string>
     <string name="usb_ptp_title">Camera (PTP)</string>
+    <string name="usb_reverse_charge">Reverse charging</string>
     <string name="usb_summary_MIDI">MIDI</string>
     <string name="usb_summary_MIDI_power">MIDI and supplying power</string>
     <string name="usb_summary_charging_only">Charging this device</string>
@@ -7236,12 +7285,16 @@ or earphones with 3.5mm plug."</string>
     <string name="usb_use">Use USB for</string>
     <string name="usb_use_MIDI">MIDI</string>
     <string name="usb_use_MIDI_desc">Use this device as MIDI</string>
+    <string name="usb_use_MIDI_miui12_5">MIDI</string>
     <string name="usb_use_charging_only">No data transfer</string>
     <string name="usb_use_charging_only_desc">Just charge this device</string>
     <string name="usb_use_file_transfers">File Transfer</string>
     <string name="usb_use_file_transfers_desc">Transfer files to another device</string>
+    <string name="usb_use_file_transfers_miui12_5">File transfers</string>
+    <string name="usb_use_miui12_5">Use USB for</string>
     <string name="usb_use_photo_transfers">Transfer photos (PTP)</string>
     <string name="usb_use_photo_transfers_desc">Transfer photos or files if MTP is not supported (PTP)</string>
+    <string name="usb_use_photo_transfers_miui12_5">Photo transfers</string>
     <string name="usb_use_power_only">Charge connected device</string>
     <string name="usb_use_tethering">USB tethering</string>
     <string name="use_control_panel">Use new Control center</string>
@@ -7326,8 +7379,9 @@ Tap the plus to add words."</string>
     <string name="user_exit_guest_confirm_title">Remove guest?</string>
     <string name="user_exit_guest_dialog_remove">Remove</string>
     <string name="user_exit_guest_title">Remove guest</string>
+    <string name="user_experience_open_url">Learn more about User Experience Program</string>
     <string name="user_experience_program">User Experience Program</string>
-    <string name="user_experience_program_summary">Help us improve our products and services by sharing your usage stats with us</string>
+    <string name="user_experience_program_summary">Allow Xiaomi to collect and analyze user data in order to improve our products and services. Read the terms and conditions of our User Experience Program to learn more.</string>
     <string name="user_experience_program_title">User Experience Program</string>
     <string name="user_guest">Guest</string>
     <string name="user_image_choose_photo">Choose an image</string>
@@ -7717,12 +7771,14 @@ Please review your service provider’s privacy policy."</string>
     <string name="wifi_configure_settings_preference_title">Wi‑Fi preferences</string>
     <string name="wifi_configured_ap_list">Previously configured APs</string>
     <string name="wifi_connect">Connect</string>
+    <string name="wifi_connect_channel">Wi-Fi channel:</string>
     <string name="wifi_connect_cmcc_dialog_cancel">Cancel</string>
     <string name="wifi_connect_cmcc_dialog_confirm">OK</string>
     <string name="wifi_connect_cmcc_dialog_content">"Connected to mobile data network. If you go over your plan's data limit, your carrier could charge you additional fees."</string>
     <string name="wifi_connect_cmcc_dialog_not_remind">"Don't show again"</string>
     <string name="wifi_connect_cmcc_dialog_title">CMCC connected</string>
     <string name="wifi_connect_failed_message">"Couldn't connect to Wi-Fi network"</string>
+    <string name="wifi_connect_frequency">Wi-Fi frequency:</string>
     <string name="wifi_connected_mac_randomization">Connected MAC randomization</string>
     <string name="wifi_connected_no_internet">Connected, no internet</string>
     <string name="wifi_connected_to_message">@string/bluetooth_connected_summary</string>
@@ -8249,7 +8305,7 @@ Looks like credential storage isn't enabled."</string>
     <string name="xiaomi_cloud_service_description_without_contacts">Xiaomi Cloud syncs your photos, backs up your apps and settings, and helps you find your phone using Find device.</string>
     <string name="xiaomi_cloud_service_disabled">Off</string>
     <string name="xiaomi_cloud_service_unknown">Unknown</string>
-    <string name="xiaomi_money_service">Mi Credit</string>
+    <string name="xiaomi_money_service">Mi Coins</string>
     <string name="xiaomi_router_available_notif_summary">Tap to view more info.</string>
     <string name="xiaomi_router_available_notif_title">Mi Router available</string>
     <string name="xiaomi_router_notif_summary">Notify me when a Mi Router is available</string>
