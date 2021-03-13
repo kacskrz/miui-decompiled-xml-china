@@ -21,6 +21,7 @@
     <string name="Setting_lock">Settings</string>
     <string name="Settings_title_anti_spam">Blocklist settings</string>
     <string name="Settings_title_anti_virus">Security scan settings</string>
+    <string name="Settings_title_anti_virus_kddi">Security scan settings</string>
     <string name="Settings_title_garbage_cleanup">Cleaner settings</string>
     <string name="Settings_title_network_assistants">Data usage settings</string>
     <string name="Settings_title_power_center">Battery optimization settings</string>
@@ -51,6 +52,11 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="abnormal_consume_disable_autostart">Restrict autostart</string>
+    <string name="abnormal_consume_disable_autostart_toast">Restricted autostart successfully</string>
+    <string name="abnormal_consume_set_hidemode">Use Battery saver with this app</string>
+    <string name="abnormal_consume_type_cpu">High CPU usage</string>
+    <string name="abnormal_consume_type_wakelock">"The system can't go to sleep"</string>
     <string name="about_autostart">About autostart</string>
     <string name="ac_enter_applock">Enter App lock</string>
     <string name="ac_firstUseApplock_subTitle">Use better system-level security tools</string>
@@ -85,6 +91,7 @@
     <string name="action_source_sms_title">Blocked messages</string>
     <string name="activity_title_antispam">Blocklist</string>
     <string name="activity_title_antivirus">Security scan</string>
+    <string name="activity_title_antivirus_kddi">Security scan</string>
     <string name="activity_title_apps_manager">Apps</string>
     <string name="activity_title_auto_start_manager">Autostart</string>
     <string name="activity_title_create_shortcut">Manage shortcuts</string>
@@ -170,9 +177,12 @@
     <string name="antivirus_privacy_dialog_cloudscan_description">"To detect and neutralize viruses more effectively, we'll upload the apps' package names and properties in order to scan them using a cloud engine."</string>
     <string name="antivirus_privacy_dialog_ok">OK</string>
     <string name="antivirus_privacy_dialog_summary"><Data>This feature is powered by a third party antivirus engine. To learn more, read the &lt;a href=\"%1$s\">License Agreement&lt;/a> provided by the third party.</Data></string>
+    <string name="antivirus_privacy_dialog_summary_kddi"><Data>"When you're performing a security scan, your device model and scan results will be uploaded to %1$s servers and used in accordance with the corresponding &lt;a href=\"%2$s\">terms and conditions&lt;/a>.&lt;br/>&lt;br/>Read and agree to %3$s's terms and conditions before performing security scans.&lt;br/>&lt;br/>If you don't agree to upload data to %4$s servers, you can still use the virus definitions stored locally on your device."</Data></string>
     <string name="antivirus_privacy_dialog_summary_link">Privacy Policy</string>
     <string name="antivirus_privacy_dialog_title">Privacy Policy</string>
+    <string name="antivirus_privacy_dialog_title_kddi">Terms and conditions</string>
     <string name="antivirus_sec_network_unavailable">"Security can't update because you've restricted the internet connection. Allow Security to connect to the internet?"</string>
+    <string name="antivirus_third_privacy_title">Third party privacy policies</string>
     <string name="antivirus_toast_already_update">Up to date</string>
     <string name="antivirus_toast_network_unavailable">"Couldn't connect to the network"</string>
     <string name="antivirus_toast_update_failed">"Couldn't update"</string>
@@ -485,9 +495,16 @@ You will not lose any app data."</string>
     <string name="application_item_already_permission">Allowed</string>
     <string name="application_item_disable">Restricted</string>
     <string name="applock_add_account">Add</string>
+    <string name="applock_add_account_ignore">Not now</string>
+    <string name="applock_add_account_ignore_with_seconds">Not now (%ds)</string>
     <string name="applock_add_account_info">Add your Mi Account to be able to reset your password in case you forget it.</string>
     <string name="applock_add_account_setting">Account &amp; privacy</string>
+    <string name="applock_add_account_tips">"With Mi Account, you'll be able to restore your App lock if you forget it."</string>
+    <string name="applock_add_account_title">Add your Mi Account</string>
+    <string name="applock_already_add_account">Current account: %s</string>
     <string name="applock_app_recommend_lock_title">You can lock the following apps</string>
+    <string name="applock_bind_account_dialog_content">Your Mi Account is the only way to restore your App lock in case you forget it. Sign in to add your Mi Account.</string>
+    <string name="applock_bind_account_dialog_title">Add your Mi Account</string>
     <string name="applock_bind_account_title">Forgot password</string>
     <string name="applock_close_dialog_summary">All hidden apps will be unhidden, their Home screen shortcuts will be restored, and your App lock password will be deleted. Turn off App lock?</string>
     <string name="applock_close_dialog_title">Turn off App lock?</string>
@@ -497,7 +514,10 @@ You will not lose any app data."</string>
     <string name="applock_function_base_settings">App lock</string>
     <string name="applock_function_pwd_settings">Password</string>
     <string name="applock_go_to">Settings</string>
+    <string name="applock_guide_notification_summary">Protect your privacy with App lock</string>
+    <string name="applock_guide_notification_title">Other people might see sensitive information on your screen</string>
     <string name="applock_guide_open_applock">Turn on</string>
+    <string name="applock_guide_placeholder">000</string>
     <string name="applock_guide_tip1">Multiple password type options are available. Unlock apps with your fingerprint, face, or enter password.</string>
     <string name="applock_guide_tip1_global">Unlock apps with your fingerprint, face, or enter password.</string>
     <string name="applock_guide_tip1_global_without_face">Unlock apps with your fingerprint or enter password.</string>
@@ -513,8 +533,18 @@ You will not lose any app data."</string>
     <string name="applock_header_text_less_than_half">Too small. Drag a bit further.</string>
     <string name="applock_lock_all">Lock all</string>
     <string name="applock_login_and_add_account">Sign in &amp; add</string>
+    <string name="applock_no_account_login">"You aren't signed in to your Mi Account"</string>
     <string name="applock_not_add_account"><u>Not now</u></string>
     <string name="applock_not_login_account">"You aren't signed in"</string>
+    <string name="applock_operate_faceunlock_summary">Unlock apps by simply looking at the screen</string>
+    <string name="applock_operate_faceunlock_title">Use face data</string>
+    <string name="applock_operate_fingerprint_summary">App lock supports adding multiple fingerprints</string>
+    <string name="applock_operate_fingerprint_title">Use your fingerprint</string>
+    <string name="applock_operate_hidenoti_summary">App lock can do this for the protected apps</string>
+    <string name="applock_operate_hidenoti_title">Want to hide sensitive notifications?</string>
+    <string name="applock_recommend_tips">%s of the users protect these apps</string>
+    <string name="applock_recommend_title">Select apps</string>
+    <string name="applock_set_complete">Use App lock</string>
     <string name="applock_set_password_title">Change password type</string>
     <string name="applock_settings_unlock_all_toast">Unlocked all apps</string>
     <string name="applock_toast_tip">Verified App lock successfully</string>
@@ -547,6 +577,8 @@ You will not lose any app data."</string>
     <string name="auto_data_booster_suc">Game Turbo is on. Switched to Immersive mode.</string>
     <string name="auto_handle_title">GENERAL</string>
     <string name="auto_import_games">Put all your games in one place</string>
+    <string name="auto_send_correcting_msg">Leave blank to check automatically via a free SMS</string>
+    <string name="auto_set_by_brand">Sync data plan details with your carrier</string>
     <string name="auto_task_condition_choose_battery_level_down">When battery reaches a certain level</string>
     <string name="auto_task_condition_choose_end_time">End time</string>
     <string name="auto_task_condition_choose_ontime">Timer</string>
@@ -699,6 +731,7 @@ You will not lose any app data."</string>
     <string name="boot_time">On at %1$s</string>
     <string name="boot_time_day">On in %1$dd at %2$s</string>
     <string name="boot_time_day_tomorrow">On tomorrow at %1$s</string>
+    <string name="bottom_func_guide_default_text">More features</string>
     <string name="btn_back">Back</string>
     <string name="btn_finish_diagnostic">OK</string>
     <string name="btn_start_diagnostic">Test network</string>
@@ -797,6 +830,13 @@ You will not lose any app data."</string>
     <string name="card_tc_failed">"Couldn't calibrate"</string>
     <string name="cd_back">Back</string>
     <string name="celcius_symbol">℃</string>
+    <string name="cellular_data_auto_check">Check automatically</string>
+    <string name="cellular_package_daily_input">Enter</string>
+    <string name="charger_detect_button_ok">Got it</string>
+    <string name="charger_detect_info1">Check whether the power adapter and cable are properly connected.</string>
+    <string name="charger_detect_info2">"Charging may also slow down if you're using non-standard or old power adapters and cables."</string>
+    <string name="charger_detect_no_remind">"Don't show again"</string>
+    <string name="charger_detect_title">Charging is slow</string>
     <string name="charging_text_battery_full_time">"Last charge "</string>
     <string name="charging_text_battery_nearly_full">Almost fully charged</string>
     <string name="charging_text_battery_perfect">Fully charged</string>
@@ -841,6 +881,7 @@ You will not lose any app data."</string>
     <string name="connect_internet_by_wifi">Wi-Fi</string>
     <string name="connecting">Connecting…</string>
     <string name="continue_install">Install</string>
+    <string name="continue_set">Continue</string>
     <string name="convenient_mode">Unlock all apps at once</string>
     <string name="convenient_summary">Enter password once to unlock all apps</string>
     <string name="copy">Copy</string>
@@ -909,6 +950,7 @@ Your carrier may charge you extra fees if you turn on mobile data again."</strin
     <string name="data_usage_warning_title_notify">You went over your data limit</string>
     <string name="databooster_tips_message">Turn on to restrict all SIM cards except for the data card. Turn this feature off if errors occur in the games of your choice.</string>
     <string name="databooster_tips_title">Attention</string>
+    <string name="day_overflow_tips">Daily data usage warning</string>
     <string name="debug_open_final_tip">Turn on USB debugging?</string>
     <string name="debug_open_title">This feature is intended for developers and might not be convenient for general users. Turning on USB debugging might bring about the following changes:</string>
     <string name="declaration_dialog_msg">This feature can help you track your usage, but is not guaranteed to prevent additional charges. For best results, set a conservative limit.</string>
@@ -958,6 +1000,14 @@ All data on your device might be erased and your Lock screen password might be r
     <string name="dialog_roaming_warning_checkbox">"Don't show again"</string>
     <string name="dialog_roaming_warning_message">The carrier will charge you a fee after you turn on international data roaming. Turn on anyway?</string>
     <string name="dialog_roaming_warning_ok">Turn on</string>
+    <string name="dialog_skt_roaming_warning_cancel">Disagree</string>
+    <string name="dialog_skt_roaming_warning_message">"Read and agree to the conditions below to use data roaming. International data roaming charges may apply. Without a data roaming plan, significant charges may apply to apps that auto-update, such as apps related to social networking, email and weather.
+ * When you disagree to use data roaming, data roaming will be disabled.
+ * HD Voice is used as default on supported networks.
+ * 5G data roaming is available only in our partner networks.
+"</string>
+    <string name="dialog_skt_roaming_warning_ok">Agree</string>
+    <string name="dialog_skt_roaming_warning_title">Data roaming agreement</string>
     <string name="dialog_title_attention">Attention</string>
     <string name="dialog_title_auto_start_declare">About autostart</string>
     <string name="dialog_title_stop_virus_scan">Stop security scan</string>
@@ -993,6 +1043,10 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="dlg_no_block_ok">Unblock</string>
     <string name="dlg_not_block_call">"Unblock selected numbers? They will be added to exceptions, but previously blocked items won't appear in call history."</string>
     <string name="dlg_not_block_sms">"Unblock selected numbers? They will be added to exceptions, but previously blocked items won't appear in Messaging inbox."</string>
+    <string name="dlg_onlie_service_summary">Turning off online services will make some features of the app unavailable. Turn off anyway?</string>
+    <string name="dlg_open_online_service_pos_text">Turn on</string>
+    <string name="dlg_open_online_service_summary">"Some features won't be available when online services are off. Turn on online services now?"</string>
+    <string name="dlg_open_online_service_title">Online services</string>
     <string name="dlg_remove_address_blacklist">Remove this location from blocklist?</string>
     <string name="dlg_remove_address_whitelist">Remove this location from exceptions?</string>
     <string name="dlg_remove_blacklist">Remove these numbers from blocklist?</string>
@@ -1166,10 +1220,14 @@ medical card"</string>
     <string name="exception_notify_message">"Couldn't calculate data stats due to an error. Reboot to restore."</string>
     <string name="exception_titile">An error occurred</string>
     <string name="exit">Exit</string>
+    <string name="exit_dialog_exit">Exit</string>
     <string name="exit_dialog_garbage_clean_message">The amount of trash on your device is more than %s. Clean up trash?</string>
+    <string name="exit_dialog_garbage_clean_message_new"><Data>Cleaner can free up &lt;font color=#0099ff>%s&lt;/font> of storage space. Clean now?</Data></string>
     <string name="exit_dialog_garbage_clean_positive_button">Clean up</string>
-    <string name="exit_dialog_garbage_clean_title">Clean up trash</string>
+    <string name="exit_dialog_garbage_clean_title">Free up storage space</string>
     <string name="exit_dialog_homepage_optimise_message">"Your device's performance score is lower than 80 points. Optimize now?"</string>
+    <string name="exit_dialog_release_memory_positive_button">Close</string>
+    <string name="exit_dialog_release_memory_title"><Data>Speed up your device by &lt;font color=#0099ff>%d%%&lt;/font></Data></string>
     <string name="exit_dialog_release_storage_message">More than 80% of storage on your device is occupied. Free up space by uninstalling the apps you never use.</string>
     <string name="exit_dialog_release_storage_positive_button">Free up space</string>
     <string name="exit_dialog_release_storage_title">Free up space</string>
@@ -1319,6 +1377,9 @@ medical card"</string>
     <string name="first_settings_subtitle">Here are the secure sharing options available to you:</string>
     <string name="first_settings_title">Protect your privacy</string>
     <string name="five_percent_total_pkg">%s (5%% of monthly data)</string>
+    <string name="fixed_cellular_data_quota_monthly">Monthly data limit</string>
+    <string name="fixed_package_tips">Additional fees will be generated after you reach the limit</string>
+    <string name="fixed_traffic_quota">Data limit (mandatory)</string>
     <string name="float_window">桌面悬浮窗</string>
     <string name="float_window_summary">支持快速跳转至摇一摇与咻一咻页面</string>
     <string name="float_window_tips">小米手机就是快！</string>
@@ -1345,6 +1406,8 @@ medical card"</string>
     <string name="free_time_traffic_settings">Off-peak data limit</string>
     <string name="free_time_traffic_title">Enter off-peak data limit</string>
     <string name="free_traffic_settings">Off-peak data usage settings</string>
+    <string name="full_fill_oprator_and_location">Provide your carrier info and location</string>
+    <string name="full_fill_sim_location">Set location first</string>
     <string name="function_auto_reject_detail">"About this feature:
 1. While you're playing games, all incoming calls to the SIM card without mobile data service will be rejected automatically.
 2. You'll see notifications about missed calls and the other person will hear an audio message saying that you're busy at the moment.
@@ -1416,6 +1479,7 @@ medical card"</string>
     <string name="gamebox_immersion_tips_content">Immersive mode restricts all SIM card functionality except for the mobile data connection. You will neither be interrupted by calls nor receive notifications about missed calls. All SIM card features will be restored when Immersive mode is turned off. Turn on Immersive mode?</string>
     <string name="gamebox_immersion_tips_title">Attention</string>
     <string name="gamebox_immerson_open">"Turning on Immersive mode, don't switch networks…"</string>
+    <string name="gamebox_macro">Combos</string>
     <string name="gamebox_manual_record">Record</string>
     <string name="gamebox_milink">Cast</string>
     <string name="gamebox_positive_button_text">OK (%1$ds)</string>
@@ -1436,6 +1500,19 @@ medical card"</string>
     <string name="gb_ad_game_size">MB</string>
     <string name="gb_add_game_hint">Add items from the list of apps</string>
     <string name="gb_add_game_loading_tips">Just a sec…</string>
+    <string name="gb_adv_touch_adv_title">Classic mode (default)</string>
+    <string name="gb_adv_touch_custom1">Swipe response</string>
+    <string name="gb_adv_touch_custom2">Sensitivity to continuous taps</string>
+    <string name="gb_adv_touch_custom3">Aiming accuracy</string>
+    <string name="gb_adv_touch_custom4">Tap stability</string>
+    <string name="gb_adv_touch_custom_tip1">Higher swipe response increases the speed of reaction to this gesture, while lower swipe response makes the gesture more stable.</string>
+    <string name="gb_adv_touch_custom_tip2">Higher sensitivity to continuous taps increases the speed of reaction to this gesture, while lower sensitivity makes the gesture more stable.</string>
+    <string name="gb_adv_touch_custom_tip3">Higher aiming accuracy makes smaller swipes more precise, while lower aiming accuracy makes this gesture more stable.</string>
+    <string name="gb_adv_touch_custom_tip4">Higher tap stability makes taps more stable, while lower tap stability increases the accuracy of smaller swipes.</string>
+    <string name="gb_adv_touch_custom_title">Customize</string>
+    <string name="gb_adv_touch_mode_pro_tips">*This mode is designed for professional players. Regular players might find this mode inconvenient.</string>
+    <string name="gb_adv_touch_mode_select_title">Gestures</string>
+    <string name="gb_adv_touch_pro_title">Pro mode</string>
     <string name="gb_advance_settings_edge_gear1">None</string>
     <string name="gb_advance_settings_edge_gear2">Small</string>
     <string name="gb_advance_settings_edge_gear3">Medium</string>
@@ -1492,6 +1569,9 @@ medical card"</string>
     <string name="gb_first_window_summary">Boost speed and performance on a system level</string>
     <string name="gb_first_window_title">Game Turbo</string>
     <string name="gb_game_end_toast">Revisit the key moments of your games</string>
+    <string name="gb_game_macro_bubble_tips">Try combos</string>
+    <string name="gb_game_macro_toast_tips">"Try combos!
+Record sequences and use them anytime!"</string>
     <string name="gb_game_video_bottom_tips">Revisit key moments from your gaming sessions in Game Turbo. Videos will be deleted automatically after 7 days.</string>
     <string name="gb_game_video_item_tag">Key moment</string>
     <string name="gb_game_video_page_delete_success">Deleted successfully</string>
@@ -1558,6 +1638,7 @@ of your gaming sessions"</string>
     <string name="gb_xunyou_gift_type_two">Xunyou 2-day boost</string>
     <string name="gdpr_msg"><Data>"To be able to detect security risks and protect your data, we need to collect the necessary amount of information about your device. Read and agree to our &lt;a href=\"https://privacy.mi.com/all/%1$s_%2$s\">Privacy Policy&lt;/a> before using our services. In case you don't allow us to collect such information, you'll still be able to use this app, but some features won't be available to you. "</Data></string>
     <string name="ge">个</string>
+    <string name="get_detail_by_click">Tap to view details</string>
     <string name="get_sys_info">Getting info…</string>
     <string name="gigabyteShort">GB</string>
     <string name="give_lucky_money">红包大派送</string>
@@ -1566,6 +1647,7 @@ of your gaming sessions"</string>
     <string name="gmscore_support_remind">Turn this feature on if you experience problems with using Gmail, Google Maps, and other Google apps. It will slightly reduce battery life.</string>
     <string name="gmscore_support_service">Basic Google services</string>
     <string name="go_to">Proceed</string>
+    <string name="go_to_send">Send</string>
     <string name="go_to_setting_fingerprint">Settings</string>
     <string name="google_base_app_fail">"Couldn't download. Check whether Security is allowed to connect to the internet."</string>
     <string name="google_base_app_install_choice">The application requires Google Services Framework to work normally, download and install it?</string>
@@ -1625,7 +1707,10 @@ of your gaming sessions"</string>
     <string name="gtb_exit_game_to_gtb">Open gamebox</string>
     <string name="gtb_exit_game_to_home">Back to Home screen</string>
     <string name="gtb_setting_item_summary_smart_5g">Whenever Game Turbo detects a 5G network, it can connect your device to the best network available to reduce network delay</string>
+    <string name="gtb_setting_item_summary_smart_wlan_speed" formatted="false">Increase connection speed by 10%-20% when connected to Mi/Redmi routers</string>
     <string name="gtb_setting_item_title_smart_5g">5G network optimization</string>
+    <string name="gtb_setting_item_title_smart_wlan_speed">Mi WiFi speed boost</string>
+    <string name="gtb_wlan_speed_tips">Using Mi WiFi…</string>
     <string name="guide_get_operator_error">"&lt;font color='#33b4ff'>&lt;U>Wrong carrier?&lt;/U>&lt;/font>"</string>
     <string name="guide_operator_text">"Your current carrier: "</string>
     <string name="guide_quck_open">Turn on</string>
@@ -1670,6 +1755,7 @@ of your gaming sessions"</string>
     <string name="icon_text_size_giga_byte">%.1fG</string>
     <string name="icon_text_size_max">9.9G</string>
     <string name="icon_text_size_mega_byte">%dM</string>
+    <string name="ignore_special_app">Exclude the data used by selected apps from your plan</string>
     <string name="im">IM</string>
     <string name="info_and_call">Calls and messaging</string>
     <string name="info_antispam_close">Blocklist is off</string>
@@ -1681,7 +1767,10 @@ of your gaming sessions"</string>
     <string name="info_unantispam_phone_sms">Allow calls and SMS</string>
     <string name="info_unantispam_sms">Allow SMS</string>
     <string name="information_setting">Recommendations</string>
+    <string name="input_available_cellular_data_daily_hint">Enter daily data limit</string>
     <string name="input_aviable_traffic">Set data usage limit</string>
+    <string name="input_celluar_data_quota_hint">Enter data limit</string>
+    <string name="input_cellular_data_warn_hint">Enter data usage warning limit</string>
     <string name="input_password_hint_text">Enter password</string>
     <string name="input_traffic_pkg">Enter data usage</string>
     <string name="input_used_hint">Enter data usage</string>
@@ -1720,6 +1809,7 @@ of your gaming sessions"</string>
 
 Carrier may charge you additional fees if you use mobile data connection again."</string>
     <string name="leisure_usage_dialog_title">You went over your off-peak data limit, data connection is off</string>
+    <string name="limit_speed_by_quota">Speed restrictions may apply after you reach the limit</string>
     <string name="list_empty_text">Empty</string>
     <string name="load_only_under_wlan">Load using only Wi-Fi</string>
     <string name="loading">Just a sec…</string>
@@ -1837,6 +1927,7 @@ to respond"</string>
     <string name="main_toolbar_purchase">Top up</string>
     <string name="main_toolbar_statistic">Data usage stats</string>
     <string name="main_traffic_detail">Data usage</string>
+    <string name="make_sure_package_type">Select your data plan</string>
     <string name="man_add_application">Add autostart apps manually</string>
     <string name="manage_hybrid_permissions">"Manage app's permissions"</string>
     <string name="managed_user_title">All work apps</string>
@@ -1902,6 +1993,7 @@ Your device is %d%% faster now."</string>
     <string name="menu_item_notification_antispam_text_avail">Blocklist</string>
     <string name="menu_item_notification_antispam_text_normal">Blocklist</string>
     <string name="menu_item_notification_garbage_text">%s</string>
+    <string name="menu_item_notification_optimize_text">%d%% occupied</string>
     <string name="menu_item_notification_power_text">Battery optimization</string>
     <string name="menu_item_notification_title">Show menu in notification shade</string>
     <string name="menu_item_shortcut_summary">Place features on your Home screen</string>
@@ -1935,8 +2027,10 @@ Your device is %d%% faster now."</string>
     <string name="menu_summary_power_manager_4">%s until full</string>
     <string name="menu_text_antispam">Blocklist</string>
     <string name="menu_text_antivirus">Security scan</string>
+    <string name="menu_text_antivirus_kddi">Security scan</string>
+    <string name="menu_text_deepclean_summary">%1$s/%2$s occupied</string>
     <string name="menu_text_garbage_cleanup">Cleaner</string>
-    <string name="menu_text_garbage_cleanup_danger">%s</string>
+    <string name="menu_text_garbage_cleanup_danger">%s of trash</string>
     <string name="menu_text_license_manager">Permissions</string>
     <string name="menu_text_networkassistants">Data usage</string>
     <string name="menu_text_networkassistants_danger">%s over</string>
@@ -1976,6 +2070,7 @@ Your device is %d%% faster now."</string>
     <string name="mixed_recording_intro_header">Enter %1$s-%2$s characters</string>
     <string name="mixed_retry_button_text">Cancel</string>
     <string name="mixed_settings_help_how_to_record">How to set password</string>
+    <string name="modify_cellular_type">Tap to select your plan</string>
     <string name="modify_password_mode"><u>Change password type</u></string>
     <string name="modifypassword">Change password type</string>
     <string name="monitor_app_add">Add</string>
@@ -2067,11 +2162,17 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="not_available">暂无</string>
     <string name="not_limited_brand">Unlimited</string>
     <string name="not_set">Not set</string>
+    <string name="not_settled">Not set</string>
     <string name="note">Note</string>
     <string name="note_call_none">No calls</string>
     <string name="note_list_none">List is empty</string>
     <string name="note_sms_none">No messages</string>
     <string name="noti_back_diving_mode_title">Turned on Immersive mode. Tap to turn off.</string>
+    <string name="notification_abnormal_check_button">View</string>
+    <string name="notification_abnormal_check_now_button">View</string>
+    <string name="notification_abnormal_consume_app_title">%s drains battery</string>
+    <string name="notification_abnormal_consume_cpu">CPU resources are abused in the background</string>
+    <string name="notification_abnormal_consume_wakelock">The system is kept awake in the background</string>
     <string name="notification_battery_consume_abnormal_title">Battery is being drained too fast</string>
     <string name="notification_battery_scan_consume_abnormal_summary">Tap to fix the problem</string>
     <string name="notification_battery_scan_consume_abnormal_title_set">%s is draining battery</string>
@@ -2091,6 +2192,8 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="notification_mask_title">Hide notification content</string>
     <string name="notification_masked_item">How to hide notification content?</string>
     <string name="notification_masked_subtitle">Use App lock to hide notification content for selected apps</string>
+    <string name="notification_power_consume_issue_summary">High power consumption</string>
+    <string name="notification_power_consume_suggest_summary">Fix issues to save battery</string>
     <string name="notification_summary_cmcc_app_check">Touch to view details.</string>
     <string name="notification_whatsapp_clean_button_text">Clear</string>
     <string name="notification_whatsapp_clean_size">WhatsApp cache reached %s</string>
@@ -2111,6 +2214,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="notify_weekly_traffic_body">To limit data usage automatically, set up your monthly data plan.</string>
     <string name="notify_weekly_traffic_title">Used %s this week</string>
     <string name="notify_weekly_traffic_title_for_slotnum">%1$s used %2$s this week</string>
+    <string name="number_address">Location</string>
     <string name="number_of_lucky_money">已为您提醒红包总数</string>
     <string name="numeric_need_to_confirm">Enter again to confirm</string>
     <string name="numeric_password_confirmed_header_confirm">Set successfully. Tap to confirm.</string>
@@ -2171,6 +2275,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="operator_name_mi_mobile">Mi Mobile</string>
     <string name="operator_name_telcom">China Telecom</string>
     <string name="operator_name_unicom">China Unicom</string>
+    <string name="operator_name_virtual_operator">Virtual carrier</string>
     <string name="operator_number_cmcc">10086</string>
     <string name="operator_number_telcom">10000</string>
     <string name="operator_number_unicom">10010</string>
@@ -2241,6 +2346,9 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="pc_battery_detail_curve_reference_now">Now</string>
     <string name="pc_battery_detail_device_item_title">Battery usage stats</string>
     <string name="pc_battery_history_battery_detail_menu_item">Details</string>
+    <string name="pc_battery_history_battery_software_menu_item">Software</string>
+    <string name="pc_battery_history_consume_all_menu_item">All</string>
+    <string name="pc_battery_history_consume_hardware_menu_item">Hardware</string>
     <string name="pc_battery_history_consume_rank_menu_item">Ranking</string>
     <string name="pc_battery_history_consumption_percent_title">Power consumption percentage</string>
     <string name="pc_battery_history_idletime_title">Standby</string>
@@ -2361,10 +2469,33 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_center_5g_save_close_title">Turning off 5G battery saver</string>
     <string name="power_center_5g_save_summary_text">Make 5G connectivity less power consuming in certain scenarios</string>
     <string name="power_center_5g_save_title_text">5G battery saver</string>
+    <string name="power_center_abnormal_consume_analysis">Power usage abnormalities</string>
     <string name="power_center_auto_shutdown">Schedule power on/off</string>
     <string name="power_center_back">Back</string>
+    <string name="power_center_battery_all">All</string>
+    <string name="power_center_battery_app_detail">App battery usage</string>
+    <string name="power_center_battery_charge_night">Save battery while charging at night</string>
+    <string name="power_center_battery_charge_times">Charged today</string>
+    <string name="power_center_battery_chargefull_time">Until fully charged</string>
+    <string name="power_center_battery_detail">Details</string>
+    <string name="power_center_battery_duration">Remaining time</string>
+    <string name="power_center_battery_duration_format">%1$s %2$s</string>
+    <string name="power_center_battery_hardware">Hardware %s</string>
     <string name="power_center_battery_last">%s remaining</string>
+    <string name="power_center_battery_level">%s charged</string>
+    <string name="power_center_battery_level_general">Normal</string>
+    <string name="power_center_battery_problem_and_suggest">%1$s. %2$s.</string>
+    <string name="power_center_battery_software">Software %s</string>
+    <string name="power_center_battery_status">Battery usage</string>
+    <string name="power_center_battery_temperature">Temperature</string>
+    <string name="power_center_battery_used_time">On battery</string>
+    <string name="power_center_batteryrank_all">All battery usage</string>
+    <string name="power_center_batteryrank_hardware">Hardware battery usage %s</string>
+    <string name="power_center_batteryrank_software">Software battery usage %s</string>
+    <string name="power_center_batteryscan_normal">No battery usage issues. View results.</string>
+    <string name="power_center_charge_status">Charging</string>
     <string name="power_center_charge_time">%1$suntil full</string>
+    <string name="power_center_consume_fast">Draining battery</string>
     <string name="power_center_dialog_msg_bottom">You can increase battery life up to %1$dh %2$dm. Turn on Battery saver?</string>
     <string name="power_center_dialog_msg_title">Turn on to get %1$s of extra time. The following actions will be performed to save battery:</string>
     <string name="power_center_dialog_msg_top">When Battery saver is on, MIUI will perform the following optimizations:</string>
@@ -2379,15 +2510,22 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_center_list_item_close_bluetooth">Turn off Bluetooth</string>
     <string name="power_center_list_item_deep_save_title">Advanced settings</string>
     <string name="power_center_list_item_haptic_feedback">Turn off haptic feedback</string>
+    <string name="power_center_list_item_haptic_feedback_summary">"Gestures and system controls won't be accompanied by haptic feedback"</string>
     <string name="power_center_list_item_set_lockscreen_time">Put screen to sleep after 30 seconds of inactivity</string>
     <string name="power_center_list_item_set_lockscreen_time_holder">Lock device after %d seconds of inactivity</string>
+    <string name="power_center_list_item_set_lockscreen_time_summary">Locking your device faster saves battery</string>
     <string name="power_center_list_item_wake_notification">"Don't wake screen for notifications"</string>
+    <string name="power_center_list_item_wake_notification_summary">Incoming notifications will be displayed only when you turn the screen on</string>
     <string name="power_center_main_percent_formatted">%s%%</string>
     <string name="power_center_one_key_save">Optimize</string>
     <string name="power_center_ontime_boot">Power on time</string>
     <string name="power_center_ontime_shutdown">Power off time</string>
+    <string name="power_center_optimize_title">Suggestions</string>
     <string name="power_center_power_save_summary_text">Increase remaining time up to %1$dh %2$dm</string>
     <string name="power_center_power_save_title_text">Battery saver</string>
+    <string name="power_center_problem_title">Fix issues</string>
+    <string name="power_center_reduce_dpi_summary">QHD+ consumes more power</string>
+    <string name="power_center_reduce_resolution">Lower display resolution</string>
     <string name="power_center_repeat">Repeat</string>
     <string name="power_center_scan_item_title_5g">5G connectivity</string>
     <string name="power_center_scan_item_title_GPS">Adjust GPS accuracy</string>
@@ -2410,6 +2548,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_center_time_to_boot">Power on time</string>
     <string name="power_center_time_to_shutdown">Power off time</string>
     <string name="power_center_title">Battery</string>
+    <string name="power_center_used_time_Introduction">Time on battery since it was last charged past %s</string>
     <string name="power_consume_hardware_total_format">Hardware: %s</string>
     <string name="power_consume_other">Other</string>
     <string name="power_consume_rank_hardware">Hardware</string>
@@ -2428,22 +2567,53 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_off_warning_button_ok">Got it</string>
     <string name="power_off_warning_message">Battery is low. Your device will shut down in %d seconds. Connect charger.</string>
     <string name="power_off_warning_notification_title">About to shut down</string>
+    <string name="power_optimize_aod_summary">Your device saves battery when the screen is off</string>
+    <string name="power_optimize_auto_brightness">Adjust brightness automatically</string>
+    <string name="power_optimize_auto_brightness_summary">Auto brightness saves battery</string>
     <string name="power_optimize_auto_catagory_title">Battery issues</string>
     <string name="power_optimize_battery_save_idea">Optimize battery</string>
     <string name="power_optimize_battery_save_more">More</string>
     <string name="power_optimize_brightness">Screen brightness</string>
     <string name="power_optimize_btn_text_fixed">Optimized</string>
     <string name="power_optimize_catagory_fixed_title">Optimized</string>
+    <string name="power_optimize_clean_memory">Clear memory %d minutes after locking device</string>
+    <string name="power_optimize_clean_memory_summary">Background activity consumes a lot of power</string>
     <string name="power_optimize_close_app">Close apps consuming excessive power</string>
+    <string name="power_optimize_close_bluetooth_summary">Bluetooth consumes a lot of power in the background</string>
+    <string name="power_optimize_close_consume_app">Close apps that drain battery</string>
+    <string name="power_optimize_close_gps">Turn off location services</string>
+    <string name="power_optimize_close_haptic_feedback">Turn off haptic feedback</string>
+    <string name="power_optimize_close_wake_notification">"Don't wake screen for notifications"</string>
+    <string name="power_optimize_close_wlan">Turn off portable hotspot</string>
+    <string name="power_optimize_close_wlan_summary">Save power when there are no devices connected</string>
+    <string name="power_optimize_darkmode">Switch to Dark mode</string>
+    <string name="power_optimize_darkmode_dialog_confirm">Turn on</string>
+    <string name="power_optimize_darkmode_dialog_summary">Dark mode changes the color scheme of the system UI and selected apps allowing you to save battery and reduce eye strain.</string>
+    <string name="power_optimize_darkmode_dialog_title">Turn on Dark mode</string>
+    <string name="power_optimize_darkmode_extend_summary">Dark mode changes the color scheme of the system UI and selected apps allowing you to save battery and reduce eye strain</string>
+    <string name="power_optimize_darkmode_summary">Dark mode consumes less power</string>
     <string name="power_optimize_disable_5g">Restrict 5G connectivity</string>
+    <string name="power_optimize_disable_5g_summary">5G connection consumes more power</string>
+    <string name="power_optimize_disable_aod">Turn off Always-on display</string>
     <string name="power_optimize_disable_app_autostart">Prevent apps from opening automatically</string>
     <string name="power_optimize_disable_gps">Turn off GPS</string>
     <string name="power_optimize_disable_gps_high_accuracy">Turn off high accuracy location mode</string>
     <string name="power_optimize_disable_start_other_app">Prevent apps from opening other apps</string>
+    <string name="power_optimize_disable_start_other_app_summary">Apps consume power by launching each other</string>
+    <string name="power_optimize_disconnect_data">Turn off mobile data %d minutes after locking device</string>
+    <string name="power_optimize_disconnect_data_summary">Using mobile data in the background consumes power</string>
+    <string name="power_optimize_enable_now_button">Turn on</string>
+    <string name="power_optimize_gps_summary">Restrict location access for all apps</string>
     <string name="power_optimize_loading">Loading</string>
     <string name="power_optimize_open_hide_mode">Turn on Battery saver</string>
+    <string name="power_optimize_power_save_extend_time">Add %s</string>
+    <string name="power_optimize_power_save_summary">Turn on Battery saver to apply multiple system optimizations that limit background activity</string>
+    <string name="power_optimize_prohibit_app_autostart">"Don't allow apps to autostart"</string>
+    <string name="power_optimize_reduce_fps">Lower screen refresh rate to %d Hz</string>
+    <string name="power_optimize_reduce_fps_summary">Lower refresh rate works for most scenarios</string>
     <string name="power_optimize_save_mode_not_opened">Battery saver off</string>
     <string name="power_optimize_save_on_lockscreen">Save power when device is locked</string>
+    <string name="power_optimize_set_lockscreen_time_holder">Lock device after %d seconds of inactivity</string>
     <string name="power_phone">Voice calls</string>
     <string name="power_save_mode">Battery saver</string>
     <string name="power_save_mode_auto_exit_summary">Turn off when battery is 60% or fully charged​</string>
@@ -2512,7 +2682,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="pref_adjust_data_usage">Carrier message template</string>
     <string name="pref_adjust_data_usage_summary">After you changed the calibration template, MIUI will use it to get data usage stats from your carrier</string>
     <string name="pref_adjust_traffic_data">Set data usage</string>
-    <string name="pref_allow_connect_network_title">Data roaming</string>
+    <string name="pref_allow_connect_network_title">International roaming</string>
     <string name="pref_auto_adjust_traffic">Auto adjust data usage stats</string>
     <string name="pref_automatic_adjust">Sync carrier data usage</string>
     <string name="pref_avaible_traffic">Data plan</string>
@@ -2587,6 +2757,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="preference_key_about_privacy">key_about_privacy</string>
     <string name="preference_key_about_version">key_about_version</string>
     <string name="preference_key_antivirus_choose_engine">key_antivirus_choose_engine</string>
+    <string name="preference_key_antivirus_third_paryty_privacy">key_antivirus_third_party_privacy</string>
     <string name="preference_key_app_permission_control">key_app_permission_control</string>
     <string name="preference_key_app_permission_install_debug">key_app_permission_install_debug</string>
     <string name="preference_key_category_check_item">key_category_check_item</string>
@@ -2609,6 +2780,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="preference_key_module_garbage_cleanup">key_garbage_cleanup</string>
     <string name="preference_key_module_network_assistant">key_network_assistant</string>
     <string name="preference_key_module_power_center">module_power_center</string>
+    <string name="preference_key_online_service">key_online_service</string>
     <string name="preference_key_open_virus_cloud_scan">key_open_virus_cloud_scan</string>
     <string name="preference_key_open_virus_install_monitor">key_open_virus_install_monitor</string>
     <string name="preference_key_optimize_manage">key_module_optimize_manage</string>
@@ -2632,6 +2804,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="preferred_app_entries_messaging">Messaging</string>
     <string name="preferred_app_entries_music">Music</string>
     <string name="pricacy_permission_use_total">Permission stats</string>
+    <string name="priority_statistics_fixed_traffic">Data from the monthly plan will be used first</string>
     <string name="priority_storage_app_settings">Data will be saved to %1$s</string>
     <string name="priority_storage_settings_summary">"If no SD card is detected, your data will be saved to your device's internal storage automatically."</string>
     <string name="priority_storage_summary">Select location to save your data</string>
@@ -2764,7 +2937,10 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="process_vpnsdkmanager_label">Game Turbo</string>
     <string name="promotion">Ad</string>
     <string name="prompt_all">Ask for all</string>
+    <string name="prompt_danger">危险</string>
     <string name="prompt_input_time_illegal">"Can't set this time, change it and try again"</string>
+    <string name="prompt_safe">安全</string>
+    <string name="prompt_unknown">未知</string>
     <string name="protocol_exception_title">Network protocol diagnostics</string>
     <string name="protocol_loop_back_exception_summary">Local loop back test failed. To report this issue to MIUI, go to the Feedback app and send a log from your device.</string>
     <string name="qq_lucky_warning">QQ红包</string>
@@ -2891,6 +3067,7 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="section_title_clear_acc">Clear cache</string>
     <string name="section_title_security_defend">Security</string>
     <string name="section_title_system">System security</string>
+    <string name="security_bottom_guide_to_pm_text">Release to open utilities</string>
     <string name="security_center_slogan">Keep your device fast and secure</string>
     <string name="security_scan_optimizing">Optimizing…</string>
     <string name="securityadd_install_fail">"Couldn't update plug-in. Try again."</string>
@@ -2901,12 +3078,20 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="securitycenter_tab_title">Security</string>
     <string name="see_detail">Details</string>
     <string name="see_more_content">Update Games to see more highlights</string>
+    <string name="select_province_and_city">Select location</string>
+    <string name="send_msg_to_query">Send a text message to check</string>
     <string name="set_applock_password">Set password</string>
+    <string name="set_complete">Set successfully</string>
+    <string name="set_location">Set location</string>
     <string name="set_mixed_password_name">Set password</string>
     <string name="set_numeric_password_name">Set PIN</string>
+    <string name="set_package_tips">"We'll send a free SMS to your carrier to check your data plan. The information you provide will be encrypted and uploaded to our servers in order to compose this message."</string>
+    <string name="set_package_tips_detail">"The information uploaded to Xiaomi servers will include your carrier's details, as well as your phone number, IMEI, and Mi Account."</string>
     <string name="set_pattern_password_name">Set pattern</string>
+    <string name="set_traffic_tips">Set your data plan to manage mobile data usage and avoid additional carrier fees</string>
     <string name="setting">Settings</string>
     <string name="setting_alarm_summary">各大平台官方红包活动闹钟提醒</string>
+    <string name="setting_online_service">Online services</string>
     <string name="setting_privacy_password">Add pattern</string>
     <string name="settings">Data usage settings</string>
     <string name="settings_battery_consume_abnormal_summary">Receive notifications when battery is being drained fast</string>
@@ -3510,6 +3695,7 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="traffic_alert_auto_modify_notification_sumarry">Monthly plan changed to %s.</string>
     <string name="traffic_alert_auto_modify_notification_titile">Updated data plan</string>
     <string name="traffic_alert_auto_modify_package_summary">"Automatically adjust data package according to the carrier's info"</string>
+    <string name="traffic_calculation">Use a daily billing cycle</string>
     <string name="traffic_config_alert_auto_modify">Update data plan automatically</string>
     <string name="traffic_config_alert_body">"Your carrier's plan shows this: %s.
 
@@ -3529,6 +3715,7 @@ Rolled over extra data"</string>
     <string name="traffic_config_alert_setted">Settings applied</string>
     <string name="traffic_config_alert_title">%s correction</string>
     <string name="traffic_correction_failed">"Can't get info"</string>
+    <string name="traffic_correction_failed_tips">"Couldn't check data plan. Make sure carrier settings are correct, or set your plan manually."</string>
     <string name="traffic_correction_start_correction">"Talking to carrier's servers…"</string>
     <string name="traffic_correction_start_correction_failed">"Couldn't send request. Check your carrier settings."</string>
     <string name="traffic_correction_success">Data usage updated</string>
@@ -3538,6 +3725,7 @@ Rolled over extra data"</string>
 
 Remaining data includes data that has been rolled over from the previous month."</string>
     <string name="traffic_limit_error_alert_title">Data limit reminder %s</string>
+    <string name="traffic_limit_input">Data limit (mandatory)</string>
     <string name="traffic_none">None</string>
     <string name="traffic_over_purchase_link">"You've reached your mobile plan's data usage limit.&lt;br/>If you go over your plan’s data usage limit, your carrier may charge you additional fees.&lt;br/>&lt;br/>&lt;font color='#ccffffff'>&lt;U>Tap to top up your balance.&lt;/U>&lt;/font>"</string>
     <string name="traffic_provider_no_sim">"SIM card isn't installed"</string>
@@ -3587,7 +3775,9 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="uninstall_danagerous_desc">\"%s\" may damage your device</string>
     <string name="uninstall_danagerous_msg">\"%s\" may damage your device, lower its performance, or cause reboots.</string>
     <string name="uninstall_danagerous_title">Uninstall malicious apps</string>
+    <string name="unknown_package">Not sure what your plan is?</string>
     <string name="unlike">No thanks</string>
+    <string name="unlimited_cellular_data_monthly">Unlimited plan</string>
     <string name="unlock_failed">Internal error</string>
     <string name="unlock_pattern"><u>Pattern</u></string>
     <string name="unlock_pattern_to_bind_fingerprint">Enter password to activate fingerprint</string>
@@ -3666,6 +3856,15 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="vb_video_effects_settings_liquid">Clarity</string>
     <string name="vb_video_effects_settings_stereo">Volume</string>
     <string name="vb_video_effects_srs_premium_sound">Sound</string>
+    <string name="vb_video_super_division">Upscale</string>
+    <string name="vb_video_super_division_desc">"Upscale resolution automatically when it's ≤720p.
+
+Using this feature increases power consumption.
+
+This feature doesn't work with motion smoothing.
+Turning one of the features on will turn the other off."</string>
+    <string name="vb_video_super_division_tips">"Not clear enough?
+Try upscaling resolution!"</string>
     <string name="video_repeat">Play again</string>
     <string name="videobox_hangup_tips_content">Your screen will be locked, but the app will still be running in the background when this feature is on. Press the Power button to turn the screen back on. Turn on this feature now?</string>
     <string name="videobox_hangup_tips_title">Attention</string>
@@ -3684,7 +3883,7 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="virus_wait_network_dialog_message">"Your phone isn't connected to Wi-Fi now. Use mobile data connection?"</string>
     <string name="voltage_symbol">V</string>
     <string name="vtb_func_desc">About this feature</string>
-    <string name="vtb_func_display_style_desc1">"Selected effects won't be applied to HDR videos."</string>
+    <string name="vtb_func_display_style_desc1">"Selected effects won't be applied to HDR videos on selected devices."</string>
     <string name="vtb_func_display_style_desc2">"These effects can't be applied to screenshots."</string>
     <string name="vtb_func_frc_desc0">Motion smoothing reduces blur and adds detail to moving objects. Using this feature increases power consumption.</string>
     <string name="vtb_func_frc_desc1">"Motion smoothing won't work in the following conditions:"</string>
