@@ -62,6 +62,7 @@
     <string name="accessibility_toolbar_btn_delete_url">Clear input</string>
     <string name="accessibility_toolbar_btn_forward">Go forward</string>
     <string name="accessibility_toolbar_btn_menu">More options</string>
+    <string name="accessibility_toolbar_btn_site_info">Site information</string>
     <string name="accessibility_toolbar_multi_select">%1$s selected</string>
     <string name="accessibility_toolbar_screen_position">"%1$s selected.  Options available near top of the screen"</string>
     <string name="accessibility_unmute_video">Unmute video</string>
@@ -75,6 +76,7 @@
     <string name="all">All</string>
     <string name="all_sites">All sites</string>
     <string name="always">Always</string>
+    <string name="amp_publisher_url">%1$s – delivered by Google</string>
     <string name="android_ar_camera_permission_off">To let %1$s use AR, also turn on camera in &lt;link>Android Settings&lt;/link>.</string>
     <string name="android_camera_permission_off">To let %1$s access your camera, also turn on camera in &lt;link>Android Settings&lt;/link>.</string>
     <string name="android_location_also_off_globally">Location access is also off for this device. Turn it on in &lt;link>Android Settings&lt;/link>.</string>
@@ -129,14 +131,14 @@
     <string name="automatically_blocked">Automatically blocked</string>
     <string name="back">Back</string>
     <string name="background_sync_permission_title">Background sync</string>
+    <string name="blocked_ads_prompt_title">Ads blocked</string>
     <string name="blocked_navigation_warning">Navigation is blocked: %1$s</string>
     <string name="bottom_bar_screen_position">Options available near bottom of the screen</string>
     <string name="bottom_sheet_accessibility_description">Swipe down to close.</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
-    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
-    <string name="camera_permission_title">Access your camera</string>
     <string name="cancel">Cancel</string>
     <string name="cast_casting_video">Casting to %1$s</string>
+    <string name="cast_dynamic_group_name_format">%1$s + %2$d</string>
     <string name="cast_notification_connected_message">Connected to %1$s</string>
     <string name="cast_notification_connecting_message">Connecting to %1$s</string>
     <string name="cast_notification_default_channel_name">Cast</string>
@@ -238,8 +240,9 @@
     <string name="external_app_leave_incognito_warning">This site is about to share information with an app outside of incognito mode.</string>
     <string name="external_app_leave_incognito_warning_title">Leave incognito mode?</string>
     <string name="external_payment_app_leave_incognito_warning">Leaving incognito mode to pay via an external application. Continue?</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="fast_forward_hint">Double tap video left or right to skip 10s</string>
-    <string name="geolocation_permission_title">Location access</string>
     <string name="help">Help</string>
     <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="hide_content">Hide</string>
@@ -248,7 +251,6 @@
     <string name="http_post_warning_resend">Continue</string>
     <string name="http_post_warning_title">Confirm Form Resubmission</string>
     <string name="icon_content_description">Dialog Icon</string>
-    <string name="idle_detection_permission_title">User presence</string>
     <string name="immersive_fullscreen_api_notification">Drag from top and touch the back button to exit full screen.</string>
     <string name="infobar_missing_ar_camera_permission_text">Chrome needs permission to access your camera to create a 3D map of your surroundings.</string>
     <string name="infobar_missing_camera_permission_text">Chrome needs permission to access your camera for this site.</string>
@@ -257,7 +259,6 @@
     <string name="infobar_missing_microphone_permission_text">Chrome needs permission to access your microphone for this site.</string>
     <string name="infobar_update_permissions_button_text">Continue</string>
     <string name="intrusive_ads_information">This site shows intrusive or misleading ads</string>
-    <string name="item_view_role_description">Tab</string>
     <string name="javascript_permission_title">JavaScript</string>
     <string name="just_once">Just once</string>
     <string name="learn_more">Learn more</string>
@@ -281,7 +282,6 @@
     <string name="menu_item_move_down">Move down</string>
     <string name="menu_item_move_to_top">Move to top</string>
     <string name="menu_item_move_up">Move up</string>
-    <string name="mic_permission_title">Access your microphone</string>
     <string name="midi_sysex_permission_title">Allow full control of MIDI devices</string>
     <string name="month_picker_dialog_title">Set month</string>
     <string name="more">More</string>
@@ -382,6 +382,8 @@
     <string name="page_info_permissions_title">Permissions</string>
     <string name="page_info_preview_message">Lite page provided by Google</string>
     <string name="page_info_site_settings_button">Site settings</string>
+    <string name="page_info_url_expanded">URL expanded</string>
+    <string name="page_info_url_truncated">URL truncated</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -627,13 +629,15 @@
     <string name="website_settings_device_location">Location</string>
     <string name="website_settings_embedded_on">Embedded on %1$s</string>
     <string name="website_settings_exceptions_group_heading">Exceptions</string>
-    <string name="website_settings_idle_detection">User presence</string>
+    <string name="website_settings_idle_detection">Your presence</string>
     <string name="website_settings_managed_group_heading">Managed by app</string>
     <string name="website_settings_permissions_ads_block">Block if site shows intrusive or misleading ads (recommended)</string>
     <string name="website_settings_permissions_allow">Allow</string>
     <string name="website_settings_permissions_allow_dse">Allow for current search engine</string>
+    <string name="website_settings_permissions_allowed_dse">Allowed for current search engine</string>
     <string name="website_settings_permissions_block">Block</string>
     <string name="website_settings_permissions_block_dse">Block for current search engine</string>
+    <string name="website_settings_permissions_blocked_dse">Blocked for current search engine</string>
     <string name="website_settings_permissions_category">Permissions</string>
     <string name="website_settings_permissions_description">"Control this site's access to your device"</string>
     <string name="website_settings_revoke_all_permissions_for_device">Revoke all permissions for device</string>
