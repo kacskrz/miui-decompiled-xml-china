@@ -110,6 +110,7 @@ Giving you more control."</string>
     <string name="adsidentity_home_screen_learn_more_accessibility_label">Learn more about ad privacy on Android</string>
     <string name="adsidentity_lat_item">Control ads personalization</string>
     <string name="adsidentity_lat_item_summary">"Apps may personalize the ads you see based on this device's Ad ID"</string>
+    <string name="adsidentity_no_results">No results for %s</string>
     <string name="adsidentity_reset_adid_dialog_msg">"Apps that use Ad ID will not be allowed to personalize ads using previously collected info.
 
 Please note: Apps may have their own settings which can affect the ads you see."</string>
@@ -146,6 +147,7 @@ Please note: Apps may have their own settings which can affect the ads you see."
     <string name="apk_version_code">APK Version Code</string>
     <string name="apk_version_label">APK Version Name</string>
     <string name="app_indexing_debug_title">Firebase App Indexing</string>
+    <string name="app_launch_failure_not_allowed_toast">The selected device does not support Casting from this application.</string>
     <string name="app_level_title">Sign-in Request</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="appinvite_cancel_search_description">Cancel search</string>
@@ -472,9 +474,6 @@ To make sure you can restore data later, "<a href="www.example.com">%2$s</a>". "
     <string name="auth_trust_agent_pref_trusted_places_home_work_default_summary">To set, go to Google Maps settings</string>
     <string name="auth_trust_agent_pref_trusted_places_none_home_summary">Set a trusted place in Google Maps</string>
     <string name="auth_trust_agent_pref_trusted_places_title">Trusted places</string>
-    <string name="auth_trust_agent_pref_voice_unlock_disabled_summary">Set up Voice Match</string>
-    <string name="auth_trust_agent_pref_voice_unlock_enabled_summary">Device unlocks when voice is recognized</string>
-    <string name="auth_trust_agent_pref_voice_unlock_title">Voice Match</string>
     <string name="auth_trust_agent_promotion_notification_title">Unlock less with Smart Lock</string>
     <string name="auth_trust_agent_trust_status_monitor_boolean_false_ui_value">No</string>
     <string name="auth_trust_agent_trust_status_monitor_boolean_null_ui_value">null</string>
@@ -541,17 +540,12 @@ Learn more at g.co/AndroidCertifiedDevice"</string>
     <string name="autofill_biometrics_settings_header">USE BIOMETRICS</string>
     <string name="autofill_biometrics_settings_payment_info_option">Payment Info</string>
     <string name="autofill_button_label">Autofill</string>
-    <string name="autofill_choose_title">Autofill which one?</string>
-    <string name="autofill_complete_autofill">Complete Autofill</string>
-    <string name="autofill_copy">Copy</string>
-    <string name="autofill_copy_password">Copy password</string>
     <string name="autofill_dataset_password_primary">Use password for:</string>
     <string name="autofill_dataset_password_warning_message">Autofill your <b>^1</b> password only if you trust <b>^2</b>.</string>
     <string name="autofill_datatype_address">Addresses</string>
     <string name="autofill_datatype_payment">Payment methods</string>
     <string name="autofill_datatype_profile">Personal information</string>
     <string name="autofill_debug_settings">Debug settings</string>
-    <string name="autofill_delete_password">Delete password</string>
     <string name="autofill_expiration_date_shortened">Exp</string>
     <string name="autofill_gender_female">female</string>
     <string name="autofill_gender_female_f">f</string>
@@ -573,10 +567,14 @@ Learn more at g.co/AndroidCertifiedDevice"</string>
     <string name="autofill_manage_save_passwords">You can manage saved passwords in Google Account settings.</string>
     <string name="autofill_manage_save_preferences">You can manage save preferences in Google Account settings.</string>
     <string name="autofill_new_password_picker_password_warning_message">"Select the password you want to fill for &lt;b>^1&lt;/b>. Don't fill a password for an app you don't trust."</string>
+    <string name="autofill_offer_cashback_template">Cashback linked</string>
     <string name="autofill_optin_line1"><b>Tap to let Google fill this in for you</b></string>
     <string name="autofill_optin_line2">With info already saved in your Google Account</string>
     <string name="autofill_otp_code_attribution_action">Manage verification settings</string>
     <string name="autofill_otp_code_attribution_body">Verification code provided in text messages</string>
+    <string name="autofill_password_breach_dialog_content">A data breach on a site or app exposed your password. Google recommends changing your password on <b>^1</b> now.</string>
+    <string name="autofill_password_breach_dialog_secondary_action">Check passwords</string>
+    <string name="autofill_password_breach_dialog_title">Change your password</string>
     <string name="autofill_password_generation_cancel_button">"I'll use my own password"</string>
     <string name="autofill_password_generation_copied_to_clipboard">Password copied to clipboard</string>
     <string name="autofill_password_generation_message">A secure password has been generated for this app and will be added to Google Autofill. You can manage this password in <a href="https://passwords.google.com/">Google Password Manager</a>.</string>
@@ -587,9 +585,6 @@ Learn more at g.co/AndroidCertifiedDevice"</string>
     <string name="autofill_password_generation_username_required">Username required</string>
     <string name="autofill_password_saved">Saved automatically to your Google account</string>
     <string name="autofill_password_will_be_saved">And save to your Google account</string>
-    <string name="autofill_passwords_copied_message">^1 password copied</string>
-    <string name="autofill_passwords_picker_password_warning_message">"Don't autofill unless you trust ^1."</string>
-    <string name="autofill_passwords_picker_title">Pick password for ^1</string>
     <string name="autofill_payments_fix_flow_cardholder_name_hint">Cardholder name</string>
     <string name="autofill_payments_fix_flow_cardholder_name_required">Cardholder name required</string>
     <string name="autofill_payments_fix_flow_exp_data_required">Expiration date required</string>
@@ -604,23 +599,20 @@ Learn more at g.co/AndroidCertifiedDevice"</string>
     <string name="autofill_pick_saved_password">Pick a saved password</string>
     <string name="autofill_promo_payment"><b>Autofill Payment Info</b></string>
     <string name="autofill_promo_username_and_password"><b>Autofill Username and Password</b></string>
-    <string name="autofill_reset_saved_password_description">To edit your saved passwords, set a screen lock in Settings.</string>
     <string name="autofill_scan_card">Scan a new card</string>
-    <string name="autofill_search_passwords">Search passwords</string>
     <string name="autofill_settings">Autofill settings</string>
-    <string name="autofill_settings_username_password_message">"Username: ^1 
-Password: ^2"</string>
     <string name="autofill_setup_points">&lt;li>Google can help you fill forms based on what’s on your screen.&lt;li>You can see and manage your autofill info in Settings.&lt;li> Passwords are saved in your Google Account so you can sign in to apps and sites more easily.</string>
     <string name="autofill_setup_summary">With a single tap, fill in passwords, addresses, credit cards, and other info saved to your Google Account.</string>
     <string name="autofill_setup_summary2">To fill in passwords across apps, Autofill with Google can see the apps installed on your device.</string>
     <string name="autofill_setup_summary3">You can manage your Autofill preferences in Settings.</string>
     <string name="autofill_sms_prompt"><b>Autofill code</b></string>
     <string name="autofill_sms_subtext">from Messages</string>
+    <string name="autofill_sms_subtext_new">from messages</string>
     <string name="autofill_use_awg">Use Autofill with Google</string>
     <string name="autofill_username_option">Username</string>
-    <string name="autofill_view_password">View password</string>
     <string name="autofill_waiting_for_sms">Waiting for message</string>
-    <string name="automotive_offline_maps_notice">Let Google Maps download maps and potential navigation routes in the background based on your vehicle’s location to enable vehicle, safety-related driver assistance, or navigation features. For details, go to Google Maps Settings > Privacy center.</string>
+    <string name="automotive_location_settings_dialog_message_location_services_navigation">Navigation features</string>
+    <string name="automotive_offline_maps_notice">Vehicle features that use offline maps. See Google Maps privacy center.</string>
     <string name="back_up_now_metered_confirmation_text">If you use this network to back up data, you may be charged</string>
     <string name="back_up_now_metered_confirmation_title">Back up using metered network?</string>
     <string name="backup_account_added_description">Your data will be backed up to %1$s</string>
@@ -712,7 +704,6 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="business_message_product_title">Business Messages</string>
     <string name="c11n_android_id_text">Android ID:</string>
     <string name="c11n_android_id_value">%1$d (%2$s)</string>
-    <string name="c11n_android_steps">To turn chat features on/off&lt;br/>1. Open %1$s&lt;br/> 2. Go to More options &lt;b> ⋮ &lt;/b> and tap &lt;b>Settings&lt;/b>&lt;br/> 3. Tap &lt;b>Chat features&lt;/b>&lt;br/> 4. Turn on/off &lt;b>Enable chat features&lt;/b></string>
     <string name="c11n_btn_airplane_off">Airplane Off</string>
     <string name="c11n_btn_airplane_on">Airplane On</string>
     <string name="c11n_btn_api_verify_phone_number">VERIFY AGAINST SERVER API</string>
@@ -729,12 +720,6 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="c11n_btn_stop_rcs_signals">Stop</string>
     <string name="c11n_btn_wifi_off">Wifi Off</string>
     <string name="c11n_btn_wifi_on">Wifi On</string>
-    <string name="c11n_chat_features_activity_label">Chat features</string>
-    <string name="c11n_chat_features_learn_more">Learn more about chat features</string>
-    <string name="c11n_chat_features_privacy">Privacy Policy</string>
-    <string name="c11n_chat_features_terms_of_service">Terms of Service</string>
-    <string name="c11n_chat_features_text">"Chat features lets you send upgraded, high-quality images and videos over Wi-Fi and mobile data using Rich Communication Services (RCS).&lt;br/>&lt;br/>When you turn on chat features from Google, you agree to the %1$s. Google will occasionally verify your number with your carrier (SMS charges may apply). Google's %2$s describes how data is handled. %3$s."</string>
-    <string name="c11n_connected_apps">Connected apps</string>
     <string name="c11n_connection_lost">Unavailable due to lost connection</string>
     <string name="c11n_consent">User has given consent. Consent type is: %1$s.</string>
     <string name="c11n_debug_activity_label">Verified phone numbers</string>
@@ -757,7 +742,6 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="c11n_no_sim_number_label">No number found on the sim</string>
     <string name="c11n_no_sim_verifications">"Couldn't retrieve sim based verifications"</string>
     <string name="c11n_no_verified_numbers">No Verified numbers</string>
-    <string name="c11n_open">Open</string>
     <string name="c11n_phone_number_label">Phone number: %1$s</string>
     <string name="c11n_rcs_signals_cellular_networks">Cellular Networks</string>
     <string name="c11n_rcs_signals_label">RCS signals listener</string>
@@ -766,7 +750,6 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="c11n_read_rcs_signals">Read</string>
     <string name="c11n_reset_config">Reset Local Config</string>
     <string name="c11n_revoke_consent">Revoke consent</string>
-    <string name="c11n_samsung_steps">To turn chat features on/off&lt;br/>1. Open %1$s&lt;br/> 2. Go to More options &lt;b> ⋮ &lt;/b> and tap &lt;b>Settings&lt;/b>&lt;br/> 3. Tap &lt;b>Chat Settings&lt;/b> and turn Rich Communication settings on/off</string>
     <string name="c11n_settings_activity_label">Device phone number</string>
     <string name="c11n_show_config_path">Show Config Path</string>
     <string name="c11n_sim_number_label">Sim phone number: %1$s</string>
@@ -889,7 +872,7 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="cast_rcn_queue_previous">Previous video</string>
     <string name="cast_rcn_stop_casting">Stop casting</string>
     <string name="cast_rcn_text">A device on your Wi-Fi is casting</string>
-    <string name="cast_rcn_text_for_r">"Someone's casting"</string>
+    <string name="cast_rcn_title">Shared controls</string>
     <string name="cast_rcn_unmute">Unmute</string>
     <string name="cast_remote_display_provider_service">Cast Remote Display Provider Service</string>
     <string name="cast_screen_unapproved_device_warning">Screen casting is not optimized for this device.</string>
@@ -904,6 +887,8 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="cast_settings_rcn_device_settings_text_open_app">"You can prevent other devices from controlling media that's streaming on your Cast device. Open the Google Home app, then go to Settings and turn off Shared controls. %1$s"</string>
     <string name="cast_settings_remote_control_notification_summary">Control media from Cast devices through a notification</string>
     <string name="cast_settings_remote_control_notification_title">Media controls for Cast devices</string>
+    <string name="cast_settings_start_remote_casting_mode_title">Start remote casting mode</string>
+    <string name="cast_settings_stop_remote_casting_mode_title">Stop remote casting mode</string>
     <string name="cast_socket_multiplexer_service">Cast Device Connection Management Service</string>
     <string name="change_backup_account_button_label">Change backup account</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
@@ -988,6 +973,7 @@ Turning off this feature doesn’t affect your infotainment system’s ability t
     <string name="common_confirm">Confirm</string>
     <string name="common_confirm_screen_lock_title">Confirm your screen lock</string>
     <string name="common_connect">Connect</string>
+    <string name="common_connect_fail">"Couldn't connect"</string>
     <string name="common_connected">Connected</string>
     <string name="common_connected_apps_settings_title">Connected apps</string>
     <string name="common_connecting">Connecting…</string>
@@ -1179,7 +1165,6 @@ Turning off this feature doesn’t affect your infotainment system’s ability t
     <string name="complicationDrawable_titleTypeface">sans-serif-condensed</string>
     <string name="config_err_msg">"This chimera_debug module is not compatible with the device's version of chimera"</string>
     <string name="confirm_device_credential_password">Use password</string>
-    <string name="connection_error_title">Couldn’t connect</string>
     <string name="consent_agree_button_text">I agree</string>
     <string name="consent_decline_button_text">@string/common_no_thanks</string>
     <string name="contact_info_address_content_description">Address %1$d of %2$d. Open %3$s: %4$s in Maps</string>
@@ -1289,6 +1274,8 @@ Turning off this feature doesn’t affect your infotainment system’s ability t
 Your identity won't be shared with other people."</string>
     <string name="ct_allow_upload_dialog_title">Share your random IDs with %s?</string>
     <string name="ct_allow_upload_dont_share_cancel_button">"Don't share"</string>
+    <string name="ct_monthly_update_notification_message">%s continues to check for possible exposures</string>
+    <string name="ct_monthly_update_notification_title">Monthly reminder</string>
     <string name="ct_optin_dialog_message">"Your phone needs to use Bluetooth to securely collect and share random IDs with other phones that are nearby. 
 
 %s can notify you if you’ve been near someone who reported having COVID-19. 
@@ -1643,6 +1630,7 @@ Keep in mind, this doesn't delete random IDs already shared with an app."</strin
     <string name="exposure_notification_disabled_app_title">Exposure Notifications are off</string>
     <string name="exposure_notification_exposure_check_info_text">%1$s in the past %2$s</string>
     <string name="exposure_notification_exposure_check_title">Exposure checks</string>
+    <string name="exposure_notification_exposure_main_settings_delete_link">delete them at any time</string>
     <string name="exposure_notification_feature_inactive_until_bluetooth_and_location_on_title">Bluetooth and location need to be on</string>
     <string name="exposure_notification_feature_inactive_until_bluetooth_on_title">Bluetooth needs to be on</string>
     <string name="exposure_notification_feature_inactive_until_location_on_title">Location needs to be on</string>
@@ -1652,9 +1640,14 @@ Keep in mind, this doesn't delete random IDs already shared with an app."</strin
     <string name="exposure_notification_feature_removed_in_area_title">Exposure Notifications removed</string>
     <string name="exposure_notification_feature_turned_on_toast_label">Exposure Notifications are active</string>
     <string name="exposure_notification_last_exposure_check_text">Last checked for potential exposure %1$s at %2$s</string>
+    <string name="exposure_notification_low_storage_message">To receive exposure notifications, manage storage.</string>
+    <string name="exposure_notification_low_storage_title">Not enough storage to use this feature</string>
+    <string name="exposure_notification_monthly_summary_information_label">A monthly notification reminds you that your phone is looking for possible COVID-19 exposures. Open the app for details.</string>
+    <string name="exposure_notification_monthly_summary_information_title">Why a monthly reminder?</string>
     <string name="exposure_notification_no_longer_enabled">"COVID-19 Exposure Notifications are no longer available for your area. 
 
 Random IDs saved by the Exposure Notifications System have been deleted. Keep in mind, this doesn't delete random IDs already shared with an app."</string>
+    <string name="exposure_notification_open_the_app">Open the app</string>
     <string name="exposure_notification_push_notification_sender_name">Exposure Notifications</string>
     <string name="exposure_notification_settings_active_apps_group_label">exposure notifications sent from</string>
     <string name="exposure_notification_settings_card_feature_off_label">Off</string>
@@ -1680,6 +1673,7 @@ Random IDs saved by the Exposure Notifications System have been deleted. Keep in
 Keep in mind, this doesn't delete exposure checks that may have been saved by an app."</string>
     <string name="exposure_notification_settings_exposure_checks_delete_exposure_checks_dialog_title">Delete exposure checks?</string>
     <string name="exposure_notification_settings_exposure_checks_export_checks_button_label">Export exposure checks</string>
+    <string name="exposure_notification_settings_exposure_checks_wake_app_label">Wake client app</string>
     <string name="exposure_notification_settings_info_text">"The app can notify you if you've been near someone who reported having COVID-19. 
 
 The date, duration, and signal strength associated with an exposure will be shared with the app."</string>
@@ -1710,6 +1704,7 @@ Keep in mind, this doesn't delete random IDs saved by the Exposure Notifications
     <string name="fast_pair_accessibility_battery_level_left">Left %d%%</string>
     <string name="fast_pair_accessibility_battery_level_right">Right %d%%</string>
     <string name="fast_pair_account_settings_title">Saved devices</string>
+    <string name="fast_pair_app_launch_button">Set up</string>
     <string name="fast_pair_assistant_slice_summary">Notifications and preferences</string>
     <string name="fast_pair_assistant_slice_title_new">Google Assistant</string>
     <string name="fast_pair_automatically_save_devices">Automatically save devices</string>
@@ -1723,11 +1718,15 @@ Keep in mind, this doesn't delete random IDs saved by the Exposure Notifications
     <string name="fast_pair_device_name">"%1$s's %2$s"</string>
     <string name="fast_pair_device_ready">Device connected</string>
     <string name="fast_pair_device_ready_with_device_name">Connected to \"%s\"</string>
+    <string name="fast_pair_download_app">Download app</string>
     <string name="fast_pair_download_app_description">Tap to download device app on Google Play and see all features</string>
     <string name="fast_pair_enabling_bluetooth">Bluetooth will be enabled</string>
     <string name="fast_pair_find_device_title">Find device</string>
     <string name="fast_pair_finish_forget_device_description">%1$s has been removed from %2$s and unpaired from any device with this account.</string>
     <string name="fast_pair_firmware_update_without_companion_app">Tap to get the companion app and install the latest firmware</string>
+    <string name="fast_pair_half_sheet_app_launch_description">Set up this device</string>
+    <string name="fast_pair_half_sheet_set_up_device_title">Set up device</string>
+    <string name="fast_pair_half_sheet_smart_setup_description">Set up your device</string>
     <string name="fast_pair_headset_battery_level_low">%1$s • Low battery</string>
     <string name="fast_pair_headset_smart_battery_hr_min">%1$s • %2$d hr %3$d min left</string>
     <string name="fast_pair_headset_smart_battery_min">%1$s • %2$d min left</string>
@@ -1744,8 +1743,8 @@ Keep in mind, this doesn't delete random IDs saved by the Exposure Notifications
     <string name="fast_pair_saved_to_account">Saved to %s</string>
     <string name="fast_pair_send_feedback_text">Thanks for dogfooding, tap to report failure to Buganizer.</string>
     <string name="fast_pair_send_feedback_title">Report pairing failure</string>
-    <string name="fast_pair_setup_device">Setup device</string>
-    <string name="fast_pair_setup_in_progress">Launching Setup…</string>
+    <string name="fast_pair_setup_device">Setup</string>
+    <string name="fast_pair_setup_in_progress">Starting Setup…</string>
     <string name="fast_pair_slice_find_device_description">See location info or ring device</string>
     <string name="fast_pair_slice_install_companion_without_firmware_description">Tap to go to Google Play</string>
     <string name="fast_pair_slice_install_companion_without_firmware_title">Install companion app</string>
@@ -1852,7 +1851,7 @@ Then sign in again"</string>
     <string name="fido_progressbar_description">Google Progress Bar</string>
     <string name="fido_transport_selection_bluetooth">Use security key with Bluetooth</string>
     <string name="fido_transport_selection_body">Security keys work with Bluetooth, NFC, and USB. Choose how you want to use your key.</string>
-    <string name="fido_transport_selection_fingerprint">Use this device with Fingerprint or PIN</string>
+    <string name="fido_transport_selection_fingerprint">Use this device with screen lock</string>
     <string name="fido_transport_selection_nfc">Use security key with NFC</string>
     <string name="fido_transport_selection_title">Choose how to use your security key</string>
     <string name="fido_transport_selection_usb">Use security key with USB</string>
@@ -1948,7 +1947,6 @@ Something went wrong. Try again later."</string>
     <string name="games__install__education__close_button_content_description">@string/replay__replaydialog_close_button_content_description</string>
     <string name="games__install__education__cloud_save_description">Pick up where you left off on any device</string>
     <string name="games__install__education__cloud_save_label">Cloud save</string>
-    <string name="games__install__education__continue_button_label">Continue</string>
     <string name="games__install__education__continue_to_install_button_label">Continue to install</string>
     <string name="games__install__education__leaderboards_description">Compete with players around the world</string>
     <string name="games__install__education__leaderboards_label">Leaderboards</string>
@@ -2288,7 +2286,7 @@ Try again?"</string>
     <string name="invalid_slice_argument">Invalid Slice argument</string>
     <string name="invalid_slice_authority">Invalid Slice authority</string>
     <string name="invalid_slice_uri_type">Invalid Slice URI type</string>
-    <string name="io_error">I/O error.</string>
+    <string name="io_error">File error.</string>
     <string name="item_view_role_description">Tab</string>
     <string name="just_a_sec">Just a sec…</string>
     <string name="just_now">just now</string>
@@ -2303,8 +2301,6 @@ Try again?"</string>
     <string name="loan_balance_description">Loan balance</string>
     <string name="local_map_source">Source: ShakeAlert®</string>
     <string name="location_accuracy_setting_label">Google Location Accuracy</string>
-    <string name="location_accuracy_summary_text_off">Off / Not use additional signals</string>
-    <string name="location_accuracy_summary_text_on">On / Use additional signals</string>
     <string name="location_connected_devices_car_setting">Driving mode</string>
     <string name="location_grant_credentials_activity_title">Google</string>
     <string name="location_history_upgrade_notification_content">Location History is currently turned on</string>
@@ -2495,6 +2491,7 @@ To control location access for all apps, go to Settings > Location access."</str
     <string name="magicwand_barcode_scanner_text">Scan the QR code on your browser</string>
     <string name="magicwand_barcode_scanner_title">Sign in to Google</string>
     <string name="manage_data_label">Google Account</string>
+    <string name="manage_storage_text">Manage storage</string>
     <string name="master_clear_title">Factory data reset</string>
     <string name="mdd_debug_ui_title">MDD Debug</string>
     <string name="mdm_account_description">To find your device, sign in to your Google Account, or create one.</string>
@@ -2594,6 +2591,7 @@ To control location access for all apps, go to Settings > Location access."</str
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="nav_app_bar_navigate_up_description">Navigate up</string>
     <string name="nearby_connections_nfc_advertising_description">Nearby</string>
     <string name="nearby_setup_transfer_wifi_credential_permission_description">"Allow an app to transfer a network's Wi-Fi credential to another device."</string>
     <string name="nearby_setup_transfer_wifi_credential_permission_label">Transfer Wi-Fi credential</string>
@@ -2788,7 +2786,6 @@ App details, including in-app purchases, can be found in the Google Play store. 
     <string name="people_contacts_sync_core_sync_status_waiting_to_sync">Waiting to sync</string>
     <string name="people_contacts_sync_device_backup_card_button">View Details</string>
     <string name="people_contacts_sync_device_backup_card_title">Restore contacts from other phones</string>
-    <string name="people_contacts_sync_global_automatic_sync_off">Auto-sync is off for all accounts</string>
     <string name="people_contacts_sync_information_banner">Automatically sync your Google contacts with this device</string>
     <string name="people_contacts_sync_turn_on_master_sync_dialog_body">Changes you make to other apps and accounts, not just Google contacts, will be kept up to date between the web and your devices.</string>
     <string name="people_contacts_sync_turn_on_master_sync_dialog_title">Auto-sync account &amp; app data?</string>
@@ -2829,8 +2826,16 @@ App details, including in-app purchases, can be found in the Google Play store. 
     <string name="permgrouplab_storage">Storage</string>
     <string name="permission_disabled_dialog_title">Exposure Notifications inactive</string>
     <string name="personal_safety_channel_name">Personal Safety</string>
+    <string name="phone_hub_notification_connected_subtext">Phone notifications will show on your Chromebook</string>
+    <string name="phone_hub_notification_connected_text">Connected to your Chromebook</string>
+    <string name="phone_hub_notification_listener_label">Chromebook</string>
+    <string name="phone_hub_notification_opt_in_button_text">Turn on notifications</string>
+    <string name="phone_hub_notification_opt_in_text">View your phone notifications on your Chromebook.</string>
+    <string name="phone_hub_notification_opt_in_title">Chromebook</string>
+    <string name="phone_hub_notification_opt_in_toast_text">Turn on Google Play Services</string>
     <string name="phone_number_picker_title">Choose phone number</string>
     <string name="phone_number_settings_label">Business Messages</string>
+    <string name="photos_apk_missing">Install Google Photos to back up</string>
     <string name="photos_see_all">See All Photos</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_noresults_for_query">No results for %1$s</string>
@@ -3186,6 +3191,9 @@ You'll be notified of any security risks found."</string>
     <string name="purchase_unspecified_fail_dialog_message">Sorry, your order can’t be completed at this time. Please try again later.</string>
     <string name="purchase_unspecified_fail_dialog_title">Couldn’t reach your mobile network</string>
     <string name="purchase_unspecified_fail_dialog_title_with_carrier">Couldn’t reach %s</string>
+    <string name="pwm_apollo_card_button_text">Go to Bright passwords</string>
+    <string name="pwm_apollo_card_description">View and manage passwords you’ve saved in Bright</string>
+    <string name="pwm_apollo_card_title">Bright</string>
     <string name="pwm_app_chooser_dialog_title">Select app</string>
     <string name="pwm_blacklist_add_more">Add more</string>
     <string name="pwm_checkup_card_bottom_label">Check passwords</string>
@@ -3466,8 +3474,11 @@ Turning off this feature doesn’t affect this device’s ability to send the in
     <string name="sharing_action_settings">@string/common_settings</string>
     <string name="sharing_action_share">@string/common_share</string>
     <string name="sharing_all_contacts">All contacts</string>
+    <string name="sharing_app_install_complete">Install complete</string>
+    <string name="sharing_app_install_failed">Install failed</string>
     <string name="sharing_app_installable">Verified by Play Protect</string>
     <string name="sharing_app_installed">@string/common_installed</string>
+    <string name="sharing_app_installing">Installing</string>
     <string name="sharing_app_unknown_resource">Unknown resource</string>
     <string name="sharing_button_font_family">sans-serif-medium</string>
     <string name="sharing_consents_account_icon">@string/common_google_settings_account</string>
@@ -3501,6 +3512,7 @@ Turning off this feature doesn’t affect this device’s ability to send the in
     <string name="sharing_content_view_title_font_family">roboto-regular</string>
     <string name="sharing_default_device_name">"%1$s's %2$s"</string>
     <string name="sharing_device_name">Device name</string>
+    <string name="sharing_device_type_laptop">Laptop</string>
     <string name="sharing_device_type_phone">@string/common_phone</string>
     <string name="sharing_device_type_tablet">Tablet</string>
     <string name="sharing_device_visibility">Device visibility</string>
@@ -3661,7 +3673,6 @@ You can also try turning Airplane mode on and back off. Swipe down from the top 
     <string name="smartdevice_companion_app_ready">The %s app is already installed on this device.</string>
     <string name="smartdevice_connect_to_wifi">Connect your device</string>
     <string name="smartdevice_connection_error">There was a problem connecting to your other device</string>
-    <string name="smartdevice_connection_error_title">"Couldn't connect"</string>
     <string name="smartdevice_d2d_adding_account">Adding account…</string>
     <string name="smartdevice_d2d_copy_3p_account_text">Copy your Google Accounts, other accounts, and restore your Google backup, if available</string>
     <string name="smartdevice_d2d_copy_account_text">Copy your Google Accounts and restore your Google backup, if available</string>
@@ -3687,7 +3698,7 @@ You can also try turning Airplane mode on and back off. Swipe down from the top 
     <string name="smartdevice_d2d_target_google_settings_description">On your other device:&lt;br/>&lt;br/> 1. Open the &lt;b>Google Settings&lt;/b> app&lt;br/>&lt;br/> 2. Select &lt;b>%1$s&lt;/b> &lt;br/>&lt;br/> 3. Touch &lt;b>%2$s&lt;/b> on the list, and follow the on-screen instructions</string>
     <string name="smartdevice_d2d_target_google_settings_link">Can’t complete these steps</string>
     <string name="smartdevice_d2d_target_google_settings_mnc_description">On your old phone:&lt;br/>&lt;br/> 1. Open the &lt;b>Settings&lt;/b> app&lt;br/>&lt;br/> 2. Tap &lt;b>Google&lt;/b> > &lt;b>Set up &amp; restore&lt;/b> &lt;br/>&lt;br/> 3. Tap &lt;b>%1$s&lt;/b> &lt;br/>&lt;br/> 4. Select &lt;b>%2$s&lt;/b>, then follow the instructions&lt;br/>&lt;br/> &lt;br/> If you have only one phone, you can skip the last step.</string>
-    <string name="smartdevice_d2d_target_google_settings_mnc_description_new">On your old phone: &lt;br/>&lt;br/> 1. Open the &lt;b>Settings&lt;/b> app &lt;br/>&lt;br/> 2. Tap &lt;b>Google&lt;/b> > &lt;b>Set up &amp; restore&lt;/b> &lt;br/>&lt;br/> 3. Tap &lt;b>%1$s&lt;/b> &lt;br/>&lt;br/> 4. If prompted, select &lt;b>%2$s&lt;/b> &lt;br/>&lt;br/> 5. Follow the instructions on the screen</string>
+    <string name="smartdevice_d2d_target_google_settings_mnc_description_new">" On your old phone: "<ph name="LINE_BREAK">&lt;br/>&lt;br/></ph> 1. Open the <ph name="BOLD_START">&lt;b></ph>Settings<ph name="BOLD_END">&lt;/b></ph> app <ph name="LINE_BREAK">&lt;br/>&lt;br/></ph> 2. Tap <ph name="BOLD_START">&lt;b></ph>Google > Set up &amp; restore<ph name="BOLD_END">&lt;/b></ph> <ph name="LINE_BREAK">&lt;br/>&lt;br/></ph> 3. Tap <ph name="BOLD_START">&lt;b></ph>%1$s<ph name="BOLD_END">&lt;/b></ph> <ph name="LINE_BREAK">&lt;br/>&lt;br/></ph> 4. If prompted, select <ph name="BOLD_START">&lt;b></ph>%2$s<ph name="BOLD_END">&lt;/b></ph> <ph name="LINE_BREAK">&lt;br/>&lt;br/></ph>" 5. Follow the instructions on the screen "</string>
     <string name="smartdevice_d2d_target_google_settings_mnc_description_new_tts">On your old phone: 1. Open the Settings app. 2. Tap Google and then Set up &amp; restore. 3. Tap %1$s. 4. If prompted, select %2$s. 5. Follow the instructions on the screen.</string>
     <string name="smartdevice_d2d_target_help_text">Having trouble?</string>
     <string name="smartdevice_d2d_target_instruction_cant_find_it">Can’t find it?</string>
@@ -3842,6 +3853,20 @@ You can always change this later in Settings."</string>
     <string name="supervisor_title">Google Play services for Instant Apps</string>
     <string name="support_menu_item">%s support</string>
     <string name="support_page_error_message">Something went wrong while retrieving support page contents. Please refresh and retry.</string>
+    <string name="survey_close_button_description">Close</string>
+    <string name="survey_neutral">Neither satisfied nor dissatisfied</string>
+    <string name="survey_next">Next</string>
+    <string name="survey_num_rating">%1$s out of %2$s</string>
+    <string name="survey_open_text_hint">Enter your comments here</string>
+    <string name="survey_open_text_no_pii">"Don't include personal information"</string>
+    <string name="survey_other_option_hint">Other (Please specify)</string>
+    <string name="survey_smiley_rating">Smiley %1$s of %2$s: %3$s</string>
+    <string name="survey_somewhat_dissatisfied">Somewhat dissatisfied</string>
+    <string name="survey_somewhat_satisfied">Somewhat satisfied</string>
+    <string name="survey_submit">Submit</string>
+    <string name="survey_thank_you_followup_message">Help us improve our product by answering more questions</string>
+    <string name="survey_very_dissatisfied">Very dissatisfied</string>
+    <string name="survey_very_satisfied">Very satisfied</string>
     <string name="suwFontSecondary">google-sans</string>
     <string name="suwFontSecondaryMedium">google-sans-medium</string>
     <string name="suw_back_button_label">Back</string>
@@ -3965,10 +3990,8 @@ During an emergency call/text, ELS may turn on your device’s location and Goog
 
 If ELS is off, your mobile carrier may still send device location during an emergency call.
 
-"<a href="https://support.google.com/nexus/answer/3467281">Learn more about ELS</a>" "</string>
+"<a href="https://support.google.com/android/answer/3467281">Learn more about ELS</a>" "</string>
     <string name="thunderbird_settings_label">Emergency Location Service</string>
-    <string name="thunderbird_settings_summary_text_off">Off / Don’t send ELS location</string>
-    <string name="thunderbird_settings_summary_text_on">On / Send ELS location</string>
     <string name="thunderbird_settings_switch_bar_text">Send ELS Location</string>
     <string name="thunderbird_settings_title_text">Emergency Location Service (ELS)</string>
     <string name="time_difference_now">Now</string>
@@ -4287,6 +4310,8 @@ If ELS is off, your mobile carrier may still send device location during an emer
     <string name="tp_summary_nonfc_attestation_label_existing_instrument">This may be because your phone is rooted or altered in some other way. You can still pay with this card on Google and across other apps and sites, just like before.</string>
     <string name="tp_summary_nonfc_unknown_label">"You can try again later. You'll still be able to pay with this card on Google and across other apps and sites."</string>
     <string name="tp_summary_nonfc_unknown_label_existing_instrument">"You can try again later. You'll still be able to pay with this card on Google and across other apps and sites, just like before."</string>
+    <string name="tp_summary_p2p_red_path_body">"You can't use this card to pay friends or to transfer money with Google Pay. Contact your bank for more info or try another card."</string>
+    <string name="tp_summary_p2p_red_path_headline">"Card can't be used for money transfers"</string>
     <string name="tp_summary_red_path_amex_label">To resolve this, you’ll need to contact American Express. You can still pay with this card on Google and across other apps and sites.</string>
     <string name="tp_summary_red_path_amex_label_existing_instrument">To resolve this, you’ll need to contact American Express. You can still pay with this card on Google and across other apps and sites, just like before.</string>
     <string name="tp_summary_red_path_headline">"Can't complete set up for contactless payment"</string>
@@ -4779,6 +4804,8 @@ First turn on NFC in your settings, then tap your card to your device."</string>
     <string name="wearable_storage_managment_usage_label">Space usage by app</string>
     <string name="web_view_accept_language_header">%1$s-%2$s</string>
     <string name="wifi_scanning_consent_pre_p_message">By turning on Wi‑Fi scanning, apps and services can scan for Wi‑Fi networks at any time, even when Wi‑Fi is off.</string>
+    <string name="wifi_sync_enabled_description">Sync Wi-Fi networks with your Chromebook</string>
+    <string name="wifi_sync_enabled_title">Wi-Fi Sync</string>
     <string name="work_address_alias_name">Work</string>
     <string name="zapp_checkin_description_text">This may take a few minutes</string>
     <string name="zapp_checkin_failure_subtitle">Try again later</string>
