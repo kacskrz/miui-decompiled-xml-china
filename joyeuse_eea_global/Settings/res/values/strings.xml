@@ -470,6 +470,7 @@ Your admin has the ability to monitor and manage settings, access, apps, and dat
     <string name="app_and_notification_dashboard_summary">Recent apps, default apps</string>
     <string name="app_and_notification_dashboard_title">Apps &amp; notifications</string>
     <string name="app_backup">Backup</string>
+    <string name="app_bluetooth_device_blacklist">Bluetooth blocklist</string>
     <string name="app_cellular_data_usage">App data usage</string>
     <string name="app_default_dashboard_title">Default apps</string>
     <string name="app_detail">Details</string>
@@ -985,6 +986,8 @@ Apps:
     <string name="bluetooth_ask_lasting_discovery_no_name">An app wants to make your phone visible to other Bluetooth devices. You can change this later in Bluetooth settings.</string>
     <string name="bluetooth_battery_level">%1$s battery</string>
     <string name="bluetooth_battery_level_untethered">L: %1$s battery, R: %2$s battery</string>
+    <string name="bluetooth_blacklist_cancel_remove_device">Cancel</string>
+    <string name="bluetooth_blacklist_remove_device">Unblock</string>
     <string name="bluetooth_broadcasting">Broadcasting</string>
     <string name="bluetooth_confirm_passkey_msg">To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Make sure it is showing this passkey:&lt;br>&lt;b>%2$s&lt;/b></string>
     <string name="bluetooth_connect_failed">"Couldn't connect. Try again."</string>
@@ -1014,6 +1017,8 @@ Apps:
     <string name="bluetooth_device_advanced_profile_header_title">Use for</string>
     <string name="bluetooth_device_advanced_rename_device">Rename</string>
     <string name="bluetooth_device_advanced_title">Paired Bluetooth device</string>
+    <string name="bluetooth_device_blacklist_summary">Manage blocked Bluetooth devices</string>
+    <string name="bluetooth_device_blacklist_tital">Bluetooth blocklist</string>
     <string name="bluetooth_device_context_connect">Connect</string>
     <string name="bluetooth_device_context_connect_advanced">Options…</string>
     <string name="bluetooth_device_context_disconnect">Disconnect</string>
@@ -1097,9 +1102,11 @@ Here's what might be wrong:
     <string name="bluetooth_max_connected_audio_devices_dialog_title">Select maximum number of connected Bluetooth audio devices</string>
     <string name="bluetooth_max_connected_audio_devices_string">Maximum connected Bluetooth audio devices</string>
     <string name="bluetooth_menu_advanced">Advanced</string>
+    <string name="bluetooth_message_move_out_of_blacklist">Unblock %1$s now?</string>
     <string name="bluetooth_mi_fast_connect">Pair compatible devices</string>
     <string name="bluetooth_mi_fast_connect_summary">Connect to nearby devices using a simplified pairing process</string>
     <string name="bluetooth_middle_name">Case</string>
+    <string name="bluetooth_move_out_of_blacklist">Unblock device</string>
     <string name="bluetooth_name_not_set">No name set, using account name</string>
     <string name="bluetooth_no_devices_found">No nearby Bluetooth devices were found.</string>
     <string name="bluetooth_not_visible_to_other_devices">Not visible to other Bluetooth devices</string>
@@ -1117,6 +1124,7 @@ Here's what might be wrong:
     <string name="bluetooth_pairing">Pairing…</string>
     <string name="bluetooth_pairing_accept">Pair</string>
     <string name="bluetooth_pairing_accept_all_caps">PAIR</string>
+    <string name="bluetooth_pairing_add_to_blackfile">Block</string>
     <string name="bluetooth_pairing_decline">Cancel</string>
     <string name="bluetooth_pairing_device_down_error_message">"Can't communicate with %1$s."</string>
     <string name="bluetooth_pairing_dialog_contants_request">%1$s wants to access your contacts and call history.</string>
@@ -1131,6 +1139,7 @@ Here's what might be wrong:
     <string name="bluetooth_pairing_rejected_error_message">Pairing rejected by %1$s.</string>
     <string name="bluetooth_pairing_request">Pair with %1$s?</string>
     <string name="bluetooth_pairing_shares_phonebook">Allow access to your contacts and call history</string>
+    <string name="bluetooth_pairing_toast_add_to_blackfile">Blocked successfully. You can manage blocked items in \"Additional settings\".</string>
     <string name="bluetooth_pairing_will_share_phonebook">Pairing grants access to your contacts and call history when connected.</string>
     <string name="bluetooth_pan_nap_profile_summary_connected">Sharing local internet connection with device</string>
     <string name="bluetooth_pan_profile_summary_use_for">Use for internet access</string>
@@ -3230,11 +3239,18 @@ Open Xiaomi Cloud and restore items from there."</string>
     <string name="input_method_function_no_function_des">"Don't show any shortcuts"</string>
     <string name="input_method_function_switch">Switch between keyboards</string>
     <string name="input_method_function_switch_des">Tap to switch to a different keyboard</string>
+    <string name="input_method_function_switch_keyboard_language">Switch languages</string>
+    <string name="input_method_function_switch_keyboard_language_des">Tap to switch between input languages</string>
+    <string name="input_method_function_switch_keyboard_type">Switch keyboards</string>
+    <string name="input_method_function_switch_keyboard_type_des">Tap to switch between different keyboards</string>
     <string name="input_method_function_voice">Voice input</string>
     <string name="input_method_function_voice_des">Tap to use voice input</string>
     <string name="input_method_function_xiaoai">Mi AI voice input</string>
     <string name="input_method_function_xiaoai_des">Tap to use Mi AI voice input</string>
     <string name="input_method_manage">Manage keyboards</string>
+    <string name="input_method_middle_function_move_cursor">Move cursor</string>
+    <string name="input_method_middle_function_move_cursor_des">Press and hold the central area to move the cursor</string>
+    <string name="input_method_middle_function_no_function_des">"Don't assign any actions"</string>
     <string name="input_method_quick_access">Quick access</string>
     <string name="input_method_quick_cloud_mode_title">Notifications about new clipboard content</string>
     <string name="input_method_quick_cloud_summary">Copy items on compatible computers and paste them on your device</string>
@@ -4016,6 +4032,7 @@ There are other users present on this device.
     <string name="mi_upi_settings">Mi Pay Account</string>
     <string name="micloud_service_summary">Sync the list of apps, back up system settings and Home screen layout</string>
     <string name="micloud_service_title">Xiaomi Cloud</string>
+    <string name="middle_function_key">Central area</string>
     <string name="mipush_fake_channel_group_name">Mi Push</string>
     <string name="misc_files">Misc files</string>
     <string name="misc_files_selected_count">selected %1$d out of %2$d</string>
@@ -4864,7 +4881,7 @@ Read and agree to %s before using this service."</string>
     <string name="picture_color_mode">Picture color mode</string>
     <string name="picture_color_mode_desc">Use sRGB</string>
     <string name="picture_in_picture_app_detail_summary">"Allow this app to create a picture-in-picture window while the app is open or after you leave it (for example, to continue watching a video). This window displays on top of other apps you're using."</string>
-    <string name="picture_in_picture_app_detail_switch">Allow picture-in-picture</string>
+    <string name="picture_in_picture_app_detail_switch">Allow Picture-in-picture</string>
     <string name="picture_in_picture_app_detail_title">Picture-in-picture</string>
     <string name="picture_in_picture_empty_text">No installed apps support Picture-in-picture</string>
     <string name="picture_in_picture_keywords">pip picture in</string>
@@ -4958,6 +4975,23 @@ Read and agree to %s before using this service."</string>
     <string name="power_usage_summary_title">Battery &amp; performance</string>
     <string name="power_usage_summary_title_new">Battery &amp; performance</string>
     <string name="power_wifi">Wi-Fi</string>
+    <string name="pre_install_app_browser">浏览器</string>
+    <string name="pre_install_app_camera">相机</string>
+    <string name="pre_install_app_gallery">相册</string>
+    <string name="pre_install_app_other">联网查看详细的预置应用信息</string>
+    <string name="pre_install_app_phone">电话服务</string>
+    <string name="pre_install_app_sms">短信</string>
+    <string name="pre_install_app_weather">天气</string>
+    <string name="pre_install_application">预置应用</string>
+    <string name="pre_install_category_appname">应用名称</string>
+    <string name="pre_install_category_question">常见问题</string>
+    <string name="pre_install_network_unavailable">当前未联网，请先联网</string>
+    <string name="pre_install_question_disable_summary">对于某些系统应用，您可以在应用的设置项中禁用应用部分扩展功能。如果需要恢复这些扩展功能，您可以再次到设置项中重新开启。</string>
+    <string name="pre_install_question_disable_title">如何禁用功能？</string>
+    <string name="pre_install_question_query_summary">您可以到设置-更多应用中，选择想要查看的应用，在应用信息里点击“查看权限详情”来查看软件所需权限。您也可以在桌面按菜单键然后长按应用快速进入应用信息页，然后直接点击查看权限详情。在用户的开机引导页面里您也可以快速查看所有的软件安装及所需权限列表信息。</string>
+    <string name="pre_install_question_query_title">如何查询软件安装及运行所需权限列表？</string>
+    <string name="pre_install_question_uninstall_summary">您可以到设置-更多应用中，选择支持卸载的应用并点击卸载。卸载系统预置组件可能导致系统部分功能无法正常使用或运行出现异常，建议谨慎操作。对于可卸载的第三方应用，您还可以在桌面上长按图标，然后拖拽到屏幕上方的垃圾桶卸载应用。</string>
+    <string name="pre_install_question_uninstall_title">如何卸载应用？</string>
     <string name="pre_installed_application">Pre-installed apps</string>
     <string name="pref_bg_network_title">Background connection</string>
     <string name="pref_button_light">Button lights</string>
@@ -5327,7 +5361,9 @@ UT Interface: %5$s"</string>
     <string name="recommend_item_3">Power bank</string>
     <string name="recommend_item_4">Earphones</string>
     <string name="recommend_item_title">Recommendations</string>
+    <string name="recommend_text_wakeup_xiaoai">Settings</string>
     <string name="recommend_tip">Need other settings?</string>
+    <string name="recommend_tip_wakeup_xiaoai">Using buttons to interact with Mi AI requires turning off full screen gestures and selecting buttons as your navigation method.</string>
     <string name="recompute_size">Recomputing size…</string>
     <string name="regional_screen_shot">Partial screenshot</string>
     <string name="register_automatically">Automatic registration…</string>
@@ -6119,6 +6155,7 @@ Note: You can’t use your fingerprint to unlock this device. For more informati
     <string name="setup_lock_settings_picker_title">Protect your phone</string>
     <string name="setup_password_back">Back</string>
     <string name="setup_password_confirm">OK</string>
+    <string name="setup_password_skip">Skip</string>
     <string name="severe_threats_summary">Receive alerts for severe threats to life and property</string>
     <string name="severe_threats_title">Severe threats</string>
     <string name="share">Share</string>
@@ -6261,7 +6298,7 @@ Possibly incorrect PIN."</string>
     <string name="size_kilo_byte">KB</string>
     <string name="size_mega_byte">MB</string>
     <string name="size_peta_byte">PB</string>
-    <string name="size_suffix">%1$s%2$s</string>
+    <string name="size_suffix">%1$s %2$s</string>
     <string name="size_tera_byte">TB</string>
     <string name="skip_anyway_button_label">Skip anyway</string>
     <string name="skip_label">Skip</string>
@@ -7576,6 +7613,7 @@ Tap the plus to add words."</string>
     <string name="wake_suppression_title">Small area</string>
     <string name="wakeup_and_sleep_settings_category_name">Lock screen settings</string>
     <string name="wakeup_for_keyguard_notification_title">Wake Lock screen for notifications</string>
+    <string name="wallet_header_title">Wallet &amp; payments</string>
     <string name="wallpaper_attributions">Wallpapers</string>
     <string name="wallpaper_attributions_values">"Satellite imagery providers:
 ©2014 CNES / Astrium, DigitalGlobe, Bluesky"</string>
@@ -8275,6 +8313,10 @@ Looks like credential storage isn't enabled."</string>
     <string name="write_settings_title">Can modify system settings</string>
     <string name="write_system_settings">Modify system settings</string>
     <string name="wrong_pin_code_pukked">Incorrect SIM PIN code you must now contact your carrier to unlock your device.</string>
+    <string name="xiaoai_global_shortcut">General</string>
+    <string name="xiaoai_key_shortcut">Buttons</string>
+    <string name="xiaoai_other_shortcut">Other methods</string>
+    <string name="xiaoai_shortcut_settings_title">Trigger Mi AI using buttons and gestures</string>
     <string name="xiaomi_account">Mi Account</string>
     <string name="xiaomi_cloud_find_device">Find device</string>
     <string name="xiaomi_cloud_service">Xiaomi Cloud</string>
