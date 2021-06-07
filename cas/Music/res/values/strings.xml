@@ -49,6 +49,7 @@ Copyright © 2008 - 2017 Tencent. All Rights Reserved.
     <string name="about_title">关于</string>
     <string name="about_upgrade_has">检查到更新版本</string>
     <string name="about_upgrade_none">已经是最新版本</string>
+    <string name="access_denied_info">Too many attempts. Wait a minute or two and try again.</string>
     <string name="account">Account</string>
     <string name="account_and_cloud">Account</string>
     <string name="account_bind_secure_email_title">Add recovery email</string>
@@ -189,7 +190,6 @@ Copyright © 2008 - 2017 Tencent. All Rights Reserved.
     <string name="already_download_btn">Downloading…</string>
     <string name="already_favorited">Already favorited</string>
     <string name="am">AM</string>
-    <string name="and"> and </string>
     <string name="android_sdk_too_low">Update Android to be able to update Music.</string>
     <string name="aop_activity_time_perf">输出Activity时间性能数据</string>
     <string name="aop_dump_http_package">输出HTTP数据包(含>=300包)</string>
@@ -202,7 +202,7 @@ Copyright © 2008 - 2017 Tencent. All Rights Reserved.
     <string name="aop_ui_action_tracing">输出界面操作</string>
     <string name="apk_filter">APK</string>
     <string name="app_downloads">%s downloads</string>
-    <string name="app_name">MiPay-ui</string>
+    <string name="app_name">QQ音乐HD</string>
     <string name="app_name_priority"> QQ音乐HD</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="apply_for_permission">为了保证应用正常运行，QQ音乐需要申请(存储空间)和(设备信息)权限”</string>
@@ -877,6 +877,9 @@ We are deeply sorry to say that due to licensing constraints，we do not provide
     <string name="dlna_device_dialog_title">QPlay: 选择设备播放当前歌曲</string>
     <string name="do_you_want_to_search">您找的是不是：</string>
     <string name="doc_filter">Docs</string>
+    <string name="doing_login">Signing in…</string>
+    <string name="doing_query_account">Checking account info…</string>
+    <string name="doing_register">Creating account…</string>
     <string name="domain_is_not_in_white_list">当前要打开的页面未经过安全性验证，打开可能会风险，是否要跳转页面</string>
     <string name="done">Done</string>
     <string name="download">Download</string>
@@ -1567,6 +1570,15 @@ CONTENT"</string>
     <string name="know_it">Got it</string>
     <string name="ktv_playlist">KTV playlist</string>
     <string name="latest_song"><Data>Play history &lt;font color=\"#7e7e7e\">(%1$d)&lt;/font></Data></string>
+    <string name="library_android_database_sqlcipher_author">Zetetic, LLC</string>
+    <string name="library_android_database_sqlcipher_authorWebsite">https://www.zetetic.net/sqlcipher/</string>
+    <string name="library_android_database_sqlcipher_isOpenSource">true</string>
+    <string name="library_android_database_sqlcipher_libraryDescription">Android SQLite API based on SQLCipher</string>
+    <string name="library_android_database_sqlcipher_libraryName">SQLCipher for Android</string>
+    <string name="library_android_database_sqlcipher_libraryVersion">${clientVersionNumber}</string>
+    <string name="library_android_database_sqlcipher_libraryWebsite">https://www.zetetic.net/sqlcipher/</string>
+    <string name="library_android_database_sqlcipher_licenseLink">https://www.zetetic.net/sqlcipher/license/</string>
+    <string name="library_android_database_sqlcipher_repositoryLink">https://github.com/sqlcipher/android-database-sqlcipher</string>
     <string name="like">Like</string>
     <string name="like_comment_failed">"Couldn't like comment"</string>
     <string name="like_comment_success">Liked</string>
@@ -1708,6 +1720,8 @@ You can find all your songs in one place now!"</string>
     <string name="lock_screen_error_hint">请试试下一首或检查网络</string>
     <string name="lock_screen_play_error">播放错误</string>
     <string name="login">Sign in</string>
+    <string name="login_by_local_phone_long_text">Sign in now</string>
+    <string name="login_by_local_phone_short_text">Sign in</string>
     <string name="login_no_pwd">请输入密码</string>
     <string name="login_no_qq">请输入账号</string>
     <string name="login_not_register1_qq">没有账号?点击这里</string>
@@ -1715,9 +1729,12 @@ You can find all your songs in one place now!"</string>
     <string name="login_not_vip_info_text">当前设备已与账号的云歌单同步，随时随地畅享收藏的歌曲、创作的歌单。</string>
     <string name="login_offline_notify_text">自动下载后，不花流量畅听我的音乐</string>
     <string name="login_offline_notify_title">登录账号，免费体验歌单自动下载新功能</string>
+    <string name="login_other">Another Mi Account</string>
+    <string name="login_register_by_local_phone_long_text">Create account</string>
     <string name="login_tip">Not signed in</string>
     <string name="login_tips">Sign in to get relevant recommendations</string>
     <string name="login_title">登录QQ音乐</string>
+    <string name="login_with_sns">Other ways to sign in</string>
     <string name="logout_account">Sign out</string>
     <string name="lrc_search_failed">"Couldn't find lyrics"</string>
     <string name="lrc_searching">Searching…</string>
@@ -1817,96 +1834,6 @@ You can find all your songs in one place now!"</string>
     <string name="mgsdk_token_is_null">请先登录</string>
     <string name="mi_fm">Mi FM</string>
     <string name="mi_little_window_toast">断开耳机, 识别视频app播放的音乐</string>
-    <string name="mibi_alipay_error">Alipay failed</string>
-    <string name="mibi_alipay_starting_mipay">Starting Alipay</string>
-    <string name="mibi_all_license_message">"You're about to use Mi Credit, which is a service provided by Xiaomi Inc. Before you can use this service, you must agree to the Terms of Service. Touch OK if you agree to the terms and conditions described in the %1$s and %2$s. You need to connect to the internet, locate you device to use Mi Credit."</string>
-    <string name="mibi_btn_agree">Agree</string>
-    <string name="mibi_btn_net_connection_retry">Retry</string>
-    <string name="mibi_button_bind_phone">Bind now</string>
-    <string name="mibi_button_call">Call</string>
-    <string name="mibi_button_confirm">Confirm</string>
-    <string name="mibi_button_pay">Confirm</string>
-    <string name="mibi_button_reget">Resend</string>
-    <string name="mibi_cancel">Cancel</string>
-    <string name="mibi_change_security_lock">More screen locks</string>
-    <string name="mibi_click_retry">%1$s, click to retry</string>
-    <string name="mibi_creating_order">Creating Order.Please wait…</string>
-    <string name="mibi_error_account_changed_summary">"Your account info has changed.
-Please log in again."</string>
-    <string name="mibi_error_account_changed_title">Account has changed</string>
-    <string name="mibi_error_account_throtting">"Your account is not safe.
-Please contact our customer service"</string>
-    <string name="mibi_error_auth_summary">Sign in to your Mi Account again</string>
-    <string name="mibi_error_cert_date_summary">"Certificate date error. 
-Please check your local date and try again."</string>
-    <string name="mibi_error_frozen_summary">Your account has been frozen, please contact our customer service center.</string>
-    <string name="mibi_error_invalid_device">Invalid device.</string>
-    <string name="mibi_error_network_summary">"Couldn't connect to network."</string>
-    <string name="mibi_error_privacy_summary">You revoked authorization.</string>
-    <string name="mibi_error_server_summary">Server error. Please try again later</string>
-    <string name="mibi_error_web_summary">Server error</string>
-    <string name="mibi_forget_password"><u>Forgot password</u></string>
-    <string name="mibi_giftcard_discount">Coupons</string>
-    <string name="mibi_giftcard_discount_detail">Coupon(spend%1$sMi Credits)</string>
-    <string name="mibi_giftcard_payment">Gift certificates</string>
-    <string name="mibi_giftcard_payment_with_append">Apply gift certificates</string>
-    <string name="mibi_label_balance">Balance</string>
-    <string name="mibi_label_pay_remain">Amount due: %1$s Mi Credits</string>
-    <string name="mibi_license_message_span">Mi Credit User Agreement</string>
-    <string name="mibi_license_title">Terms and conditions</string>
-    <string name="mibi_loading">loading…</string>
-    <string name="mibi_login">Login</string>
-    <string name="mibi_mipay_error">Mipay failed</string>
-    <string name="mibi_mipay_starting_mipay">Starting Mipay</string>
-    <string name="mibi_msg_check_pwd_cancel">check password canceled by user</string>
-    <string name="mibi_msg_mipay_cancel">mipay canceled by user</string>
-    <string name="mibi_msg_order_illegal">orderBean is illegal</string>
-    <string name="mibi_msg_order_is_null">orderBean is null</string>
-    <string name="mibi_msg_partner_info_illegal">PartnerInfo invalid</string>
-    <string name="mibi_msg_process_expired">process expired</string>
-    <string name="mibi_msg_user_cancel_alipay">alipay canceled by user</string>
-    <string name="mibi_msg_wxpay_cancele">wxpay canceled by user</string>
-    <string name="mibi_normal_license_name">Terms and conditions</string>
-    <string name="mibi_order_balance_label">Mi Credits</string>
-    <string name="mibi_order_balance_lable_append">Mi Credits + coupon</string>
-    <string name="mibi_order_balance_title">My Mi Credits</string>
-    <string name="mibi_order_no_use_balance">Nonuse</string>
-    <string name="mibi_order_pay_confirm">Confirm</string>
-    <string name="mibi_order_pay_type">Payment method</string>
-    <string name="mibi_order_pay_type_title">Select payment method</string>
-    <string name="mibi_order_pay_uncertain_button">Got it</string>
-    <string name="mibi_order_title">Payment</string>
-    <string name="mibi_partner_giftcard_payment_with_append">Apply %1$s</string>
-    <string name="mibi_password_error">Password incorrect.</string>
-    <string name="mibi_password_forget">forgot?</string>
-    <string name="mibi_password_hint">Enter account password</string>
-    <string name="mibi_password_prompt">To secure your spendings, verify your Mi account</string>
-    <string name="mibi_payment_with_login_title">Verify Mi Account</string>
-    <string name="mibi_paytool_error_msp">%1$s failed</string>
-    <string name="mibi_paytool_weixin">WeChat</string>
-    <string name="mibi_paytool_wxpay_not_installed">"You haven't installed Wxpay. Download and install it now?"</string>
-    <string name="mibi_privacy_license_name">Privacy Policy</string>
-    <string name="mibi_privacy_tip_message">"You can't use Mi Credits after authorization has been revoked."</string>
-    <string name="mibi_privacy_tip_title">Grant authorization first</string>
-    <string name="mibi_process_expired">"Where'd you go? This operation has timed out."</string>
-    <string name="mibi_progress_creating">Retrieving order info…</string>
-    <string name="mibi_progress_downloading">Loading…</string>
-    <string name="mibi_progress_loading">Processing…</string>
-    <string name="mibi_querying_result">Querying pay result…</string>
-    <string name="mibi_sms_code_empty">Enter the verification code sent to your phone.</string>
-    <string name="mibi_sms_code_hint">Enter 3 ~ 6 digit verification code</string>
-    <string name="mibi_summary_bind_phone">To ensure the safety of your account, please complete the payment after binding mobile phone No.</string>
-    <string name="mibi_summary_sms_code">Enter the verification code sent to %1$s，and then finish payment</string>
-    <string name="mibi_title_bind_phone">Binding mobile phone No.</string>
-    <string name="mibi_title_sms_code">Please enter the mobile phone verification code</string>
-    <string name="mibi_unit">Mi Credit</string>
-    <string name="mibi_web_login">Login</string>
-    <string name="mibi_web_login_app_description">Login %1$s</string>
-    <string name="mibi_web_login_description">Login</string>
-    <string name="mibi_web_login_waiting">Please wait…</string>
-    <string name="mibi_web_sso_login_fail">You need to sign in again</string>
-    <string name="mibi_wxpay_error">Wxpay failed</string>
-    <string name="mibi_wxpay_starting_wxpay">Starting Wxpay</string>
     <string name="midnight">Night</string>
     <string name="milink_unavaliable_please_update">"Mi Link isn't available. Update MIUI."</string>
     <string name="mimusicopensdk_QQ_account_bound">绑定QQ音乐账号</string>
@@ -2248,11 +2175,13 @@ Please check your local date and try again."</string>
     <string name="network_diagnosis_toast_open">已开启诊断入口!</string>
     <string name="network_error">网络未连接</string>
     <string name="network_error_and_retry">"Couldn't connect, tap to try again"</string>
+    <string name="network_error_info">A network error occurred. Check your network settings and try again.</string>
     <string name="network_failure">Check your connection and try again.</string>
     <string name="network_no_available_and_auto_next">A network error occurred. Skipped to the next song.</string>
     <string name="network_request_error">"Can't connect to the network"</string>
     <string name="network_settings_error">"Can't connect to the network"</string>
     <string name="network_status_disconnect">网络连接失败</string>
+    <string name="network_timeout_info">"Couldn't connect to the network. Try again."</string>
     <string name="network_traffic">Data usage</string>
     <string name="never_subscribe_radio">Are you sure never subscribe this fm?</string>
     <string name="never_to_show">不再提醒</string>
@@ -2421,6 +2350,7 @@ Stay tuned!"</string>
     <string name="open_migu_music">Loading Migu Music…</string>
     <string name="open_online_service">You need to turn on online services to use this feature. Turn on now?</string>
     <string name="open_service">Turn on</string>
+    <string name="open_settings">Settings</string>
     <string name="opendesklyric_then_lock">请先开启桌面歌词再进行锁定操作</string>
     <string name="optimize_all_optimize_finish">Downloaded lyrics and cover art successfully</string>
     <string name="optimize_all_until_optimized">Applying new cover and lyrics…</string>
@@ -2443,6 +2373,7 @@ Stay tuned!"</string>
     <string name="passport_auth_title" />
     <string name="passport_bad_authentication">Invalid username or password</string>
     <string name="passport_barcode_add_account_prompt">To add an account, scan the QR code again after you sign in.</string>
+    <string name="passport_can_not_receive_verification_code">"Can't receive verification code?"</string>
     <string name="passport_captcha_title">Captcha</string>
     <string name="passport_checking_account">Checking password…</string>
     <string name="passport_close">Close</string>
@@ -2484,7 +2415,6 @@ Stay tuned!"</string>
     <string name="passport_next_step">NEXT</string>
     <string name="passport_oauth_sucess_tip">Authorized success</string>
     <string name="passport_password_req_notice">Password must be 8-16 characters long and combine at least two of the following: digits, letters, and special symbols (e.g. 123abc@#, or 123abc, or abc@#).</string>
-    <string name="passport_privacy_policy">Privacy Policy</string>
     <string name="passport_querying_phone_info">Requesting account info…</string>
     <string name="passport_quick_login_dialog_step2_title">2-step verification</string>
     <string name="passport_quick_login_dialog_title">Verify password</string>
@@ -2513,10 +2443,8 @@ Stay tuned!"</string>
     <string name="passport_unknow_error">An unknown error occurred</string>
     <string name="passport_unknow_host_network_error">Check your network settings and try again</string>
     <string name="passport_unknow_network_error">A network error occurred</string>
-    <string name="passport_user_agreement">User Agreement</string>
     <string name="passport_user_agreement_link">"&lt;Data>I've read and agree to Xiaomi's &lt;a href=\"%1$s\">User Agreement&lt;/a> and &lt;a href=\"%2$s\">Privacy Policy&lt;/a>.&lt;/Data>"</string>
     <string name="passport_user_agreement_link_more">"&lt;Data>I've read and agree to the following documents: Xiaomi's &lt;a href=\"%1$s\">User Agreement&lt;/a> and &lt;a href=\"%4$s\">Privacy Policy&lt;/a>, &lt;a href=\"%2$s\">\"%3$s\"&lt;/a>.&lt;/Data>"</string>
-    <string name="passport_user_agreement_prefix">"I've read and agree to "</string>
     <string name="passport_user_id_intro">Enter password for %1$s</string>
     <string name="passport_v_code_error">Verification code is incorrect</string>
     <string name="passport_vcode_notification_title">Your sign-in verification is incomplete</string>
@@ -2780,6 +2708,7 @@ Stay tuned!"</string>
     <string name="profile_view_page_title">个人主页</string>
     <string name="program_title">Program</string>
     <string name="progress">Progress:</string>
+    <string name="progressbar_title">Checking for security issues…</string>
     <string name="project_device">Mi Phone</string>
     <string name="project_device_bs">My Black Shark</string>
     <string name="project_device_mobile">Mobile device</string>
@@ -2936,6 +2865,8 @@ Stay tuned!"</string>
     <string name="recommend_tool">Recommend</string>
     <string name="record_title">详细描述</string>
     <string name="refresh_radio_song_loading_text">请稍候...</string>
+    <string name="register_by_local_phone_long_text">Create account</string>
+    <string name="register_by_local_phone_short_text">Create account</string>
     <string name="remaining">Remaining this month:</string>
     <string name="remove">Remove</string>
     <string name="remove_from_nowplaying">Remove from playlist</string>
@@ -2949,6 +2880,10 @@ Stay tuned!"</string>
     <string name="report">Report</string>
     <string name="report_comment_failed">"Couldn't report"</string>
     <string name="report_comment_success">"We'll review your report. Thanks for your feedback."</string>
+    <string name="request_camera_permission_message">"We shall protect your personal information in accordance with the relevant laws and regulations. This app needs the following permissions to work normally:&lt;br>&lt;br>&lt;b>Using camera (for setting your profile photo)&lt;/b>&lt;br>&lt;br>If you don't agree to grant such permissions, you won't be able to use some features of this app; however, its basic functionality will still be available to you. You can always restrict permissions or revoke your authorization in the Settings."</string>
+    <string name="request_error_invalid_token">"Couldn't verify"</string>
+    <string name="request_error_network">A network error occurred. Check your network settings and try again.</string>
+    <string name="request_error_unknown">A system error occurred. Go back and try again.</string>
     <string name="required_permissions">android.permission.READ_PHONE_STATE;android.permission.GET_ACCOUNTS;android.permission.READ_EXTERNAL_STORAGE;android.permission.WRITE_EXTERNAL_STORAGE;</string>
     <string name="resend_active_email">Resend</string>
     <string name="resend_email_reach_limit_message">"You've requested too many verification emails. Make sure that the verification email isn't in your inbox's Spam folder."</string>
@@ -3412,6 +3347,7 @@ QPlay设备"</string>
     <string name="skin_title_name">个性主题</string>
     <string name="skin_use">立即使用</string>
     <string name="skin_winter_name">冬</string>
+    <string name="skip_query_account">Skip</string>
     <string name="sleep_close">Close</string>
     <string name="sleep_custom">Custom</string>
     <string name="sleep_mode">Sleep timer</string>
@@ -3573,6 +3509,7 @@ QPlay设备"</string>
     <string name="switch_music_source">Switch music source</string>
     <string name="sync_only_in_wifi">Only sync using Wi-Fi</string>
     <string name="sync_only_in_wifi_summary">Sync your music across all your devices with XiaoMi Cloud. Using your mobile data connection to sync music will increase your data usage. If you go over your plan’s data limit, your carrier could charge you additional fees.</string>
+    <string name="system_error_info">System is busy. Wait a minute or two and try again.</string>
     <string name="tab_album">Albums</string>
     <string name="tab_album_list">Albums</string>
     <string name="tab_artist">Artists</string>
@@ -3913,6 +3850,7 @@ QPlay设备"</string>
     <string name="unicom_data_usage_free_title_notice">温馨提示</string>
     <string name="unknown_album_name">Unknown album</string>
     <string name="unknown_artist_name">Unknown artist</string>
+    <string name="unknown_error_info">Unknown error</string>
     <string name="unknown_program_name">Unknown Program</string>
     <string name="unread_message_count">%s message unread</string>
     <string name="update">更新</string>
@@ -3940,11 +3878,16 @@ QPlay设备"</string>
     <string name="use_traffic_summary">Use mobile network to stream music</string>
     <string name="use_traffic_title">Use mobile data to stream music</string>
     <string name="use_traffic_title_video">Use mobile data to stream videos</string>
+    <string name="user_agreement_hint_default"><Data>"I've read and agreed to the &lt;a href=\"%1$s\">User Agreement&lt;/a> and &lt;a href=\"%2$s\">Privacy Policy.&lt;/a>"</Data></string>
+    <string name="user_agreement_hint_with_mobile"><Data>"I've read and agreed to the &lt;a href=\"%1$s\">User Agreement&lt;/a>, &lt;a href=\"%2$s\">Privacy Policy&lt;/a>, and &lt;a href=\"%3$s\">Terms and conditions of China Mobile verification services&lt;/a>."</Data></string>
+    <string name="user_agreement_hint_with_telecom"><Data>"I've read and agreed to the &lt;a href=\"%1$s\">User Agreement&lt;/a>, &lt;a href=\"%2$s\">Privacy Policy&lt;/a>, and &lt;a href=\"%3$s\">Terms and conditions of eSurfing account verification services&lt;/a>."</Data></string>
+    <string name="user_agreement_hint_with_unicom"><Data>"I've read and agreed to the &lt;a href=\"%1$s\">User Agreement&lt;/a>, &lt;a href=\"%2$s\">Privacy Policy&lt;/a>, and &lt;a href=\"%3$s\">Terms and conditions of China Unicom verification services&lt;/a>."</Data></string>
     <string name="user_avatar_update_title">Change profile photo</string>
     <string name="user_avatar_uploading">Just a sec…</string>
     <string name="user_id_hint">Email/Phone/Mi Account ID</string>
     <string name="user_info_default_signature">点击头像即可登录</string>
     <string name="user_info_not_log_in">登录后，和朋友们分享你的音乐</string>
+    <string name="user_name_phone_number">Phone number</string>
     <string name="usercenter_store_button_text">Redeem</string>
     <string name="usercenter_task_check_in">Check in task</string>
     <string name="usercenter_task_complete_toast">Completed：%1$s</string>
