@@ -2,6 +2,8 @@
 <resources>
     <string name="advanced_settings_title">Advanced Settings</string>
     <string name="app_name">DebugLoggerUI</string>
+    <string name="auto_iq_dump_stop_time_message">Set auto IQ dump stop time(seconds):</string>
+    <string name="auto_iq_dump_stop_time_title">Auto IQ Dump Stop After Time:</string>
     <string name="bluetooth_log_settings_title">Bluetooth Log</string>
     <string name="bt_hci_log_name">HCI Log</string>
     <string name="bt_stack_log_name">Stack Log</string>
@@ -11,7 +13,7 @@
     <string name="bthostlog_switch_summary">Capture Bluetooth HCI packets in files.</string>
     <string name="btstacklog_enable_summary">Dump more BT stack log in main log.</string>
     <string name="btstacklog_restart_once_info">Restart Bluetooth manually to make BT stack %1$s dump more log in main log. %2$s</string>
-    <string name="btstacklog_restart_twice_info">Turn on Bluetooth first, and then restart it manually to make BT stack %1$s dump more log in main log. %2$s</string>
+    <string name="btstacklog_restart_twice_info">Turn on Bluetooth first, and then restart it manually to make BT stack %1$s dump more log in main log,like bluetooth address, name,phone-number... %2$s</string>
     <string name="cancel_button">Cancel</string>
     <string name="cancel_menu">Cancel</string>
     <string name="ccb_gear_summary">Set CCB Gear ID</string>
@@ -43,14 +45,13 @@
     <string name="enable_android_log_title">Android Log</string>
     <string name="enable_atf_log_summary">Enable or disable ATF Log</string>
     <string name="enable_atf_log_title">ATF Log</string>
+    <string name="enable_auto_iq_dump_sotp_title">Auto IQ Dump Stop</string>
     <string name="enable_bsp_log_summary">Enable or disable BSP log</string>
     <string name="enable_bsp_log_title">BSP Log</string>
     <string name="enable_kernel_log_summary">Enable or disable kernel log</string>
     <string name="enable_kernel_log_title">Kernel Log</string>
     <string name="enable_mcupm_log_summary">Enable or disable MCUPM log</string>
     <string name="enable_mcupm_log_title">MCUPM Log</string>
-    <string name="enable_met_log_summary">Enable or disable MET log function</string>
-    <string name="enable_met_log_title">Enable MET Log</string>
     <string name="enable_mmedia_log_summary">Enable or disable Mmedia log</string>
     <string name="enable_mmedia_log_title">Mmedia Log</string>
     <string name="enable_mobilelog">Enable MobileLog</string>
@@ -87,19 +88,10 @@
     <string name="info_mokey_test_running">Mokey test is running, can not start/stop logs!</string>
     <string name="info_not_device_owner">It is not device owner, can not start/stop logs!</string>
     <string name="info_wait_sd_ready">Waiting storage ready...</string>
-    <string name="iq_dump_auto_stop_mdlog_summary">Auto stop modemlog after IQ Dump done</string>
-    <string name="iq_dump_auto_stop_mdlog_title">Auto Stop ModemLog</string>
     <string name="iq_dump_enabled_warning_dlg_message">IQ Dump is only available for new chips after Android Q!</string>
     <string name="iq_dump_enabled_warning_dlg_title">IQ Dump Enabled Warning</string>
     <string name="iq_dump_start_warning_dlg_message">"[WARNING] You will just see the black screen after starting IQ dump. Please don't touch the screen until the timeout."</string>
     <string name="iq_dump_start_warning_dlg_title">IQ Dump Start Warning</string>
-    <string name="iq_dump_time_delay_starting_dialogtitle">Time Delay of IQ Dump Starting(Sec)</string>
-    <string name="iq_dump_time_delay_starting_message">IQ Dump will auto start after ModemLog running for time(0~2147483647 Sec):</string>
-    <string name="iq_dump_time_delay_starting_title">Time Delay of IQ Dump Starting(Sec)</string>
-    <string name="iq_dump_time_of_running_dialogtitle">Time of IQ Dump Running(Sec)</string>
-    <string name="iq_dump_time_of_running_message">IQ Dump will auto stop after it running for time(5~2147483647 Sec):</string>
-    <string name="iq_dump_time_of_running_title">Time of IQ Dump Running(Sec)</string>
-    <string name="limit_cpu_buffer_dialog_message">The ftrace buffer size of %1$s should be between %2$d KB and %3$d KB.</string>
     <string name="limit_hci_snoop_log_size_summary">Recycle log when it reaches the limit log size</string>
     <string name="limit_hci_snoop_log_size_title">Limit HCI Snoop Log Size(MB)</string>
     <string name="limit_log_size_dialog_message">"The limit size of %1$s should be between %2$dMB and %3$dMB(Size of %4$s).
@@ -107,21 +99,9 @@
     <string name="limit_log_size_store_type">%s maximum</string>
     <string name="limit_log_size_summary">Recycle log when it reaches the limit log size</string>
     <string name="limit_log_size_title">Limit Log Size(MB)</string>
-    <string name="limit_met_log_size_dialog_message">"(Each cpu has own log file, this setting will apply to each CPU )
-The limit log size of current recording %1$s should be between %2$d MB and %3$d MB.
-
- The MAX Total Log size = Limit Log Size * cpu amount.
- EX: Set the Limit Log Size = 100MB, cpu amount =8,then the MAX total size = 100MB*8 = 800MB
-"</string>
-    <string name="limit_metlog_size_summary">Recycle log when it reaches the limit log size</string>
-    <string name="limit_metlog_size_title">Limit Log Size(MB per cpu)</string>
-    <string name="limit_period_dialog_message">The splice period duration time of %1$s should be between %2$d ms and %3$d ms.</string>
     <string name="limit_single_log_size_dialog_message">The limit size of current recording %1$s should be between %2$dMB and %3$dMB(Size of %4$s).</string>
     <string name="limit_single_log_size_summary">Recycle current recording log when it reaches the limit log size</string>
     <string name="limit_single_log_size_title">Limit Current Log Size(MB)</string>
-    <string name="limit_sspm_log_size_dialog_message">The limit log size of current recording SSPM Log should be between %1$d MB and %2$d MB.</string>
-    <string name="limit_sspmlog_size_summary">Recycle log when it reaches the limit log size</string>
-    <string name="limit_sspmlog_size_title">SSPM Log Size (MB)</string>
     <string name="limit_total_log_size_dialog_message">"The limit size of total recorded %1$s should be between %2$sMB ~ %3$sMB (multiple of %4$s). 
  Warning: if the sum of all log's max log size greater than storage size, log may be stopped by Storage is full."</string>
     <string name="limit_total_log_size_summary">Total recorded log (include past ones) will not exceed this size</string>
@@ -156,15 +136,6 @@ The dump file is:"</string>
     <string name="message_deletelog">Clear the selected logs?</string>
     <string name="message_start_log_confirm">The logs will be saved to public storage area, so it may cause private data leakage. Are you sure you want to start the log recording anyway?</string>
     <string name="message_stop_log_confirm">The logs have been saved to public storage area. Please delete as soon as possible to prevent private data leakage!</string>
-    <string name="met_log_name">METLog</string>
-    <string name="met_start_failed">MET Log start failed.</string>
-    <string name="metlog_cpu_buffer_summary">Set METLog CPU Buffer size</string>
-    <string name="metlog_cpu_buffer_title">CPU Buffer(KB)</string>
-    <string name="metlog_heavy_load_recording_summary">Enable or disable Heavy Load Recording</string>
-    <string name="metlog_heavy_load_recording_title">Enable Heavy Load Recording</string>
-    <string name="metlog_period_summary">Set METLog period time</string>
-    <string name="metlog_period_title">Period time(ms)</string>
-    <string name="metlog_settings">METLog Settings</string>
     <string name="mobile_log_name">MobileLog</string>
     <string name="mobilelog_settings">MobileLog Settings</string>
     <string name="mobilelog_unselected">There is no type of mobilelog seleted, it will not be started!</string>
@@ -194,9 +165,6 @@ The dump file is:"</string>
     <string name="networklog_set_rohc_total_file_number_title">Rohc Total File Number</string>
     <string name="networklog_settings">NetworkLog Settings</string>
     <string name="no_log_on">There is no log on!</string>
-    <string name="not_support_metlog_dialog_message">Not support : metlogd reply!</string>
-    <string name="not_support_metlog_dialog_message_timeout">Not support : metlogd timeout!</string>
-    <string name="not_support_metlog_dialog_title">METLog Not Support Warning</string>
     <string name="notification_nearly_out_of_storage">Log storage is running out.</string>
     <string name="notification_off_summary_suffix">is off.</string>
     <string name="notification_off_summary_suffixes">are off.</string>
@@ -208,7 +176,6 @@ The dump file is:"</string>
     <string name="notification_title_connsys">Connsys log</string>
     <string name="notification_title_connsysfw">ConnsysFW log</string>
     <string name="notification_title_gps">GPS log</string>
-    <string name="notification_title_met">MET log</string>
     <string name="notification_title_mobile">Mobile log</string>
     <string name="notification_title_modem">Modem log</string>
     <string name="notification_title_network">Network log</string>
@@ -246,7 +213,6 @@ Please input your tag name:"</string>
     <string name="title_activity_log_folder_list">Clear DebugLogger Files</string>
     <string name="uncontrolled_warning_dialog_message">Log will be stopped when it is uncontrolled!</string>
     <string name="uncontrolled_warning_dialog_title">Warning : Log is Running</string>
-    <string name="wait_for_check_gps_location">Waitting for Checking is GPS location support</string>
     <string name="waiting_checking_log_dialog_message">Checking log files...</string>
     <string name="waiting_dialog_message_flush_log">Waiting for flushing logs...</string>
     <string name="waiting_dialog_message_poll_log">Waiting for polling logs...</string>
