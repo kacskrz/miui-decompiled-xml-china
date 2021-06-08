@@ -29,6 +29,7 @@
     <string name="Setting_lock">Settings</string>
     <string name="Settings_title_anti_spam">Blocklist settings</string>
     <string name="Settings_title_anti_virus">Security scan settings</string>
+    <string name="Settings_title_anti_virus_kddi">Security scan settings</string>
     <string name="Settings_title_garbage_cleanup">Cleaner settings</string>
     <string name="Settings_title_network_assistants">Data usage settings</string>
     <string name="Settings_title_power_center">Battery optimization settings</string>
@@ -100,6 +101,7 @@
     <string name="actionbar_button_up_description">Back</string>
     <string name="activity_title_antispam">Blocklist</string>
     <string name="activity_title_antivirus">Security scan</string>
+    <string name="activity_title_antivirus_kddi">Security scan</string>
     <string name="activity_title_apps_manager">Apps</string>
     <string name="activity_title_auto_start_manager">Autostart</string>
     <string name="activity_title_create_shortcut">Manage shortcuts</string>
@@ -190,9 +192,12 @@
     <string name="antivirus_privacy_dialog_cloudscan_description">"To detect and neutralize viruses more effectively, we'll upload the apps' package names and properties in order to scan them using a cloud engine."</string>
     <string name="antivirus_privacy_dialog_ok">OK</string>
     <string name="antivirus_privacy_dialog_summary"><Data>This feature is powered by a third party antivirus engine. To learn more, read the &lt;a href=\"%1$s\">License Agreement&lt;/a> provided by the third party.</Data></string>
+    <string name="antivirus_privacy_dialog_summary_kddi"><Data>"When you're performing a security scan, your device model and scan results will be uploaded to %1$s servers and used in accordance with the corresponding &lt;a href=\"%2$s\">terms and conditions&lt;/a>.&lt;br/>&lt;br/>Read and agree to %3$s's terms and conditions before performing security scans.&lt;br/>&lt;br/>If you don't agree to upload data to %4$s servers, you can still use the virus definitions stored locally on your device."</Data></string>
     <string name="antivirus_privacy_dialog_summary_link">Privacy Policy</string>
     <string name="antivirus_privacy_dialog_title">Privacy Policy</string>
+    <string name="antivirus_privacy_dialog_title_kddi">Terms and conditions</string>
     <string name="antivirus_sec_network_unavailable">"Security can't update because you've restricted the internet connection. Allow Security to connect to the internet?"</string>
+    <string name="antivirus_third_privacy_title">Third party privacy policies</string>
     <string name="antivirus_toast_already_update">Up to date</string>
     <string name="antivirus_toast_network_unavailable">"Couldn't connect to the network"</string>
     <string name="antivirus_toast_update_failed">Our servers are busy. Wait a minute or two and try again.</string>
@@ -462,11 +467,16 @@ You will not lose any app data."</string>
     <string name="app_manager_show_detail_infos">View all</string>
     <string name="app_manager_start_by">Started by %s</string>
     <string name="app_manager_system_mobile_disable">Turn off data</string>
+    <string name="app_manager_tab_app">Apps</string>
+    <string name="app_manager_tab_manager">Manage</string>
     <string name="app_manager_thumbnail_blur_summary">Blur app previews in Recents</string>
     <string name="app_manager_thumbnail_blur_title">Blur app previews</string>
     <string name="app_manager_title">Manage apps</string>
+    <string name="app_manager_to_appstore">Discover more apps</string>
     <string name="app_manager_total_size">Total</string>
     <string name="app_manager_uninstall">Uninstall</string>
+    <string name="app_manager_uninstall_button_text">Uninstall</string>
+    <string name="app_manager_uninstall_notify_title">Uninstall rarely used apps</string>
     <string name="app_manager_uninstall_protected_dlg_msg">Uninstalling system apps may prevent some MIUI components from working properly. Uninstall anyway?</string>
     <string name="app_manager_uninstall_protected_dlg_title">Uninstalling system apps</string>
     <string name="app_manager_uninstall_with_xspace_app_dlg_msg">Corresponding dual apps will be removed together with app data.</string>
@@ -624,12 +634,12 @@ You will not lose any app data."</string>
     <string name="auto_task_edit_choose_condition_title">Select condition</string>
     <string name="auto_task_edit_choose_new_operation">Add action</string>
     <string name="auto_task_edit_choose_operation_title">Select action</string>
-    <string name="auto_task_edit_condition_summary">For example, \"At 23:00\"</string>
+    <string name="auto_task_edit_condition_summary_new">For example, \"At %s\"</string>
     <string name="auto_task_edit_condition_title">Add condition</string>
     <string name="auto_task_edit_my_custom_task">Enter task name</string>
     <string name="auto_task_edit_operation_summary">For example, \"Turn on Airplane mode\"</string>
-    <string name="auto_task_edit_step1">1.</string>
-    <string name="auto_task_edit_step2">2.</string>
+    <string name="auto_task_edit_step1_new">%d.</string>
+    <string name="auto_task_edit_step2_new">%d.</string>
     <string name="auto_task_edit_task_name">Name</string>
     <string name="auto_task_main_title">Automated tasks</string>
     <string name="auto_task_mamange_activity_title">Automated tasks</string>
@@ -638,7 +648,7 @@ You will not lose any app data."</string>
     <string name="auto_task_manager_group_title">My automated tasks</string>
     <string name="auto_task_notify_do_task_title">Automated task started</string>
     <string name="auto_task_notify_exit_task_title">Automated task ended</string>
-    <string name="auto_task_notify_task_cancel_count_down">Automated action will be canceled in 5 seconds</string>
+    <string name="auto_task_notify_task_cancel_count_down_new">Automated action will be canceled in %d seconds</string>
     <string name="auto_task_notify_task_cancel_do">Cancel action</string>
     <string name="auto_task_notify_task_canceled_summary">You can make and receive calls</string>
     <string name="auto_task_notify_task_canceled_summary2">"Looks like you're playing a game now."</string>
@@ -646,7 +656,7 @@ You will not lose any app data."</string>
     <string name="auto_task_notify_task_canceled_summary4">Canceled by First space</string>
     <string name="auto_task_notify_task_canceled_title">Action is canceled</string>
     <string name="auto_task_notify_task_continue_do">Start action</string>
-    <string name="auto_task_notify_task_count_down">Automated action will start in 5 seconds</string>
+    <string name="auto_task_notify_task_count_down_new">Automated action will start in %d seconds</string>
     <string name="auto_task_notify_task_exit_task">Cancel task</string>
     <string name="auto_task_operation_airplane_mode">Airplane mode</string>
     <string name="auto_task_operation_auto_brightness">Auto brightness</string>
@@ -713,7 +723,9 @@ You will not lose any app data."</string>
     <string name="battery_low_button_not_open_power_save">Not now</string>
     <string name="battery_low_button_open_power_save">Turn on</string>
     <string name="battery_low_percent_format_save_mode_closed">"There's less than %s of battery remaining now. Don't forget to charge your device."</string>
+    <string name="battery_low_percent_format_save_mode_closed_new_version">Battery is low. Charge your device now.</string>
     <string name="battery_low_percent_format_save_mode_open">"There's less than %1$s of battery remaining now. Turn on Battery saver to add %2$s of extra time."</string>
+    <string name="battery_low_percent_format_save_mode_open_new_version">Turn on Battery saver to add %s.</string>
     <string name="battery_low_title">Battery is running low</string>
     <string name="battery_low_title_power_save">Battery saver</string>
     <string name="battery_statistics_activity_title">Battery usage stats</string>
@@ -760,7 +772,7 @@ You will not lose any app data."</string>
     <string name="booster_suc">Boosted successfully</string>
     <string name="boostering">Boosting speed…</string>
     <string name="boosting">Boosting speed…</string>
-    <string name="boot_reminder">Power on your device at a scheduled time</string>
+    <string name="boot_reminder">Tap to change power off schedule</string>
     <string name="boot_time">On at %1$s</string>
     <string name="boot_time_day">On in %1$dd at %2$s</string>
     <string name="boot_time_day_tomorrow">On tomorrow at %1$s</string>
@@ -861,10 +873,21 @@ You will not lose any app data."</string>
     <string name="card_main_xspace_summary">Create dual accounts for any app</string>
     <string name="card_main_xspace_title">Dual apps</string>
     <string name="card_tc_failed">"Couldn't calibrate"</string>
+    <string name="card_uninstall_button_text">Manage</string>
+    <string name="card_uninstall_summary">Uninstall rarely used apps to free up storage space</string>
+    <string name="card_uninstall_title_1">Uninstall rarely used apps</string>
     <string name="cd_back">Back</string>
     <string name="celcius_symbol">℃</string>
     <string name="cellular_data_auto_check">Check automatically</string>
     <string name="cellular_package_daily_input">Enter</string>
+    <string name="cetus_invisible_mode">Incognito</string>
+    <string name="cetus_invisible_mode_description_card">Suspend permissions</string>
+    <string name="cetus_invisible_mode_description_switch">Turn on to suspend microphone, camera, and location-related permissions for all apps</string>
+    <string name="cetus_invisible_mode_warn_all">"You're incognito. Microphone, camera, and location permissions are suspended."</string>
+    <string name="cetus_invisible_mode_warn_camera">"You're incognito. Camera permissions are suspended."</string>
+    <string name="cetus_invisible_mode_warn_location">"You're incognito. Location permissions are suspended."</string>
+    <string name="cetus_invisible_mode_warn_open">Incognito mode suspends microphone, camera, and location-related permissions for all apps. Turn on now?</string>
+    <string name="cetus_invisible_mode_warn_record_audio">"You're incognito. Microphone permissions are suspended."</string>
     <string name="charger_detect_button_ok">Got it</string>
     <string name="charger_detect_info1">Check whether the power adapter and cable are properly connected.</string>
     <string name="charger_detect_info2">"Charging may also slow down if you're using non-standard or old power adapters and cables."</string>
@@ -967,6 +990,7 @@ You will not lose any app data."</string>
     <string name="cmcc_app_check_dialog_positive">Restart now</string>
     <string name="cmcc_app_check_dialog_title">System repaired</string>
     <string name="cmd_lucky_float">摇一摇</string>
+    <string name="com.crashlytics.android.build_id">00000000000000000000000000000000</string>
     <string name="comprehensive_protection_measures">Comprehensive protection</string>
     <string name="confirmSecondSpacePassword">Confirm Second space password</string>
     <string name="confirm_allow_all_permission">Allow all apps from using this feature?</string>
@@ -1066,12 +1090,13 @@ Your carrier may charge you extra fees if you turn on mobile data again."</strin
     <string name="deep_clean_never_memory_clean">Never</string>
     <string name="deep_power_save_item_summary_auto_brightness">Adjust screen brightness automatically to save battery</string>
     <string name="deep_power_save_item_summary_bluetooth">Turn off Bluetooth to save battery</string>
-    <string name="deep_power_save_item_summary_lock_screen_time">Put screen to sleep after 15 seconds of inactivity to save battery</string>
+    <string name="deep_power_save_item_summary_lock_screen_time_new">Put screen to sleep after %d seconds of inactivity to save battery</string>
     <string name="deep_power_save_item_title_auto_brightness">Turn on auto brightness</string>
     <string name="deep_power_save_item_title_bluetooth">Turn off Bluetooth</string>
     <string name="deep_power_save_item_title_lock_screen_time">Put screen to sleep</string>
     <string name="deep_save_memory_clean_summary">Clear cache when you lock device to prevent apps from using battery</string>
     <string name="deep_save_ontime_boot_shutdown_summary">Schedule time to turn device on and off</string>
+    <string name="default_web_client_id">436805358632-1au5ms49utfaeginkj9m0muaescgnt0p.apps.googleusercontent.com</string>
     <string name="delete">Delete</string>
     <string name="delete_all_sms">Delete all</string>
     <string name="delete_from_manual_item_white_list">Remove from exceptions</string>
@@ -1396,18 +1421,33 @@ You must understand that this feature is provided for your reference only. The w
     <string name="exit_dialog_scan_message">"Your device's performance score is lower than 75 points. Optimize now?"</string>
     <string name="exit_dialog_scan_positive_button">Optimize</string>
     <string name="exit_dialog_scan_title">Optimize performance</string>
+    <string name="exo_controls_cc_disabled_description">Enable subtitles</string>
+    <string name="exo_controls_cc_enabled_description">Disable subtitles</string>
+    <string name="exo_controls_custom_playback_speed">%1$.2fx</string>
     <string name="exo_controls_fastforward_description">Fast forward</string>
-    <string name="exo_controls_fullscreen_description">Fullscreen mode</string>
-    <string name="exo_controls_next_description">Next track</string>
+    <string name="exo_controls_fullscreen_enter_description">Enter fullscreen</string>
+    <string name="exo_controls_fullscreen_exit_description">Exit fullscreen</string>
+    <string name="exo_controls_hide">Hide player controls</string>
+    <string name="exo_controls_next_description">Next</string>
+    <string name="exo_controls_overflow_hide_description">Hide additional settings</string>
+    <string name="exo_controls_overflow_show_description">Show additional settings</string>
     <string name="exo_controls_pause_description">Pause</string>
     <string name="exo_controls_play_description">Play</string>
-    <string name="exo_controls_previous_description">Previous track</string>
+    <string name="exo_controls_playback_speed">Speed</string>
+    <string name="exo_controls_playback_speed_normal">Normal</string>
+    <string name="exo_controls_previous_description">Previous</string>
     <string name="exo_controls_repeat_all_description">Repeat all</string>
     <string name="exo_controls_repeat_off_description">Repeat none</string>
     <string name="exo_controls_repeat_one_description">Repeat one</string>
     <string name="exo_controls_rewind_description">Rewind</string>
-    <string name="exo_controls_shuffle_description">Shuffle</string>
+    <string name="exo_controls_seek_bar_description">Playback progress</string>
+    <string name="exo_controls_settings_description">Settings</string>
+    <string name="exo_controls_show">Show player controls</string>
+    <string name="exo_controls_shuffle_off_description">Shuffle off</string>
+    <string name="exo_controls_shuffle_on_description">Shuffle on</string>
     <string name="exo_controls_stop_description">Stop</string>
+    <string name="exo_controls_time_placeholder">00:00:00</string>
+    <string name="exo_controls_vr_description">VR mode</string>
     <string name="exo_download_completed">Download completed</string>
     <string name="exo_download_description">Download</string>
     <string name="exo_download_downloading">Downloading</string>
@@ -1418,6 +1458,10 @@ You must understand that this feature is provided for your reference only. The w
     <string name="exo_track_bitrate">%1$.2f Mbps</string>
     <string name="exo_track_mono">Mono</string>
     <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">Alternate</string>
+    <string name="exo_track_role_closed_captions">CC</string>
+    <string name="exo_track_role_commentary">Commentary</string>
+    <string name="exo_track_role_supplementary">Supplementary</string>
     <string name="exo_track_selection_auto">Auto</string>
     <string name="exo_track_selection_none">None</string>
     <string name="exo_track_selection_title_audio">Audio</string>
@@ -1703,11 +1747,6 @@ You must understand that this feature is provided for your reference only. The w
     <string name="gamebox_immerson_open">"Turning on Immersive mode, don't switch networks…"</string>
     <string name="gamebox_macro">Combos</string>
     <string name="gamebox_manual_record">Record</string>
-    <string name="gamebox_micharge">Charging temperature control</string>
-    <string name="gamebox_micharge_dialog_message">"Turn on this feature to restrict charging when the charger is connected. The charger will only be used to provide power supply, which will help you avoid overheating while you're playing games."</string>
-    <string name="gamebox_micharge_dialog_title">Charging temperature control</string>
-    <string name="gamebox_micharge_settings_summray">To avoid overheating, use the charger for power supply only</string>
-    <string name="gamebox_micharge_toast">Charging temperature control is on</string>
     <string name="gamebox_milink">Cast</string>
     <string name="gamebox_positive_button_text">OK (%1$ds)</string>
     <string name="gamebox_qq_not_find">Install QQ and try again.</string>
@@ -1832,6 +1871,7 @@ Record sequences and use them anytime!"</string>
     <string name="gb_msg_transparent_dispaly_summary">Transparent</string>
     <string name="gb_network_status_bad">A connection error occurred.</string>
     <string name="gb_new_feature">New feature</string>
+    <string name="gb_not_support_on_device">"This app can't be used on the outer screen"</string>
     <string name="gb_operat_frequently">Not so fast!</string>
     <string name="gb_shortcut_pref_title">Home screen shortcut</string>
     <string name="gb_shoulder_key">Shoulder buttons</string>
@@ -1916,6 +1956,7 @@ of your gaming sessions"</string>
     <string name="gb_xunyou_gift_type_one">Xunyou 1-day boost</string>
     <string name="gb_xunyou_gift_type_three">Xunyou 3-day boost</string>
     <string name="gb_xunyou_gift_type_two">Xunyou 2-day boost</string>
+    <string name="gcm_defaultSenderId">436805358632</string>
     <string name="gdpr_msg"><Data>"To be able to detect security risks and protect your data, we need to collect the necessary amount of information about your device. Read and agree to our &lt;a href=\"https://privacy.mi.com/all/%1$s_%2$s\">Privacy Policy&lt;/a> before using our services. In case you don't allow us to collect such information, you'll still be able to use this app, but some features won't be available to you. "</Data></string>
     <string name="ge">个</string>
     <string name="get_detail_by_click">Tap to view details</string>
@@ -1929,6 +1970,8 @@ of your gaming sessions"</string>
     <string name="go_to">Proceed</string>
     <string name="go_to_send">Send</string>
     <string name="go_to_setting_fingerprint">Settings</string>
+    <string name="google_api_key">AIzaSyCLTk-WlTTx8UwHK2EdapM_Pu-CiQHYaio</string>
+    <string name="google_app_id">1:436805358632:android:6a6f70fc95cb7011dfd11d</string>
     <string name="google_base_app_fail">"Couldn't download. Check whether Security is allowed to connect to the internet."</string>
     <string name="google_base_app_install_choice">The application requires Google Services Framework to work normally, download and install it?</string>
     <string name="google_base_app_installed">Installed successfully</string>
@@ -1937,6 +1980,8 @@ of your gaming sessions"</string>
     <string name="google_base_app_timeout">Session timed out. Wait a minute or two and try again.</string>
     <string name="google_base_app_title">Installing Google services</string>
     <string name="google_base_app_toast">Google Services Framework is being installed in the background. Wait a minute or two and try again.</string>
+    <string name="google_crash_reporting_api_key">AIzaSyCLTk-WlTTx8UwHK2EdapM_Pu-CiQHYaio</string>
+    <string name="google_storage_bucket">security-center-89b35.appspot.com</string>
     <string name="group_have_hongbao">来自“%1$s”%2$d个红包</string>
     <string name="gs_advanced_setting_summary">Settings for individual games</string>
     <string name="gs_advanced_setting_title">Additional settings</string>
@@ -2128,7 +2173,7 @@ Carrier may charge you additional fees if you use mobile data connection again."
     <string name="list_empty_text">Empty</string>
     <string name="load_only_under_wlan">Load using only Wi-Fi</string>
     <string name="loading">Just a sec…</string>
-    <string name="loading_text_format" formatted="false">Removing private info from photos (%d/%d)…</string>
+    <string name="loading_text_format" formatted="false">Checking whether photos contain private info %d/%d</string>
     <string name="local_ip_exception_summary">"Couldn't get local IP address. To report this issue to MIUI, go to the Feedback app and send a log from your device."</string>
     <string name="lock_all_title">Lock all apps</string>
     <string name="lock_mode_title">Lock settings</string>
@@ -2341,6 +2386,7 @@ Your device is %d%% faster now."</string>
     <string name="menu_summary_power_manager_4">%s until full</string>
     <string name="menu_text_antispam">Blocklist</string>
     <string name="menu_text_antivirus">Security scan</string>
+    <string name="menu_text_antivirus_kddi">Security scan</string>
     <string name="menu_text_deepclean_summary">%1$s/%2$s occupied</string>
     <string name="menu_text_garbage_cleanup">Cleaner</string>
     <string name="menu_text_garbage_cleanup_danger">%s of trash</string>
@@ -2399,6 +2445,7 @@ Your device is %d%% faster now."</string>
     <string name="mixed_recording_intro_header">Enter %1$s-%2$s characters</string>
     <string name="mixed_retry_button_text">Cancel</string>
     <string name="mixed_settings_help_how_to_record">How to set password</string>
+    <string name="mm_app_name">Mi SIM</string>
     <string name="modify_cellular_type">Tap to select your plan</string>
     <string name="modify_password_mode"><u>Change password type</u></string>
     <string name="modifypassword">Change password type</string>
@@ -2527,7 +2574,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="network_traffic_warning_title">Data usage for system apps</string>
     <string name="networkchanged_exception_summary">Network connection has changed. Test again.</string>
     <string name="networkchanged_exception_title">Connection changed</string>
-    <string name="never">1 time</string>
+    <string name="never_new">%d time</string>
     <string name="news_change">Change</string>
     <string name="nickname">Nickname</string>
     <string name="night">Evening</string>
@@ -2551,13 +2598,17 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="notification_abnormal_consume_wakelock">The system is kept awake in the background</string>
     <string name="notification_antivirus_button_text">Scan</string>
     <string name="notification_antivirus_message">Scan now to neutralize risks</string>
-    <string name="notification_battery_consume_abnormal_title">Battery is being drained too fast</string>
+    <string name="notification_battery_consume_abnormal_title">High power consumption</string>
     <string name="notification_battery_scan_consume_abnormal_summary">Tap to fix the problem</string>
     <string name="notification_battery_scan_consume_abnormal_title_set">%s is draining battery</string>
     <string name="notification_channel_battery">Battery</string>
     <string name="notification_checker_installed_apk_hint">No need to keep APKs after installation</string>
-    <string name="notification_exit_power_save_mode">Turned off Battery saver</string>
-    <string name="notification_exit_power_save_mode_subtitle">Battery %s charged.</string>
+    <string name="notification_enter_power_save_mode_subtitle">Turn off when device is %s or fully charged</string>
+    <string name="notification_enter_power_save_mode_title">Turned on Battery saver</string>
+    <string name="notification_exit_power_save_mode">Turned off Ultra battery saver</string>
+    <string name="notification_exit_power_save_mode_full_subtitle">Your device is fully charged</string>
+    <string name="notification_exit_power_save_mode_now">Turn off</string>
+    <string name="notification_exit_power_save_mode_subtitle">Your device is charged to %s now</string>
     <string name="notification_garbage_clean_botton_text">Clear</string>
     <string name="notification_garbage_clean_botton_text_new">Clear</string>
     <string name="notification_garbage_clean_hint">Clear storage space</string>
@@ -2580,8 +2631,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="notification_link_cleaner_3002">Clear WeChat trash</string>
     <string name="notification_link_cleaner_4000">Clear QQ trash</string>
     <string name="notification_link_optimizemanage_1011">%d%% of memory is occupied. Clear now.</string>
-    <string name="notification_low_battery_action_btn">Turn on</string>
-    <string name="notification_low_battery_need_charge">Charge your device</string>
+    <string name="notification_low_battery_need_charge">Connect charger</string>
     <string name="notification_low_battery_open_save_mode">Turn on Battery saver</string>
     <string name="notification_low_battery_title">Less than %s of battery remaining</string>
     <string name="notification_low_memory_button_text">Fix</string>
@@ -2853,7 +2903,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="permission_instruction_dont_disturb">This permission allows apps to turn DND mode on and off.</string>
     <string name="permission_instruction_draw_overlay">This permission allows apps to display floating windows over any other interface on your device, which may affect the normal use of other apps. Malicious apps might use this permission to read or collect private information (e.g. passwords) through transparent floating windows.</string>
     <string name="permission_instruction_external_storage">This permission allows apps to access photos, media, and files on your device. Be careful with this permission to avoid unnecessary disclosure of private information.</string>
-    <string name="permission_instruction_gallery">To protect your privacy, MIUI lets you decide whether you allow the apps which have storage permissions to access Gallery.</string>
+    <string name="permission_instruction_gallery">"If you allow apps to access files in their own folders, MIUI lets you decide whether you also want these apps to access the items in your Gallery in order to protect your privacy. As the apps with Android API level 29 or higher already support storage partitions, this switch won't be provided for them."</string>
     <string name="permission_instruction_get_accounts">This permission allows apps to access the list of accounts stored on your device. This list might contain all your personal accounts created by installed apps, as well as the accounts from social media platforms and communication tools.</string>
     <string name="permission_instruction_install_shortcuts">This permission allows apps to create Home screen shortcuts.</string>
     <string name="permission_instruction_install_unknown_source">This permission allows apps to install other apps on your device. Malicious apps use this permission to install apps without your confirmation.</string>
@@ -2880,8 +2930,8 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="permission_instruction_send_payment_sms">This permission allows apps to send paid text messages.</string>
     <string name="permission_instruction_send_sms">This permission allows apps to send text messages, which may generate additional fees. Malicious apps might use this permission to send paid messages without your consent.</string>
     <string name="permission_instruction_show_locked">This permission allows apps to display items on your Lock screen. Malicious apps might use this permission to show you annoying ads.</string>
-    <string name="permission_instruction_sociality">To protect your privacy, MIUI lets you decide whether you allow the apps which have storage permissions to access your messages in social media apps.</string>
-    <string name="permission_instruction_storage">To protect your privacy, MIUI lets you decide whether you allow the apps which have storage permissions to access Gallery and your messages in social media apps.</string>
+    <string name="permission_instruction_sociality">"If you allow apps to access files in their own folders, MIUI lets you decide whether you also want these apps to access the files generated in social media apps in order to protect your privacy. As the apps with Android API level 29 or higher already support storage partitions, this switch won't be provided for them."</string>
+    <string name="permission_instruction_storage">"If you allow apps to access files in their own folders, MIUI lets you decide whether you also want these apps to access the items in your Gallery and files generated in social media apps in order to protect your privacy. As the apps with Android API level 29 or higher already support storage partitions, this switch won't be provided for them."</string>
     <string name="permission_instruction_touch_pay">This permission allows apps to perform contactless payments.</string>
     <string name="permission_instruction_use_sip">This permission allows apps to use SIP video services.</string>
     <string name="permission_instruction_vr_assistant">This permission allows apps to use VR assistant services.</string>
@@ -2926,7 +2976,6 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="pm_remember_choice">Remember my choice</string>
     <string name="pm_root_success_notification_infomation">Make sure you understand the risks related with root access</string>
     <string name="pm_root_success_notification_title">Allowed root access</string>
-    <string name="power_20s_shutdown">Device will power off in %d seconds</string>
     <string name="power_ambient_display">Always-on display</string>
     <string name="power_analysis_consume_title">Battery usage</string>
     <string name="power_analysis_suggestion_need_optimize">Battery usage issues detected.</string>
@@ -2951,6 +3000,8 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_center_battery_duration">Remaining time</string>
     <string name="power_center_battery_duration_format">%1$s %2$s</string>
     <string name="power_center_battery_hardware">Hardware %s</string>
+    <string name="power_center_battery_health_poor_tip">Looks like battery health is low. Check your battery in an authorized service center.</string>
+    <string name="power_center_battery_health_summary">Fully charge and discharge your device %1$d-%2$d times to improve the accuracy of the battery health stats</string>
     <string name="power_center_battery_last">%s remaining</string>
     <string name="power_center_battery_level">%s charged</string>
     <string name="power_center_battery_level_general">Normal</string>
@@ -2981,8 +3032,8 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_center_list_item_deep_save_title">Advanced settings</string>
     <string name="power_center_list_item_haptic_feedback">Turn off haptic feedback</string>
     <string name="power_center_list_item_haptic_feedback_summary">"Gestures and system controls won't be accompanied by haptic feedback"</string>
-    <string name="power_center_list_item_set_lockscreen_time">Put screen to sleep after 30 seconds of inactivity</string>
     <string name="power_center_list_item_set_lockscreen_time_holder">Lock device after %d seconds of inactivity</string>
+    <string name="power_center_list_item_set_lockscreen_time_new">Put screen to sleep after %d seconds of inactivity</string>
     <string name="power_center_list_item_set_lockscreen_time_summary">Locking your device faster saves battery</string>
     <string name="power_center_list_item_wake_notification">"Don't wake screen for notifications"</string>
     <string name="power_center_list_item_wake_notification_summary">Incoming notifications will be displayed only when you turn the screen on</string>
@@ -3015,6 +3066,16 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_center_stop_scan_title">Stop scanning</string>
     <string name="power_center_super_save_summary_text">Increase remaining time up to %1$dh %2$dm</string>
     <string name="power_center_super_save_title_text">Ultra battery saver</string>
+    <string name="power_center_super_wireless_charge">Quick wireless charging</string>
+    <string name="power_center_super_wireless_charge_dialog_positive">Keep on</string>
+    <string name="power_center_super_wireless_charge_dialog_summary">"This mode increases the fan speed of the wireless charger's cooler. Keep this mode on to charge your device faster, or turn it off if you think the noise is too loud."</string>
+    <string name="power_center_super_wireless_charge_dialog_summary2">Go to Security > Battery > Settings for more options.</string>
+    <string name="power_center_super_wireless_charge_dialog_title">Quick wireless charging</string>
+    <string name="power_center_super_wireless_charge_noti_summary">Tap to open Settings</string>
+    <string name="power_center_super_wireless_charge_noti_switch">Notify about quick wireless charging</string>
+    <string name="power_center_super_wireless_charge_noti_title">Quick wireless charging is on</string>
+    <string name="power_center_super_wireless_charge_summary">"Increase the fan speed of the wireless charger's cooler"</string>
+    <string name="power_center_super_wireless_charge_toast_close">Quick wireless charging is off</string>
     <string name="power_center_time_to_boot">Power on time</string>
     <string name="power_center_time_to_shutdown">Power off time</string>
     <string name="power_center_title">Battery</string>
@@ -3086,7 +3147,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="power_optimize_set_lockscreen_time_holder">Lock device after %d seconds of inactivity</string>
     <string name="power_phone">Voice calls</string>
     <string name="power_save_mode">Battery saver</string>
-    <string name="power_save_mode_auto_exit_summary">Turn off when battery is 60% or fully charged​</string>
+    <string name="power_save_mode_auto_exit_summary_new">Turn off when battery is %s or fully charged​</string>
     <string name="power_save_mode_auto_exit_title">Turn off when charged</string>
     <string name="power_save_mode_close_aod_display_summary">Turn off Always-on display when Battery saver is on</string>
     <string name="power_save_mode_close_aod_display_title">Turn off Always-on display</string>
@@ -3289,6 +3350,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="pref_whitelist_setting">Data roaming exceptions</string>
     <string name="preference_category_information_setting">category_information_setting</string>
     <string name="preference_category_key_antivirus_setting">key_category_antivirus_setting</string>
+    <string name="preference_category_revoke_privacy_setting">revoke_privacy_setting</string>
     <string name="preference_category_videobox_app_group">category_videobox_app_group</string>
     <string name="preference_category_videobox_line_group">category_videobox_line_group</string>
     <string name="preference_category_videobox_switch_group">category_videobox_switch_group</string>
@@ -3296,6 +3358,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="preference_key_about_privacy">key_about_privacy</string>
     <string name="preference_key_about_version">key_about_version</string>
     <string name="preference_key_antivirus_choose_engine">key_antivirus_choose_engine</string>
+    <string name="preference_key_antivirus_third_paryty_privacy">key_antivirus_third_party_privacy</string>
     <string name="preference_key_app_permission_control">key_app_permission_control</string>
     <string name="preference_key_app_permission_install_debug">key_app_permission_install_debug</string>
     <string name="preference_key_category_check_item">key_category_check_item</string>
@@ -3323,6 +3386,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="preference_key_open_virus_install_monitor">key_open_virus_install_monitor</string>
     <string name="preference_key_optimize_manage">key_module_optimize_manage</string>
     <string name="preference_key_permcenter_install_intercept_enabled">key_permcenter_install_intercept_enabled</string>
+    <string name="preference_key_revoke_privacy">key_revoke_privacy</string>
     <string name="preference_key_settings_input_method">key_settings_input_method</string>
     <string name="preference_key_settings_monitor">key_settings_monitor</string>
     <string name="preference_key_sign_exception">key_sign_exception</string>
@@ -3549,6 +3613,7 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="process_kernel_label">Android</string>
     <string name="process_mediaserver_label">Media server</string>
     <string name="process_vpnsdkmanager_label">Game Turbo</string>
+    <string name="project_id">security-center-89b35</string>
     <string name="promotion">Ad</string>
     <string name="prompt_all">Ask for all</string>
     <string name="prompt_danger">危险</string>
@@ -3732,6 +3797,7 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="settings">Data usage settings</string>
     <string name="settings_battery_consume_abnormal_summary">Receive notifications when battery is being drained fast</string>
     <string name="settings_battery_consume_abnormal_title">Battery drain notifications</string>
+    <string name="settings_battery_power_save_suggest_title">Battery saver suggestions and warnings</string>
     <string name="settings_camera_subtitle_no">No metadata</string>
     <string name="settings_category_other">Other settings</string>
     <string name="settings_category_overheat">Heating</string>
@@ -4101,6 +4167,12 @@ While calibrating, MIUI will send a text message to your carrier to receive the 
     <string name="storage_available_total_size">%1$s out of %2$s available</string>
     <string name="storage_available_total_size1">Occupied: %1$s | Total: %2$s</string>
     <string name="storage_category_title">Additional options</string>
+    <string name="storage_clear_available_total_size">%1$s/%3$s occupied | %2$s available</string>
+    <string name="storage_clear_cache">Free up %s</string>
+    <string name="storage_clear_cache_deep">Free up storage</string>
+    <string name="storage_clear_cache_large">Free up %s</string>
+    <string name="storage_clear_more_tools">More cleaning tools</string>
+    <string name="storage_clear_video">Clear video cache</string>
     <string name="storage_deepclean_entry">Deep clean</string>
     <string name="storage_dialog_unmountable">"This ^1 is corrupted.
 
@@ -4138,6 +4210,7 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="suggest_app_tolock_unmasked">Visible notifications</string>
     <string name="suggest_scan_again">Complete the scan to avoid security risks.</string>
     <string name="summary_app_lock_disable">Protect your data with App lock</string>
+    <string name="summary_app_update_new">Update apps to access new features</string>
     <string name="summary_auto_update">MIUI will select the most suitable time to download and install updates.</string>
     <string name="summary_background_connection">You restricted background connection for this app.</string>
     <string name="summary_block_calls_from_cantacts">Calls from contacts are blocked.</string>
@@ -4190,12 +4263,11 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="superpower_dialog_button_ok">OK</string>
     <string name="superpower_dialog_massage">"Ultra battery saver restricts most power-consuming features and decreases your device's performance in order to leave basic functionality (e.g. calls, SMS, and connecting to the network) available as long as possible. Turn on Ultra battery saver?"</string>
     <string name="superpower_dialog_title">Ultra battery saver</string>
-    <string name="superpower_notification_hint_enter">Turn on</string>
     <string name="superpower_notification_new_title">Less than %d%% of battery remaining</string>
-    <string name="superpower_notification_summary">Turn on Ultra battery saver</string>
+    <string name="superpower_notification_summary">Charge your device or turn on Ultra battery saver</string>
     <string name="superpower_notification_time_12">EEEE, MMMM dd</string>
     <string name="superpower_notification_time_24">EEEE, MMMM dd</string>
-    <string name="superpower_notification_title">Less than 10% of battery remaining</string>
+    <string name="superpower_notification_title_new">Less than %s of battery remaining</string>
     <string name="superpower_progress_content">Turning on Ultra battery saver…</string>
     <string name="superpower_progress_left_time">%1$dh %2$dm</string>
     <string name="superpower_progress_switch_home">Switching to Dark theme</string>
@@ -4209,9 +4281,9 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="superpower_savemode_limit3">Restrict power-consuming activity (sync, GPS, vibration, Always-on display, etc.)</string>
     <string name="superpower_savemode_limit4">Allow selected apps to work normally</string>
     <string name="superpower_settings">Ultra battery saver</string>
-    <string name="superpower_settins_autoenter_summary">Turn on Ultra battery saver automatically when the battery is only 10% charged</string>
+    <string name="superpower_settins_autoenter_summary_new">Turn on Ultra battery saver automatically when the battery is only %s charged</string>
     <string name="superpower_settins_autoenter_title">Turn on automatically</string>
-    <string name="superpower_settins_autoleave_summary">Turn off Ultra battery saver automatically when the battery is 50% charged</string>
+    <string name="superpower_settins_autoleave_summary_new">Turn off Ultra battery saver automatically when the battery is %s charged</string>
     <string name="superpower_settins_autoleave_title">Turn off automatically</string>
     <string name="superpower_settins_other">Additional settings</string>
     <string name="superpower_settins_switch_summary">Restricts most power-consuming features in order to leave basic functionality (e.g. calls, SMS, and selected apps) available as long as possible</string>
@@ -4513,7 +4585,7 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="traffic_limit_error_alert_title">Data limit reminder %s</string>
     <string name="traffic_limit_input">Data limit (mandatory)</string>
     <string name="traffic_none">None</string>
-    <string name="traffic_over_purchase_link">"You've reached your mobile plan's data usage limit.&lt;br/>If you go over your plan’s data usage limit, your carrier may charge you additional fees.&lt;br/>&lt;br/>&lt;font color='#ccffffff'>&lt;U>Tap to top up your balance.&lt;/U>&lt;/font>"</string>
+    <string name="traffic_over_purchase_link">"You've reached your mobile plan's data usage limit.&lt;br/>If you go over your plan's data usage limit, your carrier may charge you additional fees.&lt;br/>&lt;br/>&lt;font color='#ccffffff'>&lt;U>Tap to top up your balance.&lt;/U>&lt;/font>"</string>
     <string name="traffic_provider_no_sim">"SIM card isn't installed"</string>
     <string name="traffic_purchase_body">Tap to top up your balance.</string>
     <string name="traffic_setting_fragment_area">Locale</string>
