@@ -853,6 +853,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="fingerprint_try_again_msg">"Couldn't verify fingerprint, try again."</string>
     <string name="fingerprint_try_again_text">Try again</string>
     <string name="flash_device">/sys/class/leds/flashlight/brightness</string>
+    <string name="float_notification_snooze_strategy">Hide floating notifications temporarily</string>
     <string name="force_allow_on_external">Force allow apps to write on external storage</string>
     <string name="force_allow_on_external_summary">Makes any app eligible to be written to external storage, regardless of manifest values</string>
     <string name="force_msaa">Force 4x MSAA</string>
@@ -1131,7 +1132,7 @@ only"</string>
     <string name="kg_invalid_confirm_pin_hint">PIN codes does not match</string>
     <string name="kg_invalid_puk">Re-enter the correct PUK code. Repeated attempts will permanently disable the SIM.</string>
     <string name="kg_invalid_sim_pin_hint">Type a PIN that is 4 to 8 numbers.</string>
-    <string name="kg_invalid_sim_puk_hint">PUK code should be 8 numbers or more.</string>
+    <string name="kg_invalid_sim_puk_hint">PUK code must contain %1$d digits.</string>
     <string name="kg_login_too_many_attempts">Too many pattern attempts</string>
     <string name="kg_password_instructions">Enter Password</string>
     <string name="kg_password_pin_failed">SIM PIN operation failed!</string>
@@ -1226,6 +1227,7 @@ Try again in %2$d seconds."</string>
     <string name="local_backup_password_toast_confirmation_mismatch">"Passwords don't match"</string>
     <string name="local_backup_password_toast_success">New backup password set</string>
     <string name="local_backup_password_toast_validation_failure">"Couldn't set backup password"</string>
+    <string name="lock_screen_access_to_5G">Access to 5G</string>
     <string name="lock_screen_carrier_airplane_mode_on">Airplane mode</string>
     <string name="lock_screen_date">EEEE, MMMM d</string>
     <string name="lock_screen_date_12">EEEE, MMMM d</string>
@@ -1291,8 +1293,18 @@ MMMM d"</string>
     <string name="miui_notification_menu_title_aggregate_feedback">@string/miui_notification_menu_aggregate_feedback</string>
     <string name="miui_notification_menu_title_fold">@string/miui_notification_menu_fold</string>
     <string name="miui_notification_menu_title_not_allow">Restrict</string>
-    <string name="miui_quick_settings_tiles_default">vowifi1,vowifi2,cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,night,quietmode,batterysaver,extremebatterysaver,custom(com.miui.securitycenter/com.miui.superpower.notification.SuperPowerTileService),custom(com.milink.service/com.milink.ui.service.MiLinkTileService),custom(com.miui.mishare.connectivity/.tile.MiShareTileService),powermode,custom(com.miui.screenrecorder/.service.QuickService),vibrate,hotspot,sync,screenbutton,wirelesspower,nfc,edit</string>
-    <string name="miui_quick_settings_tiles_stock">vowifi1,vowifi2,cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,papermode,night,quietmode,batterysaver,extremebatterysaver,powermode,vibrate,hotspot,sync,screenbutton,wirelesspower,nfc,edit,drivemode,workmode</string>
+    <string name="miui_quick_settings_tiles_default">vowifi1,vowifi2,cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,scanner,papermode,night,quietmode,batterysaver,extremebatterysaver,custom(com.miui.securitycenter/com.miui.superpower.notification.SuperPowerTileService),custom(com.miui.screenrecorder/.service.QuickService),custom(com.milink.service/com.milink.ui.service.MiLinkTileService),pcmode,custom(com.miui.mishare.connectivity/.tile.MiShareTileService),powermode,freeformhang,vibrate,hotspot,sync,custom(com.google.android.gms/.nearby.sharing.SharingTileService),screenbutton,wirelesspower,nfc,edit</string>
+    <string name="miui_quick_settings_tiles_stock">vowifi1,vowifi2,cell,wifi,flashlight,mute,screenshot,bt,autobrightness,airplane,screenlock,gps,rotation,scanner,papermode,night,quietmode,batterysaver,extremebatterysaver,pcmode,powermode,freeformhang,vibrate,hotspot,sync,screenbutton,wirelesspower,nfc,dolbyatomssound,edit,drivemode</string>
+    <string name="miui_screen_rotation_freeze_message">Locked screen orientation in landscape mode</string>
+    <string name="miui_snooze_always_float">"Don't hide"</string>
+    <string name="miui_snooze_cancel">Cancel</string>
+    <string name="miui_snooze_default_time">For %d minute</string>
+    <string name="miui_snooze_to_settings">Settings</string>
+    <string name="miui_snooze_toast_hint_default">"Upcoming notifications will be hidden for %d minute. "</string>
+    <string name="miui_snooze_toast_hint_until_unlock_screen">"Upcoming notifications will be hidden until the device is locked. "</string>
+    <string name="miui_snooze_until_unlock_screen">Until locked</string>
+    <string name="miui_snooze_user_set_fail">Go to Settings > Notifications &amp; Control center for more options</string>
+    <string name="miui_snooze_user_set_success">Applied successfully. Go to Settings > Notifications &amp; Control center for more options.</string>
     <string name="miuix_sbl_tracking_progress_labe_pull_to_refresh">Pull down to refresh</string>
     <string name="miuix_sbl_tracking_progress_labe_refreshed">Refreshed successfully</string>
     <string name="miuix_sbl_tracking_progress_labe_refreshing">Refreshing…</string>
@@ -1515,7 +1527,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="phone_locked_forget_password_suggesstion_one_content"><Data>Power off your device, press and hold the &lt;font color=#a5220e>Power button&lt;/font> and the &lt;font color=#a5220e>Volume up button&lt;/font> simultaneously until you see the Mi logo.</Data></string>
     <string name="phone_locked_forget_password_suggesstion_two_content"><Data>Select &lt;font color=#a5220e>\"Wipe &amp;amp; Reset\"&lt;/font> and wait until the device reboots.</Data></string>
     <string name="phone_locked_forget_password_suggesstions_title">How to erase data?</string>
-    <string name="phone_locked_string">Phone has been locked</string>
+    <string name="phone_locked_string">This device is locked</string>
     <string name="picture_color_mode">Picture color mode</string>
     <string name="picture_color_mode_desc">Use sRGB</string>
     <string name="pip_close">Close PIP</string>
