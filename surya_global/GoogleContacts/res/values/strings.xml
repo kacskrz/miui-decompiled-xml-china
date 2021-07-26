@@ -28,7 +28,6 @@
     <string name="about_terms_of_service">Terms of Service</string>
     <string name="accept_backup_confirmation_button">Got it</string>
     <string name="account_attribution">Contacts • %1$s</string>
-    <string name="account_disambiguation_dialog_title">Choose account to share from</string>
     <string name="account_drop_down_info">&lt;font color=\"#dd000000\"> %1$s &lt;/font> &lt;font color=\"#C1C1C1\" face=\"sans-serif\"> • &lt;/font> &lt;font color=\"#757575\" face=\"sans-serif\"> %2$s &lt;/font></string>
     <string name="account_filter_view_checked">%s checked</string>
     <string name="account_header_contact_saved_to_prefix">Saved to</string>
@@ -163,6 +162,8 @@
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
     <string name="chat">Chat</string>
+    <string name="chatFieldSaveError">Chat fields must have both text and label</string>
+    <string name="chatTextSaveError">Chat fields must have text</string>
     <string name="chat_aim">Chat using AIM</string>
     <string name="chat_gtalk">Chat using Google Talk</string>
     <string name="chat_icq">Chat using ICQ</string>
@@ -254,6 +255,7 @@
     <string name="contacts_suggestions_promo_fix_body_text">Get rid of duplicates to keep your contacts useful</string>
     <string name="contacts_suggestions_promo_fix_title_text">Fix up your contacts</string>
     <string name="contacts_sync_message">Contacts sync will start soon</string>
+    <string name="contacts_sync_message_2">Device contacts will sync soon</string>
     <string name="contacts_unlinking_progress_bar">Unlinking</string>
     <string name="content_description_call">Call %1$s %2$s</string>
     <string name="content_description_directions">directions to location</string>
@@ -285,6 +287,7 @@
     <string name="default_entry_with_label">^1 · Default</string>
     <string name="deleteConfirmation">Delete this contact?</string>
     <string name="deleteConfirmation_positive_button">Delete</string>
+    <string name="delete_after_import_trailer_description">Remove copies from SIM after import</string>
     <string name="delete_group_dialog_message">Delete the label \"%1$s\"? (Contacts themselves will not be deleted.)</string>
     <string name="delete_multiple_contacts_dialog_title">Deleting contacts</string>
     <string name="delete_multiple_read_only_writable_mixture_contacts_failure_toast">Some contacts deleted. Could not delete read-only contacts</string>
@@ -322,8 +325,6 @@
     <string name="dialpad_star_number">*</string>
     <string name="direction_quick_action_label">Directions</string>
     <string name="directory_card_title">Directory</string>
-    <string name="directory_field_department">Department</string>
-    <string name="directory_field_job_title">Job title</string>
     <string name="directory_field_location">Office location</string>
     <string name="directory_field_manager">%1$s &lt;%2$s></string>
     <string name="directory_field_reports_to">Manager</string>
@@ -349,7 +350,6 @@
     <string name="duplicates_assistant_contacts_merged">Contacts merged</string>
     <string name="duplicates_assistant_error_message">Trouble merging contacts. Try again.</string>
     <string name="duplicates_assistant_less_content_description">Less information</string>
-    <string name="duplicates_assistant_merge_all">Merge selected</string>
     <string name="duplicates_assistant_merge_all_old">Merge all</string>
     <string name="duplicates_assistant_merge_button">Merge</string>
     <string name="duplicates_assistant_merge_progress_message">Merging contacts…</string>
@@ -437,11 +437,11 @@ Reason: \"%s\""</string>
     <string name="ghostData_company">Company</string>
     <string name="ghostData_department">Department</string>
     <string name="ghostData_title">Title</string>
-    <string name="gm_sub_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
-    <string name="gm_sub_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
-    <string name="gm_sub_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
-    <string name="gm_sub_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
-    <string name="gm_sub_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="gm_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="gm_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="gm_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="gm_sys_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
     <string name="groupCreatedToast">Label created</string>
     <string name="groupDeletedToast">Label deleted</string>
     <string name="groupExistsErrorMessage">That label already exists</string>
@@ -478,13 +478,13 @@ Reason: \"%s\""</string>
     <string name="hint_findContacts">Search contacts</string>
     <string name="hint_findLabels">Search labels</string>
     <string name="icon_content_description">Dialog Icon</string>
-    <string name="imFieldSaveError">Chat fields must have both text and label</string>
     <string name="imLabelsGroup">IM</string>
     <string name="import_from_sim">SIM card</string>
     <string name="import_from_sim_summary_fmt">SIM %1$s</string>
     <string name="import_from_vcf_file">.vcf file</string>
     <string name="import_from_vcf_file_confirmation_message">Import contacts from vCard?</string>
     <string name="import_sim_with_delete_failed_body">No contacts were removed</string>
+    <string name="imported_on_date_sim_label">Imported on %s</string>
     <string name="importing_sim_delete_failed_body">Trouble removing copies from SIM</string>
     <string name="importing_sim_delete_success_body">Copies removed from SIM</string>
     <string name="importing_sim_failed_message">"Couldn't import contacts from SIM"</string>
@@ -516,7 +516,6 @@ Reason: \"%s\""</string>
     <string name="legacy_uri_unsupported">The uri is unsupported, please pick a contact to edit</string>
     <string name="libraries_material_featurehighlight_dismiss">Dismiss</string>
     <string name="light_theme_label">Light</string>
-    <string name="listCustomView">Customized view</string>
     <string name="listFoundAllContactsZero">No contacts</string>
     <string name="list_filter_all_accounts">All contacts</string>
     <string name="list_filter_customize">Customize</string>
@@ -533,8 +532,8 @@ Reason: \"%s\""</string>
     <string name="map_home">View home address</string>
     <string name="map_other">View address</string>
     <string name="map_work">View work address</string>
-    <string name="material_motion_easing_accelerate">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
-    <string name="material_motion_easing_decelerate">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
@@ -635,9 +634,8 @@ Reason: \"%s\""</string>
     <string name="non_phone_close">Close</string>
     <string name="not_set">Not set</string>
     <string name="nothing_to_import_message">Nothing to import</string>
-    <string name="og_account_menu_popover_title">Account Menu</string>
+    <string name="og_account_and_settings">Account and settings.</string>
     <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
-    <string name="og_account_particle_disc_not_signed_in_a11y">Open account menu</string>
     <string name="og_add_another_account">Add another account</string>
     <string name="og_choose_an_account_title">Choose an account</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
@@ -715,7 +713,6 @@ Reason: \"%s\""</string>
     <string name="opensearchview_clear_text_content_description">Clear text</string>
     <string name="opensearchview_navigation_content_description">Back</string>
     <string name="organizationLabelsGroup">Organization</string>
-    <string name="organization_entry">%1$s, %2$s</string>
     <string name="organization_entry_all_field">%1$s • %2$s • %3$s</string>
     <string name="organization_entry_two_field">%1$s • %2$s</string>
     <string name="other_contacts_directory_search_label">Other Contacts</string>
@@ -797,6 +794,7 @@ Reason: \"%s\""</string>
     <string name="select_action_create_new">Create a new contact</string>
     <string name="select_contacts_title">Select contacts</string>
     <string name="select_starred_contacts_activity_title">Select contacts</string>
+    <string name="select_target_account_for_import_title">Confirm where to import</string>
     <string name="selecting_all">Selecting all contacts in Trash</string>
     <string name="send_feedback_button_description">Send feedback</string>
     <string name="send_to_selection">Send</string>
@@ -813,9 +811,6 @@ Reason: \"%s\""</string>
     <string name="settings_manage_contacts_title">Manage contacts</string>
     <string name="settings_my_info_title">Your info</string>
     <string name="settings_no_default_account">No default set</string>
-    <string name="share_location_fail_message">Location sharing failed</string>
-    <string name="share_location_remove_message">Location sharing removed</string>
-    <string name="share_location_success_message">Sharing your location</string>
     <string name="sharing_vcard_dialog_progress">%1$d of %2$d</string>
     <string name="sharing_vcard_dialog_title">Exporting contacts</string>
     <string name="sheepdog_account_picker_title">Pick account for backup</string>
@@ -832,6 +827,11 @@ Reason: \"%s\""</string>
     <string name="sheepdog_opt_in_promo_subtitle2">Change this anytime in Google Contacts sync settings</string>
     <string name="sheepdog_opt_in_promo_title">Back up &amp; sync device contacts</string>
     <string name="sheepdog_opt_in_promo_title2">Never lose your contacts</string>
+    <string name="sheepdog_promo_failure_to_sync">"Trouble updating your settings. We'll ask again later."</string>
+    <string name="sheepdog_sim_and_device_sync_starting">Device &amp; SIM contacts will sync soon</string>
+    <string name="sheepdog_sim_import_confirm_button">Import from SIM &amp; sync</string>
+    <string name="sheepdog_sim_import_decline_button">Ignore SIM</string>
+    <string name="sheepdog_sim_import_description">"To keep SIM contacts backed up and available across Google services, import them with Google Contacts. They'll be on this device and anywhere you sign in, including your next phone.%1$s"</string>
     <string name="shortcutActivityTitle">Choose contact</string>
     <string name="shortcutContact">Contact</string>
     <string name="shortcutDialContact">Direct dial</string>
@@ -856,6 +856,7 @@ Reason: \"%s\""</string>
     <string name="sim_import_empty_message">No contacts on your SIM card</string>
     <string name="sim_import_failed_toast">Failed to import SIM contacts</string>
     <string name="sim_import_notification_body">Keep them backed up &amp; synced with Google Contacts</string>
+    <string name="sim_import_started">Importing in the background</string>
     <string name="sim_import_title">Import contacts</string>
     <string name="sim_import_title_none_selected">Select contacts</string>
     <string name="sim_incompatible_message">Contacts saved to SIM can only have a name and one number. Choose a new account to save more details.</string>
