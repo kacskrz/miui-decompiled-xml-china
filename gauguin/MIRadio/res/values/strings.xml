@@ -362,11 +362,15 @@ anytime"</string>
     <string name="create_playlist">Create playlist</string>
     <string name="create_playlist_failure">"Couldn't create playlist"</string>
     <string name="cross_talk">Stand-up acts</string>
+    <string name="cta_audio_desc">用于录制音频节目</string>
+    <string name="cta_imei_desc">用于获取设备imei以提供相关服务</string>
+    <string name="cta_location_desc">用于获取地理位置提供本地内容</string>
+    <string name="cta_purpose">欢迎使用收音机。您可以使用本应用进行在线电台和本地收音机功能。</string>
     <string name="cta_runtime_perm_desc_account">Access accounts on your device in order to sign in using Mi Account</string>
-    <string name="cta_runtime_perm_desc_location">4.(Optional) Access your location to display local radio stations</string>
     <string name="cta_runtime_perm_desc_phone">Access device info in order to identify your device</string>
     <string name="cta_runtime_perm_desc_storage">Access storage in order to access and save cover art and downloaded files</string>
     <string name="cta_runtime_perm_desc_storage_single">Access storage in order to access and save cover art and downloaded files</string>
+    <string name="cta_write_storage_desc">用于保存封面与音频</string>
     <string name="current_program_paid">当前节目为付费节目</string>
     <string name="current_version">Current version</string>
     <string name="daily_recommend">今日必听</string>
@@ -379,15 +383,6 @@ anytime"</string>
     <string name="date_picker_lunar">Chinese Traditional Calendar</string>
     <string name="date_time_picker_dialog_title">Set date and time</string>
     <string name="day_mode">日间模式</string>
-    <string name="declaration_main_content">"We shall protect your personal information in accordance with the relevant laws, regulations, and privacy policies.To be able to work normally, this app needs to connect to the internet and requires the following permissions in order to collect your personal information:
-"</string>
-    <string name="declaration_main_content2"><Data>"If you don't agree to grant such permissions or share and upload your personal information, you won't be able to use this app. You can choose to sign out or restrict permissions in the Settings in such cases. Read and agree to our &lt;font color=\"#29B596\">&lt;a href=\"%1$s\">User Agreement&lt;/a>&lt;/font> and &lt;font color=\"#29B596\">&lt;a href=\"%2$s\">Privacy Policy&lt;/a>&lt;/font> before using FM Radio."</Data></string>
-    <string name="declaration_main_content2_unloadable"><Data>"If you don't agree to grant such permissions or share and upload your personal information, you won't be able to use this app. You can choose to uninstall this app, sign out, or restrict permissions in the Settings in such cases. Read and agree to our &lt;font color=\"#29B596\">&lt;a href=\"%1$s\">User Agreement&lt;/a>&lt;/font> and &lt;font color=\"#29B596\">&lt;a href=\"%2$s\">Privacy Policy&lt;/a>&lt;/font> before using FM Radio."</Data></string>
-    <string name="declaration_main_purpose">Welcome to FM Radio! You can use this app to listen to the programs provided by the local and online radio stations.</string>
-    <string name="declaration_runtime_perm_desc">"1.Access device info in order to identify your device 
-2.Access accounts on your device in order to sign in using Mi Account 
-3.Access storage in order to access and save cover art and downloaded files 
-"</string>
     <string name="default_songtab_name">Playlist categories</string>
     <string name="delete">Delete</string>
     <string name="delete_comment_failed">"Couldn't delete comment"</string>
@@ -630,6 +625,7 @@ Send this code to the supervisor."</string>
     <string name="fm_sort_hot">Popular</string>
     <string name="fm_sort_new">New</string>
     <string name="fm_sort_weight">综合排序</string>
+    <string name="fm_sort_weight_new">猜你喜欢</string>
     <string name="fmradio_clear_confirm_msg">All presets will be deleted.</string>
     <string name="fmt_chinese_date">N月e</string>
     <string name="fmt_date">D</string>
@@ -774,16 +770,31 @@ Send this code to the supervisor."</string>
     <string name="hot_list">Top charts</string>
     <string name="i_know">OK</string>
     <string name="identity">Identification</string>
-    <string name="impunity_declaration_negative_text">Cancel</string>
-    <string name="impunity_declaration_negative_text_unloadable">Exit</string>
-    <string name="impunity_declaration_positive_text">Agree</string>
-    <string name="impunity_declaration_title">Terms of Service</string>
+    <string name="impunity_declaration_content"><Data>"
+    欢迎您使用收音机。您可使用本应用以实现在线电台与本地收音机功能。&lt;br />
+    为提供基本服务，该应用需要获取您的联网权限。&lt;br />
+    我们将严格遵守相关法律法规和隐私政策以保护您的个人信息。我们将通过&lt;font color=\"#29B596\">&lt;a href=\"%1$s\">《用户协议》&lt;/a>&lt;/font>和&lt;font color=\"#29B596\">&lt;a href=\"%2$s\">《隐私政策》&lt;/a>&lt;/font>帮助您了解我们收集、使用、存储和共享个人信息的情况以及您享有的相关权利。&lt;br />
+    如您同意上述协议的全部内容，请点击“同意”开始接受我们的服务。&lt;br />
+"</Data></string>
+    <string name="impunity_declaration_content2"><Data>"
+    欢迎您使用收音机。您可使用本应用以实现在线电台与本地收音机功能。&lt;br />
+    为提供基本服务，需要联网以及调用您的如下权限，以收集必要的个人信息：&lt;br />
+    1.获取您的手机imei信息，以区分不同的设备；&lt;br />
+    我们将严格遵守相关法律法规和隐私政策以保护您的个人信息。我们将通过&lt;font color=\"#29B596\">&lt;a href=\"%1$s\">《用户协议》&lt;/a>&lt;/font>和&lt;font color=\"#29B596\">&lt;a href=\"%2$s\">《隐私政策》&lt;/a>&lt;/font>帮助您了解我们收集、使用、存储和共享个人信息的情况以及您享有的相关权利。&lt;br />
+    如您同意上述协议的全部内容，请点击“同意”开始接受我们的服务。
+"</Data></string>
+    <string name="impunity_declaration_negative_text">取消</string>
+    <string name="impunity_declaration_positive_text">同意</string>
+    <string name="impunity_declaration_title">声明与条款</string>
     <string name="inconsistent_pwd">"Passwords don't match"</string>
     <string name="individuation_recommend_message">Turn on recommendations to receive personalized suggestions based on your preferences.</string>
     <string name="individuation_recommend_setting_title">Personalized recommendations</string>
     <string name="individuation_recommend_switch_message">"You won't receive recommendations based on your personal interests after you turn this feature off. Turn off anyway?"</string>
+    <string name="individuation_recommend_switch_message_new">关闭后，将不会使用你的个性信息为你提供个性化内容推荐，确定关闭？</string>
     <string name="individuation_recommend_title">Recommendations</string>
     <string name="individuation_service_switch">Personalized recommendations</string>
+    <string name="individuation_tip_1">根据兴趣内容推荐：</string>
+    <string name="individuation_tip_2">根据兴趣内容推荐</string>
     <string name="input_email_address_notice">"We'll use this email to verify your account"</string>
     <string name="input_hint_prefix">Enter %1$s</string>
     <string name="input_new_pwd">Enter new password</string>
@@ -1253,6 +1264,9 @@ Send this code to the supervisor."</string>
     <string name="permission_dialog_audio_reject_title">录音失败</string>
     <string name="permission_dialog_btn_cancel">我知道了</string>
     <string name="permission_dialog_btn_settings">设置</string>
+    <string name="permission_dialog_custom_desc_location">用于提供本地的音频服务</string>
+    <string name="permission_dialog_custom_desc_read_phone_state">用于识别设备与统计</string>
+    <string name="permission_dialog_custom_desc_read_write">用于下载音频，保存封面的用途</string>
     <string name="permission_dialog_instruction_title">权限使用说明</string>
     <string name="permission_dialog_location_description">为了提供更好的本地音频服务，我们需要获得您的设备位置信息。拒绝授权后，将无法展示本地音频内容。</string>
     <string name="permission_dialog_location_reject_description">获取定位失败，无法为您显示本地音频内容。请您前往系统设置修改权限后，查看本地音频内容。</string>
@@ -1349,6 +1363,7 @@ Send this code to the supervisor."</string>
     <string name="recognize_calling_network_error">"Couldn't connect to the network. Wait a minute or two and try again."</string>
     <string name="recommend">Recommend</string>
     <string name="recommend_list">Recommended</string>
+    <string name="recommend_new">为您推荐</string>
     <string name="recommended_file_size_download_in_mobile">Use %s of mobile data to download this file?</string>
     <string name="recommended_no_file_size_download_in_mobile">Use your mobile data connection to download this file?</string>
     <string name="refresh">刷新</string>
@@ -1369,7 +1384,6 @@ Send this code to the supervisor."</string>
     <string name="request_error_invalid_token">"Couldn't verify"</string>
     <string name="request_error_network">A network error occurred. Check your network settings and try again.</string>
     <string name="request_error_unknown">A system error occurred. Go back and try again.</string>
-    <string name="required_permissions">android.permission.READ_PHONE_STATE;android.permission.GET_ACCOUNTS;android.permission.READ_EXTERNAL_STORAGE;android.permission.WRITE_EXTERNAL_STORAGE;</string>
     <string name="resend_active_email">Resend</string>
     <string name="resend_email_reach_limit_message">"You've requested too many verification emails. Make sure that the verification email isn't in your inbox's Spam folder."</string>
     <string name="resend_email_reach_limit_title">Too many attempts</string>
@@ -1438,6 +1452,8 @@ Send this code to the supervisor."</string>
     <string name="setting_feature_setting">Feature settings</string>
     <string name="setting_login_tips">Sign in to sync favorites</string>
     <string name="settings">Settings</string>
+    <string name="settings_individuation_ad_desc">关闭后，仍能看到广告，但相关度会降低</string>
+    <string name="settings_individuation_ad_title">个性化广告</string>
     <string name="settings_search_key_desktop_lyric">Home screen lyrics;Lyrics;Music;Songs</string>
     <string name="settings_search_key_download_quality">Download quality;Quality;Music;Download;Songs</string>
     <string name="settings_search_key_download_when_favorite">Download favorites;Download;Favorites;Music;Songs</string>
