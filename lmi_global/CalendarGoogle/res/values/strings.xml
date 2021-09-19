@@ -6,6 +6,8 @@
     <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {1 deleted} other {# deleted}}</string>
     <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {1 moved to {TITLE}}other {# moved to {TITLE}}}</string>
     <string name="MSG_UNDO_TASKS_UNCOMPLETED">{NUM_TASKS_UNCOMPLETED, plural, =1 {1 marked incomplete} other {# marked incomplete}}</string>
+    <string name="MSG_UNDO_TASK_STARRED">Task added to Starred</string>
+    <string name="MSG_UNDO_TASK_UNSTARRED">Task removed from Starred</string>
     <string name="a11y_added_contact">Contact %s added</string>
     <string name="a11y_calendar_set">Calendar set to: %s</string>
     <string name="a11y_chat_button">Chat with meeting guests</string>
@@ -28,7 +30,7 @@
     <string name="a11y_respond_yes_content_description">Respond Yes</string>
     <string name="a11y_respond_yes_meeting_room_content_description">Respond Yes, in a meeting room</string>
     <string name="a11y_respond_yes_unknown_content_description">Respond Yes</string>
-    <string name="a11y_respond_yes_virtually_content_description">Respond Yes, virtually</string>
+    <string name="a11y_respond_yes_virtually_content_description">Respond Yes, joining virtually</string>
     <string name="a11y_room_booking_added_room">Added room: %s</string>
     <string name="a11y_room_booking_removed_room">Removed room: %s</string>
     <string name="a11y_room_booking_rooms_matching_page">Rooms matching %s</string>
@@ -218,8 +220,8 @@ Actual: %2$s."</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="building_name_other">Other</string>
     <string name="busy">Busy</string>
+    <string name="button_calendar_permission_allow_label">Allow calendar access</string>
     <string name="button_label">Button</string>
-    <string name="button_permissions_allow_label">Allow calendar access</string>
     <string name="button_permissions_manage_label">Go to settings</string>
     <string name="calendar">Calendar</string>
     <string name="calendar_cannot_be_shown">Calendar cannot be shown</string>
@@ -244,6 +246,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="cancel_speeddial">Cancel</string>
     <string name="cancellation_discard">Discard</string>
     <string name="cancellation_keep_editing">Keep editing</string>
+    <string name="cannot_modify_availability_do_not_disturb">Focus time is shown as busy</string>
     <string name="cannot_modify_availability_working_elsewhere">Working elsewhere entries do not affect your availability</string>
     <string name="cannot_reschedule_completed_tasks">"Completed tasks can't be rescheduled"</string>
     <string name="cannot_reschedule_cross_profile_entry">You can only edit this event in your personal app</string>
@@ -258,10 +261,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="check_in">Check-in</string>
     <string name="check_out">Check-out</string>
     <string name="chime_notification_title">&lt;b> %1$s &lt;/b></string>
-    <string name="chip_15_minutes_promo_dialog_primary_text">See short events more easily</string>
-    <string name="chip_15_minutes_promo_dialog_secondary_text">"Entries shorter than 30 minutes are now displayed smaller. You can change this in Settings > General.
-
-You can use pinch-to-zoom to see their details."</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="clipboard_clip_label">Conference link</string>
     <string name="close_label">Close</string>
@@ -584,6 +583,8 @@ You can use pinch-to-zoom to see their details."</string>
     <string name="flight_redirected">Redirected</string>
     <string name="floor">Floor %1$s</string>
     <string name="floor_and_section">%1$s-%2$s</string>
+    <string name="focus_time_prefix">Focus time:</string>
+    <string name="foreign_holiday">%1$s (%2$s)</string>
     <string name="forward_event_activity_title">Forwarding event</string>
     <string name="forward_event_chooser_title">Forward with</string>
     <string name="forward_event_email_subject">Fw: %s</string>
@@ -610,7 +611,6 @@ Where: %5$s
     <string name="goal_session_deferred">Finding another time…</string>
     <string name="goal_session_deferred_offline">"You're offline. Session will be rescheduled when you're online."</string>
     <string name="goal_undeferrable">No more good times found.</string>
-    <string name="goal_undeferrable_question">Do you want to remove this session?</string>
     <string name="goal_updated">Goal updated</string>
     <string name="goal_updated_instance_start_time">Session updated. Calendar is learning your time preferences.</string>
     <string name="goal_updated_offline">"You're offline. Future sessions will be updated when you're online."</string>
@@ -744,7 +744,6 @@ Where: %5$s
     <string name="groove_title">Goals</string>
     <string name="guest_notification_prompt_cancellations_will_be_sent_message">Cancellation emails will be sent to Google Calendar guests.</string>
     <string name="guest_notification_prompt_create_message">Send invitation emails to Google Calendar guests?</string>
-    <string name="guest_notification_prompt_creation_disclaimer">"If you choose Don't send, some guests might still receive emails because of their settings or because they don't use Google Calendar."</string>
     <string name="guest_notification_prompt_delete_message">Send cancellation emails to Google Calendar guests?</string>
     <string name="guest_notification_prompt_invite_new_cancel_removed_guests">Send emails to new and removed Google Calendar guests?</string>
     <string name="guest_notification_prompt_invite_new_guests">Send invitation emails to new Google Calendar guests?</string>
@@ -812,7 +811,7 @@ Where: %5$s
     <string name="inconsistency_report">Calendar report</string>
     <string name="infinite_duration_accessibility_description">Ends never</string>
     <string name="infinite_duration_label">Never</string>
-    <string name="instructions_for_settings_screen">In Settings, tap Permissions and enable Calendar.</string>
+    <string name="instructions_for_calendar_permission_settings_screen">In Settings, tap Permissions and enable Calendar.</string>
     <string name="interval_title">Repeats every</string>
     <string name="item_is_selected">%1$s selected</string>
     <string name="join_by_phone_action_label">Join by phone</string>
@@ -864,6 +863,7 @@ Where: %5$s
     <string name="meet_sharing_sip">Or join by SIP: %s</string>
     <string name="meet_sharing_video_call">Video call link: %s</string>
     <string name="meeting_code_format">ID: %s</string>
+    <string name="meetings_decline_type_disabled_explanation">Unavailable for repeating entries</string>
     <string name="menu_category_general_preferences">General</string>
     <string name="menu_crossprofile_connection_off">Not shown</string>
     <string name="menu_crossprofile_connection_on">Shown</string>
@@ -931,8 +931,6 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="ooo">Out of office</string>
     <string name="ooo_auto_decline_default_message">"Declined because I'm out of office"</string>
     <string name="ooo_auto_decline_disabled">Meetings will not be declined</string>
-    <string name="ooo_auto_decline_enabled">Meetings will be declined</string>
-    <string name="ooo_auto_decline_existing_and_new_explanation">Automatically decline new and existing meetings</string>
     <string name="ooo_auto_decline_explanation">Automatically decline meetings</string>
     <string name="ooo_auto_decline_message_label">Message</string>
     <string name="ooo_auto_decline_will_apply_to_existing_and_new_invitations">New and existing meetings will be declined</string>
@@ -945,7 +943,6 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="ooo_decline_new_meetings">Only new meeting invitations</string>
     <string name="ooo_decline_new_meetings_read_out">Declining %1$s</string>
     <string name="ooo_default_title">Out of office</string>
-    <string name="ooo_meetings_decline_type_disabled_explanation">Unavailable for out of office entries that repeat</string>
     <string name="ooo_meetings_to_decline">Meetings to decline</string>
     <string name="ooo_prefix">Out of office:</string>
     <string name="ooo_visibility_disclaimer">Availability may be shown in other Google apps. You can change this in Calendar settings on your computer.</string>
@@ -1093,7 +1090,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="response_yes">Yes</string>
     <string name="response_yes_meeting_room">Yes, in a meeting room</string>
     <string name="response_yes_unknown">Yes</string>
-    <string name="response_yes_virtually">Yes, virtually</string>
+    <string name="response_yes_virtually">Yes, joining virtually</string>
     <string name="restart_device_dialog_text">Unfortunately, an issue is preventing the Calendar app from starting. To resolve this, please restart your device.</string>
     <string name="rlz_access_points">Y0,Y8</string>
     <string name="roboto_medium">sans-serif-medium</string>
