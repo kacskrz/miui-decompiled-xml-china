@@ -2,11 +2,10 @@
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="MSG_DEFAULT_DISPLAY_NAME">From a room</string>
-    <string name="MSG_UNDO_TASKS_COMPLETED">{NUM_TASKS_COMPLETED, plural, =1 {1 completed} other {# completed}}</string>
-    <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {1 deleted} other {# deleted}}</string>
-    <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {1 moved to {TITLE}}other {# moved to {TITLE}}}</string>
-    <string name="MSG_UNDO_TASKS_UNCOMPLETED">{NUM_TASKS_UNCOMPLETED, plural, =1 {1 marked incomplete} other {# marked incomplete}}</string>
-    <string name="MSG_UNDO_TASK_STARRED">Task added to Starred</string>
+    <string name="MSG_UNDO_TASKS_COMPLETED">{NUM_TASKS_COMPLETED, plural, =1 {Task completed} other {# tasks completed}}</string>
+    <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {Task deleted} other {# tasks deleted}}</string>
+    <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {Task moved to {TITLE}}other {# tasks moved to {TITLE}}}</string>
+    <string name="MSG_UNDO_TASKS_UNCOMPLETED">{NUM_TASKS_UNCOMPLETED, plural, =1 {Task marked uncompleted} other {# tasks marked uncompleted}}</string>
     <string name="MSG_UNDO_TASK_UNSTARRED">Task removed from Starred</string>
     <string name="a11y_added_contact">Contact %s added</string>
     <string name="a11y_calendar_set">Calendar set to: %s</string>
@@ -31,10 +30,14 @@
     <string name="a11y_respond_yes_meeting_room_content_description">Respond Yes, in a meeting room</string>
     <string name="a11y_respond_yes_unknown_content_description">Respond Yes</string>
     <string name="a11y_respond_yes_virtually_content_description">Respond Yes, joining virtually</string>
+    <string name="a11y_responded_yes_meeting_room_content_description">Responded Yes, in a meeting room</string>
+    <string name="a11y_responded_yes_unknown_content_description">Responded Yes</string>
+    <string name="a11y_responded_yes_virtually_content_description">Responded Yes, joining virtually</string>
     <string name="a11y_room_booking_added_room">Added room: %s</string>
     <string name="a11y_room_booking_removed_room">Removed room: %s</string>
     <string name="a11y_room_booking_rooms_matching_page">Rooms matching %s</string>
     <string name="a11y_room_booking_unavailable_room">Unavailable: %s</string>
+    <string name="a11y_rsvp_join_method_button_label">Join method options</string>
     <string name="a11y_select_calendar">Select calendar</string>
     <string name="a11y_select_color">Select color</string>
     <string name="a11y_select_visibility">Select visibility</string>
@@ -86,7 +89,6 @@
     <string name="accessibility_find_time_slab_bar_swipe_hint">Swipe left to move to next suggestion</string>
     <string name="accessibility_find_time_slab_bar_swipe_hint_rtl">Swipe right to move to next suggestion</string>
     <string name="accessibility_find_time_timeframe_duration_label">Selected filter value: %s</string>
-    <string name="accessibility_has_time_proposals">has time proposals</string>
     <string name="accessibility_hide_date_picker">Hide date picker</string>
     <string name="accessibility_navigation_icon">Back</string>
     <string name="accessibility_navigation_icon_search">Search</string>
@@ -113,6 +115,7 @@
     <string name="acessibility_selected_checkmark_description">Selected</string>
     <string name="acl_fixer_help_url">https://support.google.com/calendar/?p=add_attachments_android</string>
     <string name="action_apply">Apply</string>
+    <string name="action_cancel_booked_event">Cancel appointment</string>
     <string name="action_delete">Remove</string>
     <string name="action_did_it">Did it</string>
     <string name="action_did_it_short">Did it</string>
@@ -120,6 +123,7 @@
     <string name="action_later">Later</string>
     <string name="action_mark_as_done">Mark as done</string>
     <string name="action_mark_as_not_done">Mark as not done</string>
+    <string name="action_send_booked_event_cancellation">Send cancellation</string>
     <string name="action_view">View</string>
     <string name="actionbar_subtitle_font_family">@string/roboto_medium</string>
     <string name="activity_not_found_general">No application found to handle the action</string>
@@ -195,6 +199,8 @@ Actual: %2$s."</string>
     <string name="attachment_description_word">Doc</string>
     <string name="attachment_no_activity">"Can't find app to open Google Drive file"</string>
     <string name="attendee_accepted">%s is going</string>
+    <string name="attendee_accepted_in_a_meeting_room">%s is joining in a meeting room</string>
+    <string name="attendee_accepted_virtually">%s is joining virtually</string>
     <string name="attendee_declined">%s has declined</string>
     <string name="attendee_not_responded">%s has not responded</string>
     <string name="attendee_optional">Optional</string>
@@ -233,7 +239,10 @@ Actual: %2$s."</string>
     <string name="calendar_is_consistent">Calendar %s is consistent.</string>
     <string name="calendar_is_inconsistent">Calendar %s is inconsistent.</string>
     <string name="calendar_is_unchecked">%1$s, unchecked</string>
+    <string name="calendar_picker_account_info_segment_ooo">Out of office is not available for this account</string>
+    <string name="calendar_picker_account_info_segment_working_elsewhere">Working elsewhere is not available for this account</string>
     <string name="calendar_refresh">Refresh</string>
+    <string name="calendar_segment_secondary_text">Shared by %s</string>
     <string name="calendar_storage_disabled_dialog_action">Enable in Settings</string>
     <string name="calendar_storage_disabled_dialog_message">"Oops, your calendars and events can't be displayed because Calendar Storage is disabled.
 
@@ -242,6 +251,8 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="calendar_successfully_added_message">Calendar was successfully added.</string>
     <string name="calendars_help_context">calendar_settings_android</string>
     <string name="cancel">@android:string/no</string>
+    <string name="cancel_booked_event_dialog_content">Cancellation emails will be sent to all guests</string>
+    <string name="cancel_booked_event_dialog_title">Cancel appointment?</string>
     <string name="cancel_button">Cancel</string>
     <string name="cancel_speeddial">Cancel</string>
     <string name="cancellation_discard">Discard</string>
@@ -255,6 +266,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="chat_status_segment_disabled">"Chat status can't be set for events longer than 24 hours."</string>
     <string name="chat_status_segment_primary">Do not disturb</string>
     <string name="chat_status_segment_secondary">Set status to “Do not disturb” and turn off Chat notifications</string>
     <string name="chat_suggestion_description">Based on Chat</string>
@@ -357,7 +369,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="date_duration_label">On %s</string>
     <string name="date_space_dash_space">" – "</string>
     <string name="date_time_fmt">%1$s, %2$s</string>
-    <string name="day_view_new_event_hint">+ New event</string>
     <string name="debug_channel_description">Debug notifications</string>
     <string name="decline_action">Decline</string>
     <string name="decline_scope_selection_title">Decline recurring event</string>
@@ -409,6 +420,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="discard_dialog_discard">Discard</string>
     <string name="discard_dialog_keep_editing">Keep editing</string>
     <string name="discard_goal_message">Discard changes to this goal?</string>
+    <string name="dismiss">Dismiss</string>
     <string name="dismiss_warning">Dismiss warning</string>
     <string name="dnd_auto_decline_default_message">Declined because I am in focus time</string>
     <string name="dnd_chat_status_primary">Do not disturb</string>
@@ -421,7 +433,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="drawer_account_sync_syncing">Syncing…</string>
     <string name="drawer_account_unauthenticated">Not properly signed in</string>
     <string name="drawer_birthdays_text">Birthdays</string>
-    <string name="drawer_empty_text">No Calendars selected to be synchronized.</string>
     <string name="drawer_help_feedback">Help &amp; feedback</string>
     <string name="drawer_holidays_text">Holidays</string>
     <string name="drawer_logo_lockup_first">Google</string>
@@ -501,6 +512,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="everyone_declined_pnt_action">@string/propose_time_review_button_text</string>
     <string name="everyone_declined_prefix">Everyone else declined:</string>
     <string name="everyone_declined_reschedule_action">@string/reschedule_action</string>
+    <string name="ewl_prefix">Everyday working location:</string>
     <string name="exception_during_external_activity_start">The application that handles this action could not be started</string>
     <string name="expand_button_title">Advanced</string>
     <string name="expand_location">Expand %1$s</string>
@@ -598,6 +610,11 @@ Where: %5$s
 %6$s"</string>
     <string name="forward_event_toast_title">Forwarding event…</string>
     <string name="generic_error">Error</string>
+    <string name="gm3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="gm3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="gm3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="gm3_sys_motion_easing_standard">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
@@ -784,6 +801,7 @@ Where: %5$s
     <string name="hats_lib_submit">Submit</string>
     <string name="hats_lib_thank_you_followup_message">Help us improve our product by answering more questions</string>
     <string name="hide_account_list">Hide accounts</string>
+    <string name="home">Home</string>
     <string name="hourly_view_label">Day</string>
     <string name="hourly_view_label_full">Day view</string>
     <string name="ical_ask_delete_cancelled_event">Event “%s” has been canceled. Would you like to remove it from your calendar?</string>
@@ -836,6 +854,7 @@ Where: %5$s
     <string name="loading_addons_error_no_connection">"Conferencing solutions can't be loaded because there's no Internet connection"</string>
     <string name="loading_attendees">Loading attendees…</string>
     <string name="location_error">Unable to add location</string>
+    <string name="location_meeting_room">in a meeting room</string>
     <string name="location_picker_contacts">Contacts</string>
     <string name="location_picker_hint">Add location</string>
     <string name="location_picker_locations">Nearby places</string>
@@ -844,19 +863,17 @@ Where: %5$s
     <string name="location_remove">Remove</string>
     <string name="location_show_on_map">Show on map</string>
     <string name="location_time">%s (local time)</string>
+    <string name="location_virtually">virtually</string>
     <string name="map_label">Map</string>
     <string name="maps_not_available">No application found to view this location.</string>
+    <string name="material_clock_display_divider">:</string>
     <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
-    <string name="meet_auto_add_promo_primary_text">Your event now includes Google Meet</string>
-    <string name="meet_auto_add_promo_secondary_text">High-quality, secure video conferencing with up to 100 people is added automatically. Update your preferences in Settings.</string>
     <string name="meet_consumer_description_label">Video conferencing details added</string>
     <string name="meet_description_label">Video conferencing and dial-in details added</string>
-    <string name="meet_promo_dialog_got_it">Got it</string>
-    <string name="meet_promo_turn_off">Turn off</string>
     <string name="meet_sharing_joining_info">Google Meet joining info</string>
     <string name="meet_sharing_more_phone_numbers">More phone numbers: %s</string>
     <string name="meet_sharing_phone_number">Or dial: %s</string>
@@ -921,6 +938,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="notification_ticker_format">%1$s, %2$s</string>
     <string name="notification_tone_label">Calendar Notification</string>
     <string name="notifications_channel_description">Calendar notifications</string>
+    <string name="office">Office</string>
     <string name="offline_warning">You are offline. Some schedules cannot be loaded.</string>
     <string name="ok">@android:string/yes</string>
     <string name="okay_button">Okay</string>
@@ -957,6 +975,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="peoplekit_contact_selected">Selected</string>
     <string name="peoplesheet_add_to_contacts">Add to contacts</string>
     <string name="peoplesheet_edit_contact">Edit contact</string>
     <string name="personal_profile_header_title">Personal profile</string>
@@ -1118,6 +1137,8 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="room_tile_info_separator">⋅</string>
     <string name="rsvp_accepted">Responded yes.</string>
     <string name="rsvp_declined">Responded no.</string>
+    <string name="rsvp_location_promo_body_text">Let others know how you’ll be joining.</string>
+    <string name="rsvp_location_promo_header_text">New RSVP options</string>
     <string name="rsvp_tentative">Responded maybe.</string>
     <string name="save">Save</string>
     <string name="saving_event">Event saved.</string>
@@ -1210,6 +1231,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="snack_bar_cross_profile_permissions_granted">Personal calendars are now shown</string>
     <string name="snack_bar_cross_profile_permissions_revoked">Personal calendars are no longer shown</string>
     <string name="some_calendars_cannot_be_shown">Some calendars cannot be shown</string>
+    <string name="somewhere_else">Somewhere else</string>
     <string name="strip_note_formatting_prompt">Editing the notes will result in formatting and styles being lost.</string>
     <string name="strip_note_formatting_prompt_continue">Continue editing</string>
     <string name="subscribe_to_calendar_confirmation_title">Add calendar \"%s\" to your account?</string>
@@ -1217,6 +1239,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="subscription_cancel">Cancel</string>
     <string name="subscription_failed_calendar_no_longer_exists">Calendar no longer exists.</string>
     <string name="subscription_failed_no_access_to_calendar">You do not have access ot this calendar.</string>
+    <string name="subscriptions_launch_play_flow_error">"Can't connect to Play's billing service"</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
     <string name="sud_back_button_label">Back</string>
@@ -1368,6 +1391,7 @@ Would you like to reschedule your future Goal sessions to this time zone?"</stri
     <string name="tz_picker_timezone_with_abbreviation">%1$s (%2$s)</string>
     <string name="unable_to_add_calendar_message">Calendar could not be added.</string>
     <string name="unified_sync_toggle_label">Google Calendar</string>
+    <string name="unspecified">Unspecified</string>
     <string name="update">Update</string>
     <string name="update_event_action_prompt">Update existing event</string>
     <string name="v7_preference_off">OFF</string>
@@ -1426,6 +1450,7 @@ In addition, Calendar uses this location when it books rooms for you."</string>
     <string name="working_hours_help">"Enable working hours to let people know what times you're working and when you're available for meetings. This will warn people if they try to invite you to a meeting outside of these hours."</string>
     <string name="working_hours_set_text">Set working hours</string>
     <string name="working_hours_start">Start</string>
+    <string name="working_location">Working Location</string>
     <string name="yesterday">Yesterday</string>
     <string name="your_chip_label">You</string>
 </resources>
