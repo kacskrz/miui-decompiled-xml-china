@@ -30,6 +30,8 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="action_bar_report_link_des">App alert</string>
     <string name="actionbar_button_up_description">Back</string>
+    <string name="ad_permissions">&lt;u>应用权限&lt;u/></string>
+    <string name="ad_privacy">&lt;u>隐私政策&lt;u/></string>
     <string name="ad_recommend_like">You may also like</string>
     <string name="adb_install_no_network">"Couldn't connect to the network. Check your network settings and try again."</string>
     <string name="adb_install_open">Opening…</string>
@@ -64,6 +66,8 @@
     <string name="app_info_version_des_replace">Version: %1$s > %2$s | Size: %3$s</string>
     <string name="app_info_version_replace">Version: %1$s -> %2$s</string>
     <string name="app_install_failed_button_text">Search for apps</string>
+    <string name="app_installing_not_allow">"You didn't allow%1$s to install apps. You can change this in the Settings."</string>
+    <string name="app_installing_toast">Wait until all ongoing installations are complete and try again</string>
     <string name="app_name">Package installer</string>
     <string name="app_name_unknown">Unknown</string>
     <string name="app_not_found_dlg_text">"The app wasn't found in the list of installed apps."</string>
@@ -75,7 +79,6 @@
     <string name="app_permissions_group_summary">%1$d of %2$d apps allowed</string>
     <string name="app_store_install_hint">Install now</string>
     <string name="app_store_installing_message">Installing…</string>
-    <string name="app_store_missing_message">"Looks like you haven't installed our official App Store. Install it now?"</string>
     <string name="app_store_missing_title">"App Store isn't installed"</string>
     <string name="app_version_format">Version: %1$s</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
@@ -205,6 +208,7 @@ All your previous user data will be saved."</string>
     <string name="dlg_sys_app_replacement_statement">"This is a system app.
 
 All your previous user data will be saved."</string>
+    <string name="do_not_show_again">"Don't show again"</string>
     <string name="done">Done</string>
     <string name="download_count_w">%1$s万</string>
     <string name="download_count_y">%1$s亿+</string>
@@ -338,6 +342,7 @@ All your previous user data will be saved."</string>
     <string name="install_confirm_dialog_title">Attention</string>
     <string name="install_confirm_question">Do you want to install this application? It will get access to:</string>
     <string name="install_confirm_question_des_10">"If you're willing to take the risks and want to proceed with the installation, authorize the installation in Security > Manage apps > Permissions > Apps with possible risks. If you can't find \"Apps with possible risks\", update your Security app and try again."</string>
+    <string name="install_confirm_question_des_10_tablet">"If you're willing to take the risks and want to proceed with the installation, authorize the installation in Security > Manage apps > Permissions > Apps with possible risks. If you can't find \"Apps with possible risks\", update your Security app and try again."</string>
     <string name="install_confirm_question_no_perms">"Do you want to install this app? It doesn't require any special permissions."</string>
     <string name="install_confirm_question_update">"Do you want to install an update to this existing app? The existing app data won't be lost. The updated application will get access to:"</string>
     <string name="install_confirm_question_update_no_perms">"Do you want to install an update to this existing app? The existing app data won't be lost. It does not require any special permissions."</string>
@@ -364,6 +369,10 @@ Alternatively, you can turn off Lite mode and try again."</string>
     <string name="install_finished_notification_summary">Tap to free up storage space</string>
     <string name="install_finished_notification_title">Installed %1$s successfully. You can free up %2$s of storage space.</string>
     <string name="install_from_appstore_hint">We recommend you to install the app from &lt;u>&lt;font color=#91c727>AppStore&lt;/font>&lt;/u></string>
+    <string name="install_package_description">安装包详情</string>
+    <string name="install_package_error">该安装包与您的系统不兼容</string>
+    <string name="install_package_error_des">请联系对应开发者或前往小米应用商店安装经过兼容性测试的应用</string>
+    <string name="install_unknow_source">Install unknown apps</string>
     <string name="install_vip_account_mode_explain_des">This is a Beta version of the app. Apply for Beta testing permissions before installing it.</string>
     <string name="install_vip_account_mode_solution_des">Apply for Beta</string>
     <string name="installing">Installing…</string>
@@ -416,11 +425,10 @@ Alternatively, you can turn off Lite mode and try again."</string>
     <string name="miui_failed_insufficient_storage">Insufficient storage space</string>
     <string name="miui_failed_invalid_apk">Installation package error</string>
     <string name="miui_failed_invalid_uri">Invalid installation path</string>
-    <string name="miui_failed_market_code_already_new">已经是最新版本</string>
-    <string name="miui_failed_market_code_denied">请求商店被拒绝</string>
-    <string name="miui_failed_market_code_download_failed">下载失败</string>
-    <string name="miui_failed_market_code_no_response">请求小米应用商店无响应</string>
-    <string name="miui_failed_market_code_user_canceled">取消下载</string>
+    <string name="miui_failed_market_code_denied">Request was rejected</string>
+    <string name="miui_failed_market_code_download_failed">"Couldn't download"</string>
+    <string name="miui_failed_market_code_no_response">"GetApps didn't respond"</string>
+    <string name="miui_failed_market_code_user_canceled">Download was canceled</string>
     <string name="miui_failed_miui_system_incompatible">"Installation package isn't compatible with MIUI"</string>
     <string name="miui_failed_newer_sdk">"SDK version isn't supported yet"</string>
     <string name="miui_failed_older_sdk">SDK version is too old</string>
@@ -435,8 +443,8 @@ Alternatively, you can turn off Lite mode and try again."</string>
     <string name="miui_failed_solution_6">Delete the already installed version and try to install again.</string>
     <string name="miui_failed_solution_7">Download the latest version of this app in GetApps.</string>
     <string name="miui_failed_solution_8">Download the app from GetApps.</string>
-    <string name="miui_failed_solution_retry_later">请稍后重试</string>
-    <string name="miui_failed_solution_to_market">请前往小米应用商店安装该应用</string>
+    <string name="miui_failed_solution_retry_later">Wait a minute or two and try again</string>
+    <string name="miui_failed_solution_to_market">Install this app from GetApps</string>
     <string name="miui_failed_system_incompatible">Incompatible installation package</string>
     <string name="miui_failed_update_incompatible">Conflicting app signatures</string>
     <string name="miui_failed_version_downgrade">"Can't downgrade apps"</string>
@@ -650,7 +658,6 @@ Alternatively, you can turn off Lite mode and try again."</string>
     <string name="prepare_install">Preparing installation…</string>
     <string name="privacyPerms">Privacy</string>
     <string name="privacy_relative">Privacy</string>
-    <string name="reboot_time">Getting ready to reboot… (%1$s)</string>
     <string name="replace_app_des_text">Replace the app with this version?</string>
     <string name="resolve_suggestion_title">Suggestion</string>
     <string name="review_button_cancel">Cancel</string>
@@ -678,8 +685,6 @@ Alternatively, you can turn off Lite mode and try again."</string>
  "<li>When an app contains viruses.</li>"
  "<li>A newer version of an app is available in our app market.</li>"
  "<li>Installation package comes from an unknown source.</li></string>
-    <string name="settings_warning_dialog_msg">"Your phone is prone to security risks. You won't be prompted to install secure app versions if you turn this feature off. Turn off anyway?"</string>
-    <string name="settings_warning_dialog_title">Attention</string>
     <string name="size_byte">B</string>
     <string name="size_giga_byte">GB</string>
     <string name="size_kilo_byte">KB</string>
@@ -795,11 +800,14 @@ Alternatively, you can turn off Lite mode and try again."</string>
     <string name="unknown_apps_admin_dlg_text">"Your administrator doesn't allow installation of apps obtained from unknown sources."</string>
     <string name="unknown_apps_dlg_text">For security, your phone is set to block installation of apps obtained from unknown sources.</string>
     <string name="unknown_installer">Unidentified PC tools</string>
+    <string name="unknown_source_allow">Allow</string>
+    <string name="unknown_source_forbidden">Restrict</string>
     <string name="unlike">No thanks</string>
     <string name="untrusted_external_source_always_click">Always allow</string>
     <string name="untrusted_external_source_title">Allow \"%1$s\" to install apps?</string>
     <string name="untrusted_external_source_warning">"For your security, your phone isn't allowed to install unknown apps from this source."</string>
-    <string name="untrusted_external_source_warning_summary">"Your device and personal data are vulnerable to attacks by the apps installed from unknown sources. By allowing to install apps from this source, you agree to accept responsibility for any damage or data loss that might occur while you're using these apps."</string>
+    <string name="untrusted_external_source_warning_summary">Your device and personal data are more vulnerable to attack by unknown apps. By installing apps from this source, you agree that you are responsible for any damage to your device or loss of data that may result from their use.</string>
+    <string name="uri_no_permission">Unable to read file,permission denied</string>
     <string name="user_is_not_allowed_dlg_text">The current user is not allowed to perform this uninstallation.</string>
     <string name="user_is_not_allowed_dlg_title">Not allowed</string>
     <string name="v7_preference_off">OFF</string>
