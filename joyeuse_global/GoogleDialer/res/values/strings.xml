@@ -76,7 +76,6 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accessibility_duration_minutes">%1$s %2$s</string>
     <string name="accessibility_settings_title">Accessibility</string>
-    <string name="action_add_number">Add a number</string>
     <string name="action_copy_number">Copy number</string>
     <string name="action_edit_number_precall">Edit number before call</string>
     <string name="action_menu_back_from_search">stop searching</string>
@@ -175,6 +174,8 @@ Recordings are stored only on your phone. ^1"</string>
     <string name="atlas_feedback_help_us_improve_negative_button_text">No thanks</string>
     <string name="atlas_feedback_help_us_improve_positive_button_text">Yes, continue</string>
     <string name="atlas_feedback_help_us_improve_title">Help improve Hold for Me</string>
+    <string name="atlas_feedback_integration_music_playing_template">[ ♪ ♫ ^1 ♫ ♪ ]</string>
+    <string name="atlas_feedback_integration_music_playing_text">Music playing</string>
     <string name="atlas_feedback_notification_content_text">Send Google feedback about your Hold for Me call</string>
     <string name="atlas_feedback_notification_title">Improve Hold for Me</string>
     <string name="atlas_feedback_preparing_diagnostic_bundle_message">Gathering diagnostic data...</string>
@@ -280,11 +281,16 @@ Recordings are stored only on your phone. ^1"</string>
     <string name="call_action_label_ring_phone">Ring phone (default)</string>
     <string name="call_action_label_silently_decline">Silently decline</string>
     <string name="call_announcement_id">call_announcement_%s</string>
-    <string name="call_announcer_key">call_announcer</string>
+    <string name="call_announcer_preference_footer_instruction_key">call_announcer_preference_footer_instruction_key</string>
+    <string name="call_announcer_preference_footer_instruction_text">"The caller's name and number will be read out loud for incoming calls"</string>
+    <string name="call_announcer_preference_list_key">call_announcer_enable_list_key</string>
+    <string name="call_announcer_preference_list_title">Announce caller ID</string>
+    <string name="call_announcer_preference_option_always">Always</string>
+    <string name="call_announcer_preference_option_headset">Only when using a headset</string>
+    <string name="call_announcer_preference_option_never">Never</string>
     <string name="call_announcer_preference_summary_default">"Read out the caller's name or number"</string>
     <string name="call_announcer_preference_summary_talkback_active">"TalkBack announces who's calling"</string>
     <string name="call_announcer_preference_summary_zen_mode_on">Not available while Zen Mode is on</string>
-    <string name="call_announcer_preference_title">Caller ID announcement</string>
     <string name="call_announcer_settings_title">Caller ID announcement</string>
     <string name="call_assistant">Call %s</string>
     <string name="call_blocking_disabled_notification_text">Disabled because an emergency call was made.</string>
@@ -324,7 +330,7 @@ Recordings are stored only on your phone. ^1"</string>
     <string name="call_incoming_respond_via_sms_custom_message">Write your own…</string>
     <string name="call_incoming_respond_via_sms_custom_message_hint">Type a message</string>
     <string name="call_incoming_swipe_to_answer">Swipe up to answer</string>
-    <string name="call_incoming_swipe_to_reject">Swipe down to reject</string>
+    <string name="call_incoming_swipe_to_reject">Swipe down to decline</string>
     <string name="call_incoming_video_is_off">Your video is off</string>
     <string name="call_incoming_will_disconnect">Answering this call will end your video call</string>
     <string name="call_incoming_will_disconnect_app">Answering will end your %1$s call</string>
@@ -389,7 +395,6 @@ Recordings are stored only on your phone."</string>
     <string name="call_recording_starting_voice">This call is now being recorded</string>
     <string name="call_recording_unmute_before_stop_dialog_positive_button_text">Unmute</string>
     <string name="call_recording_unmute_before_stop_dialog_title">Unmute and stop recording?</string>
-    <string name="call_screen_activating_status_title">Activating Call Screen (requires WiFi)</string>
     <string name="call_screen_button_text_no">No</string>
     <string name="call_screen_button_text_yes">Yes</string>
     <string name="call_screen_caller_is_replying_status">Caller is replying</string>
@@ -441,8 +446,7 @@ Neither the call audio nor the transcript of the call is sent to anyone, includi
     <string name="call_screen_postcall_notification_primary_text">Was this a spam call? (Dogfood only)</string>
     <string name="call_screen_postcall_notification_primary_text_with_phonenumber">Was the call from %1$s spam? (Dogfood only)</string>
     <string name="call_screen_postcall_notification_secondary_text">Tap to provide us feedback</string>
-    <string name="call_screen_promo_key">speakeasy_promo_key</string>
-    <string name="call_screen_promo_title">Screen selected calls with a tap</string>
+    <string name="call_screen_promo">Screen selected calls with a tap</string>
     <string name="call_screen_promotion_details">"See who's calling and why before you pick up, with help from your Google Assistant. End spam and other nuisance calls with a tap."</string>
     <string name="call_screen_promotion_title">Screen unwanted calls</string>
     <string name="call_screen_saying_to_the_caller_state">Saying to the caller</string>
@@ -451,7 +455,6 @@ Neither the call audio nor the transcript of the call is sent to anyone, includi
     <string name="call_screen_session_transcription_rating_description">Rate transcription quality</string>
     <string name="call_screen_setting_title">Call Screen</string>
     <string name="call_screen_speaker_toggle_button_content_description">Speaker button</string>
-    <string name="call_screen_status_key">speakeasy_key</string>
     <string name="call_screen_suggestions_avatar_content_description">Logo</string>
     <string name="call_screen_survey_cancel_button">Cancel</string>
     <string name="call_screen_survey_notification_content">Send Google feedback about your Call Screen call</string>
@@ -497,6 +500,9 @@ Neither the call audio nor the transcript of the call is sent to anyone, includi
     <string name="caller_id_settings_title">Caller ID &amp; spam</string>
     <string name="caller_id_spam_details">Google will attempt to show you useful information when you make or receive a call, such as a name for a number not in your contacts or a warning when an incoming call is suspected to be spam. ^1</string>
     <string name="caller_id_spam_details_learn_more">Learn more about spam protection</string>
+    <string name="caller_id_suggestion_dialog_input_hint">Name</string>
+    <string name="caller_id_suggestion_dialog_title">Suggest a name for this caller</string>
+    <string name="caller_id_tag_suggestion_dialog_content">Your suggestion will be reviewed by Google to help improve Caller ID</string>
     <string name="caller_tag_feedback_dialog_content">Confirming this tag helps Google improve caller ID</string>
     <string name="caller_tag_feedback_dialog_negative_button_text">No</string>
     <string name="caller_tag_feedback_dialog_positive_button_text">Yes</string>
@@ -509,10 +515,7 @@ Neither the call audio nor the transcript of the call is sent to anyone, includi
     <string name="caller_tag_option_chip_text_other">Other</string>
     <string name="caller_tag_option_chip_text_school">School</string>
     <string name="caller_tag_option_chip_text_telecom">Phone &amp; internet</string>
-    <string name="caller_tag_selector_dialog_content">Your suggestion will be reviewed by Google to help improve Caller ID</string>
-    <string name="caller_tag_selector_dialog_positive_button_text">Submit</string>
     <string name="caller_tag_selector_dialog_title">What kind of call was this?</string>
-    <string name="caller_tag_selector_postive_snackbar_message">Thanks for your feedback</string>
     <string name="calling_blocked_number_precall_dialog_message">"You blocked %s. If they call you, you won't receive their call."</string>
     <string name="calling_blocked_number_precall_dialog_negative">Cancel</string>
     <string name="calling_blocked_number_precall_dialog_positive">Call</string>
@@ -549,6 +552,7 @@ Please send help."</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
     <string name="checkbox_report_as_spam_action">Report call as spam</string>
     <string name="child_number">via %s</string>
+    <string name="choose_contact">Choose a contact</string>
     <string name="clear_button_content_description">Clear search</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="cli_not_supported_text">Open phone to continue</string>
@@ -598,6 +602,7 @@ Please send help."</string>
     <string name="contact_grid_incoming_bidirectional_video_call">Carrier video call from</string>
     <string name="contact_grid_incoming_reception_only_video_call">Carrier 1-way video call from</string>
     <string name="contact_grid_incoming_rtt_call">RTT call from</string>
+    <string name="contact_grid_incoming_shared_data_call">%1$s shared data call from</string>
     <string name="contact_grid_incoming_suspected_spam">Suspected spam caller</string>
     <string name="contact_grid_incoming_suspected_spam_230151">Suspected junk caller</string>
     <string name="contact_grid_incoming_suspected_spam_230153">Suspected unwanted caller</string>
@@ -640,7 +645,7 @@ Please send help."</string>
     <string name="conversation_history_button_voice_call">Call</string>
     <string name="conversation_history_call_details_delete_history">Delete history</string>
     <string name="conversation_history_call_details_delete_history_confirmation_positive">Delete</string>
-    <string name="conversation_history_call_details_delete_history_confirmation_title">Delete all history?</string>
+    <string name="conversation_history_call_details_delete_history_confirmation_title">Delete all history for this number?</string>
     <string name="conversation_history_call_details_header_today">Today</string>
     <string name="conversation_history_call_details_snack_bar_deleted">Call deleted</string>
     <string name="conversation_history_call_details_snack_bar_undo">Undo</string>
@@ -813,7 +818,8 @@ Please send help."</string>
     <string name="feature_demo_skip">Skip</string>
     <string name="feedback_action_high_v2">Good</string>
     <string name="feedback_action_low_v2">Bad</string>
-    <string name="feedback_action_unsubscribe_v2">Turn these off</string>
+    <string name="feedback_action_skip">Skip</string>
+    <string name="feedback_action_unsubscribe_v3">"Don't show again"</string>
     <string name="feedback_audio_issue_choppy">Audio was choppy</string>
     <string name="feedback_audio_issue_echo_heard">Other person could hear their echo</string>
     <string name="feedback_audio_issue_hearing_difficult">Volume was too low</string>
@@ -826,14 +832,14 @@ Please send help."</string>
     <string name="feedback_call_issue_other">Something else</string>
     <string name="feedback_call_issue_quiet_audio">Audio was too quiet</string>
     <string name="feedback_call_issue_title">What was the issue?</string>
+    <string name="feedback_diagnostic_bundle_preparation_failed_toast_message">Diagnostic data packaging failed.</string>
     <string name="feedback_help_us_improve_content_template">This will send info about the call to Google, including system logs, a transcript, and audio up to the time you rejoined the call. ^1</string>
     <string name="feedback_help_us_improve_negative_button_text">No thanks</string>
     <string name="feedback_help_us_improve_positive_button_text">Yes, continue</string>
     <string name="feedback_help_us_improve_title">Help us improve</string>
     <string name="feedback_history_continue_button_text">Continue</string>
-    <string name="feedback_notification_content">"We'll use your feedback to improve."</string>
-    <string name="feedback_title_no_contact_info">How was the quality on your last call?</string>
-    <string name="feedback_title_with_contact_info">How was the quality on your call with %1$s?</string>
+    <string name="feedback_preparing_diagnostic_bundle_message">Gathering diagnostic data...</string>
+    <string name="feedback_title_please_rate">Please rate the quality of the call</string>
     <string name="firebase_database_url">https://dialer-c31d5.firebaseio.com</string>
     <string name="first_time_callers_action_preference_description">Callers not in your call log</string>
     <string name="first_time_callers_action_preference_key">first_time_callers_action_preference_key</string>
@@ -846,6 +852,8 @@ Please send help."</string>
     <string name="gcm_defaultSenderId">26797372319</string>
     <string name="general_learn_more">Learn more</string>
     <string name="generic_conference_call_name">In call</string>
+    <string name="generic_error_text">Problem preparing call screen</string>
+    <string name="generic_loading_text">Preparing call screen</string>
     <string name="gm_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
@@ -858,6 +866,7 @@ Please send help."</string>
     <string name="google_storage_bucket">dialer-c31d5.appspot.com</string>
     <string name="got_it">Got it</string>
     <string name="group_promo_button_text">Start a group Duo call</string>
+    <string name="gsa_update_button">Go to Play Store</string>
     <string name="hac_settings_key">hac_settings_key</string>
     <string name="hac_settings_summary">Turn on hearing aid compatibility</string>
     <string name="hac_settings_title">Hearing aids</string>
@@ -907,7 +916,6 @@ Please send help."</string>
     <string name="incall_error_supp_service_unknown">Service not supported.</string>
     <string name="incall_hanging_up">Hanging up</string>
     <string name="incall_label_add_call">Add call</string>
-    <string name="incall_label_call_transfer_consultative">Transfer</string>
     <string name="incall_label_dialpad">Keypad</string>
     <string name="incall_label_end_call">End call</string>
     <string name="incall_label_hold">Hold</string>
@@ -957,9 +965,11 @@ Please send help."</string>
     <string name="list_item_account_label">Account:</string>
     <string name="list_item_file_count_label">File Count:</string>
     <string name="list_item_group_name_label">Group Name:</string>
+    <string name="list_item_locale_label">Locale:</string>
     <string name="list_item_no_account">&lt;No Account></string>
     <string name="list_item_status_label">Status:</string>
     <string name="list_item_version_label">Version:</string>
+    <string name="loading_intro_messages">Activating Call Screen (requires WiFi)</string>
     <string name="local_search_dialog_text">"Data being used in these features is provided by Google and its licensors. &lt;a href=%1$s>Learn more&lt;/a> &lt;p> To use this feature, allow Google apps to use your phone's location. &lt;a href=%2$s>Learn more&lt;/a>"</string>
     <string name="local_search_instruction_text">When you search from the phone app, this feature will use your location to find nearby places that match your query, even if they are not in your contacts. %1$s</string>
     <string name="local_search_setting_title">Nearby places</string>
@@ -991,11 +1001,18 @@ Please send help."</string>
     <string name="mdd_notification_download_paused">Waiting for network connection</string>
     <string name="meid_number">MEID %s</string>
     <string name="menu_callNumber">Call %s</string>
+    <string name="merge_calls_confirm_message">"Merge your calls only if you're sure everyone knows who will be on the merged call"</string>
+    <string name="merge_calls_confirm_negative_button_text">Cancel</string>
+    <string name="merge_calls_confirm_positive_button_text">Merge calls</string>
+    <string name="merge_calls_confirm_title">Merge calls?</string>
     <string name="migrate_blocked_numbers_dialog_allow_button">Allow</string>
     <string name="migrate_blocked_numbers_dialog_cancel_button">@android:string/cancel</string>
     <string name="migrate_blocked_numbers_dialog_message">To better protect you, Phone needs to change how blocking works. Your blocked numbers will now stop both calls and texts and may be shared with other apps.</string>
     <string name="migrate_blocked_numbers_dialog_title">New, simplified blocking</string>
     <string name="missing_name">(No name)</string>
+    <string name="model_download_button">Download</string>
+    <string name="model_download_necessary">Need to download language update</string>
+    <string name="model_download_ongoing">Downloading ^1</string>
     <string name="motorola_hidden_menu_intent">com.motorola.intent.action.LAUNCH_HIDDEN_MENU</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
@@ -1051,7 +1068,6 @@ Please send help."</string>
     <string name="new_call_log_unknown">Unknown</string>
     <string name="new_permission_no_search">To search your contacts, turn on the Contacts permissions.</string>
     <string name="no_activity_found_error">No app found to handle this action</string>
-    <string name="no_contacts_selected">No contacts selected</string>
     <string name="non_contact_always_record_dialog_title">Always record calls with numbers not in your contacts?</string>
     <string name="non_contact_toggle_key">non_contact_toggle_key</string>
     <string name="non_contact_toggle_label">Numbers not in your contacts</string>
@@ -1342,6 +1358,7 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="settings_page_call_recording_feature_not_available_text">"Call recording isn't available in your location"</string>
     <string name="settings_page_crosby_feature_not_available_text">Not available in your location</string>
     <string name="settings_page_feature_not_available_text_key">crosby_feature_not_available_text_key</string>
+    <string name="shared_data_call_connection_label">Shared data call</string>
     <string name="show_demo">See a demo</string>
     <string name="simContacts_emptyLoading">Loading from SIM card…</string>
     <string name="simContacts_title">SIM card contacts</string>
@@ -1427,6 +1444,11 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="speed_dial_no_contacts_description">Call your favorite contacts with just one tap</string>
     <string name="speed_dial_remember_this_choice">Remember this choice</string>
     <string name="speed_dial_turn_on_contacts_permission">Turn on</string>
+    <string name="star_description_1">Star rating icon one out of five</string>
+    <string name="star_description_2">Star rating icon two out of five</string>
+    <string name="star_description_3">Star rating icon three out of five</string>
+    <string name="star_description_4">Star rating icon four out of five</string>
+    <string name="star_description_5">Star rating icon five out of five</string>
     <string name="start_call_contacts">"Hi, the person you're calling is using a screening service from Google, and will get a copy of this conversation. Go ahead and say why you're calling."</string>
     <string name="start_call_contacts_donation_off">"Hi, the person you've reached is using a screening service from Google, and will get a transcript of this call. Go ahead and say why you're calling."</string>
     <string name="start_call_contacts_donation_off_ja">おかけになった相手先は、Googleのスクリーニングサービスを利用しており、この通話の文字変換データを受信します。ご用件をお話しください。</string>
@@ -1442,6 +1464,8 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="start_duo_call_failed">Unable to start a Duo call</string>
     <string name="suggested_contacts">Suggested</string>
     <string name="suggestion_action_send_a_message">Send a message</string>
+    <string name="suggestion_dialog_positive_button_text">Submit</string>
+    <string name="suggestion_dialog_postive_snackbar_message">Thanks for your feedback</string>
     <string name="suggestions_header">Frequents</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="system_default_theme_label">System default</string>
@@ -1449,6 +1473,8 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="tab_title_contacts">Contacts</string>
     <string name="tab_title_speed_dial">Favorites</string>
     <string name="tab_title_voicemail">Voicemail</string>
+    <string name="talkback_button_grid_page_hidden">Buttons hidden</string>
+    <string name="talkback_button_grid_page_shown">Buttons shown</string>
     <string name="terms_and_conditions_decline_dialog_title">Turn off visual voicemail?</string>
     <string name="terms_of_service_label">Terms of service</string>
     <string name="terms_of_service_url">http://www.google.com/policies/terms</string>
@@ -1640,12 +1666,12 @@ Data usage applies if you continue the call."</string>
     <string name="videocall_button_label">Video call</string>
     <string name="videocall_button_wifi_description">Video call using wifi</string>
     <string name="videocall_charges_alert_dialog_description">Video calls made over the mobile network use both data and voice minutes. Charges may apply.</string>
-    <string name="videocall_hide_preview_button_description">Hide local video feed button</string>
+    <string name="videocall_hide_preview_button_description">Hide local video feed</string>
     <string name="videocall_remote_video_off">Their video is off</string>
     <string name="videocall_remote_video_on">Their video is on</string>
     <string name="videocall_remotely_held">Call on hold</string>
     <string name="videocall_remotely_resumed">Call resumed</string>
-    <string name="videocall_show_preview_button_description">Show local video feed button</string>
+    <string name="videocall_show_preview_button_description">Show local video feed</string>
     <string name="view">View</string>
     <string name="view_location_settings">Location settings</string>
     <string name="vitle_label">Video over LTE</string>
