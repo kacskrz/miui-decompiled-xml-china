@@ -300,6 +300,7 @@ Contact your bank for details: "<a href="tel:">%1$s</a></string>
     <string name="bind_bank_card_valid_default">MM/YY</string>
     <string name="bind_bank_card_valid_format">MONTH/YEAR</string>
     <string name="bind_bank_card_valid_hint">Month/Year</string>
+    <string name="bind_bank_card_valid_hint_accessibility">Please enter month and then year, such as November 20</string>
     <string name="bind_bank_card_valid_title">Validity</string>
     <string name="bind_bank_mipay_add">Add Mi Pay</string>
     <string name="bind_bank_mipay_add_bank_card">add Mi Pay bank card</string>
@@ -568,6 +569,7 @@ Bring the card close to your phone's NFC reader to record info."</string>
     <string name="clean_se_tips">1.When clearing data, the transportation card will be moved out to the cloud by default, and you can choose to move it in in the wallet-transportation card.<Data>&lt;font color=#FF0000>Other cards will be cancelled and deleted, and cannot be restored after deletion.&lt;/font></Data>&lt;br>&lt;br>2.You can also skip the clearing. The card information such as the transportation card, door card, MiPay and other cards you have opened cannot be cleared. It will be restored after you start your phone and log in to the same account next time.</string>
     <string name="clean_se_title">"Confirm Device's Cards"</string>
     <string name="clean_se_transit_card_group_title">The following cards will be moved to the cloud</string>
+    <string name="clear_desc">Clear</string>
     <string name="clearable_edittext_clear_description">Clear</string>
     <string name="close">Close</string>
     <string name="close_android_beam_failed">"Couldn't turn off Android Beam"</string>
@@ -577,6 +579,7 @@ Bring the card close to your phone's NFC reader to record info."</string>
     <string name="confirm_open_qr_pay">Ensure to open the QR Pay</string>
     <string name="consume_amount">-%1$.2f</string>
     <string name="copy">Copy</string>
+    <string name="cvn2_faq_desc">CVN2</string>
     <string name="data_cleaning">Clearing data…</string>
     <string name="data_loading">Just a sec…</string>
     <string name="date_picker_label_day" />
@@ -949,7 +952,7 @@ Just bring your phone next to a reader to pay."</string>
     <string name="mipay_introduction">Pay for offline purchases and public transport rides with your phone</string>
     <string name="mipay_key_item_create_date">Date added:%1$s</string>
     <string name="mipay_list_empty">Mi Pay not added</string>
-    <string name="mipay_more_settings_authorization_status">Mi Pay Account Status</string>
+    <string name="mipay_more_settings_authorization_status">UnionPay account status</string>
     <string name="mipay_more_settings_customer_service">Bank customer service</string>
     <string name="mipay_more_settings_device_num">Device number</string>
     <string name="mipay_more_settings_num_star">****</string>
@@ -989,6 +992,7 @@ Just bring your phone next to a reader to pay."</string>
     <string name="monday">Monday</string>
     <string name="monday_short">Mon</string>
     <string name="monday_shortest">Mon</string>
+    <string name="month">month</string>
     <string name="month_april">April</string>
     <string name="month_april_short">Apr</string>
     <string name="month_april_shortest">Apr</string>
@@ -1034,6 +1038,8 @@ Just bring your phone next to a reader to pay."</string>
     <string name="nextpay_card_custom_issue_item_default_text_title">Service fee</string>
     <string name="nextpay_card_custom_recharge_item_custom">Custom</string>
     <string name="nextpay_card_device">from %1$s</string>
+    <string name="nextpay_card_fee_coupon_content">There is a coupon for %1$s CNY</string>
+    <string name="nextpay_card_fee_recommend_content">Recommend %1$s CNY</string>
     <string name="nextpay_card_issue_fee_less_tip">Less custom amount, please retry</string>
     <string name="nextpay_card_issue_fee_null_tip">Enter custom amount</string>
     <string name="nextpay_card_issue_fee_over_tip">Enter custom amount</string>
@@ -1130,8 +1136,8 @@ Just bring your phone next to a reader to pay."</string>
     <string name="nextpay_door_card_verify_sms_get_code_text">Get code</string>
     <string name="nextpay_door_card_verify_sms_not_input_code_tips">Enter SMS code first</string>
     <string name="nextpay_door_card_verify_sms_phone_number_empty">Enter your phone number first</string>
-    <string name="nextpay_door_card_verify_sms_retry_count_down_tips">Get another code in %1$d</string>
-    <string name="nextpay_door_card_verify_sms_retry_get_code">Get another code</string>
+    <string name="nextpay_door_card_verify_sms_retry_count_down_tips">%1$d</string>
+    <string name="nextpay_door_card_verify_sms_retry_get_code">Get another</string>
     <string name="nextpay_door_card_verify_sms_send_failed">Send sms failed</string>
     <string name="nextpay_door_card_verify_sms_text">OK</string>
     <string name="nextpay_door_card_verify_sms_tips">selected community requires you to verify your phone information</string>
@@ -1140,6 +1146,9 @@ Just bring your phone next to a reader to pay."</string>
     <string name="nextpay_door_card_verify_sms_verity_fail_tips_positive_text">Got it</string>
     <string name="nextpay_door_card_verify_sms_verity_fail_tips_title">"Couldn't verify"</string>
     <string name="nextpay_issue_door_card_select_cpu_card_title">Select smart lock</string>
+    <string name="nextpay_mifare_card_door_product_item_content">%1$s,Click twice to activate</string>
+    <string name="nextpay_mifare_card_rename_clear_text_view_hint">Card Name</string>
+    <string name="nextpay_mifare_card_rename_face_content">Picture %1$d,Click twice to activate</string>
     <string name="nextpay_mifare_card_rename_hint_title">Guide</string>
     <string name="nextpay_mifare_card_rename_select_art_info_tips">Select theme</string>
     <string name="nextpay_more_setting_notice">Notice</string>
@@ -1258,12 +1267,14 @@ Just bring your phone next to a reader to pay."</string>
     <string name="notification_recharge_fail_tip">Please repeat due to fail to recharge.The amount is %1$s¥</string>
     <string name="notification_recharge_success_tip">"Amount: %1$s¥ 
 Balance: %2$s¥"</string>
+    <string name="ocr_icon_desc">OCR</string>
     <string name="only_qr_pay_notice">Please show the QR code</string>
     <string name="only_support_mipay">This function is not currently supported</string>
     <string name="open">Open</string>
     <string name="open_now">Add now</string>
     <string name="other_company_name">Card Co., Ltd</string>
     <string name="otp_info_reverify">Your card has been activated</string>
+    <string name="password_faq_desc">Password</string>
     <string name="pay_tool_alert_no_fee_info">The order info is error</string>
     <string name="pay_tool_alert_no_selected_cashier">No pay type has been selected</string>
     <string name="pay_tool_alert_title">Failed to pay the order</string>
@@ -1309,6 +1320,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="permission_sms_name">Receive SMS</string>
     <string name="permission_unauth_status">Open</string>
     <string name="personalizing_bank_card">Just a sec…</string>
+    <string name="phone_icon_desc">Phone Number</string>
     <string name="phone_num">Phone Number</string>
     <string name="phone_num_invalid">The phone number you entered is invalid</string>
     <string name="phone_number_validate_agree">"I've read and agreed to"</string>
@@ -1427,6 +1439,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="sunday">Sunday</string>
     <string name="sunday_short">Sun</string>
     <string name="sunday_shortest">Sun</string>
+    <string name="supported_bank_card_list_desc">Banks Supported</string>
     <string name="suzhou_company_name">Suzhou Citizen Card Co., Ltd</string>
     <string name="swipe_card_city">Swipe card city</string>
     <string name="swiping_card_location_map_500_m">500m</string>
@@ -1599,7 +1612,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="tour_ticket_apply_success_title">Applied for a %1$s CNY refund successfully.</string>
     <string name="tour_ticket_buy_now">Buy now</string>
     <string name="tour_ticket_buy_now_right_arrow">Buy now></string>
-    <string name="tour_ticket_card_issuers">Card issuers</string>
+    <string name="tour_ticket_card_issuers">Service Support</string>
     <string name="tour_ticket_cost_of_ticket">Value</string>
     <string name="tour_ticket_downloading">Downloading…</string>
     <string name="tour_ticket_expire_tips">Ticket expired. This card is no longer valid.</string>
@@ -1705,6 +1718,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="user_no_apply_privilege">"You can't apply for cards now. Contact your bank."</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
+    <string name="valid_faq_desc">Valid Data</string>
     <string name="verification">Verify</string>
     <string name="verify_finger">Verify fingerprint</string>
     <string name="verify_finger_nfc_exception_hint">"Couldn't read the card. Make sure NFC is turned on."</string>
@@ -1720,6 +1734,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="wx_pay_cancel">Pay cancel</string>
     <string name="wx_pay_error">Unknown error</string>
     <string name="wx_pay_success">Pay success</string>
+    <string name="year">year</string>
     <string name="yes">Yes</string>
     <string name="yesterday">Yesterday</string>
     <string name="yuan">CNY</string>
