@@ -49,6 +49,7 @@
     <string name="actionBarCFVideo">Video call forwarding (%s)</string>
     <string name="actionBarCFVoice">Voice call forwarding (%s)</string>
     <string name="active_input_method_subtypes">Active input methods</string>
+    <string name="activity_title_fakecell">Protection from fake base stations</string>
     <string name="adb_device_fingerprint_title_format">Device fingerprint: %1$s</string>
     <string name="adb_device_forget">Forget</string>
     <string name="adb_keys_warning_message">Revoke access to USB debugging from all computers you’ve previously authorized?</string>
@@ -786,6 +787,7 @@ Selection"</string>
     <string name="description_image_button_two">two</string>
     <string name="description_image_button_zero">zero</string>
     <string name="description_voicemail_button">voicemail</string>
+    <string name="detect_fakecell">Recognize SMS from fake base stations</string>
     <string name="dev_logpersist_clear_warning_message">When we no longer are monitoring with the persistent logger, we are required to erase the logger data resident on your device.</string>
     <string name="dev_logpersist_clear_warning_title">Clear logger persistent storage?</string>
     <string name="dev_settings_warning_message">These settings are intended for development use only. They can cause your device and the applications on it to break or misbehave.</string>
@@ -1036,6 +1038,8 @@ Selection"</string>
     <string name="fiveg_upperlayer_indication1">Upper Layer Indication Status :</string>
     <string name="flash_when_ring_summary">Use flash to notify about incoming calls</string>
     <string name="flash_when_ring_title">Flash when ringing</string>
+    <string name="forbidden_fakecell">"Don't connect to fake base stations"</string>
+    <string name="forbidden_fakecell_summary">Prevent your phone from connecting to fake base stations</string>
     <string name="forbidden_network">(forbidden)</string>
     <string name="force_allow_on_external">Force allow apps on external</string>
     <string name="force_allow_on_external_summary">Makes any app eligible to be written to external storage, regardless of manifest values</string>
@@ -1187,6 +1191,7 @@ Switch to the new provider anyway?"</string>
     <string name="labelNwService">Network service settings</string>
     <string name="label_available">Available networks</string>
     <string name="label_ndp">SIM network unlock PIN</string>
+    <string name="label_ndp_nck">SIM network unlock NCK</string>
     <string name="label_puk2_code">Type PUK2 code</string>
     <string name="lable_all_incoming">All incoming calls</string>
     <string name="lable_all_out_except">International outgoing calls except to home PLMN</string>
@@ -1468,6 +1473,8 @@ Using preferred network instead."</string>
     <string name="no_checked_network">"You won't be able to connect to mobile network and make calls. Select another network?"</string>
     <string name="no_internet_available">To place a SIP call, check your internet connection first.</string>
     <string name="no_rtt_when_roaming">Note: RTT is not available while roaming</string>
+    <string name="no_unlock_chance_hint">"You have no retry times.
+Please contact your operators"</string>
     <string name="no_vm_number">Missing voicemail number</string>
     <string name="no_vm_number_msg">No voicemail number is stored on the SIM card.</string>
     <string name="no_voip">"SIP calling isn't supported"</string>
@@ -1475,6 +1482,7 @@ Using preferred network instead."</string>
     <string name="not_a_valid_port">Port number should be within %1$d and %2$d.</string>
     <string name="not_allowed">"Your SIM card doesn't allow a connection to this network."</string>
     <string name="not_set">Not set</string>
+    <string name="not_support_forbidden_fakecell">"Your device doesn't support chip level protection from fake base stations."</string>
     <string name="not_voice_capable">Voice calling not supported</string>
     <string name="notice_header" />
     <string name="notification_channel_demo">Demo device</string>
@@ -1921,6 +1929,9 @@ UT Interface: %5$s"</string>
     <string name="respond_via_sms_setting_summary">Edit pre-written text responses</string>
     <string name="respond_via_sms_setting_title">Quick responses</string>
     <string name="response_error">Unexpected response from network.</string>
+    <string name="restart_details">Turning this feature on or off requires rebooting your device. Reboot now?</string>
+    <string name="restart_later">Later</string>
+    <string name="restart_now">Reboot now</string>
     <string name="restaurants_disable">Restaurants disabled</string>
     <string name="restaurants_enable">Restaurants enabled</string>
     <string name="retail_demo_reset_message">Enter password to perform factory reset in demo mode</string>
@@ -2062,12 +2073,14 @@ UT Interface: %5$s"</string>
     <string name="sim_description_default">SIM card, slot: %s</string>
     <string name="sim_description_emergency_calls">Emergency calling only</string>
     <string name="sim_label_emergency_calls">Emergency calls</string>
+    <string name="sim_me_lock_disabled">Simlock is disabled.</string>
     <string name="sim_ndp_dismiss_text">Dismiss</string>
     <string name="sim_ndp_unlock_text">Unlock</string>
     <string name="sim_roaming_settings_summary">Connect to mobile data networks while roaming</string>
     <string name="sim_roaming_settings_title">Mi Roaming</string>
     <string name="sim_selection_required_pref">Selection required</string>
     <string name="sim_service_setting">Mi SIM &amp; Mi Roaming</string>
+    <string name="simmelock_name">SIM ME Lock</string>
     <string name="simulate_color_space">Simulate color space</string>
     <string name="singleContactImportedMsg">Imported contact</string>
     <string name="single_emergency_number_title">Emergency number</string>
@@ -2149,6 +2162,7 @@ UT Interface: %5$s"</string>
     <string name="stock_quotes_disable">Stock Quotes disabled</string>
     <string name="stock_quotes_enable">Stock Quotes enabled</string>
     <string name="storage_category">Storage</string>
+    <string name="strPasswordLengthIncorrect">4-16 numbers!</string>
     <string name="strict_mode">Strict mode enabled</string>
     <string name="strict_mode_summary">Flash screen when apps do long operations on main thread</string>
     <string name="sum_call_barring_disabled">Off</string>
@@ -2202,6 +2216,7 @@ UT Interface: %5$s"</string>
     <string name="supp_service_over_ut_precautions_dual_sim">To use %1$s, make sure mobile data is turned on for SIM %2$d. You can change this in mobile network settings.</string>
     <string name="supp_service_over_ut_precautions_roaming">To use %s, make sure mobile data and data roaming are turned on. You can change these in mobile network settings.</string>
     <string name="supp_service_over_ut_precautions_roaming_dual_sim">To use %1$s, make sure mobile data and data roaming are turned on for SIM %2$d. You can change these in mobile network settings.</string>
+    <string name="support_forbidden_fakecell">Note: Restricting connection to fake base stations may lower the signal in areas with poor coverage.</string>
     <string name="switch_dds_to_sub_alert">Set this card as your default data card.</string>
     <string name="switch_off">Off</string>
     <string name="switch_on">On</string>
@@ -2319,6 +2334,7 @@ Next period starts in %2$d days (%3$s)"</string>
     <string name="ui_default_package">com.android.dialer</string>
     <string name="undefined">None</string>
     <string name="unknown">Unknown</string>
+    <string name="unlock_chances_left">Retries Left:</string>
     <string name="unlock_failed">Network unlock request unsuccessful.</string>
     <string name="unlock_success">Network unlock successful.</string>
     <string name="updating_fdn_contact">Updating fixed dialing number…</string>
