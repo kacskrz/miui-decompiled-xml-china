@@ -21,12 +21,6 @@
         <item>Set_SpeechCall_DL_Mute=0</item>
         <item>SetFmVolume=0</item>
     </string-array>
-    <string-array name="allocate_storage_size_values">
-        <item>32MB</item>
-        <item>64MB</item>
-        <item>128MB</item>
-        <item>MAX</item>
-    </string-array>
     <string-array name="ant_tuner_debug_mipi_rw_type">
         <item>MIPI_RW</item>
         <item>MIPI_EXTRW_1BYTE</item>
@@ -331,6 +325,15 @@
         <item>Band 42</item>
         <item>Band 43</item>
         <item>Band 44</item>
+        <item>Band 45</item>
+        <item>Band 46</item>
+        <item>Band 47</item>
+        <item>Band 48</item>
+        <item>Band 49</item>
+        <item>Band 50</item>
+        <item>Band 51</item>
+        <item>Band 52</item>
+        <item>Band 53</item>
     </string-array>
     <string-array name="band_mode_nr">
         <item>Band 1</item>
@@ -450,7 +453,22 @@
         <item>WCDMA-1800</item>
         <item>WCDMA-1700</item>
     </string-array>
-    <string-array name="bt_baudrate">
+    <string-array name="bt_le_eh_test_pattern">
+        <item>PRBS9</item>
+        <item>11110000</item>
+        <item>10101010</item>
+        <item>PRBS15</item>
+        <item>11111111</item>
+        <item>00000000</item>
+        <item>00001111</item>
+        <item>01010101</item>
+    </string-array>
+    <string-array name="bt_le_test_pattern">
+        <item>PRBS9</item>
+        <item>11110000</item>
+        <item>10101010</item>
+    </string-array>
+    <string-array name="bt_relayer_baudrate">
         <item>9600</item>
         <item>19200</item>
         <item>38400</item>
@@ -462,20 +480,33 @@
         <item>576000</item>
         <item>921600</item>
     </string-array>
-    <string-array name="bt_ble_eh_test_pattern">
-        <item>PRBS9</item>
-        <item>11110000</item>
-        <item>10101010</item>
-        <item>PRBS15</item>
-        <item>11111111</item>
-        <item>00000000</item>
-        <item>00001111</item>
-        <item>01010101</item>
+    <string-array name="bt_relayer_uart">
+        <item>UART1</item>
+        <item>UART2</item>
+        <item>UART3</item>
+        <item>UART4</item>
+        <item>USB</item>
     </string-array>
-    <string-array name="bt_ble_test_pattern">
-        <item>PRBS9</item>
+    <string-array name="bt_rx_pattern">
+        <item>0000</item>
+        <item>1111</item>
+        <item>1010</item>
+        <item>Pseudo random bit</item>
         <item>11110000</item>
-        <item>10101010</item>
+    </string-array>
+    <string-array name="bt_rx_pocket_type">
+        <item>DM1(0x03)</item>
+        <item>DH1(0x04)</item>
+        <item>DM3(0x0A)</item>
+        <item>DH3(0x0B)</item>
+        <item>DM5(0x0E)</item>
+        <item>DH5(0x0F)</item>
+        <item>2-DH1(0x24)</item>
+        <item>3-DH1(0x28)</item>
+        <item>2-DH3(0x2A)</item>
+        <item>3-DH3(0x2B)</item>
+        <item>2-DH5(0x2E)</item>
+        <item>3-DH5(0x2F)</item>
     </string-array>
     <string-array name="bt_tx_channels">
         <item>Single Frequency</item>
@@ -488,12 +519,42 @@
         <item>20 hop mid</item>
         <item>20 hop high</item>
     </string-array>
-    <string-array name="bt_uart">
-        <item>UART1</item>
-        <item>UART2</item>
-        <item>UART3</item>
-        <item>UART4</item>
-        <item>USB</item>
+    <string-array name="bt_tx_pattern">
+        <item>0000</item>
+        <item>1111</item>
+        <item>1010</item>
+        <item>Pseudo random bit</item>
+        <item>11110000</item>
+    </string-array>
+    <string-array name="bt_tx_pkt_data">
+        <item>NULL(0x00),0,0</item>
+        <item>POLL(0x01),0,0</item>
+        <item>FHS(0x02),18,18</item>
+        <item>DM1(0x03),0,17</item>
+        <item>DH1(0x04),0,27</item>
+        <item>HV1(0x05),10,10</item>
+        <item>HV2(0x06),20,20</item>
+        <item>HV3(0x07),30,30</item>
+        <item>DV(0x08),10,19</item>
+        <item>AUX(0x09),0,29</item>
+        <item>DM3(0x0A),0,121</item>
+        <item>DH3(0x0B),0,183</item>
+        <item>DM5(0x0E),0,224</item>
+        <item>DH5(0x0F),0,339</item>
+        <item>EV3(0x17),1,30</item>
+        <item>EV4(0x1C),1,120</item>
+        <item>EV5(0x1D),1,180</item>
+        <item>2-DH1(0x24),0,54</item>
+        <item>3-DH1(0x28),0,83</item>
+        <item>2-DH3(0x2A),0,367</item>
+        <item>3-DH3(0x2B),0,552</item>
+        <item>2-DH5(0x2E),0,679</item>
+        <item>3-DH5(0x2F),0,1021</item>
+        <item>2-EV3(0x36),1,60</item>
+        <item>3-EV3(0x37),1,90</item>
+        <item>2-EV5(0x3C),1,360</item>
+        <item>3-EV5(0x3D),1,540</item>
+        <item>non-modulated,0,0</item>
     </string-array>
     <integer-array name="bypass_codes">
         <item>16</item>
@@ -507,6 +568,98 @@
     <string-array name="c2k_ir_integrity_off">
         <item>disable integrity check OFF</item>
         <item>disable integrity check ON</item>
+    </string-array>
+    <string-array name="ccm_clk0123_configure">
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk012_configure">
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>datasim,3,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,4,0,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,5,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>datasim,6,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,7,0,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,8,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk01_configure">
+        <item>datasim,0,0,1,500,0,1,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk02_configure">
+        <item>datasim,0,0,1,500,0,1,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,500,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,3,0,1,500,0,0,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk03_configure">
+        <item>datasim,0,0,1,500,0,1,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,3,0,1,0,0,0,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk0_configure">
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,1,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,5000,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk12_configure">
+        <item>datasim,0,0,1,500,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,3,0,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk13_configure">
+        <item>datasim,0,0,1,500,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,3,0,1,0,0,0,0,1,2,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk1_configure">
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,1,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,1,0,1,5000,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk23_configure">
+        <item>datasim,0,0,1,500,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,0,1,0,0,0,0,1,2,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,2,0,1,500,0,1,1,1,3,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,3,0,1,0,0,0,0,1,2,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk2_configure">
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,1,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,1,0,1,5000,0,1,1,1,3,88,50023,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_clk3_configure">
+        <item>datasim,0,0,1,0,0,1,0,1,2,88,50020,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>subsim,1,1,1,0,0,0,0,1,2,88,50021,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+        <item>wifi,1,0,1,5000,0,1,1,1,3,88,50022,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
+    </string-array>
+    <string-array name="ccm_hopping_scan_mode">
+        <item>0 Table once -> npt</item>
+        <item>1 Table once</item>
+        <item>2 Table cycle</item>
+    </string-array>
+    <string-array name="ccm_hopping_test_mode">
+        <item>0 RSSI Test</item>
+        <item>1 No Test</item>
+        <item>2 Signaling Test</item>
+        <item>3 Signaling Test &amp; Modem Update</item>
     </string-array>
     <string-array name="clk_rf_desense_cdma_data">
         <item>CDMA Band 0,0,400,24,0</item>
@@ -563,6 +716,19 @@
         <item>LTE-TDD Band 43,10,37000,23,10</item>
         <item>LTE-TDD Band 44,11,7530,23,11</item>
     </string-array>
+    <string-array name="clk_rf_desense_nr_data">
+        <item>NR Band 1,1,1950000,22</item>
+        <item>NR Band 3,3,1747000,22</item>
+        <item>NR Band 7,7,2530000,22</item>
+        <item>NR Band 8,8,897000,22</item>
+        <item>NR Band 20,20,847000,22</item>
+        <item>NR Band 28,28,725500,22</item>
+        <item>NR Band 38,38,2595000,22</item>
+        <item>NR Band 41,41,2593000,22</item>
+        <item>NR Band 77,77,3750000,22</item>
+        <item>NR Band 78,78,3499995,22</item>
+        <item>NR Band 79,79,4699995,22</item>
+    </string-array>
     <string-array name="clk_rf_desense_td_scdma_data">
         <item>TD-SCDMA Band A,1,10087,24,0</item>
         <item>TD-SCDMA Band E,5,11750,24,4</item>
@@ -576,47 +742,6 @@
         <item>WCDMA Band 8,8,2787,24,7</item>
         <item>WCDMA Band 9,9,8837,24,8</item>
         <item>WCDMA Band 11,11,3524,24,10</item>
-    </string-array>
-    <string-array name="command_data">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-    </string-array>
-    <string-array name="desense_camera_items">
-        <item>2 mA</item>
-        <item>4 mA</item>
-        <item>6 mA</item>
-        <item>8 mA</item>
-        <item>Clear setting file</item>
-    </string-array>
-    <string-array name="desense_freqhopping_plls">
-        <item>ARMPLL</item>
-        <item>MAINPLL</item>
-        <item>MEMPLL</item>
-        <item>MSDCPLL</item>
-        <item>TVDPLL</item>
-        <item>LVDSPLL</item>
-    </string-array>
-    <string-array name="device_mgr_dm_conf_switch_entries">
-        <item>Test Environment</item>
-        <item>Productive Environment</item>
-    </string-array>
-    <string-array name="device_mgr_dm_conf_switch_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="device_mgr_entries">
-        <item>Disable</item>
-        <item>Enable</item>
-    </string-array>
-    <string-array name="device_mgr_values">
-        <item>0</item>
-        <item>1</item>
     </string-array>
     <string-array name="device_register_entries">
         <item>Turn On</item>
@@ -699,35 +824,38 @@
         <item>False</item>
         <item>True</item>
     </string-array>
-    <string-array name="epdg_policy">
-        <item>TRY_ALL_EPDG_IP</item>
-        <item>TRY_ONE_EPDG_IP</item>
-    </string-array>
     <string-array name="force_ant_on_off">
         <item>Disable</item>
         <item>Enable</item>
         <item>Read</item>
     </string-array>
     <string-array name="force_ant_states">
-        <item>000->0</item>
-        <item>001->1</item>
-        <item>010->2</item>
-        <item>011->3</item>
-        <item>100->4</item>
-        <item>101->5</item>
-        <item>110->6</item>
-        <item>111->7</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
         <item>default</item>
         <item></item>
-    </string-array>
-    <string-array name="force_ant_tas_level1">
-        <item>L ANT</item>
-        <item>U ANT</item>
-    </string-array>
-    <string-array name="force_ant_tas_level2">
-        <item>L ANT</item>
-        <item>U ANT</item>
-        <item>"L ANT '"</item>
     </string-array>
     <string-array name="force_ant_tas_nvram">
         <item>FALSE</item>
@@ -739,22 +867,16 @@
         <item>LTE</item>
         <item>C2k</item>
     </string-array>
+    <string-array name="force_ant_tas_rat_gen97">
+        <item>GSM</item>
+        <item>UMTS(W/TD)</item>
+        <item>LTE</item>
+        <item>C2k</item>
+        <item>NR</item>
+    </string-array>
     <string-array name="force_ant_tas_version">
         <item>1.0</item>
         <item>2.0</item>
-    </string-array>
-    <string-array name="host_id_number">
-        <item>MSDC0</item>
-        <item>MSDC1</item>
-        <item>MSDC2</item>
-        <item>MSDC3</item>
-    </string-array>
-    <string-array name="host_type">
-        <item>Host Number 0</item>
-        <item>Host Number 1</item>
-        <item>Host Number 2</item>
-        <item>Host Number 3</item>
-        <item>Host Number 4</item>
     </string-array>
     <string-array name="hspa_info_mode_array_fd">
         <item>HSDPA off</item>
@@ -789,29 +911,18 @@ HSUPA on"</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="lte_network_info_labels">
-        <item>4G ERRC Misc Info</item>
-        <item>4G LTE Support Band</item>
-        <item>4G Active Intra-RAT Meas (LTE)</item>
-        <item>4G Active Inter-RAT Meas (UMTS)</item>
-        <item>4G Active Inter-RAT Meas (GSM)</item>
-        <item>4G SIB Receive Status</item>
-        <item>4G CSG Autonomous Search</item>
-        <item>4G Config Info</item>
-        <item>ESM</item>
-        <item>EMM</item>
-        <item>MMDC</item>
-        <item>EL1</item>
-        <item>Timer Information</item>
-        <item>TDD TAS</item>
-        <item>GSM TAS</item>
-        <item>WCDMA TAS</item>
-        <item>LTE TAS</item>
-    </string-array>
     <string-array name="mccmnc_display_mode">
         <item>Show All Mcc/Mnc List</item>
         <item>Show Added Mcc/Mnc List only</item>
         <item>Show Existed Mcc/Mnc List only</item>
+    </string-array>
+    <string-array name="mcf_cert_arrays">
+        <item>User Input</item>
+        <item>OM(default)</item>
+        <item>CMCC</item>
+        <item>CT</item>
+        <item>CU</item>
+        <item>CERT_COMMON</item>
     </string-array>
     <string-array name="mode_fir">
         <item>FIR 0</item>
@@ -938,10 +1049,6 @@ HSUPA on"</item>
         <item>CU</item>
         <item>KDDI</item>
         <item>CT IR LAB TEST</item>
-    </string-array>
-    <string-array name="msdc_voltage">
-        <item>SD_1V8</item>
-        <item>SD_3V3</item>
     </string-array>
     <string-array name="network_info_1xrtt_info">
         <item>cpState</item>
@@ -1137,6 +1244,10 @@ HSUPA on"</item>
         <item>LTE-FDD B28,28,9210,100,9659,23,0,0,3,0,0,0,1,7580,7030,0</item>
         <item>LTE-FDD B30,30,9660,100,9769,23,0,0,3,0,0,0,1,19000,19000,0</item>
     </string-array>
+    <string-array name="npt_lte_fdd_extend_data">
+        <item>LTE-FDD B66,66,66436,100,67335,23,0,0,3,0,0,0,1,21100,22000,0</item>
+        <item>LTE-FDD B71,71,68586,100,68935,23,0,0,3,0,0,0,1,6170,6520,0</item>
+    </string-array>
     <string-array name="npt_lte_tdd_data">
         <item>LTE-TDD B33,33,36000,10,36199,23,0,0,3,0,1,0,1,19000,19000,1</item>
         <item>LTE-TDD B34,34,36200,10,36349,23,0,0,3,0,1,0,1,20100,20100,1</item>
@@ -1151,6 +1262,22 @@ HSUPA on"</item>
         <item>LTE-TDD B43,43,43590,100,45589,23,0,0,3,0,1,0,1,36000,36000,1</item>
         <item>LTE-TDD B44,44,45590,100,46589,23,0,0,3,0,0,1,1,7030,7030,1</item>
     </string-array>
+    <string-array name="npt_nr_data">
+        <item>NR B1,1,1920000,10000,1980000,23,0,0,3,1,0,0,1,2110000,1920000,0</item>
+        <item>NR B3,3,1710000,10000,1785000,23,0,0,3,1,0,0,1,1805000,1710000,0</item>
+        <item>NR B5,5,824000,10000,849000,23,0,0,3,1,0,0,1,869000,824000,0</item>
+        <item>NR B7,7,2500000,10000,2570000,23,0,0,3,1,0,0,1,2620000,2500000,0</item>
+        <item>NR B8,8,880000,10000,915000,23,0,0,3,1,0,0,1,9250000,880000,0</item>
+        <item>NR B20,20,832000,10000,862000,23,0,0,3,1,0,0,1,791000,832000,0</item>
+        <item>NR B28,28,703000,10000,748000,23,0,0,3,1,0,0,1,758000,703000,0</item>
+        <item>NR B38,38,2570000,10000,2620000,23,0,0,3,1,0,0,1,2570000,2570000,0</item>
+        <item>NR B39,39,1880000,10000,1920000,23,0,0,3,1,0,0,1,1880000,1880000,0</item>
+        <item>NR B40,40,2300000,10000,2400000,23,0,0,3,1,0,0,1,2300000,2300000,0</item>
+        <item>NR B41,41,2496000,10000,2690000,23,0,0,3,1,0,0,1,2496000,2496000,0</item>
+        <item>NR B77,77,3300000,10000,4200000,23,0,0,3,1,0,0,1,3300000,3300000,0</item>
+        <item>NR B78,78,3300000,10000,3800000,23,0,0,3,1,0,0,1,3300000,3300000,0</item>
+        <item>NR B79,79,4400000,10000,5000000,23,0,0,3,7,0,0,1,4400000,4400000,0</item>
+    </string-array>
     <string-array name="npt_rat">
         <item>GSM</item>
         <item>WCDMA</item>
@@ -1158,6 +1285,7 @@ HSUPA on"</item>
         <item>LTE</item>
         <item>C2K 1XRTT</item>
         <item>C2K EVDO</item>
+        <item>NR</item>
         <item>NULL</item>
     </string-array>
     <string-array name="npt_td_scdma_data">
@@ -1173,26 +1301,13 @@ HSUPA on"</item>
         <item>WCDMA B9,9,9237,50,9387,24,0,0,3,0,0,0,0,18474,17524,1</item>
         <item>WCDMA B11,11,3712,50,3787,24,0,0,3,0,0,0,0,14784,14304,1</item>
     </string-array>
-    <string-array name="nsrx_Pocket_type">
-        <item>DM1(0x03)</item>
-        <item>DH1(0x04)</item>
-        <item>DM3(0x0A)</item>
-        <item>DH3(0x0B)</item>
-        <item>DM5(0x0E)</item>
-        <item>DH5(0x0F)</item>
-        <item>2-DH1(0x24)</item>
-        <item>3-DH1(0x28)</item>
-        <item>2-DH3(0x2A)</item>
-        <item>3-DH3(0x2B)</item>
-        <item>2-DH5(0x2E)</item>
-        <item>3-DH5(0x2F)</item>
-    </string-array>
-    <string-array name="nsrx_pattern">
-        <item>0000</item>
-        <item>1111</item>
-        <item>1010</item>
-        <item>Pseudo random bit</item>
-        <item>11110000</item>
+    <string-array name="rf_desense_digrf_test_period">
+        <item>1 s</item>
+        <item>10 s</item>
+        <item>1 min</item>
+        <item>3 min</item>
+        <item>10 min</item>
+        <item>30 min</item>
     </string-array>
     <string-array name="rf_desense_test_gsm_power_control_band">
         <item>Band 850</item>
@@ -1346,14 +1461,6 @@ HSUPA on"</item>
         <item>8</item>
         <item>16</item>
     </string-array>
-    <string-array name="rf_desense_tx_test_gsm_edge_limits">
-        <item>128,128,251,128,251,27,7,27</item>
-        <item>1,1,124,1,124,27,7,27</item>
-        <item>0,0,124,975,1023,27,7,27</item>
-        <item>0,0,124,955,1023,27,7,27</item>
-        <item>512,512,885,512,885,26,2,26</item>
-        <item>512,512,810,512,885,26,2,26</item>
-    </string-array>
     <string-array name="rf_desense_tx_test_gsm_gmsk_limits">
         <item>190,128,251,128,251,5,5,19</item>
         <item>63,1,124,1,124,5,5,19</item>
@@ -1387,6 +1494,42 @@ HSUPA on"</item>
         <item>10M</item>
         <item>15M</item>
         <item>20M</item>
+    </string-array>
+    <string-array name="rf_desense_tx_test_lte_fdd_band_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>66</item>
+        <item>71</item>
     </string-array>
     <string-array name="rf_desense_tx_test_lte_freq_range">
         <item>19200,19800</item>
@@ -1438,6 +1581,20 @@ HSUPA on"</item>
         <item>QPSK</item>
         <item>16QAM</item>
         <item>64QAM</item>
+    </string-array>
+    <string-array name="rf_desense_tx_test_lte_tdd_band_values">
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
     </string-array>
     <string-array name="rf_desense_tx_test_nr_bandwidth">
         <item>5M</item>
@@ -1549,11 +1706,19 @@ HSUPA on"</item>
         <item>AUX_Mode2</item>
         <item>AUX_Mode3</item>
     </string-array>
-    <string-array name="sub_pmu_array">
-        <item>MT6360 PMU</item>
-        <item>MT6360 PMIC</item>
-        <item>MT6360 LDO</item>
-        <item>MT6360 TYPEC</item>
+    <string-array name="tas_ant">
+        <item>ANT0</item>
+        <item>ANT1</item>
+        <item>ANT2</item>
+        <item>ANT3</item>
+        <item>ANT4</item>
+        <item>ANT5</item>
+        <item>ANT6</item>
+        <item>ANT7</item>
+        <item>ANT8</item>
+        <item>ANT9</item>
+        <item>255</item>
+        <item></item>
     </string-array>
     <string-array name="tas_ant_tx_prx">
         <item>ANT0</item>
@@ -1564,56 +1729,23 @@ HSUPA on"</item>
         <item>255</item>
         <item></item>
     </string-array>
-    <string-array name="tx_Pocket_type">
-        <item>NULL(0x00)</item>
-        <item>POLL(0x01)</item>
-        <item>FHS(0x02)</item>
-        <item>DM1(0x03)</item>
-        <item>DH1(0x04)</item>
-        <item>HV1(0x05)</item>
-        <item>HV2(0x06)</item>
-        <item>HV3(0x07)</item>
-        <item>DV(0x08)</item>
-        <item>AUX(0x09)</item>
-        <item>DM3(0x0A)</item>
-        <item>DH3(0x0B)</item>
-        <item>DM5(0x0E)</item>
-        <item>DH5(0x0F)</item>
-        <item>EV3(0x17)</item>
-        <item>EV4(0x1C)</item>
-        <item>EV5(0x1D)</item>
-        <item>2-DH1(0x24)</item>
-        <item>3-DH1(0x28)</item>
-        <item>2-DH3(0x2A)</item>
-        <item>3-DH3(0x2B)</item>
-        <item>2-DH5(0x2E)</item>
-        <item>3-DH5(0x2F)</item>
-        <item>2-EV3(0x36)</item>
-        <item>3-EV3(0x37)</item>
-        <item>2-EV5(0x3C)</item>
-        <item>3-EV5(0x3D)</item>
-        <item>non-modulated</item>
-    </string-array>
-    <string-array name="tx_pattern">
+    <string-array name="usb_phy_tuning_val_0_15b">
         <item>0000</item>
-        <item>1111</item>
+        <item>0001</item>
+        <item>0010</item>
+        <item>0011</item>
+        <item>0100</item>
+        <item>0101</item>
+        <item>0110</item>
+        <item>0111</item>
+        <item>1000</item>
+        <item>1001</item>
         <item>1010</item>
-        <item>Pseudo random bit</item>
-        <item>11110000</item>
-    </string-array>
-    <string-array name="usb_phy_tuning_val_0_1d">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="usb_phy_tuning_val_0_7b">
-        <item>000</item>
-        <item>001</item>
-        <item>010</item>
-        <item>011</item>
-        <item>100</item>
-        <item>101</item>
-        <item>110</item>
-        <item>111</item>
+        <item>1011</item>
+        <item>1100</item>
+        <item>1101</item>
+        <item>1110</item>
+        <item>1111</item>
     </string-array>
     <string-array name="video_quality_mode">
         <item></item>
@@ -1676,26 +1808,95 @@ HSUPA on"</item>
         <item>Main 4</item>
         <item>High 16</item>
     </string-array>
-    <string-array name="vtmal_audio_dump">
-        <item>OFF</item>
-        <item>ART_AWR</item>
-        <item>ART_AWB</item>
-        <item>WAV</item>
+    <string-array name="wifi_fec_array">
+        <item>BCC</item>
+        <item>LDPC</item>
     </string-array>
     <string-array name="wifi_log_level_driver">
         <item>Default</item>
         <item>More</item>
         <item>Extreme</item>
     </string-array>
-    <string-array name="wifi_log_level_frw">
-        <item>Off</item>
-        <item>Verbose</item>
+    <string-array name="wifi_primary_ch_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
-    <string-array name="working_mode">
-        <item>Normal mode</item>
-        <item>Media loop back: Stack</item>
-        <item>Media loop back: Service</item>
-        <item>Network loop back: Stack</item>
-        <item>Network loop back: Service</item>
+    <string-array name="xpxt_aging_band_entries">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>20</item>
+        <item>28</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+    </string-array>
+    <string-array name="xpxt_aging_freq_ranges">
+        <item>Rang:1920000~1980000</item>
+        <item>Rang:1710000~1785000</item>
+        <item>Rang:824000~849000</item>
+        <item>Rang:2500000~2570000</item>
+        <item>Rang:880000~915000</item>
+        <item>Rang:832000~862000</item>
+        <item>Rang:703000~748000</item>
+        <item>Rang:2570000~2620000</item>
+        <item>Rang:1880000~1920000</item>
+        <item>Rang:2300000~2400000</item>
+        <item>Rang:2496000~2690000</item>
+        <item>Rang:3300000~4200000</item>
+        <item>Rang:3300000~3800000</item>
+        <item>Rang:4400000~5000000</item>
+    </string-array>
+    <string-array name="xpxt_aging_mcs_entries">
+        <item>MCS_DFT_S_BPSK</item>
+        <item>MCS_CP_QPSK</item>
+        <item>MCS_DFT_S_QPSK</item>
+        <item>MCS_CP_16QAM</item>
+        <item>MCS_DFT_S_16QAM</item>
+        <item>MCS_CP_64QAM</item>
+        <item>MCS_DFT_S_64QAM</item>
+        <item>MCS_CP_256QAM</item>
+        <item>MCS_DFT_S_256QAM</item>
+    </string-array>
+    <string-array name="xpxt_aging_scs_entries">
+        <item>SCS_15KHZ</item>
+        <item>SCS_30KHZ</item>
+        <item>SCS_60KHZ</item>
+        <item>SCS_120KHZ</item>
+        <item>SCS_240KHZ</item>
+    </string-array>
+    <string-array name="xpxt_aging_ul_bw_entries">
+        <item>BW_SCS_RSSI_5MHZ</item>
+        <item>BW_SCS_RSSI_10MHZ</item>
+        <item>BW_SCS_RSSI_15MHZ</item>
+        <item>BW_SCS_RSSI_20MHZ</item>
+        <item>BW_SCS_RSSI_25MHZ</item>
+        <item>BW_SCS_RSSI_30MHZ</item>
+        <item>BW_SCS_RSSI_35MHZ</item>
+        <item>BW_SCS_RSSI_40MHZ</item>
+        <item>BW_SCS_RSSI_45MHZ</item>
+        <item>BW_SCS_RSSI_50MHZ</item>
+        <item>BW_SCS_RSSI_55MHZ</item>
+        <item>BW_SCS_RSSI_60MHZ</item>
+        <item>BW_SCS_RSSI_65MHZ</item>
+        <item>BW_SCS_RSSI_70MHZ</item>
+        <item>BW_SCS_RSSI_75MHZ</item>
+        <item>BW_SCS_RSSI_80MHZ</item>
+        <item>BW_SCS_RSSI_85MHZ</item>
+        <item>BW_SCS_RSSI_90MHZ</item>
+        <item>BW_SCS_RSSI_95MHZ</item>
+        <item>BW_SCS_RSSI_100MHZ</item>
     </string-array>
 </resources>
