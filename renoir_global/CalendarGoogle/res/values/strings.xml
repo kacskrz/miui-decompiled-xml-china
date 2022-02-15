@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
-    <string name="MSG_DEFAULT_DISPLAY_NAME">From a room</string>
-    <string name="MSG_UNDO_TASKS_COMPLETED">{NUM_TASKS_COMPLETED, plural, =1 {1 completed} other {# completed}}</string>
-    <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {1 deleted} other {# deleted}}</string>
-    <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {1 moved to {TITLE}}other {# moved to {TITLE}}}</string>
-    <string name="MSG_UNDO_TASKS_UNCOMPLETED">{NUM_TASKS_UNCOMPLETED, plural, =1 {1 marked incomplete} other {# marked incomplete}}</string>
-    <string name="MSG_UNDO_TASK_STARRED">Task added to Starred</string>
+    <string name="MSG_DEFAULT_DISPLAY_NAME">From a space</string>
+    <string name="MSG_UNDO_TASKS_COMPLETED">{NUM_TASKS_COMPLETED, plural, =1 {Task completed} other {# tasks completed}}</string>
+    <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {Task deleted} other {# tasks deleted}}</string>
+    <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {Task moved to {TITLE}}other {# tasks moved to {TITLE}}}</string>
+    <string name="MSG_UNDO_TASKS_UNCOMPLETED">{NUM_TASKS_UNCOMPLETED, plural, =1 {Task marked uncompleted} other {# tasks marked uncompleted}}</string>
     <string name="MSG_UNDO_TASK_UNSTARRED">Task removed from Starred</string>
     <string name="a11y_added_contact">Contact %s added</string>
     <string name="a11y_calendar_set">Calendar set to: %s</string>
@@ -31,10 +30,14 @@
     <string name="a11y_respond_yes_meeting_room_content_description">Respond Yes, in a meeting room</string>
     <string name="a11y_respond_yes_unknown_content_description">Respond Yes</string>
     <string name="a11y_respond_yes_virtually_content_description">Respond Yes, joining virtually</string>
+    <string name="a11y_responded_yes_meeting_room_content_description">Responded Yes, in a meeting room</string>
+    <string name="a11y_responded_yes_unknown_content_description">Responded Yes</string>
+    <string name="a11y_responded_yes_virtually_content_description">Responded Yes, joining virtually</string>
     <string name="a11y_room_booking_added_room">Added room: %s</string>
     <string name="a11y_room_booking_removed_room">Removed room: %s</string>
     <string name="a11y_room_booking_rooms_matching_page">Rooms matching %s</string>
     <string name="a11y_room_booking_unavailable_room">Unavailable: %s</string>
+    <string name="a11y_rsvp_join_method_button_label">Join method options</string>
     <string name="a11y_select_calendar">Select calendar</string>
     <string name="a11y_select_color">Select color</string>
     <string name="a11y_select_visibility">Select visibility</string>
@@ -86,7 +89,6 @@
     <string name="accessibility_find_time_slab_bar_swipe_hint">Swipe left to move to next suggestion</string>
     <string name="accessibility_find_time_slab_bar_swipe_hint_rtl">Swipe right to move to next suggestion</string>
     <string name="accessibility_find_time_timeframe_duration_label">Selected filter value: %s</string>
-    <string name="accessibility_has_time_proposals">has time proposals</string>
     <string name="accessibility_hide_date_picker">Hide date picker</string>
     <string name="accessibility_navigation_icon">Back</string>
     <string name="accessibility_navigation_icon_search">Search</string>
@@ -113,6 +115,7 @@
     <string name="acessibility_selected_checkmark_description">Selected</string>
     <string name="acl_fixer_help_url">https://support.google.com/calendar/?p=add_attachments_android</string>
     <string name="action_apply">Apply</string>
+    <string name="action_cancel_booked_event">Cancel appointment</string>
     <string name="action_delete">Remove</string>
     <string name="action_did_it">Did it</string>
     <string name="action_did_it_short">Did it</string>
@@ -120,6 +123,7 @@
     <string name="action_later">Later</string>
     <string name="action_mark_as_done">Mark as done</string>
     <string name="action_mark_as_not_done">Mark as not done</string>
+    <string name="action_send_booked_event_cancellation">Send cancellation</string>
     <string name="action_view">View</string>
     <string name="actionbar_subtitle_font_family">@string/roboto_medium</string>
     <string name="activity_not_found_general">No application found to handle the action</string>
@@ -160,6 +164,8 @@ Actual: %2$s."</string>
     <string name="alternate_calendar_leap_month_format_chinese_korean">%1$s%2$s</string>
     <string name="alternate_calendar_month_day_format">%1$s %2$s</string>
     <string name="alternate_calendar_month_day_format_chinese_korean">%2$s%1$s</string>
+    <string name="alternate_calendar_month_label_format">%1$s (%2$s)</string>
+    <string name="alternate_calendar_month_single_bracket_label_format">(%1$s)</string>
     <string name="alternate_calendar_year_format_chinese">%1$s%2$s年</string>
     <string name="alternate_calendar_year_format_korean">%1$s%2$s년</string>
     <string name="alternate_calendar_year_month_format">%2$s %1$s</string>
@@ -180,21 +186,10 @@ Actual: %2$s."</string>
     <string name="async_scheduling_timeout">This is taking longer than normal. Check back soon for your first session.</string>
     <string name="at_time">At %s</string>
     <string name="at_time_of_event">At time of event</string>
-    <string name="attachment_description_audio">Audio</string>
-    <string name="attachment_description_default">File</string>
-    <string name="attachment_description_drive_doc">Docs</string>
-    <string name="attachment_description_drive_drawing">Drawings</string>
-    <string name="attachment_description_drive_sheet">Sheets</string>
-    <string name="attachment_description_drive_slide">Slides</string>
-    <string name="attachment_description_excel">Spreadsheet</string>
-    <string name="attachment_description_image">Image</string>
-    <string name="attachment_description_pdf">PDF</string>
-    <string name="attachment_description_powerpoint">Presentation</string>
-    <string name="attachment_description_text">Text</string>
-    <string name="attachment_description_video">Video</string>
-    <string name="attachment_description_word">Doc</string>
     <string name="attachment_no_activity">"Can't find app to open Google Drive file"</string>
     <string name="attendee_accepted">%s is going</string>
+    <string name="attendee_accepted_in_a_meeting_room">%s is joining in a meeting room</string>
+    <string name="attendee_accepted_virtually">%s is joining virtually</string>
     <string name="attendee_declined">%s has declined</string>
     <string name="attendee_not_responded">%s has not responded</string>
     <string name="attendee_optional">Optional</string>
@@ -225,15 +220,15 @@ Actual: %2$s."</string>
     <string name="button_permissions_manage_label">Go to settings</string>
     <string name="calendar">Calendar</string>
     <string name="calendar_cannot_be_shown">Calendar cannot be shown</string>
-    <string name="calendar_could_not_be_checked">Consistency check of calendar %s failed.</string>
     <string name="calendar_dialog_title">Calendar</string>
     <string name="calendar_ignored_message">Calendar was not added.</string>
     <string name="calendar_inconsistent_details">We noticed an inconsistency between your local calendar %s and the server state. Submit this report so that we can investigate the issue. This report may contain personal, sensitive data which is solely used for debugging purposes.</string>
     <string name="calendar_is_checked">%1$s, checked</string>
-    <string name="calendar_is_consistent">Calendar %s is consistent.</string>
-    <string name="calendar_is_inconsistent">Calendar %s is inconsistent.</string>
     <string name="calendar_is_unchecked">%1$s, unchecked</string>
+    <string name="calendar_picker_account_info_segment_ooo">Out of office is not available for this account</string>
+    <string name="calendar_picker_account_info_segment_working_elsewhere">Working elsewhere is not available for this account</string>
     <string name="calendar_refresh">Refresh</string>
+    <string name="calendar_segment_secondary_text">Shared by %s</string>
     <string name="calendar_storage_disabled_dialog_action">Enable in Settings</string>
     <string name="calendar_storage_disabled_dialog_message">"Oops, your calendars and events can't be displayed because Calendar Storage is disabled.
 
@@ -242,6 +237,8 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="calendar_successfully_added_message">Calendar was successfully added.</string>
     <string name="calendars_help_context">calendar_settings_android</string>
     <string name="cancel">@android:string/no</string>
+    <string name="cancel_booked_event_dialog_content">Cancellation emails will be sent to all guests</string>
+    <string name="cancel_booked_event_dialog_title">Cancel appointment?</string>
     <string name="cancel_button">Cancel</string>
     <string name="cancel_speeddial">Cancel</string>
     <string name="cancellation_discard">Discard</string>
@@ -252,9 +249,11 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="cannot_reschedule_cross_profile_entry">You can only edit this event in your personal app</string>
     <string name="cannot_reschedule_cross_profile_entry_action">Switch</string>
     <string name="cannot_reschedule_event">"You can't reschedule this event"</string>
+    <string name="cant_change_this">"You can't change this here"</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="chat_status_segment_disabled">"Chat status can't be set for events longer than 24 hours."</string>
     <string name="chat_status_segment_primary">Do not disturb</string>
     <string name="chat_status_segment_secondary">Set status to “Do not disturb” and turn off Chat notifications</string>
     <string name="chat_suggestion_description">Based on Chat</string>
@@ -357,7 +356,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="date_duration_label">On %s</string>
     <string name="date_space_dash_space">" – "</string>
     <string name="date_time_fmt">%1$s, %2$s</string>
-    <string name="day_view_new_event_hint">+ New event</string>
     <string name="debug_channel_description">Debug notifications</string>
     <string name="decline_action">Decline</string>
     <string name="decline_scope_selection_title">Decline recurring event</string>
@@ -409,6 +407,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="discard_dialog_discard">Discard</string>
     <string name="discard_dialog_keep_editing">Keep editing</string>
     <string name="discard_goal_message">Discard changes to this goal?</string>
+    <string name="dismiss">Dismiss</string>
     <string name="dismiss_warning">Dismiss warning</string>
     <string name="dnd_auto_decline_default_message">Declined because I am in focus time</string>
     <string name="dnd_chat_status_primary">Do not disturb</string>
@@ -421,7 +420,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="drawer_account_sync_syncing">Syncing…</string>
     <string name="drawer_account_unauthenticated">Not properly signed in</string>
     <string name="drawer_birthdays_text">Birthdays</string>
-    <string name="drawer_empty_text">No Calendars selected to be synchronized.</string>
     <string name="drawer_help_feedback">Help &amp; feedback</string>
     <string name="drawer_holidays_text">Holidays</string>
     <string name="drawer_logo_lockup_first">Google</string>
@@ -460,6 +458,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="edit_screen_title">Edit screen</string>
     <string name="edit_title_hint">Enter title</string>
     <string name="edit_title_task_suggest_hint">Remind me to…</string>
+    <string name="edit_working_location">Edit working location</string>
     <string name="ellipsized_text">%1$s…</string>
     <string name="email_guests_label">Email guests</string>
     <string name="email_organizer_label">Email organizer</string>
@@ -501,6 +500,8 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="everyone_declined_pnt_action">@string/propose_time_review_button_text</string>
     <string name="everyone_declined_prefix">Everyone else declined:</string>
     <string name="everyone_declined_reschedule_action">@string/reschedule_action</string>
+    <string name="ewl_location_picker_hint">Other working location</string>
+    <string name="ewl_prefix">Everyday working location:</string>
     <string name="exception_during_external_activity_start">The application that handles this action could not be started</string>
     <string name="expand_button_title">Advanced</string>
     <string name="expand_location">Expand %1$s</string>
@@ -598,6 +599,11 @@ Where: %5$s
 %6$s"</string>
     <string name="forward_event_toast_title">Forwarding event…</string>
     <string name="generic_error">Error</string>
+    <string name="gm3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="gm3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="gm3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="gm3_sys_motion_easing_standard">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
@@ -784,6 +790,7 @@ Where: %5$s
     <string name="hats_lib_submit">Submit</string>
     <string name="hats_lib_thank_you_followup_message">Help us improve our product by answering more questions</string>
     <string name="hide_account_list">Hide accounts</string>
+    <string name="home">Home</string>
     <string name="hourly_view_label">Day</string>
     <string name="hourly_view_label_full">Day view</string>
     <string name="ical_ask_delete_cancelled_event">Event “%s” has been canceled. Would you like to remove it from your calendar?</string>
@@ -816,7 +823,6 @@ Where: %5$s
     <string name="item_is_selected">%1$s selected</string>
     <string name="join_by_phone_action_label">Join by phone</string>
     <string name="join_conference_with">Join with %s</string>
-    <string name="join_descriptions">%1$s, %2$s</string>
     <string name="join_from_non_google_system">Join from a third-party system</string>
     <string name="join_live_stream">Watch live stream</string>
     <string name="join_video_conferencing">Join video conference</string>
@@ -836,6 +842,7 @@ Where: %5$s
     <string name="loading_addons_error_no_connection">"Conferencing solutions can't be loaded because there's no Internet connection"</string>
     <string name="loading_attendees">Loading attendees…</string>
     <string name="location_error">Unable to add location</string>
+    <string name="location_meeting_room">in a meeting room</string>
     <string name="location_picker_contacts">Contacts</string>
     <string name="location_picker_hint">Add location</string>
     <string name="location_picker_locations">Nearby places</string>
@@ -844,19 +851,17 @@ Where: %5$s
     <string name="location_remove">Remove</string>
     <string name="location_show_on_map">Show on map</string>
     <string name="location_time">%s (local time)</string>
+    <string name="location_virtually">virtually</string>
     <string name="map_label">Map</string>
     <string name="maps_not_available">No application found to view this location.</string>
+    <string name="material_clock_display_divider">:</string>
     <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
-    <string name="meet_auto_add_promo_primary_text">Your event now includes Google Meet</string>
-    <string name="meet_auto_add_promo_secondary_text">High-quality, secure video conferencing with up to 100 people is added automatically. Update your preferences in Settings.</string>
     <string name="meet_consumer_description_label">Video conferencing details added</string>
     <string name="meet_description_label">Video conferencing and dial-in details added</string>
-    <string name="meet_promo_dialog_got_it">Got it</string>
-    <string name="meet_promo_turn_off">Turn off</string>
     <string name="meet_sharing_joining_info">Google Meet joining info</string>
     <string name="meet_sharing_more_phone_numbers">More phone numbers: %s</string>
     <string name="meet_sharing_phone_number">Or dial: %s</string>
@@ -896,6 +901,8 @@ To get events from Gmail, you must also turn on "<b>Smart features and personali
     <string name="no_available_dialer">No available dialer.</string>
     <string name="no_calendar_permission_message">Google Calendar needs permission to create and display your events.</string>
     <string name="no_calendar_permission_title">"Can't access your calendar"</string>
+    <string name="no_clock_role_message">To show event notifications at the correct time, Google Calendar requires your permission to set reminders</string>
+    <string name="no_clock_role_title">Let Calendar remind you on time</string>
     <string name="no_end_time">No end time</string>
     <string name="no_entries_after">Only entries after %s are shown here</string>
     <string name="no_events_for_day">Nothing planned. Tap to create.</string>
@@ -921,13 +928,14 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="notification_ticker_format">%1$s, %2$s</string>
     <string name="notification_tone_label">Calendar Notification</string>
     <string name="notifications_channel_description">Calendar notifications</string>
+    <string name="office">Office</string>
     <string name="offline_warning">You are offline. Some schedules cannot be loaded.</string>
     <string name="ok">@android:string/yes</string>
-    <string name="okay_button">Okay</string>
     <string name="on_the_day_at">On the day at %s</string>
     <string name="only_reschedule_reminders_to_future">"Reminders can't be moved to the past"</string>
     <string name="oobe_done">Got it</string>
     <string name="oobe_next">next page</string>
+    <string name="oobe_welcome_to_google_calendar">Welcome to Google Calendar</string>
     <string name="ooo">Out of office</string>
     <string name="ooo_auto_decline_default_message">"Declined because I'm out of office"</string>
     <string name="ooo_auto_decline_disabled">Meetings will not be declined</string>
@@ -957,6 +965,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="peoplekit_contact_selected">Selected</string>
     <string name="peoplesheet_add_to_contacts">Add to contacts</string>
     <string name="peoplesheet_edit_contact">Edit contact</string>
     <string name="personal_profile_header_title">Personal profile</string>
@@ -1085,7 +1094,6 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="response_invited">Not responded</string>
     <string name="response_maybe">Maybe</string>
     <string name="response_no">No</string>
-    <string name="response_prompt">Going?</string>
     <string name="response_status">Response: %s</string>
     <string name="response_yes">Yes</string>
     <string name="response_yes_meeting_room">Yes, in a meeting room</string>
@@ -1118,6 +1126,8 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="room_tile_info_separator">⋅</string>
     <string name="rsvp_accepted">Responded yes.</string>
     <string name="rsvp_declined">Responded no.</string>
+    <string name="rsvp_location_promo_body_text">Let others know how you’ll be joining.</string>
+    <string name="rsvp_location_promo_header_text">New RSVP options</string>
     <string name="rsvp_tentative">Responded maybe.</string>
     <string name="save">Save</string>
     <string name="saving_event">Event saved.</string>
@@ -1154,6 +1164,13 @@ You'll receive emails for any invitations from unknown senders."</string>
 
 You'll receive emails for all new invitations."</string>
     <string name="settings_invitation_behavior_confirm_other">"This doesn't affect invitations you've already received."</string>
+    <string name="settings_invitation_behavior_explainer_compact_link">Learn more about protecting your calendar from spam</string>
+    <string name="settings_invitation_behavior_explainer_extended">"Calendar will display events that you have been invited to.
+
+You can change how invitations are added with this setting.
+
+"</string>
+    <string name="settings_invitation_behavior_explainer_extended_link">Learn more about how invitations are added</string>
     <string name="settings_invitation_behavior_hide_invitations_from_others">Let others see all invitations if they have permission to view or edit my events</string>
     <string name="settings_invitation_behavior_option_from_all">From everyone</string>
     <string name="settings_invitation_behavior_option_from_known">Only if the sender is known</string>
@@ -1195,10 +1212,6 @@ You'll receive emails for all new invitations."</string>
     <string name="smartmail_seat_row">row %s</string>
     <string name="smartmail_seat_section">section %s</string>
     <string name="smartmail_toggle_label">Show events from Gmail</string>
-    <string name="smartmail_toggle_off_dialog_confirm_button_text">Continue</string>
-    <string name="smartmail_toggle_off_dialog_text">"You'll no longer see events automatically added from your email. Previously added events from Gmail will be removed."</string>
-    <string name="smartmail_toggle_on_dialog_confirm_button_text">Enable</string>
-    <string name="smartmail_toggle_on_dialog_text">Future events like flight bookings and restaurant reservations will be automatically added to your calendar from Gmail.</string>
     <string name="smartmail_updated_toggle_off_dialog_text">"You’ll no longer see events automatically created from your email, including previously added events
 
 To stop Gmail from creating these events, you must also turn off "<b>Smart features and personalization</b> in Gmail settings</string>
@@ -1210,6 +1223,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="snack_bar_cross_profile_permissions_granted">Personal calendars are now shown</string>
     <string name="snack_bar_cross_profile_permissions_revoked">Personal calendars are no longer shown</string>
     <string name="some_calendars_cannot_be_shown">Some calendars cannot be shown</string>
+    <string name="somewhere_else">Somewhere else</string>
     <string name="strip_note_formatting_prompt">Editing the notes will result in formatting and styles being lost.</string>
     <string name="strip_note_formatting_prompt_continue">Continue editing</string>
     <string name="subscribe_to_calendar_confirmation_title">Add calendar \"%s\" to your account?</string>
@@ -1285,7 +1299,6 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="sync_off_notification_message_accounts">Sync is off for some accounts. Changes you make will not be backed up.</string>
     <string name="sync_off_notification_message_device">Auto-sync is off on this device. Changes you make here or in other apps will not be backed up.</string>
     <string name="sync_off_notification_message_general">Sync is off. Changes you make will not be backed up.</string>
-    <string name="sync_stats">Sync Stats</string>
     <string name="talkback_activity_title">Contact information for %s</string>
     <string name="talkback_activity_title_no_id">Contact information</string>
     <string name="talkback_find_time_grid_showing_fragment">Showing time suggestion in calendar grid</string>
@@ -1296,23 +1309,27 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="task_assigned_to_user">Assigned to you</string>
     <string name="task_completed">Task completed.</string>
     <string name="task_creation_cancellation_message">Discard this task?</string>
-    <string name="task_delete_for_room_confirmation_dialog_delete_button">Delete</string>
-    <string name="task_delete_for_room_confirmation_dialog_description">"Deleting this task will also delete it from the room's list. To keep it on the room's list, unassign it from yourself instead."</string>
-    <string name="task_delete_for_room_confirmation_dialog_unassign_button">Unassign</string>
+    <string name="task_delete_for_space_confirmation_dialog_delete_button">Delete</string>
+    <string name="task_delete_for_space_confirmation_dialog_description">"Deleting this task will also delete it from the space's list. To keep it on the space's list, unassign it from yourself instead."</string>
+    <string name="task_delete_for_space_confirmation_dialog_unassign_button">Unassign</string>
     <string name="task_description_hint">Add details</string>
     <string name="task_description_prefix">Task:</string>
     <string name="task_done_description_prefix">Completed task:</string>
     <string name="task_done_label">@string/action_done</string>
     <string name="task_edit_cancellation_message">Discard changes to this task?</string>
     <string name="task_empty_title">The reminder title cannot be empty.</string>
-    <string name="task_from_room_description">"Changes here also show up in the room's task list"</string>
-    <string name="task_from_room_title">From a room</string>
+    <string name="task_from_space_description">"Changes here also show up in the space's task list"</string>
+    <string name="task_from_space_title">From a space</string>
     <string name="task_info_title">View task</string>
     <string name="task_no_title_placeholder">(Task — no title)</string>
     <string name="task_not_found">Reminder not found.</string>
     <string name="task_notification_channel">Task notifications</string>
+    <string name="task_recurrence_stop_confirmation_dialog_action">Stop repeating</string>
+    <string name="task_recurrence_stop_confirmation_dialog_description">"Remove all future occurrences?
+You won't be able to make this task repeating again."</string>
+    <string name="task_recurrence_stop_confirmation_dialog_title">Stop repeating this task</string>
     <string name="task_unassign_confirmation_dialog_action">Unassign &amp; save</string>
-    <string name="task_unassign_confirmation_dialog_description">"This removes the task from your personal task list. You can still find it in the room's task list."</string>
+    <string name="task_unassign_confirmation_dialog_description">"This removes the task from your personal task list. You can still find it in the space's task list."</string>
     <string name="task_unassign_confirmation_dialog_title">Unassign and save?</string>
     <string name="task_unassign_content_description">Unassign task</string>
     <string name="task_uncompleted">Task marked incomplete.</string>
@@ -1325,6 +1342,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="tasks_killswitch_snackbar">"Tasks aren't available in this version of the Calendar app."</string>
     <string name="tasks_promo_body_text">Create, view, and edit tasks right in Calendar</string>
     <string name="tasks_promo_header_text">Tasks on the go</string>
+    <string name="tasks_rollover_dialog_title">Pending tasks</string>
     <string name="tasks_sync_adapter">Tasks in Calendar</string>
     <string name="tentatively_accept_scope_selection_title">Tentatively accept recurring event</string>
     <string name="terms_of_service">Terms of Service</string>
@@ -1368,6 +1386,7 @@ Would you like to reschedule your future Goal sessions to this time zone?"</stri
     <string name="tz_picker_timezone_with_abbreviation">%1$s (%2$s)</string>
     <string name="unable_to_add_calendar_message">Calendar could not be added.</string>
     <string name="unified_sync_toggle_label">Google Calendar</string>
+    <string name="unspecified">Unspecified</string>
     <string name="update">Update</string>
     <string name="update_event_action_prompt">Update existing event</string>
     <string name="v7_preference_off">OFF</string>
@@ -1389,7 +1408,6 @@ Would you like to reschedule your future Goal sessions to this time zone?"</stri
     <string name="visibility_public_available">Public - Available</string>
     <string name="visibility_public_busy">Public - Busy</string>
     <string name="visibility_secret">Only me</string>
-    <string name="visibility_spinner_title">Visibility</string>
     <string name="we_prefix">Working Elsewhere:</string>
     <string name="web_calendar_address">https://calendar.google.com/calendar/r</string>
     <string name="week_header_template">Week of %s</string>
@@ -1402,7 +1420,9 @@ Would you like to reschedule your future Goal sessions to this time zone?"</stri
     <string name="weekly_simple_lower">weekly</string>
     <string name="widget_day_today">Today, %1$s</string>
     <string name="widget_day_tomorrow">Tomorrow, %1$s</string>
+    <string name="widget_description">View your tasks and upcoming events</string>
     <string name="widget_no_events_scheduled">No events scheduled</string>
+    <string name="widgetmonth_description">Show your calendar one month at a time</string>
     <string name="work_profile_header_title">Work profile</string>
     <string name="working_elsewhere">Working elsewhere</string>
     <string name="working_elsewhere_default_title">Working elsewhere</string>
@@ -1426,6 +1446,7 @@ In addition, Calendar uses this location when it books rooms for you."</string>
     <string name="working_hours_help">"Enable working hours to let people know what times you're working and when you're available for meetings. This will warn people if they try to invite you to a meeting outside of these hours."</string>
     <string name="working_hours_set_text">Set working hours</string>
     <string name="working_hours_start">Start</string>
+    <string name="working_location">Working Location</string>
     <string name="yesterday">Yesterday</string>
     <string name="your_chip_label">You</string>
 </resources>
