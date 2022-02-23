@@ -59,12 +59,12 @@
     </string-array>
     <array name="allowed_package_operator" />
     <item type="array" name="android_common_nicknames">@android:array/common_nicknames</item>
-    <item type="array" name="android_config_keyboardTapVibePattern">@android:array/config_keyboardTapVibePattern</item>
-    <item type="array" name="android_config_longPressVibePattern">@android:array/config_longPressVibePattern</item>
-    <item type="array" name="android_config_mobile_hotspot_provision_app">@android:array/config_mobile_hotspot_provision_app</item>
-    <item type="array" name="android_config_virtualKeyVibePattern">@android:array/config_virtualKeyVibePattern</item>
-    <item type="array" name="android_special_locale_codes">@android:array/special_locale_codes</item>
-    <item type="array" name="android_special_locale_names">@android:array/special_locale_names</item>
+    <item type="array" name="android_config_keyboardTapVibePattern">@android:array/config_minimumBrightnessCurveNits</item>
+    <item type="array" name="android_config_longPressVibePattern">@android:array/config_nightDisplayColorTemperatureCoefficients</item>
+    <item type="array" name="android_config_mobile_hotspot_provision_app">@android:array/config_oemUsbModeOverride</item>
+    <item type="array" name="android_config_virtualKeyVibePattern">@android:array/disallowed_apps_managed_user</item>
+    <item type="array" name="android_special_locale_codes">@android:array/vendor_required_apps_managed_user</item>
+    <item type="array" name="android_special_locale_names">@android:array/wfcOperatorErrorAlertMessages</item>
     <string-array name="application_lock_activity">
         <item>com.android.settings/.PrivacyPasswordConfirmLockPattern</item>
         <item>com.miui.securitycenter/com.miui.applicationlock.ConfirmAccessControl</item>
@@ -79,14 +79,6 @@
         <item>sweet</item>
         <item>star</item>
         <item>haydn</item>
-        <item>biloba</item>
-        <item>rosemary</item>
-        <item>amber</item>
-        <item>joyeuse</item>
-        <item>vili</item>
-        <item>camellian</item>
-        <item>eos</item>
-        <item>lisa</item>
         <item>zeus</item>
         <item>cupid</item>
     </string-array>
@@ -398,8 +390,6 @@
         <item>/sys/class/backlight/panel0-backlight/brightness</item>
     </string-array>
     <array name="config_virtualKeyUpPattern" />
-    <array name="display_compat_allow_list" />
-    <array name="display_compat_block_list" />
     <string-array name="empty_initial_attach_apn_plmn">
         <item>20205</item>
         <item>20601</item>
@@ -421,7 +411,6 @@
         <item>45006</item>
         <item>45008</item>
     </string-array>
-    <array name="fixed_aspect_ratio_list" />
     <string-array name="float_notification_whitelist">
         <item>com.google.android.apps.messaging</item>
         <item>com.google.android.talk</item>
@@ -491,12 +480,6 @@
         <item>1.0</item>
         <item>1.2</item>
         <item>1.4</item>
-    </string-array>
-    <string-array name="force_dark_app_whitelist">
-        <item>com.xiaomi.vipaccount</item>
-        <item>com.xiaomi.market</item>
-        <item>com.xiaomi.gamecenter</item>
-        <item>com.google.android.apps.docs.editors.sheets</item>
     </string-array>
     <string-array name="force_landscape_application">
         <item>com.tencent.tmgp.cf</item>
@@ -606,6 +589,14 @@
         <item>com.og.ttddz.mi</item>
         <item>com.ximalaya.ting.lite</item>
         <item>com.google.android.apps.podcasts</item>
+        <item>com.google.android.apps.googleassistant</item>
+        <item>com.netease.onmyoji.mi</item>
+        <item>com.netease.onmyoji.bili</item>
+        <item>com.netease.mrzh.mi</item>
+        <item>com.netease.mrzh.bili</item>
+        <item>com.tencent.tmgp.yys.zqb</item>
+        <item>com.google.android.gm</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
     </string-array>
     <string-array name="freeform_black_list_for_pad">
         <item>com.miui.securitycenter</item>
@@ -700,6 +691,14 @@
         <item>com.og.ttddz.mi</item>
         <item>com.ximalaya.ting.lite</item>
         <item>com.google.android.apps.podcasts</item>
+        <item>com.google.android.apps.googleassistant</item>
+        <item>com.netease.onmyoji.mi</item>
+        <item>com.netease.onmyoji.bili</item>
+        <item>com.netease.mrzh.mi</item>
+        <item>com.netease.mrzh.bili</item>
+        <item>com.tencent.tmgp.yys.zqb</item>
+        <item>com.google.android.gm</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
     </string-array>
     <string-array name="freeform_caption_insets_height_to_zero_list">
         <item>com.ss.android.article.news</item>
@@ -819,6 +818,11 @@
     <string-array name="list_about_ignore_request_orientation_in_freeform">
         <item>com.miui.player</item>
         <item>com.sqw.setdl.mi</item>
+        <item>tv.danmaku.bili</item>
+        <item>air.tv.douyu.android</item>
+        <item>com.youku.phone</item>
+        <item>com.tencent.gamehelper.smoba</item>
+        <item>com.taobao.litetao</item>
     </string-array>
     <string-array name="list_about_need_relunch">
         <item>com.supercell.clashroyale.mi</item>
@@ -829,6 +833,12 @@
         <item>com.hunantv.imgo.activity</item>
         <item>com.tencent.qqlive</item>
         <item>com.qiyi.video</item>
+    </string-array>
+    <string-array name="list_disable_overlay_with_app_content">
+        <item>com.yxcorp.plugin.search.SearchActivity</item>
+        <item>com.ss.android.live.host.livehostimpl.LivePlayerTransActivity</item>
+        <item>com.tencent.mm.plugin.profile.ui.ContactInfoUI</item>
+        <item>com.ss.android.xiagualongvideo.detail.LongVideoDetailActivity</item>
     </string-array>
     <string-array name="low_device_cpu_list">
         <item>msm8953</item>
@@ -2112,6 +2122,8 @@
     </string-array>
     <string-array name="process_camera_intercept_restart_list">
         <item>com.xiaomi.bsp.gps.nps</item>
+        <item>com.miui.screenrecorder</item>
+        <item>com.milink.service</item>
         <item>com.android.settings:remote</item>
     </string-array>
     <string-array name="process_disable_force_stop_list">
