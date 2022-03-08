@@ -1214,6 +1214,7 @@ You will not lose any app data."</string>
     <string name="compatible_dialog_title">Attention</string>
     <string name="comprehensive_protection_measures">Comprehensive protection</string>
     <string name="confirmSecondSpacePassword">Confirm Second space password</string>
+    <string name="confirm_ai_allow_all_permission">Change permission status to \"Decide for me\" for all apps?</string>
     <string name="confirm_allow_all_permission">Allow all apps from using this feature?</string>
     <string name="confirm_bind_xiaomi_account_dialog_title">Adding Mi Account</string>
     <string name="confirm_fingerprint_msg">Verify your fingerprint</string>
@@ -1236,6 +1237,7 @@ You will not lose any app data."</string>
     <string name="copy">Copy</string>
     <string name="cpu_usage_android_system">Android system</string>
     <string name="cpu_usage_process_run_time_little_time">Less than 1 minute</string>
+    <string name="cpu_usage_process_run_time_little_time_new">Less than %d minute</string>
     <string name="cpu_usage_view_action_btn_text">Tap to view</string>
     <string name="create_gamebooster_destop">Created Home screen shortcut successfully</string>
     <string name="create_shortcut">Create a Home screen shortcut for Game Turbo</string>
@@ -1816,8 +1818,8 @@ volunteer"</string>
     <string name="first_aid_card_airplane_title">"Can't make calls or connect to the network"</string>
     <string name="first_aid_card_consume_power_button1">Restrict</string>
     <string name="first_aid_card_consume_power_button2">Turn off</string>
-    <string name="first_aid_card_consume_power_summary1">More than 5 apps are allowed to autostart. Restrict to save battery.</string>
     <string name="first_aid_card_consume_power_summary2">Turn off portable hotspot to save battery</string>
+    <string name="first_aid_card_consume_power_summary_app">More than %d apps are allowed to autostart. Restrict to save battery.</string>
     <string name="first_aid_card_consume_power_title">Battery usage</string>
     <string name="first_aid_card_kadun_button1">Free up space</string>
     <string name="first_aid_card_kadun_button2">Restrict</string>
@@ -2160,10 +2162,12 @@ Record sequences and use them anytime!"</string>
     <string name="gb_not_support_on_device">"This app can't be used on the outer screen"</string>
     <string name="gb_operat_frequently">Not so fast!</string>
     <string name="gb_performance_balance">Balanced</string>
+    <string name="gb_performance_balance_tips">"Balanced mode saves power
+while lowering refresh rate and temperature limits"</string>
     <string name="gb_performance_high">Performance</string>
     <string name="gb_performance_mode">Gaming mode</string>
-    <string name="gb_performance_tips">"Using performance mode for a long time
-may drain battery and lead to overheating"</string>
+    <string name="gb_performance_tips">"Performance mode improves graphics performance,
+but also increases power consumption and allows your device to overheat"</string>
     <string name="gb_shortcut_pref_title">Home screen shortcut</string>
     <string name="gb_shoulder_key">Shoulder buttons</string>
     <string name="gb_shoulder_key_add_show_btn">Show virtual buttons during games</string>
@@ -2270,7 +2274,6 @@ of your gaming sessions"</string>
     <string name="gd_setting_desc_action1">Open floating window</string>
     <string name="gd_setting_desc_action2">Use a shortcut</string>
     <string name="gd_setting_group_custom_gtb_apps">Games</string>
-    <string name="gd_setting_group_custom_line_location">Toolbox position</string>
     <string name="gd_setting_group_custom_settings">Personalization</string>
     <string name="gd_setting_group_custom_vtb_apps">Video apps</string>
     <string name="gd_setting_group_smart_tool_box">Sidebar</string>
@@ -2285,6 +2288,7 @@ of your gaming sessions"</string>
     <string name="gd_setting_title">Sidebar</string>
     <string name="gd_setting_vtb">Show while playing videos</string>
     <string name="gd_setting_vtb_desc">Special features for video playback</string>
+    <string name="gd_sidebar_long_press_tips">Press and hold the indicator to move it while holding device vertically</string>
     <string name="gd_splite_screen_tips">"Split screen doesn't support floating windows"</string>
     <string name="gdpr_msg"><Data>"To be able to detect security risks and protect your data, we need to collect the necessary amount of information about your device. Read and agree to our &lt;a href=\"https://privacy.mi.com/all/%1$s_%2$s\">Privacy Policy&lt;/a> before using our services. In case you don't allow us to collect such information, you'll still be able to use this app, but some features won't be available to you. "</Data></string>
     <string name="ge">个</string>
@@ -2369,6 +2373,7 @@ of your gaming sessions"</string>
     <string name="gtb_exit_game_to_gtb">Open gamebox</string>
     <string name="gtb_exit_game_to_home">Back to Home screen</string>
     <string name="gtb_guide_finish">Skip</string>
+    <string name="gtb_guide_game_mode_tips">Select preferred gaming mode</string>
     <string name="gtb_guide_gtb_button_done">Done</string>
     <string name="gtb_guide_gtb_community_desc">Share your experience with fellow gamers</string>
     <string name="gtb_guide_gtb_community_title">Community</string>
@@ -2376,7 +2381,8 @@ of your gaming sessions"</string>
     <string name="gtb_guide_gtb_func_title">Game Turbo</string>
     <string name="gtb_guide_gtb_game_effected">Applied</string>
     <string name="gtb_guide_gtb_game_new">New</string>
-    <string name="gtb_guide_gtb_line_new">Step up your game with all-new Game Turbo!</string>
+    <string name="gtb_guide_gtb_line_new">Try Performance mode in Game Turbo!</string>
+    <string name="gtb_guide_gtb_line_xspace">Step up your game with all-new Game Turbo!</string>
     <string name="gtb_guide_small_window_app_desc">"Use other apps while you're playing"</string>
     <string name="gtb_guide_small_window_app_title">Floating windows</string>
     <string name="gtb_setting_item_summary_disable_ndds_sim">Block all communication services on secondary SIM during gaming sessions to keep connection stable and avoid switching between networks. Secondary SIM will be unblocked when you stop playing.</string>
@@ -3090,11 +3096,19 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="ok">OK</string>
     <string name="ok_button">OK</string>
     <string name="old_sdk_deny_warning">"The app isn't compatible with the latest Android permission requirements. Denied permissions may affect the way this app works."</string>
+    <string name="om_app_background_restrict_1_new">%d</string>
+    <string name="om_app_background_restrict_2_new">%d</string>
+    <string name="om_app_background_restrict_3_new">%d</string>
+    <string name="om_app_background_restrict_4_new">%d</string>
     <string name="om_lock_app_locked_app">Locked</string>
     <string name="om_lock_app_unlocked_app">Unlocked</string>
     <string name="om_locked_apps_summary">Locked apps will be ignored by the speed boost.</string>
     <string name="om_memory_clean_memory_info_text">%1$s / %2$s</string>
     <string name="om_not_finish_speedboost">Speed boost is required</string>
+    <string name="om_occupy_memory_percent_1_new">%d</string>
+    <string name="om_occupy_memory_percent_2_new">%d</string>
+    <string name="om_occupy_memory_percent_3_new">%d</string>
+    <string name="om_occupy_memory_percent_4_new">%d</string>
     <string name="om_optimzing_big_button_text">Boost speed</string>
     <string name="om_running_app_info_summary">Free up %s</string>
     <string name="om_running_locked_apps">Locked running apps</string>
@@ -4806,6 +4820,7 @@ Withdraw consent now?"</string>
     <string name="st_title_editblacklist">Edit blocklist</string>
     <string name="st_title_editwhitelist">Edit exceptions</string>
     <string name="st_title_keywords_blacklist">Keyword blocklist</string>
+    <string name="st_title_keywords_list">List of keywords</string>
     <string name="st_title_keywords_whitelist">Keyword exceptions</string>
     <string name="st_title_man_addblacklist">Add number to blocklist</string>
     <string name="st_title_man_addwhitelist">Add phone number to exceptions</string>
@@ -5036,7 +5051,9 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="system_anti_fraud_dialog_content">"Looks like you've just received a scam call or message. Proceeding with this payment may cause financial losses."</string>
     <string name="system_anti_fraud_dialog_hint">&lt;font = color=#747474>If customer service personnel, authorities, or the people you might know ask you to complete this payment, &lt;/font>&lt;font = color=#F22424>verify their identity before you continue.&lt;/font></string>
     <string name="system_anti_fraud_dialog_image_txt">Anti-fraud protection</string>
+    <string name="system_anti_fraud_dialog_message">Anti-fraud protection</string>
     <string name="system_anti_fraud_dialog_title">Anti-fraud warning</string>
+    <string name="system_anti_fraud_dialog_title2">Anti-fraud warning</string>
     <string name="system_app">System apps</string>
     <string name="system_app_permission_instruction">This app needs the following permissions to provide basic system services. Managing permissions is restricted for this app, as changing permission statuses will lead to system operation abnormalities.</string>
     <string name="system_application">System apps</string>
