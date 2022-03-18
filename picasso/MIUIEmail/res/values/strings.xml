@@ -63,6 +63,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="account_permission_dialog_title">Withdrawal of consent</string>
     <string name="account_permission_private_policy">Privacy Policy</string>
     <string name="account_permission_user_privacy">End User License Agreement</string>
+    <string name="account_provider_uri">content://com.android.email.provider/uiaccts</string>
     <string name="account_security_dialog_content_fmt">"%s requires that you update your security
          settings."</string>
     <string name="account_security_dialog_title">Security update</string>
@@ -89,6 +90,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="account_settings_description_label">Account name</string>
     <string name="account_settings_display">Display</string>
     <string name="account_settings_does_not_support_pop">"This feature isn't supported by POP3"</string>
+    <string name="account_settings_does_not_support_pop_attachment">"POP3 can automatically download attachments but can't edit them"</string>
     <string name="account_settings_edit_quick_responses_label">Quick reply</string>
     <string name="account_settings_edit_quick_responses_summary">Edit brief messages to paste into emails</string>
     <string name="account_settings_enable_account_smime">account_settings_enable_account_smime</string>
@@ -166,6 +168,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="account_setup_correct_address_tips">The email address you entered is invalid.</string>
     <string name="account_setup_creating_account_msg">"    Creating account…"</string>
     <string name="account_setup_deleting_account_msg">"    Removing account…"</string>
+    <string name="account_setup_domain_invalid_toast">Enter a valid email domain</string>
     <string name="account_setup_exchange_certificate_title">Client certificate</string>
     <string name="account_setup_exchange_no_certificate">None</string>
     <string name="account_setup_failed_auth_required">"This authentication method isn't supported by the server."</string>
@@ -296,6 +299,9 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="attachment_decoding">Unpacking attachments…</string>
     <string name="attachment_detail_empty_prompt">Select files</string>
     <string name="attachment_download_all">Download all</string>
+    <string name="attachment_drag_add_inline">Embed</string>
+    <string name="attachment_drag_add_picture_prompt">Would you like to embed or attach the selected images?</string>
+    <string name="attachment_drag_create_email_prompt">Attach the selected files to a new email?</string>
     <string name="attachment_image">Image</string>
     <string name="attachment_list_search_hint">Search attachments</string>
     <string name="attachment_mgr_name">Attachments</string>
@@ -341,6 +347,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="bill_remind">Repayment reminder</string>
     <string name="bill_remind_due">A repayment is due on %s, tap to view</string>
     <string name="blank_feedback_toast">You need to write feedback</string>
+    <string name="blank_place_holder">　</string>
     <string name="body_forward_email_text">[Forward]</string>
     <string name="body_hint">Body</string>
     <string name="body_inline_pic_text">[Picture]</string>
@@ -357,7 +364,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="broker_helper_title">MSAL Redirect URI Info</string>
     <string name="broker_processing">Broker is processing</string>
     <string name="bytes">%s B</string>
-    <string name="calendar_remind_dialog_title">Remind later</string>
+    <string name="calendar_remind_dialog_title">Add to calendar</string>
     <string name="calendar_remind_gridview_pick_date">Pick date</string>
     <string name="calendar_skip_no_account_alert">"Couldn't find this account"</string>
     <string name="cancel">Cancel</string>
@@ -471,16 +478,22 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="click_download_all_content">[ Tap to download content ]</string>
     <string name="click_to_reload">Tap screen to refresh</string>
     <string name="close">Close</string>
-    <string name="close_custom_folder">收起子文件夹</string>
+    <string name="close_custom_folder">Hide sub-folders</string>
     <string name="collapse_recipient_details">Collapse recipient details</string>
     <string name="colon">:</string>
+    <string name="command_139_mail_open_pop3_imap">KQ</string>
     <string name="compose">Compose</string>
     <string name="compose_add_attachment_permission_denied">"Can't forward email. Permissions to access external storage required."</string>
+    <string name="compose_encrypt_lock_description">Encrypt</string>
+    <string name="compose_encrypt_unlock_description">Decrypt</string>
+    <string name="compose_encrypt_unlock_w_description">Not a trusted contact</string>
     <string name="compose_event">Invitation</string>
     <string name="compose_paste_address_oob">Too many characters</string>
     <string name="compose_picturesexceedlimits">You can add more images as attachments</string>
     <string name="compose_send">Send</string>
     <string name="compose_sent">Mail sent</string>
+    <string name="compose_smime_sign_description">Apply signature</string>
+    <string name="compose_smime_unsign_description">Remove signature</string>
     <string name="compose_to_label">To</string>
     <string name="compress_failed_and_retry">"Couldn't compress. Try again."</string>
     <string name="compress_img">Compress images</string>
@@ -582,8 +595,13 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="default_signature">Sent from my Mi phone</string>
     <string name="default_signature_2">Sent from my %s</string>
     <string name="default_signature_pad">Sent from my Mi Pad</string>
+    <string name="default_signature_phone">Sent from my Mi phone</string>
     <string name="delete">Delete</string>
     <string name="delete_contact_content">Delete this contact now?</string>
+    <string name="delete_message_dialog_content">Would you like to delete this email and block the sender?</string>
+    <string name="delete_message_dialog_left_button">Delete and block</string>
+    <string name="delete_message_dialog_right_button">Delete only</string>
+    <string name="delete_message_dialog_title">Deleting email</string>
     <string name="delete_message_event">Delete this invitation?</string>
     <string name="deleted">Deleted</string>
     <string name="device_activity_btn_str">Activate</string>
@@ -655,10 +673,8 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="edit_signature">Edit signature</string>
     <string name="editor_max_length_limit_hint">The message you entered is too long</string>
     <string name="elided_padding_token"> </string>
-    <string name="email_feedback_uri" />
     <string name="email_netease">NetEase Mail</string>
     <string name="email_no_snippet">[Blank email]</string>
-    <string name="email_package_name">com.android.email</string>
     <string name="email_qq">QQ Mail</string>
     <string name="email_sina">Sina Mail</string>
     <string name="email_suggestions_authority">com.android.email.provider</string>
@@ -678,6 +694,36 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="eras_bc">BCE</string>
     <string name="error">Error</string>
     <string name="error_icon_content_description">Error</string>
+    <string name="error_message_account_or_password">The account ID or password is incorrect.</string>
+    <string name="error_message_auth_error">Use a verification code to sign in.</string>
+    <string name="error_message_blacklist">Your account has been added to the blocklist. Contact your email service provider to resolve this issue.</string>
+    <string name="error_message_imap_or_pop3_service_not_open">Turn on IMAP or POP3 and try again.</string>
+    <string name="error_message_imap_service_not_open">Turn on IMAP and try again.</string>
+    <string name="error_message_outlook_error">Verify your identity on the web version of Outlook first.</string>
+    <string name="error_message_respond_revert_01">@string/error_message_account_or_password</string>
+    <string name="error_message_respond_revert_02">@string/error_message_account_or_password</string>
+    <string name="error_message_respond_revert_03">"This domain name doesn't exist. Check the URL and try again."</string>
+    <string name="error_message_respond_revert_04">@string/error_message_auth_error</string>
+    <string name="error_message_respond_revert_05">@string/error_message_imap_service_not_open</string>
+    <string name="error_message_respond_revert_06">The password you entered is incorrect.</string>
+    <string name="error_message_respond_revert_07">"Couldn't verify your identity. Use a verification code to sign in."</string>
+    <string name="error_message_respond_revert_08">@string/error_message_imap_service_not_open</string>
+    <string name="error_message_respond_revert_09">@string/error_message_imap_service_not_open</string>
+    <string name="error_message_respond_revert_10">@string/error_message_imap_or_pop3_service_not_open</string>
+    <string name="error_message_respond_revert_11">@string/error_message_imap_service_not_open</string>
+    <string name="error_message_respond_revert_12">@string/error_message_blacklist</string>
+    <string name="error_message_respond_revert_14">@string/error_message_outlook_error</string>
+    <string name="error_message_respond_revert_15">@string/error_message_blacklist</string>
+    <string name="error_message_respond_revert_16">Your password has expired. Update your password and sign in again.</string>
+    <string name="error_message_respond_revert_17">@string/error_message_imap_service_not_open</string>
+    <string name="error_message_respond_revert_18">@string/error_message_outlook_error</string>
+    <string name="error_message_respond_revert_19">@string/error_message_account_or_password</string>
+    <string name="error_message_respond_revert_20">@string/error_message_auth_error</string>
+    <string name="error_message_respond_revert_21">Turn on POP3 and try again.</string>
+    <string name="error_message_respond_revert_22">@string/error_message_account_or_password</string>
+    <string name="error_message_respond_revert_23">@string/error_message_account_or_password</string>
+    <string name="error_message_respond_revert_24">@string/error_message_blacklist</string>
+    <string name="error_message_respond_revert_25">Check your network connection and try again.</string>
     <string name="evening">Afternoon</string>
     <string name="exception_cancel">"
         This event has been canceled
@@ -796,6 +842,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="folder_list_current_account">Current account</string>
     <string name="folder_list_display_all">Display all folders</string>
     <string name="folder_list_display_only_import">Only display important folders</string>
+    <string name="folder_list_switch_account">Switch</string>
     <string name="folder_no_mails">No mail</string>
     <string name="folder_notification_setting_tip">You have multiple folders in your inbox. Set notifications about new messages in specific folders.</string>
     <string name="folder_picker_title">Choose folders</string>
@@ -851,6 +898,7 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="from_heading">"From: "</string>
     <string name="general_preference_confirm_delete_label">Confirm before deleting</string>
     <string name="general_preference_confirm_send_label">Confirm before sending</string>
+    <string name="general_preference_delete_message_prompt_title">Ask before deleting</string>
     <string name="general_preference_load_picture">Load online images</string>
     <string name="general_preference_str_auto_translation">Quick translation</string>
     <string name="general_preference_str_auto_translation_prompt">Copy text to see translation</string>
@@ -928,7 +976,8 @@ To fully understand your rights as a user as well as the ways in which we proces
     <string name="intent_account_manager_entry">com.android.email.activity.setup.ACCOUNT_MANAGER_ENTRY</string>
     <string name="intent_exchange_package">com.android.exchange</string>
     <string name="interact_with_server_error">"Couldn't connect to the server"</string>
-    <string name="invalid_recipient">The address %s is invalid.</string>
+    <string name="invalid_recipient_dialog_message">Enter a valid recipient email address</string>
+    <string name="invalid_recipient_dialog_title">"Couldn't send"</string>
     <string name="invalid_recipient_title">Recipient Error</string>
     <string name="invoice_card_amount">Amount</string>
     <string name="invoice_card_buyer">Consignee</string>
@@ -1113,7 +1162,7 @@ This issue might be caused by the account's two-factor authentication. Try enter
     <string name="message_invite_tentative">Maybe</string>
     <string name="message_saved">Message saved as draft.</string>
     <string name="message_view_attachment_background_load">Attachments in your forwarded message will be downloaded prior to sending.</string>
-    <string name="mi_slide_menu">侧边栏</string>
+    <string name="mi_slide_menu">Sidebar</string>
     <string name="mibill_privacy_policy_button1">Later</string>
     <string name="mibill_privacy_policy_button2">Agree</string>
     <string name="mibill_privacy_policy_description">Allow Mi Wallet to analyze and manage your bills automatically. This feature is turned off by default for work-related email addresses.</string>
@@ -1121,6 +1170,8 @@ This issue might be caused by the account's two-factor authentication. Try enter
     <string name="mibill_privacy_policy_title">Manage bills automatically</string>
     <string name="midnight">Night</string>
     <string name="min_payment_text">Minimum payment</string>
+    <string name="miuix_access_state_desc">Selected</string>
+    <string name="miuix_alphabet_indexer_name">Index bar</string>
     <string name="miuix_appcompat_action_mode_deselect_all">Deselect</string>
     <string name="miuix_appcompat_action_mode_select_all">Select all</string>
     <string name="miuix_appcompat_action_mode_title_empty">Select items</string>
@@ -1135,6 +1186,8 @@ This issue might be caused by the account's two-factor authentication. Try enter
     <string name="miuix_appcompat_select_all">Select all</string>
     <string name="miuix_appcompat_select_all_description">Select all</string>
     <string name="miuix_appcompat_select_item">Select items</string>
+    <string name="miuix_indexer_collect">Collections</string>
+    <string name="miuix_indexer_selected">Selected %s</string>
     <string name="miuix_sbl_tracking_progress_labe_pull_to_refresh">Pull down to refresh</string>
     <string name="miuix_sbl_tracking_progress_labe_refreshed">Refreshed successfully</string>
     <string name="miuix_sbl_tracking_progress_labe_refreshing">Refreshing…</string>
@@ -1296,7 +1349,7 @@ Try switching to a different email account."</string>
     <string name="ntes_send_to_content">If your current phone number is associated with the account, tap \"Send SMS\".</string>
     <string name="ntes_verification_code">Enter code: %s</string>
     <string name="oauth_error_description">"Couldn't authenticate"</string>
-    <string name="oauth_find_browser_error_description">Please install the browser before logging in</string>
+    <string name="oauth_find_browser_error_description">Install a browser before signing in</string>
     <string name="oauth_gmail_login_notify">Enter your Google Account username and password on the following sign-in page.</string>
     <string name="oauth_login_continue">Continue</string>
     <string name="oauth_login_continue_qq">Get a passcode and sign in ></string>
@@ -1307,7 +1360,7 @@ Try switching to a different email account."</string>
     <string name="one_month">1 month</string>
     <string name="one_week">1 week</string>
     <string name="open_calendar_and_contacts_permission">Allow Mail to access contacts and calendar info in the Settings</string>
-    <string name="open_custom_folder">展开子文件夹</string>
+    <string name="open_custom_folder">Show sub-folders</string>
     <string name="open_external_storage_and_calendar_permission">Allow Mail to access storage and calendar info in the Settings</string>
     <string name="open_external_storage_and_contacts_and_calendar_permission">Allow Mail to access storage, contacts, and calendar info in the Settings</string>
     <string name="open_external_storage_and_contacts_permission">Allow Mail to access storage and contacts in the Settings</string>
@@ -1369,9 +1422,12 @@ Try switching to a different email account."</string>
     <string name="pdf_save_error">"Can't convert to PDF. This message is too long."</string>
     <string name="pdf_save_no_body">Wait until the message is fully loaded before converting to PDF</string>
     <string name="pdf_save_to">"Saved to "</string>
+    <string name="pdf_signature_add">Add a new signature</string>
     <string name="pdf_signature_create_title">Draw your signature</string>
+    <string name="pdf_signature_delete">Delete signature</string>
     <string name="pdf_signature_manager_max_count">"Can't add more signatures. Delete older signatures to add new ones."</string>
     <string name="pdf_signature_manager_title">Manage signatures</string>
+    <string name="pdf_signature_select">Select signature</string>
     <string name="pdf_viewer_actionbar_more_other">Other apps</string>
     <string name="pdf_viewer_actionbar_more_wps">Open in WPS</string>
     <string name="pdf_viewer_file_damage_toast">PDF file is corrupted. Check this file and try again.</string>
@@ -1545,6 +1601,7 @@ Wait until it's fully synced or view the message on your computer."</string>
     <string name="request_entity_large">File is too big</string>
     <string name="request_permission_activity">Permissions required</string>
     <string name="respond_inline">"   Respond inline"</string>
+    <string name="respond_inline_text">Edit original email</string>
     <string name="retry">Retry</string>
     <string name="retry_login">Sign in again</string>
     <string name="saturday">Saturday</string>
@@ -1575,6 +1632,7 @@ Wait until it's fully synced or view the message on your computer."</string>
     <string name="select_attachment_type">Choose attachment from</string>
     <string name="select_no_file">No attachments selected</string>
     <string name="select_path">Select path</string>
+    <string name="selected">selected</string>
     <string name="send">Send</string>
     <string name="send_encrypt_dialog_fail_content">"Looks like the recipient doesn't have the trusted certificate required for encrypting this email. Send a regular email instead?"</string>
     <string name="send_encrypt_dialog_fail_title">"Can't send encrypted email"</string>
@@ -1627,6 +1685,7 @@ Wait until it's fully synced or view the message on your computer."</string>
     <string name="setting_key_confirm_send">confirm_send</string>
     <string name="setting_key_contact_add_options">contact_add_options</string>
     <string name="setting_key_default_open_attachment">default_open_attachment</string>
+    <string name="setting_key_delete_message">preference_delete_message</string>
     <string name="setting_key_email_about">email_about</string>
     <string name="setting_key_help_QQ">help_QQ</string>
     <string name="setting_key_help_weixin">help_weixin</string>
@@ -1658,6 +1717,7 @@ Wait until it's fully synced or view the message on your computer."</string>
     <string name="show_images_all">Load and show all images</string>
     <string name="show_password">Show password</string>
     <string name="show_server_cet">View certificate</string>
+    <string name="shrink">Collapse</string>
     <string name="sign_in_dialog_office365">Office 365</string>
     <string name="sign_in_dialog_outlook_enterprise">Outlook for business (without calendar)</string>
     <string name="sign_in_dialog_outlook_exchange">EXCHANGE (with calendar)</string>
@@ -1726,7 +1786,7 @@ Wait until it's fully synced or view the message on your computer."</string>
     <string name="successfully_obtained_authorization_code">Verification code</string>
     <string name="suffix_sancharnet">sancharnet.in</string>
     <string name="suffix_vsnl">vsnl.com</string>
-    <string name="suggestions_authority">com.android.mail.providers.SuggestionsProvider</string>
+    <string name="suggestions_authority">com.android.email.providers.SuggestionsProvider</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="sunday">Sunday</string>
     <string name="sunday_short">Sun</string>
@@ -1859,6 +1919,7 @@ Remove account?"</string>
     <string name="undo">Undo</string>
     <string name="unknow">Unknown</string>
     <string name="unread_string">conversation unread</string>
+    <string name="unselected">Deselected</string>
     <string name="unzip_file_failed">"Couldn't unzip file"</string>
     <string name="update_domain_summary">Update the list of available domains and configurations</string>
     <string name="update_domain_title">Update domain settings</string>
@@ -1870,6 +1931,7 @@ Remove account?"</string>
     <string name="upload_log_title">Send error logs to help us improve Mail</string>
     <string name="upload_log_yes">Send</string>
     <string name="uploading_logs">Just a sec…</string>
+    <string name="uri_139_mail_open_pop3_imap">10658139139</string>
     <string name="user_experience_content">Please confirm that you have read and agree to the User Experience Plan</string>
     <string name="user_experience_log">User Experience Plan</string>
     <string name="user_experience_login">Join</string>
@@ -1896,7 +1958,7 @@ Touch "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set 
     <string name="wait_for_sync_title">Waiting for sync</string>
     <string name="wait_help_context">wait</string>
     <string name="wait_while_update_db">Updating database…</string>
-    <string name="web_view_load_error_tip">"The body of this email couldn't be displayed correctly. Report this problem to us in our QQ group (952315061)."</string>
+    <string name="web_view_load_error_tip">Your browser has crashed. Download the latest version of Webview from Google Play to help resolve this issue.</string>
     <string name="webview_logout">You can try to sign in again</string>
     <string name="webview_logout_cancel">Not now</string>
     <string name="webview_logout_sure">Try again</string>
