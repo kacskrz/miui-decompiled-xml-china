@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="advanced_settings_title">Advanced Settings</string>
+    <string name="ago_project_warning_dlg_message">[WARNING] Modem/network/connsysFW/GPS log daemon are default disabled at AGO project.</string>
+    <string name="ago_project_warning_dlg_title">AGO Project Warning</string>
     <string name="app_name">DebugLoggerUI</string>
-    <string name="auto_iq_dump_stop_time_message">Set auto IQ dump stop time(seconds):</string>
-    <string name="auto_iq_dump_stop_time_title">Auto IQ Dump Stop After Time:</string>
     <string name="bluetooth_log_settings_title">Bluetooth Log</string>
     <string name="bt_hci_log_name">HCI Log</string>
     <string name="bt_stack_log_name">Stack Log</string>
@@ -33,10 +33,17 @@
     <string name="connsysfw_log_settings_title">ConnsysFW Log</string>
     <string name="connsyslog_settings">ConnsysLog Settings</string>
     <string name="default_btfw_log_level_value">2</string>
-    <string name="default_iq_dump_value">1</string>
+    <string name="default_iq_dump_mode_value">0</string>
     <string name="default_log_path_type_value">system_data</string>
     <string name="default_mode_value">2</string>
+    <string name="default_wifi_driver_log_level_value">0</string>
+    <string name="default_wifi_fw_log_level_value">0</string>
+    <string name="dump_cc_index_dialog_message">Please set Dump CC Index for your select scenario + RAT</string>
     <string name="dump_warning">Modem Log Warning</string>
+    <string name="dynamic_settings_summary">UI settings will be automatically generated based on xml configuration</string>
+    <string name="dynamic_settings_title">Dynamic Settings</string>
+    <string name="eable_wifi_warning_dialog_message">Please make sure the airplane mode is off</string>
+    <string name="eable_wifi_warning_dialog_title">Enable WLAN failed</string>
     <string name="enable_adsp_log_summary">Enable or disable ADSP log</string>
     <string name="enable_adsp_log_title">ADSP Log</string>
     <string name="enable_always_tag_modem_log_summary">Enable or disable Always Tag Modem Log function</string>
@@ -45,15 +52,12 @@
     <string name="enable_android_log_title">Android Log</string>
     <string name="enable_atf_log_summary">Enable or disable ATF Log</string>
     <string name="enable_atf_log_title">ATF Log</string>
-    <string name="enable_auto_iq_dump_sotp_title">Auto IQ Dump Stop</string>
     <string name="enable_bsp_log_summary">Enable or disable BSP log</string>
     <string name="enable_bsp_log_title">BSP Log</string>
     <string name="enable_kernel_log_summary">Enable or disable kernel log</string>
     <string name="enable_kernel_log_title">Kernel Log</string>
     <string name="enable_mcupm_log_summary">Enable or disable MCUPM log</string>
     <string name="enable_mcupm_log_title">MCUPM Log</string>
-    <string name="enable_mmedia_log_summary">Enable or disable Mmedia log</string>
-    <string name="enable_mmedia_log_title">Mmedia Log</string>
     <string name="enable_mobilelog">Enable MobileLog</string>
     <string name="enable_modemlog">Enable ModemLog</string>
     <string name="enable_networklog">Enable NetworkLog</string>
@@ -63,6 +67,8 @@
     <string name="enable_sspm_log_title">SSPM Log</string>
     <string name="enable_tag_log_summary">Enable or disable tag log function</string>
     <string name="enable_tag_log_title">Enable Tag Log</string>
+    <string name="enable_wifi_verbose_logging_summary">Increase WLAN logging level,show per SSID RSSI in WLAN Picker</string>
+    <string name="enable_wifi_verbose_logging_title">WLAN verbose Logging Settings</string>
     <string name="error_cmd_timeout">Command timeout.</string>
     <string name="error_common">Error.</string>
     <string name="error_create_log_folder_fail">Fail to create log folder.</string>
@@ -80,6 +86,7 @@
     <string name="file_info_modified_time">Modified Time:</string>
     <string name="file_info_path">File Path:</string>
     <string name="file_info_size">File Size:</string>
+    <string name="fr1_total_cc_num_dialog_message">Please set FR1 total CC number for scenario( %1$s ), RAT ( %2$s)</string>
     <string name="general_settings_title">General Settings</string>
     <string name="gps_host_log_name">Host Log</string>
     <string name="gps_log_name">GPSHostLog</string>
@@ -88,10 +95,29 @@
     <string name="info_mokey_test_running">Mokey test is running, can not start/stop logs!</string>
     <string name="info_not_device_owner">It is not device owner, can not start/stop logs!</string>
     <string name="info_wait_sd_ready">Waiting storage ready...</string>
+    <string name="iq_dump_auto_stop_mdlog_summary">Auto stop modemlog after IQ Dump done</string>
+    <string name="iq_dump_auto_stop_mdlog_title">Auto Stop ModemLog</string>
+    <string name="iq_dump_dump_cc_index_title">Dump CC Index</string>
     <string name="iq_dump_enabled_warning_dlg_message">IQ Dump is only available for new chips after Android Q!</string>
     <string name="iq_dump_enabled_warning_dlg_title">IQ Dump Enabled Warning</string>
+    <string name="iq_dump_fr1_total_cc_num_title">FR1 Total CC Number</string>
+    <string name="iq_dump_md_version_title">Modem Version</string>
+    <string name="iq_dump_mode_title">Mode of IQ Dump</string>
+    <string name="iq_dump_rat_title">RAT of IQ Dump</string>
+    <string name="iq_dump_scenario_title">Scenario of IQ Dump</string>
+    <string name="iq_dump_settings">IQ Dump Settings</string>
     <string name="iq_dump_start_warning_dlg_message">"[WARNING] You will just see the black screen after starting IQ dump. Please don't touch the screen until the timeout."</string>
     <string name="iq_dump_start_warning_dlg_title">IQ Dump Start Warning</string>
+    <string name="iq_dump_time_delay_starting_dialogtitle">Time Delay of IQ Dump Starting(Sec)</string>
+    <string name="iq_dump_time_delay_starting_message">IQ Dump will auto start after ModemLog running for time(0~2147483647 Sec):</string>
+    <string name="iq_dump_time_delay_starting_title">Time Delay of IQ Dump Starting(Sec)</string>
+    <string name="iq_dump_time_of_running_dialogtitle">Time of IQ Dump Running(Sec)</string>
+    <string name="iq_dump_time_of_running_message">IQ Dump will auto stop after it running for time(5~2147483647 Sec):</string>
+    <string name="iq_dump_time_of_running_title">Time of IQ Dump Running(Sec)</string>
+    <string name="iqdump_settings_dialog_message">This project is 3G modem, do not support IQ Dump Feature!</string>
+    <string name="iqdump_settings_dialog_title">IQ Dump Feature Warning</string>
+    <string name="limit_connsysfw_log_size_title">Limit ConnsysFW Log Size(MB)</string>
+    <string name="limit_gps_log_size_title">Limit GPS Host Log Size(MB)</string>
     <string name="limit_hci_snoop_log_size_summary">Recycle log when it reaches the limit log size</string>
     <string name="limit_hci_snoop_log_size_title">Limit HCI Snoop Log Size(MB)</string>
     <string name="limit_log_size_dialog_message">"The limit size of %1$s should be between %2$dMB and %3$dMB(Size of %4$s).
@@ -99,15 +125,13 @@
     <string name="limit_log_size_store_type">%s maximum</string>
     <string name="limit_log_size_summary">Recycle log when it reaches the limit log size</string>
     <string name="limit_log_size_title">Limit Log Size(MB)</string>
-    <string name="limit_single_log_size_dialog_message">The limit size of current recording %1$s should be between %2$dMB and %3$dMB(Size of %4$s).</string>
-    <string name="limit_single_log_size_summary">Recycle current recording log when it reaches the limit log size</string>
-    <string name="limit_single_log_size_title">Limit Current Log Size(MB)</string>
     <string name="limit_total_log_size_dialog_message">"The limit size of total recorded %1$s should be between %2$sMB ~ %3$sMB (multiple of %4$s). 
  Warning: if the sum of all log's max log size greater than storage size, log may be stopped by Storage is full."</string>
     <string name="limit_total_log_size_summary">Total recorded log (include past ones) will not exceed this size</string>
     <string name="limit_total_log_size_title">Limit Total Log Size(MB)</string>
     <string name="log_free_storage">Free</string>
-    <string name="log_iq_dump_mode_title">IQ Dump Mode</string>
+    <string name="log_level_name">Log Level</string>
+    <string name="log_level_settings">Log Level Settings</string>
     <string name="log_mode_summary">Set modem log mode</string>
     <string name="log_mode_title">Log Mode</string>
     <string name="log_path_not_exist">The storage path %s is not exist!</string>
@@ -125,6 +149,19 @@
     <string name="log_used_storage">Used</string>
     <string name="low_storage_warning_dialog_msg">The free space is lower than %dM, please clear storage otherwise logs will stop automaticly soon!</string>
     <string name="low_storage_warning_dialog_title">Low Storage Warning</string>
+    <string name="md_ccb_gear_id_warning_dlg_message">"Please set DebugLoggerUI->Settings->ModemLog->CCB Gear ID to a value other than 'gear 3(0MB + 0MB)',so that the ModemLog can be started successfully."</string>
+    <string name="md_ccb_gear_id_warning_dlg_title">Warning: ModemLog Started Failed</string>
+    <string name="md_log_filter">MD Log Filters</string>
+    <string name="md_log_filter_filter_list">Filter list</string>
+    <string name="md_log_filter_more_filter">Browse…</string>
+    <string name="md_log_filter_no_filter_selected">Please select a filter!</string>
+    <string name="md_log_filter_restore">Restore defaults</string>
+    <string name="md_log_filter_update">Update</string>
+    <string name="md_log_filter_update_fail">Update filter failed with IO exception!</string>
+    <string name="md_log_filter_update_success">"Success to update MD log filter.
+Strongly recommend to restart Modem Log service after change!"</string>
+    <string name="md_log_filter_wrong_filter_name">Not a valid modem filter file name!</string>
+    <string name="md_log_filter_wrong_filter_path">File path not support!</string>
     <string name="memorydump_done">"Finished dumping memory!
 Click OK to reset modem.
 The dump file is:"</string>
@@ -182,8 +219,8 @@ The dump file is:"</string>
     <string name="notification_title_taglog_compress_success">Compressed successfully</string>
     <string name="notification_title_taglog_compressing">Compressing log</string>
     <string name="ok_button">OK</string>
-    <string name="open_wifi_log_tool_summary">Enter WLAN Log Setting UI</string>
-    <string name="open_wifi_log_tool_title">Open WLAN Log Tool</string>
+    <string name="open_develop_option_dialog_message">Please enable Developer options first!</string>
+    <string name="open_develop_option_dialog_title">Failed Switch to WLAN verbose Logging Setting</string>
     <string name="reduce_to">reduce to</string>
     <string name="reset_automatically_modem_summary">Reset Modem automatically after EE happened</string>
     <string name="reset_automatically_modem_title">Reset Modem Automatically</string>
@@ -201,6 +238,8 @@ Please disable this feature if you are using device in in-door location,performi
     <string name="service_state_starting_log">DebugLoggerUIService Starting log...</string>
     <string name="service_state_stopping_log">DebugLoggerUIService Stopping log...</string>
     <string name="settings_title">Settings</string>
+    <string name="switch_to_develop_option_dialog_message">"Switch to 'Enable Wif-Fi Verbose Logging' at Develop options ?"</string>
+    <string name="switch_to_develop_option_dialog_title">Switch to Developer options</string>
     <string name="tag_log_name">TagLog</string>
     <string name="taglog">Tag Log</string>
     <string name="taglog_msg_input">"Tag Log will compress current logs to save the storage.
@@ -227,5 +266,9 @@ Please input your tag name:"</string>
     <string name="waiting_getstatus_dialog_message">Waiting get mdlog status...</string>
     <string name="waiting_service_dialog_message">Waiting log initiation...</string>
     <string name="warning_no_permission_for_setting">Only device owner can modify log configurations.</string>
+    <string name="wifi_driver_log_level_summary">Set WLAN Driver Log Level</string>
+    <string name="wifi_driver_log_level_title">WLAN Driver Log Level</string>
+    <string name="wifi_fw_log_level_summary">Set WLAN Firmware Log Level</string>
+    <string name="wifi_fw_log_level_title">WLAN Firmware Log Level</string>
     <string name="wifi_log_settings_title">WLAN Log</string>
 </resources>
