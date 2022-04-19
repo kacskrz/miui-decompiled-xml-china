@@ -486,6 +486,7 @@
     <string name="app_manager_manage_space">Manage space</string>
     <string name="app_manager_memory">RAM</string>
     <string name="app_manager_menu_clear_data">Clear data</string>
+    <string name="app_manager_mobile_slot">Mobile data (SIM %d)</string>
     <string name="app_manager_mobile_slot1">Mobile data (SIM 1)</string>
     <string name="app_manager_mobile_slot2">Mobile data (SIM 2)</string>
     <string name="app_manager_net_control_title">Restrict data usage</string>
@@ -664,6 +665,9 @@ You will not lose any app data."</string>
     <string name="applock_gulide_third_part">Account will be removed when you sign out</string>
     <string name="applock_header_text_less_than_half">Too small. Drag a bit further.</string>
     <string name="applock_lock_all">Lock all</string>
+    <string name="applock_lock_mode_locked">When device is locked</string>
+    <string name="applock_lock_mode_locked_or_exit">When device is locked or after exiting app</string>
+    <string name="applock_lock_mode_locked_or_exit_or_wait">When device is locked​ or in %d minute after exiting app</string>
     <string name="applock_login_and_add_account">Sign in &amp; add</string>
     <string name="applock_mixtype_hidepwd_icon">Hide</string>
     <string name="applock_mixtype_showpwd_icon">Show</string>
@@ -1261,7 +1265,7 @@ You will not lose any app data."</string>
     <string name="cta_dialog_negative">Exit</string>
     <string name="cta_dialog_positive">Agree</string>
     <string name="cta_dialog_title">Internet connection</string>
-    <string name="cta_main_purpose">Welcome to Security! You can use Security and its modules (including MIUI security components and system services) to free up storage space, scan your device for viruses, control battery usage, optimize your device for gaming, manage apps, receive earthquake early warnings, and more.</string>
+    <string name="cta_main_purpose">"Welcome to Security! You can use Security and its modules (including MIUI security components and system services) to free up storage space, scan your device for viruses, control battery usage, optimize your device for gaming, manage apps, receive earthquake early warnings, and more. MIUI security components will connect to the internet and perform security scans while you're installing apps and making payments."</string>
     <string name="cta_settings">Allow to connect to the internet and access location</string>
     <string name="current_network_state_not_need_diagnose">Internet connection is normal.</string>
     <string name="custom_define_permission_desc_android.permission.CALL_PHONE">For using blocklist and making calls to emergency contacts when earthquake warnings are issued</string>
@@ -1690,6 +1694,7 @@ volunteer"</string>
     <string name="exit_dialog_homepage_optimise_message">"Your device's performance score is lower than 80 points. Optimize now?"</string>
     <string name="exit_dialog_release_memory_positive_button">Close</string>
     <string name="exit_dialog_release_memory_title"><Data>Speed up your device by &lt;font color=#0099ff>%d%%&lt;/font></Data></string>
+    <string name="exit_dialog_release_memory_title_new"><Data>Speed up your device by &lt;font color=#0099ff>%s&lt;/font></Data></string>
     <string name="exit_dialog_release_storage_message">More than 80% of storage on your device is occupied. Free up space by uninstalling the apps you never use.</string>
     <string name="exit_dialog_release_storage_message_new">More than %s of storage on your device is occupied. Free up space by uninstalling the apps you never use.</string>
     <string name="exit_dialog_release_storage_positive_button">Free up space</string>
@@ -1955,12 +1960,20 @@ volunteer"</string>
 1. While you're playing games, all incoming calls to the SIM card without mobile data service will be rejected automatically.
 2. You'll see notifications about missed calls and the other person will hear an audio message saying that you're busy at the moment.
 3. This feature is only supported by mobile carriers in China."</string>
+    <string name="function_auto_reject_detail_new">"About this feature:
+%1$d. While you're playing games, all incoming calls to the SIM card without mobile data service will be rejected automatically.
+%2$d. You'll see notifications about missed calls and the other person will hear an audio message saying that you're busy at the moment.
+%3$d. This feature is only supported by mobile carriers in China."</string>
     <string name="function_auto_reject_title">Reject VoLTE calls to SIM cards without data service</string>
     <string name="function_close">Off</string>
     <string name="function_gwsd_detail">"About this feature:
  1. When you're using mobile data on a data SIM or a regular SIM card connected to a VoLTE network, connection won't be interrupted by incoming calls until you pick up.
  2. When this feature is on, the other person won't be able to hear your ringback tones unless you're using a regular SIM card. Incoming calls will be rejected automatically after 7-10 seconds of inactivity.
  3. Data SIM cards issued by China Mobile and China Unicom are supported. Regular SIM cards issued by China Mobile, China Unicom, and China Telecom are supported."</string>
+    <string name="function_gwsd_detail_new">"About this feature:
+ %1$d. When you're using mobile data on a data SIM or a regular SIM card connected to a VoLTE network, connection won't be interrupted by incoming calls until you pick up.
+ %2$d. When this feature is on, the other person won't be able to hear your ringback tones unless you're using a regular SIM card. Incoming calls will be rejected automatically after %3$d-%4$d seconds of inactivity.
+ %5$d. Data SIM cards issued by China Mobile and China Unicom are supported. Regular SIM cards issued by China Mobile, China Unicom, and China Telecom are supported."</string>
     <string name="function_gwsd_title">"Don't allow incoming calls to interrupt data SIM connection"</string>
     <string name="function_shield_auto_bright">Turn off auto brightness</string>
     <string name="function_shield_eye_shield">Turn off Reading mode</string>
@@ -1996,7 +2009,6 @@ volunteer"</string>
     <string name="game_video_network_eror">"Couldn't connect to the network. Check your network settings and try again."</string>
     <string name="game_wid_viewpoint_buttom">Take a short break.</string>
     <string name="gamebooster_lowbattery_notification_summary">Charge your device before it turns off.</string>
-    <string name="gamebooster_lowbattery_notification_title">Battery is lower than 5%%</string>
     <string name="gamebooster_main_activity_back">Back</string>
     <string name="gamebooster_network_dialog_cn_message">"You can't use Game Turbo when Security isn't allowed to connect to the internet and access your location. Allow now?"</string>
     <string name="gamebooster_network_dialog_message">Allow Security to connect to the network in order to use all features of Game Turbo?</string>
@@ -2005,6 +2017,7 @@ volunteer"</string>
     <string name="gamebox_app_not_find">Install the app first.</string>
     <string name="gamebox_brightness">Brightness</string>
     <string name="gamebox_browser_not_find">Install Mi Browser first</string>
+    <string name="gamebox_bullet_chat">On-screen comments</string>
     <string name="gamebox_collimator">Sight</string>
     <string name="gamebox_display_1">None</string>
     <string name="gamebox_display_2">Saturated</string>
@@ -2104,8 +2117,14 @@ volunteer"</string>
     <string name="gb_dialog_game_uninstall_tips_message_xspace">All app data and related dual apps will be deleted.</string>
     <string name="gb_dialog_game_uninstall_tips_title">Uninstall %s</string>
     <string name="gb_dialog_record_way_ai">AI recordings are saved in the gamebox and stored there for 7 days.</string>
+    <string name="gb_dialog_record_way_ai_new">AI recordings are saved in the gamebox and stored there for %d days.</string>
     <string name="gb_dialog_record_way_finish">Done</string>
     <string name="gb_dialog_record_way_manual">Record videos up to 30 seconds long manually</string>
+    <string name="gb_dialog_record_way_manual_desc" formatted="false">Record %d-%d seconds of video during gaming session manually.</string>
+    <string name="gb_dialog_record_way_manual_new">Record videos up to %d seconds long manually</string>
+    <string name="gb_dialog_record_way_setting_tip_one">Increased power consumption and lag</string>
+    <string name="gb_dialog_record_way_setting_tip_title">This feature might cause the following issues:</string>
+    <string name="gb_dialog_record_way_setting_tip_two">Conflicts with other screen recorders</string>
     <string name="gb_dialog_record_way_setting_tips">Note: Recording your gaming sessions requires higher power consumption which may result in lagging.</string>
     <string name="gb_dialog_record_way_title">Select recording method</string>
     <string name="gb_dialog_wlan_wifi_weak">460ms</string>
@@ -2130,11 +2149,13 @@ volunteer"</string>
 Record sequences and use them anytime!"</string>
     <string name="gb_game_time_toast">Timer is available now!</string>
     <string name="gb_game_video_bottom_tips">Revisit key moments from your gaming sessions in Game Turbo. Videos will be deleted automatically after 7 days.</string>
+    <string name="gb_game_video_bottom_tips_new">Revisit key moments from your gaming sessions in Game Turbo. Videos will be deleted automatically after %d days.</string>
     <string name="gb_game_video_item_tag">Key moment</string>
     <string name="gb_game_video_page_delete_success">Deleted successfully</string>
     <string name="gb_game_video_page_null">Record the key moments of your gaming sessions</string>
     <string name="gb_game_video_record_finish_tips">Saved manually recorded video to Game Turbo</string>
     <string name="gb_game_video_save">Save</string>
+    <string name="gb_game_video_save_tip">Saved successfully</string>
     <string name="gb_game_video_type_ai">AI</string>
     <string name="gb_game_video_type_ai_record">Record using AI</string>
     <string name="gb_game_video_type_manual">Manually</string>
@@ -2147,6 +2168,7 @@ Record sequences and use them anytime!"</string>
     <string name="gb_gpu_driver_update_app_tips">Current version is up to date</string>
     <string name="gb_have_signed">Checked in today</string>
     <string name="gb_manual_record_dialog_del_video_message">Delete selected videos permanently?</string>
+    <string name="gb_manual_video_record_title">Recordings</string>
     <string name="gb_msg_completely_shielded">Hide messages</string>
     <string name="gb_msg_completely_shielded_summary">Hide</string>
     <string name="gb_msg_not_shielded_summary">Show</string>
@@ -2156,9 +2178,6 @@ Record sequences and use them anytime!"</string>
     <string name="gb_msg_transparent_dispaly_summary">Transparent</string>
     <string name="gb_network_status_bad">A connection error occurred.</string>
     <string name="gb_new_feature">New feature</string>
-    <string name="gb_ngtb_cpu">CPU</string>
-    <string name="gb_ngtb_fps">FPS</string>
-    <string name="gb_ngtb_gpu">GPU</string>
     <string name="gb_not_support_on_device">"This app can't be used on the outer screen"</string>
     <string name="gb_operat_frequently">Not so fast!</string>
     <string name="gb_performance_balance">Balanced</string>
@@ -2169,28 +2188,45 @@ while lowering refresh rate and temperature limits"</string>
     <string name="gb_performance_tips">"Performance mode improves graphics performance,
 but also increases power consumption and allows your device to overheat"</string>
     <string name="gb_shortcut_pref_title">Home screen shortcut</string>
-    <string name="gb_shoulder_key">Shoulder buttons</string>
+    <string name="gb_shoulder_guide_message1">Move [L] to any functional position to use it via the pop-up trigger</string>
+    <string name="gb_shoulder_guide_message2">Action [1] is activated by pressing the button. Action [2] is activated by releasing the button.</string>
+    <string name="gb_shoulder_guide_tips1">Open toolbox and configure pop-up triggers</string>
+    <string name="gb_shoulder_guide_title1">Action</string>
+    <string name="gb_shoulder_guide_title2">Sequence</string>
+    <string name="gb_shoulder_key">Pop-up triggers</string>
     <string name="gb_shoulder_key_add_show_btn">Show virtual buttons during games</string>
-    <string name="gb_shoulder_key_add_tips">Move [L] and [R] buttons to any functional position and use them via shoulder buttons</string>
+    <string name="gb_shoulder_key_add_tips">Move [L] and [R] to any functional position and use them via pop-up triggers</string>
     <string name="gb_shoulder_key_btn_cancel">Cancel</string>
     <string name="gb_shoulder_key_btn_save_exit">Save</string>
     <string name="gb_shoulder_key_circle_left">L</string>
+    <string name="gb_shoulder_key_circle_left_sub1">L1</string>
+    <string name="gb_shoulder_key_circle_left_sub2">L2</string>
     <string name="gb_shoulder_key_circle_right">R</string>
-    <string name="gb_shoulder_key_dialog_message">"You can use both shoulder buttons simultaneously to start Game Turbo when you aren't playing games."</string>
-    <string name="gb_shoulder_key_dialog_txt">You can turn on Game Turbo by using shoulder buttons.</string>
+    <string name="gb_shoulder_key_circle_right_sub1">R1</string>
+    <string name="gb_shoulder_key_circle_right_sub2">R2</string>
+    <string name="gb_shoulder_key_dialog_message">"You can use both pop-up triggers simultaneously to start Game Turbo when you aren't playing games."</string>
+    <string name="gb_shoulder_key_dialog_txt">You can turn on Game Turbo by using pop-up triggers.</string>
     <string name="gb_shoulder_key_guide_btn_done">Got it</string>
     <string name="gb_shoulder_key_guide_btn_next">Next</string>
-    <string name="gb_shoulder_key_guide_tips">Configure shoulder buttons to play like a pro!</string>
-    <string name="gb_shoulder_key_guide_tips1">Open toolbox and configure shoulder buttons</string>
+    <string name="gb_shoulder_key_guide_tips">Configure pop-up triggers to play like a pro!</string>
+    <string name="gb_shoulder_key_guide_tips1">Open toolbox and configure pop-up triggers</string>
     <string name="gb_shoulder_key_light_effect">Color animations</string>
     <string name="gb_shoulder_key_light_effect_color">Color</string>
-    <string name="gb_shoulder_key_light_effect_subtitle">"Color animations will be displayed when shoulder buttons are on and you're playing games"</string>
+    <string name="gb_shoulder_key_light_effect_subtitle">"Color animations will be displayed when pop-up triggers are on and you're playing games"</string>
     <string name="gb_shoulder_key_light_effect_title">Animations</string>
     <string name="gb_shoulder_key_settings_guide_tips1">Move [L] and [R] buttons to any functional position to finish configuration</string>
-    <string name="gb_shoulder_key_settings_guide_tips2">Use shoulder buttons for the features you assigned to them during games</string>
-    <string name="gb_shoulder_key_settings_summary">"Use both shoulder buttons to start Game Turbo when you aren't playing games"</string>
-    <string name="gb_shoulder_key_settings_title">Use shoulder buttons for Game Turbo</string>
+    <string name="gb_shoulder_key_settings_guide_tips2">Use pop-up triggers for the features you assigned to them during games</string>
+    <string name="gb_shoulder_key_settings_summary">"Use both pop-up triggers to start Game Turbo when you aren't playing games"</string>
+    <string name="gb_shoulder_key_settings_title">Use pop-up triggers for Game Turbo</string>
     <string name="gb_shoulder_key_settings_title_new">Quick start Game Turbo</string>
+    <string name="gb_shoulder_set_left_right">Set up [%s]</string>
+    <string name="gb_shoulder_set_title">Turn on pop-up triggers to configure them</string>
+    <string name="gb_shoulder_set_title2">Move [%s] to any functional position and use it via the pop-up triggers</string>
+    <string name="gb_shoulder_single_trigger">Action</string>
+    <string name="gb_shoulder_subsection_down">Press</string>
+    <string name="gb_shoulder_subsection_trigger">Sequence</string>
+    <string name="gb_shoulder_subsection_up">Release</string>
+    <string name="gb_shoulder_update_left_right">Edit %s</string>
     <string name="gb_sign_gift">Check in to get rewards</string>
     <string name="gb_sign_gift_button_text">Receive</string>
     <string name="gb_sign_notification_summary">Play games without network delay</string>
@@ -2238,8 +2274,6 @@ but also increases power consumption and allows your device to overheat"</string
     <string name="gb_voice_changer_setting_realtime_subtitle">Check how your voice changes in real time</string>
     <string name="gb_voice_changer_setting_realtime_title">Real-time feedback</string>
     <string name="gb_voice_changer_setting_rights">Terms of Service and Privacy Policy</string>
-    <string name="gb_voice_changer_toast_window_bubble_tips">"Try Voice changer now
-to get a 3-day free trial!"</string>
     <string name="gb_voice_changer_toast_window_new_tips">"Try Voice changer!
 Switch between different characters and special effects."</string>
     <string name="gb_voice_changer_toast_window_open">Turned on \"%s\" effect</string>
@@ -2265,8 +2299,11 @@ of your gaming sessions"</string>
     <string name="gb_wonderful_video_header_title">Today</string>
     <string name="gb_wonderful_video_save_suc">Saved</string>
     <string name="gb_xunyou_gift_type_one">Xunyou 1-day boost</string>
+    <string name="gb_xunyou_gift_type_one_new">Xunyou %d-day boost</string>
     <string name="gb_xunyou_gift_type_three">Xunyou 3-day boost</string>
+    <string name="gb_xunyou_gift_type_three_new">Xunyou %d-day boost</string>
     <string name="gb_xunyou_gift_type_two">Xunyou 2-day boost</string>
+    <string name="gb_xunyou_gift_type_two_new">Xunyou %d-day boost</string>
     <string name="gcm_defaultSenderId">436805358632</string>
     <string name="gd_app_edit_done">Done</string>
     <string name="gd_app_edit_title">Add apps</string>
@@ -2330,11 +2367,9 @@ of your gaming sessions"</string>
     <string name="gs_dialog_confirm_close_title">Turn off</string>
     <string name="gs_forbid_autosync">Restrict background sync</string>
     <string name="gs_game_ai_record">Record using AI</string>
-    <string name="gs_game_ai_record_subtitle">Record key moments automatically and generate videos with session highlights. Videos will be deleted automatically after 7 days. You can choose to save them permanently after each gaming session.</string>
     <string name="gs_game_disturb_msg">DND</string>
     <string name="gs_game_duration">Time</string>
     <string name="gs_game_manual_record">Record manually</string>
-    <string name="gs_game_manual_record_subtitle">Use the floating shortcut to record up to 30 seconds of video at a time. Videos will be deleted automatically after 7 days.</string>
     <string name="gs_game_manual_record_subtitle_child">You may encounter some issues while using this feature:</string>
     <string name="gs_game_manual_record_subtitle_child_carton">Recording your gaming sessions requires higher power consumption which may result in lagging.</string>
     <string name="gs_game_manual_record_subtitle_child_conflict">Other screen recording features might not work properly.</string>
@@ -2354,11 +2389,17 @@ of your gaming sessions"</string>
     <string name="gs_show_way_horizontal">Horizontal</string>
     <string name="gs_show_way_vertical">Vertical</string>
     <string name="gs_sign_notification">Remind to check in at 8 PM daily</string>
+    <string name="gs_sign_notification_new">Remind to check in at %d PM daily</string>
     <string name="gs_slip_gamebox_detail">Use slider or swipe from the top side edge of the screen to make the shortcut panel appear</string>
+    <string name="gtb_after_acceleration">After</string>
+    <string name="gtb_auto_memory_clean">Clear memory automatically</string>
+    <string name="gtb_before_acceleration">Before</string>
+    <string name="gtb_brightness_adjust">Brightness</string>
     <string name="gtb_brightness_dialog_right_btn">Keep on</string>
     <string name="gtb_brightness_dialog_sub_message">*You can turn this feature on and off in the Settings.</string>
     <string name="gtb_content_switch">Content recommendations</string>
     <string name="gtb_content_switch_summary">Receive gaming-related content recommendations</string>
+    <string name="gtb_deep_garbage_cleaning">Performing deep clean…</string>
     <string name="gtb_dialog_btn_close">Turn off</string>
     <string name="gtb_dialog_btn_open">Turn on</string>
     <string name="gtb_dialog_hint_smart_5g">You can turn this feature on and off in Game Turbo > Settings.</string>
@@ -2370,8 +2411,11 @@ of your gaming sessions"</string>
     <string name="gtb_dialog_privacy_voice_title">Xunyou Game Voice Changer</string>
     <string name="gtb_dialog_summary_smart_5g">Whenever Game Turbo detects a 5G network, it can connect your device to the best network available to reduce network delay. Turn on this feature now?</string>
     <string name="gtb_dialog_title_smart_5g">5G network optimization</string>
+    <string name="gtb_dnd">DND</string>
     <string name="gtb_exit_game_to_gtb">Open gamebox</string>
     <string name="gtb_exit_game_to_home">Back to Home screen</string>
+    <string name="gtb_garbage_clean">Free up storage</string>
+    <string name="gtb_garbage_cleaned_tip">Free up %1$s to boost performance</string>
     <string name="gtb_guide_finish">Skip</string>
     <string name="gtb_guide_game_mode_tips">Select preferred gaming mode</string>
     <string name="gtb_guide_gtb_button_done">Done</string>
@@ -2385,9 +2429,21 @@ of your gaming sessions"</string>
     <string name="gtb_guide_gtb_line_xspace">Step up your game with all-new Game Turbo!</string>
     <string name="gtb_guide_small_window_app_desc">"Use other apps while you're playing"</string>
     <string name="gtb_guide_small_window_app_title">Floating windows</string>
+    <string name="gtb_intelligent_garbage_clean">Free up storage space</string>
+    <string name="gtb_memory_clean">Clear memory</string>
+    <string name="gtb_mode_normal">Regular</string>
+    <string name="gtb_mode_performance">Performance</string>
+    <string name="gtb_open_performance_mode_tip">Performance mode will improve your gaming experience while increasing power consumption and heating up your device.</string>
+    <string name="gtb_phone_accelerate">Boost performance</string>
+    <string name="gtb_realtime_performance_monitoring">Monitor performance</string>
+    <string name="gtb_screenrecord">Record</string>
+    <string name="gtb_screenshot">Screenshot</string>
+    <string name="gtb_screenshot_pinned">Screenshot</string>
+    <string name="gtb_setting">Settings</string>
     <string name="gtb_setting_item_summary_disable_ndds_sim">Block all communication services on secondary SIM during gaming sessions to keep connection stable and avoid switching between networks. Secondary SIM will be unblocked when you stop playing.</string>
     <string name="gtb_setting_item_summary_smart_5g">Whenever Game Turbo detects a 5G network, it can connect your device to the best network available to reduce network delay</string>
     <string name="gtb_setting_item_summary_smart_wlan_speed" formatted="false">Increase connection speed by 10%-20% when connected to Mi/Redmi routers</string>
+    <string name="gtb_setting_item_summary_smart_wlan_speed_new">Increase connection speed by %1$s-%2$s when connected to Mi/Redmi routers</string>
     <string name="gtb_setting_item_title_brightness">Lower screen brightness automatically</string>
     <string name="gtb_setting_item_title_disable_ndds_sim">Block secondary SIM</string>
     <string name="gtb_setting_item_title_smart_5g">5G network optimization</string>
@@ -2406,6 +2462,10 @@ to join our egg hunt!"</string>
     <string name="gtb_spring_festival_push_join">Join</string>
     <string name="gtb_spring_festival_push_see">View</string>
     <string name="gtb_spring_festival_shortcut_create">Create a Home screen shortcut</string>
+    <string name="gtb_start_phone_accelerate">Boost</string>
+    <string name="gtb_stop_accelerate">Stop</string>
+    <string name="gtb_timer">Timer</string>
+    <string name="gtb_voice_changer">Voice changer</string>
     <string name="gtb_wlan_speed_tips">Using Mi WiFi…</string>
     <string name="guide_get_operator_error">"&lt;font color='#33b4ff'>&lt;U>Wrong carrier?&lt;/U>&lt;/font>"</string>
     <string name="guide_operator_text">"Your current carrier: "</string>
@@ -2700,7 +2760,7 @@ to respond"</string>
     <string name="mark_time_setting_dialog_title">Report number</string>
     <string name="mark_time_text">%d</string>
     <string name="marked_by_user">"You marked it as "</string>
-    <string name="marketSdkVersion">3.2.9</string>
+    <string name="marketSdkVersion">3.2.10</string>
     <string name="megabyteShort">MB</string>
     <string name="megabyte_per_second">MB/s</string>
     <string name="memory_check_content">Freed %s</string>
@@ -2708,6 +2768,8 @@ to respond"</string>
     <string name="memory_clean_no_need_clean">Everything looks good</string>
     <string name="memory_clean_no_need_clean_1" formatted="false">"Freed up %s.
 Your device is %d%% faster now."</string>
+    <string name="memory_clean_no_need_clean_1_new" formatted="false">"Freed up %s.
+Your device is %s faster now."</string>
     <string name="memory_clear_unused">Clear cache (%s)</string>
     <string name="memory_title">Available: %1$s\u0009\u0009Total: %2$s</string>
     <string name="menu_add">Add</string>
@@ -2731,6 +2793,7 @@ Your device is %d%% faster now."</string>
     <string name="menu_item_notification_antispam_text_normal">Blocklist</string>
     <string name="menu_item_notification_garbage_text">%s</string>
     <string name="menu_item_notification_optimize_text">%d%% occupied</string>
+    <string name="menu_item_notification_optimize_text_new">%s occupied</string>
     <string name="menu_item_notification_power_text">Battery optimization</string>
     <string name="menu_item_notification_title">Show menu in notification shade</string>
     <string name="menu_item_shortcut_summary">Place features on your Home screen</string>
@@ -2751,12 +2814,14 @@ Your device is %d%% faster now."</string>
     <string name="menu_summary_garbage_cleanup">No trash found</string>
     <string name="menu_summary_garbage_cleanup_ex">Free up %s</string>
     <string name="menu_summary_garbage_cleanup_new">%d%% of storage space</string>
+    <string name="menu_summary_garbage_cleanup_new_new">%s of storage space</string>
     <string name="menu_summary_networkassistants">Manage your data plan</string>
     <string name="menu_summary_networkassistants_2">Went over the limit</string>
     <string name="menu_summary_networkassistants_3">Enough data remaining</string>
     <string name="menu_summary_networkassistants_4">Running out of data</string>
     <string name="menu_summary_optimize_manage">Clear memory</string>
     <string name="menu_summary_optimize_manage_1">Make your device %d%% faster</string>
+    <string name="menu_summary_optimize_manage_1_new">Make your device %s faster</string>
     <string name="menu_summary_power_manager">Battery saver gives you more time between charges</string>
     <string name="menu_summary_power_manager_1">Battery is fully charged</string>
     <string name="menu_summary_power_manager_2">%s remaining</string>
@@ -3031,6 +3096,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="notification_link_cleaner_3002">Clear WeChat trash</string>
     <string name="notification_link_cleaner_4000">Clear QQ trash</string>
     <string name="notification_link_optimizemanage_1011">%d%% of memory is occupied. Clear now.</string>
+    <string name="notification_link_optimizemanage_1011_new">%s of memory is occupied. Clear now.</string>
     <string name="notification_low_battery_need_charge">Connect charger</string>
     <string name="notification_low_battery_open_save_mode">Turn on Battery saver</string>
     <string name="notification_low_battery_title">Less than %s of battery remaining</string>
@@ -3047,6 +3113,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="notification_optimize_button_text">Clear</string>
     <string name="notification_optimize_message">Clear memory to boost speed</string>
     <string name="notification_optimize_title">%d%% of memory is occupied</string>
+    <string name="notification_optimize_title_new">%s of memory is occupied</string>
     <string name="notification_power_consume_issue_summary">High power consumption</string>
     <string name="notification_power_consume_suggest_summary">Fix issues to save battery</string>
     <string name="notification_qq_clean_hint">Trash slows down your device</string>
@@ -3241,7 +3308,7 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="pc_fast_charge_notifi_action_text_on">Boost</string>
     <string name="pc_fast_charge_notifi_power_threshold_title">Set battery level for reminders</string>
     <string name="pc_fast_charge_notifi_summary">Charging up to %s faster than usual…</string>
-    <string name="pc_fast_charge_notifi_summary_on">This feature might heat up your device</string>
+    <string name="pc_fast_charge_notifi_summary_on">Charging speed is boosted when the screen is off. Your device will heat up.</string>
     <string name="pc_fast_charge_notifi_switch_summary">Notify about boosting charging speed when the supplied %dW charger is connected and the battery is below the set level</string>
     <string name="pc_fast_charge_notifi_switch_title">Notify about boosting</string>
     <string name="pc_fast_charge_notifi_title">%dW charging</string>
@@ -4259,6 +4326,7 @@ Withdraw consent now?"</string>
     <string name="result_sms_title_antispam">Threatened by malicious SMS URLs</string>
     <string name="result_sms_title_auth">Financial SMS leak risk exists</string>
     <string name="result_wifi_header">Wi-Fi risks detected</string>
+    <string name="resume">Restore</string>
     <string name="right_precent">100%</string>
     <string name="risk_app_install_agree_button">Trust this app</string>
     <string name="risk_app_install_agree_checkbox">"I'm willing to take all possible risks."</string>
@@ -4319,6 +4387,7 @@ Withdraw consent now?"</string>
     <string name="scan_status_risk">Risky</string>
     <string name="scan_status_safe">Secure</string>
     <string name="scanning_bar_number">%d%%</string>
+    <string name="scanning_bar_number_new">%s</string>
     <string name="screenrecord_not_find">Install the latest version of Screen Recorder and try again.</string>
     <string name="sd_eject">Unmount SD card</string>
     <string name="sd_eject_summary">Unmount SD card to safely remove it</string>
@@ -4422,8 +4491,11 @@ Withdraw consent now?"</string>
     <string name="signal_exception_title">Test signal strength</string>
     <string name="signed_rule">Rules</string>
     <string name="signed_rule_one">1. Check in 10, 20, or 28 days in a row every month to get a Xunyou boost for 1, 2, or 3 days respectively.</string>
+    <string name="signed_rule_one_new">%1$d. Check in %2$d, %3$d, or %4$d days in a row every month to get a Xunyou boost for %5$d, %6$d, or %7$d days respectively.</string>
     <string name="signed_rule_three">"3. Days when you check in are annulled at the beginning of every month. The remaining days aren't rolled over."</string>
+    <string name="signed_rule_three_new">"%1$d. Days when you check in are annulled at the beginning of every month. The remaining days aren't rolled over."</string>
     <string name="signed_rule_two">2. You can get only 1 Xunyou boost per month.</string>
+    <string name="signed_rule_two_new">%d. You can get only 1 Xunyou boost per month.</string>
     <string name="sim_car_absent__tip">Confirm screen lock to turn off Lost mode</string>
     <string name="sim_car_absent_intercept_action">Confirm screen lock (%d)</string>
     <string name="sim_car_absent_intercept_action_last">Confirm screen lock</string>
@@ -5018,6 +5090,7 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="superpower_dialog_massage">"Ultra battery saver restricts most power-consuming features and decreases your device's performance in order to leave basic functionality (e.g. calls, SMS, and connecting to the network) available as long as possible. Turn on Ultra battery saver?"</string>
     <string name="superpower_dialog_title">Ultra battery saver</string>
     <string name="superpower_notification_new_title">Less than %d%% of battery remaining</string>
+    <string name="superpower_notification_new_title_new">Less than %s of battery remaining</string>
     <string name="superpower_notification_summary">Charge your device or turn on Ultra battery saver</string>
     <string name="superpower_notification_time_12">EEEE, MMMM dd</string>
     <string name="superpower_notification_time_24">EEEE, MMMM dd</string>
@@ -5315,6 +5388,7 @@ Formatting will erase existing content on the ^2. To avoid losing content, back 
     <string name="title_flow_rank">Mobile data usage</string>
     <string name="title_flow_verify">Compare accounting</string>
     <string name="title_flow_verify_failed">"Couldn't adjust for 5 days in a row"</string>
+    <string name="title_flow_verify_failed_new">"Couldn't adjust for %d days in a row"</string>
     <string name="title_garbage_clean">App cache size reached %s</string>
     <string name="title_garbage_less">App cache is small</string>
     <string name="title_garbage_lib">Update trash definitions</string>
@@ -5570,7 +5644,7 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="vb_video_effects_3d">Surround sound</string>
     <string name="vb_video_effects_3d_summary">Enhance the depth of sound reproduction for earphones and speakers</string>
     <string name="vb_video_effects_3d_summary_headset">Increase the sense of immersion and envelopment when listening to audio in the earphones</string>
-    <string name="vb_video_effects_3d_surround">Surround sound</string>
+    <string name="vb_video_effects_3d_surround">Virtual immersive sound</string>
     <string name="vb_video_effects_display_style">Style</string>
     <string name="vb_video_effects_dolby">Dolby Atmos</string>
     <string name="vb_video_effects_dolby_dialog_enhancer">Enhanced dialogue</string>
@@ -5598,7 +5672,7 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="vb_video_effects_settings_stereo">Volume</string>
     <string name="vb_video_effects_some_headphone">Supported by selected earphone models</string>
     <string name="vb_video_effects_spatial">Track head movement</string>
-    <string name="vb_video_effects_spatial_summary">"Adjust surround sound based on head movement
+    <string name="vb_video_effects_spatial_summary">"Adjust immersive sound based on head movement
 *Supported only on gaming earphone models"</string>
     <string name="vb_video_effects_srs_premium_sound">Sound</string>
     <string name="vb_video_super_division">Upscale</string>
