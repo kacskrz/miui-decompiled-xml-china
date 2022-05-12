@@ -109,9 +109,17 @@
     <string name="accessibility_speeddial_reminder">Reminder button</string>
     <string name="accessibility_speeddial_task">Task button</string>
     <string name="accessibility_speeddial_working_elsewhere">Working elsewhere button</string>
+    <string name="accessibility_speeddial_working_location">Working location button</string>
     <string name="accessibility_timely_chip_multi_day_count">%1$s (Day %2$d of %3$d)</string>
     <string name="account_change_attachments">Attachments have been removed because the account has changed.</string>
     <string name="account_item_default">Switch account</string>
+    <string name="account_switch_dialog_subtitle">In the future, using %1$s will automatically switch accounts if necessary.</string>
+    <string name="account_switch_dialog_title">You need to switch to another account to use %1$s</string>
+    <string name="account_switch_no_suitable_account_for_events">No calendars have been synchronized with this device yet</string>
+    <string name="account_switch_toast">Calendar switched to %1$s (%2$s) as the primary account</string>
+    <string name="account_switch_toast_unnamed_account">Calendar switched to %1$s as the primary account</string>
+    <string name="account_with_calendar_is_checked">%1$s, %2$s, checked</string>
+    <string name="account_with_calendar_is_unchecked">%1$s, %2$s, unchecked</string>
     <string name="acessibility_selected_checkmark_description">Selected</string>
     <string name="acl_fixer_help_url">https://support.google.com/calendar/?p=add_attachments_android</string>
     <string name="action_apply">Apply</string>
@@ -228,6 +236,7 @@ Actual: %2$s."</string>
     <string name="calendar_picker_account_info_segment_ooo">Out of office is not available for this account</string>
     <string name="calendar_picker_account_info_segment_working_elsewhere">Working elsewhere is not available for this account</string>
     <string name="calendar_refresh">Refresh</string>
+    <string name="calendar_screen_blocked">Looks like another app is blocking the screen. Turn off any apps that might be drawing over the screen and try again.</string>
     <string name="calendar_segment_secondary_text">Shared by %s</string>
     <string name="calendar_storage_disabled_dialog_action">Enable in Settings</string>
     <string name="calendar_storage_disabled_dialog_message">"Oops, your calendars and events can't be displayed because Calendar Storage is disabled.
@@ -236,6 +245,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="calendar_storage_disabled_dialog_title">Calendar Storage disabled</string>
     <string name="calendar_successfully_added_message">Calendar was successfully added.</string>
     <string name="calendars_help_context">calendar_settings_android</string>
+    <string name="can_not_add_unencrypted_attachment">"You can't attach an unencrypted file to an encrypted event"</string>
     <string name="cancel">@android:string/no</string>
     <string name="cancel_booked_event_dialog_content">Cancellation emails will be sent to all guests</string>
     <string name="cancel_booked_event_dialog_title">Cancel appointment?</string>
@@ -343,6 +353,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="crossprofile_dialog_positive">Turn on in Settings</string>
     <string name="crossprofile_dialog_text">Google Calendar won’t change visibility and sharing permissions of your personal calendars.</string>
     <string name="crossprofile_dialog_title">Show personal calendars in your work app</string>
+    <string name="cse_contents_encrypted">Contents encrypted</string>
     <string name="custom">Custom…</string>
     <string name="custom_duration_error_msg">Please enter a valid duration</string>
     <string name="custom_duration_max_error_msg">Must be %1$s or less</string>
@@ -444,8 +455,8 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="edit_default_exchange_allowed_notifications">1</string>
     <string name="edit_error_event_not_found">The requested event was not found.</string>
     <string name="edit_error_generic">An internal error has occurred.</string>
-    <string name="edit_error_no_calendar">No calendars have been synchronized with this device yet.</string>
-    <string name="edit_error_no_calendars">No calendars have been synchronized with this device yet.</string>
+    <string name="edit_error_no_calendar">No calendars have been synchronized with this device yet</string>
+    <string name="edit_error_no_calendars">No calendars have been synchronized with this device yet</string>
     <string name="edit_event_cancel">Cancel</string>
     <string name="edit_event_delete">Delete</string>
     <string name="edit_label">Edit</string>
@@ -454,7 +465,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="edit_recurrence_none">Does not repeat</string>
     <string name="edit_scope_selection_title">Save recurring event</string>
     <string name="edit_scope_selection_title_reminder">Save recurring reminder</string>
-    <string name="edit_scope_selection_title_task">Save recurring task</string>
+    <string name="edit_scope_selection_title_task">Save repeating task</string>
     <string name="edit_screen_title">Edit screen</string>
     <string name="edit_title_hint">Enter title</string>
     <string name="edit_title_task_suggest_hint">Remind me to…</string>
@@ -468,6 +479,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="email_subject_prefix">"Re: "</string>
     <string name="empty_description" />
     <string name="empty_suggestions_explanation">No room available at this time.</string>
+    <string name="encrypted_contents_removed">Encrypted contents have been removed.</string>
     <string name="end_by_date">; until %s</string>
     <string name="end_label">Ends</string>
     <string name="end_time_min">%d minutes</string>
@@ -511,6 +523,13 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="failed_to_copy_to_clipboard">Failed to copy to clipboard.</string>
     <string name="failed_to_create_conference">Failed to create conference</string>
+    <string name="feature_events">events</string>
+    <string name="feature_goals">goals</string>
+    <string name="feature_out_of_office">out of office</string>
+    <string name="feature_reminders">reminders</string>
+    <string name="feature_tasks">tasks</string>
+    <string name="feature_working_elsewhere">working elsewhere</string>
+    <string name="feature_working_location">working location</string>
     <string name="filter_capacity_max">%1$d+</string>
     <string name="filter_capacity_title">Required seats</string>
     <string name="filter_recurring_future_events">This and future events</string>
@@ -827,6 +846,18 @@ Where: %5$s
     <string name="join_live_stream">Watch live stream</string>
     <string name="join_video_conferencing">Join video conference</string>
     <string name="join_video_conferencing_short">Join</string>
+    <string name="known_senders_promo_body">"If you receive an event invitation from someone you’ve never interacted with, you can prevent it from being added to your calendar automatically.
+
+These invitations will be received by email only, and added to your calendar if you accept them or indicate you know the sender.
+
+You can always change this in *."</string>
+    <string name="known_senders_promo_body_settings_link">settings</string>
+    <string name="known_senders_promo_confirmation_body">"You will receive future invitations from unknown senders by email only for the account %1$s.
+
+This doesn't affect invitations you've already received."</string>
+    <string name="known_senders_promo_confirmation_title">Setting changed for future invitations</string>
+    <string name="known_senders_promo_positive_button">Turn on for this account</string>
+    <string name="known_senders_promo_title">Keep spam off your calendar</string>
     <string name="launcher_shortcut_event">New event</string>
     <string name="launcher_shortcut_event_long">New event</string>
     <string name="launcher_shortcut_reminder">New reminder</string>
@@ -852,6 +883,21 @@ Where: %5$s
     <string name="location_show_on_map">Show on map</string>
     <string name="location_time">%s (local time)</string>
     <string name="location_virtually">virtually</string>
+    <string name="m3_sys_typescale_body_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_body_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_body_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_label_large_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_label_medium_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_label_small_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_title_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_title_medium_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_title_small_font">sans-serif-medium</string>
     <string name="map_label">Map</string>
     <string name="maps_not_available">No application found to view this location.</string>
     <string name="material_clock_display_divider">:</string>
@@ -930,6 +976,27 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="notifications_channel_description">Calendar notifications</string>
     <string name="office">Office</string>
     <string name="offline_warning">You are offline. Some schedules cannot be loaded.</string>
+    <string name="og_a11y_close">Close</string>
+    <string name="og_account_and_settings">Account and settings.</string>
+    <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
+    <string name="og_add_another_account">Add another account</string>
+    <string name="og_choose_an_account_title">Choose an account</string>
+    <string name="og_collapse_account_list_a11y">Collapse account list.</string>
+    <string name="og_continue">Continue</string>
+    <string name="og_continue_as">Continue as %1$s</string>
+    <string name="og_expand_account_list_a11y">Expand account list.</string>
+    <string name="og_google_one_account_a11y">Google One account.</string>
+    <string name="og_loading_a11y">Loading</string>
+    <string name="og_manage_accounts">Manage accounts on this device</string>
+    <string name="og_my_account_desc_long_length">Manage your Google Account</string>
+    <string name="og_my_account_desc_meduim_length">Google Account</string>
+    <string name="og_my_account_desc_short_length">Account</string>
+    <string name="og_privacy_policy">Privacy Policy</string>
+    <string name="og_selected_account_a11y">%1$s selected.</string>
+    <string name="og_sign_in_">Sign In</string>
+    <string name="og_signed_in_as_account">Signed in as %1$s</string>
+    <string name="og_terms_of_service">Terms of Service</string>
+    <string name="og_use_account_a11y_no_period">Use %1$s</string>
     <string name="ok">@android:string/yes</string>
     <string name="on_the_day_at">On the day at %s</string>
     <string name="only_reschedule_reminders_to_future">"Reminders can't be moved to the past"</string>
@@ -1139,7 +1206,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="scope_selection_following_instances_tasks">This and following tasks</string>
     <string name="scope_selection_this_instance">This event</string>
     <string name="scope_selection_this_instance_reminder">This reminder</string>
-    <string name="scope_selection_this_instance_task">This task only</string>
+    <string name="scope_selection_this_instance_task">This task</string>
     <string name="search">Search</string>
     <string name="search_hint">Search</string>
     <string name="search_title">Search my calendars</string>
@@ -1189,10 +1256,12 @@ You can change how invitations are added with this setting.
     <string name="show_all_rooms_in_building">Show all rooms</string>
     <string name="show_calendars">Show calendars</string>
     <string name="show_more">Show more</string>
+    <string name="sign_in_cancel">Cancel</string>
     <string name="smart_notifications_description">Before and after your session to help you prepare and track progress</string>
     <string name="smart_notifications_off">Smart notifications are off</string>
     <string name="smart_notifications_on">Smart notifications are on</string>
     <string name="smart_rsvp_bottom_bar_toggle_label">Follow up actions</string>
+    <string name="smart_rsvp_location_promo_body_text">Your working location sets the default</string>
     <string name="smartmail_airline_flight">%1$s flight %2$s</string>
     <string name="smartmail_airport_search">airport %s</string>
     <string name="smartmail_change_visibility_change_all_button_text">Change all</string>
@@ -1258,6 +1327,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="survey_email_address">Email address</string>
     <string name="survey_google_play_services_version">Google Play services version</string>
     <string name="survey_legal_text">By continuing, you agree Google uses your answers, %1$s to improve services, per our %2$s &amp; %3$s.</string>
+    <string name="survey_legal_text_car">By continuing, Google will use your answers, account &amp; system info to improve services. See account profile for Privacy &amp; Terms.</string>
     <string name="survey_library_version">Library Version</string>
     <string name="survey_network_request_failed">Network request failed</string>
     <string name="survey_neutral">Neither satisfied nor dissatisfied</string>
@@ -1447,6 +1517,7 @@ In addition, Calendar uses this location when it books rooms for you."</string>
     <string name="working_hours_set_text">Set working hours</string>
     <string name="working_hours_start">Start</string>
     <string name="working_location">Working Location</string>
+    <string name="working_location_label">Working location</string>
     <string name="yesterday">Yesterday</string>
     <string name="your_chip_label">You</string>
 </resources>
