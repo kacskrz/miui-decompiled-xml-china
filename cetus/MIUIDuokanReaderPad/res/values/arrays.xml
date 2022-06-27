@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="account_user_gender_name">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
     <string-array name="alphabet_table">
+        <item>\#</item>
         <item>A</item>
         <item>B</item>
         <item>C</item>
@@ -27,7 +32,6 @@
         <item>X</item>
         <item>Y</item>
         <item>Z</item>
-        <item>\#</item>
     </string-array>
     <string-array name="alphabet_table_with_starred">
         <item>!</item>
@@ -63,9 +67,28 @@
         <item>@string/am</item>
         <item>@string/pm</item>
     </string-array>
-    <string-array name="app_fix">
-        <item>miui,打开,下载</item>
-        <item>下载,软件,打开,在哪,儿,在哪里,在哪儿,怎么,app,app下载,下载安装,app软件,免费下载</item>
+    <string-array name="app_store_clip_data_array">
+        <item>评论和想法功能都不错</item>
+        <item></item>
+        <item>很方便，一直在用！</item>
+        <item>不错，赞一个</item>
+        <item>很好，书不错</item>
+        <item>简单好用，一直喜欢</item>
+        <item>很棒，活动给力</item>
+        <item>给多看点赞</item>
+        <item>很好看，书挺多的</item>
+        <item>很好用，还可以听书</item>
+        <item>还能导入本地书</item>
+    </string-array>
+    <string-array name="bookshelf__general_shared__main_categories">
+        <item>书架</item>
+        <item>bookshelf</item>
+        <item>書架</item>
+    </string-array>
+    <string-array name="category__secondary_category_content__order_array">
+        <item>@string/category__secondary_category_content__order_click</item>
+        <item>@string/category__secondary_category_content__order_updated</item>
+        <item>@string/category__secondary_category_content__order_weight</item>
     </string-array>
     <string-array name="chinese_days">
         <item>@string/chinese_day_1</item>
@@ -144,24 +167,6 @@
         <item>@string/chinese_symbol_animals_dog</item>
         <item>@string/chinese_symbol_animals_pig</item>
     </string-array>
-    <string-array name="default_corpora">
-        <item>com.android.quicksearchbox/.applications.ApplicationLauncher</item>
-        <item>com.android.quicksearchbox/.provider2.AppIndexActivity2</item>
-        <item>com.android.quicksearchbox/.settings.SettingsSourceActivity</item>
-        <item>com.xiaomi.providers.appindex/.MainActivity</item>
-        <item>com.android.settings/.search.provider.SettingsProvider</item>
-        <item>com.android.fileexplorer/.FileExplorerTabActivity</item>
-        <item>com.android.quicksearchbox/.xiaomi.XiaomiSearch</item>
-        <item>com.android.contacts/.activities.PeopleActivity</item>
-        <item>com.android.contacts/.activities.PeopleActivityV2</item>
-        <item>com.miui.notes/.ui.NotesListActivity</item>
-        <item>com.android.email/com.kingsoft.email2.ui.MailActivityEmail</item>
-        <item>com.android.quicksearchbox/.translation.TranslationActivity</item>
-        <item>com.miui.newhome/.home.ui.favorite.GlobalSearchActivity</item>
-    </string-array>
-    <string-array name="default_corpora_suggest_uris">
-        <item>content://com.android.contacts/search_suggest_query</item>
-    </string-array>
     <string-array name="detailed_am_pms">
         <item>@string/midnight</item>
         <item>@string/early_morning</item>
@@ -170,6 +175,13 @@
         <item>@string/afternoon</item>
         <item>@string/evening</item>
         <item>@string/night</item>
+    </string-array>
+    <string-array name="discovery__type_name__array">
+        <item>标题</item>
+        <item>书单</item>
+        <item>想法</item>
+        <item>精选</item>
+        <item>书评</item>
     </string-array>
     <string-array name="earthly_branches">
         <item>@string/earthly_branches_zi</item>
@@ -189,9 +201,19 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
-    <string-array name="func_fix">
-        <item>miui,打开,下载</item>
-        <item>下载,软件,打开,在哪,儿,在哪里,在哪儿,怎么,设置,怎么设置</item>
+    <string-array name="general__shared__splash_tips">
+        <item>小提示: 您可以通过导入本地书目获取书籍</item>
+        <item>小提示: 阅读时可以点击屏幕中部弹出工具栏</item>
+        <item>小提示: 阅读时双指上下滑动可以快捷调节亮度</item>
+        <item>小提示: 阅读时单指下拉可以增删书签</item>
+        <item>小提示: 阅读时长按文字可以查字典、做笔记</item>
+        <item>小提示: 阅读时单指上拉可以返回书架、查看目录</item>
+        <item>小提示: 阅读时可以跨页加书摘喔</item>
+        <item>小提示: 所有图书都可以同步进度、书签和笔记喔</item>
+        <item>小提示: 在书架拖拽封面叠加可以创建分组</item>
+        <item>小提示: 购买书后就可以发表评论啦</item>
+        <item>小提示: 漫画图书可以双击图片切换阅读模式</item>
+        <item>小提示: 请注意购书券的有效时间，别过期啦</item>
     </string-array>
     <string-array name="heavenly_stems">
         <item>@string/heavenly_stems_jia</item>
@@ -205,7 +227,6 @@
         <item>@string/heavenly_stems_ren</item>
         <item>@string/heavenly_stems_gui</item>
     </string-array>
-    <array name="hidden_corpora" />
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
@@ -248,9 +269,32 @@
         <item>@string/month_november_shortest</item>
         <item>@string/month_december_shortest</item>
     </string-array>
-    <string-array name="setting_fix">
-        <item>小米手机,红米手机,系统,miui,怎么,设置,打开,取消,关闭</item>
-        <item>下载,打开,软件,在哪,在哪里,在哪儿,儿,怎么,设置,取消,解决办法,手机,关闭,怎么设置</item>
+    <string-array name="permissionNames">
+        <item>@string/sdk_ad_permission_storage</item>
+        <item>@string/sdk_ad_permission_location</item>
+        <item>@string/sdk_ad_permission_camera</item>
+    </string-array>
+    <string-array name="personal__feedback_create_view__default_problem_array">
+        <item>1688/8282/书籍价格太贵</item>
+        <item>1683/8265/多看阅读如何找回账号</item>
+        <item>1683/8266/多看阅读如何更换已绑定手机号</item>
+        <item>1683/8267/多看阅读微信账号问题</item>
+        <item>1684/8268/书籍批量购买问题</item>
+        <item>1684/8269/购买书籍后无法下载和打开</item>
+        <item>1684/8271/“自动购买下一章节”功能</item>
+        <item>1686/8276/书籍封面错误</item>
+    </string-array>
+    <string-array name="reading__comment_view__level">
+        <item>@string/reading__comment_view__level1</item>
+        <item>@string/reading__comment_view__level2</item>
+        <item>@string/reading__comment_view__level3</item>
+        <item>@string/reading__comment_view__level4</item>
+        <item>@string/reading__comment_view__level5</item>
+    </string-array>
+    <string-array name="share_title_array">
+        <item>@string/share_name_weixin_friend</item>
+        <item>@string/share_name_weixin_friends</item>
+        <item>@string/share_to_other</item>
     </string-array>
     <string-array name="solar_terms">
         <item>@string/empty</item>
@@ -278,6 +322,18 @@
         <item>@string/solar_term_light_snow</item>
         <item>@string/solar_term_heavy_snow</item>
         <item>@string/solar_term_winter_solstice</item>
+    </string-array>
+    <string-array name="store_sug_item_view__author_type">
+        <item>book</item>
+        <item>fiction</item>
+        <item>comic</item>
+        <item>audio</item>
+    </string-array>
+    <string-array name="store_sug_item_view__author_type_name">
+        <item>图书</item>
+        <item>小说</item>
+        <item>漫画</item>
+        <item>听书</item>
     </string-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
