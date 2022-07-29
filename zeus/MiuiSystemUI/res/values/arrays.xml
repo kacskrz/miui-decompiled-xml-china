@@ -97,8 +97,7 @@
         <item>3</item>
         <item>4</item>
     </string-array>
-    <array name="avatar_image_descriptions" />
-    <array name="avatar_images" />
+    <array name="audio_recording_disclosure_exempt_apps" />
     <string-array name="avoid_disturb_app_whitelist">
         <item>com.baidu.BaiduMap</item>
         <item>com.autonavi.xmgd.navigator</item>
@@ -273,9 +272,6 @@
         <item>Qualcomm® aptX™ audio</item>
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
-        <item>Qualcomm® aptX™ Adaptive audio</item>
-        <item>Qualcomm® aptX™ TWS+ audio</item>
-        <item>LC3</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_titles">
         <item>Use System Selection (Default)</item>
@@ -284,9 +280,6 @@
         <item>Qualcomm® aptX™ audio</item>
         <item>Qualcomm® aptX™ HD audio</item>
         <item>LDAC</item>
-        <item>Qualcomm® aptX™ Adaptive audio</item>
-        <item>Qualcomm® aptX™ TWS+ audio</item>
-        <item>LC3</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_values">
         <item>1000000</item>
@@ -295,9 +288,6 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -331,15 +321,11 @@
         <item>Disabled</item>
         <item>Enabled Filtered</item>
         <item>Enabled</item>
-        <item>Enabled Headers Filtered</item>
-        <item>Enabled Media Pkts Filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values">
         <item>disabled</item>
         <item>filtered</item>
         <item>full</item>
-        <item>snoopheadersfiltered</item>
-        <item>mediapktsfiltered</item>
     </string-array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
@@ -865,8 +851,6 @@
         <item>com.miui.accessibility</item>
         <item>com.miui.systemAdSolution</item>
         <item>android</item>
-        <item>com.miui.voiceassist</item>
-        <item>com.xiaomi.mirror</item>
     </string-array>
     <string-array name="config_canSendSubstituteNotificationPackages">
         <item>com.xiaomi.xmsf</item>
@@ -1003,11 +987,6 @@
         <item>sunny</item>
         <item>camellia</item>
     </string-array>
-    <array name="config_collapsed_statusbar_icon_blocklist">
-        <item>@android:string/user_switched</item>
-        <item>@android:string/usb_mtp_launch_notification_description</item>
-        <item>@android:string/usb_notification_message</item>
-    </array>
     <array name="config_controlsPreferredPackages" />
     <string-array name="config_disableAutoGroupSummaryPackages">
         <item>com.xiaomi.xmsf</item>
@@ -1065,11 +1044,6 @@
         <item>gram</item>
     </string-array>
     <array name="config_face_auth_props" />
-    <array name="config_keyguard_statusbar_icon_blocklist">
-        <item>@android:string/user_switched</item>
-        <item>@android:string/usb_mtp_launch_notification_description</item>
-        <item>@android:string/usb_notification_message</item>
-    </array>
     <integer-array name="config_notification_snooze_times">
         <item>15</item>
         <item>30</item>
@@ -1115,22 +1089,10 @@
         <item>com.miui.smarttravel</item>
     </string-array>
     <string-array name="config_quickSettingsAutoAdd">
-        <item>accessibility_display_daltonizer_enabled:color_correction</item>
         <item>accessibility_display_inversion_enabled:inversion</item>
-        <item>one_handed_mode_enabled:onehanded</item>
+        <item>wind_down_first_time_setup:custom(com.google.android.apps.wellbeing/.screen.ui.GrayscaleTileService)</item>
+        <item>focus_mode_first_time_setup:custom(com.google.android.apps.wellbeing/.focusmode.quicksettings.FocusModeTileService)</item>
     </string-array>
-    <array name="config_roundedCornerBottomDrawableArray">
-        <item>@drawable/rounded_corner_bottom</item>
-        <item>@drawable/rounded_corner_bottom_secondary</item>
-    </array>
-    <array name="config_roundedCornerDrawableArray">
-        <item>@drawable/rounded</item>
-        <item>@drawable/rounded_secondary</item>
-    </array>
-    <array name="config_roundedCornerTopDrawableArray">
-        <item>@drawable/rounded_corner_top</item>
-        <item>@drawable/rounded_corner_top_secondary</item>
-    </array>
     <array name="config_showSpnByGIDWhenAirPlane" />
     <string-array name="config_statusBarIcons">
         <item>network_speed</item>
@@ -1170,6 +1132,31 @@
     <string-array name="config_statusBarIconsToExclude">
         <item>rotate</item>
         <item>ime</item>
+    </string-array>
+    <string-array name="config_systemUIServiceComponents">
+        <item>com.android.systemui.util.NotificationChannels</item>
+        <item>com.android.systemui.keyguard.KeyguardViewMediator</item>
+        <item>com.android.systemui.recents.Recents</item>
+        <item>com.android.systemui.volume.VolumeUI</item>
+        <item>com.android.systemui.statusbar.phone.StatusBar</item>
+        <item>com.android.systemui.usb.StorageNotification</item>
+        <item>com.android.systemui.media.RingtonePlayer</item>
+        <item>com.android.systemui.keyboard.KeyboardUI</item>
+        <item>com.android.systemui.shortcut.ShortcutKeyDispatcher</item>
+        <item>@string/config_systemUIVendorServiceComponent</item>
+        <item>com.android.systemui.util.leak.GarbageMonitor$Service</item>
+        <item>com.android.systemui.LatencyTester</item>
+        <item>com.android.systemui.globalactions.GlobalActionsComponent</item>
+        <item>com.android.systemui.ScreenDecorations</item>
+        <item>com.android.systemui.biometrics.AuthController</item>
+        <item>com.android.systemui.SliceBroadcastRelayHandler</item>
+        <item>com.android.systemui.statusbar.notification.InstantAppNotifier</item>
+        <item>com.android.systemui.theme.ThemeOverlayController</item>
+        <item>com.android.systemui.accessibility.WindowMagnification</item>
+        <item>com.android.systemui.accessibility.SystemActions</item>
+        <item>com.android.systemui.toast.ToastUI</item>
+        <item>com.android.systemui.wmshell.WMShell</item>
+        <item>com.android.systemui.controlcenter.ControlCenter</item>
     </string-array>
     <string-array name="config_systemUIServiceComponentsPerUser">
         <item>com.android.systemui.util.NotificationChannels</item>
@@ -1246,13 +1233,6 @@
         <item>lotus</item>
     </string-array>
     <array name="device_support_video_24_wallpaper" />
-    <array name="doze_brightness_sensor_name_posture_mapping" />
-    <integer-array name="doze_single_tap_uses_prox_posture_mapping">
-        <item>1</item>
-        <item>1</item>
-        <item>1</item>
-        <item>1</item>
-    </integer-array>
     <string-array name="earthly_branches">
         <item>@string/earthly_branches_zi</item>
         <item>@string/earthly_branches_chou</item>
@@ -1503,7 +1483,6 @@
         <item>com.miui.bugreport</item>
         <item>com.android.systemui</item>
     </string-array>
-    <array name="locale_carrier_names" />
     <string-array name="lockscreen_num_pad_klondike">
         <item>+</item>
         <item></item>
@@ -1528,6 +1507,10 @@
         <item>-1</item>
     </integer-array>
     <array name="miui_config_quickSettingsAutoAdd" />
+    <string-array name="miui_notification_aggregate_category">
+        <item>This is recommended content.</item>
+        <item>This is an ad.</item>
+    </string-array>
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
@@ -1594,7 +1577,6 @@
         <item>left,back,home,recent,right;space;space</item>
         <item>space;space;left,back,home,recent,right</item>
     </string-array>
-    <array name="origin_carrier_names" />
     <string-array name="overlay_display_devices_entries">
         <item>None</item>
         <item>480p</item>
@@ -1623,8 +1605,6 @@
         <item>1920x1080/320|3840x2160/640,secure</item>
         <item>1280x720/213;1920x1080/320</item>
     </string-array>
-    <array name="proximity_sensor_posture_mapping" />
-    <array name="proximity_sensor_secondary_posture_mapping" />
     <string-array name="qs_control_independent_tiles">
         <item>cell</item>
         <item>bt</item>
@@ -1638,6 +1618,7 @@
         <item>flashlight</item>
         <item>autobrightness</item>
     </string-array>
+    <array name="recents_onboarding_blacklisted_packages" />
     <string-array name="region_support_mihome">
         <item>CN</item>
         <item>IN</item>
@@ -1753,7 +1734,6 @@
         <item>com.xiaomi.gamecenter.sdk.service</item>
     </string-array>
     <string-array name="system_foreground_notification_whitelist">
-        <item>com.jtom.userprobation</item>
         <item>com.xiaomi.joyose</item>
         <item>com.miui.home</item>
         <item>com.mi.android.globallauncher</item>
@@ -1781,7 +1761,6 @@
         <item>com.mi.android.globalminusscreen</item>
         <item>com.mfashiongallery.emag</item>
         <item>com.android.thememanager</item>
-        <item>com.android.mtp</item>
         <item>com.miui.voiceassist:com.miui.voiceassistforeground</item>
         <item>com.miui.misound</item>
         <item>com.xiaomi.mirror</item>
@@ -1795,10 +1774,6 @@
         <item>com.milink.service:hide_foreground</item>
         <item>com.xiaomi.aiasst.vision:ai_toolbox_fs</item>
         <item>com.quicinc.voice.activation</item>
-    </string-array>
-    <string-array name="system_ui_packages">
-        <item>com.android.keyguard</item>
-        <item>com.android.systemui</item>
     </string-array>
     <string-array name="tile_states_airplane">
         <item>Unavailable</item>
@@ -1831,11 +1806,6 @@
         <item>On</item>
     </string-array>
     <string-array name="tile_states_cell">
-        <item>Unavailable</item>
-        <item>Off</item>
-        <item>On</item>
-    </string-array>
-    <string-array name="tile_states_color_correction">
         <item>Unavailable</item>
         <item>Off</item>
         <item>On</item>
@@ -1891,16 +1861,6 @@
         <item>On</item>
     </string-array>
     <string-array name="tile_states_night">
-        <item>Unavailable</item>
-        <item>Off</item>
-        <item>On</item>
-    </string-array>
-    <string-array name="tile_states_onehanded">
-        <item>Unavailable</item>
-        <item>Off</item>
-        <item>On</item>
-    </string-array>
-    <string-array name="tile_states_qr_code_scanner">
         <item>Unavailable</item>
         <item>Off</item>
         <item>On</item>
@@ -2010,12 +1970,6 @@
         <item>300</item>
         <item>350</item>
         <item>400</item>
-    </string-array>
-    <string-array name="udfps_accessibility_touch_hints">
-        <item>Move left</item>
-        <item>Move down</item>
-        <item>Move right</item>
-        <item>Move up</item>
     </string-array>
     <string-array name="usb_configuration_titles">
         <item>Charging</item>
