@@ -194,6 +194,8 @@ Actual: %2$s."</string>
     <string name="async_scheduling_timeout">This is taking longer than normal. Check back soon for your first session.</string>
     <string name="at_time">At %s</string>
     <string name="at_time_of_event">At time of event</string>
+    <string name="attachment_encrypted_file_label">Encrypted file \"%1$s\"</string>
+    <string name="attachment_file_label">File \"%1$s\"</string>
     <string name="attachment_no_activity">"Can't find app to open Google Drive file"</string>
     <string name="attendee_accepted">%s is going</string>
     <string name="attendee_accepted_in_a_meeting_room">%s is joining in a meeting room</string>
@@ -209,13 +211,6 @@ Actual: %2$s."</string>
     <string name="authentication_cancel_button">Not now</string>
     <string name="authentication_dialog_body">To keep Calendar in sync, fix a problem with how %s is signed in</string>
     <string name="authentication_dialog_title">"You're not properly signed in"</string>
-    <string name="belong_integration_description">Automatically mark sessions as done when you log them in Fit</string>
-    <string name="belong_integration_label">Connect with Google Fit</string>
-    <string name="belong_notification_subtitle">Detected by Google Fit. Great job completing your goal.</string>
-    <string name="belong_notification_title">%1$s: Done!</string>
-    <string name="belong_screen_content">Calendar learns from your activity and tracks your progress. Connect with your favorite fitness apps via Google Fit.</string>
-    <string name="belong_screen_positive_action">Connect</string>
-    <string name="belong_screen_title">Connect your goal to Google Fit</string>
     <string name="birthday_holiday_help_context">holidays_android</string>
     <string name="birthday_wish_action">Wish happy birthday</string>
     <string name="birthdays_on">Birthdays on %s</string>
@@ -235,6 +230,7 @@ Actual: %2$s."</string>
     <string name="calendar_is_unchecked">%1$s, unchecked</string>
     <string name="calendar_picker_account_info_segment_ooo">Out of office is not available for this account</string>
     <string name="calendar_picker_account_info_segment_working_elsewhere">Working elsewhere is not available for this account</string>
+    <string name="calendar_picker_account_info_segment_working_location">Working location is not available for this account</string>
     <string name="calendar_refresh">Refresh</string>
     <string name="calendar_screen_blocked">Looks like another app is blocking the screen. Turn off any apps that might be drawing over the screen and try again.</string>
     <string name="calendar_segment_secondary_text">Shared by %s</string>
@@ -276,6 +272,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="collapse_location">Collapse %1$s</string>
     <string name="collapse_sheet">Collapse event sheet</string>
     <string name="collapse_task_sheet">Collapse task sheet</string>
+    <string name="collapse_working_location_sheet">Collapse working location sheet</string>
     <string name="combined_notification_text">&lt;b> %1$s &lt;/b> %2$s</string>
     <string name="comma_space">", "</string>
     <string name="common_google_play_services_enable_button">Enable</string>
@@ -345,6 +342,8 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="creation_cancellation_message">Discard this event?</string>
     <string name="cross_profile_drawer_promo_text">To see all your events here, add your calendars from your personal app</string>
     <string name="cross_profile_drawer_promo_title">View your personal calendars</string>
+    <string name="cross_profile_hide_promos_description">Whether or not cross profile promos should be hidden in calendar.</string>
+    <string name="cross_profile_hide_promos_title">Hide cross profile promos</string>
     <string name="cross_profile_learn_more">Add calendars</string>
     <string name="cross_profile_promo_dismiss">Dismiss</string>
     <string name="cross_profile_snackbar_switch_to_personal_app">Switched to personal app</string>
@@ -354,6 +353,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="crossprofile_dialog_text">Google Calendar won’t change visibility and sharing permissions of your personal calendars.</string>
     <string name="crossprofile_dialog_title">Show personal calendars in your work app</string>
     <string name="cse_contents_encrypted">Contents encrypted</string>
+    <string name="cse_notes_segment_description">Notes</string>
     <string name="custom">Custom…</string>
     <string name="custom_duration_error_msg">Please enter a valid duration</string>
     <string name="custom_duration_max_error_msg">Must be %1$s or less</string>
@@ -375,6 +375,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="default_option">Default</string>
     <string name="delete_proposal">Delete proposal</string>
     <string name="delete_recurring_event_title">Delete %s?</string>
+    <string name="delete_scope_selection_title_working_location">Delete working location</string>
     <string name="delete_this_event_title">Delete this event?</string>
     <string name="delete_this_reminder_title">Delete this reminder?</string>
     <string name="delete_this_task_title">Delete this task?</string>
@@ -393,7 +394,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="describe_email_icon">Email</string>
     <string name="describe_event_color_icon">Event color</string>
     <string name="describe_event_icon">Event Information</string>
-    <string name="describe_fit_icon">Google Fit integration</string>
     <string name="describe_flight_icon">Flight Information</string>
     <string name="describe_groove_contract_icon">Your goal</string>
     <string name="describe_guests_icon">People list</string>
@@ -466,6 +466,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="edit_scope_selection_title">Save recurring event</string>
     <string name="edit_scope_selection_title_reminder">Save recurring reminder</string>
     <string name="edit_scope_selection_title_task">Save repeating task</string>
+    <string name="edit_scope_selection_title_working_location">Edit working location</string>
     <string name="edit_screen_title">Edit screen</string>
     <string name="edit_title_hint">Enter title</string>
     <string name="edit_title_task_suggest_hint">Remind me to…</string>
@@ -479,7 +480,8 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="email_subject_prefix">"Re: "</string>
     <string name="empty_description" />
     <string name="empty_suggestions_explanation">No room available at this time.</string>
-    <string name="encrypted_contents_removed">Encrypted contents have been removed.</string>
+    <string name="encrypted_conference_label">Encrypted conference</string>
+    <string name="encrypted_contents_removed">Encryption has been turned off.</string>
     <string name="end_by_date">; until %s</string>
     <string name="end_label">Ends</string>
     <string name="end_time_min">%d minutes</string>
@@ -519,6 +521,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="expand_location">Expand %1$s</string>
     <string name="expand_sheet">Expand event sheet</string>
     <string name="expand_task_sheet">Expand task sheet</string>
+    <string name="expand_working_location_sheet">Expand working location sheet</string>
     <string name="expanded_location_title">Room for %1$d in %2$s</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="failed_to_copy_to_clipboard">Failed to copy to clipboard.</string>
@@ -584,8 +587,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="find_time_two_lines_short_layout">%1$s: %2$s</string>
     <string name="find_time_you_are_unavailable">You are unavailable</string>
     <string name="find_time_you_do_not_take_meetings_at_this_time">You usually don’t attend meetings at this time</string>
-    <string name="fit_integration_view_screen">Connected to Google Fit</string>
-    <string name="fit_integration_view_screen_description">Tap to view in the Fit App</string>
     <string name="fix_permission_sharing_option_comment">Can comment</string>
     <string name="fix_permission_sharing_option_edit">Can edit</string>
     <string name="fix_permission_sharing_option_view">Can view</string>
@@ -622,7 +623,7 @@ Where: %5$s
     <string name="gm3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
-    <string name="gm3_sys_motion_easing_standard">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="gm3_sys_motion_easing_standard">cubic-bezier(0.2, 0.0, 0.0, 1.0)</string>
     <string name="gm_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
@@ -824,7 +825,6 @@ Where: %5$s
     <string name="ical_import_successful">Event added to your calendar.</string>
     <string name="ical_update_failed">Failed to update event.</string>
     <string name="ical_update_successful">Event has been successfully updated.</string>
-    <string name="icon_content_description">Dialog Icon</string>
     <string name="ics_file">ICS file</string>
     <string name="id_key_birthday">birthday</string>
     <string name="id_key_cross_profile">cross_profile</string>
@@ -883,21 +883,14 @@ This doesn't affect invitations you've already received."</string>
     <string name="location_show_on_map">Show on map</string>
     <string name="location_time">%s (local time)</string>
     <string name="location_virtually">virtually</string>
-    <string name="m3_sys_typescale_body_large_font">sans-serif</string>
-    <string name="m3_sys_typescale_body_medium_font">sans-serif</string>
-    <string name="m3_sys_typescale_body_small_font">sans-serif</string>
-    <string name="m3_sys_typescale_display_large_font">sans-serif</string>
-    <string name="m3_sys_typescale_display_medium_font">sans-serif</string>
-    <string name="m3_sys_typescale_display_small_font">sans-serif</string>
-    <string name="m3_sys_typescale_headline_large_font">sans-serif</string>
-    <string name="m3_sys_typescale_headline_medium_font">sans-serif</string>
-    <string name="m3_sys_typescale_headline_small_font">sans-serif</string>
-    <string name="m3_sys_typescale_label_large_font">sans-serif-medium</string>
-    <string name="m3_sys_typescale_label_medium_font">sans-serif-medium</string>
-    <string name="m3_sys_typescale_label_small_font">sans-serif-medium</string>
-    <string name="m3_sys_typescale_title_large_font">sans-serif</string>
-    <string name="m3_sys_typescale_title_medium_font">sans-serif-medium</string>
-    <string name="m3_sys_typescale_title_small_font">sans-serif-medium</string>
+    <string name="m3_ref_typeface_brand_regular">sans-serif</string>
+    <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_plain_regular">sans-serif</string>
+    <string name="m3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0.0, 0.0, 1.0)</string>
     <string name="map_label">Map</string>
     <string name="maps_not_available">No application found to view this location.</string>
     <string name="material_clock_display_divider">:</string>
@@ -959,7 +952,6 @@ To get events from Gmail, you must also turn on "<b>Smart features and personali
     <string name="no_reminder">No reminder</string>
     <string name="no_results_events_and_reminders">No events or reminders found</string>
     <string name="no_results_with_quoted_text">No entries found for “%s”</string>
-    <string name="no_thanks">No thanks</string>
     <string name="no_title_label">(No title)</string>
     <string name="no_title_placeholder">(No title)</string>
     <string name="no_visible_calendars_action">Got it</string>
@@ -1032,6 +1024,10 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="people_intelligence_busy">Busy - available again at %1$s</string>
+    <string name="people_intelligence_in_a_meeting">In a meeting - available again at %1$s</string>
+    <string name="people_intelligence_out_of_office">Out of office - back on %1$s</string>
+    <string name="people_intelligence_outside_working_hours">Outside of usual working hours - local time is %1$s</string>
     <string name="peoplekit_contact_selected">Selected</string>
     <string name="peoplesheet_add_to_contacts">Add to contacts</string>
     <string name="peoplesheet_edit_contact">Edit contact</string>
@@ -1043,10 +1039,6 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="posting_to_chat_dialog_save">Save &amp; share</string>
     <string name="posting_to_chat_dialog_text_group_with_title">This event info will be shared to “%1$s” when you save it</string>
     <string name="posting_to_chat_dialog_text_one_on_one">This event info will be shared with %1$s when you save it</string>
-    <string name="preference_belong_integration_dialog_action">Disconnect</string>
-    <string name="preference_belong_integration_dialog_text">Any goals you have connected with Google Fit will be disconnected. You can reconnect by editing your goal.</string>
-    <string name="preference_belong_integration_disabled_toast">Disconnected.</string>
-    <string name="preference_belong_integration_label">Disconnect from Google Fit</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="preference_edit_alternate_calendar_header">Alternate calendar</string>
     <string name="preference_edit_alternate_calendar_label_chinese_simplified">Chinese calendar - Simplified</string>
@@ -1090,7 +1082,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="preference_unlisted_color_label">Current color</string>
     <string name="preferences_edit_allday_notifications_header">Default notifications for all-day events</string>
     <string name="preferences_edit_timed_notifications_header">Default notifications</string>
-    <string name="preferences_license_title">Open source licenses</string>
+    <string name="preferences_license_title">Third Party Notices</string>
     <string name="preferences_title">Settings</string>
     <string name="preferred_time_concatenated">%1$s, %2$s</string>
     <string name="preferred_times_spinner_title">Best times</string>
@@ -1204,9 +1196,11 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="scope_selection_following_instances">This and following events</string>
     <string name="scope_selection_following_instances_reminders">This and following reminders</string>
     <string name="scope_selection_following_instances_tasks">This and following tasks</string>
+    <string name="scope_selection_one_off_working_location">This week</string>
     <string name="scope_selection_this_instance">This event</string>
     <string name="scope_selection_this_instance_reminder">This reminder</string>
     <string name="scope_selection_this_instance_task">This task</string>
+    <string name="scope_selection_weekly_routine_working_location">Always</string>
     <string name="search">Search</string>
     <string name="search_hint">Search</string>
     <string name="search_title">Search my calendars</string>
@@ -1246,6 +1240,7 @@ You can change how invitations are added with this setting.
     <string name="settings_invitation_behavior_title">Adding invitations</string>
     <string name="share_action">Share</string>
     <string name="share_conference_details_description">Share conference details</string>
+    <string name="shared_task_description">Others can see changes that you make to this task</string>
     <string name="sharing_to_chat_disclaimer">Sharing to chat conversation %1$s</string>
     <string name="sheet_collapsed">Editor sheet collapsed</string>
     <string name="sheet_expanded">Editor sheet expanded</string>
@@ -1325,6 +1320,9 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="survey_default_prompt_title">Please help us improve Google.</string>
     <string name="survey_device_model">Device Model</string>
     <string name="survey_email_address">Email address</string>
+    <string name="survey_font">sans-serif</string>
+    <string name="survey_font_medium">sans-serif-medium</string>
+    <string name="survey_font_regular">sans-serif-regular</string>
     <string name="survey_google_play_services_version">Google Play services version</string>
     <string name="survey_legal_text">By continuing, you agree Google uses your answers, %1$s to improve services, per our %2$s &amp; %3$s.</string>
     <string name="survey_legal_text_car">By continuing, Google will use your answers, account &amp; system info to improve services. See account profile for Privacy &amp; Terms.</string>
@@ -1379,6 +1377,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="task_assigned_to_user">Assigned to you</string>
     <string name="task_completed">Task completed.</string>
     <string name="task_creation_cancellation_message">Discard this task?</string>
+    <string name="task_delete_for_doc_confirmation_dialog_description">This removes the task from your personal task list. It will still be visible in the document.</string>
     <string name="task_delete_for_space_confirmation_dialog_delete_button">Delete</string>
     <string name="task_delete_for_space_confirmation_dialog_description">"Deleting this task will also delete it from the space's list. To keep it on the space's list, unassign it from yourself instead."</string>
     <string name="task_delete_for_space_confirmation_dialog_unassign_button">Unassign</string>
@@ -1388,6 +1387,11 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="task_done_label">@string/action_done</string>
     <string name="task_edit_cancellation_message">Discard changes to this task?</string>
     <string name="task_empty_title">The reminder title cannot be empty.</string>
+    <string name="task_from_chat_title">From a chat</string>
+    <string name="task_from_docs_default_title">From a document</string>
+    <string name="task_from_drawings_default_title">From a drawing</string>
+    <string name="task_from_sheets_default_title">From a sheet</string>
+    <string name="task_from_slides_default_title">From a slide</string>
     <string name="task_from_space_description">"Changes here also show up in the space's task list"</string>
     <string name="task_from_space_title">From a space</string>
     <string name="task_info_title">View task</string>
@@ -1412,7 +1416,11 @@ You won't be able to make this task repeating again."</string>
     <string name="tasks_killswitch_snackbar">"Tasks aren't available in this version of the Calendar app."</string>
     <string name="tasks_promo_body_text">Create, view, and edit tasks right in Calendar</string>
     <string name="tasks_promo_header_text">Tasks on the go</string>
+    <string name="tasks_rollover_dialog_information_menu_item">Information</string>
     <string name="tasks_rollover_dialog_title">Pending tasks</string>
+    <string name="tasks_rollover_information_text">"Your uncompleted tasks with dates within the last 30 days are displayed here.
+
+Tasks visibility can be modified in your Calendar settings."</string>
     <string name="tasks_sync_adapter">Tasks in Calendar</string>
     <string name="tentatively_accept_scope_selection_title">Tentatively accept recurring event</string>
     <string name="terms_of_service">Terms of Service</string>
@@ -1517,7 +1525,10 @@ In addition, Calendar uses this location when it books rooms for you."</string>
     <string name="working_hours_set_text">Set working hours</string>
     <string name="working_hours_start">Start</string>
     <string name="working_location">Working Location</string>
+    <string name="working_location_creation_cancellation_message">Discard this working location?</string>
+    <string name="working_location_edit_cancellation_message">Discard changes to this working location?</string>
     <string name="working_location_label">Working location</string>
+    <string name="working_location_title_placeholder">Working location</string>
     <string name="yesterday">Yesterday</string>
     <string name="your_chip_label">You</string>
 </resources>
