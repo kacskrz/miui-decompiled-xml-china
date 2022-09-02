@@ -174,6 +174,11 @@
     <string name="attachment_location">Location</string>
     <string name="attachment_picture">Picture</string>
     <string name="attachment_preview_close_content_description">Discard attachment</string>
+    <string name="attachment_preview_photos_link_share_getting_link">Getting link…</string>
+    <string name="attachment_preview_photos_link_share_no_upload_needed">Previously uploaded</string>
+    <string name="attachment_preview_photos_link_share_upload_size">%s upload</string>
+    <string name="attachment_preview_photos_link_share_upload_size_failure">Unknown</string>
+    <string name="attachment_preview_photos_link_share_upload_size_placeholder">Calculating…</string>
     <string name="attachment_unsupported_file">Unsupported file</string>
     <string name="attachment_vcard">Contact card</string>
     <string name="attachment_video">Video</string>
@@ -216,7 +221,8 @@
     <string name="birthday_banner_description">@string/banner_description</string>
     <string name="birthday_banner_dismiss_button_text">Dismiss</string>
     <string name="birthday_banner_settings_button_text">Manage in settings</string>
-    <string name="birthday_info_text">"These reminders are based on info from your device's contacts app"</string>
+    <string name="birthday_info_text">"These reminders are based on birthday info from your device's contacts app."</string>
+    <string name="birthday_info_text_with_settings">"These reminders are based on birthday info from your device's contacts app. &lt;a href>%1$s&lt;/a>"</string>
     <string name="birthday_nudge_enabled_pref_key">birthday_nudge_enabled</string>
     <string name="birthday_nudge_enabled_pref_summary">"Get reminders for birthdays you've added to contacts on your device"</string>
     <string name="birthday_nudge_enabled_pref_title">Birthday reminders</string>
@@ -285,6 +291,14 @@
     <string name="c2o_category_file_view_description">Tap to share a file</string>
     <string name="c2o_category_gallery_content_description">Explore more in Gallery</string>
     <string name="c2o_category_gallery_could_not_start_device_camera">Could not start a device camera</string>
+    <string name="c2o_category_gallery_onboarding_learn_more">Learn more</string>
+    <string name="c2o_category_gallery_onboarding_ok">OK</string>
+    <string name="c2o_category_gallery_onboarding_text_body">Preserve video clarity when you send Google Photos links in MMS conversations</string>
+    <string name="c2o_category_gallery_photos_sign_in_onboarding_title">Sign in to Google Photos for sharp-clarity videos</string>
+    <string name="c2o_category_gallery_promo_onboarding_close_button_description">Close Google Photos card</string>
+    <string name="c2o_category_gallery_promo_onboarding_title">"Share videos as they're meant to be seen"</string>
+    <string name="c2o_category_gallery_sign_in_onboarding_next">Next</string>
+    <string name="c2o_category_gallery_sign_in_onboarding_title">Sign in to send sharp-clarity videos</string>
     <string name="c2o_category_gif_content_description">Search GIFs</string>
     <string name="c2o_category_location_content_description">Share a location</string>
     <string name="c2o_category_name_assistant">Assistant</string>
@@ -434,6 +448,9 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
     <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
     <string name="common_open_on_phone">Open on phone</string>
+    <string name="complete_photos_app_onboarding">Open Google Photos</string>
+    <string name="complete_photos_app_onboarding_title">To continue, allow Google Photos access</string>
+    <string name="complete_photos_app_onboarding_to_continue">Get started in the Google Photos app</string>
     <string name="compose_camera_gallery_system_folders_button_content_description">Opens system picker on click</string>
     <string name="compose_message_view_hint_text">Chat message</string>
     <string name="compose_message_view_hint_text_multi_sim_rcs">Chat (%s)</string>
@@ -456,15 +473,12 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="contact_has_multiple_destinations_phone">%1$s (+%2$s more)</string>
     <string name="contact_has_multiple_destinations_type">Multiple</string>
     <string name="contact_list_add_people">Add %s</string>
-    <string name="contact_list_empty_text">Enter a contact name or phone number to start a new message</string>
     <string name="contact_list_send_to_text">Send to %s</string>
     <string name="contact_picker_autocomplete_added">%1$s added, currently editing</string>
     <string name="contact_picker_autocomplete_deleted">%1$s deleted, currently editing</string>
-    <string name="contact_picker_cant_add_destination_twice">That number is already in the group</string>
     <string name="contact_picker_cant_remove_from_existing">Cannot remove number from an existing conversation</string>
     <string name="contact_picker_cant_remove_from_screen">To remove people, go to &lt;b>Group Details&lt;/b></string>
     <string name="contact_picker_confirm_participants_button_label">Next</string>
-    <string name="contact_picker_group_create_label">Create group</string>
     <string name="contact_picker_group_v2_create_label">Create group</string>
     <string name="contact_picker_message_a_business_label">Chat with a business</string>
     <string name="contact_picker_title_add_people">Add people</string>
@@ -517,7 +531,6 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="conversation_list_item_view_draft_message">Draft</string>
     <string name="conversation_list_item_view_sent_from_other_prefix">"%s: "</string>
     <string name="conversation_list_item_view_sent_from_you_prefix">"You: "</string>
-    <string name="conversation_list_loading_item_description">Loading conversation</string>
     <string name="conversation_list_message_fail_to_decrypt">"Can't decrypt"</string>
     <string name="conversation_list_rcs_promo_button_negative">"Don't Upgrade App"</string>
     <string name="conversation_list_rcs_promo_button_positive">Upgrade Now</string>
@@ -529,7 +542,6 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="conversation_list_snippet_link">Link</string>
     <string name="conversation_list_spam_popup_negative">Manage in Settings</string>
     <string name="conversation_list_spam_popup_paragraph">To help prevent spam, Google uses the phone numbers of unknown senders and recipients. Your messages and contacts are not sent to Google. %1$s</string>
-    <string name="conversation_list_spam_popup_paragraph_on_device">Messages uses on-device intelligence to detect spam, and sends some data about these messages to Google without including your phone number or message content. %1$s</string>
     <string name="conversation_list_spam_popup_positive">OK</string>
     <string name="conversation_list_spam_popup_title">Spam protection</string>
     <string name="conversation_list_terms_and_conditions_promo_subtitle">Finish turning on chat features to get messaging over Wi-Fi and more</string>
@@ -563,6 +575,8 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="country_code_picker_title">Select a country</string>
     <string name="create_group_info_title">Add group name</string>
     <string name="create_new_group_message">Adding this person will start a new group without chat features</string>
+    <string name="cricket_tos_pref_carrier_name">Cricket</string>
+    <string name="cricket_tos_pref_url">https://www.cricketwireless.com/terms</string>
     <string name="current_country_pref_key">current_country</string>
     <string name="current_country_pref_title">Your current country</string>
     <string name="dark_mode_disable_title">Disable dark mode</string>
@@ -573,7 +587,7 @@ You can turn chat features off in settings. %1$s"</string>
     <string name="data_required_download_snackbar_message">To download this file, turn on mobile data or Wi-Fi</string>
     <string name="data_required_send_snackbar_message">To send this file, turn on mobile data or Wi-Fi</string>
     <string name="data_required_snackbar_action">Turn on</string>
-    <string name="database_version">58790</string>
+    <string name="database_version">58810</string>
     <string name="datetime_picker_back_button">Back</string>
     <string name="datetime_picker_cancel_button">Cancel</string>
     <string name="datetime_picker_confirmation_dialog_title">Pick date &amp; time</string>
@@ -762,7 +776,8 @@ Messages will switch back when chat features reconnect."</string>
     <string name="error_failed_to_save_setting">Trouble saving. Try again.</string>
     <string name="error_icon_content_description">Error</string>
     <string name="error_premium_sms_needs_permission">"To send this message, visit your device's settings and turn on Premium SMS access"</string>
-    <string name="error_toast_text_is_reply_without_rcs">To send this reply, enable chat features</string>
+    <string name="error_text_is_reply_without_rcs">To send this reply, enable chat features</string>
+    <string name="error_text_scheduled_send_with_draft_reply">Cannot schedule send a reply message</string>
     <string name="etouffee_pref_key">etouffee_pref_key</string>
     <string name="etouffee_to_rcs_notification">Messages detected end-to-end encryption was dropped in a conversation. Tap to send feedback.</string>
     <string name="etouffee_to_telephony_enabled_pref_key">etouffee_to_telephony_enabled</string>
@@ -803,6 +818,11 @@ Changing this setting will not affect end-to-end encrypted messages you already 
     <string name="expand_attach_button_content_description">Expand attachment buttons</string>
     <string name="expand_button_title">Advanced</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="express_sign_in_illustration_content_description">Illustration of the media sharing feature</string>
+    <string name="express_sign_in_sub_title">"Preserve sharp video clarity when you
+sign in and send Google Photos links."</string>
+    <string name="express_sign_in_title">"Share videos as they're
+meant to be seen"</string>
     <string name="fail_to_decrypt_message_metadata">"Can't decrypt, tap for options"</string>
     <string name="fail_to_load_dialog_negative_button">Text with device SIM</string>
     <string name="fail_to_load_dialog_positive_button">Retry</string>
@@ -929,6 +949,18 @@ Changing this setting will not affect end-to-end encrypted messages you already 
     <string name="full_banner_expand_chip_description">Expand chip button</string>
     <string name="full_screen_gallery_action_attach">Add</string>
     <string name="fullscreen_button_description">Open full screen</string>
+    <string name="gallery_google_photos_option_tray_button_add">Add</string>
+    <string name="gallery_google_photos_option_tray_button_always">Always</string>
+    <string name="gallery_google_photos_option_tray_button_cancel">Cancel</string>
+    <string name="gallery_google_photos_option_tray_button_just_once">Just once</string>
+    <string name="gallery_google_photos_option_tray_type_attachment_body">Low quality</string>
+    <string name="gallery_google_photos_option_tray_type_attachment_title_image">Image</string>
+    <string name="gallery_google_photos_option_tray_type_attachment_title_unknown">Media</string>
+    <string name="gallery_google_photos_option_tray_type_attachment_title_video">Video</string>
+    <string name="gallery_google_photos_option_tray_type_photos_link_body">Sharp clarity. Manage shared links in Google Photos.</string>
+    <string name="gallery_google_photos_option_tray_type_photos_link_learn_more">Learn more</string>
+    <string name="gallery_google_photos_option_tray_type_photos_link_learn_more_link">https://support.google.com/messages/answer/6159880</string>
+    <string name="gallery_google_photos_option_tray_type_photos_link_title">Google Photos link</string>
     <string name="gcm_defaultSenderId">357317899610</string>
     <string name="general_settings">General</string>
     <string name="general_settings_activity_title">General settings</string>
@@ -960,6 +992,7 @@ Changing this setting will not affect end-to-end encrypted messages you already 
     <string name="google_assistant_verification_notification_title">Google Assistant sending message</string>
     <string name="google_crash_reporting_api_key">AIzaSyDLfkKklEMnVwwf0fUBbU2h5hZxM8jlpZg</string>
     <string name="google_fi_text">Google Fi</string>
+    <string name="google_photos_option_tray">Sign in to send sharper videos</string>
     <string name="google_play_protect_title">Google Play Protect</string>
     <string name="google_storage_bucket">zillatest-20296.appspot.com</string>
     <string name="google_tos_chat_features_learn_more_url">https://support.google.com/messages/answer/9592174?hl=%1$s</string>
@@ -1000,7 +1033,15 @@ You can change your default call SIM in System settings. %1$s"</string>
     <string name="helpful_smarts_image_json">helpful_smarts_image.json</string>
     <string name="hidden_sender_address">Hidden sender address</string>
     <string name="highlighter">Highlighter</string>
+    <string name="how_it_works_link_text">How it works</string>
+    <string name="hqms_always_send_image_as_link_pref_key">hqms_always_send_image_as_link_pref_key</string>
+    <string name="hqms_always_send_image_as_link_pref_title">Always send images by link in text (SMS/MMS)</string>
+    <string name="hqms_always_send_video_as_link_pref_key">hqms_always_send_video_as_link_pref_key</string>
+    <string name="hqms_always_send_video_as_link_pref_title">Always send videos by link in text (SMS/MMS)</string>
     <string name="hqms_pref_key">hqms_pref_key</string>
+    <string name="hqms_settings_gaia_card_text">Manage links in Google Photos</string>
+    <string name="hqms_settings_info_text">Messages uploads to Google Photos, where you can manage video link sharing. %1$s</string>
+    <string name="hqms_settings_sign_in_prompt_text">Sign into your Google account to use this feature</string>
     <string name="hqms_settings_summary">Share sharp clarity video in text (SMS/MMS)</string>
     <string name="hqms_settings_title">Google Photos</string>
     <string name="identity_verification_notification_text">Messages is verifying an incoming message</string>
@@ -1032,6 +1073,9 @@ You can change your default call SIM in System settings. %1$s"</string>
     <string name="inline_playback_error">"Can't play this video in Messages"</string>
     <string name="inline_playback_pause_content_description">Pause video</string>
     <string name="insert_sim_suggestion">Insert a SIM card.</string>
+    <string name="install_photos_app">Get Google Photos</string>
+    <string name="install_photos_app_title">To continue, get the Google Photos app</string>
+    <string name="install_photos_app_to_continue">Install the app to send sharp-clarity videos</string>
     <string name="invalid_qr_code_dialog_message">To sign in, scan the QR code on %s</string>
     <string name="invalid_qr_code_dialog_positive_button_text">OK</string>
     <string name="invalid_qr_code_dialog_title">Incorrect code</string>
@@ -1317,6 +1361,16 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="multimedia_message">Multimedia message</string>
     <string name="muted_conversation_content_description">Notifications disabled.</string>
     <string name="nav_app_bar_navigate_up_description">Navigate up</string>
+    <string name="nav_archived_messages_folder_title">Archived</string>
+    <string name="nav_choose_theme_title">Choose theme</string>
+    <string name="nav_choose_theme_title_disable_dark_mode">Disable dark mode</string>
+    <string name="nav_choose_theme_title_enable_dark_mode">Enable dark mode</string>
+    <string name="nav_debug_title">Debug</string>
+    <string name="nav_device_pairing_title">Device pairing</string>
+    <string name="nav_mark_all_as_read_title">Mark all as read</string>
+    <string name="nav_messages_folder_title">Messages</string>
+    <string name="nav_spam_and_blocked_messages_folder_title">Spam &amp; blocked</string>
+    <string name="nav_starred_folder_title">Starred</string>
     <string name="navigate_up_button_content_description">Navigate up</string>
     <string name="new_file_name_format">yyyyMMdd_HHmmss</string>
     <string name="new_image_file_name_format">"'IMG'_yyyyMMdd_HHmmss"</string>
@@ -1325,6 +1379,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="new_rich_cards_preference_info_text">Google scans select info (like places or links) from your chat history without identifying you to create all previews and identify harmful content. %1$s</string>
     <string name="new_video_file_name_format">"'VID'_yyyyMMdd_HHmmss"</string>
     <string name="no_activity_found_error">No app found to handle this action</string>
+    <string name="no_connection">No connection</string>
     <string name="no_google_account">None</string>
     <string name="no_reply_pinned_message_text">Sender does not support replies</string>
     <string name="no_sim_message">No messages on SIM</string>
@@ -1398,24 +1453,43 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="off">Off</string>
     <string name="og_a11y_close">Close</string>
     <string name="og_account_and_settings">Account and settings.</string>
+    <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
     <string name="og_add_another_account">Add another account</string>
+    <string name="og_app_settings">%1$s settings</string>
+    <string name="og_backup_complete_title">Backup complete</string>
     <string name="og_choose_an_account_title">Choose an account</string>
     <string name="og_collapse_account_list_a11y">Collapse account list.</string>
     <string name="og_continue">Continue</string>
     <string name="og_continue_as">Continue as %1$s</string>
     <string name="og_expand_account_list_a11y">Expand account list.</string>
+    <string name="og_get_storage_action">Get storage</string>
+    <string name="og_get_storage_action_short">Buy more</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
+    <string name="og_help_feedback">Help &amp; feedback</string>
     <string name="og_loading_a11y">Loading</string>
     <string name="og_manage_accounts">Manage accounts on this device</string>
+    <string name="og_manage_storage_action">Manage storage</string>
+    <string name="og_manage_storage_action_short">Manage</string>
+    <string name="og_minimized_storage_card_title">Storage used: %1$s of %2$s GB</string>
+    <string name="og_more_options_action">More options</string>
+    <string name="og_more_options_action_short">Options</string>
     <string name="og_my_account_desc_long_length">Manage your Google Account</string>
     <string name="og_my_account_desc_meduim_length">Google Account</string>
     <string name="og_my_account_desc_short_length">Account</string>
+    <string name="og_privacy_advisor">Your data in %1$s</string>
     <string name="og_privacy_policy">Privacy Policy</string>
     <string name="og_selected_account_a11y">%1$s selected.</string>
     <string name="og_sign_in_">Sign In</string>
     <string name="og_signed_in_as_account">Signed in as %1$s</string>
+    <string name="og_storage_card_almost_full_a11y_label">Your account storage is almost full</string>
+    <string name="og_storage_card_full_a11y_label">Your account storage is full</string>
+    <string name="og_storage_card_title">Account storage</string>
+    <string name="og_storage_card_title_almost_full">%1$s of storage used</string>
+    <string name="og_storage_card_title_full">Out of storage</string>
+    <string name="og_storage_progress_subtitle">%1$s GB of %2$s GB used</string>
     <string name="og_terms_of_service">Terms of Service</string>
     <string name="og_use_account_a11y_no_period">Use %1$s</string>
+    <string name="og_use_without_an_account">Use without an account</string>
     <string name="on">On</string>
     <string name="onboarding_google_tos_with_sms_charges_and_learn_more">To turn on chat features from Google, you agree to the %1$s and %2$s. Google will occasionally verify your number by exchanging your device info with your carrier (SMS charges may apply). %3$s.</string>
     <string name="open_video_trimmer_dialog_negative">Cancel</string>
@@ -1493,7 +1567,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="phone_number_input_body_text">To make sure you’re getting chat features, Messages verifies your number</string>
     <string name="phone_number_input_hint">Your phone number</string>
     <string name="phone_number_input_negative_button_for_mo_text">Skip for now</string>
-    <string name="phone_number_input_negative_button_for_mt_text">Remind later</string>
+    <string name="phone_number_input_negative_button_for_mt_text">Remind me later</string>
     <string name="phone_number_input_positive_button_text">Add number</string>
     <string name="phone_number_input_streamlined_body_for_mo_text">Share photos, videos, and more over Wi-Fi or data. To get chat features faster, add your number now. Or skip this step and let Messages try to discover and verify your number.</string>
     <string name="phone_number_input_streamlined_body_text">Share photos, videos, and more over Wi-Fi or data. To get chat features, add your number now.</string>
@@ -1509,13 +1583,19 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="phone_number_input_tos_reminder_text">You previously agreed to the chat features %1$s</string>
     <string name="phone_number_input_tos_text">Terms of Service</string>
     <string name="phone_number_promo_body_text">Get started now with your verified phone number. Manage chat features anytime in settings</string>
+    <string name="phone_number_promo_body_text_mo">Get started now with your verified phone number. Or skip to get chat features later and Messages will try to verify your number for you.</string>
     <string name="phone_number_promo_negative_button_text">Remind me later</string>
+    <string name="phone_number_promo_negative_button_text_mo">Skip for now</string>
     <string name="phone_number_promo_positive_button_text">Get chat features</string>
     <string name="phone_number_promo_title_text">Ready to share photos, videos &amp; more over Wi-Fi or data?</string>
     <string name="phone_number_ui_accepted_snackbar_text">You’ll be notified when chat features are available</string>
     <string name="phone_number_ui_dismissed_snackbar_action_text">Settings</string>
     <string name="phone_number_ui_dismissed_snackbar_text">To get chat features now, add your phone number or manage in settings</string>
     <string name="photo_taken">Photo taken</string>
+    <string name="photos_app_installation_required">To send sharp-clarity videos, get the Google Photos app</string>
+    <string name="photos_app_onboarding_required">To send sharp-clarity videos, allow Google Photos access</string>
+    <string name="photos_app_sharing_unavailable_try_again_later">Sharp-clarity video link is temporarily unavailable. Low-clarity video is ready to send.</string>
+    <string name="photos_app_sign_in_required">To send sharp-clarity videos, sign in to Google Photos</string>
     <string name="picker_disambiguation_title">Select destination</string>
     <string name="pin_limit_message">You can pin up to %1$d conversations</string>
     <string name="pin_success_message">Pinned %1$d of %2$d conversations</string>
@@ -1540,7 +1620,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="posted_yesterday">Yesterday%1$s%2$s</string>
     <string name="pref_version">2</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
-    <string name="preferences_license_title">Open source licenses</string>
+    <string name="preferences_license_title">Third Party Notices</string>
     <string name="premium_sms_banner_body">To send to %s and other Premium SMS numbers, turn this on in Settings.</string>
     <string name="premium_sms_banner_body_saved_contact">To send to %1$s (%2$s) and other Premium SMS numbers, turn this on in Settings.</string>
     <string name="premium_sms_banner_description">@string/banner_description</string>
@@ -1780,6 +1860,7 @@ This info helps validate assumptions and identify factors contributing to the is
     <string name="report_failed_rcs_group_creation">"Something went wrong and one or more participants weren't added."</string>
     <string name="report_group_spam_body_spam_folder">The numbers and recent texts of other group members will go to Google for review and may go to your carrier (charges may apply). This conversation will stay in “Spam &amp; blocked,” without notifications. %1$s</string>
     <string name="report_issue_action_text">Send feedback</string>
+    <string name="report_issue_description">Messages automatically detected an error. See logs for details.</string>
     <string name="report_issue_notification_text">Messages detected an error. Tap to send feedback.</string>
     <string name="report_not_spam_snackbar_message">%1$s reported as not spam</string>
     <string name="report_person_delivered">%1$s Received: %2$s</string>
@@ -1941,6 +2022,13 @@ Your phone number is used only for troubleshooting and resolving issues. Google 
     <string name="shortcuts_screen_title">Shortcuts</string>
     <string name="show_sms_link_warning_change_label">Change</string>
     <string name="show_sms_link_warning_text">Attachments will be sent as SMS messages that include a link to the attachment</string>
+    <string name="sign_in_app_name_without_account">Use %1$s without an account</string>
+    <string name="sign_in_cancel">Cancel</string>
+    <string name="sign_in_without_account">Use without an account</string>
+    <string name="sign_in_without_account_short">Without account</string>
+    <string name="sign_into_photos_app">Sign in</string>
+    <string name="sign_into_photos_app_title">To continue, sign in to Google Photos</string>
+    <string name="sign_into_photos_app_with_x_to_continue">You’re currently sending from %1$s</string>
     <string name="signature_banner_description">@string/banner_description</string>
     <string name="silent_ringtone">Silent</string>
     <string name="sim_info_psd_gid1_key">GID1</string>
@@ -2017,6 +2105,7 @@ Replies will appear in individual conversations"</string>
     <string name="snippet_image_attachment_text">Image</string>
     <string name="snippet_media_thumbnail_content_description">Reply snippet media thumbnail</string>
     <string name="snippet_self_participant_header">You</string>
+    <string name="snippet_thumbnail_broken_image_icon">Reply snippet broken media thumbnail</string>
     <string name="snippet_video_attachment_text">Video</string>
     <string name="soft_num_key_pad_backspace_content_description">Backspace</string>
     <string name="soft_num_key_pad_digit_0">0</string>
@@ -2057,7 +2146,6 @@ Replies will appear in individual conversations"</string>
     <string name="spam_folder_activity_title">Spam &amp; blocked</string>
     <string name="spam_folder_conversation_list_empty_text_v2">Spam &amp; blocked conversations appear here</string>
     <string name="spam_image_json">spam_image.json</string>
-    <string name="spam_preference_info_text_on_device">Messages uses on-device intelligence to detect spam, and sends some data about these messages to Google without including your phone number or message content. %1$s</string>
     <string name="spam_protection_consent_string">To help detect spam, Messages sends some data about your messages to Google without including your phone number or message content. %1$s</string>
     <string name="spam_reporting_from">Spam reporting</string>
     <string name="spam_settings">Spam protection</string>
@@ -2237,6 +2325,7 @@ Settings > %1$s"</string>
     <string name="theme_setting_dialog_options_light_mode">Light</string>
     <string name="theme_setting_dialog_options_system_default_mode">System default</string>
     <string name="theme_setting_dialog_title">Choose theme</string>
+    <string name="tiktok_account_login_failure">Failed to log in the selected account.</string>
     <string name="tiktok_add_account_error">Failed to add account, please try again.</string>
     <string name="tiktok_fix_it">Fix it</string>
     <string name="tiktok_load_account_failure">Failed to load accounts.</string>
@@ -2262,6 +2351,17 @@ Only you can see this name"</string>
     <string name="tombstone_self_removed_from_group_referrer_known">%1$s removed you from this group</string>
     <string name="tombstone_self_removing_others_from_group">You removed %1$s from this group</string>
     <string name="tombstone_show_link_previews">Link previews are on.&lt;br />Learn more or turn off in &lt;u>Settings&lt;/u>.</string>
+    <string name="tooltip_content">"Your Google Account powers
+features like Google Photos link
+sharing in Messages without
+accessing your conversations.
+
+Messages still send from your
+phone number. Learn more"</string>
+    <string name="tooltip_content_with_line_break_fix">"Your Google Account powers features like Google Photos link sharing in Messages without accessing your conversations.
+
+Messages still send from your phone number. Learn more"</string>
+    <string name="tooltip_link">Learn more</string>
     <string name="top_contacts_grid_name">★</string>
     <string name="top_contacts_title">Top contacts</string>
     <string name="transaction_content_description">This message is categorized as a transaction</string>
@@ -2332,6 +2432,7 @@ Phone numbers are used only for troubleshooting and resolving issues. Google wil
     <string name="update_donation_banner_title_v2">Help your app sort better with message donations to Google</string>
     <string name="updating_conversations_foreground_notification_text">Messages is updating your conversations</string>
     <string name="updating_notifications_foreground_notification_text">Messages is updating your notifications</string>
+    <string name="upload_cancel_content_description">Cancel Google Photos link sharing.</string>
     <string name="urgent">Urgent</string>
     <string name="urgent_indicator">[ Urgent! ]</string>
     <string name="urgent_snippet">[URGENT]</string>
