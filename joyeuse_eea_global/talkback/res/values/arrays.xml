@@ -20,12 +20,22 @@
         <item>70</item>
         <item>10</item>
     </integer-array>
+    <array name="gm3_progressindicator_branded_colors">
+        <item>@color/gm3_ref_brand_color_blue</item>
+        <item>@color/gm3_ref_brand_color_red</item>
+        <item>@color/gm3_ref_brand_color_yellow</item>
+        <item>@color/gm3_ref_brand_color_green</item>
+    </array>
     <array name="google_progressindicator_branded_colors">
         <item>@color/google_blue500</item>
         <item>@color/google_red500</item>
         <item>@color/google_yellow500</item>
         <item>@color/google_green500</item>
     </array>
+    <string-array name="horizontal_scan_options">
+        <item>@string/point_scan_horizontal_scans_start_from_left</item>
+        <item>@string/point_scan_horizontal_scans_start_from_right</item>
+    </string-array>
     <string-array name="initial_selector_gestures">
         <item>@string/pref_shortcut_down_key</item>
         <item>@string/pref_shortcut_up_key</item>
@@ -112,23 +122,34 @@
         <item>@string/pref_face_gesture_duration_1000</item>
         <item>@string/pref_face_gesture_duration_2000</item>
     </string-array>
+    <array name="pref_face_gesture_duration_radio_button_ids">
+        <item>@id/face_gesture_duration_fastest_radio_button</item>
+        <item>@id/face_gesture_duration_100_radio_button</item>
+        <item>@id/face_gesture_duration_250_radio_button</item>
+        <item>@id/face_gesture_duration_500_radio_button</item>
+        <item>@id/face_gesture_duration_1000_radio_button</item>
+        <item>@id/face_gesture_duration_2000_radio_button</item>
+    </array>
     <string-array name="pref_face_gesture_duration_values">
-        <item>-1</item>
+        <item>0</item>
         <item>100</item>
         <item>250</item>
         <item>500</item>
         <item>1000</item>
         <item>2000</item>
+        <item>-1</item>
     </string-array>
     <string-array name="pref_keyboard_echo_entries">
-        <item>@string/value_keyboard_echo_always</item>
-        <item>@string/value_keyboard_echo_softkeys</item>
-        <item>@string/value_keyboard_echo_never</item>
+        <item>@string/value_keyboard_echo_none</item>
+        <item>@string/value_keyboard_echo_characters_only</item>
+        <item>@string/value_keyboard_echo_words_only</item>
+        <item>@string/value_keyboard_echo_characters_and_words</item>
     </string-array>
     <string-array name="pref_keyboard_echo_values">
-        <item>0</item>
-        <item>1</item>
         <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>0</item>
     </string-array>
     <string-array name="pref_log_level_entries">
         <item>NONE</item>
@@ -167,6 +188,24 @@
         <item>@string/resume_screen_on</item>
         <item>@string/resume_screen_keyguard</item>
         <item>@string/resume_screen_manual</item>
+    </string-array>
+    <string-array name="pref_sa_log_level_entries">
+        <item>NONE</item>
+        <item>ASSERT</item>
+        <item>ERROR</item>
+        <item>WARN</item>
+        <item>INFO</item>
+        <item>DEBUG</item>
+        <item>VERBOSE</item>
+    </string-array>
+    <string-array name="pref_sa_log_level_values">
+        <item>9</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
     </string-array>
     <string-array name="pref_select_keymap_entries">
         <item>@string/value_classic_keymap</item>
@@ -234,6 +273,7 @@
         <item>@string/pref_shortcut_3finger_2tap_hold_key</item>
         <item>@string/pref_shortcut_4finger_2tap_hold_key</item>
         <item>@string/pref_shortcut_2finger_3tap_hold_key</item>
+        <item>@string/pref_shortcut_3finger_3tap_hold_key</item>
         <item>@string/pref_shortcut_fingerprint_up_key</item>
         <item>@string/pref_shortcut_fingerprint_down_key</item>
         <item>@string/pref_shortcut_fingerprint_left_key</item>
@@ -262,6 +302,16 @@
         <item>75</item>
         <item>50</item>
         <item>25</item>
+    </string-array>
+    <string-array name="pref_typing_types_talkback_entries">
+        <item>@string/value_type_confirmation_double_tap</item>
+        <item>@string/value_type_confirmation_lift_to_type</item>
+        <item>@string/value_type_confirmation_lift_to_type_for_any_key</item>
+    </string-array>
+    <string-array name="pref_typing_types_talkback_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
     <string-array name="pref_verbosity_preset_entries">
         <item>@string/pref_verbosity_preset_entry_high</item>
@@ -324,10 +374,13 @@
     </string-array>
     <string-array name="shortcut_text_editing">
         <item>@string/title_edittext_breakout_start_selection_mode</item>
+        <item>@string/title_edittext_breakout_move_to_beginning</item>
+        <item>@string/title_edittext_breakout_move_to_end</item>
+        <item>@android:string/selectAll</item>
         <item>@android:string/copy</item>
         <item>@android:string/cut</item>
         <item>@android:string/paste</item>
-        <item>@string/shortcut_editing</item>
+        <item>@string/title_copy_last_spoken_phrase</item>
     </string-array>
     <string-array name="shortcut_value_basic_navigation">
         <item>@string/shortcut_value_perform_click_action</item>
@@ -364,10 +417,13 @@
     </string-array>
     <string-array name="shortcut_value_text_editing">
         <item>@string/shortcut_value_start_selection_mode</item>
+        <item>@string/shortcut_value_move_cursor_to_beginning</item>
+        <item>@string/shortcut_value_move_cursor_to_end</item>
+        <item>@string/shortcut_value_select_all</item>
         <item>@string/shortcut_value_copy</item>
         <item>@string/shortcut_value_cut</item>
         <item>@string/shortcut_value_paste</item>
-        <item>@string/shortcut_value_editing</item>
+        <item>@string/shortcut_value_copy_last_spoken_phrase</item>
     </string-array>
     <string-array name="switch_access_color_entries">
         <item>Green</item>
@@ -411,16 +467,6 @@
         <item>@integer/material_blue_500_opaque</item>
         <item>@integer/white_opaque</item>
     </integer-array>
-    <string-array name="switch_access_node_description_order_entries">
-        <item>State, name, type</item>
-        <item>Type, name, state</item>
-        <item>Name, type, state</item>
-    </string-array>
-    <string-array name="switch_access_node_description_order_values">
-        <item>@string/state_name_type_key</item>
-        <item>@string/type_name_state_key</item>
-        <item>@string/name_type_state_key</item>
-    </string-array>
     <integer-array name="switch_access_outer_color_values">
         <item>@integer/material_green_900_opaque</item>
         <item>@integer/material_orange_900_opaque</item>
@@ -466,6 +512,18 @@
         <item>Item 7</item>
         <item>Item 8</item>
     </string-array>
+    <integer-array name="typo_pattern">
+        <item>0</item>
+        <item>10</item>
+        <item>30</item>
+        <item>30</item>
+        <item>10</item>
+        <item>60</item>
+    </integer-array>
+    <string-array name="vertical_scan_options">
+        <item>@string/point_scan_vertical_scans_start_from_top</item>
+        <item>@string/point_scan_vertical_scans_start_from_bottom</item>
+    </string-array>
     <integer-array name="view_actionable_pattern">
         <item>0</item>
         <item>50</item>
@@ -477,6 +535,12 @@
         <item>30</item>
     </integer-array>
     <integer-array name="view_focused_or_selected_pattern">
+        <item>0</item>
+        <item>15</item>
+        <item>10</item>
+        <item>15</item>
+    </integer-array>
+    <integer-array name="view_focused_pattern">
         <item>0</item>
         <item>15</item>
         <item>10</item>
@@ -496,38 +560,6 @@
         <item>20</item>
         <item>21</item>
     </integer-array>
-    <string-array name="voice_commands">
-        <item>@string/voice_commands_next_heading</item>
-        <item>@string/voice_commands_find</item>
-        <item>@string/voice_commands_find_again</item>
-        <item>@android:string/selectAll</item>
-        <item>@string/voice_commands_start_select</item>
-        <item>@string/voice_commands_finish_select</item>
-        <item>@string/voice_commands_deselect</item>
-        <item>@android:string/copy</item>
-        <item>@android:string/cut</item>
-        <item>@android:string/paste</item>
-        <item>@string/voice_commands_dictate</item>
-        <item>@string/voice_commands_label</item>
-        <item>@string/voice_commands_assistant</item>
-        <item>@string/keycombo_menu_global_home</item>
-        <item>@string/keycombo_menu_global_recent</item>
-        <item>@string/keycombo_menu_global_notifications</item>
-        <item>@string/shortcut_quick_settings</item>
-        <item>@string/shortcut_read_from_top</item>
-        <item>@string/shortcut_read_from_current</item>
-        <item>@string/title_edittext_controls</item>
-        <item>@string/language_options</item>
-        <item>@string/title_custom_action</item>
-        <item>@string/shortcut_enable_dimming</item>
-        <item>@string/shortcut_disable_dimming</item>
-        <item>@string/voice_commands_setting_speech_rate</item>
-        <item>@string/voice_commands_setting_verbosity</item>
-        <item>@string/voice_commands_setting_navigation</item>
-        <item>@string/voice_commands_first</item>
-        <item>@string/voice_commands_last</item>
-        <item>@string/title_pref_help</item>
-    </string-array>
     <integer-array name="window_state_pattern">
         <item>0</item>
         <item>10</item>
