@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
-    <string name="MSG_DEFAULT_DISPLAY_NAME">From a space</string>
+    <string name="MSG_DEFAULT_DISPLAY_NAME">Unknown space</string>
     <string name="MSG_UNDO_TASKS_COMPLETED">{NUM_TASKS_COMPLETED, plural, =1 {Task completed} other {# tasks completed}}</string>
     <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {Task deleted} other {# tasks deleted}}</string>
     <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {Task moved to {TITLE}}other {# tasks moved to {TITLE}}}</string>
@@ -25,7 +25,7 @@
     <string name="a11y_end_recurrence">End repeating</string>
     <string name="a11y_expand_completed">Expand</string>
     <string name="a11y_from_space">From %1$s</string>
-    <string name="a11y_from_unknown_space">From a space</string>
+    <string name="a11y_from_unknown_space">From an unknown space</string>
     <string name="a11y_has_related_email">Related email</string>
     <string name="a11y_has_related_file">Related file</string>
     <string name="a11y_has_related_link">Related link</string>
@@ -65,6 +65,7 @@
     <string name="access_denied_toast_while_sharing">Switch account to share</string>
     <string name="accessbility_suggestion_dropdown_closed">No suggestions available</string>
     <string name="accessbility_suggestion_dropdown_opened">Contact suggestions opened</string>
+    <string name="accessibility_string_disabled_emoji">Disabled custom emoji.</string>
     <string name="account_cache_provider">Account Cache Provider</string>
     <string name="account_category">Account</string>
     <string name="account_changed_by_admin_notification_text">Your IT admin made changes to your work account</string>
@@ -97,8 +98,6 @@
     <string name="account_notification_level_all">All</string>
     <string name="account_notification_level_high_priority">High priority only</string>
     <string name="account_notification_level_none">None</string>
-    <string name="account_picker_cancel_button">Cancel</string>
-    <string name="account_picker_error_loading_accounts">Failed to load other accounts. Continuing with %1$s</string>
     <string name="account_picker_invalid_selection_toast">Chat not enabled for this account</string>
     <string name="account_removal_progress_label">Removing account...</string>
     <string name="account_security_dialog_content_fmt">In order to use your account &lt;%s> you must update the security settings on your device. Contact your administrator for more information.</string>
@@ -389,7 +388,6 @@ Contact your IT admin for help."</string>
     <string name="admin_disabled_bot_user_info_room">Your administrator disabled bots in this space.</string>
     <string name="admin_support_msg">This action has been disabled. Contact your IT admin to learn more.</string>
     <string name="ag_app_name">Gmail</string>
-    <string name="ag_label_search_hint">Search in %1$s</string>
     <string name="ag_phone">phone</string>
     <string name="ag_search_hint">Search in mail</string>
     <string name="all_folders_heading">All labels</string>
@@ -397,6 +395,7 @@ Contact your IT admin for help."</string>
     <string name="always_show_images">Always show pictures from this sender</string>
     <string name="always_show_images_toast">Pictures from this sender will be shown automatically.</string>
     <item type="string" name="ampm_circle_radius_multiplier">0.19</item>
+    <string name="androidx_startup">androidx.startup</string>
     <string name="anomalous_replyto">This email claims to come from %2$s, but replies will go to an email address at another domain.</string>
     <string name="anonymous_member_create_chat_info">This chat was created %1$s</string>
     <string name="anonymous_member_create_group_info">This space was created %1$s</string>
@@ -485,6 +484,10 @@ Contact your IT admin for help."</string>
     <string name="attachments">Attachments</string>
     <string name="attachments_download">Attachments Download</string>
     <string name="attachments_header">Attachments</string>
+    <string name="attachments_limit_reached_body">You can attach up to %1$d photos or videos in each message. To share more than %1$d photos or videos, send them in separate messages.</string>
+    <string name="attachments_limit_reached_title">You’ve added %1$d attachments</string>
+    <string name="attachments_viewer_heading">%1$d/%2$d</string>
+    <string name="attachments_viewer_media_content_description">Media item</string>
     <string name="audio_call_button">Start voice call</string>
     <string name="audio_preference_category_key">audioPreferenceCategory</string>
     <string name="audio_preference_category_title">Audio</string>
@@ -505,6 +508,7 @@ Contact your IT admin for help."</string>
     <string name="autocomplete_section_groups_header_content_description">Group conversations section</string>
     <string name="autocomplete_section_groups_header_title">Group conversations</string>
     <string name="available_addons">Available add-ons:</string>
+    <string name="away_indicator_text">Away</string>
     <string name="back_button_content_description">Back</string>
     <string name="back_settings_button_talkback_content_description">Back</string>
     <string name="bad_card_nav_action">Failed to complete your action because the add-on will be in bad state.</string>
@@ -671,11 +675,11 @@ Contact your IT admin for help."</string>
     <string name="cancel_chip_content_description">Remove chip</string>
     <string name="cancel_confirmation_in_conversation_view">Scheduled send canceled and message reverted to draft</string>
     <string name="cancel_join_meeting">Cancel</string>
+    <string name="cancel_quoted_message_content_description">Remove quoted message</string>
     <string name="cancel_scheduled_send_button">Cancel send</string>
     <string name="cancel_scheduled_send_button_disabled_content_description">Cancel send unavailable</string>
     <string name="cancel_text">Cancel</string>
     <string name="cancel_unknown_state">Message may still be scheduled.</string>
-    <string name="cancel_upload_content_description">Cancel attachment upload</string>
     <string name="canceling">Canceling send…</string>
     <string name="canceling_send">Canceling…</string>
     <string name="cannot_attach_empty_attachment">"Can't attach empty file"</string>
@@ -780,6 +784,7 @@ Contact your IT admin for help."</string>
     <string name="chat_message_resend">Resend</string>
     <string name="chat_message_sending">Sending…</string>
     <string name="chat_messages_recorded">Messages are also recorded</string>
+    <string name="chat_notification_inline_banner_key">Chat notification inline banner</string>
     <string name="chat_onboarding_consumer_description">Say more with reactions and say it faster with Smart Reply</string>
     <string name="chat_onboarding_consumer_title">Chat with a friend</string>
     <string name="chat_onboarding_enterprise_description">For quick replies, connect with anyone you work with over chat</string>
@@ -800,7 +805,6 @@ Contact your IT admin for help."</string>
     <string name="chips_action_copy">Copy</string>
     <string name="chips_permission_text">Allow contacts suggestions</string>
     <string name="chips_permission_text_local_store_only">Show phone contacts</string>
-    <string name="choose_account">Choose account</string>
     <string name="choosertitle_sharevia">Share via</string>
     <string name="chronological_section_search_results_header">Results in mail</string>
     <item type="string" name="circle_radius_multiplier">0.82</item>
@@ -857,6 +861,7 @@ Contact your IT admin for help."</string>
     <string name="compose_bar_failed_to_copy_to_clipboard">Copy to clipboard failed</string>
     <string name="compose_bar_hint_history_off">History is off</string>
     <string name="compose_bar_hint_history_on">History is on</string>
+    <string name="compose_camera_gallery_camera_button_content_description">Open fullscreen camera</string>
     <string name="compose_camera_gallery_system_folders_button_content_description">Opens system picker on click</string>
     <string name="compose_high_priority_content_desc">High priority</string>
     <string name="compose_low_priority_content_desc">Low priority</string>
@@ -872,6 +877,8 @@ Contact your IT admin for help."</string>
     <string name="conf_access_header_text">Meeting access</string>
     <string name="conf_account_switch_hover_state">"{account_type}
  {account_email}"</string>
+    <string name="conf_active_public_livestreaming_content_description">This meeting is being publicly live-streamed</string>
+    <string name="conf_active_transcription_content_description">This meeting is being transcribed</string>
     <string name="conf_activities_paywall_back_button_content_description">Back</string>
     <string name="conf_activities_paywall_entry_body">Get access to additional activities and larger calls</string>
     <string name="conf_activities_paywall_entry_learn_more">Learn more</string>
@@ -895,6 +902,7 @@ Contact your IT admin for help."</string>
     <string name="conf_add_custom_background_start_notification">Getting your custom image ready</string>
     <string name="conf_add_custom_background_too_many_backgrounds_error">"You can't add any more custom background images. Touch and hold a background to remove it."</string>
     <string name="conf_added_local_cohost_notification_text">"You're now a co-host"</string>
+    <string name="conf_ask_to_use_companion_mode">Ask to use Companion mode</string>
     <string name="conf_audio_and_video_turned_off_message">"Your breakout room has closed and you've been moved to the main room. Your microphone and camera are turned off."</string>
     <string name="conf_audio_and_video_turned_off_with_lock_on_message">"Your breakout room has closed and you've been moved to the main room. 
  
@@ -913,12 +921,14 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_background_replace_enable_error_notification">"Something went wrong and your background can't be replaced"</string>
     <string name="conf_background_replace_open_popup">Background effects panel opened</string>
     <string name="conf_background_replace_panel_title">Backgrounds</string>
+    <string name="conf_block_checkbox_text">Block from this call</string>
     <string name="conf_bluetooth">Bluetooth</string>
     <string name="conf_bluetooth_selected_content_description">Bluetooth, selected</string>
     <string name="conf_breakout_auto_move_acknowledge_button">Got it</string>
     <string name="conf_breakout_closed_and_audio_video_off_notification_description">Your breakout room is closed, and your mic and camera are now off</string>
     <string name="conf_breakout_end_timer_removed">Breakout room no longer ending soon.</string>
     <string name="conf_breakout_final_end_timer_started">Breakout room ending in {SECONDS} seconds.</string>
+    <string name="conf_broadcast_and_transcription_active_prejoin_text">This meeting is being streamed and transcribed</string>
     <string name="conf_button_audio_off">In-call audio output, audio off</string>
     <string name="conf_button_bluetooth">In-call audio output, Bluetooth</string>
     <string name="conf_button_hearing_aid">In-call audio output, hearing aid</string>
@@ -933,6 +943,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_cam_control_disabled_by_moderator_content_description">Camera control disabled by host</string>
     <string name="conf_camera_grasped_by_other_apps">"Meet's camera was automatically turned off"</string>
     <string name="conf_cancel_help_button_text">Cancel help</string>
+    <string name="conf_cannot_pin_more">"You can't pin anyone else"</string>
     <string name="conf_captions_unavailable_text">Captions temporarily unavailable</string>
     <string name="conf_change_background_accessibility_hint">Change background</string>
     <string name="conf_chat_close_button_content_description">Close</string>
@@ -960,6 +971,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_delete_custom_background_dialog_yes">Yes</string>
     <string name="conf_delete_custom_background_error_notification">"Something went wrong and your image can't be deleted"</string>
     <string name="conf_delete_custom_background_success_notification">Added image removed</string>
+    <string name="conf_dialog_cancel">Cancel</string>
     <string name="conf_dismiss_five_minute_warning_notice_content_description">Dismiss</string>
     <string name="conf_effects_category_ar_filters_description">Jump to filters</string>
     <string name="conf_effects_category_ar_filters_label">Filters</string>
@@ -976,6 +988,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_effects_room_done_button_text">Done</string>
     <string name="conf_effects_room_no_internet_connection">No internet connection</string>
     <string name="conf_effects_room_video_preview_content_description">Your video preview</string>
+    <string name="conf_eject_block_rejoin_success_text">{DISPLAY_NAME} was blocked from this call</string>
     <string name="conf_eject_failure_text">"You can't remove this person right now"</string>
     <string name="conf_eject_permission_failure_text">"You're not allowed to remove this person"</string>
     <string name="conf_end_of_call_dialog_body">Get access to group calls with no 60-minute limit and even more features like cloud recordings, polls, larger meetings, and more</string>
@@ -992,11 +1005,18 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_fullscreen_your_video">Make your video full screen</string>
     <string name="conf_google_account_type">Google account</string>
     <string name="conf_got_it">Got it</string>
+    <string name="conf_greenroom_public_livestreaming_active">This meeting is being publicly live-streamed.</string>
+    <string name="conf_greenroom_public_livestreaming_and_broadcast_active">This meeting is being publicly live-streamed and streamed.</string>
+    <string name="conf_greenroom_public_livestreaming_and_recording_active">This meeting is being publicly live-streamed and recorded.</string>
+    <string name="conf_greenroom_public_livestreaming_recording_and_broadcast_active">This meeting is being publicly live-streamed, streamed and recorded.</string>
+    <string name="conf_greenroom_transcription_active">Transcription is enabled</string>
     <string name="conf_guest_email_copied">Guest email copied</string>
     <string name="conf_guest_email_label">Guest email</string>
     <string name="conf_handover_to_main_call_message">Returning to main call…</string>
     <string name="conf_hearing_aid">Hearing aid</string>
     <string name="conf_hearing_aid_selected_content_description">Hearing aid, selected</string>
+    <string name="conf_hide_question_error_text">"The question couldn't be hidden. Try again."</string>
+    <string name="conf_hide_question_text">"You've hidden this question"</string>
     <string name="conf_host_controls_breakout_generic_description">Host management is on. All breakout rooms use the main room settings except when changed here. These settings apply to this breakout room only.</string>
     <string name="conf_host_controls_breakout_generic_title">Controls for this breakout room</string>
     <string name="conf_host_controls_breakout_name_description">Host management is on. All breakout rooms use the main room settings except when changed here. These settings apply to “{BREAKOUT_NAME}” only.</string>
@@ -1019,6 +1039,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_information_card_dismiss">Dismiss</string>
     <string name="conf_information_card_learn_more">Learn more</string>
     <string name="conf_initial_notice_dialog_body_text">Free group calls have a limit of 1 hour. Upgrade to enjoy group calls of up to 24 hours.</string>
+    <string name="conf_initializing_public_livestreaming_content_description">Public live streaming will start soon</string>
+    <string name="conf_initializing_transcription_content_description">Transcription will start soon</string>
     <string name="conf_instant_meeting_text">Start an instant meeting</string>
     <string name="conf_invite">Invite</string>
     <string name="conf_invited">Invited</string>
@@ -1029,8 +1051,26 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_join_scheduled_call_content_description">Join meeting</string>
     <string name="conf_learn_more">Learn more</string>
     <string name="conf_location_copied">Location copied</string>
+    <string name="conf_lonely_meeting_setting_summary">Removes you from a call after a few minutes if no one else joins</string>
+    <string name="conf_lonely_meeting_setting_title">Leave empty calls</string>
+    <string name="conf_lower_all_action">Lower their hands</string>
+    <string name="conf_lower_all_button_text">Lower all</string>
+    <string name="conf_lower_all_dialog_content_text">"Lower everyone's hands?"</string>
+    <string name="conf_lower_all_hands_failure">"Couldn't lower the hand for everyone. Try again."</string>
+    <string name="conf_lower_all_hands_success">"You lowered everyone's hands"</string>
+    <string name="conf_lower_hand_action">Lower the hand</string>
+    <string name="conf_lower_hand_button_content_description">Lower hand for {PARTICIPANT_NAME}</string>
+    <string name="conf_lower_hand_dialog_content_text">Lower the hand for {PARTICIPANT_NAME}?</string>
+    <string name="conf_lower_hand_failure">"Couldn't lower the hand for {PARTICIPANT_NAME}. Try again."</string>
+    <string name="conf_lower_hand_participant_action">Lower hand</string>
+    <string name="conf_lower_hand_success">You lowered the hand for {PARTICIPANT_NAME}</string>
+    <string name="conf_lowered_hand_accessibility_message">You lowered your hand</string>
     <string name="conf_main_stage_lonely_call_with_companions">"{NUMBER_OF_REMOTE_COMPANIONS, plural, =0 {You're the only one here} =1 {{PARTICIPANT_NAME_1} is using Companion mode} =2 {{PARTICIPANT_NAME_1} and {PARTICIPANT_NAME_2} are using Companion mode} other {{PARTICIPANT_NAME_1}, {PARTICIPANT_NAME_2}, and {NUMBER_OF_ADDITIONAL_REMOTE_COMPANIONS} more are using Companion mode} }"</string>
     <string name="conf_main_stage_presenting_name_text">{PARTICIPANT_NAME} is presenting</string>
+    <string name="conf_mark_answered_error_text">"The question can't be marked as answered. Try again."</string>
+    <string name="conf_mark_answered_text">"You've marked this question as answered"</string>
+    <string name="conf_mark_unanswered_error_text">The question is still shown as answered. Try again.</string>
+    <string name="conf_mark_unanswered_text">This question is no longer marked as answered</string>
     <string name="conf_meeting_joined_at_time_text">Joined at {meeting_joined_time}</string>
     <string name="conf_meeting_joined_on_date_text">Joined on {meeting_joined_time}</string>
     <string name="conf_meeting_left_at_time_text">Left at {meeting_left_time}</string>
@@ -1043,6 +1083,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_meeting_safety_audio_video_lock_off_notification">"The host activated everyone's mic and camera"</string>
     <string name="conf_meeting_safety_audio_video_lock_on_notification">"The host deactivated everyone's mic and camera"</string>
     <string name="conf_meeting_safety_conference_inactivity_check_title">Are you still there?</string>
+    <string name="conf_meeting_safety_lonely_meeting_check_turn_off_text_for_hub_all">To stop seeing this, go to your account in Settings and turn off {SETTING_TITLE}.</string>
+    <string name="conf_meeting_safety_lonely_meeting_check_turn_off_text_for_hub_as_meet">To stop seeing this, go to {SETTINGS_HEADER} and turn off {SETTING_TITLE}.</string>
     <string name="conf_meeting_safety_lonely_meeting_dialog_leave_button_text">Leave now</string>
     <string name="conf_meeting_safety_lonely_meeting_dialog_stay_button_text">Stay in the call</string>
     <string name="conf_meeting_safety_lonely_meeting_timer_content">{MINUTES}:{SECONDS}</string>
@@ -1086,23 +1128,29 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_moderation_present_lock_header">Share their screen</string>
     <string name="conf_moderation_settings_description">Use these host settings to keep control of your meeting</string>
     <string name="conf_moderation_settings_subheader">Let everyone</string>
-    <string name="conf_moderation_settings_title">Meeting safety</string>
     <string name="conf_moderation_update_failed_text">"Can't update the setting. Try again."</string>
     <string name="conf_moderation_update_failed_text_bor">"You can't change host settings while breakout rooms are open"</string>
     <string name="conf_moderation_update_failed_text_no_retry">"Can't update the setting"</string>
     <string name="conf_move_to_main_room_when_timer_expires_snackbar_text">"When the timer expires, you'll move to the main room and your mic and camera will be turned off"</string>
     <string name="conf_multilang_captions_initializing_text">Captions are starting</string>
     <string name="conf_multilang_captions_off_text">Captions are off</string>
+    <string name="conf_multipinning_edu">You can double-tap to pin up to 3 people at a time. This only affects what you see.</string>
+    <string name="conf_multipinning_edu_acknowledge_button">Got it</string>
     <string name="conf_multiple_participants_ejected_notification">Several participants were removed from this call</string>
     <string name="conf_multiple_participants_joined_notification">Several participants joined the meeting</string>
     <string name="conf_multiple_participants_left_notification">Several participants left the meeting</string>
     <string name="conf_mute_header_title">Mute</string>
+    <string name="conf_my_question_hidden">Your question has been hidden</string>
+    <string name="conf_my_question_marked_answered">Your question has been marked as answered</string>
+    <string name="conf_my_question_marked_unanswered">Your question is no longer marked as answered</string>
+    <string name="conf_my_question_shown">Your question has been revealed</string>
     <string name="conf_network_disconnected">No internet. Trying to reconnect.</string>
     <string name="conf_new_meeting">New meeting</string>
     <string name="conf_no_answer_text">No Answer</string>
     <string name="conf_no_browser_available">"Can't open link. No browser available."</string>
     <string name="conf_no_dialer_available">"Can't find a dialer app to place your call"</string>
     <string name="conf_no_frequent_contacts_text">People you contact frequently will appear here</string>
+    <string name="conf_no_upcoming_meetings_text">"You don't have any upcoming meetings soon"</string>
     <string name="conf_notification_lonely_meeting_content">Your call is ending soon</string>
     <string name="conf_notification_lonely_meeting_leave_button_text">Leave the call</string>
     <string name="conf_notification_lonely_meeting_stay_button_text">Return</string>
@@ -1121,6 +1169,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_open_self_video_actions">Actions for your video.</string>
     <string name="conf_open_self_video_actions_with_active_effect_description">Actions for your video. {EFFECT_DESCRIPTION} is currently selected</string>
     <string name="conf_participant_ejected_notification">{NUMBER_OF_OTHER_PARTICIPANTS, plural, =0 {{PARTICIPANT_NAME} was removed from this call} =1 {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more were removed from this call} other {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more were removed from this call} }</string>
+    <string name="conf_participant_presenting_name_text">{PARTICIPANT_NAME} (Presenting)</string>
     <string name="conf_people_search_hint">Search for someone in this call</string>
     <string name="conf_people_search_match_count">{NUMBER_OF_MATCHES, plural, =0 {{NUMBER_OF_MATCHES} items match} =1 {{NUMBER_OF_MATCHES} item matches} other {{NUMBER_OF_MATCHES} items match} }</string>
     <string name="conf_people_search_no_match">Nothing matches \"{SEARCH_TERM}\"</string>
@@ -1131,10 +1180,12 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_permissions_banner_text">To make and receive calls, give {app_name_for_permission_dialog} permission to use your microphone and camera</string>
     <string name="conf_phone">Phone</string>
     <string name="conf_phone_selected_content_description">Phone, selected</string>
+    <string name="conf_pin_participant_content_description">Pin video stream from {DISPLAY_NAME}</string>
     <string name="conf_pin_your_video">Pin your video</string>
     <string name="conf_pinned_content_description">Pinned</string>
     <string name="conf_pip_audio_lock_notification_content_description">Audio input disabled by the host</string>
     <string name="conf_pip_broadcast_active_content_description">This meeting is being streamed</string>
+    <string name="conf_pip_broadcast_and_transcription_active_content_description">This meeting is being streamed and transcribed</string>
     <string name="conf_pip_give_permission_for_cam_content_description">Give permission to turn camera on</string>
     <string name="conf_pip_give_permission_for_mic_content_description">Give permission to turn microphone on</string>
     <string name="conf_pip_main_stage_lonely_call_with_companions">"{NUMBER_OF_REMOTE_COMPANIONS, plural, =0 {You're the only one here} =1 {1 Companion is connected to the call} other {{NUMBER_OF_REMOTE_COMPANIONS} Companions are connected to the call} }"</string>
@@ -1142,13 +1193,46 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_pip_main_stage_pinned_self_label">Pinned</string>
     <string name="conf_pip_main_stage_waiting_for_host">Waiting for the host to join</string>
     <string name="conf_pip_other_participants_count">+{count}</string>
+    <string name="conf_pip_public_livestream_active_content_description">This meeting is being publicly live-streamed.</string>
+    <string name="conf_pip_public_livestream_and_broadcast_active_content_description">This meeting is being publicly live-streamed and streamed.</string>
+    <string name="conf_pip_public_livestream_and_recording_active_content_description">This meeting is being publicly live-streamed and recorded.</string>
+    <string name="conf_pip_public_livestream_and_transcription_active_content_description">This meeting is being publicly live-streamed and transcribed.</string>
+    <string name="conf_pip_public_livestream_broadcast_and_recording_active_content_description">This meeting is being publicly live-streamed, streamed and recorded.</string>
+    <string name="conf_pip_public_livestream_broadcast_and_transcription_active_content_description">This meeting is being publicly live-streamed, streamed and transcribed</string>
+    <string name="conf_pip_public_livestream_recording_and_transcription_active_content_description">This meeting is being publicly live-streamed, recorded and transcribed</string>
+    <string name="conf_pip_public_livestream_recording_broadcast_and_transcription_active_content_description">This meeting is being publicly live-streamed, streamed, recorded and transcribed</string>
     <string name="conf_pip_recording_active_content_description">This meeting is being recorded</string>
     <string name="conf_pip_recording_and_broadcast_active_content_description">This meeting is being streamed and recorded</string>
+    <string name="conf_pip_recording_and_transcription_active_content_description">This meeting is being recorded and transcribed</string>
+    <string name="conf_pip_recording_broadcast_and_transcription_active_content_description">This meeting is being recorded, streamed and transcribed</string>
+    <string name="conf_pip_transcription_active_content_description">This meeting is being transcribed</string>
     <string name="conf_pip_turn_cam_off_content_description">Turn camera off</string>
     <string name="conf_pip_turn_cam_on_content_description">Turn camera on</string>
     <string name="conf_pip_video_lock_notification_content_description">Video input disabled by the host</string>
     <string name="conf_presentation_user_display_name">{DISPLAY_NAME} (Presentation)</string>
+    <string name="conf_public_livestream_active_prejoin_text">This meeting is being publicly live-streamed.</string>
+    <string name="conf_public_livestream_and_broadcast_active_prejoin_text">This meeting is being publicly live-streamed and streamed.</string>
+    <string name="conf_public_livestream_and_recording_active_prejoin_text">This meeting is being publicly live-streamed and recorded.</string>
+    <string name="conf_public_livestream_and_transcription_active_prejoin_text">This meeting is being publicly live-streamed and transcribed.</string>
+    <string name="conf_public_livestream_broadcast_and_recording_active_prejoin_text">This meeting is being publicly live-streamed, streamed and recorded.</string>
+    <string name="conf_public_livestream_broadcast_and_transcription_active_prejoin_text">This meeting is being publicly live-streamed, streamed and transcribed</string>
+    <string name="conf_public_livestream_recording_and_transcription_active_prejoin_text">This meeting is being publicly live-streamed, recorded and transcribed</string>
+    <string name="conf_public_livestream_recording_broadcast_and_transcription_active_prejoin_text">This meeting is being publicly live-streamed, streamed, recorded and transcribed</string>
+    <string name="conf_public_livestreaming_initiated">This meeting is being publicly live-streamed</string>
+    <string name="conf_public_livestreaming_initiated_by_participant">{PARTICIPANT_NAME} has started public live streaming</string>
+    <string name="conf_public_livestreaming_notification_text">PUBLIC</string>
+    <string name="conf_public_livestreaming_stopped">Public live streaming has stopped</string>
+    <string name="conf_public_livestreaming_stopped_by_participant">{PARTICIPANT_NAME} has stopped public live streaming</string>
+    <string name="conf_question_hidden">Question hidden</string>
     <string name="conf_quick_action_screen_sharing_disabled">"You're not allowed to share your screen right now"</string>
+    <string name="conf_raised_hand_accessibility_message">You raised your hand</string>
+    <string name="conf_raised_hands_with_count_header_title">{NUMBER_OF_RAISED_HANDS, plural, =1 {{NUMBER_OF_RAISED_HANDS} raised hand} other {{NUMBER_OF_RAISED_HANDS} raised hands} }</string>
+    <string name="conf_reactions_not_enabled">"Reactions aren't available in this call"</string>
+    <string name="conf_recording_and_transcription_active_prejoin_text">This meeting is being recorded and transcribed</string>
+    <string name="conf_recording_broadcast_and_transcription_active_prejoin_text">This meeting is being recorded, streamed and transcribed</string>
+    <string name="conf_remote_anonymous_knocker_warning_description">"This person isn't signed in with a Google Account. They might not be who they claim to be."</string>
+    <string name="conf_remote_anonymous_knocker_warning_title">Be sure you know who this is</string>
+    <string name="conf_remote_knocker_warning_reason_anonymous_suspicious_user">"This person's actions during the call have been concerning"</string>
     <string name="conf_remote_knocker_warning_reason_suspicious_user">This person is suspected of being abusive in the past</string>
     <string name="conf_remote_knockers_channel_name">Requests to join</string>
     <string name="conf_remote_knockers_notification_description">Someone wants to join. Tap to return to the call.</string>
@@ -1164,8 +1248,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_removed_local_cohost_notification_text">"You're no longer a co-host"</string>
     <string name="conf_report_abuse_by_participant_screen_title">Report {PARTICIPANT_NAME}?</string>
     <string name="conf_report_abuse_consent_got_it">Got it</string>
-    <string name="conf_report_abuse_consent_learn_more">Learn more</string>
     <string name="conf_report_abuse_consent_message">If you report abuse during a call, you might have the option of sending a short video-only clip to Google to verify the abuse</string>
+    <string name="conf_report_abuse_consent_message_with_learn_more_link">If you report abuse during a call, you might have the option of sending a short video-only clip to Google to verify the abuse. &lt;a href=%1$s>Learn more about reporting abuse&lt;/a></string>
     <string name="conf_report_abuse_consent_title">Meet keeps you safe</string>
     <string name="conf_report_abuse_display_names_helper">Use commas to separate multiple names</string>
     <string name="conf_report_abuse_display_names_hint">Full names of abusers</string>
@@ -1211,6 +1295,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_self_started_sharing_screen">"You're now sharing your screen"</string>
     <string name="conf_short_stop_sharing">Stop</string>
     <string name="conf_short_you_are_sharing_your_screen">"You're sharing your screen"</string>
+    <string name="conf_show_question_error_text">"The question couldn't be shown. Try again."</string>
+    <string name="conf_show_question_text">"You've revealed this question"</string>
     <string name="conf_someone_requested_help_snackbar_text">Someone asked for help</string>
     <string name="conf_speaker_selected_content_description">Speaker, selected</string>
     <string name="conf_speakerphone">Speaker</string>
@@ -1224,28 +1310,41 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_switch_to_back_camera">Switch to back facing camera</string>
     <string name="conf_switch_to_front_camera">Switch to front facing camera</string>
     <string name="conf_third_party_account_type">Third party account</string>
+    <string name="conf_transcription_active_prejoin_text">This meeting is being transcribed</string>
+    <string name="conf_transcription_initiated">This meeting is being transcribed</string>
+    <string name="conf_transcription_initiated_by_participant">{PARTICIPANT_NAME} has started transcription</string>
+    <string name="conf_transcription_notification_text">TRA</string>
+    <string name="conf_transcription_stopped">Transcription has stopped</string>
+    <string name="conf_transcription_stopped_by_participant">{PARTICIPANT_NAME} has stopped transcription</string>
     <string name="conf_turn_off_background_accessibility_hint">Turn off background effect</string>
     <string name="conf_turn_off_effect_accessibility_hint">Turn off effect</string>
     <string name="conf_turn_on_effect_accessibility_hint">Turn on effect</string>
     <string name="conf_unable_to_join_call">Unable to join this call.</string>
     <string name="conf_unable_to_join_call_original_caller_left">Unable to join this call. The original caller may have left before you joined.</string>
+    <string name="conf_unpin_participant_content_description">Unpin video stream from {DISPLAY_NAME}</string>
     <string name="conf_unpin_your_video">Unpin your video</string>
     <string name="conf_unsupported_feature_dismiss">Dismiss</string>
     <string name="conf_unsupported_feature_message">This meeting requires a newer version of this app. Update your app or join on another device.</string>
     <string name="conf_unsupported_feature_update">Update</string>
     <string name="conf_usb_headset">USB headphones</string>
     <string name="conf_usb_headset_selected_content_description">USB headphones, selected</string>
+    <string name="conf_use_companion_mode">Use Companion mode</string>
     <string name="conf_video_call_content_description">Start video call with {name_or_email}</string>
     <string name="conf_video_disallowed_dialog_got_it">Got it</string>
     <string name="conf_video_disallowed_dialog_stop_sharing">Stop sharing</string>
+    <string name="conf_voting_on_hidden_question_disabled_error">"Hidden questions can't be voted on"</string>
     <string name="conf_wired_headset">Wired headphones</string>
     <string name="conf_wired_headset_selected_content_description">Wired headphones, selected</string>
     <string name="conf_you">You</string>
     <string name="conference_activities_allow_questions_toggle">Allow questions</string>
+    <string name="conference_activities_anon_question_name">Anonymous</string>
+    <string name="conference_activities_ask_anon_question_checkbox">Post anonymously</string>
+    <string name="conference_activities_ask_anon_questions_toggle">Allow anonymous questions</string>
     <string name="conference_activities_ask_question_button">Ask a question</string>
     <string name="conference_activities_ask_question_hint">Ask your question here</string>
     <string name="conference_activities_ask_question_hint_with_warning">Ask your question here. Your name and question will be recorded.</string>
     <string name="conference_activities_ask_question_post">Post</string>
+    <string name="conference_activities_ask_questions_toggle">Allow questions in Q&amp;A</string>
     <string name="conference_activities_available_header">Available activities</string>
     <string name="conference_activities_closed_question_submission">The host has closed question submission</string>
     <string name="conference_activities_delete_question_content_description">Delete question</string>
@@ -1254,11 +1353,17 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_activities_delete_question_dialog_remove_button">Remove</string>
     <string name="conference_activities_delete_question_dialog_title">Remove this question?</string>
     <string name="conference_activities_delete_question_error_text">"The question wasn't deleted. Try again."</string>
+    <string name="conference_activities_failed_anon">"Couldn't post your question anonymously. Tap to post with your name or delete."</string>
     <string name="conference_activities_failed_question_delete">Delete</string>
     <string name="conference_activities_failed_question_snackbar_text">"Couldn't post your question"</string>
     <string name="conference_activities_failed_question_text">"Couldn't post your question. Tap to try again or delete."</string>
     <string name="conference_activities_failed_question_try_again">Try again</string>
     <string name="conference_activities_filter_by_content_description">Filter by {FILTERING_OPTION}</string>
+    <string name="conference_activities_header_text">Meeting activities</string>
+    <string name="conference_activities_hide_question_content_description">Hide question from others</string>
+    <string name="conference_activities_mark_question_answered_content_description">Mark question as answered</string>
+    <string name="conference_activities_mark_question_unanswered_content_description">Mark question as unanswered</string>
+    <string name="conference_activities_moderator_settings_content_description">Settings</string>
     <string name="conference_activities_multiple_polls_notification">The host started new polls</string>
     <string name="conference_activities_multiple_questions_notification">{QUESTION_ASKER_NAME} and {OTHER_QUESTION_ASKER_COUNT} more posted questions</string>
     <string name="conference_activities_no_questions_text">No questions yet</string>
@@ -1300,17 +1405,18 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_activities_questions_timestamp">{QUESTION_DATE} • {QUESTION_TIME}</string>
     <string name="conference_activities_questions_title">Q&amp;A</string>
     <string name="conference_activities_remove_vote_button_content_description">{NUMBER_OF_VOTES, plural, =1 {{NUMBER_OF_VOTES} upvote, remove vote} other {{NUMBER_OF_VOTES} upvotes, remove vote} }</string>
+    <string name="conference_activities_retry_non_anon">Post with your name</string>
     <string name="conference_activities_selected_dropdown_content_description">Selected, {DROPDOWN_OPTION}</string>
     <string name="conference_activities_single_poll_notification">The host started a poll</string>
     <string name="conference_activities_single_question_notification">{QUESTION_ASKER_NAME} has posted a question</string>
     <string name="conference_activities_sort_by_content_description">Sort by {SORTING_OPTION}</string>
     <string name="conference_activities_two_questions_notification">{FIRST_QUESTION_ASKER_NAME} and {SECOND_QUESTION_ASKER_NAME} posted questions</string>
+    <string name="conference_activities_unhide_question_content_description">Show question to others</string>
     <string name="conference_activities_vote_button_content_description">{NUMBER_OF_VOTES, plural, =1 {{NUMBER_OF_VOTES} upvote, upvote} other {{NUMBER_OF_VOTES} upvotes, upvote} }</string>
     <string name="conference_activities_vote_question_error_text">"Your vote wasn't counted. Try again."</string>
     <string name="conference_backgrounded_toast_hac">To return to your call, open Chat</string>
     <string name="conference_backgrounded_toast_ham">To return to your call, open Meet</string>
     <string name="conference_backgrounded_toast_hub">To return to your Meet call, open Gmail</string>
-    <string name="conference_bar_content_description">upcoming event</string>
     <string name="conference_captions_ftu_dialog_got_it">Got it</string>
     <string name="conference_captions_ftu_dialog_settings">Settings</string>
     <string name="conference_captions_ftu_message">Your captions language is set to &lt;b>{current_captions_language}&lt;/b>. You can change this in &lt;b>Settings&lt;/b>.</string>
@@ -1363,6 +1469,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_ended_dismiss">Dismiss</string>
     <string name="conference_ended_message">Your host ended the meeting for everyone</string>
     <string name="conference_ended_paywall">This meeting has ended</string>
+    <string name="conference_failed_create_meeting_not_allowed">"Your organization doesn't let you call or create meetings here"</string>
     <string name="conference_failed_outbound_call_not_allowed">"Couldn't complete the call"</string>
     <string name="conference_failed_outbound_calling_requires_update">Calling requires a newer version of this app. Update your app or use another device.</string>
     <string name="conference_failed_to_connect">"Couldn't connect you to the video call"</string>
@@ -1410,16 +1517,20 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_notification_permission_missing_dialog_not_now">Not now</string>
     <string name="conference_notification_permission_missing_dialog_title">Notification permissions missing</string>
     <string name="conference_reactions_emoji_motion_switch_preference_key">reactionsEmojiMotionSwitchPreference</string>
-    <string name="conference_reactions_emoji_motion_switch_preference_summary">Let emojis move on the screen</string>
-    <string name="conference_reactions_emoji_motion_switch_preference_title">Emoji motion</string>
+    <string name="conference_reactions_emoji_motion_switch_preference_summary">Reaction emojis move on the screen</string>
+    <string name="conference_reactions_emoji_motion_switch_preference_title">Floating emojis</string>
     <string name="conference_reactions_enable_switch_preference_key">reactionsEnableSwitchPreference</string>
-    <string name="conference_reactions_enable_switch_preference_summary">Enable receiving emojis</string>
-    <string name="conference_reactions_enable_switch_preference_title">Reactions</string>
+    <string name="conference_reactions_enable_switch_preference_summary">"When off, you'll see your reactions only"</string>
+    <string name="conference_reactions_enable_switch_preference_title">Show all reactions</string>
     <string name="conference_reactions_preference_category_key">reactionsCategory</string>
     <string name="conference_reactions_preference_category_title">Reactions</string>
+    <string name="conference_reactions_roster_switch_preference_key">reactionsRosterSwitchPreference</string>
+    <string name="conference_reactions_roster_switch_preference_summary">Shows the people offscreen who send reactions</string>
+    <string name="conference_reactions_roster_switch_preference_title">Sender list</string>
     <string name="conference_reactions_sounds_switch_preference_key">reactionsSoundsSwitchPreference</string>
-    <string name="conference_reactions_sounds_switch_preference_summary">Play reaction sounds</string>
+    <string name="conference_reactions_sounds_switch_preference_summary">Hear a sound when a reaction appears</string>
     <string name="conference_reactions_sounds_switch_preference_title">Sounds</string>
+    <string name="conference_reactions_unavailable_setting_banner">"Reactions aren't available. These settings will apply when reactions are available."</string>
     <string name="conference_showing_captions_text">Showing captions in {LANGUAGE_NAME}</string>
     <string name="conference_timeout_joining_meeting">No one responded to your request to join the call</string>
     <string name="conference_translating_captions_text">Translating captions to {LANGUAGE_NAME}</string>
@@ -1500,6 +1611,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="could_not_start_event_scheduling">Unable to schedule event.</string>
     <string name="could_not_verify_sender">"Be careful with this message. Our systems couldn't verify that this message was really sent by &lt;b>%2$s&lt;/b>. You might want to avoid clicking links or replying with personal information."</string>
     <string name="country_display_name">{COUNTRY_NAME} ({REGION_CODE})</string>
+    <string name="create_advanced_panel_text">Advanced</string>
     <string name="create_app_dm_action_bar_title">Add app</string>
     <string name="create_app_dm_failure_message">"App DM for %s couldn't be created. Try again in a few minutes."</string>
     <string name="create_app_dm_hint_text">Type an app name</string>
@@ -1510,15 +1622,16 @@ More numbers: {more_numbers_link}"</string>
     <string name="create_edit_space_pages_edit_emoji_description">Edit emoji %1$s</string>
     <string name="create_edit_space_pages_emoji_description_when_non_editable">Emoji is set to %s.</string>
     <string name="create_edit_space_pages_emoji_description_when_non_editable_and_not_set">Emoji is not set.</string>
-    <string name="create_legacy_threaded_replies_checkbox_text">Use legacy threaded replies (not recommended)</string>
-    <string name="create_legacy_threaded_replies_description_text">Organizes the conversation by topic, like email. Not available for classic Hangouts chats.</string>
+    <string name="create_legacy_threaded_replies_checkbox_text">Organize the conversation by topic</string>
+    <string name="create_legacy_threaded_replies_description_text">Messages and replies are grouped together. Used for spaces with more than 400 members.</string>
     <string name="create_space_button">Create</string>
     <string name="create_space_discoverable_subtitle">Anyone in ^1 can join with a link <a href="https://support.google.com/a/users?p=discoverablespaces">Learn more</a></string>
+    <string name="create_space_discoverable_subtitle_generic">Anyone in this group can find, view, and join <a href="https://support.google.com/a/users?p=discoverablespaces">Learn more</a></string>
     <string name="create_space_discoverable_title">Space access is <b>All of ^1</b></string>
     <string name="create_space_empty_string">Give your space a name</string>
     <string name="create_space_guest_access_checkbox_text">Allow people outside your organization to join</string>
     <string name="create_space_next">Next</string>
-    <string name="create_space_restricted_access_subtitle">Only added people and groups can join</string>
+    <string name="create_space_restricted_access_subtitle">Only added people and groups can find and join</string>
     <string name="create_space_restricted_access_title">Space access is <b>Restricted</b></string>
     <string name="create_task_description">Create Task</string>
     <string name="create_threaded_replies_checkbox_text">Use threaded replies</string>
@@ -1536,7 +1649,8 @@ More numbers: {more_numbers_link}"</string>
     <string name="cross_products_form_opt_in_bullet_4">Google Pay surfacing loyalty cards &amp; tickets</string>
     <string name="cross_products_form_opt_in_description">Google can continue to help you via:</string>
     <string name="cross_products_form_opt_in_maps_displaying_assistive_pickup_orders">Maps displaying assistive pickup orders</string>
-    <string name="cross_products_form_opt_out_description">This <annotation type="opt_out_description_highlight">disables the features above and more</annotation>. You can turn this back on in Gmail settings.</string>
+    <string name="cross_products_form_opt_out_description">This <annotation type="opt_out_description_highlight">disables or limits the performance of the features above and more</annotation>. You can turn this back on in Gmail settings.</string>
+    <string name="cross_products_form_opt_out_description_old">This <annotation type="opt_out_description_highlight">disables the features above and more</annotation>. You can turn this back on in Gmail settings.</string>
     <string name="cross_products_form_opt_out_title">Use limited versions of other Google products</string>
     <string name="cross_products_form_title">Personalize other Google products with your Gmail, Chat, and Meet data</string>
     <string name="cross_products_opt_out_confirmation_bullet_travel">Travel showing places of interest</string>
@@ -1547,13 +1661,15 @@ More numbers: {more_numbers_link}"</string>
     <string name="cts_spam">When you opened this message, Gmail checked it again for spam signals.</string>
     <string name="current_date">Current date:</string>
     <string name="custom_date">Custom</string>
-    <string name="custom_dnd_duration">Custom time</string>
+    <string name="custom_dnd_date_time_picker_title">Mute notifications until</string>
+    <string name="custom_dnd_duration">Until a specific time</string>
     <string name="custom_from_account_label">Send mail as:</string>
     <string name="custom_remove_accessibility_action">Remove</string>
     <string name="custom_select_accessibility_action">Select</string>
     <string name="custom_snooze_time_passed_message">Cannot snooze to time that has already passed</string>
     <string name="custom_status_add_emoji_button_content_description">Edit emoji</string>
     <string name="custom_status_clear_status_button_content_description">Clear current status</string>
+    <string name="custom_status_custom_emoji_disabled">Custom emojis is disabled for user status</string>
     <string name="custom_status_default_be_right_back">Be right back</string>
     <string name="custom_status_default_commuting">Commuting</string>
     <string name="custom_status_default_out_sick">Out sick</string>
@@ -1578,6 +1694,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="custom_status_submit_button_content_description">Submit custom status</string>
     <string name="custom_swipe_preference_description">Configure swipe actions to quickly act on emails in the conversation list</string>
     <string name="custom_type_report_box_title_text">Briefly explain the issue (optional)</string>
+    <string name="custom_type_report_too_long">Explanation limited to %d characters.</string>
     <string name="custom_unselect_accessibility_action">Unselect</string>
     <string name="date_heading_gm">Date</string>
     <string name="date_message_received_print">%1$s at %2$s</string>
@@ -1691,9 +1808,6 @@ More numbers: {more_numbers_link}"</string>
     <string name="direct_message_loading_failed">"This direct message couldn't be loaded. Check your internet connection and try again."</string>
     <string name="direct_message_loading_failed_caller_policy_denied">You cannot message the user(s) because of a policy set by your administrator.</string>
     <string name="direct_message_loading_failed_target_user_policy_denied">You cannot message the user(s) because of a policy set by their administrator.</string>
-    <string name="direct_message_number_of_superfluous_recipients_omitted">+%d more</string>
-    <string name="direct_message_recipients_omitted">Some people cannot be added to this chat</string>
-    <string name="direct_message_recipients_omitted_list">"The following people won't be included:"</string>
     <string name="direct_message_topic_creation_failed">"Direct message couldn't be created. Try again in a few minutes."</string>
     <string name="direct_reply_hint">Compose email</string>
     <string name="disable_admin_warning">"WARNING: Deactivating the Gmail app's authority to administer your device will delete all email accounts that require it, along with their email, contacts, calendar events, and other data."</string>
@@ -1702,6 +1816,8 @@ More numbers: {more_numbers_link}"</string>
     <string name="disabled_app_indicator">App disabled</string>
     <string name="disabled_bot_indicator">Bot disabled</string>
     <string name="disabled_by_policy_title">Action not allowed</string>
+    <string name="disabled_emoji_description">This emoji was disabled due to shortcode conflict. To reactivate your emoji, delete and upload it again with a different name.</string>
+    <string name="disabled_emoji_notice">Learn more about system disabled custom emoji</string>
     <string name="disabled_meet_tab_dialog_message">To use video calls, turn on Meet in your account settings</string>
     <string name="disabled_meet_tab_dialog_settings_button">Go to Settings</string>
     <string name="disabled_meet_tab_dialog_title">Video calls not available</string>
@@ -1719,18 +1835,13 @@ More numbers: {more_numbers_link}"</string>
     <string name="discard_task_confirm_button">Discard</string>
     <string name="discard_task_confirm_message">Are you sure that you want to discard the current draft?</string>
     <string name="discard_task_confirm_title">Discard current task?</string>
-    <string name="discoverability_audience_subtitle">Anyone in %1$s can join</string>
+    <string name="discoverability_audience_subtitle">Anyone in %1$s can find, view and join</string>
     <string name="discoverability_error_message">Unable to change the space access. Try again in a few minutes.</string>
     <string name="discoverability_link_copied_message">Link copied. Share with others to invite them to the space.</string>
     <string name="discoverability_link_copy_failed">Unable to copy link.</string>
-    <string name="discoverability_link_header">Link</string>
-    <string name="discoverability_link_restricted_title">To share a link to join, change access to all of %1$s</string>
-    <string name="discoverability_link_restricted_with_no_audiences_title">Only invited people and groups can access this space.</string>
+    <string name="discoverability_link_header">Link to space</string>
+    <string name="discoverability_link_restricted_title">Space is restricted</string>
     <string name="discoverability_link_title">Anyone in %1$s with this link can join</string>
-    <string name="discoverability_restricted_dialog_message">Only invited people and groups can access this space. To invite people, use <b>Add people &amp; bots</b> in the space menu.</string>
-    <string name="discoverability_restricted_dialog_ok_button">Okay</string>
-    <string name="discoverability_restricted_dialog_title">Space access is restricted</string>
-    <string name="discoverability_restricted_dialog_title_message">Only invited people and groups can access this space. To invite people, use <b>Add people &amp; apps</b> in the space menu.</string>
     <string name="discoverability_restricted_subtitle">Only people added can join</string>
     <string name="discoverability_restricted_title">Restricted</string>
     <string name="discoverability_updating_audience_message">Updating space access</string>
@@ -1740,9 +1851,15 @@ More numbers: {more_numbers_link}"</string>
     <string name="dlp_block_action_confirmation_modal_body">"Your message may contain information restricted by your organization's admin policy."</string>
     <string name="dlp_block_action_confirmation_modal_button">Got it</string>
     <string name="dlp_block_edit_message_confirmation_modal_title">"Message can't be edited"</string>
+    <string name="dlp_block_edit_message_confirmation_modal_title_v2">"Couldn't update message"</string>
     <string name="dlp_block_post_message_confirmation_modal_title">"Message can't be sent"</string>
-    <string name="dlp_warn_action_cancel_modal_button">Cancel</string>
+    <string name="dlp_block_post_message_confirmation_modal_title_v2">"Your message couldn't be sent"</string>
+    <string name="dlp_violation_action_cancel_modal_button">Cancel</string>
+    <string name="dlp_violation_action_dismiss_modal_button">Dismiss</string>
+    <string name="dlp_violation_action_edit_modal_button">Edit</string>
+    <string name="dlp_violation_dialog_modal_body">"Your message may contain sensitive content (like credit card numbers) that can't be shared. Edit as needed, or check with your admin if something doesn't seem right."</string>
     <string name="dlp_warn_action_send_modal_button">Send anyway</string>
+    <string name="dlp_warn_message_confirmation_modal_title">Warning</string>
     <string name="dm_call_failed">Call failed</string>
     <string name="dm_header_description_text">This conversation is private.</string>
     <string name="dm_invit_generic_error_toast">Oops, something went wrong.</string>
@@ -1760,6 +1877,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="dm_member_recycler_view_description">Members list</string>
     <string name="dm_not_found">Direct message could not be found.</string>
     <string name="dm_recycler_view_content_description">Messages</string>
+    <string name="dm_with_app_installed_by_admin_header_text">This app was installed by your admin.</string>
     <string name="dnd_duration_title">Mute notifications for</string>
     <string name="do_not_disturb_alert">Chat notifications muted until %1$s • Tap to hide</string>
     <string name="do_not_disturb_expiration_time">Until %1$s</string>
@@ -1811,6 +1929,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
 "</string>
     <string name="dropdown_delete_button_desc">Remove %s from recipients</string>
     <string name="due_date_header_later">Later</string>
+    <string name="due_date_header_not_starred">Not starred</string>
     <string name="due_date_header_overdue">Past</string>
     <string name="due_date_header_starred_1plus_months_ago">Starred over a month ago</string>
     <string name="due_date_header_starred_recently">Starred recently</string>
@@ -1871,11 +1990,15 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="edit_space_empty_string">Space name cannot be empty</string>
     <string name="edit_space_failed">"Edits couldn't be made. Try again in a few minutes."</string>
     <string name="edit_space_group_notifications_notify_always">For all new messages</string>
+    <string name="edit_space_group_notifications_notify_always_for_threaded_spaces">For new messages and replies to threads you follow</string>
     <string name="edit_space_group_notifications_notify_less_for_flat_groups">For only @mentions</string>
+    <string name="edit_space_group_notifications_notify_less_for_legacy_threaded_groups">For @mentions and followed topics</string>
     <string name="edit_space_group_notifications_notify_less_for_threaded_groups">For @mentions and followed threads</string>
-    <string name="edit_space_group_notifications_notify_less_for_threading_spaces">Replies to threads you follow and @mentions</string>
+    <string name="edit_space_group_notifications_notify_less_for_threaded_spaces">For replies to threads you follow and @mentions</string>
+    <string name="edit_space_group_notifications_notify_less_with_new_legacy_threads">For @mentions, followed topics, and the first message of new topics</string>
     <string name="edit_space_group_notifications_notify_less_with_new_threads">For @mentions, followed threads, and the first message of new threads</string>
     <string name="edit_space_group_notifications_notify_never">Off</string>
+    <string name="edit_space_group_notifications_notify_never_for_threaded_spaces">@string/threading_space_notification_setting_notify_never_subtitle</string>
     <string name="edit_space_group_notifications_title">Notifications</string>
     <string name="edit_space_guidelines_title">Edit space guidelines</string>
     <string name="edit_space_hide_dm_error_message">"Direct message couldn't be hidden. Try again in a few minutes."</string>
@@ -1893,7 +2016,6 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="edit_space_leave_room_subtitle">You will be able to return</string>
     <string name="edit_space_leave_room_title">Leave</string>
     <string name="edit_space_make_room_owner_label">Make space manager</string>
-    <string name="edit_space_manage_access_subtitle_visible">Anyone in %1$s can view and join</string>
     <string name="edit_space_manage_access_title">Manage space access</string>
     <string name="edit_space_mark_as_read_title">Mark as read</string>
     <string name="edit_space_mark_as_unread_title">Mark as unread</string>
@@ -1904,7 +2026,9 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="edit_space_notification_title">Notifications</string>
     <string name="edit_space_pin_title">Pin</string>
     <string name="edit_space_remove_app_dm">App removed</string>
+    <string name="edit_space_remove_app_dm_disabled_subtitle">Installed by admin</string>
     <string name="edit_space_remove_app_dm_error_message">"App couldn't be hidden. Try again in a few minutes."</string>
+    <string name="edit_space_remove_app_dm_subtitle">"App won't message you again"</string>
     <string name="edit_space_remove_bot_dm">Bot removed</string>
     <string name="edit_space_remove_bot_dm_error_message">"Bot couldn't be hidden. Try again in a few minutes."</string>
     <string name="edit_space_remove_bot_dm_subtitle">"Bot won't message you again"</string>
@@ -1912,12 +2036,14 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="edit_space_remove_from_dm_label">Remove from chat</string>
     <string name="edit_space_remove_from_room_label">Remove from space</string>
     <string name="edit_space_remove_room_owner_label">Change to a Member</string>
-    <string name="edit_space_space_access_discoverable_subtitle">Anyone in %1$s can view and join</string>
+    <string name="edit_space_space_access_discoverable_subtitle_generic">Anyone in this group can find, view, and join <a href="https://support.google.com/a/users?p=targetaudience">Learn more</a></string>
     <string name="edit_space_space_access_discoverable_title">All of %1$s</string>
     <string name="edit_space_space_access_header">Space Access</string>
     <string name="edit_space_space_access_restricted_subtitle">Only added people and groups can join</string>
     <string name="edit_space_space_access_restricted_title">Restricted</string>
     <string name="edit_space_succeeded">Space name changed to %1$s</string>
+    <string name="edit_space_unable_to_modify_access_for_external_space">External spaces are restricted</string>
+    <string name="edit_space_unable_to_modify_space_access">Only space managers can change access</string>
     <string name="edit_space_unblock_title">Unblock</string>
     <string name="edit_space_unmute_failed">"Couldn't follow thread. Try again in a few minutes."</string>
     <string name="edit_space_unpin_title">Unpin</string>
@@ -1950,6 +2076,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="emoji_category_animals_nature">ANIMALS AND NATURE</string>
     <string name="emoji_category_animals_nature_content_desc">Animals and nature</string>
     <string name="emoji_category_custom_emoji_content_description">Custom emojis</string>
+    <string name="emoji_category_custom_emoji_disabled">Custom emojis is disabled for external conversations and avatars</string>
     <string name="emoji_category_custom_emoji_empty_list">No custom emojis have been created yet</string>
     <string name="emoji_category_custom_emoji_error_loading">" Connection lost. "<annotation type="clickable">Refresh</annotation>" to try again. "</string>
     <string name="emoji_category_custom_emoji_name">CUSTOM EMOJIS</string>
@@ -1959,6 +2086,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="emoji_category_flags_content_desc">Flags</string>
     <string name="emoji_category_food_drink">FOOD AND DRINK</string>
     <string name="emoji_category_food_drink_content_desc">Food and drink</string>
+    <string name="emoji_category_frecent">FREQUENTLY USED</string>
     <string name="emoji_category_objects">OBJECTS</string>
     <string name="emoji_category_objects_content_desc">Objects</string>
     <string name="emoji_category_people">PEOPLE</string>
@@ -2249,9 +2377,10 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="gif_search_hint">Search GIFs</string>
     <string name="give_permission_for_cam_content_description">Give permission to turn camera on</string>
     <string name="give_permission_for_mic_content_description">Give permission to turn microphone on</string>
-    <string name="gm3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
-    <string name="gm3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="gm3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
+    <string name="gm3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="gm3_sys_motion_easing_legacy_decelerate">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="gm3_sys_motion_easing_standard">cubic-bezier(0.2, 0.0, 0.0, 1.0)</string>
     <string name="gm_i18n_draft">Draft</string>
@@ -2416,10 +2545,12 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="group_notification_setting_notify_always_subtitle">For all new messages</string>
     <string name="group_notification_setting_notify_always_title">Notify always</string>
     <string name="group_notification_setting_notify_less_subtitle_for_flat_groups">@string/edit_space_group_notifications_notify_less_for_flat_groups</string>
+    <string name="group_notification_setting_notify_less_subtitle_for_legacy_threaded_groups">@string/edit_space_group_notifications_notify_less_for_legacy_threaded_groups</string>
     <string name="group_notification_setting_notify_less_subtitle_for_threaded_groups">@string/edit_space_group_notifications_notify_less_for_threaded_groups</string>
-    <string name="group_notification_setting_notify_less_subtitle_for_threading_spaces">@string/edit_space_group_notifications_notify_less_for_threading_spaces</string>
+    <string name="group_notification_setting_notify_less_subtitle_for_threading_spaces">Notify for replies to threads you follow and @mentions</string>
     <string name="group_notification_setting_notify_less_title">Notify less</string>
     <string name="group_notification_setting_notify_less_with_new_threads">Also notify for the first message of new threads</string>
+    <string name="group_notification_setting_notify_less_with_new_topics">Also notify for the first message of new topics</string>
     <string name="group_notification_setting_notify_never_subtitle">"You'll still see a notification dot if you're @mentioned"</string>
     <string name="group_notification_setting_notify_never_title">Notifications off</string>
     <string name="group_picker_action_bar_text">Send to</string>
@@ -2451,6 +2582,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="group_summary_snippet_unsent_drive_file">You: (unsent drive file)</string>
     <string name="group_summary_snippet_unsent_gif">You: (unsent GIF)</string>
     <string name="group_summary_snippet_unsent_image">You: (unsent image)</string>
+    <string name="group_summary_snippet_unsent_quoted_message">You: (unsent reply)</string>
     <string name="group_summary_snippet_unsent_video">You: (unsent video)</string>
     <string name="group_summary_snippet_unsent_video_meeting">You: (unsent video meeting)</string>
     <string name="group_summary_snippet_you_added_video_meeting">Added a video meeting</string>
@@ -2527,7 +2659,6 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="home_app_title">Meet</string>
     <string name="home_back_button_content_description">Back</string>
     <string name="honorific_suffix">%1$s</string>
-    <string name="host_and_companion_indicator_text">Meeting host • Companion mode</string>
     <string name="host_indicator_text">Meeting host</string>
     <string name="hour_picker_description">Hours circular slider</string>
     <string name="hub_drawer_label_collapse">Collapse options</string>
@@ -2541,7 +2672,6 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="hub_dynamite_snooze_notifications_title">Snooze chat notifications</string>
     <string name="hub_dynamite_summarization_title">Smart Summarization</string>
     <string name="hub_dynamite_working_hours_description">Mute chat notifications outside work</string>
-    <string name="hub_label_search_suggestion_header_with_icon">Search for \"%1$s\" in %2$s</string>
     <string name="hub_meet_settings_diagnostics">Send more diagnostic info</string>
     <string name="hub_meet_settings_diagnostics_description">Google can use this to make this product better</string>
     <string name="hub_meet_settings_diagnostics_disabled_description">Your administrator controls this setting</string>
@@ -2626,8 +2756,10 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="in_gmail_form_opt_in_bullet_smart_search">Smart Search (keyword suggestions, relevant results, and more)</string>
     <string name="in_gmail_form_opt_in_description">Gmail will continue to offer you:</string>
     <string name="in_gmail_form_opt_in_title">Continue with smart features</string>
-    <string name="in_gmail_form_opt_out_description">This will <annotation type="opt_out_description_highlight">disable or degrade the performance of the features above and more.</annotation> You can turn this back on in Gmail settings. <annotation type="smart_features_learn_more_link">Learn more</annotation></string>
-    <string name="in_gmail_form_opt_out_title">Turn off smart features</string>
+    <string name="in_gmail_form_opt_out_description">This will <annotation type="opt_out_description_highlight">disable or limit the performance of the features above and more.</annotation> You can turn this back on in Gmail settings. <annotation type="smart_features_learn_more_link">Learn more</annotation></string>
+    <string name="in_gmail_form_opt_out_description_old">This will <annotation type="opt_out_description_highlight">disable or degrade the performance of the features above and more.</annotation> You can turn this back on in Gmail settings. <annotation type="smart_features_learn_more_link">Learn more</annotation></string>
+    <string name="in_gmail_form_opt_out_title">Turn off or limit smart features</string>
+    <string name="in_gmail_form_opt_out_title_old">Turn off smart features</string>
     <string name="in_gmail_form_title">Allow smart features in Gmail, Chat, and Meet to use your data</string>
     <string name="in_gmail_opt_out_confirmation_bullet_nudge">Nudges to reply to forgotten emails</string>
     <string name="in_gmail_opt_out_confirmation_bullet_smart_reply">Smart Reply (suggested quick replies) in email</string>
@@ -2708,8 +2840,6 @@ If you trust this message and want to download anyway, mark this email as \"Not 
  PIN: {meeting_pin}"</string>
     <string name="join_by_phone_details_copied">Join by phone details copied</string>
     <string name="join_by_phone_header">Join by phone</string>
-    <string name="join_conference_button_content_description">join with Google Meet</string>
-    <string name="join_conference_button_label">Join</string>
     <string name="join_main_session_banner_text">Tap to return to main call</string>
     <string name="join_main_session_banner_with_timer_text">Ending in {MINUTES}m • Tap to return to main call</string>
     <string name="join_main_session_breakout_ending_banner_text">Ending in {SECONDS}s • Tap to return to main call</string>
@@ -2792,6 +2922,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="last_owner_warning_modal_choose_someone">Choose someone</string>
     <string name="learn_more">Learn more</string>
     <string name="learn_more_da">Learn more</string>
+    <string name="learn_more_threaded_replies">" "<a href="https://support.google.com/mail?p=threading_in_spaces">Learn more</a>" "</string>
     <string name="leave_call_button_content_description">Leave call</string>
     <string name="leave_guidelines_button_content_description">Close space guidelines</string>
     <string name="leave_meeting">Leave the call</string>
@@ -2861,9 +2992,10 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
     <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_plain_regular">sans-serif</string>
-    <string name="m3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
-    <string name="m3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
+    <string name="m3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_legacy_decelerate">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="m3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0.0, 0.0, 1.0)</string>
     <string name="mail">Mail</string>
@@ -2930,6 +3062,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
     <string name="me_object_pronoun">me</string>
     <string name="me_subject_pronoun">me</string>
+    <string name="media_gallery_view_menu_item">Media Gallery View</string>
     <string name="meet_app_name_for_permission_dialog">Meet</string>
     <string name="meet_bot_username">Meet</string>
     <string name="meet_category">Meet</string>
@@ -2999,6 +3132,7 @@ To become a co-manager of this space, reach out to a current manager"</string>
     <string name="menu_enable_smart_reply">Smart Reply</string>
     <string name="menu_google_apps">Google apps</string>
     <string name="menu_help_and_feedback">Help &amp; feedback</string>
+    <string name="menu_lonely_meeting_key">lonelyMeetingKey</string>
     <string name="menu_manage_blocked_rooms">Manage blocked spaces and chats</string>
     <string name="menu_manage_blocked_users">Manage blocked users</string>
     <string name="menu_manage_folders">Manage labels</string>
@@ -3097,9 +3231,11 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="message_menu_forward_to_inbox">Forward to inbox</string>
     <string name="message_menu_mark_as_unread">Mark as unread</string>
     <string name="message_menu_message_flight_tracking">Show debug info</string>
+    <string name="message_menu_quote_in_reply">Quote in reply</string>
     <string name="message_menu_reply_in_thread">Reply in thread</string>
     <string name="message_menu_resend">Resend</string>
     <string name="message_menu_send_message_feedback">Send feedback on this message</string>
+    <string name="message_menu_view_details">View details</string>
     <string name="message_menu_view_read_receipts">View read receipts</string>
     <string name="message_not_found_failure_message">Message not found</string>
     <string name="message_number_and_more">%d+</string>
@@ -3130,7 +3266,6 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="microphone_permission_denied_with_dont_ask_again_dialog_message">Allow {app_name_for_permission_dialog} to access your microphone so you can make audio calls</string>
     <string name="microphone_permission_denied_with_dont_ask_again_dialog_title">Permission for microphone was denied</string>
     <string name="middot_separator">" · "</string>
-    <string name="minus_sign">-</string>
     <string name="minute_picker_description">Minutes circular slider</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="missing_prerequisites_join_button">Join now</string>
@@ -3139,6 +3274,8 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="more_actions_menu_content_description">Actions for {DISPLAY_NAME}</string>
     <string name="more_controls_button_content_description">More controls</string>
     <string name="more_info_attachment">Downloading is disabled</string>
+    <string name="more_info_card_call_content_description">Call ^1: ^2</string>
+    <string name="more_info_card_email_content_description">Email %1$s: %2$s</string>
     <string name="more_joined">%1$d other people joined</string>
     <string name="more_messages_list_item">Load more messages</string>
     <string name="more_numbers">More numbers</string>
@@ -3156,7 +3293,7 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="mtrl_picker_a11y_next_month">Change to next month</string>
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
     <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
-    <string name="mtrl_picker_cancel">@android:string/cancel</string>
+    <string name="mtrl_picker_cancel">Cancel</string>
     <string name="mtrl_picker_confirm">OK</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Select Date</string>
@@ -3184,6 +3321,7 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="mtrl_timepicker_cancel">Cancel</string>
     <string name="mtrl_timepicker_confirm">OK</string>
     <string name="multi_send_not_supported">Mutli-send is not supported on mobile, you can access this email at gmail.com.</string>
     <string name="multiple_hand_raisers_notification">{HAND_RAISER_NAME} and {OTHER_HAND_RAISERS_COUNT} more raised their hands</string>
@@ -3196,7 +3334,6 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="mute_mic_and_camera_automatically">Your mic and camera were automatically turned off</string>
     <string name="mute_mic_and_camera_automatically_due_to_large_call">Your mic and camera are off due to the size of the call</string>
     <string name="mute_mic_automatically">Your mic was automatically turned off</string>
-    <string name="mute_notification_button_content_description">Open mute notification options.</string>
     <string name="mute_participant_content_description">Mute audio from {DISPLAY_NAME}</string>
     <string name="mute_text">Mute</string>
     <string name="my_account_settings">Manage your Google Account</string>
@@ -3231,12 +3368,14 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="no_conversation_selected_text">Choose a conversation</string>
     <string name="no_dial_in_meeting_code">"You didn't enter a code for a meeting you can dial-in to"</string>
     <string name="no_groups_text">No groups</string>
+    <string name="no_media_button">View options</string>
+    <string name="no_media_caption">Try a different media source or profile</string>
+    <string name="no_media_description">There is no media saved on this device for this profile</string>
     <string name="no_name_text">(No Name)</string>
     <string name="no_option_unsubscribe">"Why is this message in Spam? You tried to unsubscribe from this sender but they didn't provide a way to do that, so new messages are put directly in Spam to keep them out of your inbox."</string>
     <string name="no_projector_found_error">Unable to open image. Please install latest version of Drive.</string>
     <string name="no_read_external_permission">"Chat doesn't have permission to access files on your device. Give permission in your device settings and try again."</string>
     <string name="no_read_external_permission_header">"Can't access media"</string>
-    <string name="no_search_result_query">No results for ^1</string>
     <string name="no_subject">(no subject)</string>
     <string name="no_thanks">No thanks</string>
     <string name="no_title">(No title)</string>
@@ -3296,6 +3435,8 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="notification_report_text">Feedback</string>
     <string name="notification_sender_line_snoozed">Snoozed: %1$s</string>
     <string name="notification_setting_description_device_level_off">Chat notification is OFF on Android device Setting.</string>
+    <string name="notification_setting_disabled">Missing notifications? Turn on notifications in your <annotation type="notification_intent">device settings</annotation></string>
+    <string name="notification_setting_notify_always_subtitle_for_threaded_spaces">Notify for new messages and replies to threads you follow</string>
     <string name="notification_settings_header_key">notificationSettingsHeaderKey</string>
     <string name="notification_settings_header_text">Notifications</string>
     <string name="notification_sound_calm">Calm</string>
@@ -3318,6 +3459,7 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="notifications_card_notify_less">Only @mentions</string>
     <string name="notifications_card_notify_less_for_threading">Notify for following</string>
     <string name="notifications_card_notify_never">"Don't notify"</string>
+    <string name="notifications_card_subtitle_large_spaces">Notify for following is recommended in spaces with more people</string>
     <string name="notifications_card_title">Choose your notification setting for %1$s</string>
     <string name="notifications_card_title_for_threading">"Choose your notification setting for %1$s. You'll also be notified if you're @mentioned."</string>
     <string name="notifications_card_updated_to_notify_always">"You'll be notified for all new messages in %1$s"</string>
@@ -3325,8 +3467,6 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="notifications_card_updated_to_notify_less_for_threaded_groups">"You'll be notified for @mentions and threads you follow in %1$s"</string>
     <string name="notifications_card_updated_to_notify_never">"You won't be notified for new messages in %1$s"</string>
     <string name="notifications_category">Notifications</string>
-    <string name="notify_attachment_save_error">"Couldn't save attachment"</string>
-    <string name="notify_attachment_send_error">"Couldn't send attachment"</string>
     <string name="nudge_dismiss_button_text">Dismiss</string>
     <string name="nudge_dismiss_success_message">Nudge dismissed.</string>
     <item type="string" name="numbers_radius_multiplier_inner">0.6</item>
@@ -3353,9 +3493,16 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="og_choose_an_account_title">Choose an account</string>
     <string name="og_count_decoration">%1$d</string>
     <string name="og_count_decoration_max">%1$d+</string>
+    <string name="og_get_storage_action">Get storage</string>
+    <string name="og_get_storage_action_short">Buy more</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
     <string name="og_loading_a11y">Loading</string>
     <string name="og_manage_accounts">Manage accounts on this device</string>
+    <string name="og_manage_storage_action">Manage storage</string>
+    <string name="og_manage_storage_action_short">Manage</string>
+    <string name="og_minimized_storage_card_title">Storage used: %1$s of %2$s GB</string>
+    <string name="og_more_options_action">More options</string>
+    <string name="og_more_options_action_short">Options</string>
     <string name="og_my_account_desc_long_length">Manage your Google Account</string>
     <string name="og_my_account_desc_meduim_length">Google Account</string>
     <string name="og_my_account_desc_short_length">Account</string>
@@ -3366,6 +3513,12 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="og_privacy_policy">Privacy Policy</string>
     <string name="og_sign_in_">Sign In</string>
     <string name="og_signed_in_as_account">Signed in as %1$s</string>
+    <string name="og_storage_card_almost_full_a11y_label">Your account storage is almost full</string>
+    <string name="og_storage_card_full_a11y_label">Your account storage is full</string>
+    <string name="og_storage_card_title">Account storage</string>
+    <string name="og_storage_card_title_almost_full">%1$s of storage used</string>
+    <string name="og_storage_card_title_full">Out of storage</string>
+    <string name="og_storage_progress_subtitle">%1$s GB of %2$s GB used</string>
     <string name="og_terms_of_service">Terms of Service</string>
     <string name="og_use_account_a11y_no_period">Use %1$s</string>
     <string name="ok_dismiss_button_label">OK</string>
@@ -3531,6 +3684,9 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="owner_create_group_via_app_info">You created this space (via %1$s) %2$s</string>
     <string name="owner_off_the_record_status_changed_alert_message">You turned history off.</string>
     <string name="owner_on_the_record_status_changed_alert_message">You turned history on.</string>
+    <string name="panel_collapsed">Collapsed</string>
+    <string name="panel_expanded">Expanded</string>
+    <string name="panel_state_change">%1$s panel %2$s</string>
     <string name="participant_joined_notification">{NUMBER_OF_OTHER_PARTICIPANTS, plural, =0 {{PARTICIPANT_NAME} joined} =1 {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more joined} other {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more joined} }</string>
     <string name="participant_left_notification">{NUMBER_OF_OTHER_PARTICIPANTS, plural, =0 {{PARTICIPANT_NAME} left} =1 {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more left} other {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more left} }</string>
     <string name="participant_list_header_title">In call</string>
@@ -3587,8 +3743,6 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="peoplekit_contextual_suggestions_add">Add:</string>
     <string name="peoplekit_contextual_suggestions_added">Added %1$s</string>
     <string name="peoplekit_contextual_suggestions_name_and_method">%1$s (%2$s)</string>
-    <string name="peoplekit_contextual_suggestions_plus_pills_replacement">instead of %1$s?</string>
-    <string name="peoplekit_contextual_suggestions_plus_pills_replacement_prefix">Did you mean</string>
     <string name="peoplekit_contextual_suggestions_replacement">Did you mean %1$s instead of %2$s?</string>
     <string name="peoplekit_contextual_suggestions_suggestions">Suggestions</string>
     <string name="peoplekit_expand_button_content_description">%s, show more contact options</string>
@@ -3598,11 +3752,14 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="peoplekit_group_name_more_members">%1$s…</string>
     <string name="peoplekit_hide_suggestion_device_contact_cannot_be_hidden_text">To hide this suggestion, you must delete this person from your contacts.</string>
     <string name="peoplekit_hide_suggestion_device_contact_cannot_be_hidden_title">"Can't hide suggestion"</string>
+    <string name="peoplekit_hide_suggestion_edit_contact_text">Edit contact</string>
     <string name="peoplekit_hide_suggestion_hide_button">Hide</string>
     <string name="peoplekit_hide_suggestion_hide_error_text">There was a problem and this person could not be hidden.</string>
     <string name="peoplekit_hide_suggestion_hide_error_title">"Couldn't hide suggestion"</string>
     <string name="peoplekit_hide_suggestion_hide_text">This person will no longer be shown as a suggestion. To see them again, search for them while sharing.</string>
     <string name="peoplekit_hide_suggestion_hide_title">Hide suggestion?</string>
+    <string name="peoplekit_hide_suggestion_network_error_text">Check your connection.</string>
+    <string name="peoplekit_hide_suggestion_network_error_title">"Can't reach the internet"</string>
     <string name="peoplekit_hide_suggestion_text">Hide suggestion</string>
     <string name="peoplekit_hide_suggestion_unhide_button">Show</string>
     <string name="peoplekit_hide_suggestion_unhide_error_text">There was a problem and this person could not be shown.</string>
@@ -3684,7 +3841,6 @@ Deleted messages may still show in classic Hangouts."</string>
     <string name="pip_turn_mic_off_content_description">Turn microphone off</string>
     <string name="pip_turn_mic_on_content_description">Turn microphone on</string>
     <string name="play_protect_uncertified_device_notification_title">This device isn’t Play Protect certified</string>
-    <string name="plus_sign">+</string>
     <string name="pnt_accept">Accept</string>
     <string name="pnt_accepted">Accepted</string>
     <string name="pnt_event_current_time">Current time: %1$s</string>
@@ -3859,6 +4015,7 @@ Tap to turn on."</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="proceed">Proceed</string>
     <string name="profile_email_forced_spam_label">Why is this message in Spam? &lt;b>%1$s&lt;/b> cannot reach you via your Google+ profile at this time.</string>
+    <string name="progress_indicator_content_description">Upload is in progress</string>
     <string name="project_id">dark-forge-469</string>
     <string name="projector_default_file_name">File</string>
     <string name="promo_tab_coupon_code_label">Code</string>
@@ -3948,7 +4105,8 @@ Tap to turn on."</string>
     <string name="redirect_uri_scheme">https</string>
     <string name="refresh">Refresh</string>
     <string name="region_code_indicator">({REGION_CODE})</string>
-    <string name="related_search_results">Showing related results</string>
+    <string name="related_search_results">"No results for ^1
+Showing related results"</string>
     <string name="reliability_dialog_message">Please help us debug the issue by filing a feedback.</string>
     <string name="reliability_dialog_title">Interaction Failed</string>
     <string name="remote_knocker_denied_notification">{PARTICIPANT_NAME} was not allowed to join this meeting</string>
@@ -3992,8 +4150,6 @@ Tap to turn on."</string>
     <string name="reply_forward_disabled_in_message_based_ui">Multiple drafts not supported</string>
     <string name="reply_on_my_way">On my way</string>
     <string name="reply_subject_label">Re:</string>
-    <string name="reply_to_thread_tooltip_text">Spaces now include threaded messages that make it easier to follow the conversation. Reply to a message to start a thread.</string>
-    <string name="reply_to_thread_tooltip_title">Reply to start a thread</string>
     <string name="replyto_heading">Reply-to:</string>
     <string name="replyto_heading_gm">Reply-to</string>
     <string name="report_abuse_button_content_description">Report abuse</string>
@@ -4022,7 +4178,9 @@ Tap to turn on."</string>
     <string name="report_abuse_type_violence">Violence and gore</string>
     <string name="report_abuse_user_description_hint">Describe your issue*</string>
     <string name="report_abuse_user_mandatory_field_error">This field is mandatory</string>
+    <string name="report_description_default">"When you submit a report, we'll investigate it and take the appropriate action. We won't share your identity with the person who created this message."</string>
     <string name="report_spam">Report spam</string>
+    <string name="report_title_default">Tell us about this message</string>
     <string name="reported_phishing_block_snackbar_text">Phishing reported. New messages from this sender will be sent to spam.</string>
     <string name="reported_phishing_snackbar_text">Phishing reported</string>
     <string name="reported_spam_block_snackbar_text">Conversation marked as spam. New messages from this sender will be sent to spam.</string>
@@ -4302,6 +4460,7 @@ Tap to turn on."</string>
     <string name="search_group_dm_chat_hint">Search this group</string>
     <string name="search_history_cleared">Search history cleared.</string>
     <string name="search_history_cleared_failure">Something went wrong. Please try again later.</string>
+    <string name="search_history_suggestion_desc">Suggestion: %s</string>
     <string name="search_message_self_title">You</string>
     <string name="search_people_suggestion_header_title">Matching people</string>
     <string name="search_person_filter_heading_content_description">Filter by person</string>
@@ -4352,11 +4511,15 @@ Tap to turn on."</string>
     <string name="select_year">Select year</string>
     <string name="selected_account">Signed in to %1$s</string>
     <string name="selected_content_description">selected</string>
+    <string name="selection_position_text">%1$d</string>
     <item type="string" name="selection_radius_multiplier">0.16</item>
     <string name="self_demotion_last_owner_warning_modal_body">Since you’re the only manager of %1$s, you’ll need to choose someone else to manage the space before changing your role. %2$s</string>
     <string name="self_demotion_last_owner_warning_modal_title">Choose a new Space Manager first</string>
     <string name="self_view_format_string">%s (You)</string>
     <string name="send">Send</string>
+    <string name="send_addons_execution_warning_body" formatted="false">An error occurred with the add-on. Check your internet connection, or select %s to try again. You can also send your email without the add-on by selecting %s.</string>
+    <string name="send_addons_execution_warning_send_anyway">Send Anyway</string>
+    <string name="send_addons_execution_warning_title">Something went wrong</string>
     <string name="send_anyway">Send anyway</string>
     <string name="send_da">Send</string>
     <string name="send_failed">"Message wasn't sent."</string>
@@ -4471,10 +4634,11 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="similar_messages_phishy">"Be careful with this message. Similar messages were used to steal people's personal information. Unless you trust the sender, don't click links or reply with personal information."</string>
     <string name="single_day_time_slot_dot_separator">{MEETING_DATE} • {MEETING_TIME_RANGE}</string>
     <string name="single_hand_raiser_notification">{HAND_RAISER_NAME} raised a hand</string>
-    <string name="single_message_request_content_description">Unviewed message request from %1$s</string>
     <string name="single_new_message_notification_big_text">"%1$s
 %2$s"</string>
     <string name="single_pending_message_request_content_description">Pending message request from %1$s</string>
+    <string name="slash_command_menu_back_button_content_description">Go back to the integration menu.</string>
+    <string name="slash_command_menu_content_description">Slash command menu</string>
     <string name="slides_bot_username">Slides</string>
     <string name="slides_origin_app_username">%1$s (via Slides)</string>
     <string name="slv2_generic_untrusted">This link leads to an untrusted site. Are you sure you want to proceed to %1$s?</string>
@@ -4483,28 +4647,53 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="slv2_url_redirector">This link has been flagged as suspicious. Are you sure you want to proceed to %1$s?</string>
     <string name="smart_feature_opt_in_teaser_dismiss">Dismiss</string>
     <string name="smart_feature_opt_in_teaser_main"><annotation type="opt_in_teaser_link">Turn on smart features and personalization</annotation> in Gmail, Chat, and Meet to <annotation type="purpose_placeholder">%1$s</annotation></string>
-    <string name="smart_feature_opt_in_teaser_purpose_filter_inbox_category">use inbox categories</string>
+    <string name="smart_feature_opt_in_teaser_purpose_filter_inbox_category">enable the Updates tab</string>
+    <string name="smart_feature_opt_in_teaser_purpose_filter_inbox_category_old">use inbox categories</string>
     <string name="smart_feature_opt_in_teaser_purpose_high_priority_notification">use high priority notifications</string>
     <string name="smart_feature_opt_in_teaser_purpose_important_first_inbox">use important first inbox</string>
     <string name="smart_feature_opt_in_teaser_purpose_inbox_tip">receive inbox tips</string>
     <string name="smart_feature_opt_in_teaser_purpose_notify_important_section">be notified about important emails only</string>
     <string name="smart_feature_opt_in_teaser_purpose_nudges">use nudges</string>
     <string name="smart_feature_opt_in_teaser_purpose_personalize_google_product">personalize other Google products</string>
-    <string name="smart_feature_opt_in_teaser_purpose_search_suggestion">get better search suggestions</string>
     <string name="smart_feature_opt_in_teaser_purpose_smart_compose_mail">use Smart Compose in mail</string>
     <string name="smart_feature_opt_in_teaser_purpose_smart_folder">categorize emails as %1$s</string>
     <string name="smart_feature_opt_in_teaser_purpose_smart_inbox_types">use smart inbox types with this account</string>
-    <string name="smart_feature_opt_in_teaser_purpose_smart_reply_chat">use Smart Reply in chat</string>
     <string name="smart_feature_opt_in_teaser_purpose_smart_reply_mail">use Smart Reply in mail</string>
     <string name="smart_feature_opt_in_teaser_purpose_smart_summaries_mail">see Smart Summaries for emails</string>
-    <string name="smart_feature_opt_in_teaser_purpose_use_inbox_category">use inbox categories</string>
+    <string name="smart_feature_opt_in_teaser_purpose_use_inbox_category">enable the Updates tab</string>
+    <string name="smart_feature_opt_in_teaser_purpose_use_inbox_category_old">use inbox categories</string>
     <string name="smart_feature_opt_in_teaser_turn_on">Turn on</string>
+    <string name="smart_feature_opt_out_aadc_main"><annotation type="purpose_placeholder">%1$s</annotation> because the smart features and personalization setting has been turned off</string>
     <string name="smart_feature_opt_out_back">Back</string>
-    <string name="smart_feature_opt_out_confirmation_description_both_in_gmail_and_cross_products">The following features and more will be turned off until you change your settings:</string>
-    <string name="smart_feature_opt_out_confirmation_description_only_cross_products">The following features and more will be turned off until you change your settings:</string>
-    <string name="smart_feature_opt_out_confirmation_description_only_in_gmail">The following features and more will be turned off until you change your settings:</string>
-    <string name="smart_feature_opt_out_confirmation_title">Turn off these features?</string>
-    <string name="smart_feature_opt_out_proceed">Turn off features</string>
+    <string name="smart_feature_opt_out_confirmation_description_in_gmail">The following features and more will be turned off or be available with limited performance until you change your settings:</string>
+    <string name="smart_feature_opt_out_confirmation_description_only_cross_products">The following features and more will be turned off or be available with limited performance until you change your settings:</string>
+    <string name="smart_feature_opt_out_confirmation_description_only_cross_products_old">The following features and more will be turned off until you change your settings:</string>
+    <string name="smart_feature_opt_out_confirmation_description_only_in_gmail_old">The following features and more will be turned off until you change your settings:</string>
+    <string name="smart_feature_opt_out_confirmation_limit">Limit:</string>
+    <string name="smart_feature_opt_out_confirmation_title_in_gmail">Turn off or limit these features?</string>
+    <string name="smart_feature_opt_out_confirmation_title_old">Turn off these features?</string>
+    <string name="smart_feature_opt_out_confirmation_title_only_cross_products">Turn off or limit these features?</string>
+    <string name="smart_feature_opt_out_confirmation_title_only_cross_products_old">Turn off these features?</string>
+    <string name="smart_feature_opt_out_confirmation_turn_off">Turn Off:</string>
+    <string name="smart_feature_opt_out_impact_aadc_filter_inbox_category">The Updates tab has been disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_filter_inbox_category_old">Inbox categories have been turned off</string>
+    <string name="smart_feature_opt_out_impact_aadc_high_priority_notification">High priority mail notifications are disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_important_first_inbox">Important first inbox is disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_inbox_tip">Inbox tips are disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_notify_important_section">Important emails only notifications are disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_nudges">Nudges are disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_personalize_google_product">Smart features and personalization in other Google products is disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_smart_compose_mail">Smart Compose is disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_smart_folder">New emails will not be categorized as %1$s</string>
+    <string name="smart_feature_opt_out_impact_aadc_smart_inbox_types">Smart inbox types with this account are disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_smart_reply">Smart Reply is disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_smart_summaries_mail">Smart Summaries are disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_use_inbox_category">The Updates tab has been disabled</string>
+    <string name="smart_feature_opt_out_impact_aadc_use_inbox_category_old">Inbox categories have been turned off</string>
+    <string name="smart_feature_opt_out_proceed">Turn off or limit</string>
+    <string name="smart_feature_opt_out_proceed_old">Turn off features</string>
+    <string name="smart_feature_opt_out_proceed_only_cross_products">Turn off or limit</string>
+    <string name="smart_feature_opt_out_proceed_only_cross_products_old">Turn off features</string>
     <string name="smart_feature_usage_form_bullet">•</string>
     <string name="smart_features_setting_opt_in_confirmation_button_cancel">Cancel</string>
     <string name="smart_mail_contact_call_action">Call</string>
@@ -4544,9 +4733,6 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="soft_update_installation_snackbar_button">Restart</string>
     <string name="soft_update_installation_snackbar_message">An update has just been downloaded.</string>
     <string name="some_messages_pending_announcement">One or more messages are pending.</string>
-    <string name="space_access_item_discoverable_subtitle">Anyone in %1$s can join with a link</string>
-    <string name="space_access_item_discoverable_title"><b>All of ^1</b></string>
-    <string name="space_access_item_restricted_subtitle">Only added people and groups can join</string>
     <string name="space_access_item_restricted_title"><b>Restricted</b></string>
     <string name="space_action_bar_subtitle_discoverability">All of %1$s</string>
     <string name="space_audio_call_button_content_description">Start voice call</string>
@@ -4582,7 +4768,7 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="space_manager_learn_more_link">https://support.google.com/chat?p=space_roles</string>
     <string name="space_name_text_hint">Space name</string>
     <string name="space_new_thread_fab">New thread</string>
-    <string name="space_new_topic_button_content_description">@string/topic_new_thread_label</string>
+    <string name="space_new_topic_fab">New topic</string>
     <string name="space_read_indicator_text">Unread</string>
     <string name="space_search_button">Search</string>
     <string name="space_unblock_list_content_description">Spaces you can unblock</string>
@@ -4595,6 +4781,9 @@ Invites are deleted automatically after 90 days."</string>
 Invites are deleted automatically after 90 days."</string>
     <string name="spam_group_request_compose_cover_title">Invite request</string>
     <string name="spam_invite_accept_button_text">Accept anyway</string>
+    <string name="spam_invite_accept_invite_dialog_text">If you accept this invite, it will be marked as safe</string>
+    <string name="spam_invite_accept_invite_negative_button_dialog_text">Cancel</string>
+    <string name="spam_invite_accept_invite_title_dialog_text">Accept this suspicious invite?</string>
     <string name="spam_invite_block_button_text">Block</string>
     <string name="spam_invite_phishing_description">This conversation contains links to known phishing sites that may try to steal your information</string>
     <string name="spam_invite_phishing_title">This invite is suspicious</string>
@@ -4647,12 +4836,15 @@ Invites are hidden automatically after 90 days."</string>
     <string name="success_snack_bar_content">Your report has been submitted</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
+    <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
+    <string name="sudFontSecondaryText">google-sans-text</string>
     <string name="sud_back_button_label">Back</string>
     <string name="sud_more_button_label">More</string>
     <string name="sud_next_button_label">Next</string>
     <string name="suggest_unsubscribe_description">Message deleted. Unsubscribe from %1$s?</string>
     <string name="suggest_unsubscribe_description_sender_unknown">Message deleted. Unsubscribe from this sender?</string>
-    <string name="suggested_search_result_query">Showing results for ^1 instead</string>
+    <string name="suggested_search_result_query">"No results for ^1
+Showing results for ^2 instead"</string>
     <string name="suggestion_failure_dialog_message">The details of the corresponding event have been updated. Please try again.</string>
     <string name="suggestion_failure_dialog_title">The corresponding event has changed</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
@@ -4704,7 +4896,10 @@ Invites are hidden automatically after 90 days."</string>
     <string name="survey_very_satisfied">Very satisfied</string>
     <string name="suspcious_url">"Be careful with this message. It contains a suspicious link that was used to steal people's personal information. Unless you trust the sender, don't click links or reply with personal information."</string>
     <string name="suspicious">"Be careful with this message. The sender's account may be compromised, so this message could be a scam to steal personal information."</string>
-    <string name="swg_warning_banner_info_button_description" />
+    <string name="swg_info_dialog_detail_text">To keep your account protected, Gmail alerts you when an email seems fraudulent or dangerous. ^1</string>
+    <string name="swg_info_dialog_learn_more_text">Learn more about this alert</string>
+    <string name="swg_info_dialog_title_text">Security alerts in Gmail</string>
+    <string name="swg_warning_banner_info_button_description">More information</string>
     <string name="swipe_action_onboarding_card_body">You can choose from archive, delete, snooze, and more</string>
     <string name="swipe_action_onboarding_card_negative_button">No thanks</string>
     <string name="swipe_action_onboarding_card_positive_button">Customize</string>
@@ -4836,10 +5031,9 @@ Invites are hidden automatically after 90 days."</string>
 Update Gmail to use tasks."</string>
     <string name="tasks_cannot_be_reordered_snackbar">"You can't move tasks in this view. To reorder them change the sorting"</string>
     <string name="tasks_chip_content_description">Task chip is present</string>
-    <string name="tasks_completed_task_document_sync_warning_text">Others can see when you mark this task as uncompleted</string>
+    <string name="tasks_confirm_delete_subtasks_title">This task has subtasks</string>
     <string name="tasks_delete_task">Delete</string>
     <string name="tasks_delete_with_replies_alert_title">Delete message and replies only?</string>
-    <string name="tasks_document_sync_warning_text">Others can see when you complete this task</string>
     <string name="tasks_done">Done</string>
     <string name="tasks_edit_segment_body_hint">Add note</string>
     <string name="tasks_edit_segment_due_date_label">Due date</string>
@@ -4850,10 +5044,12 @@ Update Gmail to use tasks."</string>
     <string name="tasks_flatten_list_action">Update list</string>
     <string name="tasks_flatten_list_description">"This list has multiple levels of subtasks, which aren't supported in Tasks. Update this list to use it in Tasks."</string>
     <string name="tasks_flatten_list_title">Update this list</string>
-    <string name="tasks_from_space">From a space</string>
+    <string name="tasks_from_space">Unknown space</string>
     <string name="tasks_killed_action">OK</string>
     <string name="tasks_killed_message">"Tasks are unavailable right now.
 Try again later."</string>
+    <string name="tasks_link_action_edit">Edit</string>
+    <string name="tasks_link_action_open">Open</string>
     <string name="tasks_mark_incomplete_action">Mark uncompleted</string>
     <string name="tasks_message_delete_notification_alert_message">This will not delete the actual task but will delete the message from Chat permanently.</string>
     <string name="tasks_message_delete_notification_alert_title">Delete message only?</string>
@@ -4871,13 +5067,13 @@ Other members can see that a message has been deleted."</string>
     <string name="tasks_service_disabled_action">OK</string>
     <string name="tasks_service_disabled_message">"Tasks is turned off for your domain.
 Contact your admin to enable access."</string>
-    <string name="tasks_sync_warning_text">"Changes here also show up in the space's list"</string>
+    <string name="tasks_shared_task_sync_warning_text">Others can see changes that you make to this task</string>
     <string name="tasks_tab_undo">Undo</string>
     <string name="tasks_task_not_found">Task not found</string>
     <string name="tasks_unassign">Unassign</string>
     <string name="tasks_unassign_denormalized_task_confirm_message">"This removes the task from your personal task list. You can still find it in the space's task list."</string>
     <string name="tasks_unassign_denormalized_task_confirm_title">Unassign this task?</string>
-    <string name="tasks_unassign_document_task_confirm_message">This removes this task from your personal task list. It will still be visible in the document.</string>
+    <string name="tasks_unassign_document_task_confirm_message">"This will also delete the task from the document. The checklist item may still be visible but won't be assigned to you anymore."</string>
     <string name="tasks_unreachable_try_again_later">Unable to reach tasks. Try again later.</string>
     <string name="tasks_view_in_chat">View in chat</string>
     <string name="terms_of_service_link">Terms of Service</string>
@@ -4887,19 +5083,21 @@ Contact your admin to enable access."</string>
     <string name="thank_you">Thank you!</string>
     <string name="thread_action_bar_label">Thread</string>
     <string name="thread_limit_reply_limit_error">This thread has reached its reply limit</string>
-    <string name="thread_summary_action_bar_label">Active Threads</string>
+    <string name="thread_summary_action_bar_label">Active threads</string>
     <string name="thread_summary_attachment_placeholder">[Attachment]</string>
-    <string name="thread_summary_button">Thread activity</string>
+    <string name="thread_summary_button">Active threads</string>
+    <string name="thread_summary_button_new_replies">Active threads - New replies</string>
     <string name="thread_summary_filter_button_not_ticked_content_description">not checked, %1$s</string>
     <string name="thread_summary_filter_button_ticked_content_description">checked, %1$s</string>
-    <string name="thread_summary_filter_followed_zero_state">No followed threads</string>
+    <string name="thread_summary_filter_followed_zero_state">"You're not following any of the latest threads with new replies"</string>
     <string name="thread_summary_filter_following_button">Following</string>
-    <string name="thread_summary_filter_mentions_button">\@Mentions</string>
-    <string name="thread_summary_filter_mentions_zero_state">No new @mentions</string>
+    <string name="thread_summary_filter_mentions_button">Mentions me</string>
+    <string name="thread_summary_filter_mentions_zero_state">You have no @mentions in any of the latest threads with new replies</string>
     <string name="thread_summary_following_filter_button_content_description">following threads filter</string>
+    <string name="thread_summary_latest_threads">Displaying the latest threads with new replies</string>
     <string name="thread_summary_load_error">Failed to load threads</string>
     <string name="thread_summary_load_error_try_again">Try again</string>
-    <string name="thread_summary_mentions_filter_button_content_description">\@mentions filter</string>
+    <string name="thread_summary_mentions_filter_button_content_description">Mentions me filter</string>
     <string name="thread_summary_snippet_add_video_meeting">Added a video meeting</string>
     <string name="thread_summary_snippet_call_ended">Call ended</string>
     <string name="thread_summary_snippet_call_missed">Call missed</string>
@@ -4910,17 +5108,16 @@ Contact your admin to enable access."</string>
     <string name="thread_summary_snippet_send_video">Sent a video</string>
     <string name="thread_summary_thread_followed_announcement">This thread has been followed.</string>
     <string name="thread_summary_thread_unfollowed_announcement">This thread is not followed.</string>
-    <string name="thread_summary_tooltip_text">See all the threads with recent replies in a space. Tap the icon to join the conversation.</string>
-    <string name="thread_summary_tooltip_title">Catch up on the conversation</string>
     <string name="thread_summary_zero_state">There are no threads in this space</string>
     <string name="thread_summary_zero_state_reload">Reload</string>
-    <string name="threaded_spaces_otr_banner_description_replies_will_disappear">Replies sent to this thread while history is off will be deleted in 24 hours.</string>
-    <string name="threaded_spaces_otr_banner_description_thread_will_disappear">This thread (including all replies) will be deleted 24 hours after the original message was sent.</string>
+    <string name="threaded_spaces_otr_banner_description_replies_will_disappear_learn_more">"History is off. Replies sent to this thread will be deleted in 24 hours.
+"<a href="https://support.google.com/chat/answer/7664687">Learn more</a>" "</string>
+    <string name="threaded_spaces_otr_banner_description_thread_will_disappear_learn_more">"This thread (including all replies) will be deleted 24 hours after the original message was sent.
+"<a href="https://support.google.com/chat/answer/7664687">Learn more</a>" "</string>
     <string name="threading_features_available_shortly">These features will be available shortly.</string>
     <string name="threading_features_disabled_toast">Threading features have been disabled for %1$s</string>
     <string name="threading_features_enabled_toast">Threading features have been enabled for %1$s</string>
     <string name="threading_features_temporarily_disabled">Threading features have been temporarily disabled</string>
-    <string name="threading_space_notification_setting_notify_always_subtitle">New messages and replies to threads you follow</string>
     <string name="threading_space_notification_setting_notify_always_title">All</string>
     <string name="threading_space_notification_setting_notify_never_subtitle">"No notifications, just a dot if you're @mentioned"</string>
     <string name="threading_space_notification_setting_notify_never_title">None</string>
@@ -4942,7 +5139,6 @@ Contact your admin to enable access."</string>
     <string name="time_zone_display">"Using your devices’ time zone:
 "</string>
     <string name="time_zone_info">All times are in %1$s</string>
-    <string name="time_zone_update">Your time zone is now (%s)</string>
     <string name="title_snooze">Snoozed</string>
     <string name="titles" formatted="false">%s, %s</string>
     <string name="to">To</string>
@@ -4959,7 +5155,9 @@ Contact your admin to enable access."</string>
     <string name="too_large_to_attach_multiple">One or more files not attached. Limit %1$s.</string>
     <string name="too_large_to_attach_single">The files you are trying to send exceed the %1$s total attachment limit.</string>
     <string name="tooltip_accessibility_hide_action">hide</string>
+    <string name="tooltip_ok_button">OK</string>
     <string name="topic_action_bar_room_label">Thread in</string>
+    <string name="topic_action_bar_room_label_legacy_thread_room">Topic in</string>
     <string name="topic_created_announcement">Topic created</string>
     <string name="topic_creation_failed">"Thread couldn't be created. Try again in a few minutes."</string>
     <string name="topic_deleted_failure">This topic has been deleted.</string>
@@ -4969,6 +5167,7 @@ Contact your admin to enable access."</string>
     <string name="topic_mute_state_followed_announcement">Thread notification switch, following</string>
     <string name="topic_mute_state_unfollowed_announcement">Thread notification switch, not following</string>
     <string name="topic_new_thread_label">New thread</string>
+    <string name="topic_new_thread_label_legacy_thread_room">New topic</string>
     <string name="topic_recycler_view_content_description">Topics</string>
     <string name="topic_view_announcement">Topic view</string>
     <string name="trash_undone">Scheduled message reverted to draft</string>
@@ -5002,8 +5201,6 @@ Contact your admin to enable access."</string>
     <string name="turn_mic_off_content_description">Turn microphone off</string>
     <string name="turn_mic_on_content_description">Turn microphone on</string>
     <string name="turn_off_background_effects_content_description">Turn off background effects</string>
-    <string name="turn_off_dnd">Turn off do not disturb</string>
-    <string name="turn_off_do_not_disturb_error">Something went wrong when trying to turn off do not disturb.</string>
     <string name="turn_off_effects_content_description">Turn off effects</string>
     <string name="turn_off_highlighting">Turn Off Highlighting</string>
     <string name="turn_on">Turn on</string>
@@ -5266,10 +5463,8 @@ Tap "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up
     <string name="working_hours_explanation">Only receive notifications during these hours:</string>
     <string name="working_hours_invalid_input">Working hours start time must be before end time.</string>
     <string name="world_bottom_offscreen_indicator_content_description">Unread messages below</string>
-    <string name="world_browse_rooms_label">Browse spaces</string>
     <string name="world_message_requests_badge_count_exceeds_max">%1$d+</string>
     <string name="world_message_requests_text">Message requests</string>
-    <string name="world_new_conversation_label">New conversation</string>
     <string name="world_offscreen_indicator_text">Unread</string>
     <string name="world_pinned_icon_content_description">Pinned group</string>
     <string name="world_room_mute_state_content_description">Muted</string>
@@ -5288,8 +5483,6 @@ Tap "<b>Sync Now</b> to sync mail once, or <b>Change Sync Settings</b> to set up
     <string name="world_spaces_list_people_content_description">Direct Messages</string>
     <string name="world_spaces_list_rooms_content_description">Spaces list</string>
     <string name="world_speed_dial_chat_efab_content_description">New chat</string>
-    <string name="world_speed_dial_fab_content_description">Find spaces, people, bots</string>
-    <string name="world_speed_dial_fab_content_new_description">Find spaces, people, apps</string>
     <string name="world_speed_dial_room_efab_content_description">New space</string>
     <string name="world_top_offscreen_indicator_content_description">Unread messages above</string>
     <string name="world_unviewed_invited_rooms_count">99+</string>
