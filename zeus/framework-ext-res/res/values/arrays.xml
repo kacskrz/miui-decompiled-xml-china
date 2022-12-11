@@ -78,9 +78,9 @@
     </string-array>
     <array name="allowed_package_operator" />
     <item type="array" name="android_common_nicknames">@android:array/config_accessibility_allowed_install_source</item>
-    <item type="array" name="android_config_longPressVibePattern">@android:array/config_oemUsbModeOverride</item>
-    <item type="array" name="android_config_mobile_hotspot_provision_app">@android:array/config_restrictedImagesServices</item>
-    <item type="array" name="android_config_virtualKeyVibePattern">@android:array/preloaded_drawables</item>
+    <item type="array" name="android_config_longPressVibePattern">@android:array/config_restrictedImagesServices</item>
+    <item type="array" name="android_config_mobile_hotspot_provision_app">@android:array/config_scrollBarrierVibePattern</item>
+    <item type="array" name="android_config_virtualKeyVibePattern">@android:array/supported_locales</item>
     <item type="array" name="android_special_locale_codes">@null</item>
     <item type="array" name="android_special_locale_names">@null</item>
     <string-array name="application_lock_activity">
@@ -229,6 +229,33 @@
         <item>45006</item>
         <item>45008</item>
         <item>60202</item>
+    </string-array>
+    <string-array name="config_notification_interceptchannel">
+        <item>com.miui.gallery:com.miui.gallery.hide</item>
+        <item>com.miui.securitycenter:securitycenter_resident_notification_hide</item>
+        <item>com.android.mtp:device_notification_channel</item>
+        <item>com.android.mms:Channel_Foreground_Service</item>
+        <item>com.xiaomi.mipicks:com.xiaomi.mipicks_hide</item>
+        <item>com.xiaomi.discover:com.xiaomi.discover_hide</item>
+        <item>com.xiaomi.discover:com.xiaomi.discover_hide_unique</item>
+        <item>com.miui.mishare.connectivity:MiShare</item>
+        <item>com.mfashiongallery.emag:gallery_overlay_windows</item>
+        <item>com.miui.misound:misound_sound</item>
+        <item>com.miui.misound:misound_assist</item>
+        <item>com.miui.misound:misound_protect</item>
+        <item>com.xiaomi.mirror:foreground</item>
+        <item>com.miui.screenshot:SCN</item>
+        <item>com.miui.screenshot:AITSCN</item>
+        <item>com.xiaomi.simactivate.service:com.xiaomi.simactivate.service.CHANNEL_ID</item>
+        <item>com.milink.service:hide_foreground</item>
+    </string-array>
+    <string-array name="config_notification_interceptlistener">
+        <item>com.android.systemui/com.android.systemui.statusbar.notification.MiuiNotificationListener</item>
+        <item>com.mi.health/com.xiaomi.fitness.notify.NotifySyncService</item>
+        <item>com.huawei.health/com.huawei.bone.ui.setting.NotificationPushListener</item>
+        <item>com.heytap.health/com.heytap.health.watch.commonnotification.HeytapNotificationListenerService</item>
+        <item>com.vivo.health/com.vivo.health.devices.watch.notify.NotificationService</item>
+        <item>com.xiaomi.hm.health/com.xiaomi.hm.health.ui.smartplay.NotificationAccessService</item>
     </string-array>
     <integer-array name="config_originalLux">
         <item>10</item>
@@ -5891,6 +5918,7 @@
         <item>com.yuwan.tmshipin</item>
         <item>com.tencent.gamehelper.smoba</item>
         <item>com.mybank.android.phone</item>
+        <item>com.sankuai.meituan</item>
     </string-array>
     <string-array name="list_about_support_landscape_video">
         <item>com.hunantv.imgo.activity</item>
@@ -7055,6 +7083,9 @@
         <item>com.sup.android.superb</item>
         <item>com.xiaomi.gamecenter</item>
     </string-array>
+    <string-array name="miui_resize_white_list">
+        <item>com.android.camera</item>
+    </string-array>
     <string-array name="need_trace_list">
         <item>com.android.phone</item>
         <item>com.android.nfc</item>
@@ -7390,7 +7421,6 @@
         <item>com.miui.screenrecorder</item>
         <item>com.android.soundrecorder</item>
         <item>com.android.deskclock</item>
-        <item>com.miui.voiceassist</item>
         <item>com.xiaomi.drivemode</item>
         <item>com.caiharbor.esim</item>
         <item>com.miui.backup</item>
@@ -7416,6 +7446,9 @@
         <item>com.miui.securitycenter.remote</item>
         <item>com.miui.greenguard</item>
         <item>com.miui.aod</item>
+        <item>com.android.mms:mms_service</item>
+        <item>com.miui.voiceassist:core</item>
+        <item>com.miui.voicetrigger</item>
     </string-array>
     <array name="process_static_white_list_lite" />
     <string-array name="rt_boost_pkg_white_list">
@@ -7450,6 +7483,27 @@
         <item>com.tencent.news</item>
         <item>com.zhihu.android</item>
         <item>com.taobao.idlefish</item>
+        <item>com.ss.android.article.video</item>
+        <item>com.kmxs.reader</item>
+        <item>com.youku.phone</item>
+        <item>com.ss.android.ugc.live</item>
+        <item>com.duowan.kiwi</item>
+        <item>com.baidu.haokan</item>
+        <item>com.tencent.news</item>
+        <item>air.tv.douyu.android</item>
+        <item>cn.xuexi.android</item>
+        <item>com.jingdong.app.mall</item>
+        <item>com.quark.browser</item>
+        <item>com.sup.android.superb</item>
+        <item>com.tencent.karaoke</item>
+        <item>com.sdu.didi.gsui</item>
+        <item>com.le123.ysdq</item>
+        <item>cn.xiaochuankeji.tieba</item>
+        <item>com.duokan.free</item>
+        <item>com.hunantv.imgo.activity</item>
+        <item>com.baidu.tieba</item>
+        <item>com.baidu.searchbox.lite</item>
+        <item>com.baidu.netdisk</item>
         <item>com.miui.home</item>
         <item>com.android.incallui</item>
         <item>com.android.browser</item>
@@ -7472,6 +7526,11 @@
         <item>com.android.thememanager</item>
         <item>com.android.fileexplorer</item>
         <item>com.miui.personalassistant</item>
+        <item>com.duokan.reader</item>
+        <item>com.miui.newhome</item>
+        <item>com.mfashiongallery.emag</item>
+        <item>com.android.quicksearchbox</item>
+        <item>com.miui.player</item>
     </string-array>
     <string-array name="screen_key_long_press_default_action">
         <item>voice_assistant</item>
@@ -7524,6 +7583,7 @@
         <item>com.miui.mishare.connectivity</item>
         <item>com.lbe.security.miui</item>
         <item>com.miui.cloudbackup</item>
+        <item>com.android.htmlviewer</item>
     </string-array>
     <string-array name="smart_power_process_white_list">
         <item>com.tencent.mm:push</item>
@@ -7534,7 +7594,6 @@
         <item>com.ss.android.lark.kami:wschannel</item>
         <item>android.process.media</item>
         <item>com.miui.misound</item>
-        <item>com.android.htmlviewer:remote</item>
     </string-array>
     <string-array name="smart_power_service_package_white_list">
         <item>com.tencent.mm</item>
