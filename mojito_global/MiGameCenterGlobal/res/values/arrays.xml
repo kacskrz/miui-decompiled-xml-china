@@ -63,6 +63,18 @@
         <item>@string/am</item>
         <item>@string/pm</item>
     </string-array>
+    <array name="card_game_bg_arr">
+        <item>@drawable/game_card_bg_0</item>
+        <item>@drawable/game_card_bg_1</item>
+        <item>@drawable/game_card_bg_2</item>
+        <item>@drawable/game_card_bg_3</item>
+    </array>
+    <string-array name="card_game_text_arr">
+        <item>@string/card_game_title_0</item>
+        <item>@string/card_game_title_1</item>
+        <item>@string/card_game_title_2</item>
+        <item>@string/card_game_title_3</item>
+    </string-array>
     <string-array name="chinese_days">
         <item>@string/chinese_day_1</item>
         <item>@string/chinese_day_2</item>
@@ -140,45 +152,6 @@
         <item>@string/chinese_symbol_animals_dog</item>
         <item>@string/chinese_symbol_animals_pig</item>
     </string-array>
-    <string-array name="config_controlsPreferredPackages">
-        <item>com.xiaomi.smarthome</item>
-        <item>com.google.android.apps.chromecast.app</item>
-    </string-array>
-    <string-array name="config_systemUIServiceComponents">
-        <item>com.android.systemui.util.NotificationChannels</item>
-        <item>com.android.systemui.keyguard.KeyguardViewMediator</item>
-        <item>com.android.systemui.recents.Recents</item>
-        <item>com.android.systemui.volume.VolumeUI</item>
-        <item>com.android.systemui.stackdivider.Divider</item>
-        <item>com.android.systemui.statusbar.phone.StatusBar</item>
-        <item>com.android.systemui.usb.StorageNotification</item>
-        <item>com.android.systemui.power.PowerUI</item>
-        <item>com.android.systemui.media.RingtonePlayer</item>
-        <item>com.android.systemui.keyboard.KeyboardUI</item>
-        <item>com.android.systemui.pip.PipUI</item>
-        <item>com.android.systemui.shortcut.ShortcutKeyDispatcher</item>
-        <item>com.android.systemui.VendorServices</item>
-        <item>com.android.systemui.util.leak.GarbageMonitor$Service</item>
-        <item>com.android.systemui.LatencyTester</item>
-        <item>com.android.systemui.globalactions.GlobalActionsComponent</item>
-        <item>com.android.systemui.ScreenDecorations</item>
-        <item>com.android.systemui.biometrics.AuthController</item>
-        <item>com.android.systemui.SliceBroadcastRelayHandler</item>
-        <item>com.android.systemui.SizeCompatModeActivityController</item>
-        <item>com.android.systemui.statusbar.notification.InstantAppNotifier</item>
-        <item>com.android.systemui.theme.ThemeOverlayController</item>
-        <item>com.android.systemui.accessibility.WindowMagnification</item>
-        <item>com.android.systemui.accessibility.SystemActions</item>
-        <item>com.android.systemui.toast.ToastUI</item>
-    </string-array>
-    <string-array name="control_center_independent_tiles_mobile">
-        <item>cell</item>
-        <item>wifi</item>
-    </string-array>
-    <string-array name="control_center_independent_tiles_wifi">
-        <item>wifi</item>
-        <item>bt</item>
-    </string-array>
     <string-array name="detailed_am_pms">
         <item>@string/midnight</item>
         <item>@string/early_morning</item>
@@ -206,6 +179,24 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
+    <string-array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
     <string-array name="heavenly_stems">
         <item>@string/heavenly_stems_jia</item>
         <item>@string/heavenly_stems_yi</item>
@@ -218,84 +209,6 @@
         <item>@string/heavenly_stems_ren</item>
         <item>@string/heavenly_stems_gui</item>
     </string-array>
-    <array name="miui_config_quickSettingsAutoAdd" />
-    <array name="miui_volume_progress_dragging_corners">
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>0.0px</item>
-        <item>0.0px</item>
-        <item>0.0px</item>
-        <item>0.0px</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-    </array>
-    <array name="miui_volume_progress_last_corners">
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-    </array>
-    <array name="miui_volume_progress_released_corners">
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-        <item>@dimen/miui_volume_timer_corner_radius</item>
-    </array>
-    <array name="miui_volume_ringer_btn_corners_collapsed">
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-        <item>@dimen/miui_volume_bg_radius</item>
-    </array>
-    <array name="miui_volume_ringer_btn_dnd_corners">
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-    </array>
-    <array name="miui_volume_ringer_btn_standard_corners">
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-    </array>
-    <array name="miui_volume_ringer_btn_standard_corners2">
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>0.0dip</item>
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-        <item>@dimen/miui_volume_bg_radius_expanded</item>
-    </array>
-    <integer-array name="miui_volume_timer_segments">
-        <item>0</item>
-        <item>1800</item>
-        <item>3600</item>
-        <item>7200</item>
-        <item>28800</item>
-    </integer-array>
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
