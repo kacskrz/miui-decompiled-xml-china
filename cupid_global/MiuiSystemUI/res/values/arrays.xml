@@ -852,6 +852,52 @@
     <array name="config_blockBadgePackages" />
     <array name="config_blockFloatPackages" />
     <array name="config_blockKeyguardPackages" />
+    <string-array name="config_blockOngoingPackages">
+        <item>com.UCMobile</item>
+        <item>com.clean.anywhere</item>
+        <item>com.xiya.appclear</item>
+        <item>com.baidu.appsearch</item>
+        <item>com.qihoo.appstore</item>
+        <item>com.pp.assistant</item>
+        <item>com.android.browser</item>
+        <item>com.ijinshan.browser_fast</item>
+        <item>com.xiya.charging</item>
+        <item>android.lite.clean</item>
+        <item>com.xinhu.clean</item>
+        <item>com.yjqlds.clean</item>
+        <item>com.hellogeek.cleanking</item>
+        <item>com.iwanyue.cleanmaster</item>
+        <item>com.cheetah.cmcooler</item>
+        <item>com.oh.super.cleaner.cn</item>
+        <item>com.songheng.eastnews</item>
+        <item>com.xiya.economybattery</item>
+        <item>com.filemagic</item>
+        <item>com.duokan.freereader</item>
+        <item>com.smile.gifmaker</item>
+        <item>com.duokan.hybreader</item>
+        <item>com.baidu.input</item>
+        <item>com.xiaomi.installapktest</item>
+        <item>com.supercleaner.lite</item>
+        <item>com.qihoo360.mobilesafe</item>
+        <item>cn.com.open.mooc</item>
+        <item>com.tencent.mtt</item>
+        <item>com.ss.android.article.news</item>
+        <item>com.clean.phone.right.now</item>
+        <item>com.wandoujia.phoenix2</item>
+        <item>com.tencent.android.qqdownloader</item>
+        <item>com.tencent.qqpimsecure</item>
+        <item>mi.monitor.test.188asdb.8ddf.reject</item>
+        <item>cn.weli.sclean</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.fx.sgreenbrowser</item>
+        <item>com.sogou.activity.src</item>
+        <item>com.xinhu.steward</item>
+        <item>com.shyz.toutiao</item>
+        <item>com.bmcc.ms.ui</item>
+        <item>com.ss.android.article.weather</item>
+        <item>com.tencent.weishi</item>
+        <item>com.coohua.xinwenzhuan</item>
+    </string-array>
     <integer-array name="config_cameraLaunchGestureVibePattern">
         <item>0</item>
         <item>400</item>
@@ -867,6 +913,7 @@
         <item>android</item>
         <item>com.miui.voiceassist</item>
         <item>com.xiaomi.mirror</item>
+        <item>com.milink.service</item>
     </string-array>
     <string-array name="config_canSendSubstituteNotificationPackages">
         <item>com.xiaomi.xmsf</item>
@@ -1004,9 +1051,9 @@
         <item>camellia</item>
     </string-array>
     <array name="config_collapsed_statusbar_icon_blocklist">
-        <item>@android:string/volume_bluetooth_call</item>
-        <item>@android:string/usb_storage_activity_title</item>
-        <item>@android:string/usb_storage_message</item>
+        <item>@android:string/status_bar_volume</item>
+        <item>@android:string/status_bar_alarm_clock</item>
+        <item>@android:string/status_bar_call_strength</item>
     </array>
     <array name="config_controlsPreferredPackages" />
     <string-array name="config_disableAutoGroupSummaryPackages">
@@ -1066,9 +1113,9 @@
     </string-array>
     <array name="config_face_auth_props" />
     <array name="config_keyguard_statusbar_icon_blocklist">
-        <item>@android:string/volume_bluetooth_call</item>
-        <item>@android:string/usb_storage_activity_title</item>
-        <item>@android:string/usb_storage_message</item>
+        <item>@android:string/status_bar_volume</item>
+        <item>@android:string/status_bar_alarm_clock</item>
+        <item>@android:string/status_bar_call_strength</item>
     </array>
     <integer-array name="config_notification_snooze_times">
         <item>15</item>
@@ -1115,9 +1162,9 @@
         <item>com.miui.smarttravel</item>
     </string-array>
     <string-array name="config_quickSettingsAutoAdd">
-        <item>accessibility_display_daltonizer_enabled:color_correction</item>
         <item>accessibility_display_inversion_enabled:inversion</item>
-        <item>one_handed_mode_enabled:onehanded</item>
+        <item>wind_down_first_time_setup:custom(com.google.android.apps.wellbeing/.screen.ui.GrayscaleTileService)</item>
+        <item>focus_mode_first_time_setup:custom(com.google.android.apps.wellbeing/.focusmode.quicksettings.FocusModeTileService)</item>
     </string-array>
     <array name="config_roundedCornerBottomDrawableArray">
         <item>@drawable/rounded_corner_bottom</item>
@@ -1527,7 +1574,6 @@
     <integer-array name="miui_config_hideKeyguardPresentationDisplayIds">
         <item>-1</item>
     </integer-array>
-    <array name="miui_config_quickSettingsAutoAdd" />
     <string-array name="miui_notification_aggregate_category">
         <item>This is recommended content.</item>
         <item>This is an ad.</item>
@@ -1757,6 +1803,7 @@
         <item>com.xiaomi.gamecenter.sdk.service</item>
     </string-array>
     <string-array name="system_foreground_notification_whitelist">
+        <item>com.miui.voicetrigger</item>
         <item>com.xiaomi.uatalive:mimonitor_bootload</item>
         <item>com.jtom.userprobation</item>
         <item>com.xiaomi.joyose</item>
@@ -1800,6 +1847,8 @@
         <item>com.milink.service:hide_foreground</item>
         <item>com.xiaomi.aiasst.vision:ai_toolbox_fs</item>
         <item>com.quicinc.voice.activation</item>
+        <item>com.oray.sunlogin.service</item>
+        <item>com.magiear.handsfree.assistant</item>
     </string-array>
     <string-array name="system_ui_packages">
         <item>com.android.keyguard</item>
