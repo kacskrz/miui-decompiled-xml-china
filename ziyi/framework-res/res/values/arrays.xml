@@ -38,6 +38,7 @@
         <item>Custom</item>
     </string-array>
     <array name="config_keySystemUuidMapping" />
+    <array name="config_optionalIpSecAlgorithms" />
     <array name="carrier_properties" />
     <array name="common_nicknames" />
     <array name="config_accessibility_allowed_install_source" />
@@ -64,10 +65,13 @@
     </string-array>
     <array name="config_autoBrightnessButtonBacklightValues" />
     <array name="config_autoBrightnessDisplayValuesNits" />
+    <array name="config_autoBrightnessDisplayValuesNitsIdle" />
     <array name="config_autoBrightnessGame" />
     <array name="config_autoBrightnessKeyboardBacklightValues" />
     <array name="config_autoBrightnessLcdBacklightValues" />
+    <array name="config_autoBrightnessLcdBacklightValues_doze" />
     <array name="config_autoBrightnessLevels" />
+    <array name="config_autoBrightnessLevelsIdle" />
     <integer-array name="config_autoRotationTiltTolerance">
         <item>-25</item>
         <item>70</item>
@@ -94,14 +98,30 @@
         <item>com.android.providers.media</item>
         <item>com.android.systemui</item>
     </string-array>
+    <array name="config_bg_current_drain_high_threshold_to_bg_restricted">
+        <item>20.0</item>
+        <item>40.0</item>
+    </array>
+    <array name="config_bg_current_drain_high_threshold_to_restricted_bucket">
+        <item>30.0</item>
+        <item>60.0</item>
+    </array>
+    <array name="config_bg_current_drain_threshold_to_bg_restricted">
+        <item>4.0</item>
+        <item>8.0</item>
+    </array>
+    <array name="config_bg_current_drain_threshold_to_restricted_bucket">
+        <item>2.0</item>
+        <item>4.0</item>
+    </array>
     <string-array name="config_biometric_sensors">
         <item>0:2:15</item>
     </string-array>
     <array name="config_brightnessThresholdsOfPeakRefreshRate" />
-    <integer-array name="config_calendarDateVibePattern">
-        <item>125</item>
-        <item>30</item>
-    </integer-array>
+    <array name="config_builtInDisplayIsRoundArray">
+        <item>@bool/config_mainBuiltInDisplayIsRound</item>
+        <item>@bool/config_secondaryBuiltInDisplayIsRound</item>
+    </array>
     <string-array name="config_callBarringMMI">
         <item>33</item>
         <item>331</item>
@@ -126,12 +146,13 @@
     <array name="config_cdma_international_roaming_indicators" />
     <array name="config_cell_retries_per_error_code" />
     <integer-array name="config_clockTickVibePattern">
-        <item>125</item>
-        <item>30</item>
+        <item>0</item>
+        <item>10</item>
     </integer-array>
     <array name="config_companionDeviceCerts" />
     <array name="config_companionDevicePackages" />
     <array name="config_convert_to_emergency_number_map" />
+    <array name="config_defaultCloudSearchServices" />
     <array name="config_defaultFirstUserRestrictions" />
     <array name="config_defaultImperceptibleKillingExemptionPkgs" />
     <integer-array name="config_defaultImperceptibleKillingExemptionProcStates">
@@ -147,6 +168,7 @@
         <item>250</item>
         <item>350</item>
     </integer-array>
+    <array name="config_defaultNotificationVibeWaveform" />
     <string-array name="config_defaultPinnerServiceFiles">
         <item>/data/dalvik-cache/arm64/system@framework@boot.oat</item>
         <item>/data/dalvik-cache/arm/system@framework@boot.oat</item>
@@ -170,11 +192,13 @@
     </string-array>
     <array name="config_default_vm_number" />
     <array name="config_deviceSpecificSystemServices" />
+    <array name="config_deviceStatesAvailableForAppRequests" />
     <array name="config_deviceStatesOnWhichToSleep" />
     <array name="config_deviceStatesOnWhichToWakeUp" />
     <array name="config_device_state_postures" />
     <array name="config_disableApkUnlessMatchedSku_skus_list" />
     <array name="config_disableApksUnlessMatchedSku_apk_list" />
+    <array name="config_disabledDreamComponents" />
     <string-array name="config_disabledUntilUsedPreinstalledImes">
         <item>com.android.inputmethod.latin</item>
     </string-array>
@@ -229,11 +253,22 @@
         <item>10.0</item>
         <item>10.0</item>
     </array>
+    <array name="config_displayWhiteBalanceStrongAmbientColorTemperatures" />
+    <array name="config_displayWhiteBalanceStrongDisplayColorTemperatures" />
     <string-array name="config_display_no_service_when_sim_unready">
         <item>DE</item>
         <item>GB</item>
         <item>JP</item>
     </string-array>
+    <array name="config_dockExtconStateMapping" />
+    <integer-array name="config_doubleClickVibePattern">
+        <item>0</item>
+        <item>30</item>
+        <item>100</item>
+        <item>30</item>
+    </integer-array>
+    <array name="config_dozeTapSensorPostureMapping" />
+    <array name="config_dreamComplicationsEnabledByDefault" />
     <string-array name="config_dropboxLowPriorityTags">
         <item>data_app_strictmode</item>
         <item>data_app_wtf</item>
@@ -273,15 +308,13 @@
         <item>screenshot</item>
         <item>bugreport</item>
     </string-array>
+    <array name="config_gnssParameters" />
     <array name="config_hideWhenDisabled_packageNames" />
     <array name="config_highAmbientBrightnessThresholdsOfFixedRefreshRate" />
     <array name="config_highDisplayBrightnessThresholdsOfFixedRefreshRate" />
     <array name="config_highRefreshRateBlacklist" />
     <array name="config_integrityRuleProviderPackages" />
     <array name="config_keep_warming_services" />
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>40</item>
-    </integer-array>
     <string-array name="config_legacyPinnerServiceFiles">
         <item>/data/dalvik-cache/arm64/system@framework@boot.oat</item>
         <item>/data/dalvik-cache/arm/system@framework@boot.oat</item>
@@ -292,9 +325,7 @@
     </string-array>
     <array name="config_localPrivateDisplayPorts" />
     <array name="config_locationDriverAssistancePackageNames" />
-    <string-array name="config_locationExtraPackageNames">
-        <item>com.google.android.gms.location.history</item>
-    </string-array>
+    <array name="config_locationExtraPackageNames" />
     <string-array name="config_locationProviderPackageNames">
         <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
@@ -311,9 +342,7 @@
     </integer-array>
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>1</item>
-        <item>20</item>
-        <item>21</item>
+        <item>30</item>
     </integer-array>
     <integer-array name="config_lteDbmThresholds">
         <item>-140</item>
@@ -371,6 +400,7 @@
         <item>0,1</item>
         <item>1,3</item>
     </string-array>
+    <array name="config_network_type_tcp_buffers" />
     <string-array name="config_nightDisplayColorTemperatureCoefficients">
         <item>0.0</item>
         <item>0.0</item>
@@ -396,13 +426,16 @@
     <string-array name="config_nonBlockableNotificationPackages">
         <item>com.android.dialer</item>
         <item>com.android.messaging</item>
+        <item>com.android.cellbroadcastreceiver.module</item>
     </string-array>
+    <array name="config_nonPreemptibleInputMethods" />
     <integer-array name="config_notificationFallbackVibePattern">
         <item>0</item>
         <item>100</item>
         <item>150</item>
         <item>100</item>
     </integer-array>
+    <array name="config_notificationFallbackVibeWaveform" />
     <array name="config_notificationMsgPkgsAllowedAsConvos" />
     <string-array name="config_notificationSignalExtractors">
         <item>com.android.server.notification.NotificationChannelExtractor</item>
@@ -418,8 +451,8 @@
         <item>com.android.server.notification.CriticalNotificationExtractor</item>
     </string-array>
     <array name="config_oemUsbModeOverride" />
-    <array name="config_optionalIpSecAlgorithms" />
     <array name="config_packagesExemptFromSuspension" />
+    <array name="config_perDeviceStateRotationLockDefaults" />
     <string-array name="config_priorityOnlyDndExemptPackages">
         <item>com.android.dialer</item>
         <item>com.android.server.telecom</item>
@@ -446,6 +479,30 @@
     <array name="config_restrictedImagesServices" />
     <array name="config_reversedFoldedDeviceStates" />
     <array name="config_ringtoneEffectUris" />
+    <array name="config_roundedCornerBottomRadiusAdjustmentArray">
+        <item>@dimen/rounded_corner_radius_bottom_adjustment</item>
+        <item>@dimen/secondary_rounded_corner_radius_bottom_adjustment</item>
+    </array>
+    <array name="config_roundedCornerBottomRadiusArray">
+        <item>@dimen/rounded_corner_radius_bottom</item>
+        <item>@dimen/secondary_rounded_corner_radius_bottom</item>
+    </array>
+    <array name="config_roundedCornerRadiusAdjustmentArray">
+        <item>@dimen/rounded_corner_radius_adjustment</item>
+        <item>@dimen/secondary_rounded_corner_radius_adjustment</item>
+    </array>
+    <array name="config_roundedCornerRadiusArray">
+        <item>@dimen/rounded_corner_radius</item>
+        <item>@dimen/secondary_rounded_corner_radius</item>
+    </array>
+    <array name="config_roundedCornerTopRadiusAdjustmentArray">
+        <item>@dimen/rounded_corner_radius_top_adjustment</item>
+        <item>@dimen/secondary_rounded_corner_radius_top_adjustment</item>
+    </array>
+    <array name="config_roundedCornerTopRadiusArray">
+        <item>@dimen/rounded_corner_radius_top</item>
+        <item>@dimen/secondary_rounded_corner_radius_top</item>
+    </array>
     <integer-array name="config_safeModeEnabledVibePattern">
         <item>0</item>
         <item>1</item>
@@ -463,12 +520,6 @@
         <item>200</item>
     </integer-array>
     <array name="config_screenThresholdLevels" />
-    <integer-array name="config_scrollBarrierVibePattern">
-        <item>0</item>
-        <item>15</item>
-        <item>10</item>
-        <item>10</item>
-    </integer-array>
     <array name="config_secondaryBuiltInDisplayWaterfallCutout">
         <item>@dimen/secondary_waterfall_display_left_edge_size</item>
         <item>@dimen/secondary_waterfall_display_top_edge_size</item>
@@ -479,6 +530,8 @@
     <string-array name="config_serviceStateLocationAllowedPackages">
         <item>com.android.phone</item>
     </string-array>
+    <array name="config_sfps_sensor_props" />
+    <array name="config_sharedLibrariesLoadedAfterApp" />
     <array name="config_sms_enabled_locking_shift_tables" />
     <array name="config_sms_enabled_single_shift_tables" />
     <string-array name="config_statusBarIcons">
@@ -516,16 +569,17 @@
         <item>secure</item>
         <item>clock</item>
     </string-array>
+    <array name="config_supportedDreamComplications" />
+    <integer-array name="config_supported_cellular_usage_settings">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
     <string-array name="config_system_condition_providers">
         <item>countdown</item>
         <item>schedule</item>
         <item>event</item>
     </string-array>
-    <string-array name="config_telephonyEuiccDeviceCapabilities">
-        <item>gsm,8</item>
-        <item>utran,9</item>
-        <item>eutran,15</item>
-    </string-array>
+    <array name="config_telephonyEuiccDeviceCapabilities" />
     <string-array name="config_telephonyHardware">
         <item>0,modem,0,0,0,1,1,1</item>
         <item>1,sim,0,modem</item>
@@ -550,14 +604,13 @@
         <item>0.25</item>
         <item>0.5</item>
         <item>0.75</item>
+        <item>0.875</item>
     </string-array>
     <array name="config_udfps_sensor_props" />
     <array name="config_usbHostDenylist" />
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>10</item>
         <item>20</item>
-        <item>30</item>
     </integer-array>
     <string-array name="config_vvmSmsFilterRegexes">
         <item>310004,310010,310012,310013,310590,310890,310910,311110,311270,311271,311272,311273,311274,311275,311276,311277,311278,311279,311280,311281,311282,311283,311284,311285,311286,311287,311288,311289,311390,311480,311481,311482,311483,311484,311485,311486,311487,311488,311489;^//VZWVVM.*</item>
@@ -569,6 +622,7 @@
     <string-array name="config_wearActivityModeRadios">
         <item>wifi</item>
     </string-array>
+    <array name="config_wifi_dual_sap_interfaces" />
     <array name="correct_brightness_game">
         <item>0.0733</item>
         <item>0.0733</item>
@@ -710,11 +764,51 @@
     <string-array name="no_ems_support_sim_operators">
         <item>20404;suffix;BAE0000000000000</item>
     </string-array>
-    <integer-array name="non_removable_euicc_slots">
-        <item>1</item>
-    </integer-array>
+    <array name="non_removable_euicc_slots" />
     <array name="policy_exempt_apps" />
-    <array name="preloaded_color_state_lists" />
+    <array name="preloaded_color_state_lists">
+        <item>@color/primary_text_dark</item>
+        <item>@color/primary_text_dark_disable_only</item>
+        <item>@color/primary_text_dark_nodisable</item>
+        <item>@color/primary_text_disable_only_holo_dark</item>
+        <item>@color/primary_text_disable_only_holo_light</item>
+        <item>@color/primary_text_holo_dark</item>
+        <item>@color/primary_text_holo_light</item>
+        <item>@color/primary_text_light</item>
+        <item>@color/primary_text_light_disable_only</item>
+        <item>@color/primary_text_light_nodisable</item>
+        <item>@color/primary_text_nodisable_holo_dark</item>
+        <item>@color/primary_text_nodisable_holo_light</item>
+        <item>@color/secondary_text_dark</item>
+        <item>@color/secondary_text_dark_nodisable</item>
+        <item>@color/secondary_text_holo_dark</item>
+        <item>@color/secondary_text_holo_light</item>
+        <item>@color/secondary_text_light</item>
+        <item>@color/secondary_text_light_nodisable</item>
+        <item>@color/secondary_text_nodisable_holo_dark</item>
+        <item>@color/secondary_text_nodisable_holo_light</item>
+        <item>@color/secondary_text_nofocus</item>
+        <item>@color/hint_foreground_dark</item>
+        <item>@color/hint_foreground_holo_dark</item>
+        <item>@color/hint_foreground_holo_light</item>
+        <item>@color/hint_foreground_light</item>
+        <item>@color/bright_foreground_light</item>
+        <item>@color/bright_foreground_dark</item>
+        <item>@color/tab_indicator_text</item>
+        <item>#ff000000</item>
+        <item>#00000000</item>
+        <item>#ffffffff</item>
+        <item>@color/background_cache_hint_selector_material_dark</item>
+        <item>@color/background_cache_hint_selector_material_light</item>
+        <item>@color/btn_default_material_dark</item>
+        <item>@color/btn_default_material_light</item>
+        <item>@color/primary_text_disable_only_material_dark</item>
+        <item>@color/primary_text_disable_only_material_light</item>
+        <item>@color/primary_text_material_dark</item>
+        <item>@color/primary_text_material_light</item>
+        <item>@color/search_url_text_material_dark</item>
+        <item>@color/search_url_text_material_light</item>
+    </array>
     <array name="preloaded_drawables">
         <item>@drawable/btn_default_pressed_holo_light</item>
         <item>@drawable/btn_default_normal_holo_light</item>
@@ -1472,6 +1566,7 @@
     <array name="vendor_required_apps_managed_device" />
     <array name="vendor_required_apps_managed_profile" />
     <array name="vendor_required_apps_managed_user" />
+    <array name="vendor_required_attestation_certificates" />
     <string-array name="wfcOperatorErrorAlertMessages">
         <item>To make calls and send messages over WLAN, first ask your carrier to set up this service. Then turn on WLAN calling again from Settings. (Error code: %1$s)</item>
     </string-array>
@@ -1491,5 +1586,9 @@
         <item>@string/wfcSpnFormat_wifi_calling_wo_hyphen</item>
         <item>@string/wfcSpnFormat_vowifi</item>
         <item>@string/wfcSpnFormat_spn_wifi_calling_vo_hyphen</item>
+    </string-array>
+    <array name="wifi_known_signers" />
+    <string-array name="window_tracing_whitelist">
+        <item>com.miui.uireporter</item>
     </string-array>
 </resources>
