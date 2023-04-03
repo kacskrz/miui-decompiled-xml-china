@@ -59,7 +59,15 @@
     <string name="config_systemActivityRecognizer" />
     <string name="config_systemCompanionDeviceProvider" />
     <string name="config_systemUi">com.android.systemui</string>
-    <string name="config_defaultRingtoneVibrationSound">/product/media/audio/ui/AttentionalHaptics.ogg</string>
+    <string name="config_defaultRingtoneVibrationSound" />
+    <string name="config_systemSupervision" />
+    <string name="config_devicePolicyManagement" />
+    <string name="config_systemAppProtectionService" />
+    <string name="config_systemAutomotiveCalendarSyncManager" />
+    <string name="config_defaultAutomotiveNavigation" />
+    <string name="safety_protection_display_text" />
+    <string name="config_systemSettingsIntelligence">com.android.settings.intelligence</string>
+    <string name="config_systemBluetoothStack">com.android.bluetooth</string>
     <string name="BaMmi">Call barring</string>
     <string name="CLIRDefaultOffNextCallOff">Caller ID defaults to not restricted. Next call: Not restricted</string>
     <string name="CLIRDefaultOffNextCallOn">Caller ID defaults to not restricted. Next call: Restricted</string>
@@ -209,7 +217,6 @@
     <string name="accessibility_dialog_button_deny">Deny</string>
     <string name="accessibility_edit_shortcut_menu_button_title">Choose features to use with the accessibility button</string>
     <string name="accessibility_edit_shortcut_menu_volume_title">Choose features to use with the volume key shortcut</string>
-    <string name="accessibility_enable_service_encryption_warning">If you turn on %1$s, your device won’t use your screen lock to enhance data encryption.</string>
     <string name="accessibility_enable_service_title">Allow %1$s to have full control of your device?</string>
     <string name="accessibility_freeform_caption">Caption bar of %1$s.</string>
     <string name="accessibility_gesture_3finger_instructional_text">To switch between features, swipe up with three fingers and hold.</string>
@@ -227,7 +234,7 @@
     <string name="accessibility_shortcut_enabling_service">Held volume keys. %1$s turned on.</string>
     <string name="accessibility_shortcut_menu_item_status_off">OFF</string>
     <string name="accessibility_shortcut_menu_item_status_on">ON</string>
-    <string name="accessibility_shortcut_multiple_service_list">"\u0009• %1$s
+    <string name="accessibility_shortcut_multiple_service_list">" • %1$s
 "</string>
     <string name="accessibility_shortcut_multiple_service_warning">"Holding down both volume keys for a few seconds turns on accessibility features. This may change how your device works.
 
@@ -246,7 +253,13 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="accessibility_shortcut_warning_dialog_title">Use Accessibility Shortcut?</string>
     <string name="accessibility_system_action_back_label">Back</string>
     <string name="accessibility_system_action_dismiss_notification_shade">Dismiss Notification Shade</string>
+    <string name="accessibility_system_action_dpad_center_label">Dpad Center</string>
+    <string name="accessibility_system_action_dpad_down_label">Dpad Down</string>
+    <string name="accessibility_system_action_dpad_left_label">Dpad Left</string>
+    <string name="accessibility_system_action_dpad_right_label">Dpad Right</string>
+    <string name="accessibility_system_action_dpad_up_label">Dpad Up</string>
     <string name="accessibility_system_action_hardware_a11y_shortcut_label">Accessibility Shortcut</string>
+    <string name="accessibility_system_action_headset_hook_label">Headset Hook</string>
     <string name="accessibility_system_action_home_label">Home</string>
     <string name="accessibility_system_action_lock_screen_label">Lock Screen</string>
     <string name="accessibility_system_action_notifications_label">Notifications</string>
@@ -327,6 +340,15 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="app_not_found">No application found to handle this action</string>
     <string name="app_running_notification_text">Tap for more information or to stop the app.</string>
     <string name="app_running_notification_title">%1$s is running</string>
+    <string name="app_streaming_blocked_message">This can’t be accessed on your %1$s. Try on your phone instead.</string>
+    <string name="app_streaming_blocked_message_for_fingerprint_dialog">This app is requesting additional security. Try on your phone instead.</string>
+    <string name="app_streaming_blocked_message_for_permission_dialog">This can’t be accessed on your %1$s at this time. Try on your phone instead.</string>
+    <string name="app_streaming_blocked_title">%1$s unavailable</string>
+    <string name="app_streaming_blocked_title_for_camera_dialog">Camera unavailable</string>
+    <string name="app_streaming_blocked_title_for_fingerprint_dialog">Continue on phone</string>
+    <string name="app_streaming_blocked_title_for_microphone_dialog">Microphone unavailable</string>
+    <string name="app_streaming_blocked_title_for_permission_dialog">Permission needed</string>
+    <string name="app_streaming_blocked_title_for_settings_dialog">Phone settings unavailable</string>
     <string name="app_suspended_default_message">%1$s isn’t available right now. This is managed by %2$s.</string>
     <string name="app_suspended_more_details">Learn more</string>
     <string name="app_suspended_title">App isn’t available</string>
@@ -383,6 +405,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="autofill_phone_suffix_separator_re">^-$</string>
     <string name="autofill_picker_accessibility_title">Autofill options</string>
     <string name="autofill_picker_no_suggestions">No autofill suggestions</string>
+    <string name="autofill_picker_some_suggestions">{count, plural, =1 {One autofill suggestion} other {# autofill suggestions} }</string>
     <string name="autofill_postal_code">Postal code</string>
     <string name="autofill_prefecture">Prefecture</string>
     <string name="autofill_province">Province</string>
@@ -438,8 +461,10 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="biometric_not_recognized">Not recognized</string>
     <string name="biometric_or_screen_lock_app_setting_name">Use biometrics or screen lock</string>
     <string name="biometric_or_screen_lock_dialog_default_subtitle">Use your biometric or screen lock to continue</string>
+    <string name="bluetooth_a2dp_audio_route_id">bluetooth_a2dp_audio_route</string>
     <string name="bluetooth_a2dp_audio_route_name">Bluetooth audio</string>
     <string name="bluetooth_airplane_mode_toast">Bluetooth will stay on during airplane mode</string>
+    <string name="bugreport_countdown">{count, plural, =1 {Taking screenshot for bug report in # second.} other {Taking screenshot for bug report in # seconds.} }</string>
     <string name="bugreport_message">This will collect information about your current device state, to send as an e-mail message. It will take a little time from starting the bug report until it is ready to be sent; please be patient.</string>
     <string name="bugreport_option_full_summary">Use this option for minimal system interference when your device is unresponsive or too slow, or when you need all report sections. Does not allow you to enter more details or take additional screenshots.</string>
     <string name="bugreport_option_full_title">Full report</string>
@@ -504,6 +529,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="conference_call">Conference Call</string>
     <string name="config_UsbDeviceConnectionHandling_component">@null</string>
     <string name="config_activityRecognitionHardwarePackageName">@null</string>
+    <string name="config_ambientContextEventArrayExtraKey" />
+    <string name="config_ambientContextPackageNameExtraKey" />
     <string name="config_appsAuthorizedForSharedAccounts">;com.android.settings;</string>
     <string name="config_appsNotReportingCrashes" />
     <string name="config_bandwidthEstimateSource">bandwidth_estimator</string>
@@ -519,10 +546,12 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_bodyFontFamilyMedium">sans-serif-medium</string>
     <string name="config_cameraLaunchGestureSensorStringType" />
     <string name="config_cameraLiftTriggerSensorStringType" />
+    <string name="config_cameraShutterSound">/product/media/audio/ui/camera_click.ogg</string>
     <string name="config_carrierAppInstallDialogComponent">com.android.simappdialog/com.android.simappdialog.InstallCarrierAppActivity</string>
     <string name="config_chooseAccountActivity">android/android.accounts.ChooseAccountActivity</string>
     <string name="config_chooseTypeAndAccountActivity">android/android.accounts.ChooseTypeAndAccountActivity</string>
-    <string name="config_chooserActivity">com.android.systemui/com.android.systemui.chooser.ChooserActivity</string>
+    <string name="config_chooserActivity">com.android.intentresolver/.ChooserActivity</string>
+    <string name="config_comboNetworkLocationProvider">com.qualcomm.location</string>
     <string name="config_companionDeviceManagerPackage" />
     <string name="config_controlsPackage">com.android.systemui</string>
     <string name="config_customAdbPublicKeyConfirmationComponent">com.android.systemui/com.android.systemui.usb.UsbDebuggingActivity</string>
@@ -536,51 +565,60 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_dataUsageSummaryComponent">com.android.settings/com.android.settings.Settings$DataUsageSummaryActivity</string>
     <string name="config_datause_iface">rmnet0</string>
     <string name="config_defaultAccessibilityService">com.google.android.marvin.talkback/.TalkBackService</string>
+    <string name="config_defaultAmbientContextConsentComponent" />
+    <string name="config_defaultAmbientContextDetectionService" />
     <string name="config_defaultAppPredictionService" />
     <string name="config_defaultAssistantAccessComponent">android.ext.services/android.ext.services.notification.Assistant</string>
     <string name="config_defaultAttentionService" />
     <string name="config_defaultAugmentedAutofillService" />
     <string name="config_defaultAutofillService">com.miui.contentcatcher/.autofill.services.MiuiAutofillService</string>
     <string name="config_defaultBugReportHandlerApp" />
+    <string name="config_defaultCaptivePortalLoginPackageName">com.android.captiveportallogin</string>
     <string name="config_defaultContentCaptureService" />
     <string name="config_defaultContentSuggestionsService" />
     <string name="config_defaultDndAccessPackages">com.android.camera2</string>
-    <string name="config_defaultListenerAccessPackages">com.miui.securitycenter:com.miui.notification:com.xiaomi.barrage:com.miui.powerkeeper:com.mi.android.globallauncher:com.miui.home</string>
+    <string name="config_defaultListenerAccessPackages">com.miui.securitycenter:com.miui.notification:com.xiaomi.barrage</string>
     <string name="config_defaultModuleMetadataProvider">com.android.modulemetadata</string>
     <string name="config_defaultMusicRecognitionService" />
+    <string name="config_defaultNearbyFastPairSettingsDevicesComponent" />
     <string name="config_defaultNearbySharingComponent" />
+    <string name="config_defaultNearbySharingSliceUri" />
     <string name="config_defaultNetworkRecommendationProviderPackage" />
     <string name="config_defaultNetworkScorerPackageName" />
     <string name="config_defaultOnDeviceSpeechRecognitionService" />
-    <string name="config_defaultPictureInPictureScreenEdgeInsets">16x16</string>
     <string name="config_defaultProfcollectReportUploaderAction" />
     <string name="config_defaultProfcollectReportUploaderApp" />
+    <string name="config_defaultQrCodeComponent" />
     <string name="config_defaultRotationResolverService" />
+    <string name="config_defaultSearchSelectorPackageName" />
     <string name="config_defaultSearchUiService" />
     <string name="config_defaultSmartspaceService" />
     <string name="config_defaultSupervisionProfileOwnerComponent" />
     <string name="config_defaultSystemCaptionsManagerService" />
-    <string name="config_defaultSystemCaptionsService" />
     <string name="config_defaultTextClassifierPackage" />
     <string name="config_defaultTranslationService" />
     <string name="config_defaultTrustAgent" />
+    <string name="config_defaultWallpaperEffectsGenerationService" />
     <string name="config_defaultWellbeingPackage" />
     <string name="config_default_dns_server">8.8.8.8</string>
     <string name="config_deviceConfiguratorPackageName" />
+    <string name="config_devicePolicyManagementUpdater" />
     <string name="config_deviceProvisioningPackage" />
     <string name="config_deviceSpecificAudioService" />
     <string name="config_deviceSpecificDevicePolicyManagerService" />
+    <string name="config_deviceSpecificDeviceStatePolicyProvider" />
     <string name="config_deviceSpecificDisplayAreaPolicyProvider" />
     <string name="config_displayLightSensorType" />
     <string name="config_displayWhiteBalanceColorTemperatureSensorName">com.google.sensor.color</string>
     <string name="config_display_features" />
+    <string name="config_doublePressOnPowerTargetActivity" />
     <string name="config_doubleTouchGestureEnableFile" />
     <string name="config_dozeComponent">com.miui.aod/com.miui.aod.doze.DozeService</string>
     <string name="config_dozeDoubleTapSensorType" />
     <string name="config_dozeLongPressSensorType" />
     <string name="config_dozeTapSensorType" />
     <string name="config_dozeUdfpsLongPressSensorType" />
-    <string name="config_dreamsDefaultComponent">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
+    <string name="config_dreamsDefaultComponent">com.android.deskclock/com.android.deskclock.Screensaver</string>
     <string name="config_emergency_call_number">112</string>
     <string name="config_emergency_dialer_package">com.android.phone</string>
     <string name="config_ethernet_iface_regex">eth\\d</string>
@@ -592,6 +630,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_geocoderProviderPackageName">com.xiaomi.metoknlp</string>
     <string name="config_geofenceProviderPackageName">@null</string>
     <string name="config_globalAppSearchDataQuerierPackage" />
+    <string name="config_hdmiCecSetMenuLanguageActivity">com.android.systemui/com.android.systemui.hdmi.HdmiCecSetMenuLanguageActivity</string>
     <string name="config_headlineFontFamily" />
     <string name="config_headlineFontFamilyMedium">@string/font_family_button_material</string>
     <string name="config_headlineFontFeatureSettings" />
@@ -602,6 +641,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_inputEventCompatProcessorOverrideClassName" />
     <string name="config_isoImagePath" />
     <string name="config_keyguardComponent">com.android.systemui/com.android.systemui.keyguard.KeyguardService</string>
+    <string name="config_loggable_dream_prefix" />
     <string name="config_mainBuiltInDisplayCutout" />
     <string name="config_mainBuiltInDisplayCutoutRectApproximation">@string/config_mainBuiltInDisplayCutout</string>
     <string name="config_managed_provisioning_package">com.android.managedprovisioning</string>
@@ -616,8 +656,10 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_networkLocationProviderPackageNameGms">com.google.android.gms</string>
     <string name="config_networkOverLimitComponent">com.android.systemui/com.android.systemui.net.NetworkOverLimitActivity</string>
     <string name="config_networkPolicyNotificationComponent" />
+    <string name="config_notificationAccessConfirmationActivity">com.android.settings/com.android.settings.notification.NotificationAccessConfirmationActivity</string>
     <string name="config_notificationHandlerPackage" />
     <string name="config_ntpServer">time.android.com</string>
+    <string name="config_optionalPackageVerifierName" />
     <string name="config_overrideComponentUiPackage">com.android.stk</string>
     <string name="config_packagedKeyboardName" />
     <string name="config_pdp_reject_dialog_title" />
@@ -634,23 +676,28 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_radio_access_family" />
     <string name="config_rawContactsLocalAccountName">default</string>
     <string name="config_rawContactsLocalAccountType">com.android.contacts.default</string>
-    <string name="config_recentsComponentName">com.miui.home/com.miui.home.recents.RecentsActivity</string>
+    <string name="config_recentsComponentName">com.android.launcher3/com.android.quickstep.RecentsActivity</string>
     <string name="config_retailDemoPackage" />
     <string name="config_retailDemoPackageSignature" />
     <string name="config_screenRecorderComponent">com.android.systemui/com.android.systemui.screenrecord.ScreenRecordDialog</string>
     <string name="config_screenshotErrorReceiverComponent">com.android.systemui/com.android.systemui.screenshot.ScreenshotServiceErrorReceiver</string>
     <string name="config_screenshotServiceComponent">com.android.systemui/com.android.systemui.screenshot.TakeScreenshotService</string>
-    <string name="config_secondaryHomeComponent">com.miui.home/com.miui.home.launcher.SecondaryDisplayLauncher</string>
-    <string name="config_secondaryHomePackage">com.miui.home</string>
+    <string name="config_secondaryBuiltInDisplayCutout" />
+    <string name="config_secondaryBuiltInDisplayCutoutRectApproximation">@string/config_secondaryBuiltInDisplayCutout</string>
+    <string name="config_secondaryHomePackage">com.android.launcher3</string>
     <string name="config_secondaryLocationTimeZoneProviderPackageName" />
     <string name="config_sensorUseStartedActivity">com.android.systemui/com.android.systemui.sensorprivacy.SensorUseStartedActivity</string>
+    <string name="config_sensorUseStartedActivity_hwToggle">com.android.systemui/com.android.systemui.sensorprivacy.SensorUseStartedActivity</string>
     <string name="config_servicesExtensionPackage">android.ext.services</string>
     <string name="config_signalAttributionPath">M20,10h2v8h-2z M20,20h2v2h-2z</string>
     <string name="config_slicePermissionComponent">com.android.systemui/com.android.systemui.SlicePermissionActivity</string>
     <string name="config_somnambulatorComponent">com.android.systemui/com.android.systemui.Somnambulator</string>
+    <string name="config_supervisedUserCreationPackage" />
+    <string name="config_systemGameService" />
     <string name="config_systemImageEditor" />
     <string name="config_systemTelevisionRemoteService">@string/config_tvRemoteServicePackage</string>
     <string name="config_systemUIServiceComponent">com.android.systemui/com.android.systemui.SystemUIService</string>
+    <string name="config_tcp_buffers">2097152,6291456,16777216,512000,2097152,8388608</string>
     <string name="config_timeZoneRulesDataPackage" />
     <string name="config_timeZoneRulesUpdaterPackage">com.android.timezone.updater</string>
     <string name="config_tvRemoteServicePackage" />
@@ -663,6 +710,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_vendorColorModesRestoreHint" />
     <string name="config_wallpaperCropperPackage">com.android.wallpapercropper</string>
     <string name="config_wallpaperManagerServiceName">com.android.server.wallpaper.WallpaperManagerService</string>
+    <string name="config_wearSysUiMainActivity" />
+    <string name="config_wearSysUiPackage" />
     <string name="config_wifi_tether_enable">com.android.settings/.wifi.tether.TetherService</string>
     <string name="config_wimaxManagerClassname" />
     <string name="config_wimaxNativeLibLocation" />
@@ -673,6 +722,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_wlan_data_service_package" />
     <string name="config_wlan_network_service_class" />
     <string name="config_wlan_network_service_package" />
+    <string name="config_work_badge_path_24">M20,6h-4L16,4c0,-1.11 -0.89,-2 -2,-2h-4c-1.11,0 -2,0.89 -2,2v2L4,6c-1.11,0 -1.99,0.89 -1.99,2L2,19c0,1.11 0.89,2 2,2h16c1.11,0 2,-0.89 2,-2L22,8c0,-1.11 -0.89,-2 -2,-2zM14,6h-4L10,4h4v2z</string>
     <string name="config_wwan_data_service_class" />
     <string name="config_wwan_data_service_package">com.android.phone</string>
     <string name="config_wwan_network_service_class" />
@@ -736,6 +786,7 @@ using %s"</string>
     <string name="decline">Decline</string>
     <string name="decline_remote_bugreport_action">DECLINE</string>
     <string name="default_audio_route_category_name">System</string>
+    <string name="default_audio_route_id">default_audio_route</string>
     <string name="default_audio_route_name">Phone</string>
     <string name="default_audio_route_name_dock_speakers">Dock speakers</string>
     <string name="default_audio_route_name_hdmi">HDMI</string>
@@ -755,6 +806,7 @@ using %s"</string>
     <string name="deprecated_target_sdk_message">This app was built for an older version of Android and may not work properly. Try checking for updates, or contact the developer.</string>
     <string name="description_target_unlock_tablet">Swipe to unlock.</string>
     <string name="device_ownership_relinquished">Admin relinquished device for personal use</string>
+    <string name="device_policy_manager_service">Device Policy Manager Service</string>
     <string name="device_storage_monitor_notification_channel">Device storage</string>
     <string name="dial_number_using">"Dial number
 using %s"</string>
@@ -776,6 +828,22 @@ using %s"</string>
     <string name="dump_heap_system_text">The %1$s process has exceeded its memory limit of %2$s. A heap dump is available for you to share. Be careful: this heap dump can contain any sensitive personal information that the process has access to, which may include things you’ve typed.</string>
     <string name="dump_heap_text">The %1$s process has exceeded its memory limit of %2$s. A heap dump is available for you to share with its developer. Be careful: this heap dump can contain any of your personal information that the application has access to.</string>
     <string name="dump_heap_title">Share heap dump?</string>
+    <string name="duration_days_relative">{count, plural, =1 {# day ago} other {# days ago} }</string>
+    <string name="duration_days_relative_future">{count, plural, =1 {# day} other {# days} }</string>
+    <string name="duration_days_shortest">%dd</string>
+    <string name="duration_days_shortest_future">in %dd</string>
+    <string name="duration_hours_relative">{count, plural, =1 {# hour ago} other {# hours ago} }</string>
+    <string name="duration_hours_relative_future">{count, plural, =1 {# hour} other {# hours} }</string>
+    <string name="duration_hours_shortest">%dh</string>
+    <string name="duration_hours_shortest_future">in %dh</string>
+    <string name="duration_minutes_relative">{count, plural, =1 {# minute ago} other {# minutes ago} }</string>
+    <string name="duration_minutes_relative_future">{count, plural, =1 {# minute} other {# minutes} }</string>
+    <string name="duration_minutes_shortest">%dm</string>
+    <string name="duration_minutes_shortest_future">in %dm</string>
+    <string name="duration_years_relative">{count, plural, =1 {# year ago} other {# years ago} }</string>
+    <string name="duration_years_relative_future">{count, plural, =1 {# year} other {# years} }</string>
+    <string name="duration_years_shortest">%dy</string>
+    <string name="duration_years_shortest_future">in %dy</string>
     <string name="dynamic_mode_notification_channel_name">Routine Mode info notification</string>
     <string name="dynamic_mode_notification_summary">Battery Saver activated to extend battery life</string>
     <string name="dynamic_mode_notification_title">Battery may run out before usual charge</string>
@@ -884,6 +952,7 @@ using %s"</string>
     <string name="face_error_timeout">Try Face Unlock again</string>
     <string name="face_error_unable_to_process">Can’t verify face. Try again.</string>
     <string name="face_error_user_canceled">Face Unlock canceled by user</string>
+    <string name="face_error_vendor_unknown">Something went wrong. Try again.</string>
     <string name="face_icon_content_description">Face icon</string>
     <string name="face_name_template">Face %d</string>
     <string name="face_or_screen_lock_app_setting_name">Use face or screen lock</string>
@@ -891,6 +960,7 @@ using %s"</string>
     <string name="face_recalibrate_notification_content">Tap to delete your face model, then add your face again</string>
     <string name="face_recalibrate_notification_name">Face Unlock</string>
     <string name="face_recalibrate_notification_title">Issue with Face Unlock</string>
+    <string name="face_sensor_privacy_enabled">To use Face Unlock, turn on <b>Camera access</b> in Settings > Privacy</string>
     <string name="face_setup_notification_content">Unlock your phone by looking at it</string>
     <string name="face_setup_notification_title">Set up Face Unlock</string>
     <string name="faceunlock_multiple_failures">Maximum Face Unlock attempts exceeded</string>
@@ -908,17 +978,19 @@ If you have questions, contact your organization's admin."</string>
     <string name="fcComplete">Feature code complete.</string>
     <string name="fcError">Connection problem or invalid feature code.</string>
     <string name="fileSizeSuffix">%1$s %2$s</string>
+    <string name="file_count">{count, plural, =1 {{file_name} + # file} other {{file_name} + # files} }</string>
     <string name="find">Find</string>
     <string name="find_next">Find next</string>
     <string name="find_on_page">Find on page</string>
     <string name="find_previous">Find previous</string>
     <string name="fingerprint_acquired_already_enrolled">Try another fingerprint</string>
-    <string name="fingerprint_acquired_imager_dirty">Clean the sensor</string>
+    <string name="fingerprint_acquired_imager_dirty">Clean fingerprint sensor and try again</string>
+    <string name="fingerprint_acquired_imager_dirty_alt">Clean sensor and try again</string>
     <string name="fingerprint_acquired_immobile">Change the position of your finger slightly each time</string>
     <string name="fingerprint_acquired_insufficient">"Couldn't process fingerprint. Please try again."</string>
-    <string name="fingerprint_acquired_partial">Partial fingerprint detected</string>
+    <string name="fingerprint_acquired_partial">Press firmly on the sensor</string>
     <string name="fingerprint_acquired_too_bright">Too bright</string>
-    <string name="fingerprint_acquired_too_fast">Hold a little longer</string>
+    <string name="fingerprint_acquired_too_fast">Press firmly on the sensor</string>
     <string name="fingerprint_acquired_too_slow">Finger moved too slow. Please try again.</string>
     <string name="fingerprint_acquired_try_adjusting">Try adjusting</string>
     <string name="fingerprint_app_setting_name">Use fingerprint</string>
@@ -932,10 +1004,12 @@ If you have questions, contact your organization's admin."</string>
     <string name="fingerprint_error_lockout_permanent">Too many attempts. Fingerprint sensor disabled.</string>
     <string name="fingerprint_error_no_fingerprints">No fingerprints enrolled.</string>
     <string name="fingerprint_error_no_space">Can’t set up fingerprint</string>
+    <string name="fingerprint_error_not_match">Fingerprint not recognized</string>
     <string name="fingerprint_error_security_update_required">Sensor temporarily disabled.</string>
     <string name="fingerprint_error_timeout">Fingerprint time out reached. Try again.</string>
     <string name="fingerprint_error_unable_to_process">Try again.</string>
     <string name="fingerprint_error_user_canceled">Fingerprint operation canceled by user.</string>
+    <string name="fingerprint_error_vendor_unknown">Something went wrong. Try again.</string>
     <string name="fingerprint_name_template">Finger %d</string>
     <string name="fingerprint_or_screen_lock_app_setting_name">Use fingerprint or screen lock</string>
     <string name="fingerprint_or_screen_lock_dialog_default_subtitle">Use your fingerprint or screen lock to continue</string>
@@ -944,6 +1018,7 @@ If you have questions, contact your organization's admin."</string>
     <string name="fingerprint_recalibrate_notification_title">Can’t use fingerprint sensor</string>
     <string name="fingerprint_setup_notification_content">Tap to add a fingerprint</string>
     <string name="fingerprint_setup_notification_title">Set up more ways to unlock</string>
+    <string name="fingerprint_udfps_error_not_match">Fingerprint not recognized</string>
     <string name="fingerprints">Fingerprints:</string>
     <string name="floating_toolbar_close_overflow_description">Close overflow</string>
     <string name="floating_toolbar_open_overflow_description">More options</string>
@@ -966,12 +1041,18 @@ If you have questions, contact your organization's admin."</string>
     <string name="foreground_service_tap_for_details">Tap for details on battery and data usage</string>
     <string name="forward_intent_to_owner">"You're using this app outside of your work profile"</string>
     <string name="forward_intent_to_work">"You're using this app in your work profile"</string>
-    <string name="fp_enrollment_powerbutton_intent_message">"While setting up your fingerprint, you pressed the Power button.
+    <string name="fp_power_button_bp_message">"You pressed the power button — this usually turns off the screen.
 
-This usually turns off your screen."</string>
-    <string name="fp_enrollment_powerbutton_intent_negative_button">Cancel</string>
-    <string name="fp_enrollment_powerbutton_intent_positive_button">Turn off</string>
-    <string name="fp_enrollment_powerbutton_intent_title">Turn off screen?</string>
+Try tapping lightly to verify your fingerprint."</string>
+    <string name="fp_power_button_bp_negative_button">Continue</string>
+    <string name="fp_power_button_bp_positive_button">Turn off screen</string>
+    <string name="fp_power_button_bp_title">Continue verifying your fingerprint?</string>
+    <string name="fp_power_button_enrollment_message">"You pressed the power button — this usually turns off the screen.
+
+Try tapping lightly while setting up your fingerprint."</string>
+    <string name="fp_power_button_enrollment_negative_button">Continue setup</string>
+    <string name="fp_power_button_enrollment_positive_button">Turn off screen</string>
+    <string name="fp_power_button_enrollment_title">Continue setup?</string>
     <string name="gadget_host_error_inflating">"Couldn't add widget."</string>
     <string name="geofencing_service">Geofencing Service</string>
     <string name="gigabyteShort">GB</string>
@@ -1009,6 +1090,7 @@ This usually turns off your screen."</string>
     <string name="granularity_label_link">link</string>
     <string name="granularity_label_word">word</string>
     <string name="gsm_alphabet_default_charset" />
+    <string name="guest_name">Guest</string>
     <string name="hardware">Show virtual keyboard</string>
     <string name="harmful_app_warning_open_anyway">OPEN ANYWAY</string>
     <string name="harmful_app_warning_title">Harmful app detected</string>
@@ -1063,8 +1145,11 @@ This usually turns off your screen."</string>
     <string name="immersive_cling_title">Viewing full screen</string>
     <string name="importance_from_person">This is important because of the people involved.</string>
     <string name="importance_from_user">You set the importance of these notifications.</string>
+    <string name="in_progress">in progress</string>
     <string name="inputMethod">Input method</string>
     <string name="input_method_binding_label">Input method</string>
+    <string name="input_method_ime_switch_button_desc">Switch input method</string>
+    <string name="input_method_nav_back_button_desc">Back</string>
     <string name="install_carrier_app_notification_button">Download app</string>
     <string name="install_carrier_app_notification_text">Download the carrier app to activate your new SIM</string>
     <string name="install_carrier_app_notification_text_app_name">Download the %1$s app to activate your new SIM</string>
@@ -1168,6 +1253,7 @@ Try again in %2$d seconds."</string>
     <string name="language_picker_section_suggested">Suggested</string>
     <string name="language_selection_title">Add a language</string>
     <string name="last_month">Last month</string>
+    <string name="last_num_days">{ count, plural, =1 {Last # day} other {Last # days} }</string>
     <string name="launchBrowserDefault">Launch Browser?</string>
     <string name="launch_warning_original">%1$s was originally launched.</string>
     <string name="launch_warning_replace">%1$s is now running.</string>
@@ -1198,7 +1284,7 @@ To unpin, press and hold Home and the Power button at the same time."</string>
     <string name="lockscreen_access_pattern_detected">Pattern completed</string>
     <string name="lockscreen_access_pattern_start">Pattern started</string>
     <string name="lockscreen_carrier_default">No service</string>
-    <string name="lockscreen_emergency_call">Emergency call</string>
+    <string name="lockscreen_emergency_call">Emergency</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe">You have incorrectly attempted to unlock the phone %1$d times. After %2$d more unsuccessful attempts, the phone will be reset to factory default and all user data will be lost.</string>
     <string name="lockscreen_failed_attempts_almost_glogin">"You have incorrectly drawn your unlock pattern %1$d times. After %2$d more unsuccessful attempts, you will be asked to unlock your phone using your Google signin.
 
@@ -1256,6 +1342,15 @@ Try again in %2$d seconds."</string>
     <string name="lockscreen_transport_rew_description">Rewind</string>
     <string name="lockscreen_transport_stop_description">Stop</string>
     <string name="lockscreen_unlock_label">Unlock</string>
+    <string name="log_access_confirmation_allow">Allow one-time access</string>
+    <string name="log_access_confirmation_body">"Device logs record what happens on your device. Apps can use these logs to find and fix issues.
+
+Some logs may contain sensitive info, so only allow apps you trust to access all device logs. 
+
+If you don’t allow this app to access all device logs, it can still access its own logs. Your device manufacturer may still be able to access some logs or info on your device. Learn more"</string>
+    <string name="log_access_confirmation_deny">Don’t allow</string>
+    <string name="log_access_confirmation_title">Allow %s to access all device logs?</string>
+    <string name="log_access_do_not_show_again">Don’t show again</string>
     <string name="low_internal_storage_view_text">Some system functions may not work</string>
     <string name="low_internal_storage_view_text_no_boot">Not enough storage for the system. Make sure you have 250MB of free space and restart.</string>
     <string name="low_internal_storage_view_title">Storage space running out</string>
@@ -1264,6 +1359,7 @@ Try again in %2$d seconds."</string>
     <string name="managed_profile_label_badge">Work %1$s</string>
     <string name="managed_profile_label_badge_2">2nd Work %1$s</string>
     <string name="managed_profile_label_badge_3">3rd Work %1$s</string>
+    <string name="matches_found">{ count, plural, =1 {# match} other {# of {total}} }</string>
     <string name="maximize_button_text">Maximize</string>
     <string name="me">Me</string>
     <string name="media_route_button_content_description">Cast</string>
@@ -1402,8 +1498,8 @@ Try again in %2$d seconds."</string>
     <string name="mime_type_spreadsheet_ext">%1$s spreadsheet</string>
     <string name="mime_type_video">Video</string>
     <string name="mime_type_video_ext">%1$s video</string>
-    <string name="miniresolver_open_in_personal">Open in %s in personal profile?</string>
-    <string name="miniresolver_open_in_work">Open in %s in work profile?</string>
+    <string name="miniresolver_open_in_personal">Open %s in your personal profile?</string>
+    <string name="miniresolver_open_in_work">Open %s in your work profile?</string>
     <string name="miniresolver_use_personal_browser">Use personal browser</string>
     <string name="miniresolver_use_work_browser">Use work browser</string>
     <string name="minute">min</string>
@@ -1428,6 +1524,8 @@ Try again in %2$d seconds."</string>
     <string name="month_day_year" formatted="false">%B %-e, %Y</string>
     <string name="more_item_label">More</string>
     <string name="move_button_text">Tap the frame button to be able to move the whole window</string>
+    <string name="mte_override_notification_message">Performance and stability might be impacted. Reboot to disable. If enabled using arm64.memtag.bootctl, set it to none beforehand.</string>
+    <string name="mte_override_notification_title">Experimental MTE enabled</string>
     <string name="music_recognition_manager_service">Music Recognition Manager Service</string>
     <string name="muted_by">%1$s is muting some sounds</string>
     <string name="nas_upgrade_notification_content">Suggested actions and replies are now provided by enhanced notifications. Android Adaptive Notifications are no longer supported.</string>
@@ -1464,12 +1562,14 @@ Enhanced notifications can access notification content, including personal infor
     <string name="noon">noon</string>
     <string name="not_checked">not checked</string>
     <string name="not_selected">not selected</string>
+    <string name="notification_action_check_bg_apps">Check active apps</string>
     <string name="notification_alerted_content_description">Alerted</string>
     <string name="notification_app_name_settings">Settings</string>
     <string name="notification_app_name_system">System</string>
     <string name="notification_appops_camera_active">Camera</string>
     <string name="notification_appops_microphone_active">Microphone</string>
     <string name="notification_appops_overlay_active">displaying over other apps on your screen</string>
+    <string name="notification_channel_abusive_bg_apps">Background Activity</string>
     <string name="notification_channel_accessibility_magnification">Magnification</string>
     <string name="notification_channel_accessibility_security_policy">Accessibility usage</string>
     <string name="notification_channel_account">Account status</string>
@@ -1501,6 +1601,8 @@ Enhanced notifications can access notification content, including personal infor
     <string name="notification_channel_voice_mail">Voicemail messages</string>
     <string name="notification_channel_vpn">VPN status</string>
     <string name="notification_channel_wfc">Wi-Fi calling</string>
+    <string name="notification_content_abusive_bg_apps">%1$s is running in the background. Tap to manage battery usage.</string>
+    <string name="notification_content_long_running_fgs">%1$s might affect battery life. Tap to review active apps.</string>
     <string name="notification_description">Voice call status</string>
     <string name="notification_feedback_indicator">Provide Feedback</string>
     <string name="notification_feedback_indicator_alerted">This notification was promoted to Default. Tap to provide feedback.</string>
@@ -1518,6 +1620,8 @@ Enhanced notifications can access notification content, including personal infor
     <string name="notification_ranker_binding_label">Notification ranker service</string>
     <string name="notification_reply_button_accessibility">Reply</string>
     <string name="notification_title">Signin error for %1$s</string>
+    <string name="notification_title_abusive_bg_apps">An app is draining battery</string>
+    <string name="notification_title_long_running_fgs">An app is still active</string>
     <string name="notification_verified_content_description">Verified</string>
     <string name="notification_work_profile_content_description">Work profile</string>
     <string name="now_string_shortest">now</string>
@@ -1585,7 +1689,8 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permdesc_bluetooth_advertise">Allows the app to advertise to nearby Bluetooth devices</string>
     <string name="permdesc_bluetooth_connect">Allows the app to connect to paired Bluetooth devices</string>
     <string name="permdesc_bluetooth_scan">Allows the app to discover and pair nearby Bluetooth devices</string>
-    <string name="permdesc_bodySensors">Allows the app to access data from sensors that monitor your physical condition, such as your heart rate.</string>
+    <string name="permdesc_bodySensors">Allows the app to access body sensor data, such as heart rate, temperature, and blood oxygen percentage, while the app is in use.</string>
+    <string name="permdesc_bodySensors_background">Allows the app to access body sensor data, such as heart rate, temperature, and blood oxygen percentage, while the app is in the background.</string>
     <string name="permdesc_broadcastSticky">Allows the app to send sticky broadcasts, which remain after the broadcast ends. Excessive use may make the phone slow or unstable by causing it to use too much memory.</string>
     <string name="permdesc_callCompanionApp">Allows the app to see and control ongoing calls on the device. This includes information such as call numbers for calls and the state of the calls.</string>
     <string name="permdesc_callPhone">"Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation."</string>
@@ -1622,17 +1727,23 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permdesc_mediaLocation">Allows the app to read locations from your media collection.</string>
     <string name="permdesc_modifyAudioSettings">Allows the app to modify global audio settings such as volume and which speaker is used for output.</string>
     <string name="permdesc_modifyNetworkAccounting">Allows the app to modify how network usage is accounted against apps. Not for use by normal apps.</string>
+    <string name="permdesc_nearby_wifi_devices">Allows the app to advertise, connect, and determine the relative position of nearby Wi‑Fi devices</string>
     <string name="permdesc_nfc">Allows the app to communicate with Near Field Communication (NFC) tags, cards, and readers.</string>
     <string name="permdesc_persistentActivity">Allows the app to make parts of itself persistent in memory. This can limit memory available to other apps slowing down the phone.</string>
+    <string name="permdesc_postNotification">Allows the app to show notifications</string>
     <string name="permdesc_preferredPaymentInfo">Allows the app to get preferred nfc payment service information like registered aids and route destination.</string>
     <string name="permdesc_processOutgoingCalls">Allows the app to see the number being dialed during an outgoing call with the option to redirect the call to a different number or abort the call altogether.</string>
     <string name="permdesc_queryAllPackages">Allows an app to see all installed packages.</string>
+    <string name="permdesc_readBasicPhoneState">Allows the app to access the basic telephony features of the device.</string>
     <string name="permdesc_readCalendar">This app can read all calendar events stored on your phone and share or save your calendar data.</string>
     <string name="permdesc_readCallLog">This app can read your call history.</string>
     <string name="permdesc_readCellBroadcasts">Allows the app to read cell broadcast messages received by your device. Cell broadcast alerts are delivered in some locations to warn you of emergency situations. Malicious apps may interfere with the performance or operation of your device when an emergency cell broadcast is received.</string>
     <string name="permdesc_readContacts">Allows the app to read data about your contacts stored on your phone. Apps will also have access to the accounts on your phone that have created contacts. This may include accounts created by apps you have installed. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.</string>
     <string name="permdesc_readHistoryBookmarks">"Allows the app to read the history of all URLs that the Browser has visited, and all of the Browser's bookmarks. Note: this permission may not be enforced by third-party browsers or other applications with web browsing capabilities."</string>
     <string name="permdesc_readInstallSessions">Allows an application to read install sessions. This allows it to see details about active package installations.</string>
+    <string name="permdesc_readMediaAudio">Allows the app to read audio files from your shared storage.</string>
+    <string name="permdesc_readMediaImages">Allows the app to read image files from your shared storage.</string>
+    <string name="permdesc_readMediaVideo">Allows the app to read video files from your shared storage.</string>
     <string name="permdesc_readNetworkUsageHistory">Allows the app to read historical network usage for specific networks and apps.</string>
     <string name="permdesc_readPhoneNumbers">Allows the app to access the phone numbers of the device.</string>
     <string name="permdesc_readPhoneState">Allows the app to access the phone features of the device. This permission allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call.</string>
@@ -1664,6 +1775,8 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permdesc_setWallpaper">Allows the app to set the system wallpaper.</string>
     <string name="permdesc_setWallpaperHints">Allows the app to set the system wallpaper size hints.</string>
     <string name="permdesc_sim_communication">Allows the app to send commands to the SIM. This is very dangerous.</string>
+    <string name="permdesc_startReviewPermissionDecisions">Allows the holder to start screen to review permission decisions. Should never be needed for normal apps.</string>
+    <string name="permdesc_startViewAppFeatures">Allows the holder to start viewing the features info for an app.</string>
     <string name="permdesc_startViewPermissionUsage">Allows the holder to start the permission usage for an app. Should never be needed for normal apps.</string>
     <string name="permdesc_statusBar">Allows the app to disable the status bar or add and remove system icons.</string>
     <string name="permdesc_statusBarService">Allows the app to be the status bar.</string>
@@ -1696,10 +1809,13 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permgroupdesc_location">"access this device's location"</string>
     <string name="permgroupdesc_microphone">record audio</string>
     <string name="permgroupdesc_nearby_devices">discover and connect to nearby devices</string>
+    <string name="permgroupdesc_notifications">show notifications</string>
     <string name="permgroupdesc_phone">make and manage phone calls</string>
+    <string name="permgroupdesc_readMediaAural">access music and audio on your device</string>
+    <string name="permgroupdesc_readMediaVisual">access photos and videos on your device</string>
     <string name="permgroupdesc_sensors">access sensor data about your vital signs</string>
     <string name="permgroupdesc_sms">send and view SMS messages</string>
-    <string name="permgroupdesc_storage">access photos, media, and files on your device</string>
+    <string name="permgroupdesc_storage">access files on your device</string>
     <string name="permgrouplab_activityRecognition">Physical activity</string>
     <string name="permgrouplab_calendar">Calendar</string>
     <string name="permgrouplab_calllog">Call logs</string>
@@ -1708,10 +1824,13 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permgrouplab_location">Location</string>
     <string name="permgrouplab_microphone">Microphone</string>
     <string name="permgrouplab_nearby_devices">Nearby devices</string>
+    <string name="permgrouplab_notifications">Notifications</string>
     <string name="permgrouplab_phone">Phone</string>
+    <string name="permgrouplab_readMediaAural">Music and audio</string>
+    <string name="permgrouplab_readMediaVisual">Photos and videos</string>
     <string name="permgrouplab_sensors">Body sensors</string>
     <string name="permgrouplab_sms">SMS</string>
-    <string name="permgrouplab_storage">Files and media</string>
+    <string name="permgrouplab_storage">Files</string>
     <string name="permission_remember_choice">Remember</string>
     <string name="permission_request_notification_for_app_with_subtitle">"Permission requested by %1$s
 for account %2$s."</string>
@@ -1749,7 +1868,8 @@ for account %s."</string>
     <string name="permlab_bluetooth_advertise">advertise to nearby Bluetooth devices</string>
     <string name="permlab_bluetooth_connect">connect to paired Bluetooth devices</string>
     <string name="permlab_bluetooth_scan">discover and pair nearby Bluetooth devices</string>
-    <string name="permlab_bodySensors">access body sensors (like heart rate monitors)</string>
+    <string name="permlab_bodySensors">Access body sensor data, like heart rate, while in use</string>
+    <string name="permlab_bodySensors_background">Access body sensor data, like heart rate, while in the background</string>
     <string name="permlab_broadcastSticky">send sticky broadcast</string>
     <string name="permlab_callCompanionApp">see and control calls through the system.</string>
     <string name="permlab_callPhone">directly call phone numbers</string>
@@ -1786,17 +1906,23 @@ for account %s."</string>
     <string name="permlab_mediaLocation">read locations from your media collection</string>
     <string name="permlab_modifyAudioSettings">change your audio settings</string>
     <string name="permlab_modifyNetworkAccounting">modify network usage accounting</string>
+    <string name="permlab_nearby_wifi_devices">interact with nearby Wi‑Fi devices</string>
     <string name="permlab_nfc">control Near Field Communication</string>
     <string name="permlab_persistentActivity">make app always run</string>
+    <string name="permlab_postNotification">show notifications</string>
     <string name="permlab_preferredPaymentInfo">Preferred NFC Payment Service Information</string>
     <string name="permlab_processOutgoingCalls">reroute outgoing calls</string>
     <string name="permlab_queryAllPackages">query all packages</string>
+    <string name="permlab_readBasicPhoneState">read basic telephony status and identity</string>
     <string name="permlab_readCalendar">Read calendar events and details</string>
     <string name="permlab_readCallLog">read call log</string>
     <string name="permlab_readCellBroadcasts">read cell broadcast messages</string>
     <string name="permlab_readContacts">read your contacts</string>
     <string name="permlab_readHistoryBookmarks">read your Web bookmarks and history</string>
     <string name="permlab_readInstallSessions">read install sessions</string>
+    <string name="permlab_readMediaAudio">read audio files from shared storage</string>
+    <string name="permlab_readMediaImages">read image files from shared storage</string>
+    <string name="permlab_readMediaVideo">read video files from shared storage</string>
     <string name="permlab_readNetworkUsageHistory">read historical network usage</string>
     <string name="permlab_readPhoneNumbers">read phone numbers</string>
     <string name="permlab_readPhoneState">read phone status and identity</string>
@@ -1828,6 +1954,8 @@ for account %s."</string>
     <string name="permlab_setWallpaper">set wallpaper</string>
     <string name="permlab_setWallpaperHints">adjust your wallpaper size</string>
     <string name="permlab_sim_communication">send commands to the SIM</string>
+    <string name="permlab_startReviewPermissionDecisions">start view permission decisions</string>
+    <string name="permlab_startViewAppFeatures">start view app features</string>
     <string name="permlab_startViewPermissionUsage">start view permission usage</string>
     <string name="permlab_statusBar">disable or modify status bar</string>
     <string name="permlab_statusBarService">be the status bar</string>
@@ -1982,6 +2110,10 @@ for account %s."</string>
     <string name="restr_pin_error_too_short">PIN is too short. Must be at least 4 digits.</string>
     <string name="restr_pin_incorrect">Incorrect</string>
     <string name="restr_pin_try_later">Try again later</string>
+    <string name="review_notification_settings_dismiss">Dismiss</string>
+    <string name="review_notification_settings_remind_me_action">Remind me later</string>
+    <string name="review_notification_settings_text">Starting in Android 13, apps that you install need your permission to send notifications. Tap to change this permission for existing apps.</string>
+    <string name="review_notification_settings_title">Review notification settings</string>
     <string name="revoke">Revoke</string>
     <string name="ringtone_default">Default ringtone</string>
     <string name="ringtone_default_with_actual">Default (%1$s)</string>
@@ -2119,6 +2251,7 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="ssl_ca_cert_noti_by_administrator">By your work profile admin</string>
     <string name="ssl_ca_cert_noti_by_unknown">By an unknown third party</string>
     <string name="ssl_ca_cert_noti_managed">By %s</string>
+    <string name="ssl_ca_cert_warning">{count, plural, =1 {Certificate authority installed} other {Certificate authorities installed} }</string>
     <string name="ssl_certificate">Security certificate</string>
     <string name="ssl_certificate_is_valid">This certificate is valid.</string>
     <string name="status_bar_airplane">airplane</string>
@@ -2140,7 +2273,7 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="status_bar_managed_profile">managed_profile</string>
     <string name="status_bar_microphone">microphone</string>
     <string name="status_bar_mobile">mobile</string>
-    <string name="status_bar_mute">mute</string>
+    <string name="status_bar_mute">status_bar_mute</string>
     <string name="status_bar_nfc">nfc</string>
     <string name="status_bar_no_calling">no_calling</string>
     <string name="status_bar_phone_evdo_signal">phone_evdo_signal</string>
@@ -2174,6 +2307,7 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="storage_usb_drive">USB drive</string>
     <string name="storage_usb_drive_label">%s USB drive</string>
     <string name="submit">Submit</string>
+    <string name="supervised_user_creation_label">Add supervised user</string>
     <string name="suspended_widget_accessibility">Disabled %1$s</string>
     <string name="sync_binding_label">Sync</string>
     <string name="sync_do_nothing">Do nothing for now</string>
@@ -2183,6 +2317,7 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="sync_undo_deletes">Undo the deletes</string>
     <string name="system_error_manufacturer">"There's an internal problem with your device. Contact your manufacturer for details."</string>
     <string name="system_error_wipe_data">"There's an internal problem with your device, and it may be unstable until you factory data reset."</string>
+    <string name="system_locale_title">System default</string>
     <string name="system_ui_date_pattern">@string/icu_abbrev_wday_month_day_no_year</string>
     <string name="taking_remote_bugreport_notification_title">Taking bug report…</string>
     <string name="terabyteShort">TB</string>
@@ -2274,6 +2409,8 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="user_switched">Current user %1$s.</string>
     <string name="user_switching_message">Switching to %1$s…</string>
     <string name="validity_period">Validity:</string>
+    <string name="vdm_camera_access_denied">Can’t access the phone’s camera from your %1$s</string>
+    <string name="vendor_required_attestation_revocation_list_url" />
     <string name="view_and_control_notification_content">%s can view and control your screen. Tap to review.</string>
     <string name="view_and_control_notification_title">Check access settings</string>
     <string name="volume_alarm">Alarm volume</string>
@@ -2379,6 +2516,14 @@ Do you want to close it?"</string>
     <string name="zen_mode_default_weekends_name">Weekend</string>
     <string name="zen_mode_default_weeknights_name">Weeknight</string>
     <string name="zen_mode_downtime_feature_name">Downtime</string>
+    <string name="zen_mode_duration_hours">{count, plural, =1 {For 1 hour} other {For # hours} }</string>
+    <string name="zen_mode_duration_hours_short">{count, plural, =1 {For 1 hr} other {For # hr} }</string>
+    <string name="zen_mode_duration_hours_summary">{count, plural, =1 {For 1 hour (until {formattedTime})} other {For # hours (until {formattedTime})} }</string>
+    <string name="zen_mode_duration_hours_summary_short">{count, plural, =1 {For 1 hr (until {formattedTime})} other {For # hr (until {formattedTime})} }</string>
+    <string name="zen_mode_duration_minutes">{count, plural, =1 {For one minute} other {For # minutes} }</string>
+    <string name="zen_mode_duration_minutes_short">{count, plural, =1 {For 1 min} other {For # min} }</string>
+    <string name="zen_mode_duration_minutes_summary">{count, plural, =1 {For one minute (until {formattedTime})} other {For # minutes (until {formattedTime})} }</string>
+    <string name="zen_mode_duration_minutes_summary_short">{count, plural, =1 {For 1 min (until {formattedTime})} other {For # min (until {formattedTime})} }</string>
     <string name="zen_mode_feature_name">Do not disturb</string>
     <string name="zen_mode_forever">Until you turn off</string>
     <string name="zen_mode_forever_dnd">Until you turn off Do Not Disturb</string>
