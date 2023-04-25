@@ -187,6 +187,8 @@
     <string name="daily_sleep_insights_app_usage_two_apps_summary_content_description">{time_range}, {app_1_name}: {app_1_usage}, {app_2_name}: {app_2_usage}.</string>
     <string name="daily_sleep_insights_cough_count">Coughing</string>
     <string name="daily_sleep_insights_coughing_summary_content_description">{coughs, plural, =1{{time_range}, # cough.} other{{time_range}, #coughs.}}</string>
+    <string name="daily_sleep_insights_no_cough_snore_consent_available_now">To show your cough and snore info, Digital Wellbeing needs access to your microphone</string>
+    <string name="daily_sleep_insights_no_cough_snore_consent_for_session">Digital Wellbeing did not have permission to access your microphone between {start_date} and {end_date}</string>
     <string name="daily_sleep_insights_no_cough_snore_data_subtitle">To see cough &amp; snore data in Bedtime mode, allow access to the microphone</string>
     <string name="daily_sleep_insights_no_data">No Info</string>
     <string name="daily_sleep_insights_no_data_title">None</string>
@@ -204,17 +206,19 @@
     <string name="dark_screen_options_description">Keep the screen dark, dim the wallpaper, and more</string>
     <string name="dark_screen_options_description_without_dimming">Keep the screen dark, use a dark background, and more</string>
     <string name="dark_screen_options_description_without_dimming_without_dark_theme">Keep the screen dark and change it to black and white</string>
-    <string name="dark_screen_options_label">Screen options at bedtime</string>
-    <string name="dark_theme_item_description">Use a black background. If you choose this option, Dark theme is used only when Bedtime mode is on.</string>
-    <string name="dark_theme_item_label">Dark theme</string>
+    <string name="dark_screen_options_footer_info_text">You can change your Dark theme schedule in Settings anytime.</string>
     <string name="suspend_dialog_neutral_button_label">Settings</string>
     <string name="suspend_dialog_title">App paused</string>
-    <string name="dashboard_feature_summary_text">Screen time, unlocks, notifications received</string>
-    <string name="dashboard_feature_summary_text_without_unlock_count">Screen time, notifications received</string>
+    <string name="dark_screen_options_label">Screen options at bedtime</string>
+    <string name="dark_theme_item_description">Use a black background. If you choose this option, Dark theme is used only when Bedtime mode is on.</string>
     <string name="focus_mode_suspend_dialog_title">Focus mode is on</string>
     <string name="focus_mode_take_a_break">Take a break</string>
     <string name="focus_mode_use_app_for_5_minutes">Use app for 5 minutes</string>
     <string name="focus_mode_use_app_for_five_minutes">Use app for five minutes</string>
+    <string name="dark_theme_item_label">Dark theme</string>
+    <string name="dark_theme_settings_link">Dark theme settings</string>
+    <string name="dashboard_feature_summary_text">Screen time, unlocks, notifications received</string>
+    <string name="dashboard_feature_summary_text_without_unlock_count">Screen time, notifications received</string>
     <string name="dashboard_no_timers_summary_text">No timers set</string>
     <string name="dashboard_search_keywords">App dashboard, notifications received, unlocks</string>
     <string name="dashboard_toolbar_title">Dashboard</string>
@@ -318,12 +322,12 @@
     <string name="foreground_service_notification_title">Updating Digital Wellbeing…</string>
     <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
+    <string name="settings_summary_with_parental_controls">Screen time, app timers, bedtime schedules</string>
+    <string name="settings_title_with_parental_controls">Digital Wellbeing &amp; parental controls</string>
     <string name="gm3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm3_sys_motion_easing_legacy_decelerate">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
-    <string name="settings_summary_with_parental_controls">Screen time, app timers, bedtime schedules</string>
     <string name="gm3_sys_motion_easing_standard">cubic-bezier(0.2, 0.0, 0.0, 1.0)</string>
-    <string name="settings_title_with_parental_controls">Digital Wellbeing &amp; parental controls</string>
     <string name="gm_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
@@ -537,6 +541,10 @@ Use with caution. Heads Up doesn't replace paying attention."</string>
     <string name="schedule_deleted_announce">Schedule deleted</string>
     <string name="schedule_end_label">End</string>
     <string name="schedule_item_header">Schedule</string>
+    <string name="schedule_name_dialog_hint">Enter schedule name</string>
+    <string name="schedule_name_dialog_negative_button">Cancel</string>
+    <string name="schedule_name_dialog_positive_button">OK</string>
+    <string name="schedule_name_dialog_title">Schedule name</string>
     <string name="schedule_start_label">Start</string>
     <string name="schedule_summary_text">From %1$s – %2$s</string>
     <string name="schedule_summary_text_days_comma_separated">From %1$s – %2$s on %3$s</string>
@@ -706,6 +714,7 @@ If you turn usage access back on, Digital Wellbeing will show the last 10 days o
     <string name="usage_unavailable_label">No info</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
+    <string name="wallpaper_dimming_item_description">Make your wallpaper darker. App icons, widgets, and notifications won’t be affected.</string>
     <string name="wallpaper_dimming_item_label">Dim the wallpaper</string>
     <string name="web_update_foreground_service_notification_title">Updating sites…</string>
     <string name="web_update_notification_channel">Site updates</string>
