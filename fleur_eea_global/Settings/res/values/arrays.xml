@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="BLE_MMA_FEATURE_VERSION" />
+    <array name="IS_SUPPORT_SPLIT" />
+    <array name="LC3_CG_FEATURE_VERSION" />
+    <array name="TIME_STAMP" />
     <string-array name="accessibility_autoclick_control_selector_keys">
         <item>accessibility_control_autoclick_default</item>
         <item>accessibility_control_autoclick_200ms</item>
@@ -144,10 +148,33 @@
         <item>3</item>
         <item>4</item>
     </integer-array>
-    <string-array name="allowlist_hide_entry_in_battery_usage">
-        <item>com.google.android.gms.persistent</item>
-    </string-array>
     <array name="allowlist_hide_summary_in_battery_usage" />
+    <string-array name="alphabet_sub_table_with_starred">
+        <item>!</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>\#</item>
+    </string-array>
     <string-array name="alphabet_table">
         <item>A</item>
         <item>B</item>
@@ -484,6 +511,8 @@
         <item>60</item>
         <item>90</item>
     </string-array>
+    <array name="avatar_image_descriptions" />
+    <array name="avatar_images" />
     <string-array name="ba_disable_timeout">
         <item>@string/short_time</item>
         <item>@string/long_time</item>
@@ -659,13 +688,13 @@
         <item>134225920</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_bits_per_sample_summaries">
-        <item>Use system preference (Default)</item>
+        <item>Use System Selection (Default)</item>
         <item>16 bits/sample</item>
         <item>24 bits/sample</item>
         <item>32 bits/sample</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_bits_per_sample_titles">
-        <item>Use system preference (Default)</item>
+        <item>Use System Selection (Default)</item>
         <item>16 bits/sample</item>
         <item>24 bits/sample</item>
         <item>32 bits/sample</item>
@@ -751,6 +780,7 @@
         <item>48.0 kHz</item>
         <item>88.2 kHz</item>
         <item>96.0 kHz</item>
+        <item>192.0 kHz</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_sample_rate_titles">
         <item>Use system preference (Default)</item>
@@ -758,6 +788,7 @@
         <item>48.0 kHz</item>
         <item>88.2 kHz</item>
         <item>96.0 kHz</item>
+        <item>192.0 kHz</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_sample_rate_values">
         <item>0</item>
@@ -775,6 +806,7 @@
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
         <item>Qualcomm® aptX™ TWS+ audio</item>
+        <item>LHDC V5</item>
         <item>LHDC V3/V4</item>
         <item>LHDC V2</item>
         <item>LHDC V1</item>
@@ -790,6 +822,7 @@
         <item>LDAC</item>
         <item>Qualcomm® aptX™ Adaptive audio</item>
         <item>Qualcomm® aptX™ TWS+ audio</item>
+        <item>LHDC V5</item>
         <item>LHDC V3/V4</item>
         <item>LHDC V2</item>
         <item>LHDC V1</item>
@@ -803,6 +836,9 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -821,6 +857,16 @@
         <item>AVRCP 1.3</item>
         <item>AVRCP 1.4</item>
         <item>AVRCP 1.6</item>
+    </string-array>
+    <string-array name="bluetooth_broadcast_pin_config_titles">
+        <item>Unencrypted (no security)</item>
+        <item>4 digit pin (low security)</item>
+        <item>16 digit pin (high security)</item>
+    </string-array>
+    <string-array name="bluetooth_broadcast_pin_config_values">
+        <item>0</item>
+        <item>4</item>
+        <item>16</item>
     </string-array>
     <string-array name="bluetooth_map_version_values">
         <item>map12</item>
@@ -921,11 +967,19 @@
         <item>Disabled</item>
         <item>Filtered</item>
         <item>Enabled</item>
+        <item>Headers filtered</item>
+        <item>Media packets filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values">
         <item>disabled</item>
         <item>filtered</item>
         <item>full</item>
+        <item>snoopheadersfiltered</item>
+        <item>mediapktsfiltered</item>
+    </string-array>
+    <string-array name="bt_hci_snoop_log_values_enhanced">
+        <item>snoopheadersfiltered</item>
+        <item>mediapktsfiltered</item>
     </string-array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
@@ -1079,7 +1133,7 @@
     <string-array name="captioning_font_size_selector_titles">
         <item>Very small</item>
         <item>Small</item>
-        <item>Default</item>
+        <item>Medium</item>
         <item>Large</item>
         <item>Very large</item>
     </string-array>
@@ -1884,12 +1938,12 @@
         <item>Standard</item>
     </string-array>
     <string-array name="color_picker">
-        <item>Teal</item>
+        <item>Cyan</item>
         <item>Blue</item>
-        <item>Indigo</item>
+        <item>Green</item>
         <item>Purple</item>
         <item>Pink</item>
-        <item>Red</item>
+        <item>Orange</item>
     </string-array>
     <string-array name="common_password_business_clickable_default">
         <item>true</item>
@@ -1928,6 +1982,7 @@
         <item>3</item>
     </integer-array>
     <array name="config_device_lock_need" />
+    <array name="config_disallowed_app_localeChange_packages" />
     <string-array name="config_downloaded_services">
         <item>com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService</item>
     </string-array>
@@ -1956,6 +2011,15 @@
     <string-array name="config_preinstalled_screen_reader_services">
         <item>com.google.android.marvin.talkback/com.google.android.accessibility.selecttospeak.SelectToSpeakService</item>
     </string-array>
+    <string-array name="config_screen_resolution_options_strings">
+        <item>@string/screen_resolution_option_high</item>
+        <item>@string/screen_resolution_option_highest</item>
+    </string-array>
+    <string-array name="config_screen_resolution_summaries_strings">
+        <item>@string/screen_resolution_summary_high</item>
+        <item>@string/screen_resolution_summary_highest</item>
+    </string-array>
+    <array name="config_settableAutoRotationDeviceStatesDescriptions" />
     <array name="config_settings_slices_accessibility_components" />
     <string-array name="config_skip_reset_apps_package_name">
         <item>android</item>
@@ -2012,6 +2076,12 @@
         <item>@string/dark_ui_auto_mode_custom</item>
         <item>@string/dark_ui_auto_mode_auto</item>
     </string-array>
+    <string-array name="dark_ui_scheduler_with_bedtime_preference_titles">
+        <item>@string/dark_ui_auto_mode_never</item>
+        <item>@string/dark_ui_auto_mode_custom</item>
+        <item>@string/dark_ui_auto_mode_auto</item>
+        <item>@string/dark_ui_auto_mode_custom_bedtime</item>
+    </string-array>
     <string-array name="data_network_type_name_default">
         <item>4G</item>
         <item>4G+</item>
@@ -2059,8 +2129,7 @@
     </string-array>
     <string-array name="defalut_browser_package">
         <item>mx_telcel:com.android.chrome</item>
-        <item>es_vodafone:com.mi.globalbrowser</item>
-        <item>fr_orange:com.mi.globalbrowser</item>
+        <item>es_vodafone:com.android.chrome</item>
         <item>VF:com.mi.globalbrowser</item>
         <item>OR:com.mi.globalbrowser</item>
         <item>HG:com.mi.globalbrowser</item>
@@ -2073,6 +2142,7 @@
     </string-array>
     <string-array name="default_gallery_package">
         <item>mx_telcel:com.google.android.apps.photos</item>
+        <item>za_mt:com.google.android.apps.photos</item>
     </string-array>
     <string-array name="default_mms_package">
         <item>mx_telcel:com.google.android.apps.messaging</item>
@@ -2124,7 +2194,6 @@
         <item>rainbow</item>
         <item>camellian</item>
         <item>camellia</item>
-        <item>earth</item>
     </string-array>
     <string-array name="dndm_auto_time_trun_on_off">
         <item>@string/dndm_auto_time_turn_on</item>
@@ -2478,6 +2547,22 @@
         <item>com.android.localphone</item>
         <item>com.android.sim</item>
     </string-array>
+    <string-array name="ingress_rate_limit_entries">
+        <item>@string/ingress_rate_limit_no_limit_entry</item>
+        <item>128kbps</item>
+        <item>256kbps</item>
+        <item>1Mbps</item>
+        <item>5Mbps</item>
+        <item>15Mbps</item>
+    </string-array>
+    <string-array name="ingress_rate_limit_values">
+        <item>-1</item>
+        <item>16000</item>
+        <item>32000</item>
+        <item>125000</item>
+        <item>625000</item>
+        <item>1875000</item>
+    </string-array>
     <string-array name="input_method_function_des">
         <item>@string/input_method_function_voice_des</item>
         <item>@string/input_method_function_xiaoai_des</item>
@@ -2522,6 +2607,22 @@
         <item>@string/input_method_selector_show_automatically_value</item>
         <item>@string/input_method_selector_always_show_value</item>
         <item>@string/input_method_selector_always_hide_value</item>
+    </string-array>
+    <string-array name="inputdebuglog_select_level_entries">
+        <item>Level 0</item>
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+    </string-array>
+    <string-array name="inputdebuglog_select_level_entryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
     <string-array name="key_and_gesture_shortcut_action">
         <item>long_press_home_key</item>
@@ -2568,6 +2669,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <array name="kg_wrong_puk_code_message_list" />
     <string-array name="led_color_entries">
         <item>Blue</item>
         <item>Red</item>
@@ -2618,6 +2720,7 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <array name="locale_carrier_names" />
     <string-array name="lock_after_timeout_entries">
         <item>Immediately</item>
         <item>5 seconds</item>
@@ -2903,12 +3006,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>SPN</item>
         <item>IMSI</item>
         <item>GID</item>
+        <item>ICCID</item>
     </string-array>
     <string-array name="mvno_type_values">
         <item></item>
         <item>spn</item>
         <item>imsi</item>
         <item>gid</item>
+        <item>iccid</item>
     </string-array>
     <string-array name="ncc_locales">
         <item>TW</item>
@@ -2921,6 +3026,14 @@ Note: Only for Ubuntu 8.04!"</item>
     <string-array name="new_dndm_vip_list_group_array">
         <item>@string/dndm_vip_list_contact</item>
         <item>@string/dndm_vip_list_starred_contact</item>
+    </string-array>
+    <string-array name="nfc_payment_favor">
+        <item>Always</item>
+        <item>Except when another payment app is open</item>
+    </string-array>
+    <string-array name="nfc_payment_favor_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
     <string-array name="nfc_se_route_values">
         <item>1</item>
@@ -2996,227 +3109,54 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>12</item>
     </string-array>
     <string-array name="organized_locales">
-        <item>af</item>
-        <item>al</item>
         <item>dz</item>
-        <item>as</item>
-        <item>ad</item>
         <item>ao</item>
-        <item>ai</item>
-        <item>ag</item>
-        <item>ar</item>
-        <item>am</item>
-        <item>aw</item>
-        <item>au</item>
-        <item>at</item>
-        <item>az</item>
-        <item>bs</item>
         <item>bh</item>
-        <item>bd</item>
-        <item>bb</item>
-        <item>by</item>
-        <item>be</item>
-        <item>bz</item>
-        <item>bj</item>
-        <item>bt</item>
-        <item>bo</item>
-        <item>ba</item>
         <item>bw</item>
         <item>br</item>
-        <item>vg</item>
-        <item>bn</item>
-        <item>bg</item>
-        <item>bf</item>
-        <item>bi</item>
-        <item>kh</item>
         <item>cm</item>
-        <item>ca</item>
-        <item>cv</item>
-        <item>bq</item>
-        <item>ky</item>
-        <item>td</item>
-        <item>cl</item>
-        <item>co</item>
-        <item>km</item>
         <item>cd</item>
-        <item>ck</item>
-        <item>cr</item>
         <item>ci</item>
-        <item>hr</item>
-        <item>cu</item>
-        <item>cy</item>
-        <item>cz</item>
-        <item>dk</item>
-        <item>dj</item>
-        <item>dm</item>
-        <item>do</item>
-        <item>ec</item>
         <item>eg</item>
-        <item>sv</item>
         <item>gq</item>
-        <item>er</item>
-        <item>ee</item>
         <item>et</item>
-        <item>fk</item>
-        <item>fo</item>
-        <item>fj</item>
-        <item>fi</item>
         <item>fr</item>
-        <item>gf</item>
-        <item>pf</item>
-        <item>ga</item>
-        <item>gm</item>
-        <item>ge</item>
-        <item>de</item>
         <item>gh</item>
-        <item>gi</item>
-        <item>gr</item>
-        <item>gl</item>
-        <item>gd</item>
-        <item>gu</item>
-        <item>gt</item>
-        <item>gg</item>
-        <item>gn</item>
-        <item>gw</item>
-        <item>gy</item>
-        <item>ht</item>
-        <item>hn</item>
         <item>hk</item>
-        <item>hu</item>
-        <item>is</item>
         <item>in</item>
         <item>id</item>
         <item>ir</item>
-        <item>iq</item>
-        <item>ie</item>
-        <item>im</item>
-        <item>il</item>
-        <item>it</item>
-        <item>jm</item>
-        <item>jp</item>
-        <item>je</item>
-        <item>jo</item>
-        <item>kz</item>
         <item>ke</item>
-        <item>ki</item>
-        <item>kw</item>
-        <item>kg</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lb</item>
         <item>ls</item>
-        <item>lr</item>
-        <item>ly</item>
-        <item>li</item>
-        <item>lt</item>
-        <item>lu</item>
-        <item>mo</item>
-        <item>mk</item>
-        <item>mg</item>
         <item>mw</item>
         <item>my</item>
-        <item>mv</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mh</item>
-        <item>mr</item>
-        <item>mu</item>
-        <item>yt</item>
         <item>mx</item>
-        <item>fm</item>
-        <item>md</item>
-        <item>mn</item>
-        <item>me</item>
-        <item>ms</item>
         <item>ma</item>
         <item>mz</item>
         <item>mm</item>
         <item>na</item>
-        <item>nr</item>
-        <item>np</item>
-        <item>nl</item>
-        <item>nc</item>
-        <item>nz</item>
-        <item>ni</item>
         <item>ng</item>
-        <item>nu</item>
-        <item>nf</item>
-        <item>kp</item>
-        <item>mp</item>
-        <item>no</item>
-        <item>om</item>
-        <item>pk</item>
-        <item>pw</item>
-        <item>ps</item>
-        <item>pa</item>
-        <item>pg</item>
-        <item>py</item>
-        <item>pe</item>
         <item>ph</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>pr</item>
         <item>qa</item>
-        <item>ro</item>
         <item>ru</item>
         <item>rw</item>
-        <item>sh</item>
-        <item>kn</item>
-        <item>lc</item>
-        <item>pm</item>
-        <item>vc</item>
-        <item>ws</item>
-        <item>sm</item>
-        <item>st</item>
-        <item>sa</item>
         <item>sn</item>
-        <item>rs</item>
-        <item>sc</item>
-        <item>sl</item>
         <item>sg</item>
-        <item>sk</item>
-        <item>si</item>
-        <item>sb</item>
-        <item>so</item>
         <item>za</item>
-        <item>gs</item>
         <item>kr</item>
-        <item>ss</item>
-        <item>es</item>
-        <item>lk</item>
-        <item>sd</item>
-        <item>sr</item>
         <item>sz</item>
-        <item>se</item>
-        <item>ch</item>
-        <item>sy</item>
         <item>tw</item>
-        <item>tj</item>
         <item>tz</item>
         <item>th</item>
-        <item>tl</item>
-        <item>tg</item>
-        <item>tk</item>
-        <item>to</item>
-        <item>tt</item>
-        <item>tn</item>
         <item>tr</item>
-        <item>tm</item>
-        <item>tv</item>
         <item>ug</item>
         <item>ua</item>
         <item>ae</item>
-        <item>gb</item>
-        <item>us</item>
-        <item>uy</item>
-        <item>uz</item>
-        <item>vu</item>
-        <item>ve</item>
         <item>vn</item>
-        <item>ye</item>
         <item>zm</item>
         <item>zw</item>
     </string-array>
+    <array name="origin_carrier_names" />
     <string-array name="overlay_display_devices_entries">
         <item>None</item>
         <item>480p</item>
@@ -3714,27 +3654,45 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Never allow</item>
         <item>Always allow</item>
     </string-array>
+    <string-array name="select_gpo_version_summaries">
+        <item>Off</item>
+        <item>GPO4</item>
+        <item>GPO5</item>
+        <item>GPO6</item>
+    </string-array>
+    <string-array name="select_gpo_version_titles">
+        <item>Off</item>
+        <item>GPO4</item>
+        <item>GPO5</item>
+        <item>GPO6</item>
+    </string-array>
+    <string-array name="select_gpo_version_values">
+        <item>0</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
     <string-array name="select_logd_size_lowram_titles">
         <item>Off</item>
-        <item>64 KB</item>
-        <item>256 KB</item>
-        <item>1 MB</item>
+        <item>64K</item>
+        <item>256K</item>
+        <item>1M</item>
     </string-array>
     <string-array name="select_logd_size_summaries">
         <item>Off</item>
-        <item>64 KB per log buffer</item>
-        <item>256 KB per log buffer</item>
-        <item>1 MB per log buffer</item>
-        <item>4 MB per log buffer</item>
-        <item>8 MB per log buffer</item>
+        <item>64K per log buffer</item>
+        <item>256K per log buffer</item>
+        <item>1M per log buffer</item>
+        <item>4M per log buffer</item>
+        <item>8M per log buffer</item>
     </string-array>
     <string-array name="select_logd_size_titles">
         <item>Off</item>
-        <item>64 KB</item>
-        <item>256 KB</item>
-        <item>1 MB</item>
-        <item>4 MB</item>
-        <item>8 MB</item>
+        <item>64K</item>
+        <item>256K</item>
+        <item>1M</item>
+        <item>4M</item>
+        <item>8M</item>
     </string-array>
     <string-array name="select_logd_size_values">
         <item>32768</item>
@@ -3860,6 +3818,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>4</item>
         <item>1</item>
     </string-array>
+    <array name="sim_color_light">
+        <item>@color/SIM_color_cyan</item>
+        <item>@color/SIM_color_blue800</item>
+        <item>@color/SIM_color_green800</item>
+        <item>@color/SIM_color_purple800</item>
+        <item>@color/SIM_color_pink800</item>
+        <item>@color/SIM_color_orange</item>
+    </array>
     <string-array name="simulate_color_space_entries">
         <item>@string/daltonizer_mode_disabled</item>
         <item>@string/daltonizer_mode_monochromacy</item>
@@ -3928,8 +3894,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>crux</item>
         <item>venus</item>
     </string-array>
-    <string-array name="support_magic_window_device_list">
-        <item>enuma</item>
+    <string-array name="support_lite_Optimization_device">
+        <item>earth</item>
+        <item>selene</item>
+        <item>evergreen</item>
+        <item>evergo</item>
+        <item>spes</item>
+        <item>spesn</item>
+        <item>fog</item>
     </string-array>
     <string-array name="support_settings_haptic_device_list">
         <item>apollo</item>
@@ -3970,9 +3942,9 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>daumier</item>
         <item>diting</item>
         <item>unicorn</item>
-        <item>ruby</item>
-        <item>rubypro</item>
-        <item>rubyplus</item>
+        <item>nuwa</item>
+        <item>fuxi</item>
+        <item>socrates</item>
     </string-array>
     <string-array name="support_speaker_auto_clean_device_list">
         <item>willow</item>
@@ -3989,6 +3961,16 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>lancelot</item>
         <item>galahad</item>
     </string-array>
+    <string-array name="suppot_lite_font_page_device">
+        <item>earth</item>
+        <item>yunluo</item>
+        <item>selene</item>
+        <item>evergreen</item>
+        <item>evergo</item>
+        <item>spes</item>
+        <item>spesn</item>
+        <item>fog</item>
+    </string-array>
     <string-array name="swipe_direction_titles">
         <item>@string/swipe_direction_rtl</item>
         <item>@string/swipe_direction_ltr</item>
@@ -3996,6 +3978,80 @@ Note: Only for Ubuntu 8.04!"</item>
     <string-array name="swipe_direction_values">
         <item>1</item>
         <item>0</item>
+    </string-array>
+    <string-array name="switch_to_user_zero_when_docked_timeout_entries">
+        <item>Never</item>
+        <item>After 1 minute</item>
+        <item>After 5 minutes</item>
+    </string-array>
+    <string-array name="switch_to_user_zero_when_docked_timeout_values">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+    </string-array>
+    <string-array name="tabs_taptic_detail">
+        <item>Crisp</item>
+        <item>Base</item>
+        <item>Pop</item>
+    </string-array>
+    <string-array name="tabs_taptic_detail_m2">
+        <item>Crisp</item>
+        <item>Solid</item>
+    </string-array>
+    <string-array name="tare_alarm_manager_actions">
+        <item>@string/tare_wakeup_exact_idle</item>
+        <item>@string/tare_wakeup_inexact_idle</item>
+        <item>@string/tare_wakeup_exact</item>
+        <item>@string/tare_wakeup_inexact</item>
+        <item>@string/tare_nonwakeup_exact_idle</item>
+        <item>@string/tare_nonwakeup_exact</item>
+        <item>@string/tare_nonwakeup_inexact_idle</item>
+        <item>@string/tare_nonwakeup_inexact</item>
+        <item>@string/tare_alarm_clock</item>
+    </string-array>
+    <string-array name="tare_app_balance_subfactors">
+        <item>@string/tare_max_satiated_balance</item>
+        <item>@string/tare_min_balance_exempted</item>
+        <item>@string/tare_min_balance_headless_app</item>
+        <item>@string/tare_min_balance_other_app</item>
+    </string-array>
+    <string-array name="tare_consumption_limit_subfactors">
+        <item>@string/tare_initial_consumption_limit</item>
+        <item>@string/tare_hard_consumption_limit</item>
+    </string-array>
+    <string-array name="tare_job_scheduler_actions">
+        <item>@string/tare_job_max_start</item>
+        <item>@string/tare_job_max_running</item>
+        <item>@string/tare_job_high_start</item>
+        <item>@string/tare_job_high_running</item>
+        <item>@string/tare_job_default_start</item>
+        <item>@string/tare_job_default_running</item>
+        <item>@string/tare_job_low_start</item>
+        <item>@string/tare_job_low_running</item>
+        <item>@string/tare_job_min_start</item>
+        <item>@string/tare_job_min_running</item>
+        <item>@string/tare_job_timeout_penalty</item>
+    </string-array>
+    <string-array name="tare_modifiers_subfactors">
+        <item>Charging</item>
+        <item>Doze</item>
+        <item>Power Save Mode</item>
+        <item>Process State</item>
+    </string-array>
+    <string-array name="tare_policies">
+        <item>@string/tare_alarmmanager</item>
+        <item>@string/tare_jobscheduler</item>
+    </string-array>
+    <string-array name="tare_rewards_subfactors">
+        <item>@string/tare_top_activity</item>
+        <item>@string/tare_notification_seen</item>
+        <item>@string/tare_notification_interaction</item>
+        <item>@string/tare_widget_interaction</item>
+        <item>@string/tare_other_interaction</item>
+    </string-array>
+    <string-array name="tare_units">
+        <item>ARC</item>
+        <item>Cake</item>
     </string-array>
     <array name="three_drop">
         <item>@drawable/threedrop01</item>
@@ -4207,6 +4263,16 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>150</item>
         <item>200</item>
     </string-array>
+    <string-array name="typing_style_entries">
+        <item>Standard</item>
+        <item>Touch</item>
+        <item>Direct touch</item>
+    </string-array>
+    <string-array name="typing_style_values">
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
     <string-array name="uplmn_cu_mcc_mnc_values">
         <item>46001</item>
         <item>46006</item>
@@ -4368,13 +4434,11 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/screensaver_settings_summary_sleep</item>
         <item>@string/screensaver_settings_summary_dock</item>
         <item>@string/screensaver_settings_summary_either_long</item>
-        <item>@string/screensaver_settings_summary_never</item>
     </string-array>
     <string-array name="when_to_start_screensaver_values">
         <item>while_charging_only</item>
         <item>while_docked_only</item>
         <item>either_charging_or_docked</item>
-        <item>never</item>
     </string-array>
     <string-array name="whetstone_level_entries">
         <item>Off</item>
@@ -4560,6 +4624,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>No</item>
         <item>Yes</item>
     </string-array>
+    <string-array name="wifi_hidden_gbk_entries">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
     <string-array name="wifi_ip_settings">
         <item>DHCP</item>
         <item>Static</item>
@@ -4627,8 +4695,6 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/wifi_security_wep</item>
         <item>@string/wifi_security_psk_generic</item>
         <item>@string/wifi_security_eap</item>
-        <item>@string/wifi_security_wapi_psk</item>
-        <item>@string/wifi_security_wapi_cert</item>
     </string-array>
     <string-array name="wifi_security_no_eap">
         <item>@string/wifi_security_none</item>
@@ -4687,12 +4753,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/wifi_security_sae</item>
         <item>@string/wifi_security_psk_sae</item>
         <item>@string/wifi_security_wpa2</item>
+        <item>@string/wifi_security_owe</item>
         <item>@string/wifi_security_none</item>
     </string-array>
     <string-array name="wifi_tether_security_values">
         <item>3</item>
         <item>2</item>
         <item>1</item>
+        <item>4</item>
         <item>0</item>
     </string-array>
     <string-array name="wifi_ttls_phase2_entries">

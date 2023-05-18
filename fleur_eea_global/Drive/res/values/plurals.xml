@@ -4,6 +4,10 @@
         <item quantity="other">Showing %1$d items.</item>
         <item quantity="one">Showing %1$d item.</item>
     </plurals>
+    <plurals name="aclfixer_sharing_outside_of_domain_body">
+        <item quantity="other">You are sharing to %1$s who are not in the Google Workspace organization to which the item belongs</item>
+        <item quantity="one">You are sharing to %1$s who is not in the Google Workspace organization to which the item belongs</item>
+    </plurals>
     <plurals name="action_comments_with_count">
         <item quantity="other">%1$d comments</item>
         <item quantity="one">%1$d comment</item>
@@ -39,7 +43,7 @@
     <plurals name="approvers_quantity">
         <item quantity="other">%1$d approvers</item>
         <item quantity="zero">No approvers</item>
-        <item quantity="one">1 approver</item>
+        <item quantity="one">%1$d approver</item>
     </plurals>
     <plurals name="backup_entity_expires_in">
         <item quantity="other">Expires in %1$d days</item>
@@ -94,33 +98,16 @@
         <item quantity="one">Item could not be downloaded</item>
     </plurals>
     <plurals name="download_message_success">
-        <item quantity="other">%1$d items will be downloaded. See notification for details</item>
-        <item quantity="one">%1$d item will be downloaded. See notification for details</item>
+        <item quantity="other">%1$d items will be downloaded. See notification for details.</item>
+        <item quantity="one">%1$d item will be downloaded. See notification for details.</item>
     </plurals>
     <plurals name="download_message_success_no_notification">
-        <item quantity="other">%1$d items will be downloaded.</item>
-        <item quantity="one">%1$d item will be downloaded.</item>
-    </plurals>
-    <plurals name="download_notification_complete_title">
-        <item quantity="other">%1$s and %2$d more items</item>
-        <item quantity="one">%1$s</item>
-        <item quantity="two">%1$s and %2$d more item</item>
-    </plurals>
-    <plurals name="download_notification_failure_multiple">
-        <item quantity="other">%1$s items could not be downloaded</item>
-        <item quantity="one">%1$s item could not be downloaded</item>
-    </plurals>
-    <plurals name="download_notification_list_summary">
-        <item quantity="other">%1$d more items</item>
-        <item quantity="one">%1$d more item</item>
+        <item quantity="other">%1$d items will be downloaded</item>
+        <item quantity="one">%1$d item will be downloaded</item>
     </plurals>
     <plurals name="download_notification_partial_failure_title">
         <item quantity="other">%1$d of %2$d downloads failed</item>
         <item quantity="one">1 of %2$d downloads failed</item>
-    </plurals>
-    <plurals name="download_notification_partial_success_title">
-        <item quantity="other">%1$d of %2$d downloads failed</item>
-        <item quantity="one">%1$d of %2$d download failed</item>
     </plurals>
     <plurals name="download_notification_title_total_failure">
         <item quantity="other">%1$d downloads failed</item>
@@ -266,11 +253,6 @@
         <item quantity="other">Paused making %1$d files available offline (%2$s)</item>
         <item quantity="one">Paused making 1 file available offline (%2$s)</item>
     </plurals>
-    <plurals name="number_of_approvers">
-        <item quantity="other">%1$d approvers</item>
-        <item quantity="zero">No approvers specified</item>
-        <item quantity="one">1 approver</item>
-    </plurals>
     <plurals name="permanently_delete_confirmation_message">
         <item quantity="other">"%1$d items will be deleted forever. This can't be undone."</item>
         <item quantity="one">"\"%2$s\" will be deleted forever. This can't be undone."</item>
@@ -355,14 +337,6 @@
         <item quantity="other">Permanently deleted %1$d items</item>
         <item quantity="one">Permanently deleted an item</item>
     </plurals>
-    <plurals name="recent_activity_type_moved_extra_many_users">
-        <item quantity="other">Moved %1$d items to:</item>
-        <item quantity="one">Moved an item to:</item>
-    </plurals>
-    <plurals name="recent_activity_type_moved_extra_one_user">
-        <item quantity="other">Moved %1$d items to:</item>
-        <item quantity="one">Moved an item to:</item>
-    </plurals>
     <plurals name="recent_activity_type_moved_many_users">
         <item quantity="other">Moved %1$d items</item>
         <item quantity="one">Moved an item</item>
@@ -375,17 +349,9 @@
         <item quantity="other">Moved this file</item>
         <item quantity="one">Moved this file</item>
     </plurals>
-    <plurals name="recent_activity_type_moved_this_file_extra">
-        <item quantity="other">Moved this file to:</item>
-        <item quantity="one">Moved this file to:</item>
-    </plurals>
     <plurals name="recent_activity_type_moved_this_folder">
         <item quantity="other">Moved this folder</item>
         <item quantity="one">Moved this folder</item>
-    </plurals>
-    <plurals name="recent_activity_type_moved_this_folder_extra">
-        <item quantity="other">Moved this folder to:</item>
-        <item quantity="one">Moved this folder to:</item>
     </plurals>
     <plurals name="recent_activity_type_renamed_many_users">
         <item quantity="other">Renamed %1$d items</item>
@@ -608,6 +574,38 @@
         <item quantity="other">%d people</item>
         <item quantity="zero">0 people</item>
         <item quantity="one">1 person</item>
+    </plurals>
+    <plurals name="to_folder_notification_title_downloading">
+        <item quantity="other">%1$d files downloading</item>
+        <item quantity="zero">%1$d files downloading</item>
+        <item quantity="one">%1$d file downloading</item>
+        <item quantity="two">%1$d files downloading</item>
+        <item quantity="few">%1$d files downloading</item>
+        <item quantity="many">%1$d files downloading</item>
+    </plurals>
+    <plurals name="to_folder_notification_title_partial_failure">
+        <item quantity="other">%1$d of %2$d downloads failed</item>
+        <item quantity="zero">%1$d of %2$d downloads failed</item>
+        <item quantity="one">%1$d of %2$d downloads failed</item>
+        <item quantity="two">%1$d of %2$d downloads failed</item>
+        <item quantity="few">%1$d of %2$d downloads failed</item>
+        <item quantity="many">%1$d of %2$d downloads failed</item>
+    </plurals>
+    <plurals name="to_folder_notification_title_total_failure">
+        <item quantity="other">%1$d downloads failed</item>
+        <item quantity="zero">%1$d downloads failed</item>
+        <item quantity="one">%1$d download failed</item>
+        <item quantity="two">%1$d downloads failed</item>
+        <item quantity="few">%1$d downloads failed</item>
+        <item quantity="many">%1$d downloads failed</item>
+    </plurals>
+    <plurals name="to_folder_notification_title_total_success">
+        <item quantity="other">Downloaded %1$d files</item>
+        <item quantity="zero">Downloaded %1$d files</item>
+        <item quantity="one">Downloaded %1$d file</item>
+        <item quantity="two">Downloaded %1$d files</item>
+        <item quantity="few">Downloaded %1$d files</item>
+        <item quantity="many">Downloaded %1$d files</item>
     </plurals>
     <plurals name="total_items_selected">
         <item quantity="other">%d items selected</item>
