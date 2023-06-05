@@ -106,6 +106,7 @@
     <string name="activated_successfully">Call Screen activated</string>
     <string name="activity_not_available">No app for that on this device</string>
     <string name="add_2sec_pause">Add 2-sec pause</string>
+    <string name="add_contact_content_description">Add contact</string>
     <string name="add_contact_not_available">No contacts app available</string>
     <string name="add_to_a_contact">Add to a contact</string>
     <string name="add_wait">Add wait</string>
@@ -127,7 +128,6 @@ Recordings are stored only on your phone. ^1"</string>
     <string name="always_record_negative_button_label">Cancel</string>
     <string name="always_record_positive_button_label">Always record</string>
     <string name="always_warn">Show warning every time</string>
-    <string name="androidx_startup">androidx.startup</string>
     <string name="answer_caller_tag_text">Likely: %1$s</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="applicationLabel">Phone</string>
@@ -789,6 +789,7 @@ Please send help."</string>
     <string name="emergency_speaker">Speaker</string>
     <string name="emergency_voice_assist_dialog_button_close">Cancel</string>
     <string name="emergency_voice_assist_dialog_title">The emergency operator hears this</string>
+    <string name="empty_contact_list">Your contact list will appear here</string>
     <string name="enabled_speaker_button_description">Speaker enabled</string>
     <string name="end_call_contacts">"Sorry, they can't take the call right now. Thanks, and goodbye."</string>
     <string name="end_call_contacts_ja">ただいま電話に出ることができません。お電話ありがとうございました。</string>
@@ -912,6 +913,7 @@ Please send help."</string>
     <string name="imei_number">IMEI %s</string>
     <string name="import_send_to_voicemail_numbers_label">Import numbers</string>
     <string name="incall_call_ended">Call ended</string>
+    <string name="incall_call_held">On hold</string>
     <string name="incall_calling_on_recent_choice_template">Calling on recent choice %s</string>
     <string name="incall_calling_on_same_carrier_template">Calling on same carrier %s</string>
     <string name="incall_calling_via_template">Calling via %s</string>
@@ -961,7 +963,6 @@ Please send help."</string>
     <string name="incall_on_hold_content_description_swap_calls">Swap calls</string>
     <string name="incall_on_hold_name">%1$s – On hold</string>
     <string name="incall_overflow_description_more_options">More options</string>
-    <string name="incall_remotely_held">On hold</string>
     <string name="incall_transferring">Transferring…</string>
     <string name="incall_video_call_request_failed">Unable to connect</string>
     <string name="incall_video_call_request_rejected">The other party wants to stay on voice</string>
@@ -1057,6 +1058,7 @@ Please send help."</string>
     <string name="model_download_button">Download</string>
     <string name="model_download_necessary">Download a language update to finish setting up Call Screen</string>
     <string name="model_download_ongoing">Downloading ^1</string>
+    <string name="more_options_content_description">More options</string>
     <string name="motorola_hidden_menu_intent">com.motorola.intent.action.LAUNCH_HIDDEN_MENU</string>
     <string name="msisdn_number">MSISDN %s</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
@@ -1211,8 +1213,6 @@ Please send help."</string>
     <string name="notification_requesting_video_call">Incoming video request</string>
     <string name="notification_requesting_video_call_multi_sim">Incoming video request via %1$s</string>
     <string name="notification_syncing_voicemail_status">Syncing voicemail data</string>
-    <string name="notification_take_call">Take Call</string>
-    <string name="notification_take_video_call">Take Video Call</string>
     <string name="notification_view_transcript_action">See more</string>
     <string name="notification_voicemail_callers_list">%1$s, %2$s</string>
     <string name="notification_voicemail_no_vm_number">To set up voicemail, go to Menu > Settings.</string>
@@ -1232,9 +1232,6 @@ Please send help."</string>
     <string name="pause_prompt_no">No</string>
     <string name="pause_prompt_yes">Yes</string>
     <string name="payphone">Payphone</string>
-    <string name="pca_experiment_disclosure_text_1">This call is being recorded for quality purposes. Hello?</string>
-    <string name="pca_experiment_disclosure_text_2">Hi, I’m an automatic calling assistant, recording this call for the person you’re trying to reach. Can I ask what you’re calling about?</string>
-    <string name="pca_experiment_disclosure_text_3">"Hi, the person you've reached is using an automated calling assistant, and will get a recording of this call. Can I ask what you’re calling about?"</string>
     <string name="permission_no_contacts">To view your contacts, allow contacts permission.</string>
     <string name="permission_single_turn_on">Allow</string>
     <string name="personalized_results_setting_summary">Improve your search results by including items from your search history.</string>
@@ -1315,6 +1312,9 @@ You can still video call some numbers without updating settings."</string>
     <string name="recording_deletion_failed">"Couldn't delete recording [Try again]"</string>
     <string name="redo_button_text">Try again</string>
     <string name="remember_this_choice">Remember this choice</string>
+    <string name="replace_voice_signature_header">Save new voice signature?</string>
+    <string name="replace_voice_signature_label">Save &amp; replace</string>
+    <string name="replace_voice_signature_message">"Your current voice signature will be replaced and can't be undone"</string>
     <string name="report_not_spam_alert_button">Report</string>
     <string name="report_not_spam_alert_details">Future calls from %1$s will no longer be identified as spam.</string>
     <string name="report_not_spam_alert_title">Report a mistake?</string>
@@ -1442,6 +1442,7 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="see_conversation">See conversation</string>
     <string name="select_account_dialog_title">Account</string>
     <string name="select_all">Select all</string>
+    <string name="select_contact">Select contact</string>
     <string name="select_contacts_page_crosby_feature_not_available_text">"Automatic call recording isn't available in your location"</string>
     <string name="select_contacts_page_no_features_available_text">Not available in your location</string>
     <string name="selected_numbers_always_record_dialog_title">Always record calls with selected numbers?</string>
@@ -1453,6 +1454,7 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="selected_numbers_title">Selected numbers</string>
     <string name="selected_numbers_toggle_text">Always record selected numbers</string>
     <string name="send_a_message">Send a message</string>
+    <string name="send_sms_content_description">Send SMS</string>
     <string name="send_to_voicemail_import_failed">Import failed</string>
     <string name="serial_number">Serial number</string>
     <string name="set_as_default_button_text">Set as default</string>
@@ -1559,10 +1561,12 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="spam_notification_was_not_spam_action_text_230155">No, not junk/unwanted</string>
     <string name="speak_easy_data_link">See transcript</string>
     <string name="speed_dial_add_button_text">Add</string>
+    <string name="speed_dial_add_contact_not_available">No contacts app available</string>
     <string name="speed_dial_contacts_permission_description">To enable speed dial, turn on the Contacts permission.</string>
     <string name="speed_dial_disambig_dialog_title">Choose how to call %s</string>
     <string name="speed_dial_no_contacts_action_text">Add a favorite</string>
     <string name="speed_dial_no_contacts_description">Call your favorite contacts with just one tap</string>
+    <string name="speed_dial_no_suggested_contacts_description">Your suggested contacts will appear here.</string>
     <string name="speed_dial_remember_this_choice">Remember this choice</string>
     <string name="speed_dial_turn_on_contacts_permission">Turn on</string>
     <string name="star_description_1">Star rating icon one out of five</string>
@@ -1570,6 +1574,7 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="star_description_3">Star rating icon three out of five</string>
     <string name="star_description_4">Star rating icon four out of five</string>
     <string name="star_description_5">Star rating icon five out of five</string>
+    <string name="start_call">Call</string>
     <string name="start_call_contacts">"Hi, the person you're calling is using a screening service from Google, and will get a copy of this conversation. Go ahead and say why you're calling."</string>
     <string name="start_call_contacts_donation_off">"Hi, the person you've reached is using a screening service from Google, and will get a transcript of this call. Go ahead and say why you're calling."</string>
     <string name="start_call_contacts_donation_off_ja">おかけになった相手先は、Googleのスクリーニングサービスを利用しており、この通話の文字変換データを受信します。ご用件をお話しください。</string>
@@ -1583,6 +1588,7 @@ Call Screen doesn't use data or Wi-Fi but does use carrier call minutes. %1$s"</
     <string name="start_call_non_contacts_donation_on_ja">おかけになった相手先は、Googleのスクリーニングサービスを利用しており、この通話の録音データと文字変換データを受信します。お名前とご用件をお話しください。</string>
     <string name="start_call_non_contacts_ja">おかけになった相手先は、Googleのスクリーニングサービスを利用しており、この通話の文字変換データを受信します。お名前とご用件をお話しください。</string>
     <string name="start_duo_call_failed">Unable to start a Meet call</string>
+    <string name="start_videocall_content_description">Start videocall</string>
     <string name="suggest_turn_off_airplane_mode_button">Got it</string>
     <string name="suggest_turn_off_airplane_mode_message">Turn off airplane mode or connect to a wireless network to make a call.</string>
     <string name="suggested_contacts">Suggested</string>
@@ -1928,6 +1934,7 @@ Data usage applies if you continue the call."</string>
     <string name="voicemail_change_pin_preference_summary_not_activated">Visual voicemail is not activated yet, please try again later</string>
     <string name="voicemail_change_pin_preference_title">Change PIN</string>
     <string name="voicemail_donate_preference_summary_info">Let Google review your voicemail messages to improve transcription accuracy. Your voicemail messages are stored anonymously. ^1</string>
+    <string name="voicemail_empty_state">Select a voicemail to listen</string>
     <string name="voicemail_enable_preference_summary_info_accept_cellular_data">Using visual voicemail for SIMs without data may incur carrier charges</string>
     <string name="voicemail_enable_preference_summary_info_not_default_data_sim">Visual voicemail only available for the selected data SIM</string>
     <string name="voicemail_enable_preference_summary_info_using_fi_sim">If you have multiple SIMs and one is for Fi, your Fi SIM will be used for visual voicemail</string>
