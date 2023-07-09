@@ -103,6 +103,26 @@
         <item>WCDMA-Band18</item>
         <item>WCDMA-Band19</item>
     </string-array>
+    <string-array name="bt_le_eh_ble_4m">
+        <item>BLE 4M,0x00</item>
+    </string-array>
+    <string-array name="bt_le_eh_phy_1m">
+        <item>1M PHY,0x01</item>
+    </string-array>
+    <string-array name="bt_le_eh_phy_2m">
+        <item>2M PHY,0x02</item>
+    </string-array>
+    <string-array name="bt_le_eh_phy_lr">
+        <item>BLE 1M,0x01</item>
+        <item>BLE 2M,0x02</item>
+    </string-array>
+    <string-array name="bt_le_eh_phy_test_coded_rx">
+        <item>Coded PHY,0x03</item>
+    </string-array>
+    <string-array name="bt_le_eh_phy_test_coded_tx">
+        <item>Coded PHY S=8,0x03</item>
+        <item>Coded PHY S=2,0x04</item>
+    </string-array>
     <string-array name="bt_le_eh_test_pattern">
         <item>PRBS9</item>
         <item>11110000</item>
@@ -149,90 +169,167 @@
         <item>UART4</item>
         <item>USB</item>
     </string-array>
-    <string-array name="bt_rx_pattern">
-        <item>0000</item>
-        <item>1111</item>
-        <item>1010</item>
-        <item>Pseudo random bit</item>
-        <item>11110000</item>
+    <string-array name="bt_rx_packet_type">
+        <item>DM1(0x03),0x03</item>
+        <item>DH1(0x04),0x04</item>
+        <item>DM3(0x0A),0x0A</item>
+        <item>DH3(0x0B),0x0B</item>
+        <item>DM5(0x0E),0x0E</item>
+        <item>DH5(0x0F),0x0F</item>
+        <item>2-DH1(0x24),0x24</item>
+        <item>3-DH1(0x28),0x28</item>
+        <item>2-DH3(0x2A),0x2A</item>
+        <item>3-DH3(0x2B),0x2B</item>
+        <item>2-DH5(0x2E),0x2E</item>
+        <item>3-DH5(0x2F),0x2F</item>
     </string-array>
-    <string-array name="bt_rx_pocket_type">
-        <item>DM1(0x03)</item>
-        <item>DH1(0x04)</item>
-        <item>DM3(0x0A)</item>
-        <item>DH3(0x0B)</item>
-        <item>DM5(0x0E)</item>
-        <item>DH5(0x0F)</item>
-        <item>2-DH1(0x24)</item>
-        <item>3-DH1(0x28)</item>
-        <item>2-DH3(0x2A)</item>
-        <item>3-DH3(0x2B)</item>
-        <item>2-DH5(0x2E)</item>
-        <item>3-DH5(0x2F)</item>
+    <string-array name="bt_rx_packet_type_hdt">
+        <item>4-DH1(0x44),0x44</item>
+        <item>4-DH3(0x4A),0x4A</item>
+        <item>4-DH5(0x4E),0x4E</item>
+        <item>6-DH1(0x58),0x58</item>
+        <item>6-DH3(0x5B),0x5B</item>
+        <item>6-DH5(0x5F),0x5F</item>
+        <item>8-DH1(0x64),0x64</item>
+        <item>8-DH3(0x6A),0x6A</item>
+        <item>8-DH5(0x6E),0x6E</item>
+    </string-array>
+    <string-array name="bt_rx_packet_type_lr">
+        <item>NULL(0x00),0x00</item>
+        <item>POLL(0x01),0x01</item>
+        <item>DM1(0x03),0x03</item>
+        <item>DH1(0x04),0x04</item>
+        <item>DM3(0x0A),0x0A</item>
+        <item>DH3(0x0B),0x0B</item>
+        <item>DM5(0x0E),0x0E</item>
+        <item>DH5(0x0F),0x0F</item>
+    </string-array>
+    <string-array name="bt_rx_pattern">
+        <item>All 0,0x01</item>
+        <item>All 1,0x02</item>
+        <item>10101010,0x03</item>
+        <item>PRBS9,0x04</item>
+        <item>11110000,0x09</item>
+    </string-array>
+    <string-array name="bt_rx_pattern_lr">
+        <item>PRBS9,0x00</item>
+        <item>11110000,0x01</item>
+        <item>10101010,0x02</item>
+        <item>All 1,0x04</item>
+        <item>All 0,0x05</item>
     </string-array>
     <string-array name="bt_tx_channels">
-        <item>Single Frequency</item>
-        <item>79 Channel</item>
-        <item>23 hop</item>
-        <item>reduced hop</item>
+        <item>Single Frequency,0x00</item>
+        <item>79 Channel,0x01</item>
+        <item>23 hop,0x03</item>
+        <item>reduced hop,0x05</item>
     </string-array>
     <string-array name="bt_tx_channels_20">
-        <item>20 hop low</item>
-        <item>20 hop mid</item>
-        <item>20 hop high</item>
+        <item>20 hop low,0x01</item>
+        <item>20 hop mid,0x01</item>
+        <item>20 hop high,0x01</item>
     </string-array>
     <string-array name="bt_tx_pattern">
-        <item>0000</item>
-        <item>1111</item>
-        <item>1010</item>
-        <item>Pseudo random bit</item>
-        <item>11110000</item>
+        <item>0000,0x01</item>
+        <item>1111,0x02</item>
+        <item>1010,0x03</item>
+        <item>Pseudo random bit,0x04</item>
+        <item>11110000,0x09</item>
+    </string-array>
+    <string-array name="bt_tx_pattern_bt">
+        <item>All 0,0x01</item>
+        <item>All 1,0x02</item>
+        <item>10101010,0x03</item>
+        <item>PRBS9,0x04</item>
+        <item>11110000,0x09</item>
+        <item>TX single tone,0x0A</item>
+    </string-array>
+    <string-array name="bt_tx_pattern_lr">
+        <item>PRBS9,0x00</item>
+        <item>11110000,0x01</item>
+        <item>10101010,0x02</item>
+        <item>All 1,0x04</item>
+        <item>All 0,0x05</item>
     </string-array>
     <string-array name="bt_tx_pkt_data">
-        <item>NULL(0x00),0,0</item>
-        <item>POLL(0x01),0,0</item>
-        <item>FHS(0x02),18,18</item>
-        <item>DM1(0x03),0,17</item>
-        <item>DH1(0x04),0,27</item>
-        <item>HV1(0x05),10,10</item>
-        <item>HV2(0x06),20,20</item>
-        <item>HV3(0x07),30,30</item>
-        <item>DV(0x08),10,19</item>
-        <item>AUX(0x09),0,29</item>
-        <item>DM3(0x0A),0,121</item>
-        <item>DH3(0x0B),0,183</item>
-        <item>DM5(0x0E),0,224</item>
-        <item>DH5(0x0F),0,339</item>
-        <item>EV3(0x17),1,30</item>
-        <item>EV4(0x1C),1,120</item>
-        <item>EV5(0x1D),1,180</item>
-        <item>2-DH1(0x24),0,54</item>
-        <item>3-DH1(0x28),0,83</item>
-        <item>2-DH3(0x2A),0,367</item>
-        <item>3-DH3(0x2B),0,552</item>
-        <item>2-DH5(0x2E),0,679</item>
-        <item>3-DH5(0x2F),0,1021</item>
-        <item>2-EV3(0x36),1,60</item>
-        <item>3-EV3(0x37),1,90</item>
-        <item>2-EV5(0x3C),1,360</item>
-        <item>3-EV5(0x3D),1,540</item>
+        <item>NULL(0x00),0,0,0x00</item>
+        <item>POLL(0x01),0,0,0x01</item>
+        <item>FHS(0x02),18,18,0x02</item>
+        <item>DM1(0x03),0,17,0x03</item>
+        <item>DH1(0x04),0,27,0x04</item>
+        <item>HV1(0x05),10,10,0x05</item>
+        <item>HV2(0x06),20,20,0x06</item>
+        <item>HV3(0x07),30,30,0x07</item>
+        <item>DV(0x08),10,19,0x08</item>
+        <item>AUX(0x09),0,29,0x09</item>
+        <item>DM3(0x0A),0,121,0x0A</item>
+        <item>DH3(0x0B),0,183,0x0B</item>
+        <item>DM5(0x0E),0,224,0x0E</item>
+        <item>DH5(0x0F),0,339,0x0F</item>
+        <item>EV3(0x17),1,30,0x17</item>
+        <item>EV4(0x1C),1,120,0x1C</item>
+        <item>EV5(0x1D),1,180,0x1D</item>
+        <item>2-DH1(0x24),0,54,0x24</item>
+        <item>3-DH1(0x28),0,83,0x28</item>
+        <item>2-DH3(0x2A),0,367,0x2A</item>
+        <item>3-DH3(0x2B),0,552,0x2B</item>
+        <item>2-DH5(0x2E),0,679,0x2E</item>
+        <item>3-DH5(0x2F),0,1021,0x2F</item>
+        <item>2-EV3(0x36),1,60,0x36</item>
+        <item>3-EV3(0x37),1,90,0x37</item>
+        <item>2-EV5(0x3C),1,360,0x3C</item>
+        <item>3-EV5(0x3D),1,540,0x3D</item>
+    </string-array>
+    <string-array name="bt_tx_pkt_data_hdt">
+        <item>4-DH1(0x44),0,142,0x44</item>
+        <item>4-DH3(0x4A),0,768,0x4A</item>
+        <item>4-DH5(0x4E),0,1392,0x4E</item>
+        <item>6-DH1(0x58),0,214,0x58</item>
+        <item>6-DH3(0x5B),0,1150,0x5B</item>
+        <item>6-DH5(0x5F),0,2089,0x5F</item>
+        <item>8-DH1(0x64),0,320,0x64</item>
+        <item>8-DH3(0x6A),0,1572,0x6A</item>
+        <item>8-DH5(0x6E),0,2820,0x6E</item>
+    </string-array>
+    <string-array name="bt_tx_pkt_data_lr">
+        <item>NULL(0x00),0,0,0x00</item>
+        <item>POLL(0x01),0,0,0x01</item>
+        <item>DM1(0x03),0,17,0x03</item>
+        <item>DH1(0x04),0,27,0x04</item>
+        <item>DM3(0x0A),0,121,0x0A</item>
+        <item>DH3(0x0B),0,183,0x0B</item>
+        <item>DM5(0x0E),0,224,0x0E</item>
+        <item>DH5(0x0F),0,339,0x0F</item>
     </string-array>
     <string-array name="bt_tx_tone_modulation">
-        <item>BT BDR 1M</item>
-        <item>BT EDR 2M</item>
-        <item>BT EDR 3M</item>
-        <item>BLE 1M</item>
-        <item>BLE 2M</item>
-        <item>BLR 125K</item>
-        <item>BLR 500K</item>
+        <item>BT BDR 1M,0x00</item>
+        <item>BT EDR 2M,0x01</item>
+        <item>BT EDR 3M,0x02</item>
+        <item>BLE 1M,0x03</item>
+        <item>BLE 2M,0x04</item>
+        <item>BLR 125K,0x05</item>
+        <item>BLR 500K,0x06</item>
+    </string-array>
+    <string-array name="bt_tx_tone_modulation_hdt">
+        <item>BT EDR 4M,0x08</item>
+        <item>BT EDR 6M,0x09</item>
+        <item>BT EDR 8M,0x0A</item>
+        <item>BLE 4M,0x07</item>
     </string-array>
     <string-array name="bt_tx_tone_pattern">
-        <item>PRBS9</item>
-        <item>PRBS15</item>
+        <item>PRBS9,0x00</item>
+        <item>PRBS15,0x01</item>
     </string-array>
     <string-array name="bt_tx_tone_type">
-        <item>Single Tone DC</item>
-        <item>Modulation Tone</item>
+        <item>Single Tone DC,0x00</item>
+        <item>Modulation Tone,0x04</item>
+    </string-array>
+    <string-array name="bt_tx_tone_type_bt">
+        <item>Single Tone DC,0x00</item>
+        <item>Single Tone 250khz,0x01</item>
+        <item>Single Tone 400khz,0x02</item>
+        <item>Single Tone 1Mhz,0x03</item>
+        <item>Modulation Tone,0x04</item>
     </string-array>
     <integer-array name="bypass_codes">
         <item>16</item>
@@ -374,7 +471,6 @@
         <item>LTE-FDD Band 26,25,8315,23,25</item>
         <item>LTE-FDD Band 27,26,8155,23,26</item>
         <item>LTE-FDD Band 28,27,7255,23,27</item>
-        <item>LTE-FDD Band 29,28,7225,23,28</item>
         <item>LTE-FDD Band 30,29,23100,23,29</item>
     </string-array>
     <string-array name="clk_rf_desense_lte_tdd_data">
@@ -393,16 +489,45 @@
     </string-array>
     <string-array name="clk_rf_desense_nr_data">
         <item>NR Band 1,1,1950000,22</item>
+        <item>NR Band 2,2,1880000,22</item>
         <item>NR Band 3,3,1747000,22</item>
+        <item>NR Band 5,5,836500,22</item>
         <item>NR Band 7,7,2530000,22</item>
-        <item>NR Band 8,8,897000,22</item>
+        <item>NR Band 8,8,897500,22</item>
+        <item>NR Band 12,12,707500,22</item>
+        <item>NR Band 13,13,782000,22</item>
+        <item>NR Band 14,14,793000,22</item>
+        <item>NR Band 18,18,822500,22</item>
         <item>NR Band 20,20,847000,22</item>
+        <item>NR Band 24,24,1643500,22</item>
+        <item>NR Band 25,25,1882500,22</item>
+        <item>NR Band 26,26,831500,22</item>
         <item>NR Band 28,28,725500,22</item>
+        <item>NR Band 30,30,2310000,22</item>
+        <item>NR Band 34,34,2017500,22</item>
         <item>NR Band 38,38,2595000,22</item>
+        <item>NR Band 39,39,1900000,22</item>
+        <item>NR Band 40,40,2350000,22</item>
         <item>NR Band 41,41,2593000,22</item>
+        <item>NR Band 46,46,5537500,22</item>
+        <item>NR Band 48,48,3625000,22</item>
+        <item>NR Band 50,50,1474500,22</item>
+        <item>NR Band 51,51,1429500,22</item>
+        <item>NR Band 53,53,2489300,22</item>
+        <item>NR Band 65,65,1965000,22</item>
+        <item>NR Band 66,66,1745000,22</item>
+        <item>NR Band 70,70,1702500,22</item>
+        <item>NR Band 71,71,680500,22</item>
+        <item>NR Band 74,74,1448500,22</item>
         <item>NR Band 77,77,3750000,22</item>
         <item>NR Band 78,78,3499995,22</item>
         <item>NR Band 79,79,4699995,22</item>
+        <item>NR Band 85,85,707000,22</item>
+        <item>NR Band 90,90,2593000,22</item>
+        <item>NR Band 91,91,847000,22</item>
+        <item>NR Band 92,92,847000,22</item>
+        <item>NR Band 93,93,897500,22</item>
+        <item>NR Band 94,94,897500,22</item>
     </string-array>
     <string-array name="clk_rf_desense_td_scdma_data">
         <item>TD-SCDMA Band A,1,10087,24,0</item>
@@ -573,6 +698,9 @@ HSUPA off"</item>
 HSUPA on"</item>
         <item>"HSDPA on
 HSUPA on"</item>
+    </string-array>
+    <string-array name="id_array">
+        <item>Empty</item>
     </string-array>
     <string-array name="input_mode">
         <item>Read from SIM</item>
@@ -818,19 +946,45 @@ HSUPA on"</item>
     </string-array>
     <string-array name="npt_nr_data">
         <item>NR B1,1,1950000,10000,1950000,23,0,0,3,1,0,0,1,2110000,1920000,0</item>
+        <item>NR B2,2,1880000,10000,1880000,23,0,0,3,1,0,0,1,1930000,1850000,0</item>
         <item>NR B3,3,1747000,10000,1747000,23,0,0,3,1,0,0,1,1805000,1710000,0</item>
-        <item>NR B5,5,837500,10000,837500,23,0,0,3,1,0,0,1,869000,824000,0</item>
+        <item>NR B5,5,836500,10000,836500,23,0,0,3,1,0,0,1,869000,824000,0</item>
         <item>NR B7,7,2530000,10000,2530000,23,0,0,3,1,0,0,1,2620000,2500000,0</item>
         <item>NR B8,8,897500,10000,897500,23,0,0,3,1,0,0,1,925000,880000,0</item>
+        <item>NR B12,12,707500,10000,707500,23,0,0,3,1,0,0,1,729000,699000,0</item>
+        <item>NR B13,13,782000,10000,782000,23,0,0,3,1,0,0,1,746000,777000,0</item>
+        <item>NR B14,14,793000,10000,793000,23,0,0,3,1,0,0,1,758000,788000,0</item>
+        <item>NR B18,18,822500,10000,822500,23,0,0,3,1,0,0,1,860000,815000,0</item>
         <item>NR B20,20,847000,10000,847000,23,0,0,3,1,0,0,1,791000,832000,0</item>
+        <item>NR B24,24,1643500,10000,1643500,23,0,0,3,1,0,0,1,1525000,1626500,0</item>
+        <item>NR B25,25,1882500,10000,1882500,23,0,0,3,1,0,0,1,1930000,1850000,0</item>
+        <item>NR B26,26,831500,10000,831500,23,0,0,3,1,0,0,1,859000,814000,0</item>
         <item>NR B28,28,725500,10000,725500,23,0,0,3,1,0,0,1,758000,703000,0</item>
+        <item>NR B30,30,2310000,10000,2310000,23,0,0,3,1,0,0,1,2350000,2305000,0</item>
+        <item>NR B34,34,2017500,10000,2017500,23,0,0,3,1,0,0,1,2010000,2010000,0</item>
         <item>NR B38,38,2595000,10000,2595000,23,0,0,3,1,0,0,1,2570000,2570000,0</item>
         <item>NR B39,39,1900000,10000,1900000,23,0,0,3,1,0,0,1,1880000,1880000,0</item>
         <item>NR B40,40,2350000,10000,2350000,23,0,0,3,1,0,0,1,2300000,2300000,0</item>
         <item>NR B41,41,2593000,10000,2593000,23,0,0,3,1,0,0,1,2496000,2496000,0</item>
+        <item>NR B46,46,5537500,10000,5537500,23,0,0,3,1,0,0,1,5150000,5150000,0</item>
+        <item>NR B48,48,3625000,10000,3625000,23,0,0,3,1,0,0,1,3550000,3550000,0</item>
+        <item>NR B50,50,1474500,10000,1474500,23,0,0,3,1,0,0,1,1432000,1432000,0</item>
+        <item>NR B51,51,1429500,10000,1429500,23,0,0,3,1,0,0,1,1427000,1427000,0</item>
+        <item>NR B53,53,2489300,10000,2489300,23,0,0,3,1,0,0,1,2483500,2483500,0</item>
+        <item>NR B65,65,1965000,10000,1965000,23,0,0,3,1,0,0,1,2110000,1920000,0</item>
+        <item>NR B66,66,1745000,10000,1745000,23,0,0,3,1,0,0,1,2110000,1710000,0</item>
+        <item>NR B70,70,1702500,10000,1702500,23,0,0,3,1,0,0,1,1995000,1695000,0</item>
+        <item>NR B71,71,680500,10000,680500,23,0,0,3,1,0,0,1,617000,663000,0</item>
+        <item>NR B74,74,1448500,10000,1448500,23,0,0,3,1,0,0,1,1475000,1427000,0</item>
         <item>NR B77,77,3750000,10000,3750000,23,0,0,3,1,0,0,1,3300000,3300000,0</item>
         <item>NR B78,78,3499995,10000,3499995,23,0,0,3,1,0,0,1,3300000,3300000,0</item>
         <item>NR B79,79,4699995,10000,4699995,23,0,0,3,7,0,0,1,4400000,4400000,0</item>
+        <item>NR B85,85,707000,10000,707000,23,0,0,3,7,0,0,1,728000,698000,0</item>
+        <item>NR B90,90,2593000,10000,2593000,23,0,0,3,7,0,0,1,2496000,2496000,0</item>
+        <item>NR B91,91,847000,10000,847000,23,0,0,3,7,0,0,1,1427000,832000,0</item>
+        <item>NR B92,92,847000,10000,847000,23,0,0,3,7,0,0,1,1432000,832000,0</item>
+        <item>NR B93,93,897500,10000,897500,23,0,0,3,7,0,0,1,1427000,880000,0</item>
+        <item>NR B94,94,897500,10000,897500,23,0,0,3,7,0,0,1,1432000,880000,0</item>
     </string-array>
     <string-array name="npt_rat">
         <item>GSM</item>
@@ -1150,7 +1304,7 @@ HSUPA on"</item>
         <item>44</item>
     </string-array>
     <string-array name="rf_desense_tx_test_nr_bandwidth">
-        <item>5M</item>
+        <item>5MHz</item>
         <item>10MHz</item>
         <item>15MHz</item>
         <item>20MHz</item>
@@ -1173,16 +1327,45 @@ HSUPA on"</item>
     </string-array>
     <string-array name="rf_desense_tx_test_nr_freq_range">
         <item>1,1920000,1980000</item>
+        <item>2,1850000,1910000</item>
         <item>3,1710000,1785000</item>
+        <item>5,824000,849000</item>
         <item>7,2500000,2570000</item>
         <item>8,880000,915000</item>
+        <item>12,699000,716000</item>
+        <item>13,777000,787000</item>
+        <item>14,788000,798000</item>
+        <item>18,815000,830000</item>
         <item>20,832000,862000</item>
+        <item>24,1626500,1660500</item>
+        <item>25,1850000,1915000</item>
+        <item>26,8140000,849000</item>
         <item>28,703000,748000</item>
+        <item>30,2305000,2315000</item>
+        <item>34,2010000,2025000</item>
         <item>38,2570000,2620000</item>
+        <item>39,1880000,1920000</item>
+        <item>40,2300000,2400000</item>
         <item>41,2496000,2690000</item>
+        <item>46,5150000,5925000</item>
+        <item>48,3550000,3700000</item>
+        <item>50,1432000,1517000</item>
+        <item>51,1427000,1432000</item>
+        <item>53,2483500,2495000</item>
+        <item>65,1920000,2010000</item>
+        <item>66,1710000,1780000</item>
+        <item>70,1695000,1710000</item>
+        <item>71,663000,698000</item>
+        <item>74,1427000,1470000</item>
         <item>77,3300000,4200000</item>
         <item>78,3300000,3800000</item>
         <item>79,4400000,5000000</item>
+        <item>85,698000,716000</item>
+        <item>90,2496000,2690000</item>
+        <item>91,832000,862000</item>
+        <item>92,832000,862000</item>
+        <item>93,880000,915000</item>
+        <item>94,880000,915000</item>
     </string-array>
     <string-array name="rf_desense_tx_test_nr_mcs">
         <item>DFT_S_BPSK(0)</item>
@@ -1282,6 +1465,10 @@ HSUPA on"</item>
         <item>255</item>
         <item></item>
     </string-array>
+    <string-array name="ttps_tx_port_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
     <string-array name="usb_phy_tuning_val_0_15b">
         <item>0000</item>
         <item>0001</item>
@@ -1361,19 +1548,21 @@ HSUPA on"</item>
         <item>Main 4</item>
         <item>High 16</item>
     </string-array>
+    <string-array name="wifi_fe_cfg_bpi_text">
+        <item>Low</item>
+        <item>High</item>
+    </string-array>
     <string-array name="wifi_fec_array">
         <item>BCC</item>
         <item>LDPC</item>
     </string-array>
-    <string-array name="wifi_primary_ch_array">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
+    <string-array name="wifi_tx_pe_text">
+        <item>0us</item>
+        <item>4us</item>
+        <item>8us</item>
+        <item>12us</item>
+        <item>16us</item>
+        <item>20us</item>
     </string-array>
     <string-array name="xpxt_aging_band_entries">
         <item>1</item>
