@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="action_discovery_supported_locales">
-        <item>en_us</item>
-        <item>en_gb</item>
-        <item>en_ca</item>
-        <item>en_au</item>
-        <item>en</item>
-    </string-array>
     <array name="actionsui_letter_tile_colors">
         <item>#ff33b679</item>
         <item>#ff536173</item>
@@ -16,30 +9,6 @@
         <item>#ff547bca</item>
         <item>#ffae6b23</item>
         <item>#ffe5ae4f</item>
-    </array>
-    <array name="aga_blp_button_background_color">
-        <item>#ffe8f0fe</item>
-        <item>#fffce8e6</item>
-        <item>#fffef7e0</item>
-        <item>#ffe6f4ea</item>
-        <item>#fff3e8fd</item>
-        <item>#fffeefe3</item>
-        <item>#ffe4f7fb</item>
-        <item>#fffde7f3</item>
-        <item>#fff1f3f4</item>
-        <item>#ffe8f0fe</item>
-    </array>
-    <array name="aga_blp_button_text_color">
-        <item>#ff185abc</item>
-        <item>#ffb31412</item>
-        <item>#ffea8600</item>
-        <item>#ff137333</item>
-        <item>#ff7627bb</item>
-        <item>#ffc26401</item>
-        <item>#ff098591</item>
-        <item>#ffb80672</item>
-        <item>#ff3c4043</item>
-        <item>#ff185abc</item>
     </array>
     <string-array name="android_messages_promo_deeplink_query_suggestions">
         <item>Send a message</item>
@@ -57,6 +26,14 @@
         <item>60</item>
         <item>1440</item>
     </integer-array>
+    <string-array name="assistant_settings_entry_point_controls_pref_entries_input_mode">
+        <item>@string/assistant_settings_entry_point_controls_prefSummary_inputModeVoice</item>
+        <item>@string/assistant_settings_entry_point_controls_prefSummary_inputModeTyping</item>
+    </string-array>
+    <string-array name="assistant_settings_entry_point_controls_pref_values_input_mode">
+        <item>@string/assistant_settings_entry_point_controls_voice_input_mode</item>
+        <item>@string/assistant_settings_entry_point_controls_typing_input_mode</item>
+    </string-array>
     <string-array name="assistant_settings_home_suggested_room_names">
         <item>Attic</item>
         <item>Bathroom</item>
@@ -138,7 +115,6 @@
         <item>Set an alarm</item>
         <item>"What's the weather tomorrow"</item>
     </string-array>
-    <array name="click_ad_url_exception_patterns" />
     <string-array name="click_ad_url_substitutions">
         <item>(?&lt;=[?&amp;])rct=j&amp;</item>
         <item></item>
@@ -159,10 +135,6 @@
     </string-array>
     <string-array name="com_google_android_gms_fonts_certs_prod">
         <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
-    </string-array>
-    <string-array name="countrycode_domain_overrides">
-        <item>cn</item>
-        <item>.google.com.hk</item>
     </string-array>
     <array name="dark_monogram_colors">
         <item>#ff8ab4f8</item>
@@ -191,16 +163,6 @@
         <item>#ff72b6c6</item>
         <item>#ff40a5cb</item>
     </array>
-    <string-array name="default_source_suggest_uris">
-        <item>content://applications/search_suggest_query</item>
-        <item>content://browser/bookmarks/search_suggest_query</item>
-        <item>content://com.android.chrome.browser/search_suggest_query</item>
-        <item>content://com.android.contacts/search_suggest_query</item>
-        <item>content://com.google.android.videos/search_suggest_query</item>
-        <item>content://com.google.android.music.MusicContent/search/search_suggest_query</item>
-        <item>content://com.google.android.apps.books/search_suggest_query</item>
-    </string-array>
-    <array name="default_sources" />
     <string-array name="delay_showing_prompt_models">
         <item>Pixel 4</item>
         <item>Pixel 4 XL</item>
@@ -235,7 +197,6 @@
         <item>All day</item>
         <item>Set time…</item>
     </string-array>
-    <array name="emptyArray" />
     <array name="fa_letter_tile_drawable_background_colors">
         <item>@color/quantum_googred500</item>
         <item>@color/quantum_pink500</item>
@@ -257,19 +218,6 @@
         <item>@color/quantum_grey500</item>
         <item>@color/quantum_bluegrey500</item>
     </array>
-    <string-array name="feedback_location_history_labels">
-        <item>Last 30 minutes</item>
-        <item>Last 2 hours</item>
-        <item>Today</item>
-    </string-array>
-    <integer-array name="feedback_location_history_minutes">
-        <item>30</item>
-        <item>120</item>
-        <item>1440</item>
-    </integer-array>
-    <string-array name="full_size_icon_source_suggest_uris">
-        <item>content://com.google.android.music.MusicContent/search/search_suggest_query</item>
-    </string-array>
     <string-array name="general_settings_pref_entries_input_mode">
         <item>@string/general_settings_prefSummary_inputModeVoice</item>
         <item>@string/general_settings_prefSummary_inputModeTyping</item>
@@ -284,11 +232,11 @@
         <item>@color/gleam_debug_corner_color_3</item>
         <item>@color/gleam_debug_corner_color_4</item>
     </array>
-    <array name="gm3_progressindicator_branded_colors">
-        <item>@color/gm3_ref_brand_color_blue</item>
-        <item>@color/gm3_ref_brand_color_red</item>
-        <item>@color/gm3_ref_brand_color_yellow</item>
-        <item>@color/gm3_ref_brand_color_green</item>
+    <array name="gm3_circularprogressindicator_branded_colors">
+        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_one_color</item>
+        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_two_color</item>
+        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_three_color</item>
+        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_four_color</item>
     </array>
     <string-array name="google_clicked_ad_paths">
         <item>/aclk</item>
@@ -300,17 +248,10 @@
         <item>@color/google_yellow500</item>
         <item>@color/google_green500</item>
     </array>
-    <string-array name="google_search_logout_redirects">
-        <item>/Logout</item>
-        <item>/accounts/ClearSID</item>
-        <item>/accounts/Logout2</item>
-    </string-array>
-    <string-array name="google_search_paths">
-        <item>/search</item>
-        <item>/m/search</item>
-        <item>/webhp</item>
-        <item>/s</item>
-    </string-array>
+    <array name="googleapp_header_height_presets">
+        <item>54.0dip</item>
+        <item>108.0dip</item>
+    </array>
     <string-array name="googleapp_search_region_country_codes">
         <item>af</item>
         <item>al</item>
@@ -556,7 +497,6 @@
         <item>make a call.</item>
         <item>set a timer for five minutes.</item>
     </string-array>
-    <array name="ignored_icing_source_packages" />
     <string-array name="images_viewer_longpress_menu_options">
         <item>@string/images_visit_site</item>
         <item>@string/images_longpress_menu_download</item>
@@ -848,44 +788,10 @@
         <item>leitesculinaria.com</item>
         <item>^\\/\\d+\\/recipes[\\d\\w-]+.*</item>
     </string-array>
-    <string-array name="intent_launcher_input_rotational_hints">
-        <item>Try typing “weather”</item>
-        <item>Try typing “alarm”</item>
-        <item>Try typing “timer”</item>
-        <item>Try typing “reminder”</item>
-        <item>Try typing “navigate”</item>
-        <item>Try typing “traffic”</item>
-        <item>Try typing “play”</item>
-        <item>Try typing “message”</item>
-    </string-array>
     <array name="keyguard_biometric_and_credential_exclude_vendors" />
     <string-array name="keywords_extractor_email_stopwords">
         <item>re</item>
         <item>fwd</item>
-    </string-array>
-    <string-array name="language_switcher_nudge_text_after_selection_list">
-        <item>hi-IN:आपकी भाषा अब हिन्दी पर सेट हो गई है। भाषा बदलने के लिए यहाँ क्लिक करें।</item>
-        <item>en-IN:Your language is now set to English. Click here whenever you want to change your language.</item>
-        <item>bn-IN:আপনার ভাষা এখন বাংলাতে সেট করা হয়েছে। এখানে ক্লিক করে যেকোনও সময় আপনার ভাষা পরিবর্তন করুন।</item>
-        <item>te-IN:మీ భాష ఇప్పుడు తెలుగుకు సెట్ చేయబడింది. మీ భాషను మార్చాలని అనుకుంటే, ఇక్కడ క్లిక్ చేయండి.</item>
-        <item>mr-IN:तुमची भाषा आता मराठी वर सेट केली आहे. तुम्हाला भाषा बदलायची असेल तेव्हा येथे क्लिक करा.</item>
-        <item>ta-IN:உங்கள் மொழி இப்போது தமிழுக்கு மாற்றப்பட்டுள்ளது. நீங்கள் விரும்பும் போதெல்லாம் இங்கே கிளிக் செய்து உங்கள் மொழியை மாற்றலாம்.</item>
-        <item>kn-IN:ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಈಗ ಕನ್ನಡಕ್ಕೆ ಸೆಟ್ ಮಾಡಲಾಗಿದೆ. ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಬದಲಾಯಿಸಲು ಬಯಸಿದಾಗ ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ.</item>
-        <item>ml-IN:നിങ്ങളുടെ ഭാഷ ഇപ്പോൾ മലയാളം ആയി സജ്ജീകരിച്ചിരിക്കുന്നു. ഭാഷ മാറ്റേണ്ടപ്പോഴൊക്കെ ഇവിടെ ക്ലിക്ക് ചെയ്യുക.</item>
-        <item>gu-IN:તમારી ભાષા હવે ગુજરાતી પર સેટ કરવામાં આવી છે. જો તમે તમારી ભાષા બદલવા માંગતા હો, તો અહીં ક્લિક કરો.</item>
-        <item>ur-IN:جب بھی آپ اپنی زبان تبدیل کرنا چاہیں تو یہاں کلک کریں۔اب آپ کی زبان اردو پر سیٹ ہو گئی ہے۔</item>
-    </string-array>
-    <string-array name="language_switcher_nudge_text_list">
-        <item>hi-IN:भाषा बदलने के लिए, इस बटन पर क्लिक करें</item>
-        <item>en-IN:To change the language, click on this button</item>
-        <item>bn-IN:ভাষা বদলাতে, এই বোতামে ক্লিক করুন</item>
-        <item>te-IN:భాషను మార్చడానికి, ఈ బటన్‌ను క్లిక్ చేయండి</item>
-        <item>mr-IN:भाषा बदलण्यासाठी या बटणावर क्लिक करा</item>
-        <item>ta-IN:மொழியை மாற்ற இந்த பட்டனைக் கிளிக் செய்யவும்</item>
-        <item>kn-IN:ಭಾಷೆಯನ್ನು ಬದಲಿಸಲು, ಈ ಬಟನ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ</item>
-        <item>ml-IN:ഭാഷ മാറ്റാൻ, ഈ ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക</item>
-        <item>gu-IN:ભાષા બદલવા માટે, આ બટન પર ક્લિક કરો</item>
-        <item>ur-IN:زبان تبدیل کرنے کیلئے اس بٹن پر کلک کریں۔</item>
     </string-array>
     <string-array name="launch_broadcast_targets">
         <item>com.google.android.googlequicksearchbox</item>
@@ -1185,10 +1091,6 @@
         <item>@string/prefSummary_ttsModeOn</item>
         <item>@string/prefSummary_ttsModeHandsFreeOnly</item>
     </string-array>
-    <string-array name="prefEntries_ttsMode_hub">
-        <item>@string/prefSummary_ttsModeOn_hub</item>
-        <item>@string/prefSummary_ttsModeHandsFreeOnly_hub</item>
-    </string-array>
     <string-array name="prefEntries_ttsMode_nga">
         <item>@string/prefSummary_ttsModeVerbose</item>
         <item>@string/prefSummary_ttsModeOptimal</item>
@@ -1198,10 +1100,6 @@
         <item>@string/prefValue_ttsMode_on</item>
         <item>@string/prefValue_ttsMode_handsFreeOnly</item>
     </string-array>
-    <string-array name="prefValues_ttsMode_hub">
-        <item>@string/prefValue_ttsMode_always_hub</item>
-        <item>@string/prefValue_ttsMode_handsFreeOnly_hub</item>
-    </string-array>
     <string-array name="prefValues_ttsMode_nga">
         <item>@string/prefValue_ttsMode_verbose</item>
         <item>@string/prefValue_ttsMode_on</item>
@@ -1210,10 +1108,6 @@
     <string-array name="prefValues_ttsMode_non_nga">
         <item>@string/prefValue_ttsMode_on</item>
         <item>@string/prefValue_ttsMode_brief</item>
-        <item>@string/prefValue_ttsMode_handsFreeOnly</item>
-    </string-array>
-    <string-array name="prefValues_ttsMode_with_opa_type_modality">
-        <item>@string/prefValue_ttsMode_voiceOnly</item>
         <item>@string/prefValue_ttsMode_handsFreeOnly</item>
     </string-array>
     <string-array name="qp_bottom_baseball_innings">
