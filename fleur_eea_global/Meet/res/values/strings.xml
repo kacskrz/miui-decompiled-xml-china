@@ -63,6 +63,9 @@
     <string name="acc_incoming_call_from">Incoming video call from %1$s. Two finger swipe up to answer. Two finger swipe down to decline.</string>
     <string name="acc_incoming_call_from_with_buttons">Incoming video call from %1$s.</string>
     <string name="acc_incoming_call_from_with_buttons_and_swipe">Incoming video call from %1$s. Two finger swipe up to answer. Two finger swipe down to decline.</string>
+    <string name="account_merge_promo_body_a">Make calls and join meetings from all your devices by merging your phone number with your Google Account. This also makes your call history available on any new devices you add.</string>
+    <string name="account_merge_promo_header_a">Get video meeting and calling features across your devices</string>
+    <string name="account_merge_promo_header_b">Your accounts will be merged</string>
     <string name="account_settings_name">Account</string>
     <string name="action_not_available_on_tv_dialog_message">"You can't do this on your TV. Use the mobile app instead."</string>
     <string name="action_send_feedback">Help &amp; feedback</string>
@@ -96,6 +99,7 @@
     <string name="add_to_contacts">Add to contacts</string>
     <string name="added_to_group_notification_title">Added you to %1$s</string>
     <string name="added_to_unnamed_group_notification_title">Added you to a group</string>
+    <string name="all_incoming_video_switch_preference_key">allIncomingVideoSwitchPreference</string>
     <string name="ambiguous_call_type_history_title_text">Call on another device</string>
     <string name="androidx_startup">androidx.startup</string>
     <string name="anton">BOLD</string>
@@ -191,8 +195,6 @@
     <string name="call_as_fyi">Calling as %s</string>
     <string name="call_authentication_error_rebranded">There was a problem authenticating with Meet</string>
     <string name="call_back_button_text">Call now</string>
-    <string name="call_disabled_deprecated_partition_content">"Due to your organization's settings, calling will be disabled for your account starting January 4, 2023. Tap learn more to prepare for this change."</string>
-    <string name="call_disabled_partition_learn_more_button">Learn more</string>
     <string name="call_history_type">Call</string>
     <string name="call_home_devices">Call my Home devices</string>
     <string name="call_incoming_accept">Answer</string>
@@ -252,8 +254,9 @@
     <string name="callee_is_unavailable">"%s didn't answer"</string>
     <string name="callee_unavailable_message">"%s didn't answer."</string>
     <string name="caller_id_intro">Calling as</string>
-    <string name="caller_id_removed_dasher_disabled_dialog_body_rebranded">Contact your system administrator for more information. Or, sign into Meet calling with a different Google Account.</string>
+    <string name="caller_id_removed_dasher_disabled_dialog_body_rebranded">Your calling functionality was turned off by your system administrator. You can recover your calling data by adding calling on your personal account.</string>
     <string name="caller_id_removed_dasher_disabled_dialog_title">Google Duo has been disabled for your account: %s.</string>
+    <string name="caller_id_removed_dasher_disabled_dialog_title_rebranded">Your Meet calling account has been disabled.</string>
     <string name="caller_id_removed_dasher_disabled_notification_body_rebranded">Your Meet account has been disabled. Contact your system administrator or sign in with a different account.</string>
     <string name="caller_id_removed_notification_body_rebranded">Meet message/caller ID is %s</string>
     <string name="caller_id_removed_notification_title">%s removed</string>
@@ -415,6 +418,7 @@
     <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="companion_indicator_text">Companion mode</string>
+    <string name="comprehensive_contacts_search_hint">Search contacts, groups, and email addresses, or dial a number</string>
     <string name="concatenate_four">{FIRST_SECTION}, {SECOND_SECTION}, {THIRD_SECTION}, {FOURTH_SECTION}</string>
     <string name="concatenate_three">{FIRST_SECTION}, {SECOND_SECTION}, {THIRD_SECTION}</string>
     <string name="concatenate_two">{FIRST_SECTION}, {SECOND_SECTION}</string>
@@ -448,10 +452,11 @@
     <string name="conf_add_custom_background_start_notification">Getting your custom image ready</string>
     <string name="conf_add_custom_background_too_many_backgrounds_error">"You can't add any more custom background images. Touch and hold a background to remove it."</string>
     <string name="conf_added_local_cohost_notification_text">"You're now a co-host"</string>
+    <string name="conf_all_incoming_video_switch_preference_summary">Watch only presentations</string>
+    <string name="conf_all_incoming_video_switch_preference_title">"Don't show video in tiles"</string>
     <string name="conf_ask_to_use_companion_mode">Ask to join using Companion mode</string>
     <string name="conf_asking_to_join_notification_text">Waiting to be admitted</string>
     <string name="conf_asking_to_join_notification_title">Joining a call</string>
-    <string name="conf_audio_already_off">Turn on sound</string>
     <string name="conf_audio_and_video_turned_off_message">"Your breakout room has closed and you've been moved to the main room. Your microphone and camera are turned off."</string>
     <string name="conf_audio_and_video_turned_off_with_lock_on_message">"Your breakout room has closed and you've been moved to the main room. 
  
@@ -461,7 +466,11 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_audio_off_selected_content_description">Turn off sound, selected</string>
     <string name="conf_audio_switch_button_hint_text">Switch audio output</string>
     <string name="conf_audio_switch_cancel">Cancel</string>
-    <string name="conf_auto_framing_unavailable">Auto framing is not available</string>
+    <string name="conf_auto_framing_activated_snacker">Pan &amp; zoom is on</string>
+    <string name="conf_auto_framing_deactivated_snacker">Pan &amp; zoom is off</string>
+    <string name="conf_auto_framing_disabled_camera_muted_snacker">"Pan &amp; zoom can't be turned on when the camera is off"</string>
+    <string name="conf_auto_framing_disabled_description">"Pan &amp; zoom isn't available"</string>
+    <string name="conf_auto_framing_disabled_other_effect_snacker">"Pan &amp; zoom can't be used with effects"</string>
     <string name="conf_auto_move_handover_audio_video_muted_message">Your audio and video will be muted</string>
     <string name="conf_auto_move_handover_to_main_call_message">"You're being moved to the main room"</string>
     <string name="conf_avatar_button_content_description">Open contact information for {name_or_email}</string>
@@ -490,11 +499,11 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_cam_control_disabled_by_moderator_content_description">Camera control disabled by host</string>
     <string name="conf_camera_grasped_by_other_apps">"Meet's camera was automatically turned off"</string>
     <string name="conf_cancel_help_button_text">Cancel help</string>
+    <string name="conf_cannot_enable_incoming_video">"Not available when “Don't show video in tiles” is on in Settings"</string>
     <string name="conf_cannot_pin_more">"You can't pin anyone else"</string>
     <string name="conf_captions_unavailable_text">Captions temporarily unavailable</string>
     <string name="conf_chat_close_button_content_description">Close</string>
     <string name="conf_chat_send_unavailable">"Chat isn't available at this time"</string>
-    <string name="conf_close_dialog_content_description">Close dialog</string>
     <string name="conf_close_effects_panel_announcement">Effects panel closed.</string>
     <string name="conf_close_effects_panel_description">Close effects panel.</string>
     <string name="conf_close_moderation_content_description">Close</string>
@@ -506,6 +515,9 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_co_watch_app_install_banner_button">Get app</string>
     <string name="conf_co_watch_app_install_dialog_button">Install {app_name}</string>
     <string name="conf_co_watch_app_install_dialog_message">You have to install {app_name} first</string>
+    <string name="conf_co_watch_app_update_banner_button">Update app</string>
+    <string name="conf_co_watch_app_update_dialog_button">Update {app_name}</string>
+    <string name="conf_co_watch_app_update_dialog_message">You have to update {app_name} first</string>
     <string name="conf_co_watch_banner_message">Live sharing on {app_name}</string>
     <string name="conf_co_watch_change_content_toast_update">{participant_name} changed the content</string>
     <string name="conf_co_watch_change_playback_toast_update">{participant_name} changed playback</string>
@@ -547,7 +559,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_cse_questions_disabled_due_to_encryption">Q&amp;A is unavailable in calls with extra encryption</string>
     <string name="conf_cse_quick_action_abuse_reporting_disabled_due_to_encryption">Abuse reporting is unavailable in calls with extra encryption</string>
     <string name="conf_cse_quick_action_captions_disabled_due_to_encryption">Captions are unavailable in calls with extra encryption</string>
-    <string name="conf_cse_quick_action_chat_disabled_due_to_encryption">In call messages are unavailable in calls with extra encryption</string>
+    <string name="conf_cse_quick_action_chat_disabled_due_to_encryption">In-call messages are unavailable in calls with extra encryption</string>
     <string name="conf_cse_reactions_disabled_due_to_encryption">Reactions are unavailable in calls with extra encryption</string>
     <string name="conf_cse_refreshing_authentication">Refreshing authentication</string>
     <string name="conf_cse_sign_in_button">Sign in</string>
@@ -569,7 +581,9 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_deprecation_continue_button_text">Continue</string>
     <string name="conf_deprecation_learnmore_button_text">Learn more</string>
     <string name="conf_dialog_cancel">Cancel</string>
-    <string name="conf_disable_auto_framing">Disable auto framing</string>
+    <string name="conf_disable_auto_framing_description">Turn off pan &amp; zoom</string>
+    <string name="conf_disable_incoming_video_content_description">"Don't watch {DISPLAY_NAME}"</string>
+    <string name="conf_disable_incoming_video_text">"Don't watch"</string>
     <string name="conf_dismiss_five_minute_warning_notice_content_description">Dismiss</string>
     <string name="conf_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS})</string>
     <string name="conf_duet_home_placeholder_rule_tag">duet_home_placeholder_rule_tag</string>
@@ -595,9 +609,9 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_eject_block_rejoin_success_text">{DISPLAY_NAME} was blocked from this call</string>
     <string name="conf_eject_failure_text">"You can't remove this person right now"</string>
     <string name="conf_eject_permission_failure_text">"You're not allowed to remove this person"</string>
-    <string name="conf_enable_auto_framing">Enable auto framing</string>
-    <string name="conf_end_of_call_dialog_body">Get access to group calls with no 60-minute limit and even more features like cloud recordings, polls, larger meetings, and more</string>
-    <string name="conf_end_of_call_dialog_header">Do more with Meet</string>
+    <string name="conf_enable_auto_framing_description">Turn on pan &amp; zoom</string>
+    <string name="conf_enable_incoming_video_content_description">Start watching {DISPLAY_NAME}</string>
+    <string name="conf_enable_incoming_video_text">Start watching</string>
     <string name="conf_exit_fullscreen_text">Exit full screen</string>
     <string name="conf_expand_video">Expand your video</string>
     <string name="conf_failed_to_join_based_on_knocking_verdict_body">Ask your host to add you to the call</string>
@@ -609,7 +623,6 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_fullscreen_text">Full screen</string>
     <string name="conf_fullscreen_your_video">Make your video full screen</string>
     <string name="conf_google_account_type">Google account</string>
-    <string name="conf_got_it">Got it</string>
     <string name="conf_greenroom_banner_your_pronouns_are_visible">Your pronouns will be shown to everyone</string>
     <string name="conf_greenroom_call_encrypted_by_organization">"This call is encrypted by %1$s. Google can't access its contents, so some features aren't available. &lt;a href=%2$s>Learn more&lt;/a>"</string>
     <string name="conf_greenroom_call_encrypted_organization_unknown">"This call has extra encryption. Google can't access its contents, so some features aren't available. &lt;a href=%1$s>Learn more&lt;/a>"</string>
@@ -648,7 +661,6 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_information_card_cannot_create_meetings">Your account lets you join meetings but not create them</string>
     <string name="conf_information_card_dismiss">Dismiss</string>
     <string name="conf_information_card_learn_more">Learn more</string>
-    <string name="conf_initial_notice_dialog_body_text">Free group calls have a limit of 1 hour. Upgrade to enjoy group calls of up to 24 hours.</string>
     <string name="conf_initializing_public_livestreaming_content_description">Public live streaming will start soon</string>
     <string name="conf_initializing_transcription_content_description">Transcription will start soon</string>
     <string name="conf_instant_meeting_text">Start an instant meeting</string>
@@ -659,7 +671,6 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_join_meeting">Join a meeting</string>
     <string name="conf_join_meeting_with_code">Join with a code</string>
     <string name="conf_join_scheduled_call_content_description">Join meeting</string>
-    <string name="conf_learn_more">Learn more</string>
     <string name="conf_live_share_start_sharing">Live sharing has started</string>
     <string name="conf_location_copied">Location copied</string>
     <string name="conf_lonely_meeting_setting_summary">Removes you from a call after a few minutes if no one else joins</string>
@@ -704,12 +715,14 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_meeting_safety_audio_video_lock_off_notification">"The host activated everyone's mic and camera"</string>
     <string name="conf_meeting_safety_audio_video_lock_on_notification">"The host deactivated everyone's mic and camera"</string>
     <string name="conf_meeting_safety_conference_inactivity_check_title">Are you still there?</string>
+    <string name="conf_meeting_safety_lonely_meeting_check_turn_off_text_for_hub_as_meet">To stop seeing this, go to {SETTINGS_HEADER} and turn off {SETTING_TITLE}.</string>
     <string name="conf_meeting_safety_lonely_meeting_dialog_leave_button_text">Leave now</string>
     <string name="conf_meeting_safety_lonely_meeting_dialog_stay_button_text">Stay in the call</string>
     <string name="conf_meeting_safety_lonely_meeting_timer_content">{MINUTES}:{SECONDS}</string>
     <string name="conf_meeting_safety_video_lock_off_notification">"The host activated everyone's camera"</string>
     <string name="conf_meeting_safety_video_lock_on_notification">"The host deactivated everyone's camera"</string>
     <string name="conf_meetings_header">Meetings</string>
+    <string name="conf_mic_and_cam_off_content_description">Mic and camera are off in Companion mode. Tap to join instead.</string>
     <string name="conf_mic_control_disabled_by_moderator_content_description">Microphone control disabled by host</string>
     <string name="conf_mic_muted_notice">Trying to speak? Turn on your microphone.</string>
     <string name="conf_minimize_participant_content_description">Exit full screen video stream from {DISPLAY_NAME}</string>
@@ -768,7 +781,6 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_network_disconnected">No internet. Trying to reconnect.</string>
     <string name="conf_new_meeting">New meeting</string>
     <string name="conf_no_answer_text">No Answer</string>
-    <string name="conf_no_browser_available">"Can't open link. No browser available."</string>
     <string name="conf_no_browser_link_open_failure_snackbar_text">"Can't open link. No browser available."</string>
     <string name="conf_no_dialer_available">"Can't find a dialer app to place your call"</string>
     <string name="conf_no_frequent_contacts_text">People you contact frequently will appear here</string>
@@ -788,8 +800,11 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_open_effects_panel_with_active_effect_description">Open Effects panel. {EFFECT_DESCRIPTION} is currently selected</string>
     <string name="conf_os_hard_deprecation_message">Sorry, %1$s no longer works on this Android version. To use %1$s on this device, update Android.</string>
     <string name="conf_os_soft_deprecation_message">"Sorry, %1$s no longer supports this Android version. Although you can continue to use %1$s, it won't be updated and might stop working at some point."</string>
+    <string name="conf_overflow_label_return_to_top">Return to top</string>
+    <string name="conf_paging_side_bar_view_description">Page number</string>
     <string name="conf_participant_change_to_contributor_notification">{PARTICIPANT_NAME} was made a contributor</string>
     <string name="conf_participant_change_to_viewer_notification">{PARTICIPANT_NAME} was made a viewer</string>
+    <string name="conf_participant_count_content_description">{PARTICIPANT_COUNT, plural, =1 {# participant} other {# participants}}</string>
     <string name="conf_participant_ejected_notification">{NUMBER_OF_OTHER_PARTICIPANTS, plural, =0 {{PARTICIPANT_NAME} was removed from this call} =1 {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more were removed from this call} other {{PARTICIPANT_NAME} and {NUMBER_OF_OTHER_PARTICIPANTS} more were removed from this call} }</string>
     <string name="conf_participant_presenting_name_text">{PARTICIPANT_NAME} (Presenting)</string>
     <string name="conf_people_search_hint">Search for someone in this call</string>
@@ -810,11 +825,13 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_pip_broadcast_and_transcription_active_content_description">This meeting is being streamed and transcribed</string>
     <string name="conf_pip_give_permission_for_cam_content_description">Give permission to turn camera on</string>
     <string name="conf_pip_give_permission_for_mic_content_description">Give permission to turn microphone on</string>
+    <string name="conf_pip_lower_hand_content_description">Lower your hand</string>
     <string name="conf_pip_main_stage_lonely_call_with_companions">"{NUMBER_OF_REMOTE_COMPANIONS, plural, =0 {You're the only one here} =1 {1 Companion is connected to the call} other {{NUMBER_OF_REMOTE_COMPANIONS} Companions are connected to the call} }"</string>
     <string name="conf_pip_main_stage_lonely_call_with_passive_viewers">People are viewing the call</string>
     <string name="conf_pip_main_stage_pinned_self">"You've pinned yourself"</string>
     <string name="conf_pip_main_stage_pinned_self_label">Pinned</string>
     <string name="conf_pip_main_stage_waiting_for_host">Waiting for the host to join</string>
+    <string name="conf_pip_new_activity">New activity</string>
     <string name="conf_pip_other_participants_count">+{count}</string>
     <string name="conf_pip_public_livestream_active_content_description">This meeting is being publicly live-streamed.</string>
     <string name="conf_pip_public_livestream_and_broadcast_active_content_description">This meeting is being publicly live-streamed and streamed.</string>
@@ -824,6 +841,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_pip_public_livestream_broadcast_and_transcription_active_content_description">This meeting is being publicly live-streamed, streamed and transcribed</string>
     <string name="conf_pip_public_livestream_recording_and_transcription_active_content_description">This meeting is being publicly live-streamed, recorded and transcribed</string>
     <string name="conf_pip_public_livestream_recording_broadcast_and_transcription_active_content_description">This meeting is being publicly live-streamed, streamed, recorded and transcribed</string>
+    <string name="conf_pip_raise_hand_content_description">Raise your hand</string>
     <string name="conf_pip_recording_active_content_description">This meeting is being recorded</string>
     <string name="conf_pip_recording_and_broadcast_active_content_description">This meeting is being streamed and recorded</string>
     <string name="conf_pip_recording_and_transcription_active_content_description">This meeting is being recorded and transcribed</string>
@@ -835,7 +853,6 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_pip_viewer_badge_a11y_text">Some people are just viewing this call</string>
     <string name="conf_presentation_user_display_name">{DISPLAY_NAME} (Presentation)</string>
     <string name="conf_pronouns_promo_banner_dismiss_button">Dismiss</string>
-    <string name="conf_pronouns_promo_dismiss">Dismiss</string>
     <string name="conf_public_livestream_active_prejoin_text">This meeting is being publicly live-streamed.</string>
     <string name="conf_public_livestream_and_broadcast_active_prejoin_text">This meeting is being publicly live-streamed and streamed.</string>
     <string name="conf_public_livestream_and_recording_active_prejoin_text">This meeting is being publicly live-streamed and recorded.</string>
@@ -899,14 +916,12 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_report_abuse_type_hint">Type of abuse*</string>
     <string name="conf_report_abuse_user_description_hint">Describe the abuse*</string>
     <string name="conf_report_abuse_with_video_clip_subheader">Identify the people in this meeting you want to report as abusive. Information about the meeting and participants plus an optional short video clip will be sent to Google for review. &lt;a href=%1$s>Learn more about reporting abuse&lt;/a></string>
-    <string name="conf_report_abuse_without_meeting_content_header">"This call will be reported as abusive. Tapping 'Submit' will send system information from this session to Google for review."</string>
     <string name="conf_report_and_eject_alert_text">Remove {PARTICIPANT_NAME} from the meeting?</string>
     <string name="conf_report_and_eject_cancel_text">Cancel</string>
     <string name="conf_report_and_eject_ok_text">Remove</string>
     <string name="conf_report_checkbox_text">Fill out an abuse report</string>
     <string name="conf_report_participant_abuse_subheader">Information about the meeting and participants will be sent to Google for review. &lt;a href=%1$s>Learn more about reporting abuse&lt;/a></string>
     <string name="conf_report_participant_abuse_with_video_clip_subheader">Information about the meeting and participants plus an optional short video clip will be sent to Google for review. &lt;a href=%1$s>Learn more about reporting abuse&lt;/a></string>
-    <string name="conf_report_participant_abuse_without_meeting_content_header">Information about the meeting and other participants will be sent to Google for review</string>
     <string name="conf_report_participant_content_description">Report {DISPLAY_NAME} for abuse</string>
     <string name="conf_report_participant_text">Report abuse</string>
     <string name="conf_request_help_button_text">Ask for help</string>
@@ -970,6 +985,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_viewer_count_badge_a11y_text">{number_of_viewers, plural, =1 {1 person is just viewing this call} other {# people are just viewing this call}}</string>
     <string name="conf_viewer_got_it">Got it</string>
     <string name="conf_voting_on_hidden_question_disabled_error">"Hidden questions can't be voted on"</string>
+    <string name="conf_watch_livestream">Watch the live stream</string>
     <string name="conf_wired_headset">Wired headphones</string>
     <string name="conf_wired_headset_selected_content_description">Wired headphones, selected</string>
     <string name="conf_you">You</string>
@@ -998,8 +1014,9 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_activities_failed_question_text">"Couldn't post your question. Tap to try again or delete."</string>
     <string name="conference_activities_failed_question_try_again">Try again</string>
     <string name="conference_activities_filter_by_content_description">Filter by {FILTERING_OPTION}</string>
-    <string name="conference_activities_general_live_sharing_button">Open %1$s</string>
-    <string name="conference_activities_general_live_sharing_button_install">Install %1$s</string>
+    <string name="conference_activities_general_live_sharing_button">Open {app_name}</string>
+    <string name="conference_activities_general_live_sharing_button_install">Install {app_name}</string>
+    <string name="conference_activities_general_live_sharing_button_update">Update {app_name}</string>
     <string name="conference_activities_general_live_sharing_footer1">Available only for Android mobile users</string>
     <string name="conference_activities_general_live_sharing_footer2">Requires a %1$s app and an account</string>
     <string name="conference_activities_general_live_sharing_section_description">Take your call to a third-party app to enjoy it together</string>
@@ -1060,6 +1077,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_activities_questions_title">Q&amp;A</string>
     <string name="conference_activities_remove_vote_button_content_description">{NUMBER_OF_VOTES, plural, =1 {{NUMBER_OF_VOTES} upvote, remove vote} other {{NUMBER_OF_VOTES} upvotes, remove vote} }</string>
     <string name="conference_activities_retry_non_anon">Post with your name</string>
+    <string name="conference_activities_samsung_notes_app_name">Samsung Notes</string>
+    <string name="conference_activities_samsung_notes_live_sharing_subtitle">Write a note together</string>
     <string name="conference_activities_selected_dropdown_content_description">Selected, {DROPDOWN_OPTION}</string>
     <string name="conference_activities_single_anon_question_notification">Someone has posted a question</string>
     <string name="conference_activities_single_poll_notification">The host started a poll</string>
@@ -1185,6 +1204,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_failed_to_join_no_internet">No internet connection</string>
     <string name="conference_failed_to_load_meetings_error">"Can't show your meetings. Try again later."</string>
     <string name="conference_failed_to_start_outbound_call">"Couldn't complete the call. Try again later."</string>
+    <string name="conference_failed_transfer_call_to_invalid_account">"Couldn't switch devices"</string>
     <string name="conference_greenroom_account_switch_error_unsupported">Not available yet. Select an account instead.</string>
     <string name="conference_greenroom_account_switch_hint_text">Switch accounts</string>
     <string name="conference_greenroom_account_switch_text">(Switch)</string>
@@ -1214,6 +1234,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_on_the_go_auto_enter_switch_preference_title">Automatically use On-the-Go</string>
     <string name="conference_on_the_go_preference_category_key">onTheGoPreferenceCategory</string>
     <string name="conference_on_the_go_preference_category_title">On-the-Go</string>
+    <string name="conference_pseudonymous_greenroom_account_switcher">Using without an account</string>
     <string name="conference_reactions_animations_switch_preference_key">reactionsAnimationsSwitchPreference</string>
     <string name="conference_reactions_change_emoji_skin_tone_summary">Select the skin tone for your emojis</string>
     <string name="conference_reactions_change_emoji_skin_tone_title">Skin tone</string>
@@ -1229,6 +1250,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conference_reactions_sounds_switch_preference_summary">Sound can accompany reactions</string>
     <string name="conference_reactions_sounds_switch_preference_title">Sound</string>
     <string name="conference_reactions_unavailable_setting_banner">"Reactions aren't available. These settings will apply when reactions are available."</string>
+    <string name="conference_room_not_found_direct_call_scenario">This meeting room is no longer active</string>
     <string name="conference_showing_captions_text">Showing captions in {LANGUAGE_NAME}</string>
     <string name="conference_timeout_joining_meeting">No one responded to your request to join the call</string>
     <string name="conference_translating_captions_text">Translating captions to {LANGUAGE_NAME}</string>
@@ -1412,6 +1434,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="end_call">End call</string>
     <string name="end_screen_sharing">End screen sharing</string>
     <string name="end_to_end_encrypted">End-to-end encrypted</string>
+    <string name="enter_code_hint">Enter a code</string>
     <string name="erase">Erase</string>
     <string name="error_a11y_label">Error: invalid</string>
     <string name="error_creating_group">Problem creating group</string>
@@ -1458,7 +1481,6 @@ More numbers: {more_numbers_link}"</string>
     <string name="feedback_menu_title">Send feedback</string>
     <string name="feedback_preference_key">feedbackPreference</string>
     <string name="feedback_preference_title">Report a problem</string>
-    <string name="filters_toggle_button_text">Filters</string>
     <string name="firebase_database_url">https://tachyon-android.firebaseio.com</string>
     <string name="fish_background">Fish background</string>
     <string name="floating_action_button_bottom_action_hide">Dismiss</string>
@@ -2058,15 +2080,12 @@ More numbers: {more_numbers_link}"</string>
     <string name="og_a11y_close">Close</string>
     <string name="og_account_and_settings">Account and settings.</string>
     <string name="og_account_critical_alert_view_label_a11y">%1$s for %2$s</string>
-    <string name="og_account_is_in_good_shape_entry_point">Account is in good shape</string>
     <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
     <string name="og_add_another_account">Add another account</string>
     <string name="og_choose_an_account_title">Choose an account</string>
     <string name="og_collapse_account_list_a11y">Collapse account list.</string>
     <string name="og_continue">Continue</string>
     <string name="og_continue_as">Continue as %1$s</string>
-    <string name="og_count_decoration">%1$d</string>
-    <string name="og_count_decoration_max">%1$d+</string>
     <string name="og_critical_security_alert_badge_label_a11y">Critical security alert</string>
     <string name="og_esi_learn_more">Learn More</string>
     <string name="og_expand_account_list_a11y">Expand account list.</string>
@@ -2212,14 +2231,6 @@ More numbers: {more_numbers_link}"</string>
     <string name="poll_status_ended">Ended</string>
     <string name="poll_status_live">Live</string>
     <string name="poll_submit_vote_failed_notification">"Your vote wasn't recorded. Vote again."</string>
-    <string name="portrait_button_disable_v2">Turn off portrait mode</string>
-    <string name="portrait_button_short">Portrait</string>
-    <string name="portrait_button_v2">Turn on portrait mode</string>
-    <string name="portrait_failed">Portrait unable to start</string>
-    <string name="portrait_information_text">Background blurred</string>
-    <string name="portrait_off">Portrait off</string>
-    <string name="portrait_on">Portrait on</string>
-    <string name="potrait_button_toggle_disabled">Portrait mode, not available</string>
     <string name="power_save_prompt_battery_high_description">Battery has more charge. Turn on video?</string>
     <string name="power_save_prompt_battery_low_description">Low battery. Turn off video to save power.</string>
     <string name="power_save_prompt_ignore">Ignore</string>
@@ -2467,6 +2478,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="remote_loading_video">Loading video</string>
     <string name="remote_loading_video_2">Connecting call…</string>
     <string name="remote_side_screen_sharing">You are viewing a shared screen</string>
+    <string name="remote_user_error_confirm_button">Got it</string>
     <string name="remote_video_capacity_not_supported">This contact is on a device or app version that can only receive audio messages.</string>
     <string name="remote_video_resumed_message">"Resumed video from
 %s"</string>
@@ -2490,23 +2502,18 @@ More numbers: {more_numbers_link}"</string>
     <string name="rename_group_subtitle">Everyone in the group will see this name</string>
     <string name="rename_group_title">Name this group</string>
     <string name="report_abuse_button_content_description">Report abuse</string>
-    <string name="report_abuse_display_names_helper">Separate names using commas</string>
-    <string name="report_abuse_display_names_hint">Display name of the abuser(s)</string>
-    <string name="report_abuse_display_names_mandatory_hint">Display name of the abuser(s)*</string>
     <string name="report_abuse_report_button">Submit</string>
     <string name="report_abuse_screen_title">Report abuse</string>
     <string name="report_abuse_submit_failure">There was a problem submitting your report. If this is an emergency, contact local emergency authorities.</string>
     <string name="report_abuse_submit_success">Abuse report submitted. In case of emergency, contact local emergency authorities.</string>
     <string name="report_abuse_type_fraud">Fraud, phishing, and other deceptive practices</string>
     <string name="report_abuse_type_harassment">Harassment and hateful content</string>
-    <string name="report_abuse_type_hint">Abuse type*</string>
     <string name="report_abuse_type_malware">Malware (distributed via link in the chat window)</string>
     <string name="report_abuse_type_other">Other</string>
     <string name="report_abuse_type_sexual">Unwanted sexual content</string>
     <string name="report_abuse_type_spam">Spam or unwanted content</string>
     <string name="report_abuse_type_violence">Violence and gore</string>
-    <string name="report_abuse_user_description_hint">Describe your issue*</string>
-    <string name="report_abuse_user_mandatory_field_error">This field is mandatory</string>
+    <string name="report_abuse_user_mandatory_field_error">This field is required</string>
     <string name="report_as_spam">Report as spam</string>
     <string name="request_call_log_permission_dialog_rebranded">"To add your Meet call history to your device's call history, update permissions for Meet in your device settings."</string>
     <string name="reregister_required_rebranded">This device is no longer setup for Meet. Your phone number might have been used on a different device or it might have expired due to inactivity.</string>
@@ -2609,13 +2616,13 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="short_app_name_for_meeting">Meet</string>
     <string name="shortcut_direct_call">Make a video call</string>
     <string name="shortcut_direct_clip">Send a video</string>
-    <string name="shortcut_disable_account_removed">%1$s has been removed from the device.</string>
     <string name="shortcut_user_blocked_message">You must unblock %s before you can call or message them.</string>
     <string name="shortcut_user_blocked_title">User blocked</string>
     <string name="show_less">Show less</string>
     <string name="show_more">Show more</string>
     <string name="show_options_button">Show more options</string>
     <string name="show_options_button_short">More</string>
+    <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="sign_in_app_name_without_account">Use %1$s without an account</string>
     <string name="sign_in_cancel">Cancel</string>
     <string name="sign_in_with_goog">Add account</string>
@@ -2681,7 +2688,7 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="survey_font_regular">sans-serif-regular</string>
     <string name="survey_google_play_services_version">Google Play services version</string>
     <string name="survey_legal_text">By continuing, you agree Google uses your answers, %1$s to improve services, per our %2$s &amp; %3$s</string>
-    <string name="survey_legal_text_car">By continuing, Google will use your answers, account &amp; system info to improve services. See account profile for Privacy &amp; Terms</string>
+    <string name="survey_legal_text_car">By continuing, Google may use your answers, account &amp; system info to improve services. See account profile for Privacy &amp; Terms</string>
     <string name="survey_library_version">Library Version</string>
     <string name="survey_network_request_failed">Network request failed</string>
     <string name="survey_neutral">Neither satisfied nor dissatisfied</string>
@@ -2760,6 +2767,7 @@ Learn more about calling accounts"</string>
     <string name="turn_mic_on_content_description">Turn microphone on</string>
     <string name="turn_off_effects_content_description">Turn off effects</string>
     <string name="tv_home_screen_tag">A new way to connect with your family and friends</string>
+    <string name="tv_search_screen_search_hint">Call someone using their phone number or email</string>
     <string name="tvsignin_loading_title">Trying to reach your TV</string>
     <string name="tvsignin_settings_summary">Add your Google Account to sign in on your TV</string>
     <string name="tvsignin_settings_title">TV sign in</string>
@@ -2794,7 +2802,6 @@ Learn more about calling accounts"</string>
     <string name="unpin_participant_content_description">Unpin video stream from {DISPLAY_NAME}</string>
     <string name="unpin_text">Unpin</string>
     <string name="unpin_video_button">Unpin</string>
-    <string name="unread_count_badge_unread_items">%1$s unread items</string>
     <string name="unread_notification_cta">Open</string>
     <string name="unread_notification_title_rebranded">Unseen messages in Meet</string>
     <string name="unregister_error_try_again">Unable to send the request to sign out. Please check the connection and try again.</string>
