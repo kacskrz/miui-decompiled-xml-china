@@ -48,6 +48,7 @@
     <string name="account_manager_delete_events">Delete events</string>
     <string name="account_manager_install_email">Install system email client</string>
     <string name="account_manager_install_email_tips">Install the system email client again to be able to restore your accounts and add new ones</string>
+    <string name="account_manager_install_failed">"Mail isn't installed. You can download it from GetApps."</string>
     <string name="account_manager_install_immediately">Install</string>
     <string name="account_manager_installing">Installing…</string>
     <string name="account_manager_not_display">"Don't show"</string>
@@ -132,7 +133,6 @@
     <string name="birthday_event_description_tomorrow">Tomorrow is</string>
     <string name="birthday_event_description_yesterday">Yesterday was</string>
     <string name="birthday_event_title">@string/birthday_notification_title_today</string>
-    <string name="birthday_notification_text_days_later">%1$s days until %4$s (%5$s)</string>
     <string name="birthday_notification_text_today">"Don't forget to wish them well."</string>
     <string name="birthday_notification_title_days_later">"%1$s's %2$s is coming up."</string>
     <string name="birthday_notification_title_today">"%1$s's %3$s"</string>
@@ -280,7 +280,7 @@
     <string name="copy_number">Copy phone number</string>
     <string name="count_down_date_view">Countdown</string>
     <string name="countdown_event_title">Countdown: %1$s</string>
-    <string name="countdown_notify_before_3_day_title">Countdown: %1$s in 3 days</string>
+    <string name="countdown_notify_before_3_day_title">Countdown: %1$s in %2$d days</string>
     <string name="countdown_notify_title">Countdown: %1$s</string>
     <string name="countdown_secondary_tag">Countdown</string>
     <string name="countdown_today">Today</string>
@@ -300,9 +300,8 @@
     <string name="date_calculate_direction_content_description">Current direction: %1s.</string>
     <string name="date_calculate_result">Result</string>
     <string name="date_calculate_tab">Calculate date</string>
-    <string name="date_calculate_today">0 days</string>
+    <string name="date_calculate_today">%d days</string>
     <string name="date_calculate_when">Start</string>
-    <string name="date_interval_description">Learn how many days there are between 2 dates</string>
     <string name="date_interval_end">To</string>
     <string name="date_interval_start">From</string>
     <string name="date_interval_tab">Interval</string>
@@ -318,7 +317,15 @@
     <string name="date_today">" (today)"</string>
     <string name="date_view">Date</string>
     <string name="day_view_new_event_hint">New event</string>
+    <string name="default_reminder_labels_day">%d day before</string>
+    <string name="default_reminder_labels_days">%d days before</string>
+    <string name="default_reminder_labels_hour">%d hour before</string>
+    <string name="default_reminder_labels_minutes">%d minutes before</string>
+    <string name="default_reminder_labels_start">At event time</string>
+    <string name="default_reminder_labels_week">%d week before</string>
     <string name="default_reminder_later_time">Default interval for \"Remind later\"</string>
+    <string name="default_reminder_later_time_hours">Every %d hours</string>
+    <string name="default_reminder_later_time_minutes">Every %d minutes</string>
     <string name="default_reminder_mode">Reminders</string>
     <string name="define_cert4android" />
     <string name="define_ical4android" />
@@ -536,7 +543,7 @@
     <string name="fortune_name">称呼</string>
     <string name="fortune_name_hint">请输入你的称呼</string>
     <string name="fortune_no_name">请填写称呼</string>
-    <string name="fortune_setting_tips">设置您的生辰后,可获取您的专属运势。每日黄历运势、财位、桃花、正冲等信息全掌握</string>
+    <string name="fortune_setting_tips">设置您的生辰后，可获取您的专属运势。每日黄历运势、财位、桃花、正冲等信息全掌握</string>
     <string name="free_day_default_banner_title">Enjoy your holiday!</string>
     <string name="friday">Friday</string>
     <string name="friday_short">Fri</string>
@@ -587,7 +594,6 @@
     <string name="hksar_establishment_day_tradition">香港特別行政區成立紀念日</string>
     <string name="hoar_frost_falls">霜降</string>
     <string name="hoar_frost_falls_tradition">霜降</string>
-    <string name="holiday_card_title">Holiday</string>
     <string name="holiday_detail_read_more">More</string>
     <string name="homepage_nowadays">今天</string>
     <string name="homepage_today">今</string>
@@ -606,7 +612,7 @@
     <string name="icon_add_description">Add a Home screen shortcut</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string name="icon_remove_confirm">Remove</string>
-    <string name="icon_remove_description_content">"Calendar is a system app. It allows you to create events and manage them. You'll still be able to use Calendar via the Home screen widget ot App vault after you remove the Home screen shortcut."</string>
+    <string name="icon_remove_description_content">"Calendar is a system app. It allows you to create events and manage them. You'll still be able to use Calendar via the Home screen widget or App vault after you remove the Home screen shortcut."</string>
     <string name="icon_remove_description_title">Remove \"Calendar\" from Home screen?</string>
     <string name="icon_uninstall_description_content">"Calendar is a system app. You won't be able to manage events and use calendar widgets after you uninstall it."</string>
     <string name="icon_uninstall_description_title">Uninstall Calendar?</string>
@@ -715,7 +721,7 @@
     <string name="limit_rule">限行规则</string>
     <string name="limit_select_city">请选择城市</string>
     <string name="limit_setting_label">车辆限行提醒设置</string>
-    <string name="limit_setting_tips">开启并设置提醒后，你的爱车当天限行时你会收到日历的限行提醒。非数字尾号设置说明：%1$s</string>
+    <string name="limit_setting_tips">开启并设置提醒后，您的爱车当天限行时您会收到日历的限行提醒。非数字尾号设置说明：%1$s</string>
     <string name="limit_setting_tips_url">点击查看</string>
     <string name="limit_today">今天</string>
     <string name="limit_tomorrow">明天</string>
@@ -836,15 +842,16 @@
     <string name="miuishare_weibo_title">Weibo</string>
     <string name="miuix_access_state_desc">Selected</string>
     <string name="miuix_alphabet_indexer_name">Index bar</string>
-    <string name="miuix_appcompat_action_mode_deselect_all">Deselect</string>
+    <string name="miuix_appcompat_action_mode_deselect_all">Deselect all</string>
     <string name="miuix_appcompat_action_mode_select_all">Select all</string>
     <string name="miuix_appcompat_action_mode_title_empty">Select items</string>
     <string name="miuix_appcompat_actionbar_immersion_button_more_description">More</string>
     <string name="miuix_appcompat_cancel_description">Cancel</string>
     <string name="miuix_appcompat_confirm_description">Confirm</string>
     <string name="miuix_appcompat_delete_description">Delete</string>
-    <string name="miuix_appcompat_deselect_all">Deselect</string>
+    <string name="miuix_appcompat_deselect_all">Deselect all</string>
     <string name="miuix_appcompat_deselect_all_description">Deselect all</string>
+    <string name="miuix_appcompat_edit">Edit</string>
     <string name="miuix_appcompat_search_action_mode_cancel">Cancel</string>
     <string name="miuix_appcompat_search_input_description">Search</string>
     <string name="miuix_appcompat_select_all">Select all</string>
@@ -1028,12 +1035,16 @@ Check network settings and try again."</string>
     <string name="permission_allowed">Granted</string>
     <string name="permission_contacts">For syncing the birthdays of your contacts and sending reminders</string>
     <string name="permission_description">Permissions details</string>
+    <string name="permission_description_audio">Access music and other audio stored on this device</string>
+    <string name="permission_description_image_video">Access photos and videos stored on this device</string>
     <string name="permission_main_purpose">Viewing and managing calendar events, planning trips, receiving reminders, and subscribing to services</string>
     <string name="permission_management">Permissions</string>
     <string name="permission_not_allowed">Not granted</string>
+    <string name="permission_read_audio">Access audio</string>
+    <string name="permission_read_image_video">Access photos and videos</string>
     <string name="permission_storage">For saving reminders and ringtones</string>
     <string name="phone_num">Phone</string>
-    <string name="please_login_xiaomi_account">请登录小米帐号</string>
+    <string name="please_login_xiaomi_account">请登录小米账号</string>
     <string name="pm">PM</string>
     <string name="portrait_week_view">Weekly agenda in portrait orientation</string>
     <string name="prefDefault_alerts_vibrateWhen">never</string>
@@ -1075,7 +1086,7 @@ Check network settings and try again."</string>
     <string name="preferences_title">Calendar</string>
     <string name="preferences_use_home_tz_descrip">Displays calendars and event times in your home time zone when traveling</string>
     <string name="preferences_use_home_tz_title">Use home time zone</string>
-    <string name="preferences_week_start_day_default">-1</string>
+    <string name="preferences_week_start_day_default">-%d</string>
     <string name="preferences_week_start_day_dialog">Start of the week</string>
     <string name="preferences_week_start_day_title">Start of the week</string>
     <string name="prefsx_notify_sound_none">Silent</string>
@@ -1091,6 +1102,7 @@ Check network settings and try again."</string>
     <string name="premission_description_contact">For displaying birthdays of your contacts</string>
     <string name="premission_description_log">For saving logs</string>
     <string name="premission_description_notice">For sending notifications about events and holidays</string>
+    <string name="premission_description_notice_manager">Notifications for events and holidays</string>
     <string name="premission_description_phone_state">For identifying your device based on device ID</string>
     <string name="premission_description_read_contacts">"For showing your contacts' birthdays"</string>
     <string name="premission_description_read_phone_state">For automatically silencing alarms during calls</string>
@@ -1098,6 +1110,7 @@ Check network settings and try again."</string>
     <string name="premission_description_ringtone">For setting ringtones</string>
     <string name="premission_description_title">Viewing and managing scheduled events</string>
     <string name="premission_read_contacts">Contacts</string>
+    <string name="premission_read_notice_state">Notifications</string>
     <string name="premission_read_phone_state">Access device info</string>
     <string name="premission_read_write_storage">Storage</string>
     <string name="premission_read_write_storage_new">Access storage</string>
@@ -1136,7 +1149,7 @@ Check network settings and try again."</string>
     <string name="repeat_alarm_open_title">This is a repeated event. Set alarm reminder?</string>
     <string name="repeat_custom_activity_label">Custom</string>
     <string name="repeat_custom_prompt_daily">every %1$s</string>
-    <string name="repeat_custom_prompt_sentence">"Event will repeat %1$s "</string>
+    <string name="repeat_custom_prompt_sentence">Event will repeat %1$s</string>
     <string name="repeat_custom_prompt_splitter">", "</string>
     <string name="repeat_custom_string_prefix">Custom</string>
     <string name="repeat_custom_string_suffix">" (%1$s)"</string>
@@ -1233,7 +1246,7 @@ Check network settings and try again."</string>
     <string name="setting_title_weather_card_desc">位于农历卡片右侧的天气信息</string>
     <string name="setting_title_weather_card_display">显示天气服务</string>
     <string name="setting_title_yiji_display">显示黄历宜忌</string>
-    <string name="setting_toast_dump_mylog_done">生成成功,您的日志在文件管理器\"手机/MIUI/debug_log/com.android.calendar/dump\"文件夹下</string>
+    <string name="setting_toast_dump_mylog_done">生成成功，您的日志在文件管理器\"手机/MIUI/debug_log/com.android.calendar/dump\"文件夹下</string>
     <string name="setting_user_experience">用户体验计划</string>
     <string name="share_as_picture">以图片形式分享</string>
     <string name="share_as_url">以链接形式分享</string>
@@ -1528,6 +1541,8 @@ Check network settings and try again."</string>
     <string name="travel_loading">Just a sec…</string>
     <string name="travel_local">Destination</string>
     <string name="travel_over_days">+%d</string>
+    <string name="travel_reminder_minutes_labels_days">%d day before</string>
+    <string name="travel_reminder_minutes_labels_hours">%d hours before</string>
     <string name="travel_seat_number_text">Seat</string>
     <string name="travel_time_range_hours_mins">%1$s %2$s</string>
     <string name="travel_train_number_text">Train</string>
@@ -1571,7 +1586,7 @@ Check network settings and try again."</string>
     <string name="unsubscribing_card">Unsubscribed</string>
     <string name="user_notice_button_exit">Cancel</string>
     <string name="user_notice_button_ok">OK</string>
-    <string name="user_notice_message">You must agree to our %1$s and %2$s before using Calendar. In order to provide accurate data on local public holidays, birthdays, credit card repayments, and planned trips, Calendar needs to access your location, contacts, and messages, as well as connect to the internet. Agree?</string>
+    <string name="user_notice_message"><Data>You must agree to our &lt;a href=\"%1$s\">User Agreement&lt;/a> and &lt;a href=\"%2$s\">Privacy Policy&lt;/a> before using Calendar. In order to provide accurate data on local public holidays, birthdays, credit card repayments, and planned trips, Calendar needs to access your location, contacts, and messages, as well as connect to the internet. Agree?</Data></string>
     <string name="user_notice_title">Attention</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
