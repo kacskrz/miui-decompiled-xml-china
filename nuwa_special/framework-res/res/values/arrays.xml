@@ -41,6 +41,7 @@
     <array name="config_optionalIpSecAlgorithms" />
     <array name="carrier_properties" />
     <array name="cloneable_apps" />
+    <array name="cmf_default_wallpaper_component" />
     <array name="common_nicknames" />
     <array name="config_accessibility_allowed_install_source" />
     <array name="config_allowedGlobalInstantAppSettings" />
@@ -108,7 +109,9 @@
         <item>2.0</item>
         <item>4.0</item>
     </array>
-    <array name="config_biometric_sensors" />
+    <string-array name="config_biometric_sensors">
+        <item>0:2:15</item>
+    </string-array>
     <array name="config_brightnessThresholdsOfPeakRefreshRate" />
     <array name="config_builtInDisplayIsRoundArray">
         <item>@bool/config_mainBuiltInDisplayIsRound</item>
@@ -215,9 +218,6 @@
         <item>@string/config_secondaryDisplayShape</item>
     </string-array>
     <array name="config_displayUniqueIdArray" />
-    <string-array name="config_displayUsiVersionArray">
-        <item></item>
-    </string-array>
     <array name="config_displayWhiteBalanceAmbientColorTemperatures" />
     <array name="config_displayWhiteBalanceBaseThresholds">
         <item>0.0</item>
@@ -245,6 +245,12 @@
         <item>1.000000</item>
         <item>1.089058</item>
     </string-array>
+    <integer-array name="config_displayWhiteBalanceDisplayRangeMinimums">
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_displayWhiteBalanceDisplaySteps">
+        <item>1</item>
+    </integer-array>
     <array name="config_displayWhiteBalanceHighLightAmbientBiases" />
     <array name="config_displayWhiteBalanceHighLightAmbientBrightnesses" />
     <array name="config_displayWhiteBalanceIncreaseThresholds">
@@ -286,6 +292,7 @@
     <string-array name="config_emergency_iso_country_codes">
         <item>in</item>
     </string-array>
+    <array name="config_enabledCredentialProviderService" />
     <array name="config_ephemeralResolverPackage" />
     <array name="config_ethernet_interfaces" />
     <array name="config_face_acquire_biometricprompt_ignorelist" />
@@ -304,6 +311,7 @@
         <item>com.android.settings</item>
         <item>com.android.providers.settings</item>
     </string-array>
+    <array name="config_forceSlowJpegModeList" />
     <string-array name="config_globalActionsList">
         <item>emergency</item>
         <item>lockdown</item>
@@ -466,6 +474,7 @@
     <array name="config_openDeviceStates" />
     <array name="config_packagesExemptFromSuspension" />
     <array name="config_perDeviceStateRotationLockDefaults" />
+    <array name="config_primaryCredentialProviderService" />
     <string-array name="config_priorityOnlyDndExemptPackages">
         <item>com.android.dialer</item>
         <item>com.android.server.telecom</item>
@@ -491,6 +500,7 @@
         <item>0.9809063061</item>
     </string-array>
     <array name="config_restrictedImagesServices" />
+    <array name="config_reversedFoldedDeviceStates" />
     <array name="config_ringtoneEffectUris" />
     <array name="config_roundedCornerBottomRadiusAdjustmentArray">
         <item>@dimen/rounded_corner_radius_bottom_adjustment</item>
@@ -588,6 +598,7 @@
         <item>secure</item>
         <item>clock</item>
     </string-array>
+    <array name="config_strictFoldedDeviceStates" />
     <array name="config_supportedDreamComplications" />
     <integer-array name="config_supported_cellular_usage_settings">
         <item>1</item>
@@ -630,6 +641,7 @@
         <item>0,0,1.0,0,1</item>
         <item>1,1,1.0,0,1</item>
         <item>1,1,1.0,.4,1</item>
+        <item>1,1,1.0,.15,15</item>
     </string-array>
     <array name="config_usbHostDenylist" />
     <integer-array name="config_virtualKeyVibePattern">
@@ -713,6 +725,12 @@
     </string-array>
     <string-array name="device_state_notification_names">
         <item>@string/concurrent_display_notification_name</item>
+    </string-array>
+    <string-array name="device_state_notification_power_save_contents">
+        <item>@string/concurrent_display_notification_power_save_content</item>
+    </string-array>
+    <string-array name="device_state_notification_power_save_titles">
+        <item>@string/concurrent_display_notification_power_save_title</item>
     </string-array>
     <integer-array name="device_state_notification_state_identifiers">
         <item>@integer/config_deviceStateConcurrentRearDisplay</item>
@@ -1650,6 +1668,7 @@
         <item>@string/wfcSpnFormat_wifi_calling_wo_hyphen</item>
         <item>@string/wfcSpnFormat_vowifi</item>
         <item>@string/wfcSpnFormat_spn_wifi_calling_vo_hyphen</item>
+        <item>@string/wfcSpnFormat_wifi_call</item>
     </string-array>
     <array name="wifi_known_signers" />
 </resources>

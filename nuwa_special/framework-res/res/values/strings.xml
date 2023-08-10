@@ -68,6 +68,10 @@
     <string name="safety_protection_display_text" />
     <string name="config_systemSettingsIntelligence">com.android.settings.intelligence</string>
     <string name="config_systemBluetoothStack">com.android.bluetooth</string>
+    <string name="config_systemWearHealthService" />
+    <string name="config_defaultNotes" />
+    <string name="config_systemFinancedDeviceController">com.android.devicelockcontroller</string>
+    <string name="config_systemCallStreaming" />
     <string name="BaMmi">Call barring</string>
     <string name="CLIRDefaultOffNextCallOff">Caller ID defaults to not restricted. Next call: Not restricted</string>
     <string name="CLIRDefaultOffNextCallOn">Caller ID defaults to not restricted. Next call: Restricted</string>
@@ -285,7 +289,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="activitychooserview_choose_application">Choose an app</string>
     <string name="activitychooserview_choose_application_error">"Couldn't launch %s"</string>
     <string name="adb_active_notification_message">Tap to turn off USB debugging</string>
-    <string name="adb_active_notification_title">USB debugging connected</string>
+    <string name="adb_active_notification_title">USB debugging is on</string>
     <string name="adb_debugging_notification_channel_tv">USB debugging</string>
     <string name="adbwifi_active_notification_message">Tap to turn off wireless debugging</string>
     <string name="adbwifi_active_notification_title">Wireless debugging connected</string>
@@ -472,6 +476,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="concurrent_display_notification_active_content">%1$s is using both displays to show content</string>
     <string name="concurrent_display_notification_active_title">Dual screen is on</string>
     <string name="concurrent_display_notification_name">Dual screen</string>
+    <string name="concurrent_display_notification_power_save_content">Dual Screen is unavailable because Battery Saver is on. You can turn this off in Settings.</string>
+    <string name="concurrent_display_notification_power_save_title">Dual Screen is unavailable</string>
     <string name="concurrent_display_notification_thermal_content">Dual Screen is unavailable because your phone is getting too warm</string>
     <string name="concurrent_display_notification_thermal_title">Device is too warm</string>
     <string name="condition_provider_service_binding_label">Condition provider</string>
@@ -530,7 +536,6 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_defaultContentCaptureService" />
     <string name="config_defaultContentSuggestionsService" />
     <string name="config_defaultCredentialManagerHybridService" />
-    <string name="config_defaultCredentialProviderService" />
     <string name="config_defaultDndAccessPackages">com.android.camera2</string>
     <string name="config_defaultDockManagerPackageName" />
     <string name="config_defaultFieldClassificationService" />
@@ -559,7 +564,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_defaultWallpaperEffectsGenerationService" />
     <string name="config_defaultWearableSensingConsentComponent" />
     <string name="config_defaultWearableSensingService" />
-    <string name="config_defaultWellbeingPackage" />
+    <string name="config_defaultWellbeingPackage">@string/config_systemWellbeing</string>
     <string name="config_default_dns_server">8.8.8.8</string>
     <string name="config_deviceConfiguratorPackageName" />
     <string name="config_devicePolicyManagementUpdater" />
@@ -629,6 +634,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_pdp_reject_user_authentication_failed" />
     <string name="config_persistentDataPackageName" />
     <string name="config_platformVpnConfirmDialogComponent">com.android.vpndialogs/com.android.vpndialogs.PlatformVpnConfirmDialog</string>
+    <string name="config_pointing_ui_class" />
     <string name="config_pointing_ui_package" />
     <string name="config_powerSaveModeChangedListenerPackage" />
     <string name="config_primaryLocationTimeZoneProviderPackageName" />
@@ -642,6 +648,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_recentsComponentName">com.android.launcher3/com.android.quickstep.RecentsActivity</string>
     <string name="config_retailDemoPackage" />
     <string name="config_retailDemoPackageSignature" />
+    <string name="config_satellite_gateway_service_package" />
     <string name="config_satellite_service_package" />
     <string name="config_screenRecorderComponent">com.android.systemui/com.android.systemui.screenrecord.ScreenRecordDialog</string>
     <string name="config_screenshotAppClipsServiceComponent">com.android.systemui/com.android.systemui.screenshot.appclips.AppClipsService</string>
@@ -657,6 +664,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_sensorUseStartedActivity">com.android.systemui/com.android.systemui.sensorprivacy.SensorUseStartedActivity</string>
     <string name="config_sensorUseStartedActivity_hwToggle">com.android.systemui/com.android.systemui.sensorprivacy.SensorUseStartedActivity</string>
     <string name="config_servicesExtensionPackage">android.ext.services</string>
+    <string name="config_sharedConnectivityServiceIntentAction" />
+    <string name="config_sharedConnectivityServicePackage" />
     <string name="config_signalAttributionPath">M20,10h2v8h-2z M20,20h2v2h-2z</string>
     <string name="config_slicePermissionComponent">com.android.systemui/com.android.systemui.SlicePermissionActivity</string>
     <string name="config_somnambulatorComponent">com.android.systemui/com.android.systemui.Somnambulator</string>
@@ -676,6 +685,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_vendorColorModesRestoreHint" />
     <string name="config_wallpaperCropperPackage">com.android.wallpapercropper</string>
     <string name="config_wallpaperManagerServiceName">com.android.server.wallpaper.WallpaperManagerService</string>
+    <string name="config_wearMediaControlsPackage" />
+    <string name="config_wearMediaSessionsPackage" />
     <string name="config_wearServiceComponent" />
     <string name="config_wearSysUiMainActivity" />
     <string name="config_wearSysUiPackage" />
@@ -714,21 +725,12 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
 using %s"</string>
     <string name="crossSimFormat_spn">%s</string>
     <string name="crossSimFormat_spn_cross_sim_calling">%s Backup Calling</string>
-    <string name="csd_dose_reached_warning">"Warning,
-You have exceeded the amount of loud sound signals one can safely listen to in a week over headphones.
+    <string name="csd_dose_reached_warning">"Keep listening at a high volume?
 
-Going over this limit will permanently damage your hearing."</string>
-    <string name="csd_dose_repeat_warning">"Warning,
-You have exceeded 5 times the amount of loud sound signals one can safely listen to in a week over headphones.
+Headphone volume has been high for longer than recommended, which can damage your hearing"</string>
+    <string name="csd_momentary_exposure_warning">"Loud sound detected
 
-Volume has been lowered to protect your hearing."</string>
-    <string name="csd_entering_RS2_warning">"The level at which you are listening to media can result in hearing damage when sustained over long periods of time.
-
-Continuing to play at this level for long periods of time could damage your hearing."</string>
-    <string name="csd_momentary_exposure_warning">"Warning,
-You are currently listening to loud content played at an unsafe level.
-
-Continuing to listen this loud will permanently damage your hearing."</string>
+Headphone volume has been higher than recommended, which can damage your hearing"</string>
     <string name="data_saver_description">To help reduce data usage, Data Saver prevents some apps from sending or receiving data in the background. An app you’re currently using can access data, but may do so less frequently. This may mean, for example, that images don’t display until you tap them.</string>
     <string name="data_saver_enable_button">Turn on</string>
     <string name="data_saver_enable_title">Turn on Data Saver?</string>
@@ -792,6 +794,7 @@ Continuing to listen this loud will permanently damage your hearing."</string>
     <string name="description_target_unlock_tablet">Swipe to unlock.</string>
     <string name="device_ownership_relinquished">Admin relinquished device for personal use</string>
     <string name="device_policy_manager_service">Device Policy Manager Service</string>
+    <string name="device_state_notification_settings_button">Go to Settings</string>
     <string name="device_state_notification_turn_off_button">Turn off</string>
     <string name="device_storage_monitor_notification_channel">Device storage</string>
     <string name="dial_number_using">"Dial number
@@ -937,7 +940,7 @@ using %s"</string>
     <string name="face_error_hw_not_available">Can’t verify face. Hardware not available.</string>
     <string name="face_error_hw_not_present">Face Unlock isn’t supported on this device</string>
     <string name="face_error_lockout">Too many attempts. Try again later.</string>
-    <string name="face_error_lockout_permanent">Too many attempts. Face Unlock disabled.</string>
+    <string name="face_error_lockout_permanent">Too many attempts. Face Unlock unavailable.</string>
     <string name="face_error_lockout_screen_lock">Too many attempts. Enter screen lock instead.</string>
     <string name="face_error_no_space">Can’t store new face data. Delete an old one first.</string>
     <string name="face_error_not_enrolled">You haven’t set up Face Unlock</string>
@@ -1270,6 +1273,14 @@ Try again in %2$d seconds."</string>
     <string name="location_changed_notification_title">Apps can access your location</string>
     <string name="location_service">Location Service</string>
     <string name="lock_pattern_view_aspect">square</string>
+    <string name="lock_to_app_description">"Screen pinning locks the display in a single view.
+
+To unpin, press and hold Home and the Power button at the same time."</string>
+    <string name="lock_to_app_description_accessible">"Screen pinning locks the display in a single view.
+
+To unpin, press and hold Home and the Power button at the same time."</string>
+    <string name="lock_to_app_toast">To unpin this screen, press and hold Home and the Power button at the same time.</string>
+    <string name="lock_to_app_toast_accessible">To unpin this screen, press and hold Home and the Power button at the same time.</string>
     <string name="lock_to_app_unlock_password">Ask for password before unpinning</string>
     <string name="lock_to_app_unlock_pattern">Ask for unlock pattern before unpinning</string>
     <string name="lock_to_app_unlock_pin">Ask for PIN before unpinning</string>
@@ -1299,18 +1310,18 @@ Visit "<b>google.com/accounts/recovery</b>.</string>
     <string name="lockscreen_glogin_username_hint">Username (email)</string>
     <string name="lockscreen_instructions_when_pattern_disabled">Press Menu to unlock.</string>
     <string name="lockscreen_instructions_when_pattern_enabled">Press Menu to unlock or place emergency call.</string>
-    <string name="lockscreen_missing_sim_instructions">Add a SIM.</string>
-    <string name="lockscreen_missing_sim_instructions_long">The SIM is missing or not readable. Add a SIM.</string>
-    <string name="lockscreen_missing_sim_message">No SIM in phone.</string>
-    <string name="lockscreen_missing_sim_message_short">No SIM</string>
+    <string name="lockscreen_missing_sim_instructions">Insert a SIM card.</string>
+    <string name="lockscreen_missing_sim_instructions_long">The SIM card is missing or not readable. Insert a SIM card.</string>
+    <string name="lockscreen_missing_sim_message">No SIM card in phone.</string>
+    <string name="lockscreen_missing_sim_message_short">No SIM card</string>
     <string name="lockscreen_network_locked_message">Network locked</string>
     <string name="lockscreen_password_wrong">Try again</string>
     <string name="lockscreen_pattern_correct">Correct!</string>
     <string name="lockscreen_pattern_instructions">Draw pattern to unlock</string>
     <string name="lockscreen_pattern_wrong">Try again</string>
-    <string name="lockscreen_permanent_disabled_sim_instructions">"Your SIM has been permanently deactivated.
- Contact your wireless service provider for another SIM."</string>
-    <string name="lockscreen_permanent_disabled_sim_message_short">Unusable SIM.</string>
+    <string name="lockscreen_permanent_disabled_sim_instructions">"Your SIM card has been permanently disabled.
+Contact your wireless service provider for another SIM card."</string>
+    <string name="lockscreen_permanent_disabled_sim_message_short">Unusable SIM card.</string>
     <string name="lockscreen_return_to_call">Return to call</string>
     <string name="lockscreen_screen_locked">Screen locked.</string>
     <string name="lockscreen_sim_locked_message">SIM is locked.</string>
@@ -1342,6 +1353,7 @@ Try again in %2$d seconds."</string>
     <string name="low_internal_storage_view_text_no_boot">Not enough storage for the system. Make sure you have 250MB of free space and restart.</string>
     <string name="low_internal_storage_view_title">Storage space running out</string>
     <string name="low_memory">Phone storage is full. Delete some files to free space.</string>
+    <string name="managed_profile_app_label">Switch to work %1$s</string>
     <string name="managed_profile_label">Switch to work profile</string>
     <string name="managed_profile_label_badge">Work %1$s</string>
     <string name="managed_profile_label_badge_2">2nd Work %1$s</string>
@@ -1487,8 +1499,15 @@ Try again in %2$d seconds."</string>
     <string name="mime_type_spreadsheet_ext">%1$s spreadsheet</string>
     <string name="mime_type_video">Video</string>
     <string name="mime_type_video_ext">%1$s video</string>
-    <string name="miniresolver_open_in_personal">Open %s in your personal profile?</string>
-    <string name="miniresolver_open_in_work">Open %s in your work profile?</string>
+    <string name="miniresolver_call">Call</string>
+    <string name="miniresolver_call_in_work">Call from work app?</string>
+    <string name="miniresolver_call_information">Your organization only allows you to make calls from work apps</string>
+    <string name="miniresolver_open_in_personal">Open in personal %s?</string>
+    <string name="miniresolver_open_in_work">Open in work %s?</string>
+    <string name="miniresolver_open_work">Open work %s?</string>
+    <string name="miniresolver_sms_information">Your organization only allows you to send messages from work apps</string>
+    <string name="miniresolver_switch">Switch</string>
+    <string name="miniresolver_switch_to_work">Switch to work app?</string>
     <string name="miniresolver_use_personal_browser">Use personal browser</string>
     <string name="miniresolver_use_work_browser">Use work browser</string>
     <string name="minute">min</string>
@@ -1674,12 +1693,10 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permdesc_bluetooth_connect">Allows the app to connect to paired Bluetooth devices</string>
     <string name="permdesc_bluetooth_scan">Allows the app to discover and pair nearby Bluetooth devices</string>
     <string name="permdesc_bodySensors">Allows the app to access body sensor data, such as heart rate, temperature, and blood oxygen percentage, while the app is in use.</string>
-    <string name="permdesc_bodySensorsWristTemperature">Allows the app to access body sensor wrist temperature data, while the app is in use.</string>
     <string name="permdesc_bodySensors_background">Allows the app to access body sensor data, such as heart rate, temperature, and blood oxygen percentage, while the app is in the background.</string>
-    <string name="permdesc_bodySensors_wristTemperature_background">Allows the app to access body sensor wrist temperature data, while the app is in the background.</string>
     <string name="permdesc_broadcastSticky">Allows the app to send sticky broadcasts, which remain after the broadcast ends. Excessive use may make the phone slow or unstable by causing it to use too much memory.</string>
     <string name="permdesc_callCompanionApp">Allows the app to see and control ongoing calls on the device. This includes information such as call numbers for calls and the state of the calls.</string>
-    <string name="permdesc_callPhone">"Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation."</string>
+    <string name="permdesc_callPhone">"Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation, or dial carrier codes which cause incoming calls to be automatically forwarded to another number."</string>
     <string name="permdesc_camera">This app can take pictures and record videos using the camera while the app is in use.</string>
     <string name="permdesc_cameraOpenCloseListener">This app can receive callbacks when any camera device is being opened (by what application) or closed.</string>
     <string name="permdesc_changeNetworkState">Allows the app to change the state of network connectivity.</string>
@@ -1773,7 +1790,6 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permdesc_schedule_exact_alarm">This app can schedule work to happen at a desired time in the future. This also means that the app can run when you’re not actively using the device.</string>
     <string name="permdesc_sdcardRead">Allows the app to read the contents of your shared storage.</string>
     <string name="permdesc_sdcardWrite">Allows the app to write the contents of your shared storage.</string>
-    <string name="permdesc_sec_dnd">enable do not disturb feature on secondary SIM</string>
     <string name="permdesc_sendSms">Allows the app to send SMS messages. This may result in unexpected charges. Malicious apps may cost you money by sending messages without your confirmation.</string>
     <string name="permdesc_setAlarm">Allows the app to set an alarm in an installed alarm clock app. Some alarm clock apps may not implement this feature.</string>
     <string name="permdesc_setInputCalibration">Allows the app to modify the calibration parameters of the touch screen. Should never be needed for normal apps.</string>
@@ -1793,6 +1809,7 @@ Enhanced notifications can access notification content, including personal infor
     <string name="permdesc_transmitIr">"Allows the app to use the phone's infrared transmitter."</string>
     <string name="permdesc_turnScreenOn">Allows the app to turn on the screen.</string>
     <string name="permdesc_uninstall_shortcut">Allows the application to remove Homescreen shortcuts without user intervention.</string>
+    <string name="permdesc_updatePackagesWithoutUserAction">Allows the holder to update the app it previously installed without user action</string>
     <string name="permdesc_useBiometric">Allows the app to use biometric hardware for authentication</string>
     <string name="permdesc_useDataInBackground">This app can use data in the background. This may increase data usage.</string>
     <string name="permdesc_useFingerprint">Allows the app to use fingerprint hardware for authentication</string>
@@ -1876,9 +1893,7 @@ for account %s."</string>
     <string name="permlab_bluetooth_connect">connect to paired Bluetooth devices</string>
     <string name="permlab_bluetooth_scan">discover and pair nearby Bluetooth devices</string>
     <string name="permlab_bodySensors">Access body sensor data, like heart rate, while in use</string>
-    <string name="permlab_bodySensorsWristTemperature">Access body sensor wrist temperature data while the app is in use.</string>
     <string name="permlab_bodySensors_background">Access body sensor data, like heart rate, while in the background</string>
-    <string name="permlab_bodySensors_wristTemperature_background">Access body sensor wrist temperature data while the app is in the background.</string>
     <string name="permlab_broadcastSticky">send sticky broadcast</string>
     <string name="permlab_callCompanionApp">see and control calls through the system.</string>
     <string name="permlab_callPhone">directly call phone numbers</string>
@@ -1994,6 +2009,7 @@ for account %s."</string>
     <string name="permlab_transmitIr">transmit infrared</string>
     <string name="permlab_turnScreenOn">turn on the screen</string>
     <string name="permlab_uninstall_shortcut">uninstall shortcuts</string>
+    <string name="permlab_updatePackagesWithoutUserAction">update app without user action</string>
     <string name="permlab_useBiometric">use biometric hardware</string>
     <string name="permlab_useDataInBackground">use data in the background</string>
     <string name="permlab_useFingerprint">use fingerprint hardware</string>
@@ -2008,7 +2024,6 @@ for account %s."</string>
     <string name="permlab_writeContacts">modify your contacts</string>
     <string name="permlab_writeSettings">modify system settings</string>
     <string name="permlab_writeSyncSettings">toggle sync on and off</string>
-    <string name="permlabel_sec_dnd">Secondary SIM Do Not Disturb</string>
     <string name="perms_description_app">Provided by %1$s.</string>
     <string name="perms_new_perm_prefix"><font fgcolor="#ff33b5e5" size="12">NEW: </font></string>
     <string name="personal_apps_suspended_turn_profile_on">Turn on</string>
@@ -2127,8 +2142,8 @@ for account %s."</string>
     <string name="resolver_no_work_apps_available">No work apps</string>
     <string name="resolver_personal_tab">Personal</string>
     <string name="resolver_personal_tab_accessibility">Personal view</string>
-    <string name="resolver_switch_on_work">Tap to turn on</string>
-    <string name="resolver_turn_on_work_apps">Work profile is paused</string>
+    <string name="resolver_switch_on_work">Unpause</string>
+    <string name="resolver_turn_on_work_apps">Work apps are paused</string>
     <string name="resolver_work_tab">Work</string>
     <string name="resolver_work_tab_accessibility">Work view</string>
     <string name="restr_pin_confirm_pin">Confirm new PIN</string>
@@ -2230,8 +2245,6 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="share_remote_bugreport_notification_title">Share bug report?</string>
     <string name="shareactionprovider_share_with">Share with</string>
     <string name="shareactionprovider_share_with_application">Share with %s</string>
-    <string name="shared_connectivity_service_intent_action" />
-    <string name="shared_connectivity_service_package" />
     <string name="sharing_remote_bugreport_notification_title">Sharing bug report…</string>
     <string name="shortcut_disabled_reason_unknown">Shortcut is disabled</string>
     <string name="shortcut_restore_not_supported">Couldn’t restore shortcut because app doesn’t support backup and restore</string>
@@ -2350,6 +2363,7 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="taking_remote_bugreport_notification_title">Taking bug report…</string>
     <string name="test_harness_mode_notification_message">Perform a factory reset to disable Test Harness Mode.</string>
     <string name="test_harness_mode_notification_title">Test Harness Mode enabled</string>
+    <string name="tethered_notification_message">Tap to set up.</string>
     <string name="tethered_notification_multi_device_message">%1$s connected devices</string>
     <string name="tethered_notification_no_device_message">No connected device</string>
     <string name="tethered_notification_one_device_message">%1$s connected device</string>
@@ -2399,16 +2413,16 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="usb_contaminant_not_detected_message">Phone no longer detects liquid or debris.</string>
     <string name="usb_contaminant_not_detected_title">OK to use USB port</string>
     <string name="usb_device_resolve_prompt_warn">This app has not been granted record permission but could capture audio through this USB device.</string>
-    <string name="usb_midi_notification_title">MIDI via USB turned on</string>
+    <string name="usb_midi_notification_title">MIDI via USB is on</string>
     <string name="usb_midi_peripheral_manufacturer_name">Android</string>
     <string name="usb_midi_peripheral_name">Android USB Peripheral Port</string>
     <string name="usb_midi_peripheral_product_name">USB Peripheral Port</string>
     <string name="usb_mtp_launch_notification_description">Tap to view files</string>
     <string name="usb_mtp_launch_notification_title">Connected to %1$s</string>
-    <string name="usb_mtp_notification_title">USB file transfer turned on</string>
+    <string name="usb_mtp_notification_title">USB file transfer is on</string>
     <string name="usb_notification_message">Tap for more options.</string>
     <string name="usb_power_notification_message">Charging connected device. Tap for more options.</string>
-    <string name="usb_ptp_notification_title">PTP via USB turned on</string>
+    <string name="usb_ptp_notification_title">PTP via USB is on</string>
     <string name="usb_storage_activity_title">USB mass storage</string>
     <string name="usb_storage_button_mount">Turn on USB storage</string>
     <string name="usb_storage_error_message">"There's a problem using your USB storage for USB mass storage."</string>
@@ -2423,14 +2437,15 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="usb_storage_stop_title">USB storage in use</string>
     <string name="usb_storage_title">USB connected</string>
     <string name="usb_supplying_notification_title">Charging connected device via USB</string>
-    <string name="usb_tether_notification_title">USB tethering turned on</string>
-    <string name="usb_unsupported_audio_accessory_message">The attached device is not compatible with this phone. Tap to learn more.</string>
-    <string name="usb_unsupported_audio_accessory_title">Analog audio accessory detected</string>
+    <string name="usb_tether_notification_title">USB tethering is on</string>
+    <string name="usb_unsupported_audio_accessory_message">"Connected device isn't compatible with this phone. Tap to learn more."</string>
+    <string name="usb_unsupported_audio_accessory_title">Detected analog audio accessory</string>
     <string name="usb_uvc_notification_title">Device connected as Webcam</string>
     <string name="use_a_different_app">Use a different app</string>
     <string name="user_creation_account_exists">Allow %1$s to create a new User with %2$s (a User with this account already exists) ?</string>
     <string name="user_creation_adding">Allow %1$s to create a new User with %2$s ?</string>
     <string name="user_logging_out_message">Logging out %1$s…</string>
+    <string name="user_owner_app_label">Switch to personal %1$s</string>
     <string name="user_owner_label">Switch to personal profile</string>
     <string name="user_switched">Current user %1$s.</string>
     <string name="user_switching_message">Switching to %1$s…</string>
@@ -2446,11 +2461,11 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="volume_call">In-call volume</string>
     <string name="volume_dialog_ringer_guidance_silent">Calls and notifications will be muted</string>
     <string name="volume_dialog_ringer_guidance_vibrate">Calls and notifications will vibrate</string>
-    <string name="volume_icon_description_bluetooth">Bluetooth volume</string>
-    <string name="volume_icon_description_incall">Call volume</string>
-    <string name="volume_icon_description_media">Media volume</string>
-    <string name="volume_icon_description_notification">Notification volume</string>
-    <string name="volume_icon_description_ringer">Ringtone volume</string>
+    <string name="volume_icon_description_bluetooth">Bluetooth</string>
+    <string name="volume_icon_description_incall">Call</string>
+    <string name="volume_icon_description_media">Media</string>
+    <string name="volume_icon_description_notification">Notification</string>
+    <string name="volume_icon_description_ringer">Ringer</string>
     <string name="volume_music">Media volume</string>
     <string name="volume_music_hint_playing_through_bluetooth">Playing through Bluetooth</string>
     <string name="volume_music_hint_silent_ringtone_selected">Silent ringtone set</string>
@@ -2484,6 +2499,7 @@ Do you want to close it?"</string>
     <string name="wfcSpnFormat_spn_wlan_call">%s WLAN Call</string>
     <string name="wfcSpnFormat_vowifi">VoWifi</string>
     <string name="wfcSpnFormat_wifi">WLAN</string>
+    <string name="wfcSpnFormat_wifi_call">WLAN Call</string>
     <string name="wfcSpnFormat_wifi_calling">WLAN Calling</string>
     <string name="wfcSpnFormat_wifi_calling_bar_spn">WLAN Calling | %s</string>
     <string name="wfcSpnFormat_wifi_calling_wo_hyphen">WLAN Calling</string>
@@ -2527,11 +2543,9 @@ Do you want to close it?"</string>
     <string name="window_magnification_prompt_content">You can now magnify part of your screen</string>
     <string name="window_magnification_prompt_title">New magnification settings</string>
     <string name="wireless_display_route_description">Wireless display</string>
-    <string name="work_mode_dialer_off_message">Get access to your work apps and calls</string>
     <string name="work_mode_emergency_call_button">Emergency</string>
-    <string name="work_mode_off_message">Get access to your work apps and notifications</string>
-    <string name="work_mode_off_title">Turn on work apps?</string>
-    <string name="work_mode_turn_on">Turn on</string>
+    <string name="work_mode_off_title">Unpause work apps?</string>
+    <string name="work_mode_turn_on">Unpause</string>
     <string name="work_profile_deleted">Work profile deleted</string>
     <string name="work_profile_deleted_description_dpm_wipe">Your work profile is no longer available on this device</string>
     <string name="work_profile_deleted_details">The work profile admin app is either missing or corrupted. As a result, your work profile and related data have been deleted. Contact your admin for assistance.</string>

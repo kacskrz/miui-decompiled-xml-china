@@ -110,10 +110,6 @@
         <item>0</item>
         <item>1</item>
     </string-array>
-    <string-array name="ai_item_action_array">
-        <item>None</item>
-        <item>Activate Google Assistant</item>
-    </string-array>
     <string-array name="ai_key_item_name">
         <item>Talk to Google Assistant</item>
         <item>Open Google search</item>
@@ -579,7 +575,7 @@
         <item>334</item>
     </integer-array>
     <integer-array name="batterymeter_color_levels">
-        <item>15</item>
+        <item>20</item>
         <item>100</item>
     </integer-array>
     <array name="batterymeter_color_values">
@@ -685,16 +681,11 @@
         <item>Mono</item>
         <item>Stereo</item>
     </string-array>
-    <string-array name="bluetooth_a2dp_codec_channel_mode_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
     <string-array name="bluetooth_a2dp_codec_ldac_playback_quality_summaries">
         <item>Optimized for audio quality</item>
         <item>Balanced audio and connection quality</item>
         <item>Optimized for connection quality</item>
-        <item>Best effort (Auto bit rate)</item>
+        <item>Best effort (Adaptive bit rate)</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_ldac_playback_quality_titles">
         <item>Optimized for audio quality (990kbps/909kbps)</item>
@@ -799,7 +790,7 @@
         <item>" | Active (phone)"</item>
     </string-array>
     <string-array name="bluetooth_audio_routing_titles">
-        <item>Decide automatically</item>
+        <item>Use app default</item>
         <item>Play on hearing device</item>
         <item>Play on phone speaker</item>
     </string-array>
@@ -819,6 +810,16 @@
         <item>AVRCP 1.3</item>
         <item>AVRCP 1.4</item>
         <item>AVRCP 1.6</item>
+    </string-array>
+    <string-array name="bluetooth_broadcast_pin_config_titles">
+        <item>Unencrypted (no security)</item>
+        <item>4 digit pin (low security)</item>
+        <item>16 digit pin (high security)</item>
+    </string-array>
+    <string-array name="bluetooth_broadcast_pin_config_values">
+        <item>0</item>
+        <item>4</item>
+        <item>16</item>
     </string-array>
     <string-array name="bluetooth_map_version_values">
         <item>map12</item>
@@ -913,8 +914,9 @@
         <item>Disabled</item>
         <item>Filtered</item>
         <item>Enabled</item>
-        <item>Headers filtered</item>
-        <item>Media packets filtered</item>
+        <item>Enabled Headers Filtered</item>
+        <item>Enabled Media Pkts Filtered</item>
+        <item>Enabled Profiles Filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_filters_entries">
         <item>Leave only ACL headers</item>
@@ -944,10 +946,12 @@
         <item>full</item>
         <item>snoopheadersfiltered</item>
         <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values_enhanced">
         <item>snoopheadersfiltered</item>
         <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
     </string-array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
@@ -1201,6 +1205,35 @@
         <item>pattern</item>
         <item>numerical</item>
         <item>mixed</item>
+    </string-array>
+    <string-array name="china_broadcast_ids">
+        <item>46015</item>
+        <item>46060</item>
+        <item>46061</item>
+    </string-array>
+    <string-array name="china_mobile_ids">
+        <item>46000</item>
+        <item>46002</item>
+        <item>46004</item>
+        <item>46007</item>
+        <item>46008</item>
+        <item>46020</item>
+        <item>46021</item>
+        <item>46022</item>
+    </string-array>
+    <string-array name="china_telecom_ids">
+        <item>46003</item>
+        <item>46005</item>
+        <item>46011</item>
+        <item>46050</item>
+        <item>46051</item>
+    </string-array>
+    <string-array name="china_union_ids">
+        <item>46001</item>
+        <item>46006</item>
+        <item>46009</item>
+        <item>46031</item>
+        <item>46032</item>
     </string-array>
     <string-array name="chinese_days">
         <item>@string/chinese_day_1</item>
@@ -1679,18 +1712,14 @@
         <item>@string/config_settingsintelligence_package_name</item>
         <item>android.uid.system:1000</item>
     </string-array>
+    <string-array name="config_known_host_certs">
+        <item></item>
+    </string-array>
     <array name="config_order_audio_services" />
     <array name="config_order_captions_services" />
     <array name="config_order_display_services" />
     <array name="config_order_interaction_control_services" />
-    <string-array name="config_order_screen_reader_services">
-        <item>com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService</item>
-        <item>com.bjbyhd.voiceback/com.bjbyhd.voiceback.BoyhoodVoiceBackService</item>
-        <item>com.android.tback/com.google.android.marvin.talkback.TalkBackService</item>
-        <item>com.dianming.phoneapp/com.dianming.phoneapp.MyAccessibilityService</item>
-        <item>com.nirenr.talkman/com.nirenr.talkman.TalkManAccessibilityService</item>
-        <item>com.google.android.marvin.talkback/com.google.android.accessibility.selecttospeak.SelectToSpeakService</item>
-    </string-array>
+    <array name="config_order_screen_reader_services" />
     <array name="config_order_speech_services" />
     <string-array name="config_panel_keep_observe_uri">
         <item>content://com.android.settings.slices/intent/media_output_indicator</item>
@@ -1777,6 +1806,26 @@
     <array name="data_type_name_mcc_value" />
     <array name="data_type_name_miui_mcc_key" />
     <array name="data_type_name_miui_mcc_value" />
+    <array name="datausage_hiding_carrier_service_carrier_id" />
+    <array name="datausage_hiding_carrier_service_package_names" />
+    <string-array name="date_of_app_all">
+        <item>"Today (mobile data) "</item>
+        <item>"This month (mobile data) "</item>
+        <item>"Last month (mobile data) "</item>
+        <item>"Today (WLAN) "</item>
+        <item>"This month (WLAN) "</item>
+        <item>"Last month (WLAN) "</item>
+    </string-array>
+    <string-array name="date_of_traffic">
+        <item>"Today "</item>
+        <item>"This month "</item>
+        <item>"Last month "</item>
+    </string-array>
+    <string-array name="date_of_traffic_prefix">
+        <item>"Today: "</item>
+        <item>"This month: "</item>
+        <item>"Last month: "</item>
+    </string-array>
     <string-array name="debug_hw_overdraw_entries">
         <item>Off</item>
         <item>Show overdraw areas</item>
@@ -1865,6 +1914,16 @@
         <item>@string/dndm_vip_list_starred_contact</item>
         <item>@string/dndm_vip_list_custom</item>
     </string-array>
+    <string-array name="domestic_roaming_mplmns">
+        <item>46050</item>
+        <item>46051</item>
+        <item>46021</item>
+        <item>46022</item>
+        <item>46031</item>
+        <item>46032</item>
+        <item>46060</item>
+        <item>46061</item>
+    </string-array>
     <string-array name="double_click_mode_entries">
         <item>@string/miheadset_next</item>
         <item>@string/miheadset_plus</item>
@@ -1934,23 +1993,9 @@
         <item>systrace</item>
         <item>error</item>
     </string-array>
-    <string-array name="enabled_networks_cdma_choices">
-        <item>@string/network_lte</item>
-        <item>@string/network_3G</item>
-        <item>@string/network_1x</item>
-        <item>@string/network_global</item>
-    </string-array>
-    <string-array name="enabled_networks_cdma_no_lte_choices">
-        <item>@string/network_3G</item>
-        <item>@string/network_1x</item>
-    </string-array>
     <string-array name="enabled_networks_cdma_no_lte_values">
         <item>4</item>
         <item>5</item>
-    </string-array>
-    <string-array name="enabled_networks_cdma_only_lte_choices">
-        <item>@string/network_lte</item>
-        <item>@string/network_global</item>
     </string-array>
     <string-array name="enabled_networks_cdma_only_lte_values">
         <item>8</item>
@@ -1970,17 +2015,6 @@
     <string-array name="enabled_networks_except_gsm_3g_values">
         <item>9</item>
     </string-array>
-    <string-array name="enabled_networks_except_gsm_4g_choices">
-        <item>@string/network_4G</item>
-        <item>@string/network_3G</item>
-    </string-array>
-    <string-array name="enabled_networks_except_gsm_choices">
-        <item>@string/network_lte</item>
-        <item>@string/network_3G</item>
-    </string-array>
-    <string-array name="enabled_networks_except_gsm_lte_choices">
-        <item>@string/network_3G</item>
-    </string-array>
     <string-array name="enabled_networks_except_gsm_lte_values">
         <item>0</item>
     </string-array>
@@ -1988,18 +2022,27 @@
         <item>9</item>
         <item>0</item>
     </string-array>
-    <string-array name="enabled_networks_except_lte_choices">
-        <item>@string/network_3G</item>
-        <item>@string/network_2G</item>
-    </string-array>
     <string-array name="enabled_networks_except_lte_values">
         <item>0</item>
         <item>1</item>
     </string-array>
-    <string-array name="enabled_networks_tdscdma_choices">
-        <item>@string/network_lte</item>
-        <item>@string/network_3G</item>
-        <item>@string/network_2G</item>
+    <string-array name="enabled_networks_gsm_wcdma_choices">
+        <item>@string/network_2G_only</item>
+        <item>@string/network_3G_only</item>
+        <item>@string/network_2G_3G_preferred</item>
+    </string-array>
+    <string-array name="enabled_networks_gsm_wcdma_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="enabled_networks_subsidy_locked_choices">
+        <item>LTE Only</item>
+        <item>GSM/WCDMA/LTE</item>
+    </string-array>
+    <string-array name="enabled_networks_subsidy_locked_values">
+        <item>11</item>
+        <item>9</item>
     </string-array>
     <string-array name="enabled_networks_tdscdma_values">
         <item>22</item>
@@ -2033,6 +2076,7 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
+    <array name="fingerprint_acquired_ignore_list" />
     <string-array name="fingerprint_unlock_type_entries">
         <item>@string/fingerprint_unlock_touch_type</item>
         <item>@string/fingerprint_unlock_press_type</item>
@@ -2276,6 +2320,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <array name="kg_wrong_puk_code_message_list" />
     <string-array name="led_color_entries">
         <item>Blue</item>
         <item>Red</item>
@@ -2326,6 +2371,7 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <array name="locale_carrier_names" />
     <string-array name="lock_after_timeout_entries">
         <item>Immediately</item>
         <item>5 seconds</item>
@@ -2514,6 +2560,11 @@
         <item>huge</item>
         <item>godzilla</item>
     </string-array>
+    <string-array name="modem_perm_action_items">
+        <item>@string/allow</item>
+        <item>@string/permission_action_prompt</item>
+        <item>@string/deny</item>
+    </string-array>
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
@@ -2606,12 +2657,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>SPN</item>
         <item>IMSI</item>
         <item>GID</item>
+        <item>ICCID</item>
     </string-array>
     <string-array name="mvno_type_values">
         <item></item>
         <item>spn</item>
         <item>imsi</item>
         <item>gid</item>
+        <item>iccid</item>
     </string-array>
     <string-array name="ncc_locales">
         <item>TW</item>
@@ -2737,6 +2790,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>zm</item>
         <item>zw</item>
     </string-array>
+    <array name="origin_carrier_names" />
     <string-array name="overlay_display_devices_entries">
         <item>None</item>
         <item>480p</item>
@@ -2985,10 +3039,15 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>NR/LTE/TDSCDMA/GSM/WCDMA</item>
         <item>NR/LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA</item>
     </string-array>
-    <string-array name="preferred_network_mode_choices_world_mode">
-        <item>Global</item>
-        <item>LTE / CDMA</item>
-        <item>LTE / GSM / UMTS</item>
+    <string-array name="preferred_network_mode_gsm_wcdma_choices">
+        <item>GSM only</item>
+        <item>WCDMA only</item>
+        <item>GSM/WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_gsm_wcdma_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
     </string-array>
     <string-array name="preferred_network_mode_values">
         <item>0</item>
@@ -3096,6 +3155,33 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Warm</item>
         <item>Standard</item>
         <item>Cool</item>
+    </string-array>
+    <string-array name="screen_flash_color_entries">
+        <item>@string/screen_flash_color_none</item>
+        <item>@string/screen_flash_color_blue</item>
+        <item>@string/screen_flash_color_green</item>
+        <item>@string/screen_flash_color_yellow</item>
+        <item>@string/screen_flash_color_orange</item>
+        <item>@string/screen_flash_color_red</item>
+        <item>@string/screen_flash_color_violet</item>
+    </string-array>
+    <array name="screen_flash_color_icons">
+        <item>@drawable/screen_flash_color_none</item>
+        <item>@drawable/screen_flash_color_blue</item>
+        <item>@drawable/screen_flash_color_green</item>
+        <item>@drawable/screen_flash_color_yellow</item>
+        <item>@drawable/screen_flash_color_orange</item>
+        <item>@drawable/screen_flash_color_red</item>
+        <item>@drawable/screen_flash_color_violet</item>
+    </array>
+    <string-array name="screen_flash_color_values">
+        <item>0</item>
+        <item>4D0000FE</item>
+        <item>6600FF01</item>
+        <item>66FFFF00</item>
+        <item>66FF7F00</item>
+        <item>66FE0000</item>
+        <item>667F00FF</item>
     </string-array>
     <array name="screen_flash_notification_preset_opacity_colors">
         <item>@color/screen_flash_preset_opacity_color_01</item>
@@ -3464,6 +3550,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>spes</item>
         <item>spesn</item>
         <item>fog</item>
+        <item>wind</item>
+        <item>rain</item>
+        <item>eos</item>
+        <item>opal</item>
     </string-array>
     <string-array name="support_settings_haptic_device_list">
         <item>apollo</item>
@@ -3532,6 +3622,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>spes</item>
         <item>spesn</item>
         <item>fog</item>
+        <item>wind</item>
+        <item>rain</item>
+        <item>eos</item>
+        <item>opal</item>
     </string-array>
     <string-array name="swipe_direction_titles">
         <item>@string/swipe_direction_rtl</item>
@@ -3717,6 +3811,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="traffic_type">
+        <item>"Mobile data usage "</item>
+        <item>"WLAN usage "</item>
+    </string-array>
     <string-array name="transition_animation_scale_entries">
         <item>Animation off</item>
         <item>Animation scale .5x</item>
@@ -3848,6 +3946,29 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Move down</item>
         <item>Move right</item>
         <item>Move up</item>
+    </string-array>
+    <string-array name="uplmn_cu_mcc_mnc_values">
+        <item>46001</item>
+        <item>46006</item>
+        <item>46009</item>
+    </string-array>
+    <string-array name="uplmn_prefer_network_mode_td_choices">
+        <item>GSM</item>
+        <item>TDSCDMA</item>
+        <item>LTE</item>
+        <item>Triple mode</item>
+    </string-array>
+    <string-array name="uplmn_prefer_network_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="uplmn_prefer_network_mode_w_choices">
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>LTE</item>
+        <item>Triple mode</item>
     </string-array>
     <string-array name="usb_configuration_titles">
         <item>Charging</item>
@@ -4030,11 +4151,33 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Mobile</item>
         <item>WLAN only</item>
     </string-array>
+    <string-array name="wifi_calling_mode_choices_v2_with_ims_preferred">
+        <item>Ims Preferred</item>
+        <item>WLAN</item>
+        <item>Mobile</item>
+        <item>WLAN only</item>
+    </string-array>
     <string-array name="wifi_calling_mode_choices_v2_without_wifi_only">
         <item>WLAN</item>
         <item>Mobile</item>
     </string-array>
+    <string-array name="wifi_calling_mode_choices_v2_without_wifi_only_with_ims_preferred">
+        <item>Ims Preferred</item>
+        <item>WLAN</item>
+        <item>Mobile</item>
+    </string-array>
+    <array name="wifi_calling_mode_choices_with_ims_preferred">
+        <item>Ims Preferred</item>
+        <item>@android:string/wfc_mode_wifi_preferred_summary</item>
+        <item>@android:string/wfc_mode_cellular_preferred_summary</item>
+        <item>@android:string/wfc_mode_wifi_only_summary</item>
+    </array>
     <array name="wifi_calling_mode_choices_without_wifi_only">
+        <item>@android:string/wfc_mode_wifi_preferred_summary</item>
+        <item>@android:string/wfc_mode_cellular_preferred_summary</item>
+    </array>
+    <array name="wifi_calling_mode_choices_without_wifi_only_with_ims_preferred">
+        <item>Ims Preferred</item>
         <item>@android:string/wfc_mode_wifi_preferred_summary</item>
         <item>@android:string/wfc_mode_cellular_preferred_summary</item>
     </array>
@@ -4043,7 +4186,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
         <item>@string/wifi_calling_mode_wifi_only_summary</item>
     </string-array>
+    <string-array name="wifi_calling_mode_summaries_with_ims_preferred">
+        <item>@string/wifi_calling_mode_ims_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_only_summary</item>
+    </string-array>
     <string-array name="wifi_calling_mode_summaries_without_wifi_only">
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_summaries_without_wifi_only_with_ims_preferred">
+        <item>@string/wifi_calling_mode_ims_preferred_summary</item>
         <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
         <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
     </string-array>
@@ -4052,7 +4206,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>1</item>
         <item>0</item>
     </string-array>
+    <string-array name="wifi_calling_mode_values_with_ims_preferred">
+        <item>10</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
     <string-array name="wifi_calling_mode_values_without_wifi_only">
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_values_without_wifi_only_with_ims_preferred">
+        <item>10</item>
         <item>2</item>
         <item>1</item>
     </string-array>
@@ -4110,6 +4275,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>2</item>
     </string-array>
     <string-array name="wifi_hidden_entries">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="wifi_hidden_gbk_entries">
         <item>No</item>
         <item>Yes</item>
     </string-array>
@@ -4233,12 +4402,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/wifi_security_sae</item>
         <item>@string/wifi_security_psk_sae</item>
         <item>@string/wifi_security_wpa2</item>
+        <item>@string/wifi_security_owe</item>
         <item>@string/wifi_security_none</item>
     </string-array>
     <string-array name="wifi_tether_security_values">
         <item>3</item>
         <item>2</item>
         <item>1</item>
+        <item>4</item>
         <item>0</item>
     </string-array>
     <string-array name="wifi_ttls_phase2_entries">

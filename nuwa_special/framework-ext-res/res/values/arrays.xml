@@ -240,7 +240,6 @@
     </string-array>
     <array name="boot_msg_text" />
     <array name="china_ntp_servers" />
-    <array name="config_BrightnessCurvesLux" />
     <string-array name="config_France_Orange_IPV6_array">
         <item>apollo</item>
         <item>gauguin</item>
@@ -272,12 +271,6 @@
         <item>gb</item>
         <item>jp</item>
     </string-array>
-    <integer-array name="config_autoBrightnessMinNitForOriginalLux">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </integer-array>
     <array name="config_bcbc_brt_change_node">
         <item>0.048852</item>
         <item>0.073278</item>
@@ -311,61 +304,15 @@
         <item>0</item>
     </integer-array>
     <array name="config_crossSpaceNotificationPackageNames" />
-    <integer-array name="config_hbm_backlight_levels">
-        <item>0</item>
-        <item>3586</item>
-        <item>4095</item>
-    </integer-array>
-    <integer-array name="config_hbm_lux_levels">
-        <item>4500</item>
-        <item>10000</item>
-        <item>20000</item>
-    </integer-array>
-    <integer-array name="config_hbm_nit_levels">
-        <item>21</item>
-        <item>215</item>
+    <integer-array name="config_default_handle_netid_interval_s">
+        <item>30</item>
+        <item>120</item>
         <item>300</item>
+        <item>600</item>
+        <item>3600</item>
     </integer-array>
-    <array name="config_hightGrayBrightnessLevels" />
-    <array name="config_lowGrayBrightnessLevels" />
     <array name="config_low_battery_level_brightness_threshold" />
     <array name="config_low_battery_level_threshold" />
-    <integer-array name="config_manualBrightnessRemapIn">
-        <item>0</item>
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>128</item>
-        <item>192</item>
-        <item>255</item>
-    </integer-array>
-    <integer-array name="config_manualBrightnessRemapOut">
-        <item>0</item>
-        <item>1</item>
-        <item>8</item>
-        <item>20</item>
-        <item>60</item>
-        <item>120</item>
-        <item>255</item>
-    </integer-array>
-    <array name="config_maxBrightnessCurvesNits" />
-    <integer-array name="config_maxBrightnessRemapIn">
-        <item>1</item>
-        <item>10</item>
-        <item>50</item>
-        <item>100</item>
-        <item>200</item>
-        <item>300</item>
-    </integer-array>
-    <integer-array name="config_maxBrightnessRemapOut">
-        <item>140</item>
-        <item>140</item>
-        <item>140</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-    </integer-array>
-    <array name="config_minBrightnessCurvesNits" />
     <string-array name="config_mms_force_unmetered_list">
         <item>260</item>
         <item>20201</item>
@@ -412,11 +359,29 @@
         <item>com.xiaomi.hm.health/com.xiaomi.hm.health.ui.smartplay.NotificationAccessService</item>
     </string-array>
     <array name="config_operatorDefaultListenerAccessPackages" />
-    <integer-array name="config_originalLux">
-        <item>10</item>
-        <item>15</item>
-        <item>20</item>
-        <item>25</item>
+    <array name="config_opr_grayscale_threshold" />
+    <array name="config_opr_nit_threshold" />
+    <integer-array name="config_rhythmic_eyecare_alarm_time_points">
+        <item>360</item>
+        <item>366</item>
+        <item>372</item>
+        <item>378</item>
+        <item>384</item>
+        <item>390</item>
+        <item>396</item>
+        <item>402</item>
+        <item>408</item>
+        <item>414</item>
+        <item>1104</item>
+        <item>1128</item>
+        <item>1152</item>
+        <item>1176</item>
+        <item>1200</item>
+        <item>1224</item>
+        <item>1248</item>
+        <item>1272</item>
+        <item>1296</item>
+        <item>1320</item>
     </integer-array>
     <string-array name="config_ringtoneEffectMap">
         <item>file:///system/media/audio/ringtones/AcousticGuitar.ogg|521</item>
@@ -522,6 +487,12 @@
         <item>socrates</item>
         <item>ishtar</item>
         <item>babylon</item>
+        <item>vermeer</item>
+    </string-array>
+    <string-array name="device_on_platform_8650">
+        <item>shennong</item>
+        <item>houji</item>
+        <item>manet</item>
     </string-array>
     <string-array name="device_on_platform_x250">
         <item>apollo</item>
@@ -5981,6 +5952,7 @@
         <item>taro</item>
         <item>mt6983</item>
         <item>mt6895</item>
+        <item>pineapple</item>
     </string-array>
     <string-array name="high_device_gpu_list">
         <item>kalama</item>
@@ -5990,6 +5962,7 @@
         <item>taro</item>
         <item>mt6983</item>
         <item>mt6895</item>
+        <item>pineapple</item>
     </string-array>
     <string-array name="keyguard_whitelist">
         <item>com.google.android.apps.messaging</item>
@@ -6048,6 +6021,13 @@
         <item>com.miui.systemAdSolution</item>
         <item>com.techown.emm</item>
         <item>com.miui.hybrid.accessory</item>
+    </string-array>
+    <string-array name="list_about_freeform_recommend_map_application">
+        <item>com.autonavi.minimap</item>
+        <item>com.baidu.BaiduMap</item>
+    </string-array>
+    <string-array name="list_about_freeform_recommend_waiting_application">
+        <item>com.tencent.tmgp.pubgmhd</item>
     </string-array>
     <string-array name="list_about_ignore_request_orientation_in_freeform">
         <item>com.miui.player</item>
@@ -7625,6 +7605,7 @@
         <item>com.android.updater</item>
         <item>com.miui.misightservice</item>
     </string-array>
+    <array name="package_user_request_clean_white_list" />
     <string-array name="process_disable_force_stop_list">
         <item>com.miui.securitycore</item>
     </string-array>
@@ -7858,10 +7839,14 @@
         <item>com.miui.greenguard</item>
         <item>com.miui.aod</item>
         <item>com.miui.voiceassist:core</item>
-        <item>com.miui.voicetrigger</item>
     </string-array>
     <string-array name="process_static_white_list_lite">
         <item>com.android.mms:mms_service</item>
+    </string-array>
+    <string-array name="process_system_clean_white_list">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mm:push</item>
+        <item>com.android.externalstorage</item>
     </string-array>
     <string-array name="rt_boost_pkg_white_list">
         <item>com.tencent.mm</item>
@@ -8058,6 +8043,10 @@
         <item>com.ximalaya.ting.android.host.activity.LockScreenActivity</item>
         <item>com.netease.cloudmusic.activity.LockScreenActivity</item>
     </string-array>
+    <array name="thermal_special_app_list" />
+    <array name="thermal_special_level" />
+    <array name="throttle_special_app_list" />
+    <array name="throttle_special_level" />
     <string-array name="top_game_list">
         <item>com.netease.party.mi</item>
         <item>com.netease.aceracer.mi</item>
@@ -9277,6 +9266,7 @@
         <item>veux</item>
         <item>peux</item>
         <item>ziyi</item>
+        <item>pipa</item>
         <item>sunstone</item>
         <item>redwood</item>
     </string-array>
@@ -9292,6 +9282,7 @@
         <item>v:1,c:2,g:2</item>
         <item>v:1,c:2,g:2</item>
         <item>v:1,c:2,g:2</item>
+        <item>v:1,c:3,g:2</item>
         <item>v:1,c:2,g:2</item>
         <item>v:1,c:2,g:2</item>
     </string-array>

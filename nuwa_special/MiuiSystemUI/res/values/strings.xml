@@ -92,7 +92,7 @@
     <string name="accessibility_desc_quick_settings_edit">Quick settings editor.</string>
     <string name="accessibility_desc_work_lock">Work lock screen</string>
     <string name="accessibility_detail_switch">Switch between toggles</string>
-    <string name="accessibility_divider">Split-screen divider</string>
+    <string name="accessibility_divider">Split screen divider</string>
     <string name="accessibility_enter_hint">enter device</string>
     <string name="accessibility_enter_lock_setting">Tap to open Wallpaper Carousel settings</string>
     <string name="accessibility_enter_lock_wallpaper">Tap to open Wallpaper Carousel</string>
@@ -125,10 +125,12 @@
     <string name="accessibility_keyboard_ok_button">Enter</string>
     <string name="accessibility_keyboard_symbol_board_shift2letter_button">Letters</string>
     <string name="accessibility_keyboard_symbol_board_symbol_lock_button">Symbols lock</string>
+    <string name="accessibility_keyguard_face_unlock_view">Face unlock</string>
     <string name="accessibility_location_active">Location requests active</string>
     <string name="accessibility_lock_icon">Device locked</string>
     <string name="accessibility_long_click_tile">Open settings</string>
     <string name="accessibility_magnification_done">Done</string>
+    <string name="accessibility_magnification_fullscreen">Full screen</string>
     <string name="accessibility_magnification_large">Large</string>
     <string name="accessibility_magnification_medium">Medium</string>
     <string name="accessibility_magnification_settings_panel_description">Magnification settings</string>
@@ -173,6 +175,8 @@
     <string name="accessibility_quick_settings_bluetooth_on">Bluetooth on.</string>
     <string name="accessibility_quick_settings_choose_user_action">choose user</string>
     <string name="accessibility_quick_settings_dnd">Do Not Disturb.</string>
+    <string name="accessibility_quick_settings_dnd_alarms_on">alarms only</string>
+    <string name="accessibility_quick_settings_dnd_none_on">total silence</string>
     <string name="accessibility_quick_settings_edit">Edit order of settings.</string>
     <string name="accessibility_quick_settings_expand">Open quick settings.</string>
     <string name="accessibility_quick_settings_less_time">Less time.</string>
@@ -184,7 +188,6 @@
     <string name="accessibility_quick_settings_settings">Open settings.</string>
     <string name="accessibility_quick_settings_user">Signed in as %s</string>
     <string name="accessibility_recent">Overview</string>
-    <string name="accessibility_resize">Resize</string>
     <string name="accessibility_ringer_silent">Ringer silent.</string>
     <string name="accessibility_ringer_vibrate">Ringer vibrate.</string>
     <string name="accessibility_rotate_button">Rotate screen</string>
@@ -282,7 +285,7 @@ Try again in %d seconds."</string>
     <string name="biometric_dialog_last_pin_attempt_before_wipe_profile">If you enter an incorrect PIN on the next attempt, your work profile and its data will be deleted.</string>
     <string name="biometric_dialog_last_pin_attempt_before_wipe_user">If you enter an incorrect PIN on the next attempt, this user will be deleted.</string>
     <string name="biometric_dialog_tap_confirm">Tap Confirm to complete</string>
-    <string name="biometric_dialog_tap_confirm_with_face">Unlocked by face. Press the unlock icon to continue.</string>
+    <string name="biometric_dialog_tap_confirm_with_face">Unlocked by face.</string>
     <string name="biometric_dialog_try_again">Try again</string>
     <string name="biometric_dialog_use_password">Use password</string>
     <string name="biometric_dialog_use_pattern">Use pattern</string>
@@ -290,6 +293,9 @@ Try again in %d seconds."</string>
     <string name="biometric_dialog_wrong_password">Wrong password</string>
     <string name="biometric_dialog_wrong_pattern">Wrong pattern</string>
     <string name="biometric_dialog_wrong_pin">Wrong PIN</string>
+    <string name="biometric_re_enroll_dialog_cancel">Not now</string>
+    <string name="biometric_re_enroll_dialog_confirm">Set up</string>
+    <string name="biometric_re_enroll_notification_content">This is required to improve security and performance</string>
     <string name="birthday_status">Birthday</string>
     <string name="birthday_status_content_description">"It's %1$s’s birthday"</string>
     <string name="bluetooth_active_battery_level">Active, %1$s battery</string>
@@ -323,6 +329,7 @@ Try again in %d seconds."</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="bouncer_face_not_recognized">Face not recognized</string>
     <string name="broadcasting_description_is_broadcasting">Broadcasting</string>
     <string name="bt_is_off">Bluetooth is off</string>
     <string name="bt_le_audio_broadcast_dialog_different_output">Change output</string>
@@ -353,9 +360,9 @@ Try again in %d seconds."</string>
     <string name="build_number_copy_toast">Build number copied to clipboard.</string>
     <string name="calendar_component_name" />
     <string name="call_from_work_profile_action">Switch to work profile</string>
-    <string name="call_from_work_profile_close">Close</string>
-    <string name="call_from_work_profile_text">Your work policy allows you to make phone calls only from the work profile</string>
-    <string name="call_from_work_profile_title">"Can't call from this profile"</string>
+    <string name="call_from_work_profile_close">Cancel</string>
+    <string name="call_from_work_profile_text">Your organization only allows you to make calls from work apps</string>
+    <string name="call_from_work_profile_title">"Can't call from a personal app"</string>
     <string name="camera_and_microphone_blocked_dream_overlay_content_description">Camera and microphone blocked</string>
     <string name="camera_blocked_dream_overlay_content_description">Camera blocked</string>
     <string name="camera_compat_dismiss_button_description">No camera issues? Tap to dismiss.</string>
@@ -484,11 +491,12 @@ Tap to refit"</string>
     <string name="config_recentsComponent">com.android.systemui.recents.OverviewProxyRecentsImpl</string>
     <string name="config_remoteCopyPackage" />
     <string name="config_sceenshotWorkProfileFilesApp" />
-    <string name="config_screenshotAppClipsActivityComponent">com.android.systemui/com.android.systemui.screenshot.AppClipsActivity</string>
+    <string name="config_screenshotAppClipsActivityComponent">com.android.systemui/com.android.systemui.screenshot.appclips.AppClipsActivity</string>
     <string name="config_screenshotEditor" />
     <string name="config_systemUIFactoryComponent">com.android.systemui.SystemUIInitializerImpl</string>
     <string name="config_systemUIVendorServiceComponent">com.android.systemui.VendorServices</string>
     <string name="config_udfpsIcon">M25.5,16.3283C28.47,14.8433 31.9167,14 35.5834,14C39.2501,14 42.6968,14.8433 45.6668,16.3283 M20,28.6669C22.7683,24.3402 28.7084,21.3335 35.5834,21.3335C42.4585,21.3335 48.3985, 24.3402 51.1669,28.6669 M22.8607,47.0002C21.834,44.3235 21.834,41.5002 21.834,41.5002C21.834, 34.4051 27.7374,28.6667 35.5841,28.6667C43.4308,28.6667 49.3341,34.4051 49.3341,41.5002 M49.3344,41.5003V42.0319C49.3344,44.7636 47.1161,47.0003 44.3661,47.0003C41.9461, 47.0003 39.8744,45.2403 39.471,42.857L38.9577, 39.7769C38.591,37.5953 36.7027,36.0002 34.5027, 36.0002C26.5826,36.0002 29.846,49.1087 35.291,50.6487 M44.9713,54.6267C42.5513,56.7167 39.2879,58.0001 35.5846,58.0001C32.2296, 58.0001 29.2229,56.9551 26.8945,55.195</string>
+    <string name="config_wallpaperPickerPackage">com.android.wallpaper</string>
     <string name="confirm">OK</string>
     <string name="control_quick_settings_tiles_super_save">gps,nfc,screenshot,vibrate</string>
     <string name="controls_confirmation_message">Confirm change for %s</string>
@@ -502,16 +510,18 @@ Tap to refit"</string>
     <string name="controls_error_removed_message">Couldn’t access %1$s. Check the %2$s app to make sure the control is still available and that the app settings haven’t changed.</string>
     <string name="controls_error_removed_title">Control is unavailable</string>
     <string name="controls_error_timeout">Inactive, check app</string>
+    <string name="controls_favorite_add_controls">Add controls</string>
+    <string name="controls_favorite_back_to_editing">Back to editing</string>
     <string name="controls_favorite_default_title">Controls</string>
     <string name="controls_favorite_load_error">Controls could not be loaded. Check the %s app to make sure that the app settings haven’t changed.</string>
     <string name="controls_favorite_load_none">Compatible controls unavailable</string>
     <string name="controls_favorite_other_zone_header">Other</string>
     <string name="controls_favorite_rearrange">Hold &amp; drag to rearrange controls</string>
+    <string name="controls_favorite_rearrange_button">Rearrange</string>
     <string name="controls_favorite_removed">All controls removed</string>
     <string name="controls_favorite_see_other_apps">See other apps</string>
-    <string name="controls_favorite_subtitle">Choose controls to access from Quick Settings</string>
+    <string name="controls_favorite_subtitle">Choose device controls to access quickly</string>
     <string name="controls_favorite_toast_no_changes">Changes not saved</string>
-    <string name="controls_media_active_session">The current media session cannot be hidden.</string>
     <string name="controls_media_button_connecting">Connecting</string>
     <string name="controls_media_button_next">Next track</string>
     <string name="controls_media_button_pause">Pause</string>
@@ -519,6 +529,7 @@ Tap to refit"</string>
     <string name="controls_media_button_prev">Previous track</string>
     <string name="controls_media_close_session">Hide this media control for %1$s?</string>
     <string name="controls_media_dismiss_button">Hide</string>
+    <string name="controls_media_empty_title">%1$s is running</string>
     <string name="controls_media_playing_item_description">%1$s by %2$s is playing from %3$s</string>
     <string name="controls_media_resume">Resume</string>
     <string name="controls_media_seekbar_description">%1$s of %2$s</string>
@@ -531,9 +542,10 @@ Tap to refit"</string>
     <string name="controls_menu_add">Add controls</string>
     <string name="controls_menu_add_another_app">Add app</string>
     <string name="controls_menu_edit">Edit controls</string>
+    <string name="controls_menu_remove">Remove app</string>
     <string name="controls_number_of_favorites">{count, plural, =1 {# control added.} other {# controls added.} }</string>
     <string name="controls_open_app">Open app</string>
-    <string name="controls_panel_authorization">%scan choose which controls and content show here.</string>
+    <string name="controls_panel_authorization">%s can choose which controls and content show here.</string>
     <string name="controls_panel_authorization_title">Add %s?</string>
     <string name="controls_panel_remove_app_authorization">Remove controls for %s?</string>
     <string name="controls_pin_instructions">Enter PIN</string>
@@ -559,6 +571,11 @@ You can make changes any time in Settings."</string>
     <string name="copy">Copy</string>
     <string name="creating_new_guest_dialog_message">Creating new guest…</string>
     <string name="creating_new_user_dialog_message">Creating new user…</string>
+    <string name="csd_500_system_lowered_text">Headphone volume has exceeded the safe limit for this week</string>
+    <string name="csd_button_keep_listening">Keep listening</string>
+    <string name="csd_button_lower_volume">Lower volume</string>
+    <string name="csd_lowered_title">Volume lowered to safer level</string>
+    <string name="csd_system_lowered_text">Headphone volume has been high for longer than recommended</string>
     <string name="dark_mode_power_save_alert_dialog_confirm">Got it</string>
     <string name="dark_mode_power_save_alert_dialog_message">"If you turn off MIUI optimization and turn on Battery saver, Dark mode will be turned on automatically.
 To turn off Dark mode, turn off Battery saver, or turn on MIUI optimization in Settings > Developer options > Turn on MIUI optimization."</string>
@@ -593,11 +610,15 @@ If you resume, charges may apply for data usage."</string>
     <string name="date_picker_label_month" />
     <string name="date_picker_label_year" />
     <string name="days_timestamp">%1$s days ago</string>
+    <string name="default_lockscreen_unlock_hint_text">Swipe up to unlock</string>
     <string name="default_user_icon_description">Default user icon</string>
     <string name="delete">Delete</string>
     <string name="demo_mode">System UI demo mode</string>
     <string name="desktop_text">Desktop Mode</string>
     <string name="dessert_case">Dessert Case</string>
+    <string name="device_locked_without_biometric">"Can't unlock this device with fingerprints or face data when you're using a third party screen lock"</string>
+    <string name="device_locked_without_biometric_face">"Can't unlock this device with face data when you're using a third party screen lock"</string>
+    <string name="device_locked_without_biometric_finger">"Can't unlock this device with fingerprints when you're using a third party screen lock"</string>
     <string name="dialog_forget_password_cancel">Cancel</string>
     <string name="dialog_forget_password_message">If you forgot your PUK code, you can disable this eSIM not to lose access to your device. After that, you can contact your carrier to get help.</string>
     <string name="dialog_forget_password_ok">Disable</string>
@@ -611,12 +632,13 @@ If you resume, charges may apply for data usage."</string>
     <string name="do_disclosure_generic">This device belongs to your organization</string>
     <string name="do_disclosure_with_name">This device belongs to %s</string>
     <string name="do_financed_disclosure_with_name">This device is provided by %s</string>
+    <string name="dock_forced_resizable">App may not work with split screen</string>
     <string name="dock_multi_instances_not_supported_text">This app can only be opened in 1 window.</string>
-    <string name="dock_non_resizeble_failed_to_dock_text">App does not support split-screen.</string>
+    <string name="dock_non_resizeble_failed_to_dock_text">App does not support split screen</string>
     <string name="done">Done</string>
     <string name="download_lock_wallpaper">Double tap to download Wallpaper Carousel</string>
     <string name="doze_brightness_sensor_type" />
-    <string name="drag_split_not_supported">This notification does not support dragging to Splitscreen.</string>
+    <string name="drag_split_not_supported">This notification does not support dragging to split screen</string>
     <string name="drag_to_add_tiles">Press and hold to add or rearrange items</string>
     <string name="drag_to_rearrange_tiles">Hold and drag to rearrange tiles</string>
     <string name="drag_to_remove_disabled">You need at least %1$d tiles</string>
@@ -659,7 +681,23 @@ If you resume, charges may apply for data usage."</string>
     <string name="ethernet_label">Ethernet</string>
     <string name="evening">Afternoon</string>
     <string name="expand_button_title">Advanced</string>
+    <string name="expand_menu_text">Open Menu</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="face_re_enroll_dialog_content">"To set up Face Unlock again, your current face model will be deleted.
+
+You’ll need to set up this feature again to use your face to unlock your phone."</string>
+    <string name="face_re_enroll_dialog_title">Set up Face Unlock</string>
+    <string name="face_re_enroll_notification_name">Face Unlock</string>
+    <string name="face_re_enroll_notification_title">Set up Face Unlock again</string>
+    <string name="face_reenroll_failure_dialog_content">Couldn’t set up face unlock. Go to Settings to try again.</string>
+    <string name="face_unlock_fail_retry_global">Tap above to use Face unlock</string>
+    <string name="face_unlock_locked">"Can't use Face unlock now"</string>
+    <string name="face_unlock_password_and_fingerprint">Enter password or use fingerprint to unlock</string>
+    <string name="face_unlock_passwork_and_fingerprint">Use password or fingerprint</string>
+    <string name="face_unlock_pattern_and_fingerprint">Draw pattern or use fingerprint to unlock</string>
+    <string name="face_unlock_pin_and_fingerprint">Enter PIN or use fingerprint to unlock</string>
+    <string name="face_unlock_success">Unlocked successfully</string>
+    <string name="face_unlock_swipe_up_retry">Swipe up to try again</string>
     <string name="failed_attempts_now_wiping_device">"Too many incorrect attempts. This device's data will be deleted."</string>
     <string name="failed_attempts_now_wiping_dialog_dismiss">Dismiss</string>
     <string name="failed_attempts_now_wiping_profile">Too many incorrect attempts. This work profile and its data will be deleted.</string>
@@ -677,10 +715,36 @@ If you resume, charges may apply for data usage."</string>
     <string name="fgs_manager_dialog_title">Active apps</string>
     <string name="fgs_manager_footer_label">{count, plural, =1 {# app is active} other {# apps are active} }</string>
     <string name="finger_error_single_mode">"Can't use fingerprint scanner in one-handed mode. Exit one-handed mode and try again."</string>
+    <string name="fingerprint_again_identified_msg">Your fingerprint is active now. Use it to unlock the device, or enter password.</string>
+    <string name="fingerprint_again_identified_msg_password">"Your fingerprint is active now.
+Use it to unlock the device, or enter your password."</string>
+    <string name="fingerprint_again_identified_msg_pattern">"Your fingerprint is active now.
+Use it to unlock the device, or draw your pattern."</string>
+    <string name="fingerprint_again_identified_msg_pin">"Your fingerprint is active now.
+Use it to unlock the device, or enter your PIN."</string>
     <string name="fingerprint_dialog_touch_sensor">Touch the fingerprint sensor</string>
+    <string name="fingerprint_not_identified_msg">Too many unsuccessful attempts. Enter your screen lock now or try using the fingerprint in a few seconds.</string>
+    <string name="fingerprint_not_identified_msg_password">"Too many unsuccessful attempts.
+Enter your password to unlock."</string>
+    <string name="fingerprint_not_identified_msg_pattern">"Too many unsuccessful attempts.
+Draw your pattern to unlock."</string>
+    <string name="fingerprint_not_identified_msg_pin">"Too many unsuccessful attempts.
+Enter your PIN to unlock."</string>
+    <string name="fingerprint_re_enroll_dialog_content">"To set up Fingerprint Unlock again, your current fingerprint images and models will be deleted.
+
+After they’re deleted, you’ll need to set up Fingerprint Unlock again to use your fingerprint to unlock your phone or verify it’s you."</string>
+    <string name="fingerprint_re_enroll_dialog_content_singular">"To set up Fingerprint Unlock again, your current fingerprint images and model will be deleted.
+
+After they’re deleted, you’ll need to set up Fingerprint Unlock again to use your fingerprint to unlock your phone or verify it’s you."</string>
+    <string name="fingerprint_re_enroll_dialog_title">Set up Fingerprint Unlock</string>
+    <string name="fingerprint_re_enroll_notification_name">Fingerprint Unlock</string>
+    <string name="fingerprint_re_enroll_notification_title">Set up Fingerprint Unlock again</string>
+    <string name="fingerprint_reenroll_failure_dialog_content">Couldn’t set up fingerprint unlock. Go to Settings to try again.</string>
+    <string name="fingerprint_try_again_msg">"Couldn't verify fingerprint, try again."</string>
     <string name="fingerprint_try_again_text">Try again</string>
     <string name="flash_device">/sys/class/leds/flashlight/brightness</string>
     <string name="float_button_text">Float</string>
+    <string name="float_notification_snooze_strategy">Hide floating notifications temporarily</string>
     <string name="fmt_chinese_date">N月e</string>
     <string name="fmt_date">D</string>
     <string name="fmt_date_day">d</string>
@@ -733,6 +797,10 @@ If you resume, charges may apply for data usage."</string>
     <string name="fmt_weekday_time">W T</string>
     <string name="fmt_weekday_time_timezone">W T z</string>
     <string name="fmt_weekday_timezone">W z</string>
+    <string name="font_scale_percentage">%1$d %%</string>
+    <string name="font_scaling_dialog_title">Font Size</string>
+    <string name="font_scaling_larger">Make larger</string>
+    <string name="font_scaling_smaller">Make smaller</string>
     <string name="forget_password_string_for_esim"><u>Forgot PUK code</u></string>
     <string name="friday">Friday</string>
     <string name="friday_short">Fri</string>
@@ -756,7 +824,21 @@ If you resume, charges may apply for data usage."</string>
     <string name="global_action_smart_lock_disabled">Extend Unlock disabled</string>
     <string name="go_to_web">Go to browser</string>
     <string name="got_it">Got it</string>
-    <string name="grant_admin">Give this user admin privileges</string>
+    <string name="grant_admin">Yes, make them an admin</string>
+    <string name="group_system_access_all_apps_search">Access list of all apps and search (i.e. Search/Launcher)</string>
+    <string name="group_system_access_google_assistant">Access Google Assistant</string>
+    <string name="group_system_access_home_screen">Access home screen</string>
+    <string name="group_system_access_notification_shade">Access notification shade</string>
+    <string name="group_system_access_system_app_shortcuts">Access list of system / apps shortcuts</string>
+    <string name="group_system_access_system_settings">Access system settings</string>
+    <string name="group_system_cycle_back">Cycle through recent apps (back)</string>
+    <string name="group_system_cycle_forward">Cycle through recent apps (forward)</string>
+    <string name="group_system_full_screenshot">Take a full screenshot</string>
+    <string name="group_system_go_back">Back: go back to previous state (back button)</string>
+    <string name="group_system_hide_reshow_taskbar">Hide and (re)show taskbar</string>
+    <string name="group_system_lock_screen">Lock screen</string>
+    <string name="group_system_overview_open_apps">Overview of open apps</string>
+    <string name="group_system_quick_memo">Pull up Notes app for quick memo</string>
     <string name="guest_exit_button">Exit guest mode</string>
     <string name="guest_exit_clear_data_button">Delete</string>
     <string name="guest_exit_dialog_button">Exit</string>
@@ -846,14 +928,26 @@ Tap for more info"</string>
     <string name="inline_done_button">Done</string>
     <string name="inline_ok_button">Apply</string>
     <string name="inline_turn_off_notifications">Turn off notifications</string>
+    <string name="input_lockscreen_password_hint_text">Enter password</string>
+    <string name="input_lockscreen_pattern_hint_text">Draw pattern</string>
+    <string name="input_lockscreen_pin_hint_text">Enter PIN</string>
+    <string name="input_password_after_boot_msg">Entering your password is required when the device reboots</string>
+    <string name="input_password_after_boot_msg_can_not_switch_when_calling">"Can't switch between spaces during a call"</string>
     <string name="input_password_after_boot_msg_can_not_switch_when_extrememode_active">"Can't use Second space in Hibernation mode"</string>
     <string name="input_password_after_boot_msg_can_not_switch_when_extrememode_endurance_battery_zero_active">"Can't use Second space due to low battery"</string>
     <string name="input_password_after_boot_msg_can_not_switch_when_greenkid_active">"Can't switch between spaces when parental controls are on"</string>
     <string name="input_password_after_boot_msg_can_not_switch_when_superpower_active">"Can't switch between spaces when Ultra battery saver is on"</string>
     <string name="input_password_after_boot_msg_must_enter_owner_space">You need to enter First space after the device was rebooted</string>
     <string name="input_password_hint_text">Enter password</string>
+    <string name="input_pattern_after_boot_msg">Drawing your pattern is required when the device reboots</string>
+    <string name="input_pattern_after_face_not_allowed">Enter your password at least once every %d hours to keep this device secure</string>
+    <string name="input_pattern_after_restart_msg">Confirm your screen lock to continue</string>
+    <string name="input_pin_after_boot_msg">Entering your PIN is required when the device reboots</string>
     <string name="input_pin_code">Enter PIN</string>
     <string name="input_puk_code">Input PUK</string>
+    <string name="input_switch_input_language_next">Switch input language (next language)</string>
+    <string name="input_switch_input_language_previous">Switch input language (previous language)</string>
+    <string name="install_dialer_on_work_profile_action">Install a work phone app</string>
     <string name="install_type_instant">Instant app</string>
     <string name="instant_apps">Instant Apps</string>
     <string name="instant_apps_help_url" />
@@ -890,30 +984,35 @@ Tap for more info"</string>
     <string name="keyboard_key_page_up">Page Up</string>
     <string name="keyboard_key_space">Space</string>
     <string name="keyboard_key_tab">Tab</string>
+    <string name="keyboard_shortcut_clear_text">Clear text</string>
     <string name="keyboard_shortcut_group_applications">Applications</string>
     <string name="keyboard_shortcut_group_applications_assist">Assist</string>
     <string name="keyboard_shortcut_group_applications_browser">Browser (Chrome as default)</string>
+    <string name="keyboard_shortcut_group_applications_calculator">Calculator</string>
     <string name="keyboard_shortcut_group_applications_calendar">Calendar</string>
     <string name="keyboard_shortcut_group_applications_contacts">Contacts</string>
     <string name="keyboard_shortcut_group_applications_email">Email (Gmail as default)</string>
+    <string name="keyboard_shortcut_group_applications_maps">Maps</string>
     <string name="keyboard_shortcut_group_applications_music">Music</string>
     <string name="keyboard_shortcut_group_applications_sms">SMS</string>
+    <string name="keyboard_shortcut_group_input">Input</string>
     <string name="keyboard_shortcut_group_system">System</string>
     <string name="keyboard_shortcut_group_system_back">Back</string>
     <string name="keyboard_shortcut_group_system_home">Home</string>
+    <string name="keyboard_shortcut_group_system_multitasking">System multitasking</string>
     <string name="keyboard_shortcut_group_system_notifications">Notifications</string>
     <string name="keyboard_shortcut_group_system_recents">Recents</string>
     <string name="keyboard_shortcut_group_system_shortcuts_helper">Keyboard Shortcuts</string>
     <string name="keyboard_shortcut_group_system_switch_input">Switch keyboard layout</string>
+    <string name="keyboard_shortcut_search_category_current_app">Current app</string>
+    <string name="keyboard_shortcut_search_category_input">Input</string>
+    <string name="keyboard_shortcut_search_category_open_apps">Open apps</string>
+    <string name="keyboard_shortcut_search_category_system">System</string>
+    <string name="keyboard_shortcut_search_list_hint">Search shortcuts</string>
+    <string name="keyboard_shortcut_search_list_no_result">No shortcuts found</string>
+    <string name="keyboard_shortcut_search_list_title">Shortcuts</string>
     <string name="keyboardview_keycode_enter">Enter</string>
     <string name="keyguard_accessibility_pin_area">PIN area</string>
-    <string name="keyguard_affordance_enablement_dialog_action_template">Open %1$s</string>
-    <string name="keyguard_affordance_enablement_dialog_home_instruction_1">• The app is set up</string>
-    <string name="keyguard_affordance_enablement_dialog_home_instruction_2">• At least one device is available</string>
-    <string name="keyguard_affordance_enablement_dialog_qr_scanner_instruction">• Install a camera app</string>
-    <string name="keyguard_affordance_enablement_dialog_wallet_instruction_1">• The app is set up</string>
-    <string name="keyguard_affordance_enablement_dialog_wallet_instruction_2">• At least one card has been added to Wallet</string>
-    <string name="keyguard_affordance_press_too_short">Touch &amp; hold shortcut</string>
     <string name="keyguard_carrier_name_with_sim_locked_template" formatted="false">%s (%s)</string>
     <string name="keyguard_charged">Charged</string>
     <string name="keyguard_charging_battery_level">%s%%</string>
@@ -921,12 +1020,10 @@ Tap for more info"</string>
     <string name="keyguard_charging_normal_and_level_tip">Charging %d%%</string>
     <string name="keyguard_charging_quick_and_level_tip">Fast charging %d%%</string>
     <string name="keyguard_charging_super_quick_and_level_tip">Charging rapidly %d%%</string>
-    <string name="keyguard_enter_your_password">Enter your password</string>
-    <string name="keyguard_enter_your_pattern">Enter your pattern</string>
+    <string name="keyguard_enter_password">Enter password</string>
+    <string name="keyguard_enter_pattern">Draw pattern</string>
+    <string name="keyguard_enter_pin">Enter PIN</string>
     <string name="keyguard_enter_your_pin">Enter your PIN</string>
-    <string name="keyguard_face_failed">Can’t recognize face</string>
-    <string name="keyguard_face_successful_unlock">Unlocked by face</string>
-    <string name="keyguard_face_unlock_unavailable">Face Unlock unavailable</string>
     <string name="keyguard_fancy_colon" />
     <string name="keyguard_indication_charging_time">%2$s • Charging • Full in %1$s</string>
     <string name="keyguard_indication_charging_time_dock">%2$s • Charging • Full in %1$s</string>
@@ -937,29 +1034,34 @@ Tap for more info"</string>
     <string name="keyguard_left_mi_wallet">Mi Wallet</string>
     <string name="keyguard_left_remotecentral">Mi Remote</string>
     <string name="keyguard_left_smarthome">Mi Home</string>
+    <string name="keyguard_left_torch">Torch</string>
     <string name="keyguard_left_view_lock_wallpaper">Wallpaper Carousel</string>
     <string name="keyguard_missing_sim_message_short">No SIM</string>
     <string name="keyguard_network_locked_message">Network locked</string>
     <string name="keyguard_permanent_disabled_sim_message_short">Unusable SIM.</string>
     <string name="keyguard_plugged_in">%s • Charging</string>
     <string name="keyguard_plugged_in_charging_fast">%s • Charging rapidly</string>
-    <string name="keyguard_plugged_in_charging_limited">%s • Charging optimized to protect battery</string>
     <string name="keyguard_plugged_in_charging_slowly">%s • Charging slowly</string>
     <string name="keyguard_plugged_in_dock">%s • Charging</string>
     <string name="keyguard_plugged_in_incompatible_charger">%s • Issue with charging accessory</string>
     <string name="keyguard_plugged_in_wireless">%s • Charging wirelessly</string>
-    <string name="keyguard_retry">Swipe up to try again</string>
     <string name="keyguard_sim_error_message_short">Invalid Card.</string>
     <string name="keyguard_sim_locked_message">SIM is locked.</string>
     <string name="keyguard_sim_puk_locked_message">SIM is PUK-locked.</string>
     <string name="keyguard_sim_unlock_progress_dialog_message">Unlocking SIM…</string>
     <string name="keyguard_suggest_fingerprint">Use fingerprint instead</string>
     <string name="keyguard_unlock">Swipe up to open</string>
-    <string name="keyguard_unlock_press">Press the unlock icon to open</string>
-    <string name="keyguard_unlock_to_continue">Unlock your device to continue</string>
+    <string name="keyguard_unlock_to_customize_ls">Unlock to customize lock screen</string>
     <string name="keyguard_widget_12_hours_format">h:mm</string>
     <string name="keyguard_widget_24_hours_format">kk:mm</string>
+    <string name="kg_bio_too_many_attempts_password">Password is required after too many attempts</string>
+    <string name="kg_bio_too_many_attempts_pattern">Pattern is required after too many attempts</string>
+    <string name="kg_bio_too_many_attempts_pin">PIN is required after too many attempts</string>
+    <string name="kg_bio_try_again_or_password">Try again or enter password</string>
+    <string name="kg_bio_try_again_or_pattern">Try again or draw pattern</string>
+    <string name="kg_bio_try_again_or_pin">Try again or enter PIN</string>
     <string name="kg_enter_confirm_pin_hint">Confirm desired PIN code</string>
+    <string name="kg_face_locked_out">Can’t unlock with face. Too many attempts.</string>
     <string name="kg_face_not_recognized">Not recognized</string>
     <string name="kg_face_sensor_privacy_enabled">To use Face Unlock, turn on camera access in Settings</string>
     <string name="kg_failed_attempts_almost_at_erase_profile">You have incorrectly attempted to unlock the phone %1$d times. After %2$d more unsuccessful attempts, the work profile will be removed, which will delete all profile data.</string>
@@ -968,6 +1070,8 @@ Tap for more info"</string>
     <string name="kg_failed_attempts_now_erasing_profile">You have incorrectly attempted to unlock the phone %d times. The work profile will be removed, which will delete all profile data.</string>
     <string name="kg_failed_attempts_now_erasing_user">You have incorrectly attempted to unlock the phone %d times. This user will be removed, which will delete all user data.</string>
     <string name="kg_failed_attempts_now_wiping">You have incorrectly attempted to unlock the phone %d times. This phone will be reset, which will delete all its data.</string>
+    <string name="kg_fp_locked_out">Can’t unlock with fingerprint. Too many attempts.</string>
+    <string name="kg_fp_not_recognized">Fingerprint not recognized</string>
     <string name="kg_invalid_confirm_pin_hint">PIN codes does not match</string>
     <string name="kg_invalid_sim_pin_hint">Type a PIN that is 4 to 8 numbers.</string>
     <string name="kg_invalid_sim_puk_hint">PUK code should be 8 numbers or more.</string>
@@ -979,18 +1083,42 @@ Tap for more info"</string>
     <string name="kg_password_wrong_pin_code_pukked">Incorrect SIM PIN code you must now contact your carrier to unlock your device.</string>
     <string name="kg_password_wrong_puk_code">{count, plural, =1 {Incorrect SIM PUK code, you have # remaining attempt before SIM becomes permanently unusable.} other {Incorrect SIM PUK code, you have # remaining attempts before SIM becomes permanently unusable.} }</string>
     <string name="kg_password_wrong_puk_code_dead">SIM is unusable. Contact your carrier.</string>
+    <string name="kg_primary_auth_locked_out_password">Too many attempts with incorrect password</string>
+    <string name="kg_primary_auth_locked_out_pattern">Too many attempts with incorrect pattern</string>
+    <string name="kg_primary_auth_locked_out_pin">Too many attempts with incorrect PIN</string>
+    <string name="kg_prompt_after_dpm_lock">For added security, device was locked by work policy</string>
+    <string name="kg_prompt_after_user_lockdown_password">Password is required after lockdown</string>
+    <string name="kg_prompt_after_user_lockdown_pattern">Pattern is required after lockdown</string>
+    <string name="kg_prompt_after_user_lockdown_pin">PIN is required after lockdown</string>
+    <string name="kg_prompt_auth_timeout">Added security required. Device wasn’t unlocked for a while.</string>
+    <string name="kg_prompt_password_auth_timeout">Added security required. Password not used for a while.</string>
+    <string name="kg_prompt_pattern_auth_timeout">Added security required. Pattern not used for a while.</string>
+    <string name="kg_prompt_pin_auth_timeout">Added security required. PIN not used for a while.</string>
     <string name="kg_prompt_reason_device_admin">Device locked by admin</string>
-    <string name="kg_prompt_reason_restart_password">Password required after device restarts</string>
-    <string name="kg_prompt_reason_restart_pin">PIN required after device restarts</string>
+    <string name="kg_prompt_reason_restart_password">Password is required after device restarts</string>
+    <string name="kg_prompt_reason_restart_pattern">Pattern is required after device restarts</string>
+    <string name="kg_prompt_reason_restart_pin">PIN is required after device restarts</string>
     <string name="kg_prompt_reason_timeout_password">For additional security, use password instead</string>
+    <string name="kg_prompt_reason_timeout_pattern">For additional security, use pattern instead</string>
     <string name="kg_prompt_reason_timeout_pin">For additional security, use PIN instead</string>
     <string name="kg_prompt_reason_user_request">Device was locked manually</string>
+    <string name="kg_prompt_unattended_update">Update will install during inactive hours</string>
     <string name="kg_puk_enter_pin_hint">Enter desired PIN code</string>
     <string name="kg_puk_enter_puk_hint">SIM is now disabled. Enter PUK code to continue. Contact carrier for details.</string>
     <string name="kg_puk_enter_puk_hint_multi">SIM \"%1$s\" is now disabled. Enter PUK code to continue. Contact carrier for details.</string>
     <string name="kg_sim_lock_esim_instructions">%1$s Disable eSIM to use device without mobile service.</string>
     <string name="kg_sim_pin_instructions">Enter SIM PIN.</string>
     <string name="kg_sim_unlock_progress_dialog_message">Unlocking SIM…</string>
+    <string name="kg_too_many_failed_attempts_countdown">{count, plural, =1 {Try again in # second.} other {Try again in # seconds.} }</string>
+    <string name="kg_trust_agent_disabled">Trust agent is unavailable</string>
+    <string name="kg_unlock_with_password_or_fp">Unlock with password or fingerprint</string>
+    <string name="kg_unlock_with_pattern_or_fp">Unlock with pattern or fingerprint</string>
+    <string name="kg_unlock_with_pin_or_fp">Unlock with PIN or fingerprint</string>
+    <string name="kg_wrong_input_try_fp_suggestion">Or unlock with fingerprint</string>
+    <string name="kg_wrong_password">Wrong password</string>
+    <string name="kg_wrong_password_try_again">Wrong password. Try again.</string>
+    <string name="kg_wrong_pattern_try_again">Wrong pattern. Try again.</string>
+    <string name="kg_wrong_pin_try_again">Wrong PIN. Try again.</string>
     <string name="kilobyte_per_second">KB/s</string>
     <string name="label_view">View</string>
     <string name="launcher_overlayable_package">com.android.launcher3</string>
@@ -1007,7 +1135,9 @@ Tap for more info"</string>
     <string name="letterbox_education_dialog_title">See and do more</string>
     <string name="letterbox_education_got_it">Got it</string>
     <string name="letterbox_education_reposition_text">Double-tap outside an app to reposition it</string>
-    <string name="letterbox_education_split_screen_text">Drag in another app for split-screen</string>
+    <string name="letterbox_education_split_screen_text">Drag in another app for split screen</string>
+    <string name="letterbox_reachability_reposition_text">"Double-tap to
+move this app"</string>
     <string name="letterbox_restart_cancel">Cancel</string>
     <string name="letterbox_restart_dialog_checkbox_title">Don’t show again</string>
     <string name="letterbox_restart_dialog_description">You can restart the app so it looks better on your screen, but you may lose your progress or any unsaved changes</string>
@@ -1023,6 +1153,7 @@ Tap for more info"</string>
     <string name="lock_screen_magazine_preview_fullscreen_bottom_button_text">Enter</string>
     <string name="lock_screen_no_sim_card_emergency_only">Emergency calls only</string>
     <string name="lock_screen_no_sim_card_no_service">No service</string>
+    <string name="lock_screen_settings">Customize lock screen</string>
     <string name="lock_screen_signature_title">Lock screen owner info</string>
     <string name="lockscreen_access_pattern_cell_added_verbose">Cell %1$s added</string>
     <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
@@ -1046,7 +1177,6 @@ If you don’t allow this app to access all device logs, it can still access its
     <string name="log_access_confirmation_learn_more_url">https://support.google.com/android/answer/12986432</string>
     <string name="log_access_confirmation_title">Allow %s to access all device logs?</string>
     <string name="magnification_drag_corner_to_resize">Drag corner to resize</string>
-    <string name="magnification_mode_switch_click_label">Switch</string>
     <string name="magnification_mode_switch_description">Magnification switch</string>
     <string name="magnification_mode_switch_state_full_screen">Magnify full screen</string>
     <string name="magnification_mode_switch_state_window">Magnify part of screen</string>
@@ -1089,6 +1219,8 @@ If you don’t allow this app to access all device logs, it can still access its
     <string name="media_output_dialog_pairing_new">Connect a device</string>
     <string name="media_output_dialog_unknown_launch_app_name">Unknown app</string>
     <string name="media_output_dialog_volume_percentage">%1$d%%</string>
+    <string name="media_output_end_session_dialog_stop">Stop</string>
+    <string name="media_output_end_session_dialog_summary">Stop your shared session to move media to another device</string>
     <string name="media_output_first_broadcast_title">How broadcasting works</string>
     <string name="media_output_first_notify_broadcast_message">"People near you with compatible Bluetooth devices can listen to the media you're broadcasting"</string>
     <string name="media_output_group_title_speakers_and_displays">Speakers &amp; Displays</string>
@@ -1101,11 +1233,10 @@ If you don’t allow this app to access all device logs, it can still access its
     <string name="media_output_status_unauthorized">Device not approved to play</string>
     <string name="media_output_status_unknown_error">Can’t play on this device</string>
     <string name="media_projection_action_text">Start now</string>
-    <string name="media_projection_dialog_service_text">The service providing this function will have access to all of the information that is visible on your screen or played from your device while recording or casting. This includes information such as passwords, payment details, photos, messages, and audio that you play.</string>
-    <string name="media_projection_dialog_service_title">Start recording or casting?</string>
-    <string name="media_projection_dialog_text">%s will have access to all of the information that is visible on your screen or played from your device while recording or casting. This includes information such as passwords, payment details, photos, messages, and audio that you play.</string>
     <string name="media_projection_dialog_title">Start recording or casting with %s?</string>
-    <string name="media_projection_permission_app_selector_title">Share or record an app</string>
+    <string name="media_projection_dialog_warning">%s will have access to all of the information that is visible on your screen or played from your device while recording or casting. This includes information such as passwords, payment details, photos, messages, and audio that you play.</string>
+    <string name="media_projection_sys_service_dialog_title">Start recording or casting?</string>
+    <string name="media_projection_sys_service_dialog_warning">The service providing this function will have access to all of the information that is visible on your screen or played from your device while recording or casting. This includes information such as passwords, payment details, photos, messages, and audio that you play.</string>
     <string name="media_seamless_other_device">Other device</string>
     <string name="media_transfer_failed">Something went wrong. Try again.</string>
     <string name="media_transfer_loading">Loading</string>
@@ -1162,6 +1293,16 @@ M/d"</string>
     <string name="miui_quick_settings_tiles_stock">vowifi1,vowifi2,cell,wifi,bt,airplane,autobrightness,mute,screenshot,flashlight,rotation,screenlock,scanner,papermode,night,quietmode,batterysaver,uwb_shp,aitranslate,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,gps,edit,hearingassisttile,controls</string>
     <string name="miui_quick_settings_tiles_stock_pad">vowifi1,vowifi2,cell,wifi,rotation,airplane,mute,screenshot,bt,autobrightness,screenlock,night,papermode,quietmode,batterysaver,gps,flashlight,scanner,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,edit,controls,workmode</string>
     <string name="miui_screen_rotation_freeze_message">Locked screen orientation in landscape mode</string>
+    <string name="miui_snooze_always_float">"Don't hide"</string>
+    <string name="miui_snooze_cancel">Cancel</string>
+    <string name="miui_snooze_default_time">For %d minute</string>
+    <string name="miui_snooze_to_settings">Settings</string>
+    <string name="miui_snooze_toast_hint_default">"Upcoming notifications will be hidden for %d minute. "</string>
+    <string name="miui_snooze_toast_hint_until_unlock_screen">"Upcoming notifications will be hidden until the device is locked. "</string>
+    <string name="miui_snooze_until_unlock_screen">Until locked</string>
+    <string name="miui_snooze_user_set_fail">Go to Settings > Notifications &amp; Control center for more options</string>
+    <string name="miui_snooze_user_set_success">Applied successfully. Go to Settings > Notifications &amp; Control center for more options.</string>
+    <string name="miui_unimportant_notifications">Unimportant notifications</string>
     <string name="miui_vertical_time_format_12">"hh
 mm"</string>
     <string name="miui_vertical_time_format_24">"HH
@@ -1169,6 +1310,7 @@ mm"</string>
     <string name="miuix_access_state_desc">Selected</string>
     <string name="miuix_appcompat_action_mode_select_all">Select all</string>
     <string name="miuix_appcompat_actionbar_immersion_button_more_description">More</string>
+    <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobile data</string>
     <string name="mobile_data_connection_active">Connected</string>
     <string name="mobile_data_disable_message">You won’t have access to data or the internet through %s. Internet will only be available via WLAN.</string>
@@ -1179,12 +1321,14 @@ mm"</string>
     <string name="mobile_data_poor_connection">Poor connection</string>
     <string name="mobile_data_settings_title">Mobile data</string>
     <string name="mobile_data_temp_connection_active">Temporarily connected</string>
+    <string name="mobile_data_text_format">%1$s — %2$s</string>
     <string name="monday">Monday</string>
     <string name="monday_short">Mon</string>
     <string name="monday_shortest">Mon</string>
     <string name="monitoring_button_view_controls">View controls</string>
     <string name="monitoring_button_view_policies">View Policies</string>
     <string name="monitoring_description_ca_certificate">A certificate authority is installed on this device. Your secure network traffic may be monitored or modified.</string>
+    <string name="monitoring_description_managed_device_named_vpn">This device is connected to the internet through %1$s. Your network activity, including emails and browsing data, is visible to your IT admin.</string>
     <string name="monitoring_description_managed_profile_ca_certificate">Your organization installed a certificate authority in your work profile. Your secure network traffic may be monitored or modified.</string>
     <string name="monitoring_description_managed_profile_named_vpn">Your work apps are connected to the internet through %1$s. Your network activity in work apps, including emails and browsing data, is visible to your IT admin and VPN provider.</string>
     <string name="monitoring_description_managed_profile_network_logging">Your admin has turned on network logging, which monitors traffic in your work profile but not in your personal profile.</string>
@@ -1200,7 +1344,7 @@ For more information, contact your IT admin."</string>
 Your IT admin can monitor and manage settings, corporate access, apps, data associated with your device, and your device's location information.
 
 For more information, contact your IT admin."</string>
-    <string name="monitoring_description_named_vpn">This device is connected to the internet through %1$s. Your network activity, including emails and browsing data, is visible to your IT admin.</string>
+    <string name="monitoring_description_named_vpn">This device is connected to the internet through %1$s. Your network activity, including emails and browsing data, is visible to the VPN provider.</string>
     <string name="monitoring_description_parental_controls">This device is managed by your parent. Your parent can see and manage information such as the apps you use, your location, and your screen time.</string>
     <string name="monitoring_description_personal_profile_named_vpn">Your personal apps are connected to the internet through %1$s. Your network activity, including emails and browsing data, is visible to your VPN provider.</string>
     <string name="monitoring_description_two_named_vpns">This device is connected to the internet through %1$s and %2$s. Your network activity, including emails and browsing data, is visible to your IT admin.</string>
@@ -1303,12 +1447,12 @@ If you have questions, contact %2$s."</string>
     <string name="nav_bar">Navigation bar</string>
     <string name="nav_bar_edge_panel">Navigation bar Edge Panel</string>
     <string name="nav_bar_layout">Layout</string>
-    <string name="network_speed_suffix">%1$s%2$s</string>
     <string name="new_notification_image_content_description">%1$s sent an image</string>
     <string name="new_notification_text_content_description">%1$s sent a message: %2$s</string>
     <string name="new_status_content_description">%1$s has a status update: %2$s</string>
     <string name="new_story_status">New story</string>
     <string name="new_story_status_content_description">%1$s shared a new story</string>
+    <string name="next">Next</string>
     <string name="night">Evening</string>
     <string name="no_auto_saver_action">No thanks</string>
     <string name="no_conversations_text">Your recent conversations will show up here</string>
@@ -1317,7 +1461,7 @@ If you have questions, contact %2$s."</string>
     <string name="non_carrier_network_unavailable">No other networks available</string>
     <string name="noon">Midday</string>
     <string name="not_default_data_content_description">Not set to use data</string>
-    <string name="not_grant_admin">Do not give user admin privileges</string>
+    <string name="not_grant_admin">No, don’t make them an admin</string>
     <string name="not_set">Not set</string>
     <string name="note_task_button_label">Notetaking</string>
     <string name="notif_inline_reply_remove_attachment_description">Remove attachment</string>
@@ -1389,6 +1533,10 @@ If you have questions, contact %2$s."</string>
     <string name="ongoing_privacy_dialog_recent_op">Recently used by %1$s</string>
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="ongoing_privacy_dialog_using_op">Being used by %1$s</string>
+    <string name="open_camera_hint_text">Drag the icon to open Camera</string>
+    <string name="open_lock_screen_magazine_hint_text">Swipe right for more options</string>
+    <string name="open_remote_center_hint_text">Swipe right to view controls</string>
+    <string name="open_uwb_hint_text">Swipe right to open Xiaomi Magic Control</string>
     <string name="orb_search_action">Search Action</string>
     <string name="other">Other</string>
     <string name="over_one_week_timestamp">Over 1 week ago</string>
@@ -1502,12 +1650,22 @@ If you have questions, contact %2$s."</string>
     <string name="quick_controls_title">Device controls</string>
     <string name="quick_settings_autobrightness_label">Auto brightness</string>
     <string name="quick_settings_batterysaver_label">Battery saver</string>
+    <string name="quick_settings_bluetooth_connected_tip">Connected via Bluetooth successfully</string>
     <string name="quick_settings_bluetooth_detail_empty_text">No paired devices available</string>
+    <string name="quick_settings_bluetooth_disconnected_tip">All Bluetooth devices will stay disconnected today</string>
     <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_secondary_label_audio">Audio</string>
+    <string name="quick_settings_bluetooth_secondary_label_battery_level">%s battery</string>
+    <string name="quick_settings_bluetooth_secondary_label_headset">Headset</string>
+    <string name="quick_settings_bluetooth_secondary_label_hearing_aids">Hearing Aids</string>
+    <string name="quick_settings_bluetooth_secondary_label_input">Input</string>
+    <string name="quick_settings_bluetooth_secondary_label_transient">Turning on…</string>
     <string name="quick_settings_brightness_dialog_title">Brightness</string>
     <string name="quick_settings_camera_label">Camera access</string>
     <string name="quick_settings_camera_mic_available">Available</string>
     <string name="quick_settings_camera_mic_blocked">Blocked</string>
+    <string name="quick_settings_cast_device_default_name">Unnamed device</string>
+    <string name="quick_settings_cast_no_wifi">Wi‑Fi not connected</string>
     <string name="quick_settings_cast_title">Screen Cast</string>
     <string name="quick_settings_casting">Casting</string>
     <string name="quick_settings_cellular_detail_dialog_message_turnoff">"If you turn off mobile data, you won't be able to use the internet unless you connect to WLAN. You'll still be able to send MMS. Turn off mobile data anyway?"</string>
@@ -1518,6 +1676,11 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_cellular_detail_title">Mobile data</string>
     <string name="quick_settings_cellular_detail_unable_change">"Can't set during call"</string>
     <string name="quick_settings_color_correction_label">Color correction</string>
+    <string name="quick_settings_connecting">Connecting...</string>
+    <string name="quick_settings_contrast_high">High</string>
+    <string name="quick_settings_contrast_label">Contrast</string>
+    <string name="quick_settings_contrast_medium">Medium</string>
+    <string name="quick_settings_contrast_standard">Standard</string>
     <string name="quick_settings_dark_mode_secondary_label_battery_saver">Battery Saver</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at">On at %s</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at_bedtime">On at bedtime</string>
@@ -1546,10 +1709,15 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_done">Done</string>
     <string name="quick_settings_edit_label">Edit</string>
     <string name="quick_settings_financed_disclosure_named_management">This device is provided by %s</string>
+    <string name="quick_settings_flashlight_camera_in_use">Camera in use</string>
     <string name="quick_settings_flashlight_label">Flashlight</string>
+    <string name="quick_settings_font_scaling_label">Font size</string>
     <string name="quick_settings_googlehome_label">Google Home</string>
     <string name="quick_settings_googlepay_label">Google Pay</string>
     <string name="quick_settings_hotspot_label">Hotspot</string>
+    <string name="quick_settings_hotspot_secondary_label_data_saver_enabled">Data Saver is on</string>
+    <string name="quick_settings_hotspot_secondary_label_num_devices">{count, plural, =1 {# device} other {# devices} }</string>
+    <string name="quick_settings_hotspot_secondary_label_transient">Turning on…</string>
     <string name="quick_settings_intelligent_dual_sim_accelerate_summary">Use mobile data of the secondary SIM to boost connection speed</string>
     <string name="quick_settings_intelligent_dual_sim_accelerate_title">Smart dual SIM</string>
     <string name="quick_settings_internet_label">Internet</string>
@@ -1564,6 +1732,8 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_more_settings">More settings</string>
     <string name="quick_settings_more_user_settings">Manage users</string>
     <string name="quick_settings_mute_label">Mute</string>
+    <string name="quick_settings_networks_available">Networks available</string>
+    <string name="quick_settings_networks_unavailable">Networks unavailable</string>
     <string name="quick_settings_nfc_label">NFC</string>
     <string name="quick_settings_night_display_label">Night Light</string>
     <string name="quick_settings_night_secondary_label_on_at">On at %s</string>
@@ -1584,6 +1754,7 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_screen_rotation_outer_portrait_locked">Outer screen locked in portrait mode</string>
     <string name="quick_settings_screen_rotation_outer_unlocked">Outer screen rotate on</string>
     <string name="quick_settings_screenlock_label">Lock screen</string>
+    <string name="quick_settings_screensaver_label">Screen saver</string>
     <string name="quick_settings_screenshot_label">Screenshot</string>
     <string name="quick_settings_secondary_label_until">Until %s</string>
     <string name="quick_settings_sim_disabled">" (Disabled)"</string>
@@ -1610,7 +1781,8 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_wifi_detail_dual_wifi_switching_summary">Dual band WLAN speed boost needs to use two different WLAN bands. If you connect to a different main network, auxiliary connection will be lost.</string>
     <string name="quick_settings_wifi_is_off">WLAN is off</string>
     <string name="quick_settings_wifi_label">WLAN</string>
-    <string name="quick_settings_wlan_is_off">WLAN if off</string>
+    <string name="quick_settings_wifi_secondary_label_transient">Turning on…</string>
+    <string name="quick_settings_wlan_is_off">WLAN is off</string>
     <string name="quick_settings_work_mode_label">Work apps</string>
     <string name="quick_step_accessibility_toggle_overview">Toggle Overview</string>
     <string name="rapid_charge_mode_tip">Quick charge</string>
@@ -1636,6 +1808,7 @@ If you have questions, contact %2$s."</string>
     <string name="right_icon">Right icon</string>
     <string name="right_keycode">Right keycode</string>
     <string name="right_nav_bar_button_type">Extra right button type</string>
+    <string name="rotation_lock_camera_rotation_on">On - Face-based</string>
     <string name="running_foreground_services_msg">Tap for details on battery and data usage</string>
     <string name="running_foreground_services_title">Apps running in background</string>
     <string name="safety_quick_settings_tile_class">com.android.permissioncontroller.permission.service.v33.SafetyCenterQsTileService</string>
@@ -1660,27 +1833,28 @@ If you have questions, contact %2$s."</string>
     <string name="screen_pinning_toast_gesture_nav">To unpin this app, swipe up &amp; hold</string>
     <string name="screen_pinning_toast_recents_invisible">To unpin this app, touch &amp; hold Back and Home buttons</string>
     <string name="screen_recording_announcement">Screen recording started</string>
+    <string name="screen_share_permission_app_selector_title">Share or record an app</string>
     <string name="screen_stopped_recording_announcement">Screen recording stopped</string>
     <string name="screenrecord_audio_label">Record audio</string>
     <string name="screenrecord_background_processing_label">Processing screen recording</string>
     <string name="screenrecord_channel_description">Ongoing notification for a screen record session</string>
-    <string name="screenrecord_delete_error">Error deleting screen recording</string>
-    <string name="screenrecord_description">While recording, Android System can capture any sensitive information that’s visible on your screen or played on your device. This includes passwords, payment info, photos, messages, and audio.</string>
+    <string name="screenrecord_continue">Start</string>
     <string name="screenrecord_device_audio_and_mic_label">Device audio and microphone</string>
     <string name="screenrecord_device_audio_description">Sound from your device, like music, calls, and ringtones</string>
     <string name="screenrecord_device_audio_label">Device audio</string>
     <string name="screenrecord_mic_label">Microphone</string>
-    <string name="screenrecord_name">Screen Recorder</string>
     <string name="screenrecord_ongoing_screen_and_audio">Recording screen and audio</string>
     <string name="screenrecord_ongoing_screen_only">Recording screen</string>
+    <string name="screenrecord_permission_dialog_title">Start Recording?</string>
+    <string name="screenrecord_permission_dialog_warning_entire_screen">While you’re recording, Android has access to anything visible on your screen or played on your device. So be careful with things like passwords, payment details, messages, photos, and audio and video.</string>
+    <string name="screenrecord_save_error">Error saving screen recording</string>
     <string name="screenrecord_save_text">Tap to view</string>
     <string name="screenrecord_save_title">Screen recording saved</string>
     <string name="screenrecord_share_label">Share</string>
-    <string name="screenrecord_start">Start</string>
     <string name="screenrecord_start_error">Error starting screen recording</string>
-    <string name="screenrecord_start_label">Start Recording?</string>
     <string name="screenrecord_stop_label">Stop</string>
     <string name="screenrecord_taps_label">Show touches on screen</string>
+    <string name="screenrecord_title">Screen Recorder</string>
     <string name="screenshot_blocked_by_admin">Taking screenshots is blocked by your IT admin</string>
     <string name="screenshot_bottom_boundary_pct">Bottom boundary %1$d percent</string>
     <string name="screenshot_default_files_app_name">Files</string>
@@ -1706,9 +1880,7 @@ If you have questions, contact %2$s."</string>
     <string name="screenshot_text">Screenshot</string>
     <string name="screenshot_top_boundary_pct">Top boundary %1$d percent</string>
     <string name="screenshot_work_profile_notification">Saved in %1$s in the work profile</string>
-    <string name="security_settings_sfps_enroll_find_sensor_message">"The fingerprint sensor is on the power button. It’s the flat button next to the raised volume button on the edge of the phone.
-
-Pressing the power button turns off the screen."</string>
+    <string name="security_settings_sfps_enroll_find_sensor_message">The fingerprint sensor is on the power button. It’s the flat button next to the raised volume button on the edge of the phone.</string>
     <string name="see_all_networks">See all</string>
     <string name="see_more_title">See more</string>
     <string name="select_conversation_text">Tap a conversation to add it to your Home screen</string>
@@ -1740,6 +1912,7 @@ Pressing the power button turns off the screen."</string>
     <string name="sensor_privacy_start_use_mic_camera_dialog_title">Unblock device camera and microphone?</string>
     <string name="sensor_privacy_start_use_mic_dialog_content">This unblocks access for all apps and services allowed to use your microphone.</string>
     <string name="sensor_privacy_start_use_mic_dialog_title">Unblock device microphone?</string>
+    <string name="set_default_notes_app_toast_content">Set default notes app in Settings</string>
     <string name="settings_label">Settings</string>
     <string name="settingslib_config_headlineFontFamily" />
     <string name="settingslib_learn_more_text">Learn more</string>
@@ -1803,6 +1976,7 @@ Pressing the power button turns off the screen."</string>
     <string name="status_bar_work">Work profile</string>
     <string name="stream_accessibility">Accessibility</string>
     <string name="stream_alarm">Alarm</string>
+    <string name="stream_assistant">Voice assistant</string>
     <string name="stream_bluetooth_sco">Bluetooth</string>
     <string name="stream_dtmf">Dual multi tone frequency</string>
     <string name="stream_music">Media</string>
@@ -1828,6 +2002,10 @@ Pressing the power button turns off the screen."</string>
     <string name="sunday_shortest">Sun</string>
     <string name="switch_bar_off">Off</string>
     <string name="switch_bar_on">On</string>
+    <string name="system_multitasking_full_screen">Switch from Split screen to full screen</string>
+    <string name="system_multitasking_lhs">Enter Split screen with current app to LHS</string>
+    <string name="system_multitasking_replace">During Split screen: replace an app from one to another</string>
+    <string name="system_multitasking_rhs">Enter Split screen with current app to RHS</string>
     <string name="system_ui_aod_date_pattern">EEEMMMd</string>
     <string name="system_ui_date_pattern">@android:string/system_ui_date_pattern</string>
     <string name="system_ui_tuner">System UI Tuner</string>
@@ -1886,6 +2064,7 @@ Tap for more info"</string>
     <string name="tv_notification_panel_no_notifications">No Notifications</string>
     <string name="tv_notification_panel_title">Notifications</string>
     <string name="two_weeks_timestamp">2 weeks ago</string>
+    <string name="unknown">Unknown</string>
     <string name="unlock_to_see_notif_text">Unlock to see older notifications</string>
     <string name="unlock_to_view_networks">Unlock to view networks</string>
     <string name="upcoming_birthday_status">Birthday soon</string>
@@ -1917,15 +2096,17 @@ This app has not been granted record permission but could capture audio through 
     <string name="usb_disable_contaminant_detection">Enable USB</string>
     <string name="usb_port_enabled">USB port enabled to detect chargers and accessories</string>
     <string name="user_add_user">Add user</string>
-    <string name="user_add_user_message_guest_remove">"
+    <string name="user_add_user_message_long">"You can share this device with other people by creating additional users. Each user has their own space, which they can customize with apps, wallpaper, and so on. Users can also adjust device settings like Wi‑Fi that affect everyone.
 
-Adding a new user will exit guest mode and delete all apps and data from the current guest session."</string>
+When you add a new user, that person needs to set up their space.
+
+Any user can update apps for all other users. Accessibility settings and services may not transfer to the new user."</string>
     <string name="user_add_user_message_short">"When you add a new user, that person needs to set up their space.
 
 Any user can update apps for all other users."</string>
     <string name="user_add_user_title">Add new user?</string>
-    <string name="user_grant_admin_message">As an admin, they will be able to manage other users, modify device settings and factory reset the device.</string>
-    <string name="user_grant_admin_title">Give this user admin privileges?</string>
+    <string name="user_grant_admin_message">Admins have special privileges that other users don’t. An admin can manage all users, update or reset this device, modify settings, see all installed apps, and grant or revoke admin privileges for others.</string>
+    <string name="user_grant_admin_title">Make this user an admin?</string>
     <string name="user_image_choose_photo">Choose an image</string>
     <string name="user_image_photo_selector">Select photo</string>
     <string name="user_image_take_photo">Take a photo</string>
@@ -2031,4 +2212,8 @@ Wi‑Fi Address (BSSID)
     <string name="zen_alarm_warning_indef">"You won't hear your next alarm %1$s unless you turn this off before then"</string>
     <string name="zen_mode_enable_dialog_turn_on">Turn on</string>
     <string name="zen_mode_settings_turn_on_dialog_title">Turn on Do Not Disturb</string>
+    <string name="zen_mode_warnings_all_time_content">Notifications and calls will be silenced</string>
+    <string name="zen_mode_warnings_keyguard_content">Notifications and calls will be silenced when device is locked</string>
+    <string name="zen_mode_warnings_quit_immediately">Turn off</string>
+    <string name="zen_mode_warnings_title">DND is on</string>
 </resources>
