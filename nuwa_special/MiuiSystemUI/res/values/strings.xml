@@ -126,6 +126,9 @@
     <string name="accessibility_keyboard_symbol_board_shift2letter_button">Letters</string>
     <string name="accessibility_keyboard_symbol_board_symbol_lock_button">Symbols lock</string>
     <string name="accessibility_keyguard_face_unlock_view">Face unlock</string>
+    <string name="accessibility_left_control_center_button">Shortcut</string>
+    <string name="accessibility_left_lock_screen_magazine_button">Wallpaper Carousel</string>
+    <string name="accessibility_left_uwb_button">Xiaomi Magic Control</string>
     <string name="accessibility_location_active">Location requests active</string>
     <string name="accessibility_lock_icon">Device locked</string>
     <string name="accessibility_long_click_tile">Open settings</string>
@@ -285,7 +288,7 @@ Try again in %d seconds."</string>
     <string name="biometric_dialog_last_pin_attempt_before_wipe_profile">If you enter an incorrect PIN on the next attempt, your work profile and its data will be deleted.</string>
     <string name="biometric_dialog_last_pin_attempt_before_wipe_user">If you enter an incorrect PIN on the next attempt, this user will be deleted.</string>
     <string name="biometric_dialog_tap_confirm">Tap Confirm to complete</string>
-    <string name="biometric_dialog_tap_confirm_with_face">Unlocked by face.</string>
+    <string name="biometric_dialog_tap_confirm_with_face">Unlocked by face</string>
     <string name="biometric_dialog_try_again">Try again</string>
     <string name="biometric_dialog_use_password">Use password</string>
     <string name="biometric_dialog_use_pattern">Use pattern</string>
@@ -329,7 +332,6 @@ Try again in %d seconds."</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
-    <string name="bouncer_face_not_recognized">Face not recognized</string>
     <string name="broadcasting_description_is_broadcasting">Broadcasting</string>
     <string name="bt_is_off">Bluetooth is off</string>
     <string name="bt_le_audio_broadcast_dialog_different_output">Change output</string>
@@ -836,9 +838,7 @@ After they’re deleted, you’ll need to set up Fingerprint Unlock again to use
     <string name="group_system_full_screenshot">Take a full screenshot</string>
     <string name="group_system_go_back">Back: go back to previous state (back button)</string>
     <string name="group_system_hide_reshow_taskbar">Hide and (re)show taskbar</string>
-    <string name="group_system_lock_screen">Lock screen</string>
     <string name="group_system_overview_open_apps">Overview of open apps</string>
-    <string name="group_system_quick_memo">Pull up Notes app for quick memo</string>
     <string name="guest_exit_button">Exit guest mode</string>
     <string name="guest_exit_clear_data_button">Delete</string>
     <string name="guest_exit_dialog_button">Exit</string>
@@ -1054,14 +1054,7 @@ Tap for more info"</string>
     <string name="keyguard_unlock_to_customize_ls">Unlock to customize lock screen</string>
     <string name="keyguard_widget_12_hours_format">h:mm</string>
     <string name="keyguard_widget_24_hours_format">kk:mm</string>
-    <string name="kg_bio_too_many_attempts_password">Password is required after too many attempts</string>
-    <string name="kg_bio_too_many_attempts_pattern">Pattern is required after too many attempts</string>
-    <string name="kg_bio_too_many_attempts_pin">PIN is required after too many attempts</string>
-    <string name="kg_bio_try_again_or_password">Try again or enter password</string>
-    <string name="kg_bio_try_again_or_pattern">Try again or draw pattern</string>
-    <string name="kg_bio_try_again_or_pin">Try again or enter PIN</string>
     <string name="kg_enter_confirm_pin_hint">Confirm desired PIN code</string>
-    <string name="kg_face_locked_out">Can’t unlock with face. Too many attempts.</string>
     <string name="kg_face_not_recognized">Not recognized</string>
     <string name="kg_face_sensor_privacy_enabled">To use Face Unlock, turn on camera access in Settings</string>
     <string name="kg_failed_attempts_almost_at_erase_profile">You have incorrectly attempted to unlock the phone %1$d times. After %2$d more unsuccessful attempts, the work profile will be removed, which will delete all profile data.</string>
@@ -1070,8 +1063,6 @@ Tap for more info"</string>
     <string name="kg_failed_attempts_now_erasing_profile">You have incorrectly attempted to unlock the phone %d times. The work profile will be removed, which will delete all profile data.</string>
     <string name="kg_failed_attempts_now_erasing_user">You have incorrectly attempted to unlock the phone %d times. This user will be removed, which will delete all user data.</string>
     <string name="kg_failed_attempts_now_wiping">You have incorrectly attempted to unlock the phone %d times. This phone will be reset, which will delete all its data.</string>
-    <string name="kg_fp_locked_out">Can’t unlock with fingerprint. Too many attempts.</string>
-    <string name="kg_fp_not_recognized">Fingerprint not recognized</string>
     <string name="kg_invalid_confirm_pin_hint">PIN codes does not match</string>
     <string name="kg_invalid_sim_pin_hint">Type a PIN that is 4 to 8 numbers.</string>
     <string name="kg_invalid_sim_puk_hint">PUK code should be 8 numbers or more.</string>
@@ -1083,26 +1074,19 @@ Tap for more info"</string>
     <string name="kg_password_wrong_pin_code_pukked">Incorrect SIM PIN code you must now contact your carrier to unlock your device.</string>
     <string name="kg_password_wrong_puk_code">{count, plural, =1 {Incorrect SIM PUK code, you have # remaining attempt before SIM becomes permanently unusable.} other {Incorrect SIM PUK code, you have # remaining attempts before SIM becomes permanently unusable.} }</string>
     <string name="kg_password_wrong_puk_code_dead">SIM is unusable. Contact your carrier.</string>
-    <string name="kg_primary_auth_locked_out_password">Too many attempts with incorrect password</string>
-    <string name="kg_primary_auth_locked_out_pattern">Too many attempts with incorrect pattern</string>
-    <string name="kg_primary_auth_locked_out_pin">Too many attempts with incorrect PIN</string>
-    <string name="kg_prompt_after_dpm_lock">For added security, device was locked by work policy</string>
+    <string name="kg_prompt_after_update_password">Device updated. Enter password to continue.</string>
+    <string name="kg_prompt_after_update_pin">Device updated. Enter PIN to continue.</string>
     <string name="kg_prompt_after_user_lockdown_password">Password is required after lockdown</string>
-    <string name="kg_prompt_after_user_lockdown_pattern">Pattern is required after lockdown</string>
     <string name="kg_prompt_after_user_lockdown_pin">PIN is required after lockdown</string>
-    <string name="kg_prompt_auth_timeout">Added security required. Device wasn’t unlocked for a while.</string>
-    <string name="kg_prompt_password_auth_timeout">Added security required. Password not used for a while.</string>
-    <string name="kg_prompt_pattern_auth_timeout">Added security required. Pattern not used for a while.</string>
-    <string name="kg_prompt_pin_auth_timeout">Added security required. PIN not used for a while.</string>
     <string name="kg_prompt_reason_device_admin">Device locked by admin</string>
     <string name="kg_prompt_reason_restart_password">Password is required after device restarts</string>
-    <string name="kg_prompt_reason_restart_pattern">Pattern is required after device restarts</string>
     <string name="kg_prompt_reason_restart_pin">PIN is required after device restarts</string>
     <string name="kg_prompt_reason_timeout_password">For additional security, use password instead</string>
     <string name="kg_prompt_reason_timeout_pattern">For additional security, use pattern instead</string>
     <string name="kg_prompt_reason_timeout_pin">For additional security, use PIN instead</string>
     <string name="kg_prompt_reason_user_request">Device was locked manually</string>
-    <string name="kg_prompt_unattended_update">Update will install during inactive hours</string>
+    <string name="kg_prompt_unattended_update_password">Enter password to install update later</string>
+    <string name="kg_prompt_unattended_update_pin">Enter PIN to install update later</string>
     <string name="kg_puk_enter_pin_hint">Enter desired PIN code</string>
     <string name="kg_puk_enter_puk_hint">SIM is now disabled. Enter PUK code to continue. Contact carrier for details.</string>
     <string name="kg_puk_enter_puk_hint_multi">SIM \"%1$s\" is now disabled. Enter PUK code to continue. Contact carrier for details.</string>
@@ -1110,15 +1094,7 @@ Tap for more info"</string>
     <string name="kg_sim_pin_instructions">Enter SIM PIN.</string>
     <string name="kg_sim_unlock_progress_dialog_message">Unlocking SIM…</string>
     <string name="kg_too_many_failed_attempts_countdown">{count, plural, =1 {Try again in # second.} other {Try again in # seconds.} }</string>
-    <string name="kg_trust_agent_disabled">Trust agent is unavailable</string>
-    <string name="kg_unlock_with_password_or_fp">Unlock with password or fingerprint</string>
-    <string name="kg_unlock_with_pattern_or_fp">Unlock with pattern or fingerprint</string>
-    <string name="kg_unlock_with_pin_or_fp">Unlock with PIN or fingerprint</string>
-    <string name="kg_wrong_input_try_fp_suggestion">Or unlock with fingerprint</string>
     <string name="kg_wrong_password">Wrong password</string>
-    <string name="kg_wrong_password_try_again">Wrong password. Try again.</string>
-    <string name="kg_wrong_pattern_try_again">Wrong pattern. Try again.</string>
-    <string name="kg_wrong_pin_try_again">Wrong PIN. Try again.</string>
     <string name="kilobyte_per_second">KB/s</string>
     <string name="label_view">View</string>
     <string name="launcher_overlayable_package">com.android.launcher3</string>
@@ -1203,8 +1179,8 @@ If you don’t allow this app to access all device logs, it can still access its
     <string name="media_output_broadcast">Broadcast</string>
     <string name="media_output_broadcast_code">Password</string>
     <string name="media_output_broadcast_code_hint_no_less_than_min">Use at least 4 characters</string>
-    <string name="media_output_broadcast_code_hint_no_more_than_max">Use fewer than 16 characters</string>
     <string name="media_output_broadcast_dialog_save">Save</string>
+    <string name="media_output_broadcast_edit_hint_no_more_than_max">Use fewer than %1$d characters</string>
     <string name="media_output_broadcast_last_update_error">Can’t save.</string>
     <string name="media_output_broadcast_name">Broadcast Name</string>
     <string name="media_output_broadcast_start_failed">Can’t broadcast</string>
@@ -1238,6 +1214,9 @@ If you don’t allow this app to access all device logs, it can still access its
     <string name="media_projection_sys_service_dialog_title">Start recording or casting?</string>
     <string name="media_projection_sys_service_dialog_warning">The service providing this function will have access to all of the information that is visible on your screen or played from your device while recording or casting. This includes information such as passwords, payment details, photos, messages, and audio that you play.</string>
     <string name="media_seamless_other_device">Other device</string>
+    <string name="media_transfer_default_device_name">Connected device</string>
+    <string name="media_transfer_dock_speaker_device_name">Dock speaker</string>
+    <string name="media_transfer_external_device_name">External Device</string>
     <string name="media_transfer_failed">Something went wrong. Try again.</string>
     <string name="media_transfer_loading">Loading</string>
     <string name="media_transfer_playing_different_device">Playing on %1$s</string>
@@ -2003,9 +1982,6 @@ If you have questions, contact %2$s."</string>
     <string name="switch_bar_off">Off</string>
     <string name="switch_bar_on">On</string>
     <string name="system_multitasking_full_screen">Switch from Split screen to full screen</string>
-    <string name="system_multitasking_lhs">Enter Split screen with current app to LHS</string>
-    <string name="system_multitasking_replace">During Split screen: replace an app from one to another</string>
-    <string name="system_multitasking_rhs">Enter Split screen with current app to RHS</string>
     <string name="system_ui_aod_date_pattern">EEEMMMd</string>
     <string name="system_ui_date_pattern">@android:string/system_ui_date_pattern</string>
     <string name="system_ui_tuner">System UI Tuner</string>
