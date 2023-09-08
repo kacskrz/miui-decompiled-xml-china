@@ -642,7 +642,7 @@ Bring the card close to your phone's NFC reader to record info."</string>
     <string name="card_recharge_issue_protocols_extra">%1$s will be authorized to get your phone number in order to carry out customer services</string>
     <string name="card_recharge_issue_quantity_item_text">Multiple tickets</string>
     <string name="card_recharge_item_quantity_unit_text">%1$d tickets</string>
-    <string name="card_recharge_item_unit_text">RMB %1$.2f CNY</string>
+    <string name="card_recharge_item_unit_text">%1$.2f CNY</string>
     <string name="card_recharge_locating">Locating…</string>
     <string name="card_recharge_not_same_warning">This card is different with the previous one. Continue anyway?</string>
     <string name="card_recharge_not_same_warning_title">Looks like you switched cards</string>
@@ -706,6 +706,8 @@ Bring the card close to your phone's NFC reader to record info."</string>
     <string name="card_type_no_apply_privilege">"Your card type doesn't support this feature."</string>
     <string name="card_unit">cards</string>
     <string name="cart_list_recommendation">If the city that you locate supprots transport union card,you could issue Beijing-Tianjin-Hebei interconnection card.</string>
+    <string name="ccc_share_url_invalid">The share link is no longer valid</string>
+    <string name="ccc_share_url_occupied">The share link has been used</string>
     <string name="changsha_company_name">Changsha Metro Group Co., Ltd</string>
     <string name="check_find_phone_title">Checking phone status…</string>
     <string name="check_version_common_error_msg">"Couldn't get version info"</string>
@@ -878,6 +880,8 @@ Bring the card close to your phone's NFC reader to record info."</string>
     <string name="dialog_msg_uninstall_wallet">Install the wallet app to be able to use all its features. Install now?</string>
     <string name="dialog_positive_tip_install">Install</string>
     <string name="dialog_title_uninstall_wallet">Install wallet</string>
+    <string name="dkf_uninstall_tip">DKF is not detected, please install it before receiving the key</string>
+    <string name="dkf_version_low_tip">DKF version is low, please upgrade before receiving</string>
     <string name="door_card_alert_button_roger">Got it</string>
     <string name="door_card_auth_failed_dialog_message">Card auth failed, may not able to swipe card correctly. Please delete this card and re-simulate once problem occurs.</string>
     <string name="door_card_auth_failed_dialog_title">Card auth failed</string>
@@ -1294,9 +1298,9 @@ Just bring your phone next to a reader to pay."</string>
     <string name="mipay_introduction">Pay for offline purchases and public transport rides with your phone</string>
     <string name="mipay_key_item_create_date">Date added:%1$s</string>
     <string name="mipay_list_empty">Mi Pay not added</string>
-    <string name="mipay_more_settings_authorization_status">UnionPay account status</string>
     <string name="mipay_more_settings_customer_service">Bank customer service</string>
     <string name="mipay_more_settings_device_num">Device number</string>
+    <string name="mipay_more_settings_mipay_account_authorization_management_title">Mi Pay account authorization management</string>
     <string name="mipay_more_settings_num_star">****</string>
     <string name="mipay_more_settings_remove_mi_pay">Remove Mi Pay bank card</string>
     <string name="mipay_more_settings_remove_mi_pay_alert">Close Mi Pay will delete all card data from mobile , are you sure to delete?</string>
@@ -1709,6 +1713,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="permission_auth_status">Opened</string>
     <string name="permission_limited_function_desc">The system version is too early to obtain the permission control page. Please upgrade the system.</string>
     <string name="permission_location_desc">When you issue transportation card , tap card optimization , gift card service and smart card selection, you can turn on the location permission to improve the user experience of the above functions; if not, you cannot use the smart card selection function, but not affect the normal use of the card.</string>
+    <string name="permission_location_desc_none_nfc">When you use third party services provided by Mi Pay, you can turn on the location permission to improve the user experience of the above functions; if not, you cannot use the smart card selection function, but not affect the normal use of the card.</string>
     <string name="permission_location_name">Location Service</string>
     <string name="permission_location_summary">Used for issuing and tapping card experience optimization</string>
     <string name="permission_phone_desc">Your mobile number will be read when adding a Mi Pay bank card</string>
@@ -1716,6 +1721,7 @@ You can also double press the Power button to switch between cards."</string>
     <string name="permission_phone_summary">To improve card security, you need to obtain your mobile phone information when adding a Mi Pay card</string>
     <string name="permission_receive_sms_summary">Used for transportation card company customer service or bank card to confirm the activation of the card when adding Mi Pay</string>
     <string name="permission_sms_desc">When you add a Mi Pay bank card, transportation card, community access card, or other business cards that require a mobile phone number, you can automatically fill in the verification code by turning on this permission.</string>
+    <string name="permission_sms_desc_none_nfc">When you add a Mi Pay bank card, you can automatically fill in the verification code by turning on this permission.</string>
     <string name="permission_sms_name">Receive SMS</string>
     <string name="permission_unauth_status">Open</string>
     <string name="personalizing_bank_card">Just a sec…</string>
@@ -1901,7 +1907,7 @@ All card key related history (including added and deleted card keys) will be per
     <string name="sunday">Sunday</string>
     <string name="sunday_short">Sun</string>
     <string name="sunday_shortest">Sun</string>
-    <string name="support_bank_msg">150 banks supported</string>
+    <string name="support_bank_msg">150+ banks available</string>
     <string name="supported_bank_card_list_desc">Banks Supported</string>
     <string name="suzhou_company_name">Suzhou Citizen Card Co., Ltd</string>
     <string name="swipe_card_city">Swipe card city</string>
@@ -2197,13 +2203,15 @@ Verify your fingerprint to continue the transaction."</string>
     <string name="uni_settings_awaken_method_home_tips_ban">You have turned on the full screen gesture, unable to use the key operation related to the navigation key</string>
     <string name="uni_settings_awaken_method_power">Double click the power key</string>
     <string name="uni_settings_awaken_method_power_tips">Double click the phone power button to call up the card using page directly</string>
-    <string name="uni_settings_awaken_mode_title">others</string>
     <string name="uni_settings_check_version">Check for updates</string>
     <string name="uni_settings_check_version_is_latest">Up to date</string>
-    <string name="uni_settings_check_version_wait_update">Pending</string>
+    <string name="uni_settings_check_version_new_version">New version</string>
     <string name="uni_settings_feedback">Feedback</string>
+    <string name="uni_settings_mifare_card">Door card</string>
     <string name="uni_settings_mifare_cloud_backup_summary">The key card will be backed up to the cloud and associated with your Mi account, so that you can manage the backed up key card synchronously on your other devices</string>
     <string name="uni_settings_mifare_cloud_backup_title">Mifare cloud backup</string>
+    <string name="uni_settings_mipay_title">Mi Pay</string>
+    <string name="uni_settings_others_title">others</string>
     <string name="uni_settings_privacy">Privacy Setting</string>
     <string name="uni_settings_rf_card_title">Quick card setting</string>
     <string name="uni_settings_shortcut_create_fail">Fail to place the feature on your home screen</string>
@@ -2220,9 +2228,9 @@ Verify your fingerprint to continue the transaction."</string>
     <string name="union_pay_agree_protocol_three">,Authorize to use your mobile phone number to associate or register a UnionPay user</string>
     <string name="union_pay_agree_protocol_two">《UnionPay Mobile QuickPass User Agreement》</string>
     <string name="union_pay_authorization_application_dialog_title">UnionPay application for account authorization</string>
-    <string name="union_pay_version_too_low_button">Upgrade</string>
-    <string name="union_pay_version_too_low_content">The current version of UnionPay and NextPay is too low. In order to improve your payment security level, please bind the card after the upgrade is completed. After the upgrade, you will also be provided with more convenient card binding methods such as card number free one button card binding.</string>
-    <string name="union_pay_version_too_low_title">MiPay related app version is low</string>
+    <string name="union_pay_version_too_low_button">Update</string>
+    <string name="union_pay_version_too_low_content">To ensure payment security, update UnionPay TSM Secure Element (Xiaomi version) and Smart cards Web Extention to their latest versions before you add cards.</string>
+    <string name="union_pay_version_too_low_title">Update Mi Pay plug-ins</string>
     <string name="unspecified_error">Unspecified error</string>
     <string name="unspecified_retryable_error">Unspecified retryable error</string>
     <string name="unsupported_framework_operation">Unsupported framework exception</string>
