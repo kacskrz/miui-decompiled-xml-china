@@ -28,7 +28,6 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about_to_recover">Just a sec…</string>
-    <string name="access_denied_info">Too many attempts. Wait a minute or two and try again.</string>
     <string name="actionbar_button_up_description">Back</string>
     <string name="afternoon">Afternoon</string>
     <string name="am">AM</string>
@@ -56,6 +55,7 @@
     <string name="backup_failed_reason_app_usage_denied">Grant the required permissions to back up items</string>
     <string name="backup_failed_reason_cloud_space_not_enough">Not enough cloud storage left to save this backup. Upgrade your plan or free up cloud storage space.</string>
     <string name="backup_failed_reason_disk_space_not_enough">Not enough storage space. Free up storage first.</string>
+    <string name="backup_failed_reason_get_installed_apps_denied">Grant the required permissions in Settings to back up items</string>
     <string name="backup_failed_reason_network_error">Check your network settings and try again</string>
     <string name="backup_finished_notification_content">Backed up Home screen apps, system settings, etc.</string>
     <string name="backup_now">Back up now</string>
@@ -235,7 +235,6 @@ Note: Data for apps you've installed won't be backed up to Xiaomi Cloud."</strin
     <string name="cloud_restore_from_other_device">"Stop restoring from %s and delete this backup? You can't reverse this action."</string>
     <string name="cloud_restore_task">Restoring…</string>
     <string name="cloud_task_in_process">"Stop %s and delete this backup? You can't reverse this action."</string>
-    <string name="collect_diagnosis_log">Collect diagnosis log</string>
     <string name="confirm_restore">Restore</string>
     <string name="confirm_restore_app_data">"WeChat is already installed on this device. Can't restore WeChat data."</string>
     <string name="confirm_restore_summary">Your Home screen will be relaunched. Backed up apps will be downloaded automatically.</string>
@@ -258,10 +257,6 @@ Note: Data for apps you've installed won't be backed up to Xiaomi Cloud."</strin
     <string name="desktop_wait_network">Waiting…</string>
     <string name="desktop_waiting">Waiting</string>
     <string name="device_delete_prompt">Delete backup of %s?</string>
-    <string name="diagnosis_log_send_failed">Diagnosis log sent failed.</string>
-    <string name="diagnosis_log_sent_format">"Diagnosis log has been sent.
-ID:%s
-Please send this code to the technician."</string>
     <string name="dialog_app_usage_consent_message">This feature needs to access app usage data to be able to estimate the size of WeChat backups.</string>
     <string name="dialog_app_usage_consent_title">Allow accessing app usage data</string>
     <string name="dialog_app_usage_denied">Give Backup \"Usage access\" permission in the Settings to be able to back up items.</string>
@@ -274,6 +269,8 @@ Please send this code to the technician."</string>
     <string name="dialog_btn_restore_skip">Restore later</string>
     <string name="dialog_button_agree">Allow</string>
     <string name="dialog_button_disagree">"Don't allow"</string>
+    <string name="dialog_button_get_installed_apps_agree">Settings</string>
+    <string name="dialog_button_get_installed_apps_disagree">Cancel</string>
     <string name="dialog_buy_cloud_space">Upgrade</string>
     <string name="dialog_cancel_backup_cancel">Cancel</string>
     <string name="dialog_cancel_backup_confirm">OK</string>
@@ -282,6 +279,8 @@ Please send this code to the technician."</string>
     <string name="dialog_cloud_space_not_enough">This backup requires %1$s of free cloud storage space. Upgrade your storage plan to back up items.</string>
     <string name="dialog_content_cancel_backup">The data already uploaded will be lost if you cancel the backup. Cancel anyway?</string>
     <string name="dialog_content_cancel_restore">The data already restored will be retained if you stop restoring. Stop restoring now?</string>
+    <string name="dialog_get_installed_apps_consent_message">To be able to back up automatically, grant this app permission in Settings to access the list of apps installed on your device, and select Always allow.</string>
+    <string name="dialog_get_installed_apps_consent_title">Permissions required</string>
     <string name="dialog_msg_overwrite_backup">Local backup is different from the one in Xiaomi Cloud. If you continue, current backup will overwrite the previous one.</string>
     <string name="dialog_msg_restore_require_wlan">Restoring backups requires connecting to Wi-Fi.</string>
     <string name="dialog_msg_restore_require_wlan_china">Restoring backups requires connecting to WLAN.</string>
@@ -290,6 +289,11 @@ Please send this code to the technician."</string>
     <string name="dialog_negative_btn_cancel_restore">Stop restoring</string>
     <string name="dialog_positive_btn_cancel_backup">"Don't cancel"</string>
     <string name="dialog_positive_btn_cancel_restore">"Don't stop"</string>
+    <string name="dialog_recommend_wechat_backup_content">You can now back up WeChat conversations and other data to Xiaomi Cloud. To be able to back up your items, make sure you have enough cloud storage space, and that this device is locked, has over %s battery, and is connected to Wi-Fi at night. You can also back up manually at any time.</string>
+    <string name="dialog_recommend_wechat_backup_content_china">You can now back up WeChat conversations and other data to Xiaomi Cloud. To be able to back up your items, make sure you have enough cloud storage space, and that this device is locked, has over %s battery, and is connected to WLAN at night. You can also back up manually at any time.</string>
+    <string name="dialog_recommend_wechat_backup_negative">Got it</string>
+    <string name="dialog_recommend_wechat_backup_positive">Learn more</string>
+    <string name="dialog_recommend_wechat_backup_title">Back up WeChat data</string>
     <string name="dialog_title_cancel_backup">Cancel backup</string>
     <string name="dialog_title_cancel_restore">Stop restoring</string>
     <string name="dialog_title_require_wlan">Connect to Wi-Fi</string>
@@ -385,7 +389,6 @@ Please send this code to the technician."</string>
     <string name="fmt_weekday_time">W T</string>
     <string name="fmt_weekday_time_timezone">W T z</string>
     <string name="fmt_weekday_timezone">W z</string>
-    <string name="for_diagnosis_usage_only">Use this info for diagnosis only.</string>
     <string name="friday">Friday</string>
     <string name="friday_short">Fri</string>
     <string name="friday_shortest">Fri</string>
@@ -407,19 +410,14 @@ Please send this code to the technician."</string>
     <string name="home_restore_error">"Couldn't restore Home screen"</string>
     <string name="lack_of_storage">Not enough storage space</string>
     <string name="latest_backup_time_loading">Loading…</string>
-    <string name="library_android_database_sqlcipher_author">Zetetic, LLC</string>
-    <string name="library_android_database_sqlcipher_authorWebsite">https://www.zetetic.net/sqlcipher/</string>
-    <string name="library_android_database_sqlcipher_isOpenSource">true</string>
-    <string name="library_android_database_sqlcipher_libraryDescription">Android SQLite API based on SQLCipher</string>
-    <string name="library_android_database_sqlcipher_libraryName">SQLCipher for Android</string>
-    <string name="library_android_database_sqlcipher_libraryVersion">${clientVersionNumber}</string>
-    <string name="library_android_database_sqlcipher_libraryWebsite">https://www.zetetic.net/sqlcipher/</string>
-    <string name="library_android_database_sqlcipher_licenseLink">https://www.zetetic.net/sqlcipher/license/</string>
-    <string name="library_android_database_sqlcipher_repositoryLink">https://github.com/sqlcipher/android-database-sqlcipher</string>
     <string name="load_backup_failed">"Couldn't load backups"</string>
     <string name="loading_progress_num">Loaded %s%%</string>
     <string name="loading_user_backup">Loading user backups…</string>
     <string name="managespace_delete_backup">Delete</string>
+    <string name="manual_request_notification_permission_dialog_negative_button">Close</string>
+    <string name="manual_request_notification_permission_dialog_positive_button">Settings</string>
+    <string name="manual_request_permissions_dialog_description">"If you don't grant permissions for \"%s\", you won't receive timely notifications about unsuccessful backups and other important actions. You can grant this permission in Settings."</string>
+    <string name="manual_request_permissions_dialog_title">Permissions required</string>
     <string name="menu_item_managespace">Manage space</string>
     <string name="menu_item_sort">Sort by</string>
     <string name="menu_item_sort_name">Name</string>
@@ -428,15 +426,16 @@ Please send this code to the technician."</string>
     <string name="miui_device_name">Android</string>
     <string name="miuix_access_state_desc">Selected</string>
     <string name="miuix_alphabet_indexer_name">Index bar</string>
-    <string name="miuix_appcompat_action_mode_deselect_all">Deselect</string>
+    <string name="miuix_appcompat_action_mode_deselect_all">Deselect all</string>
     <string name="miuix_appcompat_action_mode_select_all">Select all</string>
     <string name="miuix_appcompat_action_mode_title_empty">Select items</string>
     <string name="miuix_appcompat_actionbar_immersion_button_more_description">More</string>
     <string name="miuix_appcompat_cancel_description">Cancel</string>
     <string name="miuix_appcompat_confirm_description">Confirm</string>
     <string name="miuix_appcompat_delete_description">Delete</string>
-    <string name="miuix_appcompat_deselect_all">Deselect</string>
+    <string name="miuix_appcompat_deselect_all">Deselect all</string>
     <string name="miuix_appcompat_deselect_all_description">Deselect all</string>
+    <string name="miuix_appcompat_edit">Edit</string>
     <string name="miuix_appcompat_search_action_mode_cancel">Cancel</string>
     <string name="miuix_appcompat_search_input_description">Search</string>
     <string name="miuix_appcompat_select_all">Select all</string>
@@ -499,8 +498,6 @@ Please send this code to the technician."</string>
     <string name="msg_restore_with_metered_network_hint">If you proceed to restore these items, mobile data will be used for downloading.</string>
     <string name="msg_restore_with_metered_network_pattern">"&lt;font color='red'>&lt;b>%s&lt;/b>&lt;/font> of files will be downloaded."</string>
     <string name="network_error">Connect to network</string>
-    <string name="network_error_info">A network error occurred. Check your network settings and try again.</string>
-    <string name="network_timeout_info">"Couldn't connect to the network. Try again."</string>
     <string name="night">Evening</string>
     <string name="no_account">Not signed in to Xiaomi Account.</string>
     <string name="no_backup">No backups in Xiaomi Cloud.</string>
@@ -508,7 +505,6 @@ Please send this code to the technician."</string>
     <string name="not_set">Not set</string>
     <string name="notification_channel_remind">Reminder</string>
     <string name="notification_channel_service">Service</string>
-    <string name="ok">OK</string>
     <string name="open_backup_switch">Toggle the backup switch</string>
     <string name="other_device_main_space">First space</string>
     <string name="other_device_second_space">Second space</string>
@@ -519,7 +515,6 @@ Please send this code to the technician."</string>
     <string name="pm">PM</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="process_whole_recovery">Restoring \"%s\"</string>
-    <string name="progressbar_title">Checking for security issues…</string>
     <string name="provision_back">Back</string>
     <string name="provision_background_restore_more_data">Restore more items in the background</string>
     <string name="provision_error_connect_msg">"Test network and try again. Backups aren't available when your device is offline."</string>
@@ -537,6 +532,13 @@ Please send this code to the technician."</string>
     <string name="remove_task_in_process">Removing…</string>
     <string name="remove_task_unfinished">Not finished removing</string>
     <string name="remove_unfinished">Removing, try again later</string>
+    <string name="repeat_recommend_wechat_backup_notification_content">You can now back up WeChat data. Tap for details.</string>
+    <string name="repeat_recommend_wechat_backup_notification_title">Back up WeChat data</string>
+    <string name="request_notification_permission_dialog_confirm">Got it</string>
+    <string name="request_permission_post_notification">For sending notifications about cloud backups</string>
+    <string name="request_permission_post_notification_title">Notifications</string>
+    <string name="request_permissions_dialog_description">Grant permissions to send notifications and reminders to be able to enjoy all the services that Cloud backup has to offer.</string>
+    <string name="request_permissions_dialog_title">Permissions required</string>
     <string name="required_permissions">android.permission.READ_EXTERNAL_STORAGE;android.permission.WRITE_EXTERNAL_STORAGE;com.android.permission.GET_INSTALLED_APPS</string>
     <string name="restore_app_order_finish">Done</string>
     <string name="restore_app_order_loading">Just a sec…</string>
@@ -592,8 +594,6 @@ Check your network settings and try again."</string>
     <string name="self_device_main_space">First space</string>
     <string name="self_device_second_space">Second space</string>
     <string name="send">Send</string>
-    <string name="send_diagnosis_log">Send diagnosis log</string>
-    <string name="sending">Sending…</string>
     <string name="session_action_btn_text_return_home">Home screen</string>
     <string name="session_backup_apk_data_text">Backing up WeChat data…</string>
     <string name="session_backup_apk_text">Backing up Home screen layout and system settings…</string>
@@ -607,6 +607,8 @@ Check your network settings and try again."</string>
     <string name="session_failed_disk_no_space_restore_detail">At least %s is required to restore items.</string>
     <string name="session_failed_disk_no_space_title">Insufficient internal storage. Clear storage and try again.</string>
     <string name="session_failed_dist_no_space_btn_text">Clear storage</string>
+    <string name="session_failed_get_installed_apps_denied_detail">To be able to back up automatically, grant this app permission in Settings to access the list of apps installed on your device, and select Always allow.</string>
+    <string name="session_failed_get_installed_apps_denied_title">Permissions required</string>
     <string name="session_failed_no_server_response_title">"Couldn't connect to the server."</string>
     <string name="session_failed_override_detail">Local backup is different from the one in Xiaomi Cloud. If you continue, current backup will overwrite the previous one. Overwrite now?</string>
     <string name="session_failed_override_title">Overwriting backup</string>
@@ -661,12 +663,12 @@ Check your network settings and try again."</string>
     <string name="storage_unit_gb">%s GB</string>
     <string name="storage_unit_mb">%s MB</string>
     <string name="success_open_cloudbackup">Turned on backups for Home screen apps</string>
+    <string name="successful_auto_backup_recommend_wechat_backup_notification_content">Backed up WeChat data. Tap for details.</string>
+    <string name="successful_auto_backup_recommend_wechat_backup_notification_title">Completed automatic backup</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="sunday">Sunday</string>
     <string name="sunday_short">Sun</string>
     <string name="sunday_shortest">Sun</string>
-    <string name="system_error_info">System is busy. Wait a minute or two and try again.</string>
-    <string name="temporary_not_available">temporary not available</string>
     <string name="the_anniversary_of_lifting_martial_law">Anniversary of Lifting Martial Law</string>
     <string name="the_anti_aggression_day">Anti-Aggression Day</string>
     <string name="the_arbor_day">Arbor Day</string>
@@ -724,7 +726,6 @@ Check your network settings and try again."</string>
     <string name="tuesday">Tuesday</string>
     <string name="tuesday_short">Tue</string>
     <string name="tuesday_shortest">Tue</string>
-    <string name="unknown_error_info">Unknown error</string>
     <string name="unselected">Not selected</string>
     <string name="unsupported_home">Update MIUI to the latest version.</string>
     <string name="v7_preference_off">OFF</string>
