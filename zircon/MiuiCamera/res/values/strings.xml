@@ -39,7 +39,7 @@
     <string name="accessibility_aperture_adjust">Aperture</string>
     <string name="accessibility_aperture_default">Automatic aperture adjustment</string>
     <string name="accessibility_aperture_panel_on">Open the aperture panel</string>
-    <string name="accessibility_audio_gain_adjust">增益调节</string>
+    <string name="accessibility_audio_gain_adjust">Volume adjustment</string>
     <string name="accessibility_auto_macro_off">Auto close focus is off</string>
     <string name="accessibility_auto_macro_on">Auto close focus is on</string>
     <string name="accessibility_auto_night_tip_off">Auto night mode is off</string>
@@ -77,10 +77,10 @@
     <string name="accessibility_closed">Off</string>
     <string name="accessibility_color">Color</string>
     <string name="accessibility_cv_lens_panel_on">Open the Master‑lens system panel</string>
-    <string name="accessibility_cv_watermark_show_location_off">显示经纬度，关闭状态</string>
-    <string name="accessibility_cv_watermark_show_location_on">显示经纬度，开启状态</string>
-    <string name="accessibility_cv_watermark_show_time_off">显示时间，关闭状态</string>
-    <string name="accessibility_cv_watermark_show_time_on">显示时间，开启状态</string>
+    <string name="accessibility_cv_watermark_show_location_off">"Coordinates won't be shown"</string>
+    <string name="accessibility_cv_watermark_show_location_on">Coordinates will be shown</string>
+    <string name="accessibility_cv_watermark_show_time_off">Time stamp is off</string>
+    <string name="accessibility_cv_watermark_show_time_on">Time stamp is on</string>
     <string name="accessibility_date">Date</string>
     <string name="accessibility_delay_capture_10s_button">Timer set for ten seconds</string>
     <string name="accessibility_delay_capture_3s_button">Timer set for three seconds</string>
@@ -248,14 +248,14 @@
     <string name="accessibility_video_resume_button">Resumed recording video</string>
     <string name="accessibility_video_sky_function_on">打开xxxxx功能</string>
     <string name="accessibility_video_sky_function_panel_on">打开xxxxxxx功能面板</string>
-    <string name="accessibility_watermark_device_off">机型水印，关闭状态</string>
-    <string name="accessibility_watermark_device_on">机型水印，开启状态</string>
+    <string name="accessibility_watermark_device_off">Device watermark is off</string>
+    <string name="accessibility_watermark_device_on">Device watermark is on</string>
     <string name="accessibility_watermark_image_off">Watermark is off</string>
     <string name="accessibility_watermark_image_on">Watermark is on</string>
     <string name="accessibility_watermark_text">Open watermark adjustment panel</string>
-    <string name="accessibility_watermark_time_off">时间水印，关闭状态</string>
-    <string name="accessibility_watermark_time_on">时间水印，开启状态</string>
-    <string name="accessibility_watermark_userdefine_enable">自定义水印入口</string>
+    <string name="accessibility_watermark_time_off">Time stamp is off</string>
+    <string name="accessibility_watermark_time_on">Time stamp is on</string>
+    <string name="accessibility_watermark_userdefine_enable">Custom watermark option</string>
     <string name="accessibility_whitebalance_custom_panel_on">Manual adjustments panel</string>
     <string name="accessibility_zoom_button">Zoom mode</string>
     <string name="actionbar_button_up_description">Back</string>
@@ -583,6 +583,7 @@ and adjust preferences automatically"</string>
     <string name="cclock_mutex_4k60fps">xxxxxx</string>
     <string name="cclock_mutex_8k">xxxxxx</string>
     <string name="cclock_mutex_sat">xxxxxx</string>
+    <string name="cclock_tip_hdr_disable">XxXxX</string>
     <string name="cclock_tip_off">xxxx</string>
     <string name="cclock_tip_on">xxxx</string>
     <string name="center_mark">Center mark</string>
@@ -1127,6 +1128,10 @@ Dual phone recording also allows you to connect to the another nearby device and
     <string name="exposure_mode_aperture_priority">xxxx xxxx</string>
     <string name="exposure_mode_manual">xxxx</string>
     <string name="exposure_mode_no_wide_camera_tip">xxxxxx</string>
+    <string name="exposure_mode_parameter_description_a">xxxx</string>
+    <string name="exposure_mode_parameter_description_m">xxxx</string>
+    <string name="exposure_mode_parameter_description_s">xxxx</string>
+    <string name="exposure_mode_parameter_description_title">xxxx</string>
     <string name="exposure_mode_shutter_priority">xxxx xxxx</string>
     <string name="extend_time_watermark_2_logo_text">SUPERMOON</string>
     <string name="eye_light">Eye sparkle</string>
@@ -1294,8 +1299,8 @@ if you rotate your phone"</string>
     <string name="guide_pop_window_msg_cv_lens">Tap to try Master‑lens system</string>
     <string name="guide_pop_window_msg_exposure_mode">xxxxxx</string>
     <string name="guide_pop_window_msg_mimoji">Tap to use avatars</string>
-    <string name="guide_pop_window_msg_picture_style">"点击可使用
-自定义摄影风格"</string>
+    <string name="guide_pop_window_msg_picture_style">"xxxxx
+xxxxxxxxxx"</string>
     <string name="guide_pop_window_msg_picture_style_add">"xxxxxxxxx
 xxxxxxxxxxxxxxx"</string>
     <string name="guide_pop_window_msg_softlight">Tap to adjust soft flash</string>
@@ -1376,6 +1381,8 @@ in Portrait mode"</string>
     <string name="lighting_rainbow">Rainbow</string>
     <string name="link_privacy_policy">http://www.miui.com/res/doc/privacy.html?lang=%s</string>
     <string name="link_user_agreement">http://www.miui.com/res/doc/eula.html?lang=%s</string>
+    <string name="lite_pref_camera_auto_hibernation_desc">When taking photos or video, screen will turn off after %d minutes of inactivity</string>
+    <string name="lite_pref_camera_lying_desc">Get a directional prompt when your device is parallel to the ground</string>
     <string name="live_draft_continue">Resume</string>
     <string name="live_draft_empty">No items here</string>
     <string name="live_edit_exit_confirm">Stop</string>
@@ -1484,11 +1491,10 @@ look larger on photos"</string>
     <string name="makeup_effect_entry_vitality">Verve</string>
     <string name="makeup_reset_toast">Cleared makeup effects successfully</string>
     <string name="manual_picture_style">Parameters</string>
-    <string name="manual_picture_style_desc_custom">Customized photographic style</string>
+    <string name="manual_picture_style_desc_custom">Custom photographic styles</string>
     <string name="manual_picture_style_desc_custom_add_equivalent">xxxx\"%s\"</string>
     <string name="manual_picture_style_desc_custom_add_hint">xxxx</string>
     <string name="manual_picture_style_desc_custom_add_hint_format">C%1$s%2$d</string>
-    <string name="manual_picture_style_desc_custom_add_max">xxxx%dxxxx</string>
     <string name="manual_picture_style_desc_custom_delete_title">xxxx\"%s\"？</string>
     <string name="manual_picture_style_desc_custom_import">xxxx</string>
     <string name="manual_picture_style_desc_custom_import_content">xxxxxxxxxxxxxxx</string>
@@ -1505,6 +1511,9 @@ look larger on photos"</string>
     <string name="manually_ultra_raw_tip">"Can't use zoom with Ultra RAW"</string>
     <string name="masterfilter_description_title">Movie filters</string>
     <string name="message_snap_double_confirm">Long pressing the volume button triggers NFC now. Replace this feature?</string>
+    <string name="metering_parameter_description_average">Average metering: Takes into account all areas of your image, working best for evenly lit scenes.</string>
+    <string name="metering_parameter_description_central">Center-weighted metering: Mainly focuses on the central area of the frame and gives due consideration to the brightness of the surrounding area. Best for shooting subjects in the center of the frame.</string>
+    <string name="metering_parameter_description_spot">Spot metering: Focuses on one spot, giving you precise control over the exposure.</string>
     <string name="midnight">Night</string>
     <string name="mimoji_app_name">Fun Cam</string>
     <string name="mimoji_back">Back</string>
@@ -1763,7 +1772,7 @@ look larger on photos"</string>
     <string name="msg_toast_doc4_text_not_found">"Couldn't detect text"</string>
     <string name="multi_window_mode_not_supported">"Camera can't be used in multi-window mode"</string>
     <string name="music_hint_tt">服务来源爱听卓乐</string>
-    <string name="mutex_hdr_quality">4K60FPS/8K不支持HDR</string>
+    <string name="mutex_hdr_quality" formatted="false">"HDR isn't supported for %1s %2sFPS"</string>
     <string name="network_access_user_notice_agree">Agree</string>
     <string name="network_access_user_notice_message_live_video"><Data>"Camera needs to connect to the internet to provide effects, music, and other features for short videos.&lt;br/>&lt;br/>By tapping \"Agree\" below, you're agreeing to our &lt;a href =%1$s>User Agreement&lt;/a> and &lt;a href =%2$s>Privacy Policy&lt;/a>, and allowing Camera to connect to the internet."</Data></string>
     <string name="network_access_user_notice_message_mi_live_video"><Data>Welcome to short videos! Our service needs to connect to the network to provide you with music and other features. &lt;br/>&lt;br/>Before using our service, you need to read and agree to our &lt;a href =%1$s>User Agreement&lt;/a> and &lt;a href =%2$s>Privacy Policy&lt;/a>, as well as allow the app to connect to the internet.</Data></string>
@@ -2261,6 +2270,7 @@ Keep the subject sharp while blurring the background."</string>
     <string name="pref_camera_picturesize_entry_3_4">3:4</string>
     <string name="pref_camera_picturesize_entry_8_9">8:9</string>
     <string name="pref_camera_picturesize_entry_9_16">9:16</string>
+    <string name="pref_camera_picturesize_entry_cinematic">Widescreen</string>
     <string name="pref_camera_picturesize_entry_fullscreen">Full</string>
     <string name="pref_camera_picturesize_entry_moive">Movie</string>
     <string name="pref_camera_picturesize_entry_real_cinematic">2.39:1</string>
@@ -2661,9 +2671,9 @@ Keep the subject sharp while blurring the background."</string>
     <string name="pref_wind_denoise_title">Wind filter</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="prek_b_j_o">Turn on to recreate stereo surround effect. Switch to landscape mode or connect earphones for best effect.</string>
-    <string name="prek_b_j_o_i">还原声音在空间内的立体环绕效果，播放音频时横屏或外接耳机效果更佳，仅在录像、专业视频、导演模式下生效，不支持外接麦克风</string>
+    <string name="prek_b_j_o_i">"Capture all sounds around the device while preserving their spatial characteristics. Play recorded audio in landscape mode or through earphones for the best effect. This feature works in Director mode, as well as in the regular and Pro video modes. External microphones aren't supported."</string>
     <string name="prek_b_j_p">Reduce the impact of wind on sound recording</string>
-    <string name="prek_b_j_p_i">智能降低风声对于视频收音的影响，仅在录像、专业视频、导演模式下生效，不支持外接麦克风</string>
+    <string name="prek_b_j_p_i">"Reduce the impact of wind on recorded audio while shooting videos. This feature works in Director mode, as well as in the regular and Pro video modes. External microphones aren't supported."</string>
     <string name="prep_video_ai_audio_new_desc_tip">Sounds from the subject in focus are enhanced</string>
     <string name="prep_video_ai_audio_new_desc_tip_alone">Sounds from the subject in focus are enhanced in landscape mode</string>
     <string name="prep_video_ai_audio_new_mutex_tip">"Can't use audio zoom now"</string>
@@ -3007,7 +3017,8 @@ Keep the subject sharp while blurring the background."</string>
     <string name="tomorrow">Tomorrow</string>
     <string name="too_low_battery">Low battery</string>
     <string name="top_menu_hint_text">Swipe down to open menu</string>
-    <string name="track_focus_mutex_hdr10plus_setting_tips">HDR10+/60FPS不支持万物追焦</string>
+    <string name="track_focus_mutex_hdr10plus_8k_setting_tips">"Motion tracking focus isn't supported for HDR10+/8K/60FPS videos"</string>
+    <string name="track_focus_mutex_hdr10plus_setting_tips">"Motion tracking focus isn't supported for HDR10+/60FPS videos"</string>
     <string name="track_focus_mutex_truecolor_setting_tips">"Motion tracking focus isn't supported for Dolby Vision/8K/60FPS videos"</string>
     <string name="tuesday">Tuesday</string>
     <string name="tuesday_short">Tue</string>
@@ -3020,6 +3031,7 @@ Keep the subject sharp while blurring the background."</string>
     <string name="tv_picturestyle_custom_color_tune">Cyan/Magenta</string>
     <string name="tv_picturestyle_custom_texture">Texture</string>
     <string name="tv_picturestyle_custom_tone">Tone</string>
+    <string name="tv_picturestyle_custom_vibrance">自然饱和度</string>
     <string name="tv_picturestyle_texture">Details</string>
     <string name="tv_picturestyle_tone">Tone</string>
     <string name="ubi_focus_capture_fail">"Couldn't take photo"</string>
@@ -3063,8 +3075,17 @@ Ultra wide angle mode comes to help when you can't move farther from the scene."
     <string name="unsupported_microphones_audio_track_tips">xxxx</string>
     <string name="unsupported_microphones_audio_type_tips">xxxx</string>
     <string name="unsupported_microphones_audio_zoom_tips">"Audio zoom doesn't support external microphones"</string>
+    <string name="update_apk_size">Size: %s</string>
+    <string name="update_btn_negative">Not now</string>
+    <string name="update_btn_positive">Update</string>
+    <string name="update_check">Check for updates</string>
+    <string name="update_check_title">Current version: %s</string>
+    <string name="update_ignore">Ignore this version</string>
+    <string name="update_latest_version">Up to date</string>
     <string name="update_loading">Downloaded %1$s</string>
+    <string name="update_new_version">Update available</string>
     <string name="update_start">Update %1$s</string>
+    <string name="update_title">Update available</string>
     <string name="user_agree">Agree</string>
     <string name="user_define_watermark_cancel">Cancel</string>
     <string name="user_define_watermark_save">Save</string>
@@ -3141,6 +3162,7 @@ You can use the buttons below to edit text, preview playback, and use other sett
     <string name="video_prompter_edit_description">Edit text</string>
     <string name="video_prompter_edit_exit_dialog_message">If you stop editing now, all unsaved changes will be lost. Stop anyway?</string>
     <string name="video_prompter_edit_exit_dialog_title">Stop editing?</string>
+    <string name="video_prompter_edit_format_not_supported">"This format isn't supported"</string>
     <string name="video_prompter_edit_import_fail">"Couldn't import"</string>
     <string name="video_prompter_edit_import_success">Imported successfully</string>
     <string name="video_prompter_edit_import_success_partially">This text is too long. Only part of it was imported.</string>
