@@ -185,6 +185,27 @@
         <item>com.dti.telefonica</item>
     </string-array>
     <array name="allowed_package_operator" />
+    <string-array name="allowed_package_unlocked_international">
+        <item>android.appenumeration.cts</item>
+        <item>android.camera.cts</item>
+        <item>android.content.cts</item>
+        <item>android.cts.install</item>
+        <item>android.packageinstaller.install.cts</item>
+        <item>android.packageinstaller.packagescheme.cts.withvisibility</item>
+        <item>android.packageinstaller.packagescheme.cts.withoutvisibility</item>
+        <item>android.permissionmultiuser.cts</item>
+        <item>android.scopedstorage.cts.device</item>
+        <item>android.security.cts</item>
+        <item>com.android.cts.rollback.host.app</item>
+        <item>com.android.tests.silentupdate</item>
+        <item>com.android.tests.stagedinstall</item>
+        <item>com.android.tests.securefrpinstall</item>
+        <item>android.mediaprovidertranscode.cts</item>
+        <item>com.android.tests.atomicinstall</item>
+        <item>android.util.cts</item>
+        <item>android.os.lib.app</item>
+        <item>android.permissionpolicy.cts</item>
+    </string-array>
     <item type="array" name="android_common_nicknames">@android:array/common_nicknames</item>
     <item type="array" name="android_config_longPressVibePattern">@android:array/config_longPressVibePattern</item>
     <item type="array" name="android_config_mobile_hotspot_provision_app">@android:array/config_mobile_hotspot_provision_app</item>
@@ -530,7 +551,6 @@
     <string-array name="config_skip_5G_apn_array">
         <item>camellian</item>
         <item>lisa</item>
-        <item>agate</item>
     </string-array>
     <integer-array name="config_smartCoverBoundary">
         <item>0</item>
@@ -5641,6 +5661,7 @@
         <item>com.miui.personalassistant/.picker.business.home.pages.PickerHomeActivity</item>
         <item>com.miui.personalassistant/.picker.business.detail.PickerDetailActivity</item>
         <item>com.miui.personalassistant/.picker.business.filter.PickerReplaceWidgetActivity</item>
+        <item>com.google.android.googlequicksearchbox</item>
     </string-array>
     <string-array name="list_about_desktop_mode_launch_fullscreen_app_not_hide_others">
         <item>com.miui.personalassistant/com.miui.personalassistant.picker.business.home.pages.PickerHomeActivity</item>
@@ -5681,6 +5702,7 @@
         <item>com.tencent.gamehelper.smoba</item>
         <item>com.mybank.android.phone</item>
         <item>com.sankuai.meituan</item>
+        <item>com.dianping.v1</item>
     </string-array>
     <string-array name="list_about_support_cvw_level_full">
         <item>com.android.contacts</item>
@@ -5734,6 +5756,15 @@
     <string-array name="list_launch_in_task">
         <item>com.android.bluetooth/.opp.BluetoothOppLauncherActivity</item>
         <item>com.android.bluetooth/.opp.BluetoothOppBtEnableActivity</item>
+    </string-array>
+    <string-array name="list_not_avoid_launch_other_freeform">
+        <item>com.miui.applicationlock.ConfirmAccessControl</item>
+        <item>com.xiaomi.mipush.sdk.NotificationClickedActivity</item>
+        <item>com.alipay.mobile.quinox.SchemeLauncherActivity</item>
+    </string-array>
+    <string-array name="list_revert_location_in_freeform">
+        <item>class com.miui.org.chromium.android_webview.PopupTouchHandleDrawable</item>
+        <item>class org.chromium.android_webview.PopupTouchHandleDrawable</item>
     </string-array>
     <string-array name="list_support_freeform_multi_task">
         <item>com.tencent.mm</item>
@@ -7259,6 +7290,44 @@
         <item>com.miui.misightservice</item>
     </string-array>
     <array name="package_user_request_clean_white_list" />
+    <string-array name="periodic_cleaner_clean_white_list">
+        <item>android.devicepolicy.cts</item>
+        <item>android.server.wm.cts</item>
+        <item>com.whatsapp</item>
+        <item>com.android.camera</item>
+        <item>com.google.android</item>
+        <item>com.test.commontest.urgenttest</item>
+        <item>com.tencent.androidqqmail</item>
+        <item>com.github.uiautomator</item>
+        <item>com.android.app1</item>
+        <item>com.android.app2</item>
+        <item>com.android.app3</item>
+        <item>com.android.cts.verifier</item>
+        <item>com.miui.miwallpaper</item>
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+    </string-array>
+    <string-array name="periodic_cleaner_game_list">
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.lolm</item>
+        <item>com.tencent.jkchess</item>
+    </string-array>
+    <string-array name="periodic_cleaner_home_or_recents">
+        <item>com.miui.home</item>
+        <item>com.android.systemui</item>
+        <item>com.mi.android.globallauncher</item>
+    </string-array>
+    <string-array name="periodic_cleaner_system_related_pkgs">
+        <item>android</item>
+        <item>com.lbe.security.miui</item>
+        <item>com.miui.securityadd</item>
+        <item>com.xiaomi.xmsf</item>
+        <item>com.miui.analytics</item>
+        <item>com.android.permissioncontroller</item>
+        <item>com.miui.securitycenter</item>
+        <item>com.miui.powerkeeper</item>
+    </string-array>
     <string-array name="process_disable_force_stop_list">
         <item>com.miui.securitycore</item>
     </string-array>
@@ -7589,11 +7658,13 @@
         <item>com.mi.globalbrowser</item>
         <item>com.mi.global.shop</item>
         <item>com.android.soundrecorder</item>
+        <item>com.android.provision</item>
         <item>com.whatsapp</item>
         <item>com.google.android.youtube</item>
         <item>com.android.chrome</item>
         <item>com.facebook.katana</item>
         <item>com.instagram.android</item>
+        <item>com.instagram.lite</item>
         <item>com.facebook.orca</item>
         <item>com.zhiliaoapp.musically</item>
         <item>com.google.android.gm</item>
@@ -7653,6 +7724,15 @@
     </string-array>
     <string-array name="show_hidden_task_if_finished_white_list_activity">
         <item>com.qzonex.component.outbox.OutboxActivity</item>
+    </string-array>
+    <string-array name="smart_orientation_activity_list">
+        <item>tv.danmaku.bili/com.bilibili.studio.centerplus.ui.CenterPlusMainActivity</item>
+    </string-array>
+    <string-array name="smart_orientation_list">
+        <item>com.miui.mediaviewer</item>
+        <item>com.youku.phone</item>
+        <item>ccom.sina.weibo</item>
+        <item>tv.danmaku.bili</item>
     </string-array>
     <string-array name="smart_power_alarm_package_white_list">
         <item>com.android.calendar</item>
@@ -7725,7 +7805,6 @@
         <item>com.qidian.QDReader</item>
         <item>com.tencent.news</item>
         <item>com.xs.fm</item>
-        <item>com.xiaomi.market</item>
     </string-array>
     <string-array name="smart_power_package_white_list">
         <item>com.xiaomi.xmsf</item>
