@@ -2,6 +2,7 @@
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="MSG_DEFAULT_DISPLAY_NAME">Unknown space</string>
+    <string name="MSG_UNDO_RECURRING_TASK_COMPLETED_WITHOUT_NEXT_DATE">Task completed and will reappear on its next scheduled day</string>
     <string name="MSG_UNDO_TASKS_COMPLETED">{NUM_TASKS_COMPLETED, plural, =1 {Task completed} other {# tasks completed}}</string>
     <string name="MSG_UNDO_TASKS_DELETED">{NUM_TASKS_DELETED, plural, =1 {Task deleted} other {# tasks deleted}}</string>
     <string name="MSG_UNDO_TASKS_MOVED">{NUM_TASKS_MOVED, plural, =1 {Task moved to {TITLE}}other {# tasks moved to {TITLE}}}</string>
@@ -14,7 +15,6 @@
     <string name="a11y_filter_require_audio">Require audio conferencing equipment</string>
     <string name="a11y_filter_require_video">Require video conferencing equipment</string>
     <string name="a11y_location_image">Location image</string>
-    <string name="a11y_location_list">Locations</string>
     <string name="a11y_mark_optional">Mark optional</string>
     <string name="a11y_mark_required">Mark required</string>
     <string name="a11y_marked_optional">%s marked optional</string>
@@ -70,7 +70,7 @@
     <string name="accessibility_attendee_description">from %1$s</string>
     <string name="accessibility_clear_search">Clear search</string>
     <string name="accessibility_collapse_all_day">Collapse all day section</string>
-    <string name="accessibility_compose">Create new event and more</string>
+    <string name="accessibility_compose">Create new event or other calendar entries</string>
     <string name="accessibility_drawer_open">Show Calendar List and Settings drawer</string>
     <string name="accessibility_event_open">Open Event</string>
     <string name="accessibility_expand_all_day">Expand all day section</string>
@@ -106,8 +106,8 @@
     <string name="accessibility_timely_chip_multi_day_count">%1$s (Day %2$d of %3$d)</string>
     <string name="account_change_attachments">Attachments have been removed because the account has changed.</string>
     <string name="account_item_default">Switch account</string>
-    <string name="account_lacks_features">Some features may not be available in this account.</string>
-    <string name="account_lacks_features_switch">Some features may not be available in this account. Switch account to fix this.</string>
+    <string name="account_lacks_calendar_features">This account doesn’t support all Calendar features.</string>
+    <string name="account_lacks_features_switch_to_google">Switch to a Google Account to take advantage of all Calendar features.</string>
     <string name="account_switch_dialog_subtitle">In the future, using %1$s will automatically switch accounts if necessary.</string>
     <string name="account_switch_dialog_title">You need to switch to another account to use %1$s</string>
     <string name="account_switch_no_suitable_account_for_events">No calendars have been synchronized with this device yet</string>
@@ -215,10 +215,6 @@ Actual: %2$s."</string>
     <string name="appointment_schedule_short_link_dialog_share_full">Share the full link instead</string>
     <string name="appointment_schedule_short_link_dialog_title">Getting a short link to share</string>
     <string name="appointment_slot_prefix">Appointment slot:</string>
-    <string name="appointment_slot_promo_got_it">Got it</string>
-    <string name="appointment_slot_promo_learn_more">Learn more</string>
-    <string name="appointment_slot_promo_text">You can now create your own appointment booking pages. Visit calendar.google.com on a computer to get started</string>
-    <string name="appointment_slot_promo_title">Simplify appointment scheduling</string>
     <string name="appointment_slots_availability">Availability</string>
     <string name="appointment_slots_discard">Do you want to discard this time proposal?</string>
     <string name="appointment_slots_duration">Event duration</string>
@@ -282,6 +278,7 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="calendar_storage_disabled_dialog_title">Calendar Storage disabled</string>
     <string name="calendar_successfully_added_message">Calendar was successfully added.</string>
     <string name="calendars_help_context">calendar_settings_android</string>
+    <string name="call_notification_hang_up_action">Hang Up</string>
     <string name="can_not_add_unencrypted_attachment">"You can't attach an unencrypted file to an encrypted event"</string>
     <string name="cancel">@android:string/no</string>
     <string name="cancel_booked_event_dialog_content">Cancellation emails will be sent to all guests</string>
@@ -333,6 +330,10 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
     <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
     <string name="common_open_on_phone">Open on phone</string>
+    <string name="completed_tasks_hidden_dialog_body">You can choose to show completed tasks in Settings</string>
+    <string name="completed_tasks_hidden_dialog_got_it_button">Got it</string>
+    <string name="completed_tasks_hidden_dialog_manage_setting_button">Manage setting</string>
+    <string name="completed_tasks_hidden_dialog_title">Completed tasks are now hidden</string>
     <string name="completing_task_with_subtasks_body">This task has subtasks. Use the Tasks app to complete it and its subtasks.</string>
     <string name="completing_task_with_subtasks_title">"Can't complete a task with subtasks"</string>
     <string name="conference_add_ons">Add-ons</string>
@@ -508,6 +509,10 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="dialog_header_calendar_title">Choose calendar</string>
     <string name="dialog_header_email_title">Choose email address</string>
     <string name="dialog_header_phone_title">Choose phone number</string>
+    <string name="disable_gcm_dialog_confirm_action">Revoke permission and share</string>
+    <string name="disable_gcm_dialog_reject_action">Cancel</string>
+    <string name="disable_gcm_dialog_text">To share this event, turn off the \"Guests can modify event\" permission</string>
+    <string name="disable_gcm_dialog_title">"You can't share this event"</string>
     <string name="disambiguation_email_content_description">Email %1$d of %2$d. Email %3$s: %4$s</string>
     <string name="disambiguation_phone_content_description">Phone number ^1 of ^2. Call ^3: ^4</string>
     <string name="disambiguation_sms_content_description">SMS ^1 of ^2. SMS ^3: ^4</string>
@@ -573,6 +578,10 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="email_subject_prefix">"Re: "</string>
     <string name="empty_description" />
     <string name="empty_suggestions_explanation">No room available at this time.</string>
+    <string name="enable_gcsgl_dialog_confirm_action">Grant permission and share</string>
+    <string name="enable_gcsgl_dialog_reject_action">Cancel</string>
+    <string name="enable_gcsgl_dialog_text">To share this event, turn on the \"Guests can see guest list\" permission</string>
+    <string name="enable_gcsgl_dialog_title">"You can't share this event"</string>
     <string name="encrypted_conference_label">Encrypted conference</string>
     <string name="encrypted_contents_removed">Encryption has been turned off.</string>
     <string name="end_by_date">; until %s</string>
@@ -588,14 +597,13 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="error_no_times_selected">Click in the calendar or add times before adding to email</string>
     <string name="error_offline_subtitle">Please check your connection and try again.</string>
     <string name="error_offline_title">You appear to be offline</string>
+    <string name="error_opening_gmail_thread">The requested conversation could not be loaded.</string>
     <string name="error_repeating_task_start_time_in_past">Start time of a repeating task cannot be in the past.</string>
     <string name="error_start_time_after_end_time">Start time cannot be after the end time.</string>
     <string name="error_state_body">Please try again later.</string>
     <string name="error_state_title">An error occurred</string>
     <string name="error_working_location_missing">Working location is required.</string>
     <string name="event">Event</string>
-    <string name="event_colors_not_available_message">You can only use event colors with a Google Account</string>
-    <string name="event_colors_not_available_title">Event colors not available</string>
     <string name="event_copy_to">Copy to…</string>
     <string name="event_duplicate">Duplicate</string>
     <string name="event_encrypted">Encrypted</string>
@@ -736,6 +744,8 @@ Where: %5$s
     <string name="google_play_protect_title">Google Play Protect</string>
     <string name="google_primary_calendar_name">Events</string>
     <string name="got_it">Got it</string>
+    <string name="goto_next_month">Go to next month</string>
+    <string name="goto_previous_month">Go to previous month</string>
     <string name="goto_tasks">Open Tasks</string>
     <string name="goto_today">Jump to Today</string>
     <string name="guest_notification_prompt_cancellations_will_be_sent_message">Cancellation emails will be sent to Google Calendar guests.</string>
@@ -802,15 +812,16 @@ Where: %5$s
     <string name="id_key_general">general</string>
     <string name="id_key_holiday">holiday</string>
     <string name="id_key_smart_mail">smart_mail</string>
-    <string name="id_key_working_hours">working_hours</string>
     <string name="illegal_times_selected_dialog_text">Change the start time to be before the end of the event.</string>
     <string name="import_event_action_prompt">Add to Calendar</string>
     <string name="inferred_rsvp_location_promo_body_text">"Calendar can set how you're joining based on your working location"</string>
     <string name="infinite_duration_accessibility_description">Ends never</string>
     <string name="infinite_duration_label">Never</string>
+    <string name="information_dialog_confirm_action">Got it</string>
+    <string name="information_dialog_text">Get a link you can send to others so they can view the event and respond. <a href="https://support.google.com/calendar?p=link_sharing_android">Learn more</a></string>
+    <string name="information_dialog_title">Sharing calendar events</string>
     <string name="instructions_for_calendar_permission_settings_screen">In Settings, tap Permissions and enable Calendar.</string>
     <string name="interval_title">Repeats every</string>
-    <string name="item_is_selected">%1$s selected</string>
     <string name="join_by_phone_action_label">Join by phone</string>
     <string name="join_conference_with">Join with %s</string>
     <string name="join_from_non_google_system">Join from a third-party system</string>
@@ -824,9 +835,8 @@ Where: %5$s
     <string name="known_senders_opt_out_promo_title">"It's now easier to block spam"</string>
     <string name="launcher_shortcut_event">New event</string>
     <string name="launcher_shortcut_event_long">New event</string>
-    <string name="launcher_shortcut_reminder">New reminder</string>
-    <string name="launcher_shortcut_reminder_long">New reminder</string>
     <string name="learn_more">Learn more</string>
+    <string name="learn_more_google_accounts">Learn more about accounts.</string>
     <string name="legacy_holiday_label">%s (legacy)</string>
     <string name="libraries_material_featurehighlight_dismiss">Dismiss</string>
     <string name="list_delimiter">", "</string>
@@ -836,7 +846,8 @@ Where: %5$s
     <string name="loading_addons_error">"Conferencing solutions can't be loaded"</string>
     <string name="loading_addons_error_no_connection">"Conferencing solutions can't be loaded because there's no Internet connection"</string>
     <string name="loading_attendees">Loading attendees…</string>
-    <string name="local_account_deactivated_account_picker_explanation">This account doesn’t support sync and other major Calendar features. You can still add events to this account by selecting it during event creation.</string>
+    <string name="local_account_deactivated_account_picker_popup_explanation">You can add events to this account when you create them. Use a Google Account to take advantage of all Calendar features.</string>
+    <string name="local_account_deactivated_account_picker_popup_learn_more">Learn more about using accounts in Calendar.</string>
     <string name="location_conferencing_defer">None / to be specified later</string>
     <string name="location_conferencing_error_subtext">Enter a location</string>
     <string name="location_conferencing_in_person">In-person meeting</string>
@@ -867,11 +878,24 @@ Where: %5$s
     <string name="map_label">Map</string>
     <string name="maps_not_available">No application found to view this location.</string>
     <string name="material_clock_display_divider">:</string>
+    <string name="material_clock_toggle_content_description">Select AM or PM</string>
+    <string name="material_hour_24h_suffix">%1$s hours</string>
+    <string name="material_hour_selection">Select hour</string>
+    <string name="material_hour_suffix">"%1$s o'clock"</string>
+    <string name="material_minute_selection">Select minutes</string>
+    <string name="material_minute_suffix">%1$s minutes</string>
     <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Select time</string>
+    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
     <string name="meet_consumer_description_label">Video conferencing details added</string>
     <string name="meet_description_label">Video conferencing and dial-in details added</string>
     <string name="meet_sharing_joining_info">Google Meet joining info</string>
@@ -891,7 +915,6 @@ Where: %5$s
 
 To get events from Gmail, you must also turn on "<b>Smart features and personalization</b> in Gmail settings.</string>
     <string name="menu_smartmail_preferences">Events from Gmail</string>
-    <string name="menu_working_hours_preferences">Working hours</string>
     <string name="missing_permissions_dialog_button_negative">Dismiss</string>
     <string name="missing_permissions_dialog_button_positive">Switch to personal app</string>
     <string name="missing_permissions_dialog_text">To see all your calendars, please enable permissions for your personal Calendar app.</string>
@@ -920,13 +943,31 @@ To get events from Gmail, you must also turn on "<b>Smart features and personali
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_picker_a11y_next_month">Change to next month</string>
     <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">none</string>
+    <string name="mtrl_picker_cancel">Cancel</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
     <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
     <string name="mtrl_picker_end_date_description">End date %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
     <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_save">Save</string>
     <string name="mtrl_picker_start_date_description">Start date %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
     <string name="mtrl_picker_today_description">Today %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to Calendar view</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
@@ -936,6 +977,11 @@ To get events from Gmail, you must also turn on "<b>Smart features and personali
     <string name="mtrl_switch_thumb_path_unchecked">M8,16 A8,8 0 0,1 16,8 H16 A8,8 0 0,1 16,24 H16 A8,8 0 0,1 8,16</string>
     <string name="mtrl_switch_track_decoration_path">M1,16 A15,15 0 0,1 16,1 H36 A15,15 0 0,1 36,31 H16 A15,15 0 0,1 1,16</string>
     <string name="mtrl_switch_track_path">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
+    <string name="mtrl_timepicker_cancel">Cancel</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="name_pronunciation_pause_button_description">Pause name pronunciation audio</string>
+    <string name="name_pronunciation_play_button_description">Play name pronunciation audio</string>
+    <string name="name_pronunciation_record_button_description">Record name pronunciation audio</string>
     <string name="new_event_prefix">New event:</string>
     <string name="new_task_prefix">New task:</string>
     <string name="new_time_proposed">New time proposed to organizer</string>
@@ -949,6 +995,8 @@ To get events from Gmail, you must also turn on "<b>Smart features and personali
     <string name="no_end_time">No end time</string>
     <string name="no_entries_after">Only entries after %s are shown here</string>
     <string name="no_events_for_day">Nothing planned. Tap to create.</string>
+    <string name="no_events_info">Tap here to add events to your schedule</string>
+    <string name="no_events_title">Nothing planned</string>
     <string name="no_events_today">Nothing today</string>
     <string name="no_information">No information</string>
     <string name="no_more_events_today">Nothing else today</string>
@@ -972,6 +1020,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="notification_permission_explanation_page_message">To get alerts for upcoming events and tasks, allow Calendar to send notifications. You can adjust notifications for each event.</string>
     <string name="notification_permission_explanation_page_skip_button">Not right now</string>
     <string name="notification_permission_explanation_page_title">"Don't miss a thing"</string>
+    <string name="notification_permission_with_tasks_standalone_explanation_page_message">To get alerts for upcoming events, allow Calendar to send notifications. You can adjust notifications for each event.</string>
     <string name="notification_ticker_format">%1$s, %2$s</string>
     <string name="notification_tone_label">Calendar Notification</string>
     <string name="notifications_are_turned_off_in_settings">"Notifications are turned off in this device's settings"</string>
@@ -985,7 +1034,10 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="og_account_and_settings">Account and settings.</string>
     <string name="og_account_critical_alert_view_label_a11y">%1$s for %2$s</string>
     <string name="og_account_deactivated_a11y">Account switching deactivated for %1$s</string>
+    <string name="og_account_list_collapsed_a11y">Account list collapsed.</string>
+    <string name="og_account_list_expanded_a11y">Account list expanded.</string>
     <string name="og_account_particle_disc_no_accounts_available_a11y">Sign in</string>
+    <string name="og_account_picker_dialog_a11y">Account picker dialog.</string>
     <string name="og_account_switching_deactivated">Account switching deactivated</string>
     <string name="og_add_another_account">Add another account</string>
     <string name="og_choose_an_account_title">Choose an account</string>
@@ -1081,6 +1133,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="preference_edit_device_timezone_header">Time zone</string>
     <string name="preference_edit_display_short_events_as_30_min">Display shorter entries the same size as 30-minute entries</string>
     <string name="preference_edit_family_label">Manage</string>
+    <string name="preference_edit_hide_completed_tasks">Show completed tasks</string>
     <string name="preference_edit_no_ringtone_string">None</string>
     <string name="preference_edit_notifications_disabled_help">"You won't be notified because Calendar notifications are turned off in this device's settings."</string>
     <string name="preference_edit_notifications_disclaimer">You can change default notifications by going to the individual calendar, for example Events.</string>
@@ -1088,6 +1141,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="preference_edit_notify">Notify on this device</string>
     <string name="preference_edit_ringtone_header">Tone</string>
     <string name="preference_edit_show_declined">Show declined events</string>
+    <string name="preference_edit_show_month_illustrations">Show month illustrations</string>
     <string name="preference_edit_show_more_events_description">Turn off seasonal illustrations</string>
     <string name="preference_edit_show_more_events_label">Show more events</string>
     <string name="preference_edit_show_week_number">Show week number</string>
@@ -1130,6 +1184,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="propose_time_chip_text">Propose a new time</string>
     <string name="propose_time_proposal_prefix">Proposal: %s</string>
     <string name="propose_time_review_button_text">Review proposed time</string>
+    <string name="pstn_removal_promo">Tap <b>%s</b> to get dial-in info</string>
     <string name="public_holidays_only">Public holidays only</string>
     <string name="public_holidyays_and_others">Public and other holidays</string>
     <string name="quick_actions_call_content_description">Call %s.</string>
@@ -1178,7 +1233,8 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="reminders_migration_force_completed_with_only_keep_toast">Reminders for %s have been removed from Calendar but are still available in Google Keep</string>
     <string name="reminders_migration_only_keep_voluntary_completed_tooltip_title">Get notified of your to-dos with Tasks</string>
     <string name="reminders_migration_partial_failure_toast_only_completed_reminders_migrated">Completed reminders turned into tasks for %s. Some reminders are remaining.</string>
-    <string name="reminders_migration_tasks_disabled_card_description">Your administrator disabled Google Tasks for this account. To keep your reminders, please contact them to request access to Tasks or to download your data.</string>
+    <string name="reminders_migration_tasks_disabled_card_description">Your organization turned off Google Tasks for your account. To save your Calendar and Assistant reminder data, contact your Google Workspace administrator and request access to Tasks or to download your data.</string>
+    <string name="reminders_migration_tasks_disabled_card_title">Soon reminders will be upgraded to tasks</string>
     <string name="reminders_migration_tasks_disabled_toast">"Your organization turned off Google Tasks for %s. Your reminders couldn't be moved to Tasks, so they were deleted."</string>
     <string name="reminders_migration_tasks_disabled_tooltip_description">"Reminders for %s have been deleted because they couldn't be moved to Tasks. Your organization turned off Google Tasks for your account."</string>
     <string name="reminders_migration_tooltip_only_keep_reminders_remark">All your reminders are still available in Google Keep.</string>
@@ -1197,7 +1253,6 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="remove_encryption_data_loss_warning_dialog_attachments_only_drop_message">To keep your info confidential, this removes all encrypted files from the Calendar event</string>
     <string name="remove_encryption_failure_notification">Remove error notification</string>
     <string name="remove_notification_content_description">Remove notification</string>
-    <string name="remove_period">Remove period</string>
     <string name="repeats_daily_label">Every day</string>
     <string name="repeats_monthly_label">Every month</string>
     <string name="repeats_preamble">Repeats %s</string>
@@ -1259,6 +1314,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="saving">Saving…</string>
     <string name="saving_event">Event saved.</string>
     <string name="saving_event_with_guest">Updates will be sent.</string>
+    <string name="saving_repeating_task_no_connection">"No connection. The repeating task will be saved when you're online."</string>
     <string name="scope_selection_all_instances">All events</string>
     <string name="scope_selection_all_instances_tasks">All tasks</string>
     <string name="scope_selection_following_instances">This and following events</string>
@@ -1306,10 +1362,11 @@ You'll receive emails for all new invitations."</string>
     <string name="settings_invitation_permission_explainer_extended">Check your device’s permissions. Prevent untrusted third party apps from adding events to your calendar.</string>
     <string name="share_action">Share</string>
     <string name="share_conference_details_description">Share conference details</string>
-    <string name="share_event_link">Share with others</string>
+    <string name="share_event_link">Share</string>
     <string name="shared_task_description">Others can see changes that you make to this task</string>
     <string name="shared_tasks_delete_learn_more">Learn more about deleting shared tasks</string>
     <string name="shared_tasks_unassign_learn_more">Learn more about unassigning shared tasks</string>
+    <string name="sharing_error_no_connection">Sharing is not available offline</string>
     <string name="sharing_to_chat_disclaimer">Sharing to chat conversation %1$s</string>
     <string name="sheet_collapsed">Editor sheet collapsed</string>
     <string name="sheet_expanded">Editor sheet expanded</string>
@@ -1337,9 +1394,7 @@ You'll receive emails for all new invitations."</string>
     <string name="smartmail_duration_hours_minutes">%1$dh %2$dm</string>
     <string name="smartmail_duration_minutes">%dmin</string>
     <string name="smartmail_flight_arrival">Arrival: %1$s %2$s</string>
-    <string name="smartmail_flight_arrives">Arrives %1$s %2$s</string>
     <string name="smartmail_flight_delayed">Delayed</string>
-    <string name="smartmail_flight_departs">Departs %1$s %2$s</string>
     <string name="smartmail_flight_departure">Departure: %1$s %2$s</string>
     <string name="smartmail_flight_duration">Flight duration: %1$s</string>
     <string name="smartmail_flight_gate">gate %s</string>
@@ -1374,8 +1429,6 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="some_calendars_cannot_be_shown">Some calendars cannot be shown</string>
     <string name="strip_note_formatting_prompt">Editing the notes will result in formatting and styles being lost.</string>
     <string name="strip_note_formatting_prompt_continue">Continue editing</string>
-    <string name="sub_day_working_location_promo_body_text">"Now you can let others know if you're working in more than one place"</string>
-    <string name="sub_day_working_location_promo_header_text">Set multiple working locations per day</string>
     <string name="subscribe_to_calendar_confirmation_title">Add calendar \"%s\" to your account?</string>
     <string name="subscribe_to_calendar_picker_title">Select the account you want to add the \"%s\" calendar to</string>
     <string name="subscription_cancel">Cancel</string>
@@ -1467,7 +1520,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="task_creation_cancellation_message">Discard this task?</string>
     <string name="task_delete_for_doc_confirmation_dialog_description">"This will also delete the task from the document. The checklist item may still be visible but won't be assigned to you anymore."</string>
     <string name="task_delete_for_space_confirmation_dialog_delete_button">Delete</string>
-    <string name="task_delete_for_space_confirmation_dialog_description">"Deleting this task will also delete it from the space's list. To keep it on the space's list, unassign it from yourself instead."</string>
+    <string name="task_delete_for_space_confirmation_dialog_description">"Deleting this task will also delete it from the space's task list. To keep it on the space's task list, unassign it from yourself instead."</string>
     <string name="task_delete_for_space_confirmation_dialog_unassign_button">Unassign</string>
     <string name="task_description_hint">Add details</string>
     <string name="task_description_prefix">Task:</string>
@@ -1479,6 +1532,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="task_from_comment_default_title">From a comment</string>
     <string name="task_from_docs_default_title">From a document</string>
     <string name="task_from_drawings_default_title">From a drawing</string>
+    <string name="task_from_gmail_thread_title">View related email</string>
     <string name="task_from_sheets_default_title">From a sheet</string>
     <string name="task_from_slides_default_title">From a slide</string>
     <string name="task_from_space_title">Unknown space</string>
@@ -1486,6 +1540,7 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="task_no_title_placeholder">(Task — no title)</string>
     <string name="task_not_found">Reminder not found.</string>
     <string name="task_notification_channel">Tasks notifications</string>
+    <string name="task_overdue_notification_channel">Tasks overdue notifications</string>
     <string name="task_recurrence_stop_confirmation_dialog_action">Stop repeating</string>
     <string name="task_recurrence_stop_confirmation_dialog_description">"Remove all future occurrences?
 You won't be able to make this task repeating again."</string>
@@ -1514,6 +1569,9 @@ You won't be able to make this task repeating again."</string>
     <string name="tasks_rollover_dialog_information_menu_item">Information</string>
     <string name="tasks_rollover_dialog_title">Pending tasks</string>
     <string name="tasks_rollover_information_text">"Your uncompleted tasks with dates within the last 30 days are displayed here.
+
+Tasks visibility can be modified in your Calendar settings."</string>
+    <string name="tasks_rollover_information_text_new">"Your uncompleted tasks with dates within the last 365 days are displayed here.
 
 Tasks visibility can be modified in your Calendar settings."</string>
     <string name="tasks_sync_adapter">Tasks in Calendar</string>
@@ -1560,6 +1618,7 @@ Tasks visibility can be modified in your Calendar settings."</string>
     <string name="view_schedules">View schedules</string>
     <string name="view_source">View source</string>
     <string name="view_subtasks">View subtasks in Google Tasks</string>
+    <string name="view_switcher">View switcher</string>
     <string name="visibility_default">Default visibility</string>
     <string name="visibility_default_available">Available</string>
     <string name="visibility_default_busy">Busy</string>
@@ -1575,6 +1634,7 @@ Tasks visibility can be modified in your Calendar settings."</string>
     <string name="week_header_template">Week of %s</string>
     <string name="week_header_template_week_number">Week %1$d, %2$s</string>
     <string name="week_in_year_string">W%s</string>
+    <string name="week_number">Week %s</string>
     <string name="week_view_label">Week</string>
     <string name="week_view_label_full">Week view</string>
     <string name="weekday_buttons_label">Repeats on</string>
@@ -1586,12 +1646,6 @@ Tasks visibility can be modified in your Calendar settings."</string>
     <string name="widget_no_events_scheduled">Nothing scheduled</string>
     <string name="widgetmonth_description">Show your calendar one month at a time</string>
     <string name="work_profile_header_title">Work profile</string>
-    <string name="working_hours_copy_time_text">Copy time to all</string>
-    <string name="working_hours_enable_text">Enable working hours</string>
-    <string name="working_hours_end">End</string>
-    <string name="working_hours_help">"Enable working hours to let people know what times you're working and when you're available for meetings. This will warn people if they try to invite you to a meeting outside of these hours."</string>
-    <string name="working_hours_set_text">Set working hours</string>
-    <string name="working_hours_start">Start</string>
     <string name="working_location_banner_accept_text">See how</string>
     <string name="working_location_banner_subtext">Set hourly working locations for when you work in different places on the same day</string>
     <string name="working_location_banner_title">Set multiple working locations per day</string>
@@ -1604,5 +1658,6 @@ Tasks visibility can be modified in your Calendar settings."</string>
     <string name="working_location_title_placeholder">Working location</string>
     <string name="working_location_title_with_location">Working location: %s</string>
     <string name="yesterday">Yesterday</string>
+    <string name="yesterday_with_colon">Yesterday: %s</string>
     <string name="your_chip_label">You</string>
 </resources>
