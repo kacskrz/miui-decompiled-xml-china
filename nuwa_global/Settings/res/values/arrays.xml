@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="ANDROID_U_BLE_MMA_FEATURE_VERSION" />
     <array name="BLE_MMA_FEATURE_VERSION" />
     <array name="IS_SUPPORT_SPLIT" />
     <array name="LC3_CG_FEATURE_VERSION" />
@@ -547,6 +548,12 @@
         <item>@drawable/battery_indicator_percent_out</item>
         <item>@drawable/battery_indicator_top</item>
     </array>
+    <string-array name="battery_indicator_style_summaries">
+        <item>Graphical</item>
+        <item>Percentage (in the icon)</item>
+        <item>Percentage (next to the icon)</item>
+        <item>Progress bar</item>
+    </string-array>
     <string-array name="battery_indicator_style_values">
         <item>0</item>
         <item>1</item>
@@ -996,18 +1003,6 @@
         <item>device_default</item>
         <item>enabled</item>
         <item>disabled</item>
-    </string-array>
-    <string-array name="calendar_type">
-        <item>default</item>
-        <item>chinese</item>
-        <item>dangi</item>
-        <item>hebrew</item>
-        <item>indian</item>
-        <item>islamic</item>
-        <item>islamic-rgsa</item>
-        <item>islamic-tbla</item>
-        <item>islamic-umalqura</item>
-        <item>persian</item>
     </string-array>
     <string-array name="captioning_color_selector_titles">
         <item>@string/color_unspecified</item>
@@ -1704,6 +1699,7 @@
         <item>3</item>
     </integer-array>
     <array name="config_device_lock_need" />
+    <array name="config_disable_optimization_mode_apps" />
     <array name="config_disallowed_app_localeChange_packages" />
     <string-array name="config_downloaded_services">
         <item>com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService</item>
@@ -1728,7 +1724,7 @@
     <array name="config_preinstalled_captions_services" />
     <array name="config_preinstalled_display_services" />
     <string-array name="config_preinstalled_interaction_control_services">
-        <item>com.google.android.marvin.talkback/com.android.switchaccess.SwitchAccessService</item>
+        <item>com.google.android.accessibility.switchaccess/com.android.switchaccess.SwitchAccessService</item>
         <item>com.android.settings/com.android.settings.accessibility.accessibilitymenu.AccessibilityMenuService</item>
     </string-array>
     <string-array name="config_preinstalled_screen_reader_services">
@@ -1852,6 +1848,7 @@
     <string-array name="default_gallery_package">
         <item>mx_telcel:com.google.android.apps.photos</item>
         <item>za_mt:com.google.android.apps.photos</item>
+        <item>MT:com.google.android.apps.photos</item>
     </string-array>
     <string-array name="default_mms_package">
         <item>mx_telcel:com.google.android.apps.messaging</item>
@@ -2284,20 +2281,6 @@
         <item>key_combination_power_back</item>
         <item>key_none</item>
     </string-array>
-    <string-array name="key_popup_voice_choice">
-        <item>popup_muqin_up.ogg</item>
-        <item>popup_muqin_down.ogg</item>
-        <item>popup_yingyan_up.ogg</item>
-        <item>popup_yingyan_down.ogg</item>
-        <item>popup_mofa_up.ogg</item>
-        <item>popup_mofa_down.ogg</item>
-        <item>popup_jijia_up.ogg</item>
-        <item>popup_jijia_down.ogg</item>
-        <item>popup_chilun_up.ogg</item>
-        <item>popup_chilun_down.ogg</item>
-        <item>popup_cangmen_up.ogg</item>
-        <item>popup_cangmen_down.ogg</item>
-    </string-array>
     <string-array name="key_slider_voice_choice">
         <item>slide_keji_open.ogg</item>
         <item>slide_keji_close.ogg</item>
@@ -2652,6 +2635,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/msd_install_retry_connect</item>
         <item>Reinstall Mi PC Suite</item>
     </string-array>
+    <string-array name="multi_floating_package_allow_list">
+        <item>com.miui.securitycenter</item>
+        <item>com.miui.weather2</item>
+        <item>com.android.calendar</item>
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.miui.notes</item>
+        <item>com.android.settings</item>
+        <item>com.miui.gallery</item>
+        <item>com.miui.cloudservice</item>
+        <item>com.android.deskclock</item>
+    </string-array>
     <string-array name="mvno_type_entries">
         <item>None</item>
         <item>SPN</item>
@@ -2679,6 +2674,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/dndm_vip_list_contact</item>
         <item>@string/dndm_vip_list_starred_contact</item>
     </string-array>
+    <string-array name="nfc_notification_mode_summaries">
+        <item>Payment, access, and smart home cards</item>
+        <item>Bluetooth pairing, wireless connection, and smart home cards</item>
+    </string-array>
+    <string-array name="nfc_notification_mode_titles">
+        <item>All cards</item>
+        <item>Cards recognized by the system</item>
+    </string-array>
+    <string-array name="nfc_notification_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
     <string-array name="nfc_payment_favor">
         <item>Always</item>
         <item>Except when another payment app is open</item>
@@ -2703,6 +2710,11 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@drawable/battery_indicator_percent_in</item>
         <item>@drawable/battery_indicator_percent_out</item>
     </array>
+    <string-array name="notch_battery_indicator_style_summaries">
+        <item>Graphical</item>
+        <item>Percentage (in the icon)</item>
+        <item>Percentage (next to the icon)</item>
+    </string-array>
     <string-array name="notch_battery_indicator_style_values">
         <item>0</item>
         <item>1</item>
@@ -3489,6 +3501,24 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>3</item>
     </string-array>
     <array name="slice_allowlist_package_names" />
+    <string-array name="smart_device_control_entries">
+        <item>@string/mi_smart_hub_entry_title</item>
+        <item>Smart home</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="smart_device_control_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="smart_home_entries">
+        <item>Smart home</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="smart_home_values">
+        <item>2</item>
+        <item>3</item>
+    </string-array>
     <string-array name="solar_terms">
         <item>@string/empty</item>
         <item>@string/solar_term_slight_cold</item>
@@ -4275,10 +4305,6 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>2</item>
     </string-array>
     <string-array name="wifi_hidden_entries">
-        <item>No</item>
-        <item>Yes</item>
-    </string-array>
-    <string-array name="wifi_hidden_gbk_entries">
         <item>No</item>
         <item>Yes</item>
     </string-array>
