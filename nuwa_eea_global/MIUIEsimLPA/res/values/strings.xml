@@ -45,6 +45,20 @@ ICCID: %2$s"</string>
     <string name="active_progress_loading_for_m2">"Adding %1$s. This might take a few minutes. Don't leave this page."</string>
     <string name="active_result_confirm">Got it</string>
     <string name="add_esim">Add eSIM</string>
+    <string name="add_esim_manual_activation_info_guide">Examples of activation information:</string>
+    <string name="add_esim_manual_activation_info_guide_sample_1">Example %1$d. LPA: 1$SM-DP+ address$Activation code</string>
+    <string name="add_esim_manual_activation_info_guide_sample_2">"Example %1$d. SM-DP+ address: SMDP.EXAMPLE.COM
+Activation code: ABCDE-FGHIJ-12345"</string>
+    <string name="add_esim_manual_confirm_code_error_tip">Incorrect code. Try again.</string>
+    <string name="add_esim_manual_confirm_code_tip">*Enter a confirmation code if provided by your carrier</string>
+    <string name="add_esim_manual_edit_activation_code_title">Activation code</string>
+    <string name="add_esim_manual_edit_confirm_code_hint">Optional</string>
+    <string name="add_esim_manual_edit_confirm_code_title">Confirmation code</string>
+    <string name="add_esim_manual_edit_hint">Enter here</string>
+    <string name="add_esim_manual_edit_smdp_title">SM-DP+ address</string>
+    <string name="add_esim_manual_request_loading_text">Sending a request to the carrier…</string>
+    <string name="add_esim_manual_sub_title">Enter the activation information provided by your carrier</string>
+    <string name="add_esim_manual_title">Activation code</string>
     <string name="afternoon">Afternoon</string>
     <string name="album">Gallery</string>
     <string name="alert_msg_ca_add_failed">"There's already an eSIM that can't be disabled on this device."</string>
@@ -151,8 +165,15 @@ ICCID: %2$s"</string>
     <string name="dialog_active_process_switch_profile_cancel">Cancel</string>
     <string name="dialog_active_process_switch_profile_confirm">Switch</string>
     <string name="dialog_active_status_eid_confirm">Close</string>
+    <string name="dialog_add_profile_manual_hint">1$operator.com$ABCD-1234</string>
     <string name="dialog_btn_click_unusable_profile_confirm">OK</string>
     <string name="dialog_current_using_network">Switch eSIM network</string>
+    <string name="dialog_delete_esim_alert_close">Got it</string>
+    <string name="dialog_delete_esim_alert_network_content">"Turn on Wi-Fi, another eSIM, or a physical SIM card's mobile data and try again. If using a physical SIM card, insert it into slot %1$d to be able to use mobile data."</string>
+    <string name="dialog_delete_esim_alert_network_content_china">"Turn on WLAN, another eSIM, or a physical SIM card's mobile data and try again. If using a physical SIM card, insert it into slot %1$d to be able to use mobile data."</string>
+    <string name="dialog_delete_esim_alert_title">"Couldn't delete eSIM"</string>
+    <string name="dialog_delete_esim_alert_wifi_content">Connect to Wi-Fi and try again.</string>
+    <string name="dialog_delete_esim_alert_wifi_content_china">Connect to WLAN and try again.</string>
     <string name="dialog_delete_msg">"If you continue, you'll permanently delete %1$s from this device. Delete now?
 This action won't cancel any mobile plans you may have purchased from a carrier."</string>
     <string name="dialog_delete_profile_cancel">Cancel</string>
@@ -196,9 +217,17 @@ This action won't cancel any mobile plans you may have purchased from a carrier.
     <string name="dialog_msg_reset_esim_without_wifi">Connect to Wi-Fi and try to reset this eSIM again.</string>
     <string name="dialog_ppr_user_consent_cancel">Cancel</string>
     <string name="dialog_ppr_user_consent_confirm">Agree</string>
+    <string name="dialog_pre_delete_esim_check_network">A network error occurred. Try again.</string>
+    <string name="dialog_pre_reset_esim_check_network">A network error occurred. Try again.</string>
     <string name="dialog_profile_policy_rule_msg1">"To add this eSIM, agree to the following carrier terms first:
 "</string>
     <string name="dialog_qr_format_error_confirm">Close</string>
+    <string name="dialog_reset_esim_alert_close">Got it</string>
+    <string name="dialog_reset_esim_alert_network_content">"Turn on Wi-Fi or a physical SIM card's mobile data and try again. If using a physical SIM card, insert it into slot %1$d to be able to use mobile data."</string>
+    <string name="dialog_reset_esim_alert_network_content_china">"Turn on WLAN or a physical SIM card's mobile data and try again. If using a physical SIM card, insert it into slot %1$d to be able to use mobile data."</string>
+    <string name="dialog_reset_esim_alert_title">"Couldn't reset eSIM"</string>
+    <string name="dialog_reset_esim_alert_wifi_content">Connect to Wi-Fi and try again.</string>
+    <string name="dialog_reset_esim_alert_wifi_content_china">Connect to WLAN and try again.</string>
     <string name="dialog_reset_esim_cancel">Cancel</string>
     <string name="dialog_reset_esim_confirm">OK</string>
     <string name="dialog_reset_esim_message">"If you reset eSIM, all of your eSIMs will be permanently removed from the device. Reset now?
@@ -406,15 +435,16 @@ LPA request denied by %2$s server."</string>
     <string name="midnight">Night</string>
     <string name="miuix_access_state_desc">Selected</string>
     <string name="miuix_alphabet_indexer_name">Index bar</string>
-    <string name="miuix_appcompat_action_mode_deselect_all">Deselect</string>
+    <string name="miuix_appcompat_action_mode_deselect_all">Deselect all</string>
     <string name="miuix_appcompat_action_mode_select_all">Select all</string>
     <string name="miuix_appcompat_action_mode_title_empty">Select items</string>
     <string name="miuix_appcompat_actionbar_immersion_button_more_description">More</string>
     <string name="miuix_appcompat_cancel_description">Cancel</string>
     <string name="miuix_appcompat_confirm_description">Confirm</string>
     <string name="miuix_appcompat_delete_description">Delete</string>
-    <string name="miuix_appcompat_deselect_all">Deselect</string>
+    <string name="miuix_appcompat_deselect_all">Deselect all</string>
     <string name="miuix_appcompat_deselect_all_description">Deselect all</string>
+    <string name="miuix_appcompat_edit">Edit</string>
     <string name="miuix_appcompat_search_action_mode_cancel">Cancel</string>
     <string name="miuix_appcompat_search_input_description">Search</string>
     <string name="miuix_appcompat_select_all">Select all</string>
@@ -547,7 +577,8 @@ LPA request denied by %2$s server."</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="submit_button">Submit</string>
     <string name="subtitle_network_error">"Couldn't connect to the network"</string>
-    <string name="subtitle_not_switch_euicc">You can turn on eSIM in Settings > SIM cards &amp; mobile networks.</string>
+    <string name="subtitle_not_switch_euicc">Turn on eSIM in Settings > SIM cards &amp; mobile networks.</string>
+    <string name="subtitle_not_switch_euicc_hyper_os">Turn on eSIM in Settings > Mobile networks.</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="summary_discovery_empty">Manually add an eSIM or try again.</string>
     <string name="sunday">Sunday</string>
@@ -614,7 +645,7 @@ LPA request denied by %2$s server."</string>
     <string name="toast_not_disable_abide_ppr1">"This eSIM can't be disabled due to carrier restrictions"</string>
     <string name="toast_not_switch_abide_ppr1">"Couldn't enable. You're already using an eSIM on this device that's subject to carrier restrictions."</string>
     <string name="toast_reset_esim_failed">"Couldn't reset eSIM. Wait a minute or two and try again."</string>
-    <string name="toast_scan_qr_error">"Couldn't scan QR code. Wait a minute or two and try again."</string>
+    <string name="toast_scan_qr_error">"Couldn't scan QR code. Check it and try again."</string>
     <string name="toast_service_timeout">The request timed out. Wait a minute or two and try again.</string>
     <string name="toast_set_nickname_fail">"Couldn't change nickname. Wait a minute or two and try again."</string>
     <string name="toast_use_mobile_data_warning">"You're using mobile data now. This may generate additional fees."</string>
