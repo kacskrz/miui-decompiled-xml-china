@@ -6,8 +6,20 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Allow Accessibility Performance Filtering to be used.</item>
+        <item>Disallow Accessibility Performance Filtering to be used.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Allow additional DNS query types</item>
         <item>Prevent additional DNS query types</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Allow pages with Cache-Control: no-store header to be stored in back/forward cache.</item>
+        <item>Disallow pages with Cache-Control: no-store header to be stored in back/forward cache.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -42,6 +54,14 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Show cancel dialog when event.preventDefault() is called for beforeunload event. Do not show cancel dialog when event.returnValue is the empty string for beforeunload event.</item>
+        <item>Do not show cancel dialog when event.preventDefault() is called for beforeunload event. Show cancel dialog when beforeunload event.returnValue is the empty string for beforeunload event.</item>
+        <item>Use default behavior of feature rollout plan.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </string-array>
         <item>Block 3rd party cookies</item>
         <item>Allow 3rd party cookies</item>
         <item>Allow 3rd party cookies, but allow the user to change this setting</item>
@@ -64,17 +84,27 @@
         <item>False</item>
         <item>None</item>
     </string-array>
-        <item>Enable default CECPQ2 rollout process</item>
-        <item>Disable CECPQ2</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>Support CORS non-wildcard request headers.</item>
         <item>Do not support CORS non-wildcard request headers.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
+    </string-array>
+        <item>Use the Chrome Root Store.</item>
+        <item>Do not use the Chrome Root Store.</item>
+        <item>Chrome Root Store may be used depending on feature launch process.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </string-array>
+        <item>Enable all variations</item>
+        <item>Enable variations concerning critical fixes only</item>
+        <item>Disable all variations</item>
+    </string-array>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
         <item>Cloud machine policies take precedence over platform machine policies</item>
         <item>Platform machine policies take precedence over cloud machine policies</item>
@@ -154,6 +184,12 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+        <item>Allow third-party storage partitioning to be enabled.</item>
+        <item>Block third-party storage partitioning from being enabled.</item>
+    </string-array>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
         <item>Do not allow any site to request access to Bluetooth devices via the Web Bluetooth API</item>
         <item>Allow sites to ask the user to grant access to a nearby Bluetooth device</item>
     </string-array>
@@ -216,13 +252,11 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Event.path API will be available.</item>
-        <item>Event.path API will be unavailable.</item>
-        <item>Event.path API will be in the default status: available before M109, and unavailable in M109 to 114.</item>
+        <item>Enable First-Party Sets for all affected users</item>
+        <item>Disable First-Party Sets for all affected users</item>
     </string-array>
         <item>True</item>
         <item>False</item>
-        <item>None</item>
     </string-array>
         <item>Force the use of SafeSearch in Google Search</item>
         <item>Do not enforce the use of SafeSearch in Google Search</item>
@@ -238,6 +272,12 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+        <item>Force unload event handlers to remain enabled by default during deprecation</item>
+        <item>Allow unload event handlers to be disabled by default during deprecation</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Do not enforce Restricted Mode on YouTube</item>
         <item>Enforce at least Moderate Restricted Mode on YouTube</item>
         <item>Enforce Strict Restricted Mode for YouTube</item>
@@ -246,9 +286,9 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-        <item>Journeys will be visible at chrome://history/journeys.</item>
-        <item>Journeys will not be visible at chrome://history/journeys.</item>
-        <item>Journeys will be visible at chrome://history/journeys by default and users can change the visibility of Journeys.</item>
+        <item>Chrome history page organized into groups will be visible at chrome://history/2.</item>
+        <item>Chrome history page organized into groups will not be visible at chrome://history/2.</item>
+        <item>Chrome history page organized into groups will be visible at chrome://history/2 by default.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -256,11 +296,19 @@
     </string-array>
         <item>Allow users to enable HTTPS-Only Mode</item>
         <item>Do not allow users to enable HTTPS-Only Mode</item>
-        <item>Force enable HTTPS-Only Mode (not supported yet)</item>
+        <item>Force enable HTTPS-Only Mode</item>
     </string-array>
         <item>allowed</item>
         <item>disallowed</item>
         <item>force_enabled</item>
+    </string-array>
+        <item>HTTPS Upgrades may be applied depending on feature launch status.</item>
+        <item>Disable HTTPS Upgrades.</item>
+        <item>HTTPS Upgrades may be applied depending on feature launch status.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
     </string-array>
         <item>Incognito mode available</item>
         <item>Incognito mode disabled</item>
@@ -274,8 +322,16 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Allow insecure websites to make requests to any network endpoint</item>
-        <item>Use default behavior when determining if insecure websites can make requests to any network endpoint</item>
+        <item>Use Default Value for Hashes Allowed in TLS Handshakes.</item>
+        <item>Do Not Allow Insecure Hashes in TLS Handshakes</item>
+        <item>Allow Insecure Hashes in TLS Handshakes</item>
+    </string-array>
+        <item>None</item>
+        <item>False</item>
+        <item>True</item>
+    </string-array>
+        <item>Allow websites to make requests to any network endpoint in an insecure manner.</item>
+        <item>Use default behavior when determining if websites can make requests to network endpoints.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -296,9 +352,11 @@
     </string-array>
         <item>Enable reporting of usage and crash-related data</item>
         <item>Disable reporting of usage and crash-related data</item>
+        <item>Allow users to choose</item>
     </string-array>
         <item>True</item>
         <item>False</item>
+        <item>None</item>
     </string-array>
         <item>Show content suggestions on the New Tab page</item>
         <item>Do not show content suggestions on the New Tab page</item>
@@ -382,9 +440,11 @@
         <item>ScreenBrightnessPercent</item>
         <item>ScreenLockDelays</item>
     </string-array>
-        <item>window.webkitStorageInfo will be available.</item>
-        <item>window.webkitStorageInfo will be unavailable.</item>
+        <item>Use Default Value for Kyber post-quantum key agreement for TLS</item>
+        <item>Enable Kyber post-quantum key agreement for TLS</item>
+        <item>Disable Kyber post-quantum key agreement for TLS</item>
     </string-array>
+        <item>None</item>
         <item>True</item>
         <item>False</item>
     </string-array>
@@ -426,15 +486,19 @@
         <item>False</item>
         <item>None</item>
     </string-array>
+        <item>Enable RSA key usage checking</item>
+        <item>Disable RSA key usage checking</item>
+        <item>Use the default setting for RSA key usage checking</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </string-array>
         <item>Allow users to click through SSL warning pages</item>
         <item>Prevent users from clicking through SSL warning pages</item>
     </string-array>
         <item>True</item>
         <item>False</item>
-    </string-array>
-        <item>TLS 1.2</item>
-    </string-array>
-        <item>tls1.2</item>
     </string-array>
         <item>Enable reporting of system information and page content to help improve Safe Browsing</item>
         <item>Disable reporting of system information and page content which are used to help improve Safe Browsing</item>
@@ -451,6 +515,12 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+        <item>Do not filter sites for adult content</item>
+        <item>Filter top level sites (but not embedded iframes) for adult content</item>
+    </string-array>
+        <item>0</item>
+        <item>1</item>
     </string-array>
         <item>Disable saving browser history</item>
         <item>Enable saving browser history</item>
@@ -560,12 +630,6 @@
     </string-array>
         <item>Force WebSQL to be enabled.</item>
         <item>Allow WebSQL to be disabled by Chrome flag.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
-        <item>WebSQL in non-secure contexts will be available.</item>
-        <item>WebSQL in non-secure contexts will remain available until M109, then unavailable starting M110.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
