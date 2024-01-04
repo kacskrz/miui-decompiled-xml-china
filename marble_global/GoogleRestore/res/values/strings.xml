@@ -49,6 +49,7 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="automatically_synced_section_header">Synced automatically</string>
     <string name="backup_d2d_migration_tool_activity_name">Data Transfer Tool</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="button_copy_anyway">Copy anyway</string>
     <string name="button_dont_copy">Don’t copy</string>
     <string name="button_dont_restore">Don’t restore</string>
     <string name="button_dont_restore_apps">Don’t restore apps</string>
@@ -63,6 +64,7 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="common_allow">Allow</string>
     <string name="common_cancel">Cancel</string>
     <string name="common_dont_allow">Don’t allow</string>
+    <string name="common_go_back">Go back</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -83,6 +85,8 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="common_restore">Restore</string>
     <string name="common_skip">Skip</string>
     <string name="common_try_again">Try Again</string>
+    <string name="contact_detail_label_generic">Other</string>
+    <string name="contact_detail_label_school">School</string>
     <string name="contacts_no_number_device_and_sim">Device and SIM contacts</string>
     <string name="contacts_number_device_and_icloud">%1$d iCloud®, %2$d device</string>
     <string name="content_selector_ui_title">Choose what to restore</string>
@@ -95,14 +99,12 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="copy_without_cable_button">Copy without cable</string>
     <string name="d2d_app_picker_description_no_apps">We couldn’t find any apps</string>
     <string name="d2d_app_picker_title">Apps</string>
-    <string name="data_copied_fragment_description">You can disconnect the cable</string>
     <string name="data_copied_fragment_description_cancel">You chose to stop copying, so only some data has been copied to your new device.</string>
     <string name="data_copied_fragment_description_cancel_no_data">You chose to stop copying, so nothing has been copied to your new device.</string>
     <string name="data_copied_fragment_description_error">Something went wrong, so we couldn’t copy everything.</string>
     <string name="data_copied_fragment_description_error_no_data">Something went wrong, so we couldn’t copy your data.</string>
     <string name="data_copied_fragment_no_data_title">Couldn’t copy</string>
     <string name="data_copied_fragment_some_data_title">Some data copied</string>
-    <string name="data_copied_fragment_title">Copying’s done</string>
     <string name="device_not_supported_fragment_new_device">You’re connected to a new device. To keep going, reconnect to your previous one.</string>
     <string name="device_not_supported_fragment_new_device_title">Reconnect to previous device</string>
     <string name="device_not_supported_fragment_no_data_cable">Try another cable. If your old device is an iPhone®, keep it unlocked.</string>
@@ -142,23 +144,37 @@ Only photos, music, and videos can be copied over. For more information, visit "
     <string name="fragment_app_picker_description_d2d_ios_v2">"We found a match for ^1 of your ^2 iOS® apps. Some in-app purchases might not transfer.
 
 By installing each app, you agree with its permissions. "<annotation id="apps_permissions_learn_more">Learn more</annotation></string>
+    <string name="fragment_app_picker_description_d2d_ios_v3">"We found a match for ^1 of your iOS® apps. Some in-app purchases might not transfer.
+
+By installing each app, you agree with its permissions. "<annotation id="apps_permissions_learn_more">Learn more</annotation></string>
     <string name="fragment_connecting_title">Connecting to your old device…</string>
     <string name="fragment_indexing_description">Choose what to copy on the next screen</string>
     <string name="fragment_indexing_title">Getting ready to copy…</string>
     <string name="fragment_indexing_verify_password_title">Verifying password…</string>
-    <string name="fragment_ios_decryption_description">To transfer apps, SMS messages, and contacts, enter your iTunes® backup password</string>
+    <string name="fragment_ios_copy_calendar_events_description">If you want to copy calendar events, connect to a Wi-Fi or mobile network and try again</string>
+    <string name="fragment_ios_copy_calendar_events_title">Copy calendar events?</string>
+    <string name="fragment_ios_couldnt_sign_in_description">Connect to the internet and try again</string>
+    <string name="fragment_ios_couldnt_sign_in_title">Couldn’t sign in</string>
+    <string name="fragment_ios_decryption_description">To copy contacts, messages, message attachments, calendar events, and device settings, enter your iTunes® backup password</string>
+    <string name="fragment_ios_decryption_description_legacy">To transfer apps, SMS messages, and contacts, enter your iTunes® backup password</string>
+    <string name="fragment_ios_decryption_disclaimer">Your iTunes password stays on your device and is never shared with Google. Once the transfer is complete, your password is removed from your device.</string>
     <string name="fragment_ios_decryption_forgot_password_button">Forgot your password?</string>
     <string name="fragment_ios_decryption_forgot_password_description">We can’t transfer encrypted content without your iTunes® backup password. Unencrypted content will still transfer to your new ^1.</string>
+    <string name="fragment_ios_decryption_forgot_password_description_new">For instructions to reset your encryption, go to http://support.apple.com/en-us/HT213037</string>
+    <string name="fragment_ios_decryption_forgot_password_dismiss_button">Dismiss</string>
     <string name="fragment_ios_decryption_forgot_password_title">Can’t transfer encrypted content</string>
     <string name="fragment_ios_decryption_password_hint">Enter iTunes® backup password</string>
     <string name="fragment_ios_decryption_skip_button">Skip encrypted content</string>
-    <string name="fragment_ios_decryption_title">Your iPhone® is encrypted</string>
+    <string name="fragment_ios_decryption_title">Your backup is encrypted</string>
+    <string name="fragment_ios_decryption_title_legacy">Your iPhone® is encrypted</string>
     <string name="fragment_ios_decryption_wrong_password_error">Wrong password. Try again.</string>
     <string name="fragment_ios_device_management_confirm_title">Confirm Management removal</string>
-    <string name="fragment_ios_device_management_detected_description">"Your iPhone® is managed by your organization and has encrypted content.
+    <string name="fragment_ios_device_management_detected_description">To copy contacts, messages, message attachments, calendar events, and device settings, you’ll need to remove device management on your iPhone.</string>
+    <string name="fragment_ios_device_management_detected_description_legacy">"Your iPhone® is managed by your organization and has encrypted content.
 
 To transfer apps, iCloud® contacts, device contacts, and iMessage® messages, you’ll need to remove device management on your iPhone®."</string>
-    <string name="fragment_ios_device_management_detected_title">Some content is encrypted</string>
+    <string name="fragment_ios_device_management_detected_title">Your iPhone is managed by your organization</string>
+    <string name="fragment_ios_device_management_detected_title_legacy">Some content is encrypted</string>
     <string name="fragment_ios_device_management_next_button_first_screen">Show steps</string>
     <string name="fragment_ios_device_management_not_removed_description">"Device management is still on your iPhone®. To remove it, follow the previous steps.
 
@@ -176,35 +192,35 @@ If you have trouble reinstalling device management after setup, contact your IT 
     <string name="fragment_ios_device_management_skip_button">Skip encrypted content</string>
     <string name="fragment_ios_indexing_description">If you have a lot of data on your iPhone®, this step may take a while</string>
     <string name="fragment_ios_instructions_description">To continue, check your iPhone® and approve the connection</string>
-    <string name="fragment_ios_instructions_reconnect_cable">Having trouble? Try unplugging and reconnecting the devices.</string>
+    <string name="fragment_ios_instructions_reconnect_cable_description">Try unplugging and reconnecting the devices</string>
+    <string name="fragment_ios_instructions_reconnect_cable_title">Having trouble?</string>
     <string name="fragment_ios_recoverable_error_description">To try again, unplug and reconnect the devices</string>
     <string name="fragment_ios_recoverable_error_title">Can’t decrypt iPhone®</string>
-    <string name="fragment_ios_skip_encrypted_data_dialog_description">Your apps, iCloud® contacts, device contacts, and iMessage® messages won’t transfer</string>
-    <string name="fragment_ios_skip_encrypted_data_dialog_title">Skip encrypted content?</string>
+    <string name="fragment_ios_skip_encrypted_data_dialog_description">Your contacts, messages, message attachments, calendar events, and device settings won’t be copied.</string>
+    <string name="fragment_ios_skip_encrypted_data_dialog_description_another_chance">You’ll have another chance to transfer data from your other device after setup.</string>
+    <string name="fragment_ios_skip_encrypted_data_dialog_description_legacy">Your apps, iCloud® contacts, device contacts, and iMessage® messages won’t transfer</string>
+    <string name="fragment_ios_skip_encrypted_data_dialog_title">Skip copying apps and more?</string>
+    <string name="fragment_ios_skip_encrypted_data_dialog_title_legacy">Skip encrypted content?</string>
     <string name="fragment_ios_wifi_reconnecting_description">Make sure both devices are close together</string>
     <string name="fragment_ios_wifi_reconnecting_title">Reconnecting to your iPhone or iPad…</string>
     <string name="fragment_keep_devices_close_description">Keep both devices on and close to each other</string>
     <string name="fragment_long_waiting_title">Just a few moments…</string>
+    <string name="fragment_qs_connecting_title">Checking a few things…</string>
     <string name="fragment_restore_choice_title">Choose what to copy</string>
     <string name="fragment_short_waiting_title">Just a sec…</string>
     <string name="fragment_smart_device_ui_finished_title">Getting account info…</string>
     <string name="fragment_target_connected_description_with_permissions">You may need to allow permissions on your old device</string>
     <string name="fragment_target_connected_title">Devices are connected</string>
-    <string name="fragment_target_photos_and_videos_option_description">%1$s %2$s, from %3$s</string>
-    <string name="fragment_target_photos_and_videos_option_title_all">All</string>
-    <string name="fragment_target_photos_and_videos_option_title_all_photos">All photos</string>
-    <string name="fragment_target_photos_and_videos_option_title_none">None</string>
-    <string name="fragment_target_photos_and_videos_picker_description">Photos and videos will take up %d%% of the space on your device</string>
-    <string name="fragment_target_photos_and_videos_picker_include_videos_title">Include videos</string>
-    <string name="fragment_target_photos_and_videos_picker_title">Choose photos &amp; videos</string>
     <string name="fragment_usb_cable_doesnt_fit">Cable doesn’t fit?</string>
     <string name="fragment_usb_cant_find_adapter">No adapter?</string>
-    <string name="fragment_usb_connect_both_phones_title">Connect both devices using the cable</string>
-    <string name="fragment_usb_connect_cable_into_adapter_description">The Quick Switch Adapter came in the same box as your ^1</string>
-    <string name="fragment_usb_connect_cable_into_adapter_title">Plug the cable into the adapter to connect both devices</string>
+    <string name="fragment_usb_connect_both_phones_description_android">Use the cable that came in the same box as your %1$s</string>
+    <string name="fragment_usb_connect_both_phones_description_ios">Use the cable that came with your iPhone or iPad</string>
+    <string name="fragment_usb_connect_both_phones_title">Connect both devices</string>
+    <string name="fragment_usb_connect_cable_into_adapter_description">Plug the Quick Switch Adapter into this %1$s then connect both devices using the cable. The adapter came in the same box as your %1$s.</string>
+    <string name="fragment_usb_connect_cable_into_adapter_title">Plug the adapter into this %1$s</string>
     <string name="fragment_usb_dialog_cancel_description">You’ll get the most content, including photos, videos, and MMS messages, if you use a cable.</string>
     <string name="fragment_usb_dialog_cancel_description_v2">You’ll get your content faster if you use a cable, like the one you use for charging your old device.</string>
-    <string name="fragment_usb_dialog_cancel_description_v3">Copying your data without a cable may take longer and Wi-Fi may be turned off temporarily</string>
+    <string name="fragment_usb_dialog_cancel_description_v3">Copying your data without a cable may take longer and this device may be disconnected from Wi-Fi temporarily</string>
     <string name="fragment_usb_dialog_cancel_title">Copy without a cable?</string>
     <string name="fragment_usb_dialog_without_old_phone_description">"You can restore more data, including photos and videos, if you use your old device.
 
@@ -216,7 +232,7 @@ To restore data without your old device, sign in with your username and password
     <string name="fragment_usb_find_cable_title">Find your old device’s cable</string>
     <string name="fragment_usb_initial_description">You need your old Android or iPhone® device. Turn it on, and keep it unlocked.</string>
     <string name="fragment_usb_initial_title">Use your old device</string>
-    <string name="fragment_usb_missing_data_description">You can keep setting up your ^1 during the transfer.</string>
+    <string name="fragment_usb_missing_data_description">You can keep setting up your %1$s during the transfer.</string>
     <string name="fragment_usb_missing_data_title">Let’s copy your data</string>
     <string name="fragment_usb_plug_cable">Insert cable into your old device</string>
     <string name="fragment_wifi_d2d_unsupported_description">There was a problem connecting to your old device</string>
@@ -241,6 +257,14 @@ To restore data without your old device, sign in with your username and password
     <string name="imessage_deregistration_procedure_steps_without_qr_code">Go to <b>Settings > Messages</b>, then <b>turn off iMessage</b>.</string>
     <string name="imessage_deregistration_title">Turn off iMessage®</string>
     <string name="instructions_fragment_title">Check your other device</string>
+    <string name="ios_cloud_data_instructions_calendar_events_contacts_description">Synced automatically when you sign in to cloud accounts like Yahoo! and Outlook</string>
+    <string name="ios_cloud_data_instructions_calendar_events_contacts_title">Calendar events &amp; contacts</string>
+    <string name="ios_cloud_data_instructions_description">If data’s missing on your new device, it may be stored in the cloud. Here’s how to find it.</string>
+    <string name="ios_cloud_data_instructions_music_other_audio_description">Synced automatically when you sign in to music services like YouTube Music, Apple Music, and Spotify</string>
+    <string name="ios_cloud_data_instructions_music_other_audio_title">Music &amp; other audio</string>
+    <string name="ios_cloud_data_instructions_photos_videos_description">Go to g.co/transferfromicloud and follow the instructions</string>
+    <string name="ios_cloud_data_instructions_photos_videos_title">Photos &amp; videos from iCloud</string>
+    <string name="ios_cloud_data_instructions_title">How to get your cloud data</string>
     <string name="ios_connected_fragment_add_account_description">"On the next screen, you can sign in to your Google Account, or create a new one.
 
 If you don’t add your Google Account, your iOS® Calendar events won’t copy."</string>
@@ -253,8 +277,9 @@ If you don’t add your Google Account, your apps and iOS® Calendar events won�
     <string name="ios_connected_fragment_description_no_account_with_notes">"On the next screen, you can sign in to your Google Account, or create a new one.
 
 If you don’t add your Google Account, your apps, iOS® Calendar events, and iOS® Notes won’t transfer."</string>
+    <string name="ios_less_storage_dialog_description">If you don’t have enough storage available on your device, some data may not copy</string>
+    <string name="ios_less_storage_dialog_title">Some data may not copy</string>
     <string name="ios_migration_default_calendar_title">Calendar</string>
-    <string name="ios_migration_other_contact_relation">Other</string>
     <string name="ios_photos_and_videos_dialog_icloud_got_it_button">Got it</string>
     <string name="ios_photos_and_videos_dialog_icloud_message">"You can request a copy of your iCloud photos &amp; videos to transfer to Google Photos.
 
@@ -271,9 +296,13 @@ To learn how, go to "<b>g.co/datatransferhelp</b>.</string>
     <string name="ios_whatsapp_export_title">Getting chats ready…</string>
     <string name="ios_whatsapp_message">Trouble scanning? On your iPhone, open WhatsApp, then go to <b>Settings > Chats > Move Chats to Android</b></string>
     <string name="ios_whatsapp_title">Transfer WhatsApp chats</string>
-    <string name="ios_wifi_hotspot_description">After you open the Switch to Android app on your iPhone or iPad, follow the instructions</string>
+    <string name="ios_wifi_hotspot_description">This will install the Switch to Android app and connect your devices using Wi-Fi network %1$s</string>
     <string name="ios_wifi_hotspot_instructions_first_step">Step 1:</string>
     <string name="ios_wifi_hotspot_instructions_first_step_message">Open Safari and go to <b>^1</b> to get the Switch to Android app</string>
+    <string name="ios_wifi_hotspot_instructions_fourth_step">Can’t get the app?</string>
+    <string name="ios_wifi_hotspot_instructions_fourth_step_message">Open <b>Settings</b>, then tap <b>General > Software Update</b>" and try again.
+
+Or you can go back and copy your data using a cable."</string>
     <string name="ios_wifi_hotspot_instructions_second_step">Step 2:</string>
     <string name="ios_wifi_hotspot_instructions_second_step_message">Open the app, then tap <b>Start > Can’t scan QR code?</b></string>
     <string name="ios_wifi_hotspot_instructions_second_step_message_content_description">"Open the app, then tap Start and then Can't scan QR code?"</string>
@@ -284,6 +313,8 @@ Password: "<b>^2</b>"
 IP address: "<b>^3</b></string>
     <string name="ios_wifi_hotspot_instructions_title">Follow these steps on your iPhone or iPad</string>
     <string name="ios_wifi_hotspot_qr_code_alternative">Can’t scan QR code?</string>
+    <string name="ios_wifi_hotspot_qr_code_dogfood_button">Dogfood</string>
+    <string name="ios_wifi_hotspot_qr_code_production_button">Production</string>
     <string name="ios_wifi_hotspot_reconnecting_description">Copying will resume once your devices are connected</string>
     <string name="ios_wifi_hotspot_reconnecting_title">Scan the QR code again to reconnect</string>
     <string name="ios_wifi_hotspot_title">Scan the QR code with your iPhone or iPad camera</string>
@@ -320,12 +351,16 @@ If you don’t allow this permission, none of your data will be copied to your n
     <string name="lskfui_vault_almost_locked_password_dialog_text">The wrong password has been entered %1$d times. After %2$d more incorrect attempts your %3$s backup will be deleted.</string>
     <string name="lskfui_vault_almost_locked_pattern_dialog_text">The wrong pattern has been entered %1$d times. After %2$d more incorrect attempts your %3$s backup will be deleted.</string>
     <string name="lskfui_vault_almost_locked_pin_dialog_text">The wrong PIN has been entered %1$d times. After %2$d more incorrect attempts your %3$s backup will be deleted.</string>
-    <string name="manage_storage_button">Manage storage</string>
     <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
     <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="media_summary_description">"This may be because:
+ "<li>the file format isn’t supported</li>"
+ "<li>the transfer process was interrupted</li>"
+ "<li>you don’t have enough storage available on your device</li>"
+ "</string>
     <string name="megabyteShort">MB</string>
     <string name="migrate_from_ios_description">Follow these steps to get contacts, calendar events, and photos &amp; videos</string>
     <string name="migrate_from_ios_header">Bring your data from an iPhone</string>
@@ -333,20 +368,26 @@ If you don’t allow this permission, none of your data will be copied to your n
     <string name="migrate_from_ios_instructions_2">2. Go to <b>android.com/switch</b></string>
     <string name="migrate_from_ios_instructions_3">3. Follow the instructions</string>
     <string name="oem_use_old_device_description">You need your old Android, iPhone®, or iPad® device</string>
-    <string name="oem_use_old_device_title">Use your old device</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="petabyteShort">PB</string>
-    <string name="photos_and_videos_picker_no_items">Not selected</string>
+    <string name="photo_and_video_summary_description">"This may be because:
+ "<li>the file format isn’t supported</li>"
+ "<li>the transfer process was interrupted</li>"
+ "</string>
+    <string name="photo_and_video_summary_recover_summary">On your other device, back up your photos using the Google Photos app. They’ll sync automatically when you open the Google Photos app on this device. Alternatively, you can share the missing photos with this device using Nearby Share.</string>
+    <string name="photo_and_video_summary_recover_title">To recover your photos &amp; videos</string>
+    <string name="photo_summary_recover_summary">On your iPhone, back up your photos using the Google Photos app. They’ll sync automatically when you open the Google Photos app on this device.</string>
+    <string name="photo_summary_recover_title">To recover your photos</string>
     <string name="primes_marker">PrImEs</string>
     <string name="progressing_description">This may take a few minutes</string>
     <string name="qrcode_description">QR code</string>
     <string name="restore_apk_title">Data Restore Tool</string>
     <string name="restore_choice_android_device_label">Android</string>
-    <string name="restore_choice_data_disclaimer">Some of your data may not transfer to your ^1. <annotation id="restore_choice_data_disclaimer_learn_more">Learn more</annotation></string>
+    <string name="restore_choice_data_disclaimer">Some of your data may not transfer to your ^1. <annotation id="restore_choice_data_disclaimer_learn_more">Learn more about data that isn’t copied</annotation></string>
     <string name="restore_choice_data_disclaimer_from_newer_version">This backup is from a device with a newer version of Android. Some data may not restore to your new device.</string>
     <string name="restore_choice_data_disclaimer_v2_cloud">Some data may not transfer to your ^1.</string>
     <string name="restore_choice_deselect_some_content">Deselect some content to continue</string>
@@ -416,7 +457,6 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="restore_from_an_android_dialog_title">Bring photos &amp; videos</string>
     <string name="restore_item_alarms">Alarms</string>
     <string name="restore_item_apps">Apps</string>
-    <string name="restore_item_brightness">Brightness</string>
     <string name="restore_item_calendar">Calendar</string>
     <string name="restore_item_calendar_ical_description">iOS® Calendar</string>
     <string name="restore_item_call_logs">Call history</string>
@@ -437,6 +477,8 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="restore_item_notes">Notes</string>
     <string name="restore_item_photos">Photos</string>
     <string name="restore_item_photos_and_videos">Photos &amp; videos</string>
+    <string name="restore_item_recordings">Recordings</string>
+    <string name="restore_item_recordings_description">iOS® Voice Memos</string>
     <string name="restore_item_screen_timeout">Screen timeout</string>
     <string name="restore_item_settings">Device settings</string>
     <string name="restore_item_sms">SMS messages</string>
@@ -448,8 +490,14 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="restore_qs_init_fragment_title_just_a_few_moments">Just a few moments…</string>
     <string name="restore_qs_startrestore_cant_use_old_device_q">Can’t use old device?</string>
     <string name="restore_qs_startrestore_dont_copy">Don’t copy</string>
-    <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer">You can choose to transfer your apps, photos, contacts, Google Account, and more.</string>
+    <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer">You can choose to transfer your apps, photos, contacts, and more.</string>
+    <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer_android">"You can choose to copy apps, photos, contacts, and more.
+
+Your apps will be installed after setup."</string>
+    <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer_ios">You can choose to copy photos, contacts, and more.</string>
     <string name="restore_qs_startrestore_fragment_start_restore_title_copy_apps_and_data">Copy apps &amp; data</string>
+    <string name="restore_qs_startrestore_fragment_start_restore_title_copy_apps_and_data_android">Copy data from your Android device</string>
+    <string name="restore_qs_startrestore_fragment_start_restore_title_copy_apps_and_data_ios">Copy data from your iPhone or iPad</string>
     <string name="restore_qs_startrestore_fragment_use_old_device_description">You need your old Android, iPhone®, or iPad® device</string>
     <string name="restore_qs_startrestore_fragment_use_old_device_title">Use your old device</string>
     <string name="restore_qs_workprofilesetup_fragment_work_profile_setup_description">To set up your work profile, add your work account on the next screen</string>
@@ -460,15 +508,14 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="skip_transfer">Skip transfer</string>
     <string name="small_time_duration">Less than 1 minute</string>
     <string name="some_whatsapp_chats_not_exported">• Some WhatsApp chats not transferred</string>
-    <string name="stop_copying_dialog_continue_button">Dismiss</string>
     <string name="stop_copying_dialog_message_before_transfer">Your data won’t be copied to your new device</string>
-    <string name="stop_copying_dialog_message_before_transfer_initial_setup">You can still transfer content from your old device after setup</string>
+    <string name="stop_copying_dialog_message_before_transfer_initial_setup">You’ll get another chance to copy data from your other device later</string>
     <string name="stop_copying_dialog_message_during_transfer">Some data won’t be copied to your new device</string>
-    <string name="stop_copying_dialog_stop_button_during_transfer">Stop</string>
+    <string name="stop_copying_dialog_stop_button_during_transfer">Stop copying</string>
     <string name="stop_copying_dialog_title_before_transfer">Don’t copy?</string>
     <string name="stop_copying_dialog_title_during_transfer">Stop copying?</string>
     <string name="stop_restoring_dialog_message_before_transfer">Your data won’t be restored to your new device</string>
-    <string name="stop_restoring_dialog_message_before_transfer_initial_setup">You can still restore content from your old device after setup</string>
+    <string name="stop_restoring_dialog_message_before_transfer_initial_setup">You’ll get another chance to restore your data later</string>
     <string name="stop_restoring_dialog_title_before_transfer">Don’t restore?</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
@@ -501,6 +548,7 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="transfer_finished_fragment_readying_device_title">{DEVICE_TYPE, select, PHONE {Getting your phone ready…} TABLET {Getting your tablet ready…} other {Getting your device ready…} }</string>
     <string name="transfer_finished_fragment_title">Adding finishing touches…</string>
     <string name="transfer_finished_fragment_work_setup_tile">Preparing device for work setup…</string>
+    <string name="transfer_summary_copied_successfully">Copied successfully</string>
     <string name="transfer_summary_fragment_description_for_cable_d2d">You can disconnect the cable</string>
     <string name="transfer_summary_fragment_description_for_ios_wifi_d2d">Continue setup or follow the steps on your iPhone</string>
     <string name="transfer_summary_fragment_done_button">Done</string>
@@ -510,6 +558,8 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="transfer_summary_not_copied">Data not copied</string>
     <string name="transfer_summary_nothing_to_copy">No items on device to copy</string>
     <string name="transfer_summary_partial">%1$s / %2$s copied</string>
+    <string name="transfer_summary_partial_v2">%1$s of %2$s copied</string>
+    <string name="transfer_summary_view_details">View details</string>
     <string name="transferring_fragment_calculating_remaining_time">Calculating remaining time…</string>
     <string name="transferring_fragment_description_final_hold">Keep devices connected and turned on</string>
     <string name="transferring_fragment_disabling_back_key">You cann’t go back until copying has finished</string>
@@ -519,11 +569,15 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="trust_instructions_trademark_disclaimer">iPhone, iPad, iMessage, iCloud, Safari, and iTunes are trademarks of Apple Inc., registered in the U.S. and other countries.</string>
     <string name="unlock_ios_fragment_description">To continue, unlock your iPhone®. Keep it unlocked during the transfer.</string>
     <string name="unlock_ios_fragment_title">Unlock your iPhone®</string>
+    <string name="unmatched_apps_fragment_apps_list_description">Unavailable apps</string>
     <string name="vault_confirm_cancel_message">None of your data will be restored to your new device</string>
     <string name="vault_confirm_cancel_title">Continue without restoring data?</string>
     <string name="vault_locked_dialog_text">You entered your %s lock screen incorrectly too many times. Your backup has been deleted.</string>
     <string name="vault_locked_dialog_title">Backup deleted</string>
+    <string name="video_summary_recover_summary">On your iPhone, back up your videos using the Google Photos app. They’ll sync automatically when you open the Google Photos app on this device.</string>
+    <string name="video_summary_recover_title">To recover your videos</string>
     <string name="whatsapp_chats_not_exported">• WhatsApp chats not transferred</string>
+    <string name="wifi_settings_button">Wi-Fi settings</string>
     <string name="work_profile_setup_description">To set up your work profile, add your work account on the next screen</string>
     <string name="work_profile_setup_skip">Skip</string>
     <string name="work_profile_setup_title">Get your device ready for work</string>
