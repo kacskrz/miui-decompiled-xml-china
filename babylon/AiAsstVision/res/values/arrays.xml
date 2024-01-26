@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="aborted_intent_actions">
+        <item>com.miui.whetstone.kloserver.BROWSER_ABORTED</item>
+    </string-array>
+    <string-array name="aborted_packages">
+        <item>com.android.browser</item>
+    </string-array>
+    <string-array name="aborted_types">
+        <item>am_crash</item>
+        <item>am_kill</item>
+    </string-array>
     <string-array name="alphabet_sub_table_with_starred">
         <item>!</item>
         <item>A</item>
@@ -89,12 +99,6 @@
         <item>@string/am</item>
         <item>@string/pm</item>
     </string-array>
-    <array name="audio_visual_img_raw">
-        <item>@drawable/audio_visual_1_2</item>
-        <item>@drawable/audio_visual_2_2</item>
-        <item>@drawable/audio_visual_3_2</item>
-        <item>@drawable/audio_visual_4_2</item>
-    </array>
     <string-array name="chinese_days">
         <item>@string/chinese_day_1</item>
         <item>@string/chinese_day_2</item>
@@ -172,51 +176,6 @@
         <item>@string/chinese_symbol_animals_dog</item>
         <item>@string/chinese_symbol_animals_pig</item>
     </string-array>
-    <string-array name="dax_geq_preset_values">
-        <item>0,0,0,0,0,0,0,0,0,0</item>
-        <item>4,1,-2,-0.25,0,-2,0,-2,0.5,4</item>
-        <item>0,0,0,-1,-1,-3,-0.5,0,0,0</item>
-        <item>-2,-0.5,-5,-1,0,0,-0.5,-3,-0.5,0</item>
-        <item>0,0,0,0,0.5,3,1,6,2,6</item>
-        <item>3,0,-3,-0.5,-0.5,-3,-0.5,0,0,2</item>
-        <item>2,2,-6,-2,3,1,0,1,0,2</item>
-        <item>3,1,-1,0,-0.5,-3,-0.5,0,0,0</item>
-        <item>2,0,0,-1.25,-1,-4,0,0,0,0</item>
-    </string-array>
-    <array name="dax_geq_select_image">
-        <item>@drawable/dax_geq_custom</item>
-        <item>@drawable/dax_geq_rock</item>
-        <item>@drawable/dax_geq_jazz</item>
-        <item>@drawable/dax_geq_pop</item>
-        <item>@drawable/dax_geq_classical</item>
-        <item>@drawable/dax_geq_hiphop</item>
-        <item>@drawable/dax_geq_blues</item>
-        <item>@drawable/dax_geq_electronic</item>
-        <item>@drawable/dax_geq_metal</item>
-    </array>
-    <string-array name="dax_geq_select_text">
-        <item>@string/eq_auto</item>
-        <item>@string/eq_rock</item>
-        <item>@string/eq_jazz</item>
-        <item>@string/eq_pop</item>
-        <item>@string/eq_classical</item>
-        <item>@string/eq_hiphop</item>
-        <item>@string/eq_blues</item>
-        <item>@string/eq_electronic</item>
-        <item>@string/eq_metal</item>
-    </string-array>
-    <string-array name="dax_profile_titles">
-        <item>@string/dolby_dax_profile_dynamic</item>
-        <item>@string/music_headset_scenario_video</item>
-        <item>@string/music_headset_scenario_music</item>
-        <item>@string/music_headset_scenario_vocal</item>
-    </string-array>
-    <string-array name="dax_profile_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>8</item>
-    </string-array>
     <string-array name="detailed_am_pms">
         <item>@string/midnight</item>
         <item>@string/early_morning</item>
@@ -225,32 +184,6 @@
         <item>@string/afternoon</item>
         <item>@string/evening</item>
         <item>@string/night</item>
-    </string-array>
-    <string-array name="dirac_equalizer_preset_names">
-        <item>@string/eq_flat</item>
-        <item>@string/eq_rock</item>
-        <item>@string/eq_jazz</item>
-        <item>@string/eq_pop</item>
-        <item>@string/eq_classical</item>
-        <item>@string/eq_hiphop</item>
-        <item>@string/eq_blues</item>
-        <item>@string/eq_electronic</item>
-        <item>@string/eq_country</item>
-        <item>@string/eq_dance</item>
-        <item>@string/eq_metal</item>
-    </string-array>
-    <string-array name="dirac_equalizer_preset_values">
-        <item>0,0,0,0,0,0,0</item>
-        <item>4,2,-2,0,-2,-2,4</item>
-        <item>0,0,0,-2,-3,0,0</item>
-        <item>0,-3,-5,0,0,-3,0</item>
-        <item>-3,-3,-3,-3,0,3,3</item>
-        <item>3,3,-3,0,-3,0,2</item>
-        <item>2,4,-6,4,0,1,2</item>
-        <item>3,3,-1,0,-3,0,0</item>
-        <item>0,0,-2,-2,2,2,0</item>
-        <item>0,4,2,0,-2,-2,4</item>
-        <item>2,0,0,-2,-4,0,0</item>
     </string-array>
     <string-array name="earthly_branches">
         <item>@string/earthly_branches_zi</item>
@@ -266,19 +199,20 @@
         <item>@string/earthly_branches_xu</item>
         <item>@string/earthly_branches_hai</item>
     </string-array>
-    <string-array name="effect_selector_titles">
-        <item>@string/effect_dolby</item>
-        <item>@string/effect_misound</item>
-        <item>@string/effect_none</item>
-    </string-array>
-    <string-array name="effect_selector_values">
-        <item>dolby</item>
-        <item>misound</item>
-        <item>none</item>
-    </string-array>
     <string-array name="eras">
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
+    </string-array>
+    <string-array name="filter_broadcasts">
+        <item>android.net.conn.CONNECTIVITY_CHANGE</item>
+    </string-array>
+    <string-array name="floating_window_background_entries">
+        <item>@string/black_color</item>
+        <item>@string/transparent_color</item>
+    </string-array>
+    <string-array name="floating_window_background_entry_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
     <string-array name="heavenly_stems">
         <item>@string/heavenly_stems_jia</item>
@@ -344,19 +278,9 @@
         <item>com.android.settings</item>
         <item>com.miui.gallery</item>
         <item>com.miui.cloudservice</item>
-        <item>com.android.deskclock</item>
     </string-array>
-    <string-array name="scenario_selector_titles">
-        <item>@string/music_headset_scenario_intelligent</item>
-        <item>@string/music_headset_scenario_music</item>
-        <item>@string/music_headset_scenario_video</item>
-        <item>@string/music_headset_scenario_vocal</item>
-    </string-array>
-    <string-array name="scenario_selector_values">
-        <item>4</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
+    <string-array name="runtime_permission_desc">
+        <item>用于语音翻译等功能的语音识别</item>
     </string-array>
     <string-array name="solar_terms">
         <item>@string/empty</item>
@@ -385,45 +309,36 @@
         <item>@string/solar_term_heavy_snow</item>
         <item>@string/solar_term_winter_solstice</item>
     </string-array>
-    <string-array name="sound_effect_values">
+    <string-array name="sound_source_entries">
+        <item>@string/sys_sound</item>
+        <item>@string/mic_sound</item>
+    </string-array>
+    <string-array name="sound_source_entry_summaries">
+        <item>@string/sys_sound_content</item>
+        <item>@string/mic_sound_content</item>
+        <item>@string/meeting_sound_content_able</item>
+    </string-array>
+    <string-array name="sound_source_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="text_size_entries">
+        <item>@string/caption_text_size_small</item>
+        <item>@string/caption_text_size_mid</item>
+        <item>@string/caption_text_size_large</item>
+    </string-array>
+    <string-array name="text_size_entry_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
-        <item>3</item>
     </string-array>
-    <array name="soundid_music_select_image">
-        <item>@drawable/sound_id_music_selection_background_01</item>
-        <item>@drawable/sound_id_music_selection_background_02</item>
-        <item>@drawable/sound_id_music_selection_background_03</item>
-    </array>
-    <string-array name="soundid_music_select_text">
-        <item>@string/sound_id_music_one_title</item>
-        <item>@string/sound_id_music_two_title</item>
-        <item>@string/sound_id_music_three_title</item>
+    <string-array name="tone_setting_entries">
+        <item>Melissa</item>
+        <item>Matt</item>
     </string-array>
-    <string-array name="soundid_music_select_text_detail">
-        <item>@string/sound_id_music_one_description</item>
-        <item>@string/sound_id_music_two_description</item>
-        <item>@string/sound_id_music_three_description</item>
-    </string-array>
-    <array name="soundid_music_test_bg_img">
-        <item>@drawable/sound_id_music_selection_background_01</item>
-        <item>@drawable/sound_id_music_selection_background_02</item>
-        <item>@drawable/sound_id_music_selection_background_03</item>
-    </array>
-    <string-array name="support_sound_version">
-        <item>4.1.2</item>
-        <item>4.21.2</item>
-        <item>4.11.2</item>
-        <item>4.29.2</item>
-        <item>4.19.2</item>
-        <item>4.9.2</item>
-    </string-array>
-    <string-array name="switch_sound_effect">
-        <item>@string/sound_effect_original</item>
-        <item>@string/sound_effect_room</item>
-        <item>@string/sound_effect_hall</item>
-        <item>@string/sound_effect_theater</item>
+    <string-array name="tone_setting_entry_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
