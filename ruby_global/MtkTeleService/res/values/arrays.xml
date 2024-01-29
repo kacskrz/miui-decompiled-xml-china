@@ -376,6 +376,16 @@
         <item>taoyao</item>
         <item>light</item>
     </string-array>
+    <string-array name="disable_sa_sa_combination_dppd">
+        <item>N41,N41</item>
+        <item>N1,N1</item>
+        <item>N41,N28</item>
+        <item>N78,N28</item>
+        <item>N41,N1</item>
+        <item>N78,N1</item>
+        <item>N28,N28</item>
+        <item>N78,N78</item>
+    </string-array>
     <string-array name="drop_down_pref_data_sim_entries">
         <item>@string/pref_sim_entries_item1</item>
         <item>@string/pref_sim_entries_item2</item>
@@ -426,22 +436,6 @@
         <item>@string/network_3G</item>
         <item>@string/network_1x</item>
         <item>@string/network_global</item>
-    </string-array>
-    <string-array name="enabled_networks_cdma_no_1x_choices">
-        <item>@string/network_lte</item>
-        <item>@string/network_3G</item>
-        <item>@string/network_global</item>
-    </string-array>
-    <string-array name="enabled_networks_cdma_no_1x_lte_choices">
-        <item>@string/network_3G</item>
-    </string-array>
-    <string-array name="enabled_networks_cdma_no_1x_lte_values">
-        <item>4</item>
-    </string-array>
-    <string-array name="enabled_networks_cdma_no_1x_values">
-        <item>8</item>
-        <item>4</item>
-        <item>10</item>
     </string-array>
     <string-array name="enabled_networks_cdma_no_lte_choices">
         <item>@string/network_3G</item>
@@ -500,14 +494,6 @@
         <item>@string/network_lte</item>
         <item>@string/network_3G</item>
         <item>@string/network_2G</item>
-    </string-array>
-    <string-array name="enabled_networks_tdscdma_no_gsm_choices">
-        <item>@string/network_lte</item>
-        <item>@string/network_3G</item>
-    </string-array>
-    <string-array name="enabled_networks_tdscdma_no_gsm_values">
-        <item>22</item>
-        <item>18</item>
     </string-array>
     <string-array name="enabled_networks_tdscdma_values">
         <item>22</item>
@@ -663,6 +649,17 @@
         <item>@string/month_november_shortest</item>
         <item>@string/month_december_shortest</item>
     </string-array>
+    <string-array name="multi_floating_package_allow_list">
+        <item>com.miui.securitycenter</item>
+        <item>com.miui.weather2</item>
+        <item>com.android.calendar</item>
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.miui.notes</item>
+        <item>com.android.settings</item>
+        <item>com.miui.gallery</item>
+        <item>com.miui.cloudservice</item>
+    </string-array>
     <string-array name="network_state_display">
         <item>@string/network_available</item>
         <item>@string/network_active</item>
@@ -798,6 +795,10 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="service_component_keep_alive">
+        <item>com.xiaomi.registration/.autoregistration.RegistrationService</item>
+        <item>com.miui.dmregservice/cn.richinfo.dm.service.DMService</item>
+    </string-array>
     <string-array name="sip_call_options_values">
         <item>@string/sip_always</item>
         <item>@string/sip_address_only</item>
@@ -867,6 +868,9 @@
         <item>18</item>
         <item>1</item>
     </integer-array>
+    <integer-array name="support_networktypes_nr">
+        <item>23</item>
+    </integer-array>
     <string-array name="t9_indexing_method_entries">
         <item>@string/t9_indexing_method_pinyin</item>
         <item>@string/t9_indexing_method_zhuyin</item>
@@ -876,30 +880,6 @@
         <item>1</item>
     </string-array>
     <array name="thermal_mitigation_allowlisted_packages" />
-    <string-array name="tmo_enabled_networks_5g_choices">
-        <item>@string/tmo_5g_on</item>
-        <item>@string/tmo_5g_lte</item>
-        <item>@string/tmo_lte_3g_2g</item>
-        <item>@string/tmo_lte_3g</item>
-        <item>@string/tmo_2g_only</item>
-    </string-array>
-    <string-array name="tmo_enabled_networks_5g_values">
-        <item>33</item>
-        <item>24</item>
-        <item>9</item>
-        <item>12</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="tmo_enabled_networks_choices">
-        <item>@string/tmo_lte_on</item>
-        <item>@string/tmo_lte_3g</item>
-        <item>@string/tmo_2g_only</item>
-    </string-array>
-    <string-array name="tmo_enabled_networks_values">
-        <item>9</item>
-        <item>12</item>
-        <item>1</item>
-    </string-array>
     <string-array name="transport_types">
         <item>UDP</item>
         <item>TCP</item>
@@ -933,34 +913,6 @@
         <item>WCDMA</item>
         <item>LTE</item>
         <item>Triple mode</item>
-    </string-array>
-    <string-array name="vzw_enabled_networks_cdmaless_choices">
-        <item>@string/vzw_lte_only_mode</item>
-        <item>@string/vzw_gsm_umts_mode</item>
-        <item>@string/vzw_global_lte_gsm_umts_mode</item>
-    </string-array>
-    <string-array name="vzw_enabled_networks_cdmaless_values">
-        <item>11</item>
-        <item>0</item>
-        <item>9</item>
-    </string-array>
-    <string-array name="vzw_enabled_networks_ltecdma_choices">
-        <item>@string/vzw_lte_only_mode</item>
-        <item>@string/vzw_global_mode</item>
-    </string-array>
-    <string-array name="vzw_enabled_networks_ltecdma_values">
-        <item>11</item>
-        <item>8</item>
-    </string-array>
-    <string-array name="vzw_femtocell_choices">
-        <item>@string/vzw_femtocell_connect_to_all</item>
-        <item>@string/vzw_femtocell_connect_to_no_open</item>
-        <item>@string/vzw_femtocell_connect_only_to_allowed</item>
-    </string-array>
-    <string-array name="vzw_femtocell_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
     </string-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
