@@ -108,9 +108,9 @@
         <item quantity="other">%1$d attempts remaining for confirming PIN</item>
         <item quantity="one">%1$d attempt remaining for confirming PIN</item>
     </plurals>
-    <plurals name="fido_create_pin_len_mismatch">
-        <item quantity="other">The PIN length should be a minimum of %1$d and maximum of %2$d characters</item>
-        <item quantity="one">The PIN length should be a minimum of %1$d and maximum of %2$d characters</item>
+    <plurals name="fido_create_pin_len_short">
+        <item quantity="other">The PIN must be at least %1$d characters long</item>
+        <item quantity="one">The PIN must be at least %1$d character long</item>
     </plurals>
     <plurals name="fm_age_confirmation">
         <item quantity="other">"You're %d years old. Is that correct?"</item>
@@ -121,6 +121,10 @@
 &lt;b>%1$d locally saved Chrome passwords&lt;/b>"</item>
         <item quantity="one">"All your data will be deleted including settings, accounts, databases, and
 &lt;b>%1$d locally saved Chrome password&lt;/b>"</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
     </plurals>
     <plurals name="network_pass_remaining_days_text">
         <item quantity="other">%d days remaining</item>
@@ -166,9 +170,9 @@
         <item quantity="other">"%d device contacts aren't synced"</item>
         <item quantity="one">"%d device contact isn't synced"</item>
     </plurals>
-    <plurals name="people_contacts_sync_contacts_not_synced_title">
-        <item quantity="other">"&lt;b>%1$d&lt;/b> contacts aren't synced"</item>
-        <item quantity="one">"&lt;b>1&lt;/b> contact isn't synced"</item>
+    <plurals name="people_contacts_sync_contacts_not_synced_description">
+        <item quantity="other">"&lt;b>%1$d&lt;/b> contacts on this device aren't synced with Google Contacts (contacts.google.com)"</item>
+        <item quantity="one">"&lt;b>1&lt;/b> contact on this device isn't synced with Google Contacts (contacts.google.com)"</item>
     </plurals>
     <plurals name="people_contacts_sync_core_sim_import_card_title">
         <item quantity="other">Import contacts from SIMs</item>
@@ -215,12 +219,8 @@
         <item quantity="one">&lt;b>1&lt;/b> previously synced contact will be removed from this device. You can still find it at contacts.google.com.</item>
     </plurals>
     <plurals name="people_contacts_sync_remove_synced_contacts_dialog_body_has_contacts">
-        <item quantity="other">&lt;b>%1$d&lt;/b> contacts will be removed from this device. &lt;br/> &lt;br/></item>
-        <item quantity="one">&lt;b>1&lt;/b> contact will be removed from this device. &lt;br/> &lt;br/></item>
-    </plurals>
-    <plurals name="people_contacts_sync_remove_synced_contacts_dialog_body_has_dirty_contacts">
-        <item quantity="other">"&lt;br/> &lt;br/> (!) Also &lt;b>%1$d&lt;/b> contacts haven't synced from this device to Google Contacts yet. These contacts will be deleted permanently."</item>
-        <item quantity="one">"&lt;br/> &lt;br/> (!) Also &lt;b>1&lt;/b> contact hasn't synced from this device to Google Contacts yet. This contact will be deleted permanently."</item>
+        <item quantity="other">&lt;b>%1$d&lt;/b> contacts will be removed from this device. </item>
+        <item quantity="one">&lt;b>1&lt;/b> contact will be removed from this device. </item>
     </plurals>
     <plurals name="people_contacts_sync_sim_contact_count_description">
         <item quantity="other">%d contacts to import</item>
@@ -261,6 +261,10 @@
         <item quantity="few">%1$s people</item>
         <item quantity="many">%1$s people</item>
     </plurals>
+    <plurals name="pwm_batch_upload_dialog_title">
+        <item quantity="other">Save %1$d passwords to your Google Account</item>
+        <item quantity="one">Save 1 password to your Google Account</item>
+    </plurals>
     <plurals name="pwm_blocklist_label">
         <item quantity="other">%1$d declined sites and apps</item>
         <item quantity="one">1 declined site or app</item>
@@ -285,6 +289,10 @@
         <item quantity="other">%1$d passwords will be imported</item>
         <item quantity="one">1 password will be imported</item>
     </plurals>
+    <plurals name="pwm_passkey_wizard_screen_header">
+        <item quantity="other">You can upgrade to passkeys on these %1$d accounts</item>
+        <item quantity="one">You can upgrade to passkey on this 1 account</item>
+    </plurals>
     <plurals name="pwm_password_breach_education_title">
         <item quantity="other">You should change these now</item>
         <item quantity="one">You should change it now</item>
@@ -297,6 +305,10 @@
     <plurals name="pwm_password_checked_count">
         <item quantity="other">Passwords checked for %1$d sites and apps</item>
         <item quantity="one">Passwords checked for 1 site or app</item>
+    </plurals>
+    <plurals name="pwm_password_checkup_passkey_education_title">
+        <item quantity="other">Upgrade to passkeys on these %1$d accounts</item>
+        <item quantity="one">Upgrade to passkey on this 1 account</item>
     </plurals>
     <plurals name="pwm_password_checkup_progress">
         <item quantity="other">"This may take a moment.
@@ -363,6 +375,10 @@ Checking 1 password…"</item>
         <item quantity="other">%1$d tracker alerts</item>
         <item quantity="one">1 tracker alert</item>
     </plurals>
+    <plurals name="rt_safety_center_issue_title">
+        <item quantity="other">Trackers traveling with you</item>
+        <item quantity="one">Tracker traveling with you</item>
+    </plurals>
     <plurals name="safety_center_gota_check_for_updates_warning_card_recommendation_body">
         <item quantity="other">"This device hasn't had a security update in more than %1$d months"</item>
         <item quantity="one">"This device hasn't had a security update in more than %1$d month"</item>
@@ -374,6 +390,10 @@ Checking 1 password…"</item>
     <plurals name="sharing_attachment_default">
         <item quantity="other">items</item>
         <item quantity="one">item</item>
+    </plurals>
+    <plurals name="sharing_contact_list_numbers">
+        <item quantity="other">contacts</item>
+        <item quantity="one">contact</item>
     </plurals>
     <plurals name="sharing_device_visibility_unreachable_description">
         <item quantity="other">"%1$d contacts aren't available. To use Nearby Share with them, add the email address associated with their Google Account to your contacts."</item>
