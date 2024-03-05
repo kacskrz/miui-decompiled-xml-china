@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="access_settings">IQ Dump Settings</string>
     <string name="advanced_settings_title">Advanced Settings</string>
     <string name="ago_project_warning_dlg_message">[WARNING] Modem/network/connsysFW/GPS log daemon are default disabled at AGO project.</string>
     <string name="ago_project_warning_dlg_title">AGO Project Warning</string>
     <string name="app_name">DebugLoggerUI</string>
+    <string name="as_cc_index_title">CC Index</string>
+    <string name="as_rat_title">RAT</string>
+    <string name="as_rx_capture_mode_title">RX Capture Mode (Hexadecimal number)</string>
+    <string name="as_rx_path_dialog_title">RX Path (Only the adjacent path can be selected at the same time)</string>
+    <string name="as_rx_path_title">RX Path</string>
     <string name="bluetooth_log_settings_title">Bluetooth Log</string>
     <string name="bt_hci_log_name">HCI Log</string>
     <string name="bt_stack_log_name">Stack Log</string>
@@ -28,6 +34,7 @@
     <string name="clear_dlg_title">Clear</string>
     <string name="clear_modem_boot_up_log">Clear modem boot up logs</string>
     <string name="clear_non_selected_item">Please select at least one of the log folder!</string>
+    <string name="conditon_type_title">Condition Type</string>
     <string name="connsysFW_log_name">ConnsysFWLog</string>
     <string name="connsys_log_name">ConnsysLog</string>
     <string name="connsysfw_log_settings_title">ConnsysFW Log</string>
@@ -100,16 +107,20 @@
     <string name="info_wait_sd_ready">Waiting storage ready...</string>
     <string name="iq_dump_auto_stop_mdlog_summary">Auto stop modemlog after IQ Dump done</string>
     <string name="iq_dump_auto_stop_mdlog_title">Auto Stop ModemLog</string>
+    <string name="iq_dump_dump_cc_index_1_title">Dump 1st CC Index</string>
+    <string name="iq_dump_dump_cc_index_2_title">Dump 2nd CC Index</string>
     <string name="iq_dump_dump_cc_index_title">Dump CC Index</string>
     <string name="iq_dump_enabled_warning_dlg_message">IQ Dump is only available for new chips after Android Q!</string>
     <string name="iq_dump_enabled_warning_dlg_title">IQ Dump Enabled Warning</string>
     <string name="iq_dump_fr1_total_cc_num_title">FR1 Total CC Number</string>
+    <string name="iq_dump_invalid_data_warning_dlg_message">[WARNING]WPRT = 0; There is no valid IQ data!</string>
+    <string name="iq_dump_invalid_data_warning_dlg_title">No Valid IQ data Warning</string>
     <string name="iq_dump_md_version_title">Modem Version</string>
     <string name="iq_dump_mode_title">Mode of IQ Dump</string>
     <string name="iq_dump_rat_title">RAT of IQ Dump</string>
     <string name="iq_dump_scenario_title">Scenario of IQ Dump</string>
     <string name="iq_dump_settings">IQ Dump Settings</string>
-    <string name="iq_dump_start_warning_dlg_message">"[WARNING] You will just see the black screen after starting IQ dump. Please don't touch the screen until the timeout."</string>
+    <string name="iq_dump_start_warning_dlg_message">[WARNING] Please check APEMI settings is done by ADB_SetEMI.bat if needed!</string>
     <string name="iq_dump_start_warning_dlg_title">IQ Dump Start Warning</string>
     <string name="iq_dump_time_delay_starting_dialogtitle">Time Delay of IQ Dump Starting(Sec)</string>
     <string name="iq_dump_time_delay_starting_message">IQ Dump will auto start after ModemLog running for time(0~2147483647 Sec):</string>
@@ -117,6 +128,8 @@
     <string name="iq_dump_time_of_running_dialogtitle">Time of IQ Dump Running(Sec)</string>
     <string name="iq_dump_time_of_running_message">IQ Dump will auto stop after it running for time(5~2147483647 Sec):</string>
     <string name="iq_dump_time_of_running_title">Time of IQ Dump Running(Sec)</string>
+    <string name="iq_dump_tx_bb_layer_num_1_title">1st BB layer number</string>
+    <string name="iq_dump_tx_bb_layer_num_2_title">2nd BB layer number</string>
     <string name="iqdump_settings_dialog_message">This project is 3G modem, do not support IQ Dump Feature!</string>
     <string name="iqdump_settings_dialog_title">IQ Dump Feature Warning</string>
     <string name="limit_connsysfw_log_size_title">Limit ConnsysFW Log Size(MB)</string>
@@ -224,9 +237,18 @@ The dump file is:"</string>
     <string name="notification_title_taglog_compressing">Compressing log</string>
     <string name="ok_button">OK</string>
     <string name="open_develop_option_dialog_message">Please enable Developer options first!</string>
+    <string name="pd_bblayer_rfpath_title">BBLAYER_RFPATH</string>
+    <string name="pd_channel_type_title">CHANNEL_TYPE (Will be ignored if &lt;0)</string>
+    <string name="pd_point_title">POINT</string>
+    <string name="pd_start_symbol_title">START_SYMBOL (Will be ignored if &lt;0)</string>
     <string name="reduce_to">reduce to</string>
     <string name="reset_automatically_modem_summary">Reset Modem automatically after EE happened</string>
     <string name="reset_automatically_modem_title">Reset Modem Automatically</string>
+    <string name="rs_dssrc_title">DSSRC (Hexadecimal number)</string>
+    <string name="rs_end_time_title">END_TIME (Hexadecimal number)</string>
+    <string name="rs_rat_title">RAT (Hexadecimal number)</string>
+    <string name="rs_start_time_title">START_TIME (Hexadecimal number)</string>
+    <string name="rx_dump_mode_title">Type of RX IQ Dump</string>
     <string name="save_location_in_log_dialog_context">"Enable this feature will force the GPS to be always turned on.This may increase device power consumption on both Android and modem.
 
 Please disable this feature if you are using device in in-door location,performing performance test,or measuring power consumption."</string>
@@ -241,6 +263,7 @@ Please disable this feature if you are using device in in-door location,performi
     <string name="service_state_starting_log">DebugLoggerUIService Starting log...</string>
     <string name="service_state_stopping_log">DebugLoggerUIService Stopping log...</string>
     <string name="settings_title">Settings</string>
+    <string name="show_cmd">Show Command</string>
     <string name="switch_to_develop_option_dialog_message">"Switch to 'Enable Wif-Fi Verbose Logging' at Develop options ?"</string>
     <string name="switch_to_develop_option_dialog_title">Switch to Developer options</string>
     <string name="tag_log_name">TagLog</string>
@@ -255,6 +278,15 @@ Please input your tag name:"</string>
     <string name="taglog_title_warning">Tag Log Warning!</string>
     <string name="time_default">0:00:00</string>
     <string name="title_activity_log_folder_list">Clear DebugLogger Files</string>
+    <string name="ts_Parameter_1_title">1st Parameter (Hexadecimal number)</string>
+    <string name="ts_Parameter_2_title">2nd Parameter (Hexadecimal number)</string>
+    <string name="ts_Parameter_3_title">3rd Parameter (Hexadecimal number)</string>
+    <string name="ts_Parameter_4_title">4th Parameter (Hexadecimal number)</string>
+    <string name="tx_cc_title">TX CC (Hexadecimal number)</string>
+    <string name="tx_dump_mode_title">Type of TX IQ Dump</string>
+    <string name="tx_path_title">TX Path (Hexadecimal number)</string>
+    <string name="tx_point_title">TX Point (Hexadecimal number)</string>
+    <string name="tx_rat_title">TX RAT</string>
     <string name="uncontrolled_warning_dialog_message">Log will be stopped when it is uncontrolled!</string>
     <string name="uncontrolled_warning_dialog_title">Warning : Log is Running</string>
     <string name="waiting_checking_log_dialog_message">Checking log files...</string>
