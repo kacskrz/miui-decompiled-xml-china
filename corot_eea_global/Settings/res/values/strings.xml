@@ -1566,7 +1566,7 @@ You can unlock with your watch when your face or fingerprint isn’t recognized.
     <string name="bluetooth_broadcast_dialog_broadcast_app">Broadcast %1$s</string>
     <string name="bluetooth_broadcast_dialog_broadcast_message">Broadcast media to devices near you, or listen to someone else’s broadcast</string>
     <string name="bluetooth_broadcast_dialog_find_message">Listen to broadcasts that are playing near you</string>
-    <string name="bluetooth_broadcast_dialog_text">"Shared audio will be encrypted and available to compatible devices. During the broadcast, sound won't be played on this device and connected Bluetooth devices."</string>
+    <string name="bluetooth_broadcast_dialog_text">"Audio will be automatically encrypted during broadcasts. Only nearby devices that support audio broadcasting can find and listen to your broadcasts. This device's speakers and other connected Bluetooth devices that don't support audio broadcasting will remain silent."</string>
     <string name="bluetooth_broadcast_dialog_title">Broadcast</string>
     <string name="bluetooth_broadcast_pin_configure">Broadcast: Bluetooth Privacy Code</string>
     <string name="bluetooth_broadcast_pin_configure_dialog">Broadcast: Configure Bluetooth Privacy Code</string>
@@ -2225,6 +2225,13 @@ If you install a CA certificate, the certificate owner could access your data, s
     <string name="camera_front">Front %s</string>
     <string name="camera_gesture_desc">Open the camera app by twisting your wrist twice</string>
     <string name="camera_gesture_title">Double twist for camera</string>
+    <string name="camera_grip_firmware_need_update">Update</string>
+    <string name="camera_grip_firmware_new_version">Up to date</string>
+    <string name="camera_grip_firmware_title_text">Update firmware</string>
+    <string name="camera_grip_firmware_update_describe">Keep the grip connected throughout the update process</string>
+    <string name="camera_grip_firmware_update_faild">"Couldn't update"</string>
+    <string name="camera_grip_firmware_update_ongoing">"Updating. Don't disconnect the grip."</string>
+    <string name="camera_grip_firmware_update_successful">Updated successfully</string>
     <string name="camera_key_action_app_title">Open app</string>
     <string name="camera_key_action_category_title">"Can't use Camera"</string>
     <string name="camera_key_action_none_title">No action</string>
@@ -2330,7 +2337,7 @@ If this permission is on, the app will be available as an option whenever a tag 
     <string name="change_security_lock">Try other ways to unlock</string>
     <string name="change_storage">Change storage</string>
     <string name="change_theme_reboot">Changing the theme requires a restart.</string>
-    <string name="change_wifi_state_app_detail_summary">Allow this app to turn Wi-Fi on or off, scan and connect to Wi-Fi networks, add or remove networks, or start a local-only hotspot</string>
+    <string name="change_wifi_state_app_detail_summary">Allow this app to turn Wi-Fi on or off, scan and connect to Wi-Fi networks, add or remove networks, or start a local-only hotspot.</string>
     <string name="change_wifi_state_app_detail_switch">Allow app to control Wi-Fi</string>
     <string name="change_wifi_state_title">Wi-Fi control</string>
     <string name="channel_group_notifications_off_desc">At your request, Android is blocking this group of notifications from appearing on this device</string>
@@ -3357,6 +3364,9 @@ Please send this code to the technician."</string>
     <string name="display_cutout_emulation">Display cutout</string>
     <string name="display_cutout_emulation_keywords">display cutout, notch</string>
     <string name="display_dashboard_summary">Dark theme, font size, brightness</string>
+    <string name="display_notification_icon_0">None</string>
+    <string name="display_notification_icon_1">%d icon</string>
+    <string name="display_notification_icon_3">%d icons</string>
     <string name="display_prompt_confirm">Got it</string>
     <string name="display_settings">Display</string>
     <string name="display_settings_new">Display &amp; brightness</string>
@@ -3871,6 +3881,7 @@ Add a screen lock before adding your face data."</string>
     <string name="face_data_suggesstion_first_cn">For you to be able to use Face unlock, we need to collect your face data which then will be stored locally on this device. To delete it, search for Face unlock in the Settings and then select Face unlock > Face data.</string>
     <string name="face_data_suggesstion_first_cn_highlight">Face unlock is less secure than a PIN, password, pattern, or fingerprint. Your device might be unlocked with your photo, as well as by people or objects with a similar appearance.</string>
     <string name="face_data_suggesstion_second">"Make sure all parts of your face aren't covered by objects and are clearly visible. Your face should be well-lit as well."</string>
+    <string name="face_enroll_when_slt_on_toast" />
     <string name="face_intro_error_max">You’ve added the maximum number of faces</string>
     <string name="face_intro_error_unknown">Can’t add more faces</string>
     <string name="face_password_unlock">Face data &amp; screen lock</string>
@@ -3915,6 +3926,7 @@ facing the outer screen"</string>
     <string name="face_unlock_success_stay_screen_msg">Stay on the Lock screen after your face is verified. Swipe up to open the Home screen.</string>
     <string name="face_unlock_success_stay_screen_title">Stay on Lock screen after unlocking</string>
     <string name="face_unlock_title">You can unlock your phone using your face. For security, this option requires a backup screen lock.</string>
+    <string name="face_unlock_when_slt_on_toast" />
     <string name="factory_reset_summary">Formatting will erase all data from the internal storage of your device</string>
     <string name="fahrenheit_temperature_unit">Fahrenheit (°F)</string>
     <string name="failed_attempts_now_wiping_device">"Too many unsuccesful attempts. This device's data will be erased."</string>
@@ -4197,7 +4209,7 @@ To learn more, contact your credit provider."</string>
 "</string>
     <string name="font_size_summary1">"If your system's text is still too small, try "</string>
     <string name="font_size_summary2">Lite mode</string>
-    <string name="footer_description_full_screen_intent">Allow this app to show notifications that take up the full screen when the device is locked. Apps may use these to highlight alarms, incoming calls, or other urgent notifications.</string>
+    <string name="footer_description_full_screen_intent">Allow this app to display notifications that take up the entire screen when the device is locked. The app can use full screen notifications to display alarms, incoming calls, or other urgent notifications. This setting relies on the permission to open new windows while running in the background and can only be used when this permission is granted.</string>
     <string name="footer_learn_more_content_description">Learn more about %1$s</string>
     <string name="for_diagnosis_usage_only">Use this info for diagnosis only.</string>
     <string name="forbidden_network">(forbidden)</string>
@@ -4332,6 +4344,8 @@ When you turn on automatic backup, device and app data is periodically saved rem
     <string name="game_booster_title">Game Turbo</string>
     <string name="game_controller_settings_category">Game Controller</string>
     <string name="game_storage_settings">Games</string>
+    <string name="gaze_lock_screen_summary">Device will remain unlocked when your presence is detected and lock when you move away from the screen</string>
+    <string name="gaze_lock_screen_title">Detect presence</string>
     <string name="gd_setting_title">Sidebar</string>
     <string name="general_category_title">General</string>
     <string name="general_notification_header">Manage</string>
@@ -7376,6 +7390,8 @@ Read and agree to %s before using this service."</string>
     <string name="phone_language_summary" />
     <string name="photo_data">Photos and videos</string>
     <string name="photography_handle_button_function_settings">Set up grip button</string>
+    <string name="photography_handle_charge_protected">Grip charging auto-disconnect</string>
+    <string name="photography_handle_charge_protected_summary">"When your device recognizes that you're using a camera grip, device will stop charging and keep battery at %1$s"</string>
     <string name="photography_handle_launch_and_take_photo">Take photo</string>
     <string name="photography_handle_launch_camera">Open camera</string>
     <string name="photography_handle_long_press_camera_key_enter_camera">Press and hold the shutter button to perform an action</string>
@@ -7742,6 +7758,7 @@ Press the power button and the volume up button at the same time"</string>
     <string name="privacy_thumbnail_blur_title">Blur app previews</string>
     <string name="private_dns_broken">Private DNS server cannot be accessed</string>
     <string name="private_dns_help_message"><annotation id="url">Learn more</annotation> about Private DNS features</string>
+    <string name="private_dns_host_name">Private DNS provider hostname</string>
     <string name="private_dns_mode_off">Off</string>
     <string name="private_dns_mode_on">On</string>
     <string name="private_dns_mode_opportunistic">Auto</string>
@@ -7750,6 +7767,7 @@ Press the power button and the volume up button at the same time"</string>
     <string name="private_dns_mode_provider_exposed_hostname">Discoverable</string>
     <string name="private_dns_mode_provider_failure">"Couldn't connect"</string>
     <string name="private_dns_mode_provider_hostname_hint">Enter hostname of DNS provider</string>
+    <string name="private_dns_title">Private DNS</string>
     <string name="private_gallery_need_to_unlock">Enter password</string>
     <string name="private_gallery_recording_intro_header">Draw an unlock pattern</string>
     <string name="private_gallery_reset_by_account">To reset your password, sign in to your Xiaomi Account.</string>
@@ -8242,19 +8260,14 @@ Restart your device and try again."</string>
     <string name="screen_paper_mode_update_white_pkg_list_summary">Update the list of apps which automatically use Reading mode</string>
     <string name="screen_paper_mode_update_white_pkg_list_title">Update automatically</string>
     <string name="screen_paper_texture">Texture</string>
-    <string name="screen_pinning_description">"When an app is pinned, the pinned app may open other apps and personal data may be accessible. 
+    <string name="screen_pinning_description">Pinned apps can open other apps and access your personal information</string>
+    <string name="screen_pinning_dialog_message">"Here's what pinned apps can do:
 
-To use app pinning: \u0009
-1. Turn on app pinning \u0009
-2. Open Overview \u0009
-3. Tap the app icon at the top of the screen, then tap Pin"</string>
-    <string name="screen_pinning_dialog_message">"When app is pinned: 
+• Access your personal information
+(e.g. contacts and emails)
+• Open other apps
 
-•\u0009\u0009Personal data may be accessible 
-\u0009\u0009(such as contacts and email content) 
-•\u0009\u0009Pinned app may open other apps 
-
-Only use app pinning with people you trust."</string>
+Use this feature with caution while sharing this device with others."</string>
     <string name="screen_pinning_guest_user_description">"When an app is pinned, the pinned app may open other apps and personal data may be accessible. 
 
 If you want to securely share your device with someone, try using a guest user instead. 
@@ -8263,10 +8276,11 @@ To use app pinning: \u0009
 1. Turn on app pinning \u0009
 2. Open Overview \u0009
 3. Tap the app icon at the top of the screen, then tap Pin"</string>
+    <string name="screen_pinning_summary">Pinned apps will stay in Recents until you unpin them</string>
     <string name="screen_pinning_switch_off_text">Off</string>
     <string name="screen_pinning_switch_on_text">On</string>
-    <string name="screen_pinning_title">App pinning</string>
-    <string name="screen_pinning_unlock_none">Lock device when unpinning</string>
+    <string name="screen_pinning_title">Allow pinning apps</string>
+    <string name="screen_pinning_unlock_none">Verify screen lock to unpin</string>
     <string name="screen_pinning_unlock_password">Ask for password before unpinning</string>
     <string name="screen_pinning_unlock_pattern">Ask for unlock pattern before unpinning</string>
     <string name="screen_pinning_unlock_pin">Ask for PIN before unpinning</string>
@@ -9197,6 +9211,7 @@ Double tap to open Recents."</string>
     <string name="skip_lock_screen_confirm_msg">"Notifications, music player controls, and shortcuts won't be displayed on the Lock screen."</string>
     <string name="skip_lock_screen_dialog_button_label">Skip</string>
     <string name="skip_step">Skip</string>
+    <string name="slave_wifi_menu_p2p">SLAVE Wi-Fi Direct</string>
     <string name="slider_app_open">Open app</string>
     <string name="slider_app_open_name">Open %1$s</string>
     <string name="slider_app_open_none">None</string>
@@ -10112,6 +10127,7 @@ Try using a faster ^3, or use this ^4 for portable storage instead."</string>
     <string name="title_quick_control_all_devices">Show controls for nearby devices</string>
     <string name="title_regional_pref_footer">If an app doesn’t support regional preferences, the app will use its default locale settings.</string>
     <string name="title_show_notification_icon">Show notification icons</string>
+    <string name="title_show_notification_icon_count">Number of notification icons shown</string>
     <string name="title_smart_device_control">Smart device controls</string>
     <string name="title_special_features_health_global">Heart rate</string>
     <string name="title_unavailable_locale">%s not available</string>
@@ -10284,6 +10300,7 @@ Try using a faster ^3, or use this ^4 for portable storage instead."</string>
     <string name="tx_link_speed_label">Transmit link speed:</string>
     <string name="tx_wifi_speed">Transmit link speed</string>
     <string name="ucar_screen_projection_title">CarWith</string>
+    <string name="ufs_size_suffix">%1$s+%2$s</string>
     <string name="unadapt_embedded">"Parallel windows aren't available"</string>
     <string name="under_keyguard">Screen off</string>
     <string name="unimportant">Unimportant</string>
