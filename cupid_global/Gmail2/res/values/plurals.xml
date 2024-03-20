@@ -128,7 +128,11 @@
     </plurals>
     <plurals name="conversation_not_spam">
         <item quantity="other">&lt;b>%1$d&lt;/b> reported as not spam</item>
-        <item quantity="one">&lt;b>%1$d&lt;/b> reported as not spam</item>
+        <item quantity="one">&lt;b>%1$d&lt;/b> reported as not spam. Future messages from this sender will be sent to inbox.</item>
+    </plurals>
+    <plurals name="conversation_not_spam_and_donated">
+        <item quantity="other">&lt;b>%1$d&lt;/b> reported as not spam and shared</item>
+        <item quantity="one">&lt;b>%1$d&lt;/b> reported as not spam and shared</item>
     </plurals>
     <plurals name="conversation_read">
         <item quantity="other">&lt;b>%1$d&lt;/b> marked as read</item>
@@ -143,8 +147,8 @@
         <item quantity="one">&lt;b>%1$d&lt;/b> reported as spam</item>
     </plurals>
     <plurals name="conversation_spammed_and_unsubscribed">
-        <item quantity="other">%1$d reported as spam and unsubscribed</item>
-        <item quantity="one">%1$d reported as spam and unsubscribed</item>
+        <item quantity="other">%1$d unsubscribed and reported as spam</item>
+        <item quantity="one">Unsubscribed and reported as spam</item>
     </plurals>
     <plurals name="conversation_starred">
         <item quantity="other">Starring %1$d conversations</item>
@@ -162,9 +166,9 @@
         <item quantity="other">Unstarring %1$d conversations</item>
         <item quantity="one">Unstarring %1$d conversation</item>
     </plurals>
-    <plurals name="conversation_unsubscribed">
-        <item quantity="other">%1$d reported unsubscribed</item>
-        <item quantity="one">%1$d reported unsubscribed</item>
+    <plurals name="conversation_unsubscribed_archived">
+        <item quantity="other">%1$d unsubscribed and archived</item>
+        <item quantity="one">Unsubscribed and archived</item>
     </plurals>
     <plurals name="daily">
         <item quantity="other">Every %d days</item>
@@ -180,6 +184,14 @@
     <plurals name="dialog_report_spam_unsubscribe_text">
         <item quantity="other">These messages will be marked as spam. Would you also like to stop receiving similar messages from these &lt;b>%2$d senders&lt;/b>?%1$s</item>
         <item quantity="one">This message will be marked as spam. Would you also like to stop receiving similar messages from %1$s?</item>
+    </plurals>
+    <plurals name="dialog_unsubscribe_archive_mailto_message">
+        <item quantity="other">"Gmail can &lt;b>unsubscribe&lt;/b> you by sending a message to&lt;br>&lt;br%1$s&lt;br>&lt;br>If you didn't sign up to receive these messages, &lt;b>Report spam&lt;/b> instead to help protect all Gmail users from unwanted email. ^1"</item>
+        <item quantity="one">"Gmail can &lt;b>unsubscribe&lt;/b> you by sending a message to %1$s.&lt;br>&lt;br>If you didn't sign up to receive this message, &lt;b>Report spam&lt;/b> instead to help protect all Gmail users from unwanted email. ^1"</item>
+    </plurals>
+    <plurals name="dialog_unsubscribe_archive_oneclick_http_message">
+        <item quantity="other">"Gmail can &lt;b>unsubscribe&lt;/b> you from the senders.&lt;br>&lt;br>If you didn't sign up to receive these messages, &lt;b>Report spam&lt;/b> instead to help protect all Gmail users from unwanted email. ^1"</item>
+        <item quantity="one">"Gmail can &lt;b>unsubscribe&lt;/b> you from the sender.&lt;br>&lt;br>If you didn't sign up to receive this message, &lt;b>Report spam&lt;/b> instead to help protect all Gmail users from unwanted email. ^1"</item>
     </plurals>
     <plurals name="do_not_disturb_hour_duration_string">
         <item quantity="other">%d hours</item>
@@ -204,6 +216,14 @@
     <plurals name="endByCount">
         <item quantity="other">; for %d times</item>
         <item quantity="one">; for one time</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
     </plurals>
     <plurals name="external_member_invitation_dialog_title">
         <item quantity="other">"You're adding external guests"</item>
@@ -287,16 +307,20 @@
         <item quantity="one">%d Reply</item>
     </plurals>
     <plurals name="message_requests_action_bar_title">
-        <item quantity="other">%d message requests</item>
-        <item quantity="one">%d message request</item>
+        <item quantity="other">%d chat requests</item>
+        <item quantity="one">%d chat request</item>
     </plurals>
     <plurals name="message_requests_count_content_description">
-        <item quantity="other">%d unviewed message requests</item>
-        <item quantity="one">%d unviewed message request</item>
+        <item quantity="other">%d unviewed chat requests</item>
+        <item quantity="one">%d unviewed chat request</item>
     </plurals>
     <plurals name="message_time_minutes_ago">
         <item quantity="other">%d min</item>
         <item quantity="one">%d min</item>
+    </plurals>
+    <plurals name="message_views_text_body">
+        <item quantity="other">%1$d message views</item>
+        <item quantity="one">%1$d message view</item>
     </plurals>
     <plurals name="monthly_interval">
         <item quantity="other">Every %1$d months</item>
@@ -346,8 +370,8 @@
         <item quantity="one">External recipient</item>
     </plurals>
     <plurals name="pending_message_requests_count_content_description">
-        <item quantity="other">%d pending message requests</item>
-        <item quantity="one">%d pending message request</item>
+        <item quantity="other">%d pending chat requests</item>
+        <item quantity="one">%d pending chat request</item>
     </plurals>
     <plurals name="peoplekit_chips_copied_recipients">
         <item quantity="other">Copied %d recipients</item>
@@ -370,13 +394,10 @@
         <item quantity="one">%1$d person reacted</item>
         <item quantity="two">%1$d people reacted</item>
     </plurals>
-    <plurals name="read_receipts_by_message_view_have_not_read_it_accessibility_description">
-        <item quantity="other">Not yet read it, %1$s people</item>
-        <item quantity="one">Not yet read it, %1$s person</item>
-    </plurals>
-    <plurals name="read_receipts_by_message_view_read_it_accessibility_description">
-        <item quantity="other">Read by %1$s people</item>
-        <item quantity="one">Read by %1$s person</item>
+    <plurals name="reactors_list_reactors_count">
+        <item quantity="other">%1$d people reacted</item>
+        <item quantity="one">%1$d person reacted</item>
+        <item quantity="two">%1$d people reacted</item>
     </plurals>
     <plurals name="sent_multiple_images_summary">
         <item quantity="other">Sent %d images.</item>
@@ -455,8 +476,8 @@
         <item quantity="one">1 year ago</item>
     </plurals>
     <plurals name="tasks_confirm_complete_subtasks_description">
-        <item quantity="other">Completing this task will also complete %1$d subtasks.</item>
-        <item quantity="one">Completing this task will also complete 1 subtask.</item>
+        <item quantity="other">Completing this task will also complete %1$d subtasks</item>
+        <item quantity="one">Completing this task will also complete 1 subtask</item>
     </plurals>
     <plurals name="tasks_confirm_complete_subtasks_title">
         <item quantity="other">Mark %1$d tasks completed?</item>
@@ -483,13 +504,29 @@
         <item quantity="other">You: (unsent %1$d attachments)</item>
         <item quantity="one">You: (unsent attachment)</item>
     </plurals>
+    <plurals name="unsent_attachments_summary_without_prefix">
+        <item quantity="other">(unsent %1$d attachments)</item>
+        <item quantity="one">(unsent attachment)</item>
+    </plurals>
     <plurals name="unsent_multiple_images_summary">
         <item quantity="other">You: (unsent %d images)</item>
         <item quantity="one">You: (unsent %d image)</item>
     </plurals>
+    <plurals name="unsent_multiple_images_summary_without_prefix">
+        <item quantity="other">(unsent %d images)</item>
+        <item quantity="one">(unsent %d image)</item>
+    </plurals>
     <plurals name="unsent_multiple_videos_summary">
         <item quantity="other">You: (unsent %d videos)</item>
         <item quantity="one">You: (unsent %d video)</item>
+    </plurals>
+    <plurals name="unsent_multiple_videos_summary_without_prefix">
+        <item quantity="other">(unsent %d videos)</item>
+        <item quantity="one">(unsent %d video)</item>
+    </plurals>
+    <plurals name="unsubscribed_toast">
+        <item quantity="other">Unsubscribed from %1$d mailing lists</item>
+        <item quantity="one">Unsubscribed from mailing list</item>
     </plurals>
     <plurals name="weekly">
         <item quantity="other">Every %1$d weeks on %2$s</item>
