@@ -13,8 +13,8 @@
         <item quantity="one">%d yr ago</item>
     </plurals>
     <plurals name="account_summary_number_of_account_text">
-        <item quantity="other">%d Accounts</item>
-        <item quantity="one">%d Account</item>
+        <item quantity="other">%d Plans</item>
+        <item quantity="one">%d Plan</item>
     </plurals>
     <plurals name="app_data_backup_summary">
         <item quantity="other">%1$d apps</item>
@@ -43,6 +43,14 @@
     <plurals name="auth_trust_agent_inactivity_notification_minute">
         <item quantity="other">" %d minutes"</item>
         <item quantity="one">" 1 minute"</item>
+    </plurals>
+    <plurals name="backup_extension_data_restore_cancel_or_failure_notification_for_portal">
+        <item quantity="other">Some data not restored</item>
+        <item quantity="one">Some data not restored</item>
+    </plurals>
+    <plurals name="backup_extension_data_restore_success_notification_for_portal">
+        <item quantity="other">Data restored</item>
+        <item quantity="one">Data restored</item>
     </plurals>
     <plurals name="car_driving_mode_notification_eta_mins">
         <item quantity="other">In %d mins</item>
@@ -96,6 +104,14 @@
         <item quantity="other">%1$d checks</item>
         <item quantity="one">1 check</item>
     </plurals>
+    <plurals name="fido_confirm_pin_retries">
+        <item quantity="other">%1$d attempts remaining for confirming PIN</item>
+        <item quantity="one">%1$d attempt remaining for confirming PIN</item>
+    </plurals>
+    <plurals name="fido_create_pin_len_mismatch">
+        <item quantity="other">The PIN length should be a minimum of %1$d and maximum of %2$d characters</item>
+        <item quantity="one">The PIN length should be a minimum of %1$d and maximum of %2$d characters</item>
+    </plurals>
     <plurals name="fm_age_confirmation">
         <item quantity="other">"You're %d years old. Is that correct?"</item>
         <item quantity="one">"You're %d year old. Is that correct?"</item>
@@ -105,6 +121,10 @@
 &lt;b>%1$d locally saved Chrome passwords&lt;/b>"</item>
         <item quantity="one">"All your data will be deleted including settings, accounts, databases, and
 &lt;b>%1$d locally saved Chrome password&lt;/b>"</item>
+    </plurals>
+    <plurals name="network_pass_remaining_days_text">
+        <item quantity="other">%d days remaining</item>
+        <item quantity="one">%d day remaining</item>
     </plurals>
     <plurals name="notification_new_messages">
         <item quantity="other">New messages</item>
@@ -145,6 +165,10 @@
     <plurals name="people_backup_sync_device_contacts_not_synced">
         <item quantity="other">"%d device contacts aren't synced"</item>
         <item quantity="one">"%d device contact isn't synced"</item>
+    </plurals>
+    <plurals name="people_contacts_sync_contacts_not_synced_title">
+        <item quantity="other">"&lt;b>%1$d&lt;/b> contacts aren't synced"</item>
+        <item quantity="one">"&lt;b>1&lt;/b> contact isn't synced"</item>
     </plurals>
     <plurals name="people_contacts_sync_core_sim_import_card_title">
         <item quantity="other">Import contacts from SIMs</item>
@@ -187,12 +211,16 @@
         <item quantity="one">"Can't sync %1$d contact on SIMs until they are imported"</item>
     </plurals>
     <plurals name="people_contacts_sync_remove_contacts_description">
-        <item quantity="other">&lt;b>%1$d&lt;/b> preivously synced contacts will be removed from this device. You can still find them at contacts.google.com.</item>
-        <item quantity="one">&lt;b>1&lt;/b> preivously synced contact will be removed from this device. You can still find it at contacts.google.com.</item>
+        <item quantity="other">&lt;b>%1$d&lt;/b> previously synced contacts will be removed from this device. You can still find them at contacts.google.com.</item>
+        <item quantity="one">&lt;b>1&lt;/b> previously synced contact will be removed from this device. You can still find it at contacts.google.com.</item>
     </plurals>
-    <plurals name="people_contacts_sync_remove_synced_contacts_dialog_body">
-        <item quantity="other">&lt;b>%1$d&lt;/b> contacts previously synced with Google Contacts will be removed from this device. &lt;br/> &lt;br/>You can still find them at contacts.google.com or restore them on this device by turning &lt;b>Sync with Google Contacts&lt;/b> on again.</item>
-        <item quantity="one">&lt;b>1&lt;/b> contact previously synced with Google Contacts will be removed from this device. &lt;br/> &lt;br/>You can still find them at contacts.google.com or restore them on this device by turning &lt;b>Sync with Google Contacts&lt;/b> on again.</item>
+    <plurals name="people_contacts_sync_remove_synced_contacts_dialog_body_has_contacts">
+        <item quantity="other">&lt;b>%1$d&lt;/b> contacts will be removed from this device. &lt;br/> &lt;br/></item>
+        <item quantity="one">&lt;b>1&lt;/b> contact will be removed from this device. &lt;br/> &lt;br/></item>
+    </plurals>
+    <plurals name="people_contacts_sync_remove_synced_contacts_dialog_body_has_dirty_contacts">
+        <item quantity="other">"&lt;br/> &lt;br/> (!) Also &lt;b>%1$d&lt;/b> contacts haven't synced from this device to Google Contacts yet. These contacts will be deleted permanently."</item>
+        <item quantity="one">"&lt;br/> &lt;br/> (!) Also &lt;b>1&lt;/b> contact hasn't synced from this device to Google Contacts yet. This contact will be deleted permanently."</item>
     </plurals>
     <plurals name="people_contacts_sync_sim_contact_count_description">
         <item quantity="other">%d contacts to import</item>
@@ -241,13 +269,25 @@
         <item quantity="other">%1$d Passwords</item>
         <item quantity="one">1 Password</item>
     </plurals>
+    <plurals name="pwm_import_passwords_save_error_message">
+        <item quantity="other">%1$d passwords could not be imported</item>
+        <item quantity="one">1 password could not be imported</item>
+    </plurals>
+    <plurals name="pwm_import_passwords_save_success_message">
+        <item quantity="other">%1$d passwords were imported successfully</item>
+        <item quantity="one">1 password was imported successfully</item>
+    </plurals>
+    <plurals name="pwm_import_preview_invalid_passwords_count">
+        <item quantity="other">%1$d passwords can not be imported</item>
+        <item quantity="one">1 password can not be imported</item>
+    </plurals>
+    <plurals name="pwm_import_preview_valid_passwords_count">
+        <item quantity="other">%1$d passwords will be imported</item>
+        <item quantity="one">1 password will be imported</item>
+    </plurals>
     <plurals name="pwm_password_breach_education_title">
         <item quantity="other">You should change these now</item>
         <item quantity="one">You should change it now</item>
-    </plurals>
-    <plurals name="pwm_password_breach_number_affected">
-        <item quantity="other">%1$d accounts are at risk</item>
-        <item quantity="one">This account is at risk</item>
     </plurals>
     <plurals name="pwm_password_breaches_title">
         <item quantity="other">%1$d compromised passwords</item>
@@ -286,10 +326,6 @@ Checking 1 password…"</item>
         <item quantity="zero">Your passwords are strong</item>
         <item quantity="one">1 weak password</item>
     </plurals>
-    <plurals name="pwm_saved_passwords">
-        <item quantity="other">Search %1$d passwords</item>
-        <item quantity="one">Search 1 password</item>
-    </plurals>
     <plurals name="romanesco_restore_backup_contacts_count">
         <item quantity="other">&lt;a href=%1$s >%1$d contacts&lt;/a> to restore</item>
         <item quantity="one">&lt;a href=%1$s >%1$d contact&lt;/a> to restore</item>
@@ -317,6 +353,15 @@ Checking 1 password…"</item>
     <plurals name="romanesco_restoring_contacts_count_notification">
         <item quantity="other">Restoring %d contacts</item>
         <item quantity="one">Restoring %d contact</item>
+    </plurals>
+    <plurals name="rt_number_detected">
+        <item quantity="other">Trackers detected</item>
+        <item quantity="one">Tracker detected</item>
+        <item quantity="few">Trackers detected</item>
+    </plurals>
+    <plurals name="rt_safety_center_entry_summary_alert">
+        <item quantity="other">%1$d tracker alerts</item>
+        <item quantity="one">1 tracker alert</item>
     </plurals>
     <plurals name="safety_center_gota_check_for_updates_warning_card_recommendation_body">
         <item quantity="other">"This device hasn't had a security update in more than %1$d months"</item>
@@ -468,26 +513,30 @@ Checking 1 password…"</item>
     </plurals>
     <plurals name="wallet_expanding_account_selector">
         <item quantity="other">Showing list of %1$d account options</item>
-        <item quantity="one">Showing list of one account option</item>
+        <item quantity="one">Showing list of %1$d account option</item>
     </plurals>
     <plurals name="wallet_expanding_customer_selector">
         <item quantity="other">Showing list of %1$d profile options</item>
-        <item quantity="one">Showing list of one profile option</item>
+        <item quantity="one">Showing list of %1$d profile option</item>
     </plurals>
     <plurals name="wallet_expanding_field_selector">
         <item quantity="other">Showing list of %1$d options</item>
-        <item quantity="one">Showing list of one option</item>
+        <item quantity="one">Showing list of %1$d option</item>
     </plurals>
     <plurals name="wallet_expanding_instrument_selector">
         <item quantity="other">Showing list of %1$d payment method options</item>
-        <item quantity="one">Showing list of one payment method option</item>
+        <item quantity="one">Showing list of %1$d payment method option</item>
     </plurals>
     <plurals name="wallet_expanding_shipping_address_selector">
         <item quantity="other">Showing list of %1$d shipping address options</item>
-        <item quantity="one">Showing list of one shipping address option</item>
+        <item quantity="one">Showing list of %1$d shipping address option</item>
     </plurals>
     <plurals name="wallet_expanding_ui_field_group_selector">
         <item quantity="other">Showing list of %1$d options</item>
-        <item quantity="one">Showing list of one option</item>
+        <item quantity="one">Showing list of %1$d option</item>
+    </plurals>
+    <plurals name="your_timeline_text">
+        <item quantity="other">%d visits and routes saved on this device.</item>
+        <item quantity="one">%d visit or route saved on this device.</item>
     </plurals>
 </resources>
