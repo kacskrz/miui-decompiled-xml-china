@@ -87,6 +87,15 @@
         <item>mx</item>
         <item>ru</item>
     </string-array>
+    <array name="avatar_bg_colors_default_array">
+        <item>#ffee675c</item>
+        <item>#fffcc934</item>
+        <item>#ffaf5cf7</item>
+        <item>#fffa903e</item>
+        <item>#ff5bb974</item>
+        <item>#ffff63b8</item>
+        <item>#ff4ecde6</item>
+    </array>
     <string-array name="category_descriptions">
         <item>Airport</item>
         <item>ATM</item>
@@ -184,6 +193,7 @@
         <item>Fast Pair</item>
         <item>Bluetooth</item>
         <item>Setup</item>
+        <item>Scan for nearby devices</item>
     </string-array>
     <array name="escalation_icon_colors">
         <item>@color/system_update_notification_color</item>
@@ -191,17 +201,11 @@
         <item>#ffe37400</item>
         <item>#ffd93025</item>
     </array>
-    <string-array name="exposure_notification_index_settings_keywords">
-        <item>Covid</item>
-        <item>Corona</item>
-        <item>Contact</item>
-        <item>Tracing</item>
-    </string-array>
-    <array name="gm3_circularprogressindicator_branded_colors">
-        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_one_color</item>
-        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_two_color</item>
-        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_three_color</item>
-        <item>@color/gm3_comp_circular_progress_indicator_four_color_active_indicator_four_color</item>
+    <array name="gm3_progressindicator_branded_colors">
+        <item>@color/gm3_ref_brand_color_blue</item>
+        <item>@color/gm3_ref_brand_color_red</item>
+        <item>@color/gm3_ref_brand_color_yellow</item>
+        <item>@color/gm3_ref_brand_color_green</item>
     </array>
     <array name="google_progressindicator_branded_colors">
         <item>@color/google_blue500</item>
@@ -368,6 +372,18 @@
         <item>@string/setupservices_auto_google_services_agreement</item>
         <item>@string/setupservices_google_services_agreement_auto_update</item>
     </string-array>
+    <string-array name="setupservices_google_services_agreement_auto_update_metered_data">
+        <item>@string/setupservices_google_services_agreement_auto_update_metered_data</item>
+        <item>@string/setupservices_kids_google_services_agreement_metered_data</item>
+        <item>@string/setupservices_auto_google_services_agreement_metered_data</item>
+        <item>@string/setupservices_google_services_agreement_auto_update_metered_data</item>
+    </string-array>
+    <string-array name="setupservices_google_services_agreement_metered_data">
+        <item>@string/setupservices_google_services_agreement_metered_data</item>
+        <item>@string/setupservices_kids_google_services_agreement_metered_data</item>
+        <item>@string/setupservices_auto_google_services_agreement_metered_data</item>
+        <item>@string/setupservices_google_services_agreement_metered_data</item>
+    </string-array>
     <string-array name="setupservices_google_services_agreement_title">
         <item>@string/setupservices_google_services_agreement_title</item>
         <item>@string/setupservices_google_services_agreement_title</item>
@@ -386,59 +402,11 @@
         <item>@string/setupservices_google_services_backup_dialog_text</item>
         <item>@string/setupservices_google_services_backup_dialog_text</item>
     </string-array>
-    <string-array name="setupservices_google_services_backup_dialog_text_with_photos_v26">
-        <item>@string/setupservices_google_services_backup_dialog_text_with_photos_v26</item>
-        <item>@string/setupservices_kids_google_services_backup_dialog_text_with_photos_v26</item>
-        <item>@string/setupservices_google_services_backup_dialog_text_with_photos_v26</item>
-        <item>@string/setupservices_google_services_backup_dialog_text_with_photos_v26</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_encrypted">
-        <item>@string/setupservices_google_services_backup_encrypted</item>
-        <item>@string/setupservices_google_services_backup_encrypted</item>
-        <item>@string/setupservices_google_services_backup_encrypted</item>
-        <item>@string/setupservices_google_services_backup_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_v26_encrypted">
-        <item>@string/setupservices_google_services_backup_v26_encrypted</item>
-        <item>@string/setupservices_kids_google_services_backup_v26_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_v26_with_mms_encrypted">
-        <item>@string/setupservices_google_services_backup_v26_with_mms_encrypted</item>
-        <item>@string/setupservices_kids_google_services_backup_v26_with_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_with_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_with_mms_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_v26_with_photos_and_mms_encrypted">
-        <item>@string/setupservices_google_services_backup_v26_with_photos_and_mms_encrypted</item>
-        <item>@string/setupservices_kids_google_services_backup_v26_with_photos_and_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_with_photos_and_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_with_photos_and_mms_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_v26_with_photos_encrypted">
-        <item>@string/setupservices_google_services_backup_v26_with_photos_encrypted</item>
-        <item>@string/setupservices_kids_google_services_backup_v26_with_photos_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_with_photos_encrypted</item>
-        <item>@string/setupservices_google_services_backup_v26_with_photos_encrypted</item>
-    </string-array>
     <string-array name="setupservices_google_services_backup_with_mms_encrypted">
         <item>@string/setupservices_google_services_backup_with_mms_encrypted</item>
         <item>@string/setupservices_google_services_backup_with_mms_encrypted</item>
         <item>@string/setupservices_google_services_backup_with_mms_encrypted</item>
         <item>@string/setupservices_google_services_backup_with_mms_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_with_photos_and_mms_encrypted">
-        <item>@string/setupservices_google_services_backup_with_photos_and_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_with_photos_and_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_with_photos_and_mms_encrypted</item>
-        <item>@string/setupservices_google_services_backup_with_photos_and_mms_encrypted</item>
-    </string-array>
-    <string-array name="setupservices_google_services_backup_with_photos_encrypted">
-        <item>@string/setupservices_google_services_backup_with_photos_encrypted</item>
-        <item>@string/setupservices_google_services_backup_with_photos_encrypted</item>
-        <item>@string/setupservices_google_services_backup_with_photos_encrypted</item>
-        <item>@string/setupservices_google_services_backup_with_photos_encrypted</item>
     </string-array>
     <string-array name="setupservices_google_services_description">
         <item>@string/setupservices_google_services_description</item>
@@ -533,6 +501,12 @@
         <item>Wi-Fi</item>
         <item>File</item>
         <item>Nearby Share</item>
+        <item>AirDrop</item>
+        <item>Quick Share</item>
+        <item>SHAREit</item>
+        <item>ShareMe</item>
+        <item>Xender</item>
+        <item>KDE Connect</item>
     </string-array>
     <array name="smartdevice_google_500_colors">
         <item>@color/smartdevice_google_blue_500</item>
@@ -540,6 +514,11 @@
         <item>@color/smartdevice_google_green_500</item>
         <item>@color/smartdevice_google_yellow_500</item>
     </array>
+    <string-array name="thunderbird_settings_debug_sms_reporter_type_array">
+        <item>None</item>
+        <item>ELS V1</item>
+        <item>ELS Beta</item>
+    </string-array>
     <string-array name="transit_station_names">
         <item>Unknown</item>
         <item>SLS</item>
