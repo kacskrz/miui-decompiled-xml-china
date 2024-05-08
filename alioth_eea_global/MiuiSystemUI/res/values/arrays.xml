@@ -359,6 +359,7 @@
         <item>Enabled</item>
         <item>Enabled Headers Filtered</item>
         <item>Enabled Media Pkts Filtered</item>
+        <item>Enabled Profiles Filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values">
         <item>disabled</item>
@@ -366,10 +367,12 @@
         <item>full</item>
         <item>snoopheadersfiltered</item>
         <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values_enhanced">
         <item>snoopheadersfiltered</item>
         <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
     </string-array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
@@ -686,6 +689,7 @@
         <item>com.turkcell.bip</item>
     </string-array>
     <string-array name="config_allowKeyguardPackages">
+        <item>com.xiaomi.mirror</item>
         <item>com.kddi.selfcare.client</item>
         <item>com.apple.android.music</item>
         <item>com.amazon.avod.thirdpartyclient</item>
@@ -880,6 +884,7 @@
         <item>com.ss.android.lark.kami</item>
     </string-array>
     <array name="config_blockBadgePackages" />
+    <array name="config_blockColorizedPackages" />
     <array name="config_blockFloatPackages" />
     <array name="config_blockKeyguardPackages" />
     <string-array name="config_blockOngoingPackages">
@@ -933,6 +938,11 @@
         <item>400</item>
     </integer-array>
     <string-array name="config_canCustomNotificationAppIcon">
+        <item>com.android.providers.downloads</item>
+        <item>com.android.settings</item>
+        <item>com.android.soundrecorder</item>
+        <item>com.android.incallui</item>
+        <item>com.android.bluetooth</item>
         <item>com.android.nfc</item>
         <item>com.xiaomi.bluetooth</item>
         <item>com.miui.securitycenter</item>
@@ -944,6 +954,7 @@
         <item>com.miui.voiceassist</item>
         <item>com.xiaomi.mirror</item>
         <item>com.milink.service</item>
+        <item>com.android.bluetooth</item>
     </string-array>
     <string-array name="config_canSendSubstituteNotificationPackages">
         <item>com.xiaomi.xmsf</item>
@@ -1063,7 +1074,11 @@
     <string-array name="config_charge_support_lite">
         <item>ginkgo</item>
         <item>wayne</item>
+        <item>river</item>
+        <item>sky</item>
+        <item>opal</item>
         <item>whyred</item>
+        <item>camellian</item>
         <item>tulip</item>
         <item>lavender</item>
         <item>lotus</item>
@@ -1079,6 +1094,9 @@
         <item>cannon</item>
         <item>sunny</item>
         <item>camellia</item>
+        <item>rosemary</item>
+        <item>evergo</item>
+        <item>XIG03</item>
     </string-array>
     <array name="config_collapsed_statusbar_icon_blocklist">
         <item>@android:string/status_bar_volume</item>
@@ -1106,23 +1124,12 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
-    <string-array name="config_drip_left_statusBarIcons">
-        <item>zen</item>
-        <item>volume</item>
-        <item>alarm_clock</item>
-        <item>nfc</item>
-        <item>headset</item>
-        <item>micphone</item>
-        <item>ble_unlock_mode</item>
-    </string-array>
     <string-array name="config_drip_right_block_statusBarIcons">
         <item>network_speed</item>
         <item>micphone</item>
         <item>headset</item>
         <item>mikey</item>
-        <item>call_record</item>
         <item>privacy_mode</item>
-        <item>ble_unlock_mode</item>
         <item>zen</item>
         <item>gps</item>
         <item>missed_call</item>
@@ -1131,7 +1138,6 @@
         <item>bluetooth_handsfree_battery</item>
         <item>nfc</item>
         <item>tty</item>
-        <item>speakerphone</item>
         <item>volume</item>
         <item>alarm_clock</item>
     </string-array>
@@ -1142,11 +1148,61 @@
         <item>gram</item>
     </string-array>
     <array name="config_face_auth_props" />
+    <string-array name="config_focused_notif_package_names">
+        <item>com.android.settings</item>
+        <item>com.android.incallui</item>
+        <item>com.autonavi.minimap</item>
+        <item>com.android.soundrecorder</item>
+        <item>com.miui.securitycenter</item>
+    </string-array>
+    <string-array name="config_focused_notif_package_names_for_test">
+        <item>com.xiaomi.mipushdemo</item>
+    </string-array>
+    <string-array name="config_hidden_custom_actions_whitelist">
+        <item>com.netease.cloudmusic</item>
+        <item>com.netease.cloudmusic.lite</item>
+        <item>com.tencent.qqmusic</item>
+        <item>com.tencent.qqmusiclite</item>
+        <item>com.tencent.qqmusicpad</item>
+        <item>com.tencent.radio</item>
+    </string-array>
+    <string-array name="config_historicalFoldingPackages">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.xiaomi.xmsf</item>
+        <item>com.miui.systemAdSolution</item>
+    </string-array>
     <array name="config_keyguard_statusbar_icon_blocklist">
         <item>@android:string/status_bar_volume</item>
         <item>@android:string/status_bar_alarm_clock</item>
         <item>@android:string/status_bar_call_strength</item>
     </array>
+    <string-array name="config_media_whitelist">
+        <item>com.netease.cloudmusic</item>
+        <item>com.netease.cloudmusic.lite</item>
+        <item>com.tencent.qqmusic</item>
+        <item>com.tencent.qqmusiclite</item>
+        <item>com.tencent.qqmusicpad</item>
+        <item>com.kugou.android</item>
+        <item>cn.kuwo.player</item>
+        <item>cn.kuwo.kwmusichd</item>
+        <item>com.luna.music</item>
+        <item>com.kugou.android.lite</item>
+        <item>cn.wenyu.bodian</item>
+        <item>cmccwm.mobilemusic</item>
+        <item>com.ximalaya.ting.android</item>
+        <item>com.ximalaya.ting.lite</item>
+        <item>com.ximalaya.ting.kid</item>
+        <item>com.ximalayaos.pad.tingkid</item>
+        <item>com.miui.fm</item>
+        <item>fm.qingting.qtradio</item>
+        <item>com.shinyv.cnr</item>
+        <item>com.tencent.radio</item>
+        <item>com.yibasan.lizhifm</item>
+        <item>app.podcast.cosmos</item>
+        <item>bubei.tingshu</item>
+        <item>com.xs.fm</item>
+    </string-array>
     <integer-array name="config_notification_snooze_times">
         <item>15</item>
         <item>30</item>
@@ -1155,6 +1211,7 @@
     </integer-array>
     <string-array name="config_pluginWhitelist">
         <item>com.android.systemui</item>
+        <item>com.miui.aod</item>
         <item>miui.systemui.plugin</item>
     </string-array>
     <string-array name="config_preInstalledPackages">
@@ -1208,17 +1265,19 @@
         <item>@drawable/rounded_corner_top</item>
         <item>@drawable/rounded_corner_top_secondary</item>
     </array>
+    <string-array name="config_seekBarDisabledPackages">
+        <item>com.miui.fm</item>
+        <item>fm.qingting.qtradio</item>
+    </string-array>
     <array name="config_showSpnByGIDWhenAirPlane" />
     <string-array name="config_statusBarIcons">
         <item>network_speed</item>
+        <item>mute</item>
         <item>micphone</item>
         <item>headset</item>
         <item>mikey</item>
-        <item>call_record</item>
         <item>privacy_mode</item>
-        <item>ble_unlock_mode</item>
         <item>nfc</item>
-        <item>zen</item>
         <item>gps</item>
         <item>missed_call</item>
         <item>managed_profile</item>
@@ -1226,22 +1285,31 @@
         <item>ime</item>
         <item>cast</item>
         <item>location</item>
-        <item>bluetooth</item>
-        <item>bluetooth_handsfree_battery</item>
         <item>stealth</item>
         <item>tty</item>
-        <item>speakerphone</item>
-        <item>volume</item>
         <item>alarm_clock</item>
         <item>vpn</item>
-        <item>hd</item>
         <item>ethernet</item>
-        <item>no_sim</item>
+        <item>bluetooth</item>
+        <item>bluetooth_handsfree_battery</item>
+        <item>hotspot</item>
+        <item>sound_box_group</item>
+        <item>stereo</item>
+        <item>sound_box_screen</item>
+        <item>sound_box</item>
+        <item>wireless_headset</item>
+        <item>zen</item>
+        <item>volume</item>
+        <item>car</item>
+        <item>tv</item>
+        <item>pc</item>
+        <item>pad</item>
+        <item>phone</item>
+        <item>airplane</item>
+        <item>hd</item>
         <item>mobile</item>
         <item>demo_mobile</item>
-        <item>airplane</item>
-        <item>hotspot</item>
-        <item>slave_wifi</item>
+        <item>no_sim</item>
         <item>wifi</item>
         <item>demo_wifi</item>
     </string-array>
@@ -1319,11 +1387,6 @@
         <item>@string/afternoon</item>
         <item>@string/evening</item>
         <item>@string/night</item>
-    </string-array>
-    <string-array name="device_support_pickup_by_MTK">
-        <item>cactus</item>
-        <item>cereus</item>
-        <item>lotus</item>
     </string-array>
     <array name="device_support_video_24_wallpaper" />
     <array name="doze_brightness_sensor_name_posture_mapping" />
@@ -1607,6 +1670,33 @@
     <integer-array name="miui_config_hideKeyguardPresentationDisplayIds">
         <item>-1</item>
     </integer-array>
+    <string-array name="miui_lock_solar_terms">
+        <item>@string/miui_lock_empty</item>
+        <item>@string/miui_lock_solar_term_slight_cold</item>
+        <item>@string/miui_lock_solar_term_great_cold</item>
+        <item>@string/miui_lock_solar_term_spring_begins</item>
+        <item>@string/miui_lock_solar_term_the_rains</item>
+        <item>@string/miui_lock_solar_term_insects_awaken</item>
+        <item>@string/miui_lock_solar_term_vernal_equinox</item>
+        <item>@string/miui_lock_solar_term_clear_and_bright</item>
+        <item>@string/miui_lock_solar_term_grain_rain</item>
+        <item>@string/miui_lock_solar_term_summer_begins</item>
+        <item>@string/miui_lock_solar_term_grain_buds</item>
+        <item>@string/miui_lock_solar_term_grain_in_ear</item>
+        <item>@string/miui_lock_solar_term_summer_solstice</item>
+        <item>@string/miui_lock_solar_term_slight_heat</item>
+        <item>@string/miui_lock_solar_term_great_heat</item>
+        <item>@string/miui_lock_solar_term_autumn_begins</item>
+        <item>@string/miui_lock_solar_term_stopping_the_heat</item>
+        <item>@string/miui_lock_solar_term_white_dews</item>
+        <item>@string/miui_lock_solar_term_autumn_equinox</item>
+        <item>@string/miui_lock_solar_term_cold_dews</item>
+        <item>@string/miui_lock_solar_term_hoar_frost_falls</item>
+        <item>@string/miui_lock_solar_term_winter_begins</item>
+        <item>@string/miui_lock_solar_term_light_snow</item>
+        <item>@string/miui_lock_solar_term_heavy_snow</item>
+        <item>@string/miui_lock_solar_term_winter_solstice</item>
+    </string-array>
     <string-array name="miui_notification_aggregate_category">
         <item>This is recommended content.</item>
         <item>This is an ad.</item>
@@ -1652,6 +1742,17 @@
         <item>@string/month_october_shortest</item>
         <item>@string/month_november_shortest</item>
         <item>@string/month_december_shortest</item>
+    </string-array>
+    <string-array name="multi_floating_package_allow_list">
+        <item>com.miui.securitycenter</item>
+        <item>com.miui.weather2</item>
+        <item>com.android.calendar</item>
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.miui.notes</item>
+        <item>com.android.settings</item>
+        <item>com.miui.gallery</item>
+        <item>com.miui.cloudservice</item>
     </string-array>
     <string-array name="nav_bar_button_values">
         <item>clipboard</item>
@@ -1836,6 +1937,8 @@
         <item>com.xiaomi.gamecenter.sdk.service</item>
     </string-array>
     <string-array name="system_foreground_notification_whitelist">
+        <item>com.miui.audiomonitor</item>
+        <item>com.xiaomi.mis</item>
         <item>com.miui.voicetrigger</item>
         <item>com.xiaomi.uatalive:mimonitor_bootload</item>
         <item>com.jtom.userprobation</item>
