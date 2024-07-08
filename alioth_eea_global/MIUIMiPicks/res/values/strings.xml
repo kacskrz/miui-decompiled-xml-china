@@ -53,7 +53,6 @@
     <string name="already_bottom">"That's all for now"</string>
     <string name="am">AM</string>
     <string name="androidx_startup">androidx.startup</string>
-    <string name="app_comments_title">Comments for %1$s</string>
     <string name="app_detail">Details</string>
     <string name="app_detail_empty_tips">"This app isn't available in GetApps"</string>
     <string name="app_detail_online_time">Released on %1$s</string>
@@ -77,6 +76,7 @@
     <string name="app_name_games">Games</string>
     <string name="app_name_mipicks">Mi Picks</string>
     <string name="app_rating_with_star">%1$s★</string>
+    <string name="app_security_scanning">Scanning app…</string>
     <string name="app_source">"Source: "</string>
     <string name="app_uninstall">Uninstall</string>
     <string name="app_update">Updates</string>
@@ -91,10 +91,12 @@
     <string name="appchooser_no_include_text">Select an app market from which to download this app.</string>
     <string name="appchooser_open_gp_text"><Data>or download from &lt;a href=>Google Play&lt;/a></Data></string>
     <string name="appchooser_remember_text">Set GetApps as your default app market</string>
+    <string name="appchooser_tips_remember_my_choice">Remember my choice</string>
     <string name="application_name">GetApps</string>
     <string name="apy_failure">"Couldn't complete payment"</string>
     <string name="apy_success">Paid successfully</string>
     <string name="auto_down_dialog_btn_negative">Not now</string>
+    <string name="auto_down_dialog_btn_positive">@string/game_age_confirm_card_ok</string>
     <string name="auto_down_dialog_title">"You're online now! Resume pending downloads automatically?"</string>
     <string name="auto_down_offline_state_tips">"Looks like you're offline now. This app will be downloaded automatically when you connect to the network."</string>
     <string name="auto_down_offline_tips">"You're online now! Resuming pending downloads…"</string>
@@ -106,8 +108,6 @@
     <string name="auto_down_suspend_tips">Resuming pending downloads…</string>
     <string name="bad_comment_reason_dialog_button_text">Skip</string>
     <string name="bad_comment_reason_dialog_ok">OK</string>
-    <string name="bad_comment_reason_dialog_title">Select reason</string>
-    <string name="bad_comments">Critical</string>
     <string name="bad_comments_with_count">Critical (%1$s)</string>
     <string name="bind">Add</string>
     <string name="bind_card_des">Adding a credit card will generate a small transaction (%1$s) for account verification. This fee will be refunded to your original account within 3 business days.</string>
@@ -164,7 +164,7 @@
     <string name="chat_sys_default_guide_msg_02">Let me see what I can find for you…</string>
     <string name="chat_sys_default_guide_msg_03">"I'm analyzing data now. The answers are on their way!"</string>
     <string name="chat_user_title_name">Me</string>
-    <string name="check_all_update">View all updates (%1$s)</string>
+    <string name="check_all_update">View all updates (%1$d)</string>
     <string name="check_in_bubble_text">Check in for %1$d consecutive days to earn %2$d coins</string>
     <string name="chinese_day_1">初一</string>
     <string name="chinese_day_10">初十</string>
@@ -252,64 +252,20 @@
     <string name="clearable_edittext_clear_description">Clear</string>
     <string name="click_and_agree">"By tapping \"Continue\", you're agreeing to the following terms and conditions:"</string>
     <string name="close">Close</string>
-    <string name="cloud_game_add_shortcut">Use our Home screen shortcut to start playing next time!</string>
-    <string name="cloud_game_button_buy">Buy</string>
-    <string name="cloud_game_button_cancel_exit">Wait</string>
-    <string name="cloud_game_button_confirm_exit">Exit</string>
-    <string name="cloud_game_button_continue">Play</string>
-    <string name="cloud_game_button_exit">Exit</string>
-    <string name="cloud_game_button_exit_queue">Exit</string>
-    <string name="cloud_game_button_play">Play now</string>
-    <string name="cloud_game_button_refuse_buy">No thanks</string>
-    <string name="cloud_game_buy_to_prioritize_queue">Buy a cloud pass to skip ahead</string>
-    <string name="cloud_game_dialog_loading">Just a sec…</string>
-    <string name="cloud_game_exit_queue_desc">"You'll have to queue again if you choose to stop waiting."</string>
-    <string name="cloud_game_exit_queue_title">Exit now?</string>
-    <string name="cloud_game_game_abort_desc">"Looks like you've finished playing. We've disconnected from the cloud for now."</string>
-    <string name="cloud_game_game_abort_title">Your session ended</string>
-    <string name="cloud_game_network_warning_desc">Playing cloud games without connecting to Wi-Fi might generate additional carrier fees. Play anyway?</string>
-    <string name="cloud_game_network_warning_title">Data usage warning</string>
-    <string name="cloud_game_no_download">Play without downloading</string>
-    <string name="cloud_game_no_time_desc">"Looks like you've used up your playing time. You can buy a cloud pass to keep playing."</string>
-    <string name="cloud_game_no_time_title">"You're out of time"</string>
-    <string name="cloud_game_queue_info">%1$s (%2$s)</string>
-    <string name="cloud_game_queuing">Waiting…</string>
-    <string name="cloud_game_toast_expire_date">"'Your cloud pass will expire at' HH:mm 'on' MM/dd/yyyy"</string>
-    <string name="cloud_game_toast_network_error">A network error occurred</string>
-    <string name="cloud_game_toast_start_failed">"Couldn't initialize cloud games. Wait a minute or two and try again."</string>
     <string name="coins_fragment_title">Earn coins</string>
     <string name="coins_position_change">You can find your coins in the upper right corner of the Games tab</string>
     <string name="collapse_full_text">Hide</string>
     <string name="collapse_update_apps_hint">Tap to show all %1$d apps</string>
     <string name="collapse_update_history_hint">Tap to show all</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id">00000000000000000000000000000000</string>
-    <string name="com.miapm.build_id">1b9f863d3fd34743a27f4c5ab75df797</string>
+    <string name="com.miapm.build_id">e5274ff38c5247ccbbd50901eab0917c</string>
     <string name="comment_average_score">Ratings</string>
-    <string name="comment_cannot_comment">Use this app first to be able to add a comment</string>
-    <string name="comment_count_hint">Tap to rate:</string>
-    <string name="comment_current_version">Current version</string>
-    <string name="comment_invalid">Rate the app by tapping the stars above the comment box</string>
-    <string name="comment_name_default">%1$s</string>
-    <string name="comment_publish">Submit</string>
     <string name="comment_push_desc_click_to_show">Tap to view</string>
     <string name="comment_push_merged_message_desc_single">From @%1$s</string>
     <string name="comment_push_title_hot">Your comment is trending!</string>
     <string name="comment_push_title_like">\@%1$s liked your post</string>
     <string name="comment_push_title_reply">\@%1$s replied to you</string>
-    <string name="comment_recently_average_score">Recent reviews</string>
-    <string name="comment_sending">Adding comment…</string>
     <string name="comment_unit">K</string>
-    <string name="comment_upload_account_need_activitied">"Looks like you haven't activated your account yet. Activate now?"</string>
-    <string name="comment_upload_account_not_activitied">Activate your account to continue</string>
-    <string name="comment_upload_auth_failed">"Couldn't add comment. Wait a minute or two and try again."</string>
-    <string name="comment_upload_data_invalid">An error occurred</string>
-    <string name="comment_upload_failed">"Couldn't add comment"</string>
-    <string name="comment_upload_hint">Your comment will be displayed after review.</string>
-    <string name="comment_upload_login_cancel">Cancel</string>
-    <string name="comment_upload_login_ok">Sign in</string>
-    <string name="comment_upload_need_login">Sign in to your Xiaomi Account to be able to add a comment. Sign in now?</string>
-    <string name="comment_upload_not_logined">Sign in first</string>
-    <string name="comment_upload_success">"Added comment successfully. It'll be displayed after review."</string>
     <string name="comment_version_name">Version %1$s</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
@@ -440,6 +396,7 @@
     <string name="download_list_recent_install">Recently installed</string>
     <string name="download_list_space_not_enough">Insufficient storage</string>
     <string name="download_list_title">Manage downloads</string>
+    <string name="download_original_apk"><Data>Or download &lt;a href=>the original APK&lt;/a></Data></string>
     <string name="download_time">MM/dd/yyyy</string>
     <string name="download_unit_billion">%1$dB+</string>
     <string name="download_unit_million">%1$dM+</string>
@@ -459,8 +416,6 @@
     <string name="earthly_branches_yin">寅</string>
     <string name="earthly_branches_you">酉</string>
     <string name="earthly_branches_zi">子</string>
-    <string name="edit_comment">Add comment</string>
-    <string name="edit_comment_title">Edit comment for %1$s</string>
     <string name="empty" />
     <string name="enable_notification_cancel">Not now</string>
     <string name="enable_notification_confirm">Turn on</string>
@@ -650,9 +605,12 @@ View all your pre-orders on your profile."</string>
     <string name="get_apps_agreement">GetApps Payment User Agreement</string>
     <string name="get_apps_privacy_des">GetApps data transfer and processing practices as described in Privacy Policy</string>
     <string name="get_apps_title">Xiaomi GetApps</string>
+    <string name="gift_code_copy_success">Receive</string>
+    <string name="gift_dialog_desc">"This coupon code has been copied to your clipboard. Once you've installed the game, enter the coupon code to use it."</string>
+    <string name="gift_dialog_sub_title">Coupon code: %s</string>
+    <string name="gift_dialog_title">Received successfully</string>
     <string name="global_favorite_title">App | %1$s</string>
     <string name="go_near_shop">Go to a nearby %1$s.</string>
-    <string name="good_comments">Positive</string>
     <string name="good_comments_with_count">Positive (%1$s)</string>
     <string name="google_api_key">AIzaSyDGY0O1jNEHbsCxw29rQJ7006z8Up0zq8c</string>
     <string name="google_app_id">1:1003880812506:android:1cc035d8dbb804d238bae3</string>
@@ -750,6 +708,7 @@ View all your pre-orders on your profile."</string>
     <string name="iap_order_list_page_cancel_order">Cancel order</string>
     <string name="iap_order_no">Order ID</string>
     <string name="iap_order_type">Order type</string>
+    <string name="iap_orders_list_questions">Have a question?</string>
     <string name="iap_original_price">Original price</string>
     <string name="iap_pay_info_expired">Payment information expired</string>
     <string name="iap_pay_retain_complete">Yes</string>
@@ -842,6 +801,7 @@ Select an end time for the pause period:"</string>
     <string name="install">Install</string>
     <string name="install_all_description_only_one_app">Install %1$s anyway?</string>
     <string name="install_all_title">Install all apps</string>
+    <string name="install_apk_file">Download APK</string>
     <string name="install_btn_cancel">Cancel</string>
     <string name="install_btn_continue">Install</string>
     <string name="install_btn_hint_not_compatible">Not compatible with your device</string>
@@ -914,7 +874,7 @@ Select an end time for the pause period:"</string>
     <string name="main_search_content_description">Search box</string>
     <string name="management" />
     <string name="management_tag" />
-    <string name="marketSdkVersion">3.2.17-global</string>
+    <string name="marketSdkVersion">3.2.18-global</string>
     <string name="material_clock_display_divider">:</string>
     <string name="material_clock_toggle_content_description">Select AM or PM</string>
     <string name="material_hour_selection">Select hour</string>
@@ -957,8 +917,6 @@ Select an end time for the pause period:"</string>
     <string name="mi_protect_label">Mi Protect</string>
     <string name="midnight">Night</string>
     <string name="mine_cleaner_desc">Free up %1$s</string>
-    <string name="mine_share_desc">Transfer files wirelessly</string>
-    <string name="mine_share_title">Share files</string>
     <string name="mine_updates_no_app_desc">All apps are up to date</string>
     <string name="mine_user_login">Sign in</string>
     <string name="mine_user_messages">Notifications</string>
@@ -1122,9 +1080,7 @@ Select an end time for the pause period:"</string>
     <string name="night">Evening</string>
     <string name="no_add_payment">"You haven't added any payment methods yet"</string>
     <string name="no_app">No apps found</string>
-    <string name="no_average_score">N/A</string>
     <string name="no_change_log">Nothing here yet</string>
-    <string name="no_comment">No comments</string>
     <string name="no_description" />
     <string name="no_download_history">"You haven't downloaded any apps"</string>
     <string name="no_favorites">"You haven't added any apps to favorites yet"</string>
@@ -1147,6 +1103,7 @@ Select an end time for the pause period:"</string>
     <string name="no_virus">No viruses</string>
     <string name="noon">Midday</string>
     <string name="not_set">Not set</string>
+    <string name="not_verified_by_mi_protect">Not verified by Xiaomi</string>
     <string name="notif_auto_download_game_fail_no_enough_space">Insufficient storage. Tap to free up storage space.</string>
     <string name="notif_auto_download_game_failed_body">"Some of the games you pre-ordered couldn't be installed. Tap to try again."</string>
     <string name="notif_auto_download_game_failed_title">"Couldn't install"</string>
@@ -1166,10 +1123,6 @@ Select an end time for the pause period:"</string>
     <string name="notif_has_new_update_test2">&lt;font color=#ff5f32>&lt;xliff:g id=user_percent>%s&lt;/xliff:g>&lt;/font> of users have already updated these apps</string>
     <string name="notif_message_stop_by_data_space_not_enough">Insufficient storage. Tap to uninstall rarely used apps.</string>
     <string name="notif_message_stop_by_space_not_enough">Insufficient storage. Tap to free up storage space.</string>
-    <string name="notif_outstanding_update_test1">&lt;font color=#ff5f32>&lt;xliff:g id=user_percent>%1$s&lt;/xliff:g>&lt;/font> of users have updated &lt;font color=#ff5f32>&lt;xliff:g id=app_name>%2$s&lt;/xliff:g>&lt;/font></string>
-    <string name="notif_outstanding_update_test2">"Don't miss this &lt;font color=#ff5f32>&lt;xliff:g id=app_name>%s&lt;/xliff:g>&lt;/font> update"</string>
-    <string name="notif_outstanding_update_test3">"&lt;font color=#ff5f32>&lt;xliff:g id=app_name>%s&lt;/xliff:g>&lt;/font> that you've used recently has released a new version"</string>
-    <string name="notif_outstanding_update_test4">An update for &lt;font color=#ff5f32>&lt;xliff:g id=app_name>%s&lt;/xliff:g>&lt;/font> is now available</string>
     <string name="notif_save_size_to_update" formatted="false">Update now to save %diffSize%</string>
     <string name="notif_summary_auto_update_failed">Tap to update manually</string>
     <string name="notif_summary_auto_update_successful" formatted="false">%appNameList%</string>
@@ -1233,6 +1186,8 @@ Select an end time for the pause period:"</string>
     <string name="permissions_title_fallback">Permissions</string>
     <string name="pm">PM</string>
     <string name="pre_order">Pre-orders</string>
+    <string name="pre_order_dialog_desc">This game will be automatically downloaded to your device as soon as it is released.</string>
+    <string name="pre_order_later_online">TBD</string>
     <string name="pref_category_title_app_manager">Manage apps</string>
     <string name="pref_category_title_help">Additional settings</string>
     <string name="pref_category_title_notification">Notifications</string>
@@ -1338,7 +1293,6 @@ Select an end time for the pause period:"</string>
     <string name="scan_right_method">Place your card inside this frame</string>
     <string name="scan_success">Scanned successfully</string>
     <string name="scan_up_er_code">Scan the above code.</string>
-    <string name="score_unit">Score</string>
     <string name="search_app_in_browser">Connecting to an external website to search for apps…</string>
     <string name="search_history_title" />
     <string name="search_local_app_text_hint">Search among %1$d installed apps</string>
@@ -1359,6 +1313,8 @@ Select an end time for the pause period:"</string>
     <string name="select_item">Select items</string>
     <string name="send">Send</string>
     <string name="server_load_time_out">Connection timed out</string>
+    <string name="setting_search_shortcut_desc">Display a search bar on Home screen to find apps faster</string>
+    <string name="setting_search_shortcut_title">Search bar</string>
     <string name="settings">Settings</string>
     <string name="share_app_subject">Share %1$s</string>
     <string name="share_app_text">Check out this awesome app --> %1$s. Check it out here: %2$s</string>
@@ -1489,6 +1445,7 @@ Select an end time for the pause period:"</string>
     <string name="tuesday_short">Tue</string>
     <string name="tuesday_shortest">Tue</string>
     <string name="uninstall_all">Uninstall all (%1$s selected)</string>
+    <string name="uninstall_all_btn">Uninstall (%1$d)</string>
     <string name="update_all">Update all</string>
     <string name="update_all_save_size">" (saves %1$s)"</string>
     <string name="update_all_size">Update all: %1$s</string>
