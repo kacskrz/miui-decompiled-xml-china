@@ -98,14 +98,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Use the Chrome Root Store.</item>
-        <item>Do not use the Chrome Root Store.</item>
-        <item>Chrome Root Store may be used depending on feature launch process.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
-    </string-array>
         <item>Enable all variations</item>
         <item>Enable variations concerning critical fixes only</item>
         <item>Disable all variations</item>
@@ -272,6 +264,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Enable First-Party Sets for all affected users</item>
+        <item>Disable First-Party Sets for all affected users</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Force the use of SafeSearch in Google Search</item>
         <item>Do not enforce the use of SafeSearch in Google Search</item>
     </string-array>
@@ -362,6 +360,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Always allow read aloud</item>
+        <item>Never allow read aloud</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Enable reporting of usage and crash-related data</item>
         <item>Disable reporting of usage and crash-related data</item>
         <item>Allow users to choose</item>
@@ -395,14 +399,6 @@
     </string-array>
         <item>True</item>
         <item>False</item>
-    </string-array>
-        <item>New offsetParent behavior will be used.</item>
-        <item>Old offsetParent behavior will be used.</item>
-        <item>New offsetParent behavior will be used by default.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
     </string-array>
         <item>System DNS resolution may be run in or out of the network process depending on system configuration and feature flags.</item>
         <item>System DNS resolution will be run in the network process.</item>
@@ -576,14 +572,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>New event dispatching on disabled form controls behavior will be used.</item>
-        <item>Old event dispatching on disabled form controls behavior will be used.</item>
-        <item>New event dispatching on disabled form controls behavior will be used by default.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
-    </string-array>
         <item>Enable the shared clipboard feature</item>
         <item>Disable the shared clipboard feature</item>
     </string-array>
@@ -686,25 +674,6 @@
         <item>@id/cast_button_type_skip_previous</item>
         <item>@id/cast_button_type_skip_next</item>
         <item>@id/cast_button_type_mute_toggle</item>
-    </array>
-        <item>#ffababab</item>
-        <item>#ff5e5e5e</item>
-        <item>#ff1f1f1f</item>
-        <item>#fff6aea9</item>
-        <item>#fff2b8b5</item>
-        <item>#ffb3261e</item>
-        <item>#ffd2e3fc</item>
-        <item>#ff669df6</item>
-        <item>#ff1a73e8</item>
-        <item>#fffde293</item>
-        <item>#fffcc934</item>
-        <item>#ffea8600</item>
-        <item>#ffa8dab5</item>
-        <item>#ff34a853</item>
-        <item>#ff188038</item>
-        <item>#ffd7aefb</item>
-        <item>#ffa142f4</item>
-        <item>#ff8430ce</item>
     </array>
     </array>
         <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
