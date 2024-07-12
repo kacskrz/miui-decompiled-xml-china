@@ -492,8 +492,6 @@
         <item>60</item>
         <item>90</item>
     </string-array>
-    <array name="avatar_image_descriptions" />
-    <array name="avatar_images" />
     <string-array name="ba_disable_timeout">
         <item>@string/short_time</item>
         <item>@string/long_time</item>
@@ -827,6 +825,16 @@
         <item>AVRCP 1.4</item>
         <item>AVRCP 1.6</item>
     </string-array>
+    <string-array name="bluetooth_broadcast_pin_config_titles">
+        <item>Unencrypted (no security)</item>
+        <item>4 digit pin (low security)</item>
+        <item>16 digit pin (high security)</item>
+    </string-array>
+    <string-array name="bluetooth_broadcast_pin_config_values">
+        <item>0</item>
+        <item>4</item>
+        <item>16</item>
+    </string-array>
     <string-array name="bluetooth_leaudio_mode">
         <item>Disabled</item>
         <item>Unicast</item>
@@ -930,6 +938,9 @@
         <item>Disabled</item>
         <item>Enabled Filtered</item>
         <item>Enabled</item>
+        <item>Enabled Headers Filtered</item>
+        <item>Enabled Media Pkts Filtered</item>
+        <item>Enabled Profiles Filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_filters_entries">
         <item>Leave only ACL headers</item>
@@ -957,6 +968,14 @@
         <item>disabled</item>
         <item>filtered</item>
         <item>full</item>
+        <item>snoopheadersfiltered</item>
+        <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
+    </string-array>
+    <string-array name="bt_hci_snoop_log_values_enhanced">
+        <item>snoopheadersfiltered</item>
+        <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
     </string-array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
@@ -976,6 +995,20 @@
         <item>@color/bt_color_icon_6</item>
         <item>@color/bt_color_icon_7</item>
     </array>
+    <string-array name="bt_stack_log_level_entries">
+        <item>Verbose</item>
+        <item>Debug</item>
+        <item>Info</item>
+        <item>Warn</item>
+        <item>Error</item>
+    </string-array>
+    <string-array name="bt_stack_log_level_values">
+        <item>verbose</item>
+        <item>debug</item>
+        <item>info</item>
+        <item>warn</item>
+        <item>error</item>
+    </string-array>
     <string-array name="button_light_timeout_entries">
         <item>1 second</item>
         <item>2 seconds</item>
@@ -1198,6 +1231,35 @@
         <item>pattern</item>
         <item>numerical</item>
         <item>mixed</item>
+    </string-array>
+    <string-array name="china_broadcast_ids">
+        <item>46015</item>
+        <item>46060</item>
+        <item>46061</item>
+    </string-array>
+    <string-array name="china_mobile_ids">
+        <item>46000</item>
+        <item>46002</item>
+        <item>46004</item>
+        <item>46007</item>
+        <item>46008</item>
+        <item>46020</item>
+        <item>46021</item>
+        <item>46022</item>
+    </string-array>
+    <string-array name="china_telecom_ids">
+        <item>46003</item>
+        <item>46005</item>
+        <item>46011</item>
+        <item>46050</item>
+        <item>46051</item>
+    </string-array>
+    <string-array name="china_union_ids">
+        <item>46001</item>
+        <item>46006</item>
+        <item>46009</item>
+        <item>46031</item>
+        <item>46032</item>
     </string-array>
     <string-array name="chinese_days">
         <item>@string/chinese_day_1</item>
@@ -1655,6 +1717,7 @@
         <item>App lock</item>
         <item>Second space</item>
     </string-array>
+    <array name="config_carrier_use_rac" />
     <string-array name="config_color_mode_options_strings">
         <item>@string/color_mode_option_natural</item>
         <item>@string/color_mode_option_boosted</item>
@@ -1921,6 +1984,16 @@
         <item>@string/dndm_vip_list_starred_contact</item>
         <item>@string/dndm_vip_list_custom</item>
     </string-array>
+    <string-array name="domestic_roaming_mplmns">
+        <item>46050</item>
+        <item>46051</item>
+        <item>46021</item>
+        <item>46022</item>
+        <item>46031</item>
+        <item>46032</item>
+        <item>46060</item>
+        <item>46061</item>
+    </string-array>
     <string-array name="double_click_mode_entries">
         <item>@string/miheadset_next</item>
         <item>@string/miheadset_plus</item>
@@ -2023,6 +2096,24 @@
         <item>0</item>
         <item>1</item>
     </string-array>
+    <string-array name="enabled_networks_gsm_wcdma_choices">
+        <item>@string/network_2G_only</item>
+        <item>@string/network_3G_only</item>
+        <item>@string/network_2G_3G_preferred</item>
+    </string-array>
+    <string-array name="enabled_networks_gsm_wcdma_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="enabled_networks_subsidy_locked_choices">
+        <item>LTE Only</item>
+        <item>GSM/WCDMA/LTE</item>
+    </string-array>
+    <string-array name="enabled_networks_subsidy_locked_values">
+        <item>11</item>
+        <item>9</item>
+    </string-array>
     <string-array name="enabled_networks_tdscdma_values">
         <item>22</item>
         <item>18</item>
@@ -2055,6 +2146,7 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
+    <array name="fingerprint_acquired_ignore_list" />
     <string-array name="fingerprint_unlock_type_entries">
         <item>@string/fingerprint_unlock_touch_type</item>
         <item>@string/fingerprint_unlock_press_type</item>
@@ -2296,6 +2388,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <array name="kg_wrong_puk_code_message_list" />
     <string-array name="led_color_entries">
         <item>Blue</item>
         <item>Red</item>
@@ -2346,6 +2439,7 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <array name="locale_carrier_names" />
     <string-array name="lock_after_timeout_entries">
         <item>Immediately</item>
         <item>5 seconds</item>
@@ -2643,12 +2737,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>SPN</item>
         <item>IMSI</item>
         <item>GID</item>
+        <item>ICCID</item>
     </string-array>
     <string-array name="mvno_type_values">
         <item></item>
         <item>spn</item>
         <item>imsi</item>
         <item>gid</item>
+        <item>iccid</item>
     </string-array>
     <string-array name="ncc_locales">
         <item>TW</item>
@@ -2811,6 +2907,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>zm</item>
         <item>zw</item>
     </string-array>
+    <array name="origin_carrier_names" />
     <string-array name="overlay_display_devices_entries">
         <item>None</item>
         <item>480p</item>
@@ -3099,6 +3196,16 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>NR/LTE/TDSCDMA/GSM/WCDMA</item>
         <item>NR/LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA</item>
     </string-array>
+    <string-array name="preferred_network_mode_gsm_wcdma_choices">
+        <item>GSM only</item>
+        <item>WCDMA only</item>
+        <item>GSM/WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_gsm_wcdma_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
     <string-array name="preferred_network_mode_values">
         <item>0</item>
         <item>1</item>
@@ -3171,7 +3278,7 @@ Note: Only for Ubuntu 8.04!"</item>
     <string-array name="private_space_auto_lock_options">
         <item>@string/private_space_auto_lock_every_time</item>
         <item>@string/private_space_auto_lock_after_inactivity</item>
-        <item>@string/private_space_auto_lock_never</item>
+        <item>@string/private_space_auto_lock_after_device_restart</item>
     </string-array>
     <string-array name="private_space_auto_lock_options_values">
         <item>0</item>
@@ -4010,6 +4117,29 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>0</item>
         <item>2</item>
     </string-array>
+    <string-array name="uplmn_cu_mcc_mnc_values">
+        <item>46001</item>
+        <item>46006</item>
+        <item>46009</item>
+    </string-array>
+    <string-array name="uplmn_prefer_network_mode_td_choices">
+        <item>GSM</item>
+        <item>TDSCDMA</item>
+        <item>LTE</item>
+        <item>Triple mode</item>
+    </string-array>
+    <string-array name="uplmn_prefer_network_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="uplmn_prefer_network_mode_w_choices">
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>LTE</item>
+        <item>Triple mode</item>
+    </string-array>
     <string-array name="usb_configuration_titles">
         <item>Charging</item>
         <item>MTP (Media Transfer Protocol)</item>
@@ -4200,7 +4330,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>WLAN</item>
         <item>Mobile</item>
     </string-array>
+    <array name="wifi_calling_mode_choices_with_ims_preferred">
+        <item>Ims Preferred</item>
+        <item>@android:string/wfc_mode_wifi_preferred_summary</item>
+        <item>@android:string/wfc_mode_cellular_preferred_summary</item>
+        <item>@android:string/wfc_mode_wifi_only_summary</item>
+    </array>
     <array name="wifi_calling_mode_choices_without_wifi_only">
+        <item>@android:string/wfc_mode_wifi_preferred_summary</item>
+        <item>@android:string/wfc_mode_cellular_preferred_summary</item>
+    </array>
+    <array name="wifi_calling_mode_choices_without_wifi_only_with_ims_preferred">
+        <item>Ims Preferred</item>
         <item>@android:string/wfc_mode_wifi_preferred_summary</item>
         <item>@android:string/wfc_mode_cellular_preferred_summary</item>
     </array>
@@ -4209,7 +4350,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
         <item>@string/wifi_calling_mode_wifi_only_summary</item>
     </string-array>
+    <string-array name="wifi_calling_mode_summaries_with_ims_preferred">
+        <item>@string/wifi_calling_mode_ims_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_only_summary</item>
+    </string-array>
     <string-array name="wifi_calling_mode_summaries_without_wifi_only">
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_summaries_without_wifi_only_with_ims_preferred">
+        <item>@string/wifi_calling_mode_ims_preferred_summary</item>
         <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
         <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
     </string-array>
@@ -4242,6 +4394,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+    <string-array name="wifi_dhcp_entries">
+        <item>Send device name to network</item>
+        <item>"Don't send device name to network"</item>
     </string-array>
     <string-array name="wifi_eap_method">
         <item>PEAP</item>
@@ -4410,12 +4566,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/wifi_security_sae</item>
         <item>@string/wifi_security_psk_sae</item>
         <item>@string/wifi_security_wpa2</item>
+        <item>@string/wifi_security_owe</item>
         <item>@string/wifi_security_none</item>
     </string-array>
     <string-array name="wifi_tether_security_values">
         <item>3</item>
         <item>2</item>
         <item>1</item>
+        <item>4</item>
         <item>0</item>
     </string-array>
     <string-array name="wifi_ttls_phase2_entries">
