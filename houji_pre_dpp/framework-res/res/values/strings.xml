@@ -547,6 +547,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_defaultContextualSearchKey" />
     <string name="config_defaultContextualSearchLegacyEnabled" />
     <string name="config_defaultContextualSearchPackageName" />
+    <string name="config_defaultCredentialManagerAutofillService">com.android.credentialmanager/com.android.credentialmanager.autofill.CredentialAutofillService</string>
     <string name="config_defaultCredentialManagerHybridService" />
     <string name="config_defaultDisplayCompatHostActivity" />
     <string name="config_defaultDndAccessPackages">com.android.camera2</string>
@@ -618,6 +619,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_globalAppSearchDataQuerierPackage" />
     <string name="config_gnssLocationProviderPackageName">@null</string>
     <string name="config_hapticFeedbackCustomizationFile" />
+    <string name="config_hdmiCecActiveSourceLostActivity">com.android.systemui/com.android.systemui.tv.hdmi.HdmiCecActiveSourceLostActivity</string>
     <string name="config_hdmiCecSetMenuLanguageActivity">com.android.systemui/com.android.systemui.tv.hdmi.HdmiCecSetMenuLanguageActivity</string>
     <string name="config_headlineFontFamily" />
     <string name="config_headlineFontFamilyMedium">@string/font_family_button_material</string>
@@ -846,6 +848,7 @@ using %s"</string>
     <string name="dlg_ok">OK</string>
     <string name="done_accessibility_shortcut_menu_button">Done</string>
     <string name="done_label">Done</string>
+    <string name="dream_accessibility_action_click">dismiss</string>
     <string name="dream_preview_title">Preview, %1$s</string>
     <string name="dump_heap_notification">%1$s exceeded memory limit</string>
     <string name="dump_heap_notification_detail">Heap dump collected. Tap to share.</string>
@@ -1028,7 +1031,7 @@ If you have questions, contact your organization's admin."</string>
     <string name="fingerprint_app_setting_name">Use fingerprint</string>
     <string name="fingerprint_authenticated">Fingerprint authenticated</string>
     <string name="fingerprint_dialog_default_subtitle">Use your fingerprint to continue</string>
-    <string name="fingerprint_dialog_use_fingerprint_instead">Can’t recognize face. Use fingerprint instead.</string>
+    <string name="fingerprint_dialog_use_fingerprint_instead">Face not recognized. Use fingerprint instead.</string>
     <string name="fingerprint_error_bad_calibration">Can’t use fingerprint sensor. Visit a repair provider.</string>
     <string name="fingerprint_error_canceled">Fingerprint operation canceled</string>
     <string name="fingerprint_error_hw_not_available">Fingerprint hardware not available</string>
@@ -1684,7 +1687,8 @@ Enhanced notifications can access notification content, including personal infor
     <string name="other_networks_no_internet">Network has no internet access</string>
     <string name="owner_name">Owner</string>
     <string name="package_deleted_device_owner">Deleted by your admin</string>
-    <string name="package_installed_device_owner">Installed by your admin</string>
+    <string name="package_installed_device_owner">"Installed by your admin.
+Go to settings to view granted permissions"</string>
     <string name="package_updated_device_owner">Updated by your admin</string>
     <string name="passwordIncorrect">Incorrect password.</string>
     <string name="password_keyboard_label_alpha_key">ABC</string>
@@ -2167,7 +2171,7 @@ for account %s."</string>
     <string name="reboot_to_update_title">Android system update</string>
     <string name="recent_tasks_title">Recent</string>
     <string name="redacted_notification_action_title" />
-    <string name="redacted_notification_message" />
+    <string name="redacted_notification_message">Sensitive notification content hidden</string>
     <string name="redo">Redo</string>
     <string name="reduce_bright_colors_feature_name">Extra dim</string>
     <string name="region_picker_section_all">All regions</string>
@@ -2250,22 +2254,30 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="satellite_notification_summary">You can send and receive messages without a mobile or WLAN network</string>
     <string name="satellite_notification_title">Auto connected to satellite</string>
     <string name="scCellularNetworkSecurityLearnMore" />
-    <string name="scCellularNetworkSecuritySummary">Review settings</string>
-    <string name="scCellularNetworkSecurityTitle">Cellular network security</string>
-    <string name="scIdentifierDisclosureIssueSummary">"A network on the %4$s connection recorded your device's unique identifier (IMSI) %1$d times in the period between %2$tr and %3$tr."</string>
-    <string name="scIdentifierDisclosureIssueTitle">Device identifier accessed</string>
+    <string name="scCellularNetworkSecuritySummary">Encryption, notifications for unencrypted networks</string>
+    <string name="scCellularNetworkSecurityTitle">Mobile network security</string>
+    <string name="scIdentifierDisclosureIssueSummary">"At %1$s, a nearby network recorded your device's unique ID (IMSI or IMEI) while using your %2$s SIM.
+
+This means that your location, activity, or identity have been logged. This is common practice but may be an issue for people concerned about privacy."</string>
+    <string name="scIdentifierDisclosureIssueSummaryNotification">"At %1$s, a nearby network recorded your device's unique ID (IMSI or IMEI) while using your %2$s SIM"</string>
+    <string name="scIdentifierDisclosureIssueTitle">Device ID accessed</string>
+    <string name="scNullCipherIssueActionGotIt">Got it</string>
     <string name="scNullCipherIssueActionLearnMore">Learn more</string>
-    <string name="scNullCipherIssueActionSettings">Cellular security settings</string>
-    <string name="scNullCipherIssueEncryptedSummary">"You're now connected to a more secure cellular network."</string>
-    <string name="scNullCipherIssueEncryptedTitle">Encrypted connection to %1$s</string>
-    <string name="scNullCipherIssueNonEncryptedSummary">"You're connected to a non-encrypted cellular network. Your calls, messages, and data are vulnerable to interception."</string>
-    <string name="scNullCipherIssueNonEncryptedTitle">Non-encrypted connection to %1$s</string>
+    <string name="scNullCipherIssueActionSettings">Mobile network security settings</string>
+    <string name="scNullCipherIssueEncryptedSummary">%1$s SIM connection is more secure now</string>
+    <string name="scNullCipherIssueEncryptedTitle">Connected to encrypted network %1$s</string>
+    <string name="scNullCipherIssueNonEncryptedSummary">"Calls, messages, and data are currently more vulnerable while using your %1$s SIM.
+
+When your connection is encrypted again, you'll get another notification."</string>
+    <string name="scNullCipherIssueNonEncryptedSummaryNotification">Calls, messages, and data are currently more vulnerable while using your %1$s SIM</string>
+    <string name="scNullCipherIssueNonEncryptedTitle">Connected to unencrypted network</string>
     <string name="screen_compat_mode_hint">Re-enable this in System settings > Apps > Downloaded.</string>
     <string name="screen_compat_mode_scale">Scale</string>
     <string name="screen_compat_mode_show">Always show</string>
     <string name="screen_lock">Screen lock</string>
     <string name="screen_lock_app_setting_name">Use screen lock</string>
     <string name="screen_lock_dialog_default_subtitle">Enter your screen lock to continue</string>
+    <string name="screen_not_shared_sensitive_content">App content hidden from screen share for security</string>
     <string name="screenshot_edit">Edit</string>
     <string name="search_hint">Search…</string>
     <string name="search_language_hint">Type language name</string>
@@ -2503,13 +2515,13 @@ Listening at high volume for long periods may damage your hearing."</string>
     <string name="usb_ptp_notification_title">PTP via USB is on</string>
     <string name="usb_storage_activity_title">USB mass storage</string>
     <string name="usb_storage_button_mount">Turn on USB storage</string>
-    <string name="usb_storage_error_message">"There's a problem using your USB storage for USB mass storage."</string>
-    <string name="usb_storage_message">"You've connected to your computer via USB. Touch the button below if you want to copy files between your computer and your Android's USB storage."</string>
+    <string name="usb_storage_error_message">"There's a problem using your SD card for USB mass storage."</string>
+    <string name="usb_storage_message">"You've connected to your computer via USB. Touch the button below if you want to copy files between your computer and your Android's SD card."</string>
     <string name="usb_storage_notification_message">Touch to copy files to/from your computer.</string>
     <string name="usb_storage_notification_title">USB connected</string>
     <string name="usb_storage_stop_button_mount">Turn off USB storage</string>
     <string name="usb_storage_stop_error_message">"There was a problem turning off USB storage. Check that you've unmounted the USB host, then try again."</string>
-    <string name="usb_storage_stop_message">"Before turning off USB storage, unmount (\"eject\") your Android's USB storage from your computer."</string>
+    <string name="usb_storage_stop_message">"Before turning off USB storage, unmount (\"eject\") your Android's SD card from your computer."</string>
     <string name="usb_storage_stop_notification_message">Touch to turn off USB storage.</string>
     <string name="usb_storage_stop_notification_title">Turn off USB storage</string>
     <string name="usb_storage_stop_title">USB storage in use</string>
@@ -2656,6 +2668,9 @@ Do you want to close it?"</string>
     <string name="zen_mode_implicit_deactivated">Off</string>
     <string name="zen_mode_implicit_trigger_description">Managed by %1$s</string>
     <string name="zen_mode_rule_name_combination">%1$s / %2$s</string>
+    <string name="zen_mode_trigger_event_calendar_any">Any calendar</string>
+    <string name="zen_mode_trigger_summary_divider_text">", "</string>
+    <string name="zen_mode_trigger_summary_range_symbol_combination">%1$s - %2$s</string>
     <string name="zen_mode_until">Until %1$s</string>
     <string name="zen_mode_until_next_day">Until %1$s</string>
     <string name="zen_upgrade_notification_content">"Tap to check what's blocked."</string>
