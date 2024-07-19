@@ -60,6 +60,8 @@ It’s taking a while to connect to mobile data. You can go back and try connect
     <string name="activation_unprovisioned_title">Mobile data couldn’t be activated</string>
     <string name="activity_label_empty" />
     <string name="add_personal_account_not_now">Not now</string>
+    <string name="all_set_actions_done_label">Done</string>
+    <string name="all_set_title">All set!</string>
     <string name="android_privacy_policy_title">Additional Privacy Policy</string>
     <string name="androidx_startup">androidx.startup</string>
     <string name="available_via_carrier">Available via %1$s</string>
@@ -135,7 +137,9 @@ It’s taking a while to connect to mobile data. You can go back and try connect
     <string name="deferred_setup_wizard_reason_google_pay">use Google Pay</string>
     <string name="deferred_setup_wizard_reason_google_pay_verbose">pay faster with Google Pay</string>
     <string name="deferred_setup_wizard_reason_template_one_reason">^1, and more</string>
+    <string name="deferred_setup_wizard_reason_template_one_reason_restore_anytime_enabled">Copy data from another device</string>
     <string name="deferred_setup_wizard_reason_template_two_reasons">^1, ^2, and more</string>
+    <string name="deferred_setup_wizard_reason_template_two_reasons_restore_anytime_enabled">Copy data from another device and more</string>
     <string name="deferred_setup_wizard_reason_verbose_default">Just a few quick steps and your ^1 will be ready to go</string>
     <string name="deferred_setup_wizard_title">Finish setting up your device</string>
     <string name="deferred_snooze_dialog_option_never">Never</string>
@@ -159,6 +163,7 @@ When airplane mode is on, Wi‑Fi, mobile networks, and Bluetooth are disconnect
     <string name="device_owner_warning_title">{DEVICE_TYPE, select, PHONE {Phone can be monitored} TABLET {Tablet can be monitored} other {Device can be monitored} }</string>
     <string name="dialog_back_button_label">Back</string>
     <string name="dialog_connect_to_wifi_button_label">Connect to Wi‑Fi</string>
+    <string name="dialog_content_font_family">@null</string>
     <string name="dialog_continue_button_label">Continue</string>
     <string name="dialog_use_mobile_button_label">Use mobile data</string>
     <string name="early_update_installing_updates_text">Installing updates</string>
@@ -170,9 +175,9 @@ When airplane mode is on, Wi‑Fi, mobile networks, and Bluetooth are disconnect
     <string name="enterprise_cant_setup_device">For help, contact your IT admin</string>
     <string name="enterprise_cant_setup_device_title">Couldn’t set up your device</string>
     <string name="esim_default_carrier">com.google.android.apps.tycho</string>
-    <string name="esim_download">Download a new eSIM</string>
+    <string name="esim_download">Set up a new eSIM</string>
     <string name="esim_intro_description_default">@string/esim_warning_txt_default</string>
-    <string name="esim_warning_title">Download your eSIM</string>
+    <string name="esim_warning_title">Set up an eSIM</string>
     <string name="esim_warning_txt">If you’re a %1$s subscriber, you’ll get calls, texts, and data by downloading an eSIM instead of inserting a SIM card.</string>
     <string name="esim_warning_txt_default">Connect to your mobile network by downloading the info that’s usually on a SIM card. This replaces standard SIM cards and is just as safe.</string>
     <string name="exit_loading_launcher">Loading launcher…</string>
@@ -243,7 +248,12 @@ When airplane mode is on, Wi‑Fi, mobile networks, and Bluetooth are disconnect
     <string name="network_connection_dialog_text">To get apps and more, connect to a Wi‑Fi network or use mobile data</string>
     <string name="network_connection_dialog_title">Setup paused</string>
     <string name="network_description_text">Select a network</string>
-    <string name="network_description_text_esim">To download your eSIM, connect to Wi‑Fi</string>
+    <string name="network_description_text_esim">To set up your eSIM, connect to Wi‑Fi</string>
+    <string name="network_no_connection_button_label">OK</string>
+    <string name="network_no_connection_description">"You need to be connected to Wi‑Fi or a mobile network to copy your data.
+
+You can activate your mobile network in Settings."</string>
+    <string name="network_no_connection_title">Connect to a network</string>
     <string name="network_see_all_wifi">See all Wi‑Fi networks</string>
     <string name="network_timeout_description_text">Try using another network. If you continue without a connection, you can finish some setup steps later.</string>
     <string name="network_timeout_title">Couldn’t connect</string>
@@ -332,6 +342,8 @@ Because you haven’t done so, you have to set up the tablet again.} other {To u
 
 Because you haven’t done so, you have to set up the device again.} }"</string>
     <string name="restart_setup_wizard_dialog_title">Not signed in</string>
+    <string name="restore_anytime_notification_text">Tap to check progress</string>
+    <string name="restore_anytime_notification_title">Copying your data</string>
     <string name="restore_failed_message">Can’t restore backup</string>
     <string name="restore_no_backup_message">There aren’t any backups available on your other device</string>
     <string name="restore_no_backup_title">Can’t restore</string>
@@ -366,8 +378,8 @@ Because you haven’t done so, you have to set up the device again.} }"</string>
 
 Once you add your SIM, it may take a few seconds to activate."</string>
     <string name="sim_locked_title">SIM isn’t supported</string>
-    <string name="sim_missing_activity_subtitle_with_esim_primary">You can download your eSIM or insert a SIM card now</string>
-    <string name="sim_missing_activity_with_esim_primary_button_title">Download your eSIM</string>
+    <string name="sim_missing_activity_subtitle_with_esim_primary">You can set up an eSIM or insert a SIM card now</string>
+    <string name="sim_missing_activity_with_esim_primary_button_title">Set up your eSIM</string>
     <string name="sim_missing_content_description" />
     <string name="sim_missing_quick_start_text">If you have a SIM card, insert it now. Or you can download an eSIM later.</string>
     <string name="sim_missing_text">{sim_slots, plural, =1{If you have a SIM card, insert it now} other{If you have SIM cards, insert them now}}</string>
@@ -379,11 +391,11 @@ Once you add your SIM, it may take a few seconds to activate."</string>
     <string name="sim_ready_title_carrier_app">Connect to %1$s later</string>
     <string name="sim_setup_ask_every_time">Ask every time</string>
     <string name="sim_setup_select_data">Mobile data preference</string>
-    <string name="sim_setup_select_data_description">Choose a number to use for mobile data</string>
+    <string name="sim_setup_select_data_description">Choose a SIM for mobile data</string>
     <string name="sim_setup_select_text">SMS preference</string>
-    <string name="sim_setup_select_text_description">Choose a number for outgoing texts (all active numbers can receive incoming texts)</string>
+    <string name="sim_setup_select_text_description">Choose a number for outgoing texts. You can receive texts on any number.</string>
     <string name="sim_setup_select_voice">Calls preference</string>
-    <string name="sim_setup_select_voice_description">Choose a number for outgoing calls (all active numbers can receive incoming calls)</string>
+    <string name="sim_setup_select_voice_description">Choose a number for outgoing calls. You can receive calls on any number.</string>
     <string name="sim_setup_title">Set up SIMs</string>
     <string name="skip_anyway_button_label">Skip anyway</string>
     <string name="skip_button_label">Skip</string>
@@ -467,6 +479,10 @@ Device not provisioned"</string>
     <string name="theme_selection_light_radio">Light</string>
     <string name="theme_type">glif_light</string>
     <string name="try_again_button_label">Try again</string>
+    <string name="tween_setup_description">You can set this phone up for yourself, or for a child in your family</string>
+    <string name="tween_setup_kids_flow_button">For my child</string>
+    <string name="tween_setup_normal_flow_button">For myself</string>
+    <string name="tween_setup_title">Who are you setting this phone up for?</string>
     <string name="url_load_unsuccessful_message">{DEVICE_TYPE, select, PHONE {Your phone isn’t connected to a mobile data service. To view this information now, go to {0} in a web browser.} TABLET {Your tablet isn’t connected to a mobile data service. To view this information now, go to {0} in a web browser.} other {Your device isn’t connected to a mobile data service. To view this information now, go to {0} in a web browser.} }</string>
     <string name="url_load_unsuccessful_message_wifi_only">{DEVICE_TYPE, select, PHONE {Your phone isn’t connected to a Wi‑Fi network. To view this information now, visit {0} with a web browser.} TABLET {Your tablet isn’t connected to a Wi‑Fi network. To view this information now, visit {0} with a web browser.} other {Your device isn’t connected to a Wi‑Fi network. To view this information now, visit {0} with a web browser.} }</string>
     <string name="user_warning_cannot_switch_message">Cannot switch back to owner user. Please try again later.</string>
@@ -480,6 +496,7 @@ Device not provisioned"</string>
     <string name="v7_preference_on">ON</string>
     <string name="wait_msg">Just a sec…</string>
     <string name="web_dialog_unable_to_view">To view this information now, visit ^1 with a web browser.</string>
+    <string name="welcome_a11y_font_family">regular</string>
     <string name="welcome_accessibility_button">Vision settings</string>
     <string name="welcome_battery_warning_dialog_message">"You have 20% or less battery remaining.
 Charge your battery to complete setup."</string>
@@ -487,6 +504,7 @@ Charge your battery to complete setup."</string>
     <string name="welcome_language_picker_content_description">Language: %s</string>
     <string name="welcome_language_picker_dialog_title">Choose your language</string>
     <string name="welcome_list_item_gravity">start</string>
+    <string name="welcome_locale_font_family">regular</string>
     <string name="welcome_message">Hi there</string>
     <string name="welcome_secondary_user_added_text">{DEVICE_TYPE, select, PHONE {You’ve been added to this phone} TABLET {You’ve been added to this tablet} other {You’ve been added to this device} }</string>
     <string name="welcome_secondary_user_info_text">"{DEVICE_TYPE, select, PHONE {
@@ -514,51 +532,51 @@ Charge your battery to complete setup."</string>
     <string name="welcome_title_gravity">start</string>
     <string name="welcome_title_text">@string/welcome_message</string>
     <string name="wifi_add_new_network">Add new network</string>
-    <string name="wifi_and_mobile_skipped_message">"{DEVICE_TYPE, select, PHONE {Connecting to a Wi‑Fi or mobile network helps you quickly set up your phone.
+    <string name="wifi_and_mobile_skip_message">"{DEVICE_TYPE, select, PHONE {Connecting to a Wi‑Fi or mobile network helps you quickly set up your phone.
 
 Without a connection, you can’t:
-"<li>Sign in to your Google Account</li>"
+"<ul><li>Sign in to your Google Account</li>"
 "<li>Restore apps &amp; data</li>"
 "<li>Get software updates</li>"
-"<li>Automatically set up time and date</li>"
+"<li>Automatically set up time and date</li></ul>"
 } TABLET {Connecting to a network helps you quickly set up your tablet.
 
 Without a connection, you can’t:
-"<li>Sign in to your Google Account</li>"
+"<ul><li>Sign in to your Google Account</li>"
 "<li>Restore apps &amp; data</li>"
 "<li>Get software updates</li>"
-"<li>Automatically set up time and date</li>"
+"<li>Automatically set up time and date</li></ul>"
 } other {Connecting to a network helps you quickly set up your device.
 
 Without a connection, you can’t:
-"<li>Sign in to your Google Account</li>"
+"<ul><li>Sign in to your Google Account</li>"
 "<li>Restore apps &amp; data</li>"
 "<li>Get software updates</li>"
-"<li>Automatically set up time and date</li>} }</string>
-    <string name="wifi_and_mobile_skipped_message_esim">"{DEVICE_TYPE, select, PHONE {Connecting to a Wi‑Fi or mobile network helps you quickly set up your phone.
+"<li>Automatically set up time and date</li></ul>} }</string>
+    <string name="wifi_and_mobile_skip_message_esim">"{DEVICE_TYPE, select, PHONE {Connecting to a Wi‑Fi or mobile network helps you quickly set up your phone.
 
 Without a connection, you can’t:
-"<li>Sign in to your Google Account</li>"
+"<ul><li>Sign in to your Google Account</li>"
 "<li>Restore apps &amp; data</li>"
 "<li>Download a SIM</li>"
 "<li>Get software updates</li>"
-"<li>Automatically set up time and date</li>"
+"<li>Automatically set up time and date</li></ul>"
 } TABLET {Connecting to a network helps you quickly set up your tablet.
 
 Without a connection, you can’t:
-"<li>Sign in to your Google Account</li>"
+"<ul><li>Sign in to your Google Account</li>"
 "<li>Restore apps &amp; data</li>"
 "<li>Download a SIM</li>"
 "<li>Get software updates</li>"
-"<li>Automatically set up time and date</li>"
+"<li>Automatically set up time and date</li></ul>"
 } other {Connecting to a network helps you quickly set up your device.
 
 Without a connection, you can’t:
-"<li>Sign in to your Google Account</li>"
+"<ul><li>Sign in to your Google Account</li>"
 "<li>Restore apps &amp; data</li>"
 "<li>Download a SIM</li>"
 "<li>Get software updates</li>"
-"<li>Automatically set up time and date</li>} }</string>
+"<li>Automatically set up time and date</li></ul>} }</string>
     <string name="wifi_ap_unable_to_handle_new_sta">Access point temporarily full</string>
     <string name="wifi_check_password_try_again">Check password and try again</string>
     <string name="wifi_connected_low_quality">Low quality</string>
@@ -583,6 +601,7 @@ Without a connection, you can’t:
     <string name="wifi_skip_button_label">Set up offline</string>
     <string name="wifi_skipped_message">{DEVICE_TYPE, select, PHONE {Your phone will use the mobile network during setup, and you may be charged for this data usage. To avoid possible charges, connect to Wi‑Fi.} TABLET {Your tablet will use the mobile network during setup, and you may be charged for this data usage. To avoid possible charges, connect to Wi‑Fi.} other {Your device will use the mobile network during setup, and you may be charged for this data usage. To avoid possible charges, connect to Wi‑Fi.} }</string>
     <string name="wifi_skipped_message_for_carrier_custom">{DEVICE_TYPE, select, PHONE {Your phone will use your mobile network to complete setup, which may include updates and app downloads. Data usage may apply.} TABLET {Your tablet will use your mobile network to complete setup, which may include updates and app downloads. Data usage may apply.} other {Your device will use your mobile network to complete setup, which may include updates and app downloads. Data usage may apply.}}</string>
+    <string name="wifi_skipped_message_restore_any_time">{DEVICE_TYPE, select, PHONE {Your phone will use the mobile network during setup, and you may be charged for this data change.} TABLET {Your tablet will use the mobile network during setup, and you may be charged for this data change.} other {Your device will use the mobile network during setup, and you may be charged for this data change.} }</string>
     <string name="wifi_skipped_title">Possible data charges</string>
     <string name="wifi_skipped_title_for_carrier_custom">Continue setup using your mobile network</string>
     <string name="wifi_title">Connect to Wi‑Fi</string>
@@ -593,7 +612,7 @@ Without a connection, you can’t:
     <string name="wifitrackerlib_checking_for_internet_access">Checking for internet access...</string>
     <string name="wifitrackerlib_connected_via_app">Connected via %1$s</string>
     <string name="wifitrackerlib_hotspot_network_connecting">Connecting…</string>
-    <string name="wifitrackerlib_hotspot_network_summary">%1$s from %2$s</string>
+    <string name="wifitrackerlib_hotspot_network_summary_new">{DEVICE_TYPE, select, PHONE {{NETWORK_NAME} from your phone} TABLET {{NETWORK_NAME} from your tablet} COMPUTER {{NETWORK_NAME} from your computer} WATCH {{NETWORK_NAME} from your watch} VEHICLE {{NETWORK_NAME} from your vehicle} other {{NETWORK_NAME} from your device} }</string>
     <string name="wifitrackerlib_known_network_summary">Available from %1$s</string>
     <string name="wifitrackerlib_no_attribution_annotation_packages">com.google.android.setupwizard,com.google.android.gms</string>
     <string name="wifitrackerlib_osu_completing_sign_up">Completing sign-up…</string>
@@ -624,6 +643,17 @@ Without a connection, you can’t:
     <string name="wifitrackerlib_wifi_passpoint_expired">Expired</string>
     <string name="wifitrackerlib_wifi_poor_channel_conditions">Temporary poor network conditions</string>
     <string name="wifitrackerlib_wifi_remembered">Saved</string>
+    <string name="wifitrackerlib_wifi_security_none">None</string>
+    <string name="wifitrackerlib_wifi_security_passpoint">Passpoint</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_suiteb">Suite-B-192</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa3">WPA3-EAP</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa_wpa2">WPA/WPA2-EAP</string>
+    <string name="wifitrackerlib_wifi_security_short_eap_wpa_wpa2_wpa3">WPA/WPA2/WPA3-EAP</string>
+    <string name="wifitrackerlib_wifi_security_short_owe">OWE</string>
+    <string name="wifitrackerlib_wifi_security_short_sae">WPA3</string>
+    <string name="wifitrackerlib_wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifitrackerlib_wifi_security_short_wpa_wpa2_wpa3">WPA/WPA2/WPA3</string>
+    <string name="wifitrackerlib_wifi_security_wep">WEP</string>
     <string name="wifitrackerlib_wifi_standard_11ac">Wi‑Fi 5</string>
     <string name="wifitrackerlib_wifi_standard_11ad">WiGig</string>
     <string name="wifitrackerlib_wifi_standard_11ax">Wi‑Fi 6</string>
@@ -636,6 +666,7 @@ Without a connection, you can’t:
     <string name="wizard_script_deferred_uri">android.resource://com.google.android.setupwizard/xml/wizard_script_deferred</string>
     <string name="wizard_script_post_managed_provisioning_uri">android.resource://com.google.android.setupwizard/xml/wizard_script_post_managed_provisioning</string>
     <string name="wizard_script_pre_deferred_uri">android.resource://com.google.android.setupwizard/xml/wizard_script_pre_deferred</string>
+    <string name="wizard_script_restore_anytime_uri">android.resource://com.google.android.setupwizard/xml/wizard_script_restore_anytime</string>
     <string name="wizard_script_uri">android.resource://com.google.android.setupwizard/xml/wizard_script</string>
     <string name="wizard_script_user_uri">android.resource://com.google.android.setupwizard/xml/wizard_script_user</string>
     <string name="work_profile_setup_description">To setup this device for work and separate work data from personal</string>
