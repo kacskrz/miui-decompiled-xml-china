@@ -4,6 +4,7 @@
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="IMAGE_DISABLED_FOR_APP_TOAST_MESSAGE">"%s doesn't support image insertion here"</string>
     <string name="a11y_contact_suggestions">Showing contact suggestions</string>
+    <string name="a11y_conversation_icon">Conversation Icon</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_mode_done">Done</string>
     <string name="abc_activity_chooser_view_see_all">See all</string>
@@ -171,7 +172,6 @@
     <string name="am_emoji_category_smileys_and_emotions">Smileys &amp; Emotions</string>
     <string name="am_emoji_category_symbols">Symbols</string>
     <string name="am_emoji_category_travel_and_places">Travel &amp; Places</string>
-    <string name="am_posted_just_now">Just now</string>
     <string name="am_posted_now">Now</string>
     <string name="amx_video_call">AMX Video Call</string>
     <string name="and_n_more">and %d more</string>
@@ -439,9 +439,10 @@
     <string name="camera_back">Back camera</string>
     <string name="camera_back_switch_button">Back camera switch</string>
     <string name="camera_capture_button_label">Take Photo</string>
-    <string name="camera_close_button_content_description">Tap to close camera</string>
-    <string name="camera_effect_toggle_hide_content_description">Tap to hide camera effects</string>
-    <string name="camera_effect_toggle_show_content_description">Tap to show camera effects</string>
+    <string name="camera_close_button_content_description">Close camera</string>
+    <string name="camera_disabled_by_device_policy">Security policy restricts use of camera.</string>
+    <string name="camera_effect_toggle_hide_content_description">Hide camera effects</string>
+    <string name="camera_effect_toggle_show_content_description">Show camera effects</string>
     <string name="camera_flash_mode_auto_button_content_description">Flash auto. Tap to toggle flash mode</string>
     <string name="camera_flash_mode_off_button_content_description">Flash off. Tap to toggle flash mode</string>
     <string name="camera_flash_mode_on_button_content_description">Flash on. Tap to toggle flash mode</string>
@@ -466,9 +467,9 @@
     <string name="camera_send_encrypted_media_description">Send encrypted media</string>
     <string name="camera_send_media">Send</string>
     <string name="camera_send_media_description">Send media</string>
-    <string name="camera_shutter_button_photo_content_description">Tap to take a photo</string>
-    <string name="camera_shutter_button_video_start_recording_content_description">Tap to start video recording</string>
-    <string name="camera_shutter_button_video_stop_recording_content_description">Tap to stop video recording</string>
+    <string name="camera_shutter_button_photo_content_description">Take a photo</string>
+    <string name="camera_shutter_button_video_start_recording_content_description">Start video recording</string>
+    <string name="camera_shutter_button_video_stop_recording_content_description">Stop video recording</string>
     <string name="camera_start_recording">Start recording video</string>
     <string name="camera_stop_recording">Stop recording video</string>
     <string name="camera_switch_full_screen">Switch to full screen camera</string>
@@ -546,6 +547,7 @@
     <string name="cmc_consent_key">cmc_consent_key</string>
     <string name="cmc_consent_settings_title">Text on Galaxy devices</string>
     <string name="cms_compressed_blob_id">"CMS compressed blob id: "</string>
+    <string name="cms_d2d_flag_pref_key">cms_d2d_flag_pref_key</string>
     <string name="cms_d2d_timestamp_pref_key">cms_d2d_timestamp</string>
     <string name="cms_download_media_button_content_description">Download attachment</string>
     <string name="cms_full_size_blob_id">"CMS full blob id: "</string>
@@ -773,7 +775,7 @@
     <string name="conversation_suggestion_launch_map_action">Suggested map action</string>
     <string name="conversation_suggestion_launch_phone_action">Suggested phone action</string>
     <string name="conversation_suggestion_launch_web_action">Suggested internet browsing action</string>
-    <string name="conversation_suggestion_selfie_gif_action">Take a selfie!</string>
+    <string name="conversation_suggestion_selfie_gif_action">Send a selfie GIF</string>
     <string name="conversation_suggestion_selfie_gif_action_content_description">Suggested selfie gif action</string>
     <string name="conversation_suggestion_send_reply">Suggested reply</string>
     <string name="conversation_suggestion_set_reminder_action">Suggested set reminder action</string>
@@ -1073,7 +1075,6 @@ People review your messages, which include the business sender’s number. Your 
     <string name="enable_camera_image_permissions">To take pictures and record video, allow Messages to access Camera and Photos and videos.</string>
     <string name="enable_group_mms">Send an MMS reply to all recipients (group MMS)</string>
     <string name="enable_location_permissions">To share a location, give Messages access to Location</string>
-    <string name="enable_nav_redesign_for_expression">enable_nav_redesign_for_expression=false</string>
     <string name="enable_permissions_app_settings_prompt_subtitle">The following permissions must be enabled in settings:</string>
     <string name="enable_permissions_app_settings_prompt_title">Enable permissions in the application settings</string>
     <string name="enable_rcs_auto_fallback_dialog_description_v2">"Messages sent as text (SMS/MMS) aren't end-to-end encrypted and don't preserve media clarity. Carrier charges may apply. 
@@ -1104,6 +1105,21 @@ Messages will switch back when RCS reconnects."</string>
     <string name="encryption_status_title">End-to-End Encryption</string>
     <string name="encryption_status_user">"End-to-end encryption isn't available for %1$s. %2$s"</string>
     <string name="encryption_status_user_group">"Group end-to-end encryption isn't available for %1$s. %2$s"</string>
+    <string name="end_emergency_failure_dont_need_help_card_line_1">Resend the message now or call %1$s at %2$s to prevent them from sending emergency services to your last known location.</string>
+    <string name="end_emergency_failure_dont_need_help_card_line_2">"If you already let %s know that you don't need help in your conversation, no action is needed."</string>
+    <string name="end_emergency_failure_dont_need_help_card_line_3">If you need to start a new satellite session, call your local emergency number.</string>
+    <string name="end_emergency_failure_still_need_help_card_line_1">Emergency services will still be sent to your last known location.</string>
+    <string name="end_emergency_failure_still_need_help_card_line_2">"If you don't need help, or have questions about your emergency, call %1$s at %2$s."</string>
+    <string name="end_emergency_failure_still_need_help_card_line_3">If you need to start a new satellite session, call your local emergency number.</string>
+    <string name="end_emergency_success_dont_need_help_card_line_1">"%s will let emergency services know that you don't need help."</string>
+    <string name="end_emergency_success_dont_need_help_card_line_2">For questions about your emergency, call %1$s at %2$s.</string>
+    <string name="end_emergency_success_dont_need_help_card_line_3">To report a new emergency, call your local emergency number.</string>
+    <string name="end_emergency_success_still_need_help_card_line_1">Emergency services will still be sent to your last known location.</string>
+    <string name="end_emergency_success_still_need_help_card_line_2">For questions about your emergency, call %1$s at %2$s.</string>
+    <string name="end_emergency_success_still_need_help_card_line_3">If you need to start a new satellite session, call your local emergency number.</string>
+    <string name="end_emergency_unexpected_card_line_1">Satellite messaging ended, and help may still be on the way to your last known location.</string>
+    <string name="end_emergency_unexpected_card_line_2">"Call %1$s at %2$s to let them know if you need help or not. If you've already let them know, no action is needed."</string>
+    <string name="end_emergency_unexpected_card_line_3">If you need to start a new satellite session, call your local emergency number.</string>
     <string name="end_of_emergency_help_needed">I still need help. I ended satellite messaging.</string>
     <string name="end_of_emergency_help_not_needed">"I don't need help. I ended satellite messaging."</string>
     <string name="enter_phone_number_dialog_body">This one-time step lets you message groups</string>
@@ -1202,6 +1218,7 @@ sign in and send Google Photos links."</string>
     <string name="express_sign_in_title">"Share videos as they're
 meant to be seen"</string>
     <string name="expressive_animations_pref_key">expressive_animations</string>
+    <string name="expressive_animations_pref_title">Show expressive animations</string>
     <string name="fail_to_decrypt_message_metadata_info">"Can't decrypt, tap for info"</string>
     <string name="fail_to_load_dialog_negative_button">Text with device SIM</string>
     <string name="fail_to_load_dialog_positive_button">Retry</string>
@@ -1492,10 +1509,10 @@ You can change your default call SIM in System settings. %1$s"</string>
     <string name="group_name_mirror_extended_fab_text">Done</string>
     <string name="group_name_text_field_title">Group name</string>
     <string name="group_name_text_field_title_with_optional">Group name (optional)</string>
-    <string name="group_no_phone_number_fix">Messages needs your phone number. <annotation id="link">Fix</annotation></string>
     <string name="group_no_phone_number_fix_annotated">To message this group, add your number. <annotation id="link">Add</annotation></string>
     <string name="group_no_phone_number_fix_split_link_text">Add</string>
     <string name="group_no_phone_number_fix_split_message">To message this group, add your number</string>
+    <string name="group_not_a_member_info_line">You are no longer a member of this group</string>
     <string name="group_recipient_offline_description">Message delivers when a recipient is online…</string>
     <string name="group_rename_mirror_extended_fab_text">Save</string>
     <string name="group_rename_remaining_text_characters_limit_reached">Characters limit reached</string>
@@ -1935,8 +1952,10 @@ Make sure you're connected to Wi-Fi"</string>
     <string name="message_size_label">"Size: "</string>
     <string name="message_status_check_options"><u>Check options</u></string>
     <string name="message_status_conv2_delivered">Delivered</string>
+    <string name="message_status_conv2_encrypted">End-to-end encrypted</string>
     <string name="message_status_conv2_read">Read</string>
     <string name="message_status_conv2_seen">Seen</string>
+    <string name="message_status_conv2_unencrypted">Not end-to-end encrypted</string>
     <string name="message_status_delete_and_try_again">Can’t send, delete and try again</string>
     <string name="message_status_delivered">Delivered</string>
     <string name="message_status_download">Tap to download</string>
@@ -1984,6 +2003,11 @@ Make sure you're connected to Wi-Fi"</string>
     <string name="message_status_waiting_for_connection">Waiting for connection</string>
     <string name="message_sticker_content_description">Sticker</string>
     <string name="message_stuck_in_sending_text">Stuck in sending</string>
+    <string name="message_talkback_action_address">Map %s</string>
+    <string name="message_talkback_action_call">Call %s</string>
+    <string name="message_talkback_action_date">View %s</string>
+    <string name="message_talkback_action_default">Open %s</string>
+    <string name="message_talkback_action_email">Email %s</string>
     <string name="message_time_list_item">"Satellite messaging may take longer and can't include photos &amp; videos"</string>
     <string name="message_title_manual_download">New MMS message to download</string>
     <string name="message_type_image">Image</string>
@@ -2056,6 +2080,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="mms_phone_number_pref_title">Phone number</string>
     <string name="mms_text">MMS</string>
     <string name="more_about_rcs_chats">More about RCS chats</string>
+    <string name="more_about_satellite_button">More about satellite</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
@@ -2144,6 +2169,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="non_bnr_build_mutex_delete_backup_to_use_fi_text">Google Fi Wireless sync may limit some features. Cancel to keep your existing backup and stop Google Fi Wireless sync.</string>
     <string name="non_bnr_build_mutex_delete_backup_to_use_fi_title">To use Google Fi Wireless sync, delete your existing backup</string>
     <string name="normal_priority">Normal</string>
+    <string name="not_available_on_satellite">Not available while using satellite</string>
     <string name="not_default_sms_app_error_info_change">To send, set Messages as the default SMS app. <annotation id="link">Change</annotation></string>
     <string name="not_default_sms_app_error_info_line">To send, set Messages as the default SMS app</string>
     <string name="not_selected">Not selected</string>
@@ -2156,7 +2182,6 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="notification2o_inbox_style_summary_text">+%d more</string>
     <string name="notification2o_misc_channel">Other notifications</string>
     <string name="notification2o_receiver_update_message">Messages is updating your notifications</string>
-    <string name="notification2o_summary_notification_text">Notification Group</string>
     <string name="notification_call">Call</string>
     <string name="notification_dash_separator">" — "</string>
     <string name="notification_delivery_failures_line1_plural">"Messages can't be delivered"</string>
@@ -2268,6 +2293,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="onboarding_privacy">Privacy Policy</string>
     <string name="onboarding_settings">Turn off anytime in Settings</string>
     <string name="onboarding_title">Write the perfect message magically with AI</string>
+    <string name="one_on_one_chat_created">Chat with %s</string>
     <string name="one_to_one_typing_indicator">Typing…</string>
     <string name="only_send_sms_and_mms">Only send SMS &amp; MMS messages</string>
     <string name="open_camera_button_label">Camera</string>
@@ -2326,6 +2352,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="paired_desktops_last_connection_time">Last active %s</string>
     <string name="paired_desktops_last_connection_time_unknown">unknown</string>
     <string name="paired_desktops_title">Paired devices (%1$d)</string>
+    <string name="parental_approval_required">To send, ask your parent for approval</string>
     <string name="participant_joined_group">%s joined this group</string>
     <string name="participant_joined_group_with_details">%1$s joined this group. %2$s</string>
     <string name="participant_left_group">%s left this group</string>
@@ -2369,7 +2396,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="penpal_contact_details_page_description_header2">How %1$s works</string>
     <string name="penpal_contact_details_page_description_header3">How are messages with %1$s different?</string>
     <string name="penpal_contact_details_page_faq">More about how %1$s works</string>
-    <string name="penpal_contact_details_page_faq_link">https://gemini.google.com/corp/faq</string>
+    <string name="penpal_contact_details_page_faq_link">https://gemini.google.com/faq</string>
     <string name="penpal_conversation_action_about_penpel">About %1$s</string>
     <string name="penpal_conversation_action_report_legal_issue">Report legal issue</string>
     <string name="penpal_conversation_bard_activity">%1$s Apps Activity</string>
@@ -2473,12 +2500,6 @@ By tapping “%1$s” you agree to the %2$s and %3$s. You understand that Google
     <string name="phone_number_promo_banner_negative_button_text">Dismiss</string>
     <string name="phone_number_promo_banner_positive_button_text">Verify now</string>
     <string name="phone_number_promo_banner_title_text">Finish Messages Setup ✅</string>
-    <string name="phone_number_promo_body_text_mo_v2">Get started now with your verified phone number. If you choose to skip, you can get RCS chats later and Messages will try to verify your number for you.</string>
-    <string name="phone_number_promo_body_text_v2">Get started now with your verified phone number. Manage RCS chats anytime in settings.</string>
-    <string name="phone_number_promo_negative_button_text">Remind me later</string>
-    <string name="phone_number_promo_negative_button_text_mo">Skip for now</string>
-    <string name="phone_number_promo_positive_button_text_v2">Get RCS chats</string>
-    <string name="phone_number_promo_title_text">Ready to share photos, videos &amp; more over Wi-Fi or data?</string>
     <string name="phone_number_suggestion_prefix">Send to</string>
     <string name="phone_number_ui_accepted_snackbar_text_v2">"You'll be notified when RCS chats are available"</string>
     <string name="phone_number_ui_dismissed_snackbar_action_text">Settings</string>
@@ -2510,7 +2531,7 @@ By tapping “%1$s” you agree to the %2$s and %3$s. You understand that Google
     <string name="please_try_again_later">Please try again later.</string>
     <string name="plus_n">+%d</string>
     <string name="popup_camera_cancel_button_content_description">Exit Selfie GIF camera</string>
-    <string name="popup_camera_pre_recording_text_no_countdown">Get ready for your close up</string>
+    <string name="popup_camera_pre_recording_text">Get ready…</string>
     <string name="popup_camera_preview_content_description">Popup camera preview</string>
     <string name="popup_camera_record_button_content_description">Begin recording Selfie GIF</string>
     <string name="popup_camera_recording_text">Strike your pose!</string>
@@ -2526,6 +2547,7 @@ By tapping “%1$s” you agree to the %2$s and %3$s. You understand that Google
     <string name="posted_yesterday">Yesterday%1$s%2$s</string>
     <string name="pre_recording_text">Tap to record your voice</string>
     <string name="pref_key_enable_sound_on_keypress">enable_sound_on_keypress</string>
+    <string name="pref_key_enable_user_metrics">enable_user_metrics</string>
     <string name="pref_key_enable_vibrate_on_keypress">enable_vibrate_on_keypress</string>
     <string name="pref_key_sound_volume_on_keypress">sound_volume</string>
     <string name="pref_key_vibration_duration_on_keypress">vibration_duration</string>
@@ -2566,6 +2588,10 @@ Info about your messages and conversations includes phone numbers and email of s
 
 This info helps validate assumptions and identify factors contributing to the issue, for faster, more efficient understanding of the issue."</string>
     <string name="problematic_message_feedback_data_rationale_title">How info about your messages &amp; conversations helps</string>
+    <string name="profile_discrepancy_banner_body">If it isn’t right, turn off profile discovery for %1$s to stop showing this name and picture in Google products and services</string>
+    <string name="profile_discrepancy_banner_negative_button_text">Dismiss</string>
+    <string name="profile_discrepancy_banner_positive_button_text">Learn more</string>
+    <string name="profile_discrepancy_banner_title">Your phone number shows the name and picture of %1$s’s Google Account</string>
     <string name="profile_onboarding_banner_negative_button_text">Not now</string>
     <string name="profile_onboarding_banner_positive_button_text">Continue</string>
     <string name="profile_onboarding_banner_snackbar_load_error_text">Failed to load data. Please try again later.</string>
@@ -2587,6 +2613,7 @@ This info helps validate assumptions and identify factors contributing to the is
     <string name="prompt_button_action_sign_in">Sign in</string>
     <string name="protocol_label_mms_auto_fallback_sent">Resent as MMS.</string>
     <string name="protocol_label_sms_auto_fallback_sent">Resent as SMS.</string>
+    <string name="protocol_satellite">Sent by satellite</string>
     <string name="proxy_screen_clear_search">Clear search</string>
     <string name="proxy_screen_title">Proxy</string>
     <string name="qr_action_bar_device_pairing_title">Device pairing</string>
@@ -2637,11 +2664,8 @@ This business can see your number when you message them"</string>
     <string name="rbm_verification_dialog_verified_message_vodafone">Vodafone has verified the identity of this business. %1$s</string>
     <string name="rbm_verification_icon_content_description">Verified</string>
     <string name="rcs_acs_url_override_key">acs_url_override</string>
-    <string name="rcs_acs_url_override_summary">Manually override the ACS URL</string>
-    <string name="rcs_acs_url_override_title">Set ACS URL</string>
     <string name="rcs_auto_fallback_pref_description_v2">"Switch from RCS chats if a message can't send"</string>
     <string name="rcs_auto_fallback_pref_key">auto_fallback_rcs</string>
-    <string name="rcs_availability">RCS Availability</string>
     <string name="rcs_availability_key">rcs_availability</string>
     <string name="rcs_chat_with_details">RCS chat. %1$s</string>
     <string name="rcs_chats">RCS chats</string>
@@ -2697,16 +2721,10 @@ This business can see your number when you message them"</string>
     <string name="rcs_not_available_more_about_rcs_chats">More about RCS chats</string>
     <string name="rcs_not_delivered_notification_channel_name">Message not delivered</string>
     <string name="rcs_not_supported_by_carrier">"Your carrier doesn't support messaging with %s."</string>
-    <string name="rcs_overrides_category_pref_title">Overrides (permission required)</string>
     <string name="rcs_overrides_disabled">RCS override settings disabled.</string>
     <string name="rcs_overrides_enabled">RCS override settings enabled.</string>
     <string name="rcs_pref_key">rcs_prefs</string>
     <string name="rcs_provisioning_flow_key">provisioning_flow</string>
-    <string name="rcs_provisioning_sms_port_binary">Binary</string>
-    <string name="rcs_provisioning_sms_port_key">provisioning_sms_port</string>
-    <string name="rcs_provisioning_sms_port_summary">%1$d (%2$s)</string>
-    <string name="rcs_provisioning_sms_port_text">Text</string>
-    <string name="rcs_provisioning_sms_port_title">Provisioning SMS port</string>
     <string name="rcs_reply_not_available_message">Messaging with %s is not available right now.</string>
     <string name="rcs_reply_not_available_turn_on_label">Turn on</string>
     <string name="rcs_session_id">"RCS session id: "</string>
@@ -2806,8 +2824,8 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="recipient_incoming_only_info_learn_more">"Can't reply to this short code. "<annotation id="link">Learn more</annotation></string>
     <string name="recipient_incoming_only_info_line">"Can't reply to this short code"</string>
     <string name="recipient_offline_description_v2">Message delivers when %s is online…</string>
-    <string name="recipient_title_emergency">Emergency</string>
-    <string name="recipient_title_emergency_demo">Emergency • Demo</string>
+    <string name="recipient_title_satellite">Satellite SOS</string>
+    <string name="recipient_title_satellite_demo">Satellite SOS • Demo</string>
     <string name="record_audio_permission_description">"To record voice, access to your phone's microphone is required."</string>
     <string name="record_audio_permission_name">Microphone</string>
     <string name="refresh_amber_flags">Refresh</string>
@@ -2867,6 +2885,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="reply_snippet_self_participant_header">You</string>
     <string name="reply_snippet_video_attachment_text">Video</string>
     <string name="report_as_spam">Report as spam</string>
+    <string name="report_cms_restore_dlq_failure_notification_message">Some messages could not be restored from your backup. Tap to send feedback.</string>
     <string name="report_contact_title">Report spam</string>
     <string name="report_group_spam_body_spam_folder">The numbers and recent texts of other group members will go to Google for review and may go to your carrier (charges may apply). This conversation will stay in “Spam &amp; blocked,” without notifications. %1$s</string>
     <string name="report_invalid_thread_id_issue_description">Invalid thread id. See logs for details.</string>
@@ -2936,6 +2955,8 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="sample_incoming_message_text">Hello! How is it going?</string>
     <string name="sample_outgoing_message_text">Great! Thanks for asking!</string>
     <string name="samsung_setting_search_title">Messages Settings</string>
+    <string name="satellite_emergency_card_line_1">"You're messaging by satellite, which may take longer"</string>
+    <string name="satellite_emergency_card_line_2">To send and receive, stay outside with a clear view of the sky</string>
     <string name="satellite_messaging_conversation_tombstone_text">Satellite messaging conversation</string>
     <string name="satellite_messaging_toolstone_link">What to expect</string>
     <string name="satellite_messaging_toolstone_text">"You're messaging by satellite. %1$s"</string>
@@ -3094,6 +3115,7 @@ Your phone number is used only for troubleshooting and resolving issues. Google 
     <string name="settings">Settings</string>
     <string name="settings_activity_title">Settings</string>
     <string name="settings_fast_track_dialog_title_v2">Turn on RCS chats from Google?</string>
+    <string name="settings_link_text">Settings</string>
     <string name="settings_menu_item">Settings</string>
     <string name="shakespeare_tone">📜 Shakespeare</string>
     <string name="shareDialogTitle">Share contact as</string>
@@ -3227,6 +3249,7 @@ Replies will appear in individual conversations"</string>
     <string name="sobbing_mood_content_description">Wailing cry face</string>
     <string name="someone_added_participant">%1$s added %2$s to this group</string>
     <string name="someone_else_created_encrypted_rcs_group_with_details">%1$s created this RCS chat with %2$s. %3$s</string>
+    <string name="someone_else_created_group">%1$s created this group</string>
     <string name="someone_else_created_mms_group">%1$s created this group MMS with %2$s</string>
     <string name="someone_else_created_rcs_group">%1$s created this group chat with %2$s</string>
     <string name="someone_else_created_rcs_group_with_details">%1$s created this RCS chat with %2$s. %3$s</string>
@@ -3580,6 +3603,7 @@ Messages still send from your phone number. Learn more"</string>
     <string name="turn_off_airplane_mode_suggestion">Turn off airplane mode.</string>
     <string name="typing_indicator_one">%s is typing</string>
     <string name="unapproved_incoming_message_notification_content">Unapproved conversation</string>
+    <string name="unapproved_rcs_group">New group chat</string>
     <string name="unarchive_conversation_snackbar">Conversation unarchived</string>
     <string name="unavailable_smsc_number_pref_display_value">Not available</string>
     <string name="unblock">Unblock</string>
@@ -3778,12 +3802,7 @@ Use your best judgement with the content of this message."</string>
     <string name="welcome_agree_button_text">Agree</string>
     <string name="welcome_chat_features_decline_v2">Use Messages without RCS chats</string>
     <string name="welcome_chat_features_legal_v2_tooltip_fix">By using %1$s, you agree to the %2$s. Google will occasionally verify your number with your carrier (SMS charges may apply).</string>
-    <string name="welcome_chat_features_text">"· Send over Wi-Fi or mobile data
-· Share your files &amp; media
-· Keep your messages private"</string>
     <string name="welcome_chat_features_title">Faster, richer, higher quality chat on Wi-Fi or data</string>
-    <string name="welcome_chat_features_title_experiment_0">Do more than ever with Messages</string>
-    <string name="welcome_chat_features_title_experiment_1_v2">Do more in Messages with RCS chats</string>
     <string name="welcome_consent_button_text">Next</string>
     <string name="welcome_federated_learning_description_variant">"• Save time and taps with instant replies
 • Preview websites before you open links
@@ -3825,6 +3844,7 @@ Use your best judgement with the content of this message."</string>
     <string name="you_and_multiple_others_joined_group_with_details">You and %1$s others joined this group. %2$s</string>
     <string name="you_and_one_person_joined_group_with_details">You and %1$s joined this group. %2$s</string>
     <string name="you_created_encrypted_rcs_group_with_details">You created this RCS chat with %1$s. %2$s</string>
+    <string name="you_created_group">You created this group</string>
     <string name="you_created_mms_group">You created this group MMS with %s</string>
     <string name="you_created_rcs_group_v2">You created this group RCS chat with %s</string>
     <string name="you_created_rcs_group_with_details">You created this RCS chat with %1$s. %2$s</string>
