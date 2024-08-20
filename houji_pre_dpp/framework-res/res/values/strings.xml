@@ -72,6 +72,8 @@
     <string name="config_defaultNotes" />
     <string name="config_systemFinancedDeviceController">com.android.devicelockcontroller</string>
     <string name="config_systemCallStreaming" />
+    <string name="config_defaultRetailDemo" />
+    <string name="config_defaultWallet" />
     <string name="BaMmi">Call barring</string>
     <string name="CLIRDefaultOffNextCallOff">Caller ID defaults to not restricted. Next call: Not restricted</string>
     <string name="CLIRDefaultOffNextCallOn">Caller ID defaults to not restricted. Next call: Restricted</string>
@@ -229,6 +231,10 @@
     <string name="accessibility_gesture_3finger_prompt_text">Choose a feature to use with the accessibility gesture (swipe up from the bottom of the screen with three fingers):</string>
     <string name="accessibility_gesture_instructional_text">To switch between features, swipe up with two fingers and hold.</string>
     <string name="accessibility_gesture_prompt_text">Choose a feature to use with the accessibility gesture (swipe up from the bottom of the screen with two fingers):</string>
+    <string name="accessibility_label_clone_profile">Clone</string>
+    <string name="accessibility_label_communal_profile">Communal</string>
+    <string name="accessibility_label_managed_profile">Work profile</string>
+    <string name="accessibility_label_private_profile">Private space</string>
     <string name="accessibility_magnification_chooser_text">Magnification</string>
     <string name="accessibility_select_shortcut_menu_title">Tap a feature to start using it:</string>
     <string name="accessibility_service_action_perform_description">It can track your interactions with an app or a hardware sensor, and interact with apps on your behalf.</string>
@@ -404,6 +410,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="battery_saver_off_notification_title">Battery Saver turned off</string>
     <string name="beforeOneMonthDurationPast">Before 1 month ago</string>
     <string name="biometric_app_setting_name">Use biometrics</string>
+    <string name="biometric_dangling_notification_action_not_now">Not now</string>
+    <string name="biometric_dangling_notification_action_set_up">Set up</string>
     <string name="biometric_dialog_default_subtitle">Use your biometric to continue</string>
     <string name="biometric_dialog_default_title">Verify it’s you</string>
     <string name="biometric_error_canceled">Authentication canceled</string>
@@ -563,6 +571,7 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_defaultNearbySharingSliceUri" />
     <string name="config_defaultNetworkRecommendationProviderPackage" />
     <string name="config_defaultNetworkScorerPackageName" />
+    <string name="config_defaultOnDeviceIntelligenceDeviceConfigNamespace" />
     <string name="config_defaultOnDeviceIntelligenceService" />
     <string name="config_defaultOnDeviceSandboxedInferenceService" />
     <string name="config_defaultOnDeviceSpeechRecognitionService" />
@@ -651,6 +660,8 @@ You can change this shortcut to another feature in Settings > Accessibility."</s
     <string name="config_oemCredentialManagerDialogComponent" />
     <string name="config_oem_enabled_satellite_s2cell_file" />
     <string name="config_oem_enabled_satellite_sos_handover_app" />
+    <string name="config_onDeviceIntelligenceModelLoadedBroadcastKey" />
+    <string name="config_onDeviceIntelligenceModelUnloadedBroadcastKey" />
     <string name="config_optionalPackageVerifierName" />
     <string name="config_overrideComponentUiPackage">com.android.stk</string>
     <string name="config_packagedKeyboardName" />
@@ -875,7 +886,9 @@ using %s"</string>
     <string name="duration_years_shortest_future">in %dy</string>
     <string name="dynamic_mode_notification_channel_name">Routine Mode info notification</string>
     <string name="dynamic_mode_notification_summary">Reducing battery usage to extend battery life</string>
+    <string name="dynamic_mode_notification_summary_v2">Battery Saver is turned on to extend battery life</string>
     <string name="dynamic_mode_notification_title">Battery Saver turned on</string>
+    <string name="dynamic_mode_notification_title_v2">Battery Saver is on</string>
     <string name="editTextMenuTitle">Text actions</string>
     <string name="edit_accessibility_shortcut_menu_button">Edit shortcuts</string>
     <string name="elapsed_time_short_format_h_mm_ss">%1$d:%2$02d:%3$02d</string>
@@ -975,6 +988,8 @@ using %s"</string>
     <string name="face_app_setting_name">Use Face Unlock</string>
     <string name="face_authenticated_confirmation_required">Face authenticated, please press confirm</string>
     <string name="face_authenticated_no_confirmation_required">Face authenticated</string>
+    <string name="face_dangling_notification_msg">"Your face model wasn't working well and was deleted. Set it up again to unlock your phone with face."</string>
+    <string name="face_dangling_notification_title">Set up Face Unlock again</string>
     <string name="face_dialog_default_subtitle">Use your face to continue</string>
     <string name="face_error_canceled">Face operation canceled.</string>
     <string name="face_error_hw_not_available">Can’t verify face. Hardware not available.</string>
@@ -1030,6 +1045,11 @@ If you have questions, contact your organization's admin."</string>
     <string name="fingerprint_acquired_try_adjusting">Try adjusting</string>
     <string name="fingerprint_app_setting_name">Use fingerprint</string>
     <string name="fingerprint_authenticated">Fingerprint authenticated</string>
+    <string name="fingerprint_dangling_notification_msg_1">"%s wasn't working well and was deleted to improve performance"</string>
+    <string name="fingerprint_dangling_notification_msg_2">"%1$s and %2$s weren't working well and were deleted to improve performance"</string>
+    <string name="fingerprint_dangling_notification_msg_all_deleted_1">"%s wasn't working well and was deleted. Set it up again to unlock your phone with fingerprint."</string>
+    <string name="fingerprint_dangling_notification_msg_all_deleted_2">"%1$s and %2$s weren't working well and were deleted. Set them up again to unlock your phone with your fingerprint."</string>
+    <string name="fingerprint_dangling_notification_title">Set up Fingerprint Unlock again</string>
     <string name="fingerprint_dialog_default_subtitle">Use your fingerprint to continue</string>
     <string name="fingerprint_dialog_use_fingerprint_instead">Face not recognized. Use fingerprint instead.</string>
     <string name="fingerprint_error_bad_calibration">Can’t use fingerprint sensor. Visit a repair provider.</string>
@@ -1542,6 +1562,8 @@ Try again in %2$d seconds."</string>
     <string name="miniresolver_open_in_personal">Open in personal %s?</string>
     <string name="miniresolver_open_in_work">Open in work %s?</string>
     <string name="miniresolver_open_work">Open work %s?</string>
+    <string name="miniresolver_private_space_messages_information">You can only send SMS messages from your personal Messages app.</string>
+    <string name="miniresolver_private_space_phone_information">You can only make phone calls from your personal Phone app. Calls made with personal Phone will be added to your personal call history.</string>
     <string name="miniresolver_sms_information">Your organization only allows you to send messages from work apps</string>
     <string name="miniresolver_switch">Switch</string>
     <string name="miniresolver_switch_to_work">Switch to work app?</string>
@@ -1647,6 +1669,7 @@ Enhanced notifications can access notification content, including personal infor
     <string name="notification_channel_voice_mail">Voicemail messages</string>
     <string name="notification_channel_vpn">VPN status</string>
     <string name="notification_channel_wfc">WLAN calling</string>
+    <string name="notification_compact_heads_up_reply">Reply</string>
     <string name="notification_content_abusive_bg_apps">%1$s is running in the background. Tap to manage battery usage.</string>
     <string name="notification_content_long_running_fgs">%1$s might affect battery life. Tap to review active apps.</string>
     <string name="notification_description">Voice call status</string>
