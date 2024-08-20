@@ -110,13 +110,33 @@ If this permission is off, existing alarms and time-based events scheduled by th
     <string name="apn_settings_not_available">Access Point Name settings are not available for this user</string>
     <string name="app_name">DeviceDiagnostics</string>
     <string name="app_process_limit_title">Background process limit</string>
-    <string name="app_title">Device Diagnostics</string>
+    <string name="app_title">Device diagnostics</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="attestation_challenge_does_not_match">Attestation challenge does not match</string>
+    <string name="attestation_boot_patch_level">Boot patch level</string>
+    <string name="attestation_brand">Brand</string>
     <string name="attestation_details_title">Attestation details</string>
+    <string name="attestation_device">Device</string>
+    <string name="attestation_device_locked">Device locked</string>
+    <string name="attestation_failed">Attestation failed</string>
+    <string name="attestation_imei">IMEI</string>
+    <string name="attestation_keymaster_security_level">Keymaster security level</string>
+    <string name="attestation_keymaster_version">Keymaster version</string>
+    <string name="attestation_local_failure_summary">Could not determine whether device is trustworthy</string>
     <string name="attestation_local_failure_title">Attestation failed</string>
+    <string name="attestation_manufacturer">Manufacturer</string>
+    <string name="attestation_meid">MEID</string>
+    <string name="attestation_model">Model</string>
+    <string name="attestation_os_version">OS version</string>
+    <string name="attestation_product">Product</string>
     <string name="attestation_remote_failure_summary">Failed to verify attestation, check your connection and try again.</string>
     <string name="attestation_remote_failure_title">Retry attestation</string>
+    <string name="attestation_results">Attestation results</string>
+    <string name="attestation_second_imei">Second IMEI</string>
+    <string name="attestation_security_level">Security level</string>
+    <string name="attestation_serial">Serial</string>
+    <string name="attestation_vendor_patch_level">Vendor patch level</string>
+    <string name="attestation_verified">Verified certificate</string>
+    <string name="attestation_verified_boot_state">Verified boot state</string>
     <string name="back">Back</string>
     <string name="back_navigation_animation">Predictive back animations</string>
     <string name="back_navigation_animation_dialog">This setting enables system animations for predictive gesture animation. It requires setting per-app enableOnBackInvokedCallback to true in the manifest file.</string>
@@ -124,8 +144,14 @@ If this permission is off, existing alarms and time-based events scheduled by th
     <string name="back_to_main_title">Back to main menu</string>
     <string name="battery_cycle_count">Cycle count</string>
     <string name="battery_first_usage_date">First usage date</string>
+    <string name="battery_health_cold">Cold</string>
+    <string name="battery_health_dead">Dead</string>
+    <string name="battery_health_good">Good</string>
+    <string name="battery_health_over_voltage">Over voltage</string>
+    <string name="battery_health_overheat">Overheat</string>
     <string name="battery_health_summary">%1$d%% of original capacity</string>
     <string name="battery_health_title">Health</string>
+    <string name="battery_health_unavailable">Battery health unavailable</string>
     <string name="battery_info_status_charging">Charging</string>
     <string name="battery_info_status_charging_dock">Charging</string>
     <string name="battery_info_status_charging_fast">Charging rapidly</string>
@@ -155,11 +181,18 @@ If this permission is off, existing alarms and time-based events scheduled by th
     <string name="bluetooth_active_battery_level_untethered">Active. L: %1$s, R: %2$s battery.</string>
     <string name="bluetooth_active_battery_level_untethered_left">Active. L: %1$s battery.</string>
     <string name="bluetooth_active_battery_level_untethered_right">Active. R: %1$s battery.</string>
+    <string name="bluetooth_active_media_only_battery_level">Active (media only). %1$s battery.</string>
+    <string name="bluetooth_active_media_only_battery_level_untethered">Active (media only). L: %1$s, R: %2$s battery.</string>
+    <string name="bluetooth_active_media_only_no_battery_level">Active (media only)</string>
     <string name="bluetooth_active_no_battery_level">Active</string>
     <string name="bluetooth_battery_level">%1$s battery</string>
+    <string name="bluetooth_battery_level_lea_support">Connected (supports audio sharing). %1$s battery.</string>
     <string name="bluetooth_battery_level_untethered">L: %1$s, R: %2$s battery.</string>
+    <string name="bluetooth_battery_level_untethered_lea_support">Connected (supports audio sharing). L: %1$s, R: %2$s battery.</string>
     <string name="bluetooth_battery_level_untethered_left">Left: %1$s battery</string>
+    <string name="bluetooth_battery_level_untethered_left_lea_support">Connected (supports audio sharing). Left: %1$s battery.</string>
     <string name="bluetooth_battery_level_untethered_right">Right: %1$s battery</string>
+    <string name="bluetooth_battery_level_untethered_right_lea_support">Connected (supports audio sharing). Right: %1$s battery.</string>
     <string name="bluetooth_connected">Connected%1$s</string>
     <string name="bluetooth_connected_battery_level">Connected, battery %1$s%2$s</string>
     <string name="bluetooth_connected_no_a2dp">Connected (no media)%1$s</string>
@@ -175,6 +208,8 @@ If this permission is off, existing alarms and time-based events scheduled by th
     <string name="bluetooth_disconnecting">Disconnecting…</string>
     <string name="bluetooth_enable_gabeldorsche">Enable Gabeldorsche</string>
     <string name="bluetooth_enable_gabeldorsche_summary">Enables the Bluetooth Gabeldorsche feature stack.</string>
+    <string name="bluetooth_error_summary">There was an error communicating with the trusted device. Please verify that Bluetooth is enabled and try again.</string>
+    <string name="bluetooth_error_title">Bluetooth error</string>
     <string name="bluetooth_headset_profile_summary_connected">Connected to phone audio</string>
     <string name="bluetooth_headset_profile_summary_use_for">Use for phone audio</string>
     <string name="bluetooth_hearing_aid_left_active">Active (left only)</string>
@@ -191,6 +226,7 @@ If this permission is off, existing alarms and time-based events scheduled by th
     <string name="bluetooth_le_audio_profile_summary_use_for">Use for LE_AUDIO</string>
     <string name="bluetooth_map_profile_summary_connected">Connected to map</string>
     <string name="bluetooth_map_profile_summary_use_for">Use for map</string>
+    <string name="bluetooth_no_battery_level_lea_support">Connected (supports audio sharing)</string>
     <string name="bluetooth_opp_profile_summary_connected">Connected to file transfer server</string>
     <string name="bluetooth_opp_profile_summary_not_connected">Not connected to file transfer server</string>
     <string name="bluetooth_opp_profile_summary_use_for">Use for file transfer</string>
@@ -223,6 +259,7 @@ If this permission is off, existing alarms and time-based events scheduled by th
     <string name="bluetooth_sap_profile_summary_connected">Connected to SAP</string>
     <string name="bluetooth_sap_profile_summary_use_for">Use for SIM access</string>
     <string name="bluetooth_saved_device">Saved</string>
+    <string name="bluetooth_saved_device_lea_support">Supports audio sharing</string>
     <string name="bluetooth_select_a2dp_codec_bits_per_sample">Bluetooth Audio Bits Per Sample</string>
     <string name="bluetooth_select_a2dp_codec_bits_per_sample_dialog_title">"Trigger Bluetooth Audio Codec
 Selection: Bits Per Sample"</string>
@@ -391,13 +428,18 @@ Selection"</string>
     <string name="evaluate_another_title">Evaluate another device</string>
     <string name="evaluate_mode_next_action_title">Next steps</string>
     <string name="evaluated_bt_fail_title">Connection failed, please try again.</string>
+    <string name="evaluated_confirm_send_data">Confirm the report to send to the trusted device.</string>
     <string name="evaluated_device_summary">When prompted to do so, select this option on the evaluated device</string>
-    <string name="evaluated_device_title">Evaluated Device</string>
+    <string name="evaluated_device_title">Evaluated device</string>
+    <string name="evaluated_finalizing_report">Finalizing report...</string>
     <string name="evaluated_scan_continue_summary">Once you have successfully scanned the QR code, this device will automatically start a series of tests.</string>
     <string name="evaluated_scan_now">Scan now</string>
     <string name="evaluated_scan_now_summary">Scan the QR code on the trusted device in the rectangle below</string>
     <string name="evaluated_scan_select_device_summary">Alternatively select the device from the list below</string>
     <string name="evaluated_scan_select_device_title">Select trusted device</string>
+    <string name="evaluated_send_report">Send report</string>
+    <string name="evaluation_complete_summary">The results will now appear on the trusted device</string>
+    <string name="evaluation_complete_title">Evaluation complete</string>
     <string name="evaluation_mode_title">Evaluation mode</string>
     <string name="evaluation_results">Evaluation results</string>
     <string name="expand_button_title">Advanced</string>
@@ -611,6 +653,7 @@ Selection"</string>
     <string name="mtrl_timepicker_confirm">OK</string>
     <string name="neuter">Neuter</string>
     <string name="next">Next</string>
+    <string name="no">No</string>
     <string name="no_application">Nothing</string>
     <string name="not_default_data_content_description">Not set to use data</string>
     <string name="not_grant_admin">No, don’t make them an admin</string>
@@ -720,6 +763,7 @@ Selection"</string>
     <string name="select_webview_provider_dialog_title">Set WebView implementation</string>
     <string name="select_webview_provider_title">WebView implementation</string>
     <string name="select_webview_provider_toast_text">This choice is no longer valid. Try again.</string>
+    <string name="sending_report">Sending report to the trusted device...</string>
     <string name="serial_number_title">Serial number</string>
     <string name="settings_label">Settings</string>
     <string name="settings_package">com.android.settings</string>
@@ -779,6 +823,7 @@ Selection"</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="summary_empty" />
     <string name="summary_placeholder"> </string>
+    <string name="system_update_settings_list_item_title">System Updates</string>
     <string name="tap_to_sign_up">Tap to sign up</string>
     <string name="tether_settings_title_all">Tethering &amp; portable hotspot</string>
     <string name="tether_settings_title_bluetooth">Bluetooth tethering</string>
@@ -811,12 +856,13 @@ Selection"</string>
     <string name="transition_animation_scale_title">Transition animation scale</string>
     <string name="transparent_navigation_bar">Transparent navigation bar</string>
     <string name="transparent_navigation_bar_summary">Make navigation bar background color transparent by default</string>
+    <string name="trusted_bluetooth_error_summary">There was an error communicating with the evaluated device. Please verify that Bluetooth is enabled and try again.</string>
     <string name="trusted_device_summary">Start by selecting this option on a trusted device</string>
-    <string name="trusted_device_title">Trusted Device</string>
-    <string name="trusted_eval_title">Trusted Evaluation</string>
+    <string name="trusted_device_title">Trusted device</string>
+    <string name="trusted_eval_title">Trusted evaluation</string>
     <string name="trusted_follow_prompts_summary">Follow the prompts on the evaluated device. When prompted, press here to continue on this device.</string>
     <string name="trusted_scan_now_summary">"On the device you wish to evaluate, go to
- Settings/DeviceDiagnostics/Evaluated Device
+ Settings/DeviceDiagnostics/Evaluated device
  Follow the prompts on that device."</string>
     <string name="trusted_scan_now_title">Scan now</string>
     <string name="trustworthy_title">Device trustworthy</string>
@@ -849,7 +895,7 @@ Selection"</string>
     <string name="tts_status_ok">%1$s is fully supported</string>
     <string name="tts_status_requires_network">%1$s requires network connection</string>
     <string name="tts_status_title">Default language status</string>
-    <string name="turn_screen_on_title">Turn screen on</string>
+    <string name="turn_screen_on_title">Screen turn-on control</string>
     <string name="tv_bluetooth_battery_level">Battery %1$s</string>
     <string name="tv_media_transfer_arc_fallback_title">HDMI ARC</string>
     <string name="tv_media_transfer_arc_subtitle">Connected via ARC</string>
@@ -1060,6 +1106,7 @@ Any user can update apps for all other users."</string>
     <string name="wifitrackerlib_wifi_wont_autoconnect_for_now">WLAN won’t auto-connect for now</string>
     <string name="window_animation_scale_title">Window animation scale</string>
     <string name="window_blurs">Allow window-level blurs</string>
+    <string name="yes">Yes</string>
     <string name="zen_alarm_warning">"You won't hear your next alarm %1$s"</string>
     <string name="zen_alarm_warning_indef">"You won't hear your next alarm %1$s unless you turn this off before then"</string>
     <string name="zen_interruption_level_priority">Priority only</string>

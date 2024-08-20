@@ -212,6 +212,7 @@
         <item>android.os.lib.app</item>
         <item>android.permissionpolicy.cts</item>
         <item>android.permission3.cts</item>
+        <item>com.android.cts.rollback</item>
     </string-array>
     <item type="array" name="android_common_nicknames">@android:array/common_nicknames</item>
     <item type="array" name="android_config_longPressVibePattern">@android:array/config_longPressVibePattern</item>
@@ -321,22 +322,94 @@
         <item>gb</item>
         <item>jp</item>
     </string-array>
-    <array name="config_ambientBrighteningLux" />
+    <array name="config_ambientBrighteningLux">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>15</item>
+        <item>30</item>
+        <item>600</item>
+        <item>1677.4</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>8500</item>
+    </array>
     <array name="config_ambientBrighteningLuxFirst" />
     <array name="config_ambientBrighteningLuxFourth" />
     <array name="config_ambientBrighteningLuxSecond" />
     <array name="config_ambientBrighteningLuxThird" />
-    <array name="config_ambientBrighteningThresholds" />
+    <array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>6.0</item>
+        <item>8.51</item>
+        <item>13.66</item>
+        <item>14.84</item>
+        <item>15.46</item>
+        <item>17.22</item>
+        <item>28.44</item>
+        <item>160</item>
+        <item>992.58</item>
+        <item>3000</item>
+        <item>4038.77</item>
+        <item>5738.77</item>
+        <item>7538.77</item>
+        <item>13038.77</item>
+    </array>
     <array name="config_ambientBrighteningThresholdsFirst" />
     <array name="config_ambientBrighteningThresholdsFourth" />
     <array name="config_ambientBrighteningThresholdsSecond" />
     <array name="config_ambientBrighteningThresholdsThird" />
-    <array name="config_ambientDarkeningLux" />
+    <array name="config_ambientDarkeningLux">
+        <item>0</item>
+        <item>1</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>30</item>
+        <item>199</item>
+        <item>200</item>
+        <item>360</item>
+        <item>600</item>
+        <item>1010.47</item>
+        <item>3000</item>
+        <item>20000</item>
+    </array>
     <array name="config_ambientDarkeningLuxFirst" />
     <array name="config_ambientDarkeningLuxFourth" />
     <array name="config_ambientDarkeningLuxSecond" />
     <array name="config_ambientDarkeningLuxThird" />
-    <array name="config_ambientDarkeningThresholds" />
+    <array name="config_ambientDarkeningThresholds">
+        <item>0</item>
+        <item>0.32</item>
+        <item>3.53</item>
+        <item>3.8</item>
+        <item>4.1</item>
+        <item>4.45</item>
+        <item>4.82</item>
+        <item>5.2</item>
+        <item>5.58</item>
+        <item>6.05</item>
+        <item>6.9</item>
+        <item>15.83</item>
+        <item>34.31</item>
+        <item>41.39</item>
+        <item>45.34</item>
+        <item>216.99</item>
+        <item>600</item>
+        <item>2052.56</item>
+        <item>10011.96</item>
+    </array>
     <array name="config_ambientDarkeningThresholdsFirst" />
     <array name="config_ambientDarkeningThresholdsFourth" />
     <array name="config_ambientDarkeningThresholdsSecond" />
@@ -5922,6 +5995,8 @@
         <item>mt6895</item>
         <item>pineapple</item>
         <item>mt6985</item>
+        <item>sun</item>
+        <item>mt6989</item>
     </string-array>
     <string-array name="high_device_gpu_list">
         <item>kalama</item>
@@ -5933,6 +6008,8 @@
         <item>mt6895</item>
         <item>pineapple</item>
         <item>mt6985</item>
+        <item>sun</item>
+        <item>mt6989</item>
     </string-array>
     <string-array name="keyguard_whitelist">
         <item>com.google.android.apps.messaging</item>
@@ -9799,11 +9876,19 @@
         <item>com.tencent.map</item>
         <item>com.sogou.map.android.maps</item>
     </string-array>
+    <string-array name="device_on_platform_7635">
+        <item>amethyst</item>
+    </string-array>
     <string-array name="device_on_platform_8750">
         <item>haotian</item>
         <item>dada</item>
+        <item>xuanyuan</item>
     </string-array>
-    <array name="fullscreen_activity_list_virtual_carwith" />
+    <string-array name="fullscreen_activity_list_virtual_carwith">
+        <item>com.youku.phone/com.youku.ui.activity.DetailActivity,psc:uc</item>
+        <item>com.tencent.qqlive/.ona.activity.VideoDetailActivity,psc:uc</item>
+        <item>com.ss.android.article.video/com.ixigua.feature.mine.qrcode.QRCodeActivity,psc:b</item>
+    </string-array>
     <array name="fullscreen_activity_list_virtual_milink" />
     <string-array name="fullscreen_landscape_list_virtual_carwith">
         <item>cn.kuwo.player,psc</item>
@@ -9818,23 +9903,28 @@
         <item>com.ss.android.article.video,psc</item>
         <item>com.ss.android.ugc.aweme.lite,psc</item>
         <item>com.kuaishou.nebula,psc</item>
-        <item>com.ximalaya.ting.android,psc</item>
+        <item>com.ximalaya.ting.android,psc:uc</item>
         <item>com.ifeng.fhdt,psc</item>
         <item>com.ximalaya.ting.lite,psc</item>
     </string-array>
     <string-array name="fullscreen_landscape_list_virtual_milink">
         <item>com.autonavi.minimap,psm</item>
         <item>com.quark.browser,psm</item>
-        <item>com.UCMobile,psm</item>
+        <item>com.UCMobile,psm:fk</item>
         <item>com.tencent.androidqqmail,psm</item>
         <item>com.taptap,psm</item>
         <item>com.tencent.map,psm</item>
         <item>com.tencent.wemeet.app,psm</item>
         <item>cn.kuwo.player,psm</item>
         <item>com.kiloo.subwaysurf,psm</item>
+        <item>com.ximalaya.ting.android,psm:uc</item>
     </string-array>
     <string-array name="fullscreen_landscape_list_virtual_milink_global">
         <item>in.startv.hotstar.dplus,psm</item>
+    </string-array>
+    <string-array name="large_capacity_list">
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.ss.android.ugc.aweme.lite</item>
     </string-array>
     <string-array name="list_authorised_freeform_list">
         <item>com.miui.calculator</item>
@@ -9961,6 +10051,50 @@
         <item>com.google.android.apps.youtube.music,1</item>
         <item>com.bstar.intl,1</item>
         <item>com.amazon.mShop.android.shopping,1</item>
+    </string-array>
+    <string-array name="process_system_permission_white_list">
+        <item>com.miui.cleanmaster</item>
+        <item>com.miui.cleaner</item>
+    </string-array>
+    <string-array name="screen_rotation_animation_activity_list">
+        <item>tv.danmaku.bili/.ui.video.VideoDetailsActivity,topVideo</item>
+        <item>com.youku.phone/com.youku.ui.activity.DetailActivity,topVideo</item>
+        <item>tv.danmaku.bili/com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity,topVideo</item>
+        <item>com.smile.gifmaker/com.yxcorp.gifshow.corona.detail.CoronaDetailActivity,topVideo</item>
+        <item>com.kuaishou.nebula/com.yxcorp.gifshow.corona.detail.CoronaDetailActivity,topVideo</item>
+        <item>com.autonavi.minimap/com.autonavi.map.activity.NewMapActivity,fullscreen</item>
+        <item>com.tencent.mm/.plugin.finder.feed.ui.FinderLiveVisitorWithoutAffinityUI,centerTopVideo</item>
+        <item>com.tencent.mm/.ui.chatting.gallery.ImageGalleryUI,center</item>
+        <item>com.tencent.mm/.plugin.finder.ui.FinderHomeAffinityUI,centerVideo</item>
+        <item>com.qiyi.video/org.qiyi.android.video.MainActivity,centerTopVideo</item>
+        <item>com.qiyi.video/.WelcomeActivity,centerTopVideo</item>
+        <item>com.android.browser/.BrowserSettingsActivity,ui,centerTopVideo</item>
+        <item>com.zhihu.android/.video_entity.VideoEntitySerialHostActivity,centerTopVideo</item>
+        <item>com.zhihu.android/.feature.short_container_feature.ui.ShortContainerHostActivity,centerTopVideo</item>
+        <item>com.zhihu.android/.video_entity.VideoEntityHostActivity,topVideo</item>
+        <item>com.android.browser/.homepage.infoflow.InfoFlowVideoActivity,topVideo</item>
+        <item>com.tencent.qqlive/.ona.activity.HomeActivity,centerTopVideo</item>
+        <item>com.ss.android.article.video/.activity.SplashActivity,centerTopVideo</item>
+        <item>com.miui.newhome/.business.ui.details.VideoDetailActivity,topVideo</item>
+    </string-array>
+    <string-array name="screen_rotation_animation_package_list">
+        <item>com.qiyi.video,topVideo</item>
+        <item>com.hunantv.imgo.activity,topVideo</item>
+        <item>tv.danmaku.bili,topVideo</item>
+        <item>com.tencent.mobileqq,centerVideo</item>
+        <item>com.smile.gifmaker,centerTopVideo</item>
+        <item>com.kuaishou.nebula,centerTopVideo</item>
+        <item>com.baidu.searchbox,centerTopVideo</item>
+        <item>com.xingin.xhs,centerTopVideo</item>
+        <item>com.miui.video,topVideo</item>
+        <item>com.ss.android.article.news,centerTopVideo</item>
+        <item>com.ss.android.article.lite,centerTopVideo</item>
+        <item>com.sina.weibo,centerTopVideo</item>
+        <item>com.quark.browser,centerVideo</item>
+        <item>com.kugou.android,centerTopVideo</item>
+        <item>com.baidu.searchbox.lite,centerVideo</item>
+        <item>cn.xuexi.android,centerVideo</item>
+        <item>com.tencent.qqlive,topVideo</item>
     </string-array>
     <string-array name="support_low_latency_pkg_list">
         <item>com.tencent.tmgp.sgame</item>
