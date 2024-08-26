@@ -32,9 +32,11 @@
     </string-array>
         <item>Enable alternate error pages</item>
         <item>Disable alternate error pages</item>
+        <item>Allow the user to decide</item>
     </string-array>
         <item>True</item>
         <item>False</item>
+        <item>None</item>
     </string-array>
         <item>Enable AutoFill for addresses</item>
         <item>Disable AutoFill for addresses</item>
@@ -76,9 +78,9 @@
         <item>0</item>
         <item>1</item>
     </string-array>
-        <item>Always use the built-in DNS client if available</item>
+        <item>Always use the built-in DNS client</item>
         <item>Never use the built-in DNS client</item>
-        <item>Use the built-in DNS client on Windows, macOS, Android and ChromeOS</item>
+        <item>Always use the built-in DNS client</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -89,14 +91,6 @@
     </string-array>
         <item>True</item>
         <item>False</item>
-    </string-array>
-        <item>Use the Chrome Root Store.</item>
-        <item>Do not use the Chrome Root Store.</item>
-        <item>Chrome Root Store may be used depending on feature launch process.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
     </string-array>
         <item>Enable all variations</item>
         <item>Enable variations concerning critical fixes only</item>
@@ -132,6 +126,12 @@
     </string-array>
         <item>Allow users to use Touch to Search</item>
         <item>Prevent users from using Touch to Search</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Enable Data URL support in SVGUseElement.</item>
+        <item>Disable Data URL support in SVGUseElement.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -252,6 +252,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Enable in-product surveys</item>
+        <item>Disable in-product surveys</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Enable First-Party Sets for all affected users</item>
         <item>Disable First-Party Sets for all affected users</item>
     </string-array>
@@ -263,14 +269,6 @@
     </string-array>
         <item>True</item>
         <item>False</item>
-    </string-array>
-        <item>Default to browser settings for User-Agent string version.</item>
-        <item>The User-Agent string will not freeze the major version.</item>
-        <item>"The User-Agent string will freeze the major version as 99 and include the browser's major version in the minor position."</item>
-    </string-array>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
     </string-array>
         <item>Force unload event handlers to remain enabled by default during deprecation</item>
         <item>Allow unload event handlers to be disabled by default during deprecation</item>
@@ -286,9 +284,9 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-        <item>Chrome history page organized into groups will be visible at chrome://history/2.</item>
-        <item>Chrome history page organized into groups will not be visible at chrome://history/2.</item>
-        <item>Chrome history page organized into groups will be visible at chrome://history/2 by default.</item>
+        <item>Chrome history page organized into groups will be visible at chrome://history/grouped.</item>
+        <item>Chrome history page organized into groups will not be visible at chrome://history/grouped.</item>
+        <item>Chrome history page organized into groups will be visible at chrome://history/grouped by default.</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -310,25 +308,17 @@
         <item>False</item>
         <item>None</item>
     </string-array>
+        <item>Override the IPv6 reachability check. Always query AAAA record for host name resolution.</item>
+        <item>Do not override the IPv6 reachability check. Only query AAAA record for host name resolution when the device is reachable to a global IPv6 host.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Incognito mode available</item>
         <item>Incognito mode disabled</item>
     </string-array>
         <item>0</item>
         <item>1</item>
-    </string-array>
-        <item>Show warnings and disable autofill on insecure forms</item>
-        <item>Do not show warnings or disable autofill on insecure forms</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
-        <item>Use Default Value for Hashes Allowed in TLS Handshakes.</item>
-        <item>Do Not Allow Insecure Hashes in TLS Handshakes</item>
-        <item>Allow Insecure Hashes in TLS Handshakes</item>
-    </string-array>
-        <item>None</item>
-        <item>False</item>
-        <item>True</item>
     </string-array>
         <item>Allow websites to make requests to any network endpoint in an insecure manner.</item>
         <item>Use default behavior when determining if websites can make requests to network endpoints.</item>
@@ -350,6 +340,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Always allow read aloud</item>
+        <item>Never allow read aloud</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Enable reporting of usage and crash-related data</item>
         <item>Disable reporting of usage and crash-related data</item>
         <item>Allow users to choose</item>
@@ -357,6 +353,12 @@
         <item>True</item>
         <item>False</item>
         <item>None</item>
+    </string-array>
+        <item>Enabled: Temporarily re-enable mutation events.</item>
+        <item>Disabled: Normal behavior for mutation events, which will mean not firing these events after the removal date.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
     </string-array>
         <item>Show content suggestions on the New Tab page</item>
         <item>Do not show content suggestions on the New Tab page</item>
@@ -372,25 +374,11 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-        <item>NewBaseUrlInheritanceBehavior feature available</item>
-        <item>NewBaseUrlInheritanceBehavior feature disabled</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>Turn NTLMv2 on</item>
         <item>Turn NTLMv2 off</item>
     </string-array>
         <item>True</item>
         <item>False</item>
-    </string-array>
-        <item>New offsetParent behavior will be used.</item>
-        <item>Old offsetParent behavior will be used.</item>
-        <item>New offsetParent behavior will be used by default.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
     </string-array>
         <item>System DNS resolution may be run in or out of the network process depending on system configuration and feature flags.</item>
         <item>System DNS resolution will be run in the network process.</item>
@@ -408,6 +396,12 @@
     </string-array>
         <item>Enable saving passwords using the password manager</item>
         <item>Disable saving passwords using the password manager</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Enable sharing user credentials</item>
+        <item>Disable sharing user credentials</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -448,6 +442,14 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Follows regular deprecation timelines for the PrefixedVideoFullscreen API</item>
+        <item>Disables prefixed video fullscreen APIs</item>
+        <item>Enables prefixed video fullscreen APIs</item>
+    </string-array>
+        <item>runtime-enabled</item>
+        <item>disabled</item>
+        <item>enabled</item>
+    </string-array>
         <item>Enable printing</item>
         <item>Disable printing</item>
     </string-array>
@@ -478,6 +480,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Apply restrictions to requests to more-private network endpoints</item>
+        <item>Use default behavior when determining if websites can make requests to network endpoints</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Ask the user where to save the file before downloading</item>
         <item>Do not ask the user (downloads start immediately)</item>
         <item>Allow the user to decide</item>
@@ -486,13 +494,11 @@
         <item>False</item>
         <item>None</item>
     </string-array>
-        <item>Enable RSA key usage checking</item>
-        <item>Disable RSA key usage checking</item>
-        <item>Use the default setting for RSA key usage checking</item>
+        <item>Enable Related Website Sets</item>
+        <item>Disable Related Website Sets</item>
     </string-array>
         <item>True</item>
         <item>False</item>
-        <item>None</item>
     </string-array>
         <item>Allow users to click through SSL warning pages</item>
         <item>Prevent users from clicking through SSL warning pages</item>
@@ -515,6 +521,12 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+        <item>Allow higher-protection proxied lookups</item>
+        <item>"Don't allow higher-protection proxied lookups"</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
     </string-array>
         <item>Do not filter sites for adult content</item>
         <item>Filter top level sites (but not embedded iframes) for adult content</item>
@@ -539,14 +551,6 @@
     </string-array>
         <item>True</item>
         <item>False</item>
-    </string-array>
-        <item>New event dispatching on disabled form controls behavior will be used.</item>
-        <item>Old event dispatching on disabled form controls behavior will be used.</item>
-        <item>New event dispatching on disabled form controls behavior will be used by default.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
     </string-array>
         <item>Enable the shared clipboard feature</item>
         <item>Disable the shared clipboard feature</item>
@@ -580,12 +584,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>ThrottleDisplayNoneAndVisibilityHiddenCrossOriginIframes feature available</item>
-        <item>ThrottleDisplayNoneAndVisibilityHiddenCrossOriginIframes feature disabled</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>Use default browser behavior, shows the ToS and waits for the user to accept.</item>
         <item>Automatically skips ToS and loads the browser.</item>
     </string-array>
@@ -608,12 +606,6 @@
         <item>False</item>
         <item>None</item>
     </string-array>
-        <item>Allow the updated User-Agent GREASE algorithm to be run.</item>
-        <item>Force the prior User-Agent GREASE algorithm to be used.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>User Agent reduction will be controllable via Field-Trials and Origin-Trials.</item>
         <item>User Agent reduction disabled, and not enabled by Field-Trials or Origin-Trials.</item>
         <item>User Agent reduction will be enabled for all origins.</item>
@@ -628,14 +620,14 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Force WebSQL to be enabled.</item>
-        <item>Allow WebSQL to be disabled by Chrome flag.</item>
+        <item>"Allow creating WebXR's \"immersive-ar\" sessions"</item>
+        <item>"Prevent creating WebXR's \"immersive-ar\" sessions"</item>
     </string-array>
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>"Allow creating WebXR's \"immersive-ar\" sessions"</item>
-        <item>"Prevent creating WebXR's \"immersive-ar\" sessions"</item>
+        <item>Enable advertising zstd content-encoding in the Accept-Encoding header</item>
+        <item>Do not allow using the zstd content-encoding feature</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -644,25 +636,6 @@
         <item>@id/cast_button_type_skip_previous</item>
         <item>@id/cast_button_type_skip_next</item>
         <item>@id/cast_button_type_mute_toggle</item>
-    </array>
-        <item>#ffababab</item>
-        <item>#ff5e5e5e</item>
-        <item>#ff1f1f1f</item>
-        <item>#fff6aea9</item>
-        <item>#fff2b8b5</item>
-        <item>#ffb3261e</item>
-        <item>#ffd2e3fc</item>
-        <item>#ff669df6</item>
-        <item>#ff1a73e8</item>
-        <item>#fffde293</item>
-        <item>#fffcc934</item>
-        <item>#ffea8600</item>
-        <item>#ffa8dab5</item>
-        <item>#ff34a853</item>
-        <item>#ff188038</item>
-        <item>#ffd7aefb</item>
-        <item>#ffa142f4</item>
-        <item>#ff8430ce</item>
     </array>
     </array>
         <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
