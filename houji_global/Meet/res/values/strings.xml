@@ -84,6 +84,7 @@
     <string name="add_others_header_title">Add others</string>
     <string name="add_people">Add people</string>
     <string name="add_phone_number">Add</string>
+    <string name="add_phone_number_action">Add your phone number</string>
     <string name="add_phone_number_dialog_description_rebranded">Make it easier for friends to find and call you on Meet</string>
     <string name="add_phone_number_dialog_negative_button">Not now</string>
     <string name="add_phone_number_dialog_title">Add your phone number</string>
@@ -212,8 +213,11 @@
     <string name="call_incoming_swipe_to_answer_or_decline">Swipe to answer or decline</string>
     <string name="call_incoming_swipe_to_unlock">Swipe up to unlock your phone</string>
     <string name="call_incoming_video_call">Incoming video call</string>
+    <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_and_end_current_call">Answer &amp; End current</string>
     <string name="call_notification_answer_call">Answer</string>
+    <string name="call_notification_answer_video_action">Video</string>
+    <string name="call_notification_decline_action">Decline</string>
     <string name="call_notification_decline_call">Decline</string>
     <string name="call_notification_hang_up_action">Hang Up</string>
     <string name="call_notification_incoming_text">Incoming call</string>
@@ -273,11 +277,12 @@
     <string name="caller_id_removed_notification_body_rebranded">Meet message/caller ID is %s</string>
     <string name="caller_id_removed_notification_title">%s removed</string>
     <string name="caller_id_timeout_desc">Calling as %1$s</string>
+    <string name="calling_account_legacy_settings_name">Legacy calling account</string>
     <string name="calling_account_settings_name">Calling account</string>
     <string name="calling_label">Calling…</string>
     <string name="calling_participant_name">{NUMBER_OF_PARTICIPANTS, plural, offset:1 =1 {{PARTICIPANT_NAME}} =2 {{FIRST_PARTICIPANT} and {SECOND_PARTICIPANT}} =3 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT}} other {{FIRST_PARTICIPANT} and # others}}</string>
     <string name="calling_settings_name">Calling settings</string>
-    <string name="calling_settings_name_converged_calling">Calling settings (Legacy)</string>
+    <string name="calling_settings_name_converged_calling">Calling (legacy)</string>
     <string name="calling_text">Calling…</string>
     <string name="calls_notification_group_title">Calls</string>
     <string name="cam_control_disabled_description">Camera control disabled</string>
@@ -387,6 +392,7 @@
     <string name="clip_video_type">Video</string>
     <string name="clip_voice_message_thumbnail_description_text">Voice message thumbnail</string>
     <string name="clip_voice_message_title_text">Voice message</string>
+    <string name="clips_history_carousel_show_all">Show all</string>
     <string name="clips_message_limit_dialog_positive_button_text">Cancel</string>
     <string name="clips_message_size_limit_dialog_message">Video size can be up to %d MB. Please cancel and choose a shorter video.</string>
     <string name="clips_receive_share_intent_target_info_toast">"You're sending to %s"</string>
@@ -448,8 +454,11 @@
     <string name="conf_access_header_text">Meeting access</string>
     <string name="conf_account_login_failure">"Can't use that account for some reason. Try again."</string>
     <string name="conf_account_not_yet_supported_error">Not available yet. Select an account instead.</string>
+    <string name="conf_account_switch_dialog_body">"Legacy calling features such as messages won't be available until you switch back"</string>
+    <string name="conf_account_switch_got_it_button">Got it</string>
     <string name="conf_account_switch_hover_state">"{account_type}
  {account_email}"</string>
+    <string name="conf_account_switch_title">Switching accounts</string>
     <string name="conf_active_public_livestreaming_content_description">This meeting is being publicly live-streamed</string>
     <string name="conf_active_smart_notes_content_description">Meet is taking notes</string>
     <string name="conf_active_transcription_content_description">This meeting is being transcribed</string>
@@ -502,8 +511,7 @@
     <string name="conf_annotation_badge_dialog_got_it">Got it</string>
     <string name="conf_annotation_badge_dialog_text">The presentation is being annotated</string>
     <string name="conf_annotation_started_snackbar_text">You can annotate on the screen now. Everyone can see your annotations.</string>
-    <string name="conf_answering_as">"Answering as
-{user_name} 
+    <string name="conf_answering_as">"Answering as {user_name} 
 {user_email}"</string>
     <string name="conf_anton">BOLD</string>
     <string name="conf_applied_effects_closed_description">{COUNT} effect(s) applied. Remove effects button. Double tap to expand.</string>
@@ -516,6 +524,7 @@
  
 Your microphone and camera are both off until your host lets you turn them on."</string>
     <string name="conf_audio_announcement_broadcast_started">This call is now being streamed</string>
+    <string name="conf_audio_announcement_gemini_session_started">Gemini is following the conversation so it can answer your questions</string>
     <string name="conf_audio_announcement_pls_started">This call is being publicly streamed</string>
     <string name="conf_audio_announcement_recording_started">This call is now being recorded</string>
     <string name="conf_audio_announcement_smart_notes_started">This call is now taking notes</string>
@@ -547,7 +556,9 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_back_in_main_session_dialog_title">"You're back in the main room"</string>
     <string name="conf_background_effect_text">Background</string>
     <string name="conf_background_replace_custom_background_description">Your custom image {ORDINAL}</string>
+    <string name="conf_block_checkbox_content">Block {REPORTEE_DISPLAY_NAME}</string>
     <string name="conf_block_checkbox_text">Block from this call</string>
+    <string name="conf_block_contact_message">"This account won't be able to contact you directly on Meet and other Google products. However, they can still join group calls or meetings you're in. &lt;a href={LEARN_MORE_URL}>Learn more about reporting abuse&lt;/a>"</string>
     <string name="conf_block_no_browser_available">"Can't open link. No browser available."</string>
     <string name="conf_block_user">Block contact</string>
     <string name="conf_block_user_cancel">Cancel</string>
@@ -569,18 +580,21 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_button_usb_headphones">In-call audio output, USB headphones</string>
     <string name="conf_button_wired_headphones">In-call audio output, wired headphones</string>
     <string name="conf_call_device">Call device</string>
-    <string name="conf_call_ended_text">Call Ended</string>
     <string name="conf_call_failed_description_invitee_organization_blocked_invites">"The person you're calling can't be reached due to their organization's restrictions"</string>
     <string name="conf_call_failed_description_inviter_organization_blocked_invites">"The person you're calling can't be reached due to your organization's restrictions"</string>
     <string name="conf_call_failed_title">"Your call can't be completed"</string>
     <string name="conf_call_has_ended_paygate">This call has ended. Create a new meeting instead.</string>
     <string name="conf_call_home_device_content_description">Call home device</string>
+    <string name="conf_call_incoming_swipe_to_answer_or_decline">Swipe to answer or decline</string>
     <string name="conf_call_is_ending">This call is about to end</string>
-    <string name="conf_call_requests">Call requests</string>
+    <string name="conf_call_report_abuse">Report Abuse</string>
+    <string name="conf_call_report_abuse_header">What would you like to report?</string>
+    <string name="conf_call_uses_e2ee">This call uses additional encryption</string>
+    <string name="conf_call_using_e2ee">This call is using additional encryption</string>
     <string name="conf_call_your_pronouns_are_visible">Your pronouns will be shown to others in the call</string>
     <string name="conf_calling_as_greenroom_body">"The people you're calling will see this:"</string>
     <string name="conf_calling_as_greenroom_title">"You're calling with your Google profile"</string>
-    <string name="conf_calling_unreachable_dialog_text">"This contact can't receive calls. Share a Meet link instead."</string>
+    <string name="conf_calling_unreachable_dialog_text">You’re calling someone who can’t receive calls. Share a Meet link instead.</string>
     <string name="conf_cam_control_disabled_by_moderator_content_description">Camera control disabled by host</string>
     <string name="conf_cam_control_disabled_due_to_viewer_role_content_description">Camera control disabled, you are only viewing this call</string>
     <string name="conf_cam_control_disabled_due_to_viewer_role_snacker_text">"You can't use your camera. You're only viewing this call"</string>
@@ -596,6 +610,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_captions_cohort_multiple_participants">{number_of_other_participants, plural, =1 {{first_participant}, {second_participant} &amp; # other} other {{first_participant}, {second_participant} &amp; # others}}</string>
     <string name="conf_captions_cohort_two_participants">{first_participant} and {second_participant}</string>
     <string name="conf_captions_unavailable_text">Captions temporarily unavailable</string>
+    <string name="conf_change_abuse_type_hint">Change the abuse type</string>
     <string name="conf_change_pn">Change your phone number</string>
     <string name="conf_chat_close_button_content_description">Close</string>
     <string name="conf_chat_send_unavailable">"Chat isn't available at this time"</string>
@@ -622,6 +637,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_clips_camera_permission_denied_before_dialog_message">To enable camera for sending messages, give {app_name_for_permission_dialog} permission to use your camera</string>
     <string name="conf_clips_camera_permission_denied_with_dont_ask_again_dialog_message">Allow {app_name_for_permission_dialog} to access your camera so you can send messages</string>
     <string name="conf_clips_capture_image_content_description">Photo capture</string>
+    <string name="conf_clips_composer_leave_a_message_callee_did_not_answer">{callee_name} didn’t answer, leave a message</string>
+    <string name="conf_clips_composer_leave_a_message_generic">Leave a message</string>
     <string name="conf_clips_effect_download_error_toast">Trouble loading video effect. Try again.</string>
     <string name="conf_clips_effects_category_ar_filters_description">Jump to filters</string>
     <string name="conf_clips_effects_category_ar_filters_label">Filters</string>
@@ -657,6 +674,7 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_clips_ink_transparent">Transparent</string>
     <string name="conf_clips_ink_white">White</string>
     <string name="conf_clips_ink_yellow">Yellow</string>
+    <string name="conf_clips_media_load_error_message">"Can't load the file. Please try again."</string>
     <string name="conf_clips_message_limit_dialog_positive_button_text">Cancel</string>
     <string name="conf_clips_message_size_limit_dialog_message">Video size can be up to %d MB. Please cancel and choose a shorter video.</string>
     <string name="conf_clips_microphone_permission_denied_before_dialog_message">To enable microphone for sending messages, give {app_name_for_permission_dialog} permission to use your microphone</string>
@@ -689,6 +707,9 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_close_effects_panel_description">Close effects panel.</string>
     <string name="conf_close_effects_room_description">Close the effects panel</string>
     <string name="conf_close_moderation_content_description">Close</string>
+    <string name="conf_cloud_encryption_body">Meet uses cloud encryption to keep your conversations private. Unlike end-to-end encryption, cloud encryption lets you use more features like add-ons, reactions, and more. You can add additional encryption in the menu. &lt;a href={LEARN_MORE_ENCRYPTION_URL}>Learn more about encryption&lt;/a>.</string>
+    <string name="conf_cloud_encryption_header">Cloud encryption</string>
+    <string name="conf_co_activity_cannot_access_addon_banner_message">"{participant_name} is hosting an activity that isn't available to you. &lt;a href={LEARN_MORE_URL}>Learn more about add-on availability&lt;/a>"</string>
     <string name="conf_co_activity_cant_join_banner_button">"Can't join"</string>
     <string name="conf_co_activity_cant_join_dialog_got_it_button">Got it</string>
     <string name="conf_co_activity_cant_join_dialog_learn_more_button">Learn more</string>
@@ -701,6 +722,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
 
 Joining opens {app_name} with this account. You can return to Meet whenever you want."</string>
     <string name="conf_co_activity_invitation_dialog_title">Join the activity?</string>
+    <string name="conf_co_annotation_control_button_content_description">Annotate</string>
+    <string name="conf_co_annotation_control_button_shown_snackbar_text">You can annotate on the screen now</string>
     <string name="conf_co_watch_app_install_banner_button">Get app</string>
     <string name="conf_co_watch_app_install_dialog_button">Install {app_name}</string>
     <string name="conf_co_watch_app_install_dialog_message">You have to install {app_name} first</string>
@@ -757,6 +780,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_companion_user_display_name">{DISPLAY_NAME} (Companion)</string>
     <string name="conf_companion_user_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS}) (Companion)</string>
     <string name="conf_conference_ended_notification_description">Your video call has ended.</string>
+    <string name="conf_confirm_pn">Confirm your phone number</string>
     <string name="conf_contact_block_contact_dialog_title">Block contact?</string>
     <string name="conf_contact_details">Details</string>
     <string name="conf_contact_info">Contact Info</string>
@@ -808,12 +832,15 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_delete_custom_background_dialog_yes">Yes</string>
     <string name="conf_delete_custom_background_error_notification">"Something went wrong and your image can't be deleted"</string>
     <string name="conf_delete_custom_background_success_notification">Added image removed</string>
+    <string name="conf_delete_group_history_server_side_message">Your call history with this group will be permanently deleted</string>
     <string name="conf_delete_history">Delete history</string>
     <string name="conf_delete_history_cancel">Cancel</string>
     <string name="conf_delete_history_delete">Delete</string>
     <string name="conf_delete_history_failed">Something went wrong</string>
     <string name="conf_delete_history_message">"This will delete all legacy call history and local Meet call history for this account. This includes messages and history of people you've contacted using Meet calling."</string>
     <string name="conf_delete_history_successful">Your history was deleted</string>
+    <string name="conf_delete_history_title">Delete history?</string>
+    <string name="conf_delete_history_with_user">Your call history with %1$s will be permanently deleted</string>
     <string name="conf_delete_individual_history_message">This will permanently remove all legacy and local Meet call history for %1$s, including messages and other history</string>
     <string name="conf_delete_individual_history_server_side_message">Your call history with %1$s will be permanently deleted from your account</string>
     <string name="conf_deprecation_continue_button_text">Continue</string>
@@ -822,6 +849,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_description_call_failed_invitee_organization_blocked_invites">"The person you're calling can't be reached due to their organization's restrictions."</string>
     <string name="conf_description_call_failed_inviter_organization_blocked_invites">"The person you're calling can't be reached due to your organization's restrictions."</string>
     <string name="conf_dialog_cancel">Cancel</string>
+    <string name="conf_directed_call_participant_names">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {{PARTICIPANT_NAME}} =2 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}} =3 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}} =4 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, {FOURTH_PARTICIPANT}} other {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, # others}}</string>
     <string name="conf_disable_auto_framing_description">Turn off continuous framing</string>
     <string name="conf_disable_incoming_video_content_description">"Don't watch {DISPLAY_NAME}"</string>
     <string name="conf_disable_incoming_video_text">"Don't watch"</string>
@@ -831,10 +859,38 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_disable_unified_calling_title">Disable placing calls</string>
     <string name="conf_dismiss_five_minute_warning_notice_content_description">Dismiss</string>
     <string name="conf_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS})</string>
+    <string name="conf_dual_camera_disable_effects_dialog_confirm_button">Turn off effects</string>
+    <string name="conf_dual_camera_disable_effects_dialog_message">Effects must be turned off to utilize dual camera feature</string>
+    <string name="conf_dual_camera_disable_effects_dialog_title">Turn off effects</string>
+    <string name="conf_dual_camera_dual_display_promo_body">Now you can show a 1:1 call on both the inner and outer screens of your phone</string>
+    <string name="conf_dual_camera_dual_display_promo_dismiss">Dismiss</string>
+    <string name="conf_dual_camera_dual_display_promo_title">Meet’s new dual screen</string>
+    <string name="conf_dual_camera_tooltip_body">Turn on both cameras to show both you and what you’re looking at</string>
+    <string name="conf_dual_camera_tooltip_title">Let them see what you see</string>
+    <string name="conf_dual_display_non_one_on_one_call_label_text">Video will show up here only when two are in the call</string>
+    <string name="conf_dual_display_not_supported">The outer screen is on only when two are in the call</string>
+    <string name="conf_dual_display_turn_off_tooltip_body">Your rear camera will still be on, though</string>
+    <string name="conf_dual_display_turn_off_tooltip_title">Turn off the outer screen</string>
     <string name="conf_duet_home_always_expand_rule_tag">duet_home_always_expand_rule_tag</string>
     <string name="conf_duet_home_and_in_call_always_expand_rule_tag">duet_home_and_in_call_always_expand_rule_tag</string>
     <string name="conf_duet_home_placeholder_rule_tag">duet_home_placeholder_rule_tag</string>
     <string name="conf_duet_home_split_pair_rule_tag">duet_home_split_pair_rule_tag</string>
+    <string name="conf_e2ee_callee_unreachable_dialog_message">"This person's organization doesn't let them receive end-to-end encrypted calls"</string>
+    <string name="conf_e2ee_callee_unreachable_dialog_title">Additional encryption is not available for this call</string>
+    <string name="conf_e2ee_features_not_available">Some features may not be available. &lt;a href={LEARN_MORE_URL}>Learn more about encryption&lt;/a></string>
+    <string name="conf_e2ee_greenroom_switch_heading">Additional Encryption</string>
+    <string name="conf_e2ee_greenroom_switch_message">Adds end-to-end encryption but limits features. &lt;a href={LEARN_MORE_URL}>Learn more about encryption&lt;/a></string>
+    <string name="conf_e2ee_in_call_positive_button">Got it</string>
+    <string name="conf_e2ee_in_directed_call_encrypted_message">This call is secured using additional encryption. This adds end-to-end encryption but limits features. &lt;a href={LEARN_MORE_URL}>Learn more about encryption&lt;/a></string>
+    <string name="conf_e2ee_no_browser_available">"Can't open link. No browser available."</string>
+    <string name="conf_e2ee_polls_disabled_due_to_encryption">Polls are unavailable in calls with additional encryption</string>
+    <string name="conf_e2ee_questions_disabled_due_to_encryption">Q&amp;A is unavailable in calls with additional encryption</string>
+    <string name="conf_e2ee_quick_action_abuse_reporting_disabled_due_to_encryption">Abuse reporting is unavailable in calls with additional encryption</string>
+    <string name="conf_e2ee_quick_action_captions_disabled_due_to_encryption">Captions are unavailable in calls with additional encryption</string>
+    <string name="conf_e2ee_quick_action_chat_disabled_due_to_encryption">In-call messages are unavailable in calls with additional encryption</string>
+    <string name="conf_e2ee_reactions_disabled_due_to_encryption">Reactions are unavailable in calls with additional encryption</string>
+    <string name="conf_e2ee_settings_dialog_message">Meet always secures your calls using cloud encryption. Additional encryption adds end-to-end encryption to the calls you make from this device. As a result features that use cloud encryption won’t be available. &lt;a href={LEARN_MORE_URL}>Learn more about encryption&lt;/a></string>
+    <string name="conf_e2ee_some_features_unavailable_due_to_encryption">"Some features aren't available in calls with additional encryption"</string>
     <string name="conf_effects_enable_error_notification">"Something went wrong and the effect can't be started"</string>
     <string name="conf_effects_room_no_internet_connection">No internet connection</string>
     <string name="conf_effects_room_tabs_description">Tabs representing the categories of video effects</string>
@@ -850,6 +906,10 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_encryption_label">This call is cloud encrypted</string>
     <string name="conf_end_of_call_reminder">Your meeting is at the end of its scheduled time</string>
     <string name="conf_end_on_the_go_mode">Turn off On-the-Go</string>
+    <string name="conf_end_to_end_encryption_settings_key">endToEndEncryptionSettingsSwitchPreference</string>
+    <string name="conf_end_to_end_encryption_settings_summary">All calls made from this device use end-to-end encryption</string>
+    <string name="conf_end_to_end_encryption_settings_title">Use additional encryption</string>
+    <string name="conf_end_to_end_switch_content_description">Screen will refresh after changing additional encryption</string>
     <string name="conf_enter_code_hint">Enter a code</string>
     <string name="conf_everyone_is_muted">Everyone is muted</string>
     <string name="conf_everyone_is_muted_alert">Everyone who can be muted has been muted</string>
@@ -857,6 +917,9 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_exit_annotation_dialog_exit_button_Text">Exit</string>
     <string name="conf_exit_annotation_dialog_message">Exit annotation will clear all strokes on the screen.</string>
     <string name="conf_exit_annotation_dialog_title">Exit annotation</string>
+    <string name="conf_exit_co_annotation_full_screen_dialog_exit_button_Text">Exit</string>
+    <string name="conf_exit_co_annotation_full_screen_dialog_message">"You won't be able to annotate on the screen"</string>
+    <string name="conf_exit_co_annotation_full_screen_dialog_title">Exit full screen</string>
     <string name="conf_exit_full_screen">Exit full screen</string>
     <string name="conf_exit_fullscreen_text">Exit full screen</string>
     <string name="conf_expand_video">Expand your video</string>
@@ -884,14 +947,34 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_fullscreen_participant_content_description">Full screen video stream from {DISPLAY_NAME}</string>
     <string name="conf_fullscreen_text">Full screen</string>
     <string name="conf_fullscreen_your_video">Make your video full screen</string>
+    <string name="conf_gemini_active_prejoin_text">Gemini is following the conversation so it can answer your questions</string>
+    <string name="conf_gemini_indicator_content_description">Gemini is following the conversation so it can answer your questions</string>
+    <string name="conf_gemini_session_started">Gemini is following the conversation so it can answer your questions</string>
+    <string name="conf_gemini_session_stopped">Your host has removed Gemini from this meeting</string>
     <string name="conf_generic_error_toast_text">Something went wrong. Please try again.</string>
     <string name="conf_google_account_type">Google account</string>
     <string name="conf_google_sans">Modern</string>
     <string name="conf_greenroom_banner_your_pronouns_are_visible">Your pronouns will be shown to everyone</string>
     <string name="conf_greenroom_call_encrypted_by_organization">"This call is encrypted by %1$s. Google can't access its contents, so some features aren't available. &lt;a href=%2$s>Learn more about end-to-end encryption&lt;/a>"</string>
     <string name="conf_greenroom_call_encrypted_organization_unknown">"This call has extra encryption. Google can't access its contents, so some features aren't available. &lt;a href=%1$s>Learn more about end-to-end encryption&lt;/a>"</string>
+    <string name="conf_greenroom_gemini_active">Gemini is following the conversation so it can answer your questions</string>
     <string name="conf_greenroom_livestream_edu_body">"While watching this live stream, you can't use your camera or microphone"</string>
     <string name="conf_greenroom_livestream_edu_title">Live stream</string>
+    <string name="conf_greenroom_meet_configured_public_live_streaming_indicator_partial_text">publicly live-stream</string>
+    <string name="conf_greenroom_meet_configured_recording_indicator_partial_text">record</string>
+    <string name="conf_greenroom_meet_configured_smart_notes_indicator_partial_text">take notes</string>
+    <string name="conf_greenroom_meet_configured_stream_indicator_starting_text">Meet will</string>
+    <string name="conf_greenroom_meet_configured_streaming_indicator_partial_text">stream</string>
+    <string name="conf_greenroom_meet_configured_transcription_indicator_partial_text">transcribe</string>
+    <string name="conf_greenroom_meet_public_live_streaming_indicator_partial_text">publicly live-streaming</string>
+    <string name="conf_greenroom_meet_recording_indicator_partial_text">recording</string>
+    <string name="conf_greenroom_meet_smart_notes_indicator_partial_text">taking notes</string>
+    <string name="conf_greenroom_meet_stream_indicator_partial_ending_text">, and {stream_option}</string>
+    <string name="conf_greenroom_meet_stream_indicator_partial_middle_text">, {stream_option}</string>
+    <string name="conf_greenroom_meet_stream_indicator_starting_text">Meet is</string>
+    <string name="conf_greenroom_meet_stream_indicator_with_two_options_partial_ending_text">and {stream_option}</string>
+    <string name="conf_greenroom_meet_streaming_indicator_partial_text">streaming</string>
+    <string name="conf_greenroom_meet_transcription_indicator_partial_text">transcribing</string>
     <string name="conf_greenroom_no_browser_available">"Can't open link. No browser available."</string>
     <string name="conf_greenroom_on_one_in_call">No one is in the call yet</string>
     <string name="conf_greenroom_one_named_participant_and_others_in_call">{number_of_other_participants, plural, =1 {&lt;b>In call:&lt;/b> {first_participant} and # more} other {&lt;b>In call:&lt;/b> {first_participant} and # more}}</string>
@@ -909,6 +992,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_group_call_content_description">Create a group call</string>
     <string name="conf_guest_email_copied">Guest email copied</string>
     <string name="conf_guest_email_label">Guest email</string>
+    <string name="conf_guest_join_button">Join</string>
     <string name="conf_hand_raise_disabled_due_to_viewer_role_content_description">"You can't raise your hand because you're just viewing"</string>
     <string name="conf_hand_raise_disabled_due_to_viewer_role_snacker_text">"You can't raise your hand. You're only viewing this call"</string>
     <string name="conf_handover_to_main_call_message">Returning to main call…</string>
@@ -917,6 +1001,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_hide_presentation_in_on_the_go">Hide presentation</string>
     <string name="conf_hide_question_error_text">"The question couldn't be hidden. Try again."</string>
     <string name="conf_hide_question_text">"You've hidden this question"</string>
+    <string name="conf_history_header">History</string>
     <string name="conf_host_controls_breakout_generic_description">Host management is on. All breakout rooms use the main room settings except when changed here. These settings apply to this breakout room only.</string>
     <string name="conf_host_controls_breakout_generic_title">Controls for this breakout room</string>
     <string name="conf_host_controls_breakout_name_description">Host management is on. All breakout rooms use the main room settings except when changed here. These settings apply to “{BREAKOUT_NAME}” only.</string>
@@ -946,10 +1031,12 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_incoming">Incoming</string>
     <string name="conf_incoming_audio_call">Incoming audio call</string>
     <string name="conf_incoming_audio_call_from_participant_content_description">Incoming audio call from {participant}</string>
-    <string name="conf_incoming_audio_call_from_participants_content_description">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {Incoming audio call from {PARTICIPANT_NAME}} =2 {Incoming audio call from {FIRST_PARTICIPANT} and {SECOND_PARTICIPANT}} =3 {Incoming audio call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT}} other {Incoming audio call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others}}</string>
-    <string name="conf_incoming_huddle">Incoming Huddle</string>
+    <string name="conf_incoming_audio_call_from_participants_content_description">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {Incoming audio call from {PARTICIPANT_NAME}} =2 {Incoming audio call from {FIRST_PARTICIPANT} and {SECOND_PARTICIPANT}} =3 {Incoming audio call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT}} =4 {Incoming audio call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and {FOURTH_PARTICIPANT}} other {Incoming audio call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others}}</string>
+    <string name="conf_incoming_huddle">Incoming huddle</string>
+    <string name="conf_incoming_huddle_from_participant_content_description">Incoming huddle from {participant}</string>
+    <string name="conf_incoming_huddle_from_participants_content_description">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {Incoming huddle from {PARTICIPANT_NAME}} =2 {Incoming huddle from {FIRST_PARTICIPANT} and {SECOND_PARTICIPANT}} =3 {Incoming huddle from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT}} =4 {Incoming huddle from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and {FOURTH_PARTICIPANT}} other {Incoming huddle from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others}}</string>
     <string name="conf_incoming_video_call_from_participant_content_description">Incoming video call from {participant}</string>
-    <string name="conf_incoming_video_call_from_participants_content_description">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {Incoming video call from {PARTICIPANT_NAME}} =2 {Incoming video call from {FIRST_PARTICIPANT} and {SECOND_PARTICIPANT}} =3 {Incoming video call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT}} other {Incoming video call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others}}</string>
+    <string name="conf_incoming_video_call_from_participants_content_description">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {Incoming video call from {PARTICIPANT_NAME}} =2 {Incoming video call from {FIRST_PARTICIPANT} and {SECOND_PARTICIPANT}} =3 {Incoming video call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT}} =4 {Incoming video call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and {FOURTH_PARTICIPANT}} other {Incoming video call from {FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others}}</string>
     <string name="conf_incoming_video_disabled_snackbar_action">Settings</string>
     <string name="conf_incoming_video_disabled_snackbar_message">"\"Don't show video in tiles\" is on. You can turn it off in Settings."</string>
     <string name="conf_initializing_public_livestreaming_content_description">Public live streaming will start soon</string>
@@ -965,9 +1052,11 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_join_meeting_with_code">Join with a code</string>
     <string name="conf_join_scheduled_call_content_description">Join meeting</string>
     <string name="conf_join_via_link_contact">{DISPLAY_NAME} can only join via link. Share a Meet link with them once the call is started.</string>
+    <string name="conf_join_via_link_required">{NUMBER_OF_LINK_INVITEES, plural, offset:4 =1 {{PARTICIPANT_NAME} can only join via link} =2 {{FIRST_PARTICIPANT} and {SECOND_PARTICIPANT} can only join via link} =3 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT} can only join via link} =4 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and {FOURTH_PARTICIPANT} can only join via link} =5 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, {FOURTH_PARTICIPANT} and # other can only join via link} other {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, {FOURTH_PARTICIPANT} and # others can only join via link}}</string>
     <string name="conf_join_with_a_room_first">Join the call in a room first to check in</string>
     <string name="conf_league_script_bold">Sweet</string>
     <string name="conf_leave">Leave</string>
+    <string name="conf_leave_a_message">Leave a message</string>
     <string name="conf_leave_companion_mode_body">"You'll leave the call so you can rejoin to use your camera, mic, and speakers. You'll also be checked out of your room and lose access to chat history."</string>
     <string name="conf_leave_companion_mode_title">Leave Companion mode?</string>
     <string name="conf_leave_companion_to_use_mic_and_cam">To use your mic and camera, leave Companion mode and join the call. Important: This can cause echo in a meeting room and you won’t be able to see previous chat messages.</string>
@@ -982,10 +1071,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_location_copied">Location copied</string>
     <string name="conf_lonely_meeting_setting_summary">Removes you from a call after a few minutes if no one else joins</string>
     <string name="conf_lonely_meeting_setting_title">Leave empty calls</string>
-    <string name="conf_low_light_mode_preference_state_off">Off</string>
-    <string name="conf_low_light_mode_preference_state_on">On</string>
-    <string name="conf_low_light_mode_preference_summary">Makes it easier to see you when your lighting is poor</string>
-    <string name="conf_low_light_mode_preference_title">Adjust video for low light</string>
     <string name="conf_lower_all_action">Lower their hands</string>
     <string name="conf_lower_all_button_text">Lower all</string>
     <string name="conf_lower_all_dialog_content_text">"Lower everyone's hands?"</string>
@@ -1014,11 +1099,18 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_mark_answered_text">"You've marked this question as answered"</string>
     <string name="conf_mark_unanswered_error_text">The question is still shown as answered. Try again.</string>
     <string name="conf_mark_unanswered_text">This question is no longer marked as answered</string>
+    <string name="conf_max_invitees_reached">You can’t make a call with more than 32 people, including yourself. Create and share a link instead.</string>
     <string name="conf_meet_addon_activity_ended">The Meet activity has ended</string>
     <string name="conf_meet_addon_activity_started">The Meet activity has started</string>
     <string name="conf_meet_audio_call">Audio call</string>
     <string name="conf_meet_audio_group_call">Group audio call</string>
+    <string name="conf_meet_audio_only_to_video_call_upgrade_notification">This call has upgraded to a video call</string>
     <string name="conf_meet_call">Meet call</string>
+    <string name="conf_meet_enable_camera_confirmation_accept">Add video</string>
+    <string name="conf_meet_enable_camera_confirmation_dialog_title">Add video to your call?</string>
+    <string name="conf_meet_enable_camera_confirmation_explanation">Turns on your camera and alerts others</string>
+    <string name="conf_meet_enable_camera_confirmation_reject">Cancel</string>
+    <string name="conf_meet_huddle">Huddle</string>
     <string name="conf_meeting_encrypted_message">This meeting is secured with cloud encryption. &lt;a href={LEARN_MORE_URL}>Learn more about cloud encryption&lt;/a></string>
     <string name="conf_meeting_joined_at_time_text">Joined at {meeting_joined_time}</string>
     <string name="conf_meeting_joined_on_date_text">Joined on {meeting_joined_time}</string>
@@ -1061,6 +1153,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_missed_call">Missed call</string>
     <string name="conf_missed_call_channel_name">Missed calls</string>
     <string name="conf_missed_call_text">Missed Call</string>
+    <string name="conf_missed_huddle">Missed huddle</string>
     <string name="conf_missed_video_call">Missed video call</string>
     <string name="conf_missed_video_call_history_entry">Missed video call</string>
     <string name="conf_moderation_access_profiles_description">These settings also apply to future instances of this meeting</string>
@@ -1119,10 +1212,14 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_my_question_marked_unanswered">Your question is no longer marked as answered</string>
     <string name="conf_my_question_shown">Your question has been revealed</string>
     <string name="conf_network_disconnected">No internet. Trying to reconnect.</string>
+    <string name="conf_new_call_button">New</string>
     <string name="conf_new_chat_content_description">New chat</string>
     <string name="conf_new_effects_room_subgroup_view_all_content_description">{TITLE}, view all</string>
     <string name="conf_new_group">New group</string>
     <string name="conf_new_group_content_description">Create a new group</string>
+    <string name="conf_new_meet_call_continue_button">Continue</string>
+    <string name="conf_new_meet_call_promo_body">Meet calling now gives you in-call chat and much more. &lt;a href={LEARN_MORE_URL}>Learn about calling in Meet&lt;/a></string>
+    <string name="conf_new_meet_call_promo_title">New Meet call</string>
     <string name="conf_new_meeting">New meeting</string>
     <string name="conf_new_poll_content_description">New poll</string>
     <string name="conf_new_question_content_description">New question</string>
@@ -1192,7 +1289,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_people_text">People</string>
     <string name="conf_people_text_content_description">Show people in {ROOM_NAME} and others</string>
     <string name="conf_people_using_companion">People are using Companion mode</string>
-    <string name="conf_peoplekit_action_bar_title">Start a call</string>
+    <string name="conf_peoplekit_action_bar_title">Group call</string>
     <string name="conf_peoplekit_close_button_content_description">Back</string>
     <string name="conf_peoplekit_send_button_text">Next</string>
     <string name="conf_permissions_banner_dismiss">Dismiss</string>
@@ -1201,6 +1298,8 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_permissions_banner_text">To make and receive calls, give {app_name_for_permission_dialog} permission to use your microphone and camera</string>
     <string name="conf_permissions_denied_before_dialog_title">{app_name_for_permission_dialog} needs your permissions</string>
     <string name="conf_phone">Phone</string>
+    <string name="conf_phone_number_register_got_it">Got it</string>
+    <string name="conf_phone_number_register_success">Phone number registered!</string>
     <string name="conf_phone_number_selection_current_number">Current phone number</string>
     <string name="conf_phone_number_selection_dialog_add_manually_button">Add a new number</string>
     <string name="conf_phone_number_selection_dialog_body">There are phone numbers attached to your account. Select the number to use with Google Meet.</string>
@@ -1248,6 +1347,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_pn_staleness_warning_promo_body">Confirm your phone number to continue using it in Meet.</string>
     <string name="conf_pn_staleness_warning_promo_header">Keep your number up to date</string>
     <string name="conf_pn_verification_registration_error">Something went wrong. Please try again.</string>
+    <string name="conf_precall_promo_got_it">Got it</string>
     <string name="conf_pref_blocked_users_title">Blocked users</string>
     <string name="conf_prejoin_public_live_streaming_indicator_partial_text">is being publicly live-streamed</string>
     <string name="conf_prejoin_recording_indicator_partial_text">is being recorded</string>
@@ -1259,6 +1359,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_presentation_is_showing_announcement">The presentation is now shown.</string>
     <string name="conf_presentation_user_display_name">{DISPLAY_NAME} (Presentation)</string>
     <string name="conf_privacy_and_support">Privacy &amp; support</string>
+    <string name="conf_privacy_message">No one else can see that you’ve made this report</string>
     <string name="conf_promo_got_it">Got it</string>
     <string name="conf_promo_learn_more">Learn more</string>
     <string name="conf_pronouns_promo_banner_dismiss_button">Dismiss</string>
@@ -1278,6 +1379,10 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_raised_hand_accessibility_message">You raised your hand</string>
     <string name="conf_raised_hands_excludes_viewers">"Others who are only viewing the call aren't shown"</string>
     <string name="conf_raised_hands_with_count_header_title">{NUMBER_OF_RAISED_HANDS, plural, =1 {{NUMBER_OF_RAISED_HANDS} raised hand} other {{NUMBER_OF_RAISED_HANDS} raised hands} }</string>
+    <string name="conf_reachable_by_email_unified_calling_body">You can still be reached with just your phone number. Change who can reach you anytime in Settings.</string>
+    <string name="conf_reachable_by_email_unified_calling_got_it_button">Got it</string>
+    <string name="conf_reachable_by_email_unified_calling_settings_button">Change incoming call settings</string>
+    <string name="conf_reachable_by_email_unified_calling_title">Meet now lets others reach you with your email address</string>
     <string name="conf_reactions_accessibility_button_content_description">Announce reactions</string>
     <string name="conf_reactions_accessibility_button_disabled_content_description">Announce reactions, disabled</string>
     <string name="conf_reactions_failed_to_send_reaction">"Couldn't send reaction. Try again"</string>
@@ -1296,6 +1401,10 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_recording_auto_start_failure">"Recording didn't start automatically"</string>
     <string name="conf_recording_auto_start_failure_with_privilege">"Recording didn't start. Join at go.meet in a desktop browser and start it there"</string>
     <string name="conf_recording_indicator_partial_text">is being recorded</string>
+    <string name="conf_registration_abusive_carrier_error_text">We can’t send a text message to this number at this time. Try a number from a different provider.</string>
+    <string name="conf_registration_error_generic">Something went wrong. Please try again.</string>
+    <string name="conf_registration_error_try_again">Unable to send the request. Please check the connection and try again.</string>
+    <string name="conf_registration_invalid_number_message">Wrong number of digits entered or area code missing. Try again.</string>
     <string name="conf_reload_meeting_button">Refresh</string>
     <string name="conf_reload_meeting_notice">Something went wrong. Refresh to continue. You might lose changes to some settings.</string>
     <string name="conf_remind_me_later">Remind me later</string>
@@ -1348,6 +1457,14 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_report_participant_abuse_with_video_clip_subheader">Information about the meeting and participants plus an optional short video clip will be sent to Google for review. &lt;a href=%1$s>Learn more about reporting abuse&lt;/a></string>
     <string name="conf_report_participant_content_description">Report {DISPLAY_NAME} for abuse</string>
     <string name="conf_report_participant_text">Report abuse</string>
+    <string name="conf_report_type_child_endangerment">Child endangerment</string>
+    <string name="conf_report_type_child_endangerment_description">Exploiting minors or people who appear to be minors</string>
+    <string name="conf_report_type_inappropriate">Disturbing or inappropriate content</string>
+    <string name="conf_report_type_inappropriate_description">Violence, hate speech, terrorism, harassment, bullying, or sexually explicit material</string>
+    <string name="conf_report_type_other_illegal_activity">Other illegal activity</string>
+    <string name="conf_report_type_other_illegal_activity_description">Promoting or selling illegal activities, goods, services, or information</string>
+    <string name="conf_report_type_spam">Spam or unwanted content</string>
+    <string name="conf_report_type_spam_description">Unwanted solicitation, phishing, malware, or impersonation</string>
     <string name="conf_request_help_button_text">Ask for help</string>
     <string name="conf_requested_help_snackbar_cancel_button_text">Cancel</string>
     <string name="conf_requested_help_snackbar_text">Asked for help</string>
@@ -1384,6 +1501,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_search_hint">Search contacts or dial</string>
     <string name="conf_search_hint_enter_code">Search or enter code</string>
     <string name="conf_search_hint_no_dial">Search contacts</string>
+    <string name="conf_select_abuse_type_hint">Select</string>
     <string name="conf_self_email_copied">Your email copied</string>
     <string name="conf_self_email_label">Your email</string>
     <string name="conf_self_started_sharing_screen">"You're now sharing your screen"</string>
@@ -1391,9 +1509,12 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_set_up_follow_up_call_with_callee">{NUMBER_OF_CALLEE, plural, =1 {Set up another call with {CALLEE_NAME_1}?} =2 {Set up another call with {CALLEE_NAME_1} and {CALLEE_NAME_2}?} other {Set up another call with {CALLEE_NAME_1}, {CALLEE_NAME_2} and others?} }</string>
     <string name="conf_short_stop_sharing">Stop</string>
     <string name="conf_short_you_are_sharing_your_screen">"You're sharing your screen"</string>
+    <string name="conf_show_more_text">Show more</string>
     <string name="conf_show_presentation_in_on_the_go">Show presentation</string>
     <string name="conf_show_question_error_text">"The question couldn't be shown. Try again."</string>
     <string name="conf_show_question_text">"You've revealed this question"</string>
+    <string name="conf_sign_in_button_no_other_accounts_content_description">Sign in</string>
+    <string name="conf_sign_in_button_other_accounts_available_content_description">Select an account</string>
     <string name="conf_smart_notes_active_only_prejoin_text">Meet is taking notes</string>
     <string name="conf_smart_notes_auto_start_failure">"Taking notes didn't start automatically"</string>
     <string name="conf_smart_notes_auto_start_failure_with_privilege">"Taking notes didn't start. Join at go.meet in a desktop browser and start it there"</string>
@@ -1403,10 +1524,17 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_smart_notes_stopped">"Meet isn't taking notes"</string>
     <string name="conf_smart_notes_stopped_by_participant">"Meet isn't taking notes (stopped by {PARTICIPANT_NAME})"</string>
     <string name="conf_smooth_touch_up_preference_state">Smooth</string>
+    <string name="conf_snackbar_dismiss">Dismiss</string>
     <string name="conf_sniglet_regular">Bubbly</string>
     <string name="conf_someone_requested_help_snackbar_text">Someone asked for help</string>
     <string name="conf_speaker_selected_content_description">Speaker, selected</string>
     <string name="conf_speakerphone">Speaker</string>
+    <string name="conf_spotify_addon_body">"Friends who join a Jam can listen and add songs to a the queue together.
+
+Spotfy Premium is needed to start and host o Jam. Free users can join and add songs to the Jam."</string>
+    <string name="conf_spotify_addon_help_button">Show me how</string>
+    <string name="conf_spotify_addon_icon_content_description">Spotify icon</string>
+    <string name="conf_spotify_addon_title">Have a Spotify Jam in Meet</string>
     <string name="conf_spring_duet_home_placeholder_rule_tag">spring_duet_home_placeholder_rule_tag</string>
     <string name="conf_spring_duet_home_split_pair_rule_tag">spring_duet_home_split_pair_rule_tag</string>
     <string name="conf_start_a_call_title">Start a call</string>
@@ -1426,10 +1554,12 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_streaming_url_header">Watch the live stream</string>
     <string name="conf_streaming_url_header_livestream_only">Streaming link</string>
     <string name="conf_style_effect_text">Style</string>
+    <string name="conf_submit_button">Submit</string>
     <string name="conf_subtle_touch_up_preference_state">Subtle</string>
     <string name="conf_suggested_call_encrypted_content_description">Meeting has extra encryption</string>
     <string name="conf_suggested_meeting_code">Rejoin \"{MEETING_CODE}\"</string>
     <string name="conf_suggested_rejoin_label">Rejoin</string>
+    <string name="conf_swipe_to_answer_and_end_other_call">Swipe to answer and end other call</string>
     <string name="conf_swipe_up_to_answer_and_end_other_call">Swipe up to answer and end other call</string>
     <string name="conf_switch_camera">Switch camera</string>
     <string name="conf_switch_camera_button">Switch camera</string>
@@ -1456,7 +1586,11 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_transcription_stopped">Transcription has stopped</string>
     <string name="conf_transcription_stopped_by_participant">{PARTICIPANT_NAME} has stopped transcription</string>
     <string name="conf_transfer_call_button_description">Cast call</string>
+    <string name="conf_turn_off_dual_camera_content_description">Turn off dual camera</string>
+    <string name="conf_turn_off_dual_display_content_description">Turn off the outer screen</string>
     <string name="conf_turn_off_effect_accessibility_hint">Turn off effect</string>
+    <string name="conf_turn_on_dual_camera_content_description">Turn on dual camera</string>
+    <string name="conf_turn_on_dual_display_content_description">Turn on the outer screen</string>
     <string name="conf_turn_on_effect_accessibility_hint">Turn on effect</string>
     <string name="conf_unable_to_join_call">Unable to join this call.</string>
     <string name="conf_unable_to_join_call_original_caller_left">Unable to join this call. The original caller may have left before you joined.</string>
@@ -1485,6 +1619,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_view_details_menu_item">View details</string>
     <string name="conf_view_full_history">View full history</string>
     <string name="conf_view_full_history_menu_item">View full history</string>
+    <string name="conf_view_participants_menu_item">View participants</string>
     <string name="conf_viewer_asked_to_be_contributor_dialog_decline_confirmation_dialog_message">Do you want to decline the request to become a contributor?</string>
     <string name="conf_viewer_asked_to_be_contributor_dialog_message">The host wants you to be a contributor in this call. If you accept, you can use your mic and camera.</string>
     <string name="conf_viewer_asked_to_be_contributor_dialog_positive_button">Accept</string>
@@ -1500,6 +1635,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_viewer_got_it">Got it</string>
     <string name="conf_viewer_got_it_button_text">Got it</string>
     <string name="conf_viewer_promotion_broadcast_active_only_text">This call is being streamed</string>
+    <string name="conf_viewer_promotion_gemini_active_text">Gemini is following the conversation so it can answer your questions</string>
     <string name="conf_viewer_promotion_public_live_streaming_indicator_partial_text">is being publicly live-streamed</string>
     <string name="conf_viewer_promotion_public_livestream_active_only_text">This call is being publicly live-streamed</string>
     <string name="conf_viewer_promotion_recording_active_only_text">This call is being recorded</string>
@@ -1515,10 +1651,17 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_voice_clip_type_talkback_description">Voice mode active</string>
     <string name="conf_voting_on_hidden_question_disabled_error">"Hidden questions can't be voted on"</string>
     <string name="conf_watch_livestream">Watch the live stream</string>
+    <string name="conf_watermarking_inactive">Devices are no longer showing a watermark</string>
+    <string name="conf_watermarking_info_header">Watermarking</string>
+    <string name="conf_watermarking_info_text">"A watermark is added to the call's screen shares and videos to assist tracing of unauthorized copies. &lt;a href={LEARN_MORE_URL}>Learn more about watermarking in Meet&lt;/a>"</string>
+    <string name="conf_watermarking_live">A watermark is now shown on all devices</string>
+    <string name="conf_watermarking_starting">Getting ready to add a watermark on all devices</string>
     <string name="conf_wired_headset">Wired headphones</string>
     <string name="conf_wired_headset_selected_content_description">Wired headphones, selected</string>
     <string name="conf_you">You</string>
     <string name="conf_you_with_pronouns">You ({PRONOUNS})</string>
+    <string name="conf_your_profile_and_privacy_header">"You're calling with your Google Account profile. People you call see this:"</string>
+    <string name="conf_your_profile_and_privacy_title">Your profile and privacy</string>
     <string name="conf_youre_in_companion_mode">"You're in Companion mode"</string>
     <string name="conference_activities_active_addons_header">Active</string>
     <string name="conference_activities_addon_back_button_content_description">Back</string>
@@ -1673,7 +1816,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conference_captions_language_albania_albanian">Albanian (Albania)</string>
     <string name="conference_captions_language_algeria_arabic">Arabic (Algeria)</string>
     <string name="conference_captions_language_am">Amharic</string>
-    <string name="conference_captions_language_arab_emirates_arabic">Arabic (Arab Emirates)</string>
     <string name="conference_captions_language_arabic">Arabic</string>
     <string name="conference_captions_language_armenia_armenian">Armenian (Armenia)</string>
     <string name="conference_captions_language_australia_english">English (Australia)</string>
@@ -1779,6 +1921,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conference_captions_language_oman_arabic">Arabic (Oman)</string>
     <string name="conference_captions_language_pa">Punjabi</string>
     <string name="conference_captions_language_pakistan_urdu">Urdu (Pakistan)</string>
+    <string name="conference_captions_language_peninsular_gulf_arabic">Arabic (Peninsular Gulf)</string>
     <string name="conference_captions_language_philippines_english">English (Philippines)</string>
     <string name="conference_captions_language_philippines_filipino">Filipino (Philippines)</string>
     <string name="conference_captions_language_picker_dialog_beta_tag">BETA</string>
@@ -1887,6 +2030,8 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conference_failed_to_join_blocked_by_user_org">"You can't join this call"</string>
     <string name="conference_failed_to_join_dialog_no_dismiss">Cancel</string>
     <string name="conference_failed_to_join_dialog_yes_leave">Leave call</string>
+    <string name="conference_failed_to_join_livestream_full_body">Try again later in case someone leaves. After the live stream is over, check with your live stream host to see if it was recorded.</string>
+    <string name="conference_failed_to_join_livestream_full_title">"You can't watch because this live stream is full"</string>
     <string name="conference_failed_to_join_livestream_not_allowed_as_this_account">"You can't watch this live stream as {display_id}. Switch to another Google Account and try again."</string>
     <string name="conference_failed_to_join_livestream_not_allowed_no_account">"You can't watch this live stream. Switch to another Google Account and try again."</string>
     <string name="conference_failed_to_join_meeting_no_google_account">"You can't join this call as {display_id}. Switch to a Google Account."</string>
@@ -1965,7 +2110,11 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conference_unsupported_url_link_copy">Copy</string>
     <string name="conference_unsupported_url_link_dismiss">Dismiss</string>
     <string name="conference_unsupported_url_link_message">"To view this link, copy and paste it into your browser's address bar"</string>
+    <string name="conference_workspace_labs_switch_link">Learn more about Workspace labs</string>
+    <string name="conference_workspace_labs_switch_preference_summary">"If you opt out of the Labs program, you won't be able to sue Workspace Labs features in any Workspace app, including in future Meet calls"</string>
+    <string name="conference_workspace_labs_switch_preference_title">You can use Workspace Labs features</string>
     <string name="confirm_button">Got it</string>
+    <string name="confirm_phone_number_action">Confirm your phone number</string>
     <string name="conflict_call_dialog_content">Do you want to leave your call to join this one?</string>
     <string name="conflict_call_dialog_content_no_dismiss">Cancel</string>
     <string name="conflict_call_dialog_content_yes_leave">Leave call</string>
@@ -1981,7 +2130,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="contact_action_record_message">Record a message</string>
     <string name="contact_action_remove_from_group">Remove from group</string>
     <string name="contact_action_remove_from_history">Remove from history</string>
-    <string name="contact_action_remove_from_history_rebranded">Delete calling history</string>
+    <string name="contact_action_remove_from_history_rebranded">Delete legacy calling history</string>
     <string name="contact_action_remove_from_list">Remove from list</string>
     <string name="contact_action_remove_message_history">Delete message history</string>
     <string name="contact_action_report_user">Report</string>
@@ -1989,11 +2138,13 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="contact_action_send_video_message">Send video message</string>
     <string name="contact_action_unblock_user">Unblock user</string>
     <string name="contact_action_video_call">Start video call</string>
+    <string name="contact_action_view_participants">View participants</string>
     <string name="contact_badge_sent_failed_fallback">Unsent</string>
     <string name="contact_card_audio_action_detail_format_rebranded">Voice call on Meet %1$s</string>
     <string name="contact_card_audio_action_summary_text_rebranded">Voice call on Meet</string>
     <string name="contact_card_video_action_detail_format_rebranded">Video call on Meet %1$s</string>
     <string name="contact_card_video_action_summary_text_rebranded">Video call on Meet</string>
+    <string name="contact_details_clips_title">Clips</string>
     <string name="contact_empty_state_body_for_guest_user">Add your account so you can start your own calls and use your contacts in Meet. Without an account, you can only join meetings created by others.</string>
     <string name="contact_empty_state_message">Your latest activity will appear here</string>
     <string name="contact_empty_state_sign_in_for_guest_user_no_other_accounts">Sign in</string>
@@ -2051,6 +2202,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="data_saver_call_remote_user_has_data_saver_enabled">Your contact has Data Saving mode on</string>
     <string name="decline_button">Decline</string>
     <string name="default_android_client_id">206908507205-5amm4ilt70i9c64484qjfmiul38gnm28.apps.googleusercontent.com</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
     <string name="default_web_client_id">206908507205-4mdab955og6u6hj3dditevo9n1i0n6q7.apps.googleusercontent.com</string>
     <string name="delete_account_error_try_again_rebranded">Unable to send the request to delete Meet calling account. Please check the connection and try again.</string>
     <string name="delete_call_history_items_body">Permanently delete your history of calls and the history of people you’ve contacted using Meet calling from all your devices?</string>
@@ -2173,8 +2325,11 @@ More numbers: {more_numbers_link}"</string>
     <string name="expiration_model_edu_header_rebranded">Messages are saved in Meet</string>
     <string name="export_call_direction">Direction</string>
     <string name="export_call_duration">Length</string>
+    <string name="export_call_history_banner_action_button">Export missing items</string>
+    <string name="export_call_history_banner_cancel_button">Got it</string>
     <string name="export_call_history_title">Export call history</string>
     <string name="export_incoming">Incoming</string>
+    <string name="export_legacy_call_history_title">Export legacy call history</string>
     <string name="export_local_id">Local user</string>
     <string name="export_missed">Missed</string>
     <string name="export_outgoing">Outgoing</string>
@@ -2351,6 +2506,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="in_call_settings_name">In-call settings</string>
     <string name="in_call_timer_desc_with_duration">Call duration: %s</string>
     <string name="in_call_wifi_usage_prompt">Now using Wi-Fi</string>
+    <string name="in_progress">In progress</string>
     <string name="incoming">Incoming</string>
     <string name="incoming_audio_call">Incoming voice call</string>
     <string name="incoming_call_puck_content_description">Answer call</string>
@@ -2359,6 +2515,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="incoming_group_call_header_title">Group call started by %1$s</string>
     <string name="incoming_group_call_notification_action_join">Join</string>
     <string name="incoming_video_call">Incoming video call</string>
+    <string name="indeterminate">Partially checked</string>
     <string name="info_overview_tab_content_description_has_attachments">Info, attachments are available</string>
     <string name="info_overview_tab_title">Info</string>
     <string name="initializing_recording_content_description">Recording will start soon</string>
@@ -2508,6 +2665,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="legacy_call_failed_call_disabled_by_org_text">Your organization doesn’t let you place calls with this device</string>
     <string name="legacy_call_precall_banner_text">"This will start a legacy call. &lt;a href={LEARN_MORE_URL}>What's this?&lt;/a>"</string>
     <string name="libraries_material_featurehighlight_dismiss">Dismiss</string>
+    <string name="link_export_hidden_items">Export hidden items</string>
     <string name="link_gaia_account_network_error">Trouble linking account, please check your connection</string>
     <string name="link_gaia_account_unexpected_error">Trouble linking account</string>
     <string name="link_gaia_choose_account">Choose account</string>
@@ -2562,6 +2720,8 @@ Go to Settings and try again."</string>
     <string name="low_light_mode_button_title">Low Light</string>
     <string name="lower_hand_content_description">Lower your hand</string>
     <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
+    <string name="m3_loading_indicator_content_description">Loading</string>
+    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
     <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_plain_regular">sans-serif</string>
@@ -2577,7 +2737,7 @@ Go to Settings and try again."</string>
     <string name="main_stage_waiting_body_text">The meeting will start as soon as the host has joined</string>
     <string name="main_stage_waiting_header_text">Waiting for the host to join</string>
     <string name="manage_call_history_expiry_setting_change_successful">This change will take effect in a few minutes. Your call history will be deleted across all your devices.</string>
-    <string name="manage_call_history_name">Manage call history</string>
+    <string name="manage_call_history_name">History</string>
     <string name="manage_history_deletion_failed_dialog_text">"Your history couldn't be deleted"</string>
     <string name="manage_history_deletion_failed_dialog_title">Something went wrong</string>
     <string name="manage_history_deletion_successful">Your history was deleted. History will also be deleted on devices that have the latest app.</string>
@@ -2648,12 +2808,14 @@ Go to Settings and try again."</string>
     <string name="menu_call_diagnostics_summary_disabled">Your administrator controls this setting</string>
     <string name="menu_call_diagnostics_title">Send more diagnostic info</string>
     <string name="menu_incoming_call_restriction_key">incomingCallRestrictionKey</string>
-    <string name="menu_incoming_call_restriction_summary">Blocks calls from anyone not in your contacts. Blocked calls don’t appear in your call history.</string>
+    <string name="menu_incoming_call_restriction_summary">"Google Contacts and people you've interacted with in Google services."</string>
+    <string name="menu_incoming_call_restriction_summary_text_link">Learn about saved contacts</string>
     <string name="menu_incoming_call_restriction_title">Only contacts can call me</string>
     <string name="menu_lonely_meeting_key">lonelyMeetingKey</string>
     <string name="menu_saver_mode_key">saverModeKey</string>
     <string name="menu_saver_mode_summary">Adjusts call quality to save data</string>
     <string name="menu_saver_mode_title">Limit data usage</string>
+    <string name="menu_workspace_labs_key">workspaceLabsKey</string>
     <string name="message_sent_toast">Sent</string>
     <string name="message_settings_name">Message settings</string>
     <string name="message_time_now">Now</string>
@@ -2765,7 +2927,9 @@ Go to Settings and try again."</string>
     <string name="new_chip_label">New</string>
     <string name="new_group_default_name">Group</string>
     <string name="new_meet_calling_ack_button">Got it</string>
-    <string name="new_meet_calling_content">Legacy calling (previously known as Duo) is being replaced by the new Meet calling, featuring in-call chat and more. You can enjoy the new Meet calling now when all parties in the call are using the latest version of Meet.</string>
+    <string name="new_meet_calling_content_two_line">"Legacy calling (previously known as Duo) is being replaced by the new Meet calling, featuring in-call chat and more.
+
+ You can enjoy the new Meet calling now when all parties in the call are using the latest version of Meet."</string>
     <string name="new_meet_calling_learn_more_button">Learn more about calling in Meet</string>
     <string name="new_meet_calling_title">New Meet calling is coming</string>
     <string name="no_activity_found_error">No app found to handle this action</string>
@@ -2783,11 +2947,13 @@ Go to Settings and try again."</string>
     <string name="noise_cancellation_switch_preference_key">noiseCancellationSwitchPreference</string>
     <string name="noise_cancellation_switch_preference_summary">"Filters out sound from your mic that isn't speech"</string>
     <string name="noise_cancellation_switch_preference_title">Noise cancellation</string>
+    <string name="not_selected">Not selected</string>
     <string name="not_set">Not set</string>
     <string name="not_spam_dialog_error">Trouble marking user as not spam</string>
     <string name="not_spam_dialog_message">Mark this as not spam?</string>
     <string name="note_clip_type_talkback_description">Note mode active</string>
     <string name="note_quick_entry">Quick entry point to note mode</string>
+    <string name="notice_export_missing_items">Meet has changed the way it stores your call history, and some items are hidden. These items will be deleted on %s.</string>
     <string name="notification_action_call_back">Call back</string>
     <string name="notification_action_call_back_variant3_audio">Start voice call</string>
     <string name="notification_action_call_back_variant3_video">Start video call</string>
@@ -3133,7 +3299,7 @@ Go to Settings and try again."</string>
     <string name="pref_delete_account_text_yes">Delete</string>
     <string name="pref_delete_account_title_rebranded">Delete your calling account?</string>
     <string name="pref_delete_all_history_now_key">pref_delete_all_history_now_key</string>
-    <string name="pref_delete_all_now_header">Delete all history now</string>
+    <string name="pref_delete_all_now_header">Delete all history</string>
     <string name="pref_delete_all_now_header_converged_calling">Delete all legacy history</string>
     <string name="pref_delete_all_now_key">delete_all_now_preference</string>
     <string name="pref_enable_auto_framing_key">enable_auto_framing_preference</string>
@@ -3160,6 +3326,7 @@ Go to Settings and try again."</string>
     <string name="pref_export_call_history_key">export_call_history_key</string>
     <string name="pref_export_history_key">pref_export_history_key</string>
     <string name="pref_export_history_key_title">Export history</string>
+    <string name="pref_export_missing_items_notice_key">general_notice</string>
     <string name="pref_gaia_reachability_key">gaia_reachability_pref</string>
     <string name="pref_gaia_reachability_setting_title">Let people call you with your email address</string>
     <string name="pref_group_call_notifications_title">Receive group calls</string>
@@ -3175,8 +3342,11 @@ Go to Settings and try again."</string>
     <string name="pref_history_autoexpiry_setting_header_converged_calling">Delete items in legacy history</string>
     <string name="pref_incoming_call_notifications_title">Receive 1:1 calls</string>
     <string name="pref_legacy_notice">These settings control your legacy account.</string>
+    <string name="pref_legacy_notice_calling_account_conditions">A device can have only one legacy calling account. To use it, you must be signed in with this Google Account</string>
+    <string name="pref_legacy_notice_expanded_link">About legacy calling accounts</string>
     <string name="pref_legacy_notice_key">legacy_notice</string>
     <string name="pref_legacy_notice_link">"What's this?"</string>
+    <string name="pref_legacy_notice_sync_delay">Changes to your Google Account might not sync to your legacy calling account right away</string>
     <string name="pref_linked_gaia_account_key">google_account_preference</string>
     <string name="pref_linked_gaia_account_none">None</string>
     <string name="pref_linked_gaia_account_title">Google Account</string>
@@ -3191,10 +3361,11 @@ Go to Settings and try again."</string>
     <string name="pref_live_ring_turn_off">Turn off Knock Knock</string>
     <string name="pref_live_ring_turn_on">Turn on Knock Knock</string>
     <string name="pref_manage_call_history_key">manage_call_history_preference</string>
-    <string name="pref_manage_call_history_notice">Changes to these settings apply only to Meet calling. Go to Calling settings(Legacy) for legacy-related settings.</string>
+    <string name="pref_manage_call_history_notice">Changes to these settings apply only to Meet calling. Go to Calling settings (Legacy) for legacy-related settings.</string>
     <string name="pref_manage_call_history_notice_key">manage_call_history_notice</string>
     <string name="pref_manage_history_header">Manage calling history</string>
     <string name="pref_manage_history_key">manage_history_preference</string>
+    <string name="pref_manage_legacy_history_header">Manage legacy calling history</string>
     <string name="pref_meet_settings">Meeting settings</string>
     <string name="pref_meet_settings_converged_calling">General</string>
     <string name="pref_meet_settings_key">meet_settings_key</string>
@@ -3240,6 +3411,7 @@ Go to Settings and try again."</string>
     <string name="project_id">tachyon-android</string>
     <string name="promo_one_google_sign_in_dialog_subtitle">Link your Google Account to get more features like background effects and in-call chat. In a conference room? Join the meeting in Companion mode.</string>
     <string name="promo_one_google_sign_in_dialog_title">Get more with meetings</string>
+    <string name="prompt_export_local_meet_call_history">Meet has changed the way it stores your call history, and some items can’t be shown here. These items will be deleted on %s.</string>
     <string name="provide_valid_phone_number">Please provide a valid phone number</string>
     <string name="pstn_private_caller">Private caller</string>
     <string name="quick_action_chat">In call messages</string>
@@ -3412,6 +3584,7 @@ Go to Settings and try again."</string>
     <string name="secondary_intro_agreements">By continuing, you agree to the %2$s and acknowledge the %1$s.</string>
     <string name="see_history_button">See history</string>
     <string name="see_history_button_description_with_activity">See history, %s</string>
+    <string name="selected">Selected</string>
     <string name="selected_contacts_section_header">Selected</string>
     <string name="self_mic_error_message_rebranded">"Microphone isn't working. Try closing other apps that may be using the microphone, then relaunch Meet."</string>
     <string name="send_callee_message">Leave %s a message</string>
@@ -3437,7 +3610,7 @@ Go to Settings and try again."</string>
     <string name="settings_link_gaia_dialog_title">Sign in with your Google Account</string>
     <string name="settings_name">Settings</string>
     <string name="settings_screen_title">Settings</string>
-    <string name="share_by_link_dialog_text">This contact is unable to receive calls. Send them a Meet link instead.</string>
+    <string name="share_by_link_dialog_text">You’re calling someone who can’t receive calls. Share a Meet link instead.</string>
     <string name="share_clip_button_text">Share</string>
     <string name="share_joining_info">Share joining info</string>
     <string name="share_link">Share</string>
@@ -3489,6 +3662,7 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="sim_notifications_title">SIM card changes</string>
     <string name="single_day_time_slot_dot_separator">{MEETING_DATE} • {MEETING_TIME_RANGE}</string>
     <string name="single_hand_raiser_notification">{HAND_RAISER_NAME} raised a hand</string>
+    <string name="snackbar_accessibility_pane_title">Alert</string>
     <string name="sniglet_regular">Bubbly</string>
     <string name="something_went_wrong_open_play_store">Open Play Store</string>
     <string name="something_went_wrong_reinstall_duo_summary_rebranded">Please reinstall Meet</string>
@@ -3512,6 +3686,9 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="start_new_meeting_error_not_allowed">"Your account doesn't let you create meetings."</string>
     <string name="start_screen_sharing">Share now</string>
     <string name="start_sharing_button_text">Start sharing</string>
+    <string name="state_empty">Empty</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
     <string name="static_screen_share_message">You are sharing your screen</string>
     <string name="stats_for_nerds_switch_preference_key">statsForNerdsSwitchPreference</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -3585,6 +3762,8 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="switch_camera_button_back_short">Flip</string>
     <string name="switch_camera_button_disabled">Switch camera, not available</string>
     <string name="switch_camera_button_front">Switch to front camera</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">Tab</string>
     <string name="tachyon_account_picker_button">Continue</string>
     <string name="tachyon_account_picker_separator"> • </string>
     <string name="tachyon_account_picker_text_body">Which account do you want to make and receive calls with? You won’t receive calls on other accounts.</string>
@@ -3595,6 +3774,7 @@ Learn more about calling accounts"</string>
 Learn more about legacy calling accounts"</string>
     <string name="tachyon_account_picker_title">Select your calling account</string>
     <string name="tachyon_account_picker_title_legacy">Select your legacy calling account</string>
+    <string name="template_percent">%1$d percent.</string>
     <string name="text_message_hint_text">Tap to type</string>
     <string name="thin_brush_content_description">Calligraphy paintbrush</string>
     <string name="tiktok_account_accounts_add">Add Account</string>
@@ -3619,6 +3799,8 @@ Learn more about legacy calling accounts"</string>
     <string name="toggle_mirror_self_view_disabled_content_description">Mirror mode, not available</string>
     <string name="toggle_mirror_self_view_off_content_description">Turn off Mirror mode</string>
     <string name="toggle_mirror_self_view_on_content_description">Turn on Mirror mode</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
     <string name="transfer_call_button">Transfer</string>
     <string name="transfer_device_via_notification_join">Transfer calls among devices</string>
     <string name="try_again">Try again</string>
