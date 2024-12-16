@@ -7,9 +7,6 @@
         <item>REGEX|ACTIVE_IME.+</item>
         <item>recent_theme_spec_json_array</item>
         <item>has_user_shared</item>
-        <item>access_points_showing_order</item>
-        <item>access_points_count_on_bar</item>
-        <item>access_point_on_power_key</item>
         <item>REGEX|.*keyboard_mode</item>
         <item>REGEX|.*previous_keyboard_mode</item>
         <item>REGEX|.*previous_one_handed_mode</item>
@@ -32,6 +29,9 @@
         <item>REGEX|fullscreen_handwriting_.+</item>
         <item>japanese_first_time_user</item>
         <item>should_show_ja_setup_flow_again</item>
+        <item>REGEX|.*enable_vertical_widget</item>
+        <item>REGEX|.*widget_x_position_.+</item>
+        <item>REGEX|.*widget_y_position_.+</item>
         <item>stylus_first_time_education</item>
     </string-array>
         <item>android</item>
@@ -243,7 +243,7 @@
     </string-array>
         <item>@raw/main_en_us_d3</item>
     </array>
-        <item>2023020900</item>
+        <item>2023101300</item>
     </integer-array>
     </array>
         <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
@@ -1061,9 +1061,6 @@
     </array>
     </array>
     </array>
-        <item>Keyboard icon</item>
-        <item>Unfold icon</item>
-    </string-array>
     </string-array>
     </string-array>
         <item>1s</item>
@@ -1104,6 +1101,13 @@
         <item>5</item>
         <item>10</item>
     </string-array>
+        <item>Disabled</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
     </string-array>
         <item>cangjie_version_3</item>
         <item>cangjie_version_5</item>
@@ -1111,7 +1115,6 @@
         <item>pinyin_standard_jyutping</item>
         <item>pinyin_standard_yale</item>
         <item>pinyin_standard_cantonese_pinyin</item>
-    </string-array>
     </string-array>
         <item>0.4</item>
         <item>0.6</item>
@@ -1150,6 +1153,14 @@
         <item>500</item>
         <item>300</item>
     </string-array>
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    </array>
     </array>
     </array>
     </array>
@@ -1571,6 +1582,10 @@
         <item>kw-GB</item>
         <item>kxm-TH</item>
         <item>kxu-IN</item>
+        <item>kxv-Latn-IN</item>
+        <item>kxv-Deva-IN</item>
+        <item>kxv-Orya-IN</item>
+        <item>kxv-Telu-IN</item>
         <item>kyu-MM</item>
         <item>lad-BA</item>
         <item>lad-IL</item>
@@ -2356,6 +2371,10 @@
         <item>kw_GB</item>
         <item>kxm_TH</item>
         <item>kxu_IN</item>
+        <item>kxv_XA</item>
+        <item>kxv_XD</item>
+        <item>kxv_XF</item>
+        <item>kxv_XG</item>
         <item>ky</item>
         <item>kyu_MM</item>
         <item>la</item>
@@ -3157,6 +3176,10 @@
         <item>Kernewek</item>
         <item>ภาษาเขมรสุรินทร์</item>
         <item>ଖୋଣ୍ଡା</item>
+        <item>Kuvi</item>
+        <item>कुवि</item>
+        <item>କୁୱି</item>
+        <item>కువి</item>
         <item>Кыргызча</item>
         <item>ꤊꤢ꤬ꤛꤢ꤭ꤜꤟꤤ꤬</item>
         <item>Latina</item>
@@ -3193,7 +3216,7 @@
         <item>बंजारा</item>
         <item>లంబాడి</item>
         <item>बंजारा</item>
-        <item>Lumbaart</item>
+        <item>Lombard</item>
         <item>ລາວ</item>
         <item>Elhomwe</item>
         <item>لری</item>
