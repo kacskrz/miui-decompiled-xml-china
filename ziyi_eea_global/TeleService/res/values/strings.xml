@@ -188,6 +188,9 @@ Do you want to exit now?} }"</string>
     <string name="apn_settings">Access Point Names</string>
     <string name="arrears_sim_summary">Top up your phone balance to stay connected.</string>
     <string name="arrears_sim_title">Insufficient funds</string>
+    <string name="arrears_sim_v2_notification">Notifications about insufficient balance</string>
+    <string name="arrears_sim_v2_summary">Looks like SIM %1$s balance is insufficient. Check SIM %2$s balance and top up to stay connected.</string>
+    <string name="arrears_sim_v2_title">"SIM %s couldn't connect to the network"</string>
     <string name="ask">Ask</string>
     <string name="atr_disable">Area Traffic Reports disabled</string>
     <string name="atr_enable">Area Traffic Reports enabled</string>
@@ -406,6 +409,8 @@ Do you want to exit now?} }"</string>
     <string name="call_record_on_summary">On</string>
     <string name="call_record_setting">Call recording</string>
     <string name="call_record_whitelist_custom">Selected numbers</string>
+    <string name="call_recording_disclaimer_msg">"Applicable law in the jurisdiction in which you or other call participants are located may require all parties to consent to recording. You are obliged to comply with such laws, and Xiaomi will not be liable for any illegal use of this feature. Call recordings are only stored on your device and can't be accessed by Xiaomi."</string>
+    <string name="call_recording_disclaimer_title">Disclaimer</string>
     <string name="call_recording_notification_message">Tap to listen.</string>
     <string name="call_recording_notification_message_low_storage">SD card is full.</string>
     <string name="call_recording_notification_message_sd_unmounted">SD card has been removed.</string>
@@ -472,7 +477,10 @@ Do you want to exit now?} }"</string>
     <string name="cell_broadcast_settings">Emergency broadcasts</string>
     <string name="cell_broadcast_sms">Cell Broadcast SMS</string>
     <string name="cf_setting_mobile_data_alert">Please turn on mobile data and make sure that WLAN is off</string>
+    <string name="cf_setting_mobile_data_off_alert">Please turn on mobile data</string>
     <string name="cf_setting_mobile_data_roaming_alert">Please turn on data roaming</string>
+    <string name="cf_setting_network_alert">Please make sure network is available</string>
+    <string name="cf_setting_wifi_on_alert">Please turn off Wi-Fi</string>
     <string name="cfb_title">Forward when busy</string>
     <string name="cfnrc_title">Forward when unreachable</string>
     <string name="cfnrc_title_cta">Forward when unreachable</string>
@@ -484,6 +492,7 @@ Do you want to exit now?} }"</string>
     <string name="cfnry_time_twenty_five_sec">%d sec</string>
     <string name="cfnry_time_twenty_sec">%d sec</string>
     <string name="cfnry_title">Forward when unanswered</string>
+    <string name="cfu_notification_title">Forward calls</string>
     <string name="cfu_title">Always forward calls</string>
     <string name="change_data_preference_4g_only_prompt">Looks like you have a 4G only SIM card. To make sure it works normally, set it as default for mobile data. Set now?</string>
     <string name="change_data_sim_4g_only_prompt">"SIM %1$s only supports 4G. When SIM %2$s isn't your default SIM for mobile data, SIM card might not work normally. Switch now?"</string>
@@ -649,9 +658,11 @@ Do you want to exit now?} }"</string>
     <string name="config_default_data_sim">Settings</string>
     <string name="config_dialing_emergency_number_suffix" />
     <string name="config_disable_cdma_activation_code">false</string>
+    <string name="config_domain_selection_service_component_name" />
     <string name="config_gba_package" />
     <string name="config_ims_mmtel_package" />
     <string name="config_ims_rcs_package" />
+    <string name="config_miui_cpu_model" />
     <string name="config_simUnlockUiClass">@null</string>
     <string name="config_simUnlockUiPackage">@null</string>
     <string name="config_world_mode" />
@@ -678,7 +689,6 @@ Do you want to exit now?} }"</string>
     <string name="copy">Copy</string>
     <string name="crescendo_ringer_summary">Ringtone volume will gradually grow to the level you set</string>
     <string name="crescendo_ringer_title">Increasing ringtone volume</string>
-    <string name="ct_ut_not_support_close_4glte">UT is not available, please turn off Enhanced 4G LTE Mode in Settings</string>
     <string name="data_disable_warning_no_mms">"You won't be able to send and receive MMS if you turn off mobile data (WCDMA/LTE). However, you'll be able to do that when your device is connected to Wi-Fi."</string>
     <string name="data_disable_warning_with_mms">"You'll still be able to send and receive MMS if you turn off mobile data (WCDMA/LTE). To use the internet, connect to Wi-Fi."</string>
     <string name="data_enable_always_warn">Ask whether to use mobile data</string>
@@ -710,6 +720,8 @@ Do you want to exit now?} }"</string>
     <string name="delete">Delete</string>
     <string name="delete_fdn_contact">Delete fixed dialing number</string>
     <string name="deleting_fdn_contact">Deleting fixed dialing number…</string>
+    <string name="demo_esos_satellite_string">Test demo satellite eSOS mode (Debug Build only)</string>
+    <string name="depopulated_zone_satellite_notification">Satellite communication reminders</string>
     <string name="description_concat_format">%1$s, %2$s</string>
     <string name="description_delete_button">backspace</string>
     <string name="description_dial_button">dial</string>
@@ -788,11 +800,11 @@ Do you want to exit now?} }"</string>
     <string name="disable_cfb_forbidden">"Your operator doesn't support disabling call forwarding when your phone is busy."</string>
     <string name="disable_cfnrc_forbidden">"Your carrier doesn't support disabling call forwarding when your phone is unreachable."</string>
     <string name="disable_cfnry_forbidden">"Your operator doesn't support disabling call forwarding when your phone doesn't answer."</string>
-    <string name="disable_esim_dialog_summary">"SIM %s will be activated if you deactivate eSIM now.
-Deactivate eSIM anyway?"</string>
-    <string name="disable_esim_dialog_title">Deactivating eSIM</string>
-    <string name="disable_esim_error_toast_message">"Couldn't deactivate eSIM"</string>
-    <string name="disable_esim_progress_activating_message">Deactivating eSIM…</string>
+    <string name="disable_cfu_notification_summary">SIM %d is no longer roaming. We recommend turning off call forwarding for this SIM card.</string>
+    <string name="disable_esim_dialog_summary">"If you turn off eSIM, you won't be able to use eSIM. Turn off anyway?"</string>
+    <string name="disable_esim_dialog_title">Turn off eSIM</string>
+    <string name="disable_esim_error_toast_message">"Couldn't turn off eSIM"</string>
+    <string name="disable_esim_progress_activating_message">Turning off eSIM…</string>
     <string name="disable_fdn">Disable FDN</string>
     <string name="disable_fdn_ok">Enable FDN</string>
     <string name="disable_pin_ok">PIN cleared</string>
@@ -863,11 +875,14 @@ Deactivate eSIM anyway?"</string>
     <string name="enable_2g_dialog_title">Attention</string>
     <string name="enable_2g_dialog_warn_message">"If you turn off 2G and are in an area where 2G is the only network available, you won't be able to make any emergency or non-emergency calls. Turn off anyway?"</string>
     <string name="enable_2g_summary">2G networks are less secure, but may improve connection quality in some locations</string>
+    <string name="enable_2g_summary_eu">Use 2G cellular connections. For emergency calls, 2G is always turned on.</string>
     <string name="enable_2g_title">Allow use of 2G</string>
+    <string name="enable_2g_title_eu">Allow 2G</string>
     <string name="enable_antispam_strange_summary">Mute the first ring for calls from unknown numbers</string>
     <string name="enable_antispam_strange_title">Mute first ring</string>
     <string name="enable_cdma_call_waiting_setting">"During a call, you'll be notified about incoming calls"</string>
     <string name="enable_cdma_cw">Turn on</string>
+    <string name="enable_cfu_notification_summary">SIM %1$d is roaming. You can forward calls to SIM %2$d to save on roaming charges.</string>
     <string name="enable_disable_administrative">Administrative</string>
     <string name="enable_disable_advertisements">Advertisements</string>
     <string name="enable_disable_atr">Area Traffic Reports</string>
@@ -890,12 +905,12 @@ Deactivate eSIM anyway?"</string>
     <string name="enable_disable_technology_news">Technology News</string>
     <string name="enable_dual_4g_if_dual_ct">Prefer 4G networks for both SIM cards to use VoLTE on the secondary SIM when two China Telecom SIM cards are installed.</string>
     <string name="enable_dual_4g_prompt_when_turn_on_volte">VoLTE requires 4G connectivity for both SIM slots. Switch to Dual 4G now?</string>
-    <string name="enable_esim_dialog_summary">"SIM %s will be deactivated if you activate eSIM now.
-Activate eSIM anyway?"</string>
-    <string name="enable_esim_dialog_title">Activating eSIM</string>
-    <string name="enable_esim_error_toast_message">"Couldn't activate eSIM"</string>
-    <string name="enable_esim_progress_activating_message">Activating eSIM…</string>
-    <string name="enable_esim_title">Use eSIM</string>
+    <string name="enable_esim_dialog_summary">"If you turn on eSIM, you won't be able to use your current SIM %s. Turn on eSIM anyway?"</string>
+    <string name="enable_esim_dialog_title">Turn on eSIM</string>
+    <string name="enable_esim_error_toast_message">"Couldn't turn on eSIM"</string>
+    <string name="enable_esim_progress_activating_message">Turning on eSIM…</string>
+    <string name="enable_esim_summary">Disable SIM %s after turning on</string>
+    <string name="enable_esim_title">Turn on eSIM</string>
     <string name="enable_fdn">Enable FDN</string>
     <string name="enable_fdn_ok">Disable FDN</string>
     <string name="enable_in_progress">Setting PIN…</string>
@@ -918,7 +933,10 @@ Activate eSIM anyway?"</string>
     <string name="enter_callbarring_password">Enter call barring password (%d digits)</string>
     <string name="enter_esim_manager">Manage eSIM</string>
     <string name="enter_esim_manager_title">Manage eSIM</string>
+    <string name="enter_esim_service_support_summary">View a list of supported carriers</string>
+    <string name="enter_esim_service_support_title">Supported carriers</string>
     <string name="enter_input">USSD message must be between %1$d and %2$d characters. Please try again.</string>
+    <string name="enter_mep_esim_manager_title">Manage SIM</string>
     <string name="enter_pin2_text">PIN%d</string>
     <string name="enter_pin_text">SIM PIN:</string>
     <string name="entertainment_news_settings">Entertainment News</string>
@@ -940,6 +958,7 @@ Activate eSIM anyway?"</string>
     <string name="esim_is_activating_notification_channel_for_o2">eSimIsActivatingNotificationForO2</string>
     <string name="esim_is_activating_notification_message_for_o2">Activating mobile plan…</string>
     <string name="esim_setting_title">eSIM settings</string>
+    <string name="esos_satellite_string">Test real satellite eSOS mode (Debug Build only)</string>
     <string name="evening">Afternoon</string>
     <string name="exception_error">Network or SIM card error.</string>
     <string name="expand_button_title">Advanced</string>
@@ -964,6 +983,9 @@ Activate eSIM anyway?"</string>
     <string name="fdn_summary">Restrict outgoing calls to listed FDNs or to numbers with certain prefixes</string>
     <string name="fdn_with_label">Fixed Dialing Numbers (%s)</string>
     <string name="feedback_title">Feedback</string>
+    <string name="filp_auto_answer_call_title">Unfold to answer calls</string>
+    <string name="filp_auto_hangup_call_summary">Works only when Bluetooth or wired earphones are connected</string>
+    <string name="filp_auto_hangup_call_title">Fold to end calls</string>
     <string name="fire_type_description">Fire</string>
     <string name="fiveg_available_status1">NR available :</string>
     <string name="fiveg_bearer_status1">5G bearer status :</string>
@@ -975,6 +997,8 @@ Activate eSIM anyway?"</string>
     <string name="fiveg_icon_type1">Nr Icon Type :</string>
     <string name="fiveg_info">View 5G info</string>
     <string name="fiveg_infos">5G infos</string>
+    <string name="fiveg_interruption_remind">"Looks like your SIM %s can't use 5G SA services. Contact your carrier for more information."</string>
+    <string name="fiveg_interruption_remind_title">"Can't use 5G services"</string>
     <string name="fiveg_network_config_type1">Network Config Type :</string>
     <string name="fiveg_network_mode_default">Auto</string>
     <string name="fiveg_network_mode_nsa">NSA</string>
@@ -984,6 +1008,7 @@ Activate eSIM anyway?"</string>
     <string name="fiveg_nrca_switch_summary">Use 5G carrier aggregation for better connectivity</string>
     <string name="fiveg_nrca_switch_title">5G carrier aggregation</string>
     <string name="fiveg_plmn_info_list1">PLMN info list :</string>
+    <string name="fiveg_plus_switch_title">5G+</string>
     <string name="fiveg_power_switch_summary">Make 5G connectivity less power consuming in certain scenarios</string>
     <string name="fiveg_power_switch_title">5G battery saver</string>
     <string name="fiveg_restrict_dcnr1">Restrict DCNR :</string>
@@ -1110,16 +1135,26 @@ Switch to the new provider anyway?"</string>
     <string name="importSimEntry">Import</string>
     <string name="importToFDNfromContacts">Import from contacts</string>
     <string name="importingSimContacts">Importing SIM contacts</string>
-    <string name="ims_settings">IMS Settings</string>
     <string name="incall_error_call_failed">Call failed.</string>
     <string name="incall_error_cannot_add_call">Call cannot be added at this time. You can try to reach out by sending a message.</string>
+    <string name="incall_error_carrier_roaming_satellite_mode">You can send and receive messages without a mobile or Wi-Fi network.</string>
     <string name="incall_error_ecm_emergency_only">Exit emergency callback mode to make a non-emergency call.</string>
     <string name="incall_error_emergency_only">Not registered on network.</string>
     <string name="incall_error_missing_voicemail_number">Voicemail number unknown.</string>
     <string name="incall_error_no_phone_number_supplied">To place a call, enter a valid number.</string>
     <string name="incall_error_out_of_service">Mobile network not available.</string>
+    <string name="incall_error_out_of_service_2g">"Mobile network not available.
+
+Connect to a wireless network to make a call.
+
+2G is disabled on this device, which may be impacting your connectivity. Go to Settings and enable Allow 2G to continue."</string>
     <string name="incall_error_out_of_service_kr">Emergency call available only.</string>
     <string name="incall_error_out_of_service_wfc">Mobile network is not available. Connect to a wireless network to make a call.</string>
+    <string name="incall_error_out_of_service_wfc_2g_user">"Mobile network is not available.
+
+Connect to a wireless network to make a call.
+
+2G is disabled on this device, which may be impacting your connectivity. Go to Settings and enable Allow 2G to continue."</string>
     <string name="incall_error_outgoing_call_failed">"Couldn't make call"</string>
     <string name="incall_error_power_off">Turn off Airplane mode to make a call.</string>
     <string name="incall_error_power_off_thermal"><b>Phone too hot</b>"
@@ -1129,7 +1164,7 @@ Can't complete this call. Try again when your phone cools down.
 You can still make emergency calls."</string>
     <string name="incall_error_power_off_wfc">Turn off airplane mode or connect to a wireless network to make a call.</string>
     <string name="incall_error_promote_wfc">Enable Wi-Fi calling to make a call.</string>
-    <string name="incall_error_satellite_enabled">Disable satellite mode to make a call.</string>
+    <string name="incall_error_satellite_enabled">To make a call, first end the satellite connection.</string>
     <string name="incall_error_supp_service_conference">Unable to merge calls.</string>
     <string name="incall_error_supp_service_hangup">"Can't release call(s)."</string>
     <string name="incall_error_supp_service_hold">"Can't hold calls."</string>
@@ -1301,9 +1336,9 @@ waiting for inputting unlock code"</string>
     <string name="mhh_enable">Medical, Health, and Hospital enabled</string>
     <string name="mi_mobile_settings_summary">Data plans provided by Xiaomi</string>
     <string name="mi_mobile_settings_title">Mi Mobile</string>
-    <string name="mi_mobile_sim_activate_message">Activate SIM %1$d to be able to use Mi Mobile. This might take up to %2$d-%3$d minutes.</string>
+    <string name="mi_mobile_sim_activate_message">"Looks like SIM %1$d isn't activated. Tap \"Activate\" and follow the instructions to get started."</string>
     <string name="mi_mobile_sim_activate_ok">Activate</string>
-    <string name="mi_mobile_sim_activate_title">Welcome to Mi Mobile!</string>
+    <string name="mi_mobile_sim_activate_title">Mi Mobile SIM activation</string>
     <string name="mi_sim_not_active">"Mi Mobile SIM isn't activated"</string>
     <string name="mi_sim_not_active_tips">"Mi Mobile is your secondary SIM now. Looks like you haven't activated it for a long time. You can turn Mi Mobile off to make your primary SIM work better."</string>
     <string name="mi_sim_settings_summary">Use mobile data without a SIM card</string>
@@ -1342,6 +1377,17 @@ waiting for inputting unlock code"</string>
     <string name="miuix_appcompat_select_all">Select all</string>
     <string name="miuix_appcompat_select_all_description">Select all</string>
     <string name="miuix_appcompat_select_item">Select items</string>
+    <string name="miuix_font_style_misans_bold_font_family">mipro-bold</string>
+    <string name="miuix_font_style_misans_demibold_font_family">sans-serif-medium</string>
+    <string name="miuix_font_style_misans_extralight_font_family">sans-serif-thin</string>
+    <string name="miuix_font_style_misans_font_family">sans-serif</string>
+    <string name="miuix_font_style_misans_heavy_font_family">sans-serif-black</string>
+    <string name="miuix_font_style_misans_light_font_family">sans-serif-light</string>
+    <string name="miuix_font_style_misans_medium_font_family">sans-serif-medium</string>
+    <string name="miuix_font_style_misans_normal_font_family">sans-serif-light</string>
+    <string name="miuix_font_style_misans_regular_font_family">sans-serif</string>
+    <string name="miuix_font_style_misans_semibold_font_family">mipro-semibold</string>
+    <string name="miuix_font_style_misans_thin_font_family">sans-serif-thin</string>
     <string name="miuix_indexer_collect">Collections</string>
     <string name="miuix_indexer_selected">Selected %s</string>
     <string name="miuix_sbl_tracking_progress_labe_pull_to_refresh">Pull down to refresh</string>
@@ -1388,6 +1434,7 @@ waiting for inputting unlock code"</string>
     <string name="mobile_settings_screen_title">Mobile data</string>
     <string name="mobile_special_network_optimization_config_summary">Intelligently perceive multiple scenarios in the network to enhance communication experience</string>
     <string name="mobile_special_network_optimization_config_title">Scene adaptive mode</string>
+    <string name="mock_carrier_roaming_satellite_string">Mock Carrier Satellite Mode (Debug Build only)</string>
     <string name="modem_dialog_body">Mobile network is unstable which results in interruptions and network problems. Send feedback to Mi for analysis? This report may contain personally identifiable information. Your report will be used to help us fix this bug and will never be shared in any commercial context.</string>
     <string name="modem_dialog_title">Mobile network is unstable</string>
     <string name="modem_log_notification__message">This might increase power consumption</string>
@@ -1541,14 +1588,18 @@ Using preferred network instead."</string>
     <string name="network_type_3g_preferred_cmcc">3G/2G</string>
     <string name="network_type_4g_preferred_cmcc">4G/3G/2G</string>
     <string name="network_unlock">Unlock</string>
-    <string name="networks_title">Mobile networks</string>
+    <string name="networks_title">Select carrier</string>
     <string name="newPin2Label">New PIN2</string>
     <string name="newPinLabel">New PIN</string>
+    <string name="new_arrears_sim_summary">Your SIM card balance may be insufficient or be subject to network restrictions. Contact your carrier for more information.</string>
+    <string name="new_arrears_sim_title">"Can't connect to the internet"</string>
     <string name="new_password_label">New %d-digit password</string>
     <string name="new_pin2_label">New PIN%d</string>
     <string name="new_pin_label">New PIN</string>
+    <string name="newcall_settings_summary">5G New Calling services are provided by your carrier</string>
+    <string name="newcall_settings_title">5G New Calling</string>
     <string name="night">Evening</string>
-    <string name="no_active_esim_text">Inactive eSIM</string>
+    <string name="no_active_esim_text">No eSIM</string>
     <string name="no_change">No changes were made.</string>
     <string name="no_checked_network">"You won't be able to connect to mobile network and make calls. Select another network?"</string>
     <string name="no_ims_service_notification_content">Contact your service provider to address this issue.</string>
@@ -1556,6 +1607,7 @@ Using preferred network instead."</string>
     <string name="no_mobile_data">Mobile data is not available</string>
     <string name="no_mobile_data_roaming">Data roaming is not available</string>
     <string name="no_need_unlock_tip">No need to unlock, because the current phone is not locked.</string>
+    <string name="no_network_available">Network is not available</string>
     <string name="no_rtt_when_roaming">Note: RTT is not available while roaming</string>
     <string name="no_unlock_chance_hint">"You have no retry times.
 Please contact your operators"</string>
@@ -1701,6 +1753,7 @@ Try again or call customer service for more options."</string>
     <string name="permission_description">Permissions details</string>
     <string name="phoneAppLabel">Phone Services</string>
     <string name="phoneIconLabel">Phone</string>
+    <string name="phone_account_no_config_mobile_networks">The device owner has restricted the ability to change mobile network settings.</string>
     <string name="phone_account_settings">Calling accounts</string>
     <string name="phone_account_settings_user_restriction">Phone account settings can only be changed by the admin or work user.</string>
     <string name="phone_accounts">Calling accounts</string>
@@ -1936,6 +1989,7 @@ Your SIM card will be locked after another unsuccessful attempt."</string>
     <string name="radio_info_dl_kbps">DL Bandwidth (kbps):</string>
     <string name="radio_info_dsda_state_label">DSDA State:</string>
     <string name="radio_info_endc_available">EN-DC Available (NSA):</string>
+    <string name="radio_info_euicc_info">eUICC info:</string>
     <string name="radio_info_gprs_service_label">Data Service:</string>
     <string name="radio_info_gsm_service_label">Voice Service:</string>
     <string name="radio_info_http_client_test">HTTP Client Test:</string>
@@ -1958,7 +2012,7 @@ UT Interface: %5$s"</string>
     <string name="radio_info_nr_state">NR State (NSA):</string>
     <string name="radio_info_override_network_type_label">Override Network Type:</string>
     <string name="radio_info_phone_number_label">Phone Number:</string>
-    <string name="radio_info_phy_chan_config">LTE Physical Channel Configuration:</string>
+    <string name="radio_info_phy_chan_config">Physical Channel Configurations:</string>
     <string name="radio_info_ping_hostname_v4">Ping Hostname(www.google.com) IPv4:</string>
     <string name="radio_info_ping_hostname_v6">Ping Hostname(www.google.com) IPv6:</string>
     <string name="radio_info_ppp_received_label">Data Received:</string>
@@ -2038,6 +2092,9 @@ UT Interface: %5$s"</string>
     <string name="ringtone_unknown">Unknown ringtone</string>
     <string name="roaming">Disconnected from mobile data network</string>
     <string name="roaming_alert_title">Allow data roaming?</string>
+    <string name="roaming_change_dds_notification">Switch data SIM when roaming</string>
+    <string name="roaming_change_dds_notification_text">Your data SIM is roaming. Switch to a local SIM to avoid additional charges.</string>
+    <string name="roaming_change_dds_notification_title">Switch data SIM card</string>
     <string name="roaming_check_price_warning">Check with your network provider for pricing.</string>
     <string name="roaming_customer_service_message_kr">Tap to contact roaming customer support (+%1$d-%2$d-%3$d-%4$d%5$d). This call is free abroad.</string>
     <string name="roaming_customer_service_summary_kr">Free calls abroad</string>
@@ -2049,7 +2106,8 @@ UT Interface: %5$s"</string>
     <string name="roaming_notification_content">You can add country codes automatically to make dialing more convenient.</string>
     <string name="roaming_notification_title">Looks like roaming is activated</string>
     <string name="roaming_on_notification_title">Data roaming is on</string>
-    <string name="roaming_reenable_message">Try using roaming to connect again.</string>
+    <string name="roaming_preferred_wificall_title">Network preferences (Roaming)</string>
+    <string name="roaming_reenable_message">Try using roaming to connect again</string>
     <string name="roaming_user_package_summary_kr">"Purchase, cancel, and edit your roaming package. You won't be charged for using this menu while roaming."</string>
     <string name="roaming_user_package_title_kr">Use roaming package</string>
     <string name="roaming_warning">You may incur significant charges.</string>
@@ -2078,18 +2136,75 @@ UT Interface: %5$s"</string>
     <string name="sat_rssi">Rssi:</string>
     <string name="sat_sub_id">Sub Id:</string>
     <string name="sat_version">Modem version:</string>
-    <string name="satellite_exit_now_battery">Exit now</string>
-    <string name="satellite_findout_settings_title">find out tiantong satellite</string>
-    <string name="satellite_low_battery">The current battery level is less than 5%%, and the system will exit Tiantong satellite communication in %d seconds.</string>
-    <string name="satellite_mobile_settings_summary">Only supported by China Telecom SIM card</string>
-    <string name="satellite_mobile_settings_title">open satellite</string>
+    <string name="satellite_area_requirement_message">This feature is only available for devices sold on the Chinese mainland (excluding Hong Kong, Macao, and Taiwan), and this feature can only be used on the Chinese mainland (excluding Hong Kong, Macao, and Taiwan).</string>
+    <string name="satellite_area_requirement_title">In which regions can this feature be used?</string>
+    <string name="satellite_call_indoor_positioning_message">"When a satellite-enabled SIM card isn't installed and you're inside, Xiaomi Science and Technology Park is used as the default location. This allows your device to demonstrate how satellites are located."</string>
+    <string name="satellite_call_indoor_positioning_title">"Why is device location shown as Xiaomi Science and Technology Park when I'm indoors?"</string>
+    <string name="satellite_call_sound_quality_message">Call quality is related to the strength of the satellite signal. Due to long transmission distance and limited bandwidth, there will be a delay in sending calls and text messages, and audio quality of calls will be worse than that of a regular mobile network.</string>
+    <string name="satellite_call_sound_quality_title">Why do satellite calls have poor audio quality and slow speed?</string>
+    <string name="satellite_camera_enable_toast">Close Camera before opening Tiantong Satellite communications</string>
+    <string name="satellite_ct_business_summary">Services provided by China Telecom</string>
+    <string name="satellite_display_insert_support_card_message">To be able to use Tiantong Satellite communications, insert a satellite-enabled SIM card from China Telecom.</string>
+    <string name="satellite_display_insert_support_card_title">Insert a satellite-enabled SIM card</string>
+    <string name="satellite_display_message">"Looks like your SIM card doesn't support Tiantong Satellite communications. To be able to use this feature, insert a satellite-enabled SIM card from China Telecom. Continue anyway?"</string>
+    <string name="satellite_display_search_star">Continue</string>
+    <string name="satellite_enable_message">To turn on satellite communication, swipe down to open Control center, turn on the Satellite mode toggle, and follow the instructions to connect. Please note that only China Telecom SIM cards with a Tiantong Satellite subscription support this feature.</string>
+    <string name="satellite_enable_non_emergency_mode_string">Test real satellite non-eSOS mode (Debug Build only)</string>
+    <string name="satellite_enable_title">How do I turn on satellite communication?</string>
+    <string name="satellite_environment_requirement_message">"Satellite communication is suitable for areas without terrestrial signal, and we recommend using it only when there is no network available. To avoid signal interference, cases containing metal should be removed before use. Keep a distance of more than %1$dmm between the top of the device and your body or other obstructions during use. This feature will become unavailable when device battery is lower than %2$s, and you won't be able to use it to make calls if device temperature is too high."</string>
+    <string name="satellite_environment_requirement_title">What are the environmental requirements for use of this feature?</string>
+    <string name="satellite_exit">Turn off</string>
+    <string name="satellite_exit_now_battery">Turn off</string>
+    <string name="satellite_feature_introduction">About this feature</string>
+    <string name="satellite_findout_settings_title">About Tiantong Satellite communications</string>
+    <string name="satellite_handle_connection_failure_message">"Your device will try to connect to the satellite for up to %1$d seconds. If the connection isn't successful within %2$d seconds, a connection timeout will occur. If you receive a prompt that the service hasn't been activated, contact the satellite service operator. Other possible reasons for connection failure include the direct line to the satellite being blocked by tall buildings or other objects directly above or in front of you. In this case, change your location and try again."</string>
+    <string name="satellite_handle_connection_failure_title">What do I do if my device has trouble connecting to the satellite?</string>
+    <string name="satellite_impact_phone_message">"When Satellite mode is turned on, WLAN, mobile data, and Airplane mode will be turned off and can't be turned on again during use. Location services only support making calls and sending SMS. Features including camera, facial recognition, adding faces for Face unlock, and gaze detection will be unavailable until Satellite mode is turned off. Satellite communication requires a significant amount of power and thus will consume battery power faster than normal use of your device."</string>
+    <string name="satellite_impact_phone_title">How will use of satellite communication affect my device?</string>
+    <string name="satellite_introduction_title">Tiantong Satellite communications</string>
+    <string name="satellite_knew">Got it</string>
+    <string name="satellite_low_battery_cancel">Cancel</string>
+    <string name="satellite_low_battery_confirm">Turn on</string>
+    <string name="satellite_low_battery_message">Battery is too low to turn on Tiantong Satellite communications.</string>
+    <string name="satellite_low_battery_super_save_power_message">Battery is low. Turn on Ultra battery saver to use satellite communications normally. Turn on now?</string>
+    <string name="satellite_low_battery_title">Low battery</string>
+    <string name="satellite_mobile_settings_summary">Only supports satellite-enabled SIM cards from China Telecom or other supported carriers</string>
+    <string name="satellite_mobile_settings_title">Enable satellite communications</string>
     <string name="satellite_not_show_again">"Don't show again"</string>
-    <string name="satellite_select_enable_sim">Choose Sim Card</string>
+    <string name="satellite_notification_text">You can still make calls and send SMS without signal using Tiantong Satellite communications. Turn on this service first.</string>
+    <string name="satellite_notification_title">"You're in a weak signal area"</string>
+    <string name="satellite_open_tiantong_business_title">Turn on Tiantong Satellite communications</string>
+    <string name="satellite_pa_megathermal_message">The device temperature is high and the Tiantong satellite communication cannot be enabled temporarily.</string>
+    <string name="satellite_pa_megathermal_title">Device overheating</string>
+    <string name="satellite_point_title">Turn on Tiantong Satellite communications</string>
+    <string name="satellite_privacy_statement_message">"In order to provide Tiantong Satellite services, we need to access your location and scan for satellites.
+After connecting to the satellite, China Telecom needs to access your location in order to locate you in an emergency. For details on how we process your personal information, refer to the "<a href="https://privacy.mi.com/TianTong-dianxin/en_US/">Tiantong Satellite Communications Privacy Statement</a>".
+Tap \"Agree\" below to indicate that you have read and agreed to this privacy statement."</string>
+    <string name="satellite_privacy_statement_negative">"Don't agree"</string>
+    <string name="satellite_privacy_statement_positive">Agree</string>
+    <string name="satellite_privacy_statement_title">Privacy statement</string>
+    <string name="satellite_privacy_withdrawal_dialog_enable_negative">Cancel services</string>
+    <string name="satellite_privacy_withdrawal_dialog_message">"If you cancel Tiantong Satellite communications services, we will cease to collect your personal information and delete personal information already collected in accordance with applicable law, unless other laws and regulations specify the retention period of the personal information.
+Cancel services now?"</string>
+    <string name="satellite_privacy_withdrawal_dialog_positive">"Don't cancel"</string>
+    <string name="satellite_privacy_withdrawal_dialog_title">Attention</string>
+    <string name="satellite_privacy_withdrawal_setting">Cancel Tiantong Satellite communications services</string>
+    <string name="satellite_select_enable_sim">Select SIM card</string>
+    <string name="satellite_send_receive_sms_message">Once Satellite mode is turned on, you can send and receive SMS. SMS are limited to %d characters, after which they will be split into multiple messages and charged accordingly.</string>
+    <string name="satellite_send_receive_sms_title">How do I use satellite communication to send SMS?</string>
+    <string name="satellite_signal_boost_setting_summary">Install amplifier to improve signal strength and stability of satellite communications in cloudy and overcast conditions</string>
+    <string name="satellite_signal_boost_setting_title">Use Tiantong signal amplifier</string>
+    <string name="satellite_signal_boost_toast">Signal amplifier will be turned off when satellite communications are off</string>
     <string name="satellite_start">Got it</string>
     <string name="satellite_start_battery">Got it</string>
-    <string name="satellite_tiantong_setting">tiantong satellite</string>
-    <string name="satellite_user_reminder">"During use, WLAN and mobile data switches will be turned off, and the camera function cannot be used. They will be automatically restored after exiting. 
-This function is only available to China Telecom card users who have activated the satellite communication function. For relevant activation procedures and tariffs, please consult China Telecom customer service."</string>
+    <string name="satellite_thermal_hangup_delay">Device is overheated. Call will end in %ds. Wait for your device to cool down.</string>
+    <string name="satellite_tiantong_setting">Tiantong Satellite communications</string>
+    <string name="satellite_unable_open_title">Satellite communication cannot be turned on</string>
+    <string name="satellite_use_message">"In areas without regular terrestrial signal, like mountains, deserts, and the ocean, or in areas where ground communications systems have been damaged by natural disasters, your mobile device can connect to satellites to send and receive SMS, make and receive calls, and seek assistance as long as you're in an area where there are no obstructions for %d° to the south."</string>
+    <string name="satellite_use_phone_message">"Once Satellite mode is turned on, you can make and receive calls via satellite. Follow the on-screen instructions to ensure call quality and maintain satellite connection during the call. Hands-free will be turned on by default. Stay still and don't change the position of your device during the call to avoid interruptions."</string>
+    <string name="satellite_use_phone_title">How do I use satellite communication to make calls?</string>
+    <string name="satellite_use_title">Why use satellite communication?</string>
+    <string name="satellite_user_reminder">Tiantong Satellite communications need to access your location. Mobile data, camera, and Face unlock will be temporarily unavailable. This feature is only available for satellite-compatible China Telecom SIM cards.</string>
     <string name="saturday">Saturday</string>
     <string name="saturday_short">Sat</string>
     <string name="saturday_shortest">Sat</string>
@@ -2277,9 +2392,13 @@ Please confirm your default calling account setting."</string>
     <string name="solar_term_winter_begins">Winter begins</string>
     <string name="solar_term_winter_solstice">Winter solstice</string>
     <string name="speed_limit_card_toast">Connection speed may now be limited. Contact your carrier for confirmation.</string>
+    <string name="speed_limit_sim_notification">Data speed limits</string>
+    <string name="speed_limit_sim_summary">"You've reached your plan's data limit. Data speed will slow down. Contact your carrier for details."</string>
+    <string name="speed_limit_sim_title">Data speed is limited</string>
     <string name="sports_news_settings">Sports News</string>
     <string name="srvcc_message">4G voice call is downgraded to 2G/3G voice call due to 4G network is not available.</string>
     <string name="srvcc_video_message">Video call is downgraded to 2G/3G voice call due to 4G network is not available.</string>
+    <string name="start_call_record">Start</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="status_hint_label_incoming_wifi_call">Wi-Fi call from</string>
     <string name="status_hint_label_wifi_call">Wi-Fi call</string>
@@ -2505,7 +2624,6 @@ Next period starts in %2$d days (%3$s)"</string>
     <string name="ussdRunning">USSD code running…</string>
     <string name="ussd_dialog_sep">----------</string>
     <string name="ussdinitiated_title">Initiated USSD session</string>
-    <string name="ut_not_support">UT is not available</string>
     <string name="ut_unavailable_to_set_video_cf_toast">UT is unavailable to set call forwarding for video, please close this page and exit.</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
@@ -2636,6 +2754,7 @@ If you select to prefer mobile networks, they will be used by default to make ph
     <string name="wifi_calling">Wi-Fi calling</string>
     <string name="wifi_calling_settings_key">button_wifi_calling_settings_key</string>
     <string name="wifi_calling_settings_title">Wi-Fi calling</string>
+    <string name="wifi_on">Wi-Fi is connected</string>
     <string name="wificall_switch_summary">Use Wi-Fi to make and receive calls whenever possible</string>
     <string name="wificall_switch_title">Make calls using Wi-Fi</string>
     <string name="wild_prompt_str">Replace wild character with</string>
