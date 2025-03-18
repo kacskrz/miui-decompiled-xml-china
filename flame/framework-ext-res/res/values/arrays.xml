@@ -65,6 +65,7 @@
         <item>com.mi.global.bbs</item>
         <item>com.xiaomi.aiasst.vision</item>
         <item>com.road7.ddtdmxandroid.mi</item>
+        <item>com.android.intentresolver</item>
     </string-array>
     <string-array name="abnormal_small_window_blacklist_for_pad">
         <item>com.xiaomi.vipaccount</item>
@@ -112,6 +113,7 @@
         <item>com.mi.global.bbs</item>
         <item>com.xiaomi.aiasst.vision</item>
         <item>com.road7.ddtdmxandroid.mi</item>
+        <item>com.android.intentresolver</item>
     </string-array>
     <array name="abnormal_small_window_whitelist" />
     <array name="abnormal_small_window_whitelist_for_pad" />
@@ -186,10 +188,10 @@
         <item>com.aura.oobe.vodafone</item>
         <item>com.boundax.koreapreloadappinstaller</item>
         <item>com.dti.telefonica</item>
+        <item>com.google.android.apps.work.clouddpc</item>
     </string-array>
     <array name="allowed_package_operator" />
     <string-array name="allowed_package_unlocked_international">
-        <item>android.mediaprovidertranscode.cts</item>
         <item>android.appenumeration.cts</item>
         <item>android.camera.cts</item>
         <item>android.content.cts</item>
@@ -210,6 +212,7 @@
         <item>android.os.lib.app</item>
         <item>android.permissionpolicy.cts</item>
         <item>android.permission3.cts</item>
+        <item>com.android.cts.rollback</item>
     </string-array>
     <item type="array" name="android_common_nicknames">@android:array/common_nicknames</item>
     <item type="array" name="android_config_longPressVibePattern">@android:array/config_longPressVibePattern</item>
@@ -319,45 +322,81 @@
         <item>gb</item>
         <item>jp</item>
     </string-array>
-    <array name="config_ambientBrighteningLux" />
-    <array name="config_ambientBrighteningThresholds" />
-    <array name="config_ambientDarkeningLux" />
-    <array name="config_ambientDarkeningThresholds" />
-    <array name="config_ambientLuxMaxNitPoints">
-        <item>84</item>
-        <item>84</item>
-        <item>150</item>
-        <item>185</item>
-        <item>307.2</item>
-        <item>691.2</item>
-        <item>1400</item>
-    </array>
-    <array name="config_ambientLuxMaxNitPoints_cbmBrightening">
-        <item>84</item>
-        <item>84</item>
-        <item>150</item>
-        <item>238</item>
-        <item>365.1</item>
-        <item>691.2</item>
-        <item>1400</item>
-    </array>
-    <array name="config_ambientLuxMinNitPoints">
+    <array name="config_ambientBrighteningLux">
         <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>15</item>
+        <item>30</item>
+        <item>600</item>
+        <item>1677.4</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>8500</item>
+    </array>
+    <array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>6.0</item>
+        <item>8.51</item>
+        <item>13.66</item>
+        <item>14.84</item>
+        <item>15.46</item>
+        <item>17.22</item>
+        <item>28.44</item>
+        <item>160</item>
+        <item>992.58</item>
+        <item>3000</item>
+        <item>4038.77</item>
+        <item>5738.77</item>
+        <item>7538.77</item>
+        <item>13038.77</item>
+    </array>
+    <array name="config_ambientDarkeningLux">
         <item>0</item>
-        <item>23</item>
-        <item>26</item>
-        <item>52.8</item>
+        <item>1</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>30</item>
+        <item>199</item>
         <item>200</item>
-        <item>500.1</item>
+        <item>360</item>
+        <item>600</item>
+        <item>1010.47</item>
+        <item>3000</item>
+        <item>20000</item>
     </array>
-    <array name="config_ambientLuxMinNitPoints_cbmBrightening">
+    <array name="config_ambientDarkeningThresholds">
         <item>0</item>
-        <item>0</item>
-        <item>23</item>
-        <item>36</item>
-        <item>69.1</item>
-        <item>147</item>
-        <item>499.9</item>
+        <item>0.32</item>
+        <item>3.53</item>
+        <item>3.8</item>
+        <item>4.1</item>
+        <item>4.45</item>
+        <item>4.82</item>
+        <item>5.2</item>
+        <item>5.58</item>
+        <item>6.05</item>
+        <item>6.9</item>
+        <item>15.83</item>
+        <item>34.31</item>
+        <item>41.39</item>
+        <item>45.34</item>
+        <item>216.99</item>
+        <item>600</item>
+        <item>2052.56</item>
+        <item>10011.96</item>
     </array>
     <array name="config_bcbc_brt_change_node">
         <item>0.048852</item>
@@ -378,13 +417,6 @@
         <item>0.509804</item>
         <item>0.745098</item>
         <item>0.854902</item>
-    </array>
-    <array name="config_bcl_brightness_limit_threshold">
-        <item>300</item>
-        <item>350.0</item>
-        <item>1.0</item>
-        <item>0.7</item>
-        <item>0.95</item>
     </array>
     <array name="config_brighteningNitsLevels" />
     <integer-array name="config_compensateSignalLevelValue">
@@ -584,6 +616,7 @@
     <string-array name="config_screen_wakelock_white_list">
         <item>com.qualcomm.qti.services.systemhelper</item>
         <item>com.tencent.soter.soterserver</item>
+        <item>com.xiaomi.tuiservice</item>
     </string-array>
     <integer-array name="config_second_display_touch_cover_protection_rect">
         <item>0</item>
@@ -618,9 +651,25 @@
         <item>plato</item>
         <item>corot</item>
         <item>aristotle</item>
+        <item>XIG04</item>
         <item>rothko</item>
         <item>degas</item>
+        <item>XIG07</item>
         <item>ruyi</item>
+        <item>haotian</item>
+        <item>dada</item>
+        <item>xuanyuan</item>
+        <item>miro</item>
+        <item>rodin</item>
+        <item>zorn</item>
+        <item>muyu</item>
+        <item>sheng</item>
+        <item>peridot</item>
+        <item>chenfeng</item>
+        <item>goku</item>
+        <item>dijun</item>
+        <item>jinghu</item>
+        <item>bixi</item>
     </string-array>
     <string-array name="config_sysBrightnessFileArray">
         <item>/sys/class/leds/lcd-backlight/brightness</item>
@@ -628,62 +677,55 @@
     </string-array>
     <array name="config_tentDeviceStates" />
     <string-array name="config_tofComponentSupport">
-        <item>com.miui.video,com.miui.video.feature.detail.PadNewLongVideoDetailActivityV2,1,0x0607,0x0601,0,0,1</item>
-        <item>com.miui.video,com.miui.video.feature.detail.NewLongVideoDetailActivityV2,1,0x0607,0x0601,0,0,1</item>
-        <item>com.qiyi.video.pad,org.iqiyi.video.activity.PlayerActivity,1,0x0601,,0,0,1</item>
-        <item>tv.danmaku.bilibilihd,com.bilibili.video.videodetail.VideoDetailsActivity,1,0x0601,,0,0,0</item>
-        <item>tv.danmaku.bilibilihd,com.bilibili.bangumi.ui.page.detail.OGVHDDetailActivity,1,0x0601,,0,0,0</item>
-        <item>com.hunantv.imgo.activity,com.mgtv.ui.videoplay.MGVideoPlayActivity,1,0x8606,,7600100,0,1</item>
-        <item>tv.danmaku.bili,com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity,1,0x0601,,0,0,0</item>
-        <item>tv.danmaku.bili,com.bilibili.video.story.StoryTransparentActivity,1,0x0601,,0,0,0</item>
-        <item>tv.danmaku.bili,tv.danmaku.bili.ui.video.VideoDetailsActivity,1,0x0601,,0,0,0</item>
-        <item>tv.danmaku.bili,com.bilibili.bangumi.ui.page.detail.BangumiDetailActivityV3,1,0x0601,,0,0,0</item>
-        <item>com.qiyi.video,org.iqiyi.video.activity.PlayerActivity,1,0x0601,,0,0,1</item>
-        <item>com.netflix.mediaclient,com.netflix.mediaclient.ui.player.PlayerActivity,1,0x0607,,0,0,1</item>
-        <item>com.ss.android.ugc.aweme,,2,0x1800,,0,0,1</item>
-        <item>com.smile.gifmaker,,2,0x1800,,0,0,1</item>
-        <item>com.kuaishou.nebula,,2,0x1800,,0,0,1</item>
-        <item>com.ss.android.ugc.live,,2,0x1800,,0,0,1</item>
-        <item>com.zhiliaoapp.musically,,2,0x1800,,0,0,1</item>
-        <item>com.zhiliaoapp.musically.go,,2,0x1800,,0,0,1</item>
-        <item>com.kwai.bulldog,,2,0,0x1800,0,0,1</item>
-        <item>com.instagram.android,,2,0x1800,,0,0,1</item>
-        <item>com.google.android.youtube,,2,0x1800,,0,0,1</item>
-        <item>com.facebook.katana,,2,0x1800,,0,0,1</item>
-        <item>in.mohalla.video,,2,0x1800,,0,0,1</item>
-        <item>com.eterno.shortvideos,,2,0x1800,,0,0,1</item>
-        <item>com.eterno.shortvideos.lite,,2,0x1800,,0,0,1</item>
-        <item>com.miui.player,com.tencent.qqmusiclite.activity.MainActivity,3,0x0619,,0,0,1</item>
-        <item>com.miui.player,com.tencent.qqmusiclite.activity.player.MusicPlayerActivity,3,0x0619,,0,0,1</item>
-        <item>com.miui.player,com.miui.player.playerui3.nowplaying.NowPlayingActivity3,3,0x0619,,0,0,1</item>
-        <item>com.miui.player,com.miui.player.playerui.NowPlayingActivity,3,0x0619,,0,0,1</item>
-        <item>com.miui.player,com.miui.player.ui.MusicActivity,3,0x0619,,0,0,1</item>
-        <item>cn.wps.moffice_eng,cn.wps.moffice.writer.multiactivity.Writer1,4,0x0060,,0,0,1</item>
-        <item>cn.wps.moffice_eng,cn.wps.moffice.presentation.multiactivity.Presentation1,4,0x0060,,0,0,1</item>
-        <item>com.microsoft.office.officehub,com.microsoft.office.officemobile.OfficeMobilePPTActivity,4,0x0060,,0,0,1</item>
-        <item>com.microsoft.office.officehub,com.microsoft.office.officemobile.OfficeMobileWordActivity,4,0x0060,,0,0,1</item>
-        <item>com.kmxs.reader,,6,0x31800,,0,0,1</item>
-        <item>com.duokan.reader,,6,0x31800,,0,0,1</item>
-        <item>com.qidian.QDReader,,6,0x31800,,0,0,1</item>
-        <item>com.dragon.read,,6,0x31800,,0,0,1</item>
-        <item>com.tencent.weread,,6,0x31800,,0,0,1</item>
-        <item>com.amazon.kindle,,6,0x31800,,0,0,1</item>
-        <item>wp.wattpad,,6,0x31800,,0,0,1</item>
+        <item>com.miui.video,com.miui.video.feature.detail.PadNewLongVideoDetailActivityV2,1,0x0607,0x0601,0,0,1,1,4,8</item>
+        <item>com.miui.video,com.miui.video.feature.detail.NewLongVideoDetailActivityV2,1,0x0607,0x0601,0,0,1,1,4,8</item>
+        <item>com.qiyi.video.pad,org.iqiyi.video.activity.PlayerActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>tv.danmaku.bilibilihd,com.bilibili.video.videodetail.VideoDetailsActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>tv.danmaku.bilibilihd,com.bilibili.bangumi.ui.page.detail.OGVHDDetailActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>com.hunantv.imgo.activity,com.mgtv.ui.videoplay.MGVideoPlayActivity,1,0x8606,,7600100,0,1,1,4,8</item>
+        <item>tv.danmaku.bili,com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>tv.danmaku.bili,com.bilibili.video.story.StoryTransparentActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>tv.danmaku.bili,tv.danmaku.bili.ui.video.VideoDetailsActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>tv.danmaku.bili,com.bilibili.bangumi.ui.page.detail.BangumiDetailActivityV3,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>com.qiyi.video,org.iqiyi.video.activity.PlayerActivity,1,0x0601,,0,0,1,-1,4,8</item>
+        <item>com.netflix.mediaclient,com.netflix.mediaclient.ui.player.PlayerActivity,1,0x0607,,0,0,1,1,4,8</item>
+        <item>com.ss.android.ugc.aweme,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.smile.gifmaker,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.kuaishou.nebula,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.ss.android.ugc.live,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.zhiliaoapp.musically,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.zhiliaoapp.musically.go,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.ss.android.ugc.trill,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.kwai.bulldog,,2,0,0x1800,0,0,1,-1,2,-1</item>
+        <item>com.instagram.android,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.google.android.youtube,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.facebook.katana,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>in.mohalla.video,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.eterno.shortvideos,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.eterno.shortvideos.lite,,2,0x1800,,0,0,1,-1,2,-1</item>
+        <item>com.miui.player,com.tencent.qqmusiclite.activity.MainActivity,3,0x0619,,0,0,1,0,3,7</item>
+        <item>com.miui.player,com.tencent.qqmusiclite.activity.player.MusicPlayerActivity,3,0x0619,,0,0,1,0,3,7</item>
+        <item>com.miui.player,com.miui.player.playerui3.nowplaying.NowPlayingActivity3,3,0x0619,,0,0,1,0,3,7</item>
+        <item>com.miui.player,com.miui.player.playerui.NowPlayingActivity,3,0x0619,,0,0,1,0,3,7</item>
+        <item>com.miui.player,com.miui.player.ui.MusicActivity,3,0x0619,,0,0,1,0,3,7</item>
+        <item>com.miui.player,com.miui.player.playerui3.nowplaying.NowPlayingActivity3,3,0x0619,,0,0,1,0,3,7</item>
+        <item>cn.wps.moffice_eng,cn.wps.moffice.writer.multiactivity.Writer1,4,0x0060,,0,0,1,-1,5,-1</item>
+        <item>cn.wps.moffice_eng,cn.wps.moffice.presentation.multiactivity.Presentation1,4,0x0060,,0,0,1,-1,5,-1</item>
+        <item>com.microsoft.office.officehub,com.microsoft.office.officemobile.OfficeMobilePPTActivity,4,0x0060,,0,0,1,-1,5,-1</item>
+        <item>com.microsoft.office.officehub,com.microsoft.office.officemobile.OfficeMobileWordActivity,4,0x0060,,0,0,1,-1,5,-1</item>
+        <item>com.kmxs.reader,,6,0x31800,,0,0,1,6,6,-1</item>
+        <item>com.duokan.reader,,6,0x31800,,0,0,1,6,6,-1</item>
+        <item>com.qidian.QDReader,,6,0x31800,,0,0,1,6,6,-1</item>
+        <item>com.dragon.read,,6,0x31800,,0,0,1,6,6,-1</item>
+        <item>com.tencent.weread,,6,0x31800,,0,0,1,6,6,-1</item>
+        <item>com.amazon.kindle,,6,0x31800,,0,0,1,6,6,-1</item>
+        <item>wp.wattpad,,6,0x31800,,0,0,1,6,6,-1</item>
     </string-array>
     <integer-array name="config_touch_cover_protection_rect">
         <item>0</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
-    </integer-array>
-    <integer-array name="config_userAmbientLux">
-        <item>0</item>
-        <item>2</item>
-        <item>30</item>
-        <item>100</item>
-        <item>1100</item>
-        <item>3000</item>
-        <item>20000</item>
     </integer-array>
     <array name="config_virtualKeyUpPattern" />
     <array name="continuity_api_access_permissions" />
@@ -695,6 +737,7 @@
         <item>com.miui.securitycore</item>
         <item>com.tencent.qqlive</item>
         <item>com.youdao.dict</item>
+        <item>com.xiaomi.mirror</item>
     </string-array>
     <string-array name="desktop_freeform_white_list">
         <item>com.android.settings</item>
@@ -712,17 +755,11 @@
         <item>com.miui.contentcatcher</item>
         <item>com.miui.securitycore</item>
     </string-array>
-    <string-array name="detect_camera">
-        <item>EEDA10B26FB0D0F11820212B93865953126014D76EAEE7D2AFD37092BD1E8878</item>
-    </string-array>
     <string-array name="device_on_platform_7450">
         <item>ziyi</item>
     </string-array>
     <string-array name="device_on_platform_7475">
         <item>marble</item>
-    </string-array>
-    <string-array name="device_on_platform_7635">
-        <item>amethyst</item>
     </string-array>
     <string-array name="device_on_platform_8550">
         <item>nuwa</item>
@@ -743,6 +780,7 @@
         <item>aurora</item>
         <item>ruyi</item>
         <item>goku</item>
+        <item>zorn</item>
     </string-array>
     <string-array name="device_on_platform_x250">
         <item>apollo</item>
@@ -788,6 +826,9 @@
         <item>vermeer</item>
         <item>ruyi</item>
         <item>aurora</item>
+        <item>miro</item>
+        <item>zorn</item>
+        <item>bixi</item>
     </string-array>
     <string-array name="devices_support_multi_freeform">
         <item>zizhan</item>
@@ -4931,7 +4972,6 @@
         <item>com.lbe.security.miui</item>
         <item>com.miui.cleanmaster</item>
         <item>com.miui.newhome</item>
-        <item>com.miui.voiceassist</item>
         <item>com.android.phone</item>
         <item>com.miui.yellowpage</item>
         <item>com.android.updater</item>
@@ -5043,6 +5083,7 @@
         <item>com.lemon.lv</item>
         <item>com.xiaomi.aiasst.vision</item>
         <item>com.road7.ddtdmxandroid.mi</item>
+        <item>com.android.intentresolver</item>
     </string-array>
     <string-array name="freeform_black_list_for_pad">
         <item>com.miui.securitycenter</item>
@@ -5059,7 +5100,6 @@
         <item>com.lbe.security.miui</item>
         <item>com.miui.cleanmaster</item>
         <item>com.miui.newhome</item>
-        <item>com.miui.voiceassist</item>
         <item>com.android.phone</item>
         <item>com.miui.yellowpage</item>
         <item>com.android.updater</item>
@@ -5173,6 +5213,7 @@
         <item>com.taobao.taobao</item>
         <item>com.xiaomi.aiasst.vision</item>
         <item>com.road7.ddtdmxandroid.mi</item>
+        <item>com.android.intentresolver</item>
     </string-array>
     <string-array name="freeform_caption_insets_height_to_zero_list">
         <item>com.ss.android.article.news</item>
@@ -5283,6 +5324,7 @@
         <item>com.tencent.qqlive/.ona.photo.activity.MediaListActivity,nra</item>
         <item>com.tencent.qqlive/.ona.browser.HollywoodH5Activity,nra</item>
         <item>com.eg.android.AlipayGphone/com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main,b</item>
+        <item>com.eg.android.AlipayGphone/com.alipay.mobile.beehive.capture.activity.CaptureActivity,b</item>
         <item>bubei.tingshu/com.google.zxing.client.android.CaptureActivity,b</item>
         <item>com.tencent.karaoke/.module.certificate.cardshoot.CertificateCardShootActivity,b</item>
         <item>com.ss.android.ugc.aweme.lite/com.ss.android.ugc.aweme.qrcode.view.QRCodeScanActivity,b</item>
@@ -5395,7 +5437,7 @@
         <item>com.tencent.karaoke/.module.ktvroom.ui.KtvRoomActivityNew,de:nra</item>
         <item>com.tencent.karaoke/.module.main.ui.MainTabActivity,de:nra</item>
         <item>com.cmbchina.ccd.pluto.cmbActivity/com.cmbchina.ccd.pluto.tagcode.capture.activity.cmbB5CJQJA,b</item>
-        <item>com.autonavi.minimap/com.autonavi.map.activity.NewMapActivity,b</item>
+        <item>com.autonavi.minimap/com.autonavi.map.activity.NewMapActivity,nra</item>
         <item>com.lemon.lv/com.vega.main.MainActivity,nra</item>
         <item>com.tencent.mm/.plugin.finder.ui.FinderHomeAffinityUI,nra</item>
         <item>com.tencent.mm/.plugin.finder.ui.FinderShareFeedRelUI,nrs</item>
@@ -5405,6 +5447,25 @@
         <item>com.ss.android.homed/.pm_player.videodetail.PlayActivity,r</item>
         <item>com.alicloud.databox/.biz.scan.CustomizeCaptureActivity,cr:rcr:nr</item>
         <item>com.netease.mobimail/.module.qrcode.ScanQRCodeActivity,b</item>
+        <item>com.sinovatech.unicom.ui/com.megvii.lv5.sdk.detect.actionflash.ActionFlashLivenessActivity,b</item>
+        <item>com.ss.android.ugc.aweme.lite/com.bytedance.mira.stub.p0.StubSingleTaskActivity1,rcr:cr</item>
+        <item>com.chinatelecom.bestpayclient/com.bestpay.android.facesdk.ks.BestKSLivenessActivity,b</item>
+        <item>com.app.shanghai.metro/.ui.scan.CustomScanActivity,cr</item>
+        <item>com.koudai.weidian.buyer/com.vdian.android.wdb.qrcode.activity.WdbQrCodeActivity,b</item>
+        <item>com.android.corpormbank/com.android.bankabc.components.customscan.CustomScanActivity,cr:rcr</item>
+        <item>com.android.clock.sd/.qrcode.QrCodeActivity,b</item>
+        <item>com.xt.retouch/.camera.CameraActivity,cr</item>
+        <item>com.fenqile.fenqile/com.fenqile.ui.scan.ScanActivity,b</item>
+        <item>com.rytong.airchina/.scan.activity.ScanActivity,b</item>
+        <item>com.sdu.didi.psnger/com.didi.sdk.scan.act.QrCodeScanActivity,b</item>
+        <item>com.iflytek.inputmethod/.ocr.view.OcrContainerActivity,rcr:cr</item>
+        <item>com.ss.android.ugc.aweme/.shortvideo.ui.VideoRecordNewActivity,b</item>
+        <item>com.icbc/.bizcomponent.base.qrcode.ui.QRCodeScanActivity,b</item>
+        <item>com.lucky.luckyclient/.home.scan.ScanActivity,b</item>
+        <item>com.sankuai.meituan/com.meituan.android.scan.NewArActivity,cr</item>
+        <item>com.sinovatech.unicom.ui/com.sinovatech.unicom.separatemodule.capture.CapuActivity2,cr</item>
+        <item>com.cmbc.cc.mbank/com.unionpay.scan.activity.qrpay.UPActivityScan,cr</item>
+        <item>com.lixiangdong.textscanner/com.netpower.scanner.module.camera.ui.CameraActivity,b</item>
     </string-array>
     <string-array name="fullscreen_landscape_list">
         <item>com.tencent.mm,de:nrs:nra</item>
@@ -5414,9 +5475,9 @@
         <item>com.taobao.mobile.dipei,de</item>
         <item>com.tencent.tmgp.sgame,b</item>
         <item>com.tencent.tmgp.pubgmhd,b</item>
-        <item>com.happyelements.AndroidAnimal</item>
+        <item>com.happyelements.AndroidAnimal,b</item>
         <item>com.qqgame.hlddz,b</item>
-        <item>cn.jj</item>
+        <item>cn.jj,b</item>
         <item>com.tencent.tmgp.cod,b</item>
         <item>com.popcap.pvz2cthdxm,b</item>
         <item>com.qqgame.happymj,b</item>
@@ -5510,12 +5571,12 @@
         <item>cn.xuexi.android,cr:rcr:de:nra:nr:cra</item>
         <item>com.tencent.weishi,de:nra:uc:cr:rcr</item>
         <item>com.shizhuang.duapp,cr:rcr:nra:uc:de</item>
-        <item>com.duowan.kiwi,nra:uc:de</item>
+        <item>com.duowan.kiwi,t:nra:uc:de</item>
         <item>air.tv.douyu.android,nra:uc:cr:rcr:de</item>
-        <item>com.baidu.searchbox.lite,cr:rcr:uc:nra:de</item>
+        <item>com.baidu.searchbox.lite,t:uc:nra:de</item>
         <item>com.tencent.qqpimsecure,de</item>
         <item>ctrip.android.view,cr:rcr:de:nra:uc</item>
-        <item>com.dianping.v1,de</item>
+        <item>com.dianping.v1,de:b</item>
         <item>com.baidu.tieba,uc:nra:de</item>
         <item>cn.gov.tax.its,de:nra</item>
         <item>com.yitong.mbank.psbc,cr:rcr:de</item>
@@ -5528,7 +5589,7 @@
         <item>com.alibaba.wireless,de</item>
         <item>com.Qunar,de</item>
         <item>com.ct.client,uc:de:nra</item>
-        <item>com.ss.android.auto,cr:rcr:de:uc</item>
+        <item>com.ss.android.auto,t:cr:rcr:de:uc</item>
         <item>com.tencent.gamehelper.smoba,nr:de</item>
         <item>com.jingyao.easybike,de:nr</item>
         <item>com.hicorenational.antifraud,cr:rcr:de</item>
@@ -5537,24 +5598,24 @@
         <item>com.lianjia.beike,cr:rcr:de:ad</item>
         <item>cn.soulapp.android,cr:rcr:de:nra:ad</item>
         <item>com.jd.jdlite,cr:rcr:de:ad</item>
-        <item>com.gorgeous.lite</item>
+        <item>com.gorgeous.lite,b</item>
         <item>com.cmbchina.ccd.pluto.cmbActivity,de</item>
         <item>com.xs.fm,de</item>
-        <item>com.tmall.wireless,cr:rcr:de:nra:nr</item>
-        <item>com.sina.news,de</item>
+        <item>com.tmall.wireless,t:cr:rcr:de:nra:nr</item>
+        <item>com.sina.news,b:de</item>
         <item>com.chaoxing.mobile,de</item>
-        <item>com.meitu.meiyancamera</item>
+        <item>com.meitu.meiyancamera,b</item>
         <item>com.moji.mjweather,de</item>
         <item>com.cubic.autohome,de:b</item>
         <item>com.jzzs.ParentsHelper,de</item>
         <item>cn.kuwo.player,cr:rcr:de:nra:uc</item>
         <item>com.tencent.wemeet.app,nra:de</item>
-        <item>com.le123.ysdq,de</item>
+        <item>com.le123.ysdq,t:de</item>
         <item>com.sgcc.wsgw.cn,de</item>
         <item>com.xt.retouch,de</item>
         <item>com.jd.pingou,nra:de</item>
-        <item>com.babycloud.hanju,nra:uc:de</item>
-        <item>com.intsig.camscanner,de:rcr</item>
+        <item>com.babycloud.hanju,nra:uc:t:de</item>
+        <item>com.intsig.camscanner,de:rcr:cr</item>
         <item>com.handsgo.jiakao.android,nr:nra:de:uc</item>
         <item>com.pingan.paces.ccms,cr:rcr:de</item>
         <item>com.bankcomm.Bankcomm,de</item>
@@ -5581,16 +5642,16 @@
         <item>com.cctv.yangshipin.app.androidp,nra:uc:de</item>
         <item>com.ygkj.chelaile.standard,de</item>
         <item>com.videogo,cr:rcr:de:uc:nra</item>
-        <item>com.tencent.zebra</item>
-        <item>com.campmobile.snowcamera</item>
+        <item>com.tencent.zebra,b</item>
+        <item>com.campmobile.snowcamera,b</item>
         <item>cn.xiaochuankeji.tieba,cr:rcr:de</item>
         <item>com.eastmoney.android.berlin,de</item>
         <item>com.p1.mobile.putong,de:cr:rcr</item>
         <item>com.didapinche.booking,de:nra</item>
-        <item>com.sankuai.youxuan,de</item>
+        <item>com.sankuai.youxuan,t:de</item>
         <item>com.tencent.qqpim,de</item>
         <item>com.chinatelecom.bestpayclient,cr:rcr:de</item>
-        <item>com.hupu.shihuo,de</item>
+        <item>com.hupu.shihuo,t:de</item>
         <item>com.yipiao,nra:de</item>
         <item>cn.TuHu.android,nra:de:cr</item>
         <item>com.qq.reader,cr:rcr:de</item>
@@ -5599,11 +5660,11 @@
         <item>com.douban.frodo,de</item>
         <item>com.kwai.videoeditor,de:nra:uc</item>
         <item>com.qiyi.video.lite,cr:rcr:de:nra:uc</item>
-        <item>com.lemon.faceu</item>
+        <item>com.lemon.faceu,b</item>
         <item>tv.pps.mobile,de</item>
         <item>com.jsmcc,cr:rcr:de</item>
         <item>cmccwm.mobilemusic,cr:rcr:de</item>
-        <item>com.yek.android.kfc.activitys,de</item>
+        <item>com.yek.android.kfc.activitys,b:de</item>
         <item>com.pingan.lifeinsurance,nr:cr:de</item>
         <item>com.tencent.token,de</item>
         <item>com.duowan.mobile,de</item>
@@ -5614,19 +5675,19 @@
         <item>com.f100.android,de:nra</item>
         <item>com.glodon.drawingexplorer,de</item>
         <item>com.baidu.baidutranslate,cr:nr:de</item>
-        <item>com.wm.dmall,cr:rcr:de</item>
+        <item>com.wm.dmall,t:cr:rcr:de</item>
         <item>com.citiccard.mobilebank,cr:rcr:de</item>
         <item>com.cmcc.cmvideo,cr:rcr:nrs:de:nra:uc</item>
         <item>com.wudaokou.hippo,de:nra:uc:nr</item>
-        <item>com.taobao.etao,cr:rcr:de</item>
-        <item>com.bilibili.comic,nra:de</item>
+        <item>com.taobao.etao,t:cr:rcr:de</item>
+        <item>com.bilibili.comic,nra:t:de</item>
         <item>com.lalamove.huolala.client,cr:rcr:de</item>
         <item>com.mcdonalds.gma.cn,t:cr:rcr:de</item>
-        <item>com.fenbi.android.leo,cr:rcr:de</item>
-        <item>com.ecitic.bank.mobile,de</item>
+        <item>com.fenbi.android.leo,rcr:de</item>
+        <item>com.ecitic.bank.mobile,t:de</item>
         <item>cn.hsa.app,cr:rcr:de</item>
         <item>com.homelink.android,nr:t:de</item>
-        <item>com.czb.chezhubang,de:nra</item>
+        <item>com.czb.chezhubang,t:de:nra</item>
         <item>com.benqu.wuta,de:cr:rcr:ad</item>
         <item>com.youdao.translator,cr:rcr:de</item>
         <item>com.jingdong.pdj,de</item>
@@ -5637,44 +5698,44 @@
         <item>com.yueme.itv,cr:de</item>
         <item>com.cs_credit_bank,de</item>
         <item>com.example.businesshall,de</item>
-        <item>com.kuaiyin.player,de</item>
+        <item>com.kuaiyin.player,t:de</item>
         <item>cn.com.spdb.mobilebank.per,de:uc:nra</item>
         <item>com.huaxiaozhu.rider,de</item>
         <item>com.netease.newsreader.activity,cr:rcr:de</item>
         <item>com.dw.btime,cr:rcr:de</item>
-        <item>com.sdu.didi.gsui,de</item>
+        <item>com.sdu.didi.gsui,t:de</item>
         <item>com.fenqile.fenqile,de:uc</item>
-        <item>com.black.unique,de</item>
+        <item>com.black.unique,t:de</item>
         <item>com.ximalaya.ting.lite,de</item>
         <item>com.netease.mobimail,cr:rcr:de</item>
         <item>com.chinalife.ebz,de:cr:rcr</item>
         <item>com.baidu.searchbox.tomas,nra:cr:rcr:de</item>
         <item>com.kugou.android.ringtone,de</item>
         <item>com.yaya.zone,de</item>
-        <item>com.xhey.xcamera</item>
+        <item>com.xhey.xcamera,b</item>
         <item>com.qq.ac.android,de</item>
         <item>com.dangdang.buy2,nra:de:cr</item>
         <item>com.sf.activity,de</item>
         <item>com.ifeng.news2,nra:de</item>
         <item>com.huawei.health,nra:uc:de</item>
         <item>com.yuncheapp.android.pearl,t:de</item>
-        <item>com.eastmoney.android.fund</item>
+        <item>com.eastmoney.android.fund,b</item>
         <item>com.tencent.tgp,cr:rcr:de</item>
-        <item>com.ganji.android.haoche_c</item>
+        <item>com.ganji.android.haoche_c,b</item>
         <item>com.app.shanghai.metro,de</item>
         <item>com.max.xiaoheihe,de</item>
         <item>com.baidu.wenku,de:nra</item>
         <item>cn.com.cmbc.newmbank,cr:de</item>
         <item>cn.etouch.ecalendar,de</item>
         <item>com.lphtsccft,de</item>
-        <item>com.netease.mail,de</item>
+        <item>com.netease.mail,cr:rcr:de</item>
         <item>com.tencent.qqsports,cr:de</item>
         <item>com.cmri.universalapp,cr:rcr:de</item>
         <item>com.huodao.hdphone,nr:de</item>
         <item>com.hupu.games,de</item>
-        <item>com.qzone,nra:de</item>
+        <item>com.qzone,nra:t:de</item>
         <item>com.hanweb.android.zhejiang.activity,de</item>
-        <item>com.jym.mall,de</item>
+        <item>com.jym.mall,t:de</item>
         <item>com.ebank.creditcard,nr:de</item>
         <item>com.cebbank.mobile.cemb,nr:uc:cr:rcr:de</item>
         <item>com.smzdm.client.android,cr:rcr:nr:de</item>
@@ -5689,26 +5750,26 @@
         <item>com.iflytek.oshall.ahzwfw,cr:rcr:de</item>
         <item>bubei.tingshu,de</item>
         <item>com.sohu.newsclient,uc:nra:de</item>
-        <item>com.tongcheng.android,de</item>
-        <item>enfc.metro</item>
+        <item>com.tongcheng.android,t:de</item>
+        <item>enfc.metro,b</item>
         <item>com.imibaby.client,de</item>
-        <item>com.yitong.zjrc.mfs.android</item>
+        <item>com.yitong.zjrc.mfs.android,b</item>
         <item>com.kaola,cr:rcr:de</item>
         <item>com.spdbccc.app,de</item>
-        <item>com.wuba.town.client,de</item>
+        <item>com.wuba.town.client,t:de</item>
         <item>com.antutu.ABenchMark,de</item>
         <item>com.tencent.tgclub,de</item>
         <item>com.vivo.easyshare,de:nr</item>
-        <item>com.t3go.passenger,cr:rcr:de:nr</item>
-        <item>com.jdd.motorfans,de</item>
+        <item>com.t3go.passenger,t:cr:rcr:de:nr</item>
+        <item>com.jdd.motorfans,t:de</item>
         <item>com.baidu.duer.superapp,cr:rcr:de</item>
-        <item>com.seebaby,cr:rcr:de</item>
+        <item>com.seebaby,t:cr:rcr:de</item>
         <item>cn.xiaochuankeji.zuiyouLite,cr:rcr:de:nra:uc</item>
-        <item>com.baidu.youavideo,de</item>
+        <item>com.baidu.youavideo,t:de:cr:rcr</item>
         <item>com.qq.qcloud,cr:rcr:de</item>
-        <item>com.midea.ai.appliances,de</item>
+        <item>com.midea.ai.appliances,t:de</item>
         <item>com.pupumall.customer,de</item>
-        <item>com.chaozh.iReaderFree,de:nra:uc</item>
+        <item>com.chaozh.iReaderFree,de:nra:uc:cr:rcr</item>
         <item>com.lanjingren.ivwen,de</item>
         <item>com.microsoft.office.word,de</item>
         <item>com.mymoney,cr:rcr:de</item>
@@ -5717,9 +5778,9 @@
         <item>cn.com.chsi.chsiapp,de</item>
         <item>com.koudai.weidian.buyer,cr:rcr:de</item>
         <item>com.qihoo.loan,de</item>
-        <item>com.qihoo.browser,de:nra:uc</item>
-        <item>com.yoosee,de</item>
-        <item>com.cgbchina.xpt</item>
+        <item>com.qihoo.browser,t:de:nra:uc</item>
+        <item>com.yoosee,t:de</item>
+        <item>com.cgbchina.xpt,b</item>
         <item>com.tencent.transfer,de</item>
         <item>android.zhibo8,nra:de:uc</item>
         <item>org.mozilla.firefox,de</item>
@@ -5728,10 +5789,10 @@
         <item>com.ss.android.homed,de</item>
         <item>com.cmbc.cc.mbank,de:uc</item>
         <item>com.htinns,de</item>
-        <item>cn.yonghui.hyd,cr:rcr:de</item>
+        <item>cn.yonghui.hyd,t:cr:rcr:de</item>
         <item>com.youloft.calendar,de</item>
         <item>com.lietou.mishu,cr:rcr:de</item>
-        <item>cn.caocaokeji.user,de:nra:nr</item>
+        <item>cn.caocaokeji.user,t:de:nra:nr</item>
         <item>com.alicloud.databox,cr:rcr:de:nr</item>
         <item>com.seetong.app.seetong,cr:rcr:de</item>
         <item>com.duxiaoman.umoney,nra:de:cr</item>
@@ -5752,43 +5813,43 @@
         <item>org.xinkb.blackboard.android,de</item>
         <item>com.sankuai.movie,de:uc:nra</item>
         <item>com.changba,de</item>
-        <item>com.huawei.smarthome</item>
-        <item>com.sohu.sohuvideo,cr:rcr:de</item>
+        <item>com.huawei.smarthome,b</item>
+        <item>com.sohu.sohuvideo,t:cr:rcr:de</item>
         <item>com.soft.blued,de</item>
         <item>com.gf.client,de:nra:nr</item>
         <item>cn.vcinema.cinema,de:nra:uc</item>
-        <item>com.gtgj.view,nr:cr:rcr:de</item>
+        <item>com.gtgj.view,nr:t:cr:rcr:de</item>
         <item>com.mfw.roadbook,cr:rcr:uc:de</item>
         <item>com.guotai.dazhihui,nra:uc:de:cr</item>
         <item>com.android.dazhihui,de:cr:rcr</item>
         <item>com.shineyue.sjgjj,de</item>
-        <item>com.ppdai.loan</item>
+        <item>com.ppdai.loan,b</item>
         <item>llbt.ccb.lnga,de:nr</item>
         <item>com.codoon.gps,nr:de</item>
         <item>com.sh.cm.shydhn,de</item>
         <item>com.dongqiudi.news,cr:rcr:de:nra:uc</item>
         <item>com.zxscnew,de</item>
         <item>mobi.w3studio.apps.android.shsmy.phone,cr:rcr:de</item>
-        <item>com.systoon.beijingtoon</item>
+        <item>com.systoon.beijingtoon,b</item>
         <item>com.bankofbeijing.mobilebanking,cr:rcr:de</item>
-        <item>com.tplink.ipc</item>
-        <item>com.netease.yanxuan</item>
-        <item>com.starbucks.cn,de:nra</item>
+        <item>com.tplink.ipc,b</item>
+        <item>com.netease.yanxuan,b</item>
+        <item>com.starbucks.cn,t:de:nra</item>
         <item>com.icbc.elife,t:de:cr</item>
         <item>com.haier.uhome.uplus,cr:rcr:de</item>
         <item>cn.jsb.china,nr:cr:rcr:de</item>
-        <item>com.mm.android.lc,de</item>
-        <item>com.taou.maimai,nra:de:nr</item>
+        <item>com.mm.android.lc,b:de</item>
+        <item>com.taou.maimai,t:nra:de:nr:cr</item>
         <item>com.hxb.mobile.client,cr:rcr:de</item>
         <item>com.youdao.note,nra:de</item>
         <item>com.dewmobile.kuaiya,nr:nra:cr:rcr:de</item>
         <item>me.ele.napos,de</item>
         <item>com.android.haitong,nra:cr:rcr:de:uc</item>
         <item>cn.com.sina.finance,nra:de</item>
-        <item>com.dianshijia.tvlive</item>
+        <item>com.dianshijia.tvlive,b</item>
         <item>com.coolapk.market,de</item>
         <item>com.cmcc.hebao,de</item>
-        <item>com.ss.android.lark,de</item>
+        <item>com.ss.android.lark,b:de</item>
         <item>com.galaxy.stock,de:nra:uc</item>
         <item>com.msxf.ayh,de</item>
         <item>com.duxiaoman.wallet,nra:cr:de</item>
@@ -5806,7 +5867,7 @@
         <item>com.baidu.carlife,de</item>
         <item>com.ddsy.songyao,cr:rcr:de</item>
         <item>com.microsoft.emmx,de</item>
-        <item>com.shuhekeji,de</item>
+        <item>com.shuhekeji,t:de</item>
         <item>vz.com,nra:de</item>
         <item>cn.cj.pe,cr:rcr:de</item>
         <item>cn.damai,cr:rcr:de:nra</item>
@@ -5816,19 +5877,19 @@
         <item>com.sdhs.easy.high.road,cr:rcr:de</item>
         <item>com.wochacha,nr:de</item>
         <item>com.szzc,de:uc</item>
-        <item>gov.zwfw.samr.djzc</item>
+        <item>gov.zwfw.samr.djzc,b</item>
         <item>cn.ishansong,de</item>
         <item>com.sankuai.meituan.merchant,nr:cr:de</item>
         <item>com.nbbank,cr:rcr:de</item>
         <item>com.netease.cbg,de</item>
-        <item>com.mybank.android.phone</item>
+        <item>com.mybank.android.phone,b</item>
         <item>com.forms,nr:cr:de</item>
         <item>zhongxinjiantou.szkingdom.android.newphone,cr:rcr:de:nra:uc:nr</item>
         <item>com.secoo,de</item>
         <item>cn.samsclub.app,nr:nra:de</item>
         <item>com.soufun.app,cr:rcr:de</item>
         <item>com.hp.printercontrol,de</item>
-        <item>com.HuaXiaBank.HuaCard,nra:nr:de</item>
+        <item>com.HuaXiaBank.HuaCard,t:nra:nr:de</item>
         <item>com.zdwh.wwdz,de:nra</item>
         <item>com.wondersgroup.hs.healthcloud.patient,de:nra:uc</item>
         <item>com.tplink.cloudrouter,de</item>
@@ -5843,39 +5904,39 @@
         <item>com.biyao.fu,de</item>
         <item>com.yumc.phsuperapp,cr:rcr:de</item>
         <item>cn.amazon.mShop.android,de</item>
-        <item>com.microsoft.office.outlook,de</item>
+        <item>com.microsoft.office.outlook,t:de</item>
         <item>com.wandafilm.app,b:de</item>
         <item>com.unnoo.quan,de:nra:nr</item>
         <item>com.tvbc.maiduidui,t:nra:uc:de</item>
-        <item>com.rytong.ceair,cr:rcr:de:nr</item>
-        <item>com.aibang.bjtraffic,de</item>
+        <item>com.rytong.ceair,t:cr:rcr:de:nr</item>
+        <item>com.aibang.bjtraffic,b:de</item>
         <item>com.calendar2345,de</item>
-        <item>com.inspur.icity.neimenggu,cr:de</item>
-        <item>com.icbc.wapc,de</item>
+        <item>com.inspur.icity.neimenggu,nra:de</item>
+        <item>com.icbc.wapc,b:de</item>
         <item>com.vanke.activity,nr:de</item>
         <item>com.ehai,de</item>
         <item>com.paem,cr:rcr:de</item>
         <item>com.byd.aeri.caranywhere,de</item>
         <item>com.tencent.submarine,cr:rcr:uc:de</item>
         <item>com.jovetech.CloudSee.temp,b</item>
-        <item>com.eco.global.app</item>
+        <item>com.eco.global.app,b</item>
         <item>com.tencent.phoenix,de</item>
         <item>com.shanghaionstar,cr:rcr:de</item>
         <item>com.sgcc.evs.echarge,cr:rcr:de</item>
-        <item>com.uroad.piaogen,de</item>
+        <item>com.uroad.piaogen,t:de</item>
         <item>com.lanjinger.choiassociatedpress,de</item>
         <item>com.weipaitang.wpt,de</item>
         <item>com.korean.tv,nrs:nra:de</item>
         <item>com.slkj.paotui.customer,de</item>
         <item>com.rytong.airchina,cr:rcr:de</item>
-        <item>com.flightmanager.view,cr:rcr:de</item>
-        <item>com.inspur.icity.tianjin,de</item>
+        <item>com.flightmanager.view,t:cr:rcr:de</item>
+        <item>com.inspur.icity.tianjin,t:de</item>
         <item>com.ccb.companybank,cr:rcr:nra:de</item>
         <item>com.car300.activity,de</item>
         <item>com.boc.bocsoft.phone.enterprise,cr:rcr:de</item>
-        <item>cn.ninebot.ninebot</item>
-        <item>com.dm.metro</item>
-        <item>com.android.corpormbank,de</item>
+        <item>cn.ninebot.ninebot,b</item>
+        <item>com.dm.metro,b</item>
+        <item>com.android.corpormbank,t:de</item>
         <item>com.kugou.viper,de</item>
         <item>com.lixiangdong.textscanner,cr:rcr:de</item>
         <item>com.autohome.usedcar,cr:rcr:de</item>
@@ -5885,8 +5946,8 @@
         <item>com.wenhua.bamboo,de</item>
         <item>com.shoujiduoduo.wallpaper,nr:de</item>
         <item>com.intsig.BizCardReader,cr:de</item>
-        <item>com.qdtevc.teld.app,de</item>
-        <item>cn.edaijia.android.client,de</item>
+        <item>com.qdtevc.teld.app,b:de</item>
+        <item>cn.edaijia.android.client,t:de</item>
         <item>com.zwang.clouds,de</item>
         <item>com.bjgas.shop,de</item>
         <item>com.ccb.leye,cr:rcr:de</item>
@@ -5897,7 +5958,7 @@
         <item>de.bmw.connected.mobile20.cn,nra:de:cr</item>
         <item>com.xfplay.play,de</item>
         <item>com.softin.copydata,de</item>
-        <item>com.niu.cloud,cr:de:nr</item>
+        <item>com.niu.cloud,t:cr:de:nr</item>
         <item>com.teslamotors.tesla,de:nra</item>
         <item>com.huawei.wear.guard,de</item>
         <item>com.xiaopeng.mycarinfo,nra:de:nr</item>
@@ -5909,7 +5970,7 @@
         <item>yuanqi.tribe,de</item>
         <item>pro.huobi,de</item>
         <item>tv.danmaku.bilibilihd,b:de</item>
-        <item>cn.com.hkgt.gasapp,cr:rcr:de</item>
+        <item>cn.com.hkgt.gasapp,t:cr:rcr:de</item>
         <item>com.okinc.okex,cr:rcr:de</item>
         <item>tv.hanju.lite,uc:nra:de</item>
         <item>com.chehejia.oc.m01,de</item>
@@ -5924,157 +5985,8 @@
         <item>com.zhongdihang.szresp,de</item>
         <item>com.byd.aeri.caranywhere,de:nr</item>
         <item>com.xyhj.hanju,nra:de:uc</item>
-        <item>com.huawei.hwid</item>
-        <item>com.qihoo.appstore</item>
-        <item>com.chaozh.iReader.dj</item>
-        <item>com.luojilab.player</item>
-        <item>com.qihoo360.mobilesafe</item>
-        <item>com.bytedance.ep.android</item>
-        <item>com.icbc.elife</item>
-        <item>com.meta.box</item>
-        <item>com.baidu.xin.aiqicha</item>
-        <item>com.hoperun.intelligenceportal</item>
-        <item>com.wuba.bangjob</item>
-        <item>com.yueyou.adreader</item>
-        <item>com.xiaoying.cardloan</item>
-        <item>com.kuaikan.comic</item>
-        <item>com.ydtx.camera</item>
-        <item>com.xiwei.logistics.consignor</item>
-        <item>com.sinyee.babybus.recommendapp</item>
-        <item>com.zaxd.loan</item>
-        <item>com.nx.nxapp</item>
-        <item>com.service.android.gov.cn</item>
-        <item>com.che300.price</item>
-        <item>com.niwodai.universityloan</item>
-        <item>com.hnzycfc.zyxj</item>
-        <item>com.cloudpower.netsale.activity</item>
-        <item>me.yidui</item>
-        <item>com.pingan.lifecircle</item>
-        <item>com.babytree.apps.pregnancy</item>
-        <item>com.vcredit.ddcash</item>
-        <item>com.mygolbs.mybus</item>
-        <item>com.seeyon.cmp</item>
-        <item>com.outfit7.talkingtomgoldrun.mi</item>
-        <item>com.founder.jincheng</item>
-        <item>com.samoyed.credit</item>
-        <item>com.mihoyo.hyperion</item>
-        <item>cn.cntvnews</item>
-    </string-array>
-    <string-array name="gamemode_list">
-        <item>com.tencent.tmgp.sgame</item>
-        <item>com.tencent.tmgp.sgamece</item>
-        <item>com.tencent.tmgp.pubgmhd</item>
-        <item>com.tencent.tmgp.projectg</item>
-        <item>com.tencent.tmgp.speedmobile</item>
-        <item>com.tencent.lolm</item>
-        <item>com.miHoYo.Yuanshen</item>
-        <item>com.miHoYo.enterprise.HK4E</item>
-        <item>com.miHoYo.yuanshencb</item>
-        <item>com.tencent.tmgp.bh3</item>
-        <item>com.tencent.tmgp.cod</item>
-        <item>com.netease.g67</item>
-        <item>com.tencent.tmgp.cf</item>
-        <item>com.netease.hyxd</item>
-        <item>com.tencent.tmgp.wuxia</item>
-        <item>com.kiloo.subwaysurf</item>
-        <item>com.tencent.af</item>
-        <item>com.netease.mc.vivo</item>
-        <item>com.netease.lztg</item>
-        <item>com.netease.lztg.vivo</item>
-        <item>com.tencent.tmgp.yongyong.lztg</item>
-        <item>com.tencent.fifamobile</item>
-        <item>com.tencent.tmgp.g13002010</item>
-        <item>com.happyelements.AndroidAnimal.qq</item>
-        <item>com.happyelements.AndroidAnimal.ad</item>
-        <item>com.pwrd.zsyj.laohu</item>
-        <item>com.tencent.jkchess</item>
-        <item>com.netease.mrzh</item>
-        <item>com.pwrd.hotta.laohu</item>
-        <item>com.tencent.tmgp.dwrg</item>
-        <item>com.tencent.KiHan</item>
-        <item>com.protopop.brightridge</item>
-        <item>com.pubg.imobile</item>
-        <item>com.tencent.ig</item>
-        <item>com.pubg.krmobile</item>
-        <item>com.vng.pubgmobile</item>
-        <item>com.rekoo.pubgm</item>
-        <item>com.tencent.iglite</item>
-        <item>com.activision.callofduty.shooter</item>
-        <item>com.garena.game.codm</item>
-        <item>com.miHoYo.GenshinImpact</item>
-        <item>com.ea.gp.apexlegendsmobilefps</item>
-        <item>com.gameloft.android.ANMP.GloftA9HM</item>
-        <item>com.dts.freefiremax</item>
-        <item>com.dts.freefireth</item>
-        <item>com.t2ksports.nba2k20</item>
-        <item>com.t2ksports.nba2k20and</item>
-        <item>com.blizzard.diablo.immortal</item>
-        <item>com.riotgames.league.wildrift</item>
-        <item>com.ngame.allstar.eu</item>
-        <item>com.netmarble.lin2ws</item>
-        <item>com.gameloft.android.ANMP.GloftSXHM</item>
-        <item>com.phoenix.scarfall.free.fps.tps.battle.royale.combat.survival.shooting.battleground.war</item>
-        <item>com.ea.game.nfs14_row</item>
-        <item>com.funcube.loa</item>
-        <item>com.gaijin.xom</item>
-        <item>com.netmarble.enngb</item>
-        <item>com.kiloo.subwaysurf</item>
-        <item>jp.pokemon.pokemonunite</item>
-        <item>com.tgc.sky.android</item>
-        <item>com.Psyonix.RL2D</item>
-        <item>com.zynga.starwars.hunters</item>
-        <item>com.gtarcade.loachaos</item>
-        <item>com.supercell.brawlstars</item>
-        <item>valhalla.survival.craft.z</item>
-        <item>com.noodlecake.altosodyssey</item>
-        <item>com.proximabeta.fancyworld</item>
-        <item>com.epicgames.portal</item>
-        <item>com.rovio.angrybirdsrio</item>
-        <item>com.vectorunit.yellow</item>
-        <item>com.mojang.minecraftpe</item>
-        <item>com.MediaTek.AndroidMAGTSample</item>
-        <item>com.miHoYo.enterprise.NGHSoD</item>
-        <item>com.miHoYo.enterprise.NGHSoDBeta</item>
-        <item>com.qqgame.hlddz</item>
-        <item>com.tencent.tmgp.coslegend</item>
-        <item>com.tencent.tmgp.sskgame</item>
-        <item>com.tencent.tmgp.lx12</item>
-        <item>com.tencent.tmgp.aceracer</item>
-        <item>com.ztgame.bob</item>
-        <item>com.tencent.tmgp.yys.zqb</item>
-        <item>com.Protopop.Wilderless</item>
-        <item>com.badflyinteractive.taucetivulkan</item>
-        <item>com.tencent.tmgp.NBA</item>
-        <item>com.tencent.tmgp.xxajh</item>
-        <item>com.tencent.mf.uam</item>
-        <item>com.ymtx.hcrmnq.nearme.gamecenter</item>
-        <item>com.snp.yjklsj.vivo</item>
-        <item>com.glife.smsjapk.nearme.gamecenter</item>
-        <item>com.tencent.tmgp.qqx5</item>
-        <item>com.netease.dhxy.vivo</item>
-        <item>com.szgd.GGBondAmazingHero.vivo</item>
-        <item>com.BoonieBearsEntangledWorldsTWO.vivo</item>
-        <item>com.dreamgame.fruitbubble.vivo</item>
-        <item>com.gzcy.sdttl.vivo</item>
-        <item>com.netease.my.vivo</item>
-        <item>com.yodo1.SkiSafari.BUBUGAO_01</item>
-        <item>com.xingluo.molitt</item>
-        <item>com.tencent.tmgp.NBA</item>
-        <item>com.zk.cfsc.nearme.gamecenter</item>
-        <item>com.yrtgame.stickvar.nearme.gamecenter</item>
-        <item>com.cmcm.arrowio_cn.vivo</item>
-        <item>com.gzqs.hcrgdqs.vivo</item>
-        <item>com.zjyd.gzshmnq.vivo</item>
-        <item>com.adzw.hcrsjjy.vivo</item>
-        <item>com.mnshsj.vivo</item>
-        <item>com.gzgx.hcrcjtj.vivo</item>
-        <item>com.zk.cfsc.vivo</item>
-        <item>com.gzys.cjblq.vivo</item>
-        <item>com.csg.zhsqs.vivo</item>
-        <item>com.duoduo.idioms</item>
-        <item>com.snp.kljjsl.vivo</item>
-        <item>com.clmobi.atmrxyx.vivo</item>
-        <item>com.gamestar.perfectpiano</item>
+        <item>com.blizzard.wtcg.hearthstone,de</item>
+        <item>com.gongniu.smart,b</item>
     </string-array>
     <string-array name="get_fixed_rotation_in_freeform">
         <item>com.tencent.wemeet.app</item>
@@ -6118,7 +6030,10 @@
         <item>mt6895</item>
         <item>pineapple</item>
         <item>mt6985</item>
+        <item>sun</item>
         <item>mt6989</item>
+        <item>mt6899</item>
+        <item>franklin_asic</item>
     </string-array>
     <string-array name="high_device_gpu_list">
         <item>kalama</item>
@@ -6130,7 +6045,10 @@
         <item>mt6895</item>
         <item>pineapple</item>
         <item>mt6985</item>
+        <item>sun</item>
         <item>mt6989</item>
+        <item>mt6899</item>
+        <item>franklin_asic</item>
     </string-array>
     <string-array name="keyguard_whitelist">
         <item>com.google.android.apps.messaging</item>
@@ -6189,10 +6107,6 @@
         <item>com.miui.systemAdSolution</item>
         <item>com.techown.emm</item>
         <item>com.miui.hybrid.accessory</item>
-    </string-array>
-    <string-array name="large_capacity_list">
-        <item>com.ss.android.ugc.aweme</item>
-        <item>com.ss.android.ugc.aweme.lite</item>
     </string-array>
     <string-array name="list_about_desktop_mode_launch_freeform_ignore_translucent_app">
         <item>com.xiaomi.mslgrdp</item>
@@ -6284,6 +6198,7 @@
         <item>com.alibaba.android.rimet</item>
         <item>com.miui.gallery</item>
         <item>com.android.settings</item>
+        <item>com.tencent.letsgo</item>
     </string-array>
     <string-array name="list_about_lock_mode_activity">
         <item>co.sitic.pp/co.sitic.pp.aBloqueo</item>
@@ -6305,6 +6220,7 @@
         <item>cn.xuexi.android</item>
         <item>org.telegram.messenger</item>
         <item>com.dianping.v1</item>
+        <item>com.miui.mediaeditor</item>
     </string-array>
     <string-array name="list_about_support_cvw_level_full">
         <item>com.android.contacts</item>
@@ -6330,16 +6246,12 @@
         <item>tv.danmaku.bili</item>
     </string-array>
     <array name="list_about_unsupport_cvw_level_full" />
-    <string-array name="list_authorised_freeform_list">
-        <item>com.miui.calculator</item>
-        <item>cn.wps.moffice_eng</item>
-        <item>com.miui.securitymanager</item>
-    </string-array>
     <string-array name="list_can_start_activity_from_fullscreen_to_freefrom">
         <item>com.alipay.android.phone.wallet.aptrip.ui.ApTripActivity</item>
         <item>com.alipay.mobile.onsitepay.merge.OnsitepayActivity</item>
         <item>com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main</item>
         <item>com.alipay.mobile.scan.as.main.MainCaptureActivity</item>
+        <item>com.alipay.mobile.chatapp.ui.ShareDispenseActivity_</item>
     </string-array>
     <string-array name="list_disable_overlay_with_app_content">
         <item>com.ss.android.live.host.livehostimpl.LivePlayerTransActivity</item>
@@ -6379,6 +6291,10 @@
     <string-array name="list_revert_location_in_freeform">
         <item>class com.miui.org.chromium.android_webview.PopupTouchHandleDrawable</item>
         <item>class org.chromium.android_webview.PopupTouchHandleDrawable</item>
+        <item>com.tencent.mm.ui.chatting.ChattingUI</item>
+        <item>com.tencent.mm.ui.LauncherUI</item>
+        <item>com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI</item>
+        <item>com.google.android.apps.youtube.app.watchwhile.InternalMainActivity</item>
     </string-array>
     <string-array name="list_support_freeform_multi_task">
         <item>com.tencent.mm</item>
@@ -6396,6 +6312,7 @@
         <item>mt6835</item>
         <item>mt6855</item>
         <item>pitti</item>
+        <item>blair</item>
     </string-array>
     <string-array name="low_device_gpu_list">
         <item>trinket</item>
@@ -6412,6 +6329,7 @@
         <item>mt6835</item>
         <item>mt6855</item>
         <item>pitti</item>
+        <item>blair</item>
     </string-array>
     <string-array name="max_aspect_ratio_suggest_apps">
         <item>com.tencent.mm</item>
@@ -7613,230 +7531,6 @@
     <string-array name="miui_resize_white_list">
         <item>com.android.camera</item>
     </string-array>
-    <string-array name="module_pss_memory_threshold_list">
-        <item>com.miui.backup,147000,193000,238000,238000,238000</item>
-        <item>com.android.contacts,208000,220000,268000,283000,208000</item>
-        <item>android.process.acore,208000,220000,268000,283000,208000</item>
-        <item>com.android.contacts:business,208000,220000,268000,283000,208000</item>
-        <item>com.miui.miwallpaper,93000,123000,573000,312000,164000</item>
-        <item>com.miui.aod:keyguardeditor,732000,732000,732000,732000,732000</item>
-        <item>com.miui.notes,223000,372000,372000,372000,327000</item>
-        <item>com.miui.notes:remote,223000,372000,372000,372000,327000</item>
-        <item>com.miui.notes:sync,223000,372000,372000,372000,327000</item>
-        <item>com.miui.carlink,446000,446000,446000,446000,446000</item>
-        <item>com.miui.phrase,139000,139000,200000,200000,139000</item>
-        <item>com.miui.miwallpaper.mars:marsPreviewSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.geometry:GeometryPreviewSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.earth:earthPreviewSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper:snowmountainPreviewSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.saturn:saturnPreviewSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.miweatherwallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper:marsSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.mars:marsSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.geometry:GeometrySuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.earth:earthSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.saturn:saturnSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper:snowmountainSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.miwallpaper.snowmountain:snowmountainSuperWallpaper,574000,574000,574000,574000,574000</item>
-        <item>com.miui.contentextension,502000,502000,502000,502000,502000</item>
-        <item>com.android.printspooler,154000,260000,260000,297000,297000</item>
-        <item>com.android.incallui,100000,186000,186000,53800,53800</item>
-        <item>com.android.phone,156000,223000,223000,52300,53800</item>
-        <item>com.android.email,312000,312000,400000,342000,342000</item>
-        <item>com.android.mms,208000,208000,327000,327000,327000</item>
-        <item>com.android.mms:mms_service,46000,46000,54000,327000,327000</item>
-        <item>com.miui.miservice,275000,275000,446000,416000,342000</item>
-        <item>com.miui.bugreport,275000,275000,446000,416000,342000</item>
-        <item>com.miui.personalassistant,312000,312000,617000,372000,372000</item>
-        <item>com.xiaomi.migameservice,208000,208000,208000,283000,283000</item>
-        <item>com.miui.yellowpage,110000,110000,179000,179000,111000</item>
-        <item>com.miui.calculator,140000,297000,372000,342000,238000</item>
-        <item>com.miui.screenshot,179000,253000,253000,253000,223000</item>
-        <item>com.xiaomi.mirror,260000,260000,260000,446000,446000</item>
-        <item>com.miui.hybrid,650000,545000,646000,646000,646000</item>
-        <item>com.miui.hybrid:Launcher0,650000,545000,646000,646000,646000</item>
-        <item>com.miui.hybrid:Launcher1,650000,545000,646000,646000,646000</item>
-        <item>com.miui.hybrid:Launcher2,650000,545000,646000,646000,646000</item>
-        <item>com.miui.hybrid:Launcher3,650000,545000,646000,646000,646000</item>
-        <item>com.miui.hybrid:Launcher4,650000,545000,646000,646000,646000</item>
-        <item>com.miui.wmsvc,15400,15400,15400,15400,15400</item>
-        <item>com.android.bluetooth,154000,154000,194000,194000,154000</item>
-        <item>com.xiaomi.bluetooth,459000,459000,459000,459000,459000</item>
-        <item>com.android.soundrecorder,164000,217000,283000,283000,164000</item>
-        <item>com.android.soundrecorder:remote,164000,217000,283000,283000,164000</item>
-        <item>com.miui.mediaviewer,208000,208000,238000,238000,238000</item>
-        <item>com.xiaomi.smarthome,502000,574000,603000,603000,502000</item>
-        <item>com.xiaomi.smarthome:plugin0,502000,574000,603000,603000,502000</item>
-        <item>com.xiaomi.smarthome:widgetControl,502000,574000,603000,603000,502000</item>
-        <item>com.xiaomi.aicr,860000,860000,860000,860000,860000</item>
-        <item>com.xiaomi.aicr.coreService,860000,860000,860000,860000,860000</item>
-        <item>com.xiaomi.aicr.cognitionService,46100,46100,46100,46100,46100</item>
-        <item>com.miui.core,18500,18500,18500,18500,18500</item>
-        <item>com.miui.daemon,46100,46100,46100,46100,46100</item>
-        <item>mqsasd,46100,46100,46100,46100,46100</item>
-        <item>com.miui.screenrecorder,116000,116000,179000,179000,139000</item>
-        <item>com.miui.powerkeeper,61500,61500,61500,61500,61500</item>
-        <item>com.miui.greenguard:ui,208000,223000,320000,320000,208000</item>
-        <item>com.miui.greenguard,46000,46000,61500,61500,46000</item>
-        <item>com.lbe.security.miui:ui,92200,123000,123000,123000,92200</item>
-        <item>com.lbe.security.miui,30800,46100,46100,30800,30800</item>
-        <item>com.miui.face,194000,194000,312000,312000,194000</item>
-        <item>mifaced@1.0android.hardware.biometrics.face-aidl-service,30800,50000,31000,31000,30800</item>
-        <item>com.android.calendar,123000,179000,179000,179000,123000</item>
-        <item>com.android.providers.calendar,123000,179000,179000,179000,123000</item>
-        <item>com.xiaomi.calendar,139000,139000,238000,208000,208000</item>
-        <item>com.xiaomi.simactivate.service,30800,30800,30800,30800,30800</item>
-        <item>com.android.settings,164000,253000,297000,297000,208000</item>
-        <item>com.android.settings:remote,164000,253000,297000,297000,208000</item>
-        <item>com.android.deskclock,164000,208000,253000,253000,223000</item>
-        <item>com.miui.securitycenter,746000,746000,860000,689000,574000</item>
-        <item>com.miui.guardprovider,746000,746000,860000,689000,574000</item>
-        <item>com.miui.securityadd,746000,746000,860000,689000,574000</item>
-        <item>com.miui.cleanmaster,746000,746000,860000,689000,574000</item>
-        <item>com.miui.cleanmaster:cmsdk,746000,746000,860000,689000,574000</item>
-        <item>com.miui.cleaner,746000,746000,860000,689000,574000</item>
-        <item>com.miui.cleaner:micleansdk,746000,746000,860000,689000,574000</item>
-        <item>com.miui.securitycenter:ui,746000,746000,860000,689000,574000</item>
-        <item>com.miui.securitycenter.bootaware,746000,746000,860000,689000,574000</item>
-        <item>com.miui.securitycenter.remote,100000,100000,116000,116000,100000</item>
-        <item>com.miui.securitycore,327000,327000,327000,327000,327000</item>
-        <item>com.miui.securitycore.remote,61500,61500,61500,61500,61500</item>
-        <item>com.sohu.inputmethod.sogou.xiaomi,223000,223000,342000,297000,223000</item>
-        <item>com.baidu.input_mi,223000,223000,342000,297000,223000</item>
-        <item>com.iflytek.inputmethod.miui,223000,223000,342000,297000,223000</item>
-        <item>com.miui.handwriting,488000,488000,488000,488000,488000</item>
-        <item>com.android.systemui,488000,574000,631000,574000,488000</item>
-        <item>com.miui.weather2,253000,253000,517000,574000,327000</item>
-        <item>com.miui.notification,387000,387000,574000,459000,387000</item>
-        <item>com.miui.notification:remote,387000,387000,574000,459000,387000</item>
-        <item>com.milink.service,372000,372000,789000,789000,789000</item>
-        <item>com.miui.gallery,574000,860000,860000,860000,574000</item>
-        <item>com.android.fileexplorer,253000,253000,372000,372000,312000</item>
-        <item>com.mi.android.globalFileexplorer,297000,253000,372000,372000,327000</item>
-        <item>com.xiaomi.metoknlp,53800,53800,53800,53800,53800</item>
-        <item>com.xiaomi.location.fused,53800,53800,53800,53800,53800</item>
-        <item>com.duokan.phone.remotecontroller,154000,154000,208000,208000,208000</item>
-        <item>com.duokan.phone.remotecontroller:MDNSSDListener,154000,154000,208000,208000,208000</item>
-        <item>com.miui.contentcatcher,30800,30800,30800,30800,30800</item>
-        <item>android.process.mediaUI,179000,314000,223000,223000,179000</item>
-        <item>com.miui.securityinputmethod,81500,81500,139000,139000,81500</item>
-        <item>com.miui.mishare.connectivity:ui,154000,154000,154000,154000,154000</item>
-        <item>com.miui.mishare.connectivity,38500,38500,38500,38500,38500</item>
-        <item>com.xiaomi.mi_connect_service,70700,70700,70700,70700,61500</item>
-        <item>com.xiaomi.mi_connect_service:continuity,61500,61500,61500,61500,61500</item>
-        <item>com.mfashiongallery.emag,300000,297000,372000,372000,372000</item>
-        <item>com.miui.huanji,223000,223000,416000,416000,223000</item>
-        <item>com.miui.huanji:backup,223000,223000,416000,416000,223000</item>
-        <item>com.xiaomi.vipaccount,717000,889000,1147000,861000,861000</item>
-        <item>com.xiaomi.vipaccount:log,717000,889000,1147000,861000,861000</item>
-        <item>com.xiaomi.vipaccount:remote,717000,889000,1147000,861000,861000</item>
-        <item>com.xiaomi.vipaccount:stat,717000,889000,1147000,861000,861000</item>
-        <item>com.xiaomi.misettings,208000,216000,216000,216000,179000</item>
-        <item>com.xiaomi.misettings:widgetProvider,208000,216000,216000,216000,179000</item>
-        <item>com.xiaomi.misettings:remote,30800,30800,38500,30800,30800</item>
-        <item>com.miui.accessibility,179000,179000,179000,179000,179000</item>
-        <item>com.miui.accessibility:remote,179000,179000,179000,179000,179000</item>
-        <item>com.miui.accessibility.common,179000,179000,179000,179000,179000</item>
-        <item>com.xiaomi.account,164000,179000,253000,223000,164000</item>
-        <item>com.xiaomi.account:accountservice,164000,179000,253000,223000,164000</item>
-        <item>com.miui.tsmclient,431000,431000,431000,431000,431000</item>
-        <item>com.unionpay.tsmservice.mi,431000,431000,431000,431000,431000</item>
-        <item>com.miui.tsmclient:daemon,46000,46000,46000,46000,46000</item>
-        <item>com.miui.aod,574000,574000,574000,574000,574000</item>
-        <item>com.miui.aod:settings,574000,574000,574000,574000,574000</item>
-        <item>com.android.updater,139000,131000,312000,28300,139000</item>
-        <item>update_engine,30800,30800,30800,30800,30800</item>
-        <item>com.miui.touchassistant,139000,139000,139000,139000,139000</item>
-        <item>com.miui.touchassistant:float,108000,108000,108000,108000,108000</item>
-        <item>com.xiaomi.joyose,30800,30800,30800,30800,30800</item>
-        <item>com.miui.cloudservice,283000,283000,342000,342000,283000</item>
-        <item>com.miui.cloudbackup,283000,283000,342000,342000,283000</item>
-        <item>com.miui.micloudsync,283000,283000,342000,342000,283000</item>
-        <item>com.miui.cloudservice:synclog,238000,283000,342000,342000,283000</item>
-        <item>com.miui.cloudservice:galleryproxy,238000,283000,342000,342000,283000</item>
-        <item>com.xiaomi.finddevice,154000,154000,154000,154000,154000</item>
-        <item>com.miui.compass,139000,139000,139000,139000,139000</item>
-        <item>org.ifaa.aidl.manager,23000,23000,23000,23000,23000</item>
-        <item>com.tencent.soter.soterserver,23000,23000,23000,23000,23000</item>
-        <item>com.android.thememanager,327000,372000,372000,372000,327000</item>
-        <item>com.miui.home,474000,474000,689000,689000,474000</item>
-        <item>com.mi.android.globallauncher/com.miui.home,474000,474000,689000,689000,474000</item>
-        <item>vendor.xiaomi.hardware.misight.service,2310,2310,2310,2310,2310</item>
-        <item>vendor.xiaomi.hardware.swap@1.0-service,1540,1540,1540,1540,1540</item>
-        <item>mpbe_service,3100,3100,3100,3100,3100</item>
-        <item>com.xiaomi.mslgrdp,431000,431000,431000,431000,431000</item>
-        <item>com.miui.mediaeditor,789000,789000,2900000,2900000,789000</item>
-        <item>com.miui.packageinstaller,208000,208000,300000,300000,238000</item>
-        <item>com.miui.global.packageinstaller,208000,208000,208000,208000,208000</item>
-        <item>com.duokan.reader,502000,545000,717000,574000,502000</item>
-        <item>com.mi.android.globalpersonalassistant,357000,474000,474000,474000,474000</item>
-        <item>com.mi.android.globalminusscreen,357000,474000,474000,474000,474000</item>
-        <item>com.mi.globalminusscreen,357000,474000,474000,474000,474000</item>
-        <item>com.miui.msa.global,179000,179000,223000,223000,223000</item>
-        <item>com.miui.msa.global:ui,179000,179000,223000,223000,223000</item>
-        <item>com.android.browser,574000,740000,932000,574000,574000</item>
-        <item>com.mi.globalbrowser,646000,646000,1010000,1010000,674000</item>
-        <item>com.miui.newhome,416000,524000,689000,689000,689000</item>
-        <item>com.miui.newhome:launcher,275000,509000,574000,689000,689000</item>
-        <item>com.miui.fm,574000,574000,818000,818000,446000</item>
-        <item>com.miui.fm:remote,574000,574000,818000,818000,446000</item>
-        <item>com.android.quicksearchbox,283000,332000,531000,439000,297000</item>
-        <item>com.miui.virtualsim,238000,297000,327000,327000,327000</item>
-        <item>com.miui.virtualsim:authentication,238000,297000,327000,327000,327000</item>
-        <item>com.xiaomi.midrop,372000,372000,446000,446000,446000</item>
-        <item>com.miui.fmservice:remote,20000,20000,24600,24600,24600</item>
-        <item>com.miui.android.fashiongallery,123000,123000,139000,139000,139000</item>
-        <item>com.miui.video,674000,674000,1080000,932000,674000</item>
-        <item>com.miui.videoplayer,674000,674000,940000,674000,674000</item>
-        <item>com.xiaomi.xmsf,54000,70000,70000,53800,53800</item>
-        <item>com.xiaomi.xmsfkeeper,54000,70000,70000,53800,53800</item>
-        <item>com.xiaomi.xmsf:services,54000,70000,70000,53800,53800</item>
-        <item>com.xiaomi.xmsf:passing,15400,15400,15400,15400,15400</item>
-        <item>com.xiaomi.discover,146000,154000,154000,154000,154000</item>
-        <item>com.xiaomi.market,452000,452000,538000,538000,502000</item>
-        <item>com.xiaomi.market:guard,452000,452000,538000,538000,502000</item>
-        <item>com.xiaomi.mipicks,452000,452000,574000,574000,574000</item>
-        <item>com.miui.player,446000,446000,502000,459000,459000</item>
-        <item>com.miui.player:remote,139000,139000,179000,77000,77000</item>
-        <item>com.xiaomi.gamecenter.sdk.service,179000,179000,238000,238000,179000</item>
-        <item>com.xiaomi.gamecenter,445000,574000,603000,603000,502000</item>
-        <item>com.xiaomi.gamecenter:migameRemote,445000,574000,603000,603000,502000</item>
-        <item>com.xiaomi.glgm,283000,283000,603000,603000,603000</item>
-        <item>com.miui.systemAdSolution,179000,179000,327000,46000,179000</item>
-        <item>com.miui.systemAdSolution:ui,179000,179000,327000,46000,179000</item>
-        <item>com.android.thememanager,445000,574000,574000,574000,445000</item>
-        <item>com.xiaomi.kidspace,932000,932000,932000,932000,932000</item>
-        <item>com.miui.euicc,372000,372000,372000,372000,372000</item>
-        <item>com.xiaomi.aiasst.vision,123000,123000,300000,283000,283000</item>
-        <item>com.xiaomi.aiasst.service,357000,357000,357000,283000,283000</item>
-        <item>com.xiaomi.scanner,297000,305000,689000,574000,574000</item>
-        <item>com.xiaomi.mibrain.speech,76900,123000,123000,76800,76800</item>
-        <item>com.xiaoai.mibrain.speech:core,76900,123000,123000,76900,76800</item>
-        <item>com.xiaomi.aireco,300000,300000,300000,300000,300000</item>
-        <item>com.xiaomi.aireco:widgetProvider,300000,300000,300000,300000,300000</item>
-        <item>com.xiaomi.aireco:core,46100,46100,46100,46100,46100</item>
-        <item>com.miui.voiceassist,474000,474000,502000,502000,502000</item>
-        <item>com.miui.voiceassist:pushservice,474000,474000,502000,502000,502000</item>
-        <item>com.miui.voiceassist:floatlogo,474000,474000,502000,502000,502000</item>
-        <item>com.miui.voiceassist:download,474000,474000,502000,502000,502000</item>
-        <item>com.miui.voiceassist:voice_trigger,474000,474000,502000,502000,502000</item>
-        <item>com.miui.voiceassist:themeProvider,474000,474000,502000,502000,502000</item>
-        <item>com.miui.voiceassist:core,46000,46000,46000,46000,46000</item>
-        <item>com.miui.voicetrigger,108000,108000,123000,123000,123000</item>
-        <item>com.mipay.wallet,545000,545000,775000,617000,531000</item>
-        <item>com.miui.analytics,38500,38500,53800,38400,38400</item>
-        <item>com.mi.global.shop,689000,746000,832000,832000,832000</item>
-        <item>com.mi.global.bbs,342000,387000,387000,387000,387000</item>
-        <item>com.mi.health,459000,459000,574000,574000,574000</item>
-        <item>com.mi.health:widgetProvider,459000,459000,574000,574000,574000</item>
-        <item>com.mi.health:device,123000,123000,137000,137000,137000</item>
-        <item>com.xiaomi.shop,803000,803000,803000,803000,803000</item>
-        <item>com.xiaomi.shop:mishop.update,803000,803000,803000,803000,803000</item>
-        <item>com.xiaomi.shop:remote,803000,803000,803000,803000,803000</item>
-        <item>com.xiaomi.ab,803000,803000,803000,803000,803000</item>
-        <item>com.xiaomi.youpin,803000,803000,803000,803000,803000</item>
-        <item>com.example.nativeapp,614400,614400,614400,614400,614400</item>
-    </string-array>
     <string-array name="need_trace_list">
         <item>com.android.phone</item>
         <item>com.android.nfc</item>
@@ -7869,7 +7563,7 @@
         <item>gl_ES</item>
         <item>ha_NG</item>
         <item>hr_HR</item>
-        <item>in_ID</item>
+        <item>id_ID</item>
         <item>it_IT</item>
         <item>sw_KE</item>
         <item>lv_LV</item>
@@ -7900,7 +7594,7 @@
         <item>uk_UA</item>
         <item>ka_GE</item>
         <item>hy_AM</item>
-        <item>iw_IL</item>
+        <item>he_IL</item>
         <item>ur_IN</item>
         <item>ur_IN_#u-nu-latn</item>
         <item>ur_PK</item>
@@ -8112,7 +7806,6 @@
         <item>com.miui.core</item>
         <item>com.android.providers.media</item>
         <item>com.android.providers.downloads</item>
-        <item>com.xiaomi.xmsf</item>
         <item>com.google.android.marvin.talkback</item>
         <item>org.simalliance.openmobileapi.service</item>
         <item>com.qualcomm.wfd.service</item>
@@ -8175,127 +7868,6 @@
         <item>com.android.permissioncontroller</item>
         <item>com.miui.securitycenter</item>
         <item>com.miui.powerkeeper</item>
-    </string-array>
-    <string-array name="prerender_scrollopt_extra_buffer_list">
-        <item>com.tencent.mm,1</item>
-        <item>com.sina.weibo,1</item>
-        <item>com.taobao.taobao,1</item>
-        <item>com.tencent.mobileqq,1</item>
-        <item>com.ss.android.ugc.aweme,1</item>
-        <item>com.ss.android.article.news,1</item>
-        <item>com.eg.android.AlipayGphone,1</item>
-        <item>com.xunmeng.pinduoduo,1</item>
-        <item>com.kuaishou.nebula,1</item>
-        <item>com.ss.android.ugc.aweme.lite,1</item>
-        <item>com.smile.gifmaker,1</item>
-        <item>com.tencent.mtt,1</item>
-        <item>com.baidu.searchbox,1</item>
-        <item>com.autonavi.minimap,1</item>
-        <item>com.jingdong.app.mall,1</item>
-        <item>tv.danmaku.bili,1</item>
-        <item>com.sankuai.meituan,1</item>
-        <item>com.alibaba.android.rimet,1</item>
-        <item>com.ss.android.article.lite,1</item>
-        <item>com.UCMobile,1</item>
-        <item>com.tencent.qqlive,1</item>
-        <item>com.kugou.android,1</item>
-        <item>com.netease.cloudmusic,1</item>
-        <item>com.tencent.qqmusic,1</item>
-        <item>com.dragon.read,1</item>
-        <item>com.baidu.BaiduMap,1</item>
-        <item>com.xingin.xhs,1</item>
-        <item>com.qiyi.video,1</item>
-        <item>com.tencent.news,1</item>
-        <item>com.zhihu.android,1</item>
-        <item>com.taobao.idlefish,1</item>
-        <item>com.ss.android.article.video,1</item>
-        <item>com.kmxs.reader,1</item>
-        <item>com.youku.phone,1</item>
-        <item>com.ss.android.ugc.live,1</item>
-        <item>com.duowan.kiwi,1</item>
-        <item>com.baidu.haokan,1</item>
-        <item>air.tv.douyu.android,1</item>
-        <item>cn.xuexi.android,1</item>
-        <item>com.quark.browser,1</item>
-        <item>com.sup.android.superb,1</item>
-        <item>com.tencent.karaoke,1</item>
-        <item>com.sdu.didi.gsui,1</item>
-        <item>com.le123.ysdq,1</item>
-        <item>cn.xiaochuankeji.tieba,1</item>
-        <item>com.duokan.free,1</item>
-        <item>com.hunantv.imgo.activity,1</item>
-        <item>com.baidu.tieba,1</item>
-        <item>com.baidu.searchbox.lite,1</item>
-        <item>com.baidu.netdisk,1</item>
-        <item>com.ss.android.lark.kami,1</item>
-        <item>com.fenbi.android.zhaojiao,1</item>
-        <item>com.cmcc.cmvideo,1</item>
-        <item>com.qiyi.video.lite,1</item>
-        <item>com.taobao.live,1</item>
-        <item>com.zhongduomei.rrmj.society,1</item>
-        <item>com.eduyun.app.factory.ykt,1</item>
-        <item>com.xunlei.downloadprovider,1</item>
-        <item>com.baidu.homework,1</item>
-        <item>com.qiyi.video.pad,1</item>
-        <item>com.meta.box,1</item>
-        <item>com.fenbi.android.servant,1</item>
-        <item>com.chaoxing.mobile,1</item>
-        <item>com.android.browser,1</item>
-        <item>com.xiaomi.market,1</item>
-        <item>com.miui.video,1</item>
-        <item>com.duokan.reader,1</item>
-        <item>com.miui.weather2,1</item>
-        <item>com.miui.notes,1</item>
-        <item>com.android.quicksearchbox,1</item>
-        <item>com.miui.player,1</item>
-        <item>com.xiaomi.shop,1</item>
-        <item>com.miui.newhome,1</item>
-        <item>com.android.thememanager,1</item>
-        <item>com.xiaomi.gamecenter,1</item>
-        <item>com.mfashiongallery.emag,1</item>
-        <item>com.miui.videoplayer,1</item>
-        <item>com.mi.globalbrowser,1</item>
-        <item>com.mi.global.shop,1</item>
-        <item>com.android.chrome,1</item>
-        <item>com.android.vending,1</item>
-        <item>com.google.android.gm,1</item>
-        <item>com.google.android.youtube,1</item>
-        <item>com.whatsapp,1</item>
-        <item>com.facebook.katana,1</item>
-        <item>com.instagram.android,1</item>
-        <item>com.mxtech.videoplayer.ad,1</item>
-        <item>com.facebook.lite,1</item>
-        <item>com.facebook.orca,1</item>
-        <item>com.flipkart.android,1</item>
-        <item>com.whatsapp.w4b,1</item>
-        <item>com.playit.videoplayer,1</item>
-        <item>in.amazon.mShop.android.shopping,1</item>
-        <item>org.telegram.messenger,1</item>
-        <item>com.snapchat.android,1</item>
-        <item>com.microsoft.teams,1</item>
-        <item>com.amazon.avod.thirdpartyclient,1</item>
-        <item>com.kwai.bulldog,1</item>
-        <item>com.sonyliv,1</item>
-        <item>com.eterno,1</item>
-        <item>cn.wps.moffice_eng,1</item>
-        <item>com.graymatrix.did,1</item>
-        <item>com.myntra.android,1</item>
-        <item>com.twitter.android,1</item>
-        <item>com.picsart.studio,1</item>
-        <item>com.dewmobile.kuaiya.play,1</item>
-        <item>com.google.android.apps.youtube.kids,1</item>
-        <item>com.netflix.mediaclient,1</item>
-        <item>com.brave.browser,1</item>
-        <item>tv.twitch.android.app,1</item>
-        <item>org.videolan.vlc,1</item>
-        <item>com.spotify.music,1</item>
-        <item>jp.ne.ibis.ibispaintx.app,1</item>
-        <item>org.jw.jwlibrary.mobile,1</item>
-        <item>com.tradingview.tradingviewapp,1</item>
-        <item>com.pinterest,1</item>
-        <item>com.google.android.apps.youtube.music,1</item>
-        <item>com.bstar.intl,1</item>
-        <item>com.amazon.mShop.android.shopping,1</item>
     </string-array>
     <string-array name="process_disable_force_stop_list">
         <item>com.miui.securitycore</item>
@@ -8513,10 +8085,10 @@
     </string-array>
     <string-array name="process_secretly_protect_list">
         <item>com.tencent.mm</item>
-        <item>com.eg.android.AlipayGphone</item>
         <item>com.google.android.gms</item>
         <item>com.xiaomi.channel</item>
         <item>com.xiaomi.channel:remote</item>
+        <item>com.android.mms:mms_service</item>
     </string-array>
     <string-array name="process_static_white_list">
         <item>com.android.mms:mms_service</item>
@@ -8531,6 +8103,11 @@
         <item>com.miui.greenguard</item>
         <item>com.miui.aod</item>
         <item>com.miui.voiceassist:core</item>
+        <item>com.xiaomi.wpslauncher</item>
+        <item>com.xiaomi.xmsf</item>
+        <item>com.xiaomi.xmsfkeeper</item>
+        <item>com.xiaomi.xmsf:services</item>
+        <item>com.xiaomi.xmsf:persistent</item>
     </string-array>
     <string-array name="process_static_white_list_lite">
         <item>com.android.mms:mms_service</item>
@@ -8591,8 +8168,6 @@
         <item>com.baidu.tieba</item>
         <item>com.baidu.searchbox.lite</item>
         <item>com.baidu.netdisk</item>
-        <item>com.cainiao.wireless</item>
-        <item>com.gotokeep.keep</item>
         <item>com.miui.home</item>
         <item>com.android.incallui</item>
         <item>com.android.browser</item>
@@ -8631,6 +8206,7 @@
         <item>com.mi.global.shop</item>
         <item>com.android.soundrecorder</item>
         <item>com.android.provision</item>
+        <item>com.miui.voiceassist</item>
         <item>com.whatsapp</item>
         <item>com.google.android.youtube</item>
         <item>com.android.chrome</item>
@@ -8643,6 +8219,7 @@
         <item>com.snapchat.android</item>
         <item>org.telegram.messenger</item>
         <item>com.twitter.android</item>
+        <item>com.google.android.googlequicksearchbox:search</item>
         <item>com.google.android.googlequicksearchbox</item>
         <item>com.google.android.contacts</item>
         <item>com.google.android.apps.messaging</item>
@@ -8717,7 +8294,6 @@
     <string-array name="smart_power_alarm_package_white_list">
         <item>com.android.calendar</item>
         <item>com.android.deskclock</item>
-        <item>com.tencent.mm</item>
     </string-array>
     <string-array name="smart_power_broadcast_black_list">
         <item>android.intent.action.BATTERY_CHANGED</item>
@@ -8843,37 +8419,6 @@
     <string-array name="start_from_pc_black_list_activity">
         <item>com.ximalaya.ting.android.host.activity.LockScreenActivity</item>
         <item>com.netease.cloudmusic.activity.LockScreenActivity</item>
-    </string-array>
-    <string-array name="support_low_latency_pkg_list">
-        <item>com.tencent.tmgp.sgame</item>
-        <item>com.tencent.tmgp.pubgmhd</item>
-        <item>com.tencent.lolm</item>
-        <item>com.tencent.tmgp.cod</item>
-        <item>com.tencent.tmgp.speedmobile</item>
-        <item>com.tencent.tmgp.supercell.brawlstars</item>
-        <item>com.tencent.tmgp.WePop</item>
-        <item>com.netease.mc.mi</item>
-        <item>com.miHoYo.ys.mi</item>
-        <item>com.miHoYo.GenshinImpact</item>
-        <item>com.miHoYo.Yuanshen</item>
-        <item>com.miHoYo.hkrpg</item>
-        <item>com.mengguitg.mi</item>
-        <item>com.fy.fcds.mi</item>
-        <item>com.pokemon.awakening.mi</item>
-        <item>com.carrot.carrotfantasy</item>
-        <item>com.qiqi.game.dmmtwo.mi</item>
-        <item>xtdyd.adh.mi</item>
-        <item>com.hshuochairenwangzhe.mi</item>
-        <item>com.zouchumigong02.mi</item>
-        <item>com.qidian.dldl.mi</item>
-        <item>com.fy.jldzz.mi</item>
-        <item>com.outfit7.mytalkingtomfriends.mi</item>
-        <item>com.je.skgame</item>
-        <item>tldhz.adh.mi</item>
-        <item>com.wonder.hxhcr.mi</item>
-        <item>com.imangi.templerun2</item>
-        <item>com.outfit7.herodash.mi</item>
-        <item>com.kiloo.subwaysurf</item>
     </string-array>
     <string-array name="textureview_optimization_pkg_list">
         <item>com.miui.video</item>
@@ -10110,9 +9655,6 @@
         <item>5</item>
     </integer-array>
     <array name="vibration_virtual_key_up" />
-    <array name="virtual_id_local_install_time_exceptions" />
-    <array name="virtual_id_local_path_callee_exceptions" />
-    <array name="virtual_id_local_path_caller_exceptions" />
     <string-array name="white_list_device">
         <item>rainbow</item>
         <item>sunny</item>
@@ -10134,7 +9676,7 @@
         <item>XIG05</item>
         <item>dizi</item>
         <item>ruan</item>
-        <item>degas_global</item>
+        <item>yuechu</item>
     </string-array>
     <string-array name="white_list_device_level">
         <item>v:1,c:2,g:1</item>
@@ -10157,7 +9699,7 @@
         <item>v:1,c:2,g:2</item>
         <item>v:1,c:2,g:2</item>
         <item>v:1,c:2,g:2</item>
-        <item>v:1,c:3,g:3</item>
+        <item>v:1,c:2,g:2</item>
     </string-array>
     <string-array name="white_list_game_app">
         <item>com.tencent.tmgp.vgame</item>
@@ -10451,5 +9993,1167 @@
         <item>com.baidu.BaiduMap</item>
         <item>com.tencent.map</item>
         <item>com.sogou.map.android.maps</item>
+    </string-array>
+    <string-array name="adjust_maxfree_list">
+        <item>com.tencent.mm</item>
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.ss.android.ugc.aweme.lite</item>
+        <item>com.smile.gifmaker</item>
+        <item>com.kuaishou.nebula</item>
+        <item>tv.danmaku.bili</item>
+        <item>com.ss.android.article.news</item>
+        <item>com.ss.android.article.lite</item>
+        <item>com.dragon.read</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.alibaba.android.rimet</item>
+        <item>com.xunmeng.pinduoduo</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.ss.android.article.video</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.taobao.taobao</item>
+        <item>com.qiyi.video</item>
+        <item>com.UCMobile</item>
+        <item>com.kmxs.reader</item>
+        <item>com.tencent.mtt</item>
+        <item>com.youku.phone</item>
+        <item>com.sina.weibo</item>
+        <item>com.quark.browser</item>
+        <item>com.eg.android.AlipayGphone</item>
+        <item>com.autonavi.minimap</item>
+        <item>com.duowan.kiwi</item>
+        <item>com.sankuai.meituan</item>
+        <item>com.jingdong.app.mall</item>
+        <item>com.zhihu.android</item>
+        <item>air.tv.douyu.android</item>
+        <item>com.qidian.QDReader</item>
+    </string-array>
+    <string-array name="aon_support_scene_des">
+        <item>@string/aon_music_left_right_support_scene_des</item>
+        <item>@string/aon_video_left_right_support_scene_des</item>
+        <item>@string/aon_short_video_up_down_support_scene_des</item>
+        <item>@string/aon_music_up_down_support_scene_des</item>
+        <item>@string/aon_video_up_down_support_scene_des</item>
+        <item>@string/aon_office_up_down_support_scene_des</item>
+        <item>@string/aon_reader_support_scene_des</item>
+        <item>@string/aon_music_double_press_support_scene_des</item>
+        <item>@string/aon_video_double_press_support_scene_des</item>
+    </string-array>
+    <integer-array name="config_ambientBoundariesLevels">
+        <item>0</item>
+        <item>1</item>
+        <item>30</item>
+        <item>1000</item>
+        <item>6000</item>
+        <item>8000</item>
+    </integer-array>
+    <array name="config_ambientLuxMaxNitPoints">
+        <item>84</item>
+        <item>84</item>
+        <item>150</item>
+        <item>185</item>
+        <item>307.2</item>
+        <item>691.2</item>
+        <item>1400</item>
+    </array>
+    <array name="config_ambientLuxMaxNitPoints_cbmBrightening">
+        <item>84</item>
+        <item>84</item>
+        <item>150</item>
+        <item>238</item>
+        <item>365.1</item>
+        <item>691.2</item>
+        <item>1400</item>
+    </array>
+    <array name="config_ambientLuxMinNitPoints">
+        <item>0</item>
+        <item>0</item>
+        <item>23</item>
+        <item>26</item>
+        <item>52.8</item>
+        <item>200</item>
+        <item>500.1</item>
+    </array>
+    <array name="config_ambientLuxMinNitPoints_cbmBrightening">
+        <item>0</item>
+        <item>0</item>
+        <item>23</item>
+        <item>36</item>
+        <item>69.1</item>
+        <item>147</item>
+        <item>499.9</item>
+    </array>
+    <integer-array name="config_autoBrightnessLevelsWhenDoze">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+    </integer-array>
+    <array name="config_autoDisplayValuesNitsWhenDoze">
+        <item>2</item>
+        <item>2.56</item>
+        <item>3.12</item>
+        <item>3.68</item>
+        <item>4.24</item>
+        <item>4.8</item>
+        <item>5.36</item>
+        <item>5.92</item>
+        <item>6.48</item>
+        <item>7.04</item>
+        <item>7.6</item>
+        <item>10.4</item>
+        <item>13.2</item>
+        <item>18.8</item>
+        <item>30</item>
+        <item>30.63</item>
+        <item>31.9</item>
+        <item>33.16</item>
+        <item>35.7</item>
+        <item>42.03</item>
+        <item>48.35</item>
+        <item>54.68</item>
+        <item>61.01</item>
+        <item>67.34</item>
+        <item>73.67</item>
+        <item>80</item>
+    </array>
+    <array name="config_bcl_brightness_limit_threshold">
+        <item>300</item>
+        <item>350.0</item>
+        <item>1.0</item>
+        <item>0.7</item>
+        <item>0.95</item>
+    </array>
+    <integer-array name="config_dozeBrightnessThresholds">
+        <item>2</item>
+        <item>10</item>
+        <item>40</item>
+        <item>100</item>
+        <item>100</item>
+        <item>500</item>
+        <item>2000</item>
+    </integer-array>
+    <integer-array name="config_dozeThresholdLevels">
+        <item>0</item>
+        <item>10</item>
+        <item>50</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>3000</item>
+    </integer-array>
+    <array name="config_dynamicMaxNitsLevels">
+        <item>254.4</item>
+        <item>254.4</item>
+        <item>551.2</item>
+        <item>551.2</item>
+        <item>700</item>
+        <item>1000</item>
+    </array>
+    <string-array name="config_notification_ai_interceptlistener">
+        <item>com.android.systemui/com.android.systemui.statusbar.notification.MiuiNotificationListener</item>
+    </string-array>
+    <string-array name="config_notification_ai_whitelist">
+        <item>com.ss.android.lark:01AAAAAA</item>
+        <item>com.alibaba.android.rimet:01AAAAAA</item>
+        <item>com.ss.android.lark.kami:01AAAAAA</item>
+        <item>com.tencent.mm:01AAAAAA</item>
+        <item>com.tencent.wework:01AAAAAA</item>
+        <item>com.tencent.weworkenterprise:01AAAAAA</item>
+        <item>cn.nesc.wxworklocal:01AAAAAA</item>
+        <item>com.tencent.wework.special:01AAAAAA</item>
+        <item>com.tencent.weworklocal:01AAAAAA</item>
+        <item>com.tencent.wwgovernment:01AAAAAA</item>
+        <item>com.cjhy.wwlocal:01AAAAAA</item>
+        <item>com.sgcc.wxlocal:01AAAAAA</item>
+        <item>crhcwechat.crhc.wxwork:01AAAAAA</item>
+        <item>com.tencent.mobileqq:01AAAAAA</item>
+        <item>com.android.mms:02AAAAAA</item>
+        <item>com.android.bankabc:02AAAAAA</item>
+        <item>com.icbc:02AAAAAA</item>
+        <item>com.chinamworld.main:02AAAAAA</item>
+        <item>cmb.pb:02AAAAAA</item>
+        <item>com.chinamworld.bocmbci:02AAAAAA</item>
+        <item>com.yitong.mbank.psbc:02AAAAAA</item>
+        <item>com.pingan.paces.ccms:02AAAAAA</item>
+        <item>com.bankcomm.Bankcomm:02AAAAAA</item>
+        <item>cn.com.spdb.mobilebank.per:02AAAAAA</item>
+        <item>com.cib.cibmb:02AAAAAA</item>
+        <item>com.ecitic.bank.mobile:02AAAAAA</item>
+        <item>cn.com.cmbc.newmbank:02AAAAAA</item>
+        <item>com.autonavi.minimap:03AAAAAA</item>
+        <item>com.baidu.BaiduMap:03AAAAAA</item>
+        <item>com.MobileTicket:03AAAAAA</item>
+        <item>com.sdu.didi.psnger:03AAAAAA</item>
+        <item>ctrip.android.view:03AAAAAA</item>
+        <item>com.ttdnj.cold.knowledge.app:03AAAAAA</item>
+        <item>com.jingyao.easybike:03AAAAAA</item>
+        <item>com.tencent.map:03AAAAAA</item>
+        <item>com.Qunar:03AAAAAA</item>
+        <item>com.sdu.didi.gsui:03AAAAAA</item>
+        <item>com.ygkj.chelaile.standard:03AAAAAA</item>
+        <item>com.taobao.trip:03AAAAAA</item>
+        <item>com.yipiao:03AAAAAA</item>
+        <item>com.tongcheng.android:03AAAAAA</item>
+        <item>com.didapinche.booking:03AAAAAA</item>
+        <item>com.umetrip.android.msky.app:03AAAAAA</item>
+        <item>com.mygolbs.mybus:03AAAAAA</item>
+        <item>com.huaxiaozhu.rider:03AAAAAA</item>
+        <item>com.htinns:03AAAAAA</item>
+        <item>com.sankuai.meituan:04AAAAAA</item>
+        <item>me.ele:04AAAAAA</item>
+        <item>com.sankuai.meituan.takeoutnew:04AAAAAA</item>
+        <item>com.dianping.v1:04AAAAAA</item>
+        <item>com.yek.android.kfc.activitys:04AAAAAA</item>
+        <item>com.ccb.longjiLife:04AAAAAA</item>
+        <item>com.lucky.luckyclient:04AAAAAA</item>
+        <item>com.mcdonalds.gma.cn:04AAAAAA</item>
+        <item>cn.damai:05AAAAAA</item>
+        <item>com.sankuai.movie:05AAAAAA</item>
+        <item>com.taobao.movie.android:05AAAAAA</item>
+        <item>com.sankuai.moviepro:05AAAAAA</item>
+        <item>com.showstartfans.activity:05AAAAAA</item>
+        <item>com.wandafilm.app:05AAAAAA</item>
+        <item>com.pocket.snh48.activity:05AAAAAA</item>
+        <item>com.juqitech.niumowang:05AAAAAA</item>
+        <item>cn.com.livelab:05AAAAAA</item>
+        <item>com.cdsg.zgph:05AAAAAA</item>
+        <item>com.disney.shanghaidisneyland_goo:05AAAAAA</item>
+        <item>com.android.calendar:06AAAAAA</item>
+        <item>com.moji.mjweather:06AAAAAA</item>
+        <item>com.chif.weather:06AAAAAA</item>
+        <item>com.zqer.zyweather:06AAAAAA</item>
+        <item>com.bee.weathesafety:06AAAAAA</item>
+        <item>com.lu.ashionweather:06AAAAAA</item>
+        <item>cn.etouch.ecalendar:06AAAAAA</item>
+        <item>com.youloft.calendar:06AAAAAA</item>
+        <item>sina.mobile.tianqitong:06AAAAAA</item>
+        <item>com.bee.rain:06AAAAAA</item>
+        <item>com.nowcasting.activity:06AAAAAA</item>
+    </string-array>
+    <integer-array name="config_support_led_strip_scene">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <array name="config_support_led_strip_versions" />
+    <string-array name="config_tether_bluetooth_regexs">
+        <item>bt-pan</item>
+    </string-array>
+    <string-array name="config_tether_usb_regexs">
+        <item>usb\\d</item>
+        <item>rndis\\d</item>
+    </string-array>
+    <string-array name="config_tether_wifi_regexs">
+        <item>wlan\\d</item>
+        <item>softap\\d</item>
+        <item>ap_br_wlan\\d</item>
+        <item>ap_br_softap\\d</item>
+    </string-array>
+    <integer-array name="config_userAmbientLux">
+        <item>0</item>
+        <item>2</item>
+        <item>30</item>
+        <item>100</item>
+        <item>1100</item>
+        <item>3000</item>
+        <item>20000</item>
+    </integer-array>
+    <string-array name="desktop_skip_autolayout_general_list">
+        <item>com.xiaomi.mipush.sdk.NotificationClickedActivity</item>
+    </string-array>
+    <string-array name="desktop_skip_autolayout_specific_map">
+        <item>com.xiaomi.market/.ui.JoinActivity</item>
+        <item>com.xiaomi.market</item>
+        <item>com.miui.securitymanager/com.miui.securitymain.SCMainEntryActivity</item>
+        <item>com.miui.securitycenter</item>
+        <item>com.xiaomi.wpslauncher/.Welcome</item>
+        <item>com.xiaomi.wpslauncher</item>
+    </string-array>
+    <string-array name="detect_camera">
+        <item>EEDA10B26FB0D0F11820212B93865953126014D76EAEE7D2AFD37092BD1E8878</item>
+    </string-array>
+    <string-array name="device_on_platform_7635">
+        <item>amethyst</item>
+    </string-array>
+    <string-array name="device_on_platform_8735">
+        <item>onyx</item>
+    </string-array>
+    <string-array name="device_on_platform_8750">
+        <item>haotian</item>
+        <item>dada</item>
+        <item>xuanyuan</item>
+        <item>miro</item>
+        <item>bixi</item>
+    </string-array>
+    <string-array name="dump_hprof_list">
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.ss.android.ugc.aweme.lite</item>
+    </string-array>
+    <string-array name="fling_promotion_list">
+        <item>com.tencent.mm,3</item>
+        <item>com.sina.weibo,3</item>
+        <item>com.taobao.taobao,3</item>
+        <item>com.tencent.mobileqq,3</item>
+        <item>com.ss.android.ugc.aweme,3</item>
+        <item>com.ss.android.article.news,3</item>
+        <item>com.eg.android.AlipayGphone,3</item>
+        <item>com.xunmeng.pinduoduo,3</item>
+        <item>com.kuaishou.nebula,3</item>
+        <item>com.ss.android.ugc.aweme.lite,3</item>
+        <item>com.smile.gifmaker,3</item>
+        <item>com.tencent.mtt,3</item>
+        <item>com.baidu.searchbox,3</item>
+        <item>com.autonavi.minimap,3</item>
+        <item>com.jingdong.app.mall,3</item>
+        <item>tv.danmaku.bili,3</item>
+        <item>com.sankuai.meituan,3</item>
+        <item>com.alibaba.android.rimet,3</item>
+        <item>com.ss.android.article.lite,3</item>
+        <item>com.UCMobile,3</item>
+        <item>com.tencent.qqlive,3</item>
+        <item>com.kugou.android,3</item>
+        <item>com.netease.cloudmusic,3</item>
+        <item>com.tencent.qqmusic,3</item>
+        <item>com.dragon.read,3</item>
+        <item>com.baidu.BaiduMap,3</item>
+        <item>com.xingin.xhs,3</item>
+        <item>com.qiyi.video,3</item>
+        <item>com.tencent.news,3</item>
+        <item>com.zhihu.android,3</item>
+        <item>com.taobao.idlefish,3</item>
+        <item>com.ss.android.article.video,3</item>
+        <item>com.kmxs.reader,3</item>
+        <item>com.youku.phone,3</item>
+        <item>com.baidu.tieba,3</item>
+        <item>com.ss.android.lark.kami,3</item>
+        <item>com.android.browser,3</item>
+        <item>com.xiaomi.market,3</item>
+        <item>com.miui.video,3</item>
+        <item>com.duokan.reader,3</item>
+        <item>com.miui.weather2,3</item>
+        <item>com.mfashiongallery.emag,3</item>
+    </string-array>
+    <string-array name="fullscreen_activity_list_virtual_carwith">
+        <item>com.tencent.qqlive/.ona.activity.VideoDetailActivity,psc:uc</item>
+        <item>com.baidu.BaiduMap/com.baidu.baidumaps.MapsActivity,psc:uc</item>
+        <item>com.ifeng.fhdt/.video.channel.activity.VideoContentActivity,psc:uc</item>
+    </string-array>
+    <string-array name="fullscreen_activity_list_virtual_milink">
+        <item>com.miui.securitycenter/com.miui.applicationlock.ConfirmAccessControl,psm</item>
+        <item>com.instagram.android/com.instagram.modal.ModalActivity,psm:nr</item>
+        <item>com.youku.phone/.ActivityWelcome,psm:nr</item>
+        <item>com.tencent.mm/.plugin.account.ui.WelcomeActivity,psm:uc</item>
+    </string-array>
+    <string-array name="fullscreen_landscape_list_virtual_carwith">
+        <item>com.autonavi.minimap,psc</item>
+        <item>com.baidu.BaiduMap,psc</item>
+        <item>com.ss.android.lark,psc</item>
+        <item>com.tencent.wemeet.app,psc:fk</item>
+        <item>com.tencent.qqlive,psc</item>
+        <item>com.ximalaya.ting.android,psc:uc</item>
+        <item>com.ifeng.fhdt,psc:fk</item>
+        <item>com.ximalaya.ting.lite,psc</item>
+        <item>com.sinyee.babybus.recommendapp,scm</item>
+        <item>com.sina.weibo,psc:ssa:fk</item>
+        <item>com.luna.music,psc:ssa</item>
+        <item>com.luna.music,psc:ssa</item>
+        <item>com.sohu.sohuvideo,psc:ssa</item>
+        <item>com.alibaba.android.rimet,psc:ssa</item>
+        <item>com.qidian.QDReader,psc:ssa</item>
+        <item>com.MobileTicket,psc:ssa</item>
+        <item>com.coolapk.market,psc:ssa</item>
+        <item>com.xingin.xhs,psc:ssa</item>
+        <item>com.xiaomi.smarthome,psc:ssa</item>
+        <item>com.lemon.lv,psc:ssa:fk</item>
+        <item>com.duokan.reader,psc:ssa</item>
+        <item>com.youdao.dict,psc:ssa</item>
+        <item>com.tencent.weread,psc:ssa</item>
+        <item>com.fenbi.android.leo,psc:ssa</item>
+    </string-array>
+    <string-array name="fullscreen_landscape_list_virtual_milink">
+        <item>com.autonavi.minimap,psm:uc:nr</item>
+        <item>com.quark.browser,psm:fk</item>
+        <item>com.UCMobile,psm:fk</item>
+        <item>com.tencent.androidqqmail,psm</item>
+        <item>com.tencent.map,psm</item>
+        <item>com.tencent.wemeet.app,psm:fk</item>
+        <item>cn.kuwo.player,psm</item>
+        <item>com.kiloo.subwaysurf,psm</item>
+        <item>com.ximalaya.ting.android,psm:uc</item>
+        <item>com.tencent.mm,psm:ssa</item>
+        <item>com.miui.notes,psm</item>
+        <item>com.ss.android.ugc.aweme,psm:ssa:r</item>
+        <item>com.lemon.lv,psm:ssa:fk</item>
+        <item>com.fenbi.android.leo,psm:ssa</item>
+        <item>com.tencent.wework,psm:ssa</item>
+        <item>com.tencent.mobileqq,psm:fk:ssa</item>
+        <item>com.baidu.BaiduMap,psm:fk</item>
+        <item>com.smile.gifmaker,psm:ssa</item>
+        <item>com.xingin.xhs,psm:ssa</item>
+        <item>com.sina.weibo,psm:ssa:fk</item>
+        <item>com.alibaba.android.rimet,psm:ssa</item>
+        <item>com.MobileTicket,psm:ssa</item>
+        <item>com.qidian.QDReader,psm:ssa</item>
+        <item>cn.com.langeasy.LangEasyLexis,psm:ssa</item>
+        <item>com.sohu.sohuvideo,psm:ssa</item>
+        <item>org.telegram.messenger,psm:ssa</item>
+        <item>com.coolapk.market,psm:ssa</item>
+        <item>com.baidu.baidutranslate,psm:ssa</item>
+        <item>com.gstarmc.android,psm:fk:ssa</item>
+        <item>com.sinyee.babybus.recommendapp,psm:ssa:scm</item>
+        <item>com.ss.android.ugc.aweme.lite,psm:ssa</item>
+        <item>com.baidu.searchbox,psm:ssa</item>
+        <item>com.kuaishou.nebula,psm:ssa</item>
+        <item>com.ss.android.article.video,psm:ssa</item>
+        <item>com.duokan.reader,psm:ssa</item>
+        <item>com.youdao.dict,psm:ssa</item>
+        <item>com.tencent.weread,psm:ssa</item>
+        <item>in.startv.hotstar.dplus,psm</item>
+        <item>com.qqgame.hlddz,psm:ssa:fk</item>
+        <item>com.instagram.android,psm:ssa</item>
+        <item>com.android.soundrecorder,psm:ssa</item>
+        <item>com.android.email,psm:ssa</item>
+        <item>com.android.deskclock,psm:ssa</item>
+        <item>com.android.browser,psm:ssa</item>
+        <item>com.miui.calculator,psm:ssa</item>
+        <item>com.xiaomi.vipaccount,psm:ssa</item>
+        <item>com.xiaomi.youpin,psm:ssa</item>
+        <item>com.mipay.wallet,psm:ssa</item>
+        <item>com.android.fileexplorer,psm:ssa</item>
+        <item>com.miui.gallery,psm:ssa</item>
+        <item>com.miui.player,psm:ssa</item>
+        <item>cn.wps.moffice_eng,psm:ssa:fk</item>
+        <item>com.xiaomi.smarthome,psm:ssa</item>
+        <item>com.xiaomi.shop,psm:ssa</item>
+        <item>com.luna.music,psm:ssa</item>
+        <item>com.lemon.lvoverseas,psm:ssa</item>
+        <item>com.amazon.mShop.android.shopping,psm:ssa</item>
+        <item>com.facebook.orca,psm:ssa:fk</item>
+        <item>com.zhiliaoapp.musically,psm:ssa</item>
+        <item>com.whatsapp,psm:ssa</item>
+        <item>com.ss.android.ugc.trill,psm:ssa</item>
+        <item>com.spotify.music,psm:ssa</item>
+        <item>com.pinterest,psm:ssa</item>
+        <item>com.amazon.avod.thirdpartyclient,psm:ssa</item>
+        <item>us.zoom.videomeetings,psm:ssa</item>
+        <item>com.twitter.android,psm:ssa</item>
+        <item>com.discord,psm:ssa</item>
+        <item>com.microsoft.office.word,psm:fk:ssa</item>
+        <item>com.adobe.reader,psm:ssa</item>
+        <item>com.disney.disneyplus,psm:ssa</item>
+        <item>com.microsoft.office.outlook,psm:ssa</item>
+        <item>com.viber.voip,psm:ssa</item>
+        <item>com.canva.editor,psm:ssa</item>
+        <item>com.microsoft.teams,psm:ssa</item>
+        <item>tv.twitch.android.app,psm:ssa</item>
+        <item>com.vkontakte.android,psm:ssa</item>
+        <item>jp.naver.line.android,psm:ssa</item>
+        <item>com.microsoft.office.excel,psm:fk:ssa</item>
+        <item>com.yandex.browser,psm:ssa</item>
+        <item>org.videolan.vlc,psm:ssa</item>
+        <item>in.startv.hotstar,psm:ssa</item>
+        <item>com.microsoft.office.onenote,psm:ssa</item>
+        <item>com.microsoft.office.powerpoint,psm:fk:ssa</item>
+        <item>com.microsoft.skydrive,psm:ssa</item>
+        <item>org.mozilla.firefox,psm:ssa</item>
+        <item>ru.yandex.searchplugin,psm:ssa</item>
+        <item>com.brave.browser,psm:ssa</item>
+        <item>com.zing.zalo,psm:ssa</item>
+        <item>com.opera.browser,psm:ssa</item>
+        <item>com.amazon.kindle,psm:ssa</item>
+        <item>com.yahoo.mobile.client.android.mail,psm:ssa</item>
+        <item>com.skype.raider,psm:ssa</item>
+        <item>ru.zdevs.zarchiver,psm:ssa</item>
+        <item>com.microsoft.office.officehubrow,psm:ssa</item>
+        <item>com.adsk.sketchbook,psm:ssa:fk</item>
+        <item>com.lenovo.anyshare.gps,psm:ssa</item>
+        <item>com.netflix.mediaclient,psm:ssa:scm:fk</item>
+        <item>org.zwanoo.android.speedtest,psm:ssa:scm:fk</item>
+        <item>com.android.mms,psm:ssa</item>
+        <item>com.miui.mediaeditor,psm:ssa</item>
+        <item>com.miui.mediaviewer,psm:ssa</item>
+        <item>com.android.settings,psm:ssa</item>
+        <item>com.jingdong.app.mall,psm:ssa</item>
+    </string-array>
+    <array name="fullscreen_landscape_list_virtual_milink_global" />
+    <string-array name="gamemode_list">
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.tencent.tmgp.sgamece</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.tmgp.projectg</item>
+        <item>com.tencent.tmgp.speedmobile</item>
+        <item>com.tencent.lolm</item>
+        <item>com.miHoYo.Yuanshen</item>
+        <item>com.miHoYo.enterprise.HK4E</item>
+        <item>com.miHoYo.yuanshencb</item>
+        <item>com.tencent.tmgp.bh3</item>
+        <item>com.tencent.tmgp.cod</item>
+        <item>com.netease.g67</item>
+        <item>com.tencent.tmgp.cf</item>
+        <item>com.netease.hyxd</item>
+        <item>com.tencent.tmgp.wuxia</item>
+        <item>com.kiloo.subwaysurf</item>
+        <item>com.tencent.af</item>
+        <item>com.netease.mc.vivo</item>
+        <item>com.netease.lztg</item>
+        <item>com.netease.lztg.vivo</item>
+        <item>com.tencent.tmgp.yongyong.lztg</item>
+        <item>com.tencent.fifamobile</item>
+        <item>com.tencent.tmgp.g13002010</item>
+        <item>com.happyelements.AndroidAnimal.qq</item>
+        <item>com.happyelements.AndroidAnimal.ad</item>
+        <item>com.pwrd.zsyj.laohu</item>
+        <item>com.tencent.jkchess</item>
+        <item>com.netease.mrzh</item>
+        <item>com.pwrd.hotta.laohu</item>
+        <item>com.tencent.tmgp.dwrg</item>
+        <item>com.tencent.KiHan</item>
+        <item>com.protopop.brightridge</item>
+        <item>com.pubg.imobile</item>
+        <item>com.tencent.ig</item>
+        <item>com.pubg.krmobile</item>
+        <item>com.vng.pubgmobile</item>
+        <item>com.rekoo.pubgm</item>
+        <item>com.tencent.iglite</item>
+        <item>com.activision.callofduty.shooter</item>
+        <item>com.garena.game.codm</item>
+        <item>com.miHoYo.GenshinImpact</item>
+        <item>com.ea.gp.apexlegendsmobilefps</item>
+        <item>com.gameloft.android.ANMP.GloftA9HM</item>
+        <item>com.dts.freefiremax</item>
+        <item>com.dts.freefireth</item>
+        <item>com.t2ksports.nba2k20</item>
+        <item>com.t2ksports.nba2k20and</item>
+        <item>com.blizzard.diablo.immortal</item>
+        <item>com.riotgames.league.wildrift</item>
+        <item>com.ngame.allstar.eu</item>
+        <item>com.netmarble.lin2ws</item>
+        <item>com.gameloft.android.ANMP.GloftSXHM</item>
+        <item>com.phoenix.scarfall.free.fps.tps.battle.royale.combat.survival.shooting.battleground.war</item>
+        <item>com.ea.game.nfs14_row</item>
+        <item>com.funcube.loa</item>
+        <item>com.gaijin.xom</item>
+        <item>com.netmarble.enngb</item>
+        <item>com.kiloo.subwaysurf</item>
+        <item>jp.pokemon.pokemonunite</item>
+        <item>com.tgc.sky.android</item>
+        <item>com.Psyonix.RL2D</item>
+        <item>com.zynga.starwars.hunters</item>
+        <item>com.gtarcade.loachaos</item>
+        <item>com.supercell.brawlstars</item>
+        <item>valhalla.survival.craft.z</item>
+        <item>com.noodlecake.altosodyssey</item>
+        <item>com.proximabeta.fancyworld</item>
+        <item>com.epicgames.portal</item>
+        <item>com.rovio.angrybirdsrio</item>
+        <item>com.vectorunit.yellow</item>
+        <item>com.mojang.minecraftpe</item>
+        <item>com.MediaTek.AndroidMAGTSample</item>
+        <item>com.miHoYo.enterprise.NGHSoD</item>
+        <item>com.miHoYo.enterprise.NGHSoDBeta</item>
+        <item>com.qqgame.hlddz</item>
+        <item>com.tencent.tmgp.coslegend</item>
+        <item>com.tencent.tmgp.sskgame</item>
+        <item>com.tencent.tmgp.lx12</item>
+        <item>com.tencent.tmgp.aceracer</item>
+        <item>com.ztgame.bob</item>
+        <item>com.tencent.tmgp.yys.zqb</item>
+        <item>com.Protopop.Wilderless</item>
+        <item>com.badflyinteractive.taucetivulkan</item>
+        <item>com.tencent.tmgp.NBA</item>
+        <item>com.tencent.tmgp.xxajh</item>
+        <item>com.tencent.mf.uam</item>
+        <item>com.ymtx.hcrmnq.nearme.gamecenter</item>
+        <item>com.snp.yjklsj.vivo</item>
+        <item>com.glife.smsjapk.nearme.gamecenter</item>
+        <item>com.tencent.tmgp.qqx5</item>
+        <item>com.netease.dhxy.vivo</item>
+        <item>com.szgd.GGBondAmazingHero.vivo</item>
+        <item>com.BoonieBearsEntangledWorldsTWO.vivo</item>
+        <item>com.dreamgame.fruitbubble.vivo</item>
+        <item>com.gzcy.sdttl.vivo</item>
+        <item>com.netease.my.vivo</item>
+        <item>com.yodo1.SkiSafari.BUBUGAO_01</item>
+        <item>com.xingluo.molitt</item>
+        <item>com.tencent.tmgp.NBA</item>
+        <item>com.zk.cfsc.nearme.gamecenter</item>
+        <item>com.yrtgame.stickvar.nearme.gamecenter</item>
+        <item>com.cmcm.arrowio_cn.vivo</item>
+        <item>com.gzqs.hcrgdqs.vivo</item>
+        <item>com.zjyd.gzshmnq.vivo</item>
+        <item>com.adzw.hcrsjjy.vivo</item>
+        <item>com.mnshsj.vivo</item>
+        <item>com.gzgx.hcrcjtj.vivo</item>
+        <item>com.zk.cfsc.vivo</item>
+        <item>com.gzys.cjblq.vivo</item>
+        <item>com.csg.zhsqs.vivo</item>
+        <item>com.duoduo.idioms</item>
+        <item>com.snp.kljjsl.vivo</item>
+        <item>com.clmobi.atmrxyx.vivo</item>
+        <item>com.gamestar.perfectpiano</item>
+    </string-array>
+    <string-array name="invalid_package_list_on_network_whitelist">
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.media</item>
+    </string-array>
+    <string-array name="large_capacity_list">
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.ss.android.ugc.aweme.lite</item>
+        <item>com.ss.android.ugc.live</item>
+        <item>com.ss.android.ugc.livelite</item>
+        <item>com.smile.gifmaker</item>
+        <item>com.kuaishou.nebula</item>
+        <item>com.ss.android.article.news</item>
+    </string-array>
+    <string-array name="list_authorised_freeform_list">
+        <item>com.miui.calculator</item>
+        <item>cn.wps.moffice_eng</item>
+        <item>com.miui.securitymanager</item>
+        <item>com.xiaomi.mslgrdp</item>
+        <item>com.xiaomi.wpslauncher</item>
+        <item>com.xiaomi.cajlauncher</item>
+        <item>com.xiaomi.homeeco</item>
+        <item>com.miui.voiceassist</item>
+    </string-array>
+    <string-array name="miui_camera_refresh_rate_black_list">
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.jkchess</item>
+        <item>com.netease.party.mi</item>
+        <item>com.happyelements.AndroidAnimal</item>
+        <item>com.miHoYo.Yuanshen</item>
+        <item>com.tencent.KiHan</item>
+        <item>com.tencent.lolm</item>
+        <item>com.miHoYo.hkrpg</item>
+        <item>com.taptap</item>
+        <item>com.tencent.mf.uam</item>
+        <item>com.tencent.tmgp.supercell.clashofclans</item>
+        <item>com.tencent.tmgp.cf</item>
+        <item>com.ttdnj.cold.knowledge.app</item>
+        <item>com.meta.box</item>
+        <item>com.tencent.tmgp.cod</item>
+        <item>cn.jj</item>
+        <item>com.netease.nshm</item>
+        <item>com.kiloo.subwaysurf</item>
+        <item>com.minitech.miniworld.TMobile.mi</item>
+        <item>com.qqgame.hlddz</item>
+        <item>com.netease.mc.mi</item>
+        <item>com.tencent.tmgp.speedmobile</item>
+        <item>com.m4399.gamecenter</item>
+        <item>com.hypergryph.arknights</item>
+        <item>com.valvesoftware.android.steam.community</item>
+        <item>com.miHoYo.ys.mi</item>
+        <item>com.tencent.ig</item>
+        <item>com.tencent.qqgame.xq</item>
+        <item>com.xmcy.hykb</item>
+        <item>com.netease.sky.mi</item>
+        <item>com.netease.party</item>
+    </string-array>
+    <string-array name="module_pss_memory_threshold_list">
+        <item>com.miui.backup,295000,491520</item>
+        <item>com.android.contacts,430080,552960</item>
+        <item>android.process.acore,430080,552960</item>
+        <item>com.miui.miwallpaper,211968,447488</item>
+        <item>com.miui.carlink,737280,737280</item>
+        <item>com.miui.phrase,243302,364953</item>
+        <item>com.miui.miwallpaper.mars:marsPreviewSuperWallpaper,786432,786432</item>
+        <item>com.miui.miwallpaper.geometry:GeometryPreviewSuperWallpaper,786432,786432</item>
+        <item>com.miui.miwallpaper.earth:earthPreviewSuperWallpaper,786432,786432</item>
+        <item>com.miui.miwallpaper:snowmountainPreviewSuperWallpaper,786432,786432</item>
+        <item>com.miui.miwallpaper.saturn:saturnPreviewSuperWallpaper,786432,786432</item>
+        <item>com.miui.miwallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper.miweatherwallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper:marsSuperWallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper.mars:marsSuperWallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper.geometry:GeometrySuperWallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper.earth:earthSuperWallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper.saturn:saturnSuperWallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper:snowmountainSuperWallpaper,706560,706560</item>
+        <item>com.miui.miwallpaper.snowmountain:snowmountainSuperWallpaper,706560,706560</item>
+        <item>com.miui.contentextension,688128,688128</item>
+        <item>com.android.printspooler,368640,614400</item>
+        <item>com.android.incallui,239616,384614</item>
+        <item>com.android.phone,153088,217856</item>
+        <item>com.android.email,552960,583680</item>
+        <item>com.android.mms,368640,614400</item>
+        <item>com.android.mms:mms_service,58880,58880</item>
+        <item>com.miui.miservice,568934,737280</item>
+        <item>com.miui.bugreport,568934,737280</item>
+        <item>com.miui.personalassistant,588800,1177600</item>
+        <item>com.xiaomi.migameservice,430080,430080</item>
+        <item>com.miui.yellowpage,265421,368640</item>
+        <item>com.miui.calculator,331776,614400</item>
+        <item>com.miui.screenshot,983040,1001472</item>
+        <item>com.xiaomi.mirror,588800,588800</item>
+        <item>com.miui.hybrid,250000,300000</item>
+        <item>com.miui.hybrid:entrance,86016,86016</item>
+        <item>com.miui.hybrid:LauncherX,1105920,1105920</item>
+        <item>com.miui.wmsvc,23552,23552</item>
+        <item>com.android.bluetooth,164864,194304</item>
+        <item>com.xiaomi.bluetooth,471040,471040</item>
+        <item>com.xiaomi.bluetooth:ui,471040,471040</item>
+        <item>com.android.soundrecorder,337920,583680</item>
+        <item>com.android.soundrecorder:remote,337920,583680</item>
+        <item>com.miui.mediaviewer,460800,1228800</item>
+        <item>com.xiaomi.smarthome,860160,1720320</item>
+        <item>com.miui.core,44237,44237</item>
+        <item>com.miui.daemon,58880,58880</item>
+        <item>mqsasd,58880,58880</item>
+        <item>com.miui.screenrecorder,276480,368640</item>
+        <item>com.miui.powerkeeper,176640,176640</item>
+        <item>com.miui.greenguard:ui,454656,491520</item>
+        <item>com.miui.greenguard,58880,58880</item>
+        <item>com.lbe.security.miui:ui,221184,294912</item>
+        <item>com.lbe.security.miui,58880,58880</item>
+        <item>com.miui.face,235520,353280</item>
+        <item>com.android.calendar,294912,491520</item>
+        <item>com.android.providers.calendar,294912,491520</item>
+        <item>com.xiaomi.calendar,331776,528384</item>
+        <item>com.xiaomi.simactivate.service,73728,73728</item>
+        <item>com.android.settings,540672,552960</item>
+        <item>com.android.deskclock,337920,522240</item>
+        <item>com.miui.securitycenter,798720,921600</item>
+        <item>com.miui.guardprovider,798720,921600</item>
+        <item>com.miui.securityadd,798720,921600</item>
+        <item>com.miui.cleanmaster,798720,921600</item>
+        <item>com.miui.cleanmaster:cmsdk,798720,921600</item>
+        <item>com.miui.cleaner,798720,921600</item>
+        <item>com.miui.cleaner:micleansdk,798720,921600</item>
+        <item>com.miui.securitycenter:ui,798720,921600</item>
+        <item>com.miui.securitycenter.bootaware,798720,921600</item>
+        <item>com.miui.securitycenter.remote,317952,317952</item>
+        <item>com.miui.securitycore,540672,540672</item>
+        <item>com.miui.securitycore.remote,58880,58880</item>
+        <item>com.sohu.inputmethod.sogou.xiaomi,247296,370944</item>
+        <item>com.baidu.input_mi,247296,370944</item>
+        <item>com.iflytek.inputmethod.miui,247296,370944</item>
+        <item>com.android.systemui ,588800,942080</item>
+        <item>com.miui.weather2,337920,860160</item>
+        <item>com.miui.notification,614400,614400</item>
+        <item>com.miui.notification:remote,614400,614400</item>
+        <item>com.milink.service,614400,946176</item>
+        <item>com.miui.gallery,786432,1376256</item>
+        <item>com.android.fileexplorer,522240,614400</item>
+        <item>com.mi.android.globalFileexplorer,583680,614400</item>
+        <item>com.xiaomi.metoknlp,117760,117760</item>
+        <item>com.xiaomi.location.fused,117760,117760</item>
+        <item>com.duokan.phone.remotecontroller,368640,430080</item>
+        <item>com.duokan.phone.remotecontroller:MDNSSDListener,368640,430080</item>
+        <item>com.miui.contentcatcher,58880,58880</item>
+        <item>android.process.mediaUI,368640,460800</item>
+        <item>com.miui.securityinputmethod,142541,243302</item>
+        <item>com.miui.mishare.connectivity:ui,368640,368640</item>
+        <item>com.miui.mishare.connectivity,70656,70656</item>
+        <item>com.xiaomi.mi_connect_service,58880,58880</item>
+        <item>com.mfashiongallery.emag,614400,1032192</item>
+        <item>com.miui.huanji,460800,688128</item>
+        <item>com.miui.huanji:backup,460800,688128</item>
+        <item>com.xiaomi.vipaccount,860160,1376256</item>
+        <item>com.xiaomi.vipaccount:log,860160,1376256</item>
+        <item>com.xiaomi.vipaccount:remote,860160,1376256</item>
+        <item>com.xiaomi.vipaccount:stat,860160,1376256</item>
+        <item>com.xiaomi.misettings,368640,540672</item>
+        <item>com.xiaomi.misettings:widgetProvider,368640,540672</item>
+        <item>com.xiaomi.misettings:remote,58880,58880</item>
+        <item>com.miui.accessibility,331776,331776</item>
+        <item>com.miui.accessibility:remote,331776,331776</item>
+        <item>com.miui.accessibility.common,331776,331776</item>
+        <item>com.xiaomi.account,337920,522240</item>
+        <item>com.xiaomi.account:accountservice,337920,522240</item>
+        <item>com.miui.tsmclient,712704,737280</item>
+        <item>com.unionpay.tsmservice.mi,712704,737280</item>
+        <item>com.miui.tsmclient:daemon,58880,58880</item>
+        <item>com.miui.aod,529920,529920</item>
+        <item>com.miui.aod:settings,529920,529920</item>
+        <item>com.android.updater,331776,516096</item>
+        <item>com.miui.touchassistant,331776,331776</item>
+        <item>com.miui.touchassistant:float,176640,176640</item>
+        <item>com.xiaomi.joyose,58880,58880</item>
+        <item>com.miui.cloudservice,583680,565248</item>
+        <item>com.miui.cloudbackup,583680,565248</item>
+        <item>com.miui.micloudsync,583680,565248</item>
+        <item>com.xiaomi.finddevice:securitypush,294912,294912</item>
+        <item>com.xiaomi.finddevice:normal,294912,294912</item>
+        <item>com.xiaomi.finddevice,58880,58880</item>
+        <item>com.miui.compass,221184,331776</item>
+        <item>org.ifaa.aidl.manager,58880,58880</item>
+        <item>com.tencent.soter.soterserver,58880,58880</item>
+        <item>com.android.thememanager,921600,1228800</item>
+        <item>com.miui.home,588800,942080</item>
+        <item>com.mi.android.globallauncher,588800,942080</item>
+        <item>com.xiaomi.mslgrdp,233472,233472</item>
+        <item>wps,618240,618240</item>
+        <item>wpsoffice,618240,618240</item>
+        <item>com.miui.mediaeditor,946176,2703360</item>
+        <item>com.miui.packageinstaller,430080,614400</item>
+        <item>com.miui.global.packageinstaller,430080,430080</item>
+        <item>com.duokan.reader,1099776,1099776</item>
+        <item>com.miui.msa.global,117760,196659</item>
+        <item>com.miui.msa.global:ui,117760,196659</item>
+        <item>com.android.browser,1597440,1843200</item>
+        <item>com.mi.globalbrowser,1130496,1966080</item>
+        <item>com.miui.newhome,1572864,1806336</item>
+        <item>com.miui.newhome:launcher,353280,471040</item>
+        <item>com.miui.fm,1308672,1308672</item>
+        <item>com.miui.fm:remote,1308672,1308672</item>
+        <item>com.android.quicksearchbox,720077,1381171</item>
+        <item>com.miui.virtualsim,319488,344064</item>
+        <item>com.miui.virtualsim:authentication,319488,344064</item>
+        <item>com.xiaomi.midrop,614400,737280</item>
+        <item>com.miui.fmservice:remote,58880,117760</item>
+        <item>com.miui.android.fashiongallery,737280,921600</item>
+        <item>com.miui.video,808550,1290240</item>
+        <item>com.miui.videoplayer,808550,1290240</item>
+        <item>com.xiaomi.xmsf,129536,164864</item>
+        <item>com.xiaomi.discover,614400,614400</item>
+        <item>com.xiaomi.market,921600,1142784</item>
+        <item>com.xiaomi.mipicks,921600,1142784</item>
+        <item>com.miui.player,737280,1290240</item>
+        <item>com.miui.player:remote,141312,141312</item>
+        <item>com.xiaomi.gamecenter.sdk.service,368640,491520</item>
+        <item>com.xiaomi.gamecenter,921600,1142784</item>
+        <item>com.xiaomi.gamecenter:migameRemote,921600,1142784</item>
+        <item>com.xiaomi.glgm,583680,722534</item>
+        <item>com.miui.systemAdSolution,235520,270848</item>
+        <item>com.miui.systemAdSolution:ui,235520,270848</item>
+        <item>com.xiaomi.aiasst.vision,294912,983040</item>
+        <item>com.xiaomi.aiasst.service,353280,471040</item>
+        <item>com.xiaomi.scanner,614400,1105920</item>
+        <item>com.xiaomi.mibrain.speech,184320,294912</item>
+        <item>com.xiaoai.mibrain.speech:core,184320,294912</item>
+        <item>com.miui.voiceassist,860160,920371</item>
+        <item>com.miui.voiceassist:pushservice,860160,920371</item>
+        <item>com.miui.voiceassist:floatlogo,860160,920371</item>
+        <item>com.miui.voiceassist:download,860160,920371</item>
+        <item>com.miui.voiceassist:voice_trigger,860160,920371</item>
+        <item>com.miui.voiceassist:themeProvider,860160,920371</item>
+        <item>com.miui.voiceassist:core ,58880,58880</item>
+        <item>com.miui.voicetrigger,488704,488704</item>
+        <item>com.mipay.wallet,1327104,1572864</item>
+        <item>com.miui.analytics,117760,117760</item>
+        <item>com.mi.global.shop,1322189,1597440</item>
+        <item>com.mi.global.bbs,983040,1105920</item>
+        <item>com.mi.health,1239859,1486848</item>
+        <item>com.mi.health:device,176640,235520</item>
+        <item>com.xiaomi.shop,1351680,1351680</item>
+        <item>com.xiaomi.shop:mishop.update,1351680,1351680</item>
+        <item>com.xiaomi.shop:remote,1351680,1351680</item>
+        <item>com.xiaomi.ab,1351680,1351680</item>
+        <item>com.xiaomi.youpin,963379,963379</item>
+        <item>system_server,506368,588800</item>
+        <item>/system/bin/initsecond_stage,70656,82432</item>
+        <item>/system/bin/audioserver,47104,58880</item>
+        <item>/system/bin/mediaserver64,64768,100096</item>
+        <item>/system/bin/netd,17664,41216</item>
+        <item>android.process.media,64768,100096</item>
+        <item>/system/bin/surfaceflinger,176640,259072</item>
+        <item>media.audio.qc.codec.qti.media.c2audio@1.0-service,47104,58880</item>
+    </string-array>
+    <string-array name="not_start_browser_in_freeform_apps">
+        <item>com.blizzard.wtcg.hearthstone</item>
+        <item>com.blizzard.wtcg.hearthstone.cn.dashen</item>
+    </string-array>
+    <string-array name="prerender_scrollopt_extra_buffer_list">
+        <item>com.tencent.mm,1</item>
+        <item>com.sina.weibo,1</item>
+        <item>com.taobao.taobao,1</item>
+        <item>com.tencent.mobileqq,1</item>
+        <item>com.ss.android.ugc.aweme,1</item>
+        <item>com.ss.android.article.news,1</item>
+        <item>com.eg.android.AlipayGphone,1</item>
+        <item>com.xunmeng.pinduoduo,1</item>
+        <item>com.kuaishou.nebula,1</item>
+        <item>com.ss.android.ugc.aweme.lite,1</item>
+        <item>com.smile.gifmaker,1</item>
+        <item>com.tencent.mtt,1</item>
+        <item>com.baidu.searchbox,1</item>
+        <item>com.autonavi.minimap,1</item>
+        <item>com.jingdong.app.mall,1</item>
+        <item>tv.danmaku.bili,1</item>
+        <item>com.sankuai.meituan,1</item>
+        <item>com.alibaba.android.rimet,1</item>
+        <item>com.ss.android.article.lite,1</item>
+        <item>com.UCMobile,1</item>
+        <item>com.tencent.qqlive,1</item>
+        <item>com.kugou.android,1</item>
+        <item>com.netease.cloudmusic,1</item>
+        <item>com.tencent.qqmusic,1</item>
+        <item>com.dragon.read,1</item>
+        <item>com.baidu.BaiduMap,1</item>
+        <item>com.xingin.xhs,1</item>
+        <item>com.qiyi.video,1</item>
+        <item>com.tencent.news,1</item>
+        <item>com.zhihu.android,1</item>
+        <item>com.taobao.idlefish,1</item>
+        <item>com.ss.android.article.video,1</item>
+        <item>com.kmxs.reader,1</item>
+        <item>com.youku.phone,1</item>
+        <item>com.ss.android.ugc.live,1</item>
+        <item>com.duowan.kiwi,1</item>
+        <item>com.baidu.haokan,1</item>
+        <item>air.tv.douyu.android,1</item>
+        <item>cn.xuexi.android,1</item>
+        <item>com.quark.browser,1</item>
+        <item>com.sup.android.superb,1</item>
+        <item>com.tencent.karaoke,1</item>
+        <item>com.sdu.didi.gsui,1</item>
+        <item>com.le123.ysdq,1</item>
+        <item>cn.xiaochuankeji.tieba,1</item>
+        <item>com.duokan.free,1</item>
+        <item>com.hunantv.imgo.activity,1</item>
+        <item>com.baidu.tieba,1</item>
+        <item>com.baidu.searchbox.lite,1</item>
+        <item>com.baidu.netdisk,1</item>
+        <item>com.ss.android.lark.kami,1</item>
+        <item>com.fenbi.android.zhaojiao,1</item>
+        <item>com.cmcc.cmvideo,1</item>
+        <item>com.qiyi.video.lite,1</item>
+        <item>com.taobao.live,1</item>
+        <item>com.zhongduomei.rrmj.society,1</item>
+        <item>com.eduyun.app.factory.ykt,1</item>
+        <item>com.xunlei.downloadprovider,1</item>
+        <item>com.baidu.homework,1</item>
+        <item>com.qiyi.video.pad,1</item>
+        <item>com.meta.box,1</item>
+        <item>com.fenbi.android.servant,1</item>
+        <item>com.chaoxing.mobile,1</item>
+        <item>com.cainiao.wireless,1</item>
+        <item>com.android.browser,1</item>
+        <item>com.xiaomi.market,1</item>
+        <item>com.miui.video,1</item>
+        <item>com.duokan.reader,1</item>
+        <item>com.miui.weather2,1</item>
+        <item>com.miui.notes,1</item>
+        <item>com.android.quicksearchbox,1</item>
+        <item>com.miui.player,1</item>
+        <item>com.xiaomi.shop,1</item>
+        <item>com.miui.newhome,1</item>
+        <item>com.android.thememanager,1</item>
+        <item>com.xiaomi.gamecenter,1</item>
+        <item>com.mfashiongallery.emag,1</item>
+        <item>com.miui.videoplayer,1</item>
+        <item>com.mi.globalbrowser,1</item>
+        <item>com.mi.global.shop,1</item>
+        <item>com.android.chrome,1</item>
+        <item>com.android.vending,1</item>
+        <item>com.google.android.gm,1</item>
+        <item>com.google.android.youtube,1</item>
+        <item>com.whatsapp,1</item>
+        <item>com.facebook.katana,1</item>
+        <item>com.instagram.android,1</item>
+        <item>com.mxtech.videoplayer.ad,1</item>
+        <item>com.facebook.lite,1</item>
+        <item>com.facebook.orca,1</item>
+        <item>com.flipkart.android,1</item>
+        <item>com.whatsapp.w4b,1</item>
+        <item>com.playit.videoplayer,1</item>
+        <item>in.amazon.mShop.android.shopping,1</item>
+        <item>org.telegram.messenger,1</item>
+        <item>com.snapchat.android,1</item>
+        <item>com.microsoft.teams,1</item>
+        <item>com.amazon.avod.thirdpartyclient,1</item>
+        <item>com.kwai.bulldog,1</item>
+        <item>com.sonyliv,1</item>
+        <item>com.eterno,1</item>
+        <item>cn.wps.moffice_eng,1</item>
+        <item>com.graymatrix.did,1</item>
+        <item>com.myntra.android,1</item>
+        <item>com.twitter.android,1</item>
+        <item>com.picsart.studio,1</item>
+        <item>com.dewmobile.kuaiya.play,1</item>
+        <item>com.google.android.apps.youtube.kids,1</item>
+        <item>com.netflix.mediaclient,1</item>
+        <item>com.brave.browser,1</item>
+        <item>tv.twitch.android.app,1</item>
+        <item>org.videolan.vlc,1</item>
+        <item>com.spotify.music,1</item>
+        <item>jp.ne.ibis.ibispaintx.app,1</item>
+        <item>org.jw.jwlibrary.mobile,1</item>
+        <item>com.tradingview.tradingviewapp,1</item>
+        <item>com.pinterest,1</item>
+        <item>com.google.android.apps.youtube.music,1</item>
+        <item>com.bstar.intl,1</item>
+        <item>com.amazon.mShop.android.shopping,1</item>
+    </string-array>
+    <string-array name="process_dmabuf_threshold_list">
+        <item>com.example.memleaktesttool,2048000</item>
+        <item>zygote,2560000</item>
+        <item>zygote64,2560000</item>
+        <item>system_server,2560000</item>
+        <item>/system/bin/surfaceflinger,2560000</item>
+        <item>/system/bin/netd,2560000</item>
+        <item>/system/bin/servicemanager,2560000</item>
+        <item>/vendor/bin/hw/vendor.qti.hardware.display.composer-service,2560000</item>
+        <item>/vendor/bin/hw/vendor.qti.hardware.display.allocator-service,2560000</item>
+        <item>com.android.networkstack.process,2560000</item>
+        <item>com.android.systemui,1024000</item>
+        <item>com.miui.home,1024000</item>
+        <item>/system/bin/cameraserver,2048000</item>
+        <item>com.android.camera,2048000</item>
+        <item>/vendor/bin/hw/vendor.qti.camera.provider-service_64,2048000</item>
+        <item>/vendor/bin/hw/camerahalserver,2048000</item>
+        <item>/odm/bin/hw/vendor.qti.camera.provider-service_64,2048000</item>
+        <item>com.ss.android.ugc.aweme,2048000</item>
+        <item>tv.danmaku.bili,2048000</item>
+        <item>com.miui.gallery,2048000</item>
+        <item>com.miui.miwallpaper,2048000</item>
+        <item>com.tencent.tmgp.sgame,2048000</item>
+        <item>com.antutu.benchmark.full,2048000</item>
+    </string-array>
+    <string-array name="process_system_permission_white_list">
+        <item>com.miui.cleanmaster</item>
+        <item>com.miui.cleaner</item>
+    </string-array>
+    <string-array name="screen_rotation_animation_activity_list">
+        <item>tv.danmaku.bili/.ui.video.VideoDetailsActivity,topVideo</item>
+        <item>com.youku.phone/com.youku.ui.activity.DetailActivity,topVideo</item>
+        <item>tv.danmaku.bili/com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity,topVideo</item>
+        <item>com.smile.gifmaker/com.yxcorp.gifshow.corona.detail.CoronaDetailActivity,topVideo</item>
+        <item>com.kuaishou.nebula/com.yxcorp.gifshow.corona.detail.CoronaDetailActivity,topVideo</item>
+        <item>com.autonavi.minimap/com.autonavi.map.activity.NewMapActivity,fullscreen</item>
+        <item>com.tencent.mm/.plugin.finder.feed.ui.FinderLiveVisitorWithoutAffinityUI,centerTopVideo</item>
+        <item>com.tencent.mm/.ui.chatting.gallery.ImageGalleryUI,center</item>
+        <item>com.tencent.mm/.plugin.finder.ui.FinderHomeAffinityUI,centerVideo</item>
+        <item>com.qiyi.video/org.qiyi.android.video.MainActivity,centerTopVideo</item>
+        <item>com.qiyi.video/.WelcomeActivity,centerTopVideo</item>
+        <item>com.android.browser/.BrowserSettingsActivity,ui,centerTopVideo</item>
+        <item>com.zhihu.android/.video_entity.VideoEntitySerialHostActivity,centerTopVideo</item>
+        <item>com.zhihu.android/.feature.short_container_feature.ui.ShortContainerHostActivity,centerTopVideo</item>
+        <item>com.zhihu.android/.video_entity.VideoEntityHostActivity,topVideo</item>
+        <item>com.android.browser/.homepage.infoflow.InfoFlowVideoActivity,topVideo</item>
+        <item>com.tencent.qqlive/.ona.activity.HomeActivity,centerTopVideo</item>
+        <item>com.ss.android.article.video/.activity.SplashActivity,centerTopVideo</item>
+        <item>com.miui.newhome/.business.ui.details.VideoDetailActivity,topVideo</item>
+        <item>com.smile.gifmaker/com.yxcorp.gifshow.HomeActivity,centerTopVideo:captureScreenShot</item>
+        <item>com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.MainActivity,topVideo</item>
+        <item>com.bilibili.app.in/com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity,topVideo</item>
+    </string-array>
+    <string-array name="screen_rotation_animation_package_list">
+        <item>com.qiyi.video,topVideo</item>
+        <item>com.hunantv.imgo.activity,topVideo</item>
+        <item>tv.danmaku.bili,topVideo</item>
+        <item>com.tencent.mobileqq,centerVideo</item>
+        <item>com.smile.gifmaker,centerTopVideo</item>
+        <item>com.kuaishou.nebula,centerTopVideo</item>
+        <item>com.baidu.searchbox,centerTopVideo</item>
+        <item>com.xingin.xhs,centerTopVideo</item>
+        <item>com.miui.video,topVideo</item>
+        <item>com.ss.android.article.news,centerTopVideo</item>
+        <item>com.ss.android.article.lite,centerTopVideo</item>
+        <item>com.sina.weibo,centerTopVideo</item>
+        <item>com.quark.browser,centerVideo</item>
+        <item>com.kugou.android,centerTopVideo</item>
+        <item>com.baidu.searchbox.lite,centerVideo</item>
+        <item>cn.xuexi.android,centerVideo</item>
+        <item>com.tencent.qqlive,topVideo</item>
+        <item>com.google.android.youtube,centerVideo</item>
+        <item>com.netflix.mediaclient,topVideo</item>
+        <item>com.instagram.android,centerTopVideo</item>
+        <item>com.facebook.katana,centerTopVideo</item>
+        <item>com.twitter.android,centerVideo</item>
+        <item>com.miui.videoplayer,topVideo</item>
+        <item>com.bilibili.app.in,centerTopVideo</item>
+        <item>com.iqiyi.i18n,topVideo</item>
+        <item>com.youku.international.phone,topVideo</item>
+        <item>com.tencent.qqlivei18n,topVideo</item>
+        <item>com.hunantv.imgo.activity.inter,topVideo</item>
+    </string-array>
+    <string-array name="support_low_latency_pkg_list">
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.lolm</item>
+        <item>com.tencent.tmgp.cod</item>
+        <item>com.tencent.tmgp.speedmobile</item>
+        <item>com.tencent.tmgp.supercell.brawlstars</item>
+        <item>com.tencent.tmgp.WePop</item>
+        <item>com.netease.mc.mi</item>
+        <item>com.miHoYo.ys.mi</item>
+        <item>com.miHoYo.GenshinImpact</item>
+        <item>com.miHoYo.Yuanshen</item>
+        <item>com.miHoYo.hkrpg</item>
+        <item>com.mengguitg.mi</item>
+        <item>com.fy.fcds.mi</item>
+        <item>com.pokemon.awakening.mi</item>
+        <item>com.carrot.carrotfantasy</item>
+        <item>com.qiqi.game.dmmtwo.mi</item>
+        <item>xtdyd.adh.mi</item>
+        <item>com.hshuochairenwangzhe.mi</item>
+        <item>com.zouchumigong02.mi</item>
+        <item>com.qidian.dldl.mi</item>
+        <item>com.fy.jldzz.mi</item>
+        <item>com.outfit7.mytalkingtomfriends.mi</item>
+        <item>com.je.skgame</item>
+        <item>tldhz.adh.mi</item>
+        <item>com.wonder.hxhcr.mi</item>
+        <item>com.imangi.templerun2</item>
+        <item>com.outfit7.herodash.mi</item>
+        <item>com.kiloo.subwaysurf</item>
+    </string-array>
+    <string-array name="warm_hot_gc_whitelist">
+        <item>com.tencent.mm</item>
+        <item>com.dragon.read</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.ss.android.article.news</item>
+        <item>com.alibaba.android.rimet</item>
+        <item>com.kmxs.reader</item>
+        <item>com.quark.browser</item>
+        <item>com.eg.android.AlipayGphone</item>
+        <item>com.autonavi.minimap</item>
+        <item>com.duowan.kiwi</item>
+        <item>air.tv.douyu.android</item>
+        <item>com.xs.fm</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.taobao.taobao</item>
+        <item>com.tencent.mtt</item>
+        <item>com.smile.gifmaker</item>
+        <item>com.sina.weibo</item>
+        <item>tv.danmaku.bili</item>
+        <item>com.jingdong.app.mall</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.sankuai.meituan</item>
+        <item>com.UCMobile</item>
+        <item>com.qiyi.video</item>
+        <item>com.tencent.news</item>
+        <item>com.zhihu.android</item>
+        <item>com.youku.phone</item>
+        <item>com.ss.android.article.video</item>
+        <item>com.xunmeng.pinduoduo</item>
+        <item>com.android.contacts</item>
+        <item>com.android.deskclock</item>
+        <item>com.baidu.tieba</item>
+        <item>com.happyelements.AndroidAnimal</item>
+        <item>com.kuaishou.nebula</item>
+        <item>com.netease.cloudmusic</item>
+        <item>com.ss.android.article.lite</item>
+        <item>com.ss.android.ugc.aweme.lite</item>
+        <item>com.sup.android.superb</item>
+        <item>com.taobao.idlefis</item>
+        <item>com.tencent.qqmusic</item>
+        <item>com.tencent.weread</item>
+        <item>com.xingin.xhs</item>
     </string-array>
 </resources>
