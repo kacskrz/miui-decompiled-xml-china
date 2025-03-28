@@ -288,7 +288,10 @@
     <string name="empty" />
     <string name="empty_app">No apps</string>
     <string name="enhance_mode_close_feedback">Thanks for using Enhanced protection</string>
+    <string name="enhance_mode_close_tip">Mi Protect will stay on even if you turn off Enhanced protection.</string>
     <string name="enhance_mode_feedback_reason">Why are you turning this feature off?</string>
+    <string name="enhance_mode_intro">Only supports installation of apps that have passed review by GetApps</string>
+    <string name="enhance_mode_open_tip">Turn on Mi Protect first</string>
     <string name="enhance_safe_guard_mode_description">Only install apps that have passed GetApps tests to protect your device from viruses and malware</string>
     <string name="enhance_safe_guard_title">Turn on Enhanced protection to avoid risky apps</string>
     <string name="enhance_safe_mode">Enhanced protection</string>
@@ -442,6 +445,13 @@
     <string name="install_app_loading">Checking installation package…</string>
     <string name="install_apps_user_restriction_dlg_text">This user is not allowed to install apps</string>
     <string name="install_completed_pure_open_tip_title">Turn on Mi Protect to block risky apps and ensure your security.</string>
+    <string name="install_failed_market_enterprise_limit_reason">This is an internal enterprise app. Total downloads have exceeded the limit set by the company, so downloads are no longer available.</string>
+    <string name="install_failed_market_enterprise_limit_solution">Contact the company or organization and have their developers submit feedback to Xiaomi.</string>
+    <string name="install_failed_secure_frp">"For your security, Android doesn't allow apps to be installed immediately after a device is reset if your Google Account is still signed in."</string>
+    <string name="install_failed_secure_frp_suggestion">"Step 1: Tap \"Basic Google services\" and turn it on.
+Step 2: Add the Google Account you were signed in with before you reset your device.
+%1$s"</string>
+    <string name="install_failed_secure_frp_suggestion_clickable">Open Settings</string>
     <string name="install_hint_enhanced_mode_hint">Enhanced protection</string>
     <string name="install_hint_enhanced_mode_hint_desc">"Enhanced protection is on. This app was replaced with the version that passed our security tests. If you still want to install this version, tap \"︙\" and select \"Allow once\". "</string>
     <string name="install_hint_enhanced_mode_hint_desc_clickable">Learn more</string>
@@ -526,6 +536,10 @@
     <string name="mi_protected">Mi Protect</string>
     <string name="mi_protected_duty">Your security is our priority</string>
     <string name="midnight">Night</string>
+    <string name="minors_mode_no_network_hint">"Can't conduct risk detection on apps that contain pornography, gambling, or other fraudulent behavior without an internet connection. Installation of any app requires parental verification."</string>
+    <string name="minors_mode_no_network_hint_description">Installation of any app requires parental verification when not connected to the network</string>
+    <string name="minors_mode_risk_hint_content">This app contains viruses that can endanger your privacy and security</string>
+    <string name="minors_mode_risk_hint_description">"This is a high-risk app that can't be installed"</string>
     <string name="miui_clean">Clear</string>
     <string name="miui_clear_apks_summary">Total %s</string>
     <string name="miui_clear_apks_title">Clear installation packages automatically</string>
@@ -735,6 +749,7 @@
     <string name="open">Turn on</string>
     <string name="open_and_exit">Turn on</string>
     <string name="open_enhanced_protection">Turn on Enhanced protection</string>
+    <string name="open_safe_mode">Turn on</string>
     <string name="passed_security_test">Passed Xiaomi security tests</string>
     <string name="passport_access_denied">Access denied</string>
     <string name="passport_account_crop_user_avatar">Crop photo</string>
@@ -972,7 +987,7 @@
     <string name="permission_name_write_calendar">Add and edit calendar events</string>
     <string name="permission_name_write_external_storage">Save items to device storage</string>
     <string name="permission_num">%1$s</string>
-    <string name="permissoion_management">权限管理</string>
+    <string name="permissoion_management">Permissions</string>
     <string name="please_input_install_app_name">Enter app name</string>
     <string name="please_input_phone_password">Enter screen lock</string>
     <string name="please_input_phone_password_short">Enter screen lock</string>
@@ -1109,6 +1124,7 @@
     <string name="security_mode_open_notification_action_button">Details</string>
     <string name="security_mode_open_notification_msg">Your device is protected</string>
     <string name="security_mode_open_notification_title">Mi Protect is on</string>
+    <string name="security_mode_open_title">Welcome</string>
     <string name="security_mode_renamed">Secure mode is now</string>
     <string name="security_mode_renamed_ok">Got it</string>
     <string name="send">Send</string>
@@ -1123,8 +1139,8 @@ to install other apps"</string>
 are secure"</string>
     <string name="service_mode_advantage_app_security_detection_title">Our security tests</string>
     <string name="service_mode_advantage_bottom_tip">Mi Protect</string>
-    <string name="service_mode_advantage_icon_dark_desc">"Downloaded apps aren't always safe.&lt;br>They might expose your private data.&lt;br>A lot of apps are used for fraud and scams.&lt;br>&lt;font color=#569a77>Mi Protext&lt;/font> is here to solve these problems."</string>
-    <string name="service_mode_advantage_icon_desc">"Downloaded apps aren't always safe.&lt;br>They might expose your private data.&lt;br>A lot of apps are used for fraud and scams.&lt;br>&lt;font color=#52E0A6>Mi Protext&lt;/font> is here to solve these problems."</string>
+    <string name="service_mode_advantage_icon_dark_desc">"Downloaded apps aren't always safe.&lt;br>They might expose your private data.&lt;br>A lot of apps are used for fraud and scams.&lt;br>&lt;font color=#569a77>Mi Protect&lt;/font> is here to solve these problems."</string>
+    <string name="service_mode_advantage_icon_desc">"Downloaded apps aren't always safe.&lt;br>They might expose your private data.&lt;br>A lot of apps are used for fraud and scams.&lt;br>&lt;font color=#52E0A6>Mi Protect&lt;/font> is here to solve these problems."</string>
     <string name="service_mode_advantage_pay_protection_subtitle">Mi Protect checks payment environment for any possible risks to keep your transactions secure.</string>
     <string name="service_mode_advantage_pay_protection_tip">Protect your finances</string>
     <string name="service_mode_advantage_pay_protection_title">Payment environment protection</string>
@@ -1167,23 +1183,27 @@ come from"</string>
     <string name="service_mode_telecom_fraud_protection_summary">Recognizes and intercepts fraudulent calls and messages and prevents fraudulent funds transfers</string>
     <string name="set_management_measures">Set protection measures</string>
     <string name="settings">Settings</string>
+    <string name="settings_security_mode_service_detailed_msg_1">Protection from risky apps</string>
+    <string name="settings_security_mode_service_detailed_msg_2">Monitor app behavior</string>
+    <string name="settings_security_mode_service_detailed_msg_3">Privacy protection</string>
+    <string name="settings_security_mode_service_detailed_msg_4">Install secure apps</string>
     <string name="settings_security_mode_service_list_title_off_msg">Turn on Mi Protect to enjoy the following features:</string>
     <string name="settings_security_mode_service_list_title_on_msg">Secure mode provides the following features</string>
     <string name="settings_security_mode_service_msg_0">New anti-fraud and privacy protection measures</string>
-    <string name="settings_security_mode_service_msg_1">Check apps from unknown sources before installation</string>
-    <string name="settings_security_mode_service_msg_2">Control and restrict harmful app activity</string>
-    <string name="settings_security_mode_service_msg_3">Control privacy related permissions</string>
-    <string name="settings_security_mode_service_msg_4">Check payment environment for security issues</string>
+    <string name="settings_security_mode_service_msg_1">Identifies and limits unknown installation sources to prevent malicious apps from endangering your security</string>
+    <string name="settings_security_mode_service_msg_2">Ensures that the app installation process is risk-free and guarantees system stability</string>
+    <string name="settings_security_mode_service_msg_3">Maintains a manually inspected app risk database to evaluate risk levels</string>
+    <string name="settings_security_mode_service_msg_4">Strictly controls app permissions to prevent excessive requests that may violate your privacy</string>
     <string name="settings_security_mode_service_opening_msg_1">Protection from risky apps</string>
     <string name="settings_security_mode_service_opening_msg_2">Monitor app behavior</string>
     <string name="settings_security_mode_service_opening_msg_3">Payment security</string>
     <string name="settings_security_mode_service_opening_msg_4">Privacy protection</string>
     <string name="settings_security_mode_service_opening_msg_5">Anti-fraud protection</string>
     <string name="settings_security_mode_service_title_0">Install secure apps</string>
-    <string name="settings_security_mode_service_title_1">Protection from risky apps</string>
-    <string name="settings_security_mode_service_title_2">Monitor app behavior</string>
-    <string name="settings_security_mode_service_title_3">Privacy protection</string>
-    <string name="settings_security_mode_service_title_4">Payment security</string>
+    <string name="settings_security_mode_service_title_1">App source review</string>
+    <string name="settings_security_mode_service_title_2">Installation monitoring</string>
+    <string name="settings_security_mode_service_title_3">Identification of risky apps</string>
+    <string name="settings_security_mode_service_title_4">Privacy permission management</string>
     <string name="settings_security_mode_status_off_msg">Off</string>
     <string name="settings_security_mode_status_on_msg">Mi Protect is on</string>
     <string name="settings_security_mode_title_off_msg">Mi Protect</string>
@@ -1336,6 +1356,9 @@ Enhanced protection"</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
     <string name="verification_word">Verify</string>
+    <string name="verified_app_hint_content">"The app you're about to install comes from \"%1$s\""</string>
+    <string name="verified_app_hint_title">Source company</string>
+    <string name="verified_app_logo_text">Internal enterprise app</string>
     <string name="verify_account_default_title">Verify your identity</string>
     <string name="verify_account_title">Verify your identity</string>
     <string name="verify_and_install">Install</string>
@@ -1362,6 +1385,7 @@ Enhanced protection"</string>
     <string name="why_enhanced_protection_1">为什么需要开启</string>
     <string name="why_enhanced_protection_2">增强防护模式？</string>
     <string name="xiaomi_account_risk">Mi Account password</string>
+    <string name="xiaomi_getapps">GetApps</string>
     <string name="xiaomi_market_sdk_update_dialog_cancel">Not now</string>
     <string name="xiaomi_market_sdk_update_dialog_ok">Update</string>
     <string name="xiaomi_market_sdk_update_dialog_title">An update is available</string>
