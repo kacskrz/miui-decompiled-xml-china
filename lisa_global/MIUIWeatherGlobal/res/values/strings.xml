@@ -39,8 +39,10 @@
     <string name="act_find_city_hint">Enter location</string>
     <string name="act_find_city_hot_attractions_title">Popular sites</string>
     <string name="act_find_city_hot_city_title">Popular cities</string>
-    <string name="act_find_city_location_button_text">Get current location</string>
+    <string name="act_find_city_location_button_text">Get location</string>
     <string name="act_find_city_location_title">Current location</string>
+    <string name="act_find_city_major_city_title">Popular locations</string>
+    <string name="act_find_city_search_history_title">Search history</string>
     <string name="act_location_error_to_find_city">"Couldn't get location info. You can add a location manually."</string>
     <string name="act_set_city_find_side">Locating</string>
     <string name="act_set_city_find_side_error">"Can't locate device"</string>
@@ -57,10 +59,12 @@
     <string name="activity_find_city_dialog_message_location_service">To get relevant weather info, allow Weather to access your location.</string>
     <string name="activity_find_city_dialog_set">Settings</string>
     <string name="activity_find_city_dialog_title">Location access</string>
-    <string name="activity_find_city_location_fail_dialog_message">Allow this app to access your location to be able to use this feature. You can grant this permission in Settings.</string>
+    <string name="activity_find_city_location_authorize_message">To ensure that Weather can display relevant info for your location, grant location permissions and select \"Always allow\". You can grant this permission by pressing and holding the app icon, then selecting App info > App permissions > Location.</string>
+    <string name="activity_find_city_location_authorize_tag">Permissions required</string>
+    <string name="activity_find_city_location_fail_dialog_message">Allow this app to access your location to be able to use this feature.</string>
     <string name="activity_find_city_location_fail_dialog_negative_btn_tag">Cancel</string>
     <string name="activity_find_city_location_fail_dialog_positive_btn_tag">Settings</string>
-    <string name="activity_find_city_location_fail_dialog_title">Permissions required</string>
+    <string name="activity_find_city_location_fail_dialog_title">"Couldn't access location"</string>
     <string name="activity_main_clickable">></string>
     <string name="activity_main_one_alert" />
     <string name="activity_main_pub_time">Published at %1$s</string>
@@ -119,17 +123,20 @@
     <string name="aqi_station_best_quality_station">Best around</string>
     <string name="aqi_station_min_distance_station">Nearest station</string>
     <string name="aqi_sub_desc">AQI</string>
-    <string name="aqi_title_pad">Air quality: %1$s</string>
     <string name="aqi_top_pollution">Major pollutants</string>
+    <string name="background_location_dialog_authorize_button">Settings</string>
     <string name="background_location_dialog_msg">"To make sure this app always uses accurate location info, allow it to access your location when it's running in the background. You can grant this permission in Settings."</string>
     <string name="background_location_dialog_open_button">Settings</string>
     <string name="background_location_dialog_title">Permissions required</string>
+    <string name="background_location_guide_dialog_msg">Allow this app to access location while running in the background and select \"Always allow\" to ensure you receive up-to-date weather information.</string>
+    <string name="background_location_guide_dialog_title">Permissions required</string>
     <string name="button_abandon">Discard changes</string>
     <string name="button_add_city">Add location</string>
     <string name="button_allow">OK</string>
     <string name="button_confirm">Agree</string>
     <string name="button_confirm_to_revoke_permission">Withdraw</string>
     <string name="button_exit">"Don't agree"</string>
+    <string name="button_manage">Manage</string>
     <string name="button_not_allow">Cancel</string>
     <string name="button_revoke_permission_fail">Got it</string>
     <string name="button_settings_cancel">Cancel</string>
@@ -215,6 +222,8 @@
     <string name="chinese_symbol_animals_sheep">羊</string>
     <string name="chinese_symbol_animals_snake">蛇</string>
     <string name="chinese_symbol_animals_tiger">虎</string>
+    <string name="city_exceeded_tips">"Can't add more locations. Remove some locations before adding a new one."</string>
+    <string name="city_exceeded_tips_title">"Can't add location"</string>
     <string name="city_exceeded_warning">"Can't add more locations. Remove a location before adding a new one."</string>
     <string name="clear_net_mock_success">Net mock clear success</string>
     <string name="clearable_edittext_clear_description">Clear</string>
@@ -241,6 +250,7 @@
     <string name="connect_fail">"Couldn't connect to the network, try again"</string>
     <string name="content_desc_activity_main_add_city">Add city</string>
     <string name="content_desc_activity_main_add_city_manage">Manage cities</string>
+    <string name="content_desc_activity_main_already_add_city">Added locations</string>
     <string name="content_desc_activity_main_more_settings">More settings</string>
     <string name="content_desc_activity_main_page">Page %1$d of %2$d</string>
     <string name="content_desc_back_button">Back</string>
@@ -290,6 +300,7 @@ Read and agree to the new version of %2$s before you continue."</string>
     <string name="dialog_score_very_bad">Very dissatisfied</string>
     <string name="dialog_score_very_good">Very satisfied</string>
     <string name="dialog_title_score">Rate Weather</string>
+    <string name="dislike_alert_dialog_title">Why do not you want to see this content?</string>
     <string name="download_rsc_tips">Loading background audio…</string>
     <string name="dynamic_weather">Weather</string>
     <string name="early_morning">Morning</string>
@@ -448,9 +459,6 @@ Read and agree to the new version of %2$s before you continue."</string>
     <string name="hourly_forecast_bottom_aqi_chinese">%1$s%2$s</string>
     <string name="hourly_forecast_bottom_aqi_else">%1$s</string>
     <string name="hourly_forecast_date">M/d</string>
-    <string name="hourly_forecast_detail_chart_view_max_temperature_text">High</string>
-    <string name="hourly_forecast_detail_chart_view_min_temperature_text">Low</string>
-    <string name="hourly_forecast_detail_current_day_max_min_temperature_text">High %1$s° | Low %2$s°</string>
     <string name="hourly_forecast_title_24_hours_desc">24-hour forecast</string>
     <string name="hourly_forecast_title_hourly_desc">Hourly forecast</string>
     <string name="incognito_mode_dialog_confirm_text">Turn off</string>
@@ -479,9 +487,7 @@ Read and agree to the new version of %2$s before you continue."</string>
     <string name="indices_desc_pressure">%1$smb</string>
     <string name="indices_title_chance_of_rain">Chance of rain</string>
     <string name="indices_title_feel">Real feel</string>
-    <string name="indices_title_feel_new">Feels like</string>
     <string name="indices_title_pressure">Pressure</string>
-    <string name="indices_title_pressure_new">Pressure</string>
     <string name="indices_title_uv">UV</string>
     <string name="indices_wind_direction_east">E</string>
     <string name="indices_wind_direction_north">N</string>
@@ -504,7 +510,6 @@ Read and agree to the new version of %2$s before you continue."</string>
 Tap the screen to manually add or reposition city"</string>
     <string name="location_provider_btn_text">Allow Weather to access your location</string>
     <string name="location_tag">Locate</string>
-    <string name="main_activity_hourly_forecast_card_more_title">More</string>
     <string name="manager_city_option_add_city_back_search">Back to search</string>
     <string name="manager_city_option_add_city_content">Added this city to start page successfully</string>
     <string name="manager_city_option_add_city_title">Added successfully</string>
@@ -545,6 +550,18 @@ Tap the screen to manually add or reposition city"</string>
     <string name="miuix_appcompat_select_all">Select all</string>
     <string name="miuix_appcompat_select_all_description">Select all</string>
     <string name="miuix_appcompat_select_item">Select items</string>
+    <string name="miuix_appcompat_show_dialog_description">Popup Window</string>
+    <string name="miuix_font_style_misans_bold_font_family">mipro-bold</string>
+    <string name="miuix_font_style_misans_demibold_font_family">sans-serif-medium</string>
+    <string name="miuix_font_style_misans_extralight_font_family">sans-serif-thin</string>
+    <string name="miuix_font_style_misans_font_family">sans-serif</string>
+    <string name="miuix_font_style_misans_heavy_font_family">sans-serif-black</string>
+    <string name="miuix_font_style_misans_light_font_family">sans-serif-light</string>
+    <string name="miuix_font_style_misans_medium_font_family">sans-serif-medium</string>
+    <string name="miuix_font_style_misans_normal_font_family">sans-serif-light</string>
+    <string name="miuix_font_style_misans_regular_font_family">sans-serif</string>
+    <string name="miuix_font_style_misans_semibold_font_family">mipro-semibold</string>
+    <string name="miuix_font_style_misans_thin_font_family">sans-serif-thin</string>
     <string name="miuix_indexer_collect">Collections</string>
     <string name="miuix_indexer_selected">Selected %s</string>
     <string name="miuix_sbl_tracking_progress_labe_pull_to_refresh">Pull down to refresh</string>
@@ -630,11 +647,6 @@ Tap the screen to manually add or reposition city"</string>
 打开"</string>
     <string name="other_settings">Other settings</string>
     <string name="other_warning_settings">Other alerts</string>
-    <string name="pad_keyboard_add_city">Add location</string>
-    <string name="pad_keyboard_left_switch">Previous location</string>
-    <string name="pad_keyboard_right_switch">Next location</string>
-    <string name="pad_real_time_detail_title">Comfort</string>
-    <string name="pad_real_time_detail_title_new">Indices</string>
     <string name="particulate_matter_exceeded">High</string>
     <string name="particulate_matter_not_exceeded">Normal</string>
     <string name="particulate_matter_serious_exceeded">Too high</string>
@@ -681,7 +693,6 @@ Tap the screen to manually add or reposition city"</string>
     <string name="real_time_sunset">Sunset %1$s</string>
     <string name="realtime_aqi_title">Air Quality Index</string>
     <string name="realtime_humidity_title">Humidity</string>
-    <string name="realtime_humidity_title_new">Relative humidity</string>
     <string name="realtime_sunset_symbol">:</string>
     <string name="realtime_temperature_no_data">N/A</string>
     <string name="realtime_temperature_transfer">%1$s°/%2$s°</string>
@@ -823,6 +834,9 @@ Tap the screen to manually add or reposition city"</string>
     <string name="temperature_unit_C">%1$s℃</string>
     <string name="temperature_unit_F">%1$s℉</string>
     <string name="temperature_unit_default">0</string>
+    <string name="text_input_layout_default_content_description">这是默认的content description</string>
+    <string name="text_input_layout_default_error">这是默认的error</string>
+    <string name="thanku_for_feedback">Thanks for feedback, you can re-open the weather video on the settings page</string>
     <string name="the_anniversary_of_lifting_martial_law">Anniversary of Lifting Martial Law</string>
     <string name="the_anti_aggression_day">Anti-Aggression Day</string>
     <string name="the_arbor_day">Arbor Day</string>
@@ -934,7 +948,6 @@ Tap the screen to manually add or reposition city"</string>
     <string name="wednesday_short">Wed</string>
     <string name="wednesday_shortest">Wed</string>
     <string name="welcome_app_title">Welcome to Weather!</string>
-    <string name="widget_cta_not_agree">Tap to get weather info</string>
     <string name="wind_direction_no_data">Wind</string>
     <string name="wind_power">%d</string>
     <string name="wind_power_unit_default">0</string>
