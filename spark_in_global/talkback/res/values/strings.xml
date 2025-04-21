@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="Reset_gesture_settings_dialog_title">Reset gestures?</string>
     <string name="Reset_gesture_settings_set_dialog_title">Reset gestures of current set?</string>
     <string name="a11y_settings_label">Accessibility Settings</string>
@@ -32,6 +33,7 @@
     <string name="accessibility_menu_service_name">Accessibility Menu</string>
     <string name="accessibility_menu_settings_name">Accessibility Menu Settings</string>
     <string name="accessibility_menu_summary">Control device via large menu</string>
+    <string name="accessibility_tutorial_talkback_is_off_dialog_do_not_show_again">accessibility_tutorial_talkback_is_off_dialog_do_not_show_again</string>
     <string name="action_not_supported">Action not supported.</string>
     <string name="actions">Actions</string>
     <string name="actions_setting_not_enabled">Actions setting is not enabled.</string>
@@ -40,7 +42,22 @@
     <string name="additional_tips_link_text">Everyday tasks</string>
     <string name="adjust_granularity_hint">%1$s to read by %2$s</string>
     <string name="adjust_setting_hint">%1$s to adjust the setting</string>
-    <string name="adjust_typo_hint">%1$s to start spell check</string>
+    <string name="adjust_typo_hint">%1$s for suggestions.</string>
+    <string name="adjusting_volume_first_instruction">Hold 1 finger on the screen</string>
+    <string name="adjusting_volume_head">"The volume for TalkBack speech is called the accessibility volume. It's adjusted separately from the media volume.
+
+To adjust the accessibility volume:"</string>
+    <string name="adjusting_volume_second_instruction">While holding, press the volume up or volume down key on the side of your device</string>
+    <string name="adjusting_volume_tail">"You'll hear the new accessibility volume after a few seconds.
+
+Try adjusting the accessibility volume now."</string>
+    <string name="adjusting_volume_title">Adjust the volume</string>
+    <string name="ai_services_update_dialog_button_text">Go to Google Play</string>
+    <string name="ai_services_update_dialog_message">"To hear image descriptions, get the latest version of %1$s from Google Play.
+
+Once downloading is complete, come back to TalkBack settings and turn on automatic image descriptions again."</string>
+    <string name="ai_services_update_dialog_title">Update %1$s app to describe images</string>
+    <string name="aicore_app_name">AICore</string>
     <string name="all_gestures">All gestures</string>
     <string name="all_set_text">"You are ready to use TalkBack.
 
@@ -48,18 +65,14 @@ Keep learning about other topics now, or review this info anytime in TalkBack se
     <string name="all_set_title">All set!</string>
     <string name="always_show_this_message_label">Always show this message</string>
     <string name="always_show_warning_checkbox">Always show this warning</string>
+    <string name="androidx_startup">androidx.startup</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="application_name">Android Accessibility Suite</string>
     <string name="assistant_label">Assistant</string>
     <string name="assistant_utterance">Google Assistant</string>
+    <string name="astrea_app_name">Private Compute Services</string>
     <string name="audio_focus_state">Audio ducking %1$s</string>
     <string name="auto_detect">Adapt to how you hold the device</string>
-    <string name="auto_scroll_for_braille_display_text">"Your braille display can advance at a set speed so you can read without pressing any buttons. To turn auto-scroll on or off, press space and dots 1, 2, 4, 5, 6.
-
-You can also increase how long text is displayed by pressing dot 4. To show text for a shorter amount of time, press dot 1.
-
-You can customize the speed in TalkBack settings > Braille display > Auto-scroll."</string>
-    <string name="auto_scroll_for_braille_display_title">Auto-scroll for braille display</string>
     <string name="backup_api_key">AEdPqrEAAAAIovFrC5KKjGNHfq_b6n2v1Ti_YrGkLuF6n9tf6g</string>
     <string name="basic_gestures">Basic gestures</string>
     <string name="basic_navigation_link_subtext">Move between items, scroll, use menus, and more</string>
@@ -75,6 +88,7 @@ You can customize the speed in TalkBack settings > Braille display > Auto-scroll
     <string name="bd_affix_label_heading_with_level">h%d</string>
     <string name="bd_affix_label_link">lnk</string>
     <string name="bd_affix_label_multiple_line">mln</string>
+    <string name="bd_affix_label_percentage">%d %%</string>
     <string name="bd_affix_label_selected">sel</string>
     <string name="bd_application_name">Android Accessibility Suite</string>
     <string name="bd_auto_adjust_duration_summary">Display duration changes based on text length</string>
@@ -102,16 +116,18 @@ To save battery:
     <string name="bd_braille_elements_category_interacting_with_screen">Interacting with the screen</string>
     <string name="bd_braille_elements_category_reading">Reading</string>
     <string name="bd_braille_elements_checked">• () or (x) represents a checkbox or radio button</string>
-    <string name="bd_braille_elements_checked_content_description">• Parentheses or x in parentheses represents a checkbox or radio button</string>
+    <string name="bd_braille_elements_checked_content_description">Parentheses or x in parentheses represents a checkbox or radio button</string>
     <string name="bd_braille_elements_clickable">• ⠿⠄ represents an element that you can activate</string>
     <string name="bd_braille_elements_collapsed">• + represents collapsed</string>
     <string name="bd_braille_elements_drbtn">• drbtn represents a dropdown button</string>
     <string name="bd_braille_elements_edt">• edt represents an editable text field</string>
     <string name="bd_braille_elements_expanded">• - represents expanded</string>
-    <string name="bd_braille_elements_expanded_content_description">• Minus represents expanded</string>
+    <string name="bd_braille_elements_expanded_content_description">Minus represents expanded</string>
     <string name="bd_braille_elements_gra">• gra represents a graphic</string>
     <string name="bd_braille_elements_h1_to_h6">• h%1$s to h%2$s represents heading %1$s to heading %2$s</string>
     <string name="bd_braille_elements_hdg">• hdg represents heading</string>
+    <string name="bd_braille_elements_in_progress">• ⢎⡱ represents loading</string>
+    <string name="bd_braille_elements_in_progress_content_description">Rotating circle braille dots represents loading</string>
     <string name="bd_braille_elements_instructions">Elements on your screen are represented by the following abbreviation symbols on your braille display</string>
     <string name="bd_braille_elements_lnk">• lnk represents link</string>
     <string name="bd_braille_elements_longClickable">• ⠿⠤ represents an element that you can touch and hold</string>
@@ -121,13 +137,20 @@ To save battery:
     <string name="bd_braille_grade_tips">"To quickly switch between contracted and uncontracted using a braille display, press space and dots 1, 2, 4, 5.
 
 This command works if you’re using a language with both braille grades."</string>
+    <string name="bd_bt_connect_fail_dialog_message">"Make sure this braille display is turned on and nearby.
+
+If it still won't connect, double-tap \"Learn more\" for other troubleshooting suggestions."</string>
+    <string name="bd_bt_connect_fail_dialog_title_with_name">"Can't connect to %s"</string>
+    <string name="bd_bt_connect_fail_dialog_title_without_name">"Can't connect to device"</string>
+    <string name="bd_bt_connect_fail_negative_button">Cancel</string>
+    <string name="bd_bt_connect_fail_positive_button">Learn more</string>
     <string name="bd_bt_connection_disconnected_message">Braille display disconnected</string>
     <string name="bd_bt_connection_failed_message">Can’t connect to braille display. Try again.</string>
     <string name="bd_bt_connection_with_device_failed_message">Can’t connect to %s. Try again.</string>
     <string name="bd_cmd_activate_current">Activate current item</string>
     <string name="bd_cmd_braille_display_settings">Open braille display settings</string>
-    <string name="bd_cmd_control_next">Next control in web content</string>
-    <string name="bd_cmd_control_previous">Previous control in web content</string>
+    <string name="bd_cmd_control_next">Next control</string>
+    <string name="bd_cmd_control_previous">Previous control</string>
     <string name="bd_cmd_copy">Copy text</string>
     <string name="bd_cmd_cut">Cut text</string>
     <string name="bd_cmd_decrease_auto_scroll_duration">Decrease the display duration</string>
@@ -138,16 +161,16 @@ This command works if you’re using a language with both braille grades."</stri
     <string name="bd_cmd_global_home">Go home</string>
     <string name="bd_cmd_global_notifications">Open notifications</string>
     <string name="bd_cmd_global_recents">Open recent apps</string>
-    <string name="bd_cmd_heading_next">Next heading in web content</string>
-    <string name="bd_cmd_heading_previous">Previous heading in web content</string>
+    <string name="bd_cmd_heading_next">Next heading</string>
+    <string name="bd_cmd_heading_previous">Previous heading</string>
     <string name="bd_cmd_help">Open braille display commands</string>
     <string name="bd_cmd_increase_auto_scroll_duration">Increase the display duration</string>
     <string name="bd_cmd_key_del">Delete</string>
     <string name="bd_cmd_key_enter">Activate enter key when editing text</string>
-    <string name="bd_cmd_list_next">Next link in web content</string>
-    <string name="bd_cmd_list_previous">Previous link in web content</string>
-    <string name="bd_cmd_move_by_reading_granularity_or_adjust_reading_control_backward">Move navigation focus backward or adjust reading control up</string>
-    <string name="bd_cmd_move_by_reading_granularity_or_adjust_reading_control_forward">Move navigation focus forward or adjust reading control down</string>
+    <string name="bd_cmd_list_next">Next link</string>
+    <string name="bd_cmd_list_previous">Previous link</string>
+    <string name="bd_cmd_move_by_reading_granularity_or_adjust_reading_control_backward">Move navigation focus backward or adjust reading control down</string>
+    <string name="bd_cmd_move_by_reading_granularity_or_adjust_reading_control_forward">Move navigation focus forward or adjust reading control up</string>
     <string name="bd_cmd_nav_bottom">Bottom of page or end of text</string>
     <string name="bd_cmd_nav_character_next">Next character</string>
     <string name="bd_cmd_nav_character_previous">Previous character</string>
@@ -173,10 +196,14 @@ This command works if you’re using a language with both braille grades."</stri
     <string name="bd_cmd_scroll_backward">Scroll backward</string>
     <string name="bd_cmd_scroll_forward">Scroll forward</string>
     <string name="bd_cmd_select_all">Select all text</string>
+    <string name="bd_cmd_select_cursor_to_end">Select from cursor to end of text box</string>
+    <string name="bd_cmd_select_cursor_to_start">Select from cursor to beginning of text box</string>
     <string name="bd_cmd_select_next_character">Select next character</string>
     <string name="bd_cmd_select_next_word">Select next word</string>
     <string name="bd_cmd_select_previous_character">Select previous character</string>
     <string name="bd_cmd_select_previous_word">Select previous word</string>
+    <string name="bd_cmd_show_popup_message_history">Show the history list of popup messages</string>
+    <string name="bd_cmd_subcategory_editing_description">These commands are only available while editing text</string>
     <string name="bd_cmd_subcategory_title_auto_scroll">Auto-scroll</string>
     <string name="bd_cmd_subcategory_title_basic">Basic</string>
     <string name="bd_cmd_subcategory_title_edit">Edit</string>
@@ -184,9 +211,11 @@ This command works if you’re using a language with both braille grades."</stri
     <string name="bd_cmd_subcategory_title_place_on_page">Place on page</string>
     <string name="bd_cmd_subcategory_title_reading_controls">Reading controls</string>
     <string name="bd_cmd_subcategory_title_select">Select</string>
+    <string name="bd_cmd_subcategory_title_switch_keyboard">Switch keyboard</string>
     <string name="bd_cmd_subcategory_title_web_content">Web content</string>
     <string name="bd_cmd_subcategory_title_window">Window</string>
     <string name="bd_cmd_switch_to_next_input_language">Switch to the next typing language</string>
+    <string name="bd_cmd_switch_to_next_input_method">Switch to next keyboard</string>
     <string name="bd_cmd_switch_to_next_output_language">Switch to the next reading language</string>
     <string name="bd_cmd_talkback_settings">Open TalkBack settings</string>
     <string name="bd_cmd_toggle_auto_scroll">Turn auto-scroll on or off</string>
@@ -211,7 +240,7 @@ This command works if you’re using a language with both braille grades."</stri
 
 Below are all the commands supported by your device."</string>
     <string name="bd_commands_delimiter">%1$s and %2$s</string>
-    <string name="bd_commands_description_template">• %1$s: %2$s.</string>
+    <string name="bd_commands_description_template">• %1$s: %2$s</string>
     <string name="bd_commands_press_template">Press %s</string>
     <string name="bd_commands_touch_and_hold_template">Touch and hold %s</string>
     <string name="bd_device">phone</string>
@@ -230,6 +259,7 @@ Below are all the commands supported by your device."</string>
     <string name="bd_keyboard_hidden">Keyboard hidden</string>
     <string name="bd_keyboard_showing">Showing %s</string>
     <string name="bd_new_device_found_announcement">1 device found</string>
+    <string name="bd_no_devices_found">No devices found. Try again.</string>
     <string name="bd_notify_navigation_commands_unavailable_dialog_message">"Commands for navigation, braille settings, and some TalkBack features aren’t available while typing or editing.
 
 To use these commands, first close the keyboard."</string>
@@ -255,10 +285,11 @@ To use these commands, first close the keyboard."</string>
     <string name="bd_preference_key_auto_scroll_summary">Automatically advance the braille display at a set speed</string>
     <string name="bd_preference_key_auto_scroll_title">Auto-scroll</string>
     <string name="bd_preference_key_bindings_summary">Learn key commands for your braille display</string>
-    <string name="bd_preference_key_bindings_title">Braille commands</string>
+    <string name="bd_preference_key_bindings_title">Braille display commands</string>
     <string name="bd_preference_key_braille_elements_summary">Learn how on-screen elements are shown on your braille display</string>
     <string name="bd_preference_key_braille_elements_title">Braille elements</string>
     <string name="bd_preference_languages_and_commands_category_title">Languages and commands</string>
+    <string name="bd_preference_popup_announcement_title">Show announcement message</string>
     <string name="bd_preference_reverse_panning_buttons_title">Reverse pan up and pan down buttons</string>
     <string name="bd_preference_scan_activated_title">Looking for devices…</string>
     <string name="bd_preference_scan_inactivated_title">Look for new device</string>
@@ -275,6 +306,7 @@ To use these commands, first close the keyboard."</string>
     <string name="bd_preferences_banner_talkback_off_subtitle">To use braille display, first turn on TalkBack</string>
     <string name="bd_preferences_title">Braille display</string>
     <string name="bd_role_description_heading">heading %d</string>
+    <string name="bd_state_description_in_progress">in progress</string>
     <string name="bd_switch_contracted_mode_announcement">To switch between contracted and uncontracted, press space and dots 1, 2, 4, and 5.</string>
     <string name="bd_switch_input_code_gesture_tip_dialog_message">To change your typing language, press %s at the same time</string>
     <string name="bd_switch_input_code_gesture_tip_dialog_title">Quickly change typing language</string>
@@ -297,43 +329,45 @@ If you need to switch to Bluetooth, disconnect your USB or USB hub and go to Tal
     <string name="bd_voice_feedback_mute">Mute</string>
     <string name="bd_voice_feedback_unmute">Unmute</string>
     <string name="bk_gesture_add_space">To add a space, swipe right</string>
-    <string name="bk_gesture_confirm_spelling_suggestion">Confirm spelling suggestion: Swipe right with 2 fingers</string>
-    <string name="bk_gesture_copy">Copy text: Hold dot 4, then swipe down anywhere with 3 fingers</string>
-    <string name="bk_gesture_cut">Cut text: Hold dot 4, then swipe up anywhere with 3 fingers</string>
+    <string name="bk_gesture_confirm_spelling_suggestion">• Confirm suggestion: Swipe right with 2 fingers</string>
+    <string name="bk_gesture_copy">• Copy text: Hold dot 4, then swipe down anywhere with 3 fingers</string>
+    <string name="bk_gesture_cut">• Cut text: Hold dot 4, then swipe up anywhere with 3 fingers</string>
     <string name="bk_gesture_delete">To delete, swipe left</string>
     <string name="bk_gesture_delete_word">To delete a word, swipe left with 2 fingers</string>
     <string name="bk_gesture_help_and_other_options">For help and other options, swipe up with 3 fingers</string>
     <string name="bk_gesture_hide_the_keyboard">To hide the keyboard, swipe down with 2 fingers</string>
     <string name="bk_gesture_move_cursor_backward">To move the cursor backward, swipe up</string>
     <string name="bk_gesture_move_cursor_forward">To move the cursor forward, swipe down</string>
-    <string name="bk_gesture_move_to_beginning">Move to beginning: Hold dots 4 and 5, then swipe up anywhere with another finger</string>
-    <string name="bk_gesture_move_to_end">Move to end: Hold dots 4 and 5, then swipe down anywhere with another finger</string>
-    <string name="bk_gesture_move_to_next_character">Move to next character: Hold dot 6, then swipe down anywhere with another finger</string>
-    <string name="bk_gesture_move_to_next_item">Move to next item: Swipe down</string>
-    <string name="bk_gesture_move_to_next_line">Move to next line: Hold dot 4, then swipe down anywhere with another finger</string>
-    <string name="bk_gesture_move_to_next_word">Move to next word: Hold dot 5, then swipe down anywhere with another finger</string>
-    <string name="bk_gesture_move_to_previous_character">Move to previous character: Hold dot 6, then swipe up anywhere with another finger</string>
-    <string name="bk_gesture_move_to_previous_line">Move to previous line: Hold dot 4, then swipe up anywhere with another finger</string>
-    <string name="bk_gesture_move_to_previous_word">Move to previous word: Hold dot 5, then swipe up anywhere with another finger</string>
-    <string name="bk_gesture_moveh_to_previous_item">Move to previous item: Swipe up</string>
+    <string name="bk_gesture_move_to_beginning">• Move to beginning: Hold dots 4 and 5, then swipe up anywhere with another finger</string>
+    <string name="bk_gesture_move_to_end">• Move to end: Hold dots 4 and 5, then swipe down anywhere with another finger</string>
+    <string name="bk_gesture_move_to_next_character">• Move to next character: Hold dot 6, then swipe down anywhere with another finger</string>
+    <string name="bk_gesture_move_to_next_item">• Move to next item: Swipe down</string>
+    <string name="bk_gesture_move_to_next_line">• Move to next line: Hold dot 4, then swipe down anywhere with another finger</string>
+    <string name="bk_gesture_move_to_next_word">• Move to next word: Hold dot 5, then swipe down anywhere with another finger</string>
+    <string name="bk_gesture_move_to_previous_character">• Move to previous character: Hold dot 6, then swipe up anywhere with another finger</string>
+    <string name="bk_gesture_move_to_previous_line">• Move to previous line: Hold dot 4, then swipe up anywhere with another finger</string>
+    <string name="bk_gesture_move_to_previous_word">• Move to previous word: Hold dot 5, then swipe up anywhere with another finger</string>
+    <string name="bk_gesture_moveh_to_previous_item">• Move to previous item: Swipe up</string>
     <string name="bk_gesture_new_line">For a new line, swipe right with 2 fingers</string>
-    <string name="bk_gesture_next_misspelled_word">Move to next misspelled word: Swipe down</string>
-    <string name="bk_gesture_next_suggestion">Hear next spelling suggestion: Swipe right</string>
-    <string name="bk_gesture_paste">Paste: Hold dot 4, then swipe right anywhere with 3 fingers</string>
-    <string name="bk_gesture_previous_misspelled_word">Move to previous misspelled word: Swipe up</string>
-    <string name="bk_gesture_previous_suggestion">Hear previous spelling suggestion: Swipe left</string>
-    <string name="bk_gesture_select_all">Select all: Hold dot 4, then swipe left anywhere with 3 fingers</string>
-    <string name="bk_gesture_select_next_character">Select next character: Hold dot 6, then swipe down anywhere with 2 fingers</string>
-    <string name="bk_gesture_select_next_line">Select next line: Hold dot 4, then swipe down anywhere with 2 fingers</string>
-    <string name="bk_gesture_select_next_word">Select next word: Hold dot 5, then swipe down anywhere with 2 fingers</string>
-    <string name="bk_gesture_select_previous_character">Select previous character: Hold dot 6, then swipe up anywhere with 2 fingers</string>
-    <string name="bk_gesture_select_previous_line">Select previous line: Hold dot 4, then swipe up anywhere with 2 fingers</string>
-    <string name="bk_gesture_select_previous_word">Select previous word: Hold dot 5, then swipe up anywhere with 2 fingers</string>
+    <string name="bk_gesture_next_misspelled_word">• Move to next typo: Swipe down</string>
+    <string name="bk_gesture_next_suggestion">• Hear next suggestion: Swipe right</string>
+    <string name="bk_gesture_paste">• Paste: Hold dot 4, then swipe right anywhere with 3 fingers</string>
+    <string name="bk_gesture_previous_misspelled_word">• Move to previous typo: Swipe up</string>
+    <string name="bk_gesture_previous_suggestion">• Hear previous suggestion: Swipe left</string>
+    <string name="bk_gesture_select_all">• Select all: Hold dot 4, then swipe left anywhere with 3 fingers</string>
+    <string name="bk_gesture_select_current_to_end">• Select from current cursor to the end: Hold dot 4 and 5, then swipe down anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_current_to_start">• Select from current cursor to the beginning: Hold dot 4 and 5, then swipe up anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_next_character">• Select next character: Hold dot 6, then swipe down anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_next_line">• Select next line: Hold dot 4, then swipe down anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_next_word">• Select next word: Hold dot 5, then swipe down anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_previous_character">• Select previous character: Hold dot 6, then swipe up anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_previous_line">• Select previous line: Hold dot 4, then swipe up anywhere with 2 fingers</string>
+    <string name="bk_gesture_select_previous_word">• Select previous word: Hold dot 5, then swipe up anywhere with 2 fingers</string>
     <string name="bk_gesture_submit_text">To submit text, swipe up with 2 fingers</string>
-    <string name="bk_gesture_switch_to_next_granularity">Switch to next granularity: Swipe right with 3 fingers</string>
+    <string name="bk_gesture_switch_to_next_granularity">• Switch to next granularity: Swipe right with 3 fingers</string>
     <string name="bk_gesture_switch_to_next_keyboard">To switch to the next keyboard, swipe down with 3 fingers</string>
-    <string name="bk_gesture_switch_to_previous_granularity">Switch to previous granularity: Swipe left with 3 fingers</string>
-    <string name="bk_gesture_undo_spelling_suggestion">Undo spelling suggestion: Swipe left with 2 fingers</string>
+    <string name="bk_gesture_switch_to_previous_granularity">• Switch to previous granularity: Swipe left with 3 fingers</string>
+    <string name="bk_gesture_undo_spelling_suggestion">• Undo suggestion: Swipe left with 2 fingers</string>
     <string name="bk_pref_category_title_character">Character</string>
     <string name="bk_pref_category_title_editing">Editing</string>
     <string name="bk_pref_category_title_granularity">Granularity</string>
@@ -353,9 +387,9 @@ If you need to switch to Bluetooth, disconnect your USB or USB hub and go to Tal
     <string name="braille_keyboard_cursor_movement_description">You can switch granularity to have your cursor move by character, word, or line. Or control how your cursor moves with a series of gestures that include braille dots.</string>
     <string name="braille_keyboard_cursor_movement_summary">Move by character, word, or line</string>
     <string name="braille_keyboard_gestures">Braille keyboard gestures</string>
-    <string name="braille_keyboard_spell_check">Spell check</string>
-    <string name="braille_keyboard_spell_check_description">When you’re typing or editing text, use 3 fingers to swipe left or right until you hear \"spell check\"</string>
-    <string name="braille_keyboard_spell_check_summary">Find misspelled words, check suggestions, and confirm changes</string>
+    <string name="braille_keyboard_spell_check">Proofreading</string>
+    <string name="braille_keyboard_spell_check_description">You can use proofreading to check for spelling and grammar suggestions. When you’re typing or editing text, use 3 fingers to swipe left or right until you hear \"Proofread\".</string>
+    <string name="braille_keyboard_spell_check_summary">Check the spelling and grammar within a text box</string>
     <string name="braille_keyboard_strip_next_keyboard_button">Switch to next input method</string>
     <string name="braille_keyboard_strip_summary">"An external braille display is connected, which you can use to type text into your phone.
 
@@ -398,6 +432,13 @@ You can also switch to the touchscreen braille keyboard or the next input method
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="checking_notifications_step_one">First, swipe down with 4 fingers to access the notification.</string>
+    <string name="checking_notifications_step_two">Then, swipe left or right to navigate within the notification.</string>
+    <string name="checking_notifications_text_head">TalkBack will announce when you get a new notification.</string>
+    <string name="checking_notifications_text_tail">You can check which apps have notifications turned on in Settings > Notifications.</string>
+    <string name="checking_notifications_text_tail_tts">You can check which apps have notifications turned on in Settings then Notifications.</string>
+    <string name="checking_notifications_tips">To check your notification history, swipe down with 2 fingers from the top of your screen</string>
+    <string name="checking_notifications_title">Checking notifications</string>
     <string name="checkmark_checked">(x)</string>
     <string name="checkmark_not_checked">( )</string>
     <string name="classic_keymap_entry_value">classic_keymap</string>
@@ -405,13 +446,14 @@ You can also switch to the touchscreen braille keyboard or the next input method
     <string name="code_user_facing_name_arabic">Arabic</string>
     <string name="code_user_facing_name_arabic_comp8">Arabic 8-dot Computer Braille</string>
     <string name="code_user_facing_name_bulgarian">Bulgarian</string>
+    <string name="code_user_facing_name_bulgarian_comp8">Bulgarian 8-dot Computer Braille</string>
     <string name="code_user_facing_name_ca_catalan">Catalan</string>
     <string name="code_user_facing_name_catonese">Cantonese</string>
     <string name="code_user_facing_name_central_kurdish">Central Kurdish</string>
-    <string name="code_user_facing_name_chinese_china_common">Chinese (China) Common</string>
-    <string name="code_user_facing_name_chinese_china_current_with_tones">Chinese (China) Current with tones</string>
-    <string name="code_user_facing_name_chinese_china_current_without_tones">Chinese (China) Current without tones</string>
-    <string name="code_user_facing_name_chinese_china_two_cells">Chinese (China) Two Cells</string>
+    <string name="code_user_facing_name_chinese_china_common">Chinese Common (China)</string>
+    <string name="code_user_facing_name_chinese_china_current_with_tones">Chinese Current With Tones (China)</string>
+    <string name="code_user_facing_name_chinese_china_current_without_tones">Chinese Current Without Tones (China)</string>
+    <string name="code_user_facing_name_chinese_china_two_cells">Chinese Two Cells (China)</string>
     <string name="code_user_facing_name_chinese_taiwan">Chinese (Taiwan)</string>
     <string name="code_user_facing_name_croatian">Croatian</string>
     <string name="code_user_facing_name_croatian_comp8">Croatian 8-dot Computer Braille</string>
@@ -449,7 +491,6 @@ You can also switch to the touchscreen braille keyboard or the next input method
     <string name="code_user_facing_name_japanese">Japanese</string>
     <string name="code_user_facing_name_kannada">Kannada</string>
     <string name="code_user_facing_name_khmer">Khmer</string>
-    <string name="code_user_facing_name_korean">Korean</string>
     <string name="code_user_facing_name_korean_2006">Korean 2006</string>
     <string name="code_user_facing_name_latvian">Latvian</string>
     <string name="code_user_facing_name_lithuanian">Lithuanian</string>
@@ -462,12 +503,13 @@ You can also switch to the touchscreen braille keyboard or the next input method
     <string name="code_user_facing_name_norwegian_8">Norwegian 8-dot Braille</string>
     <string name="code_user_facing_name_norwegian_8_no">Norwegian 8-dot Braille (Norway)</string>
     <string name="code_user_facing_name_norwegian_8_with_6_fallback">Norwegian 8-dot Braille with 6-dot Fallback</string>
+    <string name="code_user_facing_name_norwegian_comp8">Norwegian 8-dot Computer Braille</string>
     <string name="code_user_facing_name_polish">Polish</string>
     <string name="code_user_facing_name_polish_comp8">Polish 8-dot Computer Braille</string>
     <string name="code_user_facing_name_portuguese">Portuguese</string>
     <string name="code_user_facing_name_portuguese_comp8">Portuguese 8-dot Computer Braille</string>
     <string name="code_user_facing_name_punjabi">Punjabi</string>
-    <string name="code_user_facing_name_romanian_no">Romanian 8-dot Braille</string>
+    <string name="code_user_facing_name_romanian_comp8">Romanian 8-dot Computer Braille</string>
     <string name="code_user_facing_name_russian">Russian</string>
     <string name="code_user_facing_name_russian_comp8">Russian 8-dot Computer Braille</string>
     <string name="code_user_facing_name_russian_detailed">Russian with Indication of Capitals</string>
@@ -484,7 +526,7 @@ You can also switch to the touchscreen braille keyboard or the next input method
     <string name="code_user_facing_name_tamil">Tamil</string>
     <string name="code_user_facing_name_telugu_in">Telugu Braille (India)</string>
     <string name="code_user_facing_name_turkish">Turkish</string>
-    <string name="code_user_facing_name_turkish_8">Turkish 8-dot Braille</string>
+    <string name="code_user_facing_name_turkish_comp8">Turkish 8-dot Computer Braille</string>
     <string name="code_user_facing_name_ueb1">Unified English Braille</string>
     <string name="code_user_facing_name_ukrainian">Ukrainian</string>
     <string name="code_user_facing_name_ukrainian_comp8">Ukrainian 8-dot Computer Braille</string>
@@ -511,26 +553,32 @@ You can also switch to the touchscreen braille keyboard or the next input method
     <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
     <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
     <string name="common_open_on_phone">Open on phone</string>
+    <string name="confirm_download_all_image_captioning_message">"You'll hear a brief description when you focus on an image or icon in supported apps"</string>
+    <string name="confirm_download_all_image_captioning_title">Download needed for automatic image and icon descriptions</string>
     <string name="confirm_download_checkbox_text">Do not show this again</string>
-    <string name="confirm_download_icon_detection_message_via_menu">"TalkBack can recognize and describe icons on the screen. This can help identify unlabelled buttons in apps and more.
+    <string name="confirm_download_icon_detection_message">"You'll hear a brief description when you focus on an icon, like a button in an app.
 
-You can also download this later in TalkBack settings."</string>
-    <string name="confirm_download_icon_detection_message_via_settings">You will automatically hear descriptions when you focus on an unlabelled icon</string>
-    <string name="confirm_download_icon_detection_title">Download required to describe icons</string>
-    <string name="confirm_download_image_description_message_via_menu">"TalkBack can recognize and describe images on the screen. This can help identify unlabelled buttons in apps and more.
-
-You can also download this later in TalkBack settings."</string>
-    <string name="confirm_download_image_description_message_via_settings">You will automatically hear descriptions when you focus on an unlabelled image</string>
-    <string name="confirm_download_image_description_title">Download required to describe images</string>
+Images are processed on your device and never sent to Google."</string>
+    <string name="confirm_download_icon_detection_title">Download needed for automatic icon descriptions</string>
+    <string name="confirm_download_image_description_message">"You'll hear a brief description when you focus on an image in supported apps"</string>
+    <string name="confirm_download_image_description_title">Download needed for automatic image descriptions</string>
     <string name="confirm_download_negative_button_hint">TalkBack can still describe text in images</string>
-    <string name="confirm_download_negative_button_text">Not now</string>
     <string name="confirm_download_positive_button_text">Download</string>
     <string name="confirm_download_subtitle_via_mobile_data">%1$d MB using mobile data. Data charges may apply.</string>
     <string name="confirm_download_subtitle_via_wifi">%1$d MB</string>
+    <string name="container_find_finish_button_text">"You’ve exited the list of containers. You can add containers to your reading controls anytime for easier access.
+
+Swipe right to find the finish button."</string>
+    <string name="container_item_exit_subtext">To exit this container, swipe right with 4 fingers</string>
+    <string name="container_item_exit_subtext_pre_r">To exit this container, swipe down</string>
+    <string name="container_item_subtext">To go to the next container, swipe right with 4 fingers</string>
+    <string name="container_item_subtext_pre_r">To go to the next container, swipe down</string>
+    <string name="container_tem_title">Container item</string>
     <string name="content_heading">Content</string>
     <string name="content_text">Continue to the next heading.</string>
     <string name="context_menu_category_contextual_actions">Actions for current item</string>
     <string name="context_menu_category_others">Other</string>
+    <string name="context_menu_close_button">Close</string>
     <string name="context_menu_input_language_selection">Switch to next language: %s</string>
     <string name="context_menu_input_language_selection_summary">Currently using: %s</string>
     <string name="context_menu_layout_calibration">Update dot positions</string>
@@ -564,37 +612,41 @@ Try to paste a word in the text box below."</string>
 
 Other gestures have also changed."</string>
     <string name="default_keymap_entry_value">default_keymap</string>
+    <string name="delete_all_dialog_message">"This deletes automatic descriptions for both icons and images.
+
+To get descriptions again later, you can download these features from TalkBack settings."</string>
+    <string name="delete_all_image_captioning_dialog_title">Delete automatic image &amp; icon descriptions?</string>
+    <string name="delete_all_image_captioning_hint">Automatic image &amp; icon descriptions deleted</string>
     <string name="delete_dialog_message">To get descriptions again later, you can download this feature from TalkBack settings</string>
     <string name="delete_dialog_negative_button_text">Cancel</string>
     <string name="delete_dialog_positive_button_text">Delete</string>
-    <string name="delete_icon_description_hint">Icon descriptions deleted</string>
-    <string name="delete_icon_detection_dialog_title">Delete icon descriptions?</string>
-    <string name="delete_image_description_dialog_title">Delete image descriptions?</string>
-    <string name="delete_image_description_hint">Image descriptions deleted</string>
-    <string name="describe_images_gesture_hint">To customize the gesture that is used for image descriptions, go to TalkBack settings > Customize gestures.</string>
-    <string name="describe_images_text">"You can now hear descriptions of images and icons in English. 
-
-When you focus on an image or icon, %1$s to open the TalkBack menu and select \"Describe image\".
-
-To use this feature, download the descriptions using the buttons below. You can also do this later in TalkBack settings."</string>
-    <string name="describe_images_text_icon_and_image_exist">"Along with icon descriptions, you can now hear descriptions of images in English.
-
-When you focus on an image or icon, %1$s to open the TalkBack menu and select \"Describe image\"."</string>
-    <string name="describe_images_text_icon_exist">"Along with icon descriptions, you can now hear descriptions of images in English. 
-
-When you focus on an image or icon, %1$s to open the TalkBack menu and select \"Describe image\".
-
-To use this feature, download the descriptions using the button below. You can also do this later in TalkBack settings."</string>
-    <string name="describe_images_title">Image descriptions</string>
+    <string name="delete_icon_description_hint">Automatic icon descriptions deleted</string>
+    <string name="delete_icon_detection_dialog_title">Delete automatic icon descriptions?</string>
+    <string name="delete_image_description_dialog_title">Delete automatic image descriptions?</string>
+    <string name="delete_image_description_hint">Automatic image descriptions deleted</string>
+    <string name="detailed_image_description_fallback_result">"%1$s. Can't get a more detailed image description."</string>
+    <string name="detailed_image_description_fallback_result_network_error">%1$s. Connect to the internet for a more detailed image description.</string>
+    <string name="detailed_image_description_icon_result">Icon: %1$s</string>
+    <string name="detailed_image_description_ocr_result">Text in image: %1$s</string>
     <string name="detected_icon_label">Icon, \"%1$s\".</string>
     <string name="detected_image_description">Image, \"%1$s\".</string>
     <string name="detected_recognized_text">Text, \"%1$s\".</string>
     <string name="detected_result">Detected: %1$s</string>
-    <string name="dialog_message_continuous_reading_mode">After selecting Read from top or Read from next, you can navigate to the previous or next element while the text is being read. This lets you go back or skip ahead with ease.</string>
+    <string name="dialog_message_continuous_reading_mode">"After selecting \"Read from top\" or \"Read from focused item\", you can still navigate to the previous or next item while the text is being read. This lets you go back or skip ahead with ease.
+
+To adjust the volume while TalkBack speaks, press the volume up or volume down key."</string>
+    <string name="dialog_message_detailed_ai_description">"When using this feature, selected images will be sent to Google for processing and then deleted.
+
+Generative AI is experimental, so it will make mistakes. By continuing, you agree to %1$s."</string>
+    <string name="dialog_message_detailed_ai_promotion">"Detailed image descriptions are powered by generative AI. When using this feature, selected images will be sent to Google for processing and then deleted.
+
+Generative AI is experimental, so it will make mistakes. You can turn off detailed image descriptions anytime in TalkBack settings.
+
+By continuing, you agree to %1$s."</string>
     <string name="dialog_message_diagnosis_mode">"Diagnosis mode helps debugging. Diagnosis mode overrides gesture tap with 4 fingers, to capture screen contents to system logs. Screen contents may include personal information. 
 
  Do you want to enable diagnosis mode?"</string>
-    <string name="dialog_message_dim_screen">This turns off the display to improve privacy so your screen is not visible to others when in public places</string>
+    <string name="dialog_message_dim_screen">This turns off the display to improve privacy. Some content may still be shown, like messages for turning the display back on, or menus for accessibility features like TalkBack.</string>
     <string name="dialog_message_disable_exploration">"Are you sure you want to turn off Explore by touch?
 
 Your device will no longer respond to shortcut gestures or speak items when you touch the screen."</string>
@@ -604,40 +656,65 @@ Performance statistics may consume more memory and power."</string>
     <string name="dialog_message_enable_tree_debug">"Are you sure you want to turn on node tree debugging?
 
 Node tree debugging exposes the content of your screen to your device's logs, which may be read by other applications."</string>
+    <string name="dialog_message_enable_tree_debug_gesture">"Confirming this will assign the triple-tap with 4 fingers gesture to print the node tree.
+
+If you cancel, node tree debugging will be enabled but a gesture will not be assigned, and you will need to set this in the gesture settings.
+
+On disabling node tree debugging, the gesture's previous action, if any, will not be restored."</string>
     <string name="dialog_message_extend_log_level">"Verbose logging can aid in debugging but may cause personal information to appear in the system log buffer.
 
  Do you want to enable verbose logging?"</string>
+    <string name="dialog_message_gen_ai_tos_link">"Google's Terms of Service"</string>
+    <string name="dialog_message_on_device_ai_description">"You’ll hear a brief description when you focus on an image in supported apps.
+
+Images are processed on your device and never sent to Google. 
+
+Generative AI is experimental, so it will make mistakes. By continuing, you agree to "<a href="https://policies.google.com/terms/generative-ai">"Google's Terms of Service"</a>.</string>
+    <string name="dialog_message_on_device_ai_model_download">"You’ll hear a brief description when you focus on an image in supported apps.
+
+Images are processed on your device and never sent to Google.
+
+Generative AI is experimental, so it will make mistakes. By continuing, you agree to %1$s."</string>
+    <string name="dialog_message_on_device_detailed_ai_promotion">"Images are processed on your device and never sent to Google.
+
+Generative AI is experimental, so it will make mistakes. By continuing, you agree to %1$s."</string>
     <string name="dialog_message_pass_through_mode">"When you hear a chime, you can use a system gesture that isn't supported by TalkBack. This is known as a pass-through gesture."</string>
+    <string name="dialog_message_turn_on_image_description">You can try again after turning on either automatic or detailed image descriptions</string>
     <string name="dialog_message_voice_commands">"Here are some things you can say:
 
 • Copy
-• Read from next item
+• Read from focused item
 • Find [save]
 • Speak [faster]
 • TalkBack settings
 
 Say \"%1$s\" for a list of all voice commands"</string>
     <string name="dialog_ok_buggon_extend_log_level">Yes, enable verbose logging</string>
-    <string name="dialog_title_continuous_reading_mode">New continuous reading controls</string>
+    <string name="dialog_title_continuous_reading_mode">How continuous reading works</string>
     <string name="dialog_title_diagnosis_mode">Enable diagnosis mode?</string>
     <string name="dialog_title_dim_screen">Hide screen?</string>
     <string name="dialog_title_disable_exploration">Disable Explore by touch?</string>
     <string name="dialog_title_enable_performance_stats">Enable Performance Statistics?</string>
     <string name="dialog_title_enable_tree_debug">Enable Node Tree Debugging?</string>
+    <string name="dialog_title_enable_tree_debug_gesture">Reassign the triple-tap with 4 fingers gesture?</string>
     <string name="dialog_title_extend_log_level">Enable verbose logging?</string>
+    <string name="dialog_title_on_device_ai_download_needed">Download needed for automatic image descriptions</string>
     <string name="dialog_title_pass_through_mode">Skip TalkBack gestures to use system gestures</string>
+    <string name="dialog_title_turn_on_image_description">Turn on image descriptions in Settings</string>
     <string name="dialog_title_voice_commands">Use voice commands to control TalkBack</string>
     <string name="dim_screen_timer">%1$d:%2$s</string>
-    <string name="disable_auto_image_caption_dialog_subtext">You can still get descriptions for a selected image from the TalkBack menu</string>
+    <string name="disable_gemini_dialog_subtext">Turn on to enable screen understanding with Gemini</string>
     <string name="display_name_aria_landmark">ARIA landmark</string>
     <string name="display_name_button">button</string>
     <string name="display_name_checkbox">checkbox</string>
+    <string name="display_name_column">column</string>
+    <string name="display_name_column_bounds">column boundary</string>
     <string name="display_name_combobox">combobox</string>
     <string name="display_name_container">container</string>
     <string name="display_name_control">control</string>
     <string name="display_name_edit_field">edit field</string>
     <string name="display_name_focusable_item">focusable item</string>
-    <string name="display_name_graphic">graphic</string>
+    <string name="display_name_graphic">image or video</string>
     <string name="display_name_heading">heading</string>
     <string name="display_name_heading_1">heading 1</string>
     <string name="display_name_heading_2">heading 2</string>
@@ -648,22 +725,32 @@ Say \"%1$s\" for a list of all voice commands"</string>
     <string name="display_name_link">link</string>
     <string name="display_name_list">list</string>
     <string name="display_name_list_item">list item</string>
+    <string name="display_name_row">row</string>
+    <string name="display_name_row_bounds">row boundary</string>
+    <string name="display_name_search">search</string>
     <string name="display_name_table">table</string>
+    <string name="display_name_table_bounds">table boundary</string>
+    <string name="display_name_visited_link">visited link</string>
     <string name="display_name_window">window</string>
+    <string name="do_not_show_again_check_box">Do not show this again</string>
     <string name="dont_show_again">Don’t show this again</string>
-    <string name="download_icon_descriptions_button">Download icon descriptions</string>
-    <string name="download_icon_detection_failed_hint">Cannot download icon descriptions</string>
+    <string name="download_all_image_captioning_failed_hint">"Can't download. Try again later."</string>
+    <string name="download_all_image_captioning_successful_hint">Automatic image &amp; icon descriptions downloaded</string>
+    <string name="download_complete_notification_content">"You'll now hear automatic image and icon descriptions with TalkBack"</string>
+    <string name="download_complete_notification_title">Download complete</string>
+    <string name="download_icon_detection_failed_hint">"Can't download automatic icon descriptions"</string>
     <string name="download_icon_detection_successful_hint">Icon descriptions downloaded</string>
-    <string name="download_image_description_failed_hint">Cannot download image descriptions</string>
-    <string name="download_image_description_successful_hint">Image descriptions downloaded</string>
-    <string name="download_image_descriptions_button">Download image descriptions</string>
-    <string name="download_network_error_hint">Cannot download. Check your connection and try again.</string>
-    <string name="download_storage_error_hint">Storage is full. To download, free up %1$d MB and try again.</string>
-    <string name="downloading_icon_detection_hint">Downloading icon descriptions</string>
-    <string name="downloading_image_description_hint">Downloading image descriptions</string>
+    <string name="download_image_description_failed_hint">"Can't download automatic image descriptions"</string>
+    <string name="download_image_description_successful_hint">Automatic image descriptions downloaded</string>
+    <string name="download_network_error_hint">"Can't download. Check your connection and try again."</string>
+    <string name="download_storage_error_hint">Storage is full. To download, free up %1$d MB in Settings > Storage.</string>
+    <string name="downloading_all_image_captioning_hint">Downloading automatic image &amp; icon descriptions</string>
+    <string name="downloading_icon_detection_hint">Downloading automatic icon descriptions</string>
+    <string name="downloading_image_description_hint">Downloading automatic image descriptions</string>
     <string name="drag_cancelled">Drag cancelled</string>
     <string name="drag_dropped">Dragged item dropped</string>
     <string name="drag_started">Drag started</string>
+    <string name="dump_info_option_title">Dump Info to Log</string>
     <string name="dump_node_tree_description">Node tree has been printed to logs.</string>
     <string name="duration_long">Long</string>
     <string name="duration_medium">Medium</string>
@@ -673,20 +760,23 @@ Say \"%1$s\" for a list of all voice commands"</string>
     <string name="edit_box_text">Welcome to TalkBack</string>
     <string name="eightDot_braille_calibration_step2_hold_left_or_right_finger_announcement">Updated positions for dots 1, 2, 3, and 7. Next, let’s record the dots on your %s.</string>
     <string name="empty_content" />
+    <string name="enable_gemini">Turn on</string>
     <string name="end_of_page">No next %1$s</string>
     <string name="enter_text_here">Enter text here</string>
     <string name="error_a11y_label">Error: invalid</string>
     <string name="error_icon_content_description">Error</string>
-    <string name="exit_tutorial_content">You can come back to it anytime in TalkBack settings.</string>
-    <string name="exit_tutorial_title">Close tutorial?</string>
+    <string name="exit_onboarding_content">You can come back to review new features anytime in TalkBack settings.</string>
+    <string name="exit_tutorial_content">You can come back to the tutorial anytime in TalkBack settings.</string>
+    <string name="exit_tutorial_title">Finished reviewing?</string>
     <string name="expand_button">Expand</string>
     <string name="expand_button_title">Advanced</string>
-    <string name="explore_by_touch_text">"You can focus on an item by dragging your finger across the screen.
+    <string name="explore_by_touch_text">"You can also focus on an item by dragging your finger across the screen.
 
 Try this now by touching the screen and dragging toward the bottom left corner until you find the next button."</string>
-    <string name="explore_by_touch_title">Explore by touch</string>
+    <string name="explore_by_touch_title">Drag your finger to explore</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
-    <string name="find_finish_button_text">Swipe right to find the finish button.</string>
+    <string name="filter_hint">Filter</string>
+    <string name="find_next_button_text">Swipe right to find the next button.</string>
     <string name="finish_tutorial_announcement">Showing braille keyboard. Turn your phone so the screen is facing away from you. Rotate the phone horizontally to landscape position. Then start typing.</string>
     <string name="floating_button_activated_contentDesc">Deactivate Select to Speak</string>
     <string name="floating_button_deactivated_contentDesc">Activate Select to Speak</string>
@@ -694,6 +784,13 @@ Try this now by touching the screen and dragging toward the bottom left corner u
     <string name="function_off">Spoken feedback is off</string>
     <string name="function_on">Spoken feedback is on</string>
     <string name="gboard_name">Gboard</string>
+    <string name="gemini_block_message">"Can't process this image"</string>
+    <string name="gemini_disable_dialog_message">Screen understanding with Gemini</string>
+    <string name="gemini_enable_dialog_title">Use Gemini in TalkBack</string>
+    <string name="gemini_error_message">Something went wrong. Try again.</string>
+    <string name="gemini_error_parsing_result">Gemini response parsing error</string>
+    <string name="gemini_network_error">No internet connection. Check your Wi-Fi or mobile network and try again.</string>
+    <string name="gemini_screenshot_unavailable">Screen capture unavailable</string>
     <string name="gesture_1_or_2">%1$s or %2$s</string>
     <string name="gesture_add_space">To add a <b>space</b>, swipe right</string>
     <string name="gesture_delete">To <b>delete</b>, swipe left</string>
@@ -713,21 +810,7 @@ Try this now by touching the screen and dragging toward the bottom left corner u
     <string name="gesture_next_keyboard">To switch to the <b>next keyboard</b>, swipe down with 3 fingers</string>
     <string name="gesture_open_context_menu">For <b>help and other options</b>, swipe up with 3 fingers</string>
     <string name="gesture_submit_text">To <b>submit text</b>, swipe up with 2 fingers</string>
-    <string name="gestures_accessibility_shortcut_text">To open your accessibility shortcut, swipe up from the bottom of the screen with 3 fingers.</string>
     <string name="gestures_announce_reset_gesture_settings">The gesture settings have been reset.</string>
-    <string name="gestures_back_text">To go back, start at the left or right edge and swipe towards the middle of your screen with 2 fingers.</string>
-    <string name="gestures_home_text">To go Home, swipe up from the bottom of your screen with 2 fingers.</string>
-    <string name="gestures_open_notifications_text_for_3_button_navigation">"To open notifications, swipe down from the top of the screen with 2 fingers. Then you can close notifications by swiping back up with 2 fingers.
-
-Try it now."</string>
-    <string name="gestures_open_notifications_text_for_gesture_navigation">To open notifications, swipe down from the top of the screen with 2 fingers.</string>
-    <string name="gestures_overview_screen_text">To go to your recent apps, swipe up from the bottom of your screen with 2 fingers and hold. Then release. This takes you to the overview screen.</string>
-    <string name="gestures_text">"To perform any system action, add 1 finger to the system gesture.
-
-This means when using TalkBack, you can go Home by swiping up from the bottom with 2 fingers instead of 1.
-
-Trying these gestures now will close the tutorial. You may want to wait until you have completed the tutorial."</string>
-    <string name="gestures_title">System actions</string>
     <string name="get_the_app_button">Get the app</string>
     <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
@@ -740,6 +823,7 @@ Trying these gestures now will close the tutorial. You may want to wait until yo
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="grammar_suggestion">Grammar suggestion</string>
     <string name="granularity_character">Characters</string>
     <string name="granularity_container">Containers</string>
     <string name="granularity_default">Default</string>
@@ -748,22 +832,42 @@ Trying these gestures now will close the tutorial. You may want to wait until yo
     <string name="granularity_native_heading">Headings</string>
     <string name="granularity_native_link">Links</string>
     <string name="granularity_paragraph">Paragraphs</string>
-    <string name="granularity_pseudo_web_special_content">Special content</string>
+    <string name="granularity_search">Screen search</string>
+    <string name="granularity_web_button">Buttons</string>
+    <string name="granularity_web_checkbox">Checkboxes</string>
+    <string name="granularity_web_combobox">Combo boxes</string>
     <string name="granularity_web_control">Controls</string>
+    <string name="granularity_web_editfield">Edit fields</string>
+    <string name="granularity_web_focusable">Focusable items</string>
+    <string name="granularity_web_graphic">Images and videos</string>
+    <string name="granularity_web_h1">Heading 1</string>
+    <string name="granularity_web_h2">Heading 2</string>
+    <string name="granularity_web_h3">Heading 3</string>
+    <string name="granularity_web_h4">Heading 4</string>
+    <string name="granularity_web_h5">Heading 5</string>
+    <string name="granularity_web_h6">Heading 6</string>
     <string name="granularity_web_heading">Headings</string>
     <string name="granularity_web_landmark">Landmarks</string>
     <string name="granularity_web_link">Links</string>
     <string name="granularity_web_list">Lists</string>
+    <string name="granularity_web_listitem">List items</string>
+    <string name="granularity_web_table">Tables</string>
+    <string name="granularity_web_visited_link">Visited links</string>
     <string name="granularity_window">Windows</string>
     <string name="granularity_word">Words</string>
     <string name="has_training_page_switched">has_training_page_switched</string>
     <string name="heading_template">Heading</string>
+    <string name="heads_up_window_available">Notification available</string>
+    <string name="heads_up_window_available_with_gesture">Notification available. To access, %1$s</string>
     <string name="hide_keyboard_window">keyboard hidden</string>
-    <string name="hint_no_next_typo_found">No next misspelled word is found. %1$s</string>
-    <string name="hint_no_previous_typo_found">No previous misspelled word is found. %1$s</string>
-    <string name="hint_no_typo_found">No misspelled word is found.</string>
+    <string name="hint_a11y_volume_control">To change the accessibility volume, hold 1 finger on the screen and press the volume up or volume down key.</string>
+    <string name="hint_no_grammar_suggestion">No grammar suggestion available.</string>
+    <string name="hint_no_next_typo_found">No next typo found. %1$s</string>
+    <string name="hint_no_previous_typo_found">No previous typo found. %1$s</string>
+    <string name="hint_no_spelling_suggestion">No spelling suggestion available.</string>
+    <string name="hint_no_typo_found">No typo found.</string>
     <string name="hint_select_action">Please select a supported action.</string>
-    <string name="hint_suggestion">Spelling suggestions available</string>
+    <string name="hint_suggestion">Proofreading is available</string>
     <string name="hint_type_search_term">Search term</string>
     <string name="hold_six_fingers_announcement">"%s
 Place your device flat on a table. Then, touch and hold the screen with the middle 3 fingers of each hand in a position that’s comfortable for you to type."</string>
@@ -905,7 +1009,17 @@ To get started, let’s set up the position of the 6 braille dots when you type.
     <string name="icon_weather_actionable">Weather</string>
     <string name="icon_weather_non_actionable">Sun and clouds</string>
     <string name="image_caption_no_result">Cannot describe image</string>
+    <string name="image_caption_with_gemini_prefix">Describe this image.</string>
     <string name="image_caption_with_hide_screen">Image descriptions are not available when the screen is hidden. Show your screen and try again.</string>
+    <string name="image_description_link_subtext">Try getting descriptions of images</string>
+    <string name="image_description_link_text">Image descriptions</string>
+    <string name="image_description_playground_content_one">"When you’re focused on an image, open the TalkBack menu and select “Describe image”.
+
+There’s one photo below. Try getting a description for it."</string>
+    <string name="image_description_playground_content_two">You can change image description settings anytime in TalkBack settings > Image &amp; icon descriptions.</string>
+    <string name="image_description_playground_content_two_tts">You can change image description settings anytime in TalkBack settings then Image &amp; icon descriptions.</string>
+    <string name="image_description_playground_title">Try getting image descriptions</string>
+    <string name="image_description_sample_image_content_description">Sample image; tap with 3 fingers to open the TalkBack menu and select \"Describe image\" to hear a description.</string>
     <string name="imported_labels_reverted">Imported labels reverted</string>
     <string name="in_collection_role_description">In %1$s</string>
     <string name="in_collection_role_description_with_name">In %1$s %2$s</string>
@@ -923,6 +1037,7 @@ To get started, let’s set up the position of the 6 braille dots when you type.
     <string name="in_vertical_pager_with_name">In vertical pager %1$s</string>
     <string name="in_window_with_name">Window %1$s</string>
     <string name="increase_speed_button">Increase Speed</string>
+    <string name="index_of_spelling_suggestion">%1$d of %2$d</string>
     <string name="input_view_caption">TalkBack braille keyboard - for help, visit g.co/help/braille</string>
     <string name="instruction_swipe_down">To move the cursor forward, swipe down</string>
     <string name="instruction_swipe_down_2_fingers">To hide keyboard, swipe down with 2 fingers</string>
@@ -933,6 +1048,14 @@ To get started, let’s set up the position of the 6 braille dots when you type.
     <string name="instruction_swipe_up_3_fingers">To finish tutorial, swipe up with 3 fingers</string>
     <string name="instruction_type_letter_a">Tap dot 1 with your left index finger to type the letter A</string>
     <string name="instruction_type_letter_bcd">Next, try typing the letters B, C, and D</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="jump_between_container_title">Jump between containers</string>
+    <string name="jump_between_containers_text">"To exit out of a container, like a list or grid, swipe left or right with 4 fingers. This is useful when you want to move out of a long list of items.
+
+To try it now, swipe right to enter the list. Then, swipe right with 4 fingers to go to the next container."</string>
+    <string name="jump_between_containers_text_pre_r">"Exiting out of a container, like a list or grid, is useful when you want to move out of a long list of items.
+
+To try it now, swipe down and then up until you hear \"%1$s\". Then, swipe down to go to the next container."</string>
     <string name="jump_between_controls_text">"Controls are items that you can interact with, like buttons, checkboxes, and text boxes.
 
 On some pages, you may want to jump between controls to quickly find an action, like the next button.
@@ -950,26 +1073,23 @@ Try it now. Switch to controls and find the next button."</string>
     <string name="jump_between_controls_title">Jump between controls</string>
     <string name="jump_between_headings_text">"You can also jump between headings on a page.
 
-To try it now, swipe right with 3 fingers until you hear \"%1$s\". Next, swipe down to find the \"navigation\" heading.
-
-To finish the tutorial, swipe right to find the finish button."</string>
+To try it now, swipe right with 3 fingers until you hear \"%1$s\". Then, swipe down to find the \"navigation\" heading."</string>
     <string name="jump_between_headings_text_pre_r">"You can also jump between headings on a page.
 
-To try it now, swipe down and then up until you hear \"%1$s\". Next, swipe down to find the \"navigation\" heading.
-
-To finish the tutorial, swipe right to find the finish button."</string>
+To try it now, swipe down and then up until you hear \"%1$s\". Then, swipe down to find the \"navigation\" heading."</string>
     <string name="jump_between_headings_title">Jump between headings</string>
     <string name="jump_between_links_text">"You can also jump between links on a page.
 
-To try it now, swipe right with 3 fingers until you hear \"%1$s\". Next, swipe down to find the link named \"continue\". While in the tutorial, double tapping this link will not do anything.
+To try it now, swipe right with 3 fingers until you hear \"%1$s\". Next, swipe down to find the link named \"Link 5\". While in the tutorial, double tapping this link will not do anything.
 
 Swipe right to find the next button and go to the next page."</string>
     <string name="jump_between_links_text_pre_r">"You can also jump between links on a page.
 
-To try it now, swipe down and then up until you hear \"%1$s\". Next, swipe down and find the link named \"continue\". While in the tutorial, double tapping this link will not do anything.
+To try it now, swipe down and then up until you hear \"%1$s\". Next, swipe down and find the link named \"Link 5\". While in the tutorial, double tapping this link will not do anything.
 
 Swipe right to find the next button and go to the next page."</string>
     <string name="jump_between_links_title">Jump between links</string>
+    <string name="keep_reviewing_tutorial_button">Keep reviewing</string>
     <string name="key_APH_AdvanceLeft">AdvanceLeft</string>
     <string name="key_APH_AdvanceRight">AdvanceRight</string>
     <string name="key_BP_Control">Control</string>
@@ -1055,6 +1175,11 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="key_brailliant_Thumb2">Thumb2</string>
     <string name="key_brailliant_Thumb3">Thumb3</string>
     <string name="key_brailliant_Thumb4">Thumb4</string>
+    <string name="key_dpad_center">DPadCenter</string>
+    <string name="key_dpad_down">DPadDown</string>
+    <string name="key_dpad_left">DPadLeft</string>
+    <string name="key_dpad_right">DPadRight</string>
+    <string name="key_dpad_up">DPadUp</string>
     <string name="key_esys_SwitchLeft">FrontSwitchLeft</string>
     <string name="key_esys_SwitchRight">FrontSwitchRight</string>
     <string name="key_focus_LeftGdf">ScrollForward</string>
@@ -1087,6 +1212,8 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="key_hwg_brailliant_Display6">Display6</string>
     <string name="key_pan_left">PanLeft</string>
     <string name="key_pan_right">PanRight</string>
+    <string name="key_rocker_down">RockerDown</string>
+    <string name="key_rocker_up">RockerUp</string>
     <string name="key_skbdp_LeftLongKey">LeftShift</string>
     <string name="key_skbdp_LeftRockerLeft">LeftCtrlLeft</string>
     <string name="key_skbdp_LeftRockerRight">LeftCtrlRight</string>
@@ -1118,8 +1245,11 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_keymap_changes_instruction_title">Update your TalkBack keymap</string>
     <string name="keycombo_keymap_changes_notifications_action">Learn more</string>
     <string name="keycombo_keymap_changes_notifications_content">TalkBack is getting ready to remove the classic keymap. To keep using keyboard shortcuts, switch to the default keymap.</string>
-    <string name="keycombo_menu_alert_message_trigger_modifier">TalkBack will reset keymap and change modifier key to %1$s</string>
-    <string name="keycombo_menu_alert_title_trigger_modifier">TalkBack will reset keymap</string>
+    <string name="keycombo_menu_alert_button_trigger_modifier">Confirm</string>
+    <string name="keycombo_menu_alert_message_trigger_modifier">"TalkBack's keyboard shortcuts will use %1$s as your modifier key.
+
+Once you make this change, it can't be undone."</string>
+    <string name="keycombo_menu_alert_title_trigger_modifier">Confirm your modifier key</string>
     <string name="keycombo_menu_announce_active_keymap">%1$s is now active.</string>
     <string name="keycombo_menu_announce_new_trigger_modifier">Modifier key has been changed to %1$s.</string>
     <string name="keycombo_menu_announce_reset_keymap">The keymap has been reset.</string>
@@ -1140,6 +1270,8 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_menu_global_recent">Recent apps</string>
     <string name="keycombo_menu_global_scroll_backward_reading_menu">Select previous reading control</string>
     <string name="keycombo_menu_global_scroll_forward_reading_menu">Select next reading control</string>
+    <string name="keycombo_menu_global_speech_rate_decrease">Decrease speech rate</string>
+    <string name="keycombo_menu_global_speech_rate_increase">Increase speech rate</string>
     <string name="keycombo_menu_granularity_decrease">Previous navigation setting</string>
     <string name="keycombo_menu_granularity_increase">Next navigation setting</string>
     <string name="keycombo_menu_navigate_down">Navigate to below item</string>
@@ -1157,7 +1289,7 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_menu_other_copy_last_spoken_phrase">Copy last spoken phrase</string>
     <string name="keycombo_menu_other_custom_actions">Show actions</string>
     <string name="keycombo_menu_other_language_options">Show installed languages</string>
-    <string name="keycombo_menu_other_read_from_next_item">Read from next item</string>
+    <string name="keycombo_menu_other_read_from_cursor_item">Read from focused item</string>
     <string name="keycombo_menu_other_read_from_top">Read from top</string>
     <string name="keycombo_menu_other_talkback_context_menu">Show TalkBack Menu</string>
     <string name="keycombo_menu_other_toggle_search">Search the screen for an item</string>
@@ -1168,6 +1300,8 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_menu_web_navigate_to_next_aria_landmark">Navigate to next ARIA landmark</string>
     <string name="keycombo_menu_web_navigate_to_next_button">Navigate to next button</string>
     <string name="keycombo_menu_web_navigate_to_next_checkbox">Navigate to next checkbox</string>
+    <string name="keycombo_menu_web_navigate_to_next_column">Navigate to next column</string>
+    <string name="keycombo_menu_web_navigate_to_next_column_bounds">Navigate to next column bounds</string>
     <string name="keycombo_menu_web_navigate_to_next_combobox">Navigate to next combo box</string>
     <string name="keycombo_menu_web_navigate_to_next_control">Navigate to next control</string>
     <string name="keycombo_menu_web_navigate_to_next_edit_field">Navigate to next edit field</string>
@@ -1183,10 +1317,16 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_menu_web_navigate_to_next_link">Navigate to next link</string>
     <string name="keycombo_menu_web_navigate_to_next_list">Navigate to next list</string>
     <string name="keycombo_menu_web_navigate_to_next_list_item">Navigate to next list item</string>
+    <string name="keycombo_menu_web_navigate_to_next_row">Navigate to next row</string>
+    <string name="keycombo_menu_web_navigate_to_next_row_bounds">Navigate to next row bounds</string>
     <string name="keycombo_menu_web_navigate_to_next_table">Navigate to next table</string>
+    <string name="keycombo_menu_web_navigate_to_next_table_bounds">Navigate to next table bounds</string>
+    <string name="keycombo_menu_web_navigate_to_next_visited_link">Navigate to next visited link</string>
     <string name="keycombo_menu_web_navigate_to_previous_aria_landmark">Navigate to previous ARIA landmark</string>
     <string name="keycombo_menu_web_navigate_to_previous_button">Navigate to previous button</string>
     <string name="keycombo_menu_web_navigate_to_previous_checkbox">Navigate to previous checkbox</string>
+    <string name="keycombo_menu_web_navigate_to_previous_column">Navigate to previous column</string>
+    <string name="keycombo_menu_web_navigate_to_previous_column_bounds">Navigate to previous column bounds</string>
     <string name="keycombo_menu_web_navigate_to_previous_combobox">Navigate to previous combo box</string>
     <string name="keycombo_menu_web_navigate_to_previous_control">Navigate to previous control</string>
     <string name="keycombo_menu_web_navigate_to_previous_edit_field">Navigate to previous edit field</string>
@@ -1202,7 +1342,11 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_menu_web_navigate_to_previous_link">Navigate to previous link</string>
     <string name="keycombo_menu_web_navigate_to_previous_list">Navigate to previous list</string>
     <string name="keycombo_menu_web_navigate_to_previous_list_item">Navigate to previous list item</string>
+    <string name="keycombo_menu_web_navigate_to_previous_row">Navigate to previous row</string>
+    <string name="keycombo_menu_web_navigate_to_previous_row_bounds">Navigate to previous row bounds</string>
     <string name="keycombo_menu_web_navigate_to_previous_table">Navigate to previous table</string>
+    <string name="keycombo_menu_web_navigate_to_previous_table_bounds">Navigate to previous table bounds</string>
+    <string name="keycombo_menu_web_navigate_to_previous_visited_link">Navigate to previous visited link</string>
     <string name="keycombo_shortcut_global_adjust_reading_setting_next">keycombo_shortcut_global_adjust_reading_setting_next</string>
     <string name="keycombo_shortcut_global_adjust_reading_settings_previous">keycombo_shortcut_global_adjust_reading_settings_previous</string>
     <string name="keycombo_shortcut_global_back">keycombo_shortcut_global_back</string>
@@ -1213,8 +1357,15 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_shortcut_global_recents">keycombo_shortcut_global_recents</string>
     <string name="keycombo_shortcut_global_scroll_backward_reading_menu">keycombo_shortcut_global_scroll_backward_reading_menu</string>
     <string name="keycombo_shortcut_global_scroll_forward_reading_menu">keycombo_shortcut_global_scroll_forward_reading_menu</string>
+    <string name="keycombo_shortcut_global_speech_rate_decrease">keycombo_shortcut_global_speech_rate_decrease</string>
+    <string name="keycombo_shortcut_global_speech_rate_increase">keycombo_shortcut_global_speech_rate_increase</string>
     <string name="keycombo_shortcut_granularity_decrease">keycombo_shortcut_granularity_decrease</string>
     <string name="keycombo_shortcut_granularity_increase">keycombo_shortcut_granularity_increase</string>
+    <string name="keycombo_shortcut_input_framework_enter">keycombo_shortcut_input_framework_enter</string>
+    <string name="keycombo_shortcut_input_framework_navigate_down">keycombo_shortcut_input_framework_navigate_down</string>
+    <string name="keycombo_shortcut_input_framework_navigate_left">keycombo_shortcut_input_framework_navigate_left</string>
+    <string name="keycombo_shortcut_input_framework_navigate_right">keycombo_shortcut_input_framework_navigate_right</string>
+    <string name="keycombo_shortcut_input_framework_navigate_up">keycombo_shortcut_input_framework_navigate_up</string>
     <string name="keycombo_shortcut_navigate_down">keycombo_shortcut_navigate_down</string>
     <string name="keycombo_shortcut_navigate_first">keycombo_shortcut_navigate_first</string>
     <string name="keycombo_shortcut_navigate_last">keycombo_shortcut_navigate_last</string>
@@ -1223,6 +1374,8 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_shortcut_navigate_next_button">keycombo_shortcut_navigate_next_button</string>
     <string name="keycombo_shortcut_navigate_next_character">keycombo_shortcut_navigate_next_character</string>
     <string name="keycombo_shortcut_navigate_next_checkbox">keycombo_shortcut_navigate_next_checkbox</string>
+    <string name="keycombo_shortcut_navigate_next_column">keycombo_shortcut_navigate_next_column</string>
+    <string name="keycombo_shortcut_navigate_next_column_bounds">keycombo_shortcut_navigate_next_column_bounds</string>
     <string name="keycombo_shortcut_navigate_next_combobox">keycombo_shortcut_navigate_next_combobox</string>
     <string name="keycombo_shortcut_navigate_next_control">keycombo_shortcut_navigate_next_control</string>
     <string name="keycombo_shortcut_navigate_next_default">keycombo_shortcut_navigate_next_default</string>
@@ -1239,7 +1392,11 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_shortcut_navigate_next_link">keycombo_shortcut_navigate_next_link</string>
     <string name="keycombo_shortcut_navigate_next_list">keycombo_shortcut_navigate_next_list</string>
     <string name="keycombo_shortcut_navigate_next_list_item">keycombo_shortcut_navigate_next_list_item</string>
+    <string name="keycombo_shortcut_navigate_next_row">keycombo_shortcut_navigate_next_row</string>
+    <string name="keycombo_shortcut_navigate_next_row_bounds">keycombo_shortcut_navigate_next_row_bounds</string>
     <string name="keycombo_shortcut_navigate_next_table">keycombo_shortcut_navigate_next_table</string>
+    <string name="keycombo_shortcut_navigate_next_table_bounds">keycombo_shortcut_navigate_next_table_bounds</string>
+    <string name="keycombo_shortcut_navigate_next_visited_link">keycombo_shortcut_navigate_next_visited_link</string>
     <string name="keycombo_shortcut_navigate_next_window">keycombo_shortcut_navigate_next_window</string>
     <string name="keycombo_shortcut_navigate_next_word">keycombo_shortcut_navigate_next_word</string>
     <string name="keycombo_shortcut_navigate_previous">keycombo_shortcut_navigate_previous</string>
@@ -1247,6 +1404,8 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_shortcut_navigate_previous_button">keycombo_shortcut_navigate_previous_button</string>
     <string name="keycombo_shortcut_navigate_previous_character">keycombo_shortcut_navigate_previous_character</string>
     <string name="keycombo_shortcut_navigate_previous_checkbox">keycombo_shortcut_navigate_previous_checkbox</string>
+    <string name="keycombo_shortcut_navigate_previous_column">keycombo_shortcut_navigate_previous_column</string>
+    <string name="keycombo_shortcut_navigate_previous_column_bounds">keycombo_shortcut_navigate_previous_column_bounds</string>
     <string name="keycombo_shortcut_navigate_previous_combobox">keycombo_shortcut_navigate_previous_combobox</string>
     <string name="keycombo_shortcut_navigate_previous_control">keycombo_shortcut_navigate_previous_control</string>
     <string name="keycombo_shortcut_navigate_previous_default">keycombo_shortcut_navigate_previous_default</string>
@@ -1263,27 +1422,33 @@ Swipe right to find the next button and go to the next page."</string>
     <string name="keycombo_shortcut_navigate_previous_link">keycombo_shortcut_navigate_previous_link</string>
     <string name="keycombo_shortcut_navigate_previous_list">keycombo_shortcut_navigate_previous_list</string>
     <string name="keycombo_shortcut_navigate_previous_list_item">keycombo_shortcut_navigate_previous_list_item</string>
+    <string name="keycombo_shortcut_navigate_previous_row">keycombo_shortcut_navigate_previous_row</string>
+    <string name="keycombo_shortcut_navigate_previous_row_bounds">keycombo_shortcut_navigate_previous_row_bounds</string>
     <string name="keycombo_shortcut_navigate_previous_table">keycombo_shortcut_navigate_previous_table</string>
+    <string name="keycombo_shortcut_navigate_previous_table_bounds">keycombo_shortcut_navigate_previous_table_bounds</string>
+    <string name="keycombo_shortcut_navigate_previous_visited_link">keycombo_shortcut_navigate_previous_visited_link</string>
     <string name="keycombo_shortcut_navigate_previous_window">keycombo_shortcut_navigate_previous_window</string>
     <string name="keycombo_shortcut_navigate_previous_word">keycombo_shortcut_navigate_previous_word</string>
     <string name="keycombo_shortcut_navigate_up">keycombo_shortcut_navigate_up</string>
     <string name="keycombo_shortcut_other_copy_last_spoken_phrase">keycombo_shortcut_other_copy_last_spoken_phrase</string>
     <string name="keycombo_shortcut_other_custom_actions">keycombo_shortcut_other_custom_actions</string>
     <string name="keycombo_shortcut_other_language_options">keycombo_shortcut_other_language_options</string>
-    <string name="keycombo_shortcut_other_read_from_next_item">keycombo_shortcut_other_read_from_next_item</string>
+    <string name="keycombo_shortcut_other_read_from_cursor_item">keycombo_shortcut_other_read_from_cursor_item</string>
     <string name="keycombo_shortcut_other_read_from_top">keycombo_shortcut_other_read_from_top</string>
     <string name="keycombo_shortcut_other_talkback_context_menu">keycombo_shortcut_other_global_context_menu</string>
     <string name="keycombo_shortcut_other_toggle_search">keycombo_shortcut_other_toggle_search</string>
     <string name="keycombo_shortcut_perform_click">keycombo_shortcut_perform_click</string>
     <string name="keycombo_shortcut_perform_long_click">keycombo_shortcut_perform_long_click</string>
     <string name="keycombo_unassigned">Unassigned</string>
-    <string name="keycombo_update_modifier_key_warning_content">"To keep using TalkBack's keyboard shortcuts, update your modifier key from Search to Alt.
-
-If you continue using the Search modifier key, some shortcuts will take different actions for this version of Android."</string>
     <string name="keycombo_update_modifier_key_warning_title">Update your TalkBack modifier key</string>
     <string name="keycombo_update_modifier_keys_dialog_do_not_show_again">keycombo_update_modifier_keys_dialog_do_not_show_again</string>
-    <string name="keycombo_update_modifier_keys_do_not_show_again_check_box">Do not show this again</string>
     <string name="keycombo_update_modifier_keys_warning_negative_button">Not now</string>
+    <string name="keycombo_warning_content_description">More information about your modifier key</string>
+    <string name="keycombo_warning_dialog_close_button">Close</string>
+    <string name="keycombo_warning_dialog_message">"For TalkBack's keyboard shortcuts to work correctly, update your modifier key from Search to Alt.
+
+If you keep using the Search modifier key, some shortcuts will take different actions for this version of Android."</string>
+    <string name="keycombo_warning_dialog_title">Update your modifier key</string>
     <string name="label_choose_app_to_export">Choose application to export labels:</string>
     <string name="label_choose_app_to_import">Choose application to import labels:</string>
     <string name="label_dialog_confirm_label_remove">Label removed</string>
@@ -1301,6 +1466,7 @@ Internal view name: %1$s"</string>
     <string name="label_import_dialog_skip">Skip</string>
     <string name="label_import_dialog_title">Import custom labels to TalkBack</string>
     <string name="label_import_failed">Label import failed</string>
+    <string name="label_import_succeeded">{count, plural, =0{No new labels} =1{# label updated} other{# labels updated}}</string>
     <string name="label_manager_no_packages_message">"There are currently no custom labels
 
 "<b>How to create a custom label</b>"
@@ -1310,20 +1476,43 @@ Navigate to an unlabeled image and add a label from the TalkBack menu"</string>
     <string name="label_manager_timestamp_text">Last modified %1$s</string>
     <string name="label_screen_search_result">Search result</string>
     <string name="language_options">Languages</string>
-    <string name="learn_more_braille_languages">Learn more about braille languages</string>
+    <string name="learn_more">Learn more</string>
     <string name="leave_keyboard">Leave braille keyboard</string>
     <string name="left_hand">left hand</string>
-    <string name="link1_text">Link1</string>
-    <string name="link2_text">Link2</string>
-    <string name="link3_text">Link3</string>
-    <string name="link4_text">Link4</string>
-    <string name="links">Links</string>
+    <string name="link1_text">Link 1</string>
+    <string name="link2_text">Link 2</string>
+    <string name="link3_text">Link 3</string>
+    <string name="link4_text">Link 4</string>
+    <string name="link5_text">Link 5</string>
+    <string name="link_improvements_content">"It is now easier to open links. When you find a link, double-tap to activate it. If there are multiple links, double tapping opens the actions menu so you can select the one you want.
+
+The links menu is now part of the actions menu. This means that you can swipe down with one finger to select links.
+
+To find links you’ve used before, there’s also a new visited links reading control. To use it, go to TalkBack settings > Customize menus > Customize reading controls."</string>
+    <string name="link_improvements_content_tts">"It is now easier to open links. When you find a link, double-tap to activate it. If there are multiple links, double tapping opens the actions menu so you can select the one you want.
+
+The links menu is now part of the actions menu. This means that you can swipe down with one finger to select links.
+
+To find links you’ve used before, there’s also a new visited links reading control. To use it, go to TalkBack settings then Customize menus then Customize reading controls."</string>
+    <string name="link_improvements_title">Link improvements</string>
     <string name="list_index_template">%1$d of %2$d</string>
+    <string name="list_item_account_label">Account:</string>
+    <string name="list_item_build_label">Build ID:</string>
+    <string name="list_item_file_count_label">File Count:</string>
+    <string name="list_item_group_name_label">Group Name:</string>
+    <string name="list_item_locale_label">Locale:</string>
+    <string name="list_item_no_account">&lt;No Account></string>
+    <string name="list_item_status_label">Status:</string>
+    <string name="list_item_variant_label">Variant ID:</string>
+    <string name="list_item_version_label">Version:</string>
     <string name="lockscreen_label">Lock screen</string>
     <string name="lookout_text">Lookout uses your camera to get details about objects, images, and text around you. You can use it to read signs, sort mail, and more.</string>
     <string name="lookout_tips">Lookout has several modes, depending on the task you’re trying. For example, to scan a page of text, select documents mode.</string>
     <string name="lookout_title">Exploring items and text around you</string>
     <string name="low_confidence_image_description">%1$s Description accuracy: low.</string>
+    <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
+    <string name="m3_loading_indicator_content_description">Loading</string>
+    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
     <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_plain_regular">sans-serif</string>
@@ -1334,9 +1523,11 @@ Navigate to an unlabeled image and add a label from the TalkBack menu"</string>
     <string name="m3_sys_motion_easing_linear">cubic-bezier(0, 0, 1, 1)</string>
     <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0, 0, 1)</string>
     <string name="magnification_off">Magnification off</string>
-    <string name="making_calls_text">You can call a family member, friend, or business with the phone app on your home screen</string>
+    <string name="making_calls_text">"You can call a family member, friend, or business with the phone app on your home screen.
+
+When you receive a call, you can double-tap with 2 fingers to answer it."</string>
     <string name="making_calls_tips">You can also ask Google Assistant to call a number or the name of someone in your contacts</string>
-    <string name="making_calls_title">Making calls</string>
+    <string name="making_calls_title">Making &amp; receiving calls</string>
     <string name="manage_label">Manage label</string>
     <string name="material_clock_display_divider">:</string>
     <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
@@ -1347,9 +1538,20 @@ Navigate to an unlabeled image and add a label from the TalkBack menu"</string>
     <string name="material_slider_range_end">Range end</string>
     <string name="material_slider_range_start">Range start</string>
     <string name="material_slider_value">Value</string>
+    <string name="mdd_debug_info_nav_title">Debug Info</string>
+    <string name="mdd_debug_ui_title">MDD Debug</string>
+    <string name="mdd_download_notification_channel_name">Data Download Notification Channel</string>
+    <string name="mdd_file_group_list_title">Current File Groups - Pull Down to Refresh</string>
+    <string name="mdd_file_groups_nav_title">File Groups</string>
+    <string name="mdd_notification_action_cancel">Cancel</string>
+    <string name="mdd_notification_download_failed">Download failed</string>
+    <string name="mdd_notification_download_paused">Waiting for network connection</string>
+    <string name="mdd_notification_download_paused_wifi">Waiting for WiFi connection</string>
     <string name="medium_confidence_image_description">%1$s Description accuracy: medium.</string>
+    <string name="menu_category_basic_navigation">Basic navigation</string>
     <string name="menu_category_reading_controls">Reading</string>
     <string name="menu_category_special_features">Special features</string>
+    <string name="menu_category_web_navigation">Web navigation</string>
     <string name="menus_selector_text">"These shortcuts can help you quickly change settings, like switching your navigation from characters to words or changing TalkBack's speech rate.
 
 To quickly change your reading controls, swipe left with 3 fingers or swipe right with 3 fingers.
@@ -1366,7 +1568,10 @@ Open the TalkBack menu now by tapping the screen with 3 fingers."</string>
     <string name="menus_talkback_menu_text_pre_r">"The TalkBack menu includes settings and controls that you may need often.
 
 Open the TalkBack menu now by swiping down then right."</string>
-    <string name="menus_title">Menu and controls</string>
+    <string name="menus_title">Use menus and controls</string>
+    <string name="message_aifeature_download_complete">AI model downloaded. TalkBack can now generate image descriptions.</string>
+    <string name="message_aifeature_downloading">Downloading AI model. This may take a while. You’ll be notified when it’s complete.</string>
+    <string name="message_aifeature_downloading_with_progress">Downloading still in progress. %1$d of %2$dMB downloaded.</string>
     <string name="message_in_reset_keymap_confirm_dialog">Are you sure you would like to reset your shortcut keys for this keymap to their default values? Please note, this action cannot be undone.</string>
     <string name="message_request_phone_permission">"This helps TalkBack reduce announcements when you're on a call"</string>
     <string name="message_reset_gesture_settings_confirm_dialog">"This will reset all gestures to their default actions.
@@ -1376,8 +1581,10 @@ You will lose any changes that you have made."</string>
 
 Try it in the text box below."</string>
     <string name="moving_cursor_title">Moving the cursor</string>
+    <string name="msg_matches_found">{matches, plural, =0{No matches on this screen} =1{# match} other{# matches}}</string>
     <string name="msg_no_matches">No matches on this screen</string>
     <string name="msg_no_text_selected">No text found at that location.</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
     <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
@@ -1389,6 +1596,24 @@ Try it in the text box below."</string>
     <string name="mtrl_checkbox_state_description_checked">Checked</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Partially checked</string>
     <string name="mtrl_checkbox_state_description_unchecked">Not checked</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_cancel">Cancel</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">End date %1$s</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_start_date_description">Start date %1$s</string>
+    <string name="mtrl_picker_today_description">Today %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to Calendar view</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
     <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
@@ -1399,11 +1624,10 @@ Try it in the text box below."</string>
     <string name="mtrl_switch_track_path">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
     <string name="multiple_languages_braille_ime_displayed_name">braille keyboard, %s</string>
     <string name="music_volume_percentage_label">Music volume %1$d %%</string>
+    <string name="native_granularity_not_supported">%1$s only supported on native pages</string>
+    <string name="nav_app_bar_navigate_up_description">Navigate up</string>
     <string name="navigation_heading">Navigation</string>
-    <string name="new_braille_shortcuts_and_languages_text">"To play or pause media with your braille display, use space and dots 7, 8. Or, you can double-tap with 2 fingers.
-
-More braille languages are also available now."</string>
-    <string name="new_braille_shortcuts_and_languages_title">New braille shortcuts and languages</string>
+    <string name="negative_button_gemini_opt_in_dialog">No thanks</string>
     <string name="new_feature_in_talkback_title">New features in TalkBack</string>
     <string name="new_gesture_notification_content">Tap to learn how to use TalkBack faster with new gestures.</string>
     <string name="new_gesture_notification_title">New gestures in TalkBack</string>
@@ -1431,7 +1655,10 @@ More braille languages are also available now."</string>
     <string name="no_adjust_setting_gesture">"To use this, go to TalkBack settings and add a gesture for '%1$s'"</string>
     <string name="no_apps_to_export_labels">No applications found to export labels.</string>
     <string name="no_apps_to_import_labels">No applications found to import labels</string>
+    <string name="no_grammar_suggestion_available_announcement">No grammar suggestion available</string>
     <string name="no_navigate_typo_gesture">To use this, go to TalkBack settings and add a gesture for spell check</string>
+    <string name="no_spelling_suggestion_available_announcement">No spelling suggestion available</string>
+    <string name="nonmodal_alert_available_with_gesture">%1$s to access.</string>
     <string name="not_editable">Not editable</string>
     <string name="not_enough_touch_points_dialog_message">Your device doesn’t support enough touch points. For more information, contact your device manufacturer.</string>
     <string name="not_enough_touch_points_dialog_title">Your device doesn’t support braille keyboard</string>
@@ -1493,6 +1720,7 @@ More braille languages are also available now."</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="pause_button">Pause</string>
+    <string name="perf_aicore_feature_download_requested">perf_aicore_feature_download_requested</string>
     <string name="perform_action_next">Next</string>
     <string name="perform_action_submitting">Submitting text</string>
     <string name="perform_add_new_line_announcement">New line added</string>
@@ -1507,8 +1735,17 @@ More braille languages are also available now."</string>
     <string name="permission_required_notice_dialog_message">"To read text in images and in the Camera viewfinder, additional permissions are needed. Allow %1$s to capture everything that's displayed on your screen."</string>
     <string name="permission_required_notice_dialog_positive_button">Continue</string>
     <string name="permission_required_notice_dialog_title">Read text in images</string>
+    <string name="popup_message_history_cancel">Cancel</string>
+    <string name="popup_message_history_clear">Clear all</string>
+    <string name="popup_message_history_empty">Empty</string>
+    <string name="positive_button_gemini_download_dialog">Download &amp; turn on</string>
+    <string name="positive_button_gemini_nano_opt_in_dialog">I agree</string>
+    <string name="positive_button_gemini_opt_in_dialog">Turn on</string>
+    <string name="positive_button_gemini_result_dialog">Close</string>
+    <string name="positive_button_turn_on_image_descriptions_dialog">Go to Settings</string>
     <string name="power_label">Power</string>
     <string name="power_utterance">Power options</string>
+    <string name="powered_by_gemini">Powered by generative AI</string>
     <string name="practice_gestures_link_subtext">Try different gestures to learn what they do</string>
     <string name="practice_gestures_link_text">Practice gestures</string>
     <string name="practice_gestures_text">"Try any TalkBack gesture on this screen to hear what that gesture does.
@@ -1521,19 +1758,37 @@ You can also double-tap and hold with 2, 3, or 4 fingers."</string>
 Try any gesture where two swipes form a right angle. For example, swipe down and then right, without lifting your finger in between."</string>
     <string name="practice_gestures_title">Practice gestures</string>
     <string name="pref_a11y_hints_key">pref_a11y_hints</string>
+    <string name="pref_a11y_volume_control_hint_times">pref_a11y_volume_control_hint_times</string>
+    <string name="pref_a11y_volume_key">pref_a11y_volume</string>
     <string name="pref_active_fab_x_as_int_bit_key">pref_active_fab_x_as_int_bit_key</string>
     <string name="pref_active_fab_y_as_int_bit_key">pref_active_fab_y_as_int_bit_key</string>
     <string name="pref_advanced_settings_key">pref_advanced_settings_key</string>
+    <string name="pref_ai_core_update_accept_key">pref_ai_core_update_accept_key</string>
+    <string name="pref_ai_core_update_request_key">pref_ai_core_update_request_key</string>
+    <string name="pref_ai_feature_download_accept_key">pref_ai_feature_download_accept_key</string>
+    <string name="pref_ai_feature_download_request_key">pref_ai_feature_download_request_key</string>
+    <string name="pref_all_image_captioning_download_dialog_do_no_show">pref_all_image_captioning_download_dialog_do_no_show</string>
+    <string name="pref_all_image_captioning_download_dialog_shown_times">pref_all_image_captioning_download_dialog_shown_times</string>
+    <string name="pref_all_image_captioning_installed">pref_all_image_captioning_installed</string>
+    <string name="pref_all_image_captioning_uninstalled">pref_all_image_captioning_uninstalled</string>
     <string name="pref_allow_frequent_content_change_announcement_key">pref_allow_frequent_content_change_announcement_key</string>
     <string name="pref_allow_frequent_content_change_announcement_title">Speak all progress updates</string>
+    <string name="pref_astrea_update_accept_key">pref_astrea_update_accept_key</string>
+    <string name="pref_astrea_update_request_key">pref_astrea_update_request_key</string>
     <string name="pref_auto_icon_detection_key">pref_auto_icon_detection_key</string>
+    <string name="pref_auto_icon_detection_unlabelled_only_key">pref_auto_icon_detection_unlabelled_only_key</string>
     <string name="pref_auto_image_captioning_key">pref_auto_image_captioning_key</string>
     <string name="pref_auto_image_description_key">pref_auto_image_description_key</string>
+    <string name="pref_auto_image_description_unlabelled_only_key">pref_auto_image_description_unlabelled_only_key</string>
+    <string name="pref_auto_on_device_image_description_unlabelled_only_key">pref_auto_on_device_image_description_unlabelled_only_key</string>
+    <string name="pref_auto_on_devices_image_description_key">pref_auto_on_devices_image_description_key</string>
     <string name="pref_auto_text_recognition_key">pref_auto_text_recognition_key</string>
+    <string name="pref_auto_text_recognition_unlabelled_only_key">pref_auto_text_recognition_unlabelled_only_key</string>
     <string name="pref_bd_auto_adjust_duration_enable_key">pref_bd_auto_adjust_duration_enable_key</string>
     <string name="pref_bd_auto_scroll_duration_key">pref_bd_auto_scroll_duration_key</string>
     <string name="pref_bd_blinking_interval_key">pref_bd_blinking_interval_key</string>
     <string name="pref_bd_output_code">pref_bd_output_code</string>
+    <string name="pref_bd_popup_announcement_key">pref_bd_popup_announcement_key</string>
     <string name="pref_bd_reverse_panning_buttons">pref_bd_reverse_panning_buttons</string>
     <string name="pref_bd_show_navigation_command_unavailable_tip">pref_bd_show_navigation_command_unavailable_tip</string>
     <string name="pref_bd_show_switch_input_code_gesture_tip">pref_bd_show_switch_input_code_gesture_tip</string>
@@ -1556,8 +1811,12 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_brailleime_calibration_points_phone_eightDot_tabletop">pref_brailleime_calibration_points_phone_eightDot_tabletop</string>
     <string name="pref_brailleime_calibration_points_phone_screenaway">pref_brailleime_calibration_points_phone_screenaway</string>
     <string name="pref_brailleime_calibration_points_phone_tabletop">pref_brailleime_calibration_points_phone_tabletop</string>
+    <string name="pref_brailleime_calibration_points_tablet_eightDot_screenaway_landscape">pref_brailleime_calibration_points_tablet_eightDot_screenaway_landscape</string>
+    <string name="pref_brailleime_calibration_points_tablet_eightDot_screenaway_portrait">pref_brailleime_calibration_points_tablet_eightDot_screenaway_portrait</string>
     <string name="pref_brailleime_calibration_points_tablet_eightDot_tabletop_landscape">pref_brailleime_calibration_points_tablet_eightDot_tabletop_landscape</string>
     <string name="pref_brailleime_calibration_points_tablet_eightDot_tabletop_portrait">pref_brailleime_calibration_points_tablet_eightDot_tabletop_portrait</string>
+    <string name="pref_brailleime_calibration_points_tablet_screenaway_landscape">pref_brailleime_calibration_points_tablet_screenaway_landscape</string>
+    <string name="pref_brailleime_calibration_points_tablet_screenaway_portrait">pref_brailleime_calibration_points_tablet_screenaway_portrait</string>
     <string name="pref_brailleime_calibration_points_tablet_tabletop_landscape">pref_brailleime_calibration_points_tablet_tabletop_landscape</string>
     <string name="pref_brailleime_calibration_points_tablet_tabletop_portrait">pref_brailleime_calibration_points_tablet_tabletop_portrait</string>
     <string name="pref_brailleime_exit_keyboard_count">pref_brailleime_exit_keyboard_count</string>
@@ -1579,6 +1838,7 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_category_4finger_shortcuts_key">pref_category_4finger_shortcuts</string>
     <string name="pref_category_advanced_key">pref_category_advanced_key</string>
     <string name="pref_category_audio_key">pref_category_audio_key</string>
+    <string name="pref_category_automatic_description_summary_key">pref_category_automatic_description_summary_key</string>
     <string name="pref_category_braille_key">pref_category_braille_key</string>
     <string name="pref_category_context_menu_summary">To use the TalkBack menu, tap the screen with 3 fingers. You can also swipe up then right, or swipe down then right.</string>
     <string name="pref_category_context_menu_summary_single_finger">To use the TalkBack menu, swipe down then right.</string>
@@ -1586,7 +1846,6 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_category_developer_key">pref_category_developer</string>
     <string name="pref_category_fingerprint_touch_shortcuts_key">pref_category_fingerprint_touch_shortcuts_key</string>
     <string name="pref_category_general_key">pref_category_general_key</string>
-    <string name="pref_category_help_and_feedback_key">pref_category_help_and_feedback_key</string>
     <string name="pref_category_legal_and_privacy_key">pref_category_legal_and_privacy_key</string>
     <string name="pref_category_manage_context_menu_key">pref_category_manage_context_menu</string>
     <string name="pref_category_manage_focus_indicator_key">pref_category_manage_focus_indicator_key</string>
@@ -1596,6 +1855,7 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_category_navigation_options_menu_key">pref_category_manage_navigation_options_menu</string>
     <string name="pref_category_selector_menu_summary">To use the reading controls, swipe left or right with 3 fingers. You can also swipe up or down with 3 fingers.</string>
     <string name="pref_category_selector_menu_summary_single_finger">To use the reading controls, swipe up then down.</string>
+    <string name="pref_category_tutorial_and_help_key">pref_category_tutorial_and_help_key</string>
     <string name="pref_category_typing_key">pref_category_typing_key</string>
     <string name="pref_codes_title">Languages</string>
     <string name="pref_current_selector_setting_key">pref_current_selector_setting_key</string>
@@ -1606,6 +1866,7 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_deprecated_shortcut_up">@string/shortcut_value_previous</string>
     <string name="pref_deprecated_shortcut_up_and_left_default">@string/shortcut_value_home</string>
     <string name="pref_deprecated_shortcut_up_and_right_default">@string/shortcut_value_notifications</string>
+    <string name="pref_detailed_image_description_key">pref_detailed_image_description_key</string>
     <string name="pref_developer_version_code_key">pref_developer_version_code</string>
     <string name="pref_diagnosis_mode_key">pref_diagnosis_mode</string>
     <string name="pref_dim_when_talkback_enabled_key">pref_dim_when_talkback_enabled_key</string>
@@ -1617,12 +1878,24 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_explore_by_touch_reflect_key">pref_explore_by_touch_reflect</string>
     <string name="pref_fab_x_as_int_bit_key">pref_fab_x_as_int_bit_key</string>
     <string name="pref_fab_y_as_int_bit_key">pref_fab_y_as_int_bit_key</string>
+    <string name="pref_gemini_aicore_opt_in_consent_key">pref_gemini_aicore_opt_in_consent_key</string>
+    <string name="pref_gemini_aicore_opt_in_dissent_key">pref_gemini_aicore_opt_in_dissent_key</string>
+    <string name="pref_gemini_aicore_opt_in_show_dialog_key">pref_gemini_aicore_opt_in_show_dialog_key</string>
+    <string name="pref_gemini_enabled_key">pref_gemini_enabled_key</string>
+    <string name="pref_gemini_opt_in_consent_key">pref_gemini_opt_in_consent_key</string>
+    <string name="pref_gemini_opt_in_dissent_key">pref_gemini_opt_in_dissent_key</string>
+    <string name="pref_gemini_opt_in_show_dialog_key">pref_gemini_opt_in_show_dialog_key</string>
+    <string name="pref_gemini_repeat_opt_in_count_key">pref_gemini_repeat_opt_in_count_key</string>
+    <string name="pref_gemini_repeat_opt_in_pop_key">pref_gemini_repeat_opt_in_pop_key</string>
+    <string name="pref_gemini_settings_key">pref_gemini_settings_key</string>
     <string name="pref_gesture_set_entry_0">0</string>
     <string name="pref_gesture_set_entry_1">1</string>
     <string name="pref_gesture_set_key">pref_gesture_set_key</string>
     <string name="pref_gesture_set_key_title">Gesture set</string>
     <string name="pref_gesture_set_value_default">0</string>
     <string name="pref_global_actions_category_key">pref_global_actions_category_key</string>
+    <string name="pref_gup_key">pref_gup_key</string>
+    <string name="pref_has_performed_restore_key">pref_has_performed_restore_key</string>
     <string name="pref_help">pref_help</string>
     <string name="pref_help_and_feedback_key">pref_help_and_feedback</string>
     <string name="pref_help_and_feedback_title">Help &amp; feedback</string>
@@ -1661,11 +1934,13 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_key_bd_braille_elements_checked">pref_key_bd_braille_elements_checked</string>
     <string name="pref_key_bd_braille_elements_expanded">pref_key_bd_braille_elements_expanded</string>
     <string name="pref_key_bd_braille_elements_h1_to_h6">pref_key_bd_braille_elements_h1_to_h6</string>
+    <string name="pref_key_bd_braille_elements_in_progress">pref_key_bd_braille_elements_in_progress</string>
     <string name="pref_key_bd_connection_category">pref_key_bd_connection_category</string>
     <string name="pref_key_bd_enabler">pref_key_bd_enabler</string>
     <string name="pref_key_bd_keybindings_basic">pref_key_bd_keybindings_basic</string>
     <string name="pref_key_bd_keybindings_braille_settings">pref_key_bd_keybindings_braille_settings</string>
     <string name="pref_key_bd_keybindings_editing">pref_key_bd_keybindings_editing</string>
+    <string name="pref_key_bd_keybindings_editing_description">pref_key_bd_keybindings_editing_description</string>
     <string name="pref_key_bd_keybindings_navigation">pref_key_bd_keybindings_navigation</string>
     <string name="pref_key_bd_keybindings_system_actions">pref_key_bd_keybindings_system_actions</string>
     <string name="pref_key_bd_keybindings_talkback_features">pref_key_bd_keybindings_talkback_features</string>
@@ -1723,6 +1998,8 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_proximity_key">pref_proximity</string>
     <string name="pref_punctuation_key">pref_punctuation</string>
     <string name="pref_punctuation_title">Speak punctuation and symbols</string>
+    <string name="pref_punctuation_verbosity">pref_punctuation_verbosity</string>
+    <string name="pref_punctuation_verbosity_default">2</string>
     <string name="pref_reduce_window_delay_key">pref_reduce_window_delay_key</string>
     <string name="pref_reduce_window_delay_title">Reduce window announcement delay</string>
     <string name="pref_reset_gesture_settings_key">pref_reset_gesture_settings</string>
@@ -1735,17 +2012,35 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_selector_activation_key">pref_selector_activation_key</string>
     <string name="pref_selector_audio_focus_key">pref_selector_audio_focus_key</string>
     <string name="pref_selector_change_a11y_volume_key">pref_selector_change_a11y_volume_key</string>
+    <string name="pref_selector_control_telling_time">pref_selector_control_telling_time</string>
     <string name="pref_selector_first_time_activation_key">pref_selector_first_time_activation_key</string>
+    <string name="pref_selector_granularity_buttons_key">pref_selector_granularity_buttons_key</string>
     <string name="pref_selector_granularity_characters_key">pref_selector_granularity_characters_key</string>
+    <string name="pref_selector_granularity_checkboxes_key">pref_selector_granularity_checkboxes_key</string>
+    <string name="pref_selector_granularity_comboboxes_key">pref_selector_granularity_comboboxes_key</string>
     <string name="pref_selector_granularity_containers_key">pref_selector_granularity_containers_key</string>
     <string name="pref_selector_granularity_controls_key">pref_selector_granularity_controls_key</string>
+    <string name="pref_selector_granularity_editfields_key">pref_selector_granularity_editfields_key</string>
+    <string name="pref_selector_granularity_focusables_key">pref_selector_granularity_focusables_key</string>
+    <string name="pref_selector_granularity_graphics_key">pref_selector_granularity_graphics_key</string>
+    <string name="pref_selector_granularity_h1_key">pref_selector_granularity_h1_key</string>
+    <string name="pref_selector_granularity_h2_key">pref_selector_granularity_h2_key</string>
+    <string name="pref_selector_granularity_h3_key">pref_selector_granularity_h3_key</string>
+    <string name="pref_selector_granularity_h4_key">pref_selector_granularity_h4_key</string>
+    <string name="pref_selector_granularity_h5_key">pref_selector_granularity_h5_key</string>
+    <string name="pref_selector_granularity_h6_key">pref_selector_granularity_h6_key</string>
     <string name="pref_selector_granularity_headings_key">pref_selector_granularity_headings_key</string>
     <string name="pref_selector_granularity_key">pref_selector_granularity_key</string>
     <string name="pref_selector_granularity_landmarks_key">pref_selector_granularity_landmarks_key</string>
     <string name="pref_selector_granularity_lines_key">pref_selector_granularity_lines_key</string>
     <string name="pref_selector_granularity_links_key">pref_selector_granularity_links_key</string>
+    <string name="pref_selector_granularity_listitems_key">pref_selector_granularity_listitems_key</string>
+    <string name="pref_selector_granularity_lists_key">pref_selector_granularity_lists_key</string>
     <string name="pref_selector_granularity_paragraphs_key">pref_selector_granularity_paragraphs_key</string>
+    <string name="pref_selector_granularity_search_key">pref_selector_granularity_search_key</string>
+    <string name="pref_selector_granularity_tables_key">pref_selector_granularity_tables_key</string>
     <string name="pref_selector_granularity_typo_key">pref_selector_granularity_typo_key</string>
+    <string name="pref_selector_granularity_visited_links_key">pref_selector_granularity_visited_links_key</string>
     <string name="pref_selector_granularity_windows_key">pref_selector_granularity_windows_key</string>
     <string name="pref_selector_granularity_words_key">pref_selector_granularity_words_key</string>
     <string name="pref_selector_hide_screen_key">pref_selector_hide_screen_key</string>
@@ -1864,8 +2159,10 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_shortcut_up_default">@string/shortcut_value_selected_setting_previous_action</string>
     <string name="pref_shortcut_up_key">pref_shortcut_up</string>
     <string name="pref_show_context_menu_audio_ducking_setting_key">pref_audio_ducking_menu_setting_key</string>
+    <string name="pref_show_context_menu_basic_navigation_category_key">pref_show_context_menu_basic_navigation_category</string>
     <string name="pref_show_context_menu_braille_display_settings_setting_key">pref_braille_dispaly_settings_menu_setting_key</string>
     <string name="pref_show_context_menu_contextual_actions_category_key">pref_show_context_menu_contextual_actions_category</string>
+    <string name="pref_show_context_menu_control_telling_time_setting_key">pref_control_telling_time_menu_setting_key</string>
     <string name="pref_show_context_menu_copy_last_spoken_phrase_setting_key">pref_copy_last_spoken_phrase_menu_setting_key</string>
     <string name="pref_show_context_menu_custom_action_setting_key">pref_custom_action_menu_setting_key</string>
     <string name="pref_show_context_menu_dim_or_brighten_setting_key">pref_dim_or_brighten_menu_setting_key</string>
@@ -1876,7 +2173,6 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_show_context_menu_image_caption_setting_key">pref_image_caption_menu_setting_key</string>
     <string name="pref_show_context_menu_labeling_setting_key">pref_labeling_menu_setting_key</string>
     <string name="pref_show_context_menu_language_setting_key">pref_language_menu_setting_key</string>
-    <string name="pref_show_context_menu_links_setting_key">pref_links_menu_setting_key</string>
     <string name="pref_show_context_menu_navigation_category_key">pref_show_context_menu_navigation_category</string>
     <string name="pref_show_context_menu_others_category_key">pref_show_context_menu_others_category</string>
     <string name="pref_show_context_menu_page_navigation_setting_key">pref_page_navigation_menu_setting_key</string>
@@ -1894,24 +2190,40 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_show_context_menu_verbosity_setting_key">pref_verbosity_menu_setting_key</string>
     <string name="pref_show_context_menu_vibration_feedback_setting_key">pref_vibration_feedback_menu_setting_key</string>
     <string name="pref_show_context_menu_voice_commands_setting_key">pref_voice_commands_menu_setting_key</string>
+    <string name="pref_show_context_menu_web_navigation_category_key">pref_show_context_menu_web_navigation_category</string>
     <string name="pref_show_continuous_reading_mode_dialog">pref_show_continuous_reading_mode_dialog</string>
     <string name="pref_show_dim_screen_confirmation_dialog">pref_show_dim_screen_confirmation_dialog</string>
+    <string name="pref_show_navigation_menu_buttons_setting_key">pref_buttons_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_characters_setting_key">pref_characters_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_checkboxes_setting_key">pref_checkboxes_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_comboboxes_setting_key">pref_comboboxes_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_container_setting_key">pref_container_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_controls_setting_key">pref_controls_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_editfields_setting_key">pref_editfields_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_focusables_setting_key">pref_focusables_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_granularity_default_setting_key">pref_show_navigation_menu_granularity_default_setting_key</string>
+    <string name="pref_show_navigation_menu_graphics_setting_key">pref_graphics_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_h1_setting_key">pref_h1_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_h2_setting_key">pref_h2_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_h3_setting_key">pref_h3_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_h4_setting_key">pref_h4_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_h5_setting_key">pref_h5_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_h6_setting_key">pref_h6_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_headings_setting_key">pref_headings_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_landmarks_setting_key">pref_landmarks_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_lines_setting_key">pref_lines_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_links_setting_key">pref_links_navigation_menu_setting_key</string>
-    <string name="pref_show_navigation_menu_other_web_navigation_setting_key">pref_other_web_navigation_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_listitems_setting_key">pref_listitems_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_lists_setting_key">pref_lists_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_paragraphs_setting_key">pref_paragraphs_navigation_menu_setting_key</string>
-    <string name="pref_show_navigation_menu_special_content_setting_key">pref_special content_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_tables_setting_key">pref_tables_navigation_menu_setting_key</string>
+    <string name="pref_show_navigation_menu_visited_links_setting_key">pref_visited_links_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_window_setting_key">pref_window_navigation_menu_setting_key</string>
     <string name="pref_show_navigation_menu_words_setting_key">pref_words_navigation_menu_setting_key</string>
     <string name="pref_show_pass_through_mode_dialog">pref_show_pass_through_mode_dialog</string>
     <string name="pref_show_selector_menu_reading_control_category_key">pref_show_selector_menu_reading_control_category</string>
     <string name="pref_show_selector_menu_special_features_category_key">pref_show_selector_menu_special_features_category</string>
+    <string name="pref_show_selector_menu_web_navigation_category_key">pref_show_selector_menu_web_navigation_category</string>
     <string name="pref_show_switch_input_code_gesture_tip">pref_show_switch_input_code_gesture_tip</string>
     <string name="pref_show_tos_key">pref_show_tos</string>
     <string name="pref_show_voice_command_dialog">pref_show_voice_command_dialog</string>
@@ -1921,7 +2233,7 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_soundback_volume_default">50</string>
     <string name="pref_soundback_volume_key">pref_soundback_volume</string>
     <string name="pref_speak_container_element_positions_key">pref_speak_container_element_positions_key</string>
-    <string name="pref_speak_container_element_positions_title">Speak list and grid info</string>
+    <string name="pref_speak_container_element_positions_title">Speak container info</string>
     <string name="pref_speak_element_ids_key">pref_element_ids_key</string>
     <string name="pref_speak_passwords_without_headphones">pref_speak_passwords_without_headphones</string>
     <string name="pref_speak_roles_key">pref_speak_roles_key</string>
@@ -1930,10 +2242,15 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_speak_system_window_titles_key">pref_speak_system_window_titles_key</string>
     <string name="pref_speak_system_window_titles_summary">Speak system and input windows, like when you switch to the status bar, notifications, or another keyboard</string>
     <string name="pref_speak_system_window_titles_title">Speak window names</string>
+    <string name="pref_speak_time_key">pref_speak_time_key</string>
+    <string name="pref_speak_time_summary">When you turn on the screen</string>
+    <string name="pref_speak_time_title">Speak time</string>
+    <string name="pref_speech_footer_key">pref_speech_footer</string>
     <string name="pref_speech_pitch_default">1.0</string>
     <string name="pref_speech_pitch_key">pref_pitch_volume</string>
     <string name="pref_speech_rate_default">1.0</string>
     <string name="pref_speech_rate_key">pref_rate_volume</string>
+    <string name="pref_speech_rate_seekbar_key_int">pref_speech_rate_seekbar_key_int</string>
     <string name="pref_speech_volume_default">100</string>
     <string name="pref_speech_volume_key">pref_speech_volume</string>
     <string name="pref_survey_setting_entry_point_key">pref_survey_setting_entry_point_key</string>
@@ -1952,6 +2269,7 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_tree_debug_reflect_key">pref_tree_debug_reflect</string>
     <string name="pref_tts_overlay_key">pref_tts_overlay</string>
     <string name="pref_tts_settings_key">pref_tts_settings</string>
+    <string name="pref_tutorial_and_help_key">pref_tutorial_and_help_key</string>
     <string name="pref_tutorial_entry_point_key">pref_tutorial_entry_point_key</string>
     <string name="pref_tutorial_key">pref_tutorial</string>
     <string name="pref_two_part_vertical_gestures_key">pref_two_part_vertical_gestures</string>
@@ -1966,6 +2284,9 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="pref_update_welcome_13_1_shown_key">pref_update_welcome_13_1_shown_key</string>
     <string name="pref_update_welcome_14_0_shown_key">pref_update_welcome_14_0_shown_key</string>
     <string name="pref_update_welcome_14_1_shown_key">pref_update_welcome_14_1_shown_key</string>
+    <string name="pref_update_welcome_14_2_shown_key">pref_update_welcome_14_2_shown_key</string>
+    <string name="pref_update_welcome_15_0_shown_key">pref_update_welcome_15_0_shown_key</string>
+    <string name="pref_update_welcome_15_1_shown_key">pref_update_welcome_15_1_shown_key</string>
     <string name="pref_use_audio_focus_key">pref_use_audio_focus</string>
     <string name="pref_verbose_scroll_announcement_key">pref_verbose_scroll_announcement_key</string>
     <string name="pref_verbosity_category_preset_settings_key">pref_verbosity_category_preset_settings_key</string>
@@ -1993,6 +2314,9 @@ Try any gesture where two swipes form a right angle. For example, swipe down and
     <string name="previous_item_button">Previous Item</string>
     <string name="primes_marker">PrImEs</string>
     <string name="privacy_policy_url">http://www.google.com/policies/privacy/</string>
+    <string name="punctuation_all">All</string>
+    <string name="punctuation_most">Most</string>
+    <string name="punctuation_some">Some</string>
     <string name="punctuation_state">Punctuation %1$s</string>
     <string name="quick_settings_label">Quick Settings</string>
     <string name="read_by_character_text">"Sometimes, you might want to hear text read aloud one character at a time.
@@ -2014,6 +2338,11 @@ Try it now. When you swipe down and then up, you can also choose to read by word
     <string name="reading_web_emails_tips">"After installing Reading mode:
 
 1. Go to Settings > Accessibility > Reading mode
+2. Turn on the shortcut
+3. Go to an app or website, and use the shortcut to open Reading mode"</string>
+    <string name="reading_web_emails_tips_tts">"After installing Reading mode:
+
+1. Go to Settings then Accessibility then Reading mode
 2. Turn on the shortcut
 3. Go to an app or website, and use the shortcut to open Reading mode"</string>
     <string name="reading_web_emails_title">Reading websites and emails</string>
@@ -2060,6 +2389,7 @@ To exit braille keyboard, swipe down toward the ground with 3 fingers. This swit
     <string name="s2s_loading_voices">Loading voices…</string>
     <string name="s2s_notification_description">Tap to adjust settings</string>
     <string name="s2s_popup_close_button">Close</string>
+    <string name="s2s_popup_error_blank_text_in_intent">Cannot read this text or no text was provided</string>
     <string name="s2s_popup_label">Read aloud</string>
     <string name="s2s_popup_pause">Pause select to speak</string>
     <string name="s2s_popup_resume">Resume select to speak</string>
@@ -2069,7 +2399,6 @@ To exit braille keyboard, swipe down toward the ground with 3 fingers. This swit
     <string name="s2s_popup_settings_text_size">Text size</string>
     <string name="s2s_pref_allow_snapshot_detail_info_summary">For debug mode only. Select to Speak will capture more screen contents to system logs. Screen contents may include personal information.</string>
     <string name="s2s_pref_allow_snapshot_detail_info_title">Allow snapshot to take detail information</string>
-    <string name="s2s_pref_analytics_is_talkback_on">pref_analytics_is_talkback_on</string>
     <string name="s2s_pref_change_voice_key">s2s_pref_change_voice_key</string>
     <string name="s2s_pref_developer_settings_key">s2s_pref_developer_settings_key</string>
     <string name="s2s_pref_developer_settings_title">Developer settings</string>
@@ -2077,7 +2406,6 @@ To exit braille keyboard, swipe down toward the ground with 3 fingers. This swit
     <string name="s2s_pref_enable_snapshot_key">s2s_pref_enable_snapshot_key</string>
     <string name="s2s_pref_enable_snapshot_title">Enable taking snapshot</string>
     <string name="s2s_pref_help_and_feedback_key">pref_help_and_feedback</string>
-    <string name="s2s_pref_last_log_time_ms">s2s_pref_last_log_time_ms</string>
     <string name="s2s_pref_multitasking_key">pref_key_multitasking</string>
     <string name="s2s_pref_multitasking_title">Read in background</string>
     <string name="s2s_pref_ocr_key">pref_key_ocr</string>
@@ -2117,13 +2445,27 @@ Start Select to Speak. Then you can:
     <string name="screen_dimmed">Screen hidden</string>
     <string name="screen_dimming_exit_instruction_line1">TalkBack accessibility service has hidden the screen</string>
     <string name="screen_dimming_exit_instruction_line2">To change this, %1$s to open the TalkBack menu, select \"%2$s\", then double-tap.</string>
+    <string name="screen_search_keyword_hint">keyword is %1$s</string>
+    <string name="screen_search_no_keyword_hint">No keyword yet. To start a new search, tap and hold with 3 fingers or open screen search from the TalkBack menu.</string>
+    <string name="screen_search_no_keyword_hint_pre_r">No keyword yet. To start a new search, swipe left then down or open screen search from the TalkBack menu.</string>
+    <string name="screen_search_results_content_one">When you’re using screen search to find specific words on your screen, it’s now easier to jump to the next or previous result.</string>
+    <string name="screen_search_results_content_two">To get started:</string>
+    <string name="screen_search_results_item_four">When you hear \"screen search\", swipe down for the next result or swipe up for the previous result.</string>
+    <string name="screen_search_results_item_one">Open screen search. To do this, you can hold 3 fingers on your screen, get to it from the TalkBack menu, or use a voice command.</string>
+    <string name="screen_search_results_item_three">Swipe left or right with 3 fingers to open reading controls.</string>
+    <string name="screen_search_results_item_two">Add your search keyword.</string>
+    <string name="screen_search_results_title">Screen search results</string>
     <string name="screenshot_label">Screenshot</string>
     <string name="screenshot_utterance">Take screenshot</string>
-    <string name="scrolling_text">"You can scroll by swiping with 2 fingers.
+    <string name="scrolling_item_text">Try scrolling by swiping up or down with 2 fingers</string>
+    <string name="scrolling_text">You can practice on this screen until you find the \"Next\" button.</string>
+    <string name="scrolling_text_completed">"Great job! You've scrolled to the bottom of the screen.
 
-Try this now by swiping up with 2 fingers until you scroll to the bottom of the list items."</string>
-    <string name="scrolling_title">Scrolling</string>
+Swipe right to find the next button."</string>
+    <string name="scrolling_title">Scroll by swiping up or down with 2 fingers</string>
+    <string name="search_end_of_page">No next result on this page</string>
     <string name="search_mode_cancel">Search canceled.</string>
+    <string name="search_start_of_page">No previous result on this page</string>
     <string name="select_setting_hint">%1$s to select a different setting</string>
     <string name="selecting_text_text">"In a text box, move the cursor to the beginning of the text you want to select.
 
@@ -2141,16 +2483,34 @@ Try to select the word \"Welcome\" in the text box below."</string>
     <string name="selector_a11y_volume_change">SELECTOR_A11y_VOLUME_CHANGE</string>
     <string name="selector_actions">SELECTOR_ACTIONS</string>
     <string name="selector_audio_focus">AUDIO_DUCKING</string>
+    <string name="selector_control_telling_time">SELECTOR_CONTROL_TELLING_TIME</string>
     <string name="selector_granularity">GRANULARITY</string>
+    <string name="selector_granularity_buttons">GRANULARITY_BUTTONS</string>
     <string name="selector_granularity_characters">GRANULARITY_CHARACTERS</string>
+    <string name="selector_granularity_checkboxes">GRANULARITY_CHECKBOXES</string>
+    <string name="selector_granularity_comboboxes">GRANULARITY_COMBOBOXES</string>
     <string name="selector_granularity_containers">GRANULARITY_CONTAINERS</string>
     <string name="selector_granularity_controls">GRANULARITY_CONTROLS</string>
+    <string name="selector_granularity_editfields">GRANULARITY_EDITFIELDS</string>
+    <string name="selector_granularity_focusables">GRANULARITY_FOCUSABLES</string>
+    <string name="selector_granularity_graphics">GRANULARITY_GRAPHICS</string>
+    <string name="selector_granularity_h1">GRANULARITY_H1</string>
+    <string name="selector_granularity_h2">GRANULARITY_H2</string>
+    <string name="selector_granularity_h3">GRANULARITY_H3</string>
+    <string name="selector_granularity_h4">GRANULARITY_H4</string>
+    <string name="selector_granularity_h5">GRANULARITY_H5</string>
+    <string name="selector_granularity_h6">GRANULARITY_H6</string>
     <string name="selector_granularity_headings">GRANULARITY_HEADINGS</string>
     <string name="selector_granularity_landmarks">GRANULARITY_LANDMARKS</string>
     <string name="selector_granularity_lines">GRANULARITY_LINES</string>
     <string name="selector_granularity_links">GRANULARITY_LINKS</string>
+    <string name="selector_granularity_listitems">GRANULARITY_LISTITEMS</string>
+    <string name="selector_granularity_lists">GRANULARITY_LISTS</string>
     <string name="selector_granularity_paragraphs">GRANULARITY_PARAGRAPHS</string>
+    <string name="selector_granularity_search">GRANULARITY_SEARCH</string>
+    <string name="selector_granularity_tables">GRANULARITY_TABLES</string>
     <string name="selector_granularity_typo">GRANULARITY_TYPO</string>
+    <string name="selector_granularity_visited_links">GRANULARITY_VISITED_LINKS</string>
     <string name="selector_granularity_windows">GRANULARITY_WINDOWS</string>
     <string name="selector_granularity_words">GRANULARITY_WORDS</string>
     <string name="selector_hide_screen">HIDE_SCREEN</string>
@@ -2163,7 +2523,6 @@ Try to select the word \"Welcome\" in the text box below."</string>
     <string name="sending_message_tips">You can also ask Google Assistant to send a message to a contact or number</string>
     <string name="sending_messages_text">To send a message, go to your home screen and find a messaging app</string>
     <string name="sending_messages_title">Sending messages</string>
-    <string name="set_granularity_fail">%1$s failed</string>
     <string name="set_up_braille_keyboard">Set up braille keyboard</string>
     <string name="setting_button">Setting</string>
     <string name="setting_selector_heading">Reading controls</string>
@@ -2175,9 +2534,13 @@ Try to select the word \"Welcome\" in the text box below."</string>
     <string name="shortcut_back">Back</string>
     <string name="shortcut_braille_display_settings">Navigate to braille display settings</string>
     <string name="shortcut_braille_keyboard">Switch to braille keyboard</string>
+    <string name="shortcut_control_speak_time">"Speak time or don't speak time"</string>
     <string name="shortcut_decrease_volume">Decrease volume</string>
     <string name="shortcut_disable_dimming">Show screen</string>
+    <string name="shortcut_disable_speak_time">"Don't speak time"</string>
+    <string name="shortcut_disabled_due_to_vibration_watch">Unavailable when vibration watch is on</string>
     <string name="shortcut_enable_dimming">Hide screen</string>
+    <string name="shortcut_enable_speak_time">Speak time</string>
     <string name="shortcut_first_in_screen">Focus on first item on screen</string>
     <string name="shortcut_home">Home</string>
     <string name="shortcut_increase_volume">Increase volume</string>
@@ -2200,7 +2563,7 @@ Try to select the word \"Welcome\" in the text box below."</string>
     <string name="shortcut_print_node_tree">Print node tree</string>
     <string name="shortcut_print_performance_stats">Print performance statistics</string>
     <string name="shortcut_quick_settings">Quick Settings</string>
-    <string name="shortcut_read_from_current">Read from next item</string>
+    <string name="shortcut_read_from_current">Read from focused item</string>
     <string name="shortcut_read_from_top">Read from top</string>
     <string name="shortcut_report_gesture">Report gesture issue</string>
     <string name="shortcut_scroll_back">Scroll back</string>
@@ -2233,6 +2596,7 @@ Try to select the word \"Welcome\" in the text box below."</string>
     <string name="shortcut_value_back">BACK</string>
     <string name="shortcut_value_braille_display_settings">BRAILLE_DISPLAY_SETTINGS</string>
     <string name="shortcut_value_braille_keyboard">BRAILLE_KEYBOARD</string>
+    <string name="shortcut_value_control_telling_time">TELLING_TIME</string>
     <string name="shortcut_value_copy">COPY</string>
     <string name="shortcut_value_copy_last_spoken_phrase">COPY_LAST_SPOKEN_UTTERANCE</string>
     <string name="shortcut_value_cut">CUT</string>
@@ -2296,14 +2660,15 @@ Try to select the word \"Welcome\" in the text box below."</string>
     <string name="shortcut_value_voice_commands">VOICE_COMMANDS</string>
     <string name="shortcut_voice_commands">Start voice command</string>
     <string name="show_keyboard_window">Showing %1$s</string>
+    <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_tap_shortcuts_removed_details">"These settings are removed from TalkBack, due to reliability issues:
 • Tap on side of device gestures
 • Shake to start continuous reading"</string>
+    <string name="snackbar_accessibility_pane_title">Alert</string>
     <string name="sound_feedback_state">Sound feedback %1$s</string>
-    <string name="spell_check_for_braille_keyboard_text">"You can use spell check with a braille keyboard to find misspelled words, hear spelling suggestions, and confirm changes.
-
-You can learn more about how to use spell check in the tutorial."</string>
-    <string name="spell_check_for_braille_keyboard_title">Spell check for braille keyboard</string>
+    <string name="speak_time_off">Speak time off</string>
+    <string name="speak_time_on">Speak time on</string>
+    <string name="spelling_suggestion">Spelling suggestion</string>
     <string name="split_2022336135">Screenunderstanding Module</string>
     <string name="split_N2025383970">Garcon Assets Module</string>
     <string name="split_comma">, %s</string>
@@ -2311,7 +2676,8 @@ You can learn more about how to use spell check in the tutorial."</string>
     <string name="start_continuous_reading_button">Start continuous reading</string>
     <string name="start_of_page">No previous %1$s</string>
     <string name="start_voice_command">Use voice commands</string>
-    <string name="stay_in_tutorial_button">Stay in tutorial</string>
+    <string name="subtitle_pref_enable_auto_image_caption_with_aicore">Significantly increases battery usage</string>
+    <string name="subtitle_pref_gup">Get help using TalkBack or report issues</string>
     <string name="suggestions_window_available">Suggestions available</string>
     <string name="suggestions_window_available_with_gesture">Suggestions available. To access, %1$s</string>
     <string name="summaryOff_pref_speak_passwords_without_headphones">Passwords only spoken when using headphones</string>
@@ -2319,15 +2685,27 @@ You can learn more about how to use spell check in the tutorial."</string>
     <string name="summary_actions">Perform actions</string>
     <string name="summary_audio_ducking">Lower volume of other audio playing when TalkBack speaks</string>
     <string name="summary_braile_display_preferences">Open braille display settings</string>
+    <string name="summary_buttons">Jump between buttons on web pages</string>
     <string name="summary_characters">Read one character at a time</string>
+    <string name="summary_checkboxes">Jump between checkboxes on web pages</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="summary_comboboxes">Jump between combo boxes, like dropdown menus, on web pages</string>
     <string name="summary_containers">Exit out of a container, like when you are in a list or grid</string>
-    <string name="summary_context_menu_links">Open links within a focused item</string>
+    <string name="summary_control_speak_time">Change whether the time is spoken aloud when you turn on the screen</string>
     <string name="summary_controls">Jump between items you can interact with, like buttons, checkboxes, and text fields</string>
     <string name="summary_copy_last_spoken_phrase">Copy the last phrase TalkBack said to the clipboard so you can paste the text</string>
-    <string name="summary_custom_action">Shows when actions exist for the current item, including copy, paste, select, and more</string>
+    <string name="summary_custom_action">Shows when actions exist for the current item, including links, copy, paste, select, and more</string>
+    <string name="summary_editfields">Jump between edit fields on web pages</string>
+    <string name="summary_focusables">Jump between focusable items on web pages</string>
     <string name="summary_granularity">Read by character, word, lines, and more</string>
     <string name="summary_granularity_default">Read one item at a time</string>
+    <string name="summary_graphics">Jump between images and videos on web pages</string>
+    <string name="summary_h1">Jump between heading 1 on web pages</string>
+    <string name="summary_h2">Jump between heading 2 on web pages</string>
+    <string name="summary_h3">Jump between heading 3 on web pages</string>
+    <string name="summary_h4">Jump between heading 4 on web pages</string>
+    <string name="summary_h5">Jump between heading 5 on web pages</string>
+    <string name="summary_h6">Jump between heading 6 on web pages</string>
     <string name="summary_headings">Jump between headings</string>
     <string name="summary_hide_screen">Hide the display so your screen is not visible to others when in public places</string>
     <string name="summary_image_caption">Speak text and icons within a selected image</string>
@@ -2336,18 +2714,18 @@ You can learn more about how to use spell check in the tutorial."</string>
     <string name="summary_language">Change your spoken language. Shows only when you have multiple text-to-speech languages installed.</string>
     <string name="summary_lines">Read one line at a time</string>
     <string name="summary_links">Jump between links</string>
-    <string name="summary_other_web_navigation">Only appear on web pages</string>
+    <string name="summary_listitems">Jump between list items on web pages</string>
+    <string name="summary_lists">Jump between lists on web pages</string>
     <string name="summary_paragraphs">Read one paragraph at a time</string>
     <string name="summary_perform_screen_search">Enter a search term to find that text on the screen</string>
     <string name="summary_pref_a11y_hints">After describing content, suggest how to use</string>
     <string name="summary_pref_accumulate_presses">Each pressed dot is part of the input, even if the dot is released before other dots</string>
     <string name="summary_pref_allow_frequent_content_change_announcement">Includes updates while downloading, following driving directions, and more. When turned off, you’ll still get less frequent updates.</string>
-    <string name="summary_pref_auto_image_captioning">For icons, images and text in images</string>
-    <string name="summary_pref_auto_image_captioning_no_icon">For images and text in images</string>
-    <string name="summary_pref_auto_image_captioning_no_image">For icons and text in images</string>
-    <string name="summary_pref_auto_image_captioning_text_only">For text in images</string>
-    <string name="summary_pref_feature_disabled">Off</string>
-    <string name="summary_pref_feature_enabled">On</string>
+    <string name="summary_pref_auto_icon_detection_disabled">Off</string>
+    <string name="summary_pref_auto_image_captioning">For icons, images, and text in images</string>
+    <string name="summary_pref_auto_image_captioning_disabled">Off</string>
+    <string name="summary_pref_gemini_support_disabled">Gemini is disabled</string>
+    <string name="summary_pref_gemini_support_enabled">Gemini is enabled</string>
     <string name="summary_pref_intonation">Speak deleted letters in a higher-pitched voice</string>
     <string name="summary_pref_module_downloading">Downloading…</string>
     <string name="summary_pref_phonetic_letters">"When you select keyboard keys or navigate by character, you'll hear an example along with each letter, like \"h, hotel\""</string>
@@ -2355,27 +2733,31 @@ You can learn more about how to use spell check in the tutorial."</string>
     <string name="summary_pref_reverse_dots">Swap the dot positions, so that dots 1 and 4 trade places, for example</string>
     <string name="summary_pref_single_tap">Tap once on a focused item to activate</string>
     <string name="summary_pref_speak_element_ids">For unlabeled buttons</string>
+    <string name="summary_pref_speech_rate">Speed at which the text is spoken</string>
     <string name="summary_pref_tree_debug_tv">Use voice search key to print node tree instead of searching</string>
     <string name="summary_pref_verbose_scroll_announcement">Speak count for all scrolling methods</string>
-    <string name="summary_read_from_current">Starting from the next item, read all items on the screen</string>
+    <string name="summary_read_from_current">Starting from the focused item, read all items on the screen</string>
     <string name="summary_read_from_top">Starting from the top, read all items on the screen</string>
     <string name="summary_repeat_last_spoken_phrase">Hear the last phrase that TalkBack said again</string>
+    <string name="summary_search">Jump to other screen search results</string>
     <string name="summary_selector_menu_punctuation">Change whether punctuation and symbols are read aloud</string>
     <string name="summary_selector_menu_verbosity">Change whether typed keys, usage hints, grid info, and other info is read aloud</string>
     <string name="summary_show_hide_screen">Hide the display so your screen is not visible to others in public places. After hiding your screen, return it to a normal state.</string>
     <string name="summary_sound_feedback">Hear sound effects as you navigate, like a beep to confirm an action</string>
-    <string name="summary_special_content">Jump between special content on web pages, like tables</string>
+    <string name="summary_speak_container_element_positions">Includes info while entering and exiting lists, grids, and other containers</string>
     <string name="summary_speech_rate">Change how quickly TalkBack speaks</string>
-    <string name="summary_spell_check">Jump between misspelled words</string>
+    <string name="summary_spell_check">Jump between spelling and grammar suggestions</string>
     <string name="summary_spell_last_spoken_phrase">Spell each letter of the last phrase that TalkBack said</string>
-    <string name="summary_support_change_a11y_volume">Increase or decrease Accessibility volume</string>
+    <string name="summary_support_change_a11y_volume">Increase or decrease accessibility volume</string>
     <string name="summary_support_scroll_seq">Scroll forward or backward</string>
     <string name="summary_system_actions">Go to all apps and Quick Settings</string>
+    <string name="summary_tables">Jump between tables on web pages</string>
     <string name="summary_talkback_preferences">Open TalkBack settings</string>
     <string name="summary_tts_settings">Open text-to-speech settings</string>
-    <string name="summary_typo_suggestions">Shows when the cursor is on a misspelled word</string>
+    <string name="summary_typo_suggestions">Shows when the cursor is on a typo</string>
     <string name="summary_vibration_feedback">Feel vibrations for actions like selecting an item. Does not affect vibrations coming from apps or the system.</string>
     <string name="summary_viewpager_controls">Go to the next or previous page. Shows when you are reading content with multiple pages.</string>
+    <string name="summary_visited_links">"Jump between links you've previously opened on web pages"</string>
     <string name="summary_voice_commands">Control TalkBack with your voice</string>
     <string name="summary_windows">Jump to other windows, like volume controls or the navigation bar</string>
     <string name="summary_words">Read one word at a time</string>
@@ -2442,15 +2824,13 @@ You can learn more about how to use spell check in the tutorial."</string>
     <string name="switch_auto_image_caption_dialog_subtitle">Downloaded</string>
     <string name="switch_gesture_set">Switch Gesture Set</string>
     <string name="switch_gesture_set_to">Switch to gesture set %1$d</string>
-    <string name="switch_icon_detection_dialog_message">Hear descriptions when you focus on an unlabelled icon</string>
-    <string name="switch_icon_detection_dialog_title">Automatically describe icons</string>
-    <string name="switch_image_description_dialog_message">Hear descriptions when you focus on an unlabelled images</string>
-    <string name="switch_image_description_dialog_title">Automatically describe images</string>
+    <string name="switch_icon_detection_dialog_message">Hear descriptions when you focus on an icon</string>
+    <string name="switch_icon_detection_dialog_title">Automatic icon descriptions</string>
+    <string name="switch_image_description_dialog_message">Hear descriptions when you focus on an image. Some apps may not support this.</string>
     <string name="switch_input_code_gesture_tip_dialog_message">To change your language while typing with the braille keyboard, swipe up with 3 fingers. Then select \"switch to next language\".</string>
     <string name="switch_input_code_gesture_tip_dialog_title">Quickly change language while typing</string>
     <string name="switch_on_screen_keyboard_announcement">Switching to braille touchscreen</string>
     <string name="switch_text_recognition_dialog_message">Hear descriptions when you focus on an image that contains text</string>
-    <string name="switch_text_recognition_dialog_title">Automatically describe text in images</string>
     <string name="switch_to_braille_keyboard_failure_msg">"Braille keyboard isn't turned on. Go to TalkBack settings, set up Braille keyboard, and try again."</string>
     <string name="switch_to_language_announcement">Switched to %s</string>
     <string name="switch_to_screen_away_announcement">Screen-away mode</string>
@@ -2606,6 +2986,18 @@ You can learn more about how to use spell check in the tutorial."</string>
     <string name="symbol_won_sign">Won currency sign</string>
     <string name="symbol_yen">Yen</string>
     <string name="system_actions">System actions</string>
+    <string name="system_gestures_accessibility_shortcut_text">To open your accessibility shortcut, swipe up from the bottom of the screen with 3 fingers.</string>
+    <string name="system_gestures_back_text">To go back, start at the left or right edge and swipe towards the middle of your screen with 2 fingers.</string>
+    <string name="system_gestures_home_text">To go to your home screen, swipe up from the bottom of your screen with 2 fingers.</string>
+    <string name="system_gestures_open_notifications_text_for_3_button_navigation">"To open notifications, swipe down from the top of the screen with 2 fingers. Then you can close notifications by swiping back up with 2 fingers.
+
+Try it now."</string>
+    <string name="system_gestures_open_notifications_text_for_gesture_navigation">To open notifications, swipe down from the top of the screen with 2 fingers.</string>
+    <string name="system_gestures_overview_screen_text">To go to your recent apps, swipe up from the bottom of your screen with 2 fingers and hold. Then release. This takes you to the overview screen.</string>
+    <string name="system_gestures_text">"This means when using TalkBack, you can go to the home screen by swiping up from the bottom with 2 fingers instead of 1.
+
+Trying these gestures now will close the tutorial. You may want to wait until you have completed the tutorial."</string>
+    <string name="system_gestures_title">Add 1 finger to system gestures</string>
     <string name="tabletop">Tabletop mode</string>
     <string name="tabletop_detail">Place device flat on a table (tabletop mode)</string>
     <string name="talkback_built_in_gesture_change_details">"This version of TalkBack includes changes to the default accessibility gestures.
@@ -2624,10 +3016,21 @@ The up gesture now moves to the previous navigation setting, and the down gestur
     <string name="talkback_gesture_change_details">"This version of TalkBack includes changes to the default accessibility gestures. The actions associated with these gestures can be customized within TalkBack settings. When Explore by touch is enabled, you can use the following gestures to perform certain actions.
 
 %1$s"</string>
-    <string name="talkback_inactive_message">To try the tutorial, first turn on TalkBack</string>
+    <string name="talkback_inactive_go_to_settings_button">Go to Settings</string>
+    <string name="talkback_inactive_message_image_description">To try getting image descriptions, first turn on TalkBack</string>
+    <string name="talkback_inactive_message_practice_gestures">To practice gestures, first turn on TalkBack</string>
+    <string name="talkback_inactive_not_now_button">Not now</string>
     <string name="talkback_inactive_title">TalkBack is off</string>
+    <string name="talkback_inactive_warning_message">"This tutorial works best with TalkBack on. You can make this change in Settings.
+
+If you continue with TalkBack off, some of the tutorial may not work as intended."</string>
+    <string name="talkback_inactive_warning_positive_button">Continue anyways</string>
     <string name="talkback_is_on">TalkBack is on</string>
+    <string name="talkback_menu_close_button_text">Close</string>
     <string name="talkback_menu_title">TalkBack menu</string>
+    <string name="talkback_menu_title_content_description">"TalkBack menu. Swipe right to explore options in the TalkBack menu.
+
+To go back to the tutorial, use 2 fingers to swipe left or right from the edge of your screen."</string>
     <string name="talkback_notification_channel_description">The Notification Channel of TalkBack</string>
     <string name="talkback_notification_channel_name">TalkBack</string>
     <string name="talkback_off_dialog_positive_button">Turn on in accessibility settings</string>
@@ -2649,17 +3052,17 @@ To turn off TalkBack:
 • On the confirmation message, tap OK. Then double-tap OK."</string>
     <string name="talkback_service_html_description">When TalkBack is on, it provides spoken feedback so that you can use your device without looking at the screen. TalkBack is intended for situations or people who have difficulty seeing the screen.&lt;br>&lt;br>&lt;b>How to use TalkBack&lt;/b>&lt;br>• Swipe right or left to move between items&lt;br>• Double-tap to activate an item&lt;br>• Drag 2 fingers to scroll&lt;br>&lt;b>How to turn off TalkBack&lt;/b>&lt;br>1. In Settings, tap &lt;b>Use TalkBack&lt;/b>. There will be an outline. Double-tap it.&lt;br>2. On the confirmation message, tap &lt;b>Stop&lt;/b>. There will be an outline. Double-tap it.</string>
     <string name="talkback_service_summary">Speak items on screen</string>
+    <string name="talkback_settings_screen_title_breadcrumb">Settings</string>
     <string name="talkback_show_talkback_settings">TalkBack settings</string>
     <string name="talkback_suspend_dialog_title">Resume TalkBack to use braille keyboard</string>
     <string name="talkback_title">TalkBack</string>
     <string name="talkback_turn_off_description">TalkBack reads content on your screen aloud and changes how navigation works on your device. To turn it off, tap “Turn off TalkBack” 2 times.</string>
-    <string name="talkback_tutorial_text">Swipe right to select a topic</string>
-    <string name="talkback_tutorial_title">TalkBack tutorial</string>
+    <string name="talkback_tutorial_text">Swipe right to select a topic. For the best experience, turn on TalkBack before getting started.</string>
+    <string name="talkback_tutorial_title">@string/title_pref_category_tutorial</string>
     <string name="talkback_updated_notification_content">Tap to find out more</string>
     <string name="talkback_updated_notification_title">TalkBack has been updated</string>
     <string name="tap_again_to_turn_off">Tap again to turn off</string>
     <string name="tap_to_continue">Double tap anywhere to continue</string>
-    <string name="target_link_text">Continue</string>
     <string name="template_announce_selected_text">Selected text: %1$s</string>
     <string name="template_capital_letter">capital %1$s</string>
     <string name="template_charging">Charging %1$s Battery level %2$s percent.</string>
@@ -2670,6 +3073,7 @@ To turn off TalkBack:
     <string name="template_custom_hint_for_actions_keyboard">Press %1$s to %2$s</string>
     <string name="template_custom_hint_for_long_clickable_actions">%1$s and hold to %2$s</string>
     <string name="template_drawer_opened">%1$s menu</string>
+    <string name="template_dump_event_count">{count, plural, =1{# event selected} other{# events selected}}</string>
     <string name="template_fullscreen_magnification_on">Full-screen magnification on %1$d%%</string>
     <string name="template_fullscreen_magnification_scale_changed">Full-screen magnification %1$d%%</string>
     <string name="template_hint_adjustable_1gesture">\"%1$s\" to adjust</string>
@@ -2678,15 +3082,19 @@ To turn off TalkBack:
     <string name="template_hint_checkable_keyboard">Press %1$s to toggle</string>
     <string name="template_hint_clickable">%1$s to activate</string>
     <string name="template_hint_clickable_keyboard">Press %1$s to activate</string>
+    <string name="template_hint_clickable_link">%1$s to open link</string>
+    <string name="template_hint_clickable_link_keyboard">Press %1$s to open link</string>
     <string name="template_hint_edit_text">%1$s to edit text</string>
-    <string name="template_hint_edit_text_containing_typo">%1$d misspelled words. %2$s and use spell check to view</string>
+    <string name="template_hint_edit_text_containing_typo">Proofreading is available. %1$d misspelled words. %2$s and use \"Proofread\" to view</string>
     <string name="template_hint_edit_text_keyboard">Press %1$s to edit text</string>
+    <string name="template_hint_for_call">%1$s to answer</string>
+    <string name="template_hint_for_reading_control_actions_in_high_verbosity">%1$s available, %2$s and double-tap to activate</string>
     <string name="template_hint_long_clickable">%1$s and hold to long press</string>
     <string name="template_hint_long_clickable_keyboard">Press %1$s to long press</string>
     <string name="template_hint_menu_type_high_verbosity">%1$s available, use %2$s to view</string>
     <string name="template_hint_pager_single_page">No more pages</string>
-    <string name="template_hint_reading_menu_actions_for_spelling_suggestion">Spelling suggestions available. %1$s for details</string>
-    <string name="template_hint_reading_menu_spelling_suggestion">Spelling suggestions available. %1$s and use actions to view</string>
+    <string name="template_hint_reading_menu_actions_for_spelling_suggestion">Proofreading is available. %1$s for details</string>
+    <string name="template_hint_reading_menu_spelling_suggestion">Proofreading is available. %1$s and use actions to view</string>
     <string name="template_hint_seek_control_tv">%1$s to change</string>
     <string name="template_hint_single_selection_item">%1$s to select</string>
     <string name="template_hint_single_selection_item_keyboard">Press %1$s to select</string>
@@ -2731,7 +3139,7 @@ To turn off TalkBack:
     <string name="template_volume_change_increase">Increase</string>
     <string name="template_volume_change_maximum">Maximum</string>
     <string name="template_volume_change_minimum">Minimum</string>
-    <string name="text_editing_link_subtext">Type, select, edit, and copy</string>
+    <string name="text_editing_link_subtext">Type, select, edit, copy, and more</string>
     <string name="text_editing_link_text">Text editing</string>
     <string name="text_replaced_feedback">Text replaced</string>
     <string name="three_finger_gestures_title">3 fingers</string>
@@ -2744,14 +3152,19 @@ To turn off TalkBack:
     <string name="title_activity_dump_a11y_event">Select events to log</string>
     <string name="title_cancel_screen_search">Close search</string>
     <string name="title_clear_keyword">Clear input</string>
+    <string name="title_control_speak_time">Speak time</string>
     <string name="title_copy_last_spoken_phrase">Copy last spoken phrase</string>
     <string name="title_custom_action">Actions</string>
     <string name="title_edittext_breakout_end_selection_mode">End selection mode</string>
     <string name="title_edittext_breakout_move_to_beginning">Move cursor to beginning</string>
     <string name="title_edittext_breakout_move_to_end">Move cursor to end</string>
     <string name="title_edittext_breakout_start_selection_mode">Start or end selection mode</string>
-    <string name="title_edittext_typo_suggestion">%1$s, spelling suggestion</string>
-    <string name="title_edittext_typo_suggestions">Spelling suggestions</string>
+    <string name="title_edittext_grammar_suggestion">%1$s. Grammar suggestion.</string>
+    <string name="title_edittext_typo_suggestion">%1$s. Spelling suggestion.</string>
+    <string name="title_edittext_typo_suggestion_number">%1$d of %2$d</string>
+    <string name="title_edittext_typo_suggestions">Spelling / grammar suggestions</string>
+    <string name="title_gemini_opt_in_dialog">Get detailed image descriptions?</string>
+    <string name="title_gemini_result_dialog">Detected: image</string>
     <string name="title_granularity">Navigation</string>
     <string name="title_granularity_default">Default navigation</string>
     <string name="title_image_caption">Describe image</string>
@@ -2759,7 +3172,7 @@ To turn off TalkBack:
     <string name="title_labeling_show_or_hide_controls">Add or edit labels</string>
     <string name="title_local_breakout_no_items">No menu items.</string>
     <string name="title_next_screen">Next screen</string>
-    <string name="title_other_web_navigation">Other web navigation</string>
+    <string name="title_on_device_gemini_opt_in_dialog">Get image descriptions?</string>
     <string name="title_pref_a11y_hints">Speak usage hints</string>
     <string name="title_pref_a11y_volume">Accessibility volume</string>
     <string name="title_pref_accumulate_presses">Include all pressed dots</string>
@@ -2770,6 +3183,9 @@ To turn off TalkBack:
     <string name="title_pref_brailleime">Braille keyboard</string>
     <string name="title_pref_capital_letters">Capital letters</string>
     <string name="title_pref_category_audio">Audio</string>
+    <string name="title_pref_category_automatic_description_summary">"Get detailed AI image descriptions when you select “Describe image” from the TalkBack menu.
+
+You can also get automatic descriptions when you focus on an image or icon. Automatic descriptions work without an internet connection."</string>
     <string name="title_pref_category_border_color">Color</string>
     <string name="title_pref_category_braille">Braille</string>
     <string name="title_pref_category_context_menu">Customize TalkBack menu</string>
@@ -2782,21 +3198,37 @@ To turn off TalkBack:
     <string name="title_pref_category_manage_gestures">Customize gestures</string>
     <string name="title_pref_category_navigation_menu">Edit navigation options</string>
     <string name="title_pref_category_selector_menu">Customize reading controls</string>
-    <string name="title_pref_category_tutorial_and_help">Tutorial and help</string>
+    <string name="title_pref_category_tutorial">TalkBack tutorial</string>
+    <string name="title_pref_category_tutorial_and_help">Tutorial &amp; help</string>
     <string name="title_pref_category_typing">Typing and keyboard</string>
     <string name="title_pref_cover_proximity_sensor">Cover proximity sensor to stop speech</string>
     <string name="title_pref_default_color">Default</string>
+    <string name="title_pref_detailed_image_description">Detailed image descriptions</string>
     <string name="title_pref_diagnosis_mode">Diagnosis mode</string>
+    <string name="title_pref_disable_auto_icon_detection">"Don't describe icons"</string>
+    <string name="title_pref_disable_auto_image_caption">"Don't describe images"</string>
+    <string name="title_pref_disable_gemini_support">Off</string>
     <string name="title_pref_dump_a11y_event">Filter accessibility event logging</string>
     <string name="title_pref_echo_recognized_text_speech">Echo recognized speech</string>
+    <string name="title_pref_enable_auto_icon_detection">All icons</string>
+    <string name="title_pref_enable_auto_icon_detection_unlabelled_only">Unlabelled icons only</string>
+    <string name="title_pref_enable_auto_image_caption">All images</string>
+    <string name="title_pref_enable_auto_image_caption_arg">"All images
+%1$s"</string>
+    <string name="title_pref_enable_auto_image_caption_unlabelled_only">Unlabelled images only</string>
+    <string name="title_pref_enable_gemini_support">On</string>
     <string name="title_pref_explore_by_touch">Explore by touch</string>
     <string name="title_pref_export_custom_labels">Export custom labels</string>
+    <string name="title_pref_gemini_enabled">Gemini Voice Command</string>
+    <string name="title_pref_gemini_settings">Gemini settings</string>
     <string name="title_pref_green">Green</string>
-    <string name="title_pref_grey">Grey</string>
+    <string name="title_pref_grey">Gray</string>
+    <string name="title_pref_gup">Contact Google Disability support</string>
     <string name="title_pref_help">Help</string>
     <string name="title_pref_help_and_feedback">Help &amp; feedback</string>
-    <string name="title_pref_icon_detection">Describe icons</string>
-    <string name="title_pref_image_description">Describe images</string>
+    <string name="title_pref_icon_detection">Automatic icon descriptions</string>
+    <string name="title_pref_icon_image_description">Image &amp; icon descriptions</string>
+    <string name="title_pref_image_description">Automatic image descriptions</string>
     <string name="title_pref_intonation">Use pitch changes</string>
     <string name="title_pref_keyboard_echo_on_screen">Keyboard echo: On-screen keyboard</string>
     <string name="title_pref_keyboard_echo_physical">Keyboard echo: Physical keyboard</string>
@@ -2819,7 +3251,7 @@ To turn off TalkBack:
     <string name="title_pref_selector_audio_focus">Audio ducking</string>
     <string name="title_pref_selector_punctuation">Punctuation</string>
     <string name="title_pref_selector_speech_rate">Speech rate</string>
-    <string name="title_pref_selector_typo_granularity">Spell check</string>
+    <string name="title_pref_selector_typo_granularity">Proofread</string>
     <string name="title_pref_selector_verbosity">Verbosity</string>
     <string name="title_pref_shortcut_2finger_1tap">Tap with 2 fingers</string>
     <string name="title_pref_shortcut_2finger_2tap">Double-tap with 2 fingers</string>
@@ -2878,10 +3310,16 @@ To turn off TalkBack:
     <string name="title_pref_speak_element_ids">Speak element IDs</string>
     <string name="title_pref_speak_passwords_without_headphones">Speak passwords</string>
     <string name="title_pref_speak_screenoff">Speak notifications when screen is off</string>
+    <string name="title_pref_speech_footer">"You can quickly adjust some of TalkBack's sound settings from any screen.
+
+Accessibility volume: Hold 1 finger on the screen and press the volume up or volume down key.
+TalkBack speech rate: Swipe up or down with 3 fingers. When you hear \"speech rate\", swipe up or down with 1 finger."</string>
+    <string name="title_pref_speech_rate">Speech rate</string>
     <string name="title_pref_speech_volume">Speech volume</string>
     <string name="title_pref_support_scroll_seq">Scroll</string>
     <string name="title_pref_talkback_gesture_detection">Handle gestures in TalkBack</string>
-    <string name="title_pref_text_recognition">Describe text in images</string>
+    <string name="title_pref_talkback_speech_rate">TalkBack speech rate</string>
+    <string name="title_pref_text_recognition">Automatic descriptions for text in images</string>
     <string name="title_pref_thick_border">Thick borders</string>
     <string name="title_pref_tree_debug">Enable node tree debugging</string>
     <string name="title_pref_tts_overlay">Display speech output</string>
@@ -2914,9 +3352,8 @@ To turn off TalkBack:
     <string name="toast_tts_not_ready">Text-to-speech engine not ready.</string>
     <string name="tos_url">http://www.google.com/mobile/toscountry</string>
     <string name="training_back_button">Previous</string>
-    <string name="training_close_button">Close</string>
-    <string name="training_close_tutorial">Close tutorial</string>
     <string name="training_finish_button">Finish</string>
+    <string name="training_finish_tutorial">Finish tutorial</string>
     <string name="training_navigate_up">Navigate up</string>
     <string name="training_next_button">Next</string>
     <string name="training_page_number">Page %1$d of %2$d</string>
@@ -2976,13 +3413,33 @@ Try activating the text box below and type your name."</string>
     <string name="typing_text_title">Typing text</string>
     <string name="typing_text_with_braille_keyboard_text">You can also type with the braille keyboard. Find it in TalkBack settings.</string>
     <string name="typing_type_lift_to_type">1</string>
+    <string name="typo_correction_editbox_hint">Type here</string>
+    <string name="typo_correction_text">"You can use proofreading to check the spelling or grammar within a text box.
+
+To try it, focus on the text box below, which contains spelling errors. Then, swipe right with 3 fingers until you find \"Proofread\"."</string>
+    <string name="typo_correction_text_pre_r">"You can use proofreading to check the spelling or grammar within a text box.
+
+To try it, focus on the text box below, which contains spelling errors. After focusing, swipe down and then up until you find \"Proofread\"."</string>
+    <string name="typo_correction_text_supported_but_not_english">"You can use proofreading to check the spelling or grammar within a text box.
+
+To try it, focus on the text box below and type a misspelled word. Then, swipe right with 3 fingers until you find \"Proofread\"."</string>
+    <string name="typo_correction_text_supported_but_not_english_pre_r">"You can use proofreading to check the spelling or grammar within a text box.
+
+To try it, focus on the text box below and type a misspelled word. After focusing, swipe down and then up until you find \"Proofread\"."</string>
+    <string name="typo_correction_title">Proofreading</string>
+    <string name="typo_correction_typo_example">Wellcome too TalkBack.</string>
     <string name="uncontracted">uncontracted</string>
     <string name="untitled_window">untitled</string>
-    <string name="update_welcome_text">"You can now focus on an image to hear a description in English. You can also check spelling suggestions with a braille keyboard, have a braille display auto-scroll at a set speed, and more.
+    <string name="update_welcome_text_content">"TalkBack now has new reading controls to help you navigate more quickly.
 
-You will learn about key updates and changes in the next few screens. This will take about 5 minutes.
+You will learn more about these changes in the next few screens.
 
-You can review this information in TalkBack settings at any time."</string>
+You can review this information later in TalkBack settings > New features in TalkBack."</string>
+    <string name="update_welcome_text_content_tts">"TalkBack now has new reading controls to help you navigate more quickly.
+
+You will learn more about these changes in the next few screens.
+
+You can review this information later in TalkBack settings then New features in TalkBack."</string>
     <string name="use_action_hint">Double-tap to perform the action</string>
     <string name="use_brailleime_pref_button_case_ime_disabled_settings">Settings</string>
     <string name="use_brailleime_pref_button_case_ime_disabled_turn_on">Turn on</string>
@@ -3076,7 +3533,6 @@ Try activating and dismissing the text box below."</string>
     <string name="value_volume_75_percent">75% of speech volume</string>
     <string name="value_webview">Webview</string>
     <string name="vibration_feedback_state">Vibration feedback %1$s</string>
-    <string name="view_tutorial_button_text">View the tutorial</string>
     <string name="voice_command_screen_locked_hint">Voice commands are not available while the screen is locked. To use the TalkBack menu instead, %1$s.</string>
     <string name="voice_commands_Spell">Spell</string>
     <string name="voice_commands_action">Action</string>
@@ -3110,13 +3566,14 @@ Try activating and dismissing the text box below."</string>
     <string name="voice_commands_finish_selection">Finish selection</string>
     <string name="voice_commands_finish_selection_mode">Finish selection mode</string>
     <string name="voice_commands_first">First</string>
+    <string name="voice_commands_gemini">Gemini</string>
     <string name="voice_commands_go_back">Go back</string>
     <string name="voice_commands_help_actions_description">Show available actions for the current item</string>
     <string name="voice_commands_help_assistant_description">Open Google Assistant</string>
     <string name="voice_commands_help_copy_description">Select text before copying</string>
     <string name="voice_commands_help_cut_description">Select text before cutting</string>
     <string name="voice_commands_help_delete_description">Select text before deleting</string>
-    <string name="voice_commands_help_description">To use voice commands, swipe right then up. Say \"Help\" or \"What can I say?\" anytime for this list of commands.</string>
+    <string name="voice_commands_help_description">To use voice commands, swipe right then up. Say \"%1$s\" or \"What can I say?\" anytime for this list of commands.</string>
     <string name="voice_commands_help_device_navigation_description">Go Home, go back, show notifications, and more</string>
     <string name="voice_commands_help_device_navigation_title">Device navigation</string>
     <string name="voice_commands_help_find_description">Repeat \"find\" to go to the next item that includes the text \"save\"</string>
@@ -3190,7 +3647,7 @@ Try activating and dismissing the text box below."</string>
     <string name="voice_commands_quiet">Quiet</string>
     <string name="voice_commands_quit">Quit</string>
     <string name="voice_commands_read_by_parameter">Read by %s</string>
-    <string name="voice_commands_read_from_next">Read from next</string>
+    <string name="voice_commands_read_from_next">Read from cursor</string>
     <string name="voice_commands_recent">Recent</string>
     <string name="voice_commands_recent_apps">Recent apps</string>
     <string name="voice_commands_recents">Recents</string>
@@ -3223,12 +3680,33 @@ To try it now, swipe right and then up."</string>
     <string name="voice_commands_write">Write</string>
     <string name="volume_down_label">Volume down</string>
     <string name="volume_up_label">Volume up</string>
+    <string name="wear_new_feature_page_button_content_description">Finish</string>
+    <string name="wear_new_feature_page_content">"You'll notice some bug fixes and changes to how the focus moves"</string>
+    <string name="wear_new_feature_page_title">Welcome to the updated TalkBack</string>
+    <string name="web_granularity_not_supported">%1$s only supported on web pages</string>
+    <string name="web_navigation_options_content">"You can add web navigation to your reading controls to find graphics, tables, headings, and more on web pages.
+
+To see all of the web navigation options, go to TalkBack settings > Customize menus > Customize reading controls."</string>
+    <string name="web_navigation_options_content_tts">"You can add web navigation to your reading controls to find graphics, tables, headings, and more on web pages.
+
+To see all of the web navigation options, go to TalkBack settings then Customize menus then Customize reading controls."</string>
+    <string name="web_navigation_options_title">More web navigation options</string>
     <string name="welcome_to_android11_text">"New gestures have been added to make TalkBack faster and easier to use.
 
 On this screen, you can try the new gestures. You can review this information in TalkBack settings at any time."</string>
+    <string name="welcome_to_talkback_page_idle_announcement">Swipe right now to find the next button</string>
     <string name="welcome_to_talkback_text">"TalkBack provides spoken feedback so that you can use your device without looking at the screen. TalkBack can be helpful for people who have difficulty seeing the screen. 
 
 If you want to quickly turn TalkBack on or off using your volume keys, you can set up a shortcut in TalkBack settings > TalkBack shortcut.
+
+When TalkBack is on, the focused item on the screen is spoken out loud.
+
+Swiping right will move to the next item, and swiping left will move to the previous item.
+
+Swipe right now to find the next button."</string>
+    <string name="welcome_to_talkback_text_tts">"TalkBack provides spoken feedback so that you can use your device without looking at the screen. TalkBack can be helpful for people who have difficulty seeing the screen. 
+
+If you want to quickly turn TalkBack on or off using your volume keys, you can set up a shortcut in TalkBack settings then TalkBack shortcut.
 
 When TalkBack is on, the focused item on the screen is spoken out loud.
 

@@ -30,6 +30,7 @@
     <string name="account_error_body_try_again">This could be a temporary problem. Try again or connect to another Wi-Fi network.</string>
     <string name="account_error_description_no_network">"You don't have a network connection"</string>
     <string name="account_error_title">"Can't sign in"</string>
+    <string name="account_not_supported">"This app isn't available for your account"</string>
     <string name="action_required">Action required</string>
     <string name="active_emergency_contact_updated_body_text">%1$s opted in as an emergency contact</string>
     <string name="active_emergency_contact_updated_title_text">Emergency contact updated</string>
@@ -37,12 +38,25 @@
     <string name="add_emergency_contact">Add contact</string>
     <string name="add_emergency_contacts">Add contacts</string>
     <string name="add_emergency_info_after_setup">Go back to finish setting up your phone. You can add emergency info after setup.</string>
+    <string name="add_preset_time_button_text">Add %s</string>
+    <string name="add_time_button_text">Add time</string>
+    <string name="add_time_confirmation_dialog_body">Would you like to extend your Safety Check?</string>
+    <string name="add_time_confirmation_dialog_title">Add time</string>
     <string name="address">Address</string>
-    <string name="affirm_crash_check_negative_keyword_prompt">You said “%s”. Emergency call cancelled.</string>
-    <string name="affirm_crash_check_positive_keyword_prompt">You said “%1$s”. Calling %2$s now.</string>
     <string name="age">Age</string>
     <string name="age_value">%d years old</string>
     <string name="allergies">Allergies</string>
+    <string name="alt_ui_crisis_footnote_body_text">"Pixel uses your device's location to find info about crises affecting your area, even when the app is closed or not in use.
+
+Keep in mind, Pixel may not notify you about all public emergencies."</string>
+    <string name="alt_ui_crisis_footnote_body_text_nonpixel">"Your device uses its location to find info about crises affecting your area, even when the app is closed or not in use.
+
+Keep in mind, your device may not notify you about all public emergencies."</string>
+    <string name="alt_ui_crisis_permission_body_text">"When Crisis alert is turned on, Personal Safety will use this permission:
+ • Background location (precise)"</string>
+    <string name="alt_ui_eshare_scheck_permission_body_text">"When Emergency Sharing or Safety Check is started, Personal Safety will use these permissions:
+ • Background location (precise)"</string>
+    <string name="alt_ui_permission_usage_title_text">Permission usage</string>
     <string name="aminus">A-</string>
     <string name="aplus">A+</string>
     <string name="app_launcher_label">Safety</string>
@@ -62,7 +76,6 @@
     <string name="backed_up">Backed up</string>
     <string name="backing_up">Backing up</string>
     <string name="backing_up_recording_file">Backing up emergency video</string>
-    <string name="backspace_no_announce_hack"> </string>
     <string name="backup_action_description">back up your video</string>
     <string name="blood_type">Blood type</string>
     <string name="bminus">B-</string>
@@ -84,7 +97,6 @@
     <string name="button_text_got_it">Got it</string>
     <string name="button_text_having_trouble">Having trouble?</string>
     <string name="button_text_manage_settings">Manage settings</string>
-    <string name="button_text_medical_info">Add info</string>
     <string name="button_text_more_info">More info</string>
     <string name="button_text_next">Next</string>
     <string name="button_text_ongoing_emergency_call">Ongoing call</string>
@@ -100,13 +112,8 @@
     <string name="button_text_stop">Stop</string>
     <string name="button_text_turn_off">Turn off</string>
     <string name="button_text_turn_on">Turn on</string>
-    <string name="call_and_notify_emergency_button_text">Call %s &amp; notify contacts</string>
-    <string name="call_count_down_voice_prompt">Car crash detected. Calling %1$s automatically in %2$d seconds. Say %3$s to stop.</string>
     <string name="call_emergency_button_content_description">Call %s</string>
-    <string name="call_emergency_button_subtext">Emergency</string>
     <string name="call_emergency_services">Call %s</string>
-    <string name="call_emergency_services_action_summary">Pixel will attempt to contact %s to provide your location and car crash data</string>
-    <string name="call_emergency_services_action_summary_nonpixel">Your phone will attempt to contact %s to provide your location and car crash data</string>
     <string name="call_emergency_services_dialog_message">Call %1$s?</string>
     <string name="call_emergency_services_question">Call %s?</string>
     <string name="call_emergency_services_safety_check_not_notify_contacts_message">"This turns off Safety Check, and your emergency contacts won't be notified."</string>
@@ -121,66 +128,15 @@ Your emergency contacts will be notified that you called %1$s."</string>
     <string name="cancel_promo_card_content_description">Dismiss card</string>
     <string name="cannot_switch_accounts_title">"Can't switch account"</string>
     <string name="cant_start_recording">Can’t start recording</string>
-    <string name="car_crash_alarm_feedback_content_text">If you want to help improve Car Crash Detection, share more about what happened</string>
-    <string name="car_crash_alarm_feedback_notification_text_share_feedback">Share feedback</string>
-    <string name="car_crash_consent_update_content_v1">"If you're in a crash, new crash data will be sent to %s. Tap to learn more."</string>
-    <string name="car_crash_consent_update_title_v1">Update to Car Crash Detection</string>
-    <string name="car_crash_detected_survey_card_description_past">A car crash was detected on %s</string>
-    <string name="car_crash_detected_survey_card_question">Was Car Crash Detection helpful?</string>
-    <string name="car_crash_detection_feature_title_text">Car Crash Detection</string>
-    <string name="car_crash_detection_onboarding_completed">Car Crash Detection turned on</string>
-    <string name="car_crash_detection_settings_account_warning">Sign in to use Car Crash Detection</string>
-    <string name="car_crash_ecall_dialog_message">To use Emergency Sharing for Car Crash Detection, turn on “Emergency call”</string>
-    <string name="car_crash_ecall_dialog_title">Turn on “Emergency call”</string>
-    <string name="car_crash_ecall_feature_desc">Required for Car Crash Detection. When you start and end a call to %s.</string>
-    <string name="car_crash_emergency_call_failed_notification_content_text">"Couldn't reach %1$s. Tap to try again."</string>
-    <string name="car_crash_emergency_call_notification_text_share_feedback">Tap to share feedback on Car Crash Detection</string>
-    <string name="car_crash_emergency_call_notification_title_general_text">Car crash detected</string>
-    <string name="car_crash_emergency_call_succeeded_notification_text">"%1$s contacted. Hope you're OK."</string>
-    <string name="car_crash_emergency_call_user_canceled_notification_title">Call ended before reaching %1$s</string>
-    <string name="car_crash_emergency_service_contacted_unknown_survey_card_description">A car crash was detected</string>
-    <string name="car_crash_enable_failed_message">"Can't turn on Car Crash Detection"</string>
-    <string name="car_crash_eshare_onboarding_card_body_text">Share your real-time location and updates with emergency contacts after a crash</string>
-    <string name="car_crash_eshare_onboarding_card_title">Notify emergency contacts after a car crash</string>
-    <string name="car_crash_false_positive_survey_card_description_past">"You confirmed there wasn't a car crash on %s"</string>
-    <string name="car_crash_false_positive_survey_card_description_right_away">"You confirmed there wasn't a car crash"</string>
-    <string name="car_crash_false_positive_survey_card_question">Can you share what happened?</string>
-    <string name="car_crash_false_positive_survey_card_question_description">Anything you share will be used to help improve Car Crash Detection</string>
-    <string name="car_crash_false_positive_survey_card_title">"Glad you're OK"</string>
-    <string name="car_crash_false_positive_survey_invite_flow_page_body">"If you'd like to help improve car crash detection, you can share feedback below or later in the Personal Safety app."</string>
-    <string name="car_crash_false_positive_survey_invite_flow_page_title">Thanks for letting us know</string>
-    <string name="car_crash_false_positive_survey_invite_flow_take_survey_button_text">@string/share_feedback_action_text</string>
-    <string name="car_crash_feature_no_longer_suspended_generic_content_text">Tap for settings</string>
-    <string name="car_crash_feature_no_longer_suspended_title">Car Crash Detection is back on</string>
-    <string name="car_crash_feature_suspended_generic_content_text">Tap to see details in Car Crash Detection settings</string>
-    <string name="car_crash_feature_suspended_title">"Can't detect car crashes"</string>
-    <string name="car_crash_full_onboarding_card_body_text">Get help dialing %s and notifying emergency contacts after a crash</string>
-    <string name="car_crash_minor_crash_survey_card_description_right_away">You confirmed there was a minor crash</string>
-    <string name="car_crash_no_longer_available_card_body_text">"You previously turned on Car Crash Detection. We're sorry, but this feature isn't supported on this device."</string>
-    <string name="car_crash_no_longer_available_card_title_text">Car Crash Detection is unavailable</string>
-    <string name="car_crash_no_longer_available_notification_content_text">"This device isn't supported. Tap for details."</string>
-    <string name="car_crash_no_longer_available_notification_title_text">Car Crash Detection is unavailable</string>
-    <string name="car_crash_now_available_notification_content">"Car Crash Detection can call for help automatically if you've been in a crash"</string>
-    <string name="car_crash_now_available_notification_title">Get help after a car crash</string>
-    <string name="car_crash_onboarding_card_body_text">Get help calling %1$s after a crash</string>
-    <string name="car_crash_onboarding_card_title">Set up Car Crash Detection</string>
-    <string name="car_crash_outro_message">If a car crash is detected and you don’t confirm you’re okay, your phone will:</string>
-    <string name="car_crash_outro_title">Car Crash Detection is ready</string>
-    <string name="car_crash_report_minor_crash_notification_text_call">Call %1$s</string>
-    <string name="car_crash_report_minor_crash_title">You reported a minor crash</string>
-    <string name="car_crash_report_no_crash_title">"Glad you're OK"</string>
-    <string name="car_crash_settings_edu_text">Get help calling emergency services if your phone detects a crash</string>
-    <string name="car_crash_settings_failed_to_load_message">"Can't load Car Crash Detection settings."</string>
-    <string name="car_crash_turn_off_warning_dialog_content">"You won't be able to turn this feature on again until you're in a supported country"</string>
-    <string name="car_crash_turn_off_warning_dialog_title">Turn off Car Crash Detection?</string>
-    <string name="car_crash_warning_view_enable_ecall_message">Car Crash Detection is still running, but to use Emergency Sharing with Car Crash Detection, turn on “Emergency call”</string>
-    <string name="car_crash_warning_view_eshare_errors_message">Car Crash Detection is still running, but there’s an issue with Emergency Sharing</string>
-    <string name="ccd_emergency_service_contacted_failed_survey_request_additional_info">"Couldn't reach %1$s after car crash"</string>
-    <string name="ccd_emergency_service_contacted_survey_request_additional_info">%1$s contacted after car crash</string>
-    <string name="ccd_eshare_back_on_notification_title">Emergency Sharing for Car Crash Detection is back on</string>
-    <string name="ccd_eshare_feature_desc_text_nonpixel">Your device will attempt to contact %s to provide your location and car crash data. When Emergency Sharing is on, your phone will also share your location with emergency contacts.</string>
-    <string name="ccd_eshare_has_unmet_reqs_notification_title">Issue with Car Crash Detection</string>
-    <string name="ccd_running_eshare_unavailable">Emergency Sharing is unavailable as a fallback for automatic calling</string>
+    <string name="centralized_location_sharing_collect_location_description">Your device will periodically collect your real-time location and make it available to people you’re sharing with even when the app is not in use.</string>
+    <string name="centralized_location_sharing_collect_location_subtitle">When you share your location</string>
+    <string name="centralized_location_sharing_description">You can manage who you share your location with in Google apps, like Personal Safety and Google Maps.</string>
+    <string name="centralized_location_sharing_keep_in_mind_description">"The following won't stop Location Sharing from this device:
+ • Opening Google Maps in Incognito mode
+ • Turning off location permissions for Google apps"</string>
+    <string name="centralized_location_sharing_stop_share_description">You can turn off Google Location Sharing for this device in Settings at any time. This will stop sharing your location for all Google apps, like Personal Safety and Google Maps.</string>
+    <string name="centralized_location_sharing_stop_share_subtitle">To stop sharing from this device</string>
+    <string name="centralized_location_sharing_title">How Google Location Sharing works</string>
     <string name="change_setting_link">Change setting</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
@@ -218,39 +174,8 @@ Your emergency contacts will be notified that you called %1$s."</string>
     <string name="content_description_how_escalated_work">See how does Emergency Sharing works</string>
     <string name="content_description_watch_the_demo_escalated">Watch the demo for Emergency Sharing</string>
     <string name="content_description_watch_the_demo_onalert">Watch the demo for Safety Check</string>
-    <string name="continue_button_text">Continue</string>
     <string name="copy">Copy</string>
     <string name="countdown_seconds_remaining_content_description">{seconds_left, plural, =1 {# second} other {# seconds}}</string>
-    <string name="crash_check_demo_slide_instructions_text">"For this demo, slide your fingers across I'm OK or wait to preview a %s call"</string>
-    <string name="crash_check_subtitle">Calling %s to report car crash in</string>
-    <string name="crash_check_title">Car crash detected</string>
-    <string name="crash_check_voice_prompt">Car crash detected. Say “%1$s” to call %2$s now. Otherwise, say “%3$s”.</string>
-    <string name="crash_demo_alert_slide_title_text">"Slide I'm OK, or wait"</string>
-    <string name="crash_feature_breakdown_summary_nonpixel">Your phone will vibrate, sound an alarm, and ask if you need help.</string>
-    <string name="crash_onboarding_confirm_alt_title">Continue setup?</string>
-    <string name="crash_onboarding_confirm_description">"Car Crash Detection is ready.
-
-You can also set up Emergency Sharing to automatically notify your emergency contacts if there’s a crash."</string>
-    <string name="crash_onboarding_confirm_title">Set up Emergency Sharing?</string>
-    <string name="crash_onboarding_setup_eshare_alt_description">Automatically share your real-time location with emergency contacts after a crash.</string>
-    <string name="crash_onboarding_setup_eshare_alt_title">Set up Emergency Sharing for Car Crash Detection</string>
-    <string name="crash_onboarding_setup_eshare_description">If there’s a crash, your phone can call emergency services and share your real-time location with emergency contacts.</string>
-    <string name="crash_onboarding_setup_eshare_title">Notify emergency contacts after a car crash</string>
-    <string name="crash_phone_actions_text">Pixel will start the actions you select below.</string>
-    <string name="crash_phone_actions_text_nonpixel">Your phone will start the actions you select below.</string>
-    <string name="crash_settings_check_user_status_body_text">Pixel vibrates, sounds an alarm at maximum volume, and asks if you need help.</string>
-    <string name="crash_settings_check_user_status_body_text_nonpixel">Your device will vibrate, sound an alarm, and ask if you need help.</string>
-    <string name="crash_settings_check_user_status_title_text">When a crash is detected</string>
-    <string name="crash_settings_emergency_action_conditions">If you confirm you need help or don’t respond</string>
-    <string name="crash_settings_emergency_alert_body_text">Pixel attempts to contact %s to provide your location and car crash data.</string>
-    <string name="crash_settings_emergency_alert_body_text_nonpixel">Your device attempts to contact %s to provide your location and car crash data.</string>
-    <string name="crash_settings_emergency_alert_title_text">"If you don't respond"</string>
-    <string name="crash_settings_footnote">"Pixel uses your device's location, motion sensors, &amp; ambient audio to detect a car crash, even when the app is closed or not in use.
-
-Keep in mind, Pixel may not be able to detect all crashes, and high impact activities may activate Car Crash Detection."</string>
-    <string name="crash_settings_footnote_nonpixel">"Personal Safety uses your device's location, motion sensors, and ambient audio to detect a car crash, even when the app is closed or not in use.
-
-Keep in mind, Personal Safety may not be able to detect all crashes, and high impact activities may activate Car Crash Detection."</string>
     <string name="create_share_action_description">create a link to share</string>
     <string name="crisis_alerts_survey_header">Is this info helpful?</string>
     <string name="crisis_feature_description_body_text">Get notified about natural disasters and public emergencies affecting your area</string>
@@ -307,7 +232,6 @@ To learn more about safety features, go to Settings."</string>
     <string name="demo_esos_actions_title_text_v2">What to expect next</string>
     <string name="demo_intro_1">How to start Emergency SOS</string>
     <string name="demo_intro_2_v2">What to expect after Emergency SOS starts</string>
-    <string name="demo_intro_description_text">See and hear what happens when your phone detects a car crash. Make sure your volume is up.</string>
     <string name="demo_intro_text_v2">"In this demo, you'll learn"</string>
     <string name="demo_intro_title_text">Try a demo of Emergency SOS</string>
     <string name="demo_power_button_title_text">Try starting Emergency SOS now</string>
@@ -321,8 +245,8 @@ To learn more about safety features, go to Settings."</string>
 Continue to quickly press Power until you see the countdown."</string>
     <string name="description_call_button">Call</string>
     <string name="description_phone_number_required">A phone number is required to add this emergency contact</string>
+    <string name="description_rtt_call_button">RTT call</string>
     <string name="description_start_eshare">Share location</string>
-    <string name="detection_actions_header">Actions if you need help after a crash</string>
     <string name="device_location_not_enabled_dialog_message">Turn on device location to %1$s</string>
     <string name="device_location_not_enabled_dialog_title">Location is off</string>
     <string name="device_location_off_card_body_text">Turn on device location to share where you are with emergency contacts.</string>
@@ -346,9 +270,9 @@ Continue to quickly press Power until you see the countdown."</string>
     <string name="display_account_dialog_message">To edit your safety settings for another Google Account, switch accounts in the Personal Safety app</string>
     <string name="display_account_dialog_message_for_prompt_login">To edit safety settings for your Google Account, sign in to the Personal Safety app</string>
     <string name="display_account_dialog_title">Showing info for</string>
+    <string name="done_button">Done</string>
     <string name="drag_to_reorder_contact_icon_text">Drag contact to change order</string>
     <string name="duration_other">Other</string>
-    <string name="e_call_was_not_enabled_error">Enable emergency calling to use Emergency Sharing with Car Crash Detection.</string>
     <string name="edialer_setting_learn_more_content_description">Learn more about emergency dialing</string>
     <string name="edialer_settings_description">Quickly call emergency services from your device lock screen or the Power button menu.</string>
     <string name="edialer_settings_dialer_style_category">Call emergency services using</string>
@@ -359,7 +283,6 @@ Continue to quickly press Power until you see the countdown."</string>
 This is due to regional changes or carrier restrictions."</string>
     <string name="emergecny_sos_aed_onboarding_subtitle">If you’re not able to respond, your phone can share your location and emergency details with emergency services</string>
     <string name="emergecny_sos_aed_onboarding_title">Turn on assisted calling</string>
-    <string name="emergency_call_demo_title_text">Preview of %s call</string>
     <string name="emergency_call_empty_number">"Can't call. Dial an emergency number."</string>
     <string name="emergency_call_ended_update_title">Ended a call</string>
     <string name="emergency_call_image_content_description">Image of the screen during a %s call</string>
@@ -391,11 +314,13 @@ This is due to regional changes or carrier restrictions."</string>
     <string name="emergency_gesture_onboarding_end_title">Emergency SOS is ready</string>
     <string name="emergency_info_access_setting_title">Emergency info access</string>
     <string name="emergency_info_access_share_during_ecall_description">If Emergency Location Service is supported in your region, when you call or text an emergency number, your device can automatically send your emergency information to emergency response partners.</string>
-    <string name="emergency_info_access_share_during_ecall_summary">We will send your emergency info to first responders when you place an emergency call</string>
+    <string name="emergency_info_access_share_during_ecall_summary">Your emergency info is shared with first responders when you make an emergency call</string>
     <string name="emergency_info_access_share_during_ecall_title">Share during emergency call</string>
     <string name="emergency_info_access_show_when_locked_description">First responders and people with access to your device can also dial your emergency contacts without unlocking your device</string>
     <string name="emergency_info_access_show_when_locked_summary">Emergency info and contacts will be visible without unlocking your device</string>
     <string name="emergency_info_access_show_when_locked_title">Show when locked</string>
+    <string name="emergency_info_description_long">Medical info, Emergency contacts</string>
+    <string name="emergency_info_description_short">Emergency info</string>
     <string name="emergency_info_device_only_message">This info is saved only on your device.</string>
     <string name="emergency_info_display_setting_description">"To help in an emergency, your emergency contacts and medical info can be viewed when your device is locked.
 
@@ -422,6 +347,8 @@ First responders and people with access to your device can also dial your emerge
     <string name="emergency_recording_settings_account_warning">Sign in to use emergency recording</string>
     <string name="emergency_recording_settings_title">Recording Settings</string>
     <string name="emergency_recording_sos_subtitle">Record a video</string>
+    <string name="emergency_services_radio_button_subtitle">%1$s. Your location is used to determine this local emergency services number, so it may change.</string>
+    <string name="emergency_services_radio_button_title">Emergency services</string>
     <string name="emergency_sharing">Emergency Sharing</string>
     <string name="emergency_sharing_action_description">Share info with your contacts using %1$s</string>
     <string name="emergency_sharing_feature_name">Emergency Sharing</string>
@@ -484,11 +411,9 @@ First responders and people with access to your device can also dial your emerge
     <string name="escalated_incident_survey_card_description_right_away">You stopped Emergency Sharing</string>
     <string name="escalated_incident_survey_card_question">Was Emergency Sharing helpful?</string>
     <string name="eshare_duration_title">Duration</string>
-    <string name="eshare_integration_summary">Pixel will share your location and updates with emergency contacts</string>
-    <string name="eshare_integration_summary_nonpixel">Your phone will share your location and updates with emergency contacts</string>
     <string name="eshare_items_being_shared">Sharing</string>
     <string name="eshare_reason_title">Reason</string>
-    <string name="eshare_setting_summary">In an emergency, your real-time location &amp; other info can be automatically shared</string>
+    <string name="eshare_setting_summary">In an emergency, your emergency contacts can get an SMS message sharing your real-time location and other info</string>
     <string name="eshare_settings_edu_text">Share your real-time location and critical info with your emergency contacts</string>
     <string name="eshare_who_to_notify_title">Sharing with</string>
     <string name="esos_accidental_survey_card_description_right_away">You canceled Emergency SOS</string>
@@ -523,6 +448,7 @@ First responders and people with access to your device can also dial your emerge
     <string name="experience_type_confirmation_required">Use touch &amp; hold to start actions</string>
     <string name="experience_type_confirmation_required_subtitle">Touch &amp; hold in the circle for %1$d seconds to start the emergency actions</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="extend_safety_check_added_time">Adding %s…</string>
     <string name="external_account_emergency_contact_warning_message">To add %1$s as an emergency contact, a new Google Contact will be created. It will be available across Google services anywhere you sign in as %2$s.</string>
     <string name="external_account_emergency_contact_warning_positive_button">Add</string>
     <string name="external_account_emergency_contact_warning_title">Add emergency contact?</string>
@@ -551,12 +477,8 @@ First responders and people with access to your device can also dial your emerge
     <string name="fake_crisis_help_two_title">Map of flood warnings</string>
     <string name="fake_crisis_location">New South Wales</string>
     <string name="fake_crisis_title">New South Wales floods</string>
-    <string name="feature_breakdown_part_1_summary_nonpixel">Your device will vibrate, sound an alarm, and ask if you need help.</string>
-    <string name="feature_breakdown_part_1_title">"If your phone detects that you've been in a severe car crash"</string>
     <string name="feature_demo">Demos</string>
     <string name="feature_in_progress">In progress</string>
-    <string name="feature_unavailable_body_text">"Car Crash Detection won't work on this device"</string>
-    <string name="feature_unavailable_supported_devices_link_text">Supported devices</string>
     <string name="fed_emergency_info_description">View emergency information</string>
     <string name="fed_emergency_info_description_short">View emergency info</string>
     <string name="fed_title">Emergency</string>
@@ -574,8 +496,6 @@ First responders and people with access to your device can also dial your emerge
     <string name="gallery_no_videos">No emergency videos. Videos recorded will appear here.</string>
     <string name="gcm_defaultSenderId">624645263144</string>
     <string name="generic_error_message">Something went wrong. Please try again later.</string>
-    <string name="generic_error_no_device_credential">No PIN, pattern, or password set.</string>
-    <string name="generic_error_no_keyguard">This device does not support PIN, pattern, or password.</string>
     <string name="generic_error_user_canceled">Authentication canceled by user.</string>
     <string name="generic_permission_denied">Permissions denied.</string>
     <string name="get_photo_error">"Can't get your photo. Try again."</string>
@@ -605,10 +525,7 @@ First responders and people with access to your device can also dial your emerge
     <string name="hours_ago">{NUM_HOURS, plural, =1 {#h ago} other {#h ago}}</string>
     <string name="how_it_works">How it works</string>
     <string name="im_ok">"I'm OK"</string>
-    <string name="im_okay_button_text">"I'm OK"</string>
     <string name="immediate_incident_send_message_dialog_message">"Tell your emergency contacts why you've stopped sharing"</string>
-    <string name="improve_safety_features_description_text">Help improve Personal Safety features by automatically sharing usage info and Car Crash Detection reports with Google</string>
-    <string name="improve_safety_features_label">Improve safety features</string>
     <string name="inactive_emergency_contact_body_text">"%1$s isn't an active emergency contact.
 
 To be added as your emergency contact, they can use the original link sent from Personal Safety."</string>
@@ -628,6 +545,7 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="invalid_phone_number">Invalid phone number</string>
     <string name="item_view_role_description">Tab</string>
     <string name="just_now">Just now</string>
+    <string name="keep_in_mind_title">Keep in mind</string>
     <string name="korean_location_terms_of_service">Korean Location Terms of Service</string>
     <string name="label_error">Error</string>
     <string name="laser_emergency_dial_summary">Review emergency phone number and turn on assisted calling</string>
@@ -674,6 +592,8 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="lsr_onboarding_consent_title">How location sharing works</string>
     <string name="lsr_onboarding_consent_title_location_permssion">Set up location sharing</string>
     <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
+    <string name="m3_loading_indicator_content_description">Loading</string>
+    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
     <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_plain_regular">sans-serif</string>
@@ -739,16 +659,13 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="message_incident_setup_complete">Emergency Sharing and Safety Check are ready</string>
     <string name="message_incident_setup_incomplete">Setup incomplete. See above for details.</string>
     <string name="minimize_current_incident">Minimize view</string>
-    <string name="minor_crash_button_text">Minor crash</string>
     <string name="minutes_ago">{NUM_MINUTES, plural, =1 {#m ago} other {#m ago}}</string>
     <string name="missing_audio_permission_error_description">To record a video, allow this app to access your microphone</string>
     <string name="missing_audio_permission_error_message">Update microphone access</string>
-    <string name="missing_background_location_message">To turn on Car Crash Detection, update location access to “Allow all the time”</string>
     <string name="missing_camera_permission_error_description">To record a video, allow this app to access your camera</string>
     <string name="missing_camera_permission_error_message">Update camera access</string>
     <string name="missing_permission_dialog_title">%1$s access needed</string>
-    <string name="missing_permission_message">Permissions denied. Car Crash Detection is off.</string>
-    <string name="missing_permission_message_for_demo">Permissions denied. Car crash demo not started.</string>
+    <string name="more">More</string>
     <string name="move_contact_down_icon_text">Move contact down</string>
     <string name="move_contact_up_icon_text">Move contact up</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
@@ -794,6 +711,8 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to Calendar view</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to year view</string>
+    <string name="mtrl_picker_toggled_to_day_selection">Switched to Calendar view</string>
+    <string name="mtrl_picker_toggled_to_year_selection">Switched to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
     <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
@@ -811,11 +730,6 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="no_account_switch_when_emergency_recording_dialog_message">To switch accounts, stop emergency recording and try again</string>
     <string name="no_account_switch_when_escalated_dialog_message">To switch accounts, stop Emergency Sharing and try again</string>
     <string name="no_account_switch_when_onalert_dialog_message">To switch accounts, turn off Safety Check and try again</string>
-    <string name="no_crash_button_text">No crash</string>
-    <string name="no_crash_feedback_demo_instructions_text">To help Google improve Car Crash Detection, share what happened</string>
-    <string name="no_crash_feedback_demo_title_text">Add crash info</string>
-    <string name="no_crash_feedback_title">"Glad you're OK. What happened?"</string>
-    <string name="no_emergency_contact_error">Add an emergency contact to use Emergency Sharing with Car Crash Detection.</string>
     <string name="no_emergency_contacts_dialog_message">To use %1$s, start by adding emergency contacts</string>
     <string name="no_emergency_contacts_dialog_title">No contacts selected</string>
     <string name="no_emergency_number">No emergency number</string>
@@ -828,10 +742,10 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="no_location_access_safety_check_warning_text">"Location Sharing isn't updating
 
 Your location is only shared with your emergency contacts if Emergency Sharing starts."</string>
-    <string name="no_speech_recognizer_voice_prompt">"Can't use speech recognition to call. If you need help, tap the %s button on your screen."</string>
     <string name="non_emergency_call_ended_update_title">Ended a call</string>
     <string name="non_emergency_call_started_update_title">Started a call</string>
     <string name="not_backed_up">Not Backed up</string>
+    <string name="not_now">Not now</string>
     <string name="not_primary_emergency_share_device_error_card_body_text">Emergency contacts may be getting status updates from another device</string>
     <string name="not_primary_emergency_share_device_error_card_title">Not sharing from this device</string>
     <string name="not_primary_emergency_share_device_warning_body_text">Not sharing from this device. Emergency contacts may be getting status updates from another device.</string>
@@ -856,6 +770,7 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="notification_channel_on_alert">Ongoing Safety Check</string>
     <string name="notification_title_emergency_sharing_starting">Emergency Sharing starts in</string>
     <string name="number_of_emergency_contacts_summary">{count, plural, =1{1 Contact} other{# Contacts}}</string>
+    <string name="number_override_input_text_content_description">Add a non-emergency number</string>
     <string name="o_negative">O negative</string>
     <string name="o_positive">O positive</string>
     <string name="og_a11y_close">Close</string>
@@ -912,10 +827,9 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="open_emergency_sharing_settings_title">Open Emergency Sharing settings</string>
     <string name="open_in_google_maps">Open in Google Maps</string>
     <string name="oplus">O+</string>
-    <string name="opt_in_button_text">"Yes, I'm in"</string>
     <string name="opt_out_button_text">No thanks</string>
     <string name="organ_donor">Organ donor</string>
-    <string name="other_header">Other</string>
+    <string name="other_radio_button_title">Other</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -923,7 +837,6 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="personal_safety_introduction_body_text">Check out some ways to stay safer</string>
     <string name="phone_type_and_phone_number">%1$s • %2$s</string>
-    <string name="positive_user_response_keyword">emergency</string>
     <string name="power_saver_mode_on_card_body_text">Turn off Battery Saver so emergency contacts can see updates to your location</string>
     <string name="power_saver_mode_on_card_title">"Can't update location automatically"</string>
     <string name="pref_add_contact">add_contact</string>
@@ -978,6 +891,9 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="record_indicator">REC</string>
     <string name="record_responsibly_description_summary">This feature is designed to record emergency situations to improve your personal safety. Please carefully consider your responsibilities before recording and sharing your videos.</string>
     <string name="record_responsibly_description_title">Record Responsibly</string>
+    <string name="recording_alt_ui_permission_body_text">"When emergency recording is started, Personal Safety will use these permissions:
+ • Record video
+ • Record audio"</string>
     <string name="recording_auto_share_onboarding_subtitle">After your video is backed up, a link to download it can be automatically shared with your emergency contacts</string>
     <string name="recording_auto_share_onboarding_title">Share video automatically?</string>
     <string name="recording_back_up_complete">Backed up</string>
@@ -1070,7 +986,6 @@ To be added as your emergency contact, they can use the original link sent from 
     <string name="setting_summary_feature_need_set_up">Tap to complete setup</string>
     <string name="setting_summary_feature_temporarily_unavailable">Temporarily unavailable</string>
     <string name="setting_summary_feature_unavailable">Unavailable</string>
-    <string name="setting_summary_feature_unavailable_tap_for_details">Unavailable / Tap for details</string>
     <string name="setting_summary_feature_unavailable_temporarily">Off temporarily / Tap for details</string>
     <string name="settings_activity_title">Safety settings</string>
     <string name="setup_complete_footer_text">You can update your Emergency SOS preferences anytime.</string>
@@ -1102,8 +1017,7 @@ Open the app later to add or review emergency contacts, set up car crash detecti
     <string name="sign_in_title">Do more with Personal Safety</string>
     <string name="sign_in_without_account">Use without an account</string>
     <string name="sign_in_without_account_short">Without account</string>
-    <string name="specific_missing_permission_message">Permission to %s denied. Car Crash Detection is off.</string>
-    <string name="specific_missing_permission_message_for_demo">Permission to %s denied. Car crash demo not started.</string>
+    <string name="snackbar_accessibility_pane_title">Alert</string>
     <string name="speed_bump_promo_card_body_text">You can now add a confirmation step before starting emergency actions</string>
     <string name="speed_bump_promo_card_title">Emergency SOS with confirmation</string>
     <string name="start_emergency_action_settings_subtitle">You can choose to require confirmation, with a touch &amp; hold, or start the action automatically</string>
@@ -1127,18 +1041,24 @@ Open the app later to add or review emergency contacts, set up car crash detecti
     <string name="status_update_preference_category_title">Share this info in an emergency</string>
     <string name="status_update_preference_lsr_footer">"Personal Safety uses your device location to keep your emergency contacts informed if Emergency Sharing starts. 
 
-When you share your real-time location, it may be updated in other Google apps until you stop sharing."</string>
+When you share your real-time location, it may be updated in other Google apps until you stop sharing.
+
+Limits may apply to SMS Messages."</string>
     <string name="status_update_realtime_location_preference_summary">Required for Emergency Sharing. Uses Location Sharing in Google Maps.</string>
     <string name="status_updates_setting_summary">Real-time location and status updates</string>
     <string name="stop_recording">Stop</string>
     <string name="stop_scheck_button_text">Stop Safety Check</string>
     <string name="stop_sharing_action_description">stop sharing this link</string>
+    <string name="sudExpressiveButtonFontFamily">Roboto</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
     <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
     <string name="sudFontSecondaryText">google-sans-text</string>
+    <string name="sudGlifExpressiveDialogFontFamily">google-sans-text</string>
     <string name="sud_back_button_label">Back</string>
+    <string name="sud_less_info">Less info</string>
     <string name="sud_more_button_label">More</string>
+    <string name="sud_more_info">More info</string>
     <string name="sud_next_button_label">Next</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="summary_not_setup">Not set up</string>
@@ -1156,9 +1076,9 @@ When you share your real-time location, it may be updated in other Google apps u
     <string name="survey_device_model">Device Model</string>
     <string name="survey_email_address">Email address</string>
     <string name="survey_error_message">"Can't load survey. You can share feedback in Settings."</string>
-    <string name="survey_font">sans-serif</string>
-    <string name="survey_font_medium">sans-serif-medium</string>
-    <string name="survey_font_regular">sans-serif-regular</string>
+    <string name="survey_font">google-sans</string>
+    <string name="survey_font_medium">google-sans-medium</string>
+    <string name="survey_font_regular">google-sans-regular</string>
     <string name="survey_google_play_services_version">Google Play services version</string>
     <string name="survey_legal_text">By continuing, you agree Google uses your answers, %1$s to improve services, per our %2$s &amp; %3$s</string>
     <string name="survey_legal_text_car">By continuing, Google may use your answers, account &amp; system info to improve services. See account profile for Privacy &amp; Terms</string>
@@ -1190,16 +1110,6 @@ When you share your real-time location, it may be updated in other Google apps u
     <string name="survey_user_agent">User Agent</string>
     <string name="survey_very_dissatisfied">Very dissatisfied</string>
     <string name="survey_very_satisfied">Very satisfied</string>
-    <string name="suspended_link_country_text">Supported countries</string>
-    <string name="suspended_link_locale_text">Supported languages</string>
-    <string name="suspended_reason_country_body_text">"Car Crash Detection won't work while you're in this country"</string>
-    <string name="suspended_reason_locale_body_only_text">"Car Crash Detection doesn't work with your phone's current language setting"</string>
-    <string name="suspended_reason_location_settings_body_only_text">Location is off. Turn on location to use Car Crash Detection.</string>
-    <string name="suspended_reason_no_network_body_text">To use Car Crash Detection, check your internet connection</string>
-    <string name="suspended_reason_no_sim_card_body_text">To use Car Crash Detection, add a SIM card from a supported country</string>
-    <string name="suspended_reason_permissions_body_only_text">To continue using Car Crash Detection, re-enable missing permissions</string>
-    <string name="suspended_reason_roaming_body_only_text">"Car Crash Detection isn't available while roaming. Make sure you're in a supported country, and your SIM is from the same country."</string>
-    <string name="suspended_reason_unsupported_sim_card_body_text">To use Car Crash Detection, try a SIM card from a supported country</string>
     <string name="suw_account_frag_subtitle">"Sign in to the %1$s app to get started.
 
 %2$s helps you prepare and react in an emergency by quickly connecting you with the help and information you need."</string>
@@ -1210,7 +1120,8 @@ When you share your real-time location, it may be updated in other Google apps u
     <string name="switch_on">On</string>
     <string name="take_action">Take action</string>
     <string name="tap_for_details">Tap for details</string>
-    <string name="temporarily_unavailable">Temporarily unavailable / Tap to fix</string>
+    <string name="thumb_dimension_ratio">1.33333333333</string>
+    <string name="thumb_icon_scale">0.4</string>
     <string name="tiktok_account_accounts_add">Add Account</string>
     <string name="tiktok_account_accounts_adding">Adding Account…</string>
     <string name="tiktok_account_accounts_choose">Choose account</string>
@@ -1245,15 +1156,12 @@ When you share your real-time location, it may be updated in other Google apps u
     <string name="updates_button_description_with_new_updates">Show updates page with new udpates</string>
     <string name="updates_title_name">Updates</string>
     <string name="use_feature_template">use %1$s</string>
+    <string name="use_without_an_account_button_text">Use %1$s without an account</string>
     <string name="user_image_choose_photo">Choose an image</string>
     <string name="user_image_photo_selector">Select photo</string>
     <string name="user_image_take_photo">Take a photo</string>
     <string name="user_image_take_photo_missing_camera_permission">To take a photo, update your camera access to Allow while using the app</string>
     <string name="user_nickname">Nickname</string>
-    <string name="user_no_response_emergency_demo_instructions_text">"If you don't respond after a crash, your phone calls %s on your behalf. Tap the demo to continue."</string>
-    <string name="user_pref_restore_card_body_text">"Medical info isn't synced to this device. Other Personal Safety settings synced successfully."</string>
-    <string name="user_pref_restore_card_title">Add medical info?</string>
-    <string name="user_requested_emergency_demo_instructions_text">"This is what you'll see when you call %s during an emergency. Tap the demo to continue."</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
     <string name="video_action_back_up">Back up</string>
