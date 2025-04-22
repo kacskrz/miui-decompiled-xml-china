@@ -65,8 +65,17 @@
         <item>@string/accessibility_timeout_2mins</item>
     </string-array>
     <string-array name="add_wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap_wpa_wpa2</item>
     </string-array>
     <string-array name="add_wifi_security_with_sae">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+        <item>@string/wifi_security_sae</item>
     </string-array>
     <string-array name="agps_apn_entries">
         <item>CMWAP</item>
@@ -138,32 +147,6 @@
     </integer-array>
     <array name="allowed_packages_for_locale_confirmation_diallog" />
     <array name="allowlist_hide_summary_in_battery_usage" />
-    <string-array name="alphabet_sub_table_with_starred">
-        <item>!</item>
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>H</item>
-        <item>I</item>
-        <item>J</item>
-        <item>K</item>
-        <item>L</item>
-        <item>M</item>
-        <item>N</item>
-        <item>O</item>
-        <item>P</item>
-        <item>Q</item>
-        <item>R</item>
-        <item>S</item>
-        <item>T</item>
-        <item>U</item>
-        <item>V</item>
-        <item>W</item>
-        <item>X</item>
-        <item>Y</item>
-        <item>Z</item>
-        <item>\#</item>
-    </string-array>
     <string-array name="alphabet_table">
         <item>A</item>
         <item>B</item>
@@ -507,6 +490,16 @@
         <item>0</item>
         <item>4</item>
         <item>16</item>
+    </string-array>
+    <string-array name="back_strap_entries">
+        <item>@string/back_strap_off</item>
+        <item>@string/back_strap_on</item>
+        <item>@string/back_strap_on_back_light_display</item>
+    </string-array>
+    <string-array name="back_strap_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
     </string-array>
     <array name="background_style1">
         <item>@drawable/rounded_ripple</item>
@@ -2643,6 +2636,10 @@
         <item>\#FFAA00AA</item>
     </string-array>
     <string-array name="mi2_wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
         <item>WAPI PSK</item>
         <item>WAPI CERT</item>
     </string-array>
@@ -4238,11 +4235,14 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>IKEv2/IPSec RSA</item>
     </string-array>
     <string-array name="wapi_psk_type">
+        <item>@string/wapi_psk_type_ascii</item>
+        <item>@string/wapi_psk_type_hex</item>
     </string-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
         <item>@string/monday</item>
         <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
         <item>@string/thursday</item>
         <item>@string/friday</item>
         <item>@string/saturday</item>
@@ -4251,6 +4251,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/sunday_short</item>
         <item>@string/monday_short</item>
         <item>@string/tuesday_short</item>
+        <item>@string/wednesday_short</item>
         <item>@string/thursday_short</item>
         <item>@string/friday_short</item>
         <item>@string/saturday_short</item>
@@ -4259,6 +4260,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/sunday_shortest</item>
         <item>@string/monday_shortest</item>
         <item>@string/tuesday_shortest</item>
+        <item>@string/wednesday_shortest</item>
         <item>@string/thursday_shortest</item>
         <item>@string/friday_shortest</item>
         <item>@string/saturday_shortest</item>
@@ -4311,18 +4313,32 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>3</item>
     </string-array>
     <string-array name="wifi_ap_band_config_2G_5G">
+        <item>@string/wifi_ap_choose_2G</item>
+        <item>@string/wifi_ap_choose_5G</item>
     </string-array>
     <string-array name="wifi_ap_band_config_2G_only">
+        <item>@string/wifi_ap_choose_2G</item>
     </string-array>
     <string-array name="wifi_ap_band_config_full">
+        <item>@string/wifi_ap_choose_2G</item>
+        <item>@string/wifi_ap_choose_5G</item>
     </string-array>
     <string-array name="wifi_ap_band_summary">
+        <item>@string/wifi_ap_choose_2G</item>
+        <item>@string/wifi_ap_prefer_5G</item>
     </string-array>
     <string-array name="wifi_ap_hidden_ssid_config">
+        <item>@string/wifi_ap_ssid_off</item>
+        <item>@string/wifi_ap_ssid_on</item>
     </string-array>
     <string-array name="wifi_ap_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wpa2</item>
     </string-array>
     <string-array name="wifi_ap_security_with_sae">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wpa2</item>
+        <item>@string/wifi_security_sae</item>
     </string-array>
     <array name="wifi_calling_mode_choices">
         <item>@android:string/wfc_mode_wifi_preferred_summary</item>
@@ -4365,12 +4381,24 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@android:string/wfc_mode_cellular_preferred_summary</item>
     </array>
     <string-array name="wifi_calling_mode_summaries">
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_only_summary</item>
     </string-array>
     <string-array name="wifi_calling_mode_summaries_with_ims_preferred">
+        <item>@string/wifi_calling_mode_ims_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_only_summary</item>
     </string-array>
     <string-array name="wifi_calling_mode_summaries_without_wifi_only">
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
     </string-array>
     <string-array name="wifi_calling_mode_summaries_without_wifi_only_with_ims_preferred">
+        <item>@string/wifi_calling_mode_ims_preferred_summary</item>
+        <item>@string/wifi_calling_mode_wifi_preferred_summary</item>
+        <item>@string/wifi_calling_mode_cellular_preferred_summary</item>
     </string-array>
     <string-array name="wifi_calling_mode_values">
         <item>2</item>
@@ -4511,8 +4539,15 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Proxy Auto-Config</item>
     </string-array>
     <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
     </string-array>
     <string-array name="wifi_security_no_eap">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
         <item>WAPI PSK</item>
         <item>WAPI CERT</item>
     </string-array>
@@ -4563,6 +4598,11 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Temporarily avoiding poor connection</item>
     </string-array>
     <string-array name="wifi_tether_security">
+        <item>@string/wifi_security_sae</item>
+        <item>@string/wifi_security_psk_sae</item>
+        <item>@string/wifi_security_wpa2</item>
+        <item>@string/wifi_security_owe</item>
+        <item>@string/wifi_security_none</item>
     </string-array>
     <string-array name="wifi_tether_security_values">
         <item>3</item>
@@ -4614,6 +4654,10 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>10</item>
     </string-array>
     <string-array name="zen_mode_contacts_calls_entries">
+        <item>@string/zen_mode_from_anyone</item>
+        <item>@string/zen_mode_from_contacts</item>
+        <item>@string/zen_mode_from_starred</item>
+        <item>@string/zen_mode_none_calls</item>
     </string-array>
     <string-array name="zen_mode_contacts_values">
         <item>zen_mode_from_anyone</item>
