@@ -72,6 +72,41 @@
         <item quantity="other">After %d occurrences</item>
         <item quantity="one">After %d occurrence</item>
     </plurals>
+    <plurals name="custom_recurrence_day">
+        <item quantity="other">days</item>
+        <item quantity="one">day</item>
+    </plurals>
+    <plurals name="custom_recurrence_end_condition_occurrence_label">
+        <item quantity="other">occurrences</item>
+        <item quantity="one">occurrence</item>
+    </plurals>
+    <plurals name="custom_recurrence_month">
+        <item quantity="other">months</item>
+        <item quantity="one">month</item>
+    </plurals>
+    <plurals name="custom_recurrence_month_day">
+        <item quantity="other">Day %1$d</item>
+        <item quantity="one">Day 1</item>
+    </plurals>
+    <plurals name="custom_recurrence_on_month_day">
+        <item quantity="other">on day %1$d</item>
+        <item quantity="one">on day 1</item>
+    </plurals>
+    <plurals name="custom_recurrence_week">
+        <item quantity="other">weeks</item>
+        <item quantity="one">week</item>
+    </plurals>
+    <plurals name="custom_recurrence_year">
+        <item quantity="other">years</item>
+        <item quantity="one">year</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">Every %d days</item>
+        <item quantity="one">Daily</item>
+        <item quantity="two">Every %d days</item>
+        <item quantity="few">Every %d days</item>
+        <item quantity="many">Every %d days</item>
+    </plurals>
     <plurals name="daily_frequency_text">
         <item quantity="other">Repeat every %1$d %2$s</item>
         <item quantity="one">Repeat every %1$d %2$s</item>
@@ -84,13 +119,13 @@
         <item quantity="other">Days before</item>
         <item quantity="one">Day before</item>
     </plurals>
+    <plurals name="deleted_and_moved_task_restored">
+        <item quantity="other">%1$d restored in List %2$s.</item>
+        <item quantity="one">%1$d restored in List %2$s.</item>
+    </plurals>
     <plurals name="describe_attachments">
         <item quantity="other">Attachments: %1$d attachments</item>
         <item quantity="one">Attachments: %1$d attachment</item>
-    </plurals>
-    <plurals name="done_reminders_title">
-        <item quantity="other">%d reminders done</item>
-        <item quantity="one">%d reminder done</item>
     </plurals>
     <plurals name="end_by_count">
         <item quantity="other">; for %d times</item>
@@ -150,10 +185,6 @@
         <item quantity="few">This will add %d events and cannot be undone. Are you sure?</item>
         <item quantity="many">This will add %d events and cannot be undone. Are you sure?</item>
     </plurals>
-    <plurals name="mark_reminders_done_title">
-        <item quantity="other">Mark %d reminders as done?</item>
-        <item quantity="one">Mark %d reminder as done?</item>
-    </plurals>
     <plurals name="minutes">
         <item quantity="other">Minutes</item>
         <item quantity="one">Minute</item>
@@ -174,6 +205,13 @@
         <item quantity="other">Repeat every %1$d %2$s</item>
         <item quantity="one">Repeat every %1$d %2$s</item>
     </plurals>
+    <plurals name="monthly_interval">
+        <item quantity="other">Every %1$d months</item>
+        <item quantity="one">Monthly</item>
+        <item quantity="two">Every %1$d months</item>
+        <item quantity="few">Every %1$d months</item>
+        <item quantity="many">Every %1$d months</item>
+    </plurals>
     <plurals name="more_guests">
         <item quantity="other">&amp; %1$d more</item>
         <item quantity="one">&amp; %1$d more</item>
@@ -185,6 +223,10 @@
     <plurals name="num_rooms">
         <item quantity="other">%1$d rooms</item>
         <item quantity="one">%1$d room</item>
+    </plurals>
+    <plurals name="postpone_update_dialog_counter_description">
+        <item quantity="other">"You must update the %1$s app to keep using it. You'll be reminded %2$d more times."</item>
+        <item quantity="one">"You must update the %1$s app to keep using it. You'll be reminded one more time."</item>
     </plurals>
     <plurals name="public_notification_text">
         <item quantity="other">%1$d new notifications</item>
@@ -205,58 +247,6 @@
     <plurals name="recurrence_frequency_weekly">
         <item quantity="other">weeks</item>
         <item quantity="one">week</item>
-    </plurals>
-    <plurals name="reminder_bundle_description_prefix">
-        <item quantity="other">%d reminders:</item>
-        <item quantity="one">%d reminder:</item>
-    </plurals>
-    <plurals name="reminder_done_bundle_description_prefix">
-        <item quantity="other">%d reminders done:</item>
-        <item quantity="one">%d reminder done:</item>
-    </plurals>
-    <plurals name="reminders_marked_done">
-        <item quantity="other">%d reminders marked done.</item>
-        <item quantity="one">%d reminder marked done.</item>
-    </plurals>
-    <plurals name="reminders_migration_dialog_title">
-        <item quantity="other">Turn %d reminders into tasks</item>
-        <item quantity="one">Turn %d reminder into a task</item>
-    </plurals>
-    <plurals name="reminders_migration_force_completed_toast">
-        <item quantity="other">Reminders are now tasks. %1$d reminders turned into tasks for %2$s.</item>
-        <item quantity="one">Reminders are now tasks. %1$d reminder turned into a task for %2$s.</item>
-    </plurals>
-    <plurals name="reminders_migration_keep_only_dialog_title">
-        <item quantity="other">Your %d reminders will be available in Google Keep</item>
-        <item quantity="one">Your %d reminder will be available in Google Keep</item>
-    </plurals>
-    <plurals name="reminders_migration_keep_only_reminders_dialog_description_with_account">
-        <item quantity="other">"As %s, all your reminders were created in Google Keep and can't be turned into tasks. They'll be removed from Calendar, but you can still manage them in Keep."</item>
-        <item quantity="one">"As %s, your reminder was created in Google Keep and can't be turned into a task. It'll be removed from Calendar, but you can still manage it in Keep."</item>
-    </plurals>
-    <plurals name="reminders_migration_partial_failure_some_remaining_toast">
-        <item quantity="other">Only %1$d reminders turned into tasks for %2$s. Some reminders are remaining.</item>
-        <item quantity="one">Only %1$d reminder turned into a task for %2$s. Some reminders are remaining.</item>
-    </plurals>
-    <plurals name="reminders_migration_tooltip_remark">
-        <item quantity="other">Your %d reminders turned into tasks.</item>
-        <item quantity="one">Your %d reminder turned into a task.</item>
-    </plurals>
-    <plurals name="reminders_migration_tooltip_with_keep_reminders_remark">
-        <item quantity="other">"%d reminders turned into tasks. Reminders created in Google Keep were not changed. They'll be removed from Calendar, but you can still manage them in Keep."</item>
-        <item quantity="one">"%d reminder turned into a task. Reminders created in Google Keep were not changed. They'll be removed from Calendar, but you can still manage them in Keep."</item>
-    </plurals>
-    <plurals name="reminders_migration_voluntary_completed_keep_only_toast">
-        <item quantity="other">%1$d reminders removed from Calendar for %2$s but remain in Keep</item>
-        <item quantity="one">%1$d reminder removed from Calendar for %2$s but remains in Keep</item>
-    </plurals>
-    <plurals name="reminders_migration_voluntary_completed_toast">
-        <item quantity="other">%1$d reminders turned into tasks for %2$s</item>
-        <item quantity="one">%1$d reminder turned into tasks for %2$s</item>
-    </plurals>
-    <plurals name="reminders_title">
-        <item quantity="other">%d reminders</item>
-        <item quantity="one">%d reminder</item>
     </plurals>
     <plurals name="response_count_accepted">
         <item quantity="other">%s yes</item>
@@ -305,6 +295,38 @@
         <item quantity="other">%1$d stars out of %2$d</item>
         <item quantity="one">%1$d star out of %2$d</item>
     </plurals>
+    <plurals name="task_num_dragged_subtasks">
+        <item quantity="other">+%1$d subtasks</item>
+        <item quantity="one">+1 subtask</item>
+    </plurals>
+    <plurals name="task_overdue_days">
+        <item quantity="other">%1$d days ago</item>
+        <item quantity="one">Yesterday</item>
+    </plurals>
+    <plurals name="task_overdue_weeks">
+        <item quantity="other">%1$d weeks ago</item>
+        <item quantity="one">1 week ago</item>
+    </plurals>
+    <plurals name="task_overdue_years">
+        <item quantity="other">%1$d years ago</item>
+        <item quantity="one">1 year ago</item>
+    </plurals>
+    <plurals name="tasks_confirm_complete_subtasks_description">
+        <item quantity="other">Completing this task will also complete %1$d subtasks</item>
+        <item quantity="one">Completing this task will also complete 1 subtask</item>
+    </plurals>
+    <plurals name="tasks_confirm_complete_subtasks_title">
+        <item quantity="other">Mark %1$d tasks completed?</item>
+        <item quantity="one">Mark 1 task completed?</item>
+    </plurals>
+    <plurals name="tasks_confirm_delete_subtasks_message">
+        <item quantity="other">Deleting this task will also delete %1$d subtasks.</item>
+        <item quantity="one">Deleting this task will also delete 1 subtask.</item>
+    </plurals>
+    <plurals name="tasks_end_by_count">
+        <item quantity="other">, %d times</item>
+        <item quantity="one">, one time</item>
+    </plurals>
     <plurals name="tasks_rollover_chip_title">
         <item quantity="other">%d pending tasks</item>
         <item quantity="one">%d pending task</item>
@@ -312,6 +334,25 @@
     <plurals name="tasks_rollover_dialog_description">
         <item quantity="other">From the last %d days</item>
         <item quantity="one">From the last %d day</item>
+    </plurals>
+    <plurals name="undo_tasks_completed">
+        <item quantity="other">%1$d tasks completed</item>
+        <item quantity="one">Task completed</item>
+    </plurals>
+    <plurals name="undo_tasks_deleted">
+        <item quantity="other">%1$d tasks deleted</item>
+        <item quantity="one">Task deleted</item>
+    </plurals>
+    <plurals name="undo_tasks_moved">
+        <item quantity="other">%1$d tasks moved to %2$s.</item>
+        <item quantity="one">Task moved to %2$s</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">Every %1$d weeks on %2$s</item>
+        <item quantity="one">Weekly on %2$s</item>
+        <item quantity="two">Every %1$d weeks on %2$s</item>
+        <item quantity="few">Every %1$d weeks on %2$s</item>
+        <item quantity="many">Every %1$d weeks on %2$s</item>
     </plurals>
     <plurals name="weekly_by_day_lower">
         <item quantity="other">every %1$d weeks on %2$s</item>
@@ -328,5 +369,12 @@
     <plurals name="weeks_before">
         <item quantity="other">Weeks before</item>
         <item quantity="one">Week before</item>
+    </plurals>
+    <plurals name="yearly_interval_plain">
+        <item quantity="other">Every %1$d years</item>
+        <item quantity="one">Yearly</item>
+        <item quantity="two">Every %1$d years</item>
+        <item quantity="few">Every %1$d years</item>
+        <item quantity="many">Every %1$d years</item>
     </plurals>
 </resources>
