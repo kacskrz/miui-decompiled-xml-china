@@ -56,14 +56,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Show cancel dialog when event.preventDefault() is called for beforeunload event. Do not show cancel dialog when event.returnValue is the empty string for beforeunload event.</item>
-        <item>Do not show cancel dialog when event.preventDefault() is called for beforeunload event. Show cancel dialog when beforeunload event.returnValue is the empty string for beforeunload event.</item>
-        <item>Use default behavior of feature rollout plan.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-        <item>None</item>
-    </string-array>
         <item>Block 3rd party cookies</item>
         <item>Allow 3rd party cookies</item>
         <item>Allow 3rd party cookies, but allow the user to change this setting</item>
@@ -86,8 +78,26 @@
         <item>False</item>
         <item>None</item>
     </string-array>
+        <item>Import user-added TLS server certificates from platform trust stores.</item>
+        <item>Do not import user-added TLS server certificates from platform trust stores.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Support CORS non-wildcard request headers.</item>
         <item>Do not support CORS non-wildcard request headers.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Old deprecated syntax will be enabled.</item>
+        <item>Old deprecated syntax will be disabled.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Allow use of the Chrome for Testing</item>
+        <item>Do not allow use of the Chrome for Testing</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -126,6 +136,12 @@
     </string-array>
         <item>Allow users to use Touch to Search</item>
         <item>Prevent users from using Touch to Search</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Keep whitespace for all mime-types</item>
+        <item>Only keep whitespace for text and xml mime-types</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -184,8 +200,8 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-        <item>Allow third-party storage partitioning to be enabled.</item>
-        <item>Block third-party storage partitioning from being enabled.</item>
+        <item>Allow third-party storage partitioning by default.</item>
+        <item>Disable third-party storage partitioning.</item>
     </string-array>
         <item>1</item>
         <item>2</item>
@@ -227,6 +243,18 @@
     </string-array>
         <item>True</item>
         <item>False</item>
+    </string-array>
+        <item>No special restrictions. Default.</item>
+        <item>Block malicious downloads and dangerous file types.</item>
+        <item>Block malicious downloads, uncommon or unwanted downloads and dangerous file types.</item>
+        <item>Block all downloads.</item>
+        <item>Block malicious downloads. Recommended.</item>
+    </string-array>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
         <item>Enable bookmark editing</item>
         <item>Disable bookmark editing</item>
@@ -292,13 +320,15 @@
         <item>False</item>
         <item>None</item>
     </string-array>
-        <item>Allow users to enable HTTPS-Only Mode</item>
-        <item>Do not allow users to enable HTTPS-Only Mode</item>
-        <item>Force enable HTTPS-Only Mode</item>
+        <item>"Do not restrict users' HTTPS-Only Mode setting"</item>
+        <item>Do not allow users to enable any HTTPS-Only Mode</item>
+        <item>Force enable HTTPS-Only Mode in Strict mode</item>
+        <item>Force enable HTTPS-Only Mode in Balanced Mode</item>
     </string-array>
         <item>allowed</item>
         <item>disallowed</item>
         <item>force_enabled</item>
+        <item>force_balanced_enabled</item>
     </string-array>
         <item>HTTPS Upgrades may be applied depending on feature launch status.</item>
         <item>Disable HTTPS Upgrades.</item>
@@ -333,6 +363,12 @@
         <item>True</item>
         <item>False</item>
         <item>None</item>
+    </string-array>
+        <item>Enabled: Scrollers are focusable by default.</item>
+        <item>Disabled: Scrollers are not focusable by default.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
     </string-array>
         <item>Enable Google Lens camera assisted search for Enterprise user</item>
         <item>Disable Google Lens camera assisted search for Enterprise user</item>
@@ -434,9 +470,9 @@
         <item>ScreenBrightnessPercent</item>
         <item>ScreenLockDelays</item>
     </string-array>
-        <item>Use Default Value for Kyber post-quantum key agreement for TLS</item>
-        <item>Enable Kyber post-quantum key agreement for TLS</item>
-        <item>Disable Kyber post-quantum key agreement for TLS</item>
+        <item>Use Default Value for post-quantum key agreement for TLS</item>
+        <item>Enable post-quantum key agreement for TLS</item>
+        <item>Disable post-quantum key agreement for TLS</item>
     </string-array>
         <item>None</item>
         <item>True</item>
@@ -493,6 +529,12 @@
         <item>True</item>
         <item>False</item>
         <item>None</item>
+    </string-array>
+        <item>The QR Code Generator feature is enabled.</item>
+        <item>The QR Code Generator feature is disabled.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
     </string-array>
         <item>Enable Related Website Sets</item>
         <item>Disable Related Website Sets</item>
@@ -552,6 +594,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>New HTML parser behavior which allows more tags will be enabled.</item>
+        <item>New HTML parser behavior which allows more tags will be disabled.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Enable the shared clipboard feature</item>
         <item>Disable the shared clipboard feature</item>
     </string-array>
@@ -572,6 +620,12 @@
         <item>False</item>
         <item>None</item>
     </string-array>
+        <item>Enabled: CSS zoom conforms to the standard specification.</item>
+        <item>Disabled: CSS zoom preserves its legacy pre-standard behavior.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Scripts for workers (Web Workers, Service Workers, etc.) require a JavaScript MIME type, like text/javascript. Worker scripts with legacy MIME types, like text/ascii, will be rejected.</item>
         <item>Scripts for workers (Web Workers, Service Workers, etc.) use lax MIME type checking. Worker scripts with legacy MIME types, like text/ascii, will work.</item>
     </string-array>
@@ -580,6 +634,12 @@
     </string-array>
         <item>Block JavaScript dialogs triggered from a different origin subframe.</item>
         <item>Allow JavaScript dialogs triggered from a different origin subframe.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>Allow using third-party password manager in Chrome</item>
+        <item>Block switching to a third-party password manager</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -641,6 +701,9 @@
         <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
     </string-array>
         <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
+    </string-array>
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
     </string-array>
     </array>
         <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
