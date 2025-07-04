@@ -21,7 +21,6 @@
     <string name="abc_searchview_description_submit">Submit query</string>
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="all_media_can_ve_viewed_and_downloaded_in_google_photos">All media can be viewed and downloaded in Google Photos. Only recent and not backed up media will be copied from your old device.</string>
     <string name="android_messages_summary_description">This may include text messages and message attachments</string>
     <string name="android_messages_summary_recover_summary">Update the Messages app on your other device, then copy your messages from Settings after setup</string>
     <string name="android_messages_summary_recover_title">To recover your messages</string>
@@ -36,6 +35,7 @@
     <string name="app_picker_loading_toast">Available apps will load soon</string>
     <string name="app_picker_no_apps">No apps selected</string>
     <string name="app_picker_no_apps_found">No apps found</string>
+    <string name="app_picker_required_apps_summary">Choose if you’d like to restore settings for these apps</string>
     <string name="app_picker_whatsapp_description">Chat history and media •</string>
     <string name="apps_permissions_described_message">"Most in-app purchases won’t transfer. You can find more apps in the Play Store once setup is complete.
 
@@ -68,6 +68,8 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="choose_how_to_copy_custom_title">Customize</string>
     <string name="choose_how_to_copy_express_description">"About ^1. Only data that’s not available in your Google Account will be copied.
 "<annotation id="choose_how_to_copy_learn_more">Learn more about what’s copied</annotation></string>
+    <string name="choose_how_to_copy_express_description_annotation_link">"About ^1. Only data that’s not available in your Google Account will be copied.
+"<annotation link="choose_how_to_copy_learn_more">Learn more about what’s copied</annotation></string>
     <string name="choose_how_to_copy_express_learn_more_from_account_photos_message">All photos &amp; videos will be available in the Google Photos app. Only recent photos will be copied.</string>
     <string name="choose_how_to_copy_express_learn_more_from_account_title"><b>Available in your Google Account</b></string>
     <string name="choose_how_to_copy_express_learn_more_from_other_device_message">Apps &amp; app data, contacts, call history, messages, music, and settings</string>
@@ -103,7 +105,6 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="copied_contacts_group_label">Copied from %1$s</string>
     <string name="copied_contacts_group_label_default">Copied via cable transfer</string>
     <string name="copied_contacts_group_label_ios">Copied from iOS</string>
-    <string name="copied_from_device_section_header">Copied from device</string>
     <string name="copy_button">Copy</string>
     <string name="copy_later_dialog_message_before_transfer">To copy your data after setup, go to Settings</string>
     <string name="copy_later_dialog_message_before_transfer_with_partial_copy_info">"To copy your data after setup, go to Settings.
@@ -472,6 +473,7 @@ This will not delete any photos &amp; videos that are currently backed up to Goo
     <string name="restore_backup_optin_general_fragment_general_photos_backup_off_dialog_title">Turn off backup to Google Photos?</string>
     <string name="restore_backup_optin_general_fragment_general_title">Back up your device</string>
     <string name="restore_backup_optin_general_fragment_general_title_in_suw">Google services: Back up your device</string>
+    <string name="restore_backup_optin_general_item_flavor_device_data_summary">Contacts, call history, device settings, apps &amp; app data, SMS &amp; MMS messages, and SIMs</string>
     <string name="restore_backup_optin_general_item_flavor_device_data_summary_apps">Apps &amp; app data</string>
     <string name="restore_backup_optin_general_item_flavor_device_data_summary_sms_mms">SMS &amp; MMS messages</string>
     <string name="restore_backup_optin_general_item_flavor_photos_info_additional_action_needed">You may need to install or update the Photos app, or allow the app to access your media</string>
@@ -590,9 +592,6 @@ Existing music &amp; other audio files with the same name will be overwritten."<
     <string name="restore_choice_learn_more_message_mms_messages">MMS attachments can be copied.</string>
     <string name="restore_choice_learn_more_message_music">Music stored in hidden folders or received via text message can’t be copied.</string>
     <string name="restore_choice_learn_more_message_photos_videos">Photos &amp; videos stored in hidden folders or received via text message can’t be copied.</string>
-    <string name="restore_choice_learn_more_message_photos_videos_hybrid_restore">"Photos &amp; videos that backed up in Original quality using Google Photos will be instantly available in the app. Photos that aren’t backed up will be copied using a cable or Wi-Fi during setup.
-
-To download and view all your photos, open the Google Photos app."</string>
     <string name="restore_choice_learn_more_message_post_setup_device_settings">"Some device settings can’t be copied.
 
 If you changed a setting on this device, it won’t be overwritten, except home screen layout, wallpaper, and app notification settings."</string>
@@ -714,13 +713,17 @@ To copy data from another device, you'll need to erase all device data (factory 
     <string name="stop_restoring_dialog_message_before_transfer">Your data won’t be restored to your new device</string>
     <string name="stop_restoring_dialog_message_before_transfer_initial_setup">You’ll get another chance to restore your data later</string>
     <string name="stop_restoring_dialog_title_before_transfer">Don’t restore?</string>
+    <string name="sudCardViewFontFamily">google-sans-text</string>
     <string name="sudExpressiveButtonFontFamily">Roboto</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
     <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
     <string name="sudFontSecondaryText">google-sans-text</string>
+    <string name="sudGlifExpressiveDialogFontFamily">google-sans-text</string>
     <string name="sud_back_button_label">Back</string>
+    <string name="sud_less_info">Less info</string>
     <string name="sud_more_button_label">More</string>
+    <string name="sud_more_info">More info</string>
     <string name="sud_next_button_label">Next</string>
     <string name="sud_skip_button_label">Skip</string>
     <string name="target_default_source_device_model">other device</string>
@@ -775,6 +778,7 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="transferring_fragment_disabling_back_key">You cann’t go back until copying has finished</string>
     <string name="transferring_fragment_header">Copying your data…</string>
     <string name="transferring_fragment_header_final_hold">Still copying…</string>
+    <string name="transferring_fragment_header_nearly_done">Nearly done…</string>
     <string name="transferring_fragment_percentage_data_transferred">%1$s%%</string>
     <string name="transferring_fragment_remaining_time_v2">About %1$s left</string>
     <string name="transferring_fragment_restoring_content">Restoring content…</string>
