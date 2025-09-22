@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="MediaControlView_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
     <string-array name="alphabet_table">
         <item>A</item>
         <item>B</item>
@@ -74,6 +82,10 @@
     <string-array name="android.permission.MEDIA_CONTENT_CONTROL">
         <item>Control media volume</item>
         <item>For controlling volume with voice commands</item>
+    </string-array>
+    <string-array name="android.permission.READ_MEDIA_VIDEO">
+        <item>获取访问设备照片视频文件权限</item>
+        <item>当您使用视频缓存服务时，您可以通过开启访问设备上的照片和视频权限以便查看设备缓存视频</item>
     </string-array>
     <string-array name="android.permission.RECORD_AUDIO">
         <item>Access the microphone</item>
@@ -183,6 +195,11 @@
         <item>http://i.ifeng.com/?ch=rj_mr</item>
         <item>网易</item>
         <item>http://3g.163.com/</item>
+    </string-array>
+    <string-array name="bookshelf__general_shared__main_categories">
+        <item>书架</item>
+        <item>bookshelf</item>
+        <item>書架</item>
     </string-array>
     <string-array name="chinese_days">
         <item>@string/chinese_day_1</item>
@@ -1218,22 +1235,26 @@
         <item>Create shortcuts</item>
         <item>For creating Home screen shortcuts</item>
     </string-array>
-    <array name="custom_image_height">
-        <item>@dimen/custom_head_card_height_normal</item>
-        <item>@dimen/custom_head_card_height_none</item>
-    </array>
-    <array name="custom_input_view_margin_bottom">
-        <item>@dimen/custom_head_card_input_view_margin_bottom_normal</item>
-        <item>@dimen/custom_head_card_input_view_margin_bottom_none</item>
-    </array>
-    <array name="custom_sites_top_margin">
-        <item>@dimen/custom_sites_top_margin_normal</item>
-        <item>@dimen/custom_sites_top_margin_none</item>
-    </array>
-    <array name="custom_weather_template_color">
-        <item>@color/color_ffffff</item>
-        <item>@color/color_b3000000</item>
-    </array>
+    <string-array name="comment_negative_items">
+        <item>Abuse</item>
+        <item>Porno</item>
+        <item>Illegal</item>
+        <item>Ad</item>
+        <item>Unhealthy</item>
+        <item>Underage</item>
+        <item>Fake</item>
+        <item>Dislike</item>
+    </string-array>
+    <string-array name="comment_negative_items_publish">
+        <item>abuse</item>
+        <item>porno</item>
+        <item>illegal</item>
+        <item>ad</item>
+        <item>unhealthy</item>
+        <item>underage</item>
+        <item>fake</item>
+        <item>dislike</item>
+    </string-array>
     <integer-array name="default_card_stroke_gradient_colors_dark">
         <item>0x1FFFFFFF</item>
         <item>0x14FFFFFF</item>
@@ -1282,22 +1303,63 @@
         <item>@string/earthly_branches_xu</item>
         <item>@string/earthly_branches_hai</item>
     </string-array>
-    <string-array name="easou">
-        <item>宜搜</item>
-        <item>easou.com:8080</item>
-        <item>http://ad3.easou.com:8080/favicon.ico</item>
-        <item>http://ad3.easou.com:8080/j10ad/ea2.jsp?channel=11&amp;cid=bwcn3511_49059_D_1&amp;wver=t&amp;q={searchTerms}</item>
-        <item>UTF-8</item>
-        <item>http://suggestion.baidu.com/su?p=3&amp;wd={searchTerms}</item>
+    <string-array name="entries_premium_pattern_style">
+        <item>动态推荐</item>
+        <item>默认样式</item>
     </string-array>
-    <string-array name="easou_in_list">
-        <item>search_easou</item>
-        <item>ic_search_engine_easou</item>
-        <item>easou</item>
+    <string-array name="entryValues_premium_pattern_style">
+        <item>0</item>
+        <item>1</item>
     </string-array>
     <string-array name="eras">
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
+    </string-array>
+    <string-array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="feedback_ad_dislike_items">
+        <item>Not interested</item>
+        <item>Repeatedly appearing</item>
+        <item>Too many ads</item>
+        <item>Irrelevant</item>
+        <item>Low-quality content</item>
+        <item>Links redirect to wrong pages</item>
+    </string-array>
+    <string-array name="feedback_items">
+        <item>False advertising</item>
+        <item>Counterfeit products</item>
+        <item>Offensive content</item>
+        <item>Sextual content</item>
+        <item>Potential harmful content</item>
+        <item>Illegal activities</item>
+        <item>Plagiarism or copyright issues</item>
+        <item>Political content</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="general__notification_toolbar_default_tips_array">
+        <item>正在为你刷新好看小说</item>
+        <item>闹书荒必备免费小说合集</item>
+        <item>小说更新啦，点击查看</item>
+        <item>主人，再忙别忘了看看书</item>
+        <item>只有3%的男人知道这些小说</item>
+        <item>浏览器小说，全都有，你懂的</item>
+        <item>一大波好书来袭，点击查看</item>
     </string-array>
     <string-array name="google">
         <item>Google</item>
@@ -1395,25 +1457,50 @@
     <string-array name="mw_ui_com_google_android_gms_fonts_certs_prod">
         <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
     </string-array>
+    <string-array name="negative_type_publish">
+        <item>rubbish</item>
+        <item>dislike</item>
+        <item>blacklist</item>
+    </string-array>
+    <string-array name="pref_debug_ad_wechat_mini_version">
+        <item>正式版</item>
+        <item>体验版</item>
+        <item>开发版</item>
+    </string-array>
+    <string-array name="pref_debug_ad_wechat_mini_version_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <string-array name="pref_debug_address">
         <item>正式环境</item>
         <item>预发环境</item>
         <item>测试环境</item>
         <item>自定义环境</item>
+        <item>staging环境(信息流)</item>
     </string-array>
     <string-array name="pref_debug_address_value">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="pref_desktop_ui_config_style">
+        <item>经典</item>
+        <item>精选</item>
+    </string-array>
+    <string-array name="pref_desktop_ui_config_style_value">
+        <item>1</item>
+        <item>0</item>
     </string-array>
     <string-array name="pref_fling_gesture_values">
         <item>back_forward</item>
         <item>none</item>
     </string-array>
     <string-array name="pref_fling_mode_entries">
-        <item>back_forward</item>
-        <item>none</item>
+        <item>Page back forward</item>
+        <item>None</item>
     </string-array>
     <string-array name="pref_homepage_choices">
         <item>Default</item>
@@ -1422,6 +1509,14 @@
     <string-array name="pref_homepage_values">
         <item>miui_home</item>
         <item>other</item>
+    </string-array>
+    <string-array name="pref_menu_style_array">
+        <item>Full</item>
+        <item>Concise</item>
+    </string-array>
+    <string-array name="pref_menu_style_values">
+        <item>0</item>
+        <item>1</item>
     </string-array>
     <string-array name="pref_nav_mode_summary">
         <item>Phone</item>
@@ -1453,6 +1548,14 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <string-array name="pref_premium_bottombar_style_array">
+        <item>默认样式</item>
+        <item>简洁样式</item>
+    </string-array>
+    <string-array name="pref_premium_bottombar_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
     <string-array name="pref_restore_tabs_values">
         <item>0</item>
         <item>1</item>
@@ -1470,6 +1573,10 @@
     <string-array name="pref_spinner_value_sub_mode_two">
         <item>3</item>
         <item>1</item>
+    </string-array>
+    <string-array name="pref_swan_permissions">
+        <item>Allow</item>
+        <item>Deny</item>
     </string-array>
     <string-array name="pref_tab_restore_array">
         <item>Always asking</item>
@@ -1510,6 +1617,18 @@
         <item>0</item>
         <item>1</item>
     </string-array>
+    <string-array name="pref_video_player_type">
+        <item>Video player (Recommended)</item>
+        <item>@string/video_player_native</item>
+    </string-array>
+    <string-array name="pref_video_player_value">
+        <item>Video player</item>
+        <item>@string/video_player_native</item>
+    </string-array>
+    <string-array name="pref_video_player_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
     <string-array name="pref_web_permissions">
         <item>Restrict</item>
         <item>Ask</item>
@@ -1524,6 +1643,11 @@
         <item>Allow</item>
     </string-array>
     <string-array name="quick_link_tabs">
+        <item>Bookmarks</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="quick_link_tabs_new">
+        <item>精选</item>
         <item>Bookmarks</item>
         <item>History</item>
     </string-array>
@@ -1553,9 +1677,9 @@
     </integer-array>
     <string-array name="s139">
         <item>百度</item>
-        <item>139.com</item>
-        <item>http://s.139.com/favicon.ico</item>
-        <item>http://139.chinaso.com/page/search?pn=1&amp;fr=wap&amp;q={searchTerms}</item>
+        <item>baidu.com</item>
+        <item>http://m.baidu.com/favicon.ico</item>
+        <item>http://m.baidu.com/s?from=1269a&amp;word={searchTerms}</item>
         <item>UTF-8</item>
         <item>http://suggestion.baidu.com/su?p=3&amp;wd={searchTerms}</item>
     </string-array>
@@ -1647,8 +1771,15 @@
         <item>sm</item>
     </string-array>
     <array name="small_video_refresh_layout_colors">
-        <item>@color/small_video_refresh_progress_color</item>
+        <item>@color/color_0099ff</item>
     </array>
+    <string-array name="sniff_black_list">
+        <item>信者无敌</item>
+        <item>一树桃花开</item>
+        <item>冤家亲家</item>
+        <item>铁血战狼</item>
+        <item>末路天堂</item>
+    </string-array>
     <string-array name="sogou">
         <item>搜狗</item>
         <item>sogou.com</item>
@@ -1689,6 +1820,15 @@
         <item>@string/solar_term_heavy_snow</item>
         <item>@string/solar_term_winter_solstice</item>
     </string-array>
+    <integer-array name="speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
     <string-array name="suggestion_topic_tips">
         <item>Watching Focus</item>
         <item>Central Issue</item>
@@ -1796,19 +1936,6 @@
         <item>ic_search_engine_taobao</item>
         <item>taobao</item>
     </string-array>
-    <string-array name="tupian">
-        <item>图片</item>
-        <item>baidu.com</item>
-        <item>http://image.baidu.com/favicon.ico</item>
-        <item>http://m.baidu.com/s?from=1000228f&amp;vit=union&amp;st=103041&amp;word={searchTerms}&amp;tn=bdwis</item>
-        <item>UTF-8</item>
-        <item>http://suggestion.baidu.com/su?p=3&amp;wd={searchTerms}</item>
-    </string-array>
-    <string-array name="tupian_in_list">
-        <item>search_tupian</item>
-        <item>ic_search_engine_tupian</item>
-        <item>tupian</item>
-    </string-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
         <item>@string/monday</item>
@@ -1843,11 +1970,6 @@
         <item>https://search.yahoo.com/search;_ylt=A0oG7l7PeB5P3G0AKASl87UF?p={searchTerms}&amp;ei={inputEncoding}</item>
         <item>UTF-8</item>
         <item>http://ff.search.yahoo.com/gossip?output=fxjson&amp;command={searchTerms}</item>
-    </string-array>
-    <string-array name="yahoo_in_list">
-        <item>search_yahoo</item>
-        <item>ic_search_engine_yahoo</item>
-        <item>yahoo</item>
     </string-array>
     <string-array name="yicha">
         <item>易查</item>
