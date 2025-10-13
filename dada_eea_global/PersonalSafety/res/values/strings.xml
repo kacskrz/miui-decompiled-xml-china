@@ -33,14 +33,12 @@
     <string name="action_required">Action required</string>
     <string name="active_emergency_contact_updated_body_text">%1$s opted in as an emergency contact</string>
     <string name="active_emergency_contact_updated_title_text">Emergency contact updated</string>
+    <string name="active_emergency_contacts_title">Your Emergency Contacts</string>
     <string name="add_contact">"A text message will be sent to %1$s to let them know they've been added as an emergency contact."</string>
     <string name="add_emergency_contact">Add contact</string>
     <string name="add_emergency_contacts">Add contacts</string>
     <string name="add_emergency_info_after_setup">Go back to finish setting up your phone. You can add emergency info after setup.</string>
-    <string name="add_preset_time_button_text">Add %s</string>
     <string name="add_time_button_text">Add time</string>
-    <string name="add_time_confirmation_dialog_body">Would you like to extend your Safety Check?</string>
-    <string name="add_time_confirmation_dialog_title">Add time</string>
     <string name="address">Address</string>
     <string name="age">Age</string>
     <string name="age_value">%d years old</string>
@@ -79,6 +77,8 @@ Keep in mind, your device may not notify you about all public emergencies."</str
     <string name="blood_type">Blood type</string>
     <string name="bminus">B-</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_collapse">Collapse</string>
+    <string name="bottomsheet_action_expand">Expand</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
     <string name="bplus">B+</string>
@@ -136,7 +136,7 @@ Your emergency contacts will be notified that you called %1$s."</string>
     <string name="centralized_location_sharing_stop_share_description">You can turn off Google Location Sharing for this device in Settings at any time. This will stop sharing your location for all Google apps, like Personal Safety and Google Maps.</string>
     <string name="centralized_location_sharing_stop_share_subtitle">To stop sharing from this device</string>
     <string name="centralized_location_sharing_title">How Google Location Sharing works</string>
-    <string name="change_setting_link">Change setting</string>
+    <string name="change_emergency_info_access_settings">Change setting</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
@@ -292,6 +292,7 @@ Continue to quickly press Power until you see the countdown."</string>
     <string name="emergency_contact_edit_notification_channel_name">Emergency contact changes</string>
     <string name="emergency_contact_edit_notification_content_text">Emergency contact updated or removed. Tap to review.</string>
     <string name="emergency_contact_edit_notification_title">Change to emergency contacts</string>
+    <string name="emergency_contact_manage">Manage</string>
     <string name="emergency_contact_title">Add emergency contacts</string>
     <string name="emergency_contact_updated_notification_content_text">Tap for details</string>
     <string name="emergency_contact_updated_notification_title">Emergency contact updated</string>
@@ -316,10 +317,6 @@ Continue to quickly press Power until you see the countdown."</string>
     <string name="emergency_info_description_long">Medical info, Emergency contacts</string>
     <string name="emergency_info_description_short">Emergency info</string>
     <string name="emergency_info_device_only_message">This info is saved only on your device.</string>
-    <string name="emergency_info_display_setting_description">"To help in an emergency, your emergency contacts and medical info can be viewed when your device is locked.
-
-First responders and people with access to your device can also dial your emergency contacts without unlocking your device."</string>
-    <string name="emergency_info_display_setting_title">Allow access to emergency info</string>
     <string name="emergency_info_name">Emergency information</string>
     <string name="emergency_location_service_link_text">Emergency Location Service</string>
     <string name="emergency_number_description_ambulance">Ambulance</string>
@@ -457,10 +454,10 @@ First responders and people with access to your device can also dial your emerge
     <string name="fail_load_contacts">"Can't load contacts. Try again later."</string>
     <string name="fail_remove_contact">"Can't remove your emergency contact. Try again."</string>
     <string name="fail_reorder_contacts">"Can't reorder your emergency contacts. Try again."</string>
+    <string name="failed_to_add_time_to_safety_check_title">"Can't add time to Safety Check"</string>
     <string name="failed_to_call_emergency_services_message">Failed to call %1$s</string>
     <string name="failed_to_end_escalated_incident_message">Failed to stop Emergency Sharing</string>
     <string name="failed_to_end_on_alert_incident_message">Failed to turn off Safety Check</string>
-    <string name="failed_to_extend_safety_check_title">"Can't add time"</string>
     <string name="failed_to_start_escalated_incident_message">Failed to start Emergency Sharing</string>
     <string name="failed_to_start_eshare_notification_title">Can’t start Emergency Sharing</string>
     <string name="failed_to_start_on_alert_incident_message">Failed to start Safety Check</string>
@@ -492,6 +489,8 @@ First responders and people with access to your device can also dial your emerge
     <string name="gallery_no_videos">No emergency videos. Videos recorded will appear here.</string>
     <string name="gcm_defaultSenderId">624645263144</string>
     <string name="generic_error_message">Something went wrong. Please try again later.</string>
+    <string name="generic_error_no_device_credential">No PIN, pattern, or password set.</string>
+    <string name="generic_error_no_keyguard">This device does not support PIN, pattern, or password.</string>
     <string name="generic_error_user_canceled">Authentication canceled by user.</string>
     <string name="generic_permission_denied">Permissions denied.</string>
     <string name="get_photo_error">"Can't get your photo. Try again."</string>
@@ -530,6 +529,7 @@ To be added as your emergency contact, they can use the original link sent from 
     <string name="inactive_emergency_contact_notification_content_text">Tap to manage</string>
     <string name="inactive_emergency_contact_notification_title">Inactive emergency contact</string>
     <string name="inactive_emergency_contact_title_text">Inactive emergency contact</string>
+    <string name="inactive_emergency_contacts_title">Inactive Emergency Contacts</string>
     <string name="inactive_phone_number">Inactive</string>
     <string name="incident_creation_context_sos">Started Emergency SOS</string>
     <string name="incident_device_location_off_card_title">"Can't share your location"</string>
@@ -636,7 +636,6 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="me_card_settings_summary">Medical info, emergency contacts</string>
     <string name="medical_conditions">Medical notes</string>
     <string name="medical_info_footer_els_on">To help in an emergency, this info is shared with first responders when making an emergency call</string>
-    <string name="medical_info_footer_hide_message">"This info won't be shown when your device is locked."</string>
     <string name="medical_info_footer_message">To help in an emergency, people can view this info without unlocking your device</string>
     <string name="medical_info_footer_message_with_period">To help in an emergency, people can view this info without unlocking your device.</string>
     <string name="medical_info_footer_settings_off">This info isn’t shared with first responders or visible in an emergency</string>
@@ -667,7 +666,10 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="more">More</string>
     <string name="move_contact_down_icon_text">Move contact down</string>
     <string name="move_contact_up_icon_text">Move contact up</string>
+    <string name="move_emergency_contact_down">Move down</string>
+    <string name="move_emergency_contact_up">Move up</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_button_overflow_icon_content_description">Overflow menu</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
     <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
@@ -729,6 +731,7 @@ If you don’t respond, Emergency Sharing automatically starts."</string>
     <string name="no_account_switch_when_emergency_recording_dialog_message">To switch accounts, stop emergency recording and try again</string>
     <string name="no_account_switch_when_escalated_dialog_message">To switch accounts, stop Emergency Sharing and try again</string>
     <string name="no_account_switch_when_onalert_dialog_message">To switch accounts, turn off Safety Check and try again</string>
+    <string name="no_emergency_contacts_available">No emergency contacts</string>
     <string name="no_emergency_contacts_dialog_message">To use %1$s, start by adding emergency contacts</string>
     <string name="no_emergency_contacts_dialog_title">No contacts selected</string>
     <string name="no_emergency_number">No emergency number</string>
@@ -838,10 +841,13 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="phone_type_and_phone_number">%1$s • %2$s</string>
     <string name="power_saver_mode_on_card_body_text">Turn off Battery Saver so emergency contacts can see updates to your location</string>
     <string name="power_saver_mode_on_card_title">"Can't update location automatically"</string>
+    <string name="pref_active_emergency_contacts">active_emergency_contacts</string>
     <string name="pref_add_contact">add_contact</string>
+    <string name="pref_add_emergency_contact">add_contact</string>
     <string name="pref_contacts_empty_state">contacts_empty_state</string>
     <string name="pref_emergency_contacts">emergency_contacts</string>
     <string name="pref_footer_edit_contacts">footer_edit_contacts</string>
+    <string name="pref_footer_edit_emergency_contacts">footer_edit_emergency_contacts</string>
     <string name="pref_footer_edit_medical_info">footer_edit_medical_info</string>
     <string name="pref_inactive_emergency_contacts">inactive_emergency_contacts</string>
     <string name="pref_key_address">address</string>
@@ -856,9 +862,14 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="pref_key_name">name</string>
     <string name="pref_key_organ_donor">organ_donor</string>
     <string name="pref_key_pregnancy_status">pregnancy_status</string>
+    <string name="pref_key_share_during_emergency_call">share_during_emergency_call</string>
+    <string name="pref_key_share_during_emergency_call_footer">share_during_emergency_call_footer</string>
+    <string name="pref_key_show_when_locked">show_when_locked</string>
+    <string name="pref_key_show_when_locked_footer">show_when_locked_footer</string>
     <string name="pref_key_weight">weight</string>
     <string name="pref_medinfo_empty">pref_medinfo_empty</string>
     <string name="pref_medinfo_sync_notice">pref_medinfo_sync_notice</string>
+    <string name="pref_no_emergency_contacts_zero_state">no_emergency_contacts_zero_state</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="preferences_license_title">Third Party Notices</string>
     <string name="pregnancy_status">Pregnancy status</string>
@@ -926,6 +937,7 @@ Your location is only shared with your emergency contacts if Emergency Sharing s
     <string name="remove">Remove</string>
     <string name="remove_contact">Remove %1$s from emergency contacts?</string>
     <string name="remove_contact_icon_text">Remove contact</string>
+    <string name="remove_emergency_contact">Remove</string>
     <string name="remove_inactive_contact">Remove contact</string>
     <string name="remove_inactive_contact_description">"%1$s isn't an active emergency contact.
 
@@ -987,6 +999,7 @@ To be added as your emergency contact, they can use the original link sent from 
     <string name="setting_summary_feature_unavailable">Unavailable</string>
     <string name="setting_summary_feature_unavailable_temporarily">Off temporarily / Tap for details</string>
     <string name="settings_activity_title">Safety settings</string>
+    <string name="settingslib_learn_more_text">Learn more</string>
     <string name="setup_complete_footer_text">You can update your Emergency SOS preferences anytime.</string>
     <string name="setup_device_location_subtitle">"Location may use sources like GPS, Wi‑Fi, mobile networks, and sensors to help estimate your device's location"</string>
     <string name="setup_device_location_title">Turn on location</string>
@@ -1049,14 +1062,18 @@ Limits may apply to SMS Messages."</string>
     <string name="stop_sharing_action_description">stop sharing this link</string>
     <string name="sudCardViewFontFamily">google-sans-flex</string>
     <string name="sudExpressiveButtonFontFamily">google-sans-text-medium</string>
+    <string name="sudFontExpressive">google-sans-flex</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
     <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
     <string name="sudFontSecondaryText">google-sans-text</string>
-    <string name="sudGlifExpressiveDialogFontFamily">google-sans-text</string>
+    <string name="sudGlifExpressiveDialogFontFamily">google-sans-flex</string>
     <string name="sud_back_button_label">Back</string>
     <string name="sud_expressive_accessibility_more_button_label">Scroll down</string>
     <string name="sud_less_info">Less info</string>
+    <string name="sud_lottie_animation_view_accessibility_action_pause">pause</string>
+    <string name="sud_lottie_animation_view_accessibility_action_resume">resume</string>
+    <string name="sud_lottie_animation_view_accessibility_description">Animation</string>
     <string name="sud_more_button_label">More</string>
     <string name="sud_more_info">More info</string>
     <string name="sud_next_button_label">Next</string>

@@ -48,10 +48,6 @@
     <string name="accessibility_expandy_more_button">More tools</string>
     <string name="accessibility_fast_forward">Fast forward</string>
     <string name="accessibility_fast_forward_30_seconds">Fast forward 30 seconds</string>
-    <string name="accessibility_filter_view_closed">Filter effects list closed.</string>
-    <string name="accessibility_filter_view_selected">%s selected</string>
-    <string name="accessibility_filter_view_shown">Filter effects list shown.</string>
-    <string name="accessibility_filter_view_unselected">%s unselected</string>
     <string name="accessibility_go_back">Go back to the previous page</string>
     <string name="accessibility_grid_view_toggle">Show in grid view</string>
     <string name="accessibility_hide_player_controls">Hide controls</string>
@@ -61,6 +57,7 @@
     <string name="accessibility_link_with_tv_code">Goes to the link with TV Code screen.</string>
     <string name="accessibility_list_view_toggle">Show in list view</string>
     <string name="accessibility_manage_settings">Manage settings</string>
+    <string name="accessibility_multi_select_menu_collapsed">%1$s, menu collapsed</string>
     <string name="accessibility_music_repeat">Repeat</string>
     <string name="accessibility_music_share">Share</string>
     <string name="accessibility_music_shuffle">Shuffle</string>
@@ -104,6 +101,8 @@
     <string name="accessibility_tastebuilder_item_selected">%sSelected</string>
     <string name="accessibility_tastebuilder_item_unselected">%sUnselected</string>
     <string name="accessibility_timestamp_button">Add a timestamp</string>
+    <string name="accessibility_trim_silence_off">Trim silence is off</string>
+    <string name="accessibility_trim_silence_on">Trim silence is on</string>
     <string name="accessibility_undo_add_to_library">Remove from library</string>
     <string name="accessibility_undo_dislike_video">Undo dislike</string>
     <string name="accessibility_undo_like_video">Undo like</string>
@@ -113,6 +112,7 @@
     <string name="account">Account</string>
     <string name="account_switcher_accessibility_label">%s. Switch accounts.</string>
     <string name="account_switcher_add_account">Add account</string>
+    <string name="account_switcher_app_redirect">Opens in another app</string>
     <string name="account_switcher_error_credentials_byline">Tap to sign in</string>
     <string name="account_switcher_error_credentials_title">Account action required</string>
     <string name="account_switcher_error_general_byline">Tap to retry</string>
@@ -120,7 +120,6 @@
     <string name="account_switcher_header_title">Accounts</string>
     <string name="account_switcher_manage_account">Manage accounts</string>
     <string name="account_switcher_offline_account">Connect to a network to use this account</string>
-    <string name="account_switcher_opens_in_studio">Opens in YouTube Studio</string>
     <string name="account_switcher_other_accounts">Other accounts</string>
     <string name="account_switcher_selected_account_label">Selected account: %s</string>
     <string name="account_switcher_switch_account">Switch accounts</string>
@@ -139,6 +138,7 @@
     <string name="ad_learn_more">Visit advertiser</string>
     <string name="ad_text_separator">" · "</string>
     <string name="add_five_minutes">Add 5 minutes</string>
+    <string name="add_to_episodes_for_later_a11y_text">Save episode for later</string>
     <string name="add_to_library_unavailable">Add to library unavailable</string>
     <string name="add_to_offline_start">Downloading video…</string>
     <string name="add_to_offline_waiting_for_wifi_or_unmetered">Waiting for preferred connection to download. Visit Settings to reset.</string>
@@ -207,7 +207,13 @@
     <string name="battery_restriction_toast">Change this setting</string>
     <string name="battery_restriction_warning">Battery usage is restricted. App may not work as expected.</string>
     <string name="birthday_description">Birthday image</string>
+    <string name="bluetooth_connections_channel_name">YouTube Music Bluetooth Connections</string>
+    <string name="bluetooth_permissions_granted_toast">Permissions already granted</string>
+    <string name="bottom_sheet_accessibility_hint_dismiss">Dismiss bottom sheet</string>
+    <string name="bottom_sheet_accessibility_pane_title">Bottom sheet</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_collapse">Collapse</string>
+    <string name="bottomsheet_action_expand">Expand</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
     <string name="button_web_search">Web search</string>
@@ -216,11 +222,15 @@
     <string name="byte_unit_kb">kB</string>
     <string name="byte_unit_mb">MB</string>
     <string name="call_notification_hang_up_action">Hang Up</string>
+    <string name="camera_permission_description">To take photo, allow YouTube to use Camera and Storage permissions</string>
+    <string name="camera_permission_description_v1">To take photos, allow the app to use your camera. Go to Settings > App Info > Permissions.</string>
+    <string name="camera_permission_positive_button">Open settings</string>
+    <string name="camera_permission_positive_button_v1">Open Settings</string>
     <string name="cancel">Cancel</string>
     <string name="cancel_button">Cancel</string>
     <string name="cannot_find_symbol">"Can't find this symbol?"</string>
     <string name="cannot_open_link">No browser found to open this link</string>
-    <string name="car_app_library_version">1.8.0-alpha01</string>
+    <string name="car_app_library_version">1.8.0-alpha02</string>
     <string name="cast_auth_error_message_desc">"%1$s couldn't be verified. This could be caused by outdated device firmware."</string>
     <string name="cast_auth_error_message_title">Untrusted device</string>
     <string name="cast_casting_to_device">Casting to %1$s</string>
@@ -289,8 +299,10 @@
     <string name="common_no_network">There is no network connection right now</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="confirm">Confirm</string>
+    <string name="connected_to_bluetooth">Connected to %1$s</string>
     <string name="connected_to_bluetooth_description">Connected to %1$s</string>
     <string name="connected_to_bluetooth_generic_description">Connected to a bluetooth device</string>
+    <string name="connecting_subtitle">Connecting… Tap to cancel</string>
     <string name="connecting_title">Connecting to</string>
     <string name="connection_error">Connection error</string>
     <string name="connection_to_server_lost">No connection</string>
@@ -299,14 +311,13 @@
 By continuing, Google will share your YouTube Music library and recommendations with %1$s. You can always see and remove access in YouTube Music Settings under Privacy &amp; data on this device."</string>
     <string name="consent_dialog_body2"><a href="https://support.google.com/accounts?p=oauth_consent">Learn more about the risks.</a>" Learn more about how Samsung will handle your data by referring to Samsung's Terms of Service and privacy policies."</string>
     <string name="consent_dialog_title">YouTube Music Access Needed</string>
-    <string name="continue_playing_on_device_title">Continue playing on device</string>
-    <string name="continue_playing_on_speaker_group_title">Continue playing on speakers</string>
-    <string name="continue_playing_on_speaker_title">Continue playing on speaker</string>
-    <string name="continue_playing_on_tv_title">Continue playing on TV</string>
     <string name="copy">Copy</string>
     <string name="cpn_msg_on_error">(Playback ID: %1$s)</string>
     <string name="create">Create</string>
     <string name="create_new_playlist">Create new playlist</string>
+    <string name="crop_image_description">Image</string>
+    <string name="crop_image_too_small">Your image dimension is smaller than the minimum supported of %1$d x %2$d px</string>
+    <string name="crop_save_button">Save</string>
     <string name="curated_playlist_channel_title">YouTube Music</string>
     <string name="custom_action_maximize_player_page">Maximize</string>
     <string name="custom_action_remove_from_queue_description">Remove from queue</string>
@@ -388,6 +399,8 @@ Error: [%1$d]"</string>
     <string name="editor_reposition_hint">Drag image to reposition</string>
     <string name="effects_retrieval_failed_body">Something went wrong. Try again.</string>
     <string name="effects_retrieval_failed_title">"Couldn't load effect"</string>
+    <string name="elements_not_selected">not selected</string>
+    <string name="elements_selected">selected</string>
     <string name="empty_offline_song_list_title">No downloads</string>
     <string name="en_dash">–</string>
     <string name="enable_microphone_permissions">Please allow access to Microphone in device settings.</string>
@@ -420,6 +433,7 @@ Error: [%1$d]"</string>
     <string name="explicit_badge_content_desc">Explicit</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="feb_month">Feb</string>
+    <string name="files_permission_description">To choose a photo, allow the app to access your files and media. Go to Settings > App Info > Permissions.</string>
     <string name="firebase_database_url">https://metal-dimension-646.firebaseio.com</string>
     <string name="flip_widget_preview_artist">Chappell Roan</string>
     <string name="flip_widget_preview_song">Good Luck, Babe!</string>
@@ -458,11 +472,12 @@ Error: [%1$d]"</string>
     <string name="guide_help_and_feedback">Help &amp; feedback</string>
     <string name="headset_detection_activity_title">HeadsetDetector</string>
     <string name="hide_button_text">✕</string>
-    <string name="home_page_stale_content_refresh_button_text">New recommendations</string>
     <string name="ic_media_route_learn_more_accessibility">Learn how to cast</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string name="image_gallery_permission_allow_access_description">To create a new image post, allow access to Photos</string>
     <string name="image_gallery_permission_open_settings_description">To create a new image post, go to <b>Settings > Permissions</b> and allow access to Storage</string>
+    <string name="image_upload_error">Failed to upload picture. Please try again.</string>
+    <string name="image_upload_something_went_wrong">Oops, something went wrong!</string>
     <string name="implicit_remove_offline_playlists_message">This item is downloaded to your device. Do you want to remove the download as well?</string>
     <string name="implicit_remove_offline_playlists_negative_button">Keep</string>
     <string name="implicit_remove_offline_playlists_title">Remove download, too?</string>
@@ -479,10 +494,10 @@ Error: [%1$d]"</string>
     <string name="jul_month">Jul</string>
     <string name="jun_month">Jun</string>
     <string name="learn_more">Learn more</string>
-    <string name="leave_ask_music_cancel_button">Return</string>
+    <string name="leave_ask_music_cancel_button">Cancel</string>
     <string name="leave_ask_music_confirm_button">Leave</string>
     <string name="leave_ask_music_confirm_msg">Changes you made have not been saved.</string>
-    <string name="leave_ask_music_confirm_title">Leave Ask Music?</string>
+    <string name="leave_ask_music_confirm_title">Leave without saving?</string>
     <string name="library_albums_shelf_title">Albums</string>
     <string name="library_artists_shelf_title">Artists</string>
     <string name="library_content_selector_downloads_a11y_label">Show downloads</string>
@@ -505,6 +520,7 @@ Error: [%1$d]"</string>
     <string name="library_songs_shelf_title">Songs</string>
     <string name="library_uploads_title">Uploads</string>
     <string name="link_with_tv_code">Link with TV code</string>
+    <string name="link_with_tv_code_description">Enter a code to link</string>
     <string name="listening">Listening…</string>
     <string name="live_badge_text">Live</string>
     <string name="live_label">LIVE</string>
@@ -702,7 +718,6 @@ To avoid this, cancel and sign in to YouTube on your mobile device."</string>
     <string name="music_ad_playing_title">Music will play after ad</string>
     <string name="music_error_generic">An error occurred</string>
     <string name="music_join_co_watch_dialog_body">Everyone in the call has been invited to listen to music together.</string>
-    <string name="music_offline_adding_progress">Downloading… %1$d%%</string>
     <string name="music_picker_loading">Loading…</string>
     <string name="music_picker_no_tracks_title">No songs</string>
     <string name="music_picker_read_permission_error">"YouTube Music doesn't have the required storage permissions"</string>
@@ -867,7 +882,6 @@ To avoid this, cancel and sign in to YouTube on your mobile device."</string>
     <string name="play_next_toast_song">Song will play next</string>
     <string name="play_next_toast_track">Track will play next</string>
     <string name="play_on_different_device_title">Play on different device</string>
-    <string name="play_on_this_device_title">Play on this device</string>
     <string name="play_on_title">Play on</string>
     <string name="playback_browse">Browse</string>
     <string name="playback_control_next">Next</string>
@@ -951,7 +965,7 @@ To avoid this, cancel and sign in to YouTube on your mobile device."</string>
     <string name="pref_privacy_and_data_controls_title">Privacy &amp; data</string>
     <string name="pref_privacy_policy">Privacy policy</string>
     <string name="pref_restricted_mode_current_device_title">This device</string>
-    <string name="pref_restricted_mode_detailed_summary">Restricted Mode hides songs and videos that may contain mature videos. No filter is 100%% accurate. Control restricted mode for YT Music on each device below.</string>
+    <string name="pref_restricted_mode_detailed_summary">Restricted Mode helps hide songs and videos that may contain mature content. No filter is 100%% accurate. Control restricted mode for YT Music on each device below.</string>
     <string name="pref_restricted_mode_summary">Filter mature content</string>
     <string name="pref_safety_mode_summary">Restricted Mode hides songs and videos that may contain inappropriate content flagged by users and other signals. No filter is 100% accurate, but it should help you avoid most inappropriate content.</string>
     <string name="pref_safety_mode_title">Restricted mode</string>
@@ -1027,6 +1041,7 @@ To avoid this, cancel and sign in to YouTube on your mobile device."</string>
     <string name="reel_text_size_slider_description">Swipe up or down to adjust the text size.</string>
     <string name="reel_welcome_learn_more">Learn more</string>
     <string name="remove">Remove</string>
+    <string name="remove_from_episodes_for_later_a11y_text">Remove from Episodes for Later</string>
     <string name="remove_from_offline_dialog_title">Remove download?</string>
     <string name="remove_offline_confirmed_button">Remove</string>
     <string name="remove_offline_playlists_message">Items you delete will no longer play without an internet connection.</string>
@@ -1181,9 +1196,10 @@ Try again."</string>
     <string name="sound_search_search_another_song">Search another song</string>
     <string name="splitter_dot">"  •  "</string>
     <string name="sponsored_ad_badge">Sponsored</string>
-    <string name="stale_content_refresh_button_text">Tap to update</string>
+    <string name="start_radio_error_toast_message">Failed to start radio</string>
     <string name="start_radio_toast_message">Starting radio</string>
     <string name="state_auto_offlined">Smart download complete</string>
+    <string name="state_downloading">Downloading</string>
     <string name="state_offline_playlist_tracks_not_downloaded_error">Some tracks could not be downloaded</string>
     <string name="state_offlined">Download complete</string>
     <string name="sticker_theme_black">Black</string>
