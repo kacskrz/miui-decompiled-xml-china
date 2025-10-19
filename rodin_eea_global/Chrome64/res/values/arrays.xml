@@ -90,12 +90,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Old deprecated syntax will be enabled.</item>
-        <item>Old deprecated syntax will be disabled.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>Allow use of the Chrome for Testing</item>
         <item>Do not allow use of the Chrome for Testing</item>
     </string-array>
@@ -170,6 +164,12 @@
     </string-array>
         <item>Allow any site to run JavaScript JIT</item>
         <item>Do not allow any site to run JavaScript JIT</item>
+    </string-array>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+        <item>Enable advanced JavaScript optimizations on all sites</item>
+        <item>Disable advanced JavaScript optimizations on all sites</item>
     </string-array>
         <item>1</item>
         <item>2</item>
@@ -312,6 +312,12 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+        <item>Using the Happy Eyeballs V3 algorithm.</item>
+        <item>Do not use the Happy Eyeballs V3 algorithm.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Chrome history page organized into groups will be visible at chrome://history/grouped.</item>
         <item>Chrome history page organized into groups will not be visible at chrome://history/grouped.</item>
         <item>Chrome history page organized into groups will be visible at chrome://history/grouped by default.</item>
@@ -390,12 +396,6 @@
         <item>False</item>
         <item>None</item>
     </string-array>
-        <item>Enabled: Temporarily re-enable mutation events.</item>
-        <item>Disabled: Normal behavior for mutation events, which will mean not firing these events after the removal date.</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>Show content suggestions on the New Tab page</item>
         <item>Do not show content suggestions on the New Tab page</item>
     </string-array>
@@ -423,6 +423,12 @@
         <item>True</item>
         <item>False</item>
         <item>None</item>
+    </string-array>
+        <item>Partition Blob URLs during fetching and navigation.</item>
+        <item>Do not partition Blob URLs during fetching and navigation.</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
     </string-array>
         <item>Enable password leak detection</item>
         <item>Disable password leak detection</item>
@@ -478,14 +484,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Follows regular deprecation timelines for the PrefixedVideoFullscreen API</item>
-        <item>Disables prefixed video fullscreen APIs</item>
-        <item>Enables prefixed video fullscreen APIs</item>
-    </string-array>
-        <item>runtime-enabled</item>
-        <item>disabled</item>
-        <item>enabled</item>
-    </string-array>
         <item>Enable printing</item>
         <item>Disable printing</item>
     </string-array>
@@ -536,6 +534,12 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>Enable Accept-Language Reduction</item>
+        <item>Disable Accept-Language Reduction</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Enable Related Website Sets</item>
         <item>Disable Related Website Sets</item>
     </string-array>
@@ -571,7 +575,7 @@
         <item>False</item>
     </string-array>
         <item>Do not filter sites for adult content</item>
-        <item>Filter top level sites (but not embedded iframes) for adult content</item>
+        <item>Filter sites for adult content</item>
     </string-array>
         <item>0</item>
         <item>1</item>
@@ -600,8 +604,20 @@
         <item>True</item>
         <item>False</item>
     </string-array>
+        <item>ServiceWorker can control srcdoc iframes</item>
+        <item>"ServiceWorker won't control srcdoc iframes"</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
         <item>Enable the shared clipboard feature</item>
         <item>Disable the shared clipboard feature</item>
+    </string-array>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+        <item>A blob URL SharedWorker inherits a controller.</item>
+        <item>A blob URL SharedWorker does not inherit a controller. (legacy behavior)</item>
     </string-array>
         <item>True</item>
         <item>False</item>
@@ -686,12 +702,6 @@
         <item>True</item>
         <item>False</item>
     </string-array>
-        <item>Enable advertising zstd content-encoding in the Accept-Encoding header</item>
-        <item>Do not allow using the zstd content-encoding feature</item>
-    </string-array>
-        <item>True</item>
-        <item>False</item>
-    </string-array>
         <item>@id/cast_button_type_closed_caption</item>
         <item>@id/cast_button_type_skip_previous</item>
         <item>@id/cast_button_type_skip_next</item>
@@ -702,9 +712,61 @@
     </string-array>
         <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
     </string-array>
+        <item>#ff8ab4f8</item>
+        <item>#fff28b82</item>
+        <item>#ff81c995</item>
+        <item>#fffdd663</item>
+        <item>#ffc58af9</item>
+        <item>#fffba9d6</item>
+        <item>#ffa1e4f2</item>
+        <item>#ff12b5cb</item>
+        <item>#ffbdc1c6</item>
+        <item>#fffcad70</item>
+        <item>#ff6887f7</item>
+        <item>#ff89a0c6</item>
+        <item>#ffd5665d</item>
+        <item>#ffd47c88</item>
+        <item>#ffd8948d</item>
+        <item>#ff6eca7f</item>
+        <item>#ff60d0b3</item>
+        <item>#ff06ad7a</item>
+        <item>#ffcc8e7b</item>
+        <item>#ff928ef9</item>
+        <item>#ffc58af9</item>
+        <item>#ffd99ccc</item>
+        <item>#ffe6a4b4</item>
+        <item>#ff72b6c6</item>
+        <item>#ff40a5cb</item>
+    </array>
         <item>Pixel 4</item>
         <item>Pixel 4 XL</item>
     </string-array>
+        <item>#ff1a73e8</item>
+        <item>#ffd93025</item>
+        <item>#ff1e8e3e</item>
+        <item>#ffea8600</item>
+        <item>#ffa142f4</item>
+        <item>#ffb80672</item>
+        <item>#ff129eaf</item>
+        <item>#ff3c4043</item>
+        <item>#ff1d649c</item>
+        <item>#ff7d8fae</item>
+        <item>#ffbe214e</item>
+        <item>#ffc84c80</item>
+        <item>#ffc46b6b</item>
+        <item>#ff368a61</item>
+        <item>#ff367666</item>
+        <item>#ff004d3f</item>
+        <item>#ffd3472d</item>
+        <item>#ff7f3017</item>
+        <item>#ff726fd6</item>
+        <item>#ffac1e9b</item>
+        <item>#ffab5a99</item>
+        <item>#ffb2546a</item>
+        <item>#ff507492</item>
+        <item>#ff668d95</item>
+        <item>#ff375874</item>
+    </array>
     </array>
         <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
     </string-array>
