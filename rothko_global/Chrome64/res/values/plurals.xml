@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <item quantity="other">Close tab group with %1$d tabs, color %2$s.</item>
-        <item quantity="one">Close tab group with %1$d tab, color %2$s.</item>
+        <item quantity="other">Add %1$d selected tabs to group</item>
+        <item quantity="one">Add %1$d selected tab to group</item>
     </plurals>
-        <item quantity="other">Close %1$s group with %2$d tabs, color %3$s.</item>
-        <item quantity="one">Close %1$s group with %2$d tab, color %3$s.</item>
+        <item quantity="other">Add %1$d tabs to group</item>
+        <item quantity="one">Add %1$d tab to group</item>
     </plurals>
         <item quantity="other">Collapse tab group with %1$d tabs.</item>
         <item quantity="one">Collapse %1$d tab.</item>
@@ -33,8 +33,14 @@
         <item quantity="other">Expand shared tab group with %1$d tabs, color %2$s.</item>
         <item quantity="one">Expand shared tab group with %1$d tab, color %2$s.</item>
     </plurals>
+        <item quantity="other">Expand shared tab group with %1$d tabs, color %2$s, with label %3$s.</item>
+        <item quantity="one">Expand shared tab group with %1$d tab, color %2$s, with label %3$s.</item>
+    </plurals>
         <item quantity="other">Expand shared %1$s tab group with %2$d tabs, color %3$s.</item>
         <item quantity="one">Expand shared %1$s tab group with %2$d tab, color %3$s.</item>
+    </plurals>
+        <item quantity="other">Expand shared %1$s tab group with %2$d tabs, color %3$s, with label %4$s.</item>
+        <item quantity="one">Expand shared %1$s tab group with %2$d tab, color %3$s, with label %4$s.</item>
     </plurals>
         <item quantity="other">Expand tab group with %1$d tabs, color %2$s.</item>
         <item quantity="one">Expand tab group with %1$d tab, color %2$s.</item>
@@ -75,9 +81,6 @@
         <item quantity="other">See %1$d tabs with new activity in shared tab groups</item>
         <item quantity="one">See %1$d tab with new activity in shared tab groups</item>
     </plurals>
-        <item quantity="other">Bookmarks saved to \"%1$s\" in your account, %2$s.</item>
-        <item quantity="one">Bookmark saved to \"%1$s\" in your account, %2$s.</item>
-    </plurals>
         <item quantity="other">%d bookmarks</item>
         <item quantity="one">1 bookmark</item>
     </plurals>
@@ -98,6 +101,12 @@
     </plurals>
         <item quantity="other">%1$d passwords and other items are saved only to this device. To use them on your other devices, save them in your Google Account, %2$s.</item>
         <item quantity="one">1 password and other items are saved only to this device. To use them on your other devices, save them in your Google Account, %2$s.</item>
+    </plurals>
+        <item quantity="other">Add tabs to group</item>
+        <item quantity="one">Add tab to group</item>
+    </plurals>
+        <item quantity="other">Add tabs to new group</item>
+        <item quantity="one">Add tab to new group</item>
     </plurals>
         <item quantity="other">Cookies allowed for %1$s %2$s sites</item>
         <item quantity="one">Cookies allowed for %1$s %2$s site</item>
@@ -180,6 +189,9 @@
         <item quantity="other">%1$d files downloaded</item>
         <item quantity="one">%1$d file downloaded</item>
     </plurals>
+        <item quantity="other">%1$d tab groups no longer available</item>
+        <item quantity="one">%1$d tab group no longer available</item>
+    </plurals>
         <item quantity="other">Hide continue with these tabs card</item>
         <item quantity="one">Hide continue with this tab card</item>
     </plurals>
@@ -204,14 +216,14 @@
         <item quantity="other">%d tabs</item>
         <item quantity="one">1 tab</item>
     </plurals>
-        <item quantity="other">Bookmarks saved to \"%1$s\". It is only saved to this device.</item>
-        <item quantity="one">Bookmark saved to \"%1$s\". It is only saved to this device.</item>
-    </plurals>
         <item quantity="other">(%1$s reviews)</item>
         <item quantity="one">(%1$s review)</item>
     </plurals>
         <item quantity="other">%1$s reviews from Google</item>
         <item quantity="one">%1$s review from Google</item>
+    </plurals>
+        <item quantity="other">Move to other window</item>
+        <item quantity="one">Move to new window</item>
     </plurals>
         <item quantity="other">%d days ago</item>
         <item quantity="one">%d day ago</item>
@@ -219,14 +231,8 @@
         <item quantity="other">%d hours ago</item>
         <item quantity="one">%d hour ago</item>
     </plurals>
-        <item quantity="other">%d hr ago</item>
-        <item quantity="one">%d hr ago</item>
-    </plurals>
         <item quantity="other">%d minutes ago</item>
         <item quantity="one">%d minute ago</item>
-    </plurals>
-        <item quantity="other">%d min ago</item>
-        <item quantity="one">%d min ago</item>
     </plurals>
         <item quantity="other">%1$s sites</item>
         <item quantity="one">%1$s site</item>
@@ -248,9 +254,6 @@
     </plurals>
         <item quantity="other">%1$s, %2$s, and %3$s more</item>
         <item quantity="one">%1$s, %2$s, and %3$s more</item>
-    </plurals>
-        <item quantity="other">Protections are off for %d days</item>
-        <item quantity="one">Protections are off until tomorrow</item>
     </plurals>
         <item quantity="other">%d compromised passwords</item>
         <item quantity="one">%d compromised password</item>
@@ -294,9 +297,6 @@
         <item quantity="other">%1$s tabs, last updated: %2$s</item>
         <item quantity="one">%1$s tab, last updated: %2$s</item>
     </plurals>
-        <item quantity="other">"%1$s sites in %2$s's group"</item>
-        <item quantity="one">"%1$s site in %2$s's group"</item>
-    </plurals>
         <item quantity="other">%d compromised passwords</item>
         <item quantity="one">1 compromised password</item>
     </plurals>
@@ -309,8 +309,14 @@
         <item quantity="other">Checked %d minutes ago</item>
         <item quantity="one">Checked 1 minute ago</item>
     </plurals>
+        <item quantity="other">%d compromised passwords in your Google Account</item>
+        <item quantity="one">1 compromised password in your Google Account</item>
+    </plurals>
         <item quantity="other">You should change these now</item>
         <item quantity="one">You should change this now</item>
+    </plurals>
+        <item quantity="other">%d compromised passwords on this device</item>
+        <item quantity="one">1 compromised password on this device</item>
     </plurals>
         <item quantity="other">Permissions reviewed for %d sites</item>
         <item quantity="one">Permissions reviewed for 1 site</item>
@@ -324,11 +330,17 @@
         <item quantity="other">About %d notifications a day</item>
         <item quantity="one">About 1 notification a day</item>
     </plurals>
+        <item quantity="other">%d compromised passwords</item>
+        <item quantity="one">1 compromised password</item>
+    </plurals>
         <item quantity="other">Permissions removed from %d sites</item>
         <item quantity="one">Permissions removed from 1 site</item>
     </plurals>
         <item quantity="other">Chrome found %d reused passwords that you could improve</item>
         <item quantity="one">Chrome found a reused password that you could improve</item>
+    </plurals>
+        <item quantity="other">Removed notification permissions from %d sites you haven’t visited recently</item>
+        <item quantity="one">Removed notification permissions from one site you haven’t visited recently</item>
     </plurals>
         <item quantity="other">Chrome found %d weak passwords that you could improve</item>
         <item quantity="one">Chrome found a weak password that you could improve</item>
@@ -345,26 +357,20 @@
         <item quantity="other">%1$d stars out of %2$d</item>
         <item quantity="one">%1$d star out of %2$d</item>
     </plurals>
-        <item quantity="other">%1$d tabs added</item>
-        <item quantity="one">%1$d tab added</item>
+        <item quantity="other">%1$d new tabs</item>
+        <item quantity="one">%1$d new tab</item>
     </plurals>
-        <item quantity="other">%1$d tabs added, %2$d changed</item>
-        <item quantity="one">%1$d tab added, %2$d changed</item>
+        <item quantity="other">%1$d new tabs, %2$d closed</item>
+        <item quantity="one">%1$d new tab, %2$d closed</item>
     </plurals>
-        <item quantity="other">%1$d tabs added, %2$d changed, %3$d closed</item>
-        <item quantity="one">%1$d tab added, %2$d changed, %3$d closed</item>
+        <item quantity="other">%2$d tabs closed</item>
+        <item quantity="one">%2$d tab closed</item>
     </plurals>
-        <item quantity="other">%1$d tabs added, %3$d closed</item>
-        <item quantity="one">%1$d tab added, %3$d closed</item>
+        <item quantity="other">Add to group named %1$s with %2$d tabs</item>
+        <item quantity="one">Add to group named %1$s with %2$d tab</item>
     </plurals>
-        <item quantity="other">%2$d tabs changed</item>
-        <item quantity="one">%2$d tab changed</item>
-    </plurals>
-        <item quantity="other">%2$d tabs changed, %3$d closed</item>
-        <item quantity="one">%2$d tab changed, %3$d closed</item>
-    </plurals>
-        <item quantity="other">%3$d tabs closed</item>
-        <item quantity="one">%3$d tab closed</item>
+        <item quantity="other">Open %1$s with %2$d tabs</item>
+        <item quantity="one">Open %1$s with %2$d tab</item>
     </plurals>
         <item quantity="other">Created %d days ago</item>
         <item quantity="one">Created %d day ago</item>
@@ -383,6 +389,24 @@
     </plurals>
         <item quantity="other">Created %d years ago</item>
         <item quantity="one">Created %d year ago</item>
+    </plurals>
+        <item quantity="other">Updated %d days ago</item>
+        <item quantity="one">Updated %d day ago</item>
+    </plurals>
+        <item quantity="other">Updated %d hours ago</item>
+        <item quantity="one">Updated %d hour ago</item>
+    </plurals>
+        <item quantity="other">Updated %d minutes ago</item>
+        <item quantity="one">Updated %d minute ago</item>
+    </plurals>
+        <item quantity="other">Updated %d months ago</item>
+        <item quantity="one">Updated %d month ago</item>
+    </plurals>
+        <item quantity="other">Updated %d weeks ago</item>
+        <item quantity="one">Updated %d week ago</item>
+    </plurals>
+        <item quantity="other">Updated %d years ago</item>
+        <item quantity="one">Updated %d year ago</item>
     </plurals>
         <item quantity="other">Bookmark tabs</item>
         <item quantity="one">Bookmark tab</item>
