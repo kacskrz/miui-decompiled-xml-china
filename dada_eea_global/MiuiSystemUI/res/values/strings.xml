@@ -208,7 +208,6 @@ Since this feature is now part of the brightness slider, extra dim shortcuts are
     <string name="accessibility_phone_three_bars">Phone three bars.</string>
     <string name="accessibility_phone_two_bars">Phone two bars.</string>
     <string name="accessibility_qr_code_scanner_button">QR Code Scanner</string>
-    <string name="accessibility_qs_edit_add_tile_label">%1$s. Double tap to add.</string>
     <string name="accessibility_qs_edit_move_tile">Move %1$s</string>
     <string name="accessibility_qs_edit_position">Position %1$d</string>
     <string name="accessibility_qs_edit_remove_tile">Remove %1$s</string>
@@ -217,19 +216,21 @@ Since this feature is now part of the brightness slider, extra dim shortcuts are
     <string name="accessibility_qs_edit_tile_add_action">add tile to the last position</string>
     <string name="accessibility_qs_edit_tile_add_to_position">Add to position %1$d</string>
     <string name="accessibility_qs_edit_tile_already_added">Tile already added</string>
-    <string name="accessibility_qs_edit_tile_label">Position %1$d, %2$s. Double tap to edit.</string>
     <string name="accessibility_qs_edit_tile_move">Move %1$s to position %2$d</string>
     <string name="accessibility_qs_edit_tile_move_to_position">Move to %1$d</string>
     <string name="accessibility_qs_edit_tile_start_add">Add tile to desired position</string>
     <string name="accessibility_qs_edit_tile_start_move">Move tile</string>
     <string name="accessibility_qs_edit_toggle_placement_mode">toggle placement mode</string>
     <string name="accessibility_qs_edit_toggle_tile_size_action">"toggle the tile's size"</string>
+    <string name="accessibility_qs_item_drag">Dragging item</string>
+    <string name="accessibility_qs_position_hint">Placed at row %1$d, column %2$d</string>
     <string name="accessibility_quick_settings_alarm">Alarm set for %s.</string>
     <string name="accessibility_quick_settings_bluetooth">Bluetooth.</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_activate">activate</string>
     <string name="accessibility_quick_settings_bluetooth_device_tap_to_disconnect">disconnect</string>
     <string name="accessibility_quick_settings_bluetooth_handsfree_battery_level">Bluetooth device battery %d percent.</string>
     <string name="accessibility_quick_settings_bluetooth_on">Bluetooth on.</string>
+    <string name="accessibility_quick_settings_bluetooth_restricted">Connection restricted</string>
     <string name="accessibility_quick_settings_collapse">Close quick settings.</string>
     <string name="accessibility_quick_settings_dnd">Do Not Disturb.</string>
     <string name="accessibility_quick_settings_edit">Edit order of Quick Settings.</string>
@@ -237,11 +238,13 @@ Since this feature is now part of the brightness slider, extra dim shortcuts are
     <string name="accessibility_quick_settings_handle_handsfree_battery_level">Connected grip</string>
     <string name="accessibility_quick_settings_open_settings">Open %s settings.</string>
     <string name="accessibility_quick_settings_page">Page %1$d of %2$d</string>
+    <string name="accessibility_quick_settings_page_indicator">Page indicator</string>
     <string name="accessibility_quick_settings_power_menu">Power menu</string>
     <string name="accessibility_quick_settings_rotation">Auto-rotate screen</string>
     <string name="accessibility_quick_settings_settings">Open settings.</string>
     <string name="accessibility_quick_settings_user">Signed in as %s</string>
     <string name="accessibility_recent">Overview</string>
+    <string name="accessibility_recent_button">Menu button</string>
     <string name="accessibility_remove_device_from_group">Remove device from group.</string>
     <string name="accessibility_ringer_silent">Ringer silent.</string>
     <string name="accessibility_ringer_vibrate">Ringer vibrate.</string>
@@ -252,6 +255,8 @@ Since this feature is now part of the brightness slider, extra dim shortcuts are
     <string name="accessibility_sensors_off_active">Sensors off active</string>
     <string name="accessibility_settings">Settings</string>
     <string name="accessibility_signal_full">signal full</string>
+    <string name="accessibility_sliding_button_state_description_off">Turned off</string>
+    <string name="accessibility_sliding_button_state_description_on">Turned on</string>
     <string name="accessibility_split_bottom">Split bottom</string>
     <string name="accessibility_split_left">Split left</string>
     <string name="accessibility_split_right">Split right</string>
@@ -263,6 +268,7 @@ Since this feature is now part of the brightness slider, extra dim shortcuts are
     <string name="accessibility_status_bar_satellite_good_connection">Satellite, good connection</string>
     <string name="accessibility_status_bar_satellite_no_connection">Satellite, no connection</string>
     <string name="accessibility_status_bar_satellite_poor_connection">Satellite, poor connection</string>
+    <string name="accessibility_tab_state_description_unselect">Not selected</string>
     <string name="accessibility_three_bars">three bars</string>
     <string name="accessibility_tile_disabled_by_policy_action_description">learn more</string>
     <string name="accessibility_tty_enabled">TeleTypewriter enabled.</string>
@@ -341,9 +347,7 @@ Since this feature is now part of the brightness slider, extra dim shortcuts are
     <string name="battery_low_description">You have %s battery left. Battery Saver turns on Dark theme, restricts background activity, and delays notifications.</string>
     <string name="battery_low_intro">Battery Saver turns on Dark theme, restricts background activity, and delays notifications.</string>
     <string name="battery_low_title">Turn on Battery Saver?</string>
-    <string name="battery_meter_charging_path">M11.671 26H19L3 43L7.571 30.474L7.329 30H0L16 13L11.428 25.526L11.671 26Z</string>
     <string name="battery_meter_percent_sign">%</string>
-    <string name="battery_meter_quick_charging_path">M13.368 13L11 20.5H18L11 29.5H17L5.677 43H4.632L7 35.5H0L8 26.5H1L12.323 13H13.368Z</string>
     <string name="battery_saver_confirmation_ok">Turn on</string>
     <string name="battery_saver_confirmation_title">Turn on Battery Saver?</string>
     <string name="battery_saver_confirmation_title_generic">About Battery Saver</string>
@@ -805,9 +809,11 @@ If you resume, charges may apply for data usage."</string>
     <string name="done">Done</string>
     <string name="download_lock_wallpaper">Double tap to download Wallpaper Carousel</string>
     <string name="doze_brightness_sensor_type" />
-    <string name="drag_shadow_freeform_mini_open">Mini floating window</string>
+    <string name="drag_shadow_freeform_mini_open">"Mini floating
+window"</string>
     <string name="drag_shadow_freeform_mini_unsupported">"Mini floating windows aren't supported"</string>
-    <string name="drag_shadow_freeform_open">Floating window</string>
+    <string name="drag_shadow_freeform_open">"Floating
+window"</string>
     <string name="drag_shadow_freeform_unsupported">"Floating windows aren't supported"</string>
     <string name="drag_shadow_freeform_unsupported_app">"%s doesn't support floating windows"</string>
     <string name="drag_shadow_fullscreen_open">Full screen</string>
@@ -862,6 +868,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="enable_bluetooth_title">Turn on Bluetooth?</string>
     <string name="enable_demo_mode">Enable demo mode</string>
     <string name="enabled_by_admin">Enabled by admin</string>
+    <string name="enrol_fingerprint_process_talkback">Adding fingerprint</string>
     <string name="eras_ad">CE</string>
     <string name="eras_bc">BCE</string>
     <string name="error_a11y_label">Error: invalid</string>
@@ -1014,6 +1021,7 @@ Turn off with the Power button."</string>
     <string name="format_full_day_of_week">EEEE</string>
     <string name="format_full_month_of_year">MMMM</string>
     <string name="format_hour_minute">%1$s:%2$s</string>
+    <string name="format_lunar_calendar_month_day_2">%s</string>
     <string name="format_lunar_calendar_month_day_desc">Date according to the traditional Chinese calendar: %s</string>
     <string name="format_lunar_calendar_solar_terms">%1$s %2$s</string>
     <string name="format_lunar_calendar_solar_terms_continuous">%1$s%2$s</string>
@@ -1030,6 +1038,7 @@ Turn off with the Power button."</string>
     <string name="format_solar_lunar_calendar_month_day_desc">Holiday: %1$s, date according to the traditional Chinese calendar: %2$s</string>
     <string name="format_week_day_style1">EE d</string>
     <string name="format_week_day_style1_desc">%1$s, day of the month: %2$s</string>
+    <string name="format_week_day_style2">dd EE</string>
     <string name="free_form_recommend_tip">Floating window</string>
     <string name="friday">Friday</string>
     <string name="friday_short">Fri</string>
@@ -1086,6 +1095,7 @@ Turn off with the Power button."</string>
     <string name="guest_reset_and_restart_dialog_title">Reset guest session?</string>
     <string name="guest_reset_guest_confirm_button">Reset</string>
     <string name="guest_resetting">Resetting guest…</string>
+    <string name="gxzw_icon_access_tips">Fingerprint icon</string>
     <string name="gxzw_quick_close">Close</string>
     <string name="gxzw_quick_open_add_event">Add event</string>
     <string name="gxzw_quick_open_add_event_sub">Calendar</string>
@@ -1390,18 +1400,14 @@ Tap for more info"</string>
     <string name="kg_wrong_input_try_fp_suggestion">Or unlock with fingerprint</string>
     <string name="kg_wrong_password">Wrong password</string>
     <string name="kg_wrong_password_try_again">Wrong password. Try again.</string>
+    <string name="kg_wrong_pattern">Wrong pattern</string>
     <string name="kg_wrong_pattern_try_again">Wrong pattern. Try again.</string>
     <string name="kg_wrong_pin">Wrong PIN</string>
     <string name="kg_wrong_pin_try_again">Wrong PIN. Try again.</string>
     <string name="kilobyte_per_second">KB/s</string>
     <string name="label_for_button_in_empty_state_cta">Add widgets</string>
     <string name="label_view">View</string>
-    <string name="launch_keyboard_touchpad_tutorial_notification_content">Learn touchpad gestures, keyboards shortcuts, and more</string>
-    <string name="launch_keyboard_touchpad_tutorial_notification_title">Navigate using your keyboard and touchpad</string>
-    <string name="launch_keyboard_tutorial_notification_content">Learn keyboards shortcuts</string>
-    <string name="launch_keyboard_tutorial_notification_title">Navigate using your keyboard</string>
     <string name="launch_touchpad_tutorial_notification_content">Learn touchpad gestures</string>
-    <string name="launch_touchpad_tutorial_notification_title">Navigate using your touchpad</string>
     <string name="launcher_overlayable_package">com.android.launcher3</string>
     <string name="lb_search_bar_hint">Search</string>
     <string name="lb_search_bar_hint_speech">Speak to search</string>
@@ -1595,9 +1601,10 @@ If you don’t allow this app to access all device logs, it can still access its
     <string name="miui_clock_os2_pad_exclusive_b_air_quality">AQI</string>
     <string name="miui_clock_os2_pad_exclusive_b_ultraviolet_radiation">UVI</string>
     <string name="miui_clock_pad_exclusive_format_week_full_date">"EEEE
-MM/dd/yyyy"</string>
+dd. MMMM yyyy"</string>
     <string name="miui_clock_time_format_12">hh:mm</string>
     <string name="miui_clock_time_format_24">HH:mm</string>
+    <string name="miui_depth_pets_moth_format">MMM.d</string>
     <string name="miui_eastern_art_b_data2_view_format">yyyy</string>
     <string name="miui_eastern_art_b_data_view_format">M月d日</string>
     <string name="miui_eastern_art_b_week_view_format">EEEa</string>
@@ -1684,13 +1691,14 @@ d"</string>
     <string name="miui_quick_settings_tiles_default_international">googlehome,googlepay,cell,wifi,bt,airplane,mute,flashlight,screenshot,batterysaver,rotation</string>
     <string name="miui_quick_settings_tiles_default_pad">cell,wifi,bt,airplane,mute,flashlight,screenshot,batterysaver,custom(com.miui.mishare.connectivity/.tile.MiShareTileService),rotation,controls,custom(com.miui.screenrecorder/.service.QuickService),custom(com.milink.service/com.milink.ui.service.MiLinkTileService),hotspot,dtmdtm</string>
     <string name="miui_quick_settings_tiles_default_pad_international">googlehome,googlepay,cell,wifi,bt,airplane,mute,flashlight,screenshot,batterysaver,rotation,dtmdtm</string>
-    <string name="miui_quick_settings_tiles_stock">vowifi1,vowifi2,googlehome,googlepay,cell,wifi,bt,airplane,autobrightness,mute,screenshot,flashlight,rotation,screenlock,dtmdtm,scanner,papermode,night,quietmode,batterysaver,uwb_shp,aitranslate,aisubtitles,voicetrans,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,gps,work,edit,hearingassisttile,controls,wallet,satellite,taskmanager,settings,camerahandle</string>
-    <string name="miui_quick_settings_tiles_stock_pad">vowifi1,vowifi2,googlehome,googlepay,cell,wifi,rotation,airplane,mute,screenshot,bt,autobrightness,screenlock,dtmdtm,night,papermode,quietmode,batterysaver,gps,flashlight,scanner,aitranslate,aisubtitles,voicetrans,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,work,edit,controls,workmode,wallet,taskmanager,settings</string>
+    <string name="miui_quick_settings_tiles_stock">vowifi1,vowifi2,googlehome,googlepay,cell,wifi,bt,airplane,autobrightness,mute,screenshot,flashlight,rotation,screenlock,dtmdtm,scanner,papermode,night,quietmode,batterysaver,uwb_shp,aitranslate,aisubtitles,voicetrans,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,gps,work,edit,hearingassisttile,controls,wallet,satellite,taskmanager,settings,camerahandle,carsickness</string>
+    <string name="miui_quick_settings_tiles_stock_pad">vowifi1,vowifi2,googlehome,googlepay,cell,wifi,rotation,airplane,mute,screenshot,bt,autobrightness,screenlock,dtmdtm,night,papermode,quietmode,batterysaver,gps,flashlight,scanner,aitranslate,aisubtitles,voicetrans,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,work,edit,controls,workmode,wallet,taskmanager,settings,carsickness</string>
     <string name="miui_restart_button_description">Restart for best display</string>
     <string name="miui_rhombus_clock_date">MMMM dd</string>
     <string name="miui_rhombus_clock_week">EEE</string>
     <string name="miui_rhombus_clock_week_full">EEEE</string>
     <string name="miui_screen_rotation_freeze_message">Locked screen orientation in landscape mode</string>
+    <string name="miui_screen_rotation_freeze_portrait_message">Locked screen orientation in portrait mode</string>
     <string name="miui_smart_frame_clock_date">M/d</string>
     <string name="miui_smart_frame_clock_date_dot">M.d</string>
     <string name="miui_smart_frame_clock_week">EEE</string>
@@ -1709,6 +1717,10 @@ mm"</string>
     <string name="miui_vertical_time_format_24">"HH
 mm"</string>
     <string name="miuix_access_state_desc">Selected</string>
+    <string name="miuix_alphabet_indexer_name">Index bar</string>
+    <string name="miuix_appcompat_accessibility_collapse_state">Collapsed</string>
+    <string name="miuix_appcompat_accessibility_expand_state">Expanded</string>
+    <string name="miuix_appcompat_accessibility_new_message">New notification</string>
     <string name="miuix_appcompat_action_mode_select_all">Select all</string>
     <string name="miuix_appcompat_actionbar_immersion_button_more_description">More</string>
     <string name="miuix_appcompat_cancel_description">Cancel</string>
@@ -1716,6 +1728,7 @@ mm"</string>
     <string name="miuix_appcompat_delete_description">Delete</string>
     <string name="miuix_appcompat_deselect_all_description">Deselect all</string>
     <string name="miuix_appcompat_select_all_description">Select all</string>
+    <string name="miuix_appcompat_show_dialog_description">Pop-up window</string>
     <string name="miuix_font_style_misans_bold_font_family">mipro-bold</string>
     <string name="miuix_font_style_misans_demibold_font_family">sans-serif-medium</string>
     <string name="miuix_font_style_misans_extralight_font_family">sans-serif-thin</string>
@@ -1727,8 +1740,26 @@ mm"</string>
     <string name="miuix_font_style_misans_regular_font_family">sans-serif</string>
     <string name="miuix_font_style_misans_semibold_font_family">mipro-semibold</string>
     <string name="miuix_font_style_misans_thin_font_family">sans-serif-thin</string>
+    <string name="miuix_font_weight_body1">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_body2">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_button">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_footnote1">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_footnote2">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_headline1">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_headline2">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_subtitle">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_subtitle2">@string/miuix_font_style_misans_demibold_font_family</string>
+    <string name="miuix_font_weight_subtitle3">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_title1">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_title2">@string/miuix_font_style_misans_semibold_font_family</string>
+    <string name="miuix_font_weight_title3">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_title4">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_indexer_collect">Collections</string>
+    <string name="miuix_progressbar_loading">Just a sec…</string>
+    <string name="miuix_show_password">Show password</string>
+    <string name="miuix_stretchablewidget_collapsed">Collapsed</string>
+    <string name="miuix_stretchablewidget_expanded">Expanded</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
-    <string name="mobile_data">Mobile data</string>
     <string name="mobile_data_connection_active">Connected</string>
     <string name="mobile_data_disable_message">You won’t have access to data or the internet through %s. Internet will only be available via Wi-Fi.</string>
     <string name="mobile_data_disable_message_default_carrier">your carrier</string>
@@ -1966,6 +1997,7 @@ If you have questions, contact %2$s."</string>
     <string name="one_hour">1 hour</string>
     <string name="one_week_timestamp">1 week ago</string>
     <string name="ongoing_call_content_description">Ongoing call</string>
+    <string name="ongoing_notification_extra_content_description">Ongoing</string>
     <string name="ongoing_privacy_chip_content_multiple_apps">Applications are using your %s.</string>
     <string name="ongoing_privacy_dialog_a11y_title">In use</string>
     <string name="ongoing_privacy_dialog_attribution_label">(%s)</string>
@@ -2078,6 +2110,8 @@ If you have questions, contact %2$s."</string>
     <string name="qs_control_big_tile_state_closed">Off</string>
     <string name="qs_control_big_tile_state_connected">Connected</string>
     <string name="qs_control_big_tile_state_connecting">Connecting…</string>
+    <string name="qs_control_big_tile_state_disconnected">Not connected</string>
+    <string name="qs_control_big_tile_state_opened">On</string>
     <string name="qs_control_big_tile_state_opening">Turning on…</string>
     <string name="qs_control_big_tile_state_tethered_wifi">"Using phone's Wi-Fi signal"</string>
     <string name="qs_control_big_tile_state_tethered_wlan">"Using phone's WLAN signal"</string>
@@ -2158,11 +2192,10 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_cellular_detail_dialog_positive_button_turnoff">Turn off</string>
     <string name="quick_settings_cellular_detail_title">Mobile data</string>
     <string name="quick_settings_cellular_detail_unable_change">"Can't set during call"</string>
-    <string name="quick_settings_cellular_state_change_message_connected">Connected to mobile data network</string>
-    <string name="quick_settings_cellular_state_change_message_disconnected">Disconnected from mobile data network</string>
     <string name="quick_settings_cellular_state_change_message_off">Mobile data is off</string>
     <string name="quick_settings_cellular_state_change_message_on">Mobile data is on</string>
     <string name="quick_settings_color_correction_label">Color correction</string>
+    <string name="quick_settings_connected">Connected</string>
     <string name="quick_settings_connecting">Connecting...</string>
     <string name="quick_settings_dark_mode_secondary_label_battery_saver">Battery Saver</string>
     <string name="quick_settings_dark_mode_secondary_label_on_at">On at %s</string>
@@ -2263,11 +2296,11 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_screen_record_label">Screen record</string>
     <string name="quick_settings_screen_record_start">Start</string>
     <string name="quick_settings_screen_record_stop">Stop</string>
+    <string name="quick_settings_screen_rotation_inner_landscape_locked">Inner screen orientation locked in landscape mode</string>
     <string name="quick_settings_screen_rotation_inner_locked">Inner screen rotate off</string>
+    <string name="quick_settings_screen_rotation_inner_portrait_locked">Inner screen orientation locked in portrait mode</string>
     <string name="quick_settings_screen_rotation_inner_unlocked">Inner screen rotate on</string>
-    <string name="quick_settings_screen_rotation_outer_landscape_locked">Outer screen locked in landscape mode</string>
     <string name="quick_settings_screen_rotation_outer_locked">Outer screen orientation is locked</string>
-    <string name="quick_settings_screen_rotation_outer_portrait_locked">Outer screen locked in portrait mode</string>
     <string name="quick_settings_screen_rotation_outer_unlocked">Outer screen rotate on</string>
     <string name="quick_settings_screenlock_label">Lock screen</string>
     <string name="quick_settings_screensaver_label">Screen saver</string>
@@ -2276,6 +2309,7 @@ If you have questions, contact %2$s."</string>
     <string name="quick_settings_sim_disabled">" (Disabled)"</string>
     <string name="quick_settings_state_change_message_off">%1$s is off</string>
     <string name="quick_settings_state_change_message_on">%1$s is on</string>
+    <string name="quick_settings_state_saved">Saved</string>
     <string name="quick_settings_state_saved_bt_devices">Saved Bluetooth devices</string>
     <string name="quick_settings_state_saved_wifi_devices">Saved Wi-Fi networks</string>
     <string name="quick_settings_state_saved_wlan_devices_china">Saved WLAN</string>
@@ -2578,6 +2612,7 @@ If you have questions, contact %2$s."</string>
     <string name="status_bar_work">Work profile</string>
     <string name="stream_accessibility">Accessibility</string>
     <string name="stream_alarm">Alarm</string>
+    <string name="stream_assistant">Voice assistant</string>
     <string name="stream_dtmf">Dual multi tone frequency</string>
     <string name="stream_music">Media</string>
     <string name="stream_notification">Notification</string>
