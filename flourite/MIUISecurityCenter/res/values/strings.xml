@@ -537,8 +537,8 @@ You will not lose any app data."</string>
     <string name="app_manager_uninstall_notify_title">Uninstall rarely used apps</string>
     <string name="app_manager_uninstall_protected_dlg_msg">Uninstalling system apps may prevent some system components from working properly. Uninstall anyway?</string>
     <string name="app_manager_uninstall_protected_dlg_title">Uninstalling system apps</string>
-    <string name="app_manager_uninstall_with_xspace_app_dlg_msg">Corresponding dual apps will be removed together with app data.</string>
-    <string name="app_manager_uninstall_xspace_app_dlg_msg">Uninstalling dual app will remove all app data.</string>
+    <string name="app_manager_uninstall_with_xspace_app_dlg_msg">Dual app will be uninstalled together with this one.</string>
+    <string name="app_manager_uninstall_xspace_app_dlg_msg">Corresponding dual apps will be uninstalled together with app data.</string>
     <string name="app_manager_uninstall_xspace_app_dlg_title">Uninstall dual app?</string>
     <string name="app_manager_unstall_application">Uninstall</string>
     <string name="app_managere_not_have_app">Empty</string>
@@ -1177,6 +1177,7 @@ However, some of your transactions aren't completed yet. To be able to withdraw 
     <string name="bubble_notification">Conversation bubbles</string>
     <string name="bubble_notification_switch">Show conversation bubbles</string>
     <string name="bubble_notification_switch_desc">When a messenger app in a floating window is hidden at the edge of the screen, show incoming messages in bubbles</string>
+    <string name="bubble_pickup_voice_print_auto">Recording voiceprint…</string>
     <string name="business_have_hongbao">来自%1$s的一个红包</string>
     <string name="button_background_connection">Allow</string>
     <string name="button_block_calls_from_cantacts">Unblock</string>
@@ -1185,6 +1186,8 @@ However, some of your transactions aren't completed yet. To be able to withdraw 
     <string name="button_do_not_disturb">Turn off</string>
     <string name="button_eye_shield">Turn off</string>
     <string name="button_first_aid_kit">Fix now</string>
+    <string name="button_pickup_voice_print_auto_agree">Record</string>
+    <string name="button_pickup_voice_print_auto_disagree">Not now</string>
     <string name="button_restrict_data_usage">Allow</string>
     <string name="button_text_accept">Accept</string>
     <string name="button_text_accept_timer">Accept (%d)</string>
@@ -1518,6 +1521,7 @@ However, some of your transactions aren't completed yet. To be able to withdraw 
     <string name="create_table_thirddesktop">CREATE TABLE THIRD_DESKTOP( _id INTEGER PRIMARY KEY AUTOINCREMENT, package_name TEXT NOT NULL, application_name TEXT NOT NULL, type INTEGER NOT NULL );</string>
     <string name="create_table_vaid">CREATE TABLE VAID( _id INTEGER PRIMARY KEY AUTOINCREMENT, package_name TEXT NOT NULL, vaid TEXT NOT NULL );</string>
     <string name="create_talbe_fwlog">CREATE TABLE fwlog( _id INTEGER PRIMARY KEY AUTOINCREMENT, number TEXT DEFAULT NULL, date INTEGER NOT NULL DEFAULT 0, type INTEGER NOT NULL DEFAULT 0, reason INTEGER NOT NULL DEFAULT 0, data1 TEXT DEFAULT NULL, data2 TEXT DEFAULT NULL, read INTEGER NOT NULL DEFAULT 0, simid TEXT DEFAULT -1, mode INTEGER NOT NULL DEFAULT 0, callType INTEGER NOT NULL DEFAULT 0 );</string>
+    <string name="cs_camera_bubble">Available camera detected. Tap to switch.</string>
     <string name="cs_close_vt_camera_first_tips">"Can't use this feature while using cross-device camera"</string>
     <string name="cs_color_sense">Color temperature</string>
     <string name="cs_conversation_record_using">Recording</string>
@@ -1551,6 +1555,9 @@ However, some of your transactions aren't completed yet. To be able to withdraw 
     <string name="cs_pickup_vioce_print_private_dialog_title">Record voiceprint</string>
     <string name="cs_pickup_vioce_print_unsupport_tips">Record voiceprint before selecting \"Single participant\"</string>
     <string name="cs_pickup_vioce_print_unsupport_toast">Disconnect external devices and try again</string>
+    <string name="cs_pickup_voice_print_auto_dialog_tips">"Your voice will be recorded and processed only on this device.
+For best results, record alone in a quiet place."</string>
+    <string name="cs_pickup_voice_print_auto_dialog_title">Voiceprint required for Personalized noise reduction</string>
     <string name="cs_pickup_voice_print_desc">Pick up sound only from one person</string>
     <string name="cs_privacy_camera_global_settings_title">Call privacy</string>
     <string name="cs_record_voice_title">Record</string>
@@ -1921,6 +1928,7 @@ It will be added to exceptions, but previously blocked items won't appear in cal
     <string name="ew_alert_arrive_location">Seismic wave arrived in %s</string>
     <string name="ew_alert_dial_text">"Call emergency
 contact"</string>
+    <string name="ew_alert_earthquake_cancel">Canceled</string>
     <string name="ew_alert_earthquake_center_title">Epicenter</string>
     <string name="ew_alert_earthquake_distance">"You're %s km away from the epicenter"</string>
     <string name="ew_alert_earthquake_feel_little">Slight shaking</string>
@@ -1928,19 +1936,21 @@ contact"</string>
     <string name="ew_alert_earthquake_feel_middle">Strong</string>
     <string name="ew_alert_earthquake_feel_none">Not sensible</string>
     <string name="ew_alert_earthquake_feel_normal">Moderate</string>
-    <string name="ew_alert_earthquake_feel_title">Estimated intensity</string>
-    <string name="ew_alert_earthquake_level_title">Estimated magnitude</string>
+    <string name="ew_alert_earthquake_feel_title">Predicted intensity</string>
+    <string name="ew_alert_earthquake_level_title">Magnitude</string>
+    <string name="ew_alert_earthquake_list_level_title">Warning magnitude</string>
     <string name="ew_alert_emergency_text">"Show
 medical card"</string>
     <string name="ew_alert_emergency_text_single">Show medical card</string>
     <string name="ew_alert_help_earthquake_title">Seismic wave arrived</string>
     <string name="ew_alert_help_place_navigation">Navigate</string>
     <string name="ew_alert_help_safe_title">Avoid danger</string>
-    <string name="ew_alert_help_tips">"Keep calm and stay alert. Stay away from hanging objects, don't take the elevator. Find a safe space, drop, cover, and hold on."</string>
+    <string name="ew_alert_help_tips">Earthquake safety tips: Stay calm, take cover first, evacuate later, find open space, protect your head, avoid elevators.</string>
     <string name="ew_alert_no_contact">Set your emergency contact in Settings > Privacy &amp; security > Emergency SOS</string>
     <string name="ew_alert_no_emergency">Add your medical data in Security > Earthquake warning</string>
-    <string name="ew_alert_text_from">Data provided by %s</string>
+    <string name="ew_alert_text_from">Source: %s</string>
     <string name="ew_app_name">Earthquake warning</string>
+    <string name="ew_app_name_cancel">"Earthquake warning canceled. Don't panic!"</string>
     <string name="ew_app_name_exercise">Earthquake warning (Demo)</string>
     <string name="ew_app_name_test">Earthquake warning (Beta)</string>
     <string name="ew_app_name_test_run">Earthquake warning (Trial)</string>
@@ -2007,6 +2017,7 @@ Technical support by Xiaomi &amp; ICL"</string>
     <string name="ew_guide_start_agree">Turn on</string>
     <string name="ew_guide_start_find_area">Search for areas</string>
     <string name="ew_guide_start_warning_range"><Data>Early warnings are provided for the areas covered by the Mainland Earthquake Warning Network of the Chengdu Hi-tech Disaster Reduction Institute. You can find a list of supported coverage areas &lt;a href=%s>here&lt;/a>.</Data></string>
+    <string name="ew_guide_statement_text_for_cencc"><Data>"This disclaimer applies to all users (hereinafter referred to as \"you\") who turn on the earthquake warning feature. By agreeing to this disclaimer, you enter into a legally binding contract with Xiaomi Inc. and its affiliates (hereinafter referred to as Xiaomi). You acknowledge that you have read all the contents of this disclaimer, and you fully understand and agree to all the terms and conditions of this disclaimer; otherwise, you should turn off the earthquake warning feature immediately.&lt;br>Earthquake warning information is provided by the China Earthquake Networks Center. You understand and acknowledge that, due to limitations of current technology, monitoring network coverage, and the complexity of geological conditions, earthquake warning information may contain errors or delays. Xiaomi and the China Earthquake Networks Center don't promise or guarantee the accuracy, validity, and timeliness of earthquake warning information, nor do they guarantee that the earthquake warning service will meet all your needs.&lt;br>Additionally, the transmission of earthquake warning information may be affected by various factors, including but not limited to network conditions, mobile signal coverage, and software performance. You understand that Xiaomi isn't responsible for any losses you may suffer due to issues such as third party communication failures, technical problems, network or device malfunctions, system instability, or other force majeure events that result in your failure to receive earthquake warning information or receive it in a timely manner.&lt;br>You understand that the earthquake early warning service is only provided as a reference for you to assess safety risks and make safety decisions. The warning time provided may range from a few seconds to several tens of seconds. Any actions you take based on the earthquake early warning service and any risks or consequences arising therefrom are solely your responsibility."</Data></string>
     <string name="ew_guide_statement_text_new"><Data>"This disclaimer applies to all users (hereinafter referred to as \"you\") who turn on the earthquake warning feature. By agreeing to this disclaimer, you enter into a legally binding contract with Xiaomi Inc. and its affiliates (hereinafter referred to as \"Xiaomi\"). You acknowledge that you have read all the contents of this disclaimer, and you fully understand and agree to all the terms and conditions of this disclaimer; otherwise, you should turn off the earthquake warning feature immediately.
 In accordance with relevant laws and regulations, Xiaomi will provide you with early warning services based on the scope of the earthquake early warning monitoring area covered by relevant agencies. That is, when you turn on the earthquake warning functionality, you'll be able to receive earthquake warnings issued for specific areas. You can find a list of specific coverage areas &lt;a href=%s>here&lt;/a>. More coverage areas will be added periodically.
 This feature provides you with earthquake warning functionality. You must understand that the earthquake warning information is provided by the Chengdu Hi-tech Disaster Reduction Institute. Xiaomi doesn't oversee this organization and doesn't have any control over it.
@@ -2028,6 +2039,8 @@ You must understand that this feature is provided for your reference only. The w
     <string name="ew_list_not_receive_tips">*Epicenter is far from you. You might not sense the earthquake.</string>
     <string name="ew_list_receive">Received</string>
     <string name="ew_list_receive_distance">Epicenter is %s km away from you</string>
+    <string name="ew_list_receive_distance_faraway">Epicenter is far away</string>
+    <string name="ew_list_receive_distance_new">Distance from epicenter: %1$s | Current location: %2$s</string>
     <string name="ew_list_receive_time">Start time: %s</string>
     <string name="ew_list_receive_time_title">Start time</string>
     <string name="ew_list_title">Warnings</string>
@@ -2091,18 +2104,19 @@ volunteer"</string>
     <string name="ew_no_contact_tips">No contacts here</string>
     <string name="ew_not_support_area">"Warnings aren't supported in this area"</string>
     <string name="ew_open_tips">Earthquake warning is on</string>
-    <string name="ew_push_message">Estimated intensity: %s. Expect slight shaking near you.</string>
+    <string name="ew_push_message">Predicted intensity: %1$s. You may feel light shaking in %2$s.</string>
     <string name="ew_push_title">Alert | %2$s magnitude earthquake near %1$s</string>
+    <string name="ew_push_title_new">(%1$s) Earthquake warning | A magnitude %3$s earthquake occurred in %2$s.</string>
     <string name="ew_safe_place_no_maps_tips">"Can't search now. Install Baidu Maps or Amap first."</string>
-    <string name="ew_setting_desc_message">We estimate the intensity of the earthquake based on its magnitude, the location of the epicenter, and your location. The greater the estimated intensity, the more devastating the earthquake will be in your area.</string>
-    <string name="ew_setting_desc_title">What is estimated intensity?</string>
+    <string name="ew_setting_desc_message">Predicted intensity is calculated based on the magnitude, epicenter location, and your position. The higher the intensity, the greater the potential impact in your area.</string>
+    <string name="ew_setting_desc_title">What is predicted intensity?</string>
     <string name="ew_setting_more_title">Learn more about earthquake warnings</string>
-    <string name="ew_setting_normal_push_message">When the estimated intensity is lower than the warning threshold</string>
+    <string name="ew_setting_normal_push_message">When predicted intensity is below the warning threshold</string>
     <string name="ew_setting_normal_push_title">Receive system notifications</string>
-    <string name="ew_setting_strong_push_message">When the estimated intensity is higher than the warning threshold</string>
+    <string name="ew_setting_strong_push_message">When predicted intensity exceeds the warning threshold</string>
     <string name="ew_setting_strong_push_title">Warn about strong earthquakes (On by default)</string>
     <string name="ew_settings_choose_level">Set warning threshold</string>
-    <string name="ew_settings_choose_level_title">Estimated intensity: %s</string>
+    <string name="ew_settings_choose_level_title">Predicted intensity: %s</string>
     <string name="ew_settings_choose_level_value_1">" (Vibration in high-rise buildings)"</string>
     <string name="ew_settings_choose_level_value_2">" (Vibration)"</string>
     <string name="ew_settings_choose_level_value_3">" (Strong vibration)"</string>
@@ -2118,6 +2132,7 @@ volunteer"</string>
     <string name="ew_subscribe_city_count">最多可以订阅%s个城市</string>
     <string name="ew_subscribe_search_hint">Search for areas</string>
     <string name="ew_subscribe_title">地震预警 | %1$s发生%2$s级左右地震，%3$s可能有震感</string>
+    <string name="ew_subscribe_title_new">（%1$s）地震预警 | %2$s附近发生%3$s级左右地震，%4$s可能有震感</string>
     <string name="ew_user_feedback">Feedback</string>
     <string name="examination_score_100">Everything looks good!</string>
     <string name="examination_score_60_0">Scan now</string>
@@ -2508,6 +2523,7 @@ volunteer"</string>
 When Smart frame rate is on, in-game and third-party frame rate detection tools may not accurately detect frame rate. Refer to the performance dashboard for the actual frame rate."</string>
     <string name="game_toolbox_display_style_desc">Adjust visual style (supports game HDR)</string>
     <string name="game_toolbox_display_style_game_hdr">Game HDR</string>
+    <string name="game_toolbox_display_style_not_hdr_des">You can switch between different visual styles</string>
     <string name="game_toolbox_display_style_title">Visual style</string>
     <string name="game_toolbox_fps_average">Average %d FPS</string>
     <string name="game_toolbox_fps_realtime">Real-time %d FPS</string>
@@ -4204,11 +4220,11 @@ Try using another Ethernet cable to connect your router. If you suspect there's 
     <string name="open_game">Open</string>
     <string name="open_lucky">开启小米红包助手</string>
     <string name="open_now">Allow app to use mobile data</string>
-    <string name="open_physical_sim_self_detection_noti_centent">"Looks like you're abroad and experiencing network interruptions. Start a check to troubleshoot."</string>
-    <string name="open_physical_sim_self_detection_noti_title">Turn on Physical SIM check</string>
+    <string name="open_physical_sim_self_detection_noti_centent">Your roaming connection might not be working properly</string>
+    <string name="open_physical_sim_self_detection_noti_title">Try roaming network diagnostics</string>
     <string name="open_right_now">立刻抢红包</string>
     <string name="open_right_now_short">立刻抢</string>
-    <string name="open_shut_down_password">@string/ew_guide_start_agree</string>
+    <string name="open_shut_down_password">Turn on</string>
     <string name="open_wlan_title">Allow this app to turn Wi-Fi on and off</string>
     <string name="operator_location_settings">Set carrier and location</string>
     <string name="operator_location_settings_message">"Couldn't recognize your carrier and location. Can't set phone balance and data usage warnings now."</string>
@@ -4516,7 +4532,6 @@ Ultra battery saver"</string>
     <string name="pc_remind_close_cover_to_charge_summary">Fold the device before charging for a faster and more stable charging experience.</string>
     <string name="pc_remind_close_cover_to_charge_title">Fold to charge</string>
     <string name="pc_reminder_always_protect_summary">Switch to limited charging to reduce battery aging</string>
-    <string name="pc_remove_shell_charging_notification_msg">"Can't use wireless charging when using a gaming case. Remove it and try again, or use wired charging."</string>
     <string name="pc_remove_shell_charging_notification_title">Remove case to use wireless charging</string>
     <string name="pc_remove_shell_charging_toast">Remove case to use reverse wireless charging</string>
     <string name="pc_satellite_auto_enter_super_power">Turned on Ultra battery saver to ensure satellite communications</string>
@@ -4536,6 +4551,8 @@ Ultra battery saver"</string>
     <string name="pc_smart_charge_notify_summary_high_temp_protect">To protect your device from overheating, charging will be stopped when battery level reaches %1$s</string>
     <string name="pc_smart_charge_notify_summary_navagition">Navigating… Charging will be stopped when battery level reaches %1$s</string>
     <string name="pc_smart_charge_notify_summary_night_charge">Charging will stop at %s</string>
+    <string name="pc_smart_charge_notify_summary_night_pause_charge">Charging paused at %1$s. It will resume at %2$s.</string>
+    <string name="pc_smart_charge_notify_summary_night_start_charge">Charging will pause when battery reaches %1$s and resume automatically based on your usage</string>
     <string name="pc_smart_charge_pogo_project_dialog_content">"To extend battery life span, this device's battery won't go above the current level while connected to the car."</string>
     <string name="pc_smart_charge_pogo_project_dialog_not_show_again">"Don't show again"</string>
     <string name="pc_smart_charge_pogo_project_dialog_title">Battery protection</string>
@@ -4555,6 +4572,7 @@ Ultra battery saver"</string>
     <string name="pc_suggest_open_fast_charge">Turn on %dW quick charge</string>
     <string name="pc_temperature_too_high">Device overheated</string>
     <string name="pc_this_time_charge_full">Charge fully this time</string>
+    <string name="pc_this_time_charge_full_now">Charge fully</string>
     <string name="pc_this_time_charge_full_work">Almost fully charged</string>
     <string name="pc_timely_charging_summary">Battery is below %1$s. If the device overheats while battery is low, this may damage the battery.</string>
     <string name="pc_timely_charging_title">Charge your device</string>
@@ -5037,7 +5055,6 @@ Ultra battery saver"</string>
     <string name="power_dialog_performance_mode_checkbox">Switch to %d Hz refresh rate</string>
     <string name="power_dialog_super_save_msg">"Ultra battery saver restricts most power-consuming features and decreases your device's performance in order to leave basic functionality (e.g. calls, SMS, and connecting to the network) available as long as possible. Turn on Ultra battery saver?"</string>
     <string name="power_dialog_super_save_msg_5g">"Ultra battery saver restricts most power consuming features (e.g. 5G connectivity) lowering your device's performance. Only calls, messages, and network connectivity won't be affected. Turn on Ultra battery saver?"</string>
-    <string name="power_dialog_super_save_msg_p2">"Ultra battery saver turns off rear display and restricts most power-consuming features, decreasing your device's performance in order to leave basic functionality (e.g. calls, SMS, and connecting to the network) available as long as possible. Turn on Ultra battery saver?"</string>
     <string name="power_dialog_super_save_title">Ultra battery saver</string>
     <string name="power_idle">Phone idle</string>
     <string name="power_main_battery_last_day_hour">%1$sd %2$sh remaining</string>
@@ -5326,7 +5343,7 @@ Ultra battery saver"</string>
     <string name="pref_operator_setting">%1$s%2$s</string>
     <string name="pref_over_traffic_limit">When you go over your data plan</string>
     <string name="pref_package_traffic_settings">Data plan</string>
-    <string name="pref_physical_sim_self_detection_cat_title">Network restoration</string>
+    <string name="pref_physical_sim_self_detection_cat_title">Test network</string>
     <string name="pref_pkg_begin_date">Usage reset date</string>
     <string name="pref_roaming_daily_limit_setting">Set daily data limit while roaming</string>
     <string name="pref_roaming_daily_limit_setting_cat_title">Daily data limit</string>
@@ -5338,7 +5355,7 @@ Ultra battery saver"</string>
     <string name="pref_title_diagnostics_show_float_notification">Floating notifications</string>
     <string name="pref_title_manual_check_virus_db_update">Check for updates</string>
     <string name="pref_title_over_traffic_limit_warning">When exceeded</string>
-    <string name="pref_title_physical_sim_self_detection">Physical SIM check</string>
+    <string name="pref_title_physical_sim_self_detection">Roaming network diagnostics</string>
     <string name="pref_title_traffic_limit_number">Size</string>
     <string name="pref_title_traffic_package_type">Data plan type</string>
     <string name="pref_title_traffic_speed_state">Show network speed</string>
@@ -7235,10 +7252,14 @@ Remaining data includes data that has been rolled over from the previous month."
     <string name="uninstall_app_dialog_msg">Uninstalling will remove all app data.</string>
     <string name="uninstall_app_dialog_title">Uninstall now?</string>
     <string name="uninstall_app_done">Uninstalled successfully</string>
+    <string name="uninstall_app_reminder_msg">"I understand that deleted app data can't be restored"</string>
+    <string name="uninstall_app_reminder_pre_title">Uninstall %s</string>
+    <string name="uninstall_app_reminder_toast">"Confirm you understand deleted app data can't be restored"</string>
     <string name="uninstall_danagerous_btn">Uninstall</string>
     <string name="uninstall_danagerous_desc">\"%s\" may damage your device</string>
     <string name="uninstall_danagerous_msg">\"%s\" may damage your device, lower its performance, or cause reboots.</string>
     <string name="uninstall_danagerous_title">Uninstall malicious apps</string>
+    <string name="uninstall_xspace_app_reminder_pre_title">"Uninstall %s's dual app"</string>
     <string name="unknown_operator">"You can call %2$s to confirm your plan's details with %1$s."</string>
     <string name="unknown_package">Not sure what your plan is?</string>
     <string name="unlike">No thanks</string>
@@ -7622,6 +7643,7 @@ Please note that the system can't detect all car accidents."</string>
     <string name="warningcenter_mijia_alert_tips_2">Smoke detected</string>
     <string name="warningcenter_mijia_alert_tips_3">Flooding detected</string>
     <string name="warningcenter_mijia_alert_tips_4">Your lock was damaged</string>
+    <string name="warningcenter_mijia_alert_tips_5">Water contact alert detected. Check now.</string>
     <string name="warningcenter_mijia_alert_view_device">View device</string>
     <string name="warningcenter_mijia_devices_1">Flood detector</string>
     <string name="warningcenter_mijia_devices_2">Smoke detector</string>
@@ -7724,6 +7746,12 @@ Please note that the system can't detect all car accidents."</string>
     <string name="wireless_charging_saver_cancel">Turn off</string>
     <string name="wireless_charging_saver_message">Battery saver is on now. Keep reverse wireless charging available?</string>
     <string name="wireless_charging_saver_ok">Keep</string>
+    <string name="wireless_high_temp_notification_warning_title">Stopped wireless charging due to overheating</string>
+    <string name="wireless_high_temp_warning_dialog_ok">Got it</string>
+    <string name="wireless_high_temp_warning_text">Wireless charging will resume once your device cools down</string>
+    <string name="wireless_high_temp_warning_title">Stopped wireless charging</string>
+    <string name="wireless_hottemp_warning_button_ok">Got it</string>
+    <string name="wireless_hottemp_warning_message">Your device is overheated. Wireless charging has stopped and will resume automatically once the device cools down.</string>
     <string name="wl_no_whitelist">No exceptions.</string>
     <string name="wlan_booster">Wi-Fi optimization</string>
     <string name="wlan_change_protection_detail">"Don't switch to Wi-Fi automatically when connected to mobile data network"</string>
