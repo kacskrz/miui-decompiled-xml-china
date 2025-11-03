@@ -171,9 +171,9 @@
     <string name="application_version_number">application_version_number</string>
     <string name="arbitrary_format_type">attachment</string>
     <string name="archival_fyi_acknowledge">Ok</string>
-    <string name="archival_fyi_body">Messages you send, receive, or edit may be reviewed by your organization. For more info, contact your IT admin.</string>
+    <string name="archival_fyi_body">Messages you send, receive, or edit are recorded by your organization. For more info, contact your IT admin.</string>
     <string name="archival_fyi_close_button_icon_description">Close popup</string>
-    <string name="archival_fyi_title">Enterprise managed devices</string>
+    <string name="archival_fyi_title">Messages are monitored by your IT admin</string>
     <string name="archived_activity_title">Archived</string>
     <string name="archived_conversation_list_empty_text">Archived conversations appear here</string>
     <string name="ask_parent_for_approval_snippet">Ask your parent for approval</string>
@@ -184,6 +184,8 @@
     <string name="assistant_suggestions_tooltip_title_text">Get info with a tap</string>
     <string name="att_video_call">AT&amp;T Video Call</string>
     <string name="attachMediaButtonContentDescription">Add files, location, and more</string>
+    <string name="attachment_add_blocked_by_security_filter_notice_text">{attempted_attachment_count, plural, =1 {This attachment is not supported} other {Some attachments are not supported} }</string>
+    <string name="attachment_add_unspecified_failure_notice_text">{attempted_attachment_count, plural, =1 {Failed to add attachment} other {Failed to add some attachments} }</string>
     <string name="attachment_audio_clip">Audio clip</string>
     <string name="attachment_bubble_magic_edit">Magic edit</string>
     <string name="attachment_changed_message_title">Attachment changed</string>
@@ -684,9 +686,7 @@ You can return to this verified business chat from your Messages home screen any
     <string name="cross_country_banner_dismiss_button">Settings</string>
     <string name="cross_country_banner_title">Why this is in Spam &amp; blocked</string>
     <string name="cross_country_hide_body">To prevent spam, messages from international numbers not in your contacts are moved to “Spam &amp; blocked”. %1$s</string>
-    <string name="cross_country_hide_body_text_pref_key">cross_country_body_text_pref_key</string>
     <string name="cross_country_hide_body_text_pref_key_2025_03_18">cross_country_body_text_pref_key_2025_03_18</string>
-    <string name="cross_country_hide_pref_key">cross_country_pref_key</string>
     <string name="cross_country_hide_pref_key_2025_03_18">cross_country_pref_key_2025_03_18</string>
     <string name="cross_country_hide_title">Hide international messages</string>
     <string name="current_country_pref_key">current_country</string>
@@ -1151,7 +1151,6 @@ meant to be seen"</string>
     <string name="fast_photo_send_pref_summary">Resolution is reduced for faster sending</string>
     <string name="fast_photo_send_pref_title">Send photos faster</string>
     <string name="fast_track_negative_button_text">No thanks</string>
-    <string name="fast_track_popup_accepted_snack_bar_text_v2">"Setting up RCS chats. We'll let you know when they're ready."</string>
     <string name="fast_track_popup_declined_snack_bar_text_v2">You can turn on RCS chats anytime in Settings.</string>
     <string name="fast_track_positive_button_text">"Yes, I'm in"</string>
     <string name="fast_track_positive_button_text_experiment">Agree</string>
@@ -1472,6 +1471,7 @@ You can change your default call SIM in System settings. %1$s"</string>
     <string name="group_info">%d members</string>
     <string name="group_limit_alert_dialog_message">"{max_group_size_excluding_self, plural, =1 {Can't have more than # other person} other {Can't have more than # other people} }"</string>
     <string name="group_member_details">Group member details</string>
+    <string name="group_messaging_not_supported_list_item">"Group messaging isn't available"</string>
     <string name="group_mms_pref_key">buglesub_group_messaging</string>
     <string name="group_mms_pref_title">Group messaging</string>
     <string name="group_name">Group name</string>
@@ -1604,6 +1604,18 @@ Suggestions aren't intended to be factual and may display inaccurate or inapprop
     <string name="invalid_qr_code_dialog_message">To sign in, scan the QR code on %s</string>
     <string name="invalid_qr_code_dialog_positive_button_text">OK</string>
     <string name="invalid_qr_code_dialog_title">Incorrect code</string>
+    <string name="invite_link_disabled_by_other_participant">%1$s was turned off by %2$s</string>
+    <string name="invite_link_disabled_by_self">%1$s was turned off by you</string>
+    <string name="invite_link_disabled_by_unknown">%1$s was turned off</string>
+    <string name="invite_link_enabled_by_other_participant">%1$s was turned on by %2$s</string>
+    <string name="invite_link_enabled_by_self">%1$s was turned on by you</string>
+    <string name="invite_link_enabled_by_unknown">%1$s was turned on</string>
+    <string name="invite_link_reset_after_days">{expired_days, plural, =1 {Links are reset after # day} other {Links are reset after # days} }</string>
+    <string name="invite_link_reset_automatically">%1$s was automatically reset</string>
+    <string name="invite_link_reset_manually_by_other_participant">%1$s was reset by %2$s</string>
+    <string name="invite_link_reset_manually_by_self">%1$s was reset by you</string>
+    <string name="invite_link_reset_manually_by_unknown">%1$s was reset</string>
+    <string name="invite_link_text">Invite link</string>
     <string name="invite_via_link">Invite via link</string>
     <string name="invite_via_link_off">Off</string>
     <string name="invite_via_link_on">On</string>
@@ -1713,7 +1725,6 @@ Recommended info is optional to share and doesn’t include the content or text 
     <string name="location_feedback_data_name">Your device location</string>
     <string name="location_feedback_data_rationale">The location of your device shows latitude and longitude, which helps locate nearby radio towers that may be contributing to the issue. This location info can be shared with carriers so they can resolve any radio tower issues.</string>
     <string name="location_feedback_data_rationale_title">How your location helps</string>
-    <string name="location_shortcut_attach_current_error">Unable to attach location. Please try again.</string>
     <string name="location_shortcut_navigation_error">Unable to launch location picker</string>
     <string name="location_shortcut_satellite_finding_location">Finding location. It might take a few minutes.</string>
     <string name="location_shortcut_title">Location</string>
@@ -2082,6 +2093,8 @@ Recommended info is optional to share and doesn’t include the content or text 
     <string name="mtrl_picker_end_date_description">End date %1$s</string>
     <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_pane_title_calendar_view">Calendar view</string>
+    <string name="mtrl_picker_pane_title_year_view">Year view</string>
     <string name="mtrl_picker_save">Save</string>
     <string name="mtrl_picker_start_date_description">Start date %1$s</string>
     <string name="mtrl_picker_today_description">Today %1$s</string>
@@ -2089,8 +2102,6 @@ Recommended info is optional to share and doesn’t include the content or text 
     <string name="mtrl_picker_toggle_to_day_selection">Switch to Calendar view</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
     <string name="mtrl_picker_toggle_to_year_selection">Switch to year view</string>
-    <string name="mtrl_picker_toggled_to_day_selection">Switched to Calendar view</string>
-    <string name="mtrl_picker_toggled_to_year_selection">Switched to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
     <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
@@ -2636,10 +2647,6 @@ Recommended info is optional to share and doesn’t include the content or text 
     <string name="pqe_something_went_wrong">Something went wrong</string>
     <string name="pqe_uploading_photo">Uploading photo…</string>
     <string name="pre_recording_text">Tap to record your voice</string>
-    <string name="pref_key_enable_sound_on_keypress">enable_sound_on_keypress</string>
-    <string name="pref_key_enable_vibrate_on_keypress">enable_vibrate_on_keypress</string>
-    <string name="pref_key_sound_volume_on_keypress">sound_volume</string>
-    <string name="pref_key_vibration_duration_on_keypress">vibration_duration</string>
     <string name="pref_version">2</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
     <string name="preferences_license_title">Third Party Notices</string>
@@ -2793,7 +2800,7 @@ This info helps validate assumptions and identify factors contributing to the is
     <string name="rcs_not_supported_desc_disabled_by_app_version">RCS chats are not supported on this version of Google Messages</string>
     <string name="rcs_not_supported_desc_disabled_by_carrier">RCS has been disabled by your carrier</string>
     <string name="rcs_not_supported_desc_disabled_by_carrier_v2">RCS chats have been disabled by your carrier</string>
-    <string name="rcs_not_supported_desc_disabled_by_region">RCS chats are not supported in your region</string>
+    <string name="rcs_not_supported_desc_disabled_by_region">RCS chats are not supported by your carrier</string>
     <string name="rcs_not_supported_desc_not_default_sms_app">"Google Messages isn't the default messaging app"</string>
     <string name="rcs_not_supported_desc_sim_absent_without_learn_more">No compatible SIM card detected</string>
     <string name="rcs_pref_key">rcs_prefs</string>
@@ -2832,7 +2839,12 @@ This info helps validate assumptions and identify factors contributing to the is
     <string name="rcs_status_single_sim_tooltip_content_description">SIM Info</string>
     <string name="rcs_status_title_carrier_name_and_phone_number">%1$s %2$s</string>
     <string name="rcs_status_tooltip_accessibility_description">Dismiss Popup</string>
+    <string name="rcs_status_trouble_connecting">Trouble connecting. Awaiting retry…</string>
+    <string name="rcs_status_trouble_connecting_cellular_unavailable">RCS chats are temporarily unavailable. Check your mobile network connection or try again later</string>
+    <string name="rcs_status_trouble_connecting_roaming">RCS chats setup may not succeed while roaming</string>
+    <string name="rcs_status_trouble_connecting_throttled">Verification limit exceeded</string>
     <string name="rcs_status_trouble_setting_up">Trouble setting up</string>
+    <string name="rcs_status_unknown">Unknown</string>
     <string name="rcs_still_sending_notification_text_singular">Check your conversation with %1$s for sending options</string>
     <string name="rcs_still_sending_notification_title_satellite">{count, plural, =1{Still sending # message} other {Still sending # messages}}</string>
     <string name="rcs_still_sending_notification_title_v2">{count, plural, =1{Message not sent} other {# messages not sent}}</string>
@@ -2952,6 +2964,7 @@ You can reply to numbers-only short codes, but not to codes with letters and num
     <string name="report_contact_sync_issue">Error encountered while syncing contacts. Tap to send feedback.</string>
     <string name="report_contact_title">Report spam</string>
     <string name="report_group_spam_body_2024_05_10">To help reduce spam, numbers &amp; recent messages in this group chat may be shared with Google &amp; mobile carriers. Standard carrier charges may apply. This chat will stay in “Spam &amp; blocked,” without notification. %1$s</string>
+    <string name="report_harmful_content_string">Report harmful content</string>
     <string name="report_invalid_thread_id_issue_description">Invalid thread id. See logs for details.</string>
     <string name="report_issue_action_text">Send feedback</string>
     <string name="report_issue_description">Messages automatically detected an error. See logs for details.</string>
@@ -3332,20 +3345,16 @@ Replies will appear in individual conversations"</string>
     <string name="spam_folder_conversation_list_empty_text_v2">Spam &amp; blocked conversations appear here</string>
     <string name="spam_protection_aapm_summary_pref">This feature is currently managed by Advanced Protection. You can turn off this feature by first turning off Advanced Protection in your %1$s</string>
     <string name="spam_protection_aapm_summary_pref_link">device settings</string>
-    <string name="spam_protection_aapm_text_pref_key">spam_protection_aapm_text_pref_key_2025_03_13</string>
     <string name="spam_protection_aapm_text_pref_key_2025_03_18">spam_protection_aapm_text_pref_key_2025_03_18</string>
-    <string name="spam_protection_body_text_pref_key">spam_protection_body_text_pref_key_2025_02_21</string>
     <string name="spam_protection_body_text_pref_key_2025_03_18">spam_protection_body_text_pref_key_2025_03_18</string>
     <string name="spam_protection_consent_string">To help detect spam, Messages sends some data about your messages to Google without including your phone number or message content. %1$s</string>
     <string name="spam_protection_consent_string_2025_05_09">To help detect spam, some messaging data is shared with Google. %1$s</string>
     <string name="spam_protection_pref_disabled_dialog_body">You can turn off spam protection by first turning off Advanced Protection in your %1$s</string>
     <string name="spam_protection_pref_disabled_dialog_title">Managed by Advanced Protection</string>
-    <string name="spam_protection_pref_key">spam_protection_pref_key_2025_02_21</string>
     <string name="spam_protection_pref_key_2025_03_18">spam_protection_pref_key_2025_03_18</string>
     <string name="spam_protection_summary_text_pref_key_2025_05_09">spam_protection_summary_text_pref_key_2025_05_09</string>
     <string name="spam_reporting_from">Spam reporting</string>
     <string name="spam_settings">Spam protection</string>
-    <string name="spam_settings_activity_title">Spam protection</string>
     <string name="spam_settings_pref_key">spam_settings</string>
     <string name="spatula_home_banner_body">Your device will notify you if an image has sensitive content and inform you of related risks. To learn more, visit Settings.</string>
     <string name="spatula_home_banner_dismiss_button">Got it</string>
@@ -3849,12 +3858,6 @@ Phone numbers are used only for troubleshooting and resolving issues. Google wil
     <string name="voice_recording_call_in_progress_description">Cannot record audio while in a call</string>
     <string name="voice_screen_title">Voice</string>
     <string name="vsms_enabled_pref_key">verified_sms_enabled</string>
-    <string name="vsms_message_status_new_text_unverified">Sender could not be verified.</string>
-    <string name="vsms_message_status_new_text_verification_in_progress">Verifying sender…</string>
-    <string name="vsms_message_status_new_text_waiting_for_connection">Waiting for connection to verify sender…</string>
-    <string name="vsms_message_status_text_unverified">Sender could not be verified</string>
-    <string name="vsms_message_status_text_verification_in_progress">Verifying sender</string>
-    <string name="vsms_message_status_text_waiting_for_connection">Waiting for connection to verify sender</string>
     <string name="waiting_to_connect_tap_for_options">Waiting to connect, tap for options</string>
     <string name="wap_push_from">Service messages</string>
     <string name="wap_push_si_pref_key">buglesub_wap_push_si</string>
