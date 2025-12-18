@@ -28,6 +28,12 @@
     <string name="aapm_alert_app_name_title">Security &amp; privacy</string>
     <string name="aapm_apps_category_summary">Protects against memory bugs &amp; unsafe apps</string>
     <string name="aapm_apps_category_title">Apps</string>
+    <string name="aapm_apps_settings_apps_loaded_label">"
+
+Checked by"</string>
+    <string name="aapm_apps_settings_summary">Apps on your device are allowed to check whether you have device protection on so they can provide additional protections%1$s</string>
+    <string name="aapm_apps_settings_title">Apps that checked for device protection</string>
+    <string name="aapm_apps_zero_state_preference_title">No apps have checked</string>
     <string name="aapm_call_screen_feature_summary">Screens suspicious calls &amp; declines spam</string>
     <string name="aapm_call_screen_feature_title">Automatic Call Screen</string>
     <string name="aapm_caller_id_and_spam_feature_summary">Identifies business and spam numbers</string>
@@ -42,11 +48,11 @@
     <string name="aapm_device_theft_category_title">Device safety</string>
     <string name="aapm_disable_device_protection_biometric_prompt_summary">Device protection features will be off, except for those that were already on before you started using device protection</string>
     <string name="aapm_disable_device_protection_biometric_prompt_title">Verify it’s you</string>
-    <string name="aapm_enable_intrusion_detection_biometric_prompt_summary">Turn on device protection</string>
-    <string name="aapm_enable_intrusion_detection_biometric_prompt_title">Verify it’s you</string>
+    <string name="aapm_failed_authentication_lock_feature_summary">Locks automatically after repeated failed authentication attempts in your apps and settings</string>
+    <string name="aapm_failed_authentication_lock_feature_title">Failed Authentication Lock</string>
     <string name="aapm_feature_dialog_setting_on_message">For your security, Advanced Protection requires this setting to remain on</string>
     <string name="aapm_feature_dialog_title">Restricted by Advanced Protection</string>
-    <string name="aapm_google_account_action_button">Add Google Account</string>
+    <string name="aapm_google_account_action_button">Add a Google Account</string>
     <string name="aapm_google_account_warning_banner_summary">Some Advanced Protection features require a Google Account to protect your device</string>
     <string name="aapm_google_account_warning_banner_title">Add a Google Account</string>
     <string name="aapm_google_messages_category_summary">Protects against spam and scams</string>
@@ -55,16 +61,32 @@
     <string name="aapm_gpp_feature_title">Google Play Protect</string>
     <string name="aapm_inactivity_reboot_feature_summary">{count, plural, =1{Restarts device if it remains locked for {count} day} other{Restarts device if it remains locked for {count} days}}</string>
     <string name="aapm_inactivity_reboot_feature_title">Inactivity reboot</string>
-    <string name="aapm_intrusion_logging_button_text">Retrieve logs</string>
-    <string name="aapm_intrusion_logging_category_summary">Preserves encrypted data logs</string>
-    <string name="aapm_intrusion_logging_category_title">Intrusion logging</string>
-    <string name="aapm_intrusion_logging_feature_summary">Preserves encrypted logs to enable identification of sources and methods in case of an attack</string>
-    <string name="aapm_intrusion_logging_feature_title">Intrusion logging</string>
+    <string name="aapm_intrusion_logging_button_text">Access logs</string>
+    <string name="aapm_intrusion_logging_category_preference_summary">Access logs stored in your Google Account when Intrusion logging is enabled</string>
+    <string name="aapm_intrusion_logging_category_preference_title">Intrusion logs</string>
+    <string name="aapm_intrusion_logging_category_summary">Preserves forensic logs</string>
+    <string name="aapm_intrusion_logging_category_title">Intrusion Logging</string>
+    <string name="aapm_intrusion_logging_feature_summary">Records some device activity in end-to-end encrypted storage on Google servers</string>
+    <string name="aapm_intrusion_logging_feature_title">Intrusion Logging</string>
     <string name="aapm_intrusion_logging_onboarding_warning_banner_button">Finish setup</string>
     <string name="aapm_intrusion_logging_onboarding_warning_banner_summary">Some features require additional steps to protect your device</string>
     <string name="aapm_intrusion_logging_onboarding_warning_banner_title">Finish Advanced Protection setup</string>
     <string name="aapm_javascript_protections_feature_summary">Turns off some advanced capabilities to reduce risk</string>
     <string name="aapm_javascript_protections_feature_title">Javascript protections</string>
+    <string name="aapm_lib_enable_intrusion_detection_biometric_prompt_summary">Turn on device protection</string>
+    <string name="aapm_lib_enable_intrusion_detection_biometric_prompt_title">Verify it’s you</string>
+    <string name="aapm_lib_mte_reboot_action_button">Restart</string>
+    <string name="aapm_lib_mte_reboot_dialog_title">Restart your device?</string>
+    <string name="aapm_lib_mte_reboot_dismiss_button">Restart later</string>
+    <string name="aapm_lib_opt_in_dialog_2g_feature_notice_message">On devices where 2G protection is available, 2G connections will be blocked except for emergency calling</string>
+    <string name="aapm_lib_opt_in_dialog_app_visibility_feature_notice_message">Apps on your device can see if device protection is on</string>
+    <string name="aapm_lib_opt_in_dialog_header_description">Device protection helps keep your device and data safe</string>
+    <string name="aapm_lib_opt_in_dialog_header_notice">Keep in mind</string>
+    <string name="aapm_lib_opt_in_dialog_message_mte">Device protection is now on. However, some features will only be enabled after restarting.</string>
+    <string name="aapm_lib_opt_in_dialog_title">Turn on device protection?</string>
+    <string name="aapm_lib_opt_in_dialog_usb_feature_notice_message">You will need to unlock your screen to initiate USB connectivity</string>
+    <string name="aapm_lib_opt_in_dialog_web_feature_notice_message">Some websites may not load as expected</string>
+    <string name="aapm_lib_opt_out_dialog_message_mte">Device protection is now off. However, some features require a restart to turn them off.</string>
     <string name="aapm_mte_feature_summary">Protects against memory corruption in supported apps</string>
     <string name="aapm_mte_feature_title">Memory tagging extension</string>
     <string name="aapm_mte_reboot_action_button">Restart</string>
@@ -74,17 +96,14 @@
     <string name="aapm_mte_reboot_warning_banner_title">Restart your device</string>
     <string name="aapm_network_wifi_category_summary">Prevents insecure connections</string>
     <string name="aapm_network_wifi_category_title">Networks</string>
-    <string name="aapm_no_internet_warning_banner_summary">Device protection requires internet connection to be enabled</string>
-    <string name="aapm_no_internet_warning_banner_title">Your device is offline</string>
+    <string name="aapm_no_internet_warning_banner_summary">Your device is offline. Most Advanced Protection features require an internet connection to protect your device.</string>
+    <string name="aapm_no_internet_warning_banner_title">Device protection is off</string>
     <string name="aapm_offline_device_lock_feature_summary">Locks automatically when your device is offline</string>
     <string name="aapm_offline_device_lock_feature_title">Offline Device Lock</string>
     <string name="aapm_opt_in_dialog_message_mte">Device protection is now on. However, some features will only be enabled after restarting.</string>
     <string name="aapm_opt_in_dialog_title">Turn on device protection?</string>
-    <string name="aapm_opt_in_dialog_title_client">Turn on device protection?</string>
     <string name="aapm_opt_in_dialog_with_2g_message">&lt;p>Device protection helps keep your device and data safe&lt;/p> &lt;b>Keep in mind&lt;/b> &lt;ul> &lt;li>Apps on your device can see if device protection is on&lt;/li> &lt;li>On devices where 2G protection is available, 2G connections will be blocked except for emergency calling&lt;/li> &lt;li>Some websites may not load as expected&lt;/li> &lt;/ul></string>
-    <string name="aapm_opt_in_dialog_with_2g_message_client">&lt;p>Device protection helps keep your device and data safe&lt;/p> &lt;b>Keep in mind&lt;/b> &lt;ul> &lt;li>Apps on your device can see if device protection is on&lt;/li> &lt;li>On devices where 2G protection is available, 2G connections will be blocked except for emergency calling&lt;/li> &lt;li>Some websites may not load as expected&lt;/li> &lt;/ul></string>
     <string name="aapm_opt_in_dialog_without_2g_message">&lt;p>Device protection helps keep your device and data safe&lt;/p> &lt;b>Keep in mind&lt;/b> &lt;ul> &lt;li>Apps on your device can see if device protection is on&lt;/li> &lt;li>Some websites may not load as expected&lt;/li> &lt;/ul></string>
-    <string name="aapm_opt_in_dialog_without_2g_message_client">&lt;p>Device protection helps keep your device and data safe&lt;/p> &lt;b>Keep in mind&lt;/b> &lt;ul> &lt;li>Apps on your device can see if device protection is on&lt;/li> &lt;li>Some websites may not load as expected&lt;/li> &lt;/ul></string>
     <string name="aapm_opt_out_dialog_message_mte">Device protection is now off. However, some features require a restart to turn them off.</string>
     <string name="aapm_phone_by_google_category_summary">Protects against spam calls</string>
     <string name="aapm_phone_by_google_category_title">Phone by Google</string>
@@ -102,6 +121,9 @@
     <string name="aapm_settings_summary">"Advanced Protection helps defend against online attacks, harmful apps, insecure connections, and other threats that put your data at risk.
 
 For the strongest security &amp; privacy, turn on device protection and also enroll your Google Account."</string>
+    <string name="aapm_settings_summary_with_help_center_link">"Advanced Protection helps defend against online attacks, harmful apps, insecure connections, and other threats that put your data at risk.
+
+For the strongest security &amp; privacy, turn on device protection and also enroll your Google Account. LINK_BEGINLearn more about Advanced ProtectionLINK_END"</string>
     <string name="aapm_settings_title">Advanced Protection</string>
     <string name="aapm_sideloading_feature_summary">Blocks installation of apps from unknown sources</string>
     <string name="aapm_sideloading_feature_title">Unknown apps</string>
@@ -118,7 +140,7 @@ For the strongest security &amp; privacy, turn on device protection and also enr
     <string name="aapm_titanium_notification_title">Device protection is available</string>
     <string name="aapm_unsafe_links_feature_summary">Warns you about links from unknown senders</string>
     <string name="aapm_unsafe_links_feature_title">Suspicious links</string>
-    <string name="aapm_usb_feature_summary">Requires screen unlock for data transfer</string>
+    <string name="aapm_usb_feature_summary">Requires your screen to be unlocked to initiate USB connectivity</string>
     <string name="aapm_usb_feature_title">USB protection</string>
     <string name="aapm_web_category_summary">Protects against unsafe websites</string>
     <string name="aapm_web_category_title">Web</string>
@@ -168,6 +190,7 @@ For the strongest security &amp; privacy, turn on device protection and also enr
     <string name="accessibility_close_button">Close</string>
     <string name="accessibility_content_description_for_expansion_button">Button to show or hide additional plan description text.</string>
     <string name="accessibility_expansion_button_agreement_text">Button to show or hide the plan service agreement text.</string>
+    <string name="accessibility_more_options_button">More options</string>
     <string name="accessibility_snackbar_dismiss">Dismiss</string>
     <string name="accessibility_state_collapsed">Collapsed</string>
     <string name="accessibility_state_expanded">Expanded</string>
@@ -265,6 +288,7 @@ It’s recommended that you set a screen lock so Find Hub can use the network to
     <string name="additional_desc_system_management">"Google Play services for System management keeps your device up to date with various system, application, and performance updates. It also provides some security features, such as Play Protect, for Android devices.
 
 This service is essential to your device and always remains active"</string>
+    <string name="additional_information_section_title">Additional information</string>
     <string name="adm_settings_activity_title">Find Hub</string>
     <string name="ads_prefs_ads_by_google">Ads by Google</string>
     <string name="ads_prefs_ads_personalization">Opt out of Ads Personalization</string>
@@ -351,42 +375,14 @@ Note: Logs may include information, such as location."</string>
     <string name="aplosExploreModeEndBoundary">End of chart.</string>
     <string name="aplosExploreModeStartBoundary">Explore Chart using directional controls or by touch.</string>
     <string name="app_backup_flavor_title">Apps</string>
+    <string name="app_cast_feature_switch_summary">Use your apps across your devices</string>
+    <string name="app_cast_feature_switch_title">Apps</string>
     <string name="app_indexing_debug_google_settings_title">Firebase app indexing</string>
     <string name="app_indexing_debug_title">Firebase App Indexing</string>
     <string name="app_launch_failure_not_allowed_toast">The selected device does not support Casting from this application.</string>
     <string name="app_level_title">Sign-in Request</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="appinvite_cancel_search_description">Cancel search</string>
-    <string name="appinvite_contact_method_selector_description">Contact method selector</string>
-    <string name="appinvite_contextual_selection_additional_recipient_format">" +%d more"</string>
-    <string name="appinvite_contextual_selection_content_description_email">Email</string>
-    <string name="appinvite_contextual_selection_content_description_sms">Text message</string>
-    <string name="appinvite_contextual_selection_limit">Cannot add any more people.</string>
-    <string name="appinvite_contextual_selection_method_google">Notification</string>
-    <string name="appinvite_contextual_selection_num_recipients_content_description">%1$d selected of %2$d recipients maximum</string>
-    <string name="appinvite_contextual_selection_number_of_recipients">%1$d / %2$d</string>
-    <string name="appinvite_contextual_selection_person_no_name_display_name">(No Name)</string>
-    <string name="appinvite_contextual_selection_recipient_separator">", "</string>
-    <string name="appinvite_contextual_selection_sms_warning">Standard SMS charges apply</string>
-    <string name="appinvite_email_only">email only</string>
-    <string name="appinvite_email_preview">PREVIEW EMAIL</string>
-    <string name="appinvite_grid_header">Suggestions from Google</string>
-    <string name="appinvite_image_preview">Invitation image preview</string>
-    <string name="appinvite_invitation_sent">Your invitation has been sent</string>
     <string name="appinvite_label">App Invite</string>
-    <string name="appinvite_list_header">Everyone</string>
-    <string name="appinvite_load_error">Failed to load</string>
-    <string name="appinvite_message_header">Message</string>
-    <string name="appinvite_message_hint">Add a message</string>
-    <string name="appinvite_message_limit">%1$d/%2$d</string>
-    <string name="appinvite_preview_close_content_description">close</string>
-    <string name="appinvite_preview_title">Preview Email</string>
-    <string name="appinvite_recipient_not_selected">not selected</string>
-    <string name="appinvite_recipient_selected">selected</string>
-    <string name="appinvite_recipients">Recipients</string>
-    <string name="appinvite_recipients_hint">Add recipients</string>
-    <string name="appinvite_send_error">Message failed to send</string>
-    <string name="appinvite_start_error">Failed to start</string>
     <string name="applies_to">Applies to your %s plan</string>
     <string name="applies_to_no_plan">Applies to your %s</string>
     <string name="apply_now_caption">Apply now</string>
@@ -481,12 +477,8 @@ Tap to change settings."</string>
     <string name="as_home_tab_name">Home</string>
     <string name="as_network_error_description">"Some info may be outdated or not show. Refresh when you're back online."</string>
     <string name="as_offline_snackbar">Check your connection and try again</string>
-    <string name="as_prompt_card_dismissed_critical_snackbar">Alert dismissed</string>
-    <string name="as_prompt_card_dismissed_error_critical_snackbar">"Couldn't dismiss alert"</string>
     <string name="as_prompt_card_dismissed_error_snackbar">"Couldn't dismiss suggestion"</string>
     <string name="as_prompt_card_dismissed_snackbar">Suggestion dismissed</string>
-    <string name="as_prompt_card_restored_critical_snackbar">Alert restored</string>
-    <string name="as_prompt_card_restored_error_critical_snackbar">"Couldn't restore alert"</string>
     <string name="as_prompt_card_restored_error_snackbar">"Couldn't restore suggestion"</string>
     <string name="as_prompt_card_restored_snackbar">Suggestion restored</string>
     <string name="as_security_tab_name">Security</string>
@@ -746,9 +738,6 @@ To make sure you can restore data later, "<a href="www.example.com">%2$s</a>". "
     <string name="auth_trust_agent_pref_activity_recognition_unlock_title">On-body detection</string>
     <string name="auth_trust_agent_pref_on_body_detection_title">Extend Unlock On-body detection</string>
     <string name="auth_trust_agent_pref_trusted_devices_add_trusted_device_title">Add trusted device</string>
-    <string name="auth_trust_agent_pref_trusted_devices_default_summary">0 devices added</string>
-    <string name="auth_trust_agent_pref_trusted_devices_multiple_devices_setup_summary">Stays unlocked near %d devices</string>
-    <string name="auth_trust_agent_pref_trusted_devices_one_device_setup_summary">Stays unlocked near %s</string>
     <string name="auth_trust_agent_pref_trusted_devices_summary">{count, plural, =0 {0 devices added} =1 {Stays unlocked near {device_name}} other {Stays unlocked near # devices} }</string>
     <string name="auth_trust_agent_pref_trusted_devices_title">Trusted devices</string>
     <string name="auth_trust_agent_pref_trusted_places_title">Trusted places</string>
@@ -774,6 +763,7 @@ To make sure you can restore data later, "<a href="www.example.com">%2$s</a>". "
     <string name="authorization_dialog">Authorization dialog</string>
     <string name="auto_lock_adaptive_auth_lockscreen_title">Turn off Failed Authentication Lock?</string>
     <string name="auto_lock_adaptive_auth_preference_summary">The screen will lock after repeated failed authentication in apps and settings</string>
+    <string name="auto_lock_adaptive_auth_preference_summary_new">Your screen will lock after repeated failed authentication attempts in your apps and settings</string>
     <string name="auto_lock_adaptive_auth_preference_title">Failed Authentication Lock</string>
     <string name="auto_lock_connectivity_protection_dialog_summary_ga"><b>How it works</b>"
 
@@ -788,6 +778,7 @@ Your device’s screen will lock shortly after your device goes offline to help 
     <string name="auto_lock_connectivity_protection_lockscreen_title">Turn off Offline Device Lock?</string>
     <string name="auto_lock_connectivity_protection_new_dialog_summary">&lt;p>When your device’s internet is off for a while, your screen will lock.&lt;/p> &lt;p>Thieves often turn off internet service immediately so no one can track the device they’ve stolen.&lt;/p> &lt;font color=black>How it works&lt;/font> &lt;p>&lt;img src=gs_wifi_off_vd_theme_24>&lt;b>Internet is turned off&lt;/b>&lt;/p> &lt;p>&lt;img src=gs_schedule_vd_theme_24>&lt;b>Device stays offline for a while&lt;/b>&lt;/p> &lt;p>&lt;img src=gs_screen_lock_portrait_vd_theme_24>&lt;b>Your screen locks&lt;/b>&lt;br>&lt;small>If your device isn’t stolen, just unlock as usual, like with your PIN or password&lt;/small>&lt;/p> &lt;font color=black>Keep in mind&lt;/font> &lt;p>Offline Device Lock can only lock your screen up to twice a day&lt;/p></string>
     <string name="auto_lock_connectivity_protection_preference_summary">The screen will lock shortly after your device goes offline to help protect your data</string>
+    <string name="auto_lock_connectivity_protection_preference_summary_new">Your screen will lock shortly after your device goes offline to help protect your data</string>
     <string name="auto_lock_lock_screen_message">"Theft protection
 Device auto-locked"</string>
     <string name="auto_lock_lock_screen_message_new">"Theft protection
@@ -830,6 +821,7 @@ You must be actively using your device while it’s unlocked
     <string name="auto_lock_snatch_detection_new_dialog_summary">&lt;p>Your device’s motion sensors will try to detect possible theft and lock your screen&lt;/p> &lt;font color=black>How it works&lt;/font> &lt;p>&lt;img src=gs_edgesensor_high_vd_theme_24>&lt;b>Someone abruptly takes your device&lt;/b>&lt;/p> &lt;p>&lt;img src=gs_directions_run_vd_theme_24>&lt;b>Then speeds away&lt;/b>&lt;/p> &lt;p>&lt;img src=gs_screen_lock_portrait_vd_theme_24>&lt;b>Your screen locks&lt;/b>&lt;br>&lt;small>If your device isn’t stolen, just unlock as usual, like with your PIN or password&lt;/small>&lt;/p> &lt;font color=black>Designed to work where theft occurs&lt;/font> &lt;p>&lt;img src=gs_wifi_password_vd_theme_24>This protection is designed to work out in public where thefts usually occur, not when you’re connected to stable Wi-Fi or Bluetooth in places like a home or office&lt;/p></string>
     <string name="auto_lock_snatch_detection_preference_not_supported">Not supported on this device. <a href="https://support.google.com/android?p=theft_protection">Learn more</a></string>
     <string name="auto_lock_snatch_detection_preference_summary">The screen will lock if this setting detects that someone took your device and ran away</string>
+    <string name="auto_lock_snatch_detection_preference_summary_new">Your screen will lock if this setting detects that someone took your device and ran away</string>
     <string name="autofill_account_chooser_title_save_credential">Save password to</string>
     <string name="autofill_address_attribution_action">Manage addresses</string>
     <string name="autofill_app_logo">App-specific Logo</string>
@@ -855,7 +847,7 @@ You must be actively using your device while it’s unlocked
     <string name="autofill_dataset_password_primary">Use password for:</string>
     <string name="autofill_dataset_password_warning_message_new">Use your saved password for <b>^1</b> in <b>^2</b>?</string>
     <string name="autofill_datatype_address">Addresses</string>
-    <string name="autofill_datatype_passes">Passes</string>
+    <string name="autofill_datatype_passes">Payment cards, loyalty and other passes</string>
     <string name="autofill_datatype_password_manager_subtext">Passwords, passkeys</string>
     <string name="autofill_datatype_payment">Payment methods</string>
     <string name="autofill_datatype_profile">Personal information</string>
@@ -863,7 +855,7 @@ You must be actively using your device while it’s unlocked
     <string name="autofill_datatype_profile_updated">Personal info</string>
     <string name="autofill_datatype_shielded_email_subtext">Generated email addresses</string>
     <string name="autofill_datatype_shielded_email_title">Shielded Email</string>
-    <string name="autofill_datatype_wallet_subtext">Loyalty cards, gift cards, flight reservations, and more</string>
+    <string name="autofill_datatype_wallet_subtext">Payment cards, loyalty and other passes</string>
     <string name="autofill_datatype_wallet_title">Google Wallet</string>
     <string name="autofill_debug_settings">Debug settings</string>
     <string name="autofill_debug_settings_subtext">Flag manager, debug inline chips, debug logging, and more</string>
@@ -1124,16 +1116,25 @@ Large files, or files developers have chosen to exclude from the service, will n
     <string name="backup_settings_alert_card_button_go_to_play">Go to Play</string>
     <string name="backup_settings_alerts_section_title">Alerts</string>
     <string name="backup_settings_common_data_protection_link_title">How data is protected</string>
+    <string name="backup_settings_common_flavor_title_downloads">Downloads</string>
     <string name="backup_settings_common_flavor_title_other_device_data">Other device data</string>
     <string name="backup_settings_common_toggle_mobile_data">Use mobile or metered Wi-Fi data</string>
     <string name="backup_settings_common_turn_off_dialog_button_confirm">Delete &amp; turn off</string>
     <string name="backup_settings_common_turn_off_dialog_title">Delete and turn off backup?</string>
+    <string name="backup_settings_device_data_preference_key_category_device_data">pref_key_category_device_data</string>
     <string name="backup_settings_device_data_preference_key_intro">pref_key_intro</string>
+    <string name="backup_settings_device_data_preference_key_intro_forked">pref_key_intro_forked</string>
     <string name="backup_settings_device_data_preference_key_profile">pref_key_profile</string>
     <string name="backup_settings_device_data_preference_key_storage_meter">pref_key_storage_meter</string>
     <string name="backup_settings_device_data_preference_key_toggle_main">pref_key_toggle_main</string>
     <string name="backup_settings_device_data_preference_key_toggle_main_forked">pref_key_toggle_main_forked</string>
+    <string name="backup_settings_device_data_preference_key_toggle_main_summary">pref_key_toggle_main_summary</string>
     <string name="backup_settings_device_data_preference_key_toggle_metered_network">pref_key_toggle_metered_network</string>
+    <string name="backup_settings_device_data_toggles_preference_key_app_data">pref_key_app_toggles_app_data</string>
+    <string name="backup_settings_device_data_toggles_preference_key_call_history">pref_key_app_toggles_call_history</string>
+    <string name="backup_settings_device_data_toggles_preference_key_device_settings">pref_key_app_toggles_device_settings</string>
+    <string name="backup_settings_device_data_toggles_preference_key_messages">pref_key_app_toggles_messages</string>
+    <string name="backup_settings_device_data_toggles_preference_key_sms">pref_key_app_toggles_sms</string>
     <string name="backup_settings_devicedata_data_protection_link_description">Other device data is encrypted and securely uploaded to your Google Account. Some of this data is also encrypted using your device’s screen lock.</string>
     <string name="backup_settings_devicedata_data_title">Back up other data</string>
     <string name="backup_settings_devicedata_data_type_sims">SIMs</string>
@@ -1144,6 +1145,10 @@ Large files, or files developers have chosen to exclude from the service, will n
 %1$s
 
 You will also stop backing up device data from this device."</string>
+    <string name="backup_settings_downloads_description">Automatically back up documents to your Google Drive, so you can view them anywhere</string>
+    <string name="backup_settings_downloads_preference_key_intro">downloads_intro</string>
+    <string name="backup_settings_downloads_preference_key_toggle_main">downloads_toggle_main</string>
+    <string name="backup_settings_downloads_title">Back up downloads</string>
     <string name="backup_settings_flavor_status_backing_up">Backing up</string>
     <string name="backup_settings_flavor_status_photos_install_update">Install or update the Google Photos app</string>
     <string name="backup_settings_flavor_status_photos_missing_permissions">Allow Google Photos to access your storage</string>
@@ -1152,6 +1157,8 @@ You will also stop backing up device data from this device."</string>
     <string name="backup_settings_overview_preference_key_alerts_category">pref_key_alerts_category</string>
     <string name="backup_settings_overview_preference_key_backup_description">pref_key_backup_description</string>
     <string name="backup_settings_overview_preference_key_device_data">pref_key_device_data</string>
+    <string name="backup_settings_overview_preference_key_downloads">pref_key_downloads</string>
+    <string name="backup_settings_overview_preference_key_flavors_category">pref_key_flavors_category</string>
     <string name="backup_settings_overview_preference_key_photos">pref_key_photos</string>
     <string name="backup_settings_overview_preference_key_status_banner">pref_key_status_banner</string>
     <string name="backup_settings_overview_toast_wifi_required_for_backup">Turn on Wi-Fi to back up your data</string>
@@ -1171,6 +1178,9 @@ You will also stop backing up device data from this device."</string>
     <string name="backup_turned_off_title">Backup is off</string>
     <string name="bad_connection_desc">Unable to reach your network to get your plan info</string>
     <string name="bad_connection_desc_with_carrier">Unable to reach %s to get your plan info</string>
+    <string name="bank_account_detail_checking">Checking</string>
+    <string name="bank_account_detail_savings">Savings</string>
+    <string name="bank_account_detail_transacting_account">Account</string>
     <string name="bank_scam_warning_risk_and_action_details">Scammers may be trying to access your finances through this call. For your protection, end the call. This will also stop sharing your screen.</string>
     <string name="bank_scam_warning_risk_details_text_for_manual_screensharing_stop">Scammers may be trying to access your finances through this call. For your protection, end the call and stop sharing your screen.</string>
     <string name="battery_level_changed_to_critical_notification_text">Battery for %1$s needs to be charged or replaced now</string>
@@ -1196,6 +1206,7 @@ You will also stop backing up device data from this device."</string>
     <string name="bender3_ocr_cc_add_a_card">Add a card</string>
     <string name="bender3_ocr_cc_scan_card_details">Line it up with the frame</string>
     <string name="bender3_ocr_cc_scan_card_loading">System getting ready…</string>
+    <string name="bender3_ocr_exit_page">Exit the card scan screen</string>
     <string name="bender3_ocr_flash_state_auto">Flash auto</string>
     <string name="bender3_ocr_flash_state_off">Flash off</string>
     <string name="bender3_ocr_flash_state_on">Flash on</string>
@@ -1224,7 +1235,6 @@ You will also stop backing up device data from this device."</string>
     <string name="book_with_gpay">Book with GPay</string>
     <string name="bot_icon">bot icon</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
-    <string name="bottom_sheet_drag_handle_description">Drag handle</string>
     <string name="bottomsheet_action_collapse">Collapse</string>
     <string name="bottomsheet_action_collapse_description">Collapse the bottom sheet</string>
     <string name="bottomsheet_action_expand">Expand</string>
@@ -1453,6 +1463,7 @@ You will also stop backing up device data from this device."</string>
     <string name="car_pref_key_settings_add_device_preference">car_pref_key_settings_add_device_preference</string>
     <string name="car_pref_key_settings_autolaunch_preference">car_pref_key_settings_autolaunch_preference</string>
     <string name="car_pref_key_turn_on_bluetooth_preferences">car_pref_key_turn_on_bluetooth_preferences</string>
+    <string name="card_alert_state_description">Alert</string>
     <string name="card_digits_mask">••••</string>
     <string name="card_network_amex">Amex</string>
     <string name="card_network_discover">Discover</string>
@@ -1569,6 +1580,7 @@ Your photos &amp; videos are already being backed up to %s."</string>
     <string name="choices_page_customize_option_header">Customize settings</string>
     <string name="choices_page_header">Your contacts and Google</string>
     <string name="choices_page_recommended_option_header">See recommended changes</string>
+    <string name="choose_an_option">Choose an option</string>
     <string name="choose_create_option_passkey_title">Create passkey to sign in to %1$s?</string>
     <string name="choose_create_option_password_title">Save password to sign in to %1$s?</string>
     <string name="choose_create_option_sign_in_title">Save sign-in info for %1$s?</string>
@@ -1590,7 +1602,6 @@ Your photos &amp; videos are already being backed up to %s."</string>
     <string name="close_drawer">Close navigation menu</string>
     <string name="close_sheet">Close sheet</string>
     <string name="collapse">Collapse</string>
-    <string name="collapsed">Collapsed</string>
     <string name="color_primary">colorPrimary</string>
     <string name="color_secondary">colorSecondary</string>
     <string name="color_tertiary">colorTertiary</string>
@@ -1624,7 +1635,6 @@ Your photos &amp; videos are already being backed up to %s."</string>
     <string name="common_app_recovery_notification_channel">App Recovery</string>
     <string name="common_app_recovery_notification_channel_description">Alerts for recovery actions taken</string>
     <string name="common_asm_google_account_title">Google Account</string>
-    <string name="common_asm_manage_google_account_title">Manage your Google Account</string>
     <string name="common_auto_usage_reporting_description">"Help improve your vehicle’s infotainment system by automatically sending diagnostic and usage data (such as system and app activity and errors) to Google. This will help with system and app stability and other improvements. Some aggregated information will also help Google and partners, such as Android developers, make their apps and products better. If your additional Web &amp; App Activity setting is turned on, this data may be saved to your Google Account.
 
 Turning off this feature doesn’t affect your infotainment system’s ability to send the information needed for essential services such as system updates and security."</string>
@@ -1792,6 +1802,7 @@ Turning off this feature doesn’t affect your infotainment system’s ability t
     <string name="common_on">On</string>
     <string name="common_open">Open</string>
     <string name="common_open_app">Open app</string>
+    <string name="common_open_on_phone">Open on phone</string>
     <string name="common_open_source_licenses">Open source licenses</string>
     <string name="common_parental_controls_label">Parental controls</string>
     <string name="common_password">Password</string>
@@ -1842,6 +1853,7 @@ Turning off this feature doesn’t affect your infotainment system’s ability t
     <string name="common_skip_fingerprint">Use screen lock</string>
     <string name="common_snet_process">:snet</string>
     <string name="common_something_went_wrong">Something went wrong</string>
+    <string name="common_stop">Stop</string>
     <string name="common_switch_account">Switch account</string>
     <string name="common_system_component_update_settings">System services updates</string>
     <string name="common_system_service_management_page">System services</string>
@@ -1912,6 +1924,7 @@ You can turn this service off in Settings."</string>
     <string name="companion_restore_select_backup_fragment_subtitle">Select a backup to restore</string>
     <string name="companion_restore_select_backup_fragment_title">Restore from backup</string>
     <string name="companion_tile_disconnected">Connect to phone to set up</string>
+    <string name="completed">Completed</string>
     <string name="complex_services_error_summary">%1$s is running but cannot be accessed at this time. Check back later</string>
     <string name="complex_services_error_title">This service isn’t available right now</string>
     <string name="complicationDrawable_noDataText">--</string>
@@ -1964,7 +1977,9 @@ Keep in mind that turning off services can impact the way your device works."</s
     <string name="contacts_product_name">Google Contacts</string>
     <string name="container_list_header">CONTAINER MODULES</string>
     <string name="content_credman_permission_ui_for_get_phone_number">When you click \"Agree and Continue\", Google will enable your carrier (%1$s) to share your phone number with %2$s.</string>
+    <string name="content_credman_permission_ui_for_get_phone_number_v2">By continuing, Google will enable your carrier (%1$s) to share your phone number with %2$s.</string>
     <string name="content_credman_permission_ui_for_verify_phone_number">When you click \"Agree and Continue\", Google will enable your carrier (%1$s) to verify your phone number with %2$s.</string>
+    <string name="content_credman_permission_ui_for_verify_phone_number_v2">By continuing,, Google will enable your carrier (%1$s) to verify your phone number with %2$s.</string>
     <string name="content_description_hide_password">Hide password</string>
     <string name="content_description_incoming_default_message">"%1$s said %2$s.
 
@@ -2122,6 +2137,12 @@ If you want to stop using your screen lock as an encryption key, you can remove 
     <string name="credentials_fido_registration_notice">Your screen lock will be used to encrypt your data</string>
     <string name="credentials_fido_setup_lskf">Set up screen lock</string>
     <string name="credentials_fido_sign_error_no_screen_lock_title">Set up screen lock to use passkeys</string>
+    <string name="credentials_fido_signal_all_accepted_credentials_notification_content">"These passkeys don't work anymore. They will get deleted soon from Google Password Manager."</string>
+    <string name="credentials_fido_signal_all_accepted_credentials_notification_title">Deleted passkeys</string>
+    <string name="credentials_fido_signal_current_user_details_notification_content">Manage your passwords and passkeys in Google Password Manager.</string>
+    <string name="credentials_fido_signal_current_user_details_notification_title">Updated passkeys</string>
+    <string name="credentials_fido_signal_unknown_credential_notification_content">Sign in using a password or other recovery method</string>
+    <string name="credentials_fido_signal_unknown_credential_notification_title">This passkey was deleted from this site</string>
     <string name="credentials_fido_use_different_device_passkey">Use a different device</string>
     <string name="credentials_fido_use_screen_lock">Use screen lock</string>
     <string name="credentials_fido_verify_your_identity_description">"%s needs to verify it's you."</string>
@@ -2367,6 +2388,9 @@ To add this watch again, set a screen lock on your watch."</string>
     <string name="device_added_button_content_description">Already added %1$s to this device group</string>
     <string name="device_added_text">Added</string>
     <string name="device_close">Device is close</string>
+    <string name="device_details_device_settings_section_header">Device settings</string>
+    <string name="device_details_information_section_header">Information</string>
+    <string name="device_details_more_controls_section_header">More controls</string>
     <string name="device_far_away">Device is farther away</string>
     <string name="device_form_factor_auto">Auto</string>
     <string name="device_form_factor_laptop">Laptop</string>
@@ -2436,6 +2460,7 @@ To remove a device from the group, go to the Settings app on that device."</stri
     <string name="disabled_by_admin_summary_text">Controlled by admin</string>
     <string name="disabled_components_label">Disabled Components</string>
     <string name="disabled_err_msg">The ChimeraDebugActivity is currently disabled.</string>
+    <string name="discard_sim_card_summary">"After you switch to eSIM, your physical SIM card can't be used again"</string>
     <string name="discard_sim_summary">"Once you switch to an eSIM, your physical SIM card can't be used again"</string>
     <string name="discard_sim_title">Discard your SIM card</string>
     <string name="disconnected">Disconnected</string>
@@ -2451,9 +2476,10 @@ To remove a device from the group, go to the Settings app on that device."</stri
     <string name="discovered_devices_try_another_way_button">Try another way</string>
     <string name="discovery_do_not_show_again">@string/common_dont_show_again</string>
     <string name="discovery_report_abuse_snackbar_message">"Notification won't appear again"</string>
+    <string name="discovery_tip_see_tips_action">See tips</string>
     <string name="discovery_tip_text">Ask the other person to swipe down from the top of their screen and open Quick Share</string>
-    <string name="dismiss">Dismiss</string>
     <string name="dismiss_ui_dialog_title">Set up later?</string>
+    <string name="disputed">Disputed</string>
     <string name="distance_based_relock_setting_description">Only get notified when your phone and watch are far apart, instead of every time your watch unlocks your phone</string>
     <string name="distance_based_relock_setting_title">Get fewer notifications</string>
     <string name="distance_based_relock_toggle_content_description">Get fewer notifications</string>
@@ -2467,6 +2493,7 @@ To remove a device from the group, go to the Settings app on that device."</stri
     <string name="dm_setup_notification_text">@string/car_driving_mode_turn_on_automatically</string>
     <string name="dm_setup_notification_title">Limit interruptions while driving</string>
     <string name="dnd_button_setup">Set up</string>
+    <string name="dnd_category_key">dnd_category_key</string>
     <string name="dnd_desc_driving">"This rule automatically turns on Do Not Disturb while you're in a moving vehicle, determined by device motion"</string>
     <string name="dnd_driving">Driving</string>
     <string name="dnd_driving_activated">Automatic rule set to turn on Do Not Disturb while driving</string>
@@ -2490,6 +2517,12 @@ You can turn this off in Do Not Disturb settings.
     <string name="dnd_title_continue">Allow Do Not Disturb access</string>
     <string name="dnd_title_intro">Do Not Disturb while driving</string>
     <string name="dnd_title_rule_added">All set</string>
+    <string name="dnd_trigger_by_bluetooth">When connected to car Bluetooth</string>
+    <string name="dnd_trigger_by_bluetooth_details">Activated while connected to car Bluetooth</string>
+    <string name="dnd_trigger_by_bluetooth_key">dnd_trigger_by_bluetooth_key</string>
+    <string name="dnd_trigger_by_motion_sensor">Automatically</string>
+    <string name="dnd_trigger_by_motion_sensor_details">Activated automatically based on device motion</string>
+    <string name="dnd_trigger_by_motion_sensor_key">dnd_trigger_by_motion_sensor_key</string>
     <string name="do_it_later">Do it later</string>
     <string name="dogfood_notification_action">Tap to turn on logging.</string>
     <string name="dogfood_notification_channel_name">Dogfood</string>
@@ -2550,6 +2583,7 @@ You can turn this off in Do Not Disturb settings.
     <string name="drive_backup_content_devicesettings_title">Device settings</string>
     <string name="drive_backup_content_header">Backup details</string>
     <string name="drive_backup_content_photos_title">Photos &amp; videos</string>
+    <string name="drive_backup_content_sms_title">SMS text messages</string>
     <string name="drive_backup_content_status_error">Error getting last sync date</string>
     <string name="drive_backup_content_status_never">Waiting to back up…</string>
     <string name="drive_backup_content_status_updating">Checking status…</string>
@@ -2586,6 +2620,7 @@ SMS"</string>
     <string name="driving_behavior_summary_text_on">On</string>
     <string name="driving_config_activity_name">Driving</string>
     <string name="driving_detected_title">Driving detected</string>
+    <string name="driving_dnd_modes_bt_trigger_description">"Using device's Bluetooth connection"</string>
     <string name="driving_dnd_modes_details">"Do Not Disturb while driving helps minimize distractions by automatically silencing incoming calls, texts, and notifications when driving is detected. This feature uses the device's motion and Bluetooth connections to figure out when you’re in a moving vehicle."</string>
     <string name="driving_dnd_modes_details_key">Driving Dnd Modes Details Key</string>
     <string name="driving_dnd_modes_illustration_key">Driving Dnd Modes Illustration Key</string>
@@ -2600,7 +2635,6 @@ SMS"</string>
     <string name="driving_mode_settings_search_do_not_disturb">Do Not Disturb</string>
     <string name="driving_mode_settings_search_drive">Drive</string>
     <string name="driving_mode_settings_search_title">Driving Mode Settings</string>
-    <string name="dropdown_menu">Dropdown menu</string>
     <string name="dynamic_content_description">Buy with Google Pay %1$s ending in %2$s</string>
     <string name="ealert_activity_debug_google_setting_title">EEW System Debug</string>
     <string name="ealert_demo_key">Earthquake Demo Key</string>
@@ -2614,6 +2648,7 @@ SMS"</string>
     <string name="ealert_local_map_estimated_earthquake">Estimated earthquake</string>
     <string name="ealert_local_map_magnitude">Est. mag %.1f earthquake</string>
     <string name="ealert_magnitude_info_v2">Initial estimate M%1$.1f about %2$s away.</string>
+    <string name="ealert_map_data_source">Source: %1$s</string>
     <string name="ealert_more_safety_tips">More safety tips</string>
     <string name="ealert_nearby_notification_text_v2">Expect light shaking. %1$s</string>
     <string name="ealert_notification_followup_false">Earthquake alert canceled</string>
@@ -2629,11 +2664,16 @@ SMS"</string>
     <string name="ealert_safety_tip_content_10">If you live in a coastal area, relocate as soon as shaking stops to avoid tsunamis</string>
     <string name="ealert_safety_tip_content_11">" "<li>"Don't touch downed or damaged utility lines"</li>"
  "<li>"Don't use a damaged chimney. Approach downed or damaged chimneys with caution"</li>" "</string>
+    <string name="ealert_safety_tip_content_11_html">"&lt;ul> &lt;li>Don't touch downed or damaged utility lines&lt;/li>
+ &lt;li>Don't use a damaged chimney. Approach downed or damaged chimneys with caution&lt;/li> &lt;/ul>"</string>
     <string name="ealert_safety_tip_content_12">You may receive an alert if an aftershock is detected</string>
     <string name="ealert_safety_tip_content_8">If water is shut off, use emergency supplies like a water heater or melted ice cubes</string>
     <string name="ealert_safety_tip_content_9">" "<li>"Put out small fires. If you can't, evacuate."</li>"
  "<li>Check electric, water lines, and appliances for damage. If you see a broken line, shut off the main valve.</li>"
  "<li>Clean up spilled medicines, drugs, or other harmful materials</li>" "</string>
+    <string name="ealert_safety_tip_content_9_html">"&lt;ul> &lt;li>Put out small fires. If you can't, evacuate.&lt;/li>
+ &lt;li>Check electric, water lines, and appliances for damage. If you see a broken line, shut off the main valve.&lt;/li>
+ &lt;li>Clean up spilled medicines, drugs, or other harmful materials&lt;/li> &lt;/ul>"</string>
     <string name="ealert_safety_tip_title_10">Move to higher ground</string>
     <string name="ealert_safety_tip_title_11">Avoid fallen objects</string>
     <string name="ealert_safety_tip_title_12">Expect aftershocks</string>
@@ -2822,6 +2862,8 @@ You can customize your device groups in Settings. } }"</string>
     <string name="esim_connecting_title">Connecting…</string>
     <string name="esim_contact_carrier">Contact %s support</string>
     <string name="esim_continue_on_other_device_title">Continue on your other device</string>
+    <string name="esim_default_wait_description">This may take a few minutes</string>
+    <string name="esim_default_wait_title">Checking network info…</string>
     <string name="esim_download_button">Activate eSIM</string>
     <string name="esim_download_header">Your %s eSIM is ready. To start using the data plan, activate your eSIM.</string>
     <string name="esim_download_loading">Fetching eSIM</string>
@@ -2900,6 +2942,7 @@ You can customize your device groups in Settings. } }"</string>
     <string name="esim_transfer_half_sheet_title">Transfer SIM to %1$s</string>
     <string name="esim_transferring_sim_description">Finish on your new device</string>
     <string name="esim_transferring_sim_title">Transferring SIM…</string>
+    <string name="exit_button_label">Back</string>
     <string name="exo_controls_cc_disabled_description">Enable subtitles</string>
     <string name="exo_controls_cc_enabled_description">Disable subtitles</string>
     <string name="exo_controls_fullscreen_enter_description">Enter fullscreen</string>
@@ -2940,7 +2983,6 @@ You can customize your device groups in Settings. } }"</string>
     <string name="exo_track_unknown_name">Unknown (%1$s)</string>
     <string name="expand">Expand</string>
     <string name="expand_button_title">Advanced</string>
-    <string name="expanded">Expanded</string>
     <string name="expedited_update_new_remaining_delay_text_download">{remaining_delay_days, plural, =0 {Your device will automatically download and install the update, and then schedule a restart.} =1 {In # day, your device will automatically download and install the update, and then schedule a restart.} other {In # days, your device will automatically download and install the update, and then schedule a restart.} }</string>
     <string name="expedited_update_new_remaining_delay_text_install">{remaining_delay_days, plural, =0 {Your device will automatically install the update and schedule a restart.} =1 {In # day, your device will automatically install the update and schedule a restart.} other {In # days, your device will automatically install the update and schedule a restart.} }</string>
     <string name="expedited_update_new_remaining_delay_text_restart">{remaining_delay_days, plural, =0 {Your device will automatically schedule a restart to finish the update.} =1 {In # day, your device will automatically schedule a restart to finish the update.} other {In # days, your device will automatically schedule a restart to finish the update.} }</string>
@@ -2956,6 +2998,19 @@ You can customize your device groups in Settings. } }"</string>
     <string name="expired_in">Expires in %s</string>
     <string name="explanation_animation_swipe_up">Swipe up on the lock screen</string>
     <string name="explanation_animation_tap_notification">Tap a notification</string>
+    <string name="explanation_continue_on_phone_keep_in_mind_description">"Using your watch to unlock this phone may be less secure than a strong pattern, PIN, or password.
+
+In some cases, your watch may unlock this phone even if it's out of reach.
+
+Only authorized apps on watch can unlock your phone when opening linked app on the phone."</string>
+    <string name="explanation_continue_on_phone_learn_more_about_authorized_apps">Learn more about authorized apps</string>
+    <string name="explanation_continue_on_phone_learn_more_about_authorized_apps_description">Authorized apps are permitted to unlock your phone directly from your watch to continue an activity. This list is initially preloaded but you can manage allowed apps in Settings and it can grow if you grant permission to a new app.</string>
+    <string name="explanation_continue_on_phone_learn_more_about_authorized_apps_ok_button_label">Got it</string>
+    <string name="explanation_continue_on_phone_learn_more_about_authorized_apps_title">Authorized Apps</string>
+    <string name="explanation_continue_on_phone_lock_open_description">"When you tap the “Open on phone” button in authorized apps on the watch, your watch can unlock this phone then open the linked app on the phone. 
+
+Your watch and phone need to be nearby. Your watch needs to be on your wrist, and unlocked. You won’t need to unlock your watch again while it’s on your wrist."</string>
+    <string name="explanation_continue_on_phone_subtitle">Watch Unlock is a convenient way to unlock this phone when you open a linked app on the phone from the authorized apps on the watch.</string>
     <string name="explanation_keep_in_mind_description">"Using your watch to unlock this phone may be less secure than a strong pattern, PIN, or password.
 
 In some cases, your watch may unlock this phone even if it's out of reach."</string>
@@ -3063,7 +3118,7 @@ You can add your watch back to Extend Unlock at any time in Settings."</string>
     <string name="fast_pair_mp_setting_failed_toast_text">Could not update setting</string>
     <string name="fast_pair_mp_summary_text">Connect to any 2 Bluetooth devices at the same time</string>
     <string name="fast_pair_no_devices">No devices</string>
-    <string name="fast_pair_noise_controller_header">Active Noise Control</string>
+    <string name="fast_pair_noise_controller_header">Active noise control</string>
     <string name="fast_pair_open_companion_app">Tap to finish setup</string>
     <string name="fast_pair_requires_google_account">Requires active Google account</string>
     <string name="fast_pair_retroactive_could_not_save_description">Reconnect to try again</string>
@@ -3103,11 +3158,13 @@ You can add your watch back to Extend Unlock at any time in Settings."</string>
     <string name="fast_pair_slice_install_companion_without_firmware_description">Tap to go to Google Play</string>
     <string name="fast_pair_slice_install_companion_without_firmware_title">Install companion app</string>
     <string name="fast_pair_slice_noise_controller_header">Active Noise Control</string>
+    <string name="fast_pair_slice_noise_controller_label_adaptive">Adaptive</string>
     <string name="fast_pair_slice_noise_controller_label_anc_off">Off</string>
-    <string name="fast_pair_slice_noise_controller_label_anc_on">Noise Cancellation</string>
+    <string name="fast_pair_slice_noise_controller_label_anc_on">Noise cancellation</string>
     <string name="fast_pair_slice_noise_controller_label_reserved">Test</string>
     <string name="fast_pair_slice_noise_controller_label_transparency">Transparency</string>
     <string name="fast_pair_slice_noise_controller_selected_content_description">Selected, %s</string>
+    <string name="fast_pair_slice_noise_controller_subtitle_adaptive">Adaptive mode on</string>
     <string name="fast_pair_slice_noise_controller_subtitle_anc_off">Noise Control off</string>
     <string name="fast_pair_slice_noise_controller_subtitle_anc_on">Active Noise Cancellation on</string>
     <string name="fast_pair_slice_noise_controller_subtitle_reserved">Unused</string>
@@ -3161,8 +3218,6 @@ You can add your watch back to Extend Unlock at any time in Settings."</string>
     <string name="feature_off">Feature off</string>
     <string name="feature_wifi_sharing_summary">Your nearby devices can connect to Wi-Fi without entering the password again</string>
     <string name="feature_wifi_sharing_title">Automatically share Wi-Fi</string>
-    <string name="featuredrops_no_connection_text">Make sure Wi-Fi or cellular data is turned on</string>
-    <string name="featuredrops_no_connection_title_text">"Can't load this page"</string>
     <string name="feedback_menu_item">Send feedback</string>
     <string name="fido_account_selection_title">Choose a Google account to use with %s</string>
     <string name="fido_btmsht_assertion_transport_selection_body">This will be used for &lt;b>%1$s&lt;/b></string>
@@ -3267,7 +3322,6 @@ To sign in this way, turn on Location in your settings. It will stay on unless y
     <string name="fido_paask_turn_on_location_notification_text">You need this to verify it’s you</string>
     <string name="fido_paask_turn_on_location_notification_title">Turn on location services</string>
     <string name="fido_passk_bluetooth_scanning_description">To help keep your account secure, your phone needs to briefly check for the device you’re trying to sign in on. The process only takes a moment.</string>
-    <string name="fido_passkey_bluetooth_scanning_description">To help keep your account secure, your phone needs to briefly check for the device you’re trying to sign in on</string>
     <string name="fido_passkey_cannot_use_passkey_description">To use passkeys, make sure you have a screen lock set up</string>
     <string name="fido_passkey_choose_a_device_for_registration_description">Choose on which device you’d like to create a passkey for &lt;b>%1$s&lt;/b></string>
     <string name="fido_passkey_choose_a_device_title">Choose a device</string>
@@ -3375,6 +3429,8 @@ If you want to stop using your screen lock as an encryption key, you can remove 
     <string name="fix_autofill_info_title">Fix Autofill</string>
     <string name="fix_autofill_message">Fix Autofill</string>
     <string name="fix_autofill_success_message">Fix applied successfully! Re-trigger autofill for the fix to take effect.</string>
+    <string name="fl_upsell_subtitle">Parents can use their phone to manage these settings, see device location, &amp; more</string>
+    <string name="fl_upsell_title">Get Google Family Link</string>
     <string name="flexwin_from_range">from %s</string>
     <string name="flexwin_or_unlimited_viewholder_description_inactive">Inactive</string>
     <string name="flexwin_viewholder_description_active">@string/common_active</string>
@@ -3446,8 +3502,13 @@ If you want to stop using your screen lock as an encryption key, you can remove 
     <string name="fmd_network_contributor_in_waiting_period_for_one_more_day_banner">"This device will join the network in high-traffic areas within a day to help others locate their items when offline. You can opt out or join the network now by selecting a setting.
 
 If you set a screen lock, the network can also help you find your items."</string>
+    <string name="fmd_network_contributor_in_waiting_period_for_one_more_day_for_busy_places_banner">"This device will join the network in busy places within a day to help others locate their items when offline. You can opt out or join the network now by selecting a setting.
+
+If you set a screen lock, the network can also help you find your items."</string>
     <string name="fmd_network_in_waiting_period_banner">This device will join the network in high-traffic areas soon. You can opt out or join the network now by selecting a setting.</string>
+    <string name="fmd_network_in_waiting_period_for_busy_places_banner">This device will join the network in busy places soon. You can opt out or join the network now by selecting a setting.</string>
     <string name="fmd_network_in_waiting_period_for_one_more_day_banner">This device will join the network in high-traffic areas within a day. You can opt out or join the network now by selecting a setting.</string>
+    <string name="fmd_network_in_waiting_period_for_one_more_day_for_busy_places_banner">This device will join the network in busy places within a day. You can opt out or join the network now by selecting a setting.</string>
     <string name="fmd_network_multi_state_setting_description_powered_off_finding">Find Hub can also use the network to help locate this device when it’s powered off or out of battery.</string>
     <string name="fmd_network_multi_state_setting_description_preamble">To help locate this device and your Fast Pair accessories when offline, Find Hub can use encrypted location info sent by this Android device and others in the Find Hub network.</string>
     <string name="fmd_network_multi_state_setting_description_securely_sends">When your Android device participates in the network, it securely sends location info of devices it detects nearby to help their owners find them.</string>
@@ -3460,6 +3521,10 @@ If you set a screen lock, the network can also help you find your items."</strin
     <string name="fmd_network_setting_all_areas_contributor_description">Locate using stored recent locations. To help others find a lost item, location info from your device may be used even if it’s the &lt;a href=%1$s>only one in the network&lt;/a> to detect the item.&lt;br>&lt;br>If you set a screen lock, the network will also be used to find your devices even in low-traffic areas.</string>
     <string name="fmd_network_setting_all_areas_description">Locate using stored recent locations or the network even in low-traffic areas.&lt;br>&lt;br>To help find a lost item, location info from your device may be used even if it’s the &lt;a href=%1$s>only one in the network&lt;/a> to detect the item.</string>
     <string name="fmd_network_setting_all_areas_hopeless_contributor_description">Locate using stored recent locations. To help others find a lost item, location info from your device may be used even if it’s the &lt;a href=%1$s>only one in the network&lt;/a> to detect the item.</string>
+    <string name="fmd_network_setting_busy_places_choice_not_applied_banner">During device setup, you chose to join the Find Hub network in busy places only. This choice hasn’t been applied yet.</string>
+    <string name="fmd_network_setting_busy_places_only">With network in busy places only</string>
+    <string name="fmd_network_setting_everywhere">With network everywhere</string>
+    <string name="fmd_network_setting_everywhere_choice_not_applied_banner">During device setup, you chose to join the Find Hub network everywhere. This choice hasn’t been applied yet.</string>
     <string name="fmd_network_setting_find_offline_devices_without_network">Without network</string>
     <string name="fmd_network_setting_find_offline_devices_without_network_description">Your device won’t participate in the network. You can still locate your offline devices using their stored recent locations when they were online.</string>
     <string name="fmd_network_setting_find_online_devices_only_description">Find Hub won’t store your devices’ recent locations, and your Android device won’t participate in the network. You can still use Find Hub to locate, secure, and erase your devices when online.&lt;br>&lt;br>If you don’t want to use Find Hub, you can go to &lt;b>Settings > Google > All Services (if tabs exist) > Find Hub&lt;/b> to turn it off</string>
@@ -3561,6 +3626,7 @@ If this is unexpected, you can set up a security question to help ensure only yo
     <string name="fmd_quick_remote_lock_set_security_question_toast">Security question set</string>
     <string name="fmd_quick_remote_lock_summary">If this device is lost or stolen, you can lock it using your phone number</string>
     <string name="fmd_quick_remote_lock_top_intro_text_new">When Remote Lock is on, you can lock your device remotely if it gets lost or stolen.</string>
+    <string name="fmd_quick_remote_lock_top_intro_text_your_screen">When Remote Lock is on, you can lock your screen remotely if your device is lost or stolen.</string>
     <string name="fmd_quick_remote_lock_where_to_find">On any device, go to android.com/lock</string>
     <string name="fmd_secure_lock_lock_screen_message">Device Locked</string>
     <string name="fmd_settings_activity_title">Find Hub</string>
@@ -3586,6 +3652,7 @@ If this is unexpected, you can set up a security question to help ensure only yo
     <string name="footer_preference_summary">"Android Safe Browsing only detects security threats within supported apps on Android devices. 
 
 Live threat protection sends some app or webpage info to Google for checking, without identifying you or your device. Google can’t use Android Safe Browsing data to see, track, or log your browsing activity."</string>
+    <string name="fop_selector_change_account_header">Change account</string>
     <string name="found_device">It’s here</string>
     <string name="fragment_source_connecting_title">Connecting to your new device…</string>
     <string name="frp_warning_dialog_desc">"This device was reset but then authentication during setup failed. To use this device, reset again and enter the device’s previous screen lock or Google Account credentials.
@@ -3602,11 +3669,6 @@ Learn more at g.co/android/frp"</string>
     <string name="g1_restore_failed">"Can't restore your content
 Something went wrong. Try again later."</string>
     <string name="gameplatform__strings__game_dashboard">Game Dashboard</string>
-    <string name="games__install__account__account_last_used_format">%1$s (used %2$s)</string>
-    <string name="games__install__account__new_play_games_user">new Play Games user</string>
-    <string name="games__install__account__not_used_with_play_games">Not used with Play Games</string>
-    <string name="games__install__account__subtitle">Pick up where you left off with cloud save, earn achievements, and more for supported games</string>
-    <string name="games__install__account__title">Sign in with Google Play Games</string>
     <string name="games__install__education__achievements_description">Track your hard work &amp; earn XP</string>
     <string name="games__install__education__achievements_label">Achievements</string>
     <string name="games__install__education__close_button_content_description">@string/replay__replaydialog_close_button_content_description</string>
@@ -3618,8 +3680,6 @@ Something went wrong. Try again later."</string>
     <string name="games__install__education__screen_content_description">Showing Google Play Games required screen</string>
     <string name="games__install__education__subtitle">"Here's how games use it:"</string>
     <string name="games__install__education__title">Google Play Games is required</string>
-    <string name="games__upgrade__branding__games_only">Games</string>
-    <string name="games__upgrade__branding__google_play_games">Google Play Games</string>
     <string name="games_font_roboto_medium">sans-serif-medium</string>
     <string name="games_proxy_app_name">Google Play Games</string>
     <string name="games_required_dialog_go_to_play_store">Install</string>
@@ -3898,6 +3958,7 @@ Check that the Google Play Games app is enabled for this profile."</string>
     <string name="gmscore_settings_threadnetwork_item_description">Thread networks control center</string>
     <string name="gmscore_settings_threadnetwork_item_title">Thread networks</string>
     <string name="go_back">Go Back</string>
+    <string name="go_back_button">Go back</string>
     <string name="go_back_button_caption">Go back</string>
     <string name="go_back_to_primary_page">Go back</string>
     <string name="google_account_complete_title">Signed in to your Google Account</string>
@@ -3905,6 +3966,7 @@ Check that the Google Play Games app is enabled for this profile."</string>
     <string name="google_account_pending_title">Sign in to your Google Account</string>
     <string name="google_alert_source">Android Earthquake Alerts System</string>
     <string name="google_branding_desc">Google brand</string>
+    <string name="google_name">Google</string>
     <string name="google_password_manager_product_name">Google Password Manager</string>
     <string name="google_pay_no_google_accounts_error">Google Pay requires a Google account to be set up on this device.</string>
     <string name="google_play_protect_title">Google Play Protect</string>
@@ -3921,11 +3983,11 @@ Check that the Google Play Games app is enabled for this profile."</string>
     <string name="google_setting_take_action_delay">Take action alert after 3 minutes</string>
     <string name="google_setting_take_action_expect_shaking">Take action alert expect shaking</string>
     <string name="google_wallet_app_name">Google Wallet</string>
-    <string name="googleone_escalation_card_cta_clean_up_space">Clean up space</string>
-    <string name="googleone_escalation_card_cta_get_storage">Get storage</string>
-    <string name="googleone_escalation_card_subtitle">Manage your storage</string>
-    <string name="googleone_escalation_card_title_almost_oos">Your Google Account is almost out of storage</string>
-    <string name="googleone_escalation_card_title_oos">Your Google Account is out of storage</string>
+    <string name="googleone_storagemanagement_card_cta_clean_up_space">Clean up space</string>
+    <string name="googleone_storagemanagement_card_cta_get_storage">Get storage</string>
+    <string name="googleone_storagemanagement_card_subtitle">Manage your storage</string>
+    <string name="googleone_storagemanagement_card_title_almost_oos">Your Google Account is almost out of storage</string>
+    <string name="googleone_storagemanagement_card_title_oos">Your Google Account is out of storage</string>
     <string name="gpp_warning_preference_action">Turn on Play Protect</string>
     <string name="gpp_warning_preference_key">sb_gpp_warning_preference_key</string>
     <string name="gpp_warning_preference_summary">Play Protect must be on for Safe Browsing to detect security threats</string>
@@ -3940,7 +4002,7 @@ Check that the Google Play Games app is enabled for this profile."</string>
     <string name="gps_for_fitness">For fitness</string>
     <string name="gps_for_games">For games</string>
     <string name="gps_for_location_accuracy_2">For location accuracy</string>
-    <string name="gps_for_location_history">For location history</string>
+    <string name="gps_for_location_services">For location services</string>
     <string name="gps_for_location_sharing">For location sharing</string>
     <string name="gps_for_parental_controls">For parental controls</string>
     <string name="gps_for_safety_and_emergency">For safety &amp; emergency</string>
@@ -4048,6 +4110,7 @@ Check that the Google Play Games app is enabled for this profile."</string>
     <string name="icing_storage_management_title">Search Data</string>
     <string name="icing_storage_management_usage_label">Space usage by app</string>
     <string name="icon_content_description">Dialog Icon</string>
+    <string name="icon_label">Button</string>
     <string name="idcard_activity_log_expected_update_timestamp_header">expected update timestamp</string>
     <string name="idcard_activity_log_fields_not_sent_header">fields not sent</string>
     <string name="idcard_activity_log_operation_header">operation</string>
@@ -4107,8 +4170,7 @@ You can also use your Google Account on this device to turn off Identity Check."
     <string name="identity_check_set_up_title">Set up Identity Check</string>
     <string name="identity_check_set_up_title_complete">You’re all set</string>
     <string name="identity_check_settings_description">Use biometrics and other safeguards to verify it’s you. This adds extra protection for sensitive actions when away from your trusted places.</string>
-    <string name="identity_check_setup_watch_description">With your watch connected, Identity Check automatically recognizes you while maintaining your security even when you’re not in a trusted location</string>
-    <string name="identity_check_setup_watch_title">Protection on the move with watch</string>
+    <string name="identity_check_setup_watch_description">Outside of trusted places like your home:&lt;ul>&lt;li>If you have a connected watch, you can use either biometrics or your PIN&lt;/li>&lt;li>If you don’t have a connected watch, you’ll be required to use Fingerprint or Face Unlock&lt;/li>&lt;/ul></string>
     <string name="identity_check_switch_footer_message"><b>"Biometrics required for sensitive actions, such as:
 "</b><ul><li>Accessing saved passkeys and app passwords</li>"
 "<li>Changing PIN, pattern, or password, and turning off Find Hub</li></ul>"
@@ -4129,12 +4191,21 @@ You can also use your Google Account on this device to turn off Identity Check."
 "</b>"Turning this off using your Google Account requires an internet connection
 
 "<a href="https://support.google.com/android?p=identity_check">Learn more about Identity Check</a>" "</string>
+    <string name="identity_check_switch_footer_message_biometrics"><b>"Biometrics required for sensitive actions, such as:
+"</b><ul><li>Accessing saved passkeys and app passwords</li>"
+"<li>Changing PIN, pattern, or password, and turning off Find Hub</li></ul>" "</string>
+    <string name="identity_check_switch_footer_message_biometrics_v2">&lt;b>When and where you’re protected&lt;/b>&lt;br>Identity Check works with any app that uses biometrics.&lt;br>&lt;br>%1$s&lt;br>Note: Over time, Identity Check may add more ways to verify it’s you and secure apps on your device.</string>
+    <string name="identity_check_switch_footer_message_fallback"><b>"You can turn off Identity Check using biometrics or your Google Account
+"</b>"Turning this off using your Google Account requires an internet connection "</string>
+    <string name="identity_check_switch_footer_message_google_account"><b>"Google Accounts have extra security
+"</b>"This makes it harder for someone to take over your Google Accounts signed in on this device "</string>
     <string name="identity_check_switch_subtitle">Use biometrics and other safeguards to verify it’s you. This adds extra security for sensitive actions.</string>
     <string name="identity_check_switch_text">Use Identity Check</string>
     <string name="identity_check_trusted_locations_not_set_up_summary">Tap to set up</string>
     <string name="identity_check_trusted_locations_summary">Manage</string>
     <string name="identity_check_trusted_locations_title">Trusted places</string>
-    <string name="identity_check_v2_introduction_biometrics_description">Identity Check detects when you’re not in a trusted location. It will require you to use Fingerprint or Face Unlock to identify and verify you before accessing sensitive information, actions, or apps</string>
+    <string name="identity_check_v2_introduction_biometrics_description">Identity Check works with any app that uses biometrics.&lt;br>&lt;br>%1$s&lt;br>Note: Over time, Identity Check may add more ways to verify it’s you and secure apps on your device.</string>
+    <string name="identity_check_v2_introduction_biometrics_explanation">&lt;ul>&lt;li>Outside of trusted places like your home, you’ll be required to use only Fingerprint or Face Unlock&lt;/li>&lt;li>In trusted places, you can also use your PIN&lt;/li>&lt;/ul></string>
     <string name="identity_check_v2_introduction_biometrics_title">When and where you’re protected</string>
     <string name="identity_check_warning_card_biometrics_button_text">Set up</string>
     <string name="identity_check_warning_card_biometrics_description">Identity Check won’t work until you set up your biometrics</string>
@@ -4161,9 +4232,13 @@ You can also use your Google Account on this device to turn off Identity Check."
     <string name="identity_check_warning_card_screen_lock_title">Set a screen lock</string>
     <string name="identity_check_warning_card_trusted_locations_description">Identity Check uses trusted places to determine how much security is needed to verify it’s you. Add a trusted place or you’ll need to always verify using a biometric.</string>
     <string name="identity_check_warning_card_trusted_locations_title">Add a trusted location</string>
+    <string name="identity_check_when_and_where_youre_protected_link">" "<a href="https://support.google.com/android?p=identity_check">Learn more about when and where you’re protected</a>" "</string>
     <string name="identity_check_youre_in_control_title">You’re in control</string>
     <string name="illustration_preference_key">sb_illustration_preference_key</string>
     <string name="image_viewer_display_failed">Failed to display screenshot.</string>
+    <string name="import_dialog_long_list_body_text">"You're about to copy your %1$s from the password manager you choose below to %2$s"</string>
+    <string name="import_dialog_short_list_body_text">"You're about to copy everything from the password manager you choose to %1$s, including %2$s"</string>
+    <string name="import_dialog_title_choose_an_option_to_import">Choose the other password manager</string>
     <string name="improve_autofill_info_description">As a beta user, you can help improve autofill by submitting a screenshot of this application screen. That screenshot is anonymous and will be deleted in 8 days.</string>
     <string name="improve_autofill_info_yes">Take screenshot</string>
     <string name="improve_autofill_message">Help improve Autofill</string>
@@ -4202,25 +4277,53 @@ You can also use your Google Account on this device to turn off Identity Check."
     <string name="interruption_option_important_interruptions">Priority only</string>
     <string name="interruption_option_no_interruptions">Total silence</string>
     <string name="interruption_pref_title">Do not disturb</string>
+    <string name="interstitial_disclaimer">Parents are required to manage Google Accounts for kids under the age of consent. &lt;a href=\"https://support.google.com/families?p=device_supervision_account\">Learn more&lt;/a></string>
+    <string name="interstitial_title">Parental controls</string>
     <string name="introducing_fmdn_title">Find Hub network</string>
-    <string name="intrusiondetection_account_retrieving_logs">Retrieving logs</string>
+    <string name="intrusiondetection_aapm_disabled_warning_banner_action_button">Device protection settings</string>
+    <string name="intrusiondetection_aapm_disabled_warning_banner_summary">To enable Intrusion logging and start collecting logs for this device, you need to enable Device Protection.</string>
+    <string name="intrusiondetection_aapm_disabled_warning_banner_title">Device protection is off</string>
+    <string name="intrusiondetection_access_logs_card_description">Access logs associated to your Google Account</string>
+    <string name="intrusiondetection_access_logs_card_title">Access logs</string>
+    <string name="intrusiondetection_access_logs_paragraph_content">If you want to retrieve logs from this device or another one stored under a different Google Account, you need to add the account to this device.</string>
+    <string name="intrusiondetection_access_logs_paragraph_title">Access logs</string>
     <string name="intrusiondetection_autofill_account">Select Google Account</string>
     <string name="intrusiondetection_biometric_auth_dialog_title">"Verify it's you"</string>
     <string name="intrusiondetection_change_account_button">Change</string>
     <string name="intrusiondetection_download">Download</string>
+    <string name="intrusiondetection_enrollment_title">Intrusion logging</string>
+    <string name="intrusiondetection_feature_switch_card_description">Keep logs for this device</string>
+    <string name="intrusiondetection_feature_switch_card_title">Intrusion logging</string>
+    <string name="intrusiondetection_google_account_action_button">Add Google Account</string>
+    <string name="intrusiondetection_google_account_warning_banner_summary">Some Advanced Protection features require a Google Account to protect your device</string>
+    <string name="intrusiondetection_google_account_warning_banner_title">Add a Google Account</string>
+    <string name="intrusiondetection_info_block_access_desc">"Logs can only be accessed using your Google Account and the device's screen lock"</string>
+    <string name="intrusiondetection_info_block_learn_more_desc">Learn more about Intrusion Logging</string>
+    <string name="intrusiondetection_info_block_policy_desc">Intrusion Logging preserves logs of some device activity in private, end-to-end encrypted storage on Google servers</string>
+    <string name="intrusiondetection_info_block_retention_desc">"Logs are automatically deleted after twelve months and for your protection, can't be deleted manually"</string>
+    <string name="intrusiondetection_info_block_security_desc">Logs include info like device connections, network activity such as app installs and browsing history, and when your screen was unlocked</string>
+    <string name="intrusiondetection_landing_screen_feature_description">Intrusion logging preserves logs with device activity for security analysis. If you suspect a security issue, you or a trusted expert you ask for help can check to see what happened.</string>
+    <string name="intrusiondetection_landing_screen_title">Intrusion logging</string>
     <string name="intrusiondetection_logs_download_failed_with_unexpected_error">Logs download failed for %s due to an unexpected error</string>
     <string name="intrusiondetection_logs_download_finished">Logs downloaded for %s</string>
     <string name="intrusiondetection_logs_download_started">Downloading…</string>
+    <string name="intrusiondetection_lskf_action_button">Add screen lock</string>
+    <string name="intrusiondetection_lskf_warning_banner_summary">Intrusion logging requires a screen lock to be added to the device to retrieve logs</string>
+    <string name="intrusiondetection_lskf_warning_banner_title">No screen lock</string>
     <string name="intrusiondetection_no_account_selected">No Google account</string>
+    <string name="intrusiondetection_no_internet_warning_banner_summary">You need a network connection to setup Device Protection</string>
+    <string name="intrusiondetection_no_internet_warning_banner_title">No network connection</string>
     <string name="intrusiondetection_readonly_pref_1_desc">Intrusion Logging preserves logs of some device activity in private, end-to-end encrypted storage on Google servers</string>
     <string name="intrusiondetection_readonly_pref_2_desc">Logs include info like device connections, network activity such as app installs, some browsing history, and when your screen was unlocked</string>
     <string name="intrusiondetection_readonly_pref_3_desc">"Logs can only be accessed using your Google Account and the device's screen lock"</string>
-    <string name="intrusiondetection_readonly_pref_4_desc">Learn about Intrusion Logging</string>
+    <string name="intrusiondetection_readonly_pref_4_desc">"Logs are automatically deleted after twelve months and for your protection, can't be deleted manually"</string>
     <string name="intrusiondetection_resources_card_title">Google Account</string>
-    <string name="intrusiondetection_retrieval_description">If you suspect a security issue, you or a trusted expert you ask for help can check to see what happened and who might be responsible.</string>
+    <string name="intrusiondetection_retrieval_description">Intrusion logging can store your activity logs in a private and ecrypted Google Drive. These logs can be used for forensic analysis in cases of suspicious activity.</string>
+    <string name="intrusiondetection_retrieval_download_instructions">If you want to retrieve logs from this device or another one stored under a different Google Account, you need to add the account to this device.</string>
     <string name="intrusiondetection_retrieval_encrypted_logs_desc">Encrypted logs</string>
     <string name="intrusiondetection_retrieval_logs_download_date_desc">Backed up {date}</string>
-    <string name="intrusiondetection_retrieval_title">Intrusion Logging</string>
+    <string name="intrusiondetection_retrieval_title">Access logs</string>
+    <string name="intrusiondetection_skip_setup">Skip Intrusion logging</string>
     <string name="intrusiondetection_summary">Device protection includes Intrusion Logging. If you suspect a security issue, you or a trusted expert you ask for help can check to see what happened and who might be responsible.</string>
     <string name="intrusiondetection_title">Setup Device Protection</string>
     <string name="invalid_action_event_status">Invalid User Action eventStatus</string>
@@ -4274,14 +4377,39 @@ You can also use your Google Account on this device to turn off Identity Check."
     <string name="keyguard_accessibility_delete_button">Delete</string>
     <string name="keyguard_accessibility_enter_button">Enter</string>
     <string name="keyguard_accessibility_pin_area">PIN area</string>
+    <string name="keyguard_accessibility_pin_dots_count">{count, plural, =1 { # character} other { # characters} }</string>
+    <string name="kids_always_allowed_apps_by_bedtime_exit_title">Bedtime is on: only always allowed apps are available</string>
+    <string name="kids_always_allowed_apps_by_downtime_exit_title">Downtime is on: only always allowed apps are available</string>
+    <string name="kids_always_allowed_apps_by_override_exit_title">Time for a break: Your parent locked this device</string>
+    <string name="kids_always_allowed_apps_by_school_time_exit_title">School time is on: only always allowed apps are available</string>
+    <string name="kids_always_allowed_apps_exit_action">Allow all apps</string>
+    <string name="kids_always_allowed_apps_exit_text">Ask your parent if you need more time</string>
+    <string name="kids_always_allowed_apps_exit_title">Time’s up! You’ve reached your daily limit</string>
+    <string name="kids_always_allowed_apps_suspend_by_override_dialog_text">Only ‘always allowed’ apps are available right now</string>
     <string name="kids_always_allowed_apps_suspend_by_override_dialog_title">Time for a break</string>
+    <string name="kids_always_allowed_apps_suspend_by_school_time_dialog_text">This app isn’t available right now. Check back after school time ends.</string>
     <string name="kids_always_allowed_apps_suspend_dialog_neutral_button_label">Allow all apps</string>
+    <string name="kids_always_allowed_apps_suspend_dialog_text">You’ve reached your daily limit. Ask your parent if you need more time.</string>
     <string name="kids_always_allowed_apps_suspend_dialog_title">Time’s up!</string>
     <string name="kids_always_allowed_apps_suspended_by_mode_dialog_title">App isn’t available</string>
+    <string name="kids_app_suspended_by_min_version_dialog_message">%1$s needs to be updated before you can use it.</string>
+    <string name="kids_app_suspended_by_min_version_dialog_message_generic_app_name">This app needs to be updated before you can use it.</string>
     <string name="kids_app_suspended_by_min_version_dialog_title">App paused</string>
+    <string name="kids_app_suspended_by_supervision_mode_dialog_message">This app isn’t available right now</string>
     <string name="kids_app_suspended_by_supervision_mode_dialog_title">Not allowed</string>
     <string name="kids_app_suspended_with_recovery_option_for_android_q_title">Can’t use app</string>
+    <string name="kids_app_suspended_with_recovery_option_title">Can’t use %1$s</string>
+    <string name="kids_app_suspended_with_recovery_option_title_generic_app_name">Can’t use app</string>
+    <string name="kids_app_suspended_with_ulp_upgrade_recovery_option_action">Ask a parent</string>
     <string name="kids_app_suspended_with_ulp_upgrade_recovery_option_for_android_q_action">Ask a parent</string>
+    <string name="kids_app_suspended_with_ulp_upgrade_recovery_option_message">"To use %1$s, your parent will need to add a Gmail address &amp; password to your Google Account.
+
+To get access, tap “Ask a parent”.
+To exit this screen, tap “OK”."</string>
+    <string name="kids_app_suspended_with_ulp_upgrade_recovery_option_message_generic_app_name">"To use this app, your parent will need to add a Gmail address &amp; password to your Google Account.
+
+To get access, tap “Ask a parent”.
+To exit this screen, tap “OK”."</string>
     <string name="kids_auth_setup_dm_component">com.google.android.gms/com.google.android.gms.kids.account.receiver.ProfileOwnerReceiver</string>
     <string name="kids_lib_admin_app_title_parental_controls">Family Link parental controls</string>
     <string name="kids_lib_admin_desc_parental_controls">Family Link parental controls will be installed to help parents supervise the activity on this device.</string>
@@ -4313,6 +4441,7 @@ You can also use your Google Account on this device to turn off Identity Check."
     <string name="learn_more_desc_games">Learn more about games</string>
     <string name="learn_more_desc_location_accuracy">Learn more about location accuracy</string>
     <string name="learn_more_desc_location_history">Learn more about location history</string>
+    <string name="learn_more_desc_location_services">Learn more about location services</string>
     <string name="learn_more_desc_location_sharing">Learn more about location sharing</string>
     <string name="learn_more_desc_parental_controls">Learn more about parental controls</string>
     <string name="learn_more_desc_safety_and_emergency">Learn more about safety and emergency</string>
@@ -4326,7 +4455,8 @@ You can also use your Google Account on this device to turn off Identity Check."
     <string name="learn_more_which_contacts_header">Which contacts are affected</string>
     <string name="leave_setup_dialog_description">Are you sure you want to stop setting up parental controls?</string>
     <string name="leave_setup_dialog_title">Leave set up?</string>
-    <string name="lia_settings_description">Provide media suggestions from media apps based on your activity and location.</string>
+    <string name="legacy_learn_more">Learn more</string>
+    <string name="lia_settings_description">Get helpful suggestions from your apps and services based on your usual activities and locations.</string>
     <string name="lighter_close_button_label">close</string>
     <string name="lighter_tap_item_to_retry">Tap to retry</string>
     <string name="likely_scam">Likely scam</string>
@@ -4374,7 +4504,6 @@ You can change this anytime in Settings."</string>
     <string name="lkl_only_notice_notification_text">Find Hub encrypts and stores this device’s most recent location to show where it was last online</string>
     <string name="lkl_only_notice_subtitle">Find Hub can already help you locate this device when it’s online. By encrypting and storing its most recent location, Find Hub can now help you locate it when it’s offline.</string>
     <string name="lkl_only_notice_title">Find this device even when offline</string>
-    <string name="loader_text">Loading fresh features</string>
     <string name="loading_description_text">This may take a few minutes</string>
     <string name="loan_balance_description">Loan balance</string>
     <string name="local_map_source">%1$s</string>
@@ -4628,11 +4757,16 @@ If you want to stop using your screen lock as an encryption key, you can remove 
     <string name="material_slider_value">Value</string>
     <string name="material_timepicker_am">AM</string>
     <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_clock_mode_tooltip">Switch to clock mode</string>
     <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_hour_error">Hour must be 1–12</string>
+    <string name="material_timepicker_hour_error_24h">Hour must be 0–23</string>
     <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_minute_error">Minute must be 0–59</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="material_timepicker_text_input_mode_tooltip">Switch to text input mode</string>
     <string name="mdd_debug_ui_title">MDD Debug</string>
     <string name="mdd_download_notification_channel_name">Data Download Notification Channel</string>
     <string name="mdd_foreground_service_notification_title">Downloading</string>
@@ -4953,6 +5087,7 @@ To set up your watch, connect it to this phone with the device app. Your watch a
     <string name="no_user_actions">No recent %1$s found.</string>
     <string name="no_user_actions_message">No recent User Actions found.</string>
     <string name="non_container_list_header">NON CONTAINER MODULES</string>
+    <string name="non_transferable_disabled_profile_description">Turn on this SIM in Settings to make it available for transfer</string>
     <string name="non_transferable_profile_description">"Can't transfer this SIM"</string>
     <string name="not_allowed">Not allowed</string>
     <string name="not_selected">Not selected</string>
@@ -5098,6 +5233,10 @@ Your child can turn this service off in Settings."</string>
     <string name="opted_out_title">View &amp; top up your mobile balances on this phone</string>
     <string name="optimizing_device_text">Optimizing your device, this may take a while</string>
     <string name="order_with_gpay">Order with GPay</string>
+    <string name="os_migration_transfer_wifi_and_connection_error">Wi-Fi not added</string>
+    <string name="os_migration_transfer_wifi_and_connection_header">Verifying devices and connecting to Wi-Fi</string>
+    <string name="os_migration_transfer_wifi_and_connection_success">Devices verified and Wi-Fi connected</string>
+    <string name="os_migration_transfer_wifi_success">Wi-Fi connected</string>
     <string name="other_password_manager">Other password managers</string>
     <string name="oval_text">5+</string>
     <string name="overusage_desc">If you go over %1$s, %2$s</string>
@@ -5112,6 +5251,7 @@ Your child can turn this service off in Settings."</string>
     <string name="package_details_title">Application Details</string>
     <string name="packages_title">Applications</string>
     <string name="parental_controls_summary">Screen time, content restrictions, location</string>
+    <string name="pass_view_favorite_education_tip_message">Tap the star to add this pass to your home screen</string>
     <string name="passkey">passkey</string>
     <string name="passkey_before_subtitle">Passkey</string>
     <string name="password">password</string>
@@ -5285,23 +5425,19 @@ By continuing, you accept the %1$s. Google will share your Google Account with F
     <string name="pay_bank_account_added_success_pay_title">Send Pix to friends and businesses using Wallet</string>
     <string name="pay_bank_account_added_success_secure_title">Enjoy all the convenience and security that you count on from Pix</string>
     <string name="pay_bank_account_added_success_title">Your %1$s account was successfully linked to Google Pay</string>
-    <string name="pay_bank_account_detail_checking">Checking</string>
-    <string name="pay_bank_account_detail_savings">Savings</string>
-    <string name="pay_bank_account_detail_transacting_account">Account</string>
     <string name="pay_bank_accounts_label">Accounts</string>
     <string name="pay_barcode_icon_image_content_description">Barcode icon image</string>
     <string name="pay_barcode_label">Barcode</string>
     <string name="pay_boarding_pass_removed_toast">Boarding pass removed</string>
+    <string name="pay_br_real">R$</string>
     <string name="pay_bulletin_dismiss_button_content_description">Dismiss the bulletin</string>
     <string name="pay_button_accept_and_continue">Accept &amp; continue</string>
     <string name="pay_button_activate">Activate</string>
     <string name="pay_button_add">Add</string>
     <string name="pay_button_call">Call</string>
     <string name="pay_button_deactivate">Deactivate</string>
-    <string name="pay_button_disable">Disable</string>
     <string name="pay_button_get_the_app">Get the app</string>
     <string name="pay_button_save">Save</string>
-    <string name="pay_button_update">Update</string>
     <string name="pay_button_view_details">View details</string>
     <string name="pay_call_issuer_label">Call %1$s</string>
     <string name="pay_callout_body_bluetooth">Turn on Bluetooth to use your hotel key</string>
@@ -5350,11 +5486,10 @@ Please scan a different document."</string>
     <string name="pay_card_rewards_preview_see_more_button_text">View more card benefits</string>
     <string name="pay_card_rewards_preview_title">%1$s benefits</string>
     <string name="pay_card_rewards_preview_title_no_card_name">Your card benefits</string>
+    <string name="pay_card_rewards_preview_view_more_details_button_text">View more details</string>
     <string name="pay_card_se_readiness_error_message">There’s an issue with your card. View details for a quick resolution</string>
     <string name="pay_card_setting_up">Setting up…</string>
     <string name="pay_card_suspended">Card suspended</string>
-    <string name="pay_card_tokenize_value_prop_screen_subtitle">Use your card to pay everywhere %1$s is accepted. Additional verification may be needed.</string>
-    <string name="pay_card_tokenize_value_prop_screen_title">Set up card to pay using %1$s</string>
     <string name="pay_card_transfer_troubleshooting_message">"If you don’t see a notification
 Go to your %1$s and check your internet connectivity or open Wallet App, then select ’%2$s’ in the card details view of the card you want to transfer.
 
@@ -5457,7 +5592,6 @@ Once verified, you can also make QR payments using this device with your card. &
     <string name="pay_contactless_filter">Tap to pay purchases</string>
     <string name="pay_contextual_card_body_add">Add a card to tap to pay in stores</string>
     <string name="pay_contextual_card_body_pay_with_wallet">Tap to pay in stores, board a flight, and more, all with just your phone</string>
-    <string name="pay_contextual_card_body_wallet_missing">Get faster, safer, easier access to your cards, tickets and more</string>
     <string name="pay_contextual_card_cta_add">Add</string>
     <string name="pay_contextual_card_cta_install_wallet">@string/pay_wallet_install_wallet</string>
     <string name="pay_contextual_card_cta_pay_with_wallet">Open</string>
@@ -5513,8 +5647,6 @@ You can only add %2$s more to your card"</string>
     <string name="pay_digital_car_key_pending_removal">Pending deletion</string>
     <string name="pay_digital_car_key_removed">Access removed</string>
     <string name="pay_digital_car_keys_header">Digital keys</string>
-    <string name="pay_disable_transit_purchase_auth_content">"Disabling authentication may result in unauthorized purchases. You assume responsibility for all charges. You'll need to verify your password to disable authentication."</string>
-    <string name="pay_disable_transit_purchase_auth_title">Disable authentication for all transit purchases on Google Pay?</string>
     <string name="pay_discoverables_popular_nearby">Popular nearby</string>
     <string name="pay_display_attachment_tile_title">View pass photo</string>
     <string name="pay_display_attachments_tile_title">View pass photos</string>
@@ -5737,7 +5869,6 @@ To add another transit card to this phone, you’ll first need to remove one of 
     <string name="pay_felica_unsupported_tip_title">Your phone doesn’t support Osaifu-Keitai</string>
     <string name="pay_finish_payment">Finish payment</string>
     <string name="pay_flight_number_a11y_label">Flight number %s</string>
-    <string name="pay_fop_card_tokenize_tip_title">Set up this card to %1$spay everywhere %2$s is accepted%3$s</string>
     <string name="pay_fop_delete_options_from_wallet">From Wallet</string>
     <string name="pay_fop_delete_options_from_wallet_and_google">From Wallet and your Google Account</string>
     <string name="pay_fop_delete_options_from_wallet_and_google_subtext">"You won't be able to pay with this card in Wallet, on this phone, or online from other devices anywhere you pay with Google."</string>
@@ -5752,6 +5883,12 @@ To add another transit card to this phone, you’ll first need to remove one of 
     <string name="pay_fop_paypal_non_nfc_delete_options_from_wallet_subtext">You won’t be able to make faster online payments with Paypal on this device where Google Pay is accepted, and your transaction history won’t be available on this device.&lt;br>&lt;br>You’ll also need to sign into your &lt;a href=%1$s>PayPal account&lt;/a> and remove Google from your payment settings to complete this change.</string>
     <string name="pay_fops_action_header">Card details</string>
     <string name="pay_fops_add_nickname">Add a nickname</string>
+    <string name="pay_fops_card_tokenize_tip_title">Set up this card to pay everywhere %1$s%2$s%3$s is accepted</string>
+    <string name="pay_fops_card_tokenize_tip_title_nfcab">Set up %1$stap to pay%2$s with this card so you can use it in more places</string>
+    <string name="pay_fops_card_tokenize_value_prop_screen_subtitle">Use your card to pay everywhere %1$s is accepted. Additional verification may be needed.</string>
+    <string name="pay_fops_card_tokenize_value_prop_screen_subtitle_nfcab">Use your card to pay everywhere %1$s, and tap to pay is accepted. Additional verification may be needed.</string>
+    <string name="pay_fops_card_tokenize_value_prop_screen_title">Set up card to pay in stores with %1$s</string>
+    <string name="pay_fops_card_tokenize_value_prop_screen_title_nfcab">Set up card to enable tap to pay</string>
     <string name="pay_fops_cobadged_payment_network_changed_message">Payment network changed to %1$s</string>
     <string name="pay_fops_cobadged_payment_network_changed_message_auto">Payment network will be automatically selected</string>
     <string name="pay_fops_cobadged_payment_network_default_option">Auto</string>
@@ -5773,7 +5910,6 @@ To enable tap to pay again, you'll need to repeat the setup process."</string>
     <string name="pay_fops_finish_set_up">Finish setup</string>
     <string name="pay_fops_list_add_to_wallet">Add to Wallet</string>
     <string name="pay_fops_list_card_network_id">iD</string>
-    <string name="pay_fops_list_card_network_jcb">JCB</string>
     <string name="pay_fops_list_card_network_quicpay">QUICPay</string>
     <string name="pay_fops_list_default_card_content_description">%1$s is your default for tap to pay.</string>
     <string name="pay_fops_list_default_tap_to_pay">Default for tap to pay</string>
@@ -5795,9 +5931,13 @@ To enable tap to pay again, you'll need to repeat the setup process."</string>
     <string name="pay_fops_push_reperso_dialog_button">Go to app</string>
     <string name="pay_fops_push_reperso_dialog_message">In the %1$s app, add your card to Google Wallet. Your card will be ready to use when you return to Wallet.</string>
     <string name="pay_fops_push_reperso_dialog_title">Complete the update in the card issuer app</string>
+    <string name="pay_fops_removed_express_transit_card_success">%1$s removed as express transit card</string>
     <string name="pay_fops_reperso_dialog_button">Continue</string>
     <string name="pay_fops_reperso_dialog_message">You will need to enter the security code found on the back of the card for the update</string>
     <string name="pay_fops_set_default_contactless">Make default for tap to pay</string>
+    <string name="pay_fops_set_express_transit_card">Set as express transit card</string>
+    <string name="pay_fops_set_express_transit_card_failure">Failed to set %1$s as express transit card</string>
+    <string name="pay_fops_set_express_transit_card_success">%1$s set as express transit card</string>
     <string name="pay_fops_set_up_nfc_message">Set up %1$s to make faster, more secure purchases with your phone</string>
     <string name="pay_fops_sv_balance">Balance</string>
     <string name="pay_fops_sv_limit_subtitle">left for today</string>
@@ -5929,6 +6069,7 @@ You can always change this later. %1$s"</string>
     <string name="pay_id_add_id_prompt">Select an ID</string>
     <string name="pay_id_add_id_replacement_info">This isn’t a replacement for your physical %1$s, so keep that with you if needed. &lt;a href=%2$s>Learn about %3$s&lt;/a></string>
     <string name="pay_id_add_state_issued_id_prompt">Add a state-issued digital ID</string>
+    <string name="pay_id_age_credential_visible_name">Age Credential</string>
     <string name="pay_id_age_verification_value_prop_message">Then use your Railcard to buy discounted tickets when you travel</string>
     <string name="pay_id_age_verification_value_prop_title">Verify your age to buy a Railcard online</string>
     <string name="pay_id_auth_setup_lock_body_text">In most cases, your phone needs to be unlocked to use your digital ID. To make changes go to your [keyguardSettingsLink]settings[/keyguardSettingsLink].</string>
@@ -5984,10 +6125,17 @@ You can always change this later. %1$s"</string>
     <string name="pay_id_loading_provisioning_text">Get your %1$s ready</string>
     <string name="pay_id_pass">pass</string>
     <string name="pay_id_pass_activity_status_on">on</string>
+    <string name="pay_id_pass_age_value_prop_body_1">An ID pass is a digital ID you can create in Google Wallet with a passport. Once added, you can easily use it online and in-person to verify your age or identity.</string>
+    <string name="pay_id_pass_age_value_prop_body_2">You can just share your age and nothing else about who you are. Google doesn’t track where you share info.</string>
+    <string name="pay_id_pass_age_value_prop_subtitle_1">What’s an ID pass?</string>
+    <string name="pay_id_pass_age_value_prop_subtitle_2">Anonymous age verification</string>
+    <string name="pay_id_pass_age_value_prop_title">Anonymously share your age with an ID pass in Google Wallet</string>
     <string name="pay_id_pass_disclaimer">This isn’t a government-issued ID or a replacement for one so keep your physical ID with you as needed</string>
+    <string name="pay_id_pass_disclaimer_footer">This isn’t a government-issued ID or a replacement for one so keep your physical ID with you as needed. <annotation id="learn_more_link">%1$s</annotation></string>
     <string name="pay_id_pass_document_info_link_message">To use your %1$s, tap your %2$s to a reader or scan your QR code. This screen can’t be shown to verify your identity. [mdocEducationalLink]Learn more about %3$s[/mdocEducationalLink]</string>
     <string name="pay_id_pass_info_label">%1$s info</string>
     <string name="pay_id_pass_info_link_message">To use your %1$s, tap your %2$s to a reader or scan your QR code. This screen can’t be shown to verify your identity. [mdocEducationalLink]Learn more[/mdocEducationalLink]</string>
+    <string name="pay_id_pass_online_only_document_info_link_message">This screen can’t be shown to verify your identity. [mdocEducationalLink]Learn more about %1$s[/mdocEducationalLink]</string>
     <string name="pay_id_pass_source_message">Pass info was collected from your %1$s</string>
     <string name="pay_id_pass_value_prop_body">An ID pass stores your identity info in Wallet, but it’s not a passport. It isn’t a government issued ID or a replacement for your physical ID, so keep that with you.</string>
     <string name="pay_id_pass_value_prop_message">An ID pass stores your identity info in Wallet. It isn’t a government issued ID or a replacement for your physical ID, so keep that with you.</string>
@@ -5997,6 +6145,8 @@ You can always change this later. %1$s"</string>
     <string name="pay_id_pass_value_prop_where_use_title">Verify your identity at TSA checkpoints for domestic travel</string>
     <string name="pay_id_passport">passport</string>
     <string name="pay_id_pilot_capacity_reached">Unavailable. %1$s digital ID pilot at capacity.</string>
+    <string name="pay_id_provision_install_wallet_message">To view your %1$s, install Google Wallet</string>
+    <string name="pay_id_provision_loading_title">Getting your %1$s ready</string>
     <string name="pay_id_rejected">%1$s not approved</string>
     <string name="pay_id_rejected_help_message">Visit the %1$s to check that you’re eligible to add an ID pass in Wallet then try again</string>
     <string name="pay_id_review_subtitle">"Make sure you're comfortable sharing the info they request."</string>
@@ -6009,7 +6159,6 @@ Your personal info won't be shared yet."</string>
     <string name="pay_id_sulu_visible_name">Sulu</string>
     <string name="pay_id_tsa_value_prop">Fly through TSA security for domestic travel</string>
     <string name="pay_id_tutorial_entrypoint_title">Learn how and where to use your %1$s</string>
-    <string name="pay_id_usage_instruction_message">To use your %1$s, just tap your phone to the reader and follow the instructions</string>
     <string name="pay_id_verification_cta_body">To prevent fraud and protect your %1$s, Google needs to verify your identity again. This helps keep your %2$s secure in Google Wallet.</string>
     <string name="pay_id_verification_cta_title">Verify your identity to keep your %1$s safe</string>
     <string name="pay_id_verify_tutorial_subtitle">"Digital IDs are safer than physical IDs because your info is always encrypted when shared.
@@ -6067,6 +6216,12 @@ Google only shares required info, not your full ID."</string>
     <string name="pay_low_balance_notification_disable_button">Turn off notification</string>
     <string name="pay_low_balance_notification_fragment_title_with_card">Low balance notification for %1$s</string>
     <string name="pay_low_balance_notification_on_button">Turn on notification</string>
+    <string name="pay_low_balance_notification_options_subtitle">Notify me when balance is below</string>
+    <string name="pay_low_balance_notification_setup_title">Manage low balance notifications</string>
+    <string name="pay_low_balance_notification_switch_label">Get notifications</string>
+    <string name="pay_low_balance_notification_switch_off_subtitle">"You won't receive notifications about your balances"</string>
+    <string name="pay_low_balance_notification_text">Add money to your %1$s card soon</string>
+    <string name="pay_low_balance_notification_title">Below %2$s on %1$s card</string>
     <string name="pay_low_balance_title">Your %1$s card balance is below %2$s</string>
     <string name="pay_loyalty_card_added_toast">Loyalty card added</string>
     <string name="pay_loyalty_card_program_search_hint">Search loyalty programs</string>
@@ -6078,6 +6233,8 @@ Google only shares required info, not your full ID."</string>
     <string name="pay_make_active_for_id_card">Make active for iD</string>
     <string name="pay_make_active_for_quicpay_card">Make active for QUICPay</string>
     <string name="pay_manage_low_balance_notification_action_description">Manage low balance notification</string>
+    <string name="pay_manage_privacy_settings_description">You can control how info related to your Wallet and payments services is saved and used across Google</string>
+    <string name="pay_manage_privacy_settings_title">Manage data from Wallet and payments services</string>
     <string name="pay_map_description">Map</string>
     <string name="pay_map_description_more">Map of %1$s at %2$s</string>
     <string name="pay_mdl_presentment_tutorial_page1_subtitle">"Your personal info won't be shared yet. On your phone, review what info you want to share."</string>
@@ -6116,7 +6273,6 @@ Google only shares required info, not your full ID."</string>
     <string name="pay_mdoc_retained_fields_header_text">This info was stored:</string>
     <string name="pay_mdoc_retained_fields_intent_header_text">This info will be stored:</string>
     <string name="pay_mdoc_revoked_details">Visit the %1$s for more info</string>
-    <string name="pay_mdoc_revoked_info">Your %1$s has been suspended and deleted from this device</string>
     <string name="pay_mdoc_shared_info">Shared %1$s</string>
     <string name="pay_mdoc_transaction_in_person_subtitle">In-person</string>
     <string name="pay_mdoc_transaction_online_subtitle">Online</string>
@@ -6175,6 +6331,7 @@ Google only shares required info, not your full ID."</string>
     <string name="pay_navigate_image_description">Start navigation</string>
     <string name="pay_need_help">Need help?</string>
     <string name="pay_new_balance">New balance: %1$s</string>
+    <string name="pay_nfc_deactivated">NFC is off</string>
     <string name="pay_nfc_disabled">NFC is disabled</string>
     <string name="pay_nfc_education_tutorial_page1">Tap to use your pass everywhere you see this symbol</string>
     <string name="pay_nfc_is_on_description">NFC is on for this pass</string>
@@ -6280,16 +6437,25 @@ By continuing, your existing %1$s card will be added to Wallet."</string>
     <string name="pay_pc1_splash_screen_subtitle">Get better recommendations and more relevant offers in the app</string>
     <string name="pay_pc1_splash_screen_title">Personalize your Google Pay experience</string>
     <string name="pay_personal_information_label">Personal information</string>
+    <string name="pay_phone_device_type">phone</string>
     <string name="pay_phone_needs_update">Your phone needs a quick update</string>
     <string name="pay_photo_barcode_not_supported">Barcode not supported</string>
     <string name="pay_photo_has_more_than_one_barcode_content">Make sure you choose a photo with a single barcode or QR code</string>
     <string name="pay_photo_has_more_than_one_barcode_title">Too many barcodes or QR codes</string>
     <string name="pay_photo_missing_barcode_content">"Choose a photo with a barcode or QR code. If your photo has a barcode or QR code, make sure it's large enough to scan and isn't blurry, then try again."</string>
     <string name="pay_photo_missing_barcode_title">Photo is missing barcode or QR code</string>
-    <string name="pay_picard_presentment_tutorial_page1_subtitle">"This isn't a governement issued ID or a replacement for one so keep your physical ID with you as needed."</string>
-    <string name="pay_picard_presentment_tutorial_page1_title">Use at select TSA checkpoints</string>
     <string name="pay_pin_label">PIN</string>
     <string name="pay_pix_add_bank_account_subtitle">Link your accounts to use Pix with Google Pay</string>
+    <string name="pay_pix_authenticating">Authenticating your information...</string>
+    <string name="pay_pix_confirm_and_pay">Confirm and pay</string>
+    <string name="pay_pix_confirm_fop_disclaimer">Financial institution limits apply. To turn off Pix code detection, go to Wallet Settings</string>
+    <string name="pay_pix_confirm_fop_subtitle">Account info is encrypted and kept private</string>
+    <string name="pay_pix_confirm_fop_title">Pay with Pix without switching apps</string>
+    <string name="pay_pix_contact_error_body">Something went wrong. For more information, please contact your financial institution.</string>
+    <string name="pay_pix_contact_error_title">"Can't complete payment"</string>
+    <string name="pay_pix_contacting">Contacting your financial institution...</string>
+    <string name="pay_pix_device_security_error_body">Your account has been removed because your screen is unlocked. Your screen must be locked to make Pix payments. Set your screen lock, then link your account again to make this payment.</string>
+    <string name="pay_pix_device_security_error_title">"Can't complete payment"</string>
     <string name="pay_pix_education_add_account">Linking your account will include the following steps</string>
     <string name="pay_pix_education_add_step_1">Verify your identity</string>
     <string name="pay_pix_education_add_step_2">Redirect to financial institution</string>
@@ -6308,10 +6474,22 @@ By continuing, your existing %1$s card will be added to Wallet."</string>
     <string name="pay_pix_education_safety_subtitle">Use Pix night mode to control who you pay at night, and add a PIN for security</string>
     <string name="pay_pix_education_safety_title">Pix night mode and extra PIN</string>
     <string name="pay_pix_education_title">Complete a one-time verification to use Pix with Google Pay</string>
-    <string name="pay_pix_fix_bank_account_label">Relink account</string>
+    <string name="pay_pix_error_body">Something went wrong. Try again later.</string>
+    <string name="pay_pix_error_title">"Can't complete payment"</string>
+    <string name="pay_pix_funds_limit_error_body">Try a lower amount or contact your financial institution for more details.</string>
+    <string name="pay_pix_funds_limit_error_title">"You've reached your financial institution's limit for Pix payments"</string>
+    <string name="pay_pix_funds_limit_learn_more_link">Learn more about Pix payments limits</string>
+    <string name="pay_pix_insufficient_funds_error_body">This transaction was declined due to insufficient funds</string>
+    <string name="pay_pix_insufficient_funds_error_title">"Can't complete payment"</string>
     <string name="pay_pix_name">Pix</string>
+    <string name="pay_pix_payment_method">Payment method</string>
     <string name="pay_pix_relink_account_body">To make Pix payments, relink your financial institution account</string>
     <string name="pay_pix_relink_account_cta">Continue</string>
+    <string name="pay_pix_transaction_pending_cancellable_error_body">A transaction can remain pending for a few minutes or up to 12 hours. You can wait for it to complete, or you can try to cancel it.</string>
+    <string name="pay_pix_transaction_pending_cancellable_error_title">Transaction is pending</string>
+    <string name="pay_pix_transaction_pending_non_cancellable_error_body">This transaction is in progress. You can check the status of your transaction to see if it was completed.</string>
+    <string name="pay_pix_transaction_pending_non_cancellable_error_title">Transaction is pending</string>
+    <string name="pay_pix_validating">Validating token...</string>
     <string name="pay_pix_why_link_account">Why link your account?</string>
     <string name="pay_platform_card_added_tokenization_notification_body">Verify your %1$s for safer purchases with this phone in stores &amp; online</string>
     <string name="pay_platform_card_added_tokenization_notification_body_non_nfc">Verify your %1$s for safer purchases with this phone online</string>
@@ -6468,8 +6646,6 @@ Contact %1$s support for more info."</string>
     <string name="pay_se_card_provision_error_email_address_registered_message_wallet">The email address may be used for an existing %1$s account. Please use another address or contact %1$s support for help.</string>
     <string name="pay_se_card_provision_error_existing_card_on_another_device_message_wallet">You may have a %1$s card on another device that is associated with the email you use for Google Wallet. From your other device, go to the Osaifu-Ketai app and transfer the card onto this one or contact %1$s customer support for help.</string>
     <string name="pay_se_card_provision_error_title">Failed to add %1$s card</string>
-    <string name="pay_se_card_removal_message">"It will be removed and you won't be able to use it for purchases with %2$s. Your transaction history may also be removed. Your balance can be accessed on %1$s website."</string>
-    <string name="pay_se_card_removed_message">"%1$s was removed from %2$s. Visit %1$s's website or app to retrieve balance."</string>
     <string name="pay_se_card_state_more_info_go_to_app">For more info about your card visit the %1$s app</string>
     <string name="pay_se_card_topup_amount">Amount to add</string>
     <string name="pay_se_card_topup_error_message_with_error_code">"Contact %1$s customer support for assistance
@@ -6504,6 +6680,8 @@ The balance transfer of your card will complete after 5AM tomorrow. After that y
     <string name="pay_se_commuter_pass_disclaimer">The Pass provider or merchant is responsible for the info on this pass and may send you notifications. Contact them with any questions.</string>
     <string name="pay_se_commuter_pass_renew">"Renew commuter pass:
 %1$s"</string>
+    <string name="pay_se_commuter_pass_renewal_notification_content">Renew before %1$s</string>
+    <string name="pay_se_commuter_pass_renewal_notification_title">%1$s commuter pass expires soon</string>
     <string name="pay_se_commuter_pass_renewed_snackbar_msg">Commuter pass renewed. The card data is refreshing now.</string>
     <string name="pay_se_commuter_pass_train">Train Commuter pass</string>
     <string name="pay_se_contact_service_provider">Contact %1$s support</string>
@@ -6526,6 +6704,7 @@ The balance transfer of your card will complete after 5AM tomorrow. After that y
     <string name="pay_se_error_go_to_service_provider_app">To continue using your card, go to the %1$s app</string>
     <string name="pay_se_error_no_empty_transit_slot_subtitle">You can’t create a new transit card right now. To create a new card, first you’ll need to upload one of your transit cards from your phone onto the %1$s app.</string>
     <string name="pay_se_error_no_empty_transit_slot_title">Your phone’s transit card limit was reached</string>
+    <string name="pay_se_error_postpaid_chip_not_initialized_subtitle">To use payment cards on your phone, complete the last step of your phone setup with %1$s</string>
     <string name="pay_se_error_postpaid_sidecar_not_available_message">%1$s lets payment cards work with Wallet</string>
     <string name="pay_se_error_provider_server_offline_subtitle">%1$s is unavailable between %2$s-%3$s AM JST. Try again after %3$s AM.</string>
     <string name="pay_se_error_provider_server_offline_title">Try again later</string>
@@ -6539,7 +6718,6 @@ The balance transfer of your card will complete after 5AM tomorrow. After that y
     <string name="pay_se_first_name_kanji_or_alphabet_label">First name (kanji or alphabet)</string>
     <string name="pay_se_first_name_label">First name (full-width kana or alphabet)</string>
     <string name="pay_se_green_commuter_pass">Green commuter pass</string>
-    <string name="pay_se_green_pass_with_expiration">%1$s • %2$s</string>
     <string name="pay_se_green_ticket">Green ticket</string>
     <string name="pay_se_homescreen_card_icon_desc">Card Icon</string>
     <string name="pay_se_id_label">SEID</string>
@@ -6547,6 +6725,7 @@ The balance transfer of your card will complete after 5AM tomorrow. After that y
     <string name="pay_se_invalid_email">Invalid email address.</string>
     <string name="pay_se_kana_error_message">Enter in katakana</string>
     <string name="pay_se_label_active_card">Active transit card</string>
+    <string name="pay_se_low_balance_setup_item_content">Notifying when balance is below %1$s</string>
     <string name="pay_se_loyalty_point_balance">Points: %1$s</string>
     <string name="pay_se_loyalty_point_label">Points</string>
     <string name="pay_se_memory_status">Memory status</string>
@@ -6659,11 +6838,11 @@ Backed up"</string>
     <string name="pay_se_plastic_card_invalid_number">Invalid card number</string>
     <string name="pay_se_plastic_card_number_helper_text">Card number is on the back of the card</string>
     <string name="pay_se_plastic_card_number_label">%1$s card number</string>
+    <string name="pay_se_postpaid_card_activated_snackbar_message">%1$s card was activated. Card data and status is updating now.</string>
     <string name="pay_se_postpaid_card_inactive_error_message">Make this your active %1$s card to pay in stores</string>
     <string name="pay_se_prepaid_card_image_content_description">%1$s card</string>
     <string name="pay_se_provider_contact">Contact %1$s</string>
     <string name="pay_se_provider_contact_support">Contact %1$s support</string>
-    <string name="pay_se_provider_website">%1$s website</string>
     <string name="pay_se_provision_chip_idm_conflict_error">You may already have a %1$s card on this device. Contact %2$s support for assistance.</string>
     <string name="pay_se_rakuten_pay_company_name">Rakuten Payment, Inc.</string>
     <string name="pay_se_recovery_answer_label">Password recovery answer</string>
@@ -6783,6 +6962,7 @@ Backed up"</string>
     <string name="pay_tap_doodle_toggle_description_for_pass_only">See fun animations after you use a pass</string>
     <string name="pay_tap_doodle_toggle_title">Success animations</string>
     <string name="pay_tap_error_button_label_for_read_only_failure">Help center</string>
+    <string name="pay_tap_error_msg_for_access_authentication_failure">"You don't have access. Make sure you're in the right place."</string>
     <string name="pay_tap_error_msg_for_corp_badge_authentication_failure">"Phone moved too fast or your badge isn't ready yet"</string>
     <string name="pay_tap_error_msg_for_expected_access_permanent_failure">This isn’t the right room. Double check your room number.</string>
     <string name="pay_tap_error_msg_for_expected_access_retryable_failure">You can’t access this room right now. Ask the front desk for help.</string>
@@ -6793,6 +6973,7 @@ Backed up"</string>
     <string name="pay_tap_failed">Tap failed</string>
     <string name="pay_tap_not_supported">Tap not supported</string>
     <string name="pay_tap_succeeded">Tap succeeded</string>
+    <string name="pay_text">Pay %1$s</string>
     <string name="pay_ticket">Ticket</string>
     <string name="pay_tips_notification_channel_description">Get helpful info on how to better use Google Wallet</string>
     <string name="pay_tips_notification_channel_title">Tips</string>
@@ -6832,6 +7013,7 @@ Backed up"</string>
     <string name="pay_transactions_credit_amount">+%1$s</string>
     <string name="pay_transactions_default_transit_stop_name">Transit stop</string>
     <string name="pay_transactions_details_title">Transaction details</string>
+    <string name="pay_transactions_device_transaction_label">Purchase made on %1$s</string>
     <string name="pay_transactions_displayed_transaction_id">Transaction ID: %1$s</string>
     <string name="pay_transactions_displayed_transaction_id_title">Transaction ID</string>
     <string name="pay_transactions_failed_transactions_disclaimer">This is a failed transaction, no amount was deducted</string>
@@ -6845,7 +7027,6 @@ Backed up"</string>
     <string name="pay_transactions_installment_number">%1$s installments</string>
     <string name="pay_transactions_legal_disclaimer_wallet">"These transaction details are provided to help you keep track of your purchases. They don't replace your original receipt."</string>
     <string name="pay_transactions_list_activity_title">Transaction list</string>
-    <string name="pay_transactions_mobile_transaction_content_description">Transaction made from a mobile device</string>
     <string name="pay_transactions_open_loop_transit_disclaimer">This is not a receipt or a ticket. Your payment may not have been received or you might have reached a fare cap. See bank statement for details.</string>
     <string name="pay_transactions_pass_used">Pass used</string>
     <string name="pay_transactions_pending_transactions_disclaimer">"For some merchants, you may see a temporary hold higher than what you'll be charged. Check your account statement for the final amount. %1$s"</string>
@@ -6854,6 +7035,12 @@ Backed up"</string>
     <string name="pay_transactions_receipts_learn_more_gmail_import">&lt;a href=%1$s>Learn how to add receipts from Gmail&lt;/a></string>
     <string name="pay_transactions_recent_activity">Recent activity</string>
     <string name="pay_transactions_recent_activity_disclaimer">Your parent can see this</string>
+    <string name="pay_transactions_report_merchant_acknowledgement">Your feedback was reported and will help us improve our records</string>
+    <string name="pay_transactions_report_merchant_bottomsheet_body_first">Let us know if we need to fix info about the merchant like their name, address, or location. Your feedback helps us improve our records.</string>
+    <string name="pay_transactions_report_merchant_bottomsheet_body_second">For other problems with this transaction, use <annotation id="wallet_feedback_link">our feedback tool.</annotation></string>
+    <string name="pay_transactions_report_merchant_bottomsheet_title">Is merchant info wrong?</string>
+    <string name="pay_transactions_report_merchant_feedback_toast">Feedback received</string>
+    <string name="pay_transactions_report_merchant_info">Is merchant info wrong?</string>
     <string name="pay_transactions_savings_earliest_transaction_date">Since %1$s</string>
     <string name="pay_transactions_savings_total_savings_text">Total savings</string>
     <string name="pay_transactions_savings_your_savings_text">Your savings</string>
@@ -6878,7 +7065,6 @@ Backed up"</string>
     <string name="pay_transactions_tsp_divider">%1$s • %2$s</string>
     <string name="pay_transactions_unsigned_amount">%1$s</string>
     <string name="pay_transactions_view_more_activity_text">View more activity</string>
-    <string name="pay_transactions_watch_transaction_content_description">Transaction made from a watch</string>
     <string name="pay_transactions_wrong_place_label">Wrong place?</string>
     <string name="pay_transfer_card_later_message">Your card will be ready to transfer tomorrow after 5:00 AM in the Wallet app</string>
     <string name="pay_transfer_card_later_title">Transfer this card later</string>
@@ -6943,6 +7129,8 @@ You’ll receive a notification when your card is ready."</string>
     <string name="pay_ucp_custom_field_removed">Field removed</string>
     <string name="pay_ucp_custom_field_title_hint">Field title</string>
     <string name="pay_ucp_custom_field_title_required">Title required</string>
+    <string name="pay_ucp_date_picker_accessibility_announcement">Date picker displayed</string>
+    <string name="pay_ucp_date_time_picker_confirmation_accessibility_announcement">%s selected</string>
     <string name="pay_ucp_edit_form_error_message_content_description">Error: %s</string>
     <string name="pay_ucp_edit_form_field_content_description">Field label %1$s %2$s,</string>
     <string name="pay_ucp_edit_pass_details_button">Edit</string>
@@ -6956,6 +7144,7 @@ You’ll receive a notification when your card is ready."</string>
     <string name="pay_ucp_pass_title">Pass title</string>
     <string name="pay_ucp_remove_custom_field_button">Remove field</string>
     <string name="pay_ucp_required_field_missing">Please fill in all the required fields to continue. The following fields are missing: %1$s</string>
+    <string name="pay_ucp_time_picker_accessibility_announcement">Time picker displayed</string>
     <string name="pay_unaccepted_character_error">Invalid character is included</string>
     <string name="pay_unicode_bullet_point">•</string>
     <string name="pay_unused">Unused</string>
@@ -6970,6 +7159,10 @@ Gate %2$s"</string>
     <string name="pay_update_complete_notification_title">Update is complete</string>
     <string name="pay_update_valuable_add_nickname">Add a nickname</string>
     <string name="pay_update_valuable_edit_nickname">Edit nickname</string>
+    <string name="pay_update_valuable_exit_dialog_message">"Pass nickname changes haven't been saved yet"</string>
+    <string name="pay_update_valuable_exit_dialog_negative_button_text">Discard</string>
+    <string name="pay_update_valuable_exit_dialog_positive_button_text">Keep editing</string>
+    <string name="pay_update_valuable_exit_dialog_title">Discard changes?</string>
     <string name="pay_update_valuable_nickname_field_hint">Nickname</string>
     <string name="pay_update_valuable_nickname_subtitle_no_issuer_name">Make it easier to identify your pass on the Wallet home screen</string>
     <string name="pay_update_valuable_nickname_subtitle_with_issuer_name">Make it easier to identify your %1$s pass on the Wallet home screen</string>
@@ -7141,7 +7334,6 @@ Convenient for transit."</string>
     <string name="pay_wallet_car_keys_verification_settings_title">Car keys</string>
     <string name="pay_wallet_card_purchase_error_content">Try adding money or buying a pass later</string>
     <string name="pay_wallet_card_purchase_error_title">Purchase not complete</string>
-    <string name="pay_wallet_card_update_button">Got it</string>
     <string name="pay_wallet_card_update_help_center">For more information, visit the &lt;a href=%1$s>Help Center&lt;/a>.</string>
     <string name="pay_wallet_card_update_subtitle">You can continue making payments on this device without interruption.</string>
     <string name="pay_wallet_card_update_title">%1$s was updated to %2$s</string>
@@ -7249,6 +7441,12 @@ NEVER TAP AGAINST PROD FELICA TERMINAL"</string>
     <string name="pay_wallet_low_balance_notification_fragment_title_for_managing">Manage low balance notifications</string>
     <string name="pay_wallet_low_balance_notification_fragment_title_for_set_up">Set up low balance notifications</string>
     <string name="pay_wallet_low_balance_notification_on_button">Turn on notifications</string>
+    <string name="pay_wallet_low_balance_notification_permission_callout_button">Go to Settings</string>
+    <string name="pay_wallet_low_balance_notification_permission_callout_title">Turn on Wallet notifications to get low balance alerts</string>
+    <string name="pay_wallet_low_balance_notification_permission_dialog_button">Turn on</string>
+    <string name="pay_wallet_low_balance_notification_permission_dialog_keep_off_button">Keep off</string>
+    <string name="pay_wallet_low_balance_notification_permission_dialog_message">Wallet notifications need to be on to get notified for low balance</string>
+    <string name="pay_wallet_low_balance_notification_permission_dialog_title">Turn on notifications</string>
     <string name="pay_wallet_low_balance_notification_save_button">Save changes</string>
     <string name="pay_wallet_manage_other_payment_methods">Manage other payment methods</string>
     <string name="pay_wallet_manage_passes_item_description">You can control and personalize your experience across Google and in Wallet based on your passes and how you use them. See things like flight updates from boarding passes, loyalty card balances, and event notifications in places like Maps, Calendar, and more.&lt;br>&lt;br>COVID-19 cards are not shared or used by anyone but you.</string>
@@ -7297,6 +7495,9 @@ NEVER TAP AGAINST PROD FELICA TERMINAL"</string>
     <string name="pay_wallet_pix_night_mode_settings_subtitle">Enhance Pix security between 20h and 6h Brasília Time</string>
     <string name="pay_wallet_pix_night_mode_settings_title">Night mode for Pix</string>
     <string name="pay_wallet_primary_pass_delete_dialog_message">You’ll be unable to see or use this pass and any linked passes with Wallet or find them in your Google Account</string>
+    <string name="pay_wallet_primary_pass_with_ungrouped_linked_passes_delete_dialog_message">"You won't be able to use this pass or get new related passes automatically.
+
+Any passes that were automatically added will not be removed."</string>
     <string name="pay_wallet_privacy_controls_disclaimer">COVID-19 cards are not used or shared by anyone but you.</string>
     <string name="pay_wallet_privacy_controls_title">Your data in Wallet</string>
     <string name="pay_wallet_private_passes_data_item_description">"Private passes contain sensitive info and won't be used across Google. You'll need to unlock your phone to view and use these passes. &lt;a href=%1$s>Learn more about private passes&lt;/a>"</string>
@@ -7316,6 +7517,7 @@ NEVER TAP AGAINST PROD FELICA TERMINAL"</string>
     <string name="pay_wallet_security_subheader">Security</string>
     <string name="pay_wallet_setting_autoload_amount_label">Amount to add</string>
     <string name="pay_wallet_settings_add_passes_subtitle">Allow pass providers to automatically add related event tickets, promotions, offers, and more to your existing passes. &lt;a href=%1$s>Learn more&lt;/a></string>
+    <string name="pay_wallet_settings_add_passes_subtitle_updated">Allow pass providers to automatically add event tickets, promotions, offers, and more that relate to your existing passes. &lt;a href=%1$s>Learn more&lt;/a></string>
     <string name="pay_wallet_settings_add_passes_title">Automatically add linked passes</string>
     <string name="pay_wallet_settings_gmail_subtitle">Automatically add loyalty cards from your Gmail when you have “Smart features and personalization in other Google products” turned on in Gmail settings</string>
     <string name="pay_wallet_settings_gmail_title">Add passes from Gmail</string>
@@ -7431,6 +7633,7 @@ Error code: %1$s"</string>
     <string name="pay_wear_default_contactless">Default for tap to pay on watch</string>
     <string name="pay_wear_felica_account_change_dialog_body">Remove your transit card from this %1$s first. You can add it back when you switch back to this account.</string>
     <string name="pay_wear_fops_token_suspended">"No longer available for tap to pay. Contact your card's issuer."</string>
+    <string name="pay_wear_fops_token_suspended_locked_by_parent">"You won't be able to tap to pay while your balance is locked. Talk to your parent if you need to make any purchases."</string>
     <string name="pay_wear_gm3_transit_transfer_action_progress_text">Transferring card…</string>
     <string name="pay_wear_how_to_tap_tutorial_page1">Pay everywhere Google Pay is accepted</string>
     <string name="pay_wear_how_to_tap_tutorial_page1_with_tab_info">Pay everywhere Google Pay is accepted. Page %1$s of %2$s. Swipe left or right to navigate.</string>
@@ -7444,7 +7647,7 @@ Error code: %1$s"</string>
     <string name="pay_wear_payment_method_removal_error">Payment method could not be removed from your watch.</string>
     <string name="pay_wear_payment_method_retrieval_error">Could not load payment methods.</string>
     <string name="pay_wear_remove_card_from_watch">Remove card from watch</string>
-    <string name="pay_wear_remove_card_from_watch_title">Remove from watch</string>
+    <string name="pay_wear_remove_card_from_watch_gru">Remove from watch</string>
     <string name="pay_wear_remove_from_watch_title">Remove card from watch?</string>
     <string name="pay_wear_set_default_contactless_error">Could not set as default payment method.</string>
     <string name="pay_wear_setup_keyguard_details">Set up a PIN or pattern to secure your watch. It will automatically lock when you take it off.</string>
@@ -7648,11 +7851,8 @@ Error code: %1$s"</string>
     <string name="photos_opt_in_promotional_notification_title">Keep your photos safe</string>
     <string name="photos_permissions_missing">Allow Google Photos to access storage to back up</string>
     <string name="photos_post_notification_opt_in_title">Start backup</string>
-    <string name="physical_sim_lock_screen_message">"Device locked
-SIM card removed"</string>
-    <string name="physical_sim_lock_screen_message_new">"Screen locked
-SIM card removed"</string>
     <string name="pin_code">PIN: %1$s</string>
+    <string name="pix_fix_bank_account_label">Relink account</string>
     <string name="place_icon_description">Generic place pin icon</string>
     <string name="place_picker_label">Pick a place</string>
     <string name="place_picker_my_location_button">Pan to your location</string>
@@ -8121,6 +8321,8 @@ The device’s location will be encrypted and only visible to you."</string>
     <string name="pwm_welcome_screen_title">You’ll find your passwords &amp; passkeys here</string>
     <string name="pwm_welcome_text">You can use saved passwords on any device. They’re saved to Google Password Manager.</string>
     <string name="pwm_welcome_title">You’ll find your passwords here</string>
+    <string name="qr_code_fallback_description">On your other device, go to <b>Settings</b> > <b>General</b> > <b>Transfer or Reset iPhone</b> > <b>Transfer to Android</b> > <b>Other Options</b></string>
+    <string name="qr_code_tooltip_text">To share with anyone nearby, use a QR code</string>
     <string name="qs_half_sheet_button_text">@string/fast_pair_app_launch_button</string>
     <string name="qs_half_sheet_close_button_text">@string/close_button_label</string>
     <string name="quake_notification_high_importance_channel_name">Earthquake Early Warning Alert</string>
@@ -8136,6 +8338,7 @@ The device’s location will be encrypted and only visible to you."</string>
     <string name="quick_access_feature_switch_summary">Access your files across your devices</string>
     <string name="quick_access_feature_switch_title">Files &amp; media sharing</string>
     <string name="quick_remote_lock_preference_summary">If your device is lost or stolen, you can lock its screen with just a phone number</string>
+    <string name="quick_remote_lock_preference_summary_new">If your device is lost or stolen, you can lock your screen from any device by entering your phone number at android.com/lock</string>
     <string name="quick_sharing_setup_info">By continuing, you allow Quick Share to temporarily turn on Wi-Fi and Bluetooth each time you share</string>
     <string name="quick_sharing_turn_off_hotspot_description">When you continue, Quick Share will turn off hotspot. This helps improve your connection.</string>
     <string name="quick_start_accounts_added_header">Accounts added</string>
@@ -8184,8 +8387,6 @@ Without this device, you'll need to connect to a Wi-Fi network and sign in to yo
     <string name="quit_device_setup_flow_dialog_message">You’ll need to start over and sign in again</string>
     <string name="quit_device_setup_flow_dialog_title">Quit device setup?</string>
     <string name="quoted_text">\"%1$s\"</string>
-    <string name="range_end">Range end</string>
-    <string name="range_start">Range start</string>
     <string name="read_less">Read less</string>
     <string name="read_more">Read more</string>
     <string name="read_receipt_setting">Send read receipts</string>
@@ -8268,6 +8469,8 @@ Without this device, you'll need to connect to a Wi-Fi network and sign in to yo
     <string name="revised_autofill_setup_points_unify_description_title">Passwords are saved to Google Password Manager</string>
     <string name="revoke_consent_desc">Mobile networks who partner with Google can send your mobile plan info to this device so you can view and manage your balances. You can add data or calling plans and packs or get relevant alerts.</string>
     <string name="revoke_consent_title">Send mobile plan info to this device</string>
+    <string name="reworded_sms_code_autofill_consent_message">Apps and sites can use verification codes to improve your security. %1$s can get these codes from your text messages. Change your mind anytime with the ‘%2$s’ setting in %3$s.</string>
+    <string name="reworded_sms_code_autofill_consent_title">Autofill verification codes</string>
     <string name="romanesco_account_menu_device_account_description">Contacts may not sync or be available on your other devices</string>
     <string name="romanesco_account_menu_device_account_name">This device only</string>
     <string name="romanesco_account_menu_device_account_name_unavailable">This device only (unavailable)</string>
@@ -8393,6 +8596,7 @@ The tracker’s owner may continue to see its location if other devices detect i
     <string name="rt_empty_common"> </string>
     <string name="rt_empty_layout_key">RT empty layout key</string>
     <string name="rt_enlarged_map_next">Display</string>
+    <string name="rt_find_device_device_pinging">Playing sound…</string>
     <string name="rt_find_device_ringing_failed_text">Failed to play sound. The tracker may be out of range.</string>
     <string name="rt_find_tracker_btn">Find tracker</string>
     <string name="rt_first_seen_time">First detected %1$s</string>
@@ -8465,7 +8669,6 @@ Try running a manual scan to detect the tracker again. It may be detected as a d
     <string name="rt_safety_center_issue_title_off">Unknown tracker alerts are off</string>
     <string name="rt_safety_center_opt_in_action_success_message">Unknown tracker alerts are on</string>
     <string name="rt_scan_again">Scan again</string>
-    <string name="rt_scan_button_key">RT Scan Button Key</string>
     <string name="rt_scan_now">Scan now</string>
     <string name="rt_scan_paused">Scanning paused</string>
     <string name="rt_scanned_list_activity_label">Trackers detected</string>
@@ -8539,6 +8742,7 @@ You may want to take a screenshot of the map of tracker locations. Tracker alert
     <string name="safe_browsing_summary">Get alerts about threats from dangerous websites</string>
     <string name="safe_browsing_title">Android Safe Browsing</string>
     <string name="safety_center_add_account_entry_summary">Add a Google Account</string>
+    <string name="safety_center_ads_settings_summary">Manage device data used to show you ads</string>
     <string name="safety_center_fmd_disabled_action_label">Find Hub settings</string>
     <string name="safety_center_fmd_disabled_source_issue_summary">Use Find Hub to remotely find, lock, or erase this device</string>
     <string name="safety_center_fmd_disabled_source_issue_summary_new">Use Find Hub to remotely find, lock, or reset this device if it’s lost</string>
@@ -8627,6 +8831,7 @@ You may want to take a screenshot of the map of tracker locations. Tracker alert
     <string name="service_summary_games">Used for automatic sign-in, leaderboards, achievements, and managing your gamer profile</string>
     <string name="service_summary_location_accuracy">Used to improve location accuracy using Wi-Fi, mobile networks, and sensors</string>
     <string name="service_summary_location_history">Used to provide personalized experiences across Google services, based on where your device has been</string>
+    <string name="service_summary_location_services">Used to improve location accuracy, manage history, and share device location</string>
     <string name="service_summary_location_sharing">Used when you share your location with others</string>
     <string name="service_summary_parental_controls">Used for parental controls, such as content restrictions, time limits, and child account management</string>
     <string name="service_summary_safety_and_emergency_2">Used for emergency notifications and services, such as sharing your location during emergency calls and receiving crisis alerts</string>
@@ -8646,6 +8851,7 @@ You may want to take a screenshot of the map of tracker locations. Tracker alert
     <string name="service_title_games">Games</string>
     <string name="service_title_location_accuracy">Location accuracy</string>
     <string name="service_title_location_history">Location history</string>
+    <string name="service_title_location_services">Location services</string>
     <string name="service_title_location_sharing">Location sharing</string>
     <string name="service_title_parental_controls">Parental controls</string>
     <string name="service_title_safety_and_emergency">Safety &amp; emergency</string>
@@ -8678,7 +8884,7 @@ Each time you turn on your device or wake up the screen, you'll be asked to unlo
     <string name="settings_label">Settings</string>
     <string name="settings_menu_item">Settings</string>
     <string name="settings_permissions_category_title">Privacy</string>
-    <string name="settings_screen_title">Personalized Suggestions</string>
+    <string name="settings_screen_title">Contextual suggestions</string>
     <string name="settings_subhead_disabled">"Link devices so you can text from your computer, share your phone's internet connection, and simplify unlocking.* Use your Chromebook to set up.&lt;br>%s"</string>
     <string name="settings_subhead_enabled">Your %1$s and Chromebook will connect automatically. %2$s</string>
     <string name="settings_summary_disabled">Your %s is not linked to a Chromebook</string>
@@ -8691,6 +8897,8 @@ Each time you turn on your device or wake up the screen, you'll be asked to unlo
     <string name="settingslib_expressive_text_expand">Expand</string>
     <string name="settingslib_illustration_content_description">Animation</string>
     <string name="settingslib_learn_more_text">Learn more</string>
+    <string name="settingslib_media_play_button_content_description">Play %1$s</string>
+    <string name="settingslib_settings_label">Settings</string>
     <string name="setup_button">Setup</string>
     <string name="setup_complete_subtitle">You can now use your watch to unlock this phone when you swipe up on the lock screen or tap a notification</string>
     <string name="setup_complete_title">"You're all set!"</string>
@@ -8732,7 +8940,7 @@ You can allow apps and services to use your device’s device location. Google m
     <string name="setupservices_desktop_google_services_agreement_auto_update">By continuing, you allow Google System updates to provide features that make your device more secure and reliable. You also agree that this device may automatically download and install updates and apps from Google, your carrier, and your device’s manufacturer, possibly using cellular data. Data rates may apply. Some of these apps may offer in-app purchases.</string>
     <string name="setupservices_desktop_google_services_agreement_auto_update_metered_data">By continuing, you allow Google System updates to provide features that make your device more secure and reliable. You also agree that this device may automatically download and install updates and apps from Google, your carrier, and your device’s manufacturer, possibly using cellular data if Wi-Fi isn’t available. Data rates may apply. Some of these apps may offer in-app purchases. You can remove these apps or change your automatic update settings at any time.</string>
     <string name="setupservices_desktop_google_services_description_additional_v2">Google collects information from your device that is necessary to help detect, prevent, and respond to safety issues that might affect the device and for business critical uses such as fleet analytics. This information includes unique identifiers and device health data. Google may connect your device information with your Google Account to contact you if there is a safety issue. <annotation link="safety_data">Learn more about sharing safety information with Google</annotation></string>
-    <string name="setupservices_desktop_google_services_tos_no_account">By tapping “Accept”, you agree to the <annotation link="tos">Google Terms of Service</annotation> and <annotation link="chrome_tos">Chrome and ChromeOS Additional Terms of Service</annotation>. You also confirm your selection of these Google services settings. Note: The <annotation link="google_privacy">Google Privacy Policy</annotation> describes how data is handled when using Google services.</string>
+    <string name="setupservices_desktop_google_services_tos">By tapping “Accept”, you agree to the <annotation link="tos">Google Terms of Service</annotation> and <annotation link="chrome_tos">Chrome and ChromeOS Additional Terms of Service</annotation>. You also confirm your selection of these Google services settings. Note: The <annotation link="google_privacy">Google Privacy Policy</annotation> describes how data is handled when using Google services.</string>
     <string name="setupservices_desktop_google_services_usage_reporting">Help improve your device experience by automatically sending diagnostic, device, and app usage data to Google. This will help battery life, system and app stability, and other improvements. Some aggregate data will also help Google apps and partners, such as Android developers. If your additional Web &amp; App Activity setting is turned on, this data may be saved to your Google Account.</string>
     <string name="setupservices_desktop_google_services_usage_reporting_details">"This is general information about your device and how you use it (such as battery level, system and app activity, and errors). The data will be used to improve devices and some aggregated information will also help Google apps and partners, such as Android developers, make their apps and products better.
 
@@ -8903,6 +9111,11 @@ Some aggregate data will help Google apps and partners, such as Android Develope
     <string name="setupservices_kids_google_services_usage_reporting_my_activity_settings">If additional Web &amp; App Activity is turned on for your child, this data may be saved to their Google Account. Learn more about these settings and how to adjust them at families.google.com/families</string>
     <string name="setupservices_location_tos_title">Location Terms of Service</string>
     <string name="setupservices_phone_number_verification_section_title">Phone Number Verification</string>
+    <string name="setupservices_xr_google_services_aadc_reminder_message">Did you know that your device has settings and that you can change them now, or later in Settings?</string>
+    <string name="setupservices_xr_google_services_aadc_send_system_data_message"><b>How your device can help make other devices and Google services better</b>"
+You’ve probably noticed that apps sometimes crash or stop working. You can allow your device to send information about how it’s working to Google, so Google can diagnose problems and fix them for you and other people. Google may also let app developers know about these problems. If you’re logged in and have the Web &amp; App Activity setting turned on, the data may also be saved to your account."</string>
+    <string name="setupservices_xr_google_services_aadc_use_location_message"><b>How your device uses location</b>"
+You can allow apps and services to use your device’s location. Google may also collect and use location data to help provide and improve services that use location. For example, it can help figure out a more accurate location for you, or let you know about an earthquake happening close to you."</string>
     <string name="shake_alert">Google &amp; ShakeAlert®</string>
     <string name="shape_diamond">shape_diamond</string>
     <string name="shape_fish_eyed_circle">shape_fish_eyed_circle</string>
@@ -8977,7 +9190,6 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_consents_toast_no_network_error">@string/common_no_network</string>
     <string name="sharing_contacts_information_text">To securely share with contacts, Quick Share regularly saves contacts from your signed-in devices.</string>
     <string name="sharing_contacts_visible">Visible to contacts</string>
-    <string name="sharing_content_1_font_family">google-sans</string>
     <string name="sharing_contextual_card_body_sharing_disabled">To let others share with you, turn on device visibility</string>
     <string name="sharing_contextual_card_body_sharing_invisible">To help your contacts find you, update who can share with you</string>
     <string name="sharing_contextual_card_body_sharing_visible">"Your contacts can share with you when they're nearby"</string>
@@ -9000,13 +9212,31 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_device_type_phone">@string/common_phone_lowercase</string>
     <string name="sharing_device_type_tablet">tablet</string>
     <string name="sharing_device_type_xr">XR headset</string>
-    <string name="sharing_device_visibility">Device visibility</string>
     <string name="sharing_do_not_allow">Don’t allow</string>
     <string name="sharing_download_with_qr_code">Open browser</string>
+    <string name="sharing_drop_files_here_to_share_title">Drop here to add files</string>
     <string name="sharing_edit_text_font_family">google-sans</string>
     <string name="sharing_everyone_visible">Visible to everyone</string>
     <string name="sharing_extra_images_count_for_preview">+%1$d</string>
     <string name="sharing_hidden_visible">Not visible to anyone</string>
+    <string name="sharing_loading_attachments">Loading files…</string>
+    <string name="sharing_main_help_dialog_find_device_content_1">&lt;b>On Android devices:&lt;/b> Find it fast in Quick Settings by swiping down from the top of the screen. You can also search for Quick Share in Settings.</string>
+    <string name="sharing_main_help_dialog_find_device_content_2">&lt;b>On Windows devices:&lt;/b> Download Quick Share to share with other Android devices.</string>
+    <string name="sharing_main_help_dialog_find_device_content_description">A graphic image of swiping down from the top of a phone screen</string>
+    <string name="sharing_main_help_dialog_find_device_item_body">Ask the other person to open Quick Share</string>
+    <string name="sharing_main_help_dialog_find_device_item_title">Looking for a device?</string>
+    <string name="sharing_main_help_dialog_find_device_title">Find Quick Share on Android and Windows devices</string>
+    <string name="sharing_main_help_dialog_qr_code_item_body">You can use a QR code to share</string>
+    <string name="sharing_main_help_dialog_qr_code_item_scanning">Ask the other person to scan your QR code using their camera app or scanner</string>
+    <string name="sharing_main_help_dialog_qr_code_item_title">For iPhone and other devices</string>
+    <string name="sharing_main_help_dialog_qr_code_learn_more">Learn more about privacy in Quick Share</string>
+    <string name="sharing_main_help_dialog_qr_code_title">Share with nearby Android and iOS devices</string>
+    <string name="sharing_main_help_dialog_title">Tips</string>
+    <string name="sharing_main_help_dialog_visibility_content_1">Only your contacts can view your profile image</string>
+    <string name="sharing_main_help_dialog_visibility_content_2">You can leave the &lt;b>Receive&lt;/b> screen anytime</string>
+    <string name="sharing_main_help_dialog_visibilty_content">To help others share with you, your device name is &lt;b>temporarily visible&lt;/b> to everyone while the &lt;b>Receive&lt;/b> screen is open. Bluetooth and Wi-Fi are on.&lt;br>&lt;br>Good to know</string>
+    <string name="sharing_main_help_dialog_visibilty_content_description">Four graphic icons of sharing with everyone nearby, including temporarily, sharing with your contacts, and sharing with your devices</string>
+    <string name="sharing_main_help_dialog_visibilty_title">Who can see your device</string>
     <string name="sharing_main_troubleshooting_dialog_content_1">Unlock the screen</string>
     <string name="sharing_main_troubleshooting_dialog_content_2">Swipe down from the top of the screen to open Quick Settings. Find and open &lt;b>Quick Share&lt;/b>.</string>
     <string name="sharing_main_troubleshooting_dialog_content_3">Bring the device within %1$s feet (%2$s meter) of this device</string>
@@ -9025,6 +9255,7 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_notification_channel_description_alert">Shown when a nearby device is trying to send a file</string>
     <string name="sharing_notification_channel_description_apps_v3">Installs the app through Quick Share</string>
     <string name="sharing_notification_channel_description_files">Files from other users.</string>
+    <string name="sharing_notification_channel_description_interrupting">Shown when privacy-sensitive information needs to be displayed</string>
     <string name="sharing_notification_channel_description_privacy_reminder">@string/sharing_visible_to_nearby_devices</string>
     <string name="sharing_notification_channel_everyone_visibility_active">Everyone mode is currently active</string>
     <string name="sharing_notification_channel_everyone_visibility_active_subtitle">"Bluetooth and Wi-Fi may be used while you're in everyone mode. Tap to go to visibility settings."</string>
@@ -9034,6 +9265,7 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_notification_channel_title_alert">Alerts</string>
     <string name="sharing_notification_channel_title_apps">App Installs</string>
     <string name="sharing_notification_channel_title_files">File Transfers</string>
+    <string name="sharing_notification_channel_title_interrupting">Interrupting alerts</string>
     <string name="sharing_notification_channel_title_privacy_reminder">Privacy Reminder</string>
     <string name="sharing_notification_confirm_token">PIN: %1$s</string>
     <string name="sharing_notification_default_app_install_failed">Could′t install the app</string>
@@ -9054,6 +9286,13 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_notification_privacy_description_contacts">"Your device is visible to %1$d %2$s when they're nearby. Tap to review."</string>
     <string name="sharing_notification_privacy_description_everyone_v3">Your device is visible to anyone nearby using Quick Share. Tap to review.</string>
     <string name="sharing_notification_privacy_title_v3">Your Quick Share visibility</string>
+    <string name="sharing_notification_upload_canceled_body">"Can't upload %1$s"</string>
+    <string name="sharing_notification_upload_canceled_title">Canceled sharing with %1$s</string>
+    <string name="sharing_notification_upload_complete">Uploaded to %1$s</string>
+    <string name="sharing_notification_upload_failed_body">Try again later</string>
+    <string name="sharing_notification_upload_failed_title">"Can't upload to %1$s"</string>
+    <string name="sharing_notification_upload_in_progress">Sharing with %1$s</string>
+    <string name="sharing_notification_upload_in_progress_body">Uploading %1$s</string>
     <string name="sharing_number_of_addresses">{count, plural, =1{1 address} other{# addresses}}</string>
     <string name="sharing_number_of_apps">{count, plural, =1{1 app} other{# apps}}</string>
     <string name="sharing_number_of_files">{count, plural, =1{1 file} other{# files}}</string>
@@ -9071,6 +9310,16 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_product_name_v3">Quick Share</string>
     <string name="sharing_progress_number">%1$d%%</string>
     <string name="sharing_qr_code_cannot_connect_message">Make sure the other device is nearby, then try again</string>
+    <string name="sharing_qr_code_cloud_education_dialog_item_data_charge">Without a Wi-Fi connection, data charges may apply. Manage this anytime in Quick Share settings.</string>
+    <string name="sharing_qr_code_cloud_education_dialog_item_encryption">Your files will be end-to-end encrypted, uploaded to Google servers, and stored for %1$d hours.</string>
+    <string name="sharing_qr_code_cloud_education_dialog_title">Sharing with a non-Android device?</string>
+    <string name="sharing_qr_code_cloud_encryption">Sharing with iPhone: Files will be end-to-end encrypted, uploaded to Google servers, and stored for %1$d hours</string>
+    <string name="sharing_qr_code_cloud_file_count_exceed">Can’t share more than %1$d files. Try sending fewer files each time.</string>
+    <string name="sharing_qr_code_cloud_file_zie_limit">Can’t upload more than %1$d GB daily. You can try again later.</string>
+    <string name="sharing_qr_code_cloud_sign_in_dialog_content">To share end-to-end encrypted files with iPhone and other devices, first sign in</string>
+    <string name="sharing_qr_code_cloud_sign_in_dialog_title">Sign in to share</string>
+    <string name="sharing_qr_code_cloud_transfer_cancelled_single_receiver">Transfer canceled. Some files may have already sent.</string>
+    <string name="sharing_qr_code_sheet_cloud_subtitle">Ask the other person to use the camera app or open a QR code scanner</string>
     <string name="sharing_qr_code_sheet_subtitle">Ask the other person to scan with their Android device</string>
     <string name="sharing_qr_code_sheet_title">Share using QR code</string>
     <string name="sharing_qr_connecting_message">Stay on this screen until connected</string>
@@ -9090,6 +9339,7 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_qr_in_progress_message">Try again in a few minutes</string>
     <string name="sharing_qr_in_progress_subtitle">You can receive more files when sharing is complete</string>
     <string name="sharing_qr_in_progress_title">Sharing is still in progress</string>
+    <string name="sharing_qrcode_view_content_description">QR code</string>
     <string name="sharing_qs_dialog_subtitle_bluetooth_and_visibility">This also turns on Bluetooth. You’ll be able to choose who can share with you.</string>
     <string name="sharing_qs_dialog_subtitle_bt">To use %1$s, Bluetooth needs to be on</string>
     <string name="sharing_qs_dialog_subtitle_loc">To use Quick Share, device location needs to be on.</string>
@@ -9109,9 +9359,12 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_receive_edu_dialog_what_others_see">What others will see</string>
     <string name="sharing_receive_surface_how_to_use_info_everyone">"You're temporarily visible to everyone nearby. Sharing won’t start until you accept."</string>
     <string name="sharing_receive_surface_received_sender_description">From %1$s</string>
+    <string name="sharing_receiving_dialog_confirme_token_with_separator">| PIN: %1$s</string>
     <string name="sharing_required_service_bluetooth">Bluetooth</string>
     <string name="sharing_required_service_device_location">device location</string>
     <string name="sharing_required_service_wifi">Wi-Fi</string>
+    <string name="sharing_select_files_large_droppable_subtitle">Drag or select files</string>
+    <string name="sharing_select_files_large_droppable_title">Add files to share</string>
     <string name="sharing_select_files_subtitle">None selected</string>
     <string name="sharing_select_files_title">Select files to share</string>
     <string name="sharing_selected_files">Selected files</string>
@@ -9139,7 +9392,6 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_setting_everyone_visibility_ten_minutes">Only for 10 minutes</string>
     <string name="sharing_settings_all_contacts">All contacts</string>
     <string name="sharing_settings_button_account_name_not_found_description">Tap to choose an account</string>
-    <string name="sharing_settings_button_account_name_not_found_title">@string/sharing_no_account</string>
     <string name="sharing_settings_button_device_name">@string/sharing_device_name</string>
     <string name="sharing_settings_button_update">Update</string>
     <string name="sharing_settings_contacts_title">Contacts</string>
@@ -9196,7 +9448,6 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_status_uploading">Uploading…</string>
     <string name="sharing_status_verifying_file">Verifying…</string>
     <string name="sharing_status_waiting">Waiting…</string>
-    <string name="sharing_subtitle_1_font_family">google-sans</string>
     <string name="sharing_suw2_agree">I agree</string>
     <string name="sharing_suw2_contacts_upload_desc">To allow contacts to discover your device when they’re nearby, contacts stored on this device will be sent to Google. This doesn’t affect other contacts settings.</string>
     <string name="sharing_suw2_contacts_upload_title">Contacts will be sent to Google</string>
@@ -9214,6 +9465,10 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_title_font_family">google-sans</string>
     <string name="sharing_title_sharing_in_progress">Sharing is in progress</string>
     <string name="sharing_toast_copied_to_clipboard">"Copied '%1$s'"</string>
+    <string name="sharing_toast_no_longer_visible_to_everyone">You’re no longer visible to everyone. Other devices can’t share with you.</string>
+    <string name="sharing_toast_no_longer_visible_to_everyone_in_contacts">You’re no longer visible to everyone. Only your contacts can share with you.</string>
+    <string name="sharing_toast_no_longer_visible_to_everyone_self_share">You’re no longer visible to everyone. Your signed-in devices can share with this device.</string>
+    <string name="sharing_toast_no_longer_visible_to_everyone_your_devices">You’re no longer visible to everyone. You can share with your signed-in devices.</string>
     <string name="sharing_toast_wifi_connecting">"Connecting to '%1$s'"</string>
     <string name="sharing_toast_wifi_connection_failed">"Failed to connect to '%1$s'"</string>
     <string name="sharing_toast_wifi_connection_succeeded">"Successfully connected to '%1$s'"</string>
@@ -9222,7 +9477,6 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_transfer_complete_message_v3">Quick Share transfer complete</string>
     <string name="sharing_transfer_declined">Transfer declined</string>
     <string name="sharing_transfer_failed">Can’t transfer files</string>
-    <string name="sharing_transfer_failed_suggestion">Ask the sender to try again</string>
     <string name="sharing_transfer_retry_message">Tap to try again</string>
     <string name="sharing_turn_off_aiplane_mode">Turn on Wi-Fi &amp; Bluetooth</string>
     <string name="sharing_turn_off_hotspot">Turn off Wi-Fi hotspot</string>
@@ -9236,6 +9490,7 @@ This doesn’t affect other contacts settings."</string>
     <string name="sharing_update_privacy_settings_subtitle">Select who can share with you and how you will appear to others</string>
     <string name="sharing_use_qr_code">Use QR code</string>
     <string name="sharing_via_link">Sharing via link</string>
+    <string name="sharing_visibility_chip_visible_to_everyone_temporarily">From everyone temporarily</string>
     <string name="sharing_visibility_contacts_description">Only your contacts with a Google Account</string>
     <string name="sharing_visibility_contacts_description_with_contacts">Only your contacts with a Google Account.</string>
     <string name="sharing_visibility_everyone_description">@string/sharing_settings_everyone_visibility</string>
@@ -9296,6 +9551,7 @@ If you remove your account, these contacts will be removed from this device. The
     <string name="significant_places_trusted_places_add_trusted_place_button_title">Add trusted place</string>
     <string name="significant_places_trusted_places_all_settings_summary">See all settings that use trusted places</string>
     <string name="significant_places_trusted_places_delete_button">Delete</string>
+    <string name="significant_places_trusted_places_delete_button_with_place_name">Delete %s</string>
     <string name="significant_places_trusted_places_description">Some settings use trusted places to determine when more security is needed. For example, when your device is away from your trusted places, like your home or office, some settings will require additional steps to verify it’s you.</string>
     <string name="significant_places_trusted_places_extend_unlock_title">Extend Unlock</string>
     <string name="significant_places_trusted_places_footer">&lt;ul>&lt;li>Your trusted places are saved on your device and are not shared with Google&lt;/li> &lt;li>If you have other devices, you’ll need to set up trusted places on those devices separately&lt;/li> &lt;li>When location is available, settings that use trusted places will know if your device is near a place you trust, but your device’s precise location will not be shared&lt;/li>&lt;/ul></string>
@@ -9423,6 +9679,7 @@ If you remove your account, these contacts will be removed from this device. The
     <string name="smartdevice_problem_copying">There was a problem copying data to your other device</string>
     <string name="smartdevice_problem_copying_title">"Couldn't copy data"</string>
     <string name="smartdevice_pt_google_app_trigger">configurar meu dispositivo</string>
+    <string name="smartdevice_qr_fallback_button">Can’t scan QR code?</string>
     <string name="smartdevice_qrcode_body_text">On your other device, tap &lt;b>Set up&lt;/b> to open the scanner, or use the camera app</string>
     <string name="smartdevice_qrcode_ios_description">On your other device, use the camera app to scan</string>
     <string name="smartdevice_qrcode_scan_qr">Scan the QR code</string>
@@ -9498,12 +9755,24 @@ You can always change this later in Settings."</string>
     <string name="smartdevice_wifi_unavailable_text">"To search for networks, Wi-Fi and location need to be turned on, if they aren’t on already.
 
 You can always change this later in Settings."</string>
+    <string name="smartdevice_xos_fallback_footer_text"><b>"Still can't connect wirelessly?"</b>"
+Make sure your other device is running iOS %1$d or later versions."</string>
+    <string name="smartdevice_xos_passcode_label">Passcode</string>
+    <string name="smartdevice_xos_qr_fallback_title">Enter session ID and passcode</string>
+    <string name="smartdevice_xos_session_id_label">Session ID</string>
+    <string name="sms_code_autofill_combined_settings_autofill_service_toggle_primary">Autofill codes in apps and sites</string>
+    <string name="sms_code_autofill_combined_settings_autofill_service_toggle_secondary">Your autofill service can get verification codes from text messages</string>
+    <string name="sms_code_autofill_combined_settings_browser_toggle_primary">Autofill codes in your default browser</string>
+    <string name="sms_code_autofill_combined_settings_browser_toggle_secondary">Your default browser can get verification codes from text messages</string>
+    <string name="sms_code_autofill_consent_android_autofill_settings_path">Android autofill</string>
     <string name="sms_code_autofill_consent_message_for_settings_under_autofill_subcategory">You can change this any time in Settings > Google > Autofill > SMS verification codes</string>
     <string name="sms_code_autofill_consent_message_for_twice_showup">Codes in text messages will appear as Autofill suggestions. You can change this anytime in %s.</string>
     <string name="sms_code_autofill_consent_settings_path">Settings > Google</string>
     <string name="sms_code_autofill_consent_title_for_twice_showup">Allow %s to show verification codes?</string>
     <string name="sms_code_autofill_service_name_for_autofill_with_google">Autofill with Google</string>
+    <string name="sms_code_autofill_service_name_for_google_password_manager">Google Password Manager</string>
     <string name="sms_code_autofill_settings_page_description">Automatically fill in verification codes you receive by text message</string>
+    <string name="sms_code_autofill_settings_title_for_settings_list_item_and_page_title">Verification codes by SMS</string>
     <string name="sms_code_autofill_settings_title_for_settings_under_autofill_subcategory">SMS verification codes</string>
     <string name="sms_code_autofill_settings_toggle_description_autofill_service_settings">Autofill service settings</string>
     <string name="sms_code_autofill_settings_toggle_description_v2">Autofill must be enabled to automatically fill verification codes. You can enable autofill in %s.</string>
@@ -9565,6 +9834,9 @@ You can always change this later in Settings."</string>
     <string name="spatula_settings_resources_card_title">Resources and support to protect yourself online</string>
     <string name="spatula_settings_switch_title">Warnings in Google Messages</string>
     <string name="spatula_settings_title">Sensitive content warnings</string>
+    <string name="spatula_settings_video_learn_more">Nude photo and video detection happens only on your devices. Your conversations are always private.</string>
+    <string name="spatula_settings_video_readonly_pref_1_desc">Photos and videos with nudity in Google Messages are blurred and can be deleted before viewing</string>
+    <string name="spatula_settings_video_readonly_pref_2_desc">If you try to send an image or video with nudity you’ll be reminded of the risks and you must confirm to continue</string>
     <string name="spatula_visit_resources">Visit resources</string>
     <string name="speed_icon_description">Network speed icon</string>
     <string name="sps_account_addition_dialog_message">You can add more accounts once supervision is ready</string>
@@ -9723,11 +9995,12 @@ Only you will see its location. It will not be visible to Google."</string>
     <string name="switch_device_summary">Many phones now support eSIMs, so you can easily transfer to a new phone</string>
     <string name="switch_device_title">Switch devices anytime</string>
     <string name="switch_role">Switch</string>
+    <string name="switch_to_esim_back_title">Switch to eSIM?</string>
     <string name="switching_user_description">Switching to %1$s…</string>
     <string name="sync_credentials_to_cloud_dialog_message">You may need to complete a few extra steps when adding devices or changing phones</string>
     <string name="sync_credentials_to_cloud_dialog_opt_out_button">"Don't save"</string>
     <string name="sync_credentials_to_cloud_dialog_title">"Don't save credentials?"</string>
-    <string name="sync_credentials_to_cloud_switch_subtitle">Saving credentials to the Google cloud simplifies device setup and management on your Thread network. &lt;a href=%1$s>Learn more&lt;/a></string>
+    <string name="sync_credentials_to_cloud_switch_subtitle">To easily add devices to your Thread network, save network credentials to the Google cloud. &lt;a href=%1$s>Learn more&lt;/a></string>
     <string name="sync_credentials_to_cloud_switch_title">Save credentials</string>
     <string name="system_update_ab_reboot_switch_slot_failed">There was an issue while preparing to restart. Please try again later.</string>
     <string name="system_update_activity_attempt_download_later_text">Update cannot be downloaded at the current moment, please try again later.</string>
@@ -9863,6 +10136,7 @@ Afterwards, your device will automatically restart."</string>
     <string name="telco_insufficient_balance">Insufficient %s account balance</string>
     <string name="telco_payment_selection">Purchase through %s</string>
     <string name="template_percent">%1$d percent.</string>
+    <string name="temporary_bond_device_footer_text">"A guest device disconnects after a few minutes if no media is playing. Once disconnected, the device is forgotten and won't automatically connect again in the future."</string>
     <string name="temporary_redirect">Temporary redirect</string>
     <string name="terms_and_conditions_show_less_text">Show Less</string>
     <string name="terms_and_conditions_show_more_text">Show More</string>
@@ -9870,19 +10144,33 @@ Afterwards, your device will automatically restart."</string>
     <string name="test_clear_all_button_string">Clear client</string>
     <string name="test_optin_button_string">Opt-in</string>
     <string name="text_owner">Text owner</string>
+    <string name="theft_protection_default_on_notification_content">Your screen will lock if theft is detected. You can also now lock it remotely.</string>
+    <string name="theft_protection_default_on_notification_title">Theft protection is on</string>
     <string name="thread_network_border_router_unknown_model_subtitle">Unknown model</string>
     <string name="thread_network_is_preferred_subtitle">Preferred</string>
     <string name="thread_network_refresh_button_description">Reload button</string>
     <string name="thread_network_refresh_button_title">Reload</string>
     <string name="thread_network_without_credentials_subtitle">Unavailable</string>
     <string name="thread_networks_header_text">Your Thread networks and border routers connect to your Wi-Fi network to improve device connection and control. &lt;a href=%1$s>More info about Thread&lt;/a></string>
+    <string name="thread_networks_header_text_more_info_v2">More info about Thread</string>
+    <string name="thread_networks_header_text_v2">Your Thread networks and border routers connect to your Wi-Fi network to improve device connection and control.</string>
     <string name="thread_networks_settings_title">Thread networks</string>
+    <string name="thread_networks_upload_credentials_to_cloud_notification_description">Thread network credentials are being saved to the Google cloud to simplify setup of Thread devices on your network</string>
     <string name="thunderbird_live_button_back_content_description">Back to picture-in-picture mode</string>
     <string name="thunderbird_live_button_exit">Stop sharing</string>
     <string name="thunderbird_live_button_exit_content_description">Stop sharing</string>
     <string name="thunderbird_live_button_open_messages_content_description">Open messages</string>
     <string name="thunderbird_live_button_switch_camera_content_description">Switch camera</string>
     <string name="thunderbird_live_button_toggle_flashlight_content_description">Toggle flashlight</string>
+    <string name="thunderbird_live_dialog_button_positive">Share</string>
+    <string name="thunderbird_live_dialog_message">Emergency services will be able to view and record video of this event using your camera.</string>
+    <string name="thunderbird_live_dialog_title">Share live video?</string>
+    <string name="thunderbird_live_exit_dialog_message">This will stop sharing live video with emergency services</string>
+    <string name="thunderbird_live_exit_dialog_message_button_negative">Keep sharing</string>
+    <string name="thunderbird_live_exit_dialog_title">Stop sharing?</string>
+    <string name="thunderbird_live_label">Live video</string>
+    <string name="thunderbird_live_pip_button_toggle_flashlight_off_content_description">Toggle flashlight off</string>
+    <string name="thunderbird_live_pip_button_toggle_flashlight_on_content_description">Toggle flashlight on</string>
     <string name="thunderbird_settings_aei_emergency_app_name_fallback">the emergency app</string>
     <string name="thunderbird_settings_aei_explanation_text">A separate app you use may have a feature that allows you to choose to send information such as medical and/or emergency contact information to emergency responders via Emergency Location Service. This information will be sent directly from the device that places the call. You can enable and disable this feature at any time in that app.</string>
     <string name="thunderbird_settings_aei_link_text">Open %1$s</string>
@@ -10012,6 +10300,8 @@ When you call or text an emergency number, Emergency Location Service may use yo
     <string name="tp_add_credit_or_debit_card">New credit or debit card</string>
     <string name="tp_add_emoney_card">Add e-money card</string>
     <string name="tp_add_payment_method">Add a payment method</string>
+    <string name="tp_add_to">Add to</string>
+    <string name="tp_add_to_google_wallet">Add to Google Wallet</string>
     <string name="tp_add_to_wallet">Add to Wallet</string>
     <string name="tp_amex">American Express</string>
     <string name="tp_android">Android</string>
@@ -10174,7 +10464,7 @@ Install Google Wallet to see your transactions, easily board flights, shop with 
     <string name="tp_google_wallet">Google Wallet</string>
     <string name="tp_gru_locked_card_notification_body">Your parent locked this payment method</string>
     <string name="tp_gru_locked_card_notification_title">Your balance was locked</string>
-    <string name="tp_gru_unlocked_card_notification_body">You can tap to pay with your balance now</string>
+    <string name="tp_gru_unlocked_card_notification_body">You can use your balance now</string>
     <string name="tp_gru_unlocked_card_notification_title">Your balance was unlocked</string>
     <string name="tp_gsuite_error_message">We are sorry, but you do not have access to this service. Please contact your domain administrator for access.</string>
     <string name="tp_hamburger_menu_description">Open navigation menu</string>
@@ -10229,22 +10519,13 @@ Install Google Wallet to see your transactions, easily board flights, shop with 
     <string name="tp_oobe_activate_single_or_more_cards_header">"Use a card that's already saved in your wallet or add a new one"</string>
     <string name="tp_oobe_activate_single_or_more_cards_header_bc25">"Use a card that's already saved in your Google account or add a new one"</string>
     <string name="tp_oobe_add_another_card">Add another card</string>
-    <string name="tp_oobe_contact_bank_for_contactless_payment">Contact your bank to complete set up to tap to pay</string>
     <string name="tp_oobe_finish_setup_your_card">Finish setting up your card</string>
-    <string name="tp_oobe_no_contactless_payment">"You're ready to pay in apps and on the web using %1$s, but it can't be set up to tap to pay"</string>
-    <string name="tp_oobe_not_supported_by_bank">"This feature isn't supported by your bank"</string>
     <string name="tp_oobe_quick_confirm_your_card">"Quickly confirm this card belongs to you and you'll be all set to pay with your phone"</string>
-    <string name="tp_oobe_ready_to_pay">"Ready to pay with 
-%1$s"</string>
-    <string name="tp_oobe_ready_to_pay_apps_and_web">"You're all set to make fast, secure purchases in apps and on the web"</string>
-    <string name="tp_oobe_ready_to_pay_no_card_info">Ready to pay in apps and online</string>
     <string name="tp_oobe_screen_lock_subtitle_text">"For your security, you'll be asked to unlock your phone for larger purchases. Google Pay will be set as a device administrator. To make changes, visit settings."</string>
     <string name="tp_oobe_select_card_on_file">Choose a card to set up</string>
     <string name="tp_oobe_setup_later_message">Go to Google Wallet and complete card setup so that you can pay with your %1$s in stores</string>
     <string name="tp_oobe_setup_later_title">"You'll need to finish your card setup later"</string>
     <string name="tp_oobe_summary_something_went_wrong">Something went wrong setting up your card. Try again after setting up your device or call your card issuer for help.</string>
-    <string name="tp_oobe_try_different_card_for_contactless">Try setting up a different card to tap to pay</string>
-    <string name="tp_oobe_try_different_card_to_pay_with_phone">Try setting up a different card to pay with your phone</string>
     <string name="tp_oobe_unlock_to_pay">Just unlock your phone to pay</string>
     <string name="tp_open_app">Tap to open</string>
     <string name="tp_other_payment_methods_title">Other payment methods</string>
@@ -10672,11 +10953,14 @@ Install Google Wallet so you can manage this card and more, all from your device
     <string name="tp_wallet_warm_welcome_title_account_linking">"You're ready to tap to pay"</string>
     <string name="tp_wallet_warm_welcome_title_account_linking_install_wallet">"You're ready to tap to pay, install Wallet to easily manage your cards"</string>
     <string name="tp_wallet_warm_welcome_title_card_already_added">Card is already in your Wallet &amp; is ready to tap to pay</string>
+    <string name="tp_wallet_warm_welcome_title_card_already_added_install_wallet">Card is ready to tap to pay, but you need to install Wallet to manage it</string>
     <string name="tp_wallet_warm_welcome_title_install_wallet">Card is ready to tap to pay, install Wallet to manage it</string>
     <string name="tp_wallet_warm_welcome_title_non_nfc">Card is ready for online payments</string>
     <string name="tp_wallet_warm_welcome_title_non_nfc_card_already_added">Card is already in your Wallet &amp; is ready for online payments</string>
+    <string name="tp_wallet_warm_welcome_title_non_nfc_card_already_added_install_wallet">Card is ready for online payments, but you need to install Wallet to manage it</string>
     <string name="tp_wallet_warm_welcome_title_non_nfc_install_wallet">Card is ready for online payments, install Wallet to manage it</string>
     <string name="tp_wallet_warm_welcome_title_non_nfc_qr_card_already_added">Card is already in your Wallet &amp; is ready for QR code payments</string>
+    <string name="tp_wallet_warm_welcome_title_non_nfc_qr_card_already_added_install_wallet">Card is ready for QR code payments, but you need to install Wallet to manage it</string>
     <string name="tp_wallet_warm_welcome_title_short">Card is ready to tap to pay</string>
     <string name="tp_wallet_wear_oobe_deferred_yellow_path_cta">Verify later</string>
     <string name="tp_warm_welcome_how_to_pay_text">"Just make sure it's awake and hold it to the terminal. You may need to unlock for some transactions."</string>
@@ -10768,8 +11052,6 @@ This device will stay unlocked for up to %d hours or until you leave one of your
  
 Other settings may use the same trusted places."</string>
     <string name="trusted_places_settings_intent_uri">intent:#Intent;action=com.google.android.gms.significantplaces.settings.TRUSTED_PLACES_SETTINGS_LIST;component=com.google.android.gms/.significantplaces.settings.TrustedPlacesSettingsActivity;launchFlags=0x10008000;end</string>
-    <string name="trusted_places_significant_places_multiple_configured_summary">On / Stays unlocked at %s</string>
-    <string name="trusted_places_significant_places_no_places_summary">On / Tap to add trusted places</string>
     <string name="trusted_places_significant_places_summary">{count, plural, =0 {On / Tap to add trusted places} =1 {On / Stays unlocked at # place} other {On / Stays unlocked at # places} }</string>
     <string name="trustlet_place_enable_for_extend_unlock_preference_title">Use trusted places for Extend Unlock</string>
     <string name="trustlet_place_is_disabled_summary">Extend Unlock with trusted places is off</string>
@@ -10791,8 +11073,6 @@ People you share with will continue to see your last shared location."</string>
     <string name="turn_on_wifi_instruction_title">Turn on Wi-Fi</string>
     <string name="udc_url_login_notice">Sign in as %1$s</string>
     <string name="ui_explanation_string">You’re seeing this because a lost device is close by</string>
-    <string name="uiflow_general_error_subtitle">Try again or check back in a few minutes</string>
-    <string name="uiflow_general_error_title">"Can't open page"</string>
     <string name="uiflow_no_connection_subtitle">Check your internet connection and try again</string>
     <string name="uiflow_no_connection_title">"Can't reach the internet"</string>
     <string name="uiflow_signin_error_subtitle">Sign in to your Google Account, then come back and refresh</string>
@@ -10938,11 +11218,13 @@ more"</string>
     <string name="wallet_google_wallet_deprecation_message">This payment option is no longer available in this app.</string>
     <string name="wallet_instrument_selected">%1$s selected</string>
     <string name="wallet_login_hint">Login</string>
+    <string name="wallet_notification_app_name">Google Wallet</string>
     <string name="wallet_notification_group_gmscore_dck">Digital Car Key</string>
     <string name="wallet_notification_group_gmscore_gpay_wallet">Google Pay &amp; Wallet</string>
     <string name="wallet_notification_group_gmscore_tap_and_pay">Google Pay</string>
     <string name="wallet_notification_group_gmscore_wallet">Google Wallet</string>
     <string name="wallet_objects_message">Keep all your loyalty cards, gift cards, and offers in one place with Google Pay</string>
+    <string name="wallet_open_banking_pix">Pix</string>
     <string name="wallet_payment_methods_title">Payment methods</string>
     <string name="wallet_pin_generic_error">Something went wrong. Please try again later.</string>
     <string name="wallet_pin_invalid">Wrong PIN. Please try again.</string>
@@ -10964,6 +11246,7 @@ more"</string>
     <string name="wallet_spinner_gone">Finished loading.</string>
     <string name="wallet_spinner_visible">Loading, please wait.</string>
     <string name="wallet_tip_dismiss_button_content_description">Dismiss the Wallet Tip</string>
+    <string name="wallet_tip_open_link_content_description">open the link</string>
     <string name="wallet_ui_component_route_connection">Connection</string>
     <string name="wallet_ui_component_route_leg_desc">%1$s to %2$s</string>
     <string name="wallet_ui_component_route_leg_icon_desc_flight_to">flight to</string>
@@ -11094,6 +11377,14 @@ You will automatically switch to Ultra-Wideband once you’re back in a country 
     <string name="wear_backup_bluechip_dismiss_icon_content_description">Close</string>
     <string name="wear_backup_enabled_confirmation_overlay">Backup enabled</string>
     <string name="wear_backup_info_error_dialog_body">Can’t get backup info, please try again</string>
+    <string name="wear_backup_key_recovery_backup_deleted_title">This backup is permanently deleted</string>
+    <string name="wear_backup_key_recovery_danger_body">You entered an incorrect screen lock %1$d times. After %2$d more attempts, your backup will be deleted.</string>
+    <string name="wear_backup_key_recovery_danger_title">%1$d attempts left</string>
+    <string name="wear_backup_key_recovery_error_body">Please try again later</string>
+    <string name="wear_backup_key_recovery_error_title">Something went wrong</string>
+    <string name="wear_backup_key_recovery_loading_text">Verifying…</string>
+    <string name="wear_backup_key_recovery_wrong_pattern">Wrong pattern</string>
+    <string name="wear_backup_key_recovery_wrong_pin">Wrong PIN</string>
     <string name="wear_backup_no_account_confirmation_title">To turn on backup, add a Google Account</string>
     <string name="wear_backup_now_label">Backup now</string>
     <string name="wear_backup_opt_in_default_summary">Use your Google Account storage to automatically back up your watch faces, tiles, app data, and device settings.</string>
