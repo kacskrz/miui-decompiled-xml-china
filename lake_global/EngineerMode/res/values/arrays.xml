@@ -148,11 +148,22 @@
         <item>mHDT8,0x02</item>
         <item>mHDT12,0x03</item>
     </string-array>
+    <string-array name="bt_le_eh_cs_mode">
+        <item>Mode 0</item>
+        <item>Mode 1</item>
+        <item>Mode 2</item>
+        <item>Mode 3</item>
+    </string-array>
     <string-array name="bt_le_eh_phy_1m">
         <item>1M PHY,0x01</item>
     </string-array>
     <string-array name="bt_le_eh_phy_2m">
         <item>2M PHY,0x02</item>
+    </string-array>
+    <string-array name="bt_le_eh_phy_cs">
+        <item>1M,0x01</item>
+        <item>2M,0x02</item>
+        <item>2M BT=2.0,0x03</item>
     </string-array>
     <string-array name="bt_le_eh_phy_lr">
         <item>BLE 1M,0x01</item>
@@ -599,6 +610,8 @@
         <item>AT+EPCT</item>
         <item>AT+EWOCFGSET</item>
         <item>AT+EWOCFGGET</item>
+        <item>AT+EN3CFGSET</item>
+        <item>AT+EN3CFGGET</item>
         <item>AT+ESCRI</item>
         <item>AT+ETXANT</item>
         <item>AT+EHSM</item>
@@ -640,6 +653,7 @@
         <item>AT+EANTFRCTUNER</item>
         <item>AT+EDMFAPP</item>
         <item>AT+EURCALLOW</item>
+        <item>AT+EM_REG_IND</item>
     </string-array>
     <string-array name="dl_mimo_entries">
         <item>1X1</item>
@@ -764,7 +778,6 @@
         <item>GSM</item>
         <item>UMTS(W/TD)</item>
         <item>LTE</item>
-        <item>C2k</item>
     </string-array>
     <string-array name="force_ant_tas_rat_gen97">
         <item>GSM</item>
@@ -777,26 +790,6 @@
     <string-array name="force_ant_tas_version">
         <item>1.0</item>
         <item>2.0</item>
-    </string-array>
-    <string-array name="hspa_info_mode_array_fd">
-        <item>HSDPA off</item>
-        <item>"HSDPA on
-HSUPA off"</item>
-        <item>"HSDPA on
-HSUPA on
-HSPA+ off"</item>
-        <item>"HSDPA on
-HSUPA on
-HSPA+ on"</item>
-    </string-array>
-    <string-array name="hspa_info_mode_array_td">
-        <item>HSDPA off</item>
-        <item>"HSDPA on
-HSUPA off"</item>
-        <item>"HSDPA on
-HSUPA on"</item>
-        <item>"HSDPA on
-HSUPA on"</item>
     </string-array>
     <string-array name="id_array">
         <item>Empty</item>
@@ -1005,7 +998,7 @@ HSUPA on"</item>
         <item>LTE-FDD B26,26,8690,100,9039,23,0,0,3,0,0,0,1,8590,8140,0</item>
         <item>LTE-FDD B27,27,9040,100,9209,23,0,0,3,0,0,0,1,8520,8070,0</item>
         <item>LTE-FDD B28,28,9210,100,9659,23,0,0,3,0,0,0,1,7580,7030,0</item>
-        <item>LTE-FDD B30,30,9660,100,9769,23,0,0,3,0,0,0,1,19000,19000,0</item>
+        <item>LTE-FDD B30,30,9770,100,9869,23,0,0,3,0,0,0,1,19000,19000,0</item>
     </string-array>
     <string-array name="npt_lte_fdd_extend_data">
         <item>LTE-FDD B66,66,66436,100,67335,23,0,0,3,0,0,0,1,21100,22000,0</item>
@@ -1061,12 +1054,12 @@ HSUPA on"</item>
         <item>NR B77,77,3750000,10000,3750000,23,0,0,3,1,0,0,1,3300000,3300000,0</item>
         <item>NR B78,78,3499995,10000,3499995,23,0,0,3,1,0,0,1,3300000,3300000,0</item>
         <item>NR B79,79,4699995,10000,4699995,23,0,0,3,7,0,0,1,4400000,4400000,0</item>
-        <item>NR B85,85,707000,10000,707000,23,0,0,3,7,0,0,1,728000,698000,0</item>
-        <item>NR B90,90,2593000,10000,2593000,23,0,0,3,7,0,0,1,2496000,2496000,0</item>
-        <item>NR B91,91,847000,10000,847000,23,0,0,3,7,0,0,1,1427000,832000,0</item>
-        <item>NR B92,92,847000,10000,847000,23,0,0,3,7,0,0,1,1432000,832000,0</item>
-        <item>NR B93,93,897500,10000,897500,23,0,0,3,7,0,0,1,1427000,880000,0</item>
-        <item>NR B94,94,897500,10000,897500,23,0,0,3,7,0,0,1,1432000,880000,0</item>
+        <item>NR B85,85,707000,10000,707000,23,0,0,3,1,0,0,1,728000,698000,0</item>
+        <item>NR B90,90,2593000,10000,2593000,23,0,0,3,1,0,0,1,2496000,2496000,0</item>
+        <item>NR B91,91,847000,10000,847000,23,0,0,3,0,0,0,1,1427000,832000,0</item>
+        <item>NR B92,92,847000,10000,847000,23,0,0,3,1,0,0,1,1432000,832000,0</item>
+        <item>NR B93,93,897500,10000,897500,23,0,0,3,0,0,0,1,1427000,880000,0</item>
+        <item>NR B94,94,897500,10000,897500,23,0,0,3,1,0,0,1,1432000,880000,0</item>
     </string-array>
     <string-array name="npt_rat">
         <item>GSM</item>
@@ -1490,12 +1483,6 @@ HSUPA on"</item>
         <item>10087,10054,10121,10054,10121,24,10,24</item>
         <item>9500,9404,9596,9404,9596,24,10,24</item>
     </string-array>
-    <string-array name="sampling_rate_values_md_low_power">
-        <item>1</item>
-        <item>5</item>
-        <item>10</item>
-        <item>30</item>
-    </string-array>
     <string-array name="sim_display_info">
         <item>SIM1</item>
         <item>SIM2</item>
@@ -1569,6 +1556,7 @@ HSUPA on"</item>
         <item>+ERFIDX:4,0,</item>
         <item>+ERFIDX:4,1,</item>
         <item>+ERFIDX:</item>
+        <item>+ERFANTIDX:</item>
     </string-array>
     <string-array name="usb_phy_tuning_val_0_15b">
         <item>0000</item>
