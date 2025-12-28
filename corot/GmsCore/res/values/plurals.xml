@@ -20,14 +20,6 @@
         <item quantity="other">%1$d apps</item>
         <item quantity="one">%1$d app</item>
     </plurals>
-    <plurals name="appinvite_message_over_limit">
-        <item quantity="other">%1$d characters over limit</item>
-        <item quantity="one">%1$d character over limit</item>
-    </plurals>
-    <plurals name="appinvite_message_within_limit">
-        <item quantity="other">%1$d characters left</item>
-        <item quantity="one">%1$d character left</item>
-    </plurals>
     <plurals name="auth_d2d_source_notification_text">
         <item quantity="other">This device was used to set up a ^1 with your Google Accounts and their data</item>
         <item quantity="one">This device was used to set up a ^1 with your Google Account and its data</item>
@@ -72,6 +64,14 @@
         <item quantity="other">%1$d items left…</item>
         <item quantity="one">%1$d item left…</item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
     <plurals name="expiration_reminder_notification_text">
         <item quantity="other">In %2$d days, %1$s will be removed from Watch Unlock due to inactivity. Connect it now to continue using this feature.</item>
         <item quantity="one">In %2$d day, %1$s will be removed from Watch Unlock due to inactivity. Connect it now to continue using this feature.</item>
@@ -87,6 +87,30 @@
     <plurals name="fm_age_confirmation">
         <item quantity="other">"You're %d years old. Is that correct?"</item>
         <item quantity="one">"You're %d year old. Is that correct?"</item>
+    </plurals>
+    <plurals name="fmd_network_contributor_in_waiting_period_for_n_more_days_banner">
+        <item quantity="other">"This device will join the network in high-traffic areas within %1$d days to help others locate their items when offline. You can opt out or join the network now by selecting a setting.
+
+If you set a screen lock, the network can also help you find your items."</item>
+        <item quantity="one">"This device will join the network in high-traffic areas within %1$d day to help others locate their items when offline. You can opt out or join the network now by selecting a setting.
+
+If you set a screen lock, the network can also help you find your items."</item>
+    </plurals>
+    <plurals name="fmd_network_contributor_in_waiting_period_for_n_more_days_for_busy_places_banner">
+        <item quantity="other">"This device will join the network in busy places within %1$d days to help others locate their items when offline. You can opt out or join the network now by selecting a setting.
+
+If you set a screen lock, the network can also help you find your items."</item>
+        <item quantity="one">"This device will join the network in busy places within %1$d day to help others locate their items when offline. You can opt out or join the network now by selecting a setting.
+
+If you set a screen lock, the network can also help you find your items."</item>
+    </plurals>
+    <plurals name="fmd_network_in_waiting_period_for_n_more_days_banner">
+        <item quantity="other">This device will join the network in high-traffic areas within %1$d days. You can opt out or join the network now by selecting a setting.</item>
+        <item quantity="one">This device will join the network in high-traffic areas within %1$d day. You can opt out or join the network now by selecting a setting.</item>
+    </plurals>
+    <plurals name="fmd_network_in_waiting_period_for_n_more_days_for_busy_places_banner">
+        <item quantity="other">This device will join the network in busy places within %1$d days. You can opt out or join the network now by selecting a setting.</item>
+        <item quantity="one">This device will join the network in busy places within %1$d day. You can opt out or join the network now by selecting a setting.</item>
     </plurals>
     <plurals name="icing_storage_management_clear_all_data_dlg_text_with_passwords">
         <item quantity="other">"All your data will be deleted including settings, accounts, databases, and
@@ -281,6 +305,10 @@
         <item quantity="other">%1$d passwords could not be imported</item>
         <item quantity="one">1 password could not be imported</item>
     </plurals>
+    <plurals name="pwm_passkey_count">
+        <item quantity="other">%1$d passkeys</item>
+        <item quantity="one">%1$d passkey</item>
+    </plurals>
     <plurals name="pwm_passkey_wizard_prompt_card_description">
         <item quantity="other">%1$d of your accounts support passkeys. Passkeys are the simpler, safer way to sign-in that uses your device’s screen lock.</item>
         <item quantity="one">1 of your accounts supports passkeys. Passkeys are the simpler, safer way to sign-in that uses your device’s screen lock.</item>
@@ -386,6 +414,10 @@ Checking 1 password…"</item>
         <item quantity="other">"This device hasn't had a security update in more than %1$d months"</item>
         <item quantity="one">"This device hasn't had a security update in more than %1$d month"</item>
     </plurals>
+    <plurals name="selection_count">
+        <item quantity="other">%1$s (%2$d items)</item>
+        <item quantity="one">%1$s (%2$d item)</item>
+    </plurals>
     <plurals name="sharing_app_attachments">
         <item quantity="other">%d apps</item>
         <item quantity="one">%d app</item>
@@ -397,10 +429,6 @@ Checking 1 password…"</item>
     <plurals name="sharing_contact_list_numbers">
         <item quantity="other">contacts</item>
         <item quantity="one">contact</item>
-    </plurals>
-    <plurals name="sharing_device_visibility_unreachable_description">
-        <item quantity="other">"%1$d contacts aren't available. To use Nearby Share with them, add the email address associated with their Google Account to your contacts."</item>
-        <item quantity="one">"%1$d contact isn't available. To use Nearby Share with them, add the email address associated with their Google Account to your contacts."</item>
     </plurals>
     <plurals name="sharing_file_transfer">
         <item quantity="other">transfers</item>
@@ -422,13 +450,15 @@ Checking 1 password…"</item>
         <item quantity="other">videos</item>
         <item quantity="one">video</item>
     </plurals>
+    <plurals name="sharing_main_help_dialog_qr_code_item_upload">
+        <item quantity="other">"Files will be end-to-end encrypted, uploaded to Google servers, and stored for %1$d hours for the other person to securely download
+"</item>
+        <item quantity="one">"Files will be end-to-end encrypted, uploaded to Google servers, and stored for %1$d hour for the other person to securely download
+"</item>
+    </plurals>
     <plurals name="sharing_setting_everyone_temporary_description">
         <item quantity="other">Anyone nearby for %1$d minutes</item>
         <item quantity="one">Anyone nearby for %1$d minute</item>
-    </plurals>
-    <plurals name="sharing_settings_button_select_contacts_description">
-        <item quantity="other">%1$d contacts can share with you</item>
-        <item quantity="one">%1$d contact can share with you</item>
     </plurals>
     <plurals name="sharing_text_types_addresses">
         <item quantity="other">addresses</item>
@@ -446,6 +476,10 @@ Checking 1 password…"</item>
         <item quantity="other">phone numbers</item>
         <item quantity="one">phone number</item>
     </plurals>
+    <plurals name="sharing_visibility_option_temporary_everyone">
+        <item quantity="other">Everyone for %1$d minutes</item>
+        <item quantity="one">Everyone for %1$d minute</item>
+    </plurals>
     <plurals name="sheepdog_custom_page_leave_off_body">
         <item quantity="other">If this setting is off, %d device contacts won’t be available everywhere you sign in, including your next phone</item>
         <item quantity="one">If this setting is off, %d device contact won’t be available everywhere you sign in, including your next phone</item>
@@ -453,6 +487,10 @@ Checking 1 password…"</item>
     <plurals name="sheepdog_leave_off_warning">
         <item quantity="other">%d device contacts won’t be available everywhere you sign in, including your next phone</item>
         <item quantity="one">%d device contact won’t be available everywhere you sign in, including your next phone</item>
+    </plurals>
+    <plurals name="sheepdog_v1_sim_contacts_not_syncing_with_contact_count">
+        <item quantity="other">"%d SIM contacts aren't syncing yet."</item>
+        <item quantity="one">"%d SIM contact is't syncing yet."</item>
     </plurals>
     <plurals name="significant_places_places_configured_count">
         <item quantity="other">%d places</item>
@@ -485,6 +523,14 @@ Checking 1 password…"</item>
     <plurals name="smartdevice_d2d_source_notification_text">
         <item quantity="other">This device was used to set up a ^1 with your Google Accounts and data</item>
         <item quantity="one">This device was used to set up a ^1 with your Google Account and data</item>
+    </plurals>
+    <plurals name="smui_generic_deletion_title">
+        <item quantity="other">Delete %d items?</item>
+        <item quantity="one">Delete 1 item?</item>
+    </plurals>
+    <plurals name="smui_photos_deletion_title">
+        <item quantity="other">Move %d items to Trash?</item>
+        <item quantity="one">Move 1 item to Trash?</item>
     </plurals>
     <plurals name="storage_management_nr_local_passwords_will_be_deleted">
         <item quantity="other">%1$d locally saved Chrome passwords will be deleted</item>
@@ -549,6 +595,14 @@ Checking 1 password…"</item>
     <plurals name="unit_minutes">
         <item quantity="other">%d minutes</item>
         <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="unit_months">
+        <item quantity="other">%d months</item>
+        <item quantity="one">%d month</item>
+    </plurals>
+    <plurals name="unit_seconds">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">%d second</item>
     </plurals>
     <plurals name="verify_apps_last_scanned_days_ago">
         <item quantity="other">Apps scanned %1$d days ago</item>
