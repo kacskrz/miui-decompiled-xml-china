@@ -1467,6 +1467,7 @@ However, some of your transactions aren't completed yet. To be able to withdraw 
     <string name="confirm_package_type">Confirm your data plan</string>
     <string name="confirm_prompt_all_permission">Ask for permissions for all apps?</string>
     <string name="confirm_reject_all_permission">Restrict all apps from using this feature?</string>
+    <string name="confirm_reject_all_permission_only_opening_screen">Restrict this permission during app launch for all apps?</string>
     <string name="confirm_take">Get</string>
     <string name="confirm_upgrade">Options</string>
     <string name="connect_internet_by_mobiledata">Mobile data connection</string>
@@ -2575,6 +2576,7 @@ When Smart frame rate is on, in-game and third-party frame rate detection tools 
     <string name="game_toolbox_slow_charge_positive_btn">Turn on</string>
     <string name="game_toolbox_slow_charge_title">Bypass charging Plus</string>
     <string name="game_toolbox_slow_charge_toast">Bypass charging Plus is on</string>
+    <string name="game_toolbox_smart_charge_title">Smart charging</string>
     <string name="game_toolbox_smotion_vibrate_close_toast">"Haptic feedback doesn't work with original layouts. Haptic feedback is off."</string>
     <string name="game_toolbox_smotion_vibrate_conflic_toast">"Haptic feedback doesn't work with original layouts"</string>
     <string name="game_toolbox_smotion_vibrate_desc">Add haptic feedback in accordance with game moves. Only some games are supported.</string>
@@ -3945,6 +3947,7 @@ Your device is %s faster now."</string>
     <string name="more_setting_summary">Customize reminders and set DND for this feature</string>
     <string name="more_settings">More</string>
     <string name="morning">Morning</string>
+    <string name="msg_only_opening_screen">Access will be restricted for the first %d seconds after the app starts</string>
     <string name="mtp_ptp_mode_summary">MTP or PTP is active</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
@@ -4665,6 +4668,9 @@ Ultra battery saver"</string>
     <string name="performance_frame_enhance_super_display_tips">"Enhanced frame rate and super resolution can't work at the same time. Turning on one of them will turn off the other."</string>
     <string name="performance_frame_insert_super_display_tips">"Smart frame rate and super resolution can't be in effect at the same time. Turning on one will turn off the other."</string>
     <string name="perm_desc_accessibility">This permission is required to view and control the screen, operate apps and hardware sensors according to your instructions, and interact with apps on your behalf.</string>
+    <string name="perm_disable_dialog_message">"This app's permission (%1$s) hasn't passed review."</string>
+    <string name="perm_disable_dialog_title">Permissions restricted</string>
+    <string name="perm_disable_note_text">"This permission hasn't passed review and is restricted now: %1$s"</string>
     <string name="perm_intercept_content">Give this app the following permission: %1s?</string>
     <string name="perm_intercept_notification_title">Allowing %1s to use notifications will let this app perform the following actions:</string>
     <string name="perm_intercept_privacy_content">These actions might expose your personal data. Grant the permission (%1s) anyway?</string>
@@ -4672,6 +4678,8 @@ Ultra battery saver"</string>
     <string name="perm_intercept_unknown_title">Allowing %1s to install apps from unknown sources might pose the following risks:</string>
     <string name="perm_list_header_title">Apps</string>
     <string name="perm_list_header_title_has_storage">Apps with storage</string>
+    <string name="perm_manage_external_storage">All files access</string>
+    <string name="perm_manage_zen_modes_access">Modes access</string>
     <string name="permdesc_coarse_location">Approximate location</string>
     <string name="permdesc_fine_location">Location</string>
     <string name="permdesc_get_installed_apps">Allow \"%1$s\" to access info about installed apps?</string>
@@ -4790,7 +4798,7 @@ Ultra battery saver"</string>
     <string name="permission_instruction_send_mms">This permission allows apps to send multimedia messages, which may generate additional fees. Malicious apps might use this permission to send paid messages without your consent.</string>
     <string name="permission_instruction_send_payment_sms">This permission allows apps to send paid text messages.</string>
     <string name="permission_instruction_send_sms">This permission allows apps to send text messages, which may generate additional fees. Malicious apps might use this permission to send paid messages without your consent.</string>
-    <string name="permission_instruction_shake">"This permission allows apps to detect the device's position in space, recognize shaking, and determine screen orientation."</string>
+    <string name="permission_instruction_shake">"This permission allows apps to detect the device's position in space, recognize shaking, determine screen orientation, as well as use game controls and map navigation."</string>
     <string name="permission_instruction_show_locked">This permission allows apps to show items on your Lock screen. Malicious apps might use this permission to show ads.</string>
     <string name="permission_instruction_sociality">"If you allow apps to access files in their own folders, the system lets you decide whether you also want these apps to access the files generated in social media apps in order to protect your privacy. As the apps with Android API level 29 or higher already support storage partitions, this switch won't be provided for them."</string>
     <string name="permission_instruction_storage">"If you allow apps to access files in their own folders, the system lets you decide whether you also want these apps to access the items in your Gallery and files generated in social media apps in order to protect your privacy. As the apps with Android API level 29 or higher already support storage partitions, this switch won't be provided for them."</string>
@@ -4805,6 +4813,7 @@ Ultra battery saver"</string>
     <string name="permission_instruction_write_settings">This permission allows apps to modify system settings. Malicious apps might use this permission temper with your system settings and affect the normal use of your device.</string>
     <string name="permission_legacy_storage">Access photos, videos, audio, and files</string>
     <string name="permission_oaid_desc">Allow %1$s to track your activities on other apps and websites?</string>
+    <string name="permission_only_opening_screen">Restrict access during app launch</string>
     <string name="permission_permission_control_closed_desc_dialog_msg">"Apps won't ask your permission before reading your contacts, viewing your call history, changing system settings, or accessing camera and other device resources. You can turn this feature on in Permission settings."</string>
     <string name="permission_permission_control_closed_desc_dialog_title">Permission manager</string>
     <string name="permission_precise_location">Precise location</string>
@@ -5271,27 +5280,27 @@ Ultra battery saver"</string>
     <string name="power_wireless_update_notification_title">Wireless charging update</string>
     <string name="power_wireless_update_text">Up to date</string>
     <string name="power_wireless_update_tv_text">"Updating firmware… Don't turn off device."</string>
-    <string name="pp_agent_app_ctl_manager">AI智控管理</string>
-    <string name="pp_agent_app_ctl_manager_desc">管理“%s”可以操作的应用范围</string>
-    <string name="pp_agent_app_ctl_title">Allow \"%s\" to control the following apps</string>
+    <string name="pp_agent_app_ctl_manager">Manage AI Smart Control</string>
+    <string name="pp_agent_app_ctl_manager_desc">Manage which apps %s can control</string>
+    <string name="pp_agent_app_ctl_title">Allow %s to control these apps</string>
     <string name="pp_agent_request_screen_ctl_app_title">Turn on AI Smart Control for %s</string>
     <string name="pp_agent_request_screen_ctl_app_title_msg" formatted="false">When this feature is on, %1s can help you control %2s.</string>
     <string name="pp_agent_request_screen_ctl_title">Turn on AI Smart Control</string>
-    <string name="pp_agent_request_screen_info_app_title">开启“AI识屏-%s”</string>
-    <string name="pp_agent_request_screen_info_app_title_msg" formatted="false">开启后，“%1s”通过该功能获取“%2s”的相关页面信息</string>
-    <string name="pp_agent_request_screen_info_app_title_msg_setting">需要为“%s”开启屏幕内应用的“AI识屏”开关后才能继续任务，确认去“设置”中开启？</string>
-    <string name="pp_agent_request_screen_info_app_title_setting">AI识屏能力申请</string>
-    <string name="pp_agent_request_screen_info_positive_button_setting">去开启</string>
+    <string name="pp_agent_request_screen_info_app_title">Turn on AI Screen Recognition for %s</string>
+    <string name="pp_agent_request_screen_info_app_title_msg">When this feature is on, %1$s can access screen content from %2$s</string>
+    <string name="pp_agent_request_screen_info_app_title_msg_setting">Turn on \"AI Screen Recognition\" for %s in Settings to continue. Turn on now?</string>
+    <string name="pp_agent_request_screen_info_app_title_setting">Permissions required</string>
+    <string name="pp_agent_request_screen_info_positive_button_setting">Turn on</string>
     <string name="pp_agent_request_screen_info_title">Turn on AI Screen Recognition</string>
     <string name="pp_agent_screen_ctl">AI Smart Control</string>
-    <string name="pp_agent_screen_ctl_app_disable" formatted="false">"\"%1s\" can't control \"%2s\""</string>
+    <string name="pp_agent_screen_ctl_app_disable">"%1$s can't be controlled by %2$s now."</string>
     <string name="pp_agent_screen_ctl_desc">When this feature is on, %s can help you control apps on this device.</string>
     <string name="pp_agent_screen_info">AI Screen Recognition</string>
-    <string name="pp_agent_screen_info_app_disable" formatted="false">“%1s”暂不可被“%2s”AI识屏</string>
+    <string name="pp_agent_screen_info_app_disable" formatted="false">"%2s can't recognize %1s's screen content now"</string>
     <string name="pp_agent_screen_info_desc">"When this feature is on, %s can recognize and access what's shown on your screen in real time."</string>
-    <string name="pp_agent_screen_info_manager">AI识屏管理</string>
-    <string name="pp_agent_screen_info_manager_desc">管理“%s”可以识屏的应用范围</string>
-    <string name="pp_agent_screen_info_title">允许“%s”识屏下列应用</string>
+    <string name="pp_agent_screen_info_manager">Manage AI Screen Recognition</string>
+    <string name="pp_agent_screen_info_manager_desc">Manage which apps %s is allowed to recognize on-screen</string>
+    <string name="pp_agent_screen_info_title">Allow %s to recognize content in these apps</string>
     <string name="pp_agent_screen_privacy">AI Screen Recognition &amp; Smart Control</string>
     <string name="pp_anti_track_summary">"Don't allow tracking your activity"</string>
     <string name="pp_antitrack_detail">Apps can track your activity through personal identifiers, location info, and other types of personal information shared with them. Tracking your activity in different apps and websites allows them to personalize ads and recommend relevant content to you.</string>
@@ -5335,7 +5344,7 @@ Ultra battery saver"</string>
     <string name="pp_manage_apps_location_information">Allow apps to access your location</string>
     <string name="pp_manage_track">Monitor trackers</string>
     <string name="pp_manage_track_summary">Detect and disable various types of trackers embedded in apps. Such trackers might share your personal identifiers by accessing and saving items to internal storage or use shared SDKs for tracking your activity.</string>
-    <string name="pp_more_privacy_func">More privacy features</string>
+    <string name="pp_more_privacy_func">Additional privacy features</string>
     <string name="pp_none_read_clipboard_item">"Don't notify"</string>
     <string name="pp_one_app_two_use">Use two accounts without signing out</string>
     <string name="pp_one_phone_two_space">Use one device as two</string>
@@ -5905,6 +5914,7 @@ Withdraw consent now?"</string>
     <string name="recommended">Featured</string>
     <string name="reject_all">Restrict all</string>
     <string name="reject_countdown">Deny (%d)</string>
+    <string name="reject_only_opening_screen">Restrict access during app launch for all apps</string>
     <string name="reject_usb_install">Denied installation of the following apps via USB</string>
     <string name="release_meminfo">Free up %dMB</string>
     <string name="release_memory">Clear cache</string>
