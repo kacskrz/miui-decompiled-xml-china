@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
+    <string name="MSG_ABUSE_WARNING_LABEL">A security risk was identified and blocked.</string>
     <string name="MSG_ACTION_FAILED">Failed to execute action</string>
     <string name="MSG_ADDITIONAL_INFO_FIRST_BULLET">"Access data in messages in which they've been invoked"</string>
     <string name="MSG_ADDITIONAL_INFO_INTRO_TEXT">In conversations apps can:</string>
     <string name="MSG_ADDITIONAL_INFO_SECOND_BULLET">Automatically expand links to make them more useful</string>
     <string name="MSG_ADDITIONAL_INFO_THIRD_BULLET">Send notifications and messages</string>
+    <string name="MSG_ADDRESS_SPOOFING">"The sender's email address uses abnormal characters, which might be used to spoof real addresses. Avoid clicking links, downloading attachments, or replying to this message."</string>
     <string name="MSG_ADD_AND_SEND">{NUMBER_OF_ADDED_MEMBERS, plural, =1 {Add member &amp; send} other {Add members &amp; send}}</string>
     <string name="MSG_ADD_APPS_AND_INVOKE">{NUMBER_OF_ADDED_APPS, plural, =1 {Add app &amp; invoke} other {Add apps &amp; invoke}}</string>
     <string name="MSG_ADD_APPS_AND_SEND">{NUMBER_OF_ADDED_APPS, plural, =1 {Add app &amp; send} other {Add apps &amp; send}}</string>
     <string name="MSG_ADD_APPS_IN_EXTERNAL_SPACE">Add apps</string>
     <string name="MSG_ADD_GUESTS_TO_CONVERSATION_TITLE">{GUEST_COUNT, plural, =1 {Add external guest to conversation?} other {Add external guests to conversation?}}</string>
-    <string name="MSG_ADD_GUESTS_TO_SPACE_TITLE">{GUEST_COUNT, plural, =1 {Add external guest to space?} other {Add external guests to space?}}</string>
+    <string name="MSG_ADD_PEOPLE">Add people</string>
     <string name="MSG_ADD_REACTION">Add reaction</string>
     <string name="MSG_ADD_TO_CALENDAR_BUTTON">Add to Calendar</string>
     <string name="MSG_ADD_TO_CALENDAR_PROMPT">Add to Calendar</string>
@@ -22,24 +24,29 @@
     <string name="MSG_ADD_TO_SPACE_DIALOG_BODY_INCLUDE_APPS">If added, new members can access all previously posted content, and new apps can read and send messages. Add the following to %1$s?</string>
     <string name="MSG_ADD_TO_SPACE_DIALOG_BODY_NO_APPS">If added, new members can access all previously posted content. Add the following to %1$s?</string>
     <string name="MSG_ADD_TO_SPACE_DIALOG_BODY_ONLY_APPS">If added, new apps can read and send messages. Add the following to %1$s?</string>
-    <string name="MSG_ADD_TO_SPACE_TITLE">Add to space?</string>
     <string name="MSG_ADD_TO_TASKS_ACTION">Add to Tasks</string>
     <string name="MSG_AFTER_MESSAGE_IS_SCHEDULED_FOR_SENDER_BEYOND_THIS_WEEK">Sending on {MONTH_AND_DAY} at {TIME}</string>
     <string name="MSG_AFTER_MESSAGE_IS_SCHEDULED_FOR_SENDER_LATER_IN_THIS_WEEK">Sending on {DAY_OF_WEEK} at {TIME}</string>
     <string name="MSG_AFTER_MESSAGE_IS_SCHEDULED_FOR_SENDER_TODAY">Sending at {TIME}</string>
     <string name="MSG_AFTER_MESSAGE_IS_SCHEDULED_FOR_SENDER_TOMORROW">Sending tomorrow at {TIME}</string>
-    <string name="MSG_AI_FEATURE_FOR_WORKSPACE">%1$s for Workspace</string>
+    <string name="MSG_AI_FEATURE_FOR_WORKSPACE">%1$s in Workspace</string>
     <string name="MSG_ALL_SOURCES_IRM_RESTRICTED_RESPONSE">Those files have specific download restrictions that limit what I can do. Can I help with anything else?</string>
     <string name="MSG_ALREADY_USED_SECTION_ID">ID of the section to insert already exists in the cardItem.</string>
     <string name="MSG_ALREADY_USED_WIDGET_ID">ID of the widget to insert already exists in the cardItem.</string>
+    <string name="MSG_ANOMALOUS_REPLY_TO_WITH_SENDER_DOMAIN">"This message appears to be from %1$s, but replies go to another email address. Don't reply to this message unless you trust the sender and the message."</string>
     <string name="MSG_ANONYMOUS_GROUP">Anonymous Group</string>
     <string name="MSG_ANONYMOUS_USER_JOINING_SPACE">{NUM_USERS, plural, offset:1 =1 {An unverified user joined this meeting and can see messages from this point on}other {{NUM_USERS} unverified users joined this meeting and can see messages from this point on}}</string>
     <string name="MSG_ANONYMOUS_USER_LEAVING_SPACE">{NUM_USERS, plural, offset:1 =1 {An unverified user has left this conversation}other {{NUM_USERS} unverified users have left this conversation}}</string>
+    <string name="MSG_ANTIVIRUS">It might contain attachments with a virus or malicious link. Avoid downloading or opening the attachment.</string>
+    <string name="MSG_APPLYING_EDIT_INFORMATION_TEXT">Applying edit...</string>
+    <string name="MSG_APPS_DISABLED_TEXT">Your organization has disabled apps</string>
+    <string name="MSG_APPS_NOT_ALLOWED_TO_ADD_TEXT">Adding apps is limited in this space</string>
     <string name="MSG_APP_AUTH_TEXT_IN_CONVERSATION">Apps may have more permissions in this conversation.</string>
     <string name="MSG_APP_AUTH_TEXT_IN_SPACE">Apps may have more permissions in this space.</string>
     <string name="MSG_APP_INSTALL_DIALOG_DESCRIPTION_FOR_EXTERNAL_SPACE">External users cannot use apps, but they can view content posted by apps. Would you like to add these apps to %1$s?</string>
-    <string name="MSG_APP_INSTALL_DIALOG_NO_SPACE_DESCRIPTION">Once installed, %1$s will be available in the Apps section and can be used by other Workspace products.</string>
+    <string name="MSG_APP_INSTALL_DIALOG_NO_SPACE_DESCRIPTION">Once installed, %1$s will be available in the Apps section and may be available in other Workspace products.</string>
     <string name="MSG_APP_INSTALL_DIALOG_PROMPT_MESSAGE">"You're installing this app:"</string>
+    <string name="MSG_APP_INSTALL_DIALOG_SPACE_CAPABLE_DESCRIPTION">Once installed, %1$s will be available in the Apps section, can be added to conversations when invoked, and may be available in other Workspace products.</string>
     <string name="MSG_APP_INSTALL_DIALOG_TITLE">Install app</string>
     <string name="MSG_APP_INSTALL_DIALOG_TITLE_FOR_EXTERNAL_SPACE">Use apps in an external space</string>
     <string name="MSG_APP_REMOVAL_DIALOG_CONSEQUENCES_DESCRIPTION">If removed, %1$s will no longer be available in this conversation, it will not be removed from your Apps section or other Workspace products.</string>
@@ -48,18 +55,30 @@
     <string name="MSG_APP_REMOVAL_DIALOG_TITLE">Remove app</string>
     <string name="MSG_ARCHIVED">{COUNT, plural, =1 {# archived} other {# archived}}</string>
     <string name="MSG_ASSISTANT_FEATURE_TEXT">Answers and reminders in Google Assistant</string>
+    <string name="MSG_ATTACHED_MESSAGE">You are viewing an attached message.</string>
+    <string name="MSG_ATTACHMENT_STATUS_FAILED">"Couldn't add to drive"</string>
+    <string name="MSG_ATTACHMENT_STATUS_IN_PROGRESS">Adding...</string>
+    <string name="MSG_ATTACHMENT_STATUS_SUCCEEDED">Added</string>
+    <string name="MSG_ATTACHMENT_WITH_ANOMALOUS_TYPE">"This message has one or more uncommon attachments that might be harmful to your device. Don't download the attachments unless you trust the sender and the message."</string>
+    <string name="MSG_ATTACHMENT_WITH_UNVERIFIED_SCRIPTS">"This message has one or more attachments that Gmail can't verify and that might be harmful. Don't download the attachments unless you trust the sender and the message."</string>
     <string name="MSG_BACK_LABEL">Back</string>
     <string name="MSG_BAD_RESPONSE_LABEL">Bad suggestion</string>
-    <string name="MSG_BANNER_TEXT_FOR_FORWARD_MESSAGE_FROM_DM_OR_GDM">You are about to forward a private message. As a reminder, make sure you are not forwarding sensitive information. Learn more about message forwarding.</string>
+    <string name="MSG_BANNER_TEXT_FOR_FORWARD_MESSAGE_FROM_DM_OR_GDM">You are about to forward a private message. As a reminder, make sure you are not forwarding sensitive information. %1$s</string>
     <string name="MSG_BEFORE_MESSAGE_IS_SCHEDULED_FOR_SENDER_BEYOND_THIS_WEEK">{MONTH_AND_DAY} at {TIME}</string>
     <string name="MSG_BEFORE_MESSAGE_IS_SCHEDULED_FOR_SENDER_LATER_IN_THIS_WEEK">{DAY_OF_WEEK} at {TIME}</string>
+    <string name="MSG_BEFORE_MESSAGE_IS_SCHEDULED_FOR_SENDER_TODAY">Today at {TIME}</string>
     <string name="MSG_BEFORE_MESSAGE_IS_SCHEDULED_FOR_SENDER_TOMORROW">Tomorrow at {TIME}</string>
+    <string name="MSG_BE_CAREFUL_MESSAGE">Be careful with this message.</string>
     <string name="MSG_BIRTHDAY_A11Y_LABEL">Birthday</string>
+    <string name="MSG_BOGUS_AUTO_REPLY_MESSAGE">It seems to be an auto-reply to a message that pretended to be sent from your email address.</string>
     <string name="MSG_CAA_RESTRICTED_RESPONSE">"Your administrator's settings are restricting %1$s from being used right now."</string>
     <string name="MSG_CALENDAR_CARD_CONTENT_DESCRIPTION">Results from Google Calendar</string>
     <string name="MSG_CALENDAR_EVENT_CREATION_ERROR_LINK_TEXT">Create an event manually.</string>
     <string name="MSG_CALENDAR_EVENT_CREATION_ERROR_RESPONSE">"I couldn't add this event to your calendar."</string>
     <string name="MSG_CALENDAR_PRODUCT_NAME_LABEL">Calendar</string>
+    <string name="MSG_CALENDAR_UNKNOWN_ORGANIZER_CONTENT">"You haven't interacted with this sender before. Do you want to automatically add this and future invitations from them to your calendar?"</string>
+    <string name="MSG_CALENDAR_UNKNOWN_ORGANIZER_CONTENT_WITH_FROM_ADDRESS">"You haven't interacted with %1$s before. Do you want to automatically add this and future invitations from them to your calendar?"</string>
+    <string name="MSG_CALENDAR_UNKNOWN_ORGANIZER_HEADER">"This event isn't in your calendar yet"</string>
     <string name="MSG_CANCELED_REQUEST_LABEL">Canceled request</string>
     <string name="MSG_CANCEL_BUTTON">Cancel</string>
     <string name="MSG_CANCEL_DELETE_SESSION_BUTTON_LABEL">Cancel</string>
@@ -68,18 +87,22 @@
     <string name="MSG_CANNOT_ADD_TO_CONVERSATION_BODY">"{NUMBER_OF_TRUNCATED_EXCLUDED_NAMES, plural, =0 {This conversation's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} from being added} =1 {This conversation's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and 1 more from being added} other {This conversation's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and {NUMBER_OF_TRUNCATED_EXCLUDED_NAMES} more from being added}}"</string>
     <string name="MSG_CANNOT_ADD_TO_CONVERSATION_TITLE">"Can't add to conversation"</string>
     <string name="MSG_CANNOT_ADD_TO_SPACE_BODY">"{NUMBER_OF_TRUNCATED_EXCLUDED_NAMES, plural, =0 {This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} from being added} =1 {This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and 1 more from being added} other {This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and {NUMBER_OF_TRUNCATED_EXCLUDED_NAMES} more from being added}}"</string>
-    <string name="MSG_CANNOT_ADD_TO_SPACE_TITLE">"Can't add to %1$s"</string>
     <string name="MSG_CANT_HELP_WITH_THAT_RESPONSE">"I can't help with that. Do you need help with anything else?"</string>
     <string name="MSG_CAN_NOT_CONNECT_LABEL">"Can't connect to Calendar"</string>
+    <string name="MSG_CAN_NOT_RESCHEDULE_FOR_PAST_TIME">"Can't reschedule for a past time."</string>
+    <string name="MSG_CAN_NOT_SCHEDULE_FOR_PAST_TIME">"Can't schedule for a past time."</string>
     <string name="MSG_CHANGED_LABEL">Changed label.</string>
     <string name="MSG_CHAT_CHIP_TITLE">Open chat</string>
+    <string name="MSG_CHAT_TAB_HAND_WAVE_PROMO_TITLE">Explore this</string>
     <string name="MSG_CLASSIFICATION_APPLIED">Classification label added by organization</string>
     <string name="MSG_CLASSIFICATION_REMOVED">Classification label removed</string>
     <string name="MSG_CLASSIFICATION_UPDATED">Classification label updated</string>
+    <string name="MSG_CLICK_TO_MARK_MSG">Click to teach {PRODUCT_NAME} this conversation is important.</string>
+    <string name="MSG_CLICK_TO_UNMARK_MSG">Click to teach {PRODUCT_NAME} this conversation is not important.</string>
+    <string name="MSG_CLIENT_TRIGGERED_SCAN_SPAM">This message was sent to your inbox but when the message was opened, Gmail identified it as spam.</string>
     <string name="MSG_CLIPBOARD_COPY_NOTIFICATION">Copied</string>
     <string name="MSG_CLOSE_SIDEKICK_LABEL">Close</string>
     <string name="MSG_CLOSE_SUMMARY_MESSAGE">Close summary</string>
-    <string name="MSG_COLUMN_FILL_RESULT_RESPONSE">Column Fill created, click Insert to fill %1$s</string>
     <string name="MSG_CONFIRM_ARCHIVE_CONVERSATION_DIALOG_MESSAGE">{COUNT, plural, =1 {Archive this conversation?} other {Archive these # conversations?}}</string>
     <string name="MSG_CONFIRM_CALENDAR_EVENT_LABEL">Yes</string>
     <string name="MSG_CONFIRM_DELETE_CONVERSATION_DIALOG_MESSAGE">{COUNT, plural, =1 {Delete this conversation?} other {Delete these # conversations?}}</string>
@@ -89,6 +112,7 @@
     <string name="MSG_CONSUMER_DISCLAIMER_PART1">This feedback (including, any generated output and freeform text you enter) is provided under the</string>
     <string name="MSG_CONSUMER_DISCLAIMER_PART2">Your feedback will not be used for model training. We use this data for the purposes listed in the “Why Google collects data” section of the</string>
     <string name="MSG_CONSUMER_DISCLAIMER_PART3">Please do not contribute data that is personal, sensitive, or confidential.</string>
+    <string name="MSG_CONTAINS_WEB_LINKS_WITH_MALWARE">It contains links to websites hosting malware. Avoid clicking links in the message.</string>
     <string name="MSG_CONTINUE_EDITING">Continue editing</string>
     <string name="MSG_CONVERSATION_NAME_UPDATED">{USER_NAME} titled this conversation {NEW_NAME}</string>
     <string name="MSG_CONVERSATION_NAME_UPDATED_VIA_APP">{USER_NAME} titled this conversation {NEW_NAME} (via {APP_NAME})</string>
@@ -101,6 +125,7 @@
     <string name="MSG_CROSS_PRODUCT_SHARING_DISABLED_ERROR">"To use this feature, turn on %1$s in this app's settings."</string>
     <string name="MSG_CUSTOM_PROMPT_CONTENT_DESCRIPTION">Custom...</string>
     <string name="MSG_CUSTOM_TIME_SELECTION_COMPONENT_TITLE">Pick a custom time</string>
+    <string name="MSG_DANGEROUS_MESSAGE_HEADER">This message might be dangerous</string>
     <string name="MSG_DATE_TODAY">Today</string>
     <string name="MSG_DATE_YESTERDAY">Yesterday</string>
     <string name="MSG_DEFAULT_DISPLAY_NAME">Unknown space</string>
@@ -112,17 +137,23 @@
     <string name="MSG_DELETE_SESSION_CONFIRMATION_NOTIFICATION">%1$s history cleared</string>
     <string name="MSG_DELETE_SESSION_TITLE">Clear %1$s history?</string>
     <string name="MSG_DELETE_UNSENT_MESSAGE_ACTION_TITLE">Delete</string>
+    <string name="MSG_DELETING_MESSAGE_INFORMATION_TEXT">Deleting...</string>
     <string name="MSG_DIALOG_OK_BUTTON_TEXT">OK</string>
+    <string name="MSG_DIFFERENT_LANGUAGE_MESSAGE">"It's written in a different language than your messages typically use."</string>
     <string name="MSG_DISCLAIMER_AND_CONTENT">and</string>
     <string name="MSG_DISMISS_SNACKBAR_BUTTON_LABEL">Dismiss</string>
     <string name="MSG_DOCS_SOURCE_TYPE">Docs</string>
     <string name="MSG_DOWNLOAD_GENERATED_CONTENT_LABEL">Download</string>
     <string name="MSG_EDIT_ACTION">Edit</string>
     <string name="MSG_EMAIL_CATEGORIZATION_FEATURE_TEXT">Automatic email filtering/categorization (Primary/Social/Promotions)</string>
+    <string name="MSG_EMAIL_FROM_BLOCKED_SENDER_WITH_FROM_ADDRESS">You blocked %1$s.</string>
     <string name="MSG_EMAIL_SMART_COMPOSE_FEATURE_TEXT">Smart Compose (suggested text) in email</string>
     <string name="MSG_EMAIL_SMART_REPLY_FEATURE_TEXT">Smart Reply (suggested quick replies) in email</string>
     <string name="MSG_EMAIL_SOURCE_TYPE">Email</string>
     <string name="MSG_EMAIL_SUMMARY_CARDS_FEATURE_TEXT">Summary cards above emails (travel, package tracking, and more)</string>
+    <string name="MSG_EMPLOYEE_NAME_SPOOFING_WITH_FROM_ADDRESS">"%1$s is similar to addresses used in your organization but it doesn't belong to your organization and Gmail can't verify that the message actually came from %2$s. Don't reply unless you trust the sender and the message."</string>
+    <string name="MSG_EMPTY_COMMANDS_IN_APP_DM_TEXT">No commands available for the app</string>
+    <string name="MSG_ENCRYPTED_ATTACHMENTS">"This message has one or more encrypted attachments that can't be checked for harmful software. Avoid downloading the attachments unless you trust the sender and the message."</string>
     <string name="MSG_ENTER_PROMPT_LABEL">Enter a prompt here</string>
     <string name="MSG_ERROR_REPORTING">Unable to submit report, try again later.</string>
     <string name="MSG_ERROR_STARRING">Unable to star this message, try again later.</string>
@@ -138,10 +169,8 @@
     <string name="MSG_FAILED_TO_SCHEDULE_MESSAGE">Failed to schedule a message</string>
     <string name="MSG_FAILED_TO_SEND_FORWARD_TO_INBOX_MESSAGE">Failed to forward message to inbox</string>
     <string name="MSG_FAILED_TO_SEND_MESSAGE_INFORMATION_TEXT">Failed to send</string>
-    <string name="MSG_FAILED_TO_UPDATE_SCHEDULED_MESSAGE">Failed to edit the scheduled message</string>
     <string name="MSG_FALLBACK_RESPONSE">Something went wrong. Try again.</string>
     <string name="MSG_FEEDBACK_CONTENT_DESCRIPTION">Feedback</string>
-    <string name="MSG_FEED_DISCLAIMER">%1$s can make mistakes, including about people, so double-check it.</string>
     <string name="MSG_FILES_AND_FOLDERS_MENU_HEADER">Files and folders</string>
     <string name="MSG_FILES_ENCRYPTED_RESPONSE">"I can't help with that request. Files with additional encryption prevent access to your data."</string>
     <string name="MSG_FILES_SPAM_RESTRICTED_RESPONSE">Those files are marked as spam which limits what I can do. Can I help with anything else?</string>
@@ -153,11 +182,9 @@
     <string name="MSG_FOCUS_TIME_A11Y_LABEL">Focus time</string>
     <string name="MSG_FOLLOW_UP_PROMPTS_LABEL">Ask a follow up</string>
     <string name="MSG_FOOTER_PAGE_TEXT">%1$s of %2$s</string>
+    <string name="MSG_FORGED_AND_PHISHY_MESSAGE_WITH_FROM_ADDRESS">"Similar messages were used to steal people's personal information. Moreover, Gmail could not verify that this message actually came from %1$s. Avoid clicking links, downloading attachments, or replying with personal information."</string>
     <string name="MSG_FORMULAS_FILTERED_RESPONSE">"I couldn't create a formula for that request. Try being more specific, breaking your request into smaller steps, or simplifying the data."</string>
-    <string name="MSG_FORMULA_ERROR_MESSAGE">Applying this formula caused an error: \"%1$s\" Check if your data range and cell formats are suitable. You could also adjust your request or ask me to try generating the formula again.</string>
-    <string name="MSG_FORMULA_EXPLANATION">Formula Explanation:</string>
-    <string name="MSG_FORMULA_RESULT">Formula Result:</string>
-    <string name="MSG_FORMULA_RESULT_TOO_LONG">Result too long, insert formula for full output.</string>
+    <string name="MSG_FORUMS_TEASER_FOLDER_NAME">Forums</string>
     <string name="MSG_FORWARD_MESSAGE_ACTION">Forward message</string>
     <string name="MSG_FORWARD_MESSAGE_DIALOG_TITLE">Forward message</string>
     <string name="MSG_FORWARD_TO_INBOX_ACTION">Forward to inbox</string>
@@ -194,7 +221,9 @@
     <string name="MSG_GOOGLE_CLOUD_PRIVACY_NOTICE_LINK_TEXT">Google Cloud Privacy Notice (GCPN)</string>
     <string name="MSG_GOOGLE_CLOUD_PRIVACY_NOTICE_LINK_TEXT_ABBREVIATION">GCPN</string>
     <string name="MSG_GOOGLE_TERMS_OF_SERVICE_LINK_TEXT">Google Terms of Service</string>
-    <string name="MSG_GROUP_EXTERNAL_TO_DASHER_ERROR_TEXT">"Messages can't be sent to {GROUP_NAME} because it contains external users or Google Groups"</string>
+    <string name="MSG_GROUPS_SPOOFING">"Gmail could not verify that this message actually came from a member of your organization. Avoid clicking links, downloading attachments, or replying with personal information unless you're confident that this email is legitimate."</string>
+    <string name="MSG_GROUP_EXTERNAL_TO_DASHER_ERROR_TEXT">"Messages can't be sent to {GROUP_NAME} because it may contain external users or Google Groups"</string>
+    <string name="MSG_GROUP_SIZE_EXCEEDS_MAX_ERROR_TEXT">"Messages can't be sent to large spaces"</string>
     <string name="MSG_GUDP_PAGE_BOTTOM_BODY_TEXT">You can always turn smart features in other Google products on or off in your settings. When smart features are on, your data may be used to improve these features. Data sharing may be subject to additional controls. %1$s.</string>
     <string name="MSG_GUDP_PAGE_DISABLE_RADIO_SECTION_TITLE">Turn off smart features in other Google products</string>
     <string name="MSG_GUDP_PAGE_ENABLE_RADIO_SECTION_TITLE">Turn on smart features in other Google products</string>
@@ -229,29 +258,49 @@
     <string name="MSG_HISTORY_USER_TURNED_ON_VIA_APP_TITLE">{USER_NAME} turned history on (via {APP_NAME})</string>
     <string name="MSG_HOLIDAY">Holiday</string>
     <string name="MSG_HOW_CAN_I_HELP_LABEL">How can I help you?</string>
+    <string name="MSG_ICE_DATA_REFERENCE_MESSAGE">Referenced: %1$s</string>
     <string name="MSG_IMAGE_DOWNLOADED_LABEL">Image downloaded</string>
     <string name="MSG_IMAGE_DOWNLOADING_LABEL">Downloading full size...</string>
     <string name="MSG_IMAGE_DOWNLOAD_ERROR_LABEL">Image download failed</string>
     <string name="MSG_IMAGE_GENERATION_DISABLED_RESPONSE">"Image generation isn't available at this time. Try asking something else."</string>
     <string name="MSG_IMAGE_GENERATION_ERROR">"Couldn't load image"</string>
+    <string name="MSG_IMPORTANT_DUE_TO_CONTENT_MSG">Important mainly because of the words in the message.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_FILTER_MSG">Important because it matched one of your importance filters.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_MAGIC_MSG">Important according to Google magic.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_PREVIOUS_IMPORTANCE_IN_THREAD_MSG">Important because previous messages in the conversation were important.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_PREVIOUS_THREAD_INTERACTIONS_MSG">Important mainly because of your interaction with messages in the conversation.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_SENDER_MSG">Important because you taught {PRODUCT_NAME} that this sender is always important.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_SENT_DIRECTLY_TO_ME_MSG">Important mainly because it was sent directly to you.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_THREAD_PARTICIPANTS_MSG">Important mainly because of the people in the conversation.</string>
+    <string name="MSG_IMPORTANT_DUE_TO_USER_LABEL_MSG">Important mainly because you often read messages with this label.</string>
     <string name="MSG_INSERT_LABEL">Insert</string>
     <string name="MSG_INSTALL_APP">Install app</string>
     <string name="MSG_INSTALL_APP_DIALOG_BODY_DETAILS_LEARN_MORE_TEXT">Learn more about what apps can do in spaces here.</string>
     <string name="MSG_INSTALL_APP_DIALOG_BODY_DETAILS_LEARN_MORE_TEXT_WITH_APP_NAME">Learn more about %1$s and what apps can do in spaces here.</string>
     <string name="MSG_INSUFFICIENT_FEATURE_SET_ERROR_RESPONSE">Some Gemini features require the latest version of the app. Update to use them.</string>
+    <string name="MSG_INTERNAL_MESSAGE_NOT_DELIVERED_WITH_TO_ADDRESS">"Your message to %1$s appears suspicious and wasn't delivered. If this is a mistake, report this message as not suspicious and share it with Google. This helps improve Gmail's spam filter. Sharing this message doesn't resend or deliver the message. Message content is used to help identify spam and isn't shared outside Google."</string>
     <string name="MSG_INVALID_SELECTION_ERROR_TEXT">"Messages can't be sent to external users, Google groups, or yourself."</string>
+    <string name="MSG_INVALID_SENDER_ADDRESS">"The sender's email address is invalid."</string>
     <string name="MSG_INVALID_TIME_ERROR_TEXT">Invalid time</string>
     <string name="MSG_INVITE_ALL_GUESTS">Invite all guests</string>
     <string name="MSG_INVITE_CONFIRM_DIALOG_CANCEL">Cancel</string>
+    <string name="MSG_IN_BAD_SENDER_LIST_WITH_FROM_ADDRESS">You previously marked messages from %1$s as spam.</string>
     <string name="MSG_JUMP_TO_BOTTOM_BUTTON_LABEL">Jump to bottom</string>
     <string name="MSG_JUMP_TO_BOTTOM_LABEL">Jump to bottom</string>
+    <string name="MSG_KNOWN_SPAMMER_SENDER">This message was marked as spam because previous messages from this sender were marked as spam.</string>
+    <string name="MSG_KNOWN_SPAMMER_SENDER_WITH_SENDER">This message was marked as spam because previous messages from %1$s were marked as spam.</string>
     <string name="MSG_LEARN_MORE_LABEL">Learn more</string>
     <string name="MSG_LEARN_MORE_TEXT">Learn more</string>
-    <string name="MSG_LOADING_STATE_TITLE">Summarizing...</string>
+    <string name="MSG_LEGAL_DISCLAIMER_RO_W">%1$s can make mistakes, so double-check responses.</string>
+    <string name="MSG_LOADING_SUMMARY_MESSAGE">Summarizing...</string>
     <string name="MSG_LONG_SUMMARY_PROMPT">Show a longer summary</string>
+    <string name="MSG_LOOKS_LIKE_SPAM">Gmail marked this message as spam.</string>
+    <string name="MSG_LOOKS_SUSPICIOUS">Many people marked similar messages as phishing scams, so this might contain unsafe content. Avoid clicking links, downloading attachments, or replying with personal information.</string>
+    <string name="MSG_MAIL_NOT_SENT_FROM_USER_ACCOUNT">"This message appears to be sent from your account but Gmail couldn't verify this. Someone might be impersonating your account. If you're not sure the message is from you, use caution when clicking links, downloading attachments, or replying with personal information."</string>
     <string name="MSG_MAPS_FEATURE_TEXT">Restaurant reservations and to-go orders in Maps</string>
     <string name="MSG_MARKED_AS_IMPORTANT">{COUNT, plural, =1 {# marked important} other {# marked important}}</string>
     <string name="MSG_MARKED_AS_NOT_IMPORTANT">{COUNT, plural, =1 {# marked not important} other {# marked not important}}</string>
+    <string name="MSG_MARKED_IMPORTANT_BY_USER_MSG">Important because you marked it as important.</string>
     <string name="MSG_MARKED_UNREAD">{COUNT, plural, =1 {# marked as unread} other {# marked as unread}}</string>
     <string name="MSG_MARK_AS_UNREAD_ACTION">Mark as unread</string>
     <string name="MSG_MEETING_HAS_ENDED">Meeting has ended</string>
@@ -271,6 +320,8 @@
     <string name="MSG_MESSAGE_MARK_TOPIC_AS_UNREAD_FAILURE">Failed to mark this thread as unread</string>
     <string name="MSG_MESSAGE_MARK_TOPIC_AS_UNREAD_IN_PROGRESS">Marking this thread as unread</string>
     <string name="MSG_MESSAGE_MARK_TOPIC_AS_UNREAD_SUCCESS">Marked this thread as unread.</string>
+    <string name="MSG_MESSAGE_NOT_DELIVERED">"Your message appears suspicious and wasn't delivered. If this is a mistake, report this message as not suspicious and share it with Google. This helps improve Gmail's spam filter. Sharing this message doesn't resend or deliver the message. Message content is used to help identify spam and isn't shared outside Google."</string>
+    <string name="MSG_MESSAGE_NOT_DELIVERED_HEADER">Message not delivered</string>
     <string name="MSG_MESSAGE_REACTION_ERROR_LEARN_MORE_TEXT">Learn more</string>
     <string name="MSG_MESSAGE_REPORT_DIALOG_BODY">"Choose the option that best describes why you're reporting this message. The report will be submitted to your organization's admin."</string>
     <string name="MSG_MESSAGE_REPORT_DIALOG_CANCEL_BUTTON_TEXT">Cancel</string>
@@ -291,18 +342,24 @@
     <string name="MSG_MIXED_CAN_ADD_AND_CANNOT_ADD_TO_SPACE_BODY_INCLUDE_APPS">"{NUMBER_OF_TRUNCATED_EXCLUDED_NAMES, plural, =0 {If added, new members can access all previously posted content, and new apps can read and send messages. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} from being added. Add the following to {SPACE_NAME}?} =1 {If added, new members can access all previously posted content, and new apps can read and send messages. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and 1 more from being added. Add the following to {SPACE_NAME}?} other {If added, new members can access all previously posted content, and new apps can read and send messages. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and {NUMBER_OF_TRUNCATED_EXCLUDED_NAMES} more from being added. Add the following to {SPACE_NAME}?}}"</string>
     <string name="MSG_MIXED_CAN_ADD_AND_CANNOT_ADD_TO_SPACE_BODY_NO_APPS">"{NUMBER_OF_TRUNCATED_EXCLUDED_NAMES, plural, =0 {If added, new members can access all previously posted content. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} from being added. Add the following to {SPACE_NAME}?} =1 {If added, new members can access all previously posted content. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and 1 more from being added. Add the following to {SPACE_NAME}?} other {If added, new members can access all previously posted content. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and {NUMBER_OF_TRUNCATED_EXCLUDED_NAMES} more from being added. Add the following to {SPACE_NAME}?}}"</string>
     <string name="MSG_MIXED_CAN_ADD_AND_CANNOT_ADD_TO_SPACE_BODY_ONLY_APPS">"{NUMBER_OF_TRUNCATED_EXCLUDED_NAMES, plural, =0 {If added, new apps can read and send messages. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} from being added. Add the following to {SPACE_NAME}?} =1 {If added, new apps can read and send messages. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and 1 more from being added. Add the following to {SPACE_NAME}?} other {If added, new apps can read and send messages. This space's settings prevent {EXCLUDED_NAME_LIST_TRUNCATED} and {NUMBER_OF_TRUNCATED_EXCLUDED_NAMES} more from being added. Add the following to {SPACE_NAME}?}}"</string>
+    <string name="MSG_MORE_THAN99">99+</string>
+    <string name="MSG_MORE_THAN99_SCHEDULED_MESSAGES">99+ scheduled messages</string>
+    <string name="MSG_MOVED_TO">{COUNT, plural, =1 {Moved to {ORGANIZATION_ELEMENT}} other {# moved to {ORGANIZATION_ELEMENT}}}</string>
     <string name="MSG_MULTIPLE_DAY_TITLE">%1$s (Day %2$s/%3$s)</string>
     <string name="MSG_MULTIPLE_USERS_TYPING">Many people are typing</string>
     <string name="MSG_MULTI_SUMMARY_CONTENT_STATE_TITLE">Recent discussions</string>
     <string name="MSG_MUTED">{COUNT, plural, =1 {# muted} other {# muted}}</string>
     <string name="MSG_NAME_LOADING">Name loading...</string>
+    <string name="MSG_NEVER_SENT_TO_SPAM_MESSAGE">"This message wasn't sent to spam and was delivered based on your Gmail filters."</string>
     <string name="MSG_NEW_TOPIC">Begin new topic</string>
     <string name="MSG_NEXT_LABEL">Next</string>
     <string name="MSG_NEXT_RECURRENCE_DATE">Next: %1$s</string>
     <string name="MSG_NEXT_STEPS_PROMPT">List the next steps</string>
     <string name="MSG_NON_REGIONALIZED_FEATURES_DISABLED_RESPONSE">"I can't help with that because your organization has restricted some Gemini features."</string>
     <string name="MSG_NON_WORKING_DAY">Non-working day</string>
+    <string name="MSG_NOT_CONNECTED_TO_INTERNET_RESPONSE">"You're offline. Connect to the internet and try again."</string>
     <string name="MSG_NOT_ENOUGH_UNREAD_MESSAGES_ERROR">"There's not enough unread messages for summary"</string>
+    <string name="MSG_NOT_IMPORTANT_MSG">Not important</string>
     <string name="MSG_NO_CONTEXT_IN_FILE_SCOPE_RESPONSE">"I'm still learning and can only reference files you've added. You can Select new files to discuss."</string>
     <string name="MSG_NO_FORMULAS_RESPONSE">"I couldn't create a formula for that request. Try being more specific, breaking your request into smaller steps, or simplifying the data."</string>
     <string name="MSG_NO_MORE_RESULTS_LABEL">No more results</string>
@@ -318,7 +375,12 @@
     <string name="MSG_ONE_MESSAGE_SCHEDULED_TO_BE_SENT_LATER_IN_THIS_WEEK">Your message will be sent to {GROUP_NAME} on {DAY_OF_WEEK} at {TIME}.</string>
     <string name="MSG_ONE_MESSAGE_SCHEDULED_TO_BE_SENT_TODAY">Your message will be sent to {GROUP_NAME} at {TIME}.</string>
     <string name="MSG_ONE_MESSAGE_SCHEDULED_TO_BE_SENT_TOMORROW">Your message will be sent to {GROUP_NAME} tomorrow at {TIME}.</string>
+    <string name="MSG_ONLY_DISPLAY_NAME_IN_ADDRESS_BOOK">"The sender name appears similar to one or more of your contacts, but you've never received messages from this email address. Don't reply to this message unless you trust the sender and the message."</string>
+    <string name="MSG_ONLY_DISPLAY_NAME_IN_ADDRESS_BOOK_WITH_FROM_PERSONAL">"This message appears to be from %1$s but you've never received messages from this email address. Don't reply to this message unless you trust the sender and the message."</string>
     <string name="MSG_OPEN_FILE_LABEL">Open</string>
+    <string name="MSG_ORGANIZATION_MARKED_AS_SPAM">Your organization requested that messages like these be marked as spam.</string>
+    <string name="MSG_ORGANIZATION_POLICY_APPLIED">"This message wasn't sent to spam due to your organization's email settings."</string>
+    <string name="MSG_OTHERS_MARKED_AS_PHISHY">Many people marked similar messages as phishing scams, so this might contain unsafe content. Avoid clicking links, downloading attachments, or replying with personal information.</string>
     <string name="MSG_OTHER_SOURCES_TREE_HEADER_TITLE">Other sources</string>
     <string name="MSG_OUTSIDE_PREFERENCE">Outside preferred time</string>
     <string name="MSG_OUT_OF_OFFICE">Out of office</string>
@@ -326,13 +388,19 @@
     <string name="MSG_OVERFLOW_MENU_TEXT">More</string>
     <string name="MSG_OVERFLOW_MENU_TOOLTIP_TEXT">More actions</string>
     <string name="MSG_PACKAGE_TRACKING_TITLE">Package Tracking</string>
+    <string name="MSG_PASSWORD_FIELD_SANITIZED_WEB">This message may contain a password field. To prevent password leaks, autofill has been turned off. Avoid sharing personal information unless you know the sender and are confident this email is safe.</string>
     <string name="MSG_PDF_SOURCE_TYPE">PDF</string>
     <string name="MSG_PERIOD_SYMBOL">.</string>
     <string name="MSG_PERMISSION_DENIED_RESPONSE">To create images, acknowledge the Generative Imagery terms of service at go/generative-imagery-access. Once acknowledged you should have permissions within 1 day.</string>
     <string name="MSG_PERSONALIZED_SEARCH_FEATURE_TEXT">Personalized search (such as keyword suggestions, file suggestions, and more relevant results)</string>
+    <string name="MSG_PHISHY_OUTBREAK">One or more members of your organization have marked this email as suspicious. Avoid clicking links, downloading attachments, or replying with personal information.</string>
+    <string name="MSG_PHISH_LATE_RECLASSIFICATION">"Messages like this one were used to steal personal information. Don't click links, download attachments, or reply with personal information."</string>
     <string name="MSG_PICK_A_CUSTOM_TIME_TEXT">Pick a custom time</string>
     <string name="MSG_PIN_BOARD_ACTION">Pin to board</string>
+    <string name="MSG_PREVIOUSLY_UNSUBSCRIBED">Recently unsubscribed</string>
     <string name="MSG_PRIVACY_POLICY_LINK_TEXT">Privacy Policy</string>
+    <string name="MSG_PROMOTIONS_TEASER_FOLDER_NAME">Promotions</string>
+    <string name="MSG_PROMPT_INJECTION_SECURITY_RISK_RESPONSE">A security risk was identified and blocked</string>
     <string name="MSG_QUOTE_IN_REPLY_ACTION">Quote in reply</string>
     <string name="MSG_REACTION_ADDED_ACCESSIBILITY_ANNOUNCEMENT">Added {EMOJI} reaction.</string>
     <string name="MSG_REACTION_PER_MESSAGE_LIMIT_REACHED_ERROR_BODY">The reaction limit for this message has been reached. %1$s.</string>
@@ -357,7 +425,9 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_REPLY_IN_THREAD_ACTION_NOT_AVAILABLE">Reply in thread not available</string>
     <string name="MSG_REPORTED_SPAM">{COUNT, plural, =1 {# reported as spam} other {# reported as spam}}</string>
     <string name="MSG_REPORTED_SPAM_AND_BLOCKED_SENDER">Sender blocked. Future messages from this sender will be sent to Spam.</string>
+    <string name="MSG_REPORT_ABUSE_ACTION_LABEL">Report</string>
     <string name="MSG_REPORT_MESSAGE_ACTION">Report</string>
+    <string name="MSG_RESCHEDULING_MESSAGE_INFORMATION_TEXT">Rescheduling...</string>
     <string name="MSG_RESEND_ACTION">Resend</string>
     <string name="MSG_RESPONSE_STATUS_LABEL">Response: %1$s</string>
     <string name="MSG_RESPONSE_STATUS_MAYBE_LABEL">Maybe</string>
@@ -367,8 +437,8 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_RETRY_WITH_SEARCH_LABEL">Search</string>
     <string name="MSG_ROOM_DESCRIPTION_DELETED">{USER_NAME} deleted the space description</string>
     <string name="MSG_ROOM_DESCRIPTION_DELETED_VIA_APP">{USER_NAME} deleted the space description (via {APP_NAME})</string>
-    <string name="MSG_ROOM_DESCRIPTION_UPDATED_BY_USER_NO_NEW_LINE">{USER_NAME} updated the space description: {NEW_DESCRIPTION}</string>
-    <string name="MSG_ROOM_DESCRIPTION_UPDATED_VIA_APP_NO_NEW_LINE">{USER_NAME} updated the space description (via {APP_NAME}): {NEW_DESCRIPTION}</string>
+    <string name="MSG_ROOM_DESCRIPTION_UPDATED_BY_USER">{USER_NAME} updated the space description:{NEW_LINE}{NEW_DESCRIPTION}</string>
+    <string name="MSG_ROOM_DESCRIPTION_UPDATED_VIA_APP">{USER_NAME} updated the space description (via {APP_NAME}):{NEW_LINE}{NEW_DESCRIPTION}</string>
     <string name="MSG_ROOM_GUIDELINES_DELETED">{USER_NAME} deleted the space guidelines</string>
     <string name="MSG_ROOM_GUIDELINES_DELETED_VIA_APP">{USER_NAME} deleted the space guidelines (via {APP_NAME})</string>
     <string name="MSG_ROOM_GUIDELINES_UPDATED_BY_USER">{USER_NAME} updated the space guidelines</string>
@@ -388,15 +458,19 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_SEE_MESSAGE_VIEWS_ACTION">See message views</string>
     <string name="MSG_SELECT_GROUP_LOAD_FAILURE_TEXT">"Couldn't load the chat. Try again in a minute."</string>
     <string name="MSG_SELF_USER_YOU">You</string>
+    <string name="MSG_SENDER_BLOCKED">Future messages from this sender will be sent to Spam.</string>
+    <string name="MSG_SENDER_EXTERNAL_ENCRYPTED_WITH_FROM_ADDRESS">"You've never communicated with the sender (%1$s) before. The sender is external and has access to your public encryption key."</string>
+    <string name="MSG_SENDER_UNBLOCKED_WITH_FROM_ADDRESS">You have unblocked %1$s</string>
+    <string name="MSG_SENDER_UNSUBSCRIBED_WITH_FROM_ADDRESS">You unsubscribed from %1$s</string>
     <string name="MSG_SENDING">Sending</string>
     <string name="MSG_SENDING_FORWARD_TO_INBOX_MESSAGE">Forwarding…</string>
+    <string name="MSG_SENDING_MESSAGE_INFORMATION_TEXT">Sending...</string>
     <string name="MSG_SEND_ANYWAY">Send anyway</string>
     <string name="MSG_SEND_BUTTON_LABEL">Send</string>
     <string name="MSG_SEND_FEEDBACK_ACTION">Send feedback</string>
     <string name="MSG_SEND_FEEDBACK_ON_THIS_MESSAGE_ACTION">Send feedback on this message</string>
     <string name="MSG_SEND_MESSAGE">Send message</string>
     <string name="MSG_SEND_ONLY">Send message only</string>
-    <string name="MSG_SEND_OPTIONS_FOR_SCHEDULED_MESSAGE_BEING_EDITED">Send options for scheduled message being edited</string>
     <string name="MSG_SEND_SCHEDULED_MESSAGE_NOW">Send now</string>
     <string name="MSG_SETTINGS_GUDP_SUBTITLE">When you turn this setting on, you agree to let Google use your Workspace content and activity to personalize your experience in other Google products. Smart features include:</string>
     <string name="MSG_SETTINGS_GUDP_TITLE">Smart features in other Google products</string>
@@ -414,10 +488,12 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_SIDEKICK_TOOLTIP_HEADER">Try Gemini in Gmail</string>
     <string name="MSG_SIDEKICK_TOOLTIP_LEARN_MORE">Learn more</string>
     <string name="MSG_SIDEKICK_TOOLTIP_TRY_IT">Try it</string>
+    <string name="MSG_SIMILAR_CONTENT_TO_SPAM">This message is similar to messages that were identified as spam in the past.</string>
     <string name="MSG_SINGLE_SUMMARY_CONTENT_STATE_TITLE">Recent discussion</string>
     <string name="MSG_SINGLE_USER_TYPING">{USER_NAME} is typing</string>
     <string name="MSG_SLIDES_SOURCE_TYPE">Slides</string>
     <string name="MSG_SMART_FEATURES_LEARN_MORE_LINK_TEXT">Learn more about these smart features</string>
+    <string name="MSG_SOCIAL_TEASER_FOLDER_NAME">Social</string>
     <string name="MSG_SOURCES_CHEVRON_COLLAPSED">Collapsed</string>
     <string name="MSG_SOURCES_CHEVRON_EXPANDED">Expanded</string>
     <string name="MSG_SOURCES_CROSS_CUSTOMER_RESTRICTED_RESPONSE">%1$s cannot reference files owned by users outside your domain at this time.</string>
@@ -426,6 +502,8 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_SOURCE_LIST_LABEL">{sourceCount, plural, =1 {1 source} other {{sourceCount} sources}}</string>
     <string name="MSG_SPACE_NAME_UPDATED">{USER_NAME} titled this space {NEW_NAME}</string>
     <string name="MSG_SPACE_NAME_UPDATED_VIA_APP">{USER_NAME} titled this space {NEW_NAME} (via {APP_NAME})</string>
+    <string name="MSG_SPAM_CHECK_FAILED">"Gmail hasn't scanned this message for spam, unverified senders, or harmful software."</string>
+    <string name="MSG_SPAM_DUE_TO_BLOCKED_SENDER_WITH_FROM_ADDRESS">You have blocked %1$s.</string>
     <string name="MSG_START_CHAT_CANCEL_BUTTON_TEXT">Cancel</string>
     <string name="MSG_START_CHAT_CREATION_FAILURE_TEXT">"Couldn't create chat. Try again in a minute."</string>
     <string name="MSG_START_CHAT_DIALOG_TITLE">Start a new chat</string>
@@ -449,20 +527,26 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_SUMMARY_PROMPT">Summarize this email</string>
     <string name="MSG_SUMMARY_RESPONSE_LABEL">Summary of this content</string>
     <string name="MSG_SUPPORTED_LANGUAGES_LINK_TEXT">See supported languages.</string>
+    <string name="MSG_SUPPORT_ARTICLE_TEXT_FOR_FORWARD_MESSAGE">Learn more about message forwarding.</string>
+    <string name="MSG_SUSPICIOUS_ACCOUNT">"The sender's account may have been compromised. Avoid clicking links, downloading attachments, or replying with personal information. If you know the sender, consider alerting them (but avoid replying to this email)."</string>
+    <string name="MSG_SUSPICIOUS_OR_SPAM_MESSAGE">"This message appears suspicious. Don't show the images unless you trust the sender and the message."</string>
+    <string name="MSG_SUSPICIOUS_URL">"It contains a suspicious link that was used to steal people's personal information. Avoid clicking links or replying with personal information."</string>
     <string name="MSG_TASKS_DELETE_WITH_REPLIES_ALERT_TITLE">Delete message and replies only?</string>
     <string name="MSG_TASKS_MESSAGE_DELETE_WITH_REPLIES_ALERT_MESSAGE">"This won't delete the actual task, but it will delete the original message and all thread replies. Other space members can see that a message was deleted. Quote replies that reference this message will be retained."</string>
     <string name="MSG_TOO_EARLY">Too early</string>
     <string name="MSG_TOO_LATE">Too late</string>
     <string name="MSG_TOTAL_AND_MORE_REPLIES">{TOTAL_REPLIES}+ replies</string>
     <string name="MSG_TOTAL_REPLIES">{TOTAL_REPLIES, plural, =1 {1 reply} other {{TOTAL_REPLIES} replies}}</string>
+    <string name="MSG_TOTAL_SCHEDULED_MESSAGES">{TOTAL_SCHEDULED_MESSAGES_COUNT, plural, =1 {{TOTAL_SCHEDULED_MESSAGES_COUNT} scheduled message} other {{TOTAL_SCHEDULED_MESSAGES_COUNT} scheduled messages}}</string>
     <string name="MSG_TRASHED">{COUNT, plural, =1 {# deleted} other {# deleted}}</string>
-    <string name="MSG_TRIGGER_GOLDEN_PROMPT_UNSUPPORTED_CLIENT_ID_RESPONSE">"I can't help with that in Chat. Go to Gemini in Gmail and try again."</string>
     <string name="MSG_TURNING_ON_LABEL">Turning on…</string>
     <string name="MSG_TURN_ON_LABEL">Turn on</string>
     <string name="MSG_TWO_USERS_TYPING">{USER_NAME} and {USER_NAME_2} are typing</string>
     <string name="MSG_UDP_PAGE_DISABLE_RADIO_SECTION_SUBTITLE">"When you turn this setting off, you'll no longer have access to the experiences described above"</string>
     <string name="MSG_UDP_PAGE_ENABLE_RADIO_SECTION_SUBTITLE">When you turn this setting on, you can get experiences that include:</string>
     <string name="MSG_UNABLE_TO_CANCEL_MESSAGE">Unable to cancel message</string>
+    <string name="MSG_UNAUTHENTICATED_MESSAGE">"This message isn't authenticated and the sender can't be verified. Be careful when clicking links, downloading attachments, or replying with personal information."</string>
+    <string name="MSG_UNBLOCKED_SENDER_SPAM">New messages from this sender will no longer be sent to Spam.</string>
     <string name="MSG_UNDO">Undo</string>
     <string name="MSG_UNDO_RECURRING_TASK_COMPLETED">Task completed. It will appear again on %1$s.</string>
     <string name="MSG_UNDO_RECURRING_TASK_COMPLETED_REPEATS_TOMORROW">Task completed. It will appear again tomorrow.</string>
@@ -476,13 +560,23 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_UNMUTED">{COUNT, plural, =1 {# unmuted} other {# unmuted}}</string>
     <string name="MSG_UNPIN_BOARD_ACTION">Unpin</string>
     <string name="MSG_UNREAD">Unread</string>
+    <string name="MSG_UNSENT_MESSAGES_SHORTCUT_ITEM_TITLE">Drafts</string>
     <string name="MSG_UNSTAR_ACTION">Unstar</string>
+    <string name="MSG_UNSUBSCRIBE_NOT_HONORED_SPAM_BANNER">You unsubscribed from this mailing list so these messages are sent to Spam. To send these messages to your Inbox instead, report this message as not spam.</string>
+    <string name="MSG_UNSUBSCRIBE_NOT_HONORED_WITH_FROM_ADDRESS">You recently unsubscribed from (%1$s). It can take a few days for the sender to unsubscribe you. You can block the sender now to send future messages to spam.</string>
+    <string name="MSG_UNSUCCESSFUL_UNSUBSCRIBE">You tried unsuccessfully to unsubscribe from this sender, so their messages are being sent to Spam instead.</string>
     <string name="MSG_UNSUPPORTED_LANGUAGE_RESPONSE">"The language entered isn't supported at this time"</string>
+    <string name="MSG_UNTRUSTED_EXTERNAL_IMAGES">Images in this message are hidden.</string>
+    <string name="MSG_UNVERIFIED_ATTACHED_MESSAGE">"Gmail can't verify the authenticity of attached messages."</string>
+    <string name="MSG_UNVERIFIED_SENDER_MESSAGE">"This message isn't authenticated and the sender can't be verified. Use caution when clicking links, downloading attachments, or replying with personal information."</string>
+    <string name="MSG_UPDATES_TEASER_FOLDER_NAME">Updates</string>
     <string name="MSG_UPDATING">Updating</string>
     <string name="MSG_USER_CANNOT_POST_MESSAGES_ERROR_TEXT">"Messages can't be sent to announcement spaces"</string>
     <string name="MSG_USER_GEN_AI_QUOTA_EXHAUSTED_RESPONSE">"You've reached the monthly usage limit with Gemini for Workspace"</string>
     <string name="MSG_USER_INELIGIBLE_RESPONSE">You no longer have access to %1$s</string>
     <string name="MSG_USER_LEAVING_SPACE">{NUM_USERS, plural, offset:5 =1 {{USER_NAMES} has left this conversation} =2 {{USER_NAMES} have left this conversation} =3 {{USER_NAMES} have left this conversation} =4 {{USER_NAMES} have left this conversation} =5 {{USER_NAMES} have left this conversation} other {{USER_NAMES}, +{OTHER_USERS_COUNT} have left this conversation}}</string>
+    <string name="MSG_USER_MARKED_AS_PHISHY">You reported this message as phishing from your inbox.</string>
+    <string name="MSG_USER_MARKED_AS_SPAM">You reported this message as spam from your inbox.</string>
     <string name="MSG_VIDEO_CAPTIONS_DISABLED_RESPONSE">"%1$s can't understand this video. If you're an owner or editor, turn on captions and try again."</string>
     <string name="MSG_VIDEO_NOT_ENOUGH_SPEECH_RESPONSE">"%1$s can't reference this video because it doesn't look like there's much speech in it. Try another video."</string>
     <string name="MSG_VIDEO_PENDING_RESPONSE">Sit back while %1$s creates a transcript for this video. Give %1$s a few minutes, maybe a bit longer. When done, %1$s can summarize and answer questions about this video.</string>
@@ -493,9 +587,11 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_VIEW_DETAILS_DIALOG_BUTTON_TEXT">Got it</string>
     <string name="MSG_VIEW_DETAILS_DIALOG_TITLE">"Your message couldn't be sent"</string>
     <string name="MSG_VIEW_THREAD_ACTION">View thread</string>
+    <string name="MSG_VIOLATED_BULK_SENDER_AUTH_GUIDELINES">"It is in violation of Google's recommended email sender guidelines."</string>
     <string name="MSG_WALLET_FEATURE_TEXT">Suggested tickets, loyalty cards, and other passes in Wallet</string>
     <string name="MSG_WELCOME_HELP_TEXT">How can I help you today?</string>
     <string name="MSG_WHAT_CAN_GEMINI_DO_PROMPT">What can Gemini do in Gmail?</string>
+    <string name="MSG_WHY_SPAM_HEADER">Why is this message in spam?</string>
     <string name="MSG_WORKING_LOCATION_A11Y_LABEL">Working location</string>
     <string name="MSG_WORKSPACE_SMART_FEATURE_SETTINGS_LABEL">Workspace smart feature settings</string>
     <string name="MSG_WORKSPACE_WEBSITE_LINK_TEXT">Workspace website</string>
@@ -548,6 +644,7 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="a11y_mark_as_not_complete">Mark as not complete</string>
     <string name="a11y_move_task">Move to another list</string>
     <string name="a11y_repeating">Repeating</string>
+    <string name="a11y_string_dismiss_banner">Dismiss banner.</string>
     <string name="a11y_subtask">Subtask</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_mode_done">Done</string>
@@ -799,12 +896,6 @@ Contact your IT admin for help."</string>
     <string name="activity_label">Gmail</string>
     <string name="activity_mailbox_selection">Choose account</string>
     <string name="activity_preferences">Settings</string>
-    <string name="acwr_add_a_note">Add a note</string>
-    <string name="acwr_declined_prefix">Declined:</string>
-    <string name="acwr_more_options">More options</string>
-    <string name="acwr_more_options_button">more options button</string>
-    <string name="acwr_propose_a_new_time">Propose a new time</string>
-    <string name="acwr_tentatively_accepted_prefix">Tentative:</string>
     <string name="ad">Ad</string>
     <string name="ad_body_cta_button_text_default">Visit Site</string>
     <string name="ad_bottom_sheet_close_icon_description">Close</string>
@@ -883,7 +974,7 @@ Contact your IT admin for help."</string>
     <string name="add_star_or_flag">Add star or flag</string>
     <string name="add_subtask">Add subtasks</string>
     <string name="add_suggested_apps_body_with_app_auth_info">Apps are able to read, reply to, and send new messages. This app may have more permissions. %1$s</string>
-    <string name="add_suggested_apps_ok_button">Add to space</string>
+    <string name="add_suggested_apps_ok_button">Add to conversation</string>
     <string name="add_suggested_apps_title">Add %s to the space?</string>
     <string name="add_task_save">Save</string>
     <string name="add_to_drive_adding_message">Adding to Google Drive</string>
@@ -963,7 +1054,6 @@ Contact your IT admin for help."</string>
     <string name="ag_phone">phone</string>
     <string name="ag_search_hint">Search in mail</string>
     <string name="alarm_banner_settings">Go to Settings</string>
-    <string name="all_chip">All</string>
     <string name="all_folders_heading">All labels</string>
     <string name="all_incoming_video_switch_preference_key">allIncomingVideoSwitchPreference</string>
     <string name="all_messages_are_sent">All messages in this conversation are now sent.</string>
@@ -978,12 +1068,13 @@ Contact your IT admin for help."</string>
     <string name="announcement_space_type_subtitle">Broadcast and share updates with your group. Only space managers can post, manage permissions, and members. This cannot be changed after creation.</string>
     <string name="announcement_space_type_title">Announcements</string>
     <string name="announcement_spaces_banner_body">Only space managers can post in this space. %1$s</string>
-    <string name="announcement_spaces_banner_body_owner">Only owners can post in this space. %1$s</string>
+    <string name="announcement_spaces_banner_body_owner">Posting is limited to owners and managers. %1$s</string>
     <string name="announcement_spaces_learn_more_link">https://support.google.com/chat?p=space_announcements</string>
     <string name="announcement_welcome_text">%1$s, welcome to your new announcement space! Let’s get started:</string>
     <string name="anomalous_replyto">This email claims to come from %2$s, but replies will go to an email address at another domain.</string>
     <string name="anonymous_member_create_chat_info">This chat was created %1$s</string>
     <string name="anonymous_member_create_group_info">This space was created %1$s</string>
+    <string name="another_language">another language</string>
     <string name="antivirus">Be careful with this message. It might contain a virus or a malicious link.</string>
     <string name="app_about_tab_developer_name">By: <annotation type="developer_name">developer</annotation></string>
     <string name="app_about_tab_error_message">There was a problem loading this page</string>
@@ -1006,6 +1097,8 @@ Contact your IT admin for help."</string>
     <string name="app_install_details_learn_more_text">here</string>
     <string name="app_name_for_calendar">Google Calendar</string>
     <string name="app_name_for_meeting">Google Meet</string>
+    <string name="app_removal_error_text">%1$s could not be removed. Please try again later</string>
+    <string name="app_removed_snackbar_text">%1$s was removed</string>
     <string name="app_restrictions_allow_unmanaged_accounts_description">"Allow users to add or remove any Exchange account, other than the account specified in this managed configuration. If this setting is enabled, you can't prevent users from adding other Exchange accounts to Gmail. You also can't control data sharing between other apps and Exchange accounts added by users. This setting should be enabled only if your users need to maintain more than one work Exchange account in Gmail."</string>
     <string name="app_restrictions_allow_unmanaged_accounts_title">Allow Unmanaged Accounts</string>
     <string name="app_restrictions_default_exchange_sync_window_description">A value from 0-5 that represents the time window for syncing with EAS (Exchange ActiveSync). Defaults to one week (value=3). [0=No filter, synchronize all items. 1=1 day. 2=3 days. 3=1 week. 4=2 weeks. 5=1 month.] See https://msdn.microsoft.com/en-us/library/gg709713(v=exchg.80).aspx for complete information about sync window settings.</string>
@@ -1144,7 +1237,7 @@ Contact your IT admin for help."</string>
     <string name="autocomplete_mention_all">all</string>
     <string name="autocomplete_mention_all_desc">Everyone in this space</string>
     <string name="autocomplete_non_group_members_dm_invitation_text">Add to chat</string>
-    <string name="autocomplete_non_group_members_invitation_text">Add to space</string>
+    <string name="autocomplete_non_group_members_invitation_text">Add to conversation</string>
     <string name="autocomplete_popup_content_description">Suggested options above keyboard</string>
     <string name="autocomplete_section_groups_header_content_description">Group conversations section</string>
     <string name="autocomplete_section_groups_header_title">Group conversations</string>
@@ -1158,6 +1251,7 @@ Contact your IT admin for help."</string>
     <string name="back_button_content_description">Back</string>
     <string name="back_settings_button_talkback_content_description">Back</string>
     <string name="bad_card_nav_action">Failed to complete your action because the add-on would be in a bad state.</string>
+    <string name="bad_summary_snippets_feedback">Summary not helpful</string>
     <string name="badge_and_subject">%1$s %2$s</string>
     <string name="banner_close_content_description">Dismiss</string>
     <string name="banner_content_mid_way_account_setup">Finish the last few steps to add %s to Gmail</string>
@@ -1402,6 +1496,7 @@ Contact your IT admin for help."</string>
     <string name="cancel_button_label">Cancel</string>
     <string name="cancel_button_text">Cancel</string>
     <string name="cancel_chip_content_description">Remove chip</string>
+    <string name="cancel_forwarded_message_content_description">Remove forwarded message</string>
     <string name="cancel_join_meeting">Cancel</string>
     <string name="cancel_quoted_message_content_description">Remove quoted message</string>
     <string name="cancel_scheduled_send_button">Cancel send</string>
@@ -1589,6 +1684,7 @@ Contact your IT admin for help."</string>
     <string name="chat_widget_hint">Send message</string>
     <string name="chat_with_guests_error_text">Failed to start a chat with guests</string>
     <string name="check_data_connection">Please check your data connection and try again.</string>
+    <string name="checkmark_content_description">Checkmark</string>
     <string name="chime_app_name">Gmail</string>
     <string name="chime_notification_title">&lt;b> %1$s &lt;/b></string>
     <string name="chips_action_cancel">Cancel</string>
@@ -1667,15 +1763,11 @@ Contact your IT admin for help."</string>
     <string name="compose_bar_hint_history_on">History is on</string>
     <string name="compose_camera_gallery_camera_button_content_description">Open fullscreen camera</string>
     <string name="compose_camera_gallery_system_folders_button_content_description">Open system picker</string>
-    <string name="compose_high_priority_content_desc">High priority</string>
     <string name="compose_insecure_recipient_banner_text"><b>"Some recipients can't receive encrypted messages."</b> Remove them before sending or turn off encryption. Learn more about ^1</string>
-    <string name="compose_low_priority_content_desc">Low priority</string>
     <string name="compose_metamodel_row_text_input_hint">Classification</string>
     <string name="compose_mode_picker_description">Type of response</string>
     <string name="compose_modes_reply">Reply</string>
     <string name="compose_modes_reply_all">Reply all</string>
-    <string name="compose_proposed_time_current_date_and_time">Current time: %1$s</string>
-    <string name="compose_proposed_time_proposed_date_and_time">Proposed: %1$s</string>
     <string name="compose_smart_bar_source_details_dialog_label">Sources</string>
     <string name="compose_title">Compose</string>
     <string name="concatenate_four">{FIRST_SECTION}, {SECOND_SECTION}, {THIRD_SECTION}, {FOURTH_SECTION}</string>
@@ -1729,6 +1821,7 @@ Contact your IT admin for help."</string>
     <string name="conf_admit_text">Admit</string>
     <string name="conf_all_incoming_video_switch_preference_summary">Watch only presentations</string>
     <string name="conf_all_incoming_video_switch_preference_title">"Don't show video in tiles"</string>
+    <string name="conf_android_auto_check_phone_when_it_is_safe">Check your phone when it is safe to do so</string>
     <string name="conf_answering_as">"Answering as {user_name} 
 {user_email}"</string>
     <string name="conf_applied_effects_closed_description">{COUNT} effect(s) applied. Remove effects button. Double tap to expand.</string>
@@ -1749,6 +1842,8 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_audio_announcement_recording_started">This call is now being recorded</string>
     <string name="conf_audio_announcement_smart_notes_started">This call is now taking notes</string>
     <string name="conf_audio_announcement_transcription_started">This call is now being transcribed</string>
+    <string name="conf_audio_levels_dbfs_value">{audio_level_value} dBFS</string>
+    <string name="conf_audio_levels_title">Input Audio Level</string>
     <string name="conf_audio_off">Turn off sound</string>
     <string name="conf_audio_off_selected_content_description">Turn off sound, selected</string>
     <string name="conf_audio_sharing_checkbox_description_when_noise_cancellation_unaffected">The mute button stops sharing audio and turns off your mic</string>
@@ -1826,7 +1921,10 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_checked_out_confirmation">"You're checked out of your room"</string>
     <string name="conf_cim_interop_fragment_info_text">"In-call messages are not available when the call ends. However, they are available in Google Chat to meeting guests in the host's organization."</string>
     <string name="conf_cim_interop_fragment_info_text_meeting_recorded">"In-call messages are not available when the call ends. However, they are available in Google Chat to meeting guests in the host's organization. Messages are being recorded with the call."</string>
-    <string name="conf_cim_interop_unsupported_feature_notice_text">{SENDER_DISPLAY_NAME} has sent an attachment that is unavailable to be viewed.</string>
+    <string name="conf_cim_interop_unsupported_audio_file_notice_text">{SENDER_DISPLAY_NAME} has sent an &lt;a href={attachment_url}>audio file&lt;/a> that is unavailable to be opened.</string>
+    <string name="conf_cim_interop_unsupported_feature_notice_text">{SENDER_DISPLAY_NAME} has sent an &lt;a href={attachment_url}>attachment&lt;/a> that is unavailable to be viewed.</string>
+    <string name="conf_cim_interop_unsupported_image_notice_text">{SENDER_DISPLAY_NAME} has sent an &lt;a href={attachment_url}>image&lt;/a> that is unavailable to be viewed.</string>
+    <string name="conf_cim_interop_unsupported_video_notice_text">{SENDER_DISPLAY_NAME} has sent a &lt;a href={attachment_url}>video&lt;/a> that is unavailable to be viewed.</string>
     <string name="conf_clips_camera_and_microphone_permission_denied_before_dialog_message">To enable camera and microphone for sending messages, give {app_name_for_permission_dialog} permissions to use your camera and microphone</string>
     <string name="conf_clips_camera_microphone_permission_denied_with_dont_ask_again_dialog_message">Allow {app_name_for_permission_dialog} to access your camera and microphone so you can send messages</string>
     <string name="conf_clips_camera_permission_denied_before_dialog_message">To enable camera for sending messages, give {app_name_for_permission_dialog} permission to use your camera</string>
@@ -1900,7 +1998,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_companion_unread_item_count">+{count}</string>
     <string name="conf_companion_usage_got_it">Got it</string>
     <string name="conf_companion_user_display_name">{DISPLAY_NAME} (Companion)</string>
-    <string name="conf_companion_user_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS}) (Companion)</string>
     <string name="conf_conference_ended_notification_description">Your video call has ended.</string>
     <string name="conf_content_description_expand_button">Full screen</string>
     <string name="conf_content_description_minimize_button">Exit full screen</string>
@@ -1963,7 +2060,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_disable_incoming_video_content_description">"Don't watch {DISPLAY_NAME}"</string>
     <string name="conf_disable_incoming_video_text">"Don't watch"</string>
     <string name="conf_dismiss_five_minute_warning_notice_content_description">Dismiss</string>
-    <string name="conf_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS})</string>
     <string name="conf_dual_camera_disable_effects_dialog_confirm_button">Turn off effects</string>
     <string name="conf_dual_camera_disable_effects_dialog_message">Effects must be turned off to utilize dual camera feature</string>
     <string name="conf_dual_camera_disable_effects_dialog_title">Turn off effects</string>
@@ -2008,14 +2104,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_everyone_is_muted_new_arrivals_alert">Everyone who can be muted has been muted, but not new arrivals</string>
     <string name="conf_exit_full_screen">Exit full screen</string>
     <string name="conf_exit_fullscreen_text">Exit full screen</string>
-    <string name="conf_exp_add_secondary_screen">Add a second screen</string>
-    <string name="conf_exp_check_in_to_meeting_room">Check in to a meeting room</string>
-    <string name="conf_exp_join_and_use_meeting_room_audio">Join and use a meeting room for audio</string>
-    <string name="conf_exp_join_as_secondary_screen">Join as second screen</string>
-    <string name="conf_exp_join_for_presentation">Join to view presentation</string>
-    <string name="conf_exp_join_from_conference_room">Join from a conference room</string>
-    <string name="conf_exp_join_from_meeting_room">Join from a meeting room</string>
-    <string name="conf_exp_join_with_meeting_room_audio">Join with meeting room audio</string>
     <string name="conf_expand_video">Expand your video</string>
     <string name="conf_expanded_subgroup_back_button_description">Navigate back to all effects</string>
     <string name="conf_experimental_preference_category_title">Experimental</string>
@@ -2046,7 +2134,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_generic_error_toast_text">Something went wrong. Please try again.</string>
     <string name="conf_go_back_to_effects_room_description">Go back to the effects panel</string>
     <string name="conf_google_account_type">Google account</string>
-    <string name="conf_greenroom_banner_your_pronouns_are_visible">Your pronouns will be shown to everyone</string>
     <string name="conf_greenroom_call_encrypted_by_organization">"This call is encrypted by %1$s. Google can't access its contents, so some features aren't available. &lt;a href=%2$s>Learn more about end-to-end encryption&lt;/a>"</string>
     <string name="conf_greenroom_call_encrypted_organization_unknown">"This call has extra encryption. Google can't access its contents, so some features aren't available. &lt;a href=%1$s>Learn more about end-to-end encryption&lt;/a>"</string>
     <string name="conf_greenroom_livestream_edu_body">"While watching this live stream, you can't use your camera or microphone"</string>
@@ -2084,7 +2171,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_greenroom_viewer_notification_text">"Joining as a viewer, you can't send chat messages or use your mic and camera in this meeting"</string>
     <string name="conf_greenroom_waiting_room_body_host">This call has a waiting room</string>
     <string name="conf_greenroom_waiting_room_body_participant">You’ll be in a waiting room before entering the call</string>
-    <string name="conf_greenroom_your_pronouns_are_visible">Your pronouns will be shown to others in the call</string>
     <string name="conf_guest_email_copied">Guest email copied</string>
     <string name="conf_guest_email_label">Guest email</string>
     <string name="conf_hand_raise_disabled_due_to_viewer_role_content_description">"You can't raise your hand because you're just viewing"</string>
@@ -2177,7 +2263,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_leave_companion_to_use_mic_and_cam">To use your mic and camera, leave Companion mode and join the call. Important: This can cause echo in a meeting room and you won’t be able to see previous chat messages.</string>
     <string name="conf_leave_livestream">Leave the live stream</string>
     <string name="conf_leave_livestream_button_description">Leave the live stream</string>
-    <string name="conf_leave_livestream_button_text">Leave</string>
     <string name="conf_leave_to_use_audio">Leave and rejoin to use your audio</string>
     <string name="conf_let_everyone_unmute">Let everyone unmute</string>
     <string name="conf_live_share_start_sharing">Live sharing has started</string>
@@ -2207,13 +2292,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_main_stage_presenting_name_text">{PARTICIPANT_NAME} is presenting</string>
     <string name="conf_majorca_livestream_leave_button">Leave</string>
     <string name="conf_make_up_effect_text">Studio makeup</string>
-    <string name="conf_manage_pronouns_dialog_cancel_button">Cancel</string>
-    <string name="conf_manage_pronouns_dialog_done_button">Done</string>
-    <string name="conf_manage_pronouns_dialog_got_it_button">Got it</string>
-    <string name="conf_manage_pronouns_dialog_help_header">Managing your pronouns</string>
-    <string name="conf_manage_pronouns_dialog_title">How others see your pronouns</string>
-    <string name="conf_manage_pronouns_dialog_toggle">Show my pronouns in Meet calls</string>
-    <string name="conf_manage_pronouns_dialog_toggle_header">Pronouns in Meet</string>
     <string name="conf_mark_answered_error_text">"The question can't be marked as answered. Try again."</string>
     <string name="conf_mark_answered_text">"You've marked this question as answered"</string>
     <string name="conf_mark_unanswered_error_text">The question is still shown as answered. Try again.</string>
@@ -2358,7 +2436,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_new_question_content_description">New question</string>
     <string name="conf_no_answer_text">No Answer</string>
     <string name="conf_no_applied_effects_description">No effects are applied</string>
-    <string name="conf_no_browser_failure_snackbar_text">"Can't open link. No browser available."</string>
     <string name="conf_no_dialer_available">"Can't find a dialer app to place your call"</string>
     <string name="conf_no_internet_settings_button">Settings</string>
     <string name="conf_no_ones_checked_in">"No one's checked in"</string>
@@ -2389,6 +2466,8 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_ongoing_livestream_content_text">Tap to return to the live stream</string>
     <string name="conf_ongoing_meeting_content_text">Tap to return to the call</string>
     <string name="conf_ongoing_notes_call_notification_title">Your notes call</string>
+    <string name="conf_ongoing_notification_channel_high_importance_name">MeetOngoingCallNotificationChannelHighImportanceName</string>
+    <string name="conf_ongoing_notification_channel_name">MeetOngoingCallNotificationChannelName</string>
     <string name="conf_open_effects_panel_announcement">Select a video effect.</string>
     <string name="conf_open_effects_panel_description">Open effects panel.</string>
     <string name="conf_open_effects_panel_with_active_effect_description">Open Effects panel. {EFFECT_DESCRIPTION} is currently selected</string>
@@ -2419,9 +2498,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_participant_list_waiting_room_header_title">In the waiting room</string>
     <string name="conf_participant_list_waiting_to_join_header_title">Waiting to join</string>
     <string name="conf_participant_paired_to_room">{DISPLAY_NAME} checked into {ROOM_NAME}</string>
-    <string name="conf_participant_presenting_annotating_name_text">{PARTICIPANT_NAME} (Presenting, annotating)</string>
-    <string name="conf_participant_presenting_annotating_with_other_name_text">{PARTICIPANT_NAME} (Presenting, annotating with {OTHER_PARTICIPANTS_COUNT} others)</string>
-    <string name="conf_participant_presenting_name_text">{PARTICIPANT_NAME} (Presenting)</string>
     <string name="conf_participants_checked_in">{NUMBER_OF_PARTICIPANTS, plural, offset:1 =1 {{PARTICIPANT_NAME} checked in} =2 {{FIRST_PARTICIPANT} and {SECOND_PARTICIPANT} checked in} other {{FIRST_PARTICIPANT} &amp; # others checked in}}</string>
     <string name="conf_people_in_waiting_room">{NUMBER_OF_PARTICIPANTS, plural, =1 {# person is in the waiting room} other {# people are in the waiting room} }</string>
     <string name="conf_people_search_hint">Search for someone in this call</string>
@@ -2484,7 +2560,12 @@ This can take about %1$d seconds."</string>
     <string name="conf_prompt_creation_fragment_select_style_accessibility_hint">Change the style</string>
     <string name="conf_prompt_creation_fragment_style_no_style">No scene</string>
     <string name="conf_prompt_creation_fragment_title">Generate a background</string>
-    <string name="conf_pronouns_promo_banner_dismiss_button">Dismiss</string>
+    <string name="conf_prompt_creation_fragment_workspace_smart_features_disabled_error_text">"Smart features in Google Workspace are turned off
+
+To use this feature, turn on smart features in Google Workspace"</string>
+    <string name="conf_prompt_creation_fragment_workspace_smart_features_disabled_error_text_with_link">"Smart features in Google Workspace are turned off
+
+&lt;font color=#{other_text_color}>To use this feature,&lt;/font> &lt;a href={HC_URL}>turn on smart features in Google Workspace&lt;/a>"</string>
     <string name="conf_public_livestream_active_only_prejoin_text">This call is being publicly live-streamed</string>
     <string name="conf_public_livestreaming_initiated">This meeting is being publicly live-streamed</string>
     <string name="conf_public_livestreaming_initiated_by_participant">{PARTICIPANT_NAME} has started public live streaming</string>
@@ -2517,6 +2598,8 @@ This can take about %1$d seconds."</string>
     <string name="conf_reactions_receive_a11y_announcement_no_reactions_available">No reactions</string>
     <string name="conf_reactions_receive_a11y_announcement_respondent_known">{NUMBER_OF_PARTICIPANTS, plural, offset:1 =1 {{PARTICIPANT_NAME} reacted with {EMOJI_SYMBOL}} =2 {{PARTICIPANT_NAME} and # other person reacted with {EMOJI_SYMBOL}} other {{PARTICIPANT_NAME} and # others reacted with {EMOJI_SYMBOL}} }</string>
     <string name="conf_reactions_receive_a11y_announcement_respondents_unknown">{NUMBER_OF_PARTICIPANTS, plural, =1 {# person reacted with {EMOJI_SYMBOL}} other {# people reacted with {EMOJI_SYMBOL}} }</string>
+    <string name="conf_receive_chat_lock_live_stream">Everyone will see your message</string>
+    <string name="conf_receive_chat_lock_off">Only people in the call will see your message</string>
     <string name="conf_recording_active_only_prejoin_text">This call is being recorded</string>
     <string name="conf_recording_auto_start_failure">"Recording didn't start automatically"</string>
     <string name="conf_recording_auto_start_failure_with_privilege">"Recording didn't start. Join at go.meet in a desktop browser and start it there"</string>
@@ -2534,6 +2617,7 @@ Leave and join the call to use your camera, microphone, or to present."</string>
     <string name="conf_remote_knocker_warning_reason_suspicious_user">This person is suspected of being abusive in the past</string>
     <string name="conf_remote_knockers_channel_name">Requests to join</string>
     <string name="conf_remote_knockers_notification_description">Someone wants to join. Tap to return to the call.</string>
+    <string name="conf_remote_knockers_notification_description_android_auto">Someone wants to join</string>
     <string name="conf_remote_muted_by_participant_alert_text">{PARTICIPANT_NAME} muted you</string>
     <string name="conf_remote_muted_by_server_alert_text">Your mic is off due to the size of the call</string>
     <string name="conf_remote_muted_by_unknown_alert_text">Someone muted you</string>
@@ -2643,6 +2727,7 @@ Leave and join the call to use your camera, microphone, or to present."</string>
     <string name="conf_spring_duet_home_split_pair_rule_tag">spring_duet_home_split_pair_rule_tag</string>
     <string name="conf_start_audio_call">Audio call</string>
     <string name="conf_start_call">Call</string>
+    <string name="conf_start_call_content_description">Video Call</string>
     <string name="conf_stats_for_nerds_switch_preference_summary">View live meeting statistics</string>
     <string name="conf_stats_for_nerds_switch_preference_title">Stats for Nerds</string>
     <string name="conf_stay_in_companion_mode">Stay</string>
@@ -2697,7 +2782,18 @@ Leave and join the call to use your camera, microphone, or to present."</string>
     <string name="conf_take_notes_transcription_selector_title">Also transcribe meeting</string>
     <string name="conf_take_notes_will_be_in_language">Notes will be in the meeting language {MEETING_LANGUAGE}</string>
     <string name="conf_third_party_account_type">Third party account</string>
+    <string name="conf_timer_canceled_event">Timer canceled</string>
+    <string name="conf_timer_hours">{HOURS_REMAINING, plural, =1{# hour} other{# hours}}</string>
+    <string name="conf_timer_icon_ended_content_description">Timer ended</string>
+    <string name="conf_timer_icon_paused_content_description">Timer paused</string>
+    <string name="conf_timer_icon_running_content_description">Timer running</string>
     <string name="conf_timer_indicator_content_description">Meeting timer</string>
+    <string name="conf_timer_indicator_format_h_m_s">{HOURS}:{MINUTES}:{SECONDS}</string>
+    <string name="conf_timer_indicator_format_m_s">{MINUTES}:{SECONDS}</string>
+    <string name="conf_timer_minutes">{MINUTES_REMAINING, plural, =1{# minute} other{# minutes}}</string>
+    <string name="conf_timer_seconds">{SECONDS_REMAINING, plural, =1{# second} other{# seconds}}</string>
+    <string name="conf_timer_started_event">Timer started for {TIME_REMAINING}</string>
+    <string name="conf_timer_time_remaining">%1$s%2$s%3$s</string>
     <string name="conf_touch_up_preference_title">Portrait touch up</string>
     <string name="conf_transcription_active_only_prejoin_text">This call is being transcribed</string>
     <string name="conf_transcription_auto_start_failure">"Transcription didn't start automatically"</string>
@@ -2776,6 +2872,7 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_viewer_welcome_dialog_title">Welcome</string>
     <string name="conf_voting_on_hidden_question_disabled_error">"Hidden questions can't be voted on"</string>
     <string name="conf_waiting_and_knocking_notification_content_text">Someone is in the waiting room. Tap to return to the call.</string>
+    <string name="conf_waiting_and_knocking_notification_content_text_android_auto">Someone is in the waiting room</string>
     <string name="conf_waiting_room_please_wait_text">Please wait until a meeting host brings you into the call</string>
     <string name="conf_warning_reason_anonymous">May not be who they claim to be</string>
     <string name="conf_warning_reason_anonymous_suspicious">Demonstrated concerning behavior in past calls</string>
@@ -2790,7 +2887,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_wired_headset">Wired headphones</string>
     <string name="conf_wired_headset_selected_content_description">Wired headphones, selected</string>
     <string name="conf_you">You</string>
-    <string name="conf_you_with_pronouns">You ({PRONOUNS})</string>
     <string name="conf_youre_in_companion_mode">"You're in Companion mode"</string>
     <string name="conference_activities_active_addons_header">Active</string>
     <string name="conference_activities_addon_back_button_content_description">Back</string>
@@ -2937,6 +3033,17 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conference_activities_youtube_music_app_name">YouTube Music</string>
     <string name="conference_activities_youtube_music_live_sharing_subheadline">listen to music</string>
     <string name="conference_activities_youtube_music_live_sharing_subtitle">Listen to music with others</string>
+    <string name="conference_audio_bitrate_cancel_button_text">Cancel</string>
+    <string name="conference_audio_bitrate_input_hint">Bit rate (kbps)</string>
+    <string name="conference_audio_bitrate_invalid_value">Invalid audio bitrate value</string>
+    <string name="conference_audio_bitrate_not_set_text">Not set</string>
+    <string name="conference_audio_bitrate_preference_description">Set the bitrate for the send audio stream</string>
+    <string name="conference_audio_bitrate_preference_key">audioBitratePreference</string>
+    <string name="conference_audio_bitrate_preference_title">Audio codec bitrate</string>
+    <string name="conference_audio_bitrate_reset_button_text">Reset</string>
+    <string name="conference_audio_bitrate_set_button_text">Set</string>
+    <string name="conference_audio_bitrate_setting_failed">Failed to update the audio bitrate</string>
+    <string name="conference_audio_bitrate_value_text">%d kbps</string>
     <string name="conference_backgrounded_toast">To return to your call, open {app_name_for_conference_background_toast}</string>
     <string name="conference_blockee_in_group_body">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {{PARTICIPANT_NAME} in your blocked contact list will be in this call} =2 {{FIRST_PARTICIPANT} and {SECOND_PARTICIPANT} in your blocked contact list will be in this call} =3 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT} in your blocked contact list will be in this call} =4 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and {FOURTH_PARTICIPANT} in your blocked contact list will be in this call} other {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others in your blocked contact list will be in this call}}</string>
     <string name="conference_blockee_in_group_title">Someone you blocked is in this group</string>
@@ -3193,6 +3300,8 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conference_greenroom_header_subtitle_now_indicator">Now</string>
     <string name="conference_greenroom_header_subtitle_separator">" • "</string>
     <string name="conference_greenroom_no_internet_connection">No internet connection</string>
+    <string name="conference_hac_testing_category_key">hacTestingCategory</string>
+    <string name="conference_hac_testing_section_title">HAC Testing</string>
     <string name="conference_home_no_internet_connection">No internet connection</string>
     <string name="conference_join_meeting_failure_dialog_dismiss">Dismiss</string>
     <string name="conference_knocking_denied">Someone in the call denied your request to join</string>
@@ -3300,7 +3409,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="content_description_swipe_action_pref_item">%1$s, %2$s, %3$s, Change, Button</string>
     <string name="content_description_today">%1$s, %2$s, %3$s, %4$s%5$s, %6$s, %7$s, %8$s, %9$s, %10$s at %11$s</string>
     <string name="content_description_with_folders">%1$s, labels: %2$s</string>
-    <string name="content_description_with_priority">%1$s, priority: %2$s</string>
     <string name="content_reporting_action_bar">Report</string>
     <string name="content_sharing_error_empty_text">"Empty text can't be shared."</string>
     <string name="content_sharing_error_permissions">"Can't share file, permission denied."</string>
@@ -3327,8 +3435,8 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conversation_details_title">Conversation Options</string>
     <string name="conversation_flagged_announcement">Conversation flagged</string>
     <string name="conversation_folder_moved">Moved to %1$s</string>
-    <string name="conversation_header_high_priority">High priority</string>
-    <string name="conversation_header_low_priority">Low priority</string>
+    <string name="conversation_footer_share_in_chat_button_icon_description">chat icon for sharing email in chat</string>
+    <string name="conversation_footer_share_in_chat_button_text">Share in chat</string>
     <string name="conversation_invisible_trashed_messages_view_all_action">Show</string>
     <string name="conversation_list_header_search_filter_icon">Filter icon</string>
     <string name="conversation_list_header_search_hide_filter_icon_text">Hide filters</string>
@@ -3412,6 +3520,10 @@ More numbers: {more_numbers_link}"</string>
     <string name="cse_decrypt_crypto_unsupported_cipher_message">The sender has used an unsupported cipher to encrypt this message.</string>
     <string name="cse_decrypt_crypto_unsupported_cipher_title">Can’t decrypt this message</string>
     <string name="cse_decrypt_default_title">Something went wrong with message decryption</string>
+    <string name="cse_decrypt_sta_draft_not_supported_message">Encryption hosted by organizations does not work on mobile. Finish this draft on web.</string>
+    <string name="cse_decrypt_sta_draft_not_supported_title">Cannot use encryption</string>
+    <string name="cse_decrypt_sta_not_supported_message">Encryption hosted by organizations does not work on mobile. You can read the message on web.</string>
+    <string name="cse_decrypt_sta_not_supported_title">"Couldn't decrypt message"</string>
     <string name="cse_encrypt_crypto_error_message">Your key service failed to encrypt the file. Contact your admin.</string>
     <string name="cse_encrypt_default_title">Something went wrong with message encryption</string>
     <string name="cse_encrypted_icon_description">Encrypted icon</string>
@@ -3565,6 +3677,7 @@ Learn more about ^1"</string>
     <string name="delete_all_search_history_message">"Deleting your chat and spaces history is permanent and can't be undone. This will delete your chat and spaces search history from this account on this device."</string>
     <string name="delete_all_search_history_title">Delete ALL chat and spaces search history?</string>
     <string name="delete_confirm_ok_button">Delete</string>
+    <string name="delete_failed_message_prompt_in_stream">Delete</string>
     <string name="delete_message_request_failed">"Message couldn't be deleted. Try again in a few minutes."</string>
     <string name="delete_recurrence_confirm_delete_all">Delete all</string>
     <string name="delete_recurrence_confirm_message">Are you sure you want to delete all past and future occurrences of this task?</string>
@@ -3590,6 +3703,8 @@ Learn more about ^1"</string>
     <string name="density_option_default">Default</string>
     <string name="density_setting_title_text">Conversation list density</string>
     <string name="description">Description</string>
+    <string name="description_rating_bad">Dislike</string>
+    <string name="description_rating_good">Like</string>
     <string name="detail_content_description">%1$s %2$s</string>
     <string name="detect_language">Detect language</string>
     <string name="developer_disabled_app_response_placeholder">App was disabled by the app developer.</string>
@@ -3623,6 +3738,7 @@ Learn more about ^1"</string>
     <string name="direct_message_already_created">Message is not posted because the Direct Message already exists.</string>
     <string name="direct_message_creation_discard_draft_title">Are you sure you want to discard your message?</string>
     <string name="direct_message_creation_search_people_hint">Search people</string>
+    <string name="direct_message_failed_guest_pass_limit_reached">Cannot invite %1$s. Org limit for adding non-Workspace users met. Contact admin.</string>
     <string name="direct_message_loading_failed">"This direct message couldn't be loaded. Check your internet connection and try again."</string>
     <string name="direct_message_loading_failed_caller_policy_denied">You cannot message the user(s) because of a policy set by your administrator.</string>
     <string name="direct_message_loading_failed_target_user_policy_denied">You cannot message the user(s) because of a policy set by their administrator.</string>
@@ -3788,7 +3904,8 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="dynamic_email_icon_description">Dynamic email</string>
     <string name="dynamic_mail_feature_highlight_body">Parts of this email are dynamic and can collect and show up-to-date information.</string>
     <string name="dynamic_mail_feature_highlight_title">Dynamic email</string>
-    <string name="dynamite_app_add_to_space_content_description">Add to space</string>
+    <string name="dynamite_app_add_to_space_content_description">Add to conversation</string>
+    <string name="dynamite_app_type_to_search_hint_text">" Type to search"</string>
     <string name="dynamite_learn_more">Learn more</string>
     <string name="eaaur_account_setup_credentials_correct_error_enter_password">"Can't connect to the server. Try re-entering your password or contact your IT admin for more information."</string>
     <string name="eaaur_account_setup_credentials_correct_error_select_cert_and_passwd">"Can't connect to server. Try selecting another certificate, re-entering your password, or contact your IT admin for more information."</string>
@@ -3833,10 +3950,8 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="edit_space_disable_notifications_failed">"Couldn't disable notifications. Try again in a few minutes."</string>
     <string name="edit_space_dm_hidden_short">Conversation hidden</string>
     <string name="edit_space_dm_pin_short">%s pinned</string>
-    <string name="edit_space_dm_read_short">%s marked as read</string>
     <string name="edit_space_dm_unhidden_short">Conversation unhidden</string>
     <string name="edit_space_dm_unpin_short">%s unpinned</string>
-    <string name="edit_space_dm_unread_short">%s marked as unread</string>
     <string name="edit_space_empty_string">Name cannot be empty</string>
     <string name="edit_space_enable_notifications_failed">"Couldn't enable notifications. Try again in a few minutes."</string>
     <string name="edit_space_expand_roster">view this group</string>
@@ -3893,7 +4008,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="edit_space_succeed">Changes saved</string>
     <string name="edit_space_unable_to_modify_access_for_external_space_private">External spaces are private</string>
     <string name="edit_space_unable_to_modify_space_access">Only space managers can change access</string>
-    <string name="edit_space_unable_to_modify_space_access_owner">Only owners can change access</string>
+    <string name="edit_space_unable_to_modify_space_access_owner">Only owners and managers can change access</string>
     <string name="edit_space_unblock_title">Unblock</string>
     <string name="edit_space_unhide_dm_error_message">"Direct message couldn't be unhidden. Try again in a few minutes."</string>
     <string name="edit_space_unhide_dm_title">Unhide conversation</string>
@@ -4057,6 +4172,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="encrypted_attachment">"This message contains one or more encrypted attachments that can't be scanned for viruses."</string>
     <string name="encrypting_message">Encrypting message…</string>
     <string name="endByDate">; until %s</string>
+    <string name="end_forwarded_message_content_description">End forwarded message.</string>
     <string name="end_quoted_message_content_description">"End quote. "</string>
     <string name="end_recurrence_now_message">Are you sure you want to remove all future occurrences of this task?</string>
     <string name="end_recurrence_now_ok_button">End now</string>
@@ -4127,8 +4243,8 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="expand_section">Expand the section</string>
     <string name="expand_section_content_description">Expand Section</string>
     <string name="expanded">Expanded</string>
-    <string name="expiring_deals_chip">Expiring deals</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="external_badge_label">External</string>
     <string name="external_capabilities_banner">"People outside of your organization can't manage members or modify space details"</string>
     <string name="external_google_group_cannot_be_added">"Can't add Google Groups outside your organization to this space"</string>
     <string name="external_indicator_text">External</string>
@@ -4143,6 +4259,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="external_name_and_email">%1$s (%2$s)</string>
     <string name="external_space">External</string>
     <string name="external_user">External</string>
+    <string name="external_user_message_indicator">external</string>
     <string name="external_user_missing_email_fallback_text">External</string>
     <string name="failed">"Couldn't load image"</string>
     <string name="failed_action_snackbar_message">Failed to execute action</string>
@@ -4157,6 +4274,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="failed_to_add_apps_permission_denied">Could not add apps to this group</string>
     <string name="failed_to_add_apps_try_again">"Apps couldn't be added. Try again in a few minutes."</string>
     <string name="failed_to_add_events_message">Failed to add to calendar</string>
+    <string name="failed_to_add_guest_pass_members_limit_reached">No users invited. Org limit for external invites is full. Contact admin.</string>
     <string name="failed_to_add_members">"Members couldn't be added."</string>
     <string name="failed_to_add_members_for_room_account_user_blocked_member">"You can't add people you've blocked to this space"</string>
     <string name="failed_to_add_members_for_room_member_blocked_account_user">"Some people can't be added to this space"</string>
@@ -4167,6 +4285,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="failed_to_lower_hand_error_message">"Couldn't lower your hand for you. Try again."</string>
     <string name="failed_to_open_email_source_link">Failed to open email</string>
     <string name="failed_to_raise_hand_error_message">"Couldn't raise your hand for you. Try again."</string>
+    <string name="failed_to_record_voice_message_error">Failed to record voice message. Please record again and retry.</string>
     <string name="failed_to_select_attachment_from_system_picker">Failed to select this attachment</string>
     <string name="failed_to_send_history_settings_change">Message failed to send when your history setting changed. Try sending the message again.</string>
     <string name="failed_to_start_group_message_account_user_blocked_group_member">Could not start group message with someone you blocked</string>
@@ -4224,7 +4343,6 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="floating_bar_content_description_ten_or_more_participants">Huddle join button. Huddle contains 10 or more participants. Tap to join the huddle.</string>
     <string name="folder_removed">Removed from %1$s</string>
     <string name="folder_sync_settings_pref_title">Folder sync settings</string>
-    <string name="for_you_chip">For you</string>
     <string name="force_upgrade_description">"Looks like you're using an old version of Chat. You need to install the latest update to continue."</string>
     <string name="force_upgrade_notification_action">Update to a newer version of Chat to perform this action</string>
     <string name="force_upgrade_title">Time to update your app</string>
@@ -4338,10 +4456,16 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="gemini_onboarding_dialog_description_text">Try \"@Gemini summarize this discussion and share next steps\"</string>
     <string name="gemini_onboarding_dialog_disclaimer_text">Note: Gemini will access only the messages in conversations where it is included to answer questions</string>
     <string name="gemini_onboarding_dialog_header_text">You can now bring Gemini into conversation using @Gemini</string>
+    <string name="gemini_stream_summaries_content_title">Recent discussions</string>
     <string name="gemini_stream_summary_bullet">•</string>
+    <string name="gemini_stream_summary_content_title">Recent discussion</string>
     <string name="gemini_stream_summary_more_info_content_description">Learn More</string>
     <string name="gemini_stream_summary_negative_feedback_content_description">Thumbs down feedback</string>
+    <string name="gemini_stream_summary_not_available_error_text">Summary of recent discussions is not available, try again later</string>
+    <string name="gemini_stream_summary_not_enough_unread_messages_error_text">"There's not enough unread messages for summary"</string>
     <string name="gemini_stream_summary_positive_feedback_content_description">Thumbs up feedback</string>
+    <string name="gemini_stream_summary_unread_close_text">Close Summary</string>
+    <string name="gemini_stream_summary_unread_open_text">Summarize Unread</string>
     <string name="gen_ai_consumer_feedback_consent_header">Please select the data you want to share along with your feedback to help improve Google products and services.</string>
     <string name="gen_ai_consumer_feedback_disclaimer">This data will be used to improve our services subject to the <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a>. Data may be reviewed using human reviewers. Please do not contribute data that is personal, sensitive or confidential.</string>
     <string name="gen_ai_consumer_feedback_donation_instructions">Please select the data you want to share along with your feedback to help improve Workspace products and services subject to the <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a>. Data may be reviewed using human reviewers. Please do not contribute data that is personal, sensitive or confidential.</string>
@@ -4352,6 +4476,7 @@ If you trust this message and want to download anyway, mark this email as \"Not 
     <string name="gen_ai_dialog_image_description_dynamite">Ai splash screen</string>
     <string name="gen_ai_dialog_learn_more">Learn more</string>
     <string name="gen_ai_dialog_learn_more_dynamite">Learn more</string>
+    <string name="gen_ai_dialog_learn_more_uri">https://support.google.com/mail/answer/14355636?sjid=12748586761227751323-NC&amp;co=GENIE.Platform%3DAndroid&amp;oco=1</string>
     <string name="gen_ai_dialog_title">Collaborate with Gemini in Gmail</string>
     <string name="gen_ai_feedback_cancel">Cancel</string>
     <string name="gen_ai_feedback_close_button_text">Close</string>
@@ -4677,7 +4802,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="gmail_card_feedback_thumb_down_content_description">No</string>
     <string name="gmail_card_feedback_thumb_up_content_description">Yes</string>
     <string name="gmail_card_gen_ai_disclaimer_learn_more">Learn more</string>
-    <string name="gmail_card_gen_ai_disclaimer_learn_more_url_ga">https://support.google.com/mail?p=genai_summary</string>
+    <string name="gmail_card_gen_ai_disclaimer_learn_more_url_ga">https://support.google.com/mail?p=gemini-summary-card</string>
     <string name="gmail_card_gen_ai_disclaimer_learn_more_url_googler">https://docs.google.com/document/d/1jwwqdrMOETTcNfyaWPrVAhGhs7lLjEUxFr0t96Pa6m8/edit?tab=t.0</string>
     <string name="gmail_card_gen_ai_disclaimer_text">By Gemini; there may be mistakes. ^1</string>
     <string name="gmail_card_gen_ai_summary_feedback_thumb_down_content_description">Bad suggestion</string>
@@ -4714,10 +4839,13 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="gmail_shortcut_reply">Reply</string>
     <string name="gmail_shortcut_reply_all">Reply all</string>
     <string name="gmail_shortcut_save_a_draft">Save a draft</string>
+    <string name="gmail_shortcut_select_a_conversation">Select or unselect a conversation</string>
     <string name="gmail_shortcut_select_all">Select all</string>
     <string name="gmail_shortcut_send_an_email">Send an email</string>
+    <string name="gmail_shortcut_star_a_conversation">Star or unstar a conversation</string>
     <string name="gmail_shortcut_undo_action">Undo action</string>
     <string name="gmail_tab_title">Mail</string>
+    <string name="gmail_widget_description">Quickly view and compose new Gmail messages</string>
     <string name="gmailify_about_text1">With Gmailify you get the best of Gmail with your current email account. This includes better spam protection and email categories to organize your inbox. You can switch back at any time. ^1</string>
     <string name="gmailify_about_title">Less spam, more control</string>
     <string name="gmailify_activity_label">Set up Gmailify</string>
@@ -4762,6 +4890,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="go_to_settings">Go to settings</string>
     <string name="go_to_smart_features_settings_description">Smart features settings saved. Change them anytime in Gmail settings.</string>
     <string name="go_to_website">Go to website</string>
+    <string name="good_summary_snippets_feedback">Summary helpful</string>
     <string name="google_api_key">AIzaSyBa684tYwE9padq_7Ixs3UloZ_kX09Vr8c</string>
     <string name="google_app_id">1:946277197574:android:f711ae133ccf8c27</string>
     <string name="google_crash_reporting_api_key">AIzaSyBa684tYwE9padq_7Ixs3UloZ_kX09Vr8c</string>
@@ -4857,6 +4986,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="group_summary_menu_unpin">Unpin</string>
     <string name="group_summary_snippet_creator_format_other_user">%1$s:</string>
     <string name="group_summary_snippet_creator_format_self">%1$s:</string>
+    <string name="group_summary_snippet_forwarded_message">Forwarded a message</string>
     <string name="group_summary_snippet_other_user_added_video_meeting">Added a video meeting</string>
     <string name="group_summary_snippet_other_user_sent_attachment">Sent an attachment</string>
     <string name="group_summary_snippet_other_user_sent_drive_file">Sent a Drive file</string>
@@ -4892,7 +5022,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="guidelines_discard_button_text">Discard</string>
     <string name="guidelines_discard_draft_dialog_title">Discard unsaved changes?</string>
     <string name="hand_raise_content_description">{DISPLAY_NAME}, hand is raised</string>
-    <string name="hand_raise_content_description_with_pronouns">{DISPLAY_NAME}, {PRONOUNS}, hand is raised</string>
     <string name="hand_raise_lowered_notification">The host has lowered your hand</string>
     <string name="handover_failed_snackbar_text">"Couldn't join the session"</string>
     <string name="handover_message">Joining “{conference_name}”…</string>
@@ -4929,7 +5058,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="hierarchical_folder_parent_top">"%1$s / %2$s / "</string>
     <string name="hierarchical_folder_parent_top_ellip">"%1$s /…/ %2$s / "</string>
     <string name="hierarchical_folder_top">"%1$s / "</string>
-    <string name="high_priority_content_desc">High</string>
     <string name="history_change_failed">"History status wasn't changed for conversation \"%1$s\"."</string>
     <string name="history_known_user_turned_off">%1$s turned history off</string>
     <string name="history_known_user_turned_off_via_app">%1$s turned history off (via %2$s)</string>
@@ -4952,6 +5080,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="home_call_chip_summary_snippet_call_ended">Call ended</string>
     <string name="home_call_chip_summary_snippet_call_missed">Call missed</string>
     <string name="home_call_chip_summary_snippet_call_started">Call started</string>
+    <string name="home_chat_item_summary_snippet_description">Summary</string>
     <string name="home_chats_empty_description_text">You can catch up on new activities and find past conversations in Home</string>
     <string name="home_chats_empty_title_text">Keep track of all conversations in one place</string>
     <string name="home_group_summary_snippet_forwarded_message">Forwarded a message</string>
@@ -5148,7 +5277,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="inbox_onboarding_enterprise_title">Mail, chat, and video calls all in one place</string>
     <string name="inbox_tips_preference_title">Inbox Tips settings</string>
     <string name="include_attachment_text">Include all attachments in the report</string>
-    <string name="incoming_audio_call">Incoming voice call</string>
     <string name="incoming_call_puck_content_description">Answer call</string>
     <string name="incoming_video_call">Incoming video call</string>
     <string name="indeterminate">Partially checked</string>
@@ -5191,14 +5319,10 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="invalid_recipient">The address %s is invalid.</string>
     <string name="invalid_sender_address">"Why is this message in Spam? The sender's email address is invalid."</string>
     <string name="invitation_to_conversation_restricted_dialog_title">"Can't add to conversation"</string>
-    <string name="invitation_to_space_restricted_dialog_title">"Can't add to %1$s"</string>
     <string name="invite_external_users_to_conversation_title">{count, plural, =1 {Add external guest to conversation?} other {Add external guests to conversation?} }</string>
-    <string name="invite_external_users_to_space_title">{count, plural, =1 {Add external guest to space?} other {Add external guests to space?} }</string>
     <string name="invite_group_members_count_approximate">%d+ people</string>
     <string name="invite_guests_failed">Failed to update Calendar event attendees.</string>
     <string name="invite_member_disabled">Member management is restricted</string>
-    <string name="invite_non_external_user_entities_to_conversation_title">Add to conversation?</string>
-    <string name="invite_non_external_user_entities_to_space_title">Add to space?</string>
     <string name="invite_people_external_not_allowed">External users not allowed</string>
     <string name="invite_people_text">Add people</string>
     <string name="invite_sent_snackbar_text">{count, plural, =1 {Invite sent} other {Invites sent} }</string>
@@ -5206,6 +5330,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="invite_space_members_edit_box_hint_with_apps">Find people, groups, apps</string>
     <string name="invite_suspicious_description">The person who sent it might be trying to steal your information</string>
     <string name="invite_suspicious_title">This invite looks suspicious</string>
+    <string name="invite_user_entity_title">Add to conversation?</string>
     <string name="invite_via_link">Invite via link</string>
     <string name="invited_conversation_phishing_warning_banner_description_text">The conversation contains links to known phishing sites that may try to steal your information</string>
     <string name="invited_conversation_spam_warning_banner_description_text">This conversation might be spam. Accept only if you know %1$s</string>
@@ -5325,6 +5450,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="label_trash">@string/mailbox_name_display_trash</string>
     <string name="label_unread">@string/gm_i18n_label_name_unread</string>
     <string name="language">"Why is this message in Spam? It's written in a different language than your messages typically use."</string>
+    <string name="language_detected">It looks like this message is in %s</string>
     <string name="large_unseen_count">%d+ new</string>
     <string name="learn_more">Learn more</string>
     <string name="learn_more_da">Learn more</string>
@@ -5402,7 +5528,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="looks_like_spam_content">"Why is this message in Spam? It contains content that's typically used in spam messages."</string>
     <string name="looks_like_spam_reputation">"Why is this message in Spam? It's similar to messages that were detected by our spam filters."</string>
     <string name="looks_suspicious">"Be careful with this message. It contains content that's typically used to steal personal information."</string>
-    <string name="low_priority_content_desc">Low</string>
     <string name="lower_hand_content_description">Lower your hand</string>
     <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
     <string name="m3_loading_indicator_content_description">Loading</string>
@@ -5421,10 +5546,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="m3c_bottom_sheet_drag_handle_description">Drag handle</string>
     <string name="m3c_bottom_sheet_expand_description">Expand bottom sheet</string>
     <string name="m3c_bottom_sheet_pane_title">Bottom Sheet</string>
-    <string name="m3c_date_picker_switch_to_calendar_mode">Switch to calendar input mode</string>
-    <string name="m3c_date_picker_switch_to_input_mode">Switch to text input mode</string>
-    <string name="m3c_date_picker_switch_to_next_month">Change to next month</string>
-    <string name="m3c_date_picker_switch_to_previous_month">Change to previous month</string>
     <string name="m3c_dialog">Dialog</string>
     <string name="m3c_dropdown_menu_collapsed">Collapsed</string>
     <string name="m3c_dropdown_menu_expanded">Expanded</string>
@@ -5576,16 +5697,19 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="meeting_countered">New time proposed: %s</string>
     <string name="meeting_creation_limit_reached">"You've reached the limit for the number of meetings you can create in a minute or in a day. Try again later."</string>
     <string name="meeting_declined">Declined: %s</string>
+    <string name="meeting_ended_string">Meeting has ended</string>
     <string name="meeting_invite_subject_text_with_name">Meeting invite: {display_name} is inviting you to a meeting</string>
     <string name="meeting_link">Meeting link</string>
     <string name="meeting_link_copied">Meeting link copied</string>
     <string name="meeting_recurring">When: %s (recurring)</string>
+    <string name="meeting_started_string">Meeting has started</string>
     <string name="meeting_tentative">Tentative: %s</string>
     <string name="meeting_title_click_action_hint">open call information</string>
     <string name="meeting_updated">Updated: %s</string>
     <string name="meeting_when">When: %s</string>
     <string name="meeting_where">Where: %s</string>
     <string name="megabytes">%s MB</string>
+    <string name="member_chip_guest_pass_profile_icon_content_description">Guest Pass profile icon</string>
     <string name="member_chip_remove_button_content_description">Remove</string>
     <string name="member_create_chat_info">%1$s created this chat %2$s</string>
     <string name="member_create_chat_via_app_info">%1$s created this chat (via %2$s) %3$s</string>
@@ -5745,7 +5869,6 @@ External guests can be added"</string>
     <string name="message_not_found_failure_message">Message not found</string>
     <string name="message_out_of_room_app_unfurl_chip_preview_description">This app will be added to the conversation and may preview this link</string>
     <string name="message_posting_announcement">Posting</string>
-    <string name="message_priority">Message priority</string>
     <string name="message_queued">Queued</string>
     <string name="message_quoting_attachment_preview">Join the space to view attachment</string>
     <string name="message_requests_action_bar_title_exceed_max">%1$d+ chat requests</string>
@@ -5942,6 +6065,7 @@ External guests can be added"</string>
     <string name="new_private_response_announcement">A private card is attached to this message</string>
     <string name="new_room_button">New space</string>
     <string name="next">Next</string>
+    <string name="next_date_content_description">Next date</string>
     <string name="no">No</string>
     <string name="no_account_button">Sign in</string>
     <string name="no_actions_taken_continuing_in_offline_mode">No actions taken. Continuing in offline mode.</string>
@@ -6014,7 +6138,7 @@ External guests can be added"</string>
     <string name="notification_level_all">All new mail</string>
     <string name="notification_level_important">Important section only</string>
     <string name="notification_level_none">None</string>
-    <string name="notification_mark_as_read_text">Mark as Read</string>
+    <string name="notification_mark_as_read_text">Mark as read</string>
     <string name="notification_messaging_style_user_display_name">You</string>
     <string name="notification_nudge_description">" To prevent missing any chat messages, turn on notifications from Google Chat in Gmail. "<a href="https://support.google.com/chat/answer/7655718">Learn more</a>" "</string>
     <string name="notification_nudge_negative_button">No thanks</string>
@@ -6050,13 +6174,13 @@ External guests can be added"</string>
     <string name="notification_sound_treasure">Treasure</string>
     <string name="notification_sound_welcome">Welcome</string>
     <string name="notification_sound_whistle">Whistle</string>
-    <string name="notification_thumbs_down">👎</string>
-    <string name="notification_thumbs_up">👍</string>
+    <string name="notification_thumbs_down">👎 Unhelpful</string>
+    <string name="notification_thumbs_up">👍 Helpful</string>
     <string name="notification_update_failure">Failed to update notification settings in %s</string>
     <string name="notifications_card_announcement_body">"Space managers will share updates and announcements with your organization. Only space managers can post and manage the space. 
 
  How do you want to be notified about new posts?"</string>
-    <string name="notifications_card_announcement_body_owner">"Owners will share updates and announcements with your organization. Only owners can post and manage the space. 
+    <string name="notifications_card_announcement_body_owner">"Owners and managers can share updates and announcements with your organization. Only owners and managers can post and manage the space. 
 
  How do you want to be notified about new posts?"</string>
     <string name="notifications_card_button_notify_less">For you</string>
@@ -6079,6 +6203,7 @@ External guests can be added"</string>
     <string name="notifications_category">Notifications</string>
     <string name="notifications_disabled_dialog_message">To update these settings, first turn on notifications in your device settings.</string>
     <string name="notifications_disabled_dialog_title">Turn on notifications for Gmail</string>
+    <string name="notifications_icon_content_description">Notifications Icon</string>
     <string name="notify_all_subtitle">All new messages and threads</string>
     <string name="notify_all_subtitle_no_threads">All new messages</string>
     <string name="notify_all_title">All</string>
@@ -6221,6 +6346,7 @@ External guests can be added"</string>
     <string name="optional_password_label">Account password</string>
     <string name="organizer_and_dash">%1$s - Organizer</string>
     <string name="organizer_label">Organizer</string>
+    <string name="original_language">Original language</string>
     <string name="os_blocked_description">To keep using the %1$s app and get the latest security features, update your device OS. You can continue to use %1$s in your %2$s.</string>
     <string name="os_blocked_description_no_browser_link">To keep using the %1$s app and get the latest security features, update your device OS.</string>
     <string name="os_blocked_title">Update your device to keep using %1$s</string>
@@ -6236,6 +6362,7 @@ External guests can be added"</string>
     <string name="overflow_with_badge_description">Unread threads available</string>
     <string name="overview_back_button_content_description">Back</string>
     <string name="owner">owner</string>
+    <string name="owner_announcement_space_type_subtitle">Broadcast and share updates with your group. Only owners and managers can post, manage permissions, and members. This cannot be changed after creation.</string>
     <string name="owner_badge_content_description">Owner</string>
     <string name="owner_create_conversation_info">You created this chat %1$s</string>
     <string name="owner_create_conversation_via_app_info">You created this chat (via %1$s) %2$s</string>
@@ -6383,7 +6510,6 @@ External guests can be added"</string>
     <string name="peoplekit_suggestions_notice_learn_more">Learn more about suggestions.</string>
     <string name="peoplekit_suggestions_notice_title_value">How suggestions work</string>
     <string name="peoplekit_unhide_button_content_description">%s, unhide this suggestion</string>
-    <string name="peoplekit_zero_state_info_icon_display_string">Suggested recipients</string>
     <string name="peoplesheet_add_to_contacts">Add to contacts</string>
     <string name="peoplesheet_avatar_contact_photo">Contact photo</string>
     <string name="peoplesheet_edit_contact">Edit contact</string>
@@ -6470,9 +6596,6 @@ External guests can be added"</string>
     <string name="pnt_retry">Retry</string>
     <string name="pnt_show_event">Show event</string>
     <string name="pntg_snackbar_accept_proposal">Accepting the proposal…</string>
-    <string name="pntg_snackbar_description_accept">Responding yes…</string>
-    <string name="pntg_snackbar_description_decline">Responding no…</string>
-    <string name="pntg_snackbar_description_tentative">Responding maybe…</string>
     <string name="policy_added_spam_label">Why is this message in Spam? Your organization requested that messages like this be marked as spam.</string>
     <string name="policy_app_allowlist">Allow only specified apps</string>
     <string name="policy_app_denylist">Disallow specified apps</string>
@@ -6512,13 +6635,13 @@ External guests can be added"</string>
     <string name="post_recycler_view_content_description">Posts</string>
     <string name="posting_restricted_compose_bar_hint">Posting is limited to space managers</string>
     <string name="posting_restricted_dialog_body">Only space managers are able to post in this space. <annotation type="clickable">Learn more</annotation>" "</string>
-    <string name="posting_restricted_dialog_body_owner">Only owners are able to post in this space. <annotation type="clickable">Learn more</annotation>" "</string>
+    <string name="posting_restricted_dialog_body_owner">Only owners and managers can post in this space. <annotation type="clickable">Learn more</annotation>" "</string>
     <string name="posting_restricted_dialog_title">Posting is limited</string>
     <string name="posting_restricted_education_learn_more_text">Learn more</string>
     <string name="posting_restricted_education_text">Posting is restricted to space managers only in this space. %1$s</string>
-    <string name="posting_restricted_education_text_owner">Posting is restricted to owners only in this space. %1$s</string>
+    <string name="posting_restricted_education_text_owner">Posting is limited to owners and managers in this space. %1$s</string>
     <string name="posting_restricted_learn_more_link">https://support.google.com/chat?p=space_announcements</string>
-    <string name="posting_restricted_owners_compose_bar_hint">Posting is limited to owners</string>
+    <string name="posting_restricted_owners_compose_bar_hint">Posting is limited to owners and managers</string>
     <string name="posts_new_reply_fab">New reply</string>
     <string name="prefDefault_autoAdvance">list</string>
     <string name="prefDefault_confirmActions">none</string>
@@ -6632,6 +6755,9 @@ Tap to turn on."</string>
     <string name="presence_state_present_content_description">Active</string>
     <string name="presenter_started_sharing_screen">{presenter_display_name} is sharing their screen</string>
     <string name="presenter_stopped_sharing_screen">{presenter_display_name} stopped sharing their screen</string>
+    <string name="previous_date_content_description">Previous date</string>
+    <string name="price_offer_content_description_with_discount">Discounted price %1$s, original price %2$s</string>
+    <string name="price_offer_content_description_without_discount">Price %1$s</string>
     <string name="primes_marker">PrImEs</string>
     <string name="print">Print</string>
     <string name="print_all">Print all</string>
@@ -6647,16 +6773,16 @@ Tap to turn on."</string>
     <string name="promo_date_range">%1$s - %2$s</string>
     <string name="promo_dialog_title">Discount details</string>
     <string name="promo_tab_coupon_code_label">Code</string>
-    <string name="promo_tab_deals_expiring">@string/gm_i18n_promo_tab_deals_expiring</string>
     <string name="promo_tab_deals_section_label">@string/gm_i18n_promo_tab_deals_section_label</string>
     <string name="promo_tab_email_section_label">Remaining Promotions</string>
+    <string name="promo_tab_full_page_ranking_toggle_button_tooltip_body">To sort your promotions by date instead, select \"%1$s\"</string>
+    <string name="promo_tab_full_page_ranking_toggle_button_tooltip_dismiss">Dismiss</string>
+    <string name="promo_tab_full_page_ranking_toggle_button_tooltip_title">Top promotions appear first</string>
     <string name="promo_tab_offer_discount">%1$d%% off</string>
     <string name="promo_tab_offer_expires_label">Expires %1$s</string>
-    <string name="promo_tab_offer_expiring">Offer Expiring</string>
     <string name="promo_tab_offer_section_label">Top Offers</string>
     <string name="promo_tab_promotions_section_label">Top Promotions</string>
     <string name="promo_tab_top_picks">Top Picks</string>
-    <string name="propose_time_subject_label">New time proposed:</string>
     <string name="protocol_eas">gEas</string>
     <string name="protocol_imap">gImap</string>
     <string name="protocol_legacy_imap">gLegacyImap</string>
@@ -6877,6 +7003,7 @@ Showing related results"</string>
     <string name="report_description_default">"Choose the option that best describes why you're reporting this message. The report will be submitted to your organization's admin."</string>
     <string name="report_illegal_content">Report illegal content</string>
     <string name="report_illegal_content_dialog_message">If you believe this chat contains illegal content, you can report it separately here.</string>
+    <string name="report_item_title">Report</string>
     <string name="report_spam">Report spam</string>
     <string name="report_title_default">Report this message</string>
     <string name="reported_spam_block_snackbar_text">Sender blocked. Future messages from this sender will be sent to Spam.</string>
@@ -7059,7 +7186,7 @@ Showing related results"</string>
     <string name="rtj_failed_due_to_member_blocking_space">You blocked this space.</string>
     <string name="rtj_image_description">request to join</string>
     <string name="rtj_learn_more_link">Learn more</string>
-    <string name="rtj_owner_shared_info_text">The following information will be shared with the owner</string>
+    <string name="rtj_owner_shared_info_text">The following information will be shared with owners and managers</string>
     <string name="rtj_primary_info_text">You need access to join this space</string>
     <string name="rtj_request_button">Request to join</string>
     <string name="rtj_requested_sub_text">If approved you will be added to the space and will see it in your spaces list.</string>
@@ -7091,7 +7218,6 @@ Showing related results"</string>
     <string name="safelinks_title_suspicious">Suspicious link</string>
     <string name="sale_content_description">Sale</string>
     <string name="sans_serif">sans-serif</string>
-    <string name="sans_serif_light">sans-serif-light</string>
     <string name="sans_serif_medium">sans-serif-medium</string>
     <string name="sans_serif_regular">sans-serif-regular</string>
     <string name="saturday_short">S</string>
@@ -7116,6 +7242,7 @@ Showing related results"</string>
     <string name="sc_onboarding_title">Smart Compose</string>
     <string name="sc_pref_summary">Show predictive writing suggestions</string>
     <string name="sc_pref_title">Smart Compose</string>
+    <string name="scalable_compose_apps_menu_item_promo_badge_text">New</string>
     <string name="scalable_compose_apps_menu_item_title">Apps</string>
     <string name="scalable_compose_calendar_invite_menu_item_title">Calendar invite</string>
     <string name="scalable_compose_camera_menu_item_title">Camera</string>
@@ -7253,7 +7380,8 @@ Showing related results"</string>
     <string name="search_all_suggestions_header_title">Matching suggestions</string>
     <string name="search_apps_suggestion_header_title">Matching apps</string>
     <string name="search_back_icon_content_description">Back</string>
-    <string name="search_bar_hint">Search in chat</string>
+    <string name="search_bar_hint">Enter guest name or email</string>
+    <string name="search_bar_hint_text">Search in chat</string>
     <string name="search_cards_container_header_found_for_you">Found for you</string>
     <string name="search_chat_suggestion_header_with_icon">Search for \"%s\" in chat</string>
     <string name="search_clear_desc">Clear search text</string>
@@ -7461,6 +7589,7 @@ Showing related results"</string>
     <string name="sender_is_a_known_spammer_dkim_domain">"Why is this message in Spam? We've found that lots of messages from &lt;b>%2$s&lt;/b> are spam."</string>
     <string name="sender_is_a_known_spammer_spf_domain">"Why is this message in Spam? We've found that lots of messages from &lt;b>%2$s&lt;/b> are spam."</string>
     <string name="sender_is_known_feedback">Event added to your calendar</string>
+    <string name="sender_name_with_origin_app">%1$s (via %2$s)</string>
     <string name="sender_unsubscribed">You unsubscribed from this mailing list.</string>
     <string name="senders_elided">…</string>
     <string name="senders_split_token">, </string>
@@ -7469,6 +7598,7 @@ Showing related results"</string>
     <string name="sending_indicator_updating_text">Updating</string>
     <string name="sending_message">Sending message…</string>
     <string name="sending_message_offline">Offline. Message will be sent later</string>
+    <string name="sent_by_heading_gm">Sent by</string>
     <string name="sent_only_multiple_images_summary">Sent %d images</string>
     <string name="sent_only_multiple_videos_summary">Sent %d videos</string>
     <string name="server_account_info_division_line">Account info</string>
@@ -7492,7 +7622,6 @@ Showing related results"</string>
     <string name="service_unavailable_title">Service unavailable.</string>
     <string name="set_do_not_disturb_error">Something went wrong when trying to turn on do not disturb.</string>
     <string name="set_do_not_disturb_key">setDoNotDisturbKey</string>
-    <string name="set_priority">Set priority</string>
     <string name="set_screen_lock_request_button">Add screen lock</string>
     <string name="set_screen_lock_request_description">Your email provider requires a screen lock on this device</string>
     <string name="set_screen_lock_request_header">Add screen lock</string>
@@ -7823,6 +7952,7 @@ Try \"Help me write\" in Gmail compose to write and revise your emails."</string
     <string name="space_name_changed_via_app_system_message">%1$s titled this space %2$s (via %3$s)</string>
     <string name="space_name_text_hint">Space name</string>
     <string name="space_not_found_deep_link_failure_message">You are not a member of this space or group. For spaces you might need an invitation to join.</string>
+    <string name="space_owner_management_confirm_delete_body">"You're the only member of this space. Unless you add someone as an Owner, the space and everything in it will be deleted. %1$s"</string>
     <string name="space_permission_all_mention">Use %1$s</string>
     <string name="space_permission_body">Spaces can be customized for a variety of use cases. Restricting permissions may limit some app integration features. %1$s</string>
     <string name="space_permission_header">Permissions</string>
@@ -7832,7 +7962,8 @@ Try \"Help me write\" in Gmail compose to write and revise your emails."</string
     <string name="space_permission_modify_board_and_details">Modify space board and details</string>
     <string name="space_permission_modify_details">Modify space details</string>
     <string name="space_permission_option_all_members">All members</string>
-    <string name="space_permission_option_owner">Owners only</string>
+    <string name="space_permission_option_manager_and_owner">Managers and owners</string>
+    <string name="space_permission_option_owner">Owners</string>
     <string name="space_permission_option_space_manager">Space managers only</string>
     <string name="space_permission_reply_to_announcements">Reply to messages</string>
     <string name="space_permission_toggle_history">Turn history on and off</string>
@@ -7865,14 +7996,14 @@ Try \"Help me write\" in Gmail compose to write and revise your emails."</string
     <string name="space_settings_no_email_description_text">Generate a unique email address for your space through the web experience. it can send emails directly to the space. %1$s</string>
     <string name="space_settings_subtitle">Space settings</string>
     <string name="space_settings_unmodifiable_setting">This setting can’t be modified</string>
-    <string name="space_sm_management_assign_owner_body">"You're the only owner of this space. Assign someone else to be an owner before leaving. %1$s"</string>
+    <string name="space_sm_management_assign_owner_body">"You're the only owner of this space. Assign another owner before leaving. %1$s"</string>
     <string name="space_sm_management_assign_owner_title">Assign an owner</string>
     <string name="space_sm_management_assign_space_manager_body">"You're the only space manager of this space. Assign someone else to be a space manager before leaving. %1$s"</string>
     <string name="space_sm_management_assign_space_manager_title">Assign a space manager</string>
     <string name="space_sm_management_confirm_delete_body">"You're the only member of this space. Unless you add someone to be a Space Manager, the space and everything in it will be deleted. %1$s"</string>
     <string name="space_sm_management_confirm_delete_button">Leave and delete</string>
     <string name="space_sm_management_confirm_delete_title">Leaving will delete this space</string>
-    <string name="space_sm_management_demote_owner_self_body">"You're the only owner of this space. Assign someone else to be an owner before changing your role. %1$s"</string>
+    <string name="space_sm_management_demote_owner_self_body">"You're the only owner of this space. Assign another owner before changing your role. %1$s"</string>
     <string name="space_sm_management_demote_self_body">"You're the only space manager of this space. Assign someone else to be a space manager before changing your role. %1$s"</string>
     <string name="space_sm_management_manage_members_button">Manage members</string>
     <string name="space_unblock_list_content_description">Spaces you can unblock</string>
@@ -7932,6 +8063,7 @@ Invites are hidden automatically after 90 days."</string>
     <string name="starred_section_header_text">Starred</string>
     <string name="starred_string">Starred</string>
     <string name="starred_upgrade_app_prompt_text">Update %1$s to view your starred messages</string>
+    <string name="start_forwarded_message_content_description">Forwarded.</string>
     <string name="start_quoted_message_content_description">"Quoted. "</string>
     <string name="start_sharing_button_text">Start sharing</string>
     <string name="state_empty">Empty</string>
@@ -8005,7 +8137,9 @@ Showing results for ^2 instead"</string>
     <string name="summaries_dialog_disclaimer_text_labs_consumer">Our features are early and experimental. To improve Google services, human reviewers may read, annotate, and review your Labs data, as described in the Privacy Notice and Terms. Do not include personal, confidential, or sensitive information in your prompts while using Labs features.</string>
     <string name="summaries_dialog_disclaimer_text_labs_enterprise">Gemini for Workspace is an experimental generative AI feature in Workspace Labs</string>
     <string name="summaries_dialog_header_text">Summarize with Gemini in Chat</string>
+    <string name="summarize_document_button_title">Summarize</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="summary_snippet_feedback_positive_rating_message">Thanks for your rating</string>
     <string name="sunday_short">S</string>
     <string name="survey_account_and_system_info">account &amp; system info</string>
     <string name="survey_activity_process_name" />
@@ -8302,6 +8436,8 @@ Contact your admin to enable access."</string>
     <string name="thread_filter_content_description">Thread filter</string>
     <string name="thread_indicator_text">Thread</string>
     <string name="thread_limit_reply_limit_error">This thread has reached its reply limit</string>
+    <string name="thread_list_sort_type_most_recent">Most recent</string>
+    <string name="thread_list_sort_type_most_relevant">Most relevant</string>
     <string name="thread_summary_action_bar_label">Active threads</string>
     <string name="thread_summary_attachment_placeholder">[Attachment]</string>
     <string name="thread_summary_button">Active threads</string>
@@ -8373,6 +8509,12 @@ Contact your admin to enable access."</string>
     <string name="timely_bump_happening_soon">Happening soon</string>
     <string name="title_snooze">Snoozed</string>
     <string name="titles" formatted="false">%s, %s</string>
+    <string name="tl_summary_dialog_description">Gmail summaries show you important info from your messages, right in your inbox. Tap the menu and let us know what you think.</string>
+    <string name="tl_summary_dialog_got_it">Got it</string>
+    <string name="tl_summary_dialog_image_description">Share your summaries feedback</string>
+    <string name="tl_summary_dialog_learn_more">Learn more</string>
+    <string name="tl_summary_dialog_learn_more_uri">https://support.google.com/mail?p=short-summaries</string>
+    <string name="tl_summary_dialog_title">Share your summaries feedback</string>
     <string name="tl_summary_snippet_prefix">Summary: %1$s</string>
     <string name="to">To</string>
     <string name="to_heading">"To: "</string>
@@ -8408,10 +8550,12 @@ Contact your admin to enable access."</string>
     <string name="topic_mute_state_followed_announcement">Thread notification switch, following</string>
     <string name="topic_mute_state_unfollowed_announcement">Thread notification switch, not following</string>
     <string name="topic_new_thread_label_legacy_thread_room">New topic</string>
+    <string name="topic_unfollow_text">Unfollow</string>
     <string name="total_cost">Estimated monthly charge</string>
     <string name="transition_to_full_compose_button_label">Go to compose</string>
     <string name="translate">Translate</string>
     <string name="translate_button_text">Translate to %s</string>
+    <string name="translate_disclaimer">Translate can make mistakes, so verify translations</string>
     <string name="translate_error">This message could not be translated at this time. Please try again later.</string>
     <string name="translate_error_offline">Offline. Try again when online.</string>
     <string name="translate_error_text_too_long">"This message can't be translated"</string>
@@ -8422,6 +8566,7 @@ Contact your admin to enable access."</string>
     <string name="translate_toggle_show_translation">Show translation</string>
     <string name="translate_toggle_view_original">View original</string>
     <string name="translate_toggle_view_original_specifying_language">View original (%s)</string>
+    <string name="translated_label">Translated: %1$s → %2$s</string>
     <string name="trashed_message_indicator">This message has been deleted</string>
     <string name="trigger_archive_char">d</string>
     <string name="trigger_change_label_char">l</string>
