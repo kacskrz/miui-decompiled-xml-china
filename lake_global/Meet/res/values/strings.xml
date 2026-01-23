@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
+    <string name="MSG_COLUMN_FILL_RESULT_RESPONSE">Column Fill created, click Insert to fill %1$s</string>
     <string name="MSG_CONSUMER_DISCLAIMER_PART1">This feedback (including, any generated output and freeform text you enter) is provided under the</string>
     <string name="MSG_CONSUMER_DISCLAIMER_PART2">Your feedback will not be used for model training. We use this data for the purposes listed in the “Why Google collects data” section of the</string>
     <string name="MSG_CONSUMER_DISCLAIMER_PART3">Please do not contribute data that is personal, sensitive, or confidential.</string>
     <string name="MSG_CREATED_DOCUMENT_RESPONSE">I have created your document.</string>
     <string name="MSG_DISCLAIMER_AND_CONTENT">and</string>
+    <string name="MSG_FORMULA_ERROR_MESSAGE">Applying this formula caused an error: \"%1$s\" Check if your data range and cell formats are suitable. You could also adjust your request or ask me to try generating the formula again.</string>
+    <string name="MSG_FORMULA_EXPLANATION">Formula Explanation:</string>
+    <string name="MSG_FORMULA_RESULT">Formula Result:</string>
+    <string name="MSG_FORMULA_RESULT_TOO_LONG">Result too long, insert formula for full output.</string>
     <string name="MSG_GENERAL_DUET_DISCLAIMER_PART1">This feedback (including any generated output and freeform text you enter) is provided under the</string>
     <string name="MSG_GENERAL_DUET_DISCLAIMER_PART2">Your feedback will not be used for model training. We use this data for the purposes listed in the “Why We Process Service Data” section of the</string>
     <string name="MSG_GOOGLE_CLOUD_PRIVACY_NOTICE_LINK_TEXT">Google Cloud Privacy Notice (GCPN)</string>
@@ -121,6 +126,15 @@
     <string name="app_screenshare_other">Share now</string>
     <string name="app_screenshare_paused">Screen share is paused</string>
     <string name="app_screenshare_title">Share your screen starting from one of these apps</string>
+    <string name="app_update_cant_open_play_store_failure">"Can't open Google Play Store"</string>
+    <string name="app_update_dismiss">Dismiss</string>
+    <string name="app_update_downloaded_snackbar_button">Restart</string>
+    <string name="app_update_downloaded_snackbar_text">An update has just been downloaded</string>
+    <string name="app_update_downloading_snackbar">%1$s is downloading the update</string>
+    <string name="app_update_learn_more">Learn more</string>
+    <string name="app_update_mobile_browser">mobile browser</string>
+    <string name="app_update_not_now">Not now</string>
+    <string name="app_update_nudge_description">For the latest %1$s features and security, update to the latest version.</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="ask_call_perm_dialog_body_rebranded">"To add your Meet call history to your phone's call history, allow Meet to manage &amp; make phone calls."</string>
     <string name="ask_call_perm_dialog_no">No thanks</string>
@@ -512,7 +526,6 @@
     <string name="conf_admit_text">Admit</string>
     <string name="conf_all_incoming_video_switch_preference_summary">Watch only presentations</string>
     <string name="conf_all_incoming_video_switch_preference_title">"Don't show video in tiles"</string>
-    <string name="conf_android_auto_check_phone_when_it_is_safe">Check your phone when it is safe to do so</string>
     <string name="conf_annotation_started_snackbar_text">You can annotate on the screen now. Everyone can see your annotations.</string>
     <string name="conf_answering_as">"Answering as {user_name} 
 {user_email}"</string>
@@ -536,8 +549,6 @@ Your microphone and camera are both off until your host lets you turn them on."<
     <string name="conf_audio_announcement_smart_notes_started">This call is now taking notes</string>
     <string name="conf_audio_announcement_transcription_started">This call is now being transcribed</string>
     <string name="conf_audio_call">Audio call</string>
-    <string name="conf_audio_levels_dbfs_value">{audio_level_value} dBFS</string>
-    <string name="conf_audio_levels_title">Input Audio Level</string>
     <string name="conf_audio_off">Turn off sound</string>
     <string name="conf_audio_off_selected_content_description">Turn off sound, selected</string>
     <string name="conf_audio_sharing_checkbox_description_when_noise_cancellation_unaffected">The mute button stops sharing audio and turns off your mic</string>
@@ -803,10 +814,11 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_companion_unread_item_count">+{count}</string>
     <string name="conf_companion_usage_got_it">Got it</string>
     <string name="conf_companion_user_display_name">{DISPLAY_NAME} (Companion)</string>
+    <string name="conf_companion_user_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS}) (Companion)</string>
     <string name="conf_conference_ended_notification_description">Your video call has ended.</string>
     <string name="conf_confirm_pn">Confirm your phone number</string>
     <string name="conf_constellation_quick_notice_dialog_continue">Got it</string>
-    <string name="conf_constellation_quick_notice_message">Google and your carrier will periodically verify your number and device info to enable Google services and help people reach you, including allowing people to call you with Meet. Carrier rates may apply. Verified numbers are added to your Google Account. You can &lt;a href={TURN_OFF_URL}>manage and turn off these features anytime&lt;/a>.</string>
+    <string name="conf_constellation_quick_notice_message">Google and your carrier will periodically verify your number and device info to enable Google services and help people reach you, including allowing people to call you with Meet. Carrier rates apply. Verified numbers are added to your Google Account. You can &lt;a href={TURN_OFF_URL}>manage and turn off these features anytime&lt;/a>.</string>
     <string name="conf_constellation_quick_notice_title">Helping people reach you on Meet</string>
     <string name="conf_contact_block_contact_dialog_title">Block contact?</string>
     <string name="conf_contact_details">Details</string>
@@ -902,6 +914,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_disable_unified_calling_desc">Disables the ability for a user to place a Meet call</string>
     <string name="conf_disable_unified_calling_title">Disable placing calls</string>
     <string name="conf_dismiss_five_minute_warning_notice_content_description">Dismiss</string>
+    <string name="conf_display_name_with_pronouns">{DISPLAY_NAME} ({PRONOUNS})</string>
     <string name="conf_dual_camera_disable_effects_dialog_confirm_button">Turn off effects</string>
     <string name="conf_dual_camera_disable_effects_dialog_message">Effects must be turned off to utilize dual camera feature</string>
     <string name="conf_dual_camera_disable_effects_dialog_title">Turn off effects</string>
@@ -966,8 +979,6 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_end_to_end_encryption_settings_title">Use additional encryption</string>
     <string name="conf_end_to_end_switch_content_description">Screen will refresh after changing additional encryption</string>
     <string name="conf_enter_code_hint">Enter a code</string>
-    <string name="conf_enter_primary_number_subtitle">These are the numbers that people can find you and call you on Meet. Select a primary number you want to use when calling others.</string>
-    <string name="conf_enter_primary_number_title">Pick your primary phone number</string>
     <string name="conf_everyone_is_muted">Everyone is muted</string>
     <string name="conf_everyone_is_muted_alert">Everyone who can be muted has been muted</string>
     <string name="conf_everyone_is_muted_new_arrivals_alert">Everyone who can be muted has been muted, but not new arrivals</string>
@@ -979,6 +990,14 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_exit_co_annotation_full_screen_dialog_title">Exit full screen</string>
     <string name="conf_exit_full_screen">Exit full screen</string>
     <string name="conf_exit_fullscreen_text">Exit full screen</string>
+    <string name="conf_exp_add_secondary_screen">Add a second screen</string>
+    <string name="conf_exp_check_in_to_meeting_room">Check in to a meeting room</string>
+    <string name="conf_exp_join_and_use_meeting_room_audio">Join and use a meeting room for audio</string>
+    <string name="conf_exp_join_as_secondary_screen">Join as second screen</string>
+    <string name="conf_exp_join_for_presentation">Join to view presentation</string>
+    <string name="conf_exp_join_from_conference_room">Join from a conference room</string>
+    <string name="conf_exp_join_from_meeting_room">Join from a meeting room</string>
+    <string name="conf_exp_join_with_meeting_room_audio">Join with meeting room audio</string>
     <string name="conf_expand_video">Expand your video</string>
     <string name="conf_expanded_subgroup_back_button_description">Navigate back to all effects</string>
     <string name="conf_experimental_preference_category_title">Experimental</string>
@@ -1023,6 +1042,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_go_back_to_effects_room_description">Go back to the effects panel</string>
     <string name="conf_google_account_type">Google account</string>
     <string name="conf_google_sans">Modern</string>
+    <string name="conf_greenroom_banner_your_pronouns_are_visible">Your pronouns will be shown to everyone</string>
     <string name="conf_greenroom_call_encrypted_by_organization">"This call is encrypted by %1$s. Google can't access its contents, so some features aren't available. &lt;a href=%2$s>Learn more about end-to-end encryption&lt;/a>"</string>
     <string name="conf_greenroom_call_encrypted_organization_unknown">"This call has extra encryption. Google can't access its contents, so some features aren't available. &lt;a href=%1$s>Learn more about end-to-end encryption&lt;/a>"</string>
     <string name="conf_greenroom_livestream_edu_body">"While watching this live stream, you can't use your camera or microphone"</string>
@@ -1060,6 +1080,7 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_greenroom_viewer_notification_text">"Joining as a viewer, you can't send chat messages or use your mic and camera in this meeting"</string>
     <string name="conf_greenroom_waiting_room_body_host">This call has a waiting room</string>
     <string name="conf_greenroom_waiting_room_body_participant">You’ll be in a waiting room before entering the call</string>
+    <string name="conf_greenroom_your_pronouns_are_visible">Your pronouns will be shown to others in the call</string>
     <string name="conf_group_call">Group call</string>
     <string name="conf_group_call_content_description">Create a group call</string>
     <string name="conf_guest_email_copied">Guest email copied</string>
@@ -1194,6 +1215,13 @@ Joining opens {app_name} with this account. You can return to Meet whenever you 
     <string name="conf_main_stage_presenting_name_text">{PARTICIPANT_NAME} is presenting</string>
     <string name="conf_majorca_livestream_leave_button">Leave</string>
     <string name="conf_make_up_effect_text">Studio makeup</string>
+    <string name="conf_manage_pronouns_dialog_cancel_button">Cancel</string>
+    <string name="conf_manage_pronouns_dialog_done_button">Done</string>
+    <string name="conf_manage_pronouns_dialog_got_it_button">Got it</string>
+    <string name="conf_manage_pronouns_dialog_help_header">Managing your pronouns</string>
+    <string name="conf_manage_pronouns_dialog_title">How others see your pronouns</string>
+    <string name="conf_manage_pronouns_dialog_toggle">Show my pronouns in Meet calls</string>
+    <string name="conf_manage_pronouns_dialog_toggle_header">Pronouns in Meet</string>
     <string name="conf_mark_answered_error_text">"The question can't be marked as answered. Try again."</string>
     <string name="conf_mark_answered_text">"You've marked this question as answered"</string>
     <string name="conf_mark_unanswered_error_text">The question is still shown as answered. Try again.</string>
@@ -1394,8 +1422,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_ongoing_livestream_content_text">Tap to return to the live stream</string>
     <string name="conf_ongoing_meeting_content_text">Tap to return to the call</string>
     <string name="conf_ongoing_notes_call_notification_title">Your notes call</string>
-    <string name="conf_ongoing_notification_channel_high_importance_name">MeetOngoingCallNotificationChannelHighImportanceName</string>
-    <string name="conf_ongoing_notification_channel_name">MeetOngoingCallNotificationChannelName</string>
     <string name="conf_open_effects_panel_announcement">Select a video effect.</string>
     <string name="conf_open_effects_panel_description">Open effects panel.</string>
     <string name="conf_open_effects_panel_with_active_effect_description">Open Effects panel. {EFFECT_DESCRIPTION} is currently selected</string>
@@ -1429,6 +1455,9 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_participant_list_waiting_room_header_title">In the waiting room</string>
     <string name="conf_participant_list_waiting_to_join_header_title">Waiting to join</string>
     <string name="conf_participant_paired_to_room">{DISPLAY_NAME} checked into {ROOM_NAME}</string>
+    <string name="conf_participant_presenting_annotating_name_text">{PARTICIPANT_NAME} (Presenting, annotating)</string>
+    <string name="conf_participant_presenting_annotating_with_other_name_text">{PARTICIPANT_NAME} (Presenting, annotating with {OTHER_PARTICIPANTS_COUNT} others)</string>
+    <string name="conf_participant_presenting_name_text">{PARTICIPANT_NAME} (Presenting)</string>
     <string name="conf_participants_checked_in">{NUMBER_OF_PARTICIPANTS, plural, offset:1 =1 {{PARTICIPANT_NAME} checked in} =2 {{FIRST_PARTICIPANT} and {SECOND_PARTICIPANT} checked in} other {{FIRST_PARTICIPANT} &amp; # others checked in}}</string>
     <string name="conf_people_in_waiting_room">{NUMBER_OF_PARTICIPANTS, plural, =1 {# person is in the waiting room} other {# people are in the waiting room} }</string>
     <string name="conf_people_search_hint">Search for someone in this call</string>
@@ -1441,25 +1470,16 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_peoplekit_close_button_content_description">Back</string>
     <string name="conf_permissions_denied_before_dialog_title">{app_name_for_permission_dialog} needs your permissions</string>
     <string name="conf_phone">Phone</string>
-    <string name="conf_phone_number_account_settings_text">Go to &lt;a href={GOOGLE_ACCOUNT_SETTINGS}>Google Account settings&lt;/a> to remove numbers from your account.</string>
     <string name="conf_phone_number_issue_description">Having problems?</string>
     <string name="conf_phone_number_issue_link">Learn how to verify your phone number.</string>
     <string name="conf_phone_number_register_got_it">Got it</string>
     <string name="conf_phone_number_register_success">Phone number registered!</string>
-    <string name="conf_phone_number_selection_confirmation_required">(confirmation required)</string>
     <string name="conf_phone_number_selection_current_number">Current phone number</string>
     <string name="conf_phone_number_selection_dialog_add_manually_button">Add a new number</string>
     <string name="conf_phone_number_selection_dialog_body">There are phone numbers attached to your account. Select the number to use with Google Meet.</string>
     <string name="conf_phone_number_selection_dialog_cancel_button">Cancel</string>
     <string name="conf_phone_number_selection_dialog_continue_button">Continue</string>
-    <string name="conf_phone_number_selection_dialog_done_button">Done</string>
     <string name="conf_phone_number_selection_dialog_title">Select your phone number</string>
-    <string name="conf_phone_number_selection_primary_number">Primary number</string>
-    <string name="conf_phone_number_verification_required_dialog_cancel">Cancel</string>
-    <string name="conf_phone_number_verification_required_dialog_continue">Continue</string>
-    <string name="conf_phone_number_verification_required_dialog_message">Google will send you a one time text message to confirm this number. Carrier rates may apply.&lt;br />&lt;br /> Having problems?&lt;br /> &lt;a href={HOW_TO_VERIFY_URL}>Learn how to verify your phone number.&lt;/a></string>
-    <string name="conf_phone_number_verification_required_dialog_title">Confirm {PHONE_NUMBER}</string>
-    <string name="conf_phone_number_verified_toast">You verified {PHONE_NUMBER}</string>
     <string name="conf_phone_selected_content_description">Phone, selected</string>
     <string name="conf_photo_clip_type_talkback_description">Photo mode active</string>
     <string name="conf_pinned_content_description">Pinned</string>
@@ -1492,7 +1512,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_pn_staleness_alert_notification_body">Confirm your phone number to keep using it in Meet</string>
     <string name="conf_pn_staleness_alert_notification_header">"You can't be reached by your phone number anymore"</string>
     <string name="conf_pn_staleness_alert_promo_body">Confirm your phone number to keep using it in Meet</string>
-    <string name="conf_pn_staleness_alert_promo_body_specific">Confirm {PHONE_NUMBER} to keep using it in Meet</string>
     <string name="conf_pn_staleness_alert_promo_header">"You can't be reached by your phone number anymore"</string>
     <string name="conf_pn_staleness_notification_action_button">Confirm number</string>
     <string name="conf_pn_staleness_notification_cancel_button">Not now</string>
@@ -1501,7 +1520,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_pn_staleness_warning_notification_body">Confirm your phone number to continue using it in Meet</string>
     <string name="conf_pn_staleness_warning_notification_header">Keep your number up to date</string>
     <string name="conf_pn_staleness_warning_promo_body">Confirm your phone number to continue using it in Meet.</string>
-    <string name="conf_pn_staleness_warning_promo_body_specific">Confirm {PHONE_NUMBER} to continue using it in Meet.</string>
     <string name="conf_pn_staleness_warning_promo_header">Keep your number up to date</string>
     <string name="conf_precall_promo_got_it">Got it</string>
     <string name="conf_prejoin_public_live_streaming_indicator_partial_text">is being publicly live-streamed</string>
@@ -1532,6 +1550,7 @@ This can take about %1$d seconds."</string>
     <string name="conf_prompt_creation_fragment_select_style_accessibility_hint">Change the style</string>
     <string name="conf_prompt_creation_fragment_style_no_style">No scene</string>
     <string name="conf_prompt_creation_fragment_title">Generate a background</string>
+    <string name="conf_pronouns_promo_banner_dismiss_button">Dismiss</string>
     <string name="conf_public_livestream_active_only_prejoin_text">This call is being publicly live-streamed</string>
     <string name="conf_public_livestreaming_initiated">This meeting is being publicly live-streamed</string>
     <string name="conf_public_livestreaming_initiated_by_participant">{PARTICIPANT_NAME} has started public live streaming</string>
@@ -1568,8 +1587,6 @@ This can take about %1$d seconds."</string>
     <string name="conf_reactions_receive_a11y_announcement_no_reactions_available">No reactions</string>
     <string name="conf_reactions_receive_a11y_announcement_respondent_known">{NUMBER_OF_PARTICIPANTS, plural, offset:1 =1 {{PARTICIPANT_NAME} reacted with {EMOJI_SYMBOL}} =2 {{PARTICIPANT_NAME} and # other person reacted with {EMOJI_SYMBOL}} other {{PARTICIPANT_NAME} and # others reacted with {EMOJI_SYMBOL}} }</string>
     <string name="conf_reactions_receive_a11y_announcement_respondents_unknown">{NUMBER_OF_PARTICIPANTS, plural, =1 {# person reacted with {EMOJI_SYMBOL}} other {# people reacted with {EMOJI_SYMBOL}} }</string>
-    <string name="conf_receive_chat_lock_live_stream">Everyone will see your message</string>
-    <string name="conf_receive_chat_lock_off">Only people in the call will see your message</string>
     <string name="conf_recording_active_only_prejoin_text">This call is being recorded</string>
     <string name="conf_recording_auto_start_failure">"Recording didn't start automatically"</string>
     <string name="conf_recording_auto_start_failure_with_privilege">"Recording didn't start. Join at go.meet in a desktop browser and start it there"</string>
@@ -1601,7 +1618,6 @@ Leave and join the call to use your camera, microphone, or to present."</string>
     <string name="conf_remote_knocker_warning_reason_suspicious_user">This person is suspected of being abusive in the past</string>
     <string name="conf_remote_knockers_channel_name">Requests to join</string>
     <string name="conf_remote_knockers_notification_description">Someone wants to join. Tap to return to the call.</string>
-    <string name="conf_remote_knockers_notification_description_android_auto">Someone wants to join</string>
     <string name="conf_remote_muted_by_participant_alert_text">{PARTICIPANT_NAME} muted you</string>
     <string name="conf_remote_muted_by_server_alert_text">Your mic is off due to the size of the call</string>
     <string name="conf_remote_muted_by_unknown_alert_text">Someone muted you</string>
@@ -1738,7 +1754,6 @@ Spotfy Premium is needed to start and host o Jam. Free users can join and add so
     <string name="conf_start_a_call_title">Start a call</string>
     <string name="conf_start_audio_call">Audio call</string>
     <string name="conf_start_call">Call</string>
-    <string name="conf_start_call_content_description">Video Call</string>
     <string name="conf_start_video_call">Start video call</string>
     <string name="conf_stats_for_nerds_switch_preference_summary">View live meeting statistics</string>
     <string name="conf_stats_for_nerds_switch_preference_title">Stats for Nerds</string>
@@ -1902,7 +1917,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_voice_clip_type_talkback_description">Voice mode active</string>
     <string name="conf_voting_on_hidden_question_disabled_error">"Hidden questions can't be voted on"</string>
     <string name="conf_waiting_and_knocking_notification_content_text">Someone is in the waiting room. Tap to return to the call.</string>
-    <string name="conf_waiting_and_knocking_notification_content_text_android_auto">Someone is in the waiting room</string>
     <string name="conf_waiting_room_please_wait_text">Please wait until a meeting host brings you into the call</string>
     <string name="conf_warning_reason_anonymous">May not be who they claim to be</string>
     <string name="conf_warning_reason_anonymous_suspicious">Demonstrated concerning behavior in past calls</string>
@@ -1917,6 +1931,7 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conf_wired_headset">Wired headphones</string>
     <string name="conf_wired_headset_selected_content_description">Wired headphones, selected</string>
     <string name="conf_you">You</string>
+    <string name="conf_you_with_pronouns">You ({PRONOUNS})</string>
     <string name="conf_your_profile_and_privacy_header">"You're calling with your Google Account profile. People you call see this:"</string>
     <string name="conf_your_profile_and_privacy_title">Your profile and privacy</string>
     <string name="conf_youre_in_companion_mode">"You're in Companion mode"</string>
@@ -2065,17 +2080,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conference_activities_youtube_music_app_name">YouTube Music</string>
     <string name="conference_activities_youtube_music_live_sharing_subheadline">listen to music</string>
     <string name="conference_activities_youtube_music_live_sharing_subtitle">Listen to music with others</string>
-    <string name="conference_audio_bitrate_cancel_button_text">Cancel</string>
-    <string name="conference_audio_bitrate_input_hint">Bit rate (kbps)</string>
-    <string name="conference_audio_bitrate_invalid_value">Invalid audio bitrate value</string>
-    <string name="conference_audio_bitrate_not_set_text">Not set</string>
-    <string name="conference_audio_bitrate_preference_description">Set the bitrate for the send audio stream</string>
-    <string name="conference_audio_bitrate_preference_key">audioBitratePreference</string>
-    <string name="conference_audio_bitrate_preference_title">Audio codec bitrate</string>
-    <string name="conference_audio_bitrate_reset_button_text">Reset</string>
-    <string name="conference_audio_bitrate_set_button_text">Set</string>
-    <string name="conference_audio_bitrate_setting_failed">Failed to update the audio bitrate</string>
-    <string name="conference_audio_bitrate_value_text">%d kbps</string>
     <string name="conference_backgrounded_toast">To return to your call, open {app_name_for_conference_background_toast}</string>
     <string name="conference_blockee_in_group_body">{NUMBER_OF_PARTICIPANTS, plural, offset:3 =1 {{PARTICIPANT_NAME} in your blocked contact list will be in this call} =2 {{FIRST_PARTICIPANT} and {SECOND_PARTICIPANT} in your blocked contact list will be in this call} =3 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, and {THIRD_PARTICIPANT} in your blocked contact list will be in this call} =4 {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and {FOURTH_PARTICIPANT} in your blocked contact list will be in this call} other {{FIRST_PARTICIPANT}, {SECOND_PARTICIPANT}, {THIRD_PARTICIPANT}, and # others in your blocked contact list will be in this call}}</string>
     <string name="conference_blockee_in_group_title">Someone you blocked is in this group</string>
@@ -2332,8 +2336,6 @@ If this dialog is accepted, Meet will share {media_collected} of the meeting wit
     <string name="conference_greenroom_header_subtitle_now_indicator">Now</string>
     <string name="conference_greenroom_header_subtitle_separator">" • "</string>
     <string name="conference_greenroom_no_internet_connection">No internet connection</string>
-    <string name="conference_hac_testing_category_key">hacTestingCategory</string>
-    <string name="conference_hac_testing_section_title">HAC Testing</string>
     <string name="conference_home_no_internet_connection">No internet connection</string>
     <string name="conference_join_meeting_failure_dialog_dismiss">Dismiss</string>
     <string name="conference_knocking_denied">Someone in the call denied your request to join</string>
@@ -2774,6 +2776,7 @@ More numbers: {more_numbers_link}"</string>
     <string name="haircheck_aspect_ratio">H, 2:3</string>
     <string name="haircheck_aspect_ratio_landscape">H, 3:2</string>
     <string name="hand_raise_content_description">{DISPLAY_NAME}, hand is raised</string>
+    <string name="hand_raise_content_description_with_pronouns">{DISPLAY_NAME}, {PRONOUNS}, hand is raised</string>
     <string name="hand_raise_lowered_notification">The host has lowered your hand</string>
     <string name="handover_failed_snackbar_text">"Couldn't join the session"</string>
     <string name="handover_message">Joining “{conference_name}”…</string>
@@ -3320,6 +3323,11 @@ Go to Settings and try again."</string>
     <string name="open_meet_button_text">Open Google Meet</string>
     <string name="opening_duo_caption_rebranded">Opening Meet. One moment…</string>
     <string name="orb_search_action">Search Action</string>
+    <string name="os_blocked_description">To keep using the %1$s app and get the latest security features, update your device OS. You can continue to use %1$s in your %2$s.</string>
+    <string name="os_blocked_description_no_browser_link">To keep using the %1$s app and get the latest security features, update your device OS.</string>
+    <string name="os_blocked_title">Update your device to keep using %1$s</string>
+    <string name="os_version_nudge_description">To keep using the %1$s app and get the latest security features, update your device OS</string>
+    <string name="os_version_nudge_title">Update your device to stay secure</string>
     <string name="outgoing">Outgoing</string>
     <string name="outgoing_audio_calling">Voice calling…</string>
     <string name="outgoing_audio_calling_from_intent_rebranded">Meet voice calling…</string>
@@ -4128,6 +4136,10 @@ Or open {short_app_name_for_meeting} and enter this code: {meeting_code}"</strin
     <string name="verification_skipped_rebranded">Welcome back to Meet! Your friends can reach you at %s</string>
     <string name="verification_success">Phone number verified!</string>
     <string name="verification_wait_prompt">Please wait %s</string>
+    <string name="version_blocked_close_button">Close</string>
+    <string name="version_blocked_description">Update to keep using the %1$s app and get the latest security features</string>
+    <string name="version_blocked_title">Stay secure with updates</string>
+    <string name="version_blocked_update_button">Update</string>
     <string name="video_call">Video call</string>
     <string name="video_call_card_title_text">Video call</string>
     <string name="video_call_group_button">Video call</string>
