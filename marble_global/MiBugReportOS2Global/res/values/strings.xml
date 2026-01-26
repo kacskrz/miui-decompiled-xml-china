@@ -48,7 +48,7 @@
     <string name="account_secure_info_pref_title">Account info</string>
     <string name="account_security_info_pref_title">Security info</string>
     <string name="account_user_avatar">Profile photo</string>
-    <string name="account_user_avatar_from_album">Gallery</string>
+    <string name="account_user_avatar_from_album">Select from Gallery</string>
     <string name="account_user_avatar_from_camera">Camera</string>
     <string name="account_user_base_info">Basic info</string>
     <string name="account_user_details">Personal info</string>
@@ -126,11 +126,12 @@
     <string name="catch_full_log_item_title_wifi_china">WLAN</string>
     <string name="catch_full_log_not_show_again">"Don't show again"</string>
     <string name="catch_full_log_note_affect_performance_decription">It looks like the log generation process has lasted more than %d hour. If this process has finished, you can send feedback. Otherwise, you can cancel the process or continue, but continuing may temporarily affect your device capabilities.</string>
-    <string name="catch_full_log_note_affect_performance_description">"Looks like you've been capturing logs for more than %d hour. This process may use a lot of storage and affect your device's performance. If you haven't been able to reproduce the problem, cancel this process."</string>
+    <string name="catch_full_log_note_affect_performance_description">"You've been generating logs for over %d hour. Performing this process for a long time may affect your device's storage and performance. You can cancel this process, continue generating logs, or stop and send feedback."</string>
     <string name="catch_full_log_note_cancel_catch">Cancel</string>
+    <string name="catch_full_log_note_cancel_catch_reason">Cancel</string>
     <string name="catch_full_log_note_catch">Log generation</string>
     <string name="catch_full_log_note_decription">"It looks like you're generating logs. If this process has finished, you can send feedback. Otherwise, continue or cancel the process."</string>
-    <string name="catch_full_log_note_description">"Looks like you're still capturing logs. This process may use a lot of storage and affect your device's performance. If you haven't been able to reproduce the problem, cancel this process."</string>
+    <string name="catch_full_log_note_description">"You've been generating logs for over %d minutes. Performing this process for a long time may affect your device's storage and performance. You can cancel this process, continue generating logs, or stop and send feedback."</string>
     <string name="catch_full_log_note_still_catch">Continue</string>
     <string name="catch_full_log_note_title">Services &amp; feedback</string>
     <string name="catch_full_log_note_to_commit">Send feedback</string>
@@ -227,7 +228,13 @@
     <string name="close">Close</string>
     <string name="close_feedback_main">Hide</string>
     <string name="collect_diagnosis_log">Collect logs</string>
-    <string name="com.google.firebase.crashlytics.mapping_file_id">f53563ebcc7e4f0a8170047df7c950d0</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id">86ce96d950f648a58075ba2599263169</string>
+    <string name="com.google.firebase.crashlytics.version_control_info">"repositories {
+  system: GIT
+  local_root_path: \"$PROJECT_DIR\"
+  revision: \"a728ddddaccbef794c4c7d540ba0a92df289f544\"
+}
+"</string>
     <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -271,6 +278,11 @@
     <string name="device_not_found">No connected devices</string>
     <string name="device_not_found_tips">Make sure the other devices are signed in to your Xiaomi Account</string>
     <string name="device_tips">Selecting connected devices will help us analyze the issue faster. You can upload logs from both this device and the selected devices.</string>
+    <string name="dfs_log_catch_dialog_commit">Send feedback</string>
+    <string name="dfs_log_catch_dialog_message">Logs are currently being generated for the issue you reported to customer service. Stop generating these logs and submit feedback on another issue now?</string>
+    <string name="dfs_log_catch_dialog_title">Generating logs</string>
+    <string name="dfs_log_catch_note_to_commit">Stop</string>
+    <string name="dfs_log_catch_notification">If the issue has already been reproduced, stop generating logs and tap to submit feedback.</string>
     <string name="diagnosis_log_send_failed">"Couldn't send logs. Try again."</string>
     <string name="diagnosis_log_sent_format">"Sent logs successfully.
 ID:%s
@@ -357,6 +369,7 @@ Send this code to the supervisor."</string>
     <string name="feedback_choose_occurrence_time">Time</string>
     <string name="feedback_choose_reproductivity">Frequency</string>
     <string name="feedback_choose_third_app_name">Select app name</string>
+    <string name="feedback_choose_wearable">Select wearable device</string>
     <string name="feedback_collect_log_failed">"Couldn't get logs"</string>
     <string name="feedback_contact_info_hint">Phone number/Email</string>
     <string name="feedback_continue">Submit feedback</string>
@@ -438,6 +451,7 @@ Send this code to the supervisor."</string>
     <string name="feedback_status_recorded">Received feedback</string>
     <string name="feedback_status_replyed">Replied</string>
     <string name="feedback_status_reresolved">Resolved</string>
+    <string name="feedback_status_reupload_talkback">Upload again</string>
     <string name="feedback_status_save_log_info_failed">"Couldn't change attachment URL"</string>
     <string name="feedback_status_submit_attachment">Submitted attachment successfully</string>
     <string name="feedback_status_submit_bbs_failed">"Couldn't submit feedback content"</string>
@@ -735,7 +749,23 @@ Email: service.jp@xiaomi.com"</string>
     <string name="miuix_font_style_misans_regular_font_family">sans-serif</string>
     <string name="miuix_font_style_misans_semibold_font_family">mipro-semibold</string>
     <string name="miuix_font_style_misans_thin_font_family">sans-serif-thin</string>
+    <string name="miuix_font_weight_body1">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_body2">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_button">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_footnote1">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_footnote2">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_footnote3">@string/miuix_font_style_misans_demibold_font_family</string>
+    <string name="miuix_font_weight_headline1">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_headline2">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_subtitle">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_subtitle2">@string/miuix_font_style_misans_demibold_font_family</string>
+    <string name="miuix_font_weight_subtitle3">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_title1">@string/miuix_font_style_misans_regular_font_family</string>
+    <string name="miuix_font_weight_title2">@string/miuix_font_style_misans_semibold_font_family</string>
+    <string name="miuix_font_weight_title3">@string/miuix_font_style_misans_medium_font_family</string>
+    <string name="miuix_font_weight_title4">@string/miuix_font_style_misans_medium_font_family</string>
     <string name="miuix_indexer_collect">Collections</string>
+    <string name="miuix_pairing_dialog_closable_icon_description">Close</string>
     <string name="miuix_progressbar_loading">Just a sec…</string>
     <string name="miuix_sbl_tracking_progress_labe_pull_to_refresh">Pull down to refresh</string>
     <string name="miuix_sbl_tracking_progress_labe_refreshed">Refreshed successfully</string>
@@ -874,9 +904,11 @@ Email: service.jp@xiaomi.com"</string>
     <string name="notify_log_catch_content">After replicating the issue, tap the notification to send feedback, or press and hold the notification to stop capturing logs</string>
     <string name="open_feedback_main">More</string>
     <string name="open_settings">Settings</string>
+    <string name="pasport_register_dialog_message">Create a Xiaomi Account via your phone number %s now?</string>
     <string name="passport_access_denied">Access denied</string>
     <string name="passport_account_name">"Account: %1$s "</string>
     <string name="passport_area_code_title">Area code</string>
+    <string name="passport_attention">Attention</string>
     <string name="passport_auth_title" />
     <string name="passport_bad_authentication">Invalid username or password</string>
     <string name="passport_can_not_recevie_verify_code">"Didn't receive a code?"</string>
@@ -923,6 +955,7 @@ Email: service.jp@xiaomi.com"</string>
     <string name="passport_error_user_password">"Passwords don't match"</string>
     <string name="passport_get_login_type_next">Next</string>
     <string name="passport_header_back">Back</string>
+    <string name="passport_i_know">Got it</string>
     <string name="passport_identification_expired">Verification code expired. Start over.</string>
     <string name="passport_input_captcha_hint">Enter code</string>
     <string name="passport_input_password_hint">Enter password</string>
@@ -930,12 +963,12 @@ Email: service.jp@xiaomi.com"</string>
     <string name="passport_input_verify_code">Enter verification code</string>
     <string name="passport_input_voice_captcha_hint">Enter voice verification code</string>
     <string name="passport_input_voice_hint">Enter voice code</string>
-    <string name="passport_mi_account_first_title">"We'll create an account automatically if you're using your phone number for the first time."</string>
     <string name="passport_mi_account_title">Sign in with Xiaomi Account</string>
     <string name="passport_network_error">A network error occurred.</string>
     <string name="passport_network_error_hint">Check the URL and try again, or copy the URL and open it in your browser.</string>
     <string name="passport_next">Next</string>
     <string name="passport_page_load_failed">"Can't open page"</string>
+    <string name="passport_password_hide_show">Hide password</string>
     <string name="passport_password_login_btn">Sign in</string>
     <string name="passport_password_not_show">"Don't show password"</string>
     <string name="passport_password_req_notice">Password must be 8-16 characters long and combine at least two of the following: digits, letters, and special symbols (e.g. 123abc@#, or 123abc, or abc@#).</string>
@@ -943,8 +976,11 @@ Email: service.jp@xiaomi.com"</string>
     <string name="passport_querying_phone_info">Requesting account info…</string>
     <string name="passport_quick_login_title">Enter your password</string>
     <string name="passport_reging">Creating account…</string>
+    <string name="passport_register_dialog_positive">Create</string>
+    <string name="passport_register_dialog_title">Create Xiaomi Account</string>
     <string name="passport_register_restricted">Too many accounts have been associated with this number. Try a different one.</string>
     <string name="passport_relogin_notice">You need to sign in again</string>
+    <string name="passport_request_permission_title">Permissions required</string>
     <string name="passport_resend_ticket">Resend code</string>
     <string name="passport_retry">Try again</string>
     <string name="passport_send_sms_to">Code sent to %1$s</string>
@@ -956,6 +992,7 @@ Email: service.jp@xiaomi.com"</string>
     <string name="passport_talkback_switch_image_captcha">Switch to image verification code</string>
     <string name="passport_talkback_switch_voice_captcha">Switch to voice verification code</string>
     <string name="passport_talkback_voice_captcha">Play voice verification code</string>
+    <string name="passport_third_sns_service_unavailable">"The service isn't available. Make sure the app is installed and not blocked."</string>
     <string name="passport_ticket_send_by_second">Send in %d</string>
     <string name="passport_to_forget_password">Forgot password?</string>
     <string name="passport_to_password_login">Sign in using password</string>
@@ -1034,7 +1071,7 @@ Read and agree to the new version of %3$s before you continue."</string>
     <string name="request_error_invalid_token">"Couldn't verify"</string>
     <string name="request_error_network">A network error occurred. Check your network settings and try again.</string>
     <string name="request_error_unknown">A system error occurred. Go back and try again.</string>
-    <string name="request_gallery_permission_message">Allow access to Gallery:&lt;br />For setting profile photos</string>
+    <string name="request_gallery_permission_message">This app needs to access selected Gallery items to be able to set your profile photo. Allow now?</string>
     <string name="resend_active_email">Resend</string>
     <string name="resend_email_reach_limit_message">"You've requested too many verification emails. Make sure that the verification email isn't in your inbox's Spam folder."</string>
     <string name="resend_email_reach_limit_title">Too many attempts</string>
@@ -1202,6 +1239,7 @@ Read and agree to the new version of %3$s before you continue."</string>
     <string name="toast_screenshot_too_large">"Can't upload images or videos bigger than %d MB."</string>
     <string name="toast_third_packagename_required">Enter app name</string>
     <string name="toast_upload_screenrecorder">Upload a screen recording of the issue for analysis</string>
+    <string name="toast_wearable_required">Select a wearable device first</string>
     <string name="today">Today</string>
     <string name="tomorrow">Tomorrow</string>
     <string name="tuesday">Tuesday</string>
@@ -1245,6 +1283,11 @@ Size: %2$s"</string>
     <string name="vip_feedback_title">Bug report uploaded</string>
     <string name="vip_log_canceled_message">Canceled log generation</string>
     <string name="vip_log_collecting_message">"Generating logs. They'll be submitted automatically once generated."</string>
+    <string name="wearable_all_devices">All devices</string>
+    <string name="wearable_bonded_devices">Connected devices</string>
+    <string name="wearable_expand">View more</string>
+    <string name="wearable_non_hardware_issues">Non-hardware issues</string>
+    <string name="wearable_title">Select wearable device</string>
     <string name="wechat_application_id" />
     <string name="wechat_scope" />
     <string name="wechat_state" />
