@@ -541,6 +541,8 @@
         <item>com.xiaomi.station:nas_backup_notification_channel</item>
         <item>com.xiaomi.app.toolbox:toolbox_keep_alive_notification</item>
         <item>com.xiaomi.market:com.xiaomi.market_hide</item>
+        <item>com.miui.globalguard:globalguard_resident_notification_hide</item>
+        <item>com.xiaomi.station:nas_task_notification_channel</item>
     </string-array>
     <string-array name="config_notification_interceptlistener">
         <item>com.android.systemui/com.android.systemui.statusbar.notification.MiuiNotificationListener</item>
@@ -550,6 +552,7 @@
         <item>com.vivo.health/com.vivo.health.devices.watch.notify.NotificationService</item>
         <item>com.xiaomi.hm.health/com.xiaomi.hm.health.ui.smartplay.NotificationAccessService</item>
         <item>com.xiaomi.barrage/com.xiaomi.barrage.service.NotificationMonitorService</item>
+        <item>com.miui.securitycore/com.miui.securityspace.service.notificaiton.NotificationListener</item>
     </string-array>
     <array name="config_openedPresentationDeviceStates" />
     <array name="config_openedReverseDeviceStates" />
@@ -5594,7 +5597,7 @@
         <item>com.sankuai.meituan.takeoutnew,nr:de</item>
         <item>cn.xuexi.android,cr:rcr:de:nra:nr:cra</item>
         <item>com.tencent.weishi,de:nra:uc:cr:rcr</item>
-        <item>com.shizhuang.duapp,cr:rcr:nra:uc:de</item>
+        <item>com.shizhuang.duapp,nra:de</item>
         <item>com.duowan.kiwi,t:nra:uc:de</item>
         <item>air.tv.douyu.android,nra:uc:cr:rcr:de</item>
         <item>com.baidu.searchbox.lite,t:cr:rcr:uc:nra:de</item>
@@ -6312,6 +6315,7 @@
     <string-array name="list_launch_in_task">
         <item>com.android.bluetooth/.opp.BluetoothOppLauncherActivity</item>
         <item>com.android.bluetooth/.opp.BluetoothOppBtEnableActivity</item>
+        <item>com.android.chrome/com.google.android.apps.chrome.IntentDispatcher</item>
     </string-array>
     <string-array name="list_not_avoid_launch_other_freeform">
         <item>com.miui.applicationlock.ConfirmAccessControl</item>
@@ -7862,6 +7866,8 @@
         <item>com.xiaomi.mimobile.cloudsim</item>
         <item>com.magiear.handsfree.assistant</item>
         <item>com.xiaomi.mi_connect_service</item>
+        <item>com.google.android.apps.messaging</item>
+        <item>com.github.uiautomator</item>
     </string-array>
     <string-array name="package_static_white_list_lite">
         <item>com.android.updater</item>
@@ -10563,7 +10569,7 @@
         <item>com.tencent.mobileqq,psm:ssa</item>
         <item>com.baidu.BaiduMap,psm:fk</item>
         <item>com.smile.gifmaker,psm:ssa</item>
-        <item>com.xingin.xhs,psm:ssa</item>
+        <item>com.xingin.xhs,psm:ssa:fk</item>
         <item>com.sina.weibo,psm:ssa</item>
         <item>com.alibaba.android.rimet,psm:ssa</item>
         <item>com.MobileTicket,psm:ssa</item>
@@ -10769,6 +10775,105 @@
     <string-array name="gl_thread_boost_packages">
         <item>com.happyelements.AndroidAnimal</item>
         <item>com.tencent.tmgp.pubgmhd</item>
+    </string-array>
+    <string-array name="greezer_cn_broadcast_cached_list">
+        <item>android.intent.action.SCREEN_OFF</item>
+        <item>android.intent.action.SCREEN_ON</item>
+        <item>android.intent.action.ACTION_POWER_DISCONNECTED</item>
+        <item>android.intent.action.ACTION_POWER_CONNECTED</item>
+        <item>android.os.action.DEVICE_IDLE_MODE_CHANGED</item>
+        <item>android.intent.action.PROXY_CHANGE</item>
+        <item>android.intent.action.UNARCHIVE_PACKAGE</item>
+        <item>android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED</item>
+        <item>com.ss.android.ugc.aweme.search.widget.APPWIDGET_RESET_ALARM</item>
+        <item>com.tencent.mm.TrafficStatsReceiver</item>
+        <item>com.xiaomi.mipush.MESSAGE_ARRIVED</item>
+        <item>com.tencent.mm.plugin.report.service.KVCommCrossProcessReceiver</item>
+        <item>android.intent.action.wutao</item>
+        <item>com.xiaomi.mimo.PLAYABLE_STATE</item>
+    </string-array>
+    <string-array name="greezer_cn_broadcast_defer_list">
+        <item>com.google.android.intent.action.GCM_RECONNECT</item>
+        <item>com.google.android.gcm.DISCONNECTED</item>
+        <item>com.google.android.gcm.CONNECTED</item>
+        <item>com.google.android.gms.gcm.HEARTBEAT_ALARM</item>
+    </string-array>
+    <string-array name="greezer_cn_broadcast_deny_list">
+        <item>android.intent.action.BATTERY_CHANGED</item>
+        <item>android.net.wifi.STATE_CHANGE</item>
+        <item>android.intent.action.DROPBOX_ENTRY_ADDED</item>
+        <item>android.net.wifi.RSSI_CHANGED</item>
+        <item>android.net.wifi.supplicant.STATE_CHANGE</item>
+        <item>android.intent.action.TIME_TICK</item>
+        <item>com.android.server.action.NETWORK_STATS_UPDATED</item>
+        <item>android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>android.net.wifi.WIFI_STATE_CHANGED</item>
+        <item>android.net.wifi.SCAN_RESULTS</item>
+        <item>android.intent.action.CLOSE_SYSTEM_DIALOGS</item>
+    </string-array>
+    <string-array name="greezer_floatwindow_freeze_app_list">
+        <item>com.jingdong.app.mall</item>
+        <item>com.tmall.wireless</item>
+        <item>com.xunmeng.pinduoduo</item>
+        <item>com.achievo.vipshop</item>
+        <item>com.sankuai.youxuan</item>
+        <item>com.wudaokou.hippo</item>
+    </string-array>
+    <string-array name="greezer_game_report_app_list">
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.miHoYo.ys.mi</item>
+        <item>com.miHoYo.Yuanshen</item>
+        <item>com.miHoYo.ys.bilibili</item>
+        <item>com.tencent.lolm</item>
+        <item>com.tencent.jkchess</item>
+    </string-array>
+    <string-array name="greezer_gl_broadcast_cached_list">
+        <item>android.net.wifi.RSSI_CHANGED</item>
+        <item>android.intent.action.DROPBOX_ENTRY_ADDED</item>
+        <item>android.intent.action.CLOSE_SYSTEM_DIALOGS</item>
+        <item>android.net.wifi.SCAN_RESULTS</item>
+        <item>android.intent.action.BATTERY_CHANGED</item>
+        <item>com.xiaomi.mimo.PLAYABLE_STATE</item>
+    </string-array>
+    <string-array name="greezer_google_app_list">
+        <item>com.android.chrome</item>
+        <item>com.google.ambient.streaming</item>
+        <item>com.fitbit.FitbitMobile</item>
+        <item>com.google.earth</item>
+        <item>com.area120.kormo.seeker</item>
+        <item>com.android.vending</item>
+    </string-array>
+    <string-array name="greezer_message_app_list">
+        <item>com.whatsapp</item>
+        <item>com.tencent.mm</item>
+        <item>org.telegram.messenger</item>
+        <item>com.facebook.orca</item>
+        <item>com.snapchat.android</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.discord</item>
+        <item>com.whatsapp.w4b</item>
+        <item>org.thoughtcrime.securesms</item>
+        <item>jp.naver.line.android</item>
+        <item>com.viber.voip</item>
+        <item>com.kakao.talk</item>
+        <item>com.skype.raider</item>
+        <item>com.microsoft.teams</item>
+        <item>com.Slack</item>
+        <item>com.brosix.android</item>
+        <item>com.twitter.android</item>
+        <item>com.ryver.mobile.app</item>
+        <item>com.instagram.android</item>
+        <item>com.cisco.wx2.android</item>
+        <item>com.twistapp</item>
+        <item>com.zoho.chat</item>
+        <item>com.tvisha.troopmessenger</item>
+        <item>com.amazon.chime</item>
+        <item>com.imo.android.imoim</item>
+        <item>com.zing.zalo</item>
+        <item>com.vkontakte.android</item>
+        <item>ru.ok.android</item>
+        <item>im.thebot.messenger</item>
     </string-array>
     <string-array name="invalid_package_list_on_network_whitelist">
         <item>com.android.providers.downloads</item>
@@ -11451,6 +11556,7 @@
         <item>com.primatelabs.geekbench6.corporate</item>
         <item>net.kishonti.gfxbench.vulkan.v50000.corporate</item>
         <item>net.kishonti.gfxbench.vulkan.v50005.corporate</item>
+        <item>com.changba</item>
     </string-array>
     <string-array name="screen_rotation_animation_activity_list">
         <item>tv.danmaku.bili/.ui.video.VideoDetailsActivity,topVideo</item>
@@ -11794,6 +11900,7 @@
         <item>org.tinghood.TpsForMobile.mi/org.cocos2dx.cpp.TqBallGameActivity</item>
         <item>zushi.mi/com.wulin.zushi.MainActivity</item>
         <item>com.xd.xdt/com.xd.xdt.MainActivity</item>
+        <item>com.devsisters.gb/com.devsisters.gb.AppActivity</item>
         <item>com.block.puzzle.game.hippo.mi/com.wogame.crushSaga.AppActivity</item>
         <item>com.jewelsblast.ivygames.Adventure.free/org.cocos2dx.cpp.AppActivity</item>
         <item>com.mobilelegends.mi/com.moba.unityplugin.MobaGameUnityActivity</item>
@@ -11814,6 +11921,7 @@
         <item>com.block.juggle/org.cocos2dx.javascript.AppActivity</item>
         <item>com.vitastudio.mahjong/com.meevii.vitastudio.VitaDelegateActivity</item>
         <item>com.readygo.barrel.gp/com.im30.aps.debug.UnityPlayerActivityCustom</item>
+        <item>com.ngame.allstar.eu/com.ngame.allstar.SGameRealActivity</item>
         <item>com.tencent.map/com.tencent.map.WelcomeActivity</item>
     </string-array>
 </resources>
