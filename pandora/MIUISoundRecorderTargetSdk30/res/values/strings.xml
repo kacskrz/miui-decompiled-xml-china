@@ -109,10 +109,10 @@
     <string name="cant_generate_new_summary_by_language_type_limit">"Can't generate summaries for this language"</string>
     <string name="cant_generate_new_summary_by_network_error2">Try again</string>
     <string name="cant_generate_new_summary_by_sensitive_content">"Can't summarize sensitive content"</string>
+    <string name="cant_generate_new_summary_by_unknown_error">An unknown error occurred</string>
     <string name="cant_generate_new_summary_by_word_limit">"Too few or too many characters. Can't create summary."</string>
     <string name="cant_generate_summary_by_account_un_login2">Sign in</string>
     <string name="cant_generate_summary_by_network_error1">"A network error occurred. "</string>
-    <string name="cant_generate_summary_by_unkonw_error">An unknown error occurred</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
@@ -331,7 +331,7 @@ Please send this code to the technician."</string>
     <string name="heavenly_stems_wu">戊</string>
     <string name="heavenly_stems_xin">辛</string>
     <string name="heavenly_stems_yi">乙</string>
-    <string name="hide_bottom_view_on_scroll_behavior">miuix.android.miracle.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="high_bit_rate">MP3, ~%1$d kbps, ~%2$d MB/h</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string name="icp_info">ICP备案号：京ICP备10046444号-160A</string>
@@ -605,6 +605,9 @@ Tap \"%1$s\", and then select \"%2$s\"."</string>
     <string name="notice_content_no_asr_long_time">No speech has been detected for a long time.</string>
     <string name="notice_for_ai_search_tips">Details</string>
     <string name="notice_title_is_need_stop_ai_recognize">Turn off AI Speech Recognition?</string>
+    <string name="notification_for_asr_in_decode">Processing…</string>
+    <string name="notification_for_asr_in_progress">Transcribing via AI %s</string>
+    <string name="notification_for_asr_in_progress_with_polish">Polishing via AI %s</string>
     <string name="notification_message_all_paused">Waiting for Wi-Fi connection.</string>
     <string name="notification_pause_playback">Playback paused</string>
     <string name="notification_playback">Playing…</string>
@@ -612,7 +615,9 @@ Tap \"%1$s\", and then select \"%2$s\"."</string>
     <string name="notification_recording_ticker">Phone muted</string>
     <string name="notification_save_as_complete">Saved successfully</string>
     <string name="notification_stopped">Recording stopped</string>
+    <string name="notification_title_AI_POLISH_FAILED">"Couldn't polish"</string>
     <string name="notification_title_AI_RECOGNIZE_FINISHED">Finished transcribing</string>
+    <string name="notification_title_AI_RECOGNIZE_FINISHED_with_polish">Polished successfully</string>
     <string name="notification_title_AI_SUMMARY_FAILED">"Couldn't summarize"</string>
     <string name="notification_title_AI_SUMMARY_SUCCESS">Finished summarizing</string>
     <string name="notification_title_SUMMARY_SUCCESS">Summarized successfully</string>
@@ -845,6 +850,9 @@ Tap \"%1$s\", and then select \"%2$s\"."</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="path_soundrecorder_setting">System apps/Recorder</string>
     <string name="pause_status_focus_notification">Recording paused</string>
+    <string name="pdf_file_fail">"Couldn't load. Try again."</string>
+    <string name="pdf_file_too_big">File is too large to use this feature</string>
+    <string name="pdf_note_display_name">Transcript_%1$s</string>
     <string name="permission_bluetooth">Access Bluetooth connection status</string>
     <string name="permission_bluetooth_dialog_description">Allow this device to connect to nearby devices to be able to switch devices when playing recordings.</string>
     <string name="permission_bluetooth_title">Permissions required</string>
@@ -936,11 +944,13 @@ Tap \"%1$s\", and then select \"%2$s\"."</string>
     <string name="recognition_process_dialog_title">Ongoing tasks</string>
     <string name="recognition_stop_current">Stop ongoing task</string>
     <string name="recognize_complete_toast">Transcription complete</string>
+    <string name="recognize_content">Transcript</string>
     <string name="recognize_data_loading">Just a sec…</string>
     <string name="recognize_tip_part_one">"Didn't finish transcribing. "</string>
     <string name="recognize_tip_part_two">Try again</string>
     <string name="recognizing_not_rename">"Can't rename while recording"</string>
     <string name="record">Record</string>
+    <string name="record_ai_polish_fail">"Couldn't polish. Try again."</string>
     <string name="record_back_pressed_hint">To stop recording, touch Back again</string>
     <string name="record_close_tag_list">Close the list of marks</string>
     <string name="record_download">Download from Xiaomi Cloud</string>
@@ -972,7 +982,9 @@ Tap \"%1$s\", and then select \"%2$s\"."</string>
     <string name="record_scenes_summaries_stereo_music">Record through %d channels, listen to stereo sound in the earphones</string>
     <string name="record_scenes_summaries_stereo_voice">Move the mic closer to the source of the sound for better quality</string>
     <string name="record_scenes_summaries_voice">Move the mic closer to the source of the sound for better quality</string>
+    <string name="record_sensitive_polish_fail">"Can't polish sensitive content"</string>
     <string name="record_stop_recognize">Stop transcription</string>
+    <string name="record_trans_too_large">This recording is too long to transcribe</string>
     <string name="record_while_in_call_tip">"Can't record during a call"</string>
     <string name="recorder_finished">Finished recording</string>
     <string name="recorder_started">Started recording</string>
@@ -1156,6 +1168,7 @@ Currently paused. Analysis will resume when you aren't using your device."</stri
     <string name="timer_format_three_sections" formatted="false">%02d:%02d:%02d</string>
     <string name="timer_format_two_sections" formatted="false">%02d:%02d</string>
     <string name="tip_recognize">Just a sec…</string>
+    <string name="tips_for_asr_in_progress">Transcribing and summarizing using AI %s</string>
     <string name="tips_for_asr_running">Another transcription is already in progress…</string>
     <string name="tips_for_build_database">"Keep your device connected to the charger. It'll analyze this recording faster when the screen is off."</string>
     <string name="toast_enter_silent_mode">Recording. Silent mode is on.</string>
