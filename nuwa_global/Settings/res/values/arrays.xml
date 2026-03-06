@@ -255,6 +255,18 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <array name="aon_scanner_description_multiple_layout_array">
+        <item>@layout/aon_scanner_first_diagram</item>
+        <item>@layout/aon_scanner_second_diagram</item>
+    </array>
+    <string-array name="aon_scanner_description_multiple_summary_array">
+        <item>@string/aon_scanner_first_summary</item>
+        <item>@string/aon_scanner_second_summary</item>
+    </string-array>
+    <string-array name="aon_scanner_description_multiple_title_array">
+        <item>@string/aon_scanner_first_title</item>
+        <item>@string/aon_scanner_second_title</item>
+    </string-array>
     <string-array name="ap_identify">
         <item>Default</item>
         <item>Portable hotspot</item>
@@ -285,6 +297,10 @@
         <item>IP</item>
         <item>IPV6</item>
         <item>IPV4V6</item>
+    </string-array>
+    <string-array name="app_ignore_exported">
+        <item>com.tencent.mm</item>
+        <item>com.eg.android.AlipayGphone</item>
     </string-array>
     <string-array name="app_ops_labels">
         <item>Location</item>
@@ -436,6 +452,20 @@
         <item>3</item>
         <item>4</item>
     </string-array>
+    <string-array name="audio_dump_mode_entries">
+        <item>Disabled</item>
+        <item>Level 7</item>
+        <item>Level 9</item>
+        <item>Level 11</item>
+        <item>Level 15</item>
+    </string-array>
+    <string-array name="audio_dump_mode_values">
+        <item></item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>15</item>
+    </string-array>
     <string-array name="audio_mode_entries">
         <item>@string/miheadset_audio_mode_normal</item>
         <item>@string/miheadset_audio_mode_listen</item>
@@ -547,10 +577,6 @@
         <item>0%</item>
         <item>50%</item>
         <item>100%</item>
-    </string-array>
-    <string-array name="battery_tips_card_colors">
-        <item>color_accent_selector</item>
-        <item>color_battery_anomaly_app_warning_selector</item>
     </string-array>
     <string-array name="battery_tips_card_icons">
         <item>ic_battery_tips_lightbulb</item>
@@ -922,9 +948,6 @@
         <item>Disabled</item>
         <item>Enabled Filtered</item>
         <item>Enabled</item>
-        <item>Enabled Headers Filtered</item>
-        <item>Enabled Media Pkts Filtered</item>
-        <item>Enabled Profiles Filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_filters_entries">
         <item>Leave only ACL headers</item>
@@ -952,9 +975,6 @@
         <item>disabled</item>
         <item>filtered</item>
         <item>full</item>
-        <item>snoopheadersfiltered</item>
-        <item>mediapktsfiltered</item>
-        <item>profilesfiltered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values_enhanced">
         <item>snoopheadersfiltered</item>
@@ -1198,6 +1218,10 @@
         <item>5G_PLUS</item>
         <item>@drawable/ic_5g_plus_mobiledata_default</item>
     </array>
+    <string-array name="carrier_2032_5g_plus">
+        <item>2032</item>
+        <item>@string/data_connection_5g_plus_carrier_2032</item>
+    </string-array>
     <string-array name="cdma_subscription_choices">
         <item>RUIM/SIM</item>
         <item>NV</item>
@@ -1744,6 +1768,9 @@
     <array name="config_order_interaction_control_services" />
     <array name="config_order_screen_reader_services" />
     <array name="config_order_speech_services" />
+    <array name="config_override_carrier_5g_plus">
+        <item>@array/carrier_2032_5g_plus</item>
+    </array>
     <string-array name="config_panel_keep_observe_uri">
         <item>content://com.android.settings.slices/intent/media_output_indicator</item>
     </string-array>
@@ -2609,6 +2636,12 @@
         <item>1</item>
         <item>2007</item>
     </string-array>
+    <string-array name="measurement_system">
+        <item>default</item>
+        <item>metric</item>
+        <item>ussystem</item>
+        <item>uksystem</item>
+    </string-array>
     <string-array name="media_feedback_level_entries">
         <item>Strong</item>
         <item>Medium</item>
@@ -2753,7 +2786,6 @@ Note: Only for Ubuntu 8.04!"</item>
     </string-array>
     <string-array name="multi_floating_package_allow_list">
         <item>com.miui.securitycenter</item>
-        <item>com.miui.weather2</item>
         <item>com.android.calendar</item>
         <item>com.android.contacts</item>
         <item>com.android.mms</item>
@@ -3441,9 +3473,17 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Always enhance colors</item>
         <item>Contrast will remain constant</item>
     </string-array>
+    <string-array name="screen_optimize_summary_new">
+        <item>Enhanced colors for a more vibrant display</item>
+        <item>Restore standard screen colors</item>
+    </string-array>
     <string-array name="screen_optimize_title">
         <item>Vivid (recommended)</item>
         <item>Saturated</item>
+        <item>Standard</item>
+    </string-array>
+    <string-array name="screen_optimize_title_new">
+        <item>Vivid (recommended)</item>
         <item>Standard</item>
     </string-array>
     <integer-array name="screen_resolution">
@@ -3598,6 +3638,24 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@string/color_purple</item>
         <item>@string/color_gray</item>
     </string-array>
+    <string-array name="shade_display_awareness_entries">
+        <item>Device display only (Default)</item>
+        <item>External display</item>
+        <item>Latest status bar touch</item>
+        <item>Focus-based</item>
+    </string-array>
+    <string-array name="shade_display_awareness_summaries">
+        <item>Show shade on device display only</item>
+        <item>Show shade on single external display</item>
+        <item>Show shade on display which last had its status bar interacted with</item>
+        <item>Show shade on last focused display</item>
+    </string-array>
+    <string-array name="shade_display_awareness_values">
+        <item>default_display</item>
+        <item>any_external_display</item>
+        <item>status_bar_latest_touch</item>
+        <item>focused_display</item>
+    </string-array>
     <string-array name="show_non_rect_clip_entries">
         <item>Off</item>
         <item>Draw non-rectangular clip region in blue</item>
@@ -3691,6 +3749,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>3</item>
     </string-array>
     <array name="slice_allowlist_package_names" />
+    <array name="slice_allowlist_package_names_for_dev" />
     <string-array name="smart_device_control_entries">
         <item>Xiaomi Smart Hub</item>
         <item>Smart home</item>
@@ -3859,77 +3918,6 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Crisp</item>
         <item>Solid</item>
     </string-array>
-    <string-array name="tare_alarm_manager_actions">
-        <item>@string/tare_wakeup_exact_idle</item>
-        <item>@string/tare_wakeup_inexact_idle</item>
-        <item>@string/tare_wakeup_exact</item>
-        <item>@string/tare_wakeup_inexact</item>
-        <item>@string/tare_nonwakeup_exact_idle</item>
-        <item>@string/tare_nonwakeup_exact</item>
-        <item>@string/tare_nonwakeup_inexact_idle</item>
-        <item>@string/tare_nonwakeup_inexact</item>
-        <item>@string/tare_alarm_clock</item>
-    </string-array>
-    <string-array name="tare_app_balance_subfactors">
-        <item>@string/tare_max_satiated_balance</item>
-        <item>@string/tare_min_balance_exempted</item>
-        <item>@string/tare_min_balance_headless_app</item>
-        <item>@string/tare_min_balance_other_app</item>
-    </string-array>
-    <string-array name="tare_consumption_limit_subfactors">
-        <item>@string/tare_initial_consumption_limit</item>
-        <item>@string/tare_min_consumption_limit</item>
-        <item>@string/tare_max_consumption_limit</item>
-    </string-array>
-    <string-array name="tare_job_scheduler_actions">
-        <item>@string/tare_job_max_start</item>
-        <item>@string/tare_job_max_running</item>
-        <item>@string/tare_job_high_start</item>
-        <item>@string/tare_job_high_running</item>
-        <item>@string/tare_job_default_start</item>
-        <item>@string/tare_job_default_running</item>
-        <item>@string/tare_job_low_start</item>
-        <item>@string/tare_job_low_running</item>
-        <item>@string/tare_job_min_start</item>
-        <item>@string/tare_job_min_running</item>
-        <item>@string/tare_job_timeout_penalty</item>
-    </string-array>
-    <string-array name="tare_job_scheduler_app_balance_subfactors">
-        <item>@string/tare_max_satiated_balance</item>
-        <item>@string/tare_min_balance_exempted</item>
-        <item>@string/tare_min_balance_headless_app</item>
-        <item>@string/tare_min_balance_other_app</item>
-        <item>@string/tare_min_balance_addition_app_updater</item>
-    </string-array>
-    <string-array name="tare_job_scheduler_rewards_subfactors">
-        <item>@string/tare_top_activity</item>
-        <item>@string/tare_notification_seen</item>
-        <item>@string/tare_notification_interaction</item>
-        <item>@string/tare_widget_interaction</item>
-        <item>@string/tare_other_interaction</item>
-        <item>@string/tare_app_install</item>
-    </string-array>
-    <string-array name="tare_modifiers_subfactors">
-        <item>Charging</item>
-        <item>Doze</item>
-        <item>Power Save Mode</item>
-        <item>Process State</item>
-    </string-array>
-    <string-array name="tare_policies">
-        <item>@string/tare_alarmmanager</item>
-        <item>@string/tare_jobscheduler</item>
-    </string-array>
-    <string-array name="tare_rewards_subfactors">
-        <item>@string/tare_top_activity</item>
-        <item>@string/tare_notification_seen</item>
-        <item>@string/tare_notification_interaction</item>
-        <item>@string/tare_widget_interaction</item>
-        <item>@string/tare_other_interaction</item>
-    </string-array>
-    <string-array name="tare_units">
-        <item>ARC</item>
-        <item>Cake</item>
-    </string-array>
     <string-array name="temperature_units">
         <item>default</item>
         <item>celsius</item>
@@ -3937,10 +3925,11 @@ Note: Only for Ubuntu 8.04!"</item>
     </string-array>
     <string-array name="terms_of_address_supported_languages">
         <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+        <item>de</item>
     </string-array>
-    <string-array name="terms_of_address_unsupported_locales">
-        <item>fr-CA</item>
-    </string-array>
+    <array name="terms_of_address_unsupported_locales" />
     <array name="three_drop">
         <item>@drawable/threedrop01</item>
         <item>@drawable/threedrop01</item>
@@ -4085,10 +4074,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Always enhance colors</item>
         <item>Restore standard color of screen content with color calibration</item>
     </string-array>
+    <string-array name="true_color_screen_optimize_summary_new">
+        <item>Enhanced colors for a more vibrant display</item>
+        <item>Restore standard color of screen content with color calibration</item>
+    </string-array>
     <string-array name="true_color_screen_optimize_title">
         <item>Vivid (recommended)</item>
         <item>Saturated</item>
         <item>Original color</item>
+    </string-array>
+    <string-array name="true_color_screen_optimize_title_new">
+        <item>Vivid (recommended)</item>
+        <item>Original</item>
     </string-array>
     <string-array name="tts_demo_string_langs">
         <item>eng</item>
@@ -4273,6 +4270,18 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Timed out. Retrying…</item>
         <item>Device connected</item>
     </string-array>
+    <string-array name="when_to_start_hubmode_entries">
+        <item>@string/when_to_show_hubmode_never</item>
+        <item>@string/when_to_show_hubmode_charging</item>
+        <item>@string/when_to_show_hubmode_charging_and_upright</item>
+        <item>@string/when_to_show_hubmode_docked</item>
+    </string-array>
+    <string-array name="when_to_start_hubmode_values">
+        <item>never</item>
+        <item>while_charging</item>
+        <item>while_charging_and_upright</item>
+        <item>while_docked</item>
+    </string-array>
     <string-array name="when_to_start_screensaver_entries">
         <item>@string/screensaver_settings_summary_sleep</item>
         <item>@string/screensaver_settings_summary_dock</item>
@@ -4308,11 +4317,6 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Percentage (in the icon)</item>
         <item>Percentage (next to the icon in the Notification shade)</item>
     </string-array>
-    <array name="width_hole_notch_battery_indicator_style_icons">
-        <item>@drawable/battery_indicator_graphic</item>
-        <item>@drawable/battery_indicator_percent_in</item>
-        <item>@drawable/width_hole_battery_indicator_percent_out</item>
-    </array>
     <string-array name="wifi_ap_band">
         <item>1</item>
         <item>3</item>
@@ -4371,7 +4375,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Mobile</item>
     </string-array>
     <array name="wifi_calling_mode_choices_with_ims_preferred">
-        <item>Ims Preferred</item>
+        <item>@android:string/wfc_mode_ims_preferred_summary</item>
         <item>@android:string/wfc_mode_wifi_preferred_summary</item>
         <item>@android:string/wfc_mode_cellular_preferred_summary</item>
         <item>@android:string/wfc_mode_wifi_only_summary</item>
@@ -4381,7 +4385,7 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>@android:string/wfc_mode_cellular_preferred_summary</item>
     </array>
     <array name="wifi_calling_mode_choices_without_wifi_only_with_ims_preferred">
-        <item>Ims Preferred</item>
+        <item>@android:string/wfc_mode_ims_preferred_summary</item>
         <item>@android:string/wfc_mode_wifi_preferred_summary</item>
         <item>@android:string/wfc_mode_cellular_preferred_summary</item>
     </array>
@@ -4562,7 +4566,6 @@ Note: Only for Ubuntu 8.04!"</item>
     <string-array name="wifi_signal">
         <item>Poor</item>
         <item>Poor</item>
-        <item>Fair</item>
         <item>Good</item>
         <item>Excellent</item>
     </string-array>
@@ -4671,25 +4674,87 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>zen_mode_from_none</item>
     </string-array>
     <array name="zen_mode_icon_options">
-        <item>@android:drawable/ic_zen_mode_type_bedtime</item>
-        <item>@android:drawable/ic_zen_mode_type_driving</item>
+        <item>@android:drawable/ic_zen_mode_icon_work</item>
+        <item>@android:drawable/ic_zen_mode_icon_classical_building</item>
+        <item>@android:drawable/ic_zen_mode_icon_apartment_building</item>
+        <item>@android:drawable/ic_zen_mode_icon_speech_bubble</item>
+        <item>@android:drawable/ic_zen_mode_icon_group_of_people</item>
+        <item>@android:drawable/ic_zen_mode_icon_lightbulb</item>
+        <item>@android:drawable/ic_zen_mode_type_schedule_calendar</item>
+        <item>@android:drawable/ic_zen_mode_type_special_dnd</item>
+        <item>@android:drawable/ic_zen_mode_icon_running</item>
+        <item>@android:drawable/ic_zen_mode_icon_golf</item>
+        <item>@android:drawable/ic_zen_mode_icon_gym</item>
+        <item>@android:drawable/ic_zen_mode_icon_swimming</item>
+        <item>@android:drawable/ic_zen_mode_icon_hiking</item>
+        <item>@android:drawable/ic_zen_mode_icon_ball_sports</item>
+        <item>@android:drawable/ic_zen_mode_icon_martial_arts</item>
+        <item>@android:drawable/ic_zen_mode_icon_gaming</item>
+        <item>@android:drawable/ic_zen_mode_icon_palette</item>
+        <item>@android:drawable/ic_zen_mode_icon_snowflake</item>
+        <item>@android:drawable/ic_zen_mode_icon_beach</item>
+        <item>@android:drawable/ic_zen_mode_icon_workshop</item>
+        <item>@android:drawable/ic_zen_mode_icon_piano</item>
+        <item>@android:drawable/ic_zen_mode_type_theater</item>
+        <item>@android:drawable/ic_zen_mode_icon_book</item>
+        <item>@android:drawable/ic_zen_mode_icon_lotus_flower</item>
         <item>@android:drawable/ic_zen_mode_type_immersive</item>
+        <item>@android:drawable/ic_zen_mode_icon_headphones</item>
+        <item>@android:drawable/ic_zen_mode_icon_tv</item>
+        <item>@android:drawable/ic_zen_mode_icon_train</item>
+        <item>@android:drawable/ic_zen_mode_type_driving</item>
+        <item>@android:drawable/ic_zen_mode_icon_fork_and_knife</item>
+        <item>@android:drawable/ic_zen_mode_icon_shopping_cart</item>
+        <item>@android:drawable/ic_zen_mode_icon_child</item>
+        <item>@android:drawable/ic_zen_mode_icon_animal_paw</item>
+        <item>@android:drawable/ic_zen_mode_icon_star_badge</item>
         <item>@android:drawable/ic_zen_mode_type_managed</item>
         <item>@android:drawable/ic_zen_mode_type_other</item>
-        <item>@android:drawable/ic_zen_mode_type_schedule_calendar</item>
+        <item>@android:drawable/ic_zen_mode_icon_heart</item>
+        <item>@android:drawable/ic_zen_mode_icon_house</item>
+        <item>@android:drawable/ic_zen_mode_type_bedtime</item>
         <item>@android:drawable/ic_zen_mode_type_schedule_time</item>
-        <item>@android:drawable/ic_zen_mode_type_theater</item>
-        <item>@android:drawable/ic_zen_mode_type_unknown</item>
     </array>
     <string-array name="zen_mode_icon_options_descriptions">
-        <item>Bedtime</item>
-        <item>Driving</item>
-        <item>Immersive</item>
-        <item>Managed</item>
-        <item>Star</item>
+        <item>Briefcase</item>
+        <item>Classical building</item>
+        <item>Apartment building</item>
+        <item>Speech bubble</item>
+        <item>Group of people</item>
+        <item>Lightbulb</item>
         <item>Calendar</item>
-        <item>Time</item>
-        <item>Theater</item>
-        <item>Flower</item>
+        <item>Do Not Disturb</item>
+        <item>Person running</item>
+        <item>Golf</item>
+        <item>Gym dumbbell</item>
+        <item>Swimming</item>
+        <item>Person hiking</item>
+        <item>Person throwing ball</item>
+        <item>Person kicking</item>
+        <item>Game controller</item>
+        <item>Artist color palette</item>
+        <item>Snowflake</item>
+        <item>Beach umbrella</item>
+        <item>Workshop tools</item>
+        <item>Piano</item>
+        <item>Film reel</item>
+        <item>Book</item>
+        <item>Lotus flower</item>
+        <item>"Person's mind"</item>
+        <item>Headphones</item>
+        <item>TV</item>
+        <item>Train</item>
+        <item>Car</item>
+        <item>Fork and knife</item>
+        <item>Shopping cart</item>
+        <item>Child</item>
+        <item>Animal paw</item>
+        <item>Star badge</item>
+        <item>Two people</item>
+        <item>Star</item>
+        <item>Heart</item>
+        <item>House</item>
+        <item>Half-moon</item>
+        <item>Clock</item>
     </string-array>
 </resources>
