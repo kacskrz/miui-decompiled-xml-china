@@ -164,8 +164,6 @@
         <item>LDAC</item>
         <item>LC3</item>
         <item>Opus</item>
-        <item>Qualcomm® aptX™ Adaptive audio</item>
-        <item>Qualcomm® aptX™ TWS+ audio</item>
     </string-array>
     <string-array name="bluetooth_a2dp_codec_titles">
         <item>Use System Selection (Default)</item>
@@ -176,8 +174,6 @@
         <item>LDAC</item>
         <item>LC3</item>
         <item>Opus</item>
-        <item>Qualcomm® aptX™ Adaptive audio</item>
-        <item>Qualcomm® aptX™ TWS+ audio</item>
     </string-array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
@@ -186,16 +182,16 @@
         <item>, active (phone)</item>
     </string-array>
     <string-array name="bluetooth_avrcp_version_values">
-        <item>avrcp16</item>
+        <item>avrcp15</item>
         <item>avrcp13</item>
         <item>avrcp14</item>
-        <item>avrcp15</item>
+        <item>avrcp16</item>
     </string-array>
     <string-array name="bluetooth_avrcp_versions">
-        <item>AVRCP 1.6 (Default)</item>
+        <item>AVRCP 1.5 (Default)</item>
         <item>AVRCP 1.3</item>
         <item>AVRCP 1.4</item>
-        <item>AVRCP 1.5</item>
+        <item>AVRCP 1.6</item>
     </string-array>
     <string-array name="bluetooth_map_version_values">
         <item>map12</item>
@@ -211,9 +207,6 @@
         <item>Disabled</item>
         <item>Enabled Filtered</item>
         <item>Enabled</item>
-        <item>Enabled Headers Filtered</item>
-        <item>Enabled Media Pkts Filtered</item>
-        <item>Enabled Profiles Filtered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_filters_entries">
         <item>Leave only ACL headers</item>
@@ -241,14 +234,6 @@
         <item>disabled</item>
         <item>filtered</item>
         <item>full</item>
-        <item>snoopheadersfiltered</item>
-        <item>mediapktsfiltered</item>
-        <item>profilesfiltered</item>
-    </string-array>
-    <string-array name="bt_hci_snoop_log_values_enhanced">
-        <item>snoopheadersfiltered</item>
-        <item>mediapktsfiltered</item>
-        <item>profilesfiltered</item>
     </string-array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
@@ -282,6 +267,10 @@
         <item>5G_PLUS</item>
         <item>@drawable/ic_5g_plus_mobiledata_default</item>
     </array>
+    <string-array name="carrier_2032_5g_plus">
+        <item>2032</item>
+        <item>@string/data_connection_5g_plus_carrier_2032</item>
+    </string-array>
     <string-array name="color_mode_descriptions">
         <item>Enhanced colors</item>
         <item>Natural colors as seen by the eye</item>
@@ -297,6 +286,9 @@
         <item>Natural</item>
         <item>Standard</item>
     </string-array>
+    <array name="config_override_carrier_5g_plus">
+        <item>@array/carrier_2032_5g_plus</item>
+    </array>
     <string-array name="debug_hw_overdraw_entries">
         <item>Off</item>
         <item>Show overdraw areas</item>
@@ -355,9 +347,6 @@
         <item>drm-only</item>
         <item>always</item>
     </string-array>
-    <array name="kg_wrong_puk_code_message_list" />
-    <array name="locale_carrier_names" />
-    <array name="origin_carrier_names" />
     <string-array name="overlay_display_devices_entries">
         <item>None</item>
         <item>480p</item>
@@ -433,6 +422,24 @@
         <item>all</item>
         <item>default,security,kernel</item>
         <item>kernel</item>
+    </string-array>
+    <string-array name="shade_display_awareness_entries">
+        <item>Device display only (Default)</item>
+        <item>External display</item>
+        <item>Latest status bar touch</item>
+        <item>Focus-based</item>
+    </string-array>
+    <string-array name="shade_display_awareness_summaries">
+        <item>Show shade on device display only</item>
+        <item>Show shade on single external display</item>
+        <item>Show shade on display which last had its status bar interacted with</item>
+        <item>Show shade on last focused display</item>
+    </string-array>
+    <string-array name="shade_display_awareness_values">
+        <item>default_display</item>
+        <item>any_external_display</item>
+        <item>status_bar_latest_touch</item>
+        <item>focused_display</item>
     </string-array>
     <string-array name="show_non_rect_clip_entries">
         <item>Off</item>
