@@ -249,6 +249,85 @@ The change won't be applied if the capacity range is exceeded."</string>
     <string name="title_activity_kernel_debug_settings">Kernel debugging</string>
     <string name="toast_closeLog">To stop camera logging, reboot your device.</string>
     <string name="toast_resumeLog">To resume camera logging, reboot your device.</string>
+    <string name="trace_config">"buffers {
+ size_kb: 126976
+ fill_policy: RING_BUFFER
+ }
+ buffers {
+ size_kb: 2048
+ fill_policy: RING_BUFFER
+ }
+ 
+ data_sources: {
+ config {
+ name: \"linux.process_stats\"
+ target_buffer: 1
+ process_stats_config {
+ scan_all_processes_on_start: true
+ }
+ }
+ }
+ 
+ data_sources: {
+ config {
+ name: \"android.surfaceflinger.frametimeline\"
+ }
+ }
+ 
+ data_sources: {
+ config {
+ name: \"linux.ftrace\"
+ ftrace_config {
+ symbolize_ksyms: true
+ atrace_categories: \"camera\"
+ atrace_categories: \"video\"
+ atrace_categories: \"am\"
+ atrace_categories: \"wm\"
+ atrace_categories: \"ss\"
+ atrace_categories: \"pm\"
+ atrace_categories: \"dalvik\"
+ atrace_categories: \"res\"
+ atrace_categories: \"memory\"
+ atrace_categories: \"gfx\"
+ atrace_categories: \"input\"
+ atrace_categories: \"view\"
+ atrace_categories: \"audio\"
+ atrace_categories: \"hal\"
+ atrace_categories: \"power\"
+ atrace_categories: \"sched\"
+ atrace_categories: \"freq\"
+ atrace_categories: \"idle\"
+ atrace_categories: \"sync\"
+ atrace_categories: \"disk\"
+ atrace_categories: \"file\"
+ atrace_categories: \"workq\"
+ atrace_categories: \"binder_driver\"
+ atrace_categories: \"binder_lock\"
+ atrace_categories: \"thermal\"
+ atrace_categories: \"bionic\"
+ atrace_categories: \"memreclaim\"
+ atrace_apps: \"*\"
+ compact_sched {
+ enabled: true
+ }
+ buffer_size_kb: 65536
+ drain_period_ms: 1000
+ }
+ }
+ }
+ 
+ enable_extra_guardrails: false
+ statsd_metadata {
+ }
+ 
+ write_into_file: true
+ file_write_period_ms: 604800000
+ flush_period_ms: 30000
+ notify_traceur: true
+ incremental_state_config {
+ clear_period_ms: 15000
+ }
+"</string>
     <string name="trigger_kernel_panic_warning">This action will trigger a kernel panic. Continue anyway?</string>
     <string name="trigger_panic_now_title">Trigger kernel panic</string>
     <string name="trigger_panic_title">Kernel panic options</string>
