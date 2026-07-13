@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
+    <string name="MSG_ABUSE_DIALOG_CONTEXT_HEADING">The following data will be included in your report</string>
+    <string name="MSG_ABUSE_DIALOG_TITLE">What are you reporting?</string>
     <string name="MSG_ABUSE_WARNING_LABEL">A security risk was identified and blocked.</string>
+    <string name="MSG_ACCEPT_LABEL">Accept</string>
+    <string name="MSG_ACTION_CANCEL">Cancel</string>
+    <string name="MSG_ACTION_COMPLETED_TEXT">Action completed</string>
+    <string name="MSG_ACTION_DONE">Done</string>
     <string name="MSG_ACTION_MENU_ADD_MEMBERS_LABEL">Add members</string>
     <string name="MSG_ACTION_MENU_ADD_SHORTCUT_LABEL">Add shortcut</string>
     <string name="MSG_ACTION_MENU_ADD_TO_HOME_SCREEN_LABEL">Add to home screen</string>
@@ -9,9 +15,11 @@
     <string name="MSG_ACTION_MENU_ADD_TO_WORKSPACE_LABEL">Add to workspace</string>
     <string name="MSG_ACTION_MENU_APPROVALS_LABEL">Approvals</string>
     <string name="MSG_ACTION_MENU_ASK_GEMINI_DISABLED_REASON_UNSUPPORTED_ITEM">{NUM_ITEMS, plural, offset:1 =1 {Unsupported item selected} other {Unsupported items selected}}</string>
+    <string name="MSG_ACTION_MENU_ASK_GEMINI_LABEL">Ask Gemini</string>
     <string name="MSG_ACTION_MENU_BLOCK_EMAIL_ADDRESS_LABEL">Block %1$s</string>
     <string name="MSG_ACTION_MENU_CATCH_ME_UP_LABEL">Catch me up</string>
     <string name="MSG_ACTION_MENU_CHANGE_COLOR_LABEL">Change color</string>
+    <string name="MSG_ACTION_MENU_CHANGE_THEME_LABEL">Change theme</string>
     <string name="MSG_ACTION_MENU_CLOSE_BUTTON_DESCRIPTION">Close</string>
     <string name="MSG_ACTION_MENU_COPY_LINKS_LABEL">{NUM_ITEMS, plural, offset:1 =1 {Copy link} other {Copy links}}</string>
     <string name="MSG_ACTION_MENU_COPY_LINK_DISABLED_REASON_UNSUPPORTED_ITEM">{NUM_ITEMS, plural, offset:1 =1 {Unsupported item selected} other {Unsupported items selected}}</string>
@@ -24,6 +32,7 @@
     <string name="MSG_ACTION_MENU_DISABLED_REASON_NO_PERMISSION_TO_DELETE">"You don't have permission to delete"</string>
     <string name="MSG_ACTION_MENU_DISABLED_REASON_NO_PERMISSION_TO_LOCATE">"You don't have permission to locate item"</string>
     <string name="MSG_ACTION_MENU_DISABLED_REASON_NO_PERMISSION_TO_RENAME">"You don't have permission to rename"</string>
+    <string name="MSG_ACTION_MENU_DISABLED_REASON_OFFLINE">You are offline</string>
     <string name="MSG_ACTION_MENU_DOWNLOAD_AND_DECRYPT_DISABLED_REASON_OFFLINE">"Can't download and decrypt while offline"</string>
     <string name="MSG_ACTION_MENU_DOWNLOAD_AND_DECRYPT_DISABLED_REASON_WAITING_FOR_WIFI">"Can't download and decrypt without wifi"</string>
     <string name="MSG_ACTION_MENU_DOWNLOAD_AND_DECRYPT_LABEL">Download and decrypt</string>
@@ -34,8 +43,6 @@
     <string name="MSG_ACTION_MENU_ERROR_LABEL">"Couldn't load actions"</string>
     <string name="MSG_ACTION_MENU_HIDE_SHARED_DRIVE_LABEL">{NUM_ITEMS, plural, offset:1 =1 {Hide shared drive} other {Hide shared drives}}</string>
     <string name="MSG_ACTION_MENU_KEYBOARD_SHORTCUT_WITH_TWO_KEYS">%1$s then %2$s</string>
-    <string name="MSG_ACTION_MENU_LOCK_DISABLED_REASON">"You don't have permission to lock"</string>
-    <string name="MSG_ACTION_MENU_LOCK_LABEL">Lock</string>
     <string name="MSG_ACTION_MENU_MAKE_AVAILABLE_OFFLINE_LABEL">Make available offline</string>
     <string name="MSG_ACTION_MENU_MAKE_A_COPY_DISABLED_REASON_UNSUPPORTED_FILES">{NUM_ITEMS, plural, offset:1 =1 {Unsupported file selected} other {Unsupported files selected}}</string>
     <string name="MSG_ACTION_MENU_MAKE_A_COPY_LABEL">Make a copy</string>
@@ -97,13 +104,42 @@
     <string name="MSG_ACTION_MENU_SUMMARIZE_LABEL_SUMMARIZE_ITEMS">Summarize these items</string>
     <string name="MSG_ACTION_MENU_SUMMARIZE_LABEL_SUMMARIZE_SHARED_DRIVES">{NUM_ITEMS, plural, offset:1 =1 {Summarize this shared drive} other {Summarize these shared drives}}</string>
     <string name="MSG_ACTION_MENU_TITLE_MULTIPLE_ITEMS">%1$s selected</string>
+    <string name="MSG_ACTION_MENU_TURN_OFF_AUTOMATIC_SUMMARIES_LABEL">Turn off automatic summaries</string>
+    <string name="MSG_ACTION_MENU_TURN_OFF_AUTOMATIC_SUMMARIES_SNACKBAR_LABEL">Automatic summaries turned off for all PDFs</string>
+    <string name="MSG_ACTION_MENU_TURN_ON_AUTOMATIC_SUMMARIES_LABEL">Turn on automatic summaries</string>
+    <string name="MSG_ACTION_MENU_TURN_ON_AUTOMATIC_SUMMARIES_SNACKBAR_LABEL">Automatic summaries turned on for all PDFs</string>
     <string name="MSG_ACTION_MENU_UNHIDE_SHARED_DRIVE_LABEL">{NUM_ITEMS, plural, offset:1 =1 {Unhide shared drive} other {Unhide shared drives}}</string>
     <string name="MSG_ACTION_MENU_UNSTAR_LABEL">Remove from starred</string>
     <string name="MSG_ACTION_MENU_VIEW_INFORMATION_LABEL">View information</string>
     <string name="MSG_ACTION_MENU_VIEW_MEMBERS_LABEL">View members</string>
     <string name="MSG_ACTION_MENU_VIEW_TRASH_LABEL">View trash</string>
+    <string name="MSG_ACTION_REDONE_FAILED">Redo action failed</string>
+    <string name="MSG_ACTION_REDONE_TEXT">Action redone</string>
+    <string name="MSG_ACTION_UNDONE_FAILED">Undo action failed</string>
+    <string name="MSG_ACTION_UNDONE_TEXT">Action undone</string>
+    <string name="MSG_ADD_FROM_DRIVE">Add from Drive</string>
+    <string name="MSG_ADD_SOURCES_FOR_DEEPER_INSIGHTS_MESSAGE">Add sources to get deeper insights from Gemini</string>
+    <string name="MSG_ADD_SOURCES_LABEL">Add sources</string>
+    <string name="MSG_ADD_SOURCES_LABEL_WITH_CURRENT_COUNT">{COUNT, plural, =1 {1 source} other {# sources}}</string>
+    <string name="MSG_ADD_TO_PICKER_DISABLED_REASON">Select at least one item</string>
+    <string name="MSG_ADJUSTING_FOR_CASUAL_AUDIENCE">Adjusting for a casual audience...</string>
+    <string name="MSG_ADJUSTING_FOR_FORMAL_AUDIENCE">Making the tone more professional...</string>
     <string name="MSG_AI_FEATURE_FOR_WORKSPACE">%1$s in Workspace</string>
+    <string name="MSG_AI_MODE_ENTRY_MODULE_TEXT">Summarize, analyze, and get up to speed with files in this folder.</string>
     <string name="MSG_ALL_SOURCES_IRM_RESTRICTED_RESPONSE">Those files have specific download restrictions that limit what I can do. Can I help with anything else?</string>
+    <string name="MSG_ALMOST_READY_NLWF">Almost ready...</string>
+    <string name="MSG_ANALYSIS_STEPS">Analysis steps</string>
+    <string name="MSG_ANALYZING_CONTEXT">Analyzing context...</string>
+    <string name="MSG_ANALYZING_DATA">Analyzing data</string>
+    <string name="MSG_ANALYZING_NLWFS_PROMPT">Analyzing prompt...</string>
+    <string name="MSG_ANALYZING_VISUAL_STYLE">Analyzing visual style...</string>
+    <string name="MSG_ANALYZING_WRITING_STYLE">Analyzing the writing style...</string>
+    <string name="MSG_APPLYING_CHANGE">Applying change</string>
+    <string name="MSG_APPLYING_STYLE_TO_SELECTION">Applying style to your selection...</string>
+    <string name="MSG_ASK_GEMINI">Ask Gemini</string>
+    <string name="MSG_ASK_GEMINI_BUTTON_LABEL">Ask Gemini</string>
+    <string name="MSG_ASK_QUESTIONS_ABOUT_FILES_MESSAGE">Ask questions about your files</string>
+    <string name="MSG_ASSESSING_DOCS_STATUS">Working on a response</string>
     <string name="MSG_ASSISTANT_FEATURE_TEXT">Answers and reminders in Google Assistant</string>
     <string name="MSG_BACK_LABEL">Back</string>
     <string name="MSG_BADGE_ABUSE">Flagged for abuse</string>
@@ -118,33 +154,78 @@
     <string name="MSG_BADGE_OFFLINE_SYNCING">Downloading</string>
     <string name="MSG_BADGE_SHARED">Shared</string>
     <string name="MSG_BADGE_STARRED">Starred</string>
-    <string name="MSG_BAD_RESPONSE_LABEL">Bad suggestion</string>
+    <string name="MSG_BAD_RESPONSE_LABEL">Bad response</string>
+    <string name="MSG_BETA_LABEL">Beta</string>
     <string name="MSG_CAA_RESTRICTED_RESPONSE">"Your administrator's settings are restricting %1$s from being used right now."</string>
     <string name="MSG_CALENDAR_CARD_CONTENT_DESCRIPTION">Results from Google Calendar</string>
     <string name="MSG_CALENDAR_EVENT_CREATION_ERROR_LINK_TEXT">Create an event manually.</string>
     <string name="MSG_CALENDAR_EVENT_CREATION_ERROR_RESPONSE">"I couldn't add this event to your calendar."</string>
     <string name="MSG_CALENDAR_PRODUCT_NAME_LABEL">Calendar</string>
+    <string name="MSG_CALENDAR_SEARCH">Calendar search</string>
     <string name="MSG_CANCELED_REQUEST_LABEL">Canceled request</string>
+    <string name="MSG_CANCEL_BUTTON_LABEL">Cancel</string>
     <string name="MSG_CANCEL_DELETE_SESSION_BUTTON_LABEL">Cancel</string>
     <string name="MSG_CANCEL_LABEL">Cancel</string>
+    <string name="MSG_CANCEL_REPORT_BUTTON_LABEL">Cancel</string>
     <string name="MSG_CANT_HELP_WITH_THAT_RESPONSE">"I can't help with that. Do you need help with anything else?"</string>
+    <string name="MSG_CATCH_ME_UP_SELECTING_TOPICS">Gathering relevant topics...</string>
+    <string name="MSG_CATCH_ME_UP_SUMMARIZING_TOPICS">Summarizing your messages...</string>
+    <string name="MSG_CHAIN_OF_THOUGHT_COLLAPSED">Collapsed</string>
+    <string name="MSG_CHAIN_OF_THOUGHT_EXPANDED">Expanded</string>
+    <string name="MSG_CHAT_SEARCH">Chat search</string>
+    <string name="MSG_CHECKING_DOCUMENT_STATUS">Checking document(s)</string>
+    <string name="MSG_CHECKING_EMAIL_AND_DOCUMENT_STATUS">Checking email(s) and document(s)</string>
+    <string name="MSG_CHECKING_EMAIL_STATUS">Checking email(s)</string>
+    <string name="MSG_CITATION_ACCESSIBILITY_LABEL">Citation %1$s</string>
+    <string name="MSG_CITATION_LINK_COPIED_TOAST">Link copied to clipboard</string>
+    <string name="MSG_CLEAR">Clear</string>
+    <string name="MSG_CLEAR_SELECTED_SOURCES">Clear selected sources</string>
     <string name="MSG_CLIPBOARD_COPY_NOTIFICATION">Copied</string>
+    <string name="MSG_CLOSE_MENU_LABEL">Close</string>
     <string name="MSG_CLOSE_SIDEKICK_LABEL">Close</string>
+    <string name="MSG_CLOSE_SNACKBAR_TEXT">Dismiss</string>
+    <string name="MSG_CODE_OUTPUT_LABEL">Code output</string>
+    <string name="MSG_COLLAPSE_BUTTON_DESCRIPTION">%1$s. Collapse</string>
+    <string name="MSG_COLLAPSE_HEADER_A11Y_LABEL">Collapse %1$s</string>
+    <string name="MSG_COMPILING_CODE">Compiling code...</string>
+    <string name="MSG_CONCURRENT_STORAGE_REQUEST_TEXT">The conversation is out of date. Reload the conversation to continue.</string>
+    <string name="MSG_CONDENSING_WORDING">Condensing to the essential points...</string>
     <string name="MSG_CONFIRM_CALENDAR_EVENT_LABEL">Yes</string>
     <string name="MSG_CONFIRM_LABEL">Confirm</string>
     <string name="MSG_CONFLICTING_EVENT">Conflict: %1$s</string>
+    <string name="MSG_CONNECTING_THE_DOTS">Connecting the dots...</string>
     <string name="MSG_CONSUMER_DISCLAIMER">This feedback (including, any generated output and freeform text you enter) is provided under the %1$s and %2$s. Your feedback will not be used for model training. We use this data for the purposes listed in the \"Why Google collects data\" section of the %1$s. Please do not contribute data that is personal, sensitive, or confidential.</string>
     <string name="MSG_CONSUMER_DISCLAIMER_PART3">Please do not contribute data that is personal, sensitive, or confidential.</string>
+    <string name="MSG_CONTEXT_CHECKBOX">Context (content referenced to create outputs)</string>
+    <string name="MSG_CONVERSATION_HISTORY_ACKNOWLEDGEMENT_MESSAGE">From now on, you can view and resume your saved conversations</string>
+    <string name="MSG_CONVERSATION_HISTORY_ACKNOWLEDGEMENT_TITLE">Introducing Conversation History</string>
+    <string name="MSG_CONVERSATION_HISTORY_EMPTY_TEXT_BUTTON">Start a new conversation</string>
+    <string name="MSG_CONVERSATION_HISTORY_EMPTY_TITLE">Your conversations will appear here</string>
+    <string name="MSG_CONVERSATION_HISTORY_FAILED_TITLE">"Couldn't load history"</string>
+    <string name="MSG_CONVERSATION_HISTORY_LABEL">Conversation history</string>
+    <string name="MSG_CONVERSATION_LOAD_FAILED_MESSAGE">"Couldn't load conversation"</string>
+    <string name="MSG_CONVERTING_SPREADSHEET_TO_CSV_STATUS">Converting your spreadsheet data to CSV...</string>
+    <string name="MSG_COPY_BUTTON_CONTENT_DESCRIPTION">Copy</string>
     <string name="MSG_COPY_LABEL">Copy</string>
+    <string name="MSG_CPP_LABEL">C++</string>
     <string name="MSG_CREATED_DOCUMENT_RESPONSE">I have created your document.</string>
-    <string name="MSG_CROSS_PRODUCT_SHARING_DISABLED_ERROR">"To use this feature, turn on %1$s in this app's settings. If you just turned them on, try again in about a minute."</string>
-    <string name="MSG_DELETE_CONVERSATION_LABEL">Clear history</string>
+    <string name="MSG_CREATE_FLOW_ACTION">Creating flow...</string>
+    <string name="MSG_CREATING_IDEAL_TONE">Creating the ideal tone...</string>
+    <string name="MSG_CREATING_NLWF">Creating flow...</string>
+    <string name="MSG_CROSS_PRODUCT_SHARING_DISABLED_ERROR">To use this feature, turn on %1$s. If you just turned them on, try again in about a minute.</string>
+    <string name="MSG_CSA_ASSEMBLING_HEADLINE">Assessing relevance...</string>
+    <string name="MSG_CSA_PLANNING_HEADLINE">Collecting info...</string>
+    <string name="MSG_CSA_VERBALIZING_HEADLINE">Thinking...</string>
     <string name="MSG_DELETE_LABEL">Clear</string>
     <string name="MSG_DELETE_SESSION_BODY">"%1$s history will be cleared and you won't be able to get it back."</string>
     <string name="MSG_DELETE_SESSION_CONFIRMATION_NOTIFICATION">%1$s history cleared</string>
     <string name="MSG_DELETE_SESSION_TITLE">Clear %1$s history?</string>
+    <string name="MSG_DISCLAIMER">"By clicking Report, you agree to share your report with Google's Trust and Safety team, per %1$s. Your report will include your prompt, context, and output."</string>
+    <string name="MSG_DISCLAIMER_POLICY_LINK">"Google's abuse program policies"</string>
     <string name="MSG_DISMISS_SNACKBAR_BUTTON_LABEL">Dismiss</string>
     <string name="MSG_DOCLIST_A11Y_LOADING">Loading...</string>
+    <string name="MSG_DOCLIST_AGENT_FOR_USER">%1$s (Agent for %2$s)</string>
+    <string name="MSG_DOCLIST_AGENT_FOR_YOU">%1$s (Agent for you)</string>
     <string name="MSG_DOCLIST_BANNER_COMPUTERS_MESSAGE">Changes to your files will automatically sync between Google Drive and your computer</string>
     <string name="MSG_DOCLIST_BANNER_UPLOADS_BULK_UPLOADS_FAILED_MESSAGE_INFO">Try again to upload your files to Drive.</string>
     <string name="MSG_DOCLIST_BANNER_UPLOADS_CANCEL_ALL_FAILED_UPLOADS_BUTTON">Cancel all</string>
@@ -215,6 +296,8 @@
     <string name="MSG_DOCLIST_FILTER_CHIP_OWNED_BY_USER_LABEL">Owned by me</string>
     <string name="MSG_DOCLIST_FILTER_CHIP_OWNERS_SELECTED_LABEL">{NUM_ITEMS, plural, offset:1 =0 {People} =1 {{NAME}} other {{NAME} + #}}</string>
     <string name="MSG_DOCLIST_FOLDER_WITH_COLOR">%1$s with color %2$s</string>
+    <string name="MSG_DOCLIST_HELP_ME_ORGANIZE_DISMISS_ARIA_LABEL">Remove %1$s</string>
+    <string name="MSG_DOCLIST_HELP_ME_ORGANIZE_DISMISS_TOOLTIP">Remove</string>
     <string name="MSG_DOCLIST_INFO_UNAVAILABLE">Unavailable</string>
     <string name="MSG_DOCLIST_LABEL_ACCESSIBILITY_LABEL">{ADDITIONAL_LABEL_COUNT, plural, =0 {Label applied, {PRIMARY_LABEL_NAME}} =1 {Labels applied, {PRIMARY_LABEL_NAME}, 1 additional label} other {Labels applied, {PRIMARY_LABEL_NAME}, # additional labels}}</string>
     <string name="MSG_DOCLIST_LABEL_ADDITIONAL_LABEL_COUNT">+%1$s</string>
@@ -246,14 +329,27 @@
     <string name="MSG_DOCLIST_SUGGESTED_HEADING_FILES">Files</string>
     <string name="MSG_DOCLIST_TITLE_SHARED_DRIVE_ORGANIZATION_LABEL">Files owned by %1$s</string>
     <string name="MSG_DOCLIST_TITLE_WITH_COLON">%1$s:</string>
+    <string name="MSG_DOCUMENT_LINKS">Sources in this document</string>
     <string name="MSG_DONE_LABEL">Done</string>
     <string name="MSG_DOWNLOAD_GENERATED_CONTENT_LABEL">Download</string>
+    <string name="MSG_DRAFTING_CHANGES">Drafting changes...</string>
+    <string name="MSG_DRIVE_SEARCH">Drive search</string>
     <string name="MSG_EMAIL_CATEGORIZATION_FEATURE_TEXT">Automatic email filtering/categorization (Primary/Social/Promotions)</string>
     <string name="MSG_EMAIL_SMART_COMPOSE_FEATURE_TEXT">Smart Compose (suggested text) in email</string>
     <string name="MSG_EMAIL_SMART_REPLY_FEATURE_TEXT">Smart Reply (suggested quick replies) in email</string>
     <string name="MSG_EMAIL_SUMMARY_CARDS_FEATURE_TEXT">Summary cards above emails (travel, package tracking, and more)</string>
+    <string name="MSG_EMPTY_SOURCES_PLACEHOLDER">Add sources for deeper insights</string>
     <string name="MSG_ENTER_PROMPT_LABEL">Enter a prompt here</string>
+    <string name="MSG_EXECUTING_PLAN">Implementing plan</string>
+    <string name="MSG_EXPANDING_ON_IDEAS">Expanding on your ideas...</string>
+    <string name="MSG_EXPAND_BUTTON_DESCRIPTION">%1$s. Expand</string>
+    <string name="MSG_EXPAND_HEADER_A11Y_LABEL">Expand %1$s</string>
+    <string name="MSG_EXPLORE_WITH_GEMINI">Explore with Gemini</string>
+    <string name="MSG_EXPLORING_ALTERNATIVE_WORDING">Exploring alternative wording...</string>
+    <string name="MSG_EXTRACTING_RELEVANT_IMAGES">Extracting relevant images...</string>
     <string name="MSG_FACES_FILTERED_RESPONSE">"I'm showing limited results for images of people at this time. Can I help with anything else?"</string>
+    <string name="MSG_FALLBACK_BUTTON_LABEL">Explore folders with Gemini</string>
+    <string name="MSG_FALLBACK_MESSAGE">Ask questions and quickly get up to speed.</string>
     <string name="MSG_FALLBACK_RESPONSE">Something went wrong. Try again.</string>
     <string name="MSG_FEATURES_NOT_SUPPORTED_TEXT">Some Gemini features only work with the newest version of Google Drive. Upgrade your app to start using them.</string>
     <string name="MSG_FILES_AND_FOLDERS_MENU_HEADER">Files and folders</string>
@@ -299,17 +395,37 @@
     <string name="MSG_FILTER_TYPE_LABEL_SPREADSHEETS">Spreadsheets</string>
     <string name="MSG_FILTER_TYPE_LABEL_VIDEOS">Videos</string>
     <string name="MSG_FILTER_TYPE_LABEL_VIDS">Vids</string>
+    <string name="MSG_FINALIZING_DRAFT">Finalizing draft...</string>
+    <string name="MSG_FINDING_DOCUMENT_STATUS">Finding document(s)</string>
+    <string name="MSG_FINDING_EMAIL_AND_DOCUMENT_STATUS">Finding email(s) and document(s)</string>
+    <string name="MSG_FINDING_EMAIL_STATUS">Finding email(s)</string>
+    <string name="MSG_FIND_INFORMATION_GREETING">Find information</string>
+    <string name="MSG_FOLDER_SOURCE_LIMIT_WARNING">"You've reached the %1$s limit for folders. You can still add files."</string>
+    <string name="MSG_FOLDER_SUMMARY_TITLE">AI Overview</string>
     <string name="MSG_FOLLOW_UP_PROMPTS_LABEL">Ask a follow up</string>
     <string name="MSG_FOOTER_PAGE_TEXT">%1$s of %2$s</string>
+    <string name="MSG_FORMATTING_LAYOUT">Formatting layout...</string>
     <string name="MSG_FORMULAS_FILTERED_RESPONSE">"I couldn't create a formula for that request. Try being more specific, breaking your request into smaller steps, or simplifying the data."</string>
     <string name="MSG_GEMINI_FEATURE_TEXT">Suggestions and answers in the Gemini app</string>
     <string name="MSG_GEMINI_FOR_WORKSPACE_FEATURE_TEXT">Ask Gemini to summarize content, create drafts, and find key information, along with other %1$s</string>
     <string name="MSG_GEMINI_FOR_WORKSPACE_LINK_TEXT">Gemini for Workspace features</string>
     <string name="MSG_GENERAL_DUET_DISCLAIMER_PART1">This feedback (including any generated output and freeform text you enter) is provided under the</string>
     <string name="MSG_GENERAL_DUET_DISCLAIMER_PART2">Your feedback will not be used for model training. We use this data for the purposes listed in the “Why We Process Service Data” section of the</string>
-    <string name="MSG_GENERATED_IMAGE">Generated image.</string>
+    <string name="MSG_GENERATED_IMAGE_DESCRIPTION">Generated image %1$s of %2$s, %3$s.</string>
+    <string name="MSG_GENERATING_CHART">Generating chart</string>
+    <string name="MSG_GENERATING_CLARIFICATION">Generating clarifying questions</string>
+    <string name="MSG_GENERATING_CODE">Generating code...</string>
+    <string name="MSG_GENERATING_DOCUMENT">Generating document...</string>
+    <string name="MSG_GENERATING_FORMULA">Generating formula</string>
+    <string name="MSG_GENERATING_IMAGES">Generating images...</string>
+    <string name="MSG_GENERATING_INSIGHTS">Generating insights</string>
+    <string name="MSG_GENERATING_INSIGHTS_STATUS">Capturing insights</string>
+    <string name="MSG_GENERATING_PLAN_CONFIRMATION">Creating a plan</string>
     <string name="MSG_GENERATING_RESPONSE_STATUS">Generating your content...</string>
+    <string name="MSG_GENERATING_TABLE">Generating table</string>
+    <string name="MSG_GENERATION_STARTED_STATUS">Just a sec...</string>
     <string name="MSG_GMAIL_CALENDAR_EVENTS_FEATURE_TEXT">Show events from Gmail in Calendar (such as flight itineraries and invitations)</string>
+    <string name="MSG_GMAIL_SEARCH">Gmail search</string>
     <string name="MSG_GMAIL_SEARCH_QUERY_CONTAIN_INTERNAL_LABEL_RESPONSE">"I'm still learning and can't help with that. Do you need help with anything else?"</string>
     <string name="MSG_GMAIL_SEARCH_QUERY_OVERLY_BROAD_RESPONSE">Can you be more specific about which messages to act on? Try using search options such as sender, date, keyword or read status.</string>
     <string name="MSG_GMAIL_THREAD_ACTIVE_CONTEXT_MISSING_RESPONSE">You are not viewing any email. Click into a specific email and try again.</string>
@@ -323,10 +439,11 @@
     <string name="MSG_GMAIL_UDP_PAGE_BOTTOM_BODY_TEXT">You can always turn smart features in Gmail, Chat, and Meet on or off in your settings. When smart features are on, your data may be used to improve these features. %1$s.</string>
     <string name="MSG_GMAIL_UDP_PAGE_DISABLE_RADIO_SECTION_TITLE">Turn off smart features</string>
     <string name="MSG_GMAIL_UDP_PAGE_ENABLE_RADIO_SECTION_TITLE">Turn on smart features</string>
-    <string name="MSG_GOOD_RESPONSE_LABEL">Good suggestion</string>
+    <string name="MSG_GOOD_RESPONSE_LABEL">Good response</string>
     <string name="MSG_GOOGLE_CLOUD_PRIVACY_NOTICE_LINK_TEXT">Google Cloud Privacy Notice (GCPN)</string>
     <string name="MSG_GOOGLE_CLOUD_PRIVACY_NOTICE_LINK_TEXT_ABBREVIATION">GCPN</string>
     <string name="MSG_GOOGLE_TERMS_OF_SERVICE_LINK_TEXT">Google Terms of Service</string>
+    <string name="MSG_GOT_IT_MESSAGE">Got it</string>
     <string name="MSG_GUDP_PAGE_BOTTOM_BODY_TEXT">You can always turn smart features in other Google products on or off in your settings. When smart features are on, your data may be used to improve these features. Data sharing may be subject to additional controls. %1$s.</string>
     <string name="MSG_GUDP_PAGE_DISABLE_RADIO_SECTION_TITLE">Turn off smart features in other Google products</string>
     <string name="MSG_GUDP_PAGE_ENABLE_RADIO_SECTION_TITLE">Turn on smart features in other Google products</string>
@@ -344,9 +461,12 @@
     <string name="MSG_HARD_PUNT_SHEETS_GENERATE_INSIGHTS">"I'm not able to create insights from Sheets yet, but I can help you build tables and formulas. Do you want to try that?"</string>
     <string name="MSG_HARD_PUNT_SHEETS_HOW_TO_USE_SHEETS">"I'm still learning and can't help with that. Do you want to create a table or formula instead?"</string>
     <string name="MSG_HARD_PUNT_SHEETS_MODIFY_CONTENTS">"I'm not able to modify Sheets content yet. I can help you build tables and formulas. Do you want to try that?"</string>
+    <string name="MSG_HIDE_CODE_LABEL">Hide code</string>
     <string name="MSG_HOLIDAY">Holiday</string>
     <string name="MSG_HOW_CAN_I_HELP_LABEL">How can I help you?</string>
     <string name="MSG_ICE_DATA_REFERENCE_MESSAGE">Referenced: %1$s</string>
+    <string name="MSG_IDENTIFYING_PATTERNS">Identifying patterns...</string>
+    <string name="MSG_IDENTIFYING_VISUAL_STYLE">Identifying visual style...</string>
     <string name="MSG_IMAGE_DOWNLOADED_LABEL">Image downloaded</string>
     <string name="MSG_IMAGE_DOWNLOADING_LABEL">Downloading full size...</string>
     <string name="MSG_IMAGE_DOWNLOAD_ERROR_LABEL">Image download failed</string>
@@ -354,6 +474,11 @@
     <string name="MSG_IMAGE_GENERATION_ERROR">"Couldn't load image"</string>
     <string name="MSG_INSERT_LABEL">Insert</string>
     <string name="MSG_INSUFFICIENT_FEATURE_SET_ERROR_RESPONSE">Some Gemini features require the latest version of the app. Update to use them.</string>
+    <string name="MSG_ITEMS_ADDED_BY">%1$s added by %2$s</string>
+    <string name="MSG_ITEM_ADDED_BY">Added by %1$s</string>
+    <string name="MSG_ITEM_SOURCE_LIMIT_WARNING">"No items were added because you've reached the %1$s item source limit"</string>
+    <string name="MSG_JAVASCRIPT_LABEL">Javascript</string>
+    <string name="MSG_JAVA_LABEL">Java</string>
     <string name="MSG_JUMP_TO_BOTTOM_BUTTON_LABEL">Jump to bottom</string>
     <string name="MSG_JUMP_TO_BOTTOM_LABEL">Jump to bottom</string>
     <string name="MSG_LABELS_EMPTY_DESCRIPTION_MESSAGE">You can add labels to files from Drive web</string>
@@ -363,10 +488,19 @@
     <string name="MSG_LABELS_LEARN_MORE_MESSAGE">Learn more</string>
     <string name="MSG_LABELS_NAVIGATION_ICON_CONTENT_DESCRIPTION_MESSAGE">Back</string>
     <string name="MSG_LABELS_SCREEN_TITLE_MESSAGE">Applied classification labels</string>
+    <string name="MSG_LEARNING_STRUCTURE">Learning the structure...</string>
+    <string name="MSG_LEARNING_TONE">Learning the tone...</string>
+    <string name="MSG_LEARNING_VOICE_AND_TONE">Learning the voice and tone...</string>
     <string name="MSG_LEARN_MORE_LABEL">Learn more</string>
     <string name="MSG_LEARN_MORE_TEXT">Learn more</string>
-    <string name="MSG_LEGAL_DISCLAIMER_RO_W">%1$s can make mistakes, so double-check responses.</string>
+    <string name="MSG_LEGAL_DISCLAIMER_RO_W">%1$s can make mistakes.</string>
+    <string name="MSG_LOADING_LABEL">Loading...</string>
+    <string name="MSG_LOOK_FOR_START_POINT_ACTION">Looking where to start...</string>
     <string name="MSG_MAPS_FEATURE_TEXT">Restaurant reservations and to-go orders in Maps</string>
+    <string name="MSG_MATCHING_WRITING_STYLE">Matching your writing style...</string>
+    <string name="MSG_MAX_CONVERSATION_SIZE_REACHED_TEXT">You have reached the limit for messages in this conversation. Start a new conversation to continue.</string>
+    <string name="MSG_MEETING_BRIEF_GATHERING_INFORMATION">Gathering information about your meetings...</string>
+    <string name="MSG_MENTIONED_CONTEXT_DISABLED_RESPONSE">"I can't process file references right now. You can remove the reference and try asking again."</string>
     <string name="MSG_MIME_TYPE_COMPUTER_ACCESSIBILITY_MESSAGE">Computer</string>
     <string name="MSG_MIME_TYPE_ENCRYPTED_FILE_ACCESSIBILITY_MESSAGE">Encrypted %1$s</string>
     <string name="MSG_MIME_TYPE_FOLDER_ACCESSIBILITY_MESSAGE">Folder</string>
@@ -376,18 +510,21 @@
     <string name="MSG_MIME_TYPE_SHORTCUT_TO_ENCRYPTED_FILE_ACCESSIBILITY_MESSAGE">Shortcut to encrypted %1$s</string>
     <string name="MSG_MIME_TYPE_SHORTCUT_TO_FILE_ACCESSIBILITY_MESSAGE">Shortcut to %1$s</string>
     <string name="MSG_MIME_TYPE_UNTRUSTED_SHARED_DRIVE_ACCESSIBILITY_MESSAGE">Untrusted shared drive</string>
+    <string name="MSG_MIRRORING_FORMAT">Mirroring format...</string>
     <string name="MSG_MISSING_EDITORS_RESOURCE_ACCESS_RESPONSE">I can only help with files you have access to. Can you ask for access and try again?</string>
+    <string name="MSG_MOBILE_PREVIOUS_CONVERSATION_FALLBACK_RESPONSE">"This feature isn't available on mobile yet. To view this content, use Google Workspace on the web."</string>
     <string name="MSG_NAVIGATION_ACTIVITY_TITLE">Activity</string>
+    <string name="MSG_NAVIGATION_ADD_TITLE">Add</string>
     <string name="MSG_NAVIGATION_CANCEL_ALL_TITLE">Cancel all</string>
     <string name="MSG_NAVIGATION_COMPUTERS_TITLE">Computers</string>
     <string name="MSG_NAVIGATION_HIDDEN_SHARED_DRIVES_TITLE">Hidden shared drives</string>
     <string name="MSG_NAVIGATION_ICON_DESCRIPTION_ACTION_APP_SEARCH">Search</string>
     <string name="MSG_NAVIGATION_ICON_DESCRIPTION_ACTION_OPEN_GEMINI">Open Gemini</string>
     <string name="MSG_NAVIGATION_ICON_DESCRIPTION_ACTION_OPEN_HELP">Open help</string>
-    <string name="MSG_NAVIGATION_ICON_DESCRIPTION_ACTION_OPEN_ITEM_OVERFLOW_MENU">More options</string>
     <string name="MSG_NAVIGATION_ICON_DESCRIPTION_ACTION_OPEN_SETTINGS">Open settings</string>
     <string name="MSG_NAVIGATION_MY_DRIVE_TITLE">My Drive</string>
     <string name="MSG_NAVIGATION_OFFLINE_TITLE">Offline</string>
+    <string name="MSG_NAVIGATION_PROJECTS_TITLE">Projects</string>
     <string name="MSG_NAVIGATION_RECENT_TITLE">Recent</string>
     <string name="MSG_NAVIGATION_SHARED_DRIVES_TITLE">Shared drives</string>
     <string name="MSG_NAVIGATION_SHARED_TITLE">Shared</string>
@@ -398,6 +535,7 @@
     <string name="MSG_NAVIGATION_TRASH_TITLE">Trash</string>
     <string name="MSG_NAVIGATION_UPLOADS_TITLE">Uploads</string>
     <string name="MSG_NAVIGATION_WORKSPACES_TITLE">Workspaces</string>
+    <string name="MSG_NEW_CONVERSATION_LABEL">New conversation</string>
     <string name="MSG_NEXT_LABEL">Next</string>
     <string name="MSG_NON_REGIONALIZED_FEATURES_DISABLED_RESPONSE">"I can't help with that because your organization has restricted some Gemini features."</string>
     <string name="MSG_NON_WORKING_DAY">Non-working day</string>
@@ -408,11 +546,16 @@
     <string name="MSG_NO_SELECTED_TABLE_RESPONSE">"Couldn't find content in the sheet to fulfill your request. Select a cell in the range you want to use and try again."</string>
     <string name="MSG_NO_THANKS_LABEL">No thanks</string>
     <string name="MSG_NO_VIDEO_CAPTIONS_PERMISSIONS_RESPONSE">%1$s needs video captions to be turned on to summarize and answer questions about videos, but captions have been disabled for this file.</string>
+    <string name="MSG_OFFLINE_MESSAGE">You are offline. Some functionality may be unavailable.</string>
+    <string name="MSG_OK_BUTTON_LABEL">OK</string>
     <string name="MSG_ONBOARDING_GMAIL_UDP_PAGE_TITLE">Turn on smart features to get more out of Gmail, Chat, and Meet</string>
     <string name="MSG_ONBOARDING_GMAIL_UDP_PAGE_TOP_BODY_TEXT">You agree to let Gmail, Chat, and Meet use your content and activity in these products to provide smart features and personalize your experience.</string>
     <string name="MSG_ONBOARDING_WUDP_PAGE_TITLE">Smart features in Google Workspace</string>
     <string name="MSG_ONBOARDING_WUDP_PAGE_TOP_BODY_TEXT">You agree to let Google Workspace use your Workspace content and activity to personalize your experience across Workspace.</string>
     <string name="MSG_OPEN_FILE_LABEL">Open</string>
+    <string name="MSG_OPEN_LINK_LABEL">Open link</string>
+    <string name="MSG_ORGANIZING_INTO_BULLET_POINTS">Organizing into bullet points...</string>
+    <string name="MSG_OUTPUT_TITLE">{NUM_OUTPUTS, plural, =0 {Output} =1 {Output} other {{NUM_OUTPUTS} Outputs}}</string>
     <string name="MSG_OUTSIDE_PREFERENCE">Outside preferred time</string>
     <string name="MSG_OUT_OF_OFFICE">Out of office</string>
     <string name="MSG_PALETTE_COLOR_NAME_ASPARAGUS">Asparagus</string>
@@ -439,11 +582,24 @@
     <string name="MSG_PALETTE_COLOR_NAME_VERN_FERN">Vern fern</string>
     <string name="MSG_PALETTE_COLOR_NAME_WILD_STRAWBERRIES">Wild strawberries</string>
     <string name="MSG_PALETTE_COLOR_NAME_YELLOW_CAB">Yellow cab</string>
+    <string name="MSG_PENDING_OWNER_ADVANCED_EMPTY_STATE_TITLE">"You don't have any ownership requests that match this search"</string>
+    <string name="MSG_PENDING_OWNER_EMPTY_STATE_ACTION">Learn more</string>
+    <string name="MSG_PENDING_OWNER_EMPTY_STATE_TEXT">Try another search</string>
+    <string name="MSG_PENDING_OWNER_EMPTY_STATE_TITLE">"You don't have any ownership requests"</string>
     <string name="MSG_PERIOD_SYMBOL">.</string>
     <string name="MSG_PERMISSION_DENIED_RESPONSE">To create images, acknowledge the Generative Imagery terms of service at go/generative-imagery-access. Once acknowledged you should have permissions within 1 day.</string>
     <string name="MSG_PERSONALIZED_SEARCH_FEATURE_TEXT">Personalized search (such as keyword suggestions, file suggestions, and more relevant results)</string>
+    <string name="MSG_POLISHING_WORDING_OF_SELECTION">Polishing the wording of your selection...</string>
+    <string name="MSG_PRESENTATION_APPLY_CHANGES">Finalizing layouts and styles...</string>
+    <string name="MSG_PRESENTATION_INITIALIZATION">Starting your presentation...</string>
+    <string name="MSG_PRESENTATION_PLACEHOLDER_SETUP">Building the presentation structure...</string>
+    <string name="MSG_PRESENTATION_SLIDE_GENERATION">Drafting content and visuals...</string>
+    <string name="MSG_PRESENTATION_SUCCESS">Presentation complete</string>
     <string name="MSG_PRIVACY_POLICY_LINK_TEXT">Privacy Policy</string>
     <string name="MSG_PROACTIVE_SUMMARIES_ASK_GEMINI_CTA_MESSAGE">Ask Gemini</string>
+    <string name="MSG_PROACTIVE_SUMMARIES_COPIED_SNACKBAR_MESSAGE">Copied</string>
+    <string name="MSG_PROACTIVE_SUMMARIES_COPY_BUTTON_CONTENT_DESCRIPTION_MESSAGE">Copy</string>
+    <string name="MSG_PROACTIVE_SUMMARIES_DISCLAIMER_MESSAGE">Gemini in Workspace can make mistakes, so double-check responses.</string>
     <string name="MSG_PROACTIVE_SUMMARIES_ERROR_TITLE_MESSAGE">Gemini</string>
     <string name="MSG_PROACTIVE_SUMMARIES_NEGATIVE_FEEDBACK_BUTTON_CONTENT_DESCRIPTION_MESSAGE">Bad summary</string>
     <string name="MSG_PROACTIVE_SUMMARIES_POSITIVE_FEEDBACK_BUTTON_CONTENT_DESCRIPTION_MESSAGE">Good summary</string>
@@ -452,7 +608,12 @@
     <string name="MSG_PROACTIVE_SUMMARIES_SHOW_MORE_CTA_MESSAGE">Show more</string>
     <string name="MSG_PROACTIVE_SUMMARIES_SUMMARIZE_THIS_FILE_CTA_MESSAGE">Summarize this file</string>
     <string name="MSG_PROACTIVE_SUMMARIES_SUMMARY_TITLE_MESSAGE">Summary</string>
+    <string name="MSG_PROMPTS_CHECKBOX">{NUM_PROMPTS, plural, =1 {Prompt} other {{NUM_PROMPTS} Prompts}}</string>
     <string name="MSG_PROMPT_INJECTION_SECURITY_RISK_RESPONSE">A security risk was identified and blocked</string>
+    <string name="MSG_PUNT_MESSAGE_DETAILS">See Search results below.</string>
+    <string name="MSG_PUNT_MESSAGE_TITLE">No Gemini Overview available.</string>
+    <string name="MSG_PYTHON_LABEL">Python</string>
+    <string name="MSG_READING_DOCS_STATUS">Extracting information</string>
     <string name="MSG_RECONSENT_WUDP_PAGE_TITLE">Smart features in Google Workspace</string>
     <string name="MSG_RECONSENT_WUDP_PAGE_TOP_BODY_TEXT">"With smart feature settings, you control whether your Workspace content and activity is used to personalize your experience.
 
@@ -461,41 +622,126 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_RECONSENT_WUDP_PAGE_V2_TOP_BODY_TEXT">"Work smarter and more efficiently with Workspace smart features. Smart features boost your productivity in an experience customized to how you work.
 
 You agree to let Google Workspace use your Workspace content and activity to personalize your experience across Workspace."</string>
+    <string name="MSG_REDOING_ACTION">Redoing action...</string>
+    <string name="MSG_REDO_ACTION_TEXT">Redo</string>
+    <string name="MSG_REFERENCE_DOCUMENT_TOO_LARGE_RESPONSE">The prompt or document selected is too long or complex. For best results, try using a shorter document, simpler formatting, or a shorter prompt.</string>
     <string name="MSG_REFERENCE_FILES_LOADING_TIP">Tip: Type @ to reference your Workspace files</string>
+    <string name="MSG_REJECT_LABEL">Reject</string>
+    <string name="MSG_REMOVE_ALL">Remove all</string>
+    <string name="MSG_REMOVE_SOURCES_SNACKBAR_MESSAGE">{COUNT, plural, =1 {Source removed} other {# sources removed}}</string>
+    <string name="MSG_REMOVE_SOURCE_TITLE">Remove a source</string>
+    <string name="MSG_RENAME_BUTTON_LABEL">Rename</string>
+    <string name="MSG_RENAME_DIALOG_HEADLINE">Rename</string>
+    <string name="MSG_RENAME_DOCUMENT_DIALOG_HEADLINE">Rename document</string>
+    <string name="MSG_RENAME_DRAWING_DIALOG_HEADLINE">Rename drawing</string>
+    <string name="MSG_RENAME_FILE_DIALOG_HEADLINE">Rename file</string>
+    <string name="MSG_RENAME_FOLDER_DIALOG_HEADLINE">Rename folder</string>
+    <string name="MSG_RENAME_PRESENTATION_DIALOG_HEADLINE">Rename presentation</string>
+    <string name="MSG_RENAME_SHORTCUT_DIALOG_HEADLINE">Rename shortcut</string>
+    <string name="MSG_RENAME_SPREADSHEET_DIALOG_HEADLINE">Rename spreadsheet</string>
+    <string name="MSG_RENAMING_ACTION_FAILED">"Couldn't rename \"{OLD_TITLE}\""</string>
+    <string name="MSG_RENAMING_ACTION_SUCCESS">\"{OLD_TITLE}\" renamed to \"{NEW_TITLE}\"</string>
     <string name="MSG_REPORT_ABUSE_ACTION_LABEL">Report</string>
+    <string name="MSG_REPORT_BUTTON_LABEL">Report</string>
+    <string name="MSG_REPORT_TYPE_DESCRIPTION_DISTURBING">Violence, hate speech, terrorism, harassment, bullying, threats, intimidation, or unwanted sexually explicit material</string>
+    <string name="MSG_REPORT_TYPE_DESCRIPTION_ILLEGAL">Content that violates the law, either because of its subject matter (e.g. child sexual abuse material) or how it is used (e.g. copyright infringement)</string>
+    <string name="MSG_REPORT_TYPE_DESCRIPTION_NCII">Nude, sexual, or intimate photos or videos shared without the permission of the person shown</string>
+    <string name="MSG_REPORT_TYPE_DESCRIPTION_OTHER">Promoting activities, goods, services, or information that cause serious and immediate harm</string>
+    <string name="MSG_REPORT_TYPE_DESCRIPTION_SPAM_OR_FRAUD">Unwanted solicitation, phishing, malware, or impersonation</string>
+    <string name="MSG_REPORT_TYPE_LABEL_DISTURBING">Disturbing or inappropriate content</string>
+    <string name="MSG_REPORT_TYPE_LABEL_ILLEGAL">Illegal content</string>
+    <string name="MSG_REPORT_TYPE_LABEL_NCII">Non-consensual intimate imagery (NCII)</string>
+    <string name="MSG_REPORT_TYPE_LABEL_OTHER">Other activity or harmful content</string>
+    <string name="MSG_REPORT_TYPE_LABEL_SPAM_OR_FRAUD">Spam or fraud</string>
+    <string name="MSG_RESET_HISTORY_LABEL">Clear history</string>
+    <string name="MSG_RESOLVING_ERRORS">Resolving errors...</string>
+    <string name="MSG_RETRY_LABEL">Retry</string>
     <string name="MSG_RETRY_WITH_SEARCH_LABEL">Search</string>
     <string name="MSG_SAVE_LABEL">Save</string>
     <string name="MSG_SCHEDULE_LABEL">Schedule</string>
     <string name="MSG_SEARCH_MENU">Search menu</string>
     <string name="MSG_SEARCH_MENU_OPEN_LABEL">Search menu opened</string>
+    <string name="MSG_SEARCH_OVERVIEW_CARD_TITLE">AI Overview</string>
+    <string name="MSG_SEARCH_OVERVIEW_LOADING_CREATING_OVERVIEW">Creating overview…</string>
+    <string name="MSG_SEARCH_OVERVIEW_LOADING_GATHERING_CONTEXT">Gathering context…</string>
+    <string name="MSG_SEARCH_OVERVIEW_LOADING_JUST_A_MOMENT">Just a moment…</string>
+    <string name="MSG_SEARCH_OVERVIEW_LOADING_REVIEWING_REQUEST">Reviewing request…</string>
+    <string name="MSG_SEARCH_RESULTS_COUNT">{count, plural, =0 {No matching results found} =1 {1 matching result found} other {# matching results found}}</string>
+    <string name="MSG_SEARCH_SETTINGS_SECTION_TITLE">Search settings</string>
+    <string name="MSG_SEE_MORE">See more</string>
     <string name="MSG_SEND_BUTTON_LABEL">Send</string>
     <string name="MSG_SETTINGS_GUDP_SUBTITLE">When you turn this setting on, you agree to let Google use your Workspace content and activity to personalize your experience in other Google products. Smart features include:</string>
     <string name="MSG_SETTINGS_GUDP_TITLE">Smart features in other Google products</string>
     <string name="MSG_SETTINGS_PAGE_TITLE">Google Workspace smart features</string>
     <string name="MSG_SETTINGS_PAGE_WUDP_SUBTITLE">When you turn this setting on, you agree to let Google Workspace use your Workspace content and activity to personalize your experience across Workspace. Workspace includes apps for businesses and schools, such as Gmail, Chat, Meet, Drive, and more. To learn more, visit the %1$s. Smart features include:</string>
     <string name="MSG_SETTINGS_WUDP_TITLE">Smart features in Google Workspace</string>
+    <string name="MSG_SET_STAR_ACTION_ADDED_TEXT_ON_FILES">{NUM_ITEMS, plural, =1 {1 file added to starred} other {# files added to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDED_TEXT_ON_FOLDERS">{NUM_ITEMS, plural, =1 {1 folder added to starred} other {# folders added to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDED_TEXT_ON_ITEMS">{NUM_ITEMS, plural, =1 {1 item added to starred} other {# items added to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDED_TEXT_ON_SHORTCUTS">{NUM_ITEMS, plural, =1 {1 shortcut added to starred} other {# shortcuts added to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDING_TEXT_ON_FILES_FAILED">{NUM_ITEMS, plural, =1 {Failed to add 1 file to starred} other {Failed to add # files to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDING_TEXT_ON_FOLDERS_FAILED">{NUM_ITEMS, plural, =1 {Failed to add 1 folder to starred} other {Failed to add # folders to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDING_TEXT_ON_ITEMS_FAILED">{NUM_ITEMS, plural, =1 {Failed to add 1 item to starred} other {Failed to add # items to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_ADDING_TEXT_ON_SHORTCUTS_FAILED">{NUM_ITEMS, plural, =1 {Failed to add 1 shortcut to starred} other {Failed to add # shortcuts to starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVED_TEXT_ON_FILES">{NUM_ITEMS, plural, =1 {1 file removed from starred} other {# files removed from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVED_TEXT_ON_FOLDERS">{NUM_ITEMS, plural, =1 {1 folder removed from starred} other {# folders removed from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVED_TEXT_ON_ITEMS">{NUM_ITEMS, plural, =1 {1 item removed from starred} other {# items removed from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVED_TEXT_ON_SHORTCUTS">{NUM_ITEMS, plural, =1 {1 shortcut removed from starred} other {# shortcuts removed from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVING_TEXT_ON_FILES_FAILED">{NUM_ITEMS, plural, =1 {Failed to remove 1 file from starred} other {Failed to remove # files from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVING_TEXT_ON_FOLDERS_FAILED">{NUM_ITEMS, plural, =1 {Failed to remove 1 folder from starred} other {Failed to remove # folders from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVING_TEXT_ON_ITEMS_FAILED">{NUM_ITEMS, plural, =1 {Failed to remove 1 item from starred} other {Failed to remove # items from starred}}</string>
+    <string name="MSG_SET_STAR_ACTION_REMOVING_TEXT_ON_SHORTCUTS_FAILED">{NUM_ITEMS, plural, =1 {Failed to remove 1 shortcut from starred} other {Failed to remove # shortcuts from starred}}</string>
     <string name="MSG_SHORTCUT_COMBINER">%1$s then %2$s</string>
+    <string name="MSG_SHOW_CODE_LABEL">Show code</string>
     <string name="MSG_SHOW_FEWER_SUGGESTIONS_LABEL">Show fewer suggestions</string>
     <string name="MSG_SHOW_MORE_MESSAGE">Show more</string>
     <string name="MSG_SHOW_MORE_SUGGESTIONS_LABEL">Show more suggestions</string>
-    <string name="MSG_SIDEKICK_SUMMARIZE_FILES_PROMPT">{NUM_ITEMS, plural, offset:1 =1 {Tell me about this file} other {Tell me about these files}}</string>
-    <string name="MSG_SIDEKICK_SUMMARIZE_FOLDERS_PROMPT">{NUM_ITEMS, plural, offset:1 =1 {Tell me about this folder} other {Tell me about these folders}}</string>
-    <string name="MSG_SIDEKICK_SUMMARIZE_SHARED_DRIVE_PROMPT">{NUM_ITEMS, plural, offset:1 =1 {Tell me about this shared drive} other {Tell me about these shared drives}}</string>
+    <string name="MSG_SIDEKICK_SUMMARIZE_FILES_PROMPT">{NUM_ITEMS, plural, offset:1 =1 {Tell me about this file } other {Tell me about these files }}</string>
+    <string name="MSG_SIDEKICK_SUMMARIZE_FOLDERS_PROMPT">{NUM_ITEMS, plural, offset:1 =1 {Tell me about this folder } other {Tell me about these folders }}</string>
+    <string name="MSG_SIDEKICK_SUMMARIZE_SHARED_DRIVE_PROMPT">{NUM_ITEMS, plural, offset:1 =1 {Tell me about this shared drive } other {Tell me about these shared drives }}</string>
+    <string name="MSG_SLIDES_NO_CHANGES_APPLIED_RESPONSE">You can create slides here, for everything else open the side panel.</string>
     <string name="MSG_SMART_FEATURES_LEARN_MORE_LINK_TEXT">Learn more about these smart features</string>
     <string name="MSG_SOURCES_CHEVRON_COLLAPSED">Collapsed</string>
     <string name="MSG_SOURCES_CHEVRON_EXPANDED">Expanded</string>
     <string name="MSG_SOURCES_CROSS_CUSTOMER_RESTRICTED_RESPONSE">%1$s cannot reference files owned by users outside your domain at this time.</string>
     <string name="MSG_SOURCES_DISCLAIMER">"%1$s can't reference Calendar or Chat yet. Check dates and times for accuracy."</string>
+    <string name="MSG_SOURCES_ITEM_COUNT_LABEL">{COUNT, plural, =1 {1 item} other {# items}}</string>
     <string name="MSG_SOURCES_LABEL">Sources (%1$s)</string>
+    <string name="MSG_SOURCES_SECTION_INFO_ICON_TOOLTIP_TEXT">Add sources to get more relevant responses</string>
+    <string name="MSG_SOURCES_SECTION_TITLE">Sources</string>
+    <string name="MSG_SOURCE_DETAILS_FETCH_FAILURE">Failed to load source details</string>
+    <string name="MSG_SOURCE_SETTINGS_SECTION_INFO_ICON_TOOLTIP_TEXT">Select where Gemini can actively search for relevant information</string>
+    <string name="MSG_SOURCE_SETTINGS_SECTION_TITLE">Source settings</string>
+    <string name="MSG_SOURCE_UPDATE_FAILURE">Source update failed</string>
     <string name="MSG_STILL_LEARNING_RESPONSE">"I'm still learning and can't help with that. Do you need help with anything else?"</string>
     <string name="MSG_STOP_STREAMING_BUTTON_LABEL">Stop</string>
     <string name="MSG_SUGGESTED_FILES_TITLE">Suggested files</string>
     <string name="MSG_SUGGESTED_FOLDERS_TITLE">Suggested folders</string>
-    <string name="MSG_SUMMARY_RESPONSE_LABEL">Summary of this content</string>
+    <string name="MSG_SUGGESTED_PROMPTS_HEADER">Suggestions</string>
+    <string name="MSG_SUGGESTED_SOURCES_EMPTY_STATE_DESCRIPTION">"We'll keep looking as you ask questions"</string>
+    <string name="MSG_SUGGESTED_SOURCES_EMPTY_STATE_LABEL">No suggested sources</string>
+    <string name="MSG_SUGGESTED_SOURCES_SECTION_TITLE">Suggested sources</string>
+    <string name="MSG_SUMMARIZING_EXECUTION_RESULTS">Summarizing changes</string>
+    <string name="MSG_SUMMARY_RESPONSE_LABEL">AI Summary</string>
     <string name="MSG_SUPPORTED_LANGUAGES_LINK_TEXT">See supported languages.</string>
+    <string name="MSG_SYNTHESIZING_AND_RESEARCHING">Synthesizing and researching...</string>
+    <string name="MSG_SYNTHESIZING_KEY_TAKEAWAYS">Synthesizing the key takeaways...</string>
+    <string name="MSG_THINKING_ADJUSTING">Adjusting the details...</string>
+    <string name="MSG_THINKING_ADJUSTING_FINAL">Adjusting final details...</string>
+    <string name="MSG_THINKING_DRAFTING">Drafting ideas...</string>
+    <string name="MSG_THINKING_FINALIZING">Finalizing...</string>
+    <string name="MSG_THINKING_FINISHING">Adding finishing touches...</string>
+    <string name="MSG_THINKING_POLISHING">Polishing things up...</string>
+    <string name="MSG_THINKING_PREPARING">Preparing a response...</string>
+    <string name="MSG_THINKING_SHAPING">Shaping the content...</string>
+    <string name="MSG_THINKING_SYNTHESIZING">Synthesizing information...</string>
+    <string name="MSG_TODAY_LABEL">Today</string>
+    <string name="MSG_TODO_AGENT_FINDING_TODOS">Finding the things you need to do...</string>
     <string name="MSG_TOOLBAR_BUTTON_DESCRIPTION_WITH_DISABLED_REASON">%1$s - %2$s</string>
     <string name="MSG_TOOLBAR_BUTTON_DESCRIPTION_WITH_SHORTCUT">%1$s (%2$s)</string>
     <string name="MSG_TOOLBAR_CLEAR_BUTTON_LABEL">Clear selection</string>
+    <string name="MSG_TOOLBAR_CLEAR_SELECTION_BUTTON_LABEL">Clear</string>
+    <string name="MSG_TOOLBAR_CLOSE_BUTTON_LABEL">Close</string>
     <string name="MSG_TOOLBAR_GO_BACK_BUTTON_LABEL">Back</string>
     <string name="MSG_TOOLBAR_MORE_ACTION_BUTTON_LABEL">More actions</string>
     <string name="MSG_TOOLBAR_SELECT_ALL_BUTTON_LABEL">Select all</string>
@@ -503,23 +749,84 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_TOO_EARLY">Too early</string>
     <string name="MSG_TOO_LATE">Too late</string>
     <string name="MSG_TURNING_ON_LABEL">Turning on…</string>
+    <string name="MSG_TURN_ON_AND_RELOAD_LABEL">Turn on and reload</string>
     <string name="MSG_TURN_ON_LABEL">Turn on</string>
     <string name="MSG_UDP_PAGE_DISABLE_RADIO_SECTION_SUBTITLE">"When you turn this setting off, you'll no longer have access to the experiences described above"</string>
     <string name="MSG_UDP_PAGE_ENABLE_RADIO_SECTION_SUBTITLE">When you turn this setting on, you can get experiences that include:</string>
+    <string name="MSG_UNDOING_ACTION">Undoing action...</string>
+    <string name="MSG_UNDO_ACTION_TEXT">Undo</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_ACCEPTED">Suggestion accepted</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_ACTION_ITEM_MARKED_DONE">Action item marked done</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_ADD_COMMENT">Add comment</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_ADD_EMOJI_REACTION">Add emoji reaction</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_API_ERROR">Comments error. Please check your Internet connection and try again.</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_ASSIGNED_TO">Assigned to %1$s</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_CANCEL">Cancel</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_ADDED">Comment added</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_DELETED">Comment deleted</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_FROM_COMPARISON">From comparison</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_FROM_COPIED_DOCUMENT">Comments above copied from original document</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_FROM_IMPORTED_DOCUMENT">From imported document</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_REOPENED">Comment re-opened</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_RESOLVED">Comment resolved</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_COMMENT_SAVED">Comment saved</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DELETE">Delete</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DELETE_COMMENT_TITLE">Delete comment</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DELETE_DISCUSSION_TEXT">Delete this comment thread?</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DELETE_REPLY_TEXT">Delete this comment?</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DISCARD">Discard</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DISCARD_COMMENT_TEXT">This action will discard your comment.</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_DISCARD_COMMENT_TITLE">Discard comment?</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_EDIT">Edit</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_EDITED_TIMESTAMP">%1$s (edited %2$s)</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_GET_SHAREABLE_LINK">Get shareable link</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_LINK_COPIED">Comment link copied to clipboard</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_MARKED_DONE">Marked done</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_MARKED_RESOLVED">Marked as resolved</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_MARK_AS_DONE">Mark as done</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_OPEN_AND_RESOLVED_COMMENTS">Displaying open and resolved comments.</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REACTION_ADDED">%1$s added</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REACTION_FROM_COPIED_DOCUMENT">Some reactions above were copied from original document</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REACTION_REMOVED">%1$s removed</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REACTION_REOPENED">Reaction re-opened</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REACTION_RESOLVED">Reaction resolved</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REASSIGNED_TO">Reassigned to %1$s</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REASSIGNED_TO_YOU">Reassigned to you</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REJECTED">Suggestion rejected</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REOPEN">Re-open</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REOPENED">Re-opened</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REPLIED_TO_ACTION_ITEM">Replied to action item</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_REPLIED_TO_COMMENT">Replied to comment</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_SUGGESTION_ACCEPTED">Suggestion accepted</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_SUGGESTION_REJECTED">Suggestion rejected</string>
+    <string name="MSG_UNIFIED_DISCUSSIONS_TASK_ASSIGNEE_YOU">you</string>
+    <string name="MSG_UNIFIED_DISCUSSION_DELETE_COMMENT_CANCEL">Cancel</string>
+    <string name="MSG_UNIFIED_DISCUSSION_DELETE_COMMENT_YES">Yes</string>
     <string name="MSG_UNSUPPORTED_LANGUAGE_RESPONSE">"The language entered isn't supported at this time"</string>
     <string name="MSG_UPDATE_APP_LINK">Update Google Drive</string>
-    <string name="MSG_USER_GEN_AI_QUOTA_EXHAUSTED_RESPONSE">"You've reached the monthly usage limit with Gemini for Workspace"</string>
+    <string name="MSG_USER_GEN_AI_QUOTA_EXHAUSTED_RESPONSE">"You've reached the usage limit with Gemini for Workspace"</string>
     <string name="MSG_USER_INELIGIBLE_RESPONSE">You no longer have access to %1$s</string>
+    <string name="MSG_VALIDATING_NLWF">Validating...</string>
+    <string name="MSG_VERIFYING_DATA">Running final verification</string>
+    <string name="MSG_VERIFYING_OUTPUT">Verifying output...</string>
     <string name="MSG_VIDEO_CAPTIONS_DISABLED_RESPONSE">"%1$s can't understand this video. If you're an owner or editor, turn on captions and try again."</string>
     <string name="MSG_VIDEO_NOT_ENOUGH_SPEECH_RESPONSE">"%1$s can't reference this video because it doesn't look like there's much speech in it. Try another video."</string>
     <string name="MSG_VIDEO_PENDING_RESPONSE">Sit back while %1$s creates a transcript for this video. Give %1$s a few minutes, maybe a bit longer. When done, %1$s can summarize and answer questions about this video.</string>
     <string name="MSG_VIDEO_TOO_LONG_RESPONSE">"%1$s can't reference this video because it's too long. Try another video."</string>
     <string name="MSG_VIDEO_WITHOUT_AUDIO_RESPONSE">"%1$s can't reference this video because it doesn't look like there's audio in it. Try another video."</string>
+    <string name="MSG_VOICE_INPUT_NOT_AVAILABLE_ERROR">Voice input is not available.</string>
+    <string name="MSG_VOICE_INPUT_NOT_RECOGNIZED_ERROR">Speech not recognized. Try again.</string>
+    <string name="MSG_VOICE_INPUT_PERMISSION_ERROR">Microphone access is required for voice input.</string>
+    <string name="MSG_VOICE_INPUT_RETRIABLE_ERROR">Voice input failed. Try again.</string>
     <string name="MSG_WALLET_FEATURE_TEXT">Suggested tickets, loyalty cards, and other passes in Wallet</string>
+    <string name="MSG_WEB_SEARCH">Web search</string>
     <string name="MSG_WELCOME_HELP_TEXT">How can I help you today?</string>
-    <string name="MSG_WORKSPACE_SMART_FEATURE_SETTINGS_LABEL">Workspace smart feature settings</string>
+    <string name="MSG_WORKING_ON_ACTION">Working...</string>
     <string name="MSG_WORKSPACE_WEBSITE_LINK_TEXT">Workspace website</string>
+    <string name="MSG_WRITING_CODE_STATUS">Writing code</string>
     <string name="MSG_WUDP_ENFORCEMENT_ADD_EVENTS_TO_CALENDAR_TITLE">To automatically add events to Google Calendar, turn on smart features in Google Workspace</string>
+    <string name="MSG_WUDP_ENFORCEMENT_AI_INBOX_TITLE">To use AI Inbox, turn on smart features in Google Workspace</string>
+    <string name="MSG_WUDP_ENFORCEMENT_AI_OVERVIEW_TITLE">To get AI Overview, turn on smart features in Google Workspace</string>
     <string name="MSG_WUDP_ENFORCEMENT_HELP_ME_CREATE_FORM_TITLE">To use Help me create a form, turn on smart features in Google Workspace</string>
     <string name="MSG_WUDP_ENFORCEMENT_HELP_ME_CREATE_IMAGE_TITLE">To use Help me create an image, turn on smart features in Google Workspace</string>
     <string name="MSG_WUDP_ENFORCEMENT_HELP_ME_WRITE_TITLE">To use Help me write, turn on smart features in Google Workspace</string>
@@ -533,7 +840,6 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="MSG_WUDP_PAGE_ENABLE_RADIO_SECTION_TITLE">Turn on smart features in Workspace</string>
     <string name="MSG_WUDP_PAGE_KEEP_ENABLED_RADIO_SECTION_TITLE">Keep smart features on in Workspace</string>
     <string name="a11y_drag_positional_anchor_selection">Drag</string>
-    <string name="a11y_g1_icon_message">Backed up by Google One</string>
     <string name="a11y_positional_anchor_left_bottom_corner">Comment area left bottom corner: left %1$d percent, bottom %2$d percent</string>
     <string name="a11y_positional_anchor_left_top_corner">Comment area left top corner: left %1$d percent, top %2$d percent</string>
     <string name="a11y_positional_anchor_right_bottom_corner">Comment area right bottom corner: right %1$d percent, bottom %2$d percent</string>
@@ -563,15 +869,8 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="abuse_confirmation_multiple_message">The following files look suspicious. They might be used to install harmful software software on your device.</string>
     <string name="abuse_confirmation_multiple_title">Suspicious files</string>
     <string name="abuse_confirmation_title">This file looks suspicious</string>
-    <string name="abuse_desc_disturbing_or_inappropriate">E.g. Violence, hate speech, terrorism, harassment, bullying, threats, intimidation, or sexually explicit material</string>
-    <string name="abuse_desc_illegal_content">For example, content that infringes your rights or the law (e.g. copyright infringement or illegal child sexual abuse and exploitation content)</string>
-    <string name="abuse_desc_other_illegal_activity">E.g. Promoting activities, goods, services, or information that cause serious and immediate harm</string>
-    <string name="abuse_desc_spam_or_fraud">E.g. Unwanted solicitation, phishing, malware, or impersonation</string>
     <string name="abuse_share_confirmation_message">It might be used to steal your personal information</string>
-    <string name="abuse_type_disturbing_or_inappropriate">Disturbing or inappropriate content</string>
-    <string name="abuse_type_illegal_content">Illegal content</string>
-    <string name="abuse_type_other_illegal_activity">Other activity</string>
-    <string name="abuse_type_spam_or_fraud">Spam or fraud</string>
+    <string name="abuse_warning_icon_content_description">Abuse Warning</string>
     <string name="abuse_warning_icon_label">Warning</string>
     <string name="accessbility_suggestion_dropdown_closed">No suggestions available</string>
     <string name="accessbility_suggestion_dropdown_opened">Contact suggestions opened</string>
@@ -633,6 +932,7 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="action_download">Download</string>
     <string name="action_find">Find</string>
     <string name="action_header_shortcut">Shortcut options</string>
+    <string name="action_insert">Insert</string>
     <string name="action_label_deselect">Deselect file</string>
     <string name="action_label_deselect_filter">Deselect filter</string>
     <string name="action_label_edit_search">edit search</string>
@@ -684,6 +984,7 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="after_date_range">After: %1$s</string>
     <string name="allow_approvers_edit">Allow approvers to edit this file</string>
     <string name="already_resolved">The request was resolved</string>
+    <string name="androidx_compose_foundation_autofill">Autofill</string>
     <string name="androidx_startup">androidx.startup</string>
     <string name="annotation_mode_failed_to_open">"Can't load annotation mode for this item."</string>
     <string name="annotation_mode_failed_to_save">"Couldn't save item. Try saving as a copy instead."</string>
@@ -692,12 +993,9 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="annotation_mode_subtitle">Annotation</string>
     <string name="announce_folder_color_dialog">Showing %1$d of %2$d</string>
     <string name="announce_invalid_filename">Invalid name. Please enter a different name.</string>
-    <string name="announce_refreshing_list">Refreshing</string>
     <string name="announce_swatch_checked">%1$s selected</string>
     <string name="answer_a_few_questions">Answer a few questions</string>
-    <string name="app_data">App data</string>
     <string name="app_installation_in_progress">Installation in progress…</string>
-    <string name="app_installation_in_progress_toast">Installation in progress. See notifications for details.</string>
     <string name="app_installed_dialog_drive_installed_title">Google Drive installed</string>
     <string name="app_installed_dialog_kix_editor_installed_title">Google Docs installed</string>
     <string name="app_installed_dialog_message">Would you like to open \"%1$s\" for editing?</string>
@@ -730,7 +1028,6 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="approve_button">Approve</string>
     <string name="approved">Approval complete</string>
     <string name="approved_on_date">Approved %1$s</string>
-    <string name="apps_footer_text">%s apps</string>
     <string name="appwidget_account_missing">Account not found, tap to fix.</string>
     <string name="appwidget_creating_description">Quickly search, upload or scan files in Google Drive</string>
     <string name="appwidget_creating_label">Drive quick actions</string>
@@ -742,32 +1039,18 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="appwidget_suggestion_fake_sheet">Expenses for concert</string>
     <string name="appwidget_suggestion_fake_slide">Favorite music shows</string>
     <string name="appwidget_suggestion_label">Suggested files</string>
+    <string name="appwidget_suggestion_search">Search in Drive</string>
     <string name="archive_workspace">Hide workspace</string>
     <string name="archiving_workspace">Hiding workspace…</string>
     <string name="archiving_workspace_failure">Unable to hide workspace</string>
-    <string name="ascending_sort_content_description">Sorted in ascending order</string>
+    <string name="ask_gemini">Ask Gemini</string>
     <string name="assetStatements">[{ \"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": { \"namespace\": \"web\", \"site\": \"https://drive.google.com\" } }]</string>
-    <string name="attribute_no_value">Not set</string>
-    <string name="attribute_value_today">Today</string>
-    <string name="attribute_value_yesterday">Yesterday</string>
+    <string name="assignee_dropdown_list">Assignee dropdown list</string>
     <string name="auth_uncertified_close_button_label">Close</string>
     <string name="auth_uncertified_notification_play_protect_description2">Your device isn’t certified to run Google apps or use Google services. Contact the device manufacturer or retailer and ask for a certified device. <a href="https://g.co/AndroidCertifiedDevice">Learn more</a></string>
     <string name="authentication_error">Error obtaining authentication</string>
     <string name="auto_purge_trash_notice">Items are deleted forever after 30 days.</string>
-    <string name="autofill">Autofill</string>
     <string name="back_content_description">Back</string>
-    <string name="backup_and_reset">Backup and reset</string>
-    <string name="backup_and_reset_summary">Backup settings for your device</string>
-    <string name="backup_content_summary">%1$s · Last backup: %2$s</string>
-    <string name="backup_entity_last_backup">Last backup: %s</string>
-    <string name="backup_off_help_card_button">Start backing up</string>
-    <string name="backup_off_help_card_content">@string/no_backup_help_card_content</string>
-    <string name="backup_off_help_card_content_new">"Backups keep your stuff secure and make switching devices easy. To backup your device, go to Manage users to find the primary user. If you're the primary user, go to Start backing up."</string>
-    <string name="backup_off_help_card_title">@string/no_backup_help_card_title</string>
-    <string name="backup_preferences">Auto backup for apps</string>
-    <string name="backup_settings">Backup settings</string>
-    <string name="backup_view_error">Unable to list backed up data. Check your network connectivity or try again after sometime.</string>
-    <string name="backup_will_expire_zero">This backup will expire today if the device remains inactive.</string>
     <string name="badge_desc_abuse">Flagged for abuse</string>
     <string name="badge_desc_inheritance_broken">Limited access</string>
     <string name="badge_desc_locked">Locked</string>
@@ -815,11 +1098,6 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="cakemix_video_insufficient_access">"You don't have access to view this video."</string>
     <string name="cakemix_video_no_longer_exists">This video no longer exists.</string>
     <string name="cakemix_video_unprocessed">"We're processing this video. Please check back later."</string>
-    <string name="calendar">Calendar</string>
-    <string name="calendar_footer_text">Sync to Google Calendar · %s</string>
-    <string name="calendar_message">Calendar events are synced across devices using Google Calendar.</string>
-    <string name="call_history">Call history</string>
-    <string name="call_history_message">Backup includes date and recipient of sent and received calls.</string>
     <string name="call_notification_hang_up_action">Hang Up</string>
     <string name="call_to_action_picker_description">Choose a file</string>
     <string name="camera_ocr_no_sdcard">Please insert an SD card before using the camera.</string>
@@ -836,18 +1114,6 @@ You agree to let Google Workspace use your Workspace content and activity to per
     <string name="cannot_change_any_settings">"You don't have permission to change these settings"</string>
     <string name="cannot_change_scope">Change link on the parent folder</string>
     <string name="cannot_downgrade">"Can't downgrade permission"</string>
-    <string name="carbon_device_extra_delete_confirmation_message">"
-
-Photos, contacts, and calendar events synced from this device will not be deleted."</string>
-    <string name="categories_title">Labels</string>
-    <string name="celebration_dialog_close_button">Close button</string>
-    <string name="cello_content_notification_completed_pin_title">{num_files, plural, =1 {# file now available offline} other {# files now available offline} }</string>
-    <string name="cello_content_notification_completed_pin_title_failed">{num_files, plural, =1 {Failed to make # file available offline} other {Failed to make # files available offline} }</string>
-    <string name="cello_content_notification_completed_pin_title_partial_failed">Failed to make %1$d of %2$d files available offline</string>
-    <string name="cello_content_notification_completed_upload_title">{num_files, plural, =1 {Uploaded # file} other {Uploaded # files} }</string>
-    <string name="cello_content_notification_completed_upload_title_failed">{num_files, plural, =1 {# upload failed} other {# uploads failed} }</string>
-    <string name="cello_content_notification_completed_upload_title_partial_failed">%1$d of %2$d uploads failed</string>
-    <string name="cello_content_notification_ongoing_upload_title">{num_files, plural, =1 {Uploading # file} other {Uploading # files} }</string>
     <string name="cello_content_notification_text_content_syncing">Drive is syncing your files and folders</string>
     <string name="cello_content_notification_title_content_syncing">Syncing items</string>
     <string name="cello_content_syncing_notification_ongoing_pin_title">{num_files, plural, =1 {Making # file available offline} other {Making # files available offline} }</string>
@@ -876,7 +1142,6 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
-    <string name="chat_bubble_icon_content_description">chat bubble</string>
     <string name="chips_action_cancel">Cancel</string>
     <string name="chips_action_copy">Copy</string>
     <string name="chips_permission_text">Allow contacts suggestions</string>
@@ -884,6 +1149,7 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="choice_bottomsheet_custom_text_option_text">Custom</string>
     <string name="choice_bottomsheet_done_text">Done</string>
     <string name="choice_bottomsheet_header_text">Select Options</string>
+    <string name="choose_color_talkback_indication">choose color</string>
     <string name="classroom_error_body">In order to use this feature, update your Classroom app to the latest version.</string>
     <string name="classroom_error_negative_button">Not now</string>
     <string name="classroom_error_positive_button">Update</string>
@@ -897,12 +1163,14 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="clipboard_label">Content copied from PDF</string>
     <string name="close_bottom_sheet">Close</string>
+    <string name="close_btn_label">Close</string>
     <string name="close_button_description">Close</string>
     <string name="close_edit_options_menu">Close edit options menu</string>
-    <string name="close_icon_content_description">Close icon</string>
+    <string name="close_icon_content_description">Close</string>
     <string name="close_sheet">Close sheet</string>
     <string name="close_split_pane_dialog">Close</string>
     <string name="collapse_button_label">Less</string>
+    <string name="collapse_features_label">See less</string>
     <string name="color_aqua_content_desc">color aqua</string>
     <string name="color_black_content_desc">color black</string>
     <string name="color_blue_content_desc">color blue</string>
@@ -930,25 +1198,32 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="color_violet_content_desc">color violet</string>
     <string name="color_white_content_desc">color white</string>
     <string name="color_yellow_content_desc">color yellow</string>
+    <string name="combobox_custom_option">Custom</string>
     <string name="comment_link_copied_to_clipboard">Comment link copied to clipboard</string>
     <string name="comment_marked_done_snack_bar">Comment marked done</string>
     <string name="comment_reopened_snack_bar">Comment re-opened</string>
     <string name="comment_resolved_snack_bar">Comment resolved</string>
     <string name="common_google_play_services_enable_button">Enable</string>
-    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_text">Google Play services must be enabled for %1$s.</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
     <string name="common_google_play_services_install_button">Install</string>
-    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
-    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_install_text">Install Google Play services to continue using %1$s.</string>
+    <string name="common_google_play_services_install_title">Install Google Play services</string>
     <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
     <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_signin_required_text">"%1$s couldn't connect to Google Play services. Please sign-in to your Google account."</string>
+    <string name="common_google_play_services_signin_required_title">Sign-in required</string>
+    <string name="common_google_play_services_try_again_text">"%1$s couldn't connect to Google Play services. Please try again."</string>
+    <string name="common_google_play_services_try_again_title">Please try again</string>
     <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
-    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s can't run because your device doesn't support Google Play services. Please use a supported device."</string>
+    <string name="common_google_play_services_unsupported_title">Device not compatible</string>
     <string name="common_google_play_services_update_button">Update</string>
-    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_text">Update Google Play services to use %1$s.</string>
     <string name="common_google_play_services_update_title">Update Google Play services</string>
-    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
-    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_google_play_services_updating_client_title">Google Play services updating</string>
+    <string name="common_google_play_services_updating_text">%1$s will be available once the Google Play services update is complete.</string>
+    <string name="common_google_play_services_wear_update_text">Update Google Play services to use %1$s.</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="confirm_approval">Confirm approval</string>
     <string name="confirm_copy_link">Copy link anyway</string>
@@ -974,11 +1249,9 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="contact_sharing_restricted">Restricted</string>
     <string name="contact_sharing_unknown">Unknown</string>
     <string name="contact_sharing_writer_role">Editor</string>
-    <string name="contacts">Contacts</string>
-    <string name="contacts_footer_text">Sync to Google Contacts · %s</string>
-    <string name="contacts_message">Contacts are synced across devices using Google Contacts.</string>
     <string name="content_description_close_icon">Close</string>
     <string name="content_description_disabled_menu_item_with_tooltip">%1$s. %2$s</string>
+    <string name="content_description_dismiss_button">Dismiss</string>
     <string name="content_description_expand_icon">Expand</string>
     <string name="content_description_filter_dialog">Expanded filter dropdown</string>
     <string name="content_description_filter_dropdown_collapsed">Collapsed</string>
@@ -986,7 +1259,6 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="content_description_search">Search</string>
     <string name="content_description_selected_filters">Filters selected</string>
     <string name="content_view_more_options_button_clicked">More options button in the content view is clicked.</string>
-    <string name="continue_button">Continue</string>
     <string name="convert_conversion_failed">Sorry, your document could not be processed. Please check your network connection and try again.</string>
     <string name="convert_loading_document_failed">Sorry, your document could not be processed.</string>
     <string name="convert_preparing">Preparing…</string>
@@ -1041,13 +1313,9 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="cse_sign_in_try_again_button">Try again</string>
     <string name="cta_clean_up_space">Clean up space</string>
     <string name="cta_free_up_space">Free up space</string>
-    <string name="current_device">This device</string>
     <string name="custom_color_button_content_description">custom color</string>
-    <string name="dark_theme_dark_applied">Applied dark theme</string>
-    <string name="dark_theme_default_applied">Applied default theme</string>
     <string name="dark_theme_follow_battery_title">Set by Battery Saver</string>
     <string name="dark_theme_follow_system_title">System default</string>
-    <string name="dark_theme_light_applied">Applied light theme</string>
     <string name="dark_theme_no_title">Light</string>
     <string name="dark_theme_yes_title">Dark</string>
     <string name="date_bucket_last_week">Last week</string>
@@ -1078,29 +1346,15 @@ Photos, contacts, and calendar events synced from this device will not be delete
     <string name="default_print_job_name">Default print job</string>
     <string name="default_scope_contact_name">Everybody</string>
     <string name="default_web_client_id">378076965553-kvjfodqso3nc7m7ra54devmba9t8luou.apps.googleusercontent.com</string>
-    <string name="delete_backup">Delete backup</string>
-    <string name="delete_backup_confirm_button">Delete</string>
-    <string name="delete_backup_progress_message">Deleting backup</string>
-    <string name="delete_device_backup_confirmation_message">"Backup data for this device will be permanently deleted.
-
-New backup data will be created if backup is still turned on for %s."</string>
-    <string name="delete_device_backup_title">Delete %s?</string>
     <string name="delete_generic_error_team_drive_updated">Unable to delete the shared drive.</string>
-    <string name="delete_multiple_backup_error_message">Some backups could not be deleted.</string>
     <string name="delete_offline_error_team_drive_updated">Please go online to delete the shared drive</string>
-    <string name="delete_single_backup_error_message">Backup could not be deleted.</string>
     <string name="delete_td_nonempty_error">A shared drive must be empty to delete it.</string>
-    <string name="delete_whatsapp_backup_after_turnoff_confirmation_message">"Do you also want to permanently delete backup of WhatsApp chat and media for:
-
-%s"</string>
-    <string name="delete_whatsapp_backup_confirmation_message">"Backup of WhatsApp chat and media will be permanently deleted for %s.
-
-New backup data will be created if backup is still turned on for this number."</string>
-    <string name="delete_whatsapp_backup_title">Delete WhatsApp backup?</string>
     <string name="desc_badged_label">%1$s badge</string>
     <string name="desc_cell">cell %1$s %2$d, %3$s</string>
     <string name="desc_classification_label">%1$s badge</string>
     <string name="desc_close_button">Close</string>
+    <string name="desc_copy">Copies selected content to your clipboard</string>
+    <string name="desc_copy_link">Copies link to your clipboard</string>
     <string name="desc_discussions_closed">Closed comments</string>
     <string name="desc_email_link">Email: %1$s</string>
     <string name="desc_empty_page">Empty page</string>
@@ -1114,10 +1368,12 @@ New backup data will be created if backup is still turned on for this number."</
     <string name="desc_has_comment">Has comment</string>
     <string name="desc_hidden_label_count">{total_label_count, plural, =1 {This file has # label} other {This file has # labels} }</string>
     <string name="desc_image_preview">image preview</string>
+    <string name="desc_jump_to">Jumps to the section or page in the PDF</string>
     <string name="desc_page">Page %1$d</string>
     <string name="desc_page_single">page %1$d of %2$d</string>
     <string name="desc_page_with_text">Page %1$d: %2$s</string>
     <string name="desc_phone_link">Phone: %1$s</string>
+    <string name="desc_select_all">Selects all of the text in the PDF</string>
     <string name="desc_web_link">Link: %1$s</string>
     <string name="desc_web_link_shortened_to_domain">Link: webpage at %1$s</string>
     <string name="describe_your_issue">Could you describe your issue?</string>
@@ -1142,10 +1398,7 @@ New backup data will be created if backup is still turned on for this number."</
     <string name="detail_preview_quota">Storage used</string>
     <string name="detail_preview_size">Size</string>
     <string name="details_panel_back_content_description">Back</string>
-    <string name="device_inactive">Device inactive</string>
     <string name="device_offline">No connection</string>
-    <string name="device_settings">Device settings</string>
-    <string name="device_settings_message">Backup includes device configuration, such as wallpaper, WiFi passwords, and default apps.</string>
     <string name="dialog_confirm_a11y_message_change_parent_permission_file">The file, %1$s will change from %2$s to %3$s, and its parent folder, %4$s, will also change from %5$s to %6$s.</string>
     <string name="dialog_confirm_a11y_message_change_parent_permission_file_both_not_discoverable">The file, %1$s will change from %2$s to %3$s, not searchable, and its parent folder, %4$s, will also change from %5$s to %6$s, not searchable.</string>
     <string name="dialog_confirm_a11y_message_change_parent_permission_file_not_discoverable">The file, %1$s will change from %2$s to %3$s, not searchable, and its parent folder, %4$s, will also change from %5$s to %6$s.</string>
@@ -1241,6 +1494,7 @@ This action cannot be undone."</string>
     <string name="discussion_action_undo_snackbar_text">Undo</string>
     <string name="discussion_add_reaction_text">Add reaction</string>
     <string name="discussion_all_comments_add_comment">Add a comment</string>
+    <string name="discussion_all_comments_title">All comments</string>
     <string name="discussion_api_error">Comments error. Please check your Internet connection and try again.</string>
     <string name="discussion_assign">Assign</string>
     <string name="discussion_assign_as_a_task_to">Assign to</string>
@@ -1256,14 +1510,13 @@ This action cannot be undone."</string>
     <string name="discussion_comment_attribution_import">From imported document</string>
     <string name="discussion_comment_dialog">Comment dialog</string>
     <string name="discussion_comment_edited">Comment saved</string>
-    <string name="discussion_comment_reopened">Comment Re-opened</string>
     <string name="discussion_comment_replied">Replied to comment</string>
-    <string name="discussion_comment_resolved">Comment resolved</string>
     <string name="discussion_comment_resolved_label">Resolved comment</string>
     <string name="discussion_comment_view_all">View all</string>
     <string name="discussion_comments_title">Comments</string>
     <string name="discussion_contact_autocomplete_suggestion">Contact Autocomplete Suggestion</string>
     <string name="discussion_contact_picture">Contact picture</string>
+    <string name="discussion_contact_suggestions_available">Custom actions available: %1$s</string>
     <string name="discussion_current_author_label">You</string>
     <string name="discussion_delete">Delete</string>
     <string name="discussion_delete_comment_text">Do you really want to delete this comment?</string>
@@ -1282,6 +1535,11 @@ This action cannot be undone."</string>
     <string name="discussion_edited">Edited</string>
     <string name="discussion_error">Comments error. Please try again.</string>
     <string name="discussion_executing_request">There is a comment request executing, please wait until it finishes.</string>
+    <string name="discussion_filter_all_types">All types</string>
+    <string name="discussion_filter_open">Open</string>
+    <string name="discussion_filter_resolved">Resolved</string>
+    <string name="discussion_for_you_no_results">‘For you’ will list comments that need your attention. Start a discussion.</string>
+    <string name="discussion_for_you_title">For you</string>
     <string name="discussion_get_shareable_link">Get shareable link</string>
     <string name="discussion_loading">Loading comments…</string>
     <string name="discussion_longer_comment">A comment is limited to 2048 characters</string>
@@ -1295,12 +1553,14 @@ This action cannot be undone."</string>
     <string name="discussion_new_edit_sidebar_title">Add new comment</string>
     <string name="discussion_new_no_comments">Start a discussion</string>
     <string name="discussion_no_comments">No comments in this document</string>
+    <string name="discussion_no_matching_results">No matching results</string>
     <string name="discussion_options">Options</string>
     <string name="discussion_pager_bar_next">Next</string>
     <string name="discussion_pager_bar_previous">Previous</string>
     <string name="discussion_pager_bar_text">%1$d of %2$d</string>
     <string name="discussion_re_opened_by">Re-opened by %1$s</string>
     <string name="discussion_reaction_details_opened">Reaction details page opened</string>
+    <string name="discussion_reaction_details_title">Reactions</string>
     <string name="discussion_reaction_reopened">Reaction re-opened</string>
     <string name="discussion_reaction_resolved">Reaction resolved</string>
     <string name="discussion_reaction_resolved_label">Resolved reaction</string>
@@ -1317,7 +1577,11 @@ This action cannot be undone."</string>
     <string name="discussion_reply_text">Add a reply</string>
     <string name="discussion_reply_text_hint">Add a reply</string>
     <string name="discussion_reply_title">Discussion</string>
+    <string name="discussion_reply_to_reopen_text_hint">Reply to re-open comment</string>
+    <string name="discussion_reply_tombstone">Reply was deleted</string>
+    <string name="discussion_reset_filters">Reset filters</string>
     <string name="discussion_resolve">Resolve</string>
+    <string name="discussion_resolved_header">Resolved (%1$d)</string>
     <string name="discussion_save">Save</string>
     <string name="discussion_section_title_active">Active</string>
     <string name="discussion_section_title_resolved">Resolved</string>
@@ -1325,6 +1589,9 @@ This action cannot be undone."</string>
     <string name="discussion_server_failure">Failed to sync comment due to a network error. Commenting is now disabled.</string>
     <string name="discussion_server_failure_commenting_disabled">Commenting is disabled due to a network error. Please try again later.</string>
     <string name="discussion_server_recovered">Commenting has been restored.</string>
+    <string name="discussion_show_contact_suggestions">Show contact suggestions</string>
+    <string name="discussion_show_less">Show less</string>
+    <string name="discussion_show_more">Show more</string>
     <string name="discussion_suggestion">Suggestion by</string>
     <string name="discussion_suggestion_accepted">Suggestion accepted</string>
     <string name="discussion_suggestion_accepted_by">Accepted by %1$s</string>
@@ -1335,14 +1602,15 @@ This action cannot be undone."</string>
     <string name="discussion_task_added">Action item added</string>
     <string name="discussion_task_assigned_to">Assigned to %1$s</string>
     <string name="discussion_task_assigned_to_label">Assigned to</string>
+    <string name="discussion_task_assigned_to_you">Assigned to you</string>
     <string name="discussion_task_assignee_you">You</string>
     <string name="discussion_task_mark_as_done">Mark done</string>
     <string name="discussion_task_marked_done">Marked as done</string>
     <string name="discussion_task_reassigned_to_you">Reassigned to you</string>
-    <string name="discussion_task_reopened">Action item re-opened</string>
     <string name="discussion_task_replied">Replied to action item</string>
     <string name="discussion_task_resolved_label">Marked done</string>
     <string name="discussion_unsaved_dialog_message">Your comment changes are not saved and may be lost if you exit now. Do you want to close and discard the changes?</string>
+    <string name="dismiss_scoper_menu_snackbar_text">All sources have been removed</string>
     <string name="doclist_date_added_label">Added %s</string>
     <string name="doclist_date_created_label">Created %s</string>
     <string name="doclist_date_modified_by_me_label">Modified by me %s</string>
@@ -1356,9 +1624,7 @@ This action cannot be undone."</string>
     <string name="doclist_empty_state_error_title">"Can't refresh"</string>
     <string name="doclist_entry_content_description">%1$s %2$s</string>
     <string name="doclist_entry_content_description_with_color">%1$s %2$s color: %3$s</string>
-    <string name="doclist_grid_view_layout_content_description">Grid view layout</string>
     <string name="doclist_item_selected">Selected</string>
-    <string name="doclist_list_view_layout_content_description">List view layout</string>
     <string name="doclist_quota_used_label">Storage used: %s</string>
     <string name="doclist_sortby_empty_value">—</string>
     <string name="doclist_sortby_relevance">Relevance</string>
@@ -1448,7 +1714,6 @@ This action cannot be undone."</string>
     <string name="draggable_divider_handler_state_right_edge">Left pane expanded</string>
     <string name="drive_storage_title">Drive storage</string>
     <string name="dropdown_delete_button_desc">Remove %s from recipients</string>
-    <string name="dropdown_menu">Dropdown menu</string>
     <string name="due_date_in_the_past_error_message">Due dates must be in the future</string>
     <string name="duo_notification_default_error_title">An error occurred</string>
     <string name="edit_action_discard">Discard</string>
@@ -1496,7 +1761,7 @@ Click + to create a new drawing."</string>
     <string name="empty_trash_operation_title">Delete Forever?</string>
     <string name="empty_trash_operation_warning">All items in the Trash will be deleted forever and you will not be able to restore them.</string>
     <string name="encrypted_content_description">Encrypted %1$s</string>
-    <string name="encrypted_file_gdoc_preview_text">"Encrypted Google files aren't able to be previewed on mobile at this time"</string>
+    <string name="encrypted_file_google_preview_text">"Encrypted Google files aren't able to be previewed on mobile at this time"</string>
     <string name="encrypted_file_msoffice_preview_text">"Encrypted Microsoft Office files aren't able to be previewed on mobile at this time"</string>
     <string name="encrypted_file_preview_label">"Can't preview encrypted file"</string>
     <string name="encrypted_file_preview_text">"Encrypted files in this format can't be previewed on mobile at this time"</string>
@@ -1543,7 +1808,6 @@ Click + to create a new drawing."</string>
     <string name="error_ssl_idmismatch_template">"SSL error (code %1$d) connecting to '%2$s': Hostname mismatch."</string>
     <string name="error_ssl_validity_template">"SSL error (code %1$d) connecting to '%2$s': The certificate is expired or not yet valid; is this device's date setting accurate?"</string>
     <string name="error_start_client">Cannot load more files from %1$s</string>
-    <string name="error_title">Error</string>
     <string name="error_too_large">This file is too large to preview</string>
     <string name="error_video_not_available">Video has not been processed. Please try again later.</string>
     <string name="excess_contacts">+%1$d</string>
@@ -1592,6 +1856,7 @@ Click + to create a new drawing."</string>
     <string name="exo_track_unknown_name">Unknown (%1$s)</string>
     <string name="expand_button_label">More</string>
     <string name="expand_button_title">Advanced</string>
+    <string name="expand_features_label">See more features</string>
     <string name="expiration_date">Access expires %1$s</string>
     <string name="expiration_date_invalid">Expiration not added. Choose a date that hasn’t passed.</string>
     <string name="expiration_date_invalid_action">Try again</string>
@@ -1717,6 +1982,18 @@ Click + to create a new drawing."</string>
     <string name="g1_quota_dismiss_button_content_description">Dismiss</string>
     <string name="gallery_select_error">Error selecting image for upload.</string>
     <string name="gcm_defaultSenderId">378076965553</string>
+    <string name="gemini_search_settings_banner_text">Gemini overviews now include results from your Workspace apps by default. Adjust your preferences anytime.</string>
+    <string name="gemini_shelf_beta_badge">Beta</string>
+    <string name="gemini_shelf_citations_panel_title">Sources</string>
+    <string name="gemini_shelf_collapse_button_text">Collapse</string>
+    <string name="gemini_shelf_copy_button_text">Copy</string>
+    <string name="gemini_shelf_more_actions_button_text">More actions</string>
+    <string name="gemini_shelf_report_button_text">Report</string>
+    <string name="gemini_shelf_retry_button_text">Retry</string>
+    <string name="gemini_shelf_sources_button_text">Sources (%1$d)</string>
+    <string name="gemini_shelf_thumbs_down_button_text">Thumbs down</string>
+    <string name="gemini_shelf_thumbs_up_button_text">Thumbs up</string>
+    <string name="gemini_tooltip_disclaimer">Gemini in Workspace can make mistakes, so double-check responses.</string>
     <string name="gen_ai_consumer_feedback_consent_header">Please select the data you want to share along with your feedback to help improve Google products and services.</string>
     <string name="gen_ai_consumer_feedback_disclaimer">This data will be used to improve our services subject to the <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a>. Data may be reviewed using human reviewers. Please do not contribute data that is personal, sensitive or confidential.</string>
     <string name="gen_ai_consumer_feedback_donation_instructions">Please select the data you want to share along with your feedback to help improve Workspace products and services subject to the <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a>. Data may be reviewed using human reviewers. Please do not contribute data that is personal, sensitive or confidential.</string>
@@ -1726,8 +2003,8 @@ Click + to create a new drawing."</string>
     <string name="gen_ai_feedback_collapse_prompt">Collapse prompt</string>
     <string name="gen_ai_feedback_data_donation_headline">We will also collect the data selected below; the data may be human reviewed. Do not contribute personal, sensitive or confidential data.</string>
     <string name="gen_ai_feedback_expand">Expand</string>
-    <string name="gen_ai_feedback_expand_output">Expand output</string>
-    <string name="gen_ai_feedback_expand_prompt">Expand prompt</string>
+    <string name="gen_ai_feedback_expand_output">Expand to view output</string>
+    <string name="gen_ai_feedback_expand_prompt">Expand to view prompt</string>
     <string name="gen_ai_feedback_exposed_information">Exposed my personal information</string>
     <string name="gen_ai_feedback_exposed_personal_information">Personal information exposed</string>
     <string name="gen_ai_feedback_input_hint">Provide additional feedback</string>
@@ -1740,6 +2017,7 @@ Click + to create a new drawing."</string>
     <string name="gen_ai_feedback_output_title">Output</string>
     <string name="gen_ai_feedback_prompt_title">Prompt</string>
     <string name="gen_ai_feedback_report_legal_issue"><u>Report a legal issue</u></string>
+    <string name="gen_ai_feedback_section_title">Section</string>
     <string name="gen_ai_feedback_share_data_title">What data will be shared?</string>
     <string name="gen_ai_feedback_submission_failed_body">Please try again.</string>
     <string name="gen_ai_feedback_submission_failed_title">Submission failed</string>
@@ -1757,13 +2035,16 @@ This data may be reviewed by humans. Please do not contribute data that is perso
 
 Note: Feedback deleted from Footprints may still be retained in Listnr."</string>
     <string name="gen_ai_incorrect_content_feedback">Not factually correct</string>
-    <string name="gen_ai_labs_consumer_feedback_consent_header">Please select the data you want to share along with your feedback to help improve Google products and services. This data may be reviewed by humans and is in addition to data that has already been collected, per the <a href="https://support.google.com/docs/answer/13447401">Labs Terms of Service.</a></string>
-    <string name="gen_ai_labs_consumer_feedback_donation_instructions">Please select the data you want to share along with your feedback to help improve Google products and services subject to the <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a>. This data may be reviewed by humans and is in addition to data that may have already been collected, per the <a href="https://support.google.com/docs/answer/13447401">Labs Terms of Service</a>. Please do not contribute data that is personal, sensitive or confidential.</string>
+    <string name="gen_ai_labs_consumer_feedback_consent_header">Please select the data you want to share along with your feedback to help improve Google products and services. This data may be reviewed by humans and is in addition to data that has already been collected, per the <a href="https://support.google.com/docs/answer/13447401">Experiments Terms of Service.</a></string>
+    <string name="gen_ai_labs_consumer_feedback_donation_instructions">Please select the data you want to share along with your feedback to help improve Google products and services subject to the <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en-US">Google Terms of Service</a>. This data may be reviewed by humans and is in addition to data that may have already been collected, per the <a href="https://support.google.com/docs/answer/13447401">Experiments Terms of Service</a>. Please do not contribute data that is personal, sensitive or confidential.</string>
     <string name="general_access_title">General access</string>
     <string name="generating_dialog_heading">Generating scan</string>
     <string name="generating_pdf_dialog_message">Google Drive is suggesting a name for your file</string>
+    <string name="generativeai_back_button_content_description">Back</string>
     <string name="generic_cannot_change_error">"Can't change settings"</string>
     <string name="generic_cello_error">The operation failed</string>
+    <string name="generic_error">Something went wrong</string>
+    <string name="generic_error_description">"We couldn't complete that action. Try again"</string>
     <string name="generic_error_user_canceled">Authentication canceled by user.</string>
     <string name="generic_owner_modify_error">"Can't change permission. Try again later."</string>
     <string name="get_started">Get started</string>
@@ -1793,10 +2074,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="google_slides_long">Google Slides</string>
     <string name="got_it_dialog_key_shortcuts">Got it</string>
     <string name="help">Help</string>
-    <string name="help_card_button_label_got_it">Got it</string>
-    <string name="help_card_button_label_learn_more">Learn more</string>
-    <string name="help_card_button_label_no_thanks">No, thanks</string>
-    <string name="help_card_button_label_not_now">Not now</string>
     <string name="hidden_label_count">+%1$d</string>
     <string name="hidden_workspaces_header">Hidden workspaces</string>
     <string name="hide_action_failure_updated">Cannot hide shared drive</string>
@@ -1821,7 +2098,9 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="individual_user_low_storage_body">%1$d%% left of your %2$s individual storage. To prevent interruptions, free up space or ask your administrator to get more storage.</string>
     <string name="individual_user_out_of_storage_body">"You've used all of your %1$s of storage. To upload more files, free up space or ask your administrator to get more storage."</string>
     <string name="info_banner_close">Close</string>
+    <string name="info_banner_g1_icon">G1 icon</string>
     <string name="info_banner_icon">Warning</string>
+    <string name="info_content_description">Tap for information about this promotion</string>
     <string name="inheritance_break_banner_title_file">This file has limited access</string>
     <string name="inheritance_break_banner_title_folder">This folder has limited access</string>
     <string name="inheritance_break_icon_content_desc">Limited access</string>
@@ -1880,7 +2159,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="input_text_dialog_create_button">Create</string>
     <string name="invalid_expiration_content_description">Error</string>
     <string name="invalid_expiration_message">"Choose a date that hasn't passed"</string>
-    <string name="invalid_request">Invalid request</string>
     <string name="irrelevant_content">Irrelevant content</string>
     <string name="item_shortcut">Shortcut</string>
     <string name="item_shortcut_unavailable">Unavailable</string>
@@ -1924,6 +2202,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="kb_open_move_dialog">Move selected items</string>
     <string name="kb_open_settings">Settings menu</string>
     <string name="kb_open_sharing_panel">Share selected item</string>
+    <string name="kb_open_sidekick_menu">Open Gemini</string>
     <string name="kb_paste">Paste items from clipboard</string>
     <string name="kb_play_pause">Play / Pause</string>
     <string name="kb_prev_item">Go to previous item</string>
@@ -1947,8 +2226,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="kb_skip_fwd">Skip forward</string>
     <string name="kb_star_unstar_items">Star or unstar selected items</string>
     <string name="kb_toggle_layout">Switch between grid and list in items view</string>
-    <string name="kb_toggle_layout_grid_to_list_view">Switched to list view</string>
-    <string name="kb_toggle_layout_list_to_grid_view">Switched to grid view</string>
     <string name="kb_up">Go up one folder in the path</string>
     <string name="kb_upload_file">Upload file</string>
     <string name="kb_zoom_in">Zoom in</string>
@@ -1960,14 +2237,17 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="keyboard_cannot_copy_items">Cannot copy items</string>
     <string name="keyboard_cannot_cut_into_folder">Cannot move items into this folder</string>
     <string name="keyboard_item_already_exists_in_location">The file or folder already exists in this location</string>
+    <string name="label_copy_link">Copy link</string>
     <string name="label_item_date_trashed">Date trashed</string>
     <string name="label_item_date_uploaded">Date uploaded</string>
     <string name="label_item_storage_used">Storage used</string>
     <string name="label_item_title">Name</string>
+    <string name="label_jump_to">Jump to</string>
     <string name="label_page_indicator">%1$d / %2$d</string>
     <string name="label_page_range">%1$d-%2$d / %3$d</string>
     <string name="label_page_single">%1$d / %2$d</string>
     <string name="label_password_first">Password</string>
+    <string name="labels_title">Labels</string>
     <string name="last_modified_filter_category">Modified</string>
     <string name="launcher_scan_short">Scan</string>
     <string name="launcher_search_short">Search</string>
@@ -2001,7 +2281,10 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="loading_for_printing">Loading document</string>
     <string name="location_shared_with_user">Shared with me</string>
     <string name="lock_file_before_approval_request">Lock file before sending approval request</string>
+    <string name="logo_content_description">Google Workspace logo</string>
     <string name="loop_video">Loop video</string>
+    <string name="lost_permission_to_file_dialog_message">You no longer have access to this file. Ask the owner for permission.</string>
+    <string name="lost_permission_to_file_dialog_title">Access removed</string>
     <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
     <string name="m3_loading_indicator_content_description">Loading</string>
     <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
@@ -2036,6 +2319,9 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="m3c_date_range_picker_start_headline">Start date</string>
     <string name="m3c_date_range_picker_title">Select dates</string>
     <string name="m3c_dialog">Dialog</string>
+    <string name="m3c_dropdown_menu_collapsed">Collapsed</string>
+    <string name="m3c_dropdown_menu_expanded">Expanded</string>
+    <string name="m3c_dropdown_menu_toggle">Toggle dropdown menu</string>
     <string name="m3c_snackbar_pane_title">Alert</string>
     <string name="make_a_copy_action">Make a copy</string>
     <string name="make_shortcut_action">Add shortcut to Drive</string>
@@ -2059,8 +2345,8 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="manage_storage_navigation_icon_arrow_content_description">Back</string>
     <string name="manage_storage_other_label">Other</string>
     <string name="manage_storage_photos_label">Google Photos</string>
-    <string name="manage_users_error">"Can't manage users"</string>
     <string name="manifest_intent_view_pdf_drive">Drive PDF Viewer</string>
+    <string name="marked_as_resolved_and_hide_discussion">Mark as resolved and hide discussion</string>
     <string name="markup_mode_action_save_copy">Save copy</string>
     <string name="material_clock_display_divider">:</string>
     <string name="material_clock_toggle_content_description">Select AM or PM</string>
@@ -2093,7 +2379,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="materialnext_debugview_topappbar_subtitle_dynamiccolorsenabled">Dynamic Colors: Enabled</string>
     <string name="materialnext_debugview_topappbar_title">Material Next Colors</string>
     <string name="max_active_workspaces_prompt">To unarchive, make room for another active workspace</string>
-    <string name="mc2_snackbar_pane_title">Alert</string>
     <string name="media_fast_forward_button_content_desc">Fast forward ten seconds</string>
     <string name="media_fullscreen_button_content_desc">Fullscreen</string>
     <string name="media_hidden_controls_state_desc">Hidden controls</string>
@@ -2110,7 +2395,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="menu_add_expiration_view_subtext">For viewer role</string>
     <string name="menu_add_members">Add members</string>
     <string name="menu_add_to_home_screen">Add to Home screen</string>
-    <string name="menu_backup">Backups</string>
     <string name="menu_cancel_ownership_transfer">Cancel ownership transfer</string>
     <string name="menu_copy_link">Copy link</string>
     <string name="menu_create_new_doc">Add new</string>
@@ -2131,6 +2415,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="menu_open_in_other_window">Open in other window</string>
     <string name="menu_open_with">Open with</string>
     <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
     <string name="menu_search_clear">Clear search</string>
     <string name="menu_selection_all">Select all</string>
     <string name="menu_send_link">Share link</string>
@@ -2147,6 +2432,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="menu_show_pdf">PDF</string>
     <string name="menu_show_picture">Images</string>
     <string name="menu_show_pinned">Offline</string>
+    <string name="menu_show_projects">Projects</string>
     <string name="menu_show_punch">Presentations</string>
     <string name="menu_show_recent">Recent</string>
     <string name="menu_show_spam">Spam</string>
@@ -2181,10 +2467,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="message_user_block_failed">"Something went wrong and this person couldn't be blocked. Try again."</string>
     <string name="message_user_block_failed_offline">"You're offline. Couldn't block this person."</string>
     <string name="message_user_blocked">Person blocked</string>
-    <string name="mms">MMS</string>
-    <string name="mms_message">Backup includes messages sent and received.</string>
     <string name="more_actions_content_description">More actions</string>
-    <string name="more_information">More information</string>
     <string name="more_string">+%1$d</string>
     <string name="move">Move</string>
     <string name="move_confirm_dialog_full_stop">". "</string>
@@ -2229,6 +2512,7 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="moved_to_shared_message_folder">"Folder was moved to 'Shared'"</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_button_overflow_icon_content_description">Overflow menu</string>
+    <string name="mtrl_button_snackbar_close_content_description">Close</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
     <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
@@ -2261,9 +2545,11 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="mtrl_picker_invalid_range">Invalid range.</string>
     <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_next_month_tooltip">Next month</string>
     <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
     <string name="mtrl_picker_pane_title_calendar_view">Calendar view</string>
     <string name="mtrl_picker_pane_title_year_view">Year view</string>
+    <string name="mtrl_picker_prev_month_tooltip">Previous month</string>
     <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
     <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
@@ -2279,8 +2565,10 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="mtrl_picker_text_input_year_abbr">y</string>
     <string name="mtrl_picker_today_description">Today %1$s</string>
     <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode_tooltip">Switch to calendar</string>
     <string name="mtrl_picker_toggle_to_day_selection">Switch to Calendar view</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode_tooltip">Switch to text input</string>
     <string name="mtrl_picker_toggle_to_year_selection">Switch to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
@@ -2317,24 +2605,17 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="no_account_for_upload_setup_account">Setup account</string>
     <string name="no_account_for_upload_title">Upload to Drive</string>
     <string name="no_approvals_yet">No approvals yet</string>
-    <string name="no_backup_help_card_button">Backup settings</string>
-    <string name="no_backup_help_card_content">Backups keep your stuff secure and make switching devices easy.</string>
-    <string name="no_backup_help_card_content_new">"Backups keep your stuff secure and make switching devices easy. To backup your device, go to Manage users to find the primary user. If you're the primary user, go to Backup settings."</string>
-    <string name="no_backup_help_card_title">Your device is not backed up</string>
     <string name="no_browser_to_open_link_error_details">"You'll need to enable a browser to open this link."</string>
     <string name="no_browser_to_open_link_error_dismiss">Close</string>
     <string name="no_browser_to_open_link_error_enable_default_browser">Enable browser</string>
     <string name="no_browser_to_open_link_error_title">"Can't open link"</string>
-    <string name="no_categories_available_description">Contact your admin to create labels for your organization</string>
-    <string name="no_categories_available_title">No labels available</string>
-    <string name="no_categories_description">You can add labels to files from Drive web</string>
-    <string name="no_categories_title">No labels applied</string>
-    <string name="no_connection_carbon">No connection</string>
     <string name="no_files_in_team_drive_title">No files in %1$s</string>
     <string name="no_interaction_message">"This person won't be able to interact with you in Google Drive and certain other Google products"</string>
     <string name="no_interaction_message_plural">"These people won't be able to interact with you in Google Drive and certain other Google products"</string>
+    <string name="no_network_error">Connection error</string>
+    <string name="no_network_error_description">Check your internet connection and try again</string>
     <string name="no_preview_image">No preview available</string>
-    <string name="no_sensitive_information">"Please don't include sensitive information"</string>
+    <string name="no_sensitive_information">"Don't share passwords, credit card numbers, and personal details."</string>
     <string name="no_team_drives_title_updated">No shared drives</string>
     <string name="none">None</string>
     <string name="not_selected">Not selected</string>
@@ -2353,7 +2634,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="notification_channel_name_sharing">Shared items</string>
     <string name="notification_channel_name_storage">Storage</string>
     <string name="notification_channel_name_storage_usage">Storage usage</string>
-    <string name="notification_default_error_title">An error occurred</string>
     <string name="notification_extra_text_is_too_long">Unable to upload. Text is too long.</string>
     <string name="notification_retry_sync">Retry</string>
     <string name="notification_settings">Notification settings</string>
@@ -2373,7 +2653,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="offensive_or_inappropriate">Offensive or inappropriate</string>
     <string name="og_a11y_close">Close</string>
     <string name="og_account_and_settings">Account and settings.</string>
-    <string name="og_account_critical_alert_view_label_a11y">%1$s for %2$s</string>
     <string name="og_account_list_collapsed_a11y">Account list collapsed.</string>
     <string name="og_account_list_expanded_a11y">Account list expanded.</string>
     <string name="og_account_not_restricted">Account is not restricted</string>
@@ -2382,26 +2661,23 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="og_bento_a11y_dialog">Dialog</string>
     <string name="og_bento_alert_greeting_with_name">Pay attention, %1$s!</string>
     <string name="og_bento_alert_greeting_without_name">Pay attention!</string>
-    <string name="og_bento_deactivated_label">Deactivated</string>
-    <string name="og_bento_greeting_hi_message_with_name">Hi, %1$s!</string>
-    <string name="og_bento_greeting_hi_message_without_name">Hi there!</string>
     <string name="og_bento_more_from_product">More from %1$s</string>
     <string name="og_bento_more_from_product_fallback">More from this app</string>
-    <string name="og_bento_short_greeting_hi_message">Hi!</string>
-    <string name="og_bento_switch_account">Switch account</string>
     <string name="og_bento_unicorn_account_header_title">Your parent is helping to manage your account</string>
     <string name="og_card_loading_label_a11y">Loading details.</string>
     <string name="og_choose_an_account_title">Choose an account</string>
     <string name="og_collapse_account_list_a11y">Collapse account list.</string>
     <string name="og_critical_account_alert_badge_a11y_label">Critical account alert</string>
     <string name="og_critical_security_alert_badge_label_a11y">Critical security alert</string>
+    <string name="og_deactivated_label">Deactivated</string>
     <string name="og_dismiss">Dismiss</string>
     <string name="og_expand_account_list_a11y">Expand account list.</string>
     <string name="og_failed_to_fetch_restriction_info">Failed to fetch restriction info</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
     <string name="og_got_it">Got it</string>
+    <string name="og_greeting_hi_message_with_name">Hi, %1$s!</string>
+    <string name="og_greeting_hi_message_without_name">Hi there!</string>
     <string name="og_important_account_alert_badge_a11y_label">Important account alert</string>
-    <string name="og_loading_a11y">Loading</string>
     <string name="og_manage_accounts">Manage accounts on this device</string>
     <string name="og_my_account_desc_long_length">Manage your Google Account</string>
     <string name="og_my_account_desc_meduim_length">Google Account</string>
@@ -2409,20 +2685,18 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="og_obake_feature_a11y">Change profile picture.</string>
     <string name="og_privacy_policy">Privacy Policy</string>
     <string name="og_recommended_actions_entry_point">Recommended actions</string>
-    <string name="og_sign_in_">Sign In</string>
+    <string name="og_short_greeting_hi_message">Hi!</string>
+    <string name="og_signed_in_as">Signed in as</string>
     <string name="og_signed_in_as_account">Signed in as %1$s</string>
+    <string name="og_switch_account">Switch account</string>
     <string name="og_terms_of_service">Terms of Service</string>
-    <string name="og_use_account_a11y_no_period">Use %1$s</string>
     <string name="ok_button">OK</string>
-    <string name="open_calendar">Open Google Calendar</string>
     <string name="open_comment_history">Open comment history</string>
-    <string name="open_contacts">Open Google Contacts</string>
     <string name="open_document_error_item_cannot_be_exported">"Can't download; opening in web mode…"</string>
     <string name="open_document_error_no_viewer_app_found">No installed app can view this file; opening in web mode…</string>
     <string name="open_document_in_browser">Open in browser</string>
     <string name="open_gemini_content_description">Open Gemini</string>
     <string name="open_location_action_label">Open item location</string>
-    <string name="open_photos">Open Google Photos</string>
     <string name="open_pinned_version">Open from device</string>
     <string name="open_url_authentication_error">Unable to access document. Error obtaining authentication.</string>
     <string name="open_url_error_access_denied">This item cannot be opened. You might not have permission, or it is no longer available.</string>
@@ -2444,7 +2718,6 @@ Note: Feedback deleted from Footprints may still be retained in Listnr."</string
     <string name="organization_low_storage_header">Organization storage low</string>
     <string name="organization_out_of_storage_header">Organization storage full</string>
     <string name="organization_user_out_of_storage_body">Your organization exceeded its %1$s of Google Workspace storage. To continue, either free up space or ask your admin to get more storage.</string>
-    <string name="other_backups">Other backups</string>
     <string name="out_of_storage_dialog_call_to_action">Free up space</string>
     <string name="out_of_storage_dialog_dismiss">Dismiss</string>
     <string name="out_of_storage_dialog_message">"There's not enough storage available to read or write comments. Free up space in the Files app to restore full functionality."</string>
@@ -2497,14 +2770,13 @@ all your files"</string>
     <string name="phonesky_installation_failure_alert_dialog_title">Installation was unsuccessful</string>
     <string name="phonesky_no_internet_connection_alert_dialog_message">Your device is not connected to the Internet. Please try again later.</string>
     <string name="phonesky_no_internet_connection_alert_dialog_title">Not connected</string>
-    <string name="photos_and_videos">Photos and videos</string>
-    <string name="photos_and_videos_footer_text">Sync to Google Photos · %s</string>
-    <string name="photos_and_videos_message">Photos and videos are synced across devices using Google Photos.</string>
     <string name="photos_update_description_text_post">This folder no longer syncs with Google Photos. Your photos are safe in Google Photos.</string>
     <string name="photos_update_learn_more_button">Learn more</string>
     <string name="pick_entry_create_new_folder">Create new folder</string>
     <string name="pick_entry_dialog_title">Choose an item</string>
+    <string name="pick_entry_dialog_title_gen_ai">Add sources</string>
     <string name="pick_entry_dialog_title_location">Choose a location</string>
+    <string name="pick_entry_dialog_title_multiselect">Choose items</string>
     <string name="pico_action_edit">Edit file</string>
     <string name="pico_button_cancel">Cancel</string>
     <string name="pico_button_open">Open</string>
@@ -2537,8 +2809,6 @@ all your files"</string>
     <string name="pin_downloading">Downloading</string>
     <string name="pin_error_a11y">An error occurred while syncing this file.</string>
     <string name="pin_error_external_storage_not_ready">Pinned file is not accessible when external storage is not ready.</string>
-    <string name="pin_notification_waiting_for_connectivity_partial_sync_title">Paused making {inprogress_num_files} of {total_num_files} files available offline</string>
-    <string name="pin_notification_waiting_for_connectivity_title">{num_files, plural, =1 {Paused making # file available offline} other {Paused making # files available offline} }</string>
     <string name="pin_offline">Available offline</string>
     <string name="pin_sync_broadband_warning_learn_more">Learn more</string>
     <string name="pin_sync_broadband_warning_message">Transferring files over mobile data may incur additional charges, depending on your mobile data plan.</string>
@@ -2547,6 +2817,7 @@ all your files"</string>
     <string name="pin_warning_external_storage_not_ready">The document will not be made available offline until external storage is ready.</string>
     <string name="pixel_abbreviation">%2dpx</string>
     <string name="play_protect_uncertified_device_notification_title">This device isn’t Play Protect certified</string>
+    <string name="play_store_connection_error">"Can't connect to Play Store"</string>
     <string name="policy_privacy">Privacy</string>
     <string name="policy_terms">Terms</string>
     <string name="pooled_storage_day_label">{num_days, plural, =0 {&lt;1 day} =1 {# day} other {# days} }</string>
@@ -2566,6 +2837,8 @@ all your files"</string>
     <string name="prefs_dark_theme_title">Choose theme</string>
     <string name="prefs_data_privacy_category_title">Data privacy</string>
     <string name="prefs_data_usage_category">Data usage</string>
+    <string name="prefs_devtools_category">Developer tools</string>
+    <string name="prefs_force_sql_exception_title">All databases throw SQL exception</string>
     <string name="prefs_legal">Open source licenses</string>
     <string name="prefs_notification_category">Notifications</string>
     <string name="prefs_product_tour">Product tour</string>
@@ -2587,14 +2860,17 @@ all your files"</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="private_link_description">Only people added can open</string>
     <string name="problem_with_file">Problem with file</string>
+    <string name="project_dialog_dismiss_button">Dismiss</string>
+    <string name="project_dialog_eligible_message">Go to Drive on the web to open this project.</string>
+    <string name="project_dialog_ineligible_message">"Google Drive Projects aren't available for your account"</string>
+    <string name="project_dialog_title">"Can't view project"</string>
     <string name="project_id">google.com:cakemix</string>
+    <string name="project_sharing_banner_text">Project sources are visible to those with access, and editors are able to remove them.</string>
     <string name="published_site">Published Site</string>
     <string name="quota_cannot_determine">unable to determine</string>
     <string name="quota_exceeded_message">To own this item, you can free up space or buy more storage</string>
     <string name="quota_exceeded_title">"You don't have enough storage to own this item"</string>
     <string name="quota_zero">none</string>
-    <string name="range_end">Range end</string>
-    <string name="range_start">Range start</string>
     <string name="reaction_added">%1$s added</string>
     <string name="reaction_removed">%1$s removed</string>
     <string name="recent_activity_approval_added_approver">%1$s &lt;font color=#9aa0a6>added an approver&lt;/font></string>
@@ -2646,6 +2922,7 @@ all your files"</string>
     <string name="remove_due_date_notification">This will notify all people involved</string>
     <string name="remove_from_workspace">Remove from workspace</string>
     <string name="remove_single_entry_confirmation_dialog_title">Move to Trash?</string>
+    <string name="remove_source_icon_a11y_label">Remove %1$s</string>
     <string name="remove_summarize_button_content_description">Remove summarize button</string>
     <string name="remove_workspace">Remove workspace</string>
     <string name="remove_workspace_confirm">Remove</string>
@@ -2692,6 +2969,7 @@ all your files"</string>
     <string name="restriction_message">"Certain actions such as &lt;b>Download, Print,&lt;/b> and &lt;b>Make a copy&lt;/b> may be limited on this file due to the file owner's organization policies."</string>
     <string name="restriction_message_multiple">"Certain actions such as &lt;b>Download, Print,&lt;/b> and &lt;b>Make a copy&lt;/b> may be limited on these files due to the file owner's organization policies."</string>
     <string name="restriction_title">Limitations are applied</string>
+    <string name="retry_button_label">Retry</string>
     <string name="review_button">Review</string>
     <string name="reviewer_has_approved">%1$s approved</string>
     <string name="reviewer_has_canceled">%1$s canceled</string>
@@ -2721,6 +2999,11 @@ all your files"</string>
     <string name="scanner_unsupported_dialog_button">Got it</string>
     <string name="scanner_unsupported_dialog_message">Scanner is not available on this device</string>
     <string name="scanner_unsupported_dialog_title">Scanner unavailable</string>
+    <string name="scoper_menu_header_info_icon_a11y_label">More information</string>
+    <string name="scoper_source_calendar">Calendar Search</string>
+    <string name="scoper_source_chat">Chat Search</string>
+    <string name="scoper_source_drive">Drive Search</string>
+    <string name="scoper_source_gmail">Gmail Search</string>
     <string name="scroll_instructions">Swipe with two fingers to scroll</string>
     <string name="scroll_wheel_content_desc">Scroll wheel</string>
     <string name="scrollbar_description">Scrollbar</string>
@@ -2736,15 +3019,17 @@ all your files"</string>
     <string name="search_description">Google Drive</string>
     <string name="search_hint">Search my Drive</string>
     <string name="search_icon_title">Search</string>
+    <string name="search_overview_settings_menu_label">Gemini search settings</string>
     <string name="search_pending_owner_close_button">Close</string>
     <string name="search_pending_owner_description_text">"To accept ownership for a file, select %s in the file's menu"</string>
     <string name="search_pending_owner_description_text_people_and_links">Manage people and links</string>
     <string name="search_pending_owner_title_text">Accept Ownership?</string>
+    <string name="search_scoping_close_button_description">Close</string>
+    <string name="search_scoping_error_description">"We couldn't load your custom settings. Using defaults for now."</string>
+    <string name="search_scoping_settings_description">Gemini uses these sources to create AI Overviews in Drive. Your search results in Drive stay the same.</string>
+    <string name="search_scoping_settings_title">Gemini search settings</string>
     <string name="search_showing_local_results_only">Unable to search, showing title matches only.</string>
     <string name="search_showing_local_results_only_offline">Search results include title matches only. Search while online for more results.</string>
-    <string name="secondary_user_button">Manage users</string>
-    <string name="secondary_user_content">You must be the device owner to manage backups for this device.</string>
-    <string name="secondary_user_title">Not the device owner</string>
     <string name="select_account">Select an account</string>
     <string name="select_bucket_filter_content_description">Select bucket filter</string>
     <string name="select_item_color">Select color</string>
@@ -2757,8 +3042,7 @@ all your files"</string>
     <string name="selection_tool">Select</string>
     <string name="selection_undo_button">Undo</string>
     <string name="send_feature_feedback">Send feature feedback</string>
-    <string name="send_feedback_to_google">Send Feedback to Google</string>
-    <string name="send_icon_content_description">send</string>
+    <string name="send_feedback_to_google">Send feedback to Google</string>
     <string name="send_to_clipboard_activity_title">Copy to clipboard</string>
     <string name="send_to_clipboard_success">Copied to clipboard</string>
     <string name="settings">Settings</string>
@@ -2775,6 +3059,7 @@ all your files"</string>
     <string name="shared_drive_chip_label">Owned by %1$s</string>
     <string name="shared_status">Shared</string>
     <string name="sharing_access_updated">Access updated</string>
+    <string name="sharing_access_updated_project">Project shared. Some sources may not be available.</string>
     <string name="sharing_description_anyone_from_can_comment">Anyone in this group can find and comment</string>
     <string name="sharing_description_anyone_from_can_edit">Anyone in this group can find and edit</string>
     <string name="sharing_description_anyone_from_can_manage_content">Anyone in this group can find and manage content</string>
@@ -2857,6 +3142,7 @@ all your files"</string>
     <string name="sharing_with_non_members_enable_warning_message">People who have been blocked will be granted access back.</string>
     <string name="sharing_with_non_members_enabled_updated">Non-members of this shared drive can be given access to files in this shared drive</string>
     <string name="sharing_with_non_members_title">Sharing with non-members</string>
+    <string name="shelf_text_copied_to_clipboard">Copied</string>
     <string name="shortcut_creation_failed">"Can't add to device Home screen"</string>
     <string name="shortcut_label_need_permission">You need permission</string>
     <string name="shortcut_label_not_found">Original item deleted</string>
@@ -2871,21 +3157,26 @@ all your files"</string>
     <string name="show_path_content_description">Show path</string>
     <string name="show_storage_details">More details</string>
     <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
+    <string name="sidekick_back_button_content_description">Back</string>
+    <string name="sidekick_close_button_content_description">Close</string>
+    <string name="sidekick_conversation_item_icon_content_description">Conversation item</string>
+    <string name="sidekick_dismiss_history_banner_button_content_description">Close</string>
     <string name="sidekick_failed_to_open_text">"Can't open Gemini. Try again."</string>
+    <string name="sidekick_hamburger_menu_content_description">Menu</string>
+    <string name="sidekick_history_banner_text">You can rename or delete conversations in Google Workspace on the web</string>
+    <string name="sidekick_new_conversation_button_content_description">New conversation</string>
     <string name="sidekick_zero_state_prompt_label_what_can_gemini_do">What can Gemini do in Google Drive?</string>
     <string name="slider_title_all_items">All items</string>
-    <string name="sms">SMS</string>
-    <string name="sms_message">Backup includes messages sent and received.</string>
     <string name="smui_attachments_additional_count">+%1$d</string>
-    <string name="smui_celebration_title">" "<b>You</b> got <b>%1$s</b>" back "</string>
-    <string name="smui_details_items_count">Showing (%1$d)</string>
     <string name="smui_progress_meter_accessibility_text">Meter showing %1$s %% progress, %2$s out of %3$s</string>
     <string name="smui_progress_meter_progress_bytes_text">‎%1$s / %2$s‎ selected</string>
     <string name="smui_progress_meter_selected_bytes">%1$s out of %2$s selected</string>
     <string name="smui_selection_count">%1$s (%2$d items)</string>
+    <string name="smui_storage_meter_total_storage_limit">%1$s total</string>
     <string name="smui_sweeper_index_count">%1$d out of %2$d</string>
     <string name="smui_sweeper_seekbar_label">Slider at %1$s</string>
     <string name="smui_toolbar_title_with_branding">Google One Storage Manager</string>
+    <string name="smui_toolbar_title_with_branding_gm3e">Google One storage manager</string>
     <string name="snackbar_loading_failed">Failed to load files for report</string>
     <string name="snackbar_multiple_files_failure">Error reporting files.</string>
     <string name="snackbar_multiple_files_partial">Error reporting some files.</string>
@@ -2911,8 +3202,6 @@ all your files"</string>
     <string name="sort_by_content_description">Sort by %1$s</string>
     <string name="sort_descending_icon_content_description">Descending</string>
     <string name="sort_descending_only_icon_content_description">Check mark</string>
-    <string name="sort_doclist_by_name_button_label">Name</string>
-    <string name="sort_in_recent_label">Files</string>
     <string name="sort_label_last_modified">Last modified</string>
     <string name="sort_label_last_modified_by_me">Last modified by me</string>
     <string name="sort_label_last_opened_by_me">Last opened by me</string>
@@ -2922,11 +3211,11 @@ all your files"</string>
     <string name="sort_label_storage_used">Storage used</string>
     <string name="sorting_order_ascending">Ascending</string>
     <string name="sorting_order_descending">Descending</string>
+    <string name="source_chip_action_announcement">%1$s. Double-tap to navigate to the source.</string>
     <string name="spam_banner_notice">Files in spam won’t appear anywhere else in Drive. Files are permanently removed after 30 days.</string>
     <string name="spam_folder_navigation_dialog_message">To view this folder, mark it as not spam and open it in shared with me</string>
     <string name="spam_folder_navigation_dialog_title">"This folder can't be viewed in spam"</string>
     <string name="spam_removed_message">Permanently removed from your view</string>
-    <string name="spark_icon_content_description">Spark icon</string>
     <string name="stale_permission_updating">%s updating</string>
     <string name="state_empty">Empty</string>
     <string name="state_off">Off</string>
@@ -2943,7 +3232,7 @@ all your files"</string>
     <string name="storage_used">%1$s of %2$s used</string>
     <string name="storage_used_unlimited">%1$s used</string>
     <string name="stylus_close_button">Close</string>
-    <string name="submit_button">Submit</string>
+    <string name="submit_button">Submit the feedback that you entered</string>
     <string name="subscriptions_clean_up_space">Clean up space</string>
     <string name="subscriptions_continue_in_browser_button_text">Continue in browser</string>
     <string name="subscriptions_data_failed_to_load">"Couldn't load data"</string>
@@ -2959,14 +3248,24 @@ all your files"</string>
     <string name="subscriptions_storage_used">Storage used</string>
     <string name="subscriptions_update_button_text">Update app</string>
     <string name="sudCardViewFontFamily">google-sans-flex</string>
+    <string name="sudExpressiveButtonFontFamily">google-sans-text-medium</string>
     <string name="sudFontExpressive">google-sans-flex</string>
     <string name="sudFontSecondary">google-sans</string>
     <string name="sudFontSecondaryMedium">google-sans-medium</string>
+    <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
+    <string name="sudFontSecondaryText">google-sans-text</string>
+    <string name="sudGlifExpressiveDialogFontFamily">google-sans-flex</string>
+    <string name="sud_accessibility_button_label">Accessibility</string>
     <string name="sud_back_button_label">Back</string>
     <string name="sud_less_info">Less info</string>
+    <string name="sud_lottie_animation_view_accessibility_action_pause">pause</string>
+    <string name="sud_lottie_animation_view_accessibility_action_resume">resume</string>
+    <string name="sud_lottie_animation_view_accessibility_description">Animation</string>
     <string name="sud_more_button_label">More</string>
     <string name="sud_more_info">More info</string>
     <string name="sud_next_button_label">Next</string>
+    <string name="sud_setup_progress_indicator_icon_description">Setup progress indicator</string>
+    <string name="sud_setup_progress_percentage">%1$s%%</string>
     <string name="suggested_files_header">Suggested files</string>
     <string name="suggested_screen_title">Suggested</string>
     <string name="suggested_workspace_create_failed">There was an issue saving the suggested workspace.</string>
@@ -2977,7 +3276,6 @@ all your files"</string>
     <string name="suggestion_dismiss_fail">"Couldn't dismiss suggestion"</string>
     <string name="suggestion_dismissed">Suggestion dismissed</string>
     <string name="summarize_button_content_description">Summarize</string>
-    <string name="summarize_icon_content_description">Summarize icon</string>
     <string name="summarize_this_file">Summarize this file</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="survey_account_and_system_info">account &amp; system info</string>
@@ -3025,13 +3323,8 @@ all your files"</string>
     <string name="survey_user_agent">User Agent</string>
     <string name="survey_very_dissatisfied">Very dissatisfied</string>
     <string name="survey_very_satisfied">Very satisfied</string>
-    <string name="switch_account_help_card_button">Change account</string>
-    <string name="switch_account_help_card_content">This device is backed up to a different account. %s</string>
-    <string name="switch_account_help_card_title">Backing up to a different account</string>
     <string name="switch_role">Switch</string>
     <string name="sync_more_error_offline">Some documents may not be visible while offline.</string>
-    <string name="sync_off">Off</string>
-    <string name="sync_on">On</string>
     <string name="system_actor_name">Drive</string>
     <string name="tab">Tab</string>
     <string name="target_header_file">Original file</string>
@@ -3056,6 +3349,7 @@ all your files"</string>
     <string name="team_drive_empty_list_message_can_create_updated">"Create a shared drive to keep all of your team's content organized &amp; accessible."</string>
     <string name="team_drive_empty_list_message_cannot_create_updated">"When someone adds you to a shared drive, you'll see it listed here."</string>
     <string name="team_drive_settings_action">Settings</string>
+    <string name="team_drive_settings_continue_button">Continue</string>
     <string name="team_drive_settings_title">Settings</string>
     <string name="teamdrive_members_and_domain">%1$s • %2$s</string>
     <string name="teamdrive_separator">%1$s • %2$s</string>
@@ -3077,11 +3371,7 @@ all your files"</string>
     <string name="to_folder_notification_subtitle_error_connection">Connection error</string>
     <string name="to_folder_notification_subtitle_error_unknown">Unknown error</string>
     <string name="to_folder_notification_subtitle_paused_waiting_for_connection">Waiting for connection</string>
-    <string name="to_folder_notification_title_downloading">{num_files, plural, =1 {# file downloading} other {# files downloading} }</string>
-    <string name="to_folder_notification_title_partial_failure">{num_failed, plural, =1 {# of {total_num_files} downloads failed} other {# of {total_num_files} downloads failed} }</string>
     <string name="to_folder_notification_title_preparing">Preparing download</string>
-    <string name="to_folder_notification_title_total_failure">{num_files, plural, =1 {# download failed} other {# downloads failed} }</string>
-    <string name="to_folder_notification_title_total_success">{num_files, plural, =1 {Downloaded # file} other {Downloaded # files} }</string>
     <string name="toolbar_search_hint">Search in Drive</string>
     <string name="tooltip_description">tooltip</string>
     <string name="tooltip_label">show tooltip</string>
@@ -3095,15 +3385,6 @@ all your files"</string>
     <string name="transfer_owner_reject">Decline</string>
     <string name="transfer_owner_reject_complete">You declined to be the owner of this item</string>
     <string name="try_again">Try in Drive</string>
-    <string name="turnoff_backup">Turn off backup</string>
-    <string name="turnoff_backup_confirm_button">Turn off</string>
-    <string name="turnoff_backup_error_message">Backup could not be turned off.</string>
-    <string name="turnoff_backup_progress_message">Turning off backup</string>
-    <string name="turnoff_whatsapp_backup_confirmation_message">"This will stop backup of WhatsApp chat and media for all devices:
-
-%s
-You can turn backup on again by going to Settings > Chats > Chat backup in WhatsApp."</string>
-    <string name="turnoff_whatsapp_backup_title">Turn off WhatsApp backup?</string>
     <string name="type_filter_title">Type</string>
     <string name="type_folder">folder</string>
     <string name="type_label_shared_drive">Shared drive</string>
@@ -3111,8 +3392,6 @@ You can turn backup on again by going to Settings > Chats > Chat backup in Whats
     <string name="udp_settings_back_button_description">Back</string>
     <string name="unable_to_create_workspace">Unable to create workspace.</string>
     <string name="unable_to_launch_subtitles_display_settings_menu">Unable to launch subtitles display settings</string>
-    <string name="unable_to_load_description">Please try again later</string>
-    <string name="unable_to_load_title">Unable to load labels</string>
     <string name="unable_to_open_doc">Unable to open document</string>
     <string name="unable_to_open_error">Unable to open this item.</string>
     <string name="unable_to_preview">Unable to preview file.</string>
@@ -3127,6 +3406,10 @@ You can turn backup on again by going to Settings > Chats > Chat backup in Whats
     <string name="undo_label">Undo</string>
     <string name="unhide_action_failure_updated">Cannot unhide shared drive</string>
     <string name="unhide_action_success_updated">Shared drive unhidden</string>
+    <string name="unified_discussion_assign_as_a_task_to">Assign to %1$s</string>
+    <string name="unified_discussion_reassign_as_a_task_to">Reassign to %1$s</string>
+    <string name="unified_discussions_comments_panel">Comments panel</string>
+    <string name="unified_discussions_more_options">More options</string>
     <string name="unknown_album">Unknown Album</string>
     <string name="unknown_error">Unknown error</string>
     <string name="unknown_language">Unknown language</string>
@@ -3135,6 +3418,7 @@ You can turn backup on again by going to Settings > Chats > Chat backup in Whats
     <string name="unsaved_dialog_discard">Discard changes</string>
     <string name="unsaved_dialog_message">This document has unsaved changes. Do you want to close now and discard the changes?</string>
     <string name="unsaved_dialog_title">Confirm Close</string>
+    <string name="unselect_all">Unselect all</string>
     <string name="unsuccessful_action_cta">Got it</string>
     <string name="unsuccessful_config_icon">Unsuccessful Config Icon</string>
     <string name="unsupported_file">This file type is unsupported.</string>
@@ -3146,9 +3430,6 @@ If this file is shared, collaborators can still make a copy of it until it’s p
     <string name="untrash_and_open_positive_button">Take out of trash</string>
     <string name="untrash_and_open_title">File is in trash</string>
     <string name="untrash_and_open_title_folder">Folder is in trash</string>
-    <string name="untrash_and_select_message">"To select this file, take it out of the trash. Items in the trash are deleted forever after 30 days. 
-
-If this file is shared, collaborators can still make a copy of it until it’s permanently deleted."</string>
     <string name="untrash_dismiss">Dismiss</string>
     <string name="updating_permission">Updating…</string>
     <string name="updating_role">Updating</string>
@@ -3164,17 +3445,15 @@ If this file is shared, collaborators can still make a copy of it until it’s p
     <string name="upload_multiple_file_names">File names</string>
     <string name="upload_notification_cancel_title">Upload canceled</string>
     <string name="upload_notification_detailed_sync_completed_some_failed">%1$d of %2$d uploads failed</string>
-    <string name="upload_notification_detailed_waiting_partial_title">{inprogress_num_files} of {total_num_files} uploads paused</string>
-    <string name="upload_notification_detailed_waiting_title">{num_files, plural, =1 {# upload paused} other {# uploads paused} }</string>
     <string name="upload_notification_failure_folder">Cannot upload a folder</string>
     <string name="upload_notification_failure_no_retry_title">Upload was unsuccessful</string>
     <string name="upload_notification_failure_ticker">Upload failed</string>
     <string name="upload_notification_locate_file_action">{num_files, plural, =1 {Locate file} other {Locate files} }</string>
     <string name="upload_notification_more_files">+%1$d more</string>
-    <string name="upload_out_of_storage_dialog_call_to_action">Free up space</string>
+    <string name="upload_out_of_storage_dialog_call_to_action_v2">Free up device storage</string>
     <string name="upload_out_of_storage_dialog_dismiss">Dismiss</string>
-    <string name="upload_out_of_storage_dialog_message">"There's not enough storage available to continue uploading. Free up space in the Files app to restore full functionality."</string>
-    <string name="upload_out_of_storage_dialog_title">Device out of storage</string>
+    <string name="upload_out_of_storage_dialog_message_v2">Google Drive needs free space on your device to start the upload. Free up storage to continue.</string>
+    <string name="upload_out_of_storage_dialog_title_v2">Not enough device storage</string>
     <string name="upload_over_quota_link_anchor">Learn more</string>
     <string name="upload_over_quota_message">To make room for new files, you can get more storage or clean up space.</string>
     <string name="upload_over_quota_message_individual">You have exceeded your individual storage limit. To continue uploading files, clear up some space.</string>
@@ -3239,6 +3518,7 @@ If this file is shared, collaborators can still make a copy of it until it’s p
     <string name="view_workspace_content_desc">View %1$s</string>
     <string name="viewers_can_see_comments">Viewers of this file can see comments &amp; suggestions</string>
     <string name="visibility_tool">Visibility</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <string name="warm_welcome_done_button">Done</string>
     <string name="warm_welcome_next_button">Next</string>
     <string name="warm_welcome_skip_button">Skip</string>
@@ -3250,13 +3530,6 @@ If this file is shared, collaborators can still make a copy of it until it’s p
     <string name="welcome_message">Welcome! 👋</string>
     <string name="welcome_title_app_name">Google Drive</string>
     <string name="what_is_feedback_about">What is your feedback about?</string>
-    <string name="whatsapp_message">Your chats and media (including photos, videos, audio and documents) are backed up on Google Drive. If you change devices, you can restore them when you reinstall WhatsApp.</string>
-    <string name="whatsapp_turned_off_message">"Backup is turned off.
-Last backed up %s
-
-Your chats and media (including photos, videos, audio and documents) are backed up on Google Drive. If you change devices, you can restore them when you reinstall WhatsApp.
-
-To turn backup on again, go to Settings > Chats in WhatsApp."</string>
     <string name="widget_account_auto_selected">Currently signed in to %1$s</string>
     <string name="widget_scan_to_drive">Drive scan</string>
     <string name="widget_scan_to_drive_title">Upload scans to…</string>
