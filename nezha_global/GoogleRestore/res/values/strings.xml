@@ -32,6 +32,8 @@
     <string name="app_picker_group_already_installed_title">Already installed apps</string>
     <string name="app_picker_group_auto_installed_title">Automatically installed apps</string>
     <string name="app_picker_group_default_title">Your apps</string>
+    <string name="app_picker_group_desktop_optimized_title">Apps optimized for your device</string>
+    <string name="app_picker_group_other_apps_title">Your other apps</string>
     <string name="app_picker_group_title_format">%1$s (%2$d)</string>
     <string name="app_picker_loading">Finding available apps…</string>
     <string name="app_picker_loading_toast">Available apps will load soon</string>
@@ -54,12 +56,19 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="auto_synced_item_google_photos">Google Photos</string>
     <string name="auto_synced_title">Synced automatically</string>
     <string name="automatically_synced_section_header">Synced automatically</string>
+    <string name="available_in_app">Available in %1$s</string>
     <string name="backup_d2d_migration_tool_activity_name">Data Transfer Tool</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="bottomsheet_action_collapse">Collapse</string>
+    <string name="bottomsheet_action_collapse_description">Collapse the bottom sheet</string>
     <string name="bottomsheet_action_expand">Expand</string>
+    <string name="bottomsheet_action_expand_description">Expand the bottom sheet</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bottomsheet_action_half_expand_description">Half expand the bottom sheet</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="bottomsheet_state_collapsed">Collapsed</string>
+    <string name="bottomsheet_state_expanded">Expanded</string>
+    <string name="bottomsheet_state_half_expanded">Half expanded</string>
     <string name="button_copy_anyway">Copy anyway</string>
     <string name="button_do_it_later">Do it later</string>
     <string name="button_dont_copy">Don’t copy</string>
@@ -94,20 +103,26 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="cloud_restore_app_picker_description_no_apps">Your backup doesn’t have any apps</string>
     <string name="cloud_restore_app_picker_title">Choose apps to restore</string>
     <string name="common_google_play_services_enable_button">Enable</string>
-    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_text">Google Play services must be enabled for %1$s.</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
     <string name="common_google_play_services_install_button">Install</string>
-    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
-    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_install_text">Install Google Play services to continue using %1$s.</string>
+    <string name="common_google_play_services_install_title">Install Google Play services</string>
     <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
     <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_signin_required_text">"%1$s couldn't connect to Google Play services. Please sign-in to your Google account."</string>
+    <string name="common_google_play_services_signin_required_title">Sign-in required</string>
+    <string name="common_google_play_services_try_again_text">"%1$s couldn't connect to Google Play services. Please try again."</string>
+    <string name="common_google_play_services_try_again_title">Please try again</string>
     <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
-    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s can't run because your device doesn't support Google Play services. Please use a supported device."</string>
+    <string name="common_google_play_services_unsupported_title">Device not compatible</string>
     <string name="common_google_play_services_update_button">Update</string>
-    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_text">Update Google Play services to use %1$s.</string>
     <string name="common_google_play_services_update_title">Update Google Play services</string>
-    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
-    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_google_play_services_updating_client_title">Google Play services updating</string>
+    <string name="common_google_play_services_updating_text">%1$s will be available once the Google Play services update is complete.</string>
+    <string name="common_google_play_services_wear_update_text">Update Google Play services to use %1$s.</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="contact_detail_label_generic">Other</string>
     <string name="contact_detail_label_school">School</string>
@@ -118,7 +133,7 @@ Some apps may not require you to accept permissions. When you use one of these a
     <string name="copied_contacts_group_label">Copied from %1$s</string>
     <string name="copied_contacts_group_label_default">Copied via cable transfer</string>
     <string name="copied_contacts_group_label_ios">Copied from iOS</string>
-    <string name="copy_button">Copy</string>
+    <string name="copy_again">Copy again</string>
     <string name="copy_later_dialog_message_before_transfer">To copy your data after setup, go to Settings</string>
     <string name="copy_later_dialog_message_before_transfer_with_partial_copy_info">"To copy your data after setup, go to Settings.
 
@@ -140,10 +155,21 @@ Alternatively, you can copy the data you need now, like contacts or settings, th
 Make sure both devices have enough charge to continue copying your data."</string>
     <string name="data_copied_fragment_description_source_error">There was a problem connecting to your other device, so some of your data wasn’t copied</string>
     <string name="data_copied_fragment_description_source_error_no_data">There was a problem connecting to your other device, so your data wasn’t copied</string>
+    <string name="data_copied_fragment_description_source_error_no_data_rsa">"There was a problem connecting to your other device.
+
+You can try copying your data later in Settings."</string>
+    <string name="data_copied_fragment_description_source_error_rsa">"There was a problem connecting to your other device.
+
+You can try copying the rest of your data later in Settings."</string>
     <string name="data_copied_fragment_low_battery_title">This device will shut down soon</string>
     <string name="data_copied_fragment_no_data_title">Couldn’t copy</string>
     <string name="data_copied_fragment_no_data_title_v2">Can’t copy data</string>
     <string name="data_copied_fragment_some_data_title">Some data copied</string>
+    <string name="data_not_copied">Data not copied</string>
+    <string name="datasummary_android_success_title">Great news! Your data was successfully copied</string>
+    <string name="datasummary_ios_success_subtitle">See where you can find the data on your %1$s</string>
+    <string name="datasummary_ios_success_title">Copying’s done</string>
+    <string name="datasummary_partial_success_title">Let’s finish copying your remaining data</string>
     <string name="device_not_supported_fragment_new_device">You’re connected to a new device. To keep going, reconnect to your previous one.</string>
     <string name="device_not_supported_fragment_new_device_title">Reconnect to previous device</string>
     <string name="device_not_supported_fragment_no_data_cable">Try another cable. If your other device is an iPhone®, keep it unlocked.</string>
@@ -162,6 +188,7 @@ To copy data from another device, you’ll need to erase all device data (factor
     <string name="device_picker_summary">Choose a backup</string>
     <string name="device_picker_summary_work_profile">Restore your work apps from another device</string>
     <string name="device_picker_title">Restore data from another device</string>
+    <string name="device_picker_title_enterprise">Restore work data from another device</string>
     <string name="device_picker_title_work_profile">Choose a device</string>
     <string name="disclaimer_concat_string">"^1
 
@@ -192,18 +219,12 @@ By installing each app, you agree with its permissions. "<annotation id="apps_pe
     <string name="fragment_app_picker_description_d2d_ios_v3_ios18">"We found a match for ^1 of your iOS® apps. Some in-app purchases might not transfer. Locked or hidden apps can be transferred, but you’ll need to lock or hide them again after setup.
 
 By installing each app, you agree with its permissions. "<annotation id="apps_permissions_learn_more">Learn more</annotation></string>
-    <string name="fragment_app_picker_description_d2d_ios_v4">"We found a match for %d of your iOS® apps. Some in-app purchases might not transfer.
-
-By installing each app, you agree with its permissions. "<annotation id="apps_permissions_learn_more">Learn more</annotation></string>
-    <string name="fragment_app_picker_description_d2d_ios_v4_ios18">"We found a match for %d of your iOS® apps. Some in-app purchases might not transfer. Locked or hidden apps can be transferred, but you’ll need to lock or hide them again after setup.
-
-By installing each app, you agree with its permissions. "<annotation id="apps_permissions_learn_more">Learn more</annotation></string>
+    <string name="fragment_check_other_device_data_copied_block_title">The data you copy is merged with the data that’s already on this device.</string>
     <string name="fragment_check_other_device_description_wifi">Keep both devices on and close to each other until setup is complete</string>
     <string name="fragment_check_other_device_title">Continue on your %1$s</string>
     <string name="fragment_choose_how_to_copy_title">Choose how to copy</string>
     <string name="fragment_connecting_title">Connecting to your other device…</string>
     <string name="fragment_indexing_description">Choose what to copy on the next screen</string>
-    <string name="fragment_indexing_title">Getting ready to copy…</string>
     <string name="fragment_indexing_verify_password_title">Verifying password…</string>
     <string name="fragment_ios_copy_calendar_events_description">If you want to copy calendar events, connect to a Wi-Fi or mobile network and try again</string>
     <string name="fragment_ios_copy_calendar_events_title">Copy calendar events?</string>
@@ -258,7 +279,7 @@ If you have trouble reinstalling device management after setup, contact your IT 
     <string name="fragment_target_connected_title">Devices are connected</string>
     <string name="fragment_usb_cable_doesnt_fit">Cable doesn’t fit?</string>
     <string name="fragment_usb_cant_find_adapter">No adapter?</string>
-    <string name="fragment_usb_connect_both_phones_description_android">Use the cable that came with your %1$s, or try your other device’s cable</string>
+    <string name="fragment_usb_connect_both_phones_description_android">Use a cable to connect to your other device</string>
     <string name="fragment_usb_connect_both_phones_description_ios">Use the cable that came with your iPhone or iPad</string>
     <string name="fragment_usb_connect_both_phones_title">Connect both devices</string>
     <string name="fragment_usb_connect_cable_into_adapter_description">Plug the Quick Switch Adapter into this %1$s then connect both devices using the cable. The adapter came in the same box as your %1$s.</string>
@@ -300,9 +321,14 @@ To continue copying your data, connect your devices using a cable."</string>
     <string name="gm_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
     <string name="gm_sys_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="google_contacts">Contacts</string>
     <string name="google_contacts_will_sync">Google Contacts will sync</string>
+    <string name="google_messages">Messages</string>
+    <string name="google_phone">Phone</string>
+    <string name="google_photos">Google Photos</string>
     <string name="google_photos_available_in_photos_app_v2">View all your backed up photos &amp; videos in the app</string>
     <string name="icloud_data_not_included">• iCloud® data not included</string>
+    <string name="icon_content_description">Dialog Icon</string>
     <string name="imessage_deregistration_description">To keep receiving text messages from iPhone® users, you’ll need to turn off iMessage on your iPhone.</string>
     <string name="imessage_deregistration_extra_description">You can still use iMessage on other Apple® devices.</string>
     <string name="imessage_deregistration_procedure_first_step">1. Scan this QR code using your iPhone camera, or go to <b>Settings > Messages</b></string>
@@ -349,16 +375,19 @@ On your iPhone, back up your photos and videos using Google Photos or another cl
     <string name="ios_switching_app_title">Android Switch</string>
     <string name="ios_trademarks_disclaimer">iPhone, iPad, iOS, iTunes, iMessage, Safari, and iCloud are trademarks of Apple Inc., registered in the US and other countries</string>
     <string name="ios_whatsapp_description">Scan the QR code with your iPhone to open WhatsApp, then tap <b>Start</b></string>
+    <string name="ios_whatsapp_description_v2">Scan the QR code with your iPhone camera to open WhatsApp, then tap <b>Start</b></string>
     <string name="ios_whatsapp_export_description">Keep your iPhone unlocked and WhatsApp open</string>
     <string name="ios_whatsapp_export_title">Getting chats ready…</string>
     <string name="ios_whatsapp_message">Trouble scanning? On your iPhone, open WhatsApp, then go to <b>Settings > Chats > Move Chats to Android</b></string>
     <string name="ios_whatsapp_message_content_description">Trouble scanning? On your iPhone, open WhatsApp, then go to Settings, then Chats, and then Move Chats to Android</string>
+    <string name="ios_whatsapp_message_content_description_v2">Make sure WhatsApp isn’t locked or hidden, or your chats won’t transfer.</string>
     <string name="ios_whatsapp_message_ios18">Trouble scanning? On your iPhone, open WhatsApp, then go to <b>Settings > Chats > Move Chats to Android.</b>"
 
 Make sure WhatsApp isn’t locked or hidden, or your chats won’t transfer."</string>
     <string name="ios_whatsapp_message_ios18_content_description">"Trouble scanning? On your iPhone, open WhatsApp, then go to Settings, then Chats, and then Move Chats to Android.
 
 Make sure WhatsApp isn’t locked or hidden, or your chats won’t transfer."</string>
+    <string name="ios_whatsapp_message_v2">Make sure WhatsApp isn’t locked or hidden, or your chats won’t transfer.</string>
     <string name="ios_whatsapp_title">Transfer WhatsApp chats</string>
     <string name="ios_wifi_hotspot_description_v2">Use the camera on your iPhone or iPad. This will install the %1$s app and connect your devices using Wi-Fi network %2$s.</string>
     <string name="ios_wifi_hotspot_instructions_first_step">Step 1:</string>
@@ -398,7 +427,9 @@ Location information is only used to create a wireless connection with your iPho
 
 If you don’t allow this permission, none of your data will be copied to your new device."</string>
     <string name="ios_wifi_nearby_devices_permission_title">Allow access to nearby devices</string>
+    <string name="item_view_role_description">Tab</string>
     <string name="key_recovery_instruction_description">To decrypt your backup, enter your other device’s screen lock on the next screen</string>
+    <string name="key_recovery_instruction_description_enterprise">To decrypt your backup and copy your work data, enter your other device’s screen lock on the next screen</string>
     <string name="key_recovery_instruction_title">Confirm your other %s screen lock</string>
     <string name="kilobyteShort">KB</string>
     <string name="launcher_package">com.google.android.apps.nexuslauncher</string>
@@ -451,6 +482,7 @@ If you don’t allow this permission, none of your data will be copied to your n
     <string name="migrate_from_ios_instructions_2_v2">Go to <b>android.com/switch</b></string>
     <string name="migrate_from_ios_instructions_3">3. Follow the instructions</string>
     <string name="migrate_from_ios_instructions_3_v2">Follow the instructions</string>
+    <string name="mtrl_button_snackbar_close_content_description">Close</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
     <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
@@ -462,6 +494,7 @@ If you don’t allow this permission, none of your data will be copied to your n
     <string name="mtrl_checkbox_state_description_checked">Checked</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Partially checked</string>
     <string name="mtrl_checkbox_state_description_unchecked">Not checked</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
     <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
@@ -470,7 +503,28 @@ If you don’t allow this permission, none of your data will be copied to your n
     <string name="mtrl_switch_thumb_path_unchecked">M8,16 A8,8 0 0,1 16,8 H16 A8,8 0 0,1 16,24 H16 A8,8 0 0,1 8,16</string>
     <string name="mtrl_switch_track_decoration_path">M1,16 A15,15 0 0,1 16,1 H36 A15,15 0 0,1 36,31 H16 A15,15 0 0,1 1,16</string>
     <string name="mtrl_switch_track_path">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
+    <string name="non_gms_restore_app_picker_description">We found %1$d apps. Only free apps can be installed during setup. By installing these apps, you agree to their permissions.</string>
+    <string name="non_gms_restore_app_picker_title">Choose your apps</string>
     <string name="oem_use_old_device_description">You need an Android device, iPhone®, or iPad®</string>
+    <string name="os_migration_restore_choice_apps_description">Only free apps that are available on Google Play can be copied. Hidden or locked apps can be copied, but you’ll need to hide or lock them again after setup.</string>
+    <string name="os_migration_restore_choice_common_alarms_description">Alarms can be copied.</string>
+    <string name="os_migration_restore_choice_common_app_data_description">Only data from supported apps can be copied.</string>
+    <string name="os_migration_restore_choice_common_calendars_description">Calendars can be copied.</string>
+    <string name="os_migration_restore_choice_common_device_settings_description">Accessibility settings, home screen layout, wallpaper, and Wi-Fi networks can be copied.</string>
+    <string name="os_migration_restore_choice_common_messages_description">Messages can be copied.</string>
+    <string name="os_migration_restore_choice_common_music_description">Downloaded music without DRM protection can be copied.</string>
+    <string name="os_migration_restore_choice_common_photos_description">Photos &amp; videos stored in hidden folders can’t be copied.</string>
+    <string name="os_migration_restore_choice_common_voice_memos_description">Voice memos can be copied.</string>
+    <string name="os_migration_restore_choice_files_description">Files stored on your device can be copied.</string>
+    <string name="os_migration_restore_choice_google_account_description">Personal Google Accounts you’re signed in to on YouTube can be copied. Managed accounts, restricted accounts, and some accounts for children can’t be copied. You can also add accounts after setup.</string>
+    <string name="os_migration_restore_choice_notes_description">Notes can be copied.</string>
+    <string name="os_migration_restore_choice_passwords_description">Passwords &amp; passkeys from Apple Passwords can be copied. Verification codes can’t be copied. You may need to reset two-factor authentication for apps and websites that use verification codes, or continue using your old device to generate codes.</string>
+    <string name="os_migration_restore_choice_wallet_description">After copying your cards and passes to your new device, open Google Wallet to make sure they’re ready to use.</string>
+    <string name="os_migration_whatsapp_warning_description">"You’ll need to go to Settings to transfer your WhatsApp chats.
+
+Don’t reset your iPhone until you’ve finished the transfer, or your chats may be lost."</string>
+    <string name="os_migration_whatsapp_warning_settings_description">To start the transfer, go to Settings and follow the instructions. You’ll also get a notification to remind you.</string>
+    <string name="os_migration_whatsapp_warning_title">Finish your WhatsApp transfer</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -486,11 +540,11 @@ If you don’t allow this permission, none of your data will be copied to your n
     <string name="photo_summary_recover_summary">On your iPhone, back up your photos using Google Photos or another cloud storage app. They’ll sync automatically when you open the app on this device.</string>
     <string name="photo_summary_recover_title">To recover your photos</string>
     <string name="primes_marker">PrImEs</string>
-    <string name="progressing_description">This may take a few minutes</string>
     <string name="qrcode_description">QR code</string>
     <string name="restore_apk_title">Android Switch</string>
     <string name="restore_backup_common_item_flavor_title_device_data">Other device data</string>
     <string name="restore_backup_optin_general_fragment_general_backup_off_suw_dialog_description">You will not back up your photos, videos, and other device data. You can choose to turn on backup later in Settings.</string>
+    <string name="restore_backup_optin_general_fragment_general_backup_off_suw_dialog_description_unicorn">Your child’s photos, videos, and other device data will not be backed up. You can choose to turn on backup for them later in Settings.</string>
     <string name="restore_backup_optin_general_fragment_general_backup_off_suw_dialog_title">Don’t back up device?</string>
     <string name="restore_backup_optin_general_fragment_general_button_view_more">View more</string>
     <string name="restore_backup_optin_general_fragment_general_choose_data_purpose_default">Choose data to back up in case your device is lost, stolen, or damaged.</string>
@@ -500,24 +554,35 @@ If you don’t allow this permission, none of your data will be copied to your n
 "<b>Photos &amp; videos</b>" are encrypted as they move between your device, Google services, and our data centers.
 
 "<b>Other device data</b> is securely encrypted and uploaded to your Google Account. Some data is also encrypted using your device’s screen lock.</string>
+    <string name="restore_backup_optin_general_fragment_general_data_protection_dialog_description_unicorn">"To help keep their data safe and secure, it is encrypted.
+
+"<b>Photos &amp; videos</b>" are encrypted as they move between your child’s device, Google services, and our data centers.
+
+"<b>Other device data</b> is securely encrypted and uploaded to your child’s Google Account. Some data is also encrypted using their device’s screen lock.</string>
     <string name="restore_backup_optin_general_fragment_general_description">Choose data to back up in case your device is lost, stolen, or damaged. Your backup uses your Google Account storage. %s</string>
     <string name="restore_backup_optin_general_fragment_general_description_template">%1$s Your backup uses your Google Account storage. %2$s</string>
+    <string name="restore_backup_optin_general_fragment_general_description_unicorn">Choose data to back up in case your child’s device is lost, stolen, or damaged. Your child’s backup uses their Google Account storage. %s</string>
     <string name="restore_backup_optin_general_fragment_general_dialog_data_protection_link_title">How your data is protected</string>
+    <string name="restore_backup_optin_general_fragment_general_dialog_data_protection_link_title_unicorn">How your child’s data is protected</string>
     <string name="restore_backup_optin_general_fragment_general_photos_backup_off_dialog_description">"This will turn off backup for photos &amp; videos on this device.
 
 This will not delete any photos &amp; videos that are currently backed up to Google Photos."</string>
     <string name="restore_backup_optin_general_fragment_general_photos_backup_off_dialog_title">Turn off backup to Google Photos?</string>
     <string name="restore_backup_optin_general_fragment_general_title">Back up your device</string>
     <string name="restore_backup_optin_general_fragment_general_title_in_suw">Google services: Back up your device</string>
+    <string name="restore_backup_optin_general_fragment_general_title_in_suw_unicorn">Google services: Back up your child’s device</string>
+    <string name="restore_backup_optin_general_fragment_general_title_unicorn">Back up your child’s device</string>
     <string name="restore_backup_optin_general_item_flavor_device_data_summary">Contacts, call history, device settings, apps &amp; app data, SMS &amp; MMS messages, and SIMs</string>
     <string name="restore_backup_optin_general_item_flavor_device_data_summary_apps">Apps &amp; app data</string>
     <string name="restore_backup_optin_general_item_flavor_device_data_summary_sms_mms">SMS &amp; MMS messages</string>
     <string name="restore_backup_optin_general_item_flavor_photos_info_check_app">To check backup status, open the Google Photos app</string>
     <string name="restore_backup_optin_general_item_flavor_photos_summary">Automatically back up to Google Photos so you can view, share, and search</string>
+    <string name="restore_backup_optin_general_item_flavor_photos_summary_unicorn">Automatically back up to Google Photos so your child can view, share, and search</string>
     <string name="restore_backup_optin_navroot_fragment_error_button">Next</string>
     <string name="restore_backup_optin_navroot_fragment_error_description">Sign in or create a Google Account to back up your device</string>
     <string name="restore_backup_optin_navroot_fragment_error_title">Sign in</string>
     <string name="restore_backup_optin_permissions_fragment_photos_description">To turn on backup, allow Google Photos to access your photos &amp; videos</string>
+    <string name="restore_backup_optin_permissions_fragment_photos_description_unicorn">To turn on backup, allow Google Photos to access your child’s photos &amp; videos</string>
     <string name="restore_backup_optin_permissions_fragment_photos_title">Allow access to photos</string>
     <string name="restore_backup_optin_result_fragment_result_button_go_to_play">Go to Play</string>
     <string name="restore_backup_optin_result_fragment_result_button_manage_backup">Manage backup</string>
@@ -527,7 +592,9 @@ This will not delete any photos &amp; videos that are currently backed up to Goo
     <string name="restore_backup_optin_result_item_flavor_summary_error_generic">Couldn’t turn on backup. Try again later in backup settings.</string>
     <string name="restore_backup_optin_result_item_flavor_summary_error_photos_apk">Install or update Google Photos app to back up</string>
     <string name="restore_backup_optin_result_item_flavor_summary_error_photos_permissions">To start backing up, allow Google Photos to access your photos &amp; videos in Settings</string>
+    <string name="restore_backup_optin_result_item_flavor_summary_error_photos_permissions_unicorn">To start backing up, allow Google Photos to access your child’s photos &amp; videos in Settings</string>
     <string name="restore_backup_optin_result_item_flavor_summary_photos_enabled_apk_missing">Backup will start if Google Photos is installed and has access to your photos</string>
+    <string name="restore_backup_optin_result_item_flavor_summary_photos_enabled_apk_missing_unicorn">Backup will start if Google Photos is installed and has access to your child’s photos</string>
     <string name="restore_backup_optin_result_item_flavor_summary_success">Backup is on</string>
     <string name="restore_button_allow">Allow</string>
     <string name="restore_button_cancel">Cancel</string>
@@ -535,21 +602,28 @@ This will not delete any photos &amp; videos that are currently backed up to Goo
     <string name="restore_button_close">Close</string>
     <string name="restore_button_confirm">Confirm</string>
     <string name="restore_button_continue">Continue</string>
+    <string name="restore_button_copy">Copy</string>
     <string name="restore_button_do_it_later">Do it later</string>
     <string name="restore_button_done">Done</string>
     <string name="restore_button_dont_allow">Don’t allow</string>
     <string name="restore_button_dont_back_up">Don’t back up</string>
     <string name="restore_button_dont_copy">Don’t copy</string>
+    <string name="restore_button_dont_turn_on">Don’t turn on</string>
     <string name="restore_button_go_back">Go back</string>
     <string name="restore_button_got_it">Got it</string>
     <string name="restore_button_ok">OK</string>
     <string name="restore_button_restore">Restore</string>
+    <string name="restore_button_settings">Settings</string>
     <string name="restore_button_skip">Skip</string>
     <string name="restore_button_start">Start</string>
     <string name="restore_button_try_again">Try again</string>
     <string name="restore_button_turn_off">Turn off</string>
     <string name="restore_button_turn_on_backup">Turn on backup</string>
     <string name="restore_choice_android_device_label">Android</string>
+    <string name="restore_choice_common_how_your_datas_copied_title">How your data’s copied</string>
+    <string name="restore_choice_common_learn_more_details_visit_page">For more details and help copying some of this data, visit <b>g.co/datatransferhelp</b>.</string>
+    <string name="restore_choice_common_learn_more_message_call_history">Call history can be copied.</string>
+    <string name="restore_choice_common_learn_more_message_contacts">Contacts can be copied.</string>
     <string name="restore_choice_data_disclaimer">Some of your data may not transfer to your ^1. <annotation id="restore_choice_data_disclaimer_learn_more" link="restore_choice_data_disclaimer_learn_more">Learn more about data that isn’t copied</annotation></string>
     <string name="restore_choice_data_disclaimer_cloud_post_setup">The data you restore is merged with the data that’s already on this device. <annotation id="restore_choice_data_disclaimer_cloud_learn_more">How your data’s restored</annotation></string>
     <string name="restore_choice_data_disclaimer_from_newer_version">This backup is from a device with a newer version of Android. Some data may not restore to your new device.</string>
@@ -558,9 +632,7 @@ This will not delete any photos &amp; videos that are currently backed up to Goo
     <string name="restore_choice_data_disclaimer_v2_cloud">Some data may not transfer to your ^1.</string>
     <string name="restore_choice_deselect_some_content">Deselect some content to continue</string>
     <string name="restore_choice_dont_have_old_phone">Can’t use other device?</string>
-    <string name="restore_choice_how_your_datas_copied_title">How your data’s copied</string>
     <string name="restore_choice_ios_device_label">iPhone</string>
-    <string name="restore_choice_learn_more_details_visit_page">For more details and help copying some of this data, visit <b>g.co/datatransferhelp</b>.</string>
     <string name="restore_choice_learn_more_ios_message">"Some of the data from your other device can’t be copied automatically:
 
  ● Apps that weren’t installed from the App Store
@@ -613,8 +685,6 @@ This will not delete any photos &amp; videos that are currently backed up to Goo
 Only app data that’s backed up using a Google backup can be copied."</string>
     <string name="restore_choice_learn_more_message_apps_apps_data_title">Apps &amp; app data</string>
     <string name="restore_choice_learn_more_message_apps_post_setup_apps_data">Existing app data won’t be overwritten.</string>
-    <string name="restore_choice_learn_more_message_call_history">Call history can be copied.</string>
-    <string name="restore_choice_learn_more_message_contacts">Contacts can be copied.</string>
     <string name="restore_choice_learn_more_message_device_settings">Some device settings can’t be copied.</string>
     <string name="restore_choice_learn_more_message_ios_apps">Only apps that are available on Google Play can be copied.</string>
     <string name="restore_choice_learn_more_message_ios_copied_once">^1 can only be copied once.</string>
@@ -652,6 +722,8 @@ If you changed a setting on this device, it won’t be overwritten, except home 
 To save time, copy your data using a cable."</string>
     <string name="restore_choice_usb_switchover_dialog_negative_button">"Don't use cable"</string>
     <string name="restore_choice_usb_switchover_dialog_positive_button">Use cable</string>
+    <string name="restore_common_indexing_description">This may take a few minutes</string>
+    <string name="restore_common_indexing_title">Getting ready to copy…</string>
     <string name="restore_contacts_default_relation_type">Related contact</string>
     <string name="restore_continue_suw_title">Restoring your data…</string>
     <string name="restore_device_space_text">^1 total</string>
@@ -693,7 +765,6 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="restore_item_accessibility_settings">Accessibility settings</string>
     <string name="restore_item_accounts">Accounts</string>
     <string name="restore_item_alarms">Alarms</string>
-    <string name="restore_item_alarms_and_clocks">Alarms &amp; clocks</string>
     <string name="restore_item_android_messages">Messages</string>
     <string name="restore_item_android_messages_description">SMS, MMS, and RCS</string>
     <string name="restore_item_app_data">App data</string>
@@ -710,31 +781,99 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="restore_item_email_description">Gmail will sync</string>
     <string name="restore_item_files_and_folders">Files</string>
     <string name="restore_item_font_size">Font size</string>
+    <string name="restore_item_google_account">Google Accounts</string>
     <string name="restore_item_home_screen_layout">Home screen layout</string>
     <string name="restore_item_ios_device_settings_description">Wi-Fi networks, wallpaper &amp; more</string>
     <string name="restore_item_message_attachments">Message attachments</string>
     <string name="restore_item_messages">Messages</string>
+    <string name="restore_item_messages_attachments_description">%1$s - Photos, videos &amp; files</string>
+    <string name="restore_item_messages_description">Text-only messages</string>
     <string name="restore_item_mms">MMS messages</string>
     <string name="restore_item_mms_attachments">MMS attachments</string>
     <string name="restore_item_music">Music &amp; other audio</string>
     <string name="restore_item_note_description">iOS® Notes</string>
     <string name="restore_item_notes">Notes</string>
+    <string name="restore_item_os_migration_calendars">Calendars</string>
     <string name="restore_item_os_migration_music">Music</string>
-    <string name="restore_item_os_migration_wallet">Wallet passes</string>
+    <string name="restore_item_os_migration_wallet">Wallet</string>
     <string name="restore_item_passwords_and_passkeys">Passwords &amp; passkeys</string>
+    <string name="restore_item_passwords_and_passkeys_subtext">Copy to Apple Passwords</string>
     <string name="restore_item_photos">Photos</string>
     <string name="restore_item_photos_and_videos">Photos &amp; videos</string>
     <string name="restore_item_recordings">Recordings</string>
     <string name="restore_item_recordings_description">iOS® Voice Memos</string>
     <string name="restore_item_screen_timeout">Screen timeout</string>
     <string name="restore_item_settings">Device settings</string>
+    <string name="restore_item_settings_and_more">Settings and more</string>
     <string name="restore_item_sms">SMS messages</string>
     <string name="restore_item_video">Videos</string>
     <string name="restore_item_voice_memos">Voice memos</string>
     <string name="restore_item_wallpaper">Wallpaper</string>
-    <string name="restore_item_wifi_credentials">Wi-Fi credentials</string>
     <string name="restore_item_wifi_networks">Wi-Fi networks</string>
     <string name="restore_later_dialog_title_before_transfer">Restore data later?</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_description">Search, save, and organize info, get things done, and kickstart creativity</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_description">Easily get things done and kickstart your creativity</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_promo_card_circle_to_search_summary">Search anything on your screen by pressing &lt;img src=gs_google_vd_theme_24 alt=Google key icon> + &lt;bg>space&lt;/bg></string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_promo_card_circle_to_search_title">Circle to Search</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_promo_card_notebooklm_summary">Upload PDFs, websites, and more to get insightful summaries from your AI-powered research partner</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_promo_card_notebooklm_title">NotebookLM</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_promo_card_quick_insert_summary">Easily add and create content by pressing &lt;img src=gs_add_diamond_vd_theme_24></string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_promo_card_quick_insert_title">Quick Insert</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_desktop_title">Use Google AI to be more productive and creative</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_primary_button_label">Next</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_promo_card_ai_mode_summary">Ask whatever’s on your mind to get an AI-powered response, and explore further with follow-up questions and helpful web links</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_promo_card_ai_mode_title">Meet AI Mode: A whole new way to search</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_promo_card_gmail_summary">Smart Compose helps finish your sentences while drafting an email</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_promo_card_gmail_title">Respond to emails faster with Gmail</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_promo_card_photos_summary">Ask for the change you want and watch your photo transform</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_promo_card_photos_title">Edit your photos faster with Google Photos</string>
+    <string name="restore_onboarding_bestofgoogleai_fragment_best_of_google_ai_title">Discover Google AI at its best</string>
+    <string name="restore_onboarding_categories_selection_description">Based on your interests, you may see app recommendations, tips, and more</string>
+    <string name="restore_onboarding_categories_selection_next">Next</string>
+    <string name="restore_onboarding_categories_selection_skip">Maybe later</string>
+    <string name="restore_onboarding_categories_selection_title">What will you use your device for?</string>
+    <string name="restore_onboarding_category_communication">Communication</string>
+    <string name="restore_onboarding_category_creativity">Creativity</string>
+    <string name="restore_onboarding_category_entertainment">Entertainment</string>
+    <string name="restore_onboarding_category_gaming">Gaming</string>
+    <string name="restore_onboarding_category_learning">Learning</string>
+    <string name="restore_onboarding_category_productivity">Productivity</string>
+    <string name="restore_onboarding_category_small_business">Small business</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_app_row_button_text">Find similar apps</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_app_row_chip_text_installed">Installed</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_app_row_chip_text_paid_app">Paid app</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_appsummary_avoid_double_subscriptions_subtitle">Have app subscriptions? Make sure you don’t pay double</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_appsummary_cannot_be_auto_copied_subtitle">Apps that can’t be auto-installed</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_appsummary_ios_exclusive_apps_subtitle">Replace apps exclusive to iOS</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_appsummary_play_unavailable_apps_subtitle">Replace apps not available on Google Play</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_appsummary_title">Here are some apps that need attention</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_avoid_double_subscriptions_step_one_content">On your iPhone, go to Settings, search for Subscriptions, and cancel auto-renewal for all apps</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_avoid_double_subscriptions_step_three_content">Once your subscription ends, go to Google Play and buy the subscription to continue using the app on your %1$s</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_avoid_double_subscriptions_step_two_content">Continue using the app on your %1$s until the current subscription expires</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_avoid_double_subscriptions_title">Switch subscriptions to avoid paying double</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_see_all">See all</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_see_less">See less</string>
+    <string name="restore_onboarding_setupcompanion_appsummary_fragment_text_learn_more_about_subscriptions">View details</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_app_summary_item_title">Check your missing apps</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_button_explore">Explore</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_button_restore_anytime">Get started</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_description">See where you can find them on your %1$s</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_description_partial_data_copied">%1$s not copied</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_description_partial_data_copied_with_more_data_flavors">%1$s, %2$s, and more not copied</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_description_partial_data_copied_with_two_data_flavors">%1$s and %2$s not copied</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_title">Here’s what was copied</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_title_completed">Your data is good to go</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_data_summary_item_title_partial_data_copied">Copy your remaining data</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_description_no_data_copied">Copy your photos, messages, and more</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_esim_setup_item_description">Get ready to make calls and send messages</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_esim_setup_item_title">Set up your eSIM</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_esim_setup_item_title_completed">Your SIM is all set</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_title">Let’s get you settled in</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_title_completed">Your apps and data are all set</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_title_hero_card">Get more from your %1$s with the best and latest features</string>
+    <string name="restore_onboarding_setupcompanion_landing_fragment_landing_title_no_data_copied">No data copied</string>
+    <string name="restore_onboarding_setupcompanion_trampoline_settingscard_description">Get your data all set, and make your phone truly yours</string>
+    <string name="restore_onboarding_setupcompanion_trampoline_settingscard_title">Let’s get you settled in</string>
     <string name="restore_onboarding_suggestedactions_dialog_suggested_actions_content">You can’t do this task again</string>
     <string name="restore_onboarding_suggestedactions_dialog_suggested_actions_title">Task already complete</string>
     <string name="restore_onboarding_suggestedactions_fragment_suggested_actions_check_mark_icon_label">checked</string>
@@ -743,6 +882,52 @@ Your Android backup includes apps, contacts, call history, messages and device s
     <string name="restore_onboarding_suggestedactions_fragment_suggested_actions_no_thanks_label_expressive">Maybe later</string>
     <string name="restore_onboarding_suggestedactions_fragment_suggested_actions_title">Anything else?</string>
     <string name="restore_onboarding_suggestedactions_fragment_suggested_actions_title_expressive">What next?</string>
+    <string name="restore_osmigration_connection_not_established_description">Keep both devices on and close to each other until setup is complete</string>
+    <string name="restore_osmigration_connection_not_established_title">Continue on your other device</string>
+    <string name="restore_osmigration_export_biometric_prompt_subtitle">Enter your screen lock to transfer Google Accounts, settings, and more</string>
+    <string name="restore_osmigration_export_biometric_prompt_title">Verify it’s you</string>
+    <string name="restore_osmigration_export_data_selector_items_item_always_copied_summary">Apps, Google Accounts, accessibility settings, home screen layout, wallpaper and Wi-Fi credentials</string>
+    <string name="restore_osmigration_export_data_selector_items_item_always_copied_title">Always copied</string>
+    <string name="restore_osmigration_export_data_selector_items_section_item_title">@string/restore_osmigration_export_fragment_data_selector_title</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_accounts">Saved accounts can be copied. Google Accounts are always copied.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_files_and_folders">Files in Alarms, Documents, Downloads, Movies, Notifications, Pictures, and Ringtones folders can be copied.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_installed_apps">Only apps that are available on Apple’s App Store® can be copied. To copy hidden or locked apps, unhide or unlock them before you start copying your data.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_notes_generic">Notes will be copied to Apple’s Notes app.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_notes_keep">To use Apple Notes instead of Google Keep, tap Copy to Apple Notes.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_passwords_and_passkeys">If you choose to copy your data, your default autofill provider will be changed to Apple’s Passwords app.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_passwords_and_passkeys_pixel_extra">To keep using Google Password Manager on your iPhone or iPad, go to Settings > General > Autofill &amp; Passwords > Autofill from, then turn on Chrome.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_photos_and_videos_generic">Some photos &amp; videos can’t be copied.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_photos_and_videos_pixel">Some photos &amp; videos can’t be copied, including any saved in Private Space.</string>
+    <string name="restore_osmigration_export_dialog_how_data_copied_wallet">Wallet can be copied.</string>
+    <string name="restore_osmigration_export_fragment_app_data_items_all_apps">Your apps (%1$d)</string>
+    <string name="restore_osmigration_export_fragment_app_data_title">Choose your app data</string>
+    <string name="restore_osmigration_export_fragment_connect_to_wifi_dialog_description">Check your Wi-Fi and try again</string>
+    <string name="restore_osmigration_export_fragment_connect_to_wifi_dialog_title">Can’t connect</string>
+    <string name="restore_osmigration_export_fragment_connecting_title">Connecting…</string>
+    <string name="restore_osmigration_export_fragment_copy_error_cancelled_title">Copying cancelled</string>
+    <string name="restore_osmigration_export_fragment_copy_error_description">There was a problem connecting to your other device</string>
+    <string name="restore_osmigration_export_fragment_copy_error_low_battery_description">Make sure both devices have enough charge to continue copying your data</string>
+    <string name="restore_osmigration_export_fragment_copy_error_low_battery_title">This device will shut down soon</string>
+    <string name="restore_osmigration_export_fragment_copy_error_title">Can’t copy</string>
+    <string name="restore_osmigration_export_fragment_copy_result_description">Continue setup on your iPhone</string>
+    <string name="restore_osmigration_export_fragment_copy_result_title">Copying’s done</string>
+    <string name="restore_osmigration_export_fragment_copying_title">Copying your data…</string>
+    <string name="restore_osmigration_export_fragment_data_selector_description">Data you choose will be copied to your new device, and stays on this device. <annotation link="learn_more">How your data’s copied</annotation></string>
+    <string name="restore_osmigration_export_fragment_data_selector_title">Choose what to copy</string>
+    <string name="restore_osmigration_export_fragment_notes_app_selector_copy_to_apple_notes">Copy to Apple Notes</string>
+    <string name="restore_osmigration_export_fragment_notes_app_selector_title">Choose your notes app</string>
+    <string name="restore_osmigration_export_fragment_notes_app_selector_use_google_keep">Use Google Keep</string>
+    <string name="restore_osmigration_export_fragment_permissions_bluetooth">Bluetooth</string>
+    <string name="restore_osmigration_export_fragment_permissions_bluetooth_and_location">Bluetooth and Location</string>
+    <string name="restore_osmigration_export_fragment_permissions_description">To connect to your iPhone or iPad and copy data, turn on %s on this device</string>
+    <string name="restore_osmigration_export_fragment_permissions_location">Location</string>
+    <string name="restore_osmigration_export_fragment_permissions_title">Turn on %s</string>
+    <string name="restore_osmigration_export_fragment_start_export_description">You can choose to copy apps, photos, contacts, eSIM, and more</string>
+    <string name="restore_osmigration_export_fragment_start_export_title">Copy apps &amp; data to your iPhone® or iPad®</string>
+    <string name="restore_osmigration_export_fragment_turn_on_wifi_dialog_description">To copy apps &amp; data to your iPhone or iPad, go to Settings and turn on Wi-Fi</string>
+    <string name="restore_osmigration_export_fragment_turn_on_wifi_dialog_title">Turn on Wi-Fi</string>
+    <string name="restore_osmigration_export_notification_description">Tap for more details</string>
+    <string name="restore_osmigration_export_notification_title">Copy apps &amp; data</string>
     <string name="restore_qs_finishsetup_fragment_description_may_take_a_few_min">This may take a few minutes</string>
     <string name="restore_qs_finishsetup_fragment_title_getting_yourdevice_ready">{DEVICE_TYPE, select, DESKTOP {Getting your device ready…} PHONE {Getting your phone ready…} TABLET {Getting your tablet ready…} other {Getting your device ready…} }</string>
     <string name="restore_qs_init_fragment_title_just_a_few_moments">Just a few moments…</string>
@@ -760,12 +945,18 @@ Your apps will be installed after setup. The apps you use most will be installed
     <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer_ios">"You can choose to copy photos, contacts, and more.
 
 Your apps will be installed after setup."</string>
+    <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer_os_migration">You can choose to copy photos, contacts, and more</string>
     <string name="restore_qs_startrestore_fragment_start_restore_description_you_can_choose_to_transfer_pre_archiving">"You can choose to transfer your apps, photos, contacts, and more.
 
 Your apps will be installed after setup. The apps you use most will be installed first."</string>
     <string name="restore_qs_startrestore_fragment_start_restore_title_copy_apps_and_data">Copy apps &amp; data</string>
     <string name="restore_qs_startrestore_fragment_use_old_device_description">You need an Android device, iPhone®, or iPad®</string>
     <string name="restore_qs_startrestore_fragment_use_old_device_title">Use your other device</string>
+    <string name="restore_qs_startrestore_os_migration_after_setup_title">After setup</string>
+    <string name="restore_qs_startrestore_os_migration_apps_will_be_installed_bullet_point">Your apps will be installed</string>
+    <string name="restore_qs_startrestore_os_migration_sync_cloud_data_bullet_point">You can download or sync cloud data, like iCloud Photos</string>
+    <string name="restore_qs_startrestore_uws_description_customize">"Checking for data. You'll choose what to copy in the next steps."</string>
+    <string name="restore_qs_startrestore_uws_title">Data</string>
     <string name="restore_qs_unsupportedsource_fragment_unsupported_source_description">"You can only copy data from the device you used to copy data previously.
 
 To copy data from another device, you'll need to erase all device data (factory reset)."</string>
@@ -776,6 +967,7 @@ To copy data from another device, you'll need to erase all device data (factory 
     <string name="restore_qs_workprofilesetup_fragment_work_profile_setup_title">Get your device ready for work</string>
     <string name="restore_restoreanytime_intro_fragment_intro_description_copy_selection">Copy photos, contacts, messages, and more</string>
     <string name="restore_restoreanytime_intro_fragment_intro_description_no_data_loss">The data you copy is merged with the data on this device. If you’ve changed settings, those changes won’t be overwritten.</string>
+    <string name="restore_restoreanytime_intro_fragment_intro_description_whatsapp"><annotation link="whatsapp_import">Transfer WhatsApp chats</annotation></string>
     <string name="restore_restoreanytime_intro_fragment_intro_disclaimer_backup_option">If you don’t have your other device, you can try restoring from a cloud backup on the next screen</string>
     <string name="restore_restoreanytime_intro_fragment_intro_disclaimer_switch_device">You can only copy data from the device you used to copy data previously. To copy data from another device, you’ll need to erase all device data (factory reset).</string>
     <string name="restore_restoreanytime_intro_fragment_intro_title">Copy data from another device</string>
@@ -783,24 +975,32 @@ To copy data from another device, you'll need to erase all device data (factory 
     <string name="restore_restoreanytime_intro_fragment_intro_title_device_charged">Make sure your other device is charged</string>
     <string name="restore_restoreanytime_intro_fragment_intro_title_device_charged_with_name">Make sure your %1$s is charged</string>
     <string name="restore_restoreanytime_intro_fragment_intro_title_no_data_loss">You won’t lose recent data</string>
+    <string name="restore_restoreanytime_intro_fragment_intro_title_whatsapp">Looking to transfer WhatsApp data?</string>
     <string name="restore_restoreanytime_intro_fragment_intro_title_with_device_name">Copy data from your %1$s</string>
     <string name="restore_restoreanytime_trampoline_fragment_unsupported_device_description">The Android Switch app can’t be used after setup on this device</string>
     <string name="restore_restoreanytime_trampoline_fragment_unsupported_device_title">App unavailable</string>
-    <string name="restore_restoreanytime_trampoline_settingscard_description">Some items didn’t copy during setup</string>
-    <string name="restore_restoreanytime_trampoline_settingscard_title">Copy missing data</string>
+    <string name="restore_restoreanytime_trampoline_settings_entry_summary">Bring data from another device</string>
+    <string name="restore_restoreanytime_trampoline_settings_entry_title">Android Switch</string>
     <string name="restore_selected_size_and_device_space_text"><annotation id="selected_size">^1</annotation> ^2 of ^3 available storage</string>
     <string name="restore_selected_size_text"><annotation id="selected_size">^1</annotation> ^2</string>
+    <string name="restore_whatsapp_import_fragment_description">You can transfer your chat history from your iPhone to this device using a cable</string>
+    <string name="restore_whatsapp_import_fragment_info_footer_message">If you transfer your WhatsApp chats, all chats on this device will be deleted and replaced with the previous history from your iPhone.</string>
+    <string name="restore_whatsapp_import_fragment_title">Transfer WhatsApp chats</string>
+    <string name="restore_whatsappimport_no_wifi_connection_description">To copy WhatsApp chats to your iPhone or iPad, you need to connect to a network</string>
+    <string name="restore_whatsappimport_no_wifi_connection_title">Connect to Wi-Fi</string>
+    <string name="restore_whatsappimport_settingscard_description">Your chats haven’t been transferred yet</string>
+    <string name="restore_whatsappimport_settingscard_title">Transfer WhatsApp chats</string>
     <string name="retail_mode_warning_dialog_message">This will play a retail demo video until the device is factory reset. This mode is for retailers and not intended for personal use.</string>
     <string name="retail_mode_warning_dialog_title">Play demo video</string>
     <string name="skip_transfer">Skip transfer</string>
     <string name="small_time_duration">Less than 1 minute</string>
     <string name="some_whatsapp_chats_not_exported">• Some WhatsApp chats not transferred</string>
-    <string name="stop_copying_dialog_message_before_transfer">Your data won’t be copied to your new device</string>
-    <string name="stop_copying_dialog_message_before_transfer_initial_setup">You’ll get another chance to copy data from your other device later</string>
-    <string name="stop_copying_dialog_message_during_transfer">Some data won’t be copied to your new device</string>
-    <string name="stop_copying_dialog_stop_button_during_transfer">Stop copying</string>
-    <string name="stop_copying_dialog_title_before_transfer">Don’t copy?</string>
-    <string name="stop_copying_dialog_title_during_transfer">Stop copying?</string>
+    <string name="stop_copying_dialog_common_message_before_transfer">Your data won’t be copied to your new device</string>
+    <string name="stop_copying_dialog_common_message_before_transfer_initial_setup">You’ll get another chance to copy data from your other device later</string>
+    <string name="stop_copying_dialog_common_message_during_transfer">Some data won’t be copied to your new device</string>
+    <string name="stop_copying_dialog_common_stop_button_during_transfer">Stop copying</string>
+    <string name="stop_copying_dialog_common_title_before_transfer">Don’t copy?</string>
+    <string name="stop_copying_dialog_common_title_during_transfer">Stop copying?</string>
     <string name="stop_restoring_dialog_message_before_transfer">Your data won’t be restored to your new device</string>
     <string name="stop_restoring_dialog_message_before_transfer_initial_setup">You’ll get another chance to restore your data later</string>
     <string name="stop_restoring_dialog_title_before_transfer">Don’t restore?</string>
@@ -812,6 +1012,7 @@ To copy data from another device, you'll need to erase all device data (factory 
     <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
     <string name="sudFontSecondaryText">google-sans-text</string>
     <string name="sudGlifExpressiveDialogFontFamily">google-sans-flex</string>
+    <string name="sud_accessibility_button_label">Accessibility</string>
     <string name="sud_back_button_label">Back</string>
     <string name="sud_card_view_check_mark_icon_label">checked</string>
     <string name="sud_default_device_name">device</string>
@@ -822,7 +1023,10 @@ To copy data from another device, you'll need to erase all device data (factory 
     <string name="sud_more_button_label">More</string>
     <string name="sud_more_info">More info</string>
     <string name="sud_next_button_label">Next</string>
+    <string name="sud_setup_progress_indicator_icon_description">Setup progress indicator</string>
+    <string name="sud_setup_progress_percentage">%1$s%%</string>
     <string name="sud_skip_button_label">Skip</string>
+    <string name="synced_with_app">Synced with %1$s</string>
     <string name="target_default_source_device_model">other device</string>
     <string name="target_device_not_supported_cant_continue_description">You’ll need to choose another way to copy data</string>
     <string name="target_device_not_supported_cant_continue_title">Other device isn’t supported</string>
@@ -853,6 +1057,7 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="transfer_finished_fragment_title">Adding finishing touches…</string>
     <string name="transfer_finished_fragment_work_setup_tile">Preparing device for work setup…</string>
     <string name="transfer_summary_copied_successfully">Copied successfully</string>
+    <string name="transfer_summary_destination">Open in %1$s</string>
     <string name="transfer_summary_fragment_description_for_cable_d2d">You can disconnect the cable</string>
     <string name="transfer_summary_fragment_description_for_cable_d2d_with_partial_data_transfer">You can disconnect the cable. To copy more data later, go to Settings.</string>
     <string name="transfer_summary_fragment_description_for_data_not_selected">To copy more data later, go to Settings</string>
@@ -863,6 +1068,9 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="transfer_summary_not_copied">Couldn’t copy data</string>
     <string name="transfer_summary_not_enough_storage">No items copied • Not enough storage</string>
     <string name="transfer_summary_nothing_to_copy">No items on device to copy</string>
+    <string name="transfer_summary_os_migration_footer">Some apps may upload data you’ve copied to their cloud platforms. You may be able to manage your data in each app’s settings.</string>
+    <string name="transfer_summary_os_migration_no_account_not_copied">Couldn’t copy data without a Google Account</string>
+    <string name="transfer_summary_os_migration_no_account_partial_copy">Couldn’t copy some data without a Google Account</string>
     <string name="transfer_summary_partial_no_details">Couldn’t copy some data</string>
     <string name="transfer_summary_partial_no_details_messages">Couldn’t copy some data. This may include text messages and message attachments.</string>
     <string name="transfer_summary_partial_v3">{transferred_items} of {total_items} copied</string>
@@ -884,6 +1092,8 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="transferring_fragment_usb_disconnected_title">Copying using Wi-Fi</string>
     <string name="transferring_fragment_usb_suggestion_subtitle">Connect both devices using a cable</string>
     <string name="transferring_fragment_usb_suggestion_title">Want to speed things up?</string>
+    <string name="transport_destination_description">Moving data to new device</string>
+    <string name="transport_destination_folder_name">Copied from iOS</string>
     <string name="trust_instructions_trademark_disclaimer">iPhone, iPad, iMessage, iCloud, Safari, and iTunes are trademarks of Apple Inc., registered in the U.S. and other countries.</string>
     <string name="unlock_ios_fragment_description">To continue, unlock your iPhone®. Keep it unlocked during the transfer.</string>
     <string name="unlock_ios_fragment_title">Unlock your iPhone®</string>
@@ -895,6 +1105,7 @@ If you keep seeing this error, you may need to try copying another way."</string
     <string name="video_summary_recover_summary">On your iPhone, back up your videos using Google Photos or another cloud storage app. They’ll sync automatically when you open the app on this device.</string>
     <string name="video_summary_recover_title">To recover your videos</string>
     <string name="view_or_download_in_google_photos">View or download in Google Photos</string>
+    <string name="what_was_copied">Here’s what was copied</string>
     <string name="whatsapp_chats_not_exported">• WhatsApp chats not transferred</string>
     <string name="wifi_settings_button">Wi-Fi settings</string>
     <string name="work_profile_setup_description">To set up your work profile, add your work account on the next screen</string>
