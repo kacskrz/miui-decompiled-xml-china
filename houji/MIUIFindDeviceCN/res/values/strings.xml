@@ -57,6 +57,7 @@
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="battery_name">CR2032</string>
     <string name="belong_to">"%1$s's %2$s"</string>
+    <string name="ble_connect_by_other_error">"Couldn't connect. Another user is locating this item."</string>
     <string name="bluetooth_not_open">Bluetooth is off</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
@@ -90,6 +91,7 @@
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="checkUpdateSdkVersion">4.2.5</string>
     <string name="check_for_updates">Check for updates</string>
     <string name="check_for_updates_loading">Checking for updates…</string>
     <string name="chinese_day_1">初一</string>
@@ -166,6 +168,7 @@
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="clearable_edittext_clear_description">Clear</string>
     <string name="close">Close</string>
+    <string name="close_find_tip_when_device_lost">"Find device can't be turned off while Lost device protection is on. Learn more"</string>
     <string name="close_phone_failed_toast_message">"Couldn't turn off Find device"</string>
     <string name="close_phone_offline_failed_toast_message">"Couldn't turn off Offline location"</string>
     <string name="close_phone_offline_progress_dialog_message">Turning off Offline location…</string>
@@ -226,8 +229,8 @@ Contact your sales agent for details."</string>
     <string name="detail_view_erase_data_timeout_hint">Request timed out</string>
     <string name="device_data_cleared">Device data cleared</string>
     <string name="device_data_has_clear">Data cleared</string>
-    <string name="device_found_nearby_message">%1$s appeared near %3$s on %2$s</string>
-    <string name="device_found_nearby_message_without_address">%1$s was updated at %2$s. Check details in the device page.</string>
+    <string name="device_found_nearby_message">%1$s appeared near %4$s on %2$s at %3$s</string>
+    <string name="device_found_nearby_message_without_address">%1$s location updated on %2$s at %3$s. View device details for more info.</string>
     <string name="device_is_near_need_not_open">This device is nearby</string>
     <string name="device_location_update">Device is online</string>
     <string name="device_locked">This device is locked</string>
@@ -373,7 +376,7 @@ Contact your sales agent for details."</string>
     <string name="find_second_guide_open_dialog_button_cancel">Cancel</string>
     <string name="find_second_guide_open_dialog_button_cancel_open">Turn on</string>
     <string name="find_second_guide_open_dialog_message">Turn this feature on to be able to locate and lock your device or play an alarm to help you find it.</string>
-    <string name="find_second_guide_open_dialog_title">Turn on Find my phone</string>
+    <string name="find_second_guide_open_dialog_title">Turn on \"Find my device\"</string>
     <string name="find_tag_follow_you_single">Xiaomi Tag is nearby. Tap to view details.</string>
     <string name="find_welcome_fragemnt_set_account_dialog_password_title">Set password</string>
     <string name="find_welcome_fragment_button_continue">Continue</string>
@@ -469,9 +472,11 @@ Contact your sales agent for details."</string>
     <string name="finddevice_iot_view_details">Details</string>
     <string name="finddevice_iot_view_help">Help</string>
     <string name="finddevice_iot_wallet">Wallet</string>
+    <string name="finddevice_security_auth_message">Complete security verification to be able to find devices, play sound, and use \"Offline location\".</string>
+    <string name="finddevice_security_auth_title">Security verification</string>
     <string name="finddevice_unavailable">Find device is unavailable in Second space. You can use it in First space.</string>
     <string name="first_page">Device</string>
-    <string name="first_record">First recorded on %1$s</string>
+    <string name="first_record">First detected at %2$s (%1$s)</string>
     <string name="fmt_chinese_date">N月e</string>
     <string name="fmt_date">D</string>
     <string name="fmt_date_day">d</string>
@@ -570,7 +575,7 @@ Contact your sales agent for details."</string>
     <string name="items_page">Items</string>
     <string name="just_now">Just now</string>
     <string name="ks_update_wait">Just a sec…</string>
-    <string name="last_record">Last recorded on %1$s</string>
+    <string name="last_record">Last detected at %2$s (%1$s)</string>
     <string name="last_state">Lost mode</string>
     <string name="license_host_unreachable">"Can't connect to the network. To view this information now, go to %s."</string>
     <string name="loading">Just a sec…</string>
@@ -966,12 +971,12 @@ Contact your sales agent for details."</string>
     <string name="ota_dialog_title_install">Installing…</string>
     <string name="ota_failed">"Couldn't update firmware"</string>
     <string name="ota_finish">Your firmware is up to date</string>
-    <string name="ota_first_dialog_msg">"Don't lock the screen or leave Find device."</string>
+    <string name="ota_first_dialog_msg">"Don't lock your screen or leave this page during the update process. Update now?"</string>
     <string name="ota_first_dialog_start">Update</string>
     <string name="ota_first_dialog_title">Update available</string>
     <string name="ota_have_new_version">A firmware update is available. Tap to update.</string>
     <string name="ota_version">Firmware version: %s</string>
-    <string name="other_xiaomi_tag">Tracked %1$s</string>
+    <string name="other_xiaomi_tag">%1$s moving with you</string>
     <string name="pasport_register_dialog_message">Create a Xiaomi Account via your phone number %s now?</string>
     <string name="passport_access_denied">Access denied</string>
     <string name="passport_account_crop_user_avatar">Crop photo</string>
@@ -1220,12 +1225,17 @@ Location info might not be reported when network connection is poor."</string>
     <string name="precise_find_connecting">Connecting…</string>
     <string name="precise_find_connecting_need_more_time">This process may take up to %1$d minute…</string>
     <string name="precise_find_device_band_disconnected">"Can't connect to the band. Looks like it isn't nearby."</string>
+    <string name="precise_find_device_band_occupied_by_other">"Couldn't connect to band. Another user is locating it."</string>
     <string name="precise_find_device_earphone_disconnected">"Can't connect to the earphones. Make sure they're nearby."</string>
+    <string name="precise_find_device_earphone_occupied_by_other">"Couldn't connect to earphones. Another user is locating them."</string>
     <string name="precise_find_device_iot_device_disconnected">无法连接到充电宝，可能已经不在附近</string>
     <string name="precise_find_device_tag_disconnected">"Can't connect to this tag. Make sure it's nearby."</string>
+    <string name="precise_find_device_tag_occupied_by_other">"Couldn't connect to tag. Another user is locating it."</string>
     <string name="precise_find_device_tracked_device_disconnected">"Can't connect to this item. Make sure it's nearby."</string>
+    <string name="precise_find_device_tracked_device_occupied_by_other">"Couldn't connect. Another user is locating this item."</string>
     <string name="precise_find_device_wait_for_reconnect">Connecting again…</string>
     <string name="precise_find_device_watch_disconnected">"Can't connect to the watch. It may not be nearby."</string>
+    <string name="precise_find_device_watch_occupied_by_other">"Couldn't connect to watch. Another user is locating it."</string>
     <string name="precise_find_download_arcore_tip">Install \"Google Play Services for AR\" to use directional arrows.</string>
     <string name="precise_find_download_arcore_tip_update">Update available for \"Google Play Services for AR\". Tap to update.</string>
     <string name="precise_find_signal_far">Far</string>
@@ -1492,6 +1502,7 @@ Walk around a few steps"</string>
     <string name="the_new_years_day">New Year</string>
     <string name="the_night_of_sevens">Qixi Festival</string>
     <string name="the_owner_can_view_its_location">The owner can locate this item. Tap to view details.</string>
+    <string name="the_owner_can_view_its_location_b">The owner can view its location. Tap to view.</string>
     <string name="the_partys_day">CPC Day</string>
     <string name="the_peace_day">Remembrance Day</string>
     <string name="the_retrocession_day">Retrocession Day</string>
@@ -1523,6 +1534,7 @@ Walk around a few steps"</string>
     <string name="title_location_device_by_message">Locate via SMS</string>
     <string name="today">Today</string>
     <string name="tomorrow">Tomorrow</string>
+    <string name="tracking_alert_notification_text" />
     <string name="tracking_alert_notification_text_no_phone">This device is associated with a Xiaomi Account (%1$s). Turn off Find device or unpair these earphones.</string>
     <string name="tracking_alert_notification_text_with_phone">This device is associated with a Xiaomi Account (%1$s, phone number: %2$s). Turn off Find device or unpair these earphones.</string>
     <string name="tracking_alert_notification_title">These earphones can be located</string>
@@ -1557,7 +1569,6 @@ Walk around a few steps"</string>
     <string name="uninstall_dialog_des">"Find device is a system app. You won't be able to locate lost devices after you remove it."</string>
     <string name="uninstall_dialog_title">Uninstall Find device?</string>
     <string name="unknown_location">Unknown location</string>
-    <string name="unkunow_where">Unknown location</string>
     <string name="unlock">Activate</string>
     <string name="unlock_access_denied">Access denied</string>
     <string name="unlock_bad_authentication">Invalid username or password</string>
@@ -1626,6 +1637,18 @@ Check your network connection and try again"</string>
 %3$d. Connect to the network.
 %4$d. Keep screen on."</string>
     <string name="xiaomi_tag_low_battery">Xiaomi Tag battery is low</string>
+    <string name="xiaomi_update_sdk_bytes_unit">%1$sB</string>
+    <string name="xiaomi_update_sdk_connect_download_manager_fail">Connect Download Manager failed, please check the Download Manager state in the Application Management.</string>
+    <string name="xiaomi_update_sdk_dialog_message">"Introducing version %1$s
+Size: %2$s"</string>
+    <string name="xiaomi_update_sdk_dialog_message_diff">"Introducing version %1$s
+Delta update size: %2$s"</string>
+    <string name="xiaomi_update_sdk_dialog_title">An update is available</string>
+    <string name="xiaomi_update_sdk_external_storage_unavailable">Storage unavailable, please check the SD card.</string>
+    <string name="xiaomi_update_sdk_kilobytes_unit">%1$sKB</string>
+    <string name="xiaomi_update_sdk_megabytes_unit">%1$sMB</string>
+    <string name="xiaomi_update_sdk_update_dialog_cancel">Not now</string>
+    <string name="xiaomi_update_sdk_update_dialog_ok">Update</string>
     <string name="yeelight_name">Yeelight Bedside Lamp</string>
     <string name="yesterday">Yesterday</string>
     <string name="zimi_power_name">ZMI Power Bank</string>
