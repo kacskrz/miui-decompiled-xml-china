@@ -281,6 +281,7 @@
     <string name="common_card_slot_1">卡1</string>
     <string name="common_card_slot_2">卡2</string>
     <string name="common_card_slot_display" formatted="false">SIM %d %s</string>
+    <string name="common_card_slot_display_esim" formatted="false">SIM %d %s (Recommended)</string>
     <string name="common_card_slot_display_internet" formatted="false">SIM %d %s (Recommended for data)</string>
     <string name="common_card_slot_internet">上网卡</string>
     <string name="common_email_not_open">Please open your email manually</string>
@@ -548,6 +549,21 @@
     <string name="deregister_service_title">Cancellation of services</string>
     <string name="dialog_agreement_content1">我已阅读并同意</string>
     <string name="dialog_agreement_content2">《用户协议》</string>
+    <string name="dialog_vsimcore_home_title">Update your system to be able to activate roaming</string>
+    <string name="dialog_vsimcore_install_comment">Attention: %s is required to activate and deactivate roaming.</string>
+    <string name="dialog_vsimcore_install_failed">"Couldn't install %s"</string>
+    <string name="dialog_vsimcore_install_message">"Can't activate roaming if %s isn't installed."</string>
+    <string name="dialog_vsimcore_install_neg">Cancel</string>
+    <string name="dialog_vsimcore_install_pos">Install</string>
+    <string name="dialog_vsimcore_install_title">Install %s</string>
+    <string name="dialog_vsimcore_package_message">"Packages aren't available now. Update your system to be able to activate roaming."</string>
+    <string name="dialog_vsimcore_package_neg">Got it</string>
+    <string name="dialog_vsimcore_package_title">"Can't purchase packages"</string>
+    <string name="dialog_vsimcore_permission_comment">*This permission is only required for this installation.</string>
+    <string name="dialog_vsimcore_permission_message">Grant permissions to install %s to be able to activate roaming.</string>
+    <string name="dialog_vsimcore_permission_neg">Not now</string>
+    <string name="dialog_vsimcore_permission_pos">Settings</string>
+    <string name="dialog_vsimcore_permission_title">Permissions required</string>
     <string name="disable_air_mode_dialog_title">Turn off Airplane mode</string>
     <string name="disable_air_mode_disable_roaming_dialog_description">Turn off Airplane mode to be able to deactivate roaming. Turn off now?</string>
     <string name="disable_air_mode_enable_roaming_dialog_description">Roaming will be activated once you turn off Airplane mode. Turn off now?</string>
@@ -1258,6 +1274,9 @@
     <string name="pay_account_choose_dialog_message">You can purchase data packages as a guest without signing in to your Xiaomi Account.</string>
     <string name="pay_account_choose_dialog_title">Purchase as guest</string>
     <string name="pay_cancel">Cancel</string>
+    <string name="pay_confirm_cancel">Complete payment?</string>
+    <string name="pay_confirm_cancel_content">Continue payment to get roaming data. Continue?</string>
+    <string name="pay_continue">Continue</string>
     <string name="pay_dialog_progress_loading">Just a sec…</string>
     <string name="pay_fail">"Couldn't pay"</string>
     <string name="pay_prepare">准备中...</string>
@@ -1365,9 +1384,13 @@
     <string name="residual_time_description3">%1$d分钟</string>
     <string name="residual_time_description4">%1$d天</string>
     <string name="resource_loading">Just a sec…</string>
+    <string name="roaming_choose_slotid2_disable_esim">SIM %d Disabled eSIM (Recommended)</string>
+    <string name="roaming_choose_slotid2_disable_esim_not_default">SIM %d eSIM is off</string>
     <string name="roaming_choose_slotid_dialog_cancel">Not now</string>
     <string name="roaming_choose_slotid_dialog_explanation"><Data>Attention: &lt;strong>When switching to SIM &lt;xliff:g id=slot_number>%1$d&lt;/xliff:g>, the eSIM on this device will no longer be available&lt;/strong>. You can turn it on again in Settings > Mobile networks.</Data></string>
+    <string name="roaming_choose_slotid_dialog_mep_explanation"><Data>"Note: If you &lt;font color=%1$s>replace SIM 2&lt;/font>, this device's eSIM will be turned off. You can turn it on again in Settings > Mobile networks."</Data></string>
     <string name="roaming_choose_slotid_dialog_ok">Switch</string>
+    <string name="roaming_choose_slotid_dialog_slot2_explanation"><Data>"Note: If you &lt;u>&lt;font color=%1$s>replace SIM 2, eSIM will be turned off and this device's eSIM won't be available. &lt;/font>&lt;/u>You can turn it on again in Settings > Mobile networks."</Data></string>
     <string name="roaming_choose_slotid_dialog_summary">The physical SIM in that slot will be temporarily suspended</string>
     <string name="roaming_choose_slotid_dialog_title">Activating roaming requires an available SIM slot</string>
     <string name="roaming_choose_slotid_sub_dialog_title">SIM %1$d (%2$s) will be deactivated.</string>
@@ -1377,13 +1400,14 @@
     <string name="roaming_disable_dialog_release_slot">Releasing SIM slot %d…</string>
     <string name="roaming_disable_dialog_stop_success">Deactivated roaming successfully</string>
     <string name="roaming_disable_dialog_stopping">Deactivating roaming…</string>
+    <string name="roaming_disable_esim">Turning off eSIM…</string>
     <string name="roaming_disable_esim_content">"If you turn off eSIM, you won't be able to use it on this device. Turn off anyway?"</string>
-    <string name="roaming_disable_esim_title">Turn off eSIM to activate Mi Roaming</string>
+    <string name="roaming_disable_esim_title">Turn off eSIM to activate roaming</string>
     <string name="roaming_disable_multisim_dialog">Deactivate</string>
     <string name="roaming_disable_tipdialog_description">"Deactivating roaming won't stop your package's timer. Deactivate now?"</string>
     <string name="roaming_disable_tipdialog_title">@string/roaming_close_service</string>
-    <string name="roaming_disable_virtualsim_content">Update your system to be able to activate Mi Roaming.</string>
-    <string name="roaming_disable_virtualsim_title">"Can't activate Mi Roaming"</string>
+    <string name="roaming_disable_virtualsim_content">Update your system to be able to activate roaming.</string>
+    <string name="roaming_disable_virtualsim_title">"Can't activate roaming"</string>
     <string name="roaming_enable_dialog_adr_fail">当前网络资源异常，请连接网络后重试</string>
     <string name="roaming_enable_dialog_adr_starting">正在配置联网检查资源</string>
     <string name="roaming_enable_dialog_adr_success">联网资源配置成功</string>
@@ -1392,7 +1416,7 @@
     <string name="roaming_enable_dialog_start_success">Activated roaming successfully</string>
     <string name="roaming_enable_dialog_starting">Activating roaming services…</string>
     <string name="roaming_enable_esim_content">"The eSIM on this device isn't available. Turn it on in Settings > Mobile networks to be able to use it."</string>
-    <string name="roaming_enable_esim_msg">"The eSIM on this device isn't available. You can turn it on manually."</string>
+    <string name="roaming_enable_esim_msg">"The eSIM on this device won't be available. You can turn it on manually. Turn off now?"</string>
     <string name="roaming_enable_esim_title">Turn on eSIM?</string>
     <string name="roaming_enable_virtualsim_when_other_eanbled_content">"You're using another package. To activate this package, you'll need to deactivate the other one. Deactivate it now?"</string>
     <string name="roaming_enable_virtualsim_when_other_eanbled_title">Deactivate active package first</string>
@@ -1487,6 +1511,7 @@
     <string name="settings_withdrawal_of_consent_title">Withdrawal of consent</string>
     <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior">com.google.android.material.sidesheet.SideSheetBehavior</string>
+    <string name="sim_services_disable_msg">The SIM in the selected slot will be turned off</string>
     <string name="solar_term_autumn_begins">Autumn begins</string>
     <string name="solar_term_autumn_equinox">Autumn equinox</string>
     <string name="solar_term_clear_and_bright">Clear and bright</string>
