@@ -4,7 +4,10 @@
     <string name="MSG_APPOINTMENT_SCHEDULE_SUMMARY_FALLBACK">(No title)</string>
     <string name="MSG_BIRTHDAYS_CALENDAR_NAME">Birthdays</string>
     <string name="MSG_DEFAULT_DISPLAY_NAME">Unknown space</string>
+    <string name="MSG_EVERYONE_IS_AVAILABLE">Everyone is available</string>
+    <string name="MSG_GUEST_HAS_CONFLICT">{GUEST_NAME} has a conflict</string>
     <string name="MSG_HOLIDAYS_CALENDAR_NAME">Holidays</string>
+    <string name="MSG_MULTIPLE_GUESTS_HAVE_CONFLICT">{NUM_GUESTS_WITH_CONFLICT, plural, =1 {Another guest has a conflict} other {# guests have conflicts}}</string>
     <string name="MSG_NEXT_RECURRENCE_DATE">Next: %1$s</string>
     <string name="MSG_PRIMARY_CALENDAR_DISPLAY_NAME">My calendar</string>
     <string name="MSG_TASKS_PRODUCT_NAME">Tasks</string>
@@ -20,6 +23,8 @@
     <string name="MSG_WORKING_LOCATION_HOME">Home</string>
     <string name="MSG_WORKING_LOCATION_OFFICE">Office</string>
     <string name="MSG_WORKING_LOCATION_TITLE">Working location: %1$s</string>
+    <string name="MSG_YOU_AND_OTHERS_HAVE_CONFLICT">{OTHERS_COUNT, plural, =1 {You and another guest have conflicts} other {You and # others have conflicts}}</string>
+    <string name="MSG_YOU_HAVE_CONFLICT">You have a conflict</string>
     <string name="a11y_action_edit_subtask">Edit subtask</string>
     <string name="a11y_action_edit_task">Edit task</string>
     <string name="a11y_action_move_task_down">Move down</string>
@@ -119,7 +124,9 @@
     <string name="access_code_picker_dialog_title">Choose passcode</string>
     <string name="access_role_data_owner">Owner</string>
     <string name="access_role_editor">Make changes to events</string>
+    <string name="access_role_editor_without_private_access">Make changes (see private events as free/busy)</string>
     <string name="access_role_free_busy">See only free/busy (hide details)</string>
+    <string name="access_role_full_editor">Make changes and see all event details</string>
     <string name="access_role_owner">Make changes and manage sharing</string>
     <string name="access_role_reader">See all event details</string>
     <string name="accessibility_accept_proposal">Accept</string>
@@ -250,6 +257,7 @@ Actual: %2$s."</string>
     <string name="another_location">Another location</string>
     <string name="another_office">Another office</string>
     <string name="app_label">Calendar</string>
+    <string name="app_update_cant_open_link_failure">"Can't open link"</string>
     <string name="app_update_cant_open_play_store_failure">"Can't open Google Play Store"</string>
     <string name="app_update_dismiss">Dismiss</string>
     <string name="app_update_downloaded_snackbar_button">Restart</string>
@@ -294,6 +302,7 @@ Actual: %2$s."</string>
     <string name="attendee_accepted">%s is going</string>
     <string name="attendee_accepted_in_a_meeting_room">%s is joining in a meeting room</string>
     <string name="attendee_accepted_virtually">%s is joining virtually</string>
+    <string name="attendee_copy_visibility_note">Changes will be reflected only on this calendar.</string>
     <string name="attendee_declined">%s has declined</string>
     <string name="attendee_not_responded">%s has not responded</string>
     <string name="attendee_optional">Optional</string>
@@ -354,7 +363,13 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="calendar_successfully_added_message">Calendar was successfully added.</string>
     <string name="calendar_unsubscription_failure_message">Failed to remove calendar</string>
     <string name="calendars_help_context">calendar_settings_android</string>
+    <string name="call_notification_answer_action">Answer</string>
+    <string name="call_notification_answer_video_action">Video</string>
+    <string name="call_notification_decline_action">Decline</string>
     <string name="call_notification_hang_up_action">Hang Up</string>
+    <string name="call_notification_incoming_text">Incoming call</string>
+    <string name="call_notification_ongoing_text">Ongoing call</string>
+    <string name="call_notification_screening_text">Screening an incoming call</string>
     <string name="can_not_add_unencrypted_attachment">"You can't attach an unencrypted file to an encrypted event"</string>
     <string name="can_not_delete_event">You don’t have permission to delete this event</string>
     <string name="cancel">@android:string/no</string>
@@ -443,6 +458,9 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="confirm_rsvp_dialog_title">Confirm RSVP</string>
     <string name="confirm_subscription">Yes</string>
     <string name="confirmation_id">Confirmation number: %s</string>
+    <string name="conflict_signal_checking_availability">Checking availability…</string>
+    <string name="conflict_signal_error">Could not check availability</string>
+    <string name="conflict_signal_skipped_attendees_notice">Based on visible calendars</string>
     <string name="contact_picker_add_people">Add people</string>
     <string name="contact_picker_added">Added</string>
     <string name="contact_picker_cancellation_dialog_cancel">Cancel</string>
@@ -456,7 +474,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="contact_picker_search_results">Search results</string>
     <string name="contact_picker_shared_with">Shared with</string>
     <string name="contact_picker_suggestions">Suggestions</string>
-    <string name="conversational_editor_placeholder">Ask Gemini to schedule</string>
     <string name="copied_to_clipboard">Copied to clipboard</string>
     <string name="copied_to_clipboard_phone">Phone number copied to clipboard.</string>
     <string name="copied_to_clipboard_sip">SIP address copied to clipboard.</string>
@@ -1043,7 +1060,6 @@ Where: %5$s
     <string name="loading_addons_error">"Conferencing solutions can't be loaded"</string>
     <string name="loading_addons_error_no_connection">"Conferencing solutions can't be loaded because there's no Internet connection"</string>
     <string name="loading_attendees">Loading attendees…</string>
-    <string name="loading_time_suggestions">Loading time suggestions</string>
     <string name="location_error">Unable to add location</string>
     <string name="location_meeting_room">in a meeting room</string>
     <string name="location_picker_contacts">Contacts</string>
@@ -1069,6 +1085,8 @@ Where: %5$s
     <string name="manage_family_group_dialog_continue">Continue</string>
     <string name="manage_family_group_dialog_message">Changes you make to your Google family group are applied across all Google services.</string>
     <string name="manage_family_group_dialog_title">Manage family group</string>
+    <string name="manage_space_no_data_toast">This app holds no browsing data.</string>
+    <string name="manage_space_not_supported_toast">"This app's data is stored in %1$s."</string>
     <string name="map_label">Map</string>
     <string name="maps_not_available">No application found to view this location.</string>
     <string name="mark_complete_action">Mark completed</string>
@@ -1268,6 +1286,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="og_bento_a11y_dialog">Dialog</string>
     <string name="og_bento_alert_greeting_with_name">Pay attention, %1$s!</string>
     <string name="og_bento_alert_greeting_without_name">Pay attention!</string>
+    <string name="og_bento_linked_apps_label">Linked apps</string>
     <string name="og_bento_more_from_product_fallback">More from this app</string>
     <string name="og_bento_unicorn_account_header_title">Your parent is helping to manage your account</string>
     <string name="og_card_loading_label_a11y">Loading details.</string>
@@ -1278,6 +1297,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="og_critical_security_alert_badge_label_a11y">Critical security alert</string>
     <string name="og_deactivated_label">Deactivated</string>
     <string name="og_dismiss">Dismiss</string>
+    <string name="og_edit_my_info_a11y">Edit my info</string>
     <string name="og_expand_account_list_a11y">Expand account list.</string>
     <string name="og_failed_to_fetch_restriction_info">Failed to fetch restriction info</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
@@ -1324,6 +1344,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="open_calendar_unable_to_access_calendar">Unable to access calendar</string>
     <string name="open_drawer">Open drawer</string>
     <string name="open_source_licenses_title">Open source licenses</string>
+    <string name="organizer">Organized by %s</string>
     <string name="os_blocked_description">To keep using the %1$s app and get the latest security features, update your device OS. You can continue to use %1$s in your %2$s.</string>
     <string name="os_blocked_description_no_browser_link">To keep using the %1$s app and get the latest security features, update your device OS.</string>
     <string name="os_blocked_title">Update your device to keep using %1$s</string>
@@ -1345,9 +1366,14 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="people_intelligence_in_a_meeting">In a meeting - available again at %1$s</string>
     <string name="people_intelligence_out_of_office">Out of office - back on %1$s</string>
     <string name="people_intelligence_outside_working_hours">Outside of usual working hours - local time is %1$s</string>
+    <string name="people_sheet_agent_badge_label">Agent</string>
+    <string name="people_sheet_agent_badge_text_label">Agent</string>
+    <string name="people_sheet_agent_profile_description">This AI agent takes actions for <annotation id="agent_owner_profile_link">%s</annotation></string>
+    <string name="people_sheet_agent_provider_description">Powered by <annotation id="agent_provider_link">%s</annotation></string>
     <string name="people_sheet_badge_label">External</string>
     <string name="people_sheet_external_badge_label">External user not managed by admin</string>
     <string name="people_sheet_guest_badge_label">External user managed by admin</string>
+    <string name="people_sheet_unavailable_agent_badge_label">Unavailable agent</string>
     <string name="peoplekit_contact_selected">Selected</string>
     <string name="peoplesheet_add_to_contacts">Add to contacts</string>
     <string name="peoplesheet_avatar_contact_photo">Contact photo</string>
@@ -1434,6 +1460,11 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="propose_time_chip_text">Propose a new time</string>
     <string name="propose_time_proposal_prefix">Proposal: %s</string>
     <string name="propose_time_review_button_text">Review proposed time</string>
+    <string name="provider_unavailable_button_ok">OK</string>
+    <string name="provider_unavailable_default_browser">Chrome</string>
+    <string name="provider_unavailable_fallback_message">This app is unavailable.</string>
+    <string name="provider_unavailable_message">This app is unavailable because %1$s is blocked</string>
+    <string name="provider_unavailable_title">App Unavailable</string>
     <string name="pstn_removal_promo">Tap <b>%s</b> to get dial-in info</string>
     <string name="public_holidays_only">Public holidays only</string>
     <string name="quick_actions_call_content_description">Call %s.</string>
@@ -1692,6 +1723,8 @@ For Gmail to create these events, you must also turn on "<b>Smart features and p
     <string name="suggest_time_no_suggestions_title">No suggestions</string>
     <string name="suggest_time_not_considered">Not considered: %1$s</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="super_g_path_cover_48">M24,28.52V20H44.72C44.98,21.44 45.12,22.94 45.12,24.5C45.12,25.886 45.017,27.229 44.818,28.52H35.84H24Z</string>
+    <string name="super_g_path_main_48">M24,37.26C30.46,37.26 34.9,33.58 35.84,28.52L40,24L44.818,28.52C43.209,38.925 35.298,46 24,46C11.84,46 2,36.16 2,24C2,11.84 11.84,2 24,2C29.94,2 34.9,4.18 38.72,7.74L32.42,14.04C30.12,11.88 27.24,10.76 24,10.76C16.82,10.76 10.98,16.86 10.98,24.02C10.98,31.18 16.82,37.26 24,37.26Z</string>
     <string name="survey_account_and_system_info">account &amp; system info</string>
     <string name="survey_activity_process_name" />
     <string name="survey_app_id">App Id</string>
@@ -2031,6 +2064,7 @@ Tasks visibility can be modified in your Calendar settings."</string>
     <string name="working_location_label">Working location</string>
     <string name="working_location_title_placeholder">Working location</string>
     <string name="working_location_title_with_location">Working location: %s</string>
+    <string name="workspace_studio_label">Workspace Studio</string>
     <string name="yesterday">Yesterday</string>
     <string name="your_chip_label">You</string>
 </resources>

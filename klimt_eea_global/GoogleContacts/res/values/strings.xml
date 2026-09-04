@@ -128,6 +128,9 @@
     <string name="assistant_welcome_fix_header">Easy ways to fix up your contacts</string>
     <string name="assistant_welcome_merge_and_fix_body">Get help merging duplicates, adding useful details, and more</string>
     <string name="attach_photo_dialog_title">Contact photo</string>
+    <string name="autocomplete_confirmation_message">You are about to add to an existing contact. Changes you make will be applied to the existing contact record.</string>
+    <string name="autocomplete_confirmation_negative_button">Go back</string>
+    <string name="autocomplete_confirmation_positive_button">Continue</string>
     <string name="autocomplete_error_loading_results_message">Unable to load results</string>
     <string name="autocomplete_no_matching_results_for_query">No matching places</string>
     <string name="autocomplete_search_hint">Find a place</string>
@@ -205,8 +208,6 @@
     <string name="browser_not_found">No browser was found.</string>
     <string name="bullet_separated_strings">%1$s • %2$s</string>
     <string name="button_continue">Continue</string>
-    <string name="caching_vcard_message">Caching vCard(s) to local temporary storage. The actual import will start soon.</string>
-    <string name="caching_vcard_title">Caching</string>
     <string name="call_assistant">Call %s</string>
     <string name="call_by_shortcut">%s (Call)</string>
     <string name="call_callback">Call callback</string>
@@ -393,6 +394,8 @@
     <string name="copy">Copy</string>
     <string name="copy_clipboard_label_name">Name</string>
     <string name="copy_text">Copy to clipboard</string>
+    <string name="country_code_add_on_click_label">add country code</string>
+    <string name="country_code_change_on_click_label">change country code</string>
     <string name="createContactShortcutFailure">Unable to add to home screen</string>
     <string name="createContactShortcutSuccessful">%s added to home screen</string>
     <string name="createContactShortcutSuccessful_NoName">Contact added to home screen</string>
@@ -400,7 +403,6 @@
     <string name="create_new_local_you_contact_row">You</string>
     <string name="customFieldSaveError">Custom fields must have both field and label</string>
     <string name="custom_date">custom dates</string>
-    <string name="custom_entry">Custom</string>
     <string name="custom_label_picker_title">Custom label name</string>
     <string name="customized_account_attribution_with_count">Customized view • %1$s • %2$s</string>
     <string name="customized_all_accounts_attribution_with_count">Customized view • All accounts • %1$s</string>
@@ -573,8 +575,6 @@
     <string name="existing_birthday_dialog_title">“Birthday” reminder already added</string>
     <string name="existing_name">Existing name</string>
     <string name="expand_button_title">Advanced</string>
-    <string name="expanding_entry_card_view_see_less">See less</string>
-    <string name="expanding_entry_card_view_see_more">See more</string>
     <string name="export_no_contact_details">No additional details chosen</string>
     <string name="export_to_file_item">Export to file</string>
     <string name="exporting_contact_failed_message">"The contact data wasn't exported.
@@ -594,7 +594,6 @@ Reason: \"%s\""</string>
     <string name="fail_reason_no_exportable_contact">There is no exportable contact.</string>
     <string name="fail_reason_not_supported">"The format isn't supported."</string>
     <string name="fail_reason_unknown">Unknown error.</string>
-    <string name="fail_to_load_contact">"Couldn't load contact for sharing"</string>
     <string name="failed_to_load_contact_message">"Couldn't load contact. Try again."</string>
     <string name="family_contact">Family group</string>
     <string name="family_group">Family group</string>
@@ -673,7 +672,6 @@ Reason: \"%s\""</string>
     <string name="has_email_chip_text">Email contacts</string>
     <string name="has_phone_chip_text">Phone contacts</string>
     <string name="header_auto_sync_off">Auto sync is off</string>
-    <string name="header_event_entry">Event</string>
     <string name="header_last_sync">Last sync %s</string>
     <string name="header_name_entry">Name</string>
     <string name="header_nickname_entry">Nickname</string>
@@ -727,7 +725,6 @@ Reason: \"%s\""</string>
     <string name="insert_title">Add to contacts</string>
     <string name="integer_percentage_fmt">%d%%</string>
     <string name="invalidContactMessage">"The contact doesn't exist"</string>
-    <string name="invalid_uri_in_intent">Invalid contact identifier</string>
     <string name="item_view_role_description">Tab</string>
     <string name="just_now">Just now</string>
     <string name="kind_with_type_label_hint">%1$s (%2$s)</string>
@@ -982,6 +979,7 @@ Reason: \"%s\""</string>
     <string name="og_bento_alert_greeting_with_name">Pay attention, %1$s!</string>
     <string name="og_bento_alert_greeting_without_name">Pay attention!</string>
     <string name="og_bento_backup_card_title">Backup</string>
+    <string name="og_bento_linked_apps_label">Linked apps</string>
     <string name="og_bento_more_from_product_fallback">More from this app</string>
     <string name="og_bento_unicorn_account_header_title">Your parent is helping to manage your account</string>
     <string name="og_bento_use_without_an_account_fallback">Use this app without an account</string>
@@ -991,6 +989,7 @@ Reason: \"%s\""</string>
     <string name="og_critical_security_alert_badge_label_a11y">Critical security alert</string>
     <string name="og_deactivated_label">Deactivated</string>
     <string name="og_dismiss">Dismiss</string>
+    <string name="og_edit_my_info_a11y">Edit my info</string>
     <string name="og_expand_account_list_a11y">Expand account list.</string>
     <string name="og_failed_to_fetch_restriction_info">Failed to fetch restriction info</string>
     <string name="og_google_one_account_a11y">Google One account.</string>
@@ -1204,6 +1203,7 @@ Reason: \"%s\""</string>
     <string name="phone_entry">Phone</string>
     <string name="phone_message_header">Messages</string>
     <string name="phone_number_copy_label">Phone number</string>
+    <string name="phone_number_country_code_placeholder_icon_content_description">No country code</string>
     <string name="phone_number_set_default_dialog_header">Phone number</string>
     <string name="phone_repair_all_completed">No phone format changes left in your contacts</string>
     <string name="phone_repair_body">%s has changed its phone number system. Old numbers may no longer work.</string>
@@ -1216,7 +1216,6 @@ Reason: \"%s\""</string>
     <string name="phone_repair_wizard_continue_button">Update &amp; continue</string>
     <string name="phonetic_name_format">“%1$s”</string>
     <string name="photo_editor_overflow_content_description">More options</string>
-    <string name="photo_entry">Photo</string>
     <string name="photo_picker_title">Choose picture</string>
     <string name="photo_sync_failed_subtitle">All other items synced</string>
     <string name="pickerSelectContactsActivityTitle">Choose contacts</string>
@@ -1255,9 +1254,6 @@ Reason: \"%s\""</string>
     <string name="preferences_license_title">Third Party Notices</string>
     <string name="preparing_to_sync_title">Getting ready to sync</string>
     <string name="preview_dialog_phonetic_name_label">Phonetic Name</string>
-    <string name="preview_dialog_positive_button_label">Continue</string>
-    <string name="preview_dialog_select_all">Select all</string>
-    <string name="preview_dialog_title">Share contact</string>
     <string name="primes_marker">PrImEs</string>
     <string name="progress_notification_channel">Progress</string>
     <string name="progress_notifier_message">Importing %1$s/%2$s: %3$s</string>
@@ -1352,6 +1348,9 @@ Check connection and try again."</string>
     <string name="search_zero_state_search_suggestion_content_description">Search for %s</string>
     <string name="searchview_clear_text_content_description">Clear text</string>
     <string name="searchview_navigation_content_description">Back</string>
+    <string name="see_all">See all</string>
+    <string name="see_less">See less</string>
+    <string name="see_more">See more</string>
     <string name="select_accounts">Select accounts</string>
     <string name="select_action_create_new">Create a new contact</string>
     <string name="select_all_button_text">Select all</string>
@@ -1412,9 +1411,7 @@ sharing"</string>
     <string name="shortcutDialContact">Direct dial</string>
     <string name="shortcutMessageContact">Direct message</string>
     <string name="shortcut_add_contact">Add contact</string>
-    <string name="show_all">Show all</string>
     <string name="show_contact_list_filters_button_description">Show list filters</string>
-    <string name="show_less">Show less</string>
     <string name="show_more">Show more</string>
     <string name="show_trash_search_results_button">See results in Trash</string>
     <string name="side_sheet_accessibility_pane_title">Side Sheet</string>
@@ -1508,6 +1505,8 @@ sharing"</string>
     <string name="suggestion_from_source">Suggestion from <xliff example="Google profile" id="source_name">%s</xliff></string>
     <string name="suggestions_notification_channel">Suggestions</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="super_g_path_cover_48">M24,28.52V20H44.72C44.98,21.44 45.12,22.94 45.12,24.5C45.12,25.886 45.017,27.229 44.818,28.52H35.84H24Z</string>
+    <string name="super_g_path_main_48">M24,37.26C30.46,37.26 34.9,33.58 35.84,28.52L40,24L44.818,28.52C43.209,38.925 35.298,46 24,46C11.84,46 2,36.16 2,24C2,11.84 11.84,2 24,2C29.94,2 34.9,4.18 38.72,7.74L32.42,14.04C30.12,11.88 27.24,10.76 24,10.76C16.82,10.76 10.98,16.86 10.98,24.02C10.98,31.18 16.82,37.26 24,37.26Z</string>
     <string name="supporting_text_menu_besties">Stay connected with your close friends and family</string>
     <string name="supporting_text_menu_blocked_numbers">Numbers you won’t receive calls or texts from</string>
     <string name="supporting_text_menu_emergency_contacts">Choose who others can call using your phone’s Safety app</string>
@@ -1611,7 +1610,6 @@ Check connection and try again."</string>
 Changes you make to other apps and accounts, not just Google Contacts, will be kept up to date between the web and your devices."</string>
     <string name="try_again">Try again</string>
     <string name="turn_auto_sync_on_dialog_confirm_btn">Turn on</string>
-    <string name="type_and_label">%1$s (%2$s)</string>
     <string name="type_answered_elsewhere">Call answered on another device</string>
     <string name="type_blocked">Blocked call</string>
     <string name="type_incoming">Incoming call</string>
@@ -1684,6 +1682,7 @@ Note: contacts that have been deleted forever from Trash can’t be recovered."<
     <string name="vip">VIP</string>
     <string name="waiting_to_backup_title">Waiting to backup</string>
     <string name="waiting_to_sync_title">Waiting to sync</string>
+    <string name="weather_search_query">weather %s</string>
     <string name="weather_view_temperature">%1$d°</string>
     <string name="websiteLabelsGroup">Website</string>
     <string name="yearly_reminder_explanation">Yearly reminders for %1$s will only appear if notifications are also added. Reminders show in the Contacts app a few days before and after the significant date.</string>
