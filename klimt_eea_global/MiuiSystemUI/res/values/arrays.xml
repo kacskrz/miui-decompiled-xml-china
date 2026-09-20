@@ -135,22 +135,14 @@
     </array>
     <string-array name="bluetooth_audio_active_device_summaries">
         <item></item>
-        <item>" | Active"</item>
-        <item>" | Active (media)"</item>
-        <item>" | Active (call audio)"</item>
+        <item>, active</item>
+        <item>, active (media)</item>
+        <item>, active (phone)</item>
     </string-array>
     <string-array name="bottom_caption_insets_black_list">
         <item>cn.wps.moffice_eng</item>
         <item>com.ss.android.article.news</item>
     </string-array>
-    <array name="bouncer_pin_shapes">
-        <item>@drawable/pin_dot_shape_1_avd</item>
-        <item>@drawable/pin_dot_shape_2_avd</item>
-        <item>@drawable/pin_dot_shape_3_avd</item>
-        <item>@drawable/pin_dot_shape_4_avd</item>
-        <item>@drawable/pin_dot_shape_5_avd</item>
-        <item>@drawable/pin_dot_shape_6_avd</item>
-    </array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
         <item>@color/bt_color_bg_2</item>
@@ -668,7 +660,6 @@
         <item>com.kugou.android</item>
         <item>com.ss.android.article.video</item>
         <item>com.ss.android.article.news</item>
-        <item>com.ss.android.article.lite</item>
         <item>com.luna.music</item>
         <item>com.smile.gifmaker</item>
         <item>com.dragon.read</item>
@@ -676,6 +667,7 @@
     <string-array name="config_allowedOngoingPackages">
         <item>com.tencent.mm</item>
     </string-array>
+    <array name="config_appToWebFirstRunPromptExemptPackages" />
     <string-array name="config_appsSupportMultiInstancesSplit">
         <item>com.miui.notes</item>
         <item>com.android.email</item>
@@ -879,11 +871,6 @@
         <item>cn.xuexi.android</item>
         <item>com.turkcell.bip</item>
     </string-array>
-    <array name="config_collapsed_statusbar_icon_blocklist">
-        <item>@android:string/status_bar_volume</item>
-        <item>@android:string/status_bar_alarm_clock</item>
-        <item>@android:string/status_bar_call_strength</item>
-    </array>
     <array name="config_communalWidgetAllowlist" />
     <array name="config_controlsPreferredPackages" />
     <string-array name="config_custom_notification_folding_whitelist">
@@ -937,6 +924,13 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+    <integer-array name="config_doze_brightness_sensor_to_wallpaper_scrim_opacity">
+        <item>-1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
     <string-array name="config_extra_timeout_media_whitelist">
         <item>com.kugou.android</item>
         <item>com.miui.player</item>
@@ -963,6 +957,7 @@
     </integer-array>
     <integer-array name="config_face_help_msgs_when_fingerprint_enrolled">
         <item>3</item>
+        <item>10</item>
         <item>25</item>
         <item>26</item>
     </integer-array>
@@ -974,6 +969,7 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
         <item>25</item>
         <item>26</item>
     </integer-array>
@@ -1222,6 +1218,7 @@
         <item>com.android.email</item>
         <item>com.android.emailhd</item>
     </string-array>
+    <array name="desktop_windowing_app_to_web_education_allowlist_apps" />
     <string-array name="detailed_am_pms">
         <item>@string/midnight</item>
         <item>@string/early_morning</item>
@@ -1300,6 +1297,7 @@
         <item>@string/heavenly_stems_ren</item>
         <item>@string/heavenly_stems_gui</item>
     </string-array>
+    <array name="hsu_allow_list_qs_tiles" />
     <string-array name="important_section_whitelist">
         <item>com.tencent.mm</item>
         <item>com.android.mms</item>
@@ -1342,6 +1340,9 @@
         <item>#33616161</item>
         <item>3</item>
     </array>
+    <string-array name="layout_animated_icon_customization">
+        <item>.primary:@sud_system_primary_light</item>
+    </string-array>
     <string-array name="lockscreen_num_pad_klondike">
         <item>+</item>
         <item></item>
@@ -1542,10 +1543,17 @@
     </string-array>
     <string-array name="pin_open_white_list">
         <item>com.android.incallui</item>
-        <item>com.miui.voiceassist</item>
     </string-array>
     <array name="proximity_sensor_posture_mapping" />
     <array name="proximity_sensor_secondary_posture_mapping" />
+    <string-array name="quick_settings_large_tiles_default_split">
+        <item>wifi</item>
+        <item>bt</item>
+        <item>cell</item>
+        <item>cast</item>
+        <item>dnd</item>
+        <item>wallet</item>
+    </string-array>
     <string-array name="recent_show_white_list">
         <item>com.tencent.mobileqq</item>
     </string-array>
@@ -1558,6 +1566,14 @@
         <item>US</item>
         <item>TR</item>
     </string-array>
+    <array name="screen_record_color_palette">
+        <item>#ff8e3e92</item>
+        <item>#ff232d67</item>
+        <item>#fff55e57</item>
+        <item>#ff4e8ff8</item>
+        <item>#ff1aa64a</item>
+        <item>#ffd37b00</item>
+    </array>
     <string-array name="services_always_show_magnification_settings">
         <item>com.android.switchaccess.SwitchAccessService</item>
         <item>com.google.android.apps.accessibility.voiceaccess.JustSpeakService</item>
@@ -1652,10 +1668,6 @@
         <item>com.oray.sunlogin.service</item>
         <item>com.magiear.handsfree.assistant</item>
     </string-array>
-    <string-array name="system_ui_packages">
-        <item>com.android.keyguard</item>
-        <item>com.android.systemui</item>
-    </string-array>
     <string-array name="tile_states_airplane">
         <item>Unavailable</item>
         <item>Off</item>
@@ -1717,11 +1729,6 @@
         <item>On</item>
     </string-array>
     <string-array name="tile_states_dnd">
-        <item>Unavailable</item>
-        <item>Off</item>
-        <item>On</item>
-    </string-array>
-    <string-array name="tile_states_dream">
         <item>Unavailable</item>
         <item>Off</item>
         <item>On</item>
@@ -1847,6 +1854,14 @@
         <item>com.alibaba.android.rimet</item>
         <item>com.autonavi.minimap</item>
     </string-array>
+    <array name="updated_bouncer_pin_shapes">
+        <item>@drawable/bouncer_shape_1</item>
+        <item>@drawable/bouncer_shape_2</item>
+        <item>@drawable/bouncer_shape_3</item>
+        <item>@drawable/bouncer_shape_4</item>
+        <item>@drawable/bouncer_shape_5</item>
+        <item>@drawable/bouncer_shape_6</item>
+    </array>
     <string-array name="week_days">
         <item>@string/sunday</item>
         <item>@string/monday</item>

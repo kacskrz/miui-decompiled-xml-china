@@ -41,7 +41,7 @@
     <string name="accounts_linked_title">Your accounts are linked</string>
     <string name="add_child_account_description">To supervise an account, add it to this device.</string>
     <string name="add_child_account_title">Add your child’s Google Account</string>
-    <string name="add_recovery_option">Add email</string>
+    <string name="add_recovery_option">Add recovery info</string>
     <string name="additional_accounts_info_title">Other accounts will be removed</string>
     <string name="additional_accounts_info_title_v2">Remove accounts that can’t be supervised</string>
     <string name="additional_accounts_info_v2_description_v2">For parental controls to work, only %1$s’s account can be signed in on this device. You can add school accounts back later.</string>
@@ -99,9 +99,15 @@ To setup supervision, your child must unblock your account."</string>
     <string name="bonus_time_picker_duration_key">bonus_time_picker_duration_key</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="bottomsheet_action_collapse">Collapse</string>
+    <string name="bottomsheet_action_collapse_description">Collapse the bottom sheet</string>
     <string name="bottomsheet_action_expand">Expand</string>
+    <string name="bottomsheet_action_expand_description">Expand the bottom sheet</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bottomsheet_action_half_expand_description">Half expand the bottom sheet</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="bottomsheet_state_collapsed">Collapsed</string>
+    <string name="bottomsheet_state_expanded">Expanded</string>
+    <string name="bottomsheet_state_half_expanded">Half expanded</string>
     <string name="button_ok">Ok</string>
     <string name="cant_add_account_generic_error_text">You can’t add another account. Adding a Workspace for Education account is not allowed for you.</string>
     <string name="cant_add_account_how_to_add_body">Because your account %1$s is supervised with Family Link, certain restrictions apply. Until you update your device’s software, you must either:</string>
@@ -122,6 +128,8 @@ To setup supervision, your child must unblock your account."</string>
     <string name="cant_setup_supervision_for_managed_device">This device is already being managed by your work or school organization. To set up a supervised child account on it, first reset the device to erase its data and settings.</string>
     <string name="cd_common_list_button_collapse">Collapse list</string>
     <string name="cd_common_list_button_expand">Expand list</string>
+    <string name="cd_section_collapsed_icu">%1$s. Collapsed.</string>
+    <string name="cd_section_expanded_icu">%1$s. Expanded.</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern">%1$d/%2$d</string>
@@ -138,8 +146,6 @@ To setup supervision, your child must unblock your account."</string>
     <string name="chrome_restrictions_safe_search_summary">No filter is perfect, but this should help hide sexually explicit and violent sites. You can also block certain sites for %1$s from Family Link.</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="close_button_label">Close</string>
-    <string name="close_drawer">Close navigation menu</string>
-    <string name="close_sheet">Close sheet</string>
     <string name="common_agree">Agree</string>
     <string name="common_app_name">Google Play services</string>
     <string name="common_app_recovery_notification_channel">App Recovery</string>
@@ -155,33 +161,39 @@ To setup supervision, your child must unblock your account."</string>
     <string name="common_edit">Edit</string>
     <string name="common_exit">Exit</string>
     <string name="common_forgot_password">Forgot password?</string>
-    <string name="common_google_play_services_api_unavailable_text">%1$s requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
+    <string name="common_google_play_services_api_unavailable_text">"%1$s is trying to use a certain Google Play services that isn't available. Try again later."</string>
     <string name="common_google_play_services_enable_button">Enable</string>
-    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_text">Google Play services must be enabled for %1$s.</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
     <string name="common_google_play_services_error_dialog_title">Error</string>
     <string name="common_google_play_services_install_button">Install</string>
-    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
-    <string name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
-    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
-    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
-    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_install_text">Install Google Play services to continue using %1$s.</string>
+    <string name="common_google_play_services_install_title">Install Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">This action is unavailable on your profile. Please switch accounts to continue.</string>
+    <string name="common_google_play_services_invalid_account_title">Choose a different account</string>
+    <string name="common_google_play_services_network_error_text">Connect to the internet to use %1$s.</string>
+    <string name="common_google_play_services_network_error_title">Connect to internet</string>
     <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
     <string name="common_google_play_services_notification_ticker">Google Play services error</string>
-    <string name="common_google_play_services_resolution_required_text">Please complete action required by %1$s.</string>
-    <string name="common_google_play_services_resolution_required_title">Google Play services requires an action</string>
-    <string name="common_google_play_services_restricted_profile_text">Accessing accounts from a restricted profile is not supported.</string>
-    <string name="common_google_play_services_restricted_profile_title">Restricted Profile</string>
-    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
-    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
+    <string name="common_google_play_services_resolution_required_text">Tap to finish setup in %1$s.</string>
+    <string name="common_google_play_services_resolution_required_title">Action required</string>
+    <string name="common_google_play_services_restricted_profile_text">This action is unavailable on your profile. Please switch accounts to continue.</string>
+    <string name="common_google_play_services_restricted_profile_title">Choose a different account</string>
+    <string name="common_google_play_services_sign_in_failed_text">This action is unavailable on your profile. Please switch accounts to continue.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Choose a different account</string>
+    <string name="common_google_play_services_signin_required_text">"%1$s couldn't connect to Google Play services. Please sign-in to your Google account."</string>
+    <string name="common_google_play_services_signin_required_title">Sign-in required</string>
+    <string name="common_google_play_services_try_again_text">"%1$s couldn't connect to Google Play services. Please try again."</string>
+    <string name="common_google_play_services_try_again_title">Please try again</string>
     <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
-    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s can't run because your device doesn't support Google Play services. Please use a supported device."</string>
+    <string name="common_google_play_services_unsupported_title">Device not compatible</string>
     <string name="common_google_play_services_update_button">Update</string>
-    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_text">Update Google Play services to use %1$s.</string>
     <string name="common_google_play_services_update_title">Update Google Play services</string>
-    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
-    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_google_play_services_updating_client_title">Google Play services updating</string>
+    <string name="common_google_play_services_updating_text">%1$s will be available once the Google Play services update is complete.</string>
+    <string name="common_google_play_services_wear_update_text">Update Google Play services to use %1$s.</string>
     <string name="common_got_it">Got it</string>
     <string name="common_learn_more">Learn more</string>
     <string name="common_list_apps_menu_help_and_feedback">Help &amp; feedback</string>
@@ -221,6 +233,7 @@ To setup supervision, your child must unblock your account."</string>
     <string name="daily_limit_editor_enable_switch">daily_limit_editor_enable_switch</string>
     <string name="daily_limit_editor_enable_switch_category_key">daily_limit_editor_enable_switch_category_key</string>
     <string name="daily_limit_editor_quota">daily_limit_editor_quota</string>
+    <string name="daily_usage_chart_font_family">google-sans-flex</string>
     <string name="dashboard_app_activity">dashboard_app_activity</string>
     <string name="dashboard_app_limits">dashboard_app_limits</string>
     <string name="dashboard_bedtime">dashboard_bedtime</string>
@@ -229,6 +242,7 @@ To setup supervision, your child must unblock your account."</string>
     <string name="dashboard_child_settings_transparency_group">dashboard_child_settings_transparency_group</string>
     <string name="dashboard_communication_settings_list">dashboard_communication_settings_list</string>
     <string name="dashboard_daily_limits">dashboard_daily_limits</string>
+    <string name="dashboard_debug_activity">dashboard_debug_activity</string>
     <string name="dashboard_family_link_upsell">dashboard_family_link_upsell</string>
     <string name="dashboard_family_link_upsell_group">dashboard_family_link_upsell_group</string>
     <string name="dashboard_information">dashboard_information</string>
@@ -245,7 +259,6 @@ To setup supervision, your child must unblock your account."</string>
     <string name="debug_item_report">Report</string>
     <string name="debug_item_reset_policy_level">Reset policy level to normal</string>
     <string name="debug_item_sync_and_apply">Sync and apply policies</string>
-    <string name="def_client_id">android-google</string>
     <string name="default_error_message">Invalid input</string>
     <string name="default_parental_controls_help_context">FL_android_default</string>
     <string name="default_parental_controls_help_fallback_url">https://support.google.com/unicorn/topic/6149867</string>
@@ -265,7 +278,7 @@ To setup supervision, your child must unblock your account."</string>
     <string name="downtime_editor_time_category_key">downtime_editor_time_category_key</string>
     <string name="downtime_time_picker_end_key">downtime_time_picker_end_key</string>
     <string name="downtime_time_picker_start_key">downtime_time_picker_start_key</string>
-    <string name="dropdown_menu">Dropdown menu</string>
+    <string name="duration_time_picker_content_description">%1$s, %2$s</string>
     <string name="dwb_entry_point_key">dwb_entry_point_key</string>
     <string name="education_account_details_v2">Your child can add their G Suite for Education account back to this device later, but it can’t be supervised by a parent.</string>
     <string name="end_bonus_time_button_label">End bonus time now</string>
@@ -285,6 +298,20 @@ Only %4$s can set up supervision because %3$s is in his Google family group."</s
 Only %4$s can set up supervision because %3$s is in their Google family group."</string>
     <string name="family_exists_error_title">Parent account</string>
     <string name="family_link_application_name">Family Link</string>
+    <string name="family_link_supervising_app_details_about_supervision_key">family_link_supervising_app_details_about_supervision_key</string>
+    <string name="family_link_supervising_app_details_footer_category_key">family_link_supervising_app_details_footer_category_key</string>
+    <string name="family_link_supervising_app_details_footer_key">family_link_supervising_app_details_footer_key</string>
+    <string name="family_link_supervising_app_details_footer_learn_more_link">https://support.google.com/families?p=device_supervision_fl_sync_req</string>
+    <string name="family_link_supervising_app_details_footer_title">Settings may sync to other devices.</string>
+    <string name="family_link_supervising_app_details_intro_key">family_link_supervising_app_details_intro_key</string>
+    <string name="family_link_supervising_app_details_item_title">Google Family Link</string>
+    <string name="family_link_supervising_app_details_privacy_notice_for_kids">family_link_supervising_app_details_privacy_notice_for_kids</string>
+    <string name="family_link_supervising_app_details_privacy_notice_for_parents">family_link_supervising_app_details_privacy_notice_for_parents</string>
+    <string name="family_link_supervising_app_details_stop_supervision_category_key">family_link_supervising_app_details_stop_supervision_category_key</string>
+    <string name="family_link_supervising_app_details_stop_supervision_key">family_link_supervising_app_details_stop_supervision_key</string>
+    <string name="family_link_supervising_app_details_upsell_key">family_link_supervising_app_details_upsell_key</string>
+    <string name="family_link_supervising_app_details_view_more_settings_key">family_link_supervising_app_details_view_more_settings_key</string>
+    <string name="family_link_supervising_app_intro_header_supervised_account">Supervised account</string>
     <string name="family_wallet_ask_to_acquire">Approval required for all content, unless it’s from your Family Library</string>
     <string name="family_wallet_ask_to_buy_all">Approval required for all purchases using the family payment method</string>
     <string name="family_wallet_ask_to_buy_iap">Approval only required for in-app purchases using the family payment method</string>
@@ -292,10 +319,12 @@ Only %4$s can set up supervision because %3$s is in their Google family group."<
     <string name="filter_apps_spinner_key">filter_apps_spinner_key</string>
     <string name="fl_upsell_subtitle_key">fl_upsell_subtitle_key</string>
     <string name="forgot_password_support_url">https://g.co/recover</string>
+    <string name="gemini_app_block_disclaimer_learn_more_url">https://support.google.com/families/answer/16109150</string>
     <string name="generic_error_description_v2">Something went wrong. Try again later.</string>
     <string name="generic_error_start_over_label">Start over</string>
     <string name="generic_error_title">Couldn’t set up supervision</string>
     <string name="getting_next_steps_ready">Getting next steps ready…</string>
+    <string name="gm3_font_feature_settings">"'ss02' 1"</string>
     <string name="gm3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
     <string name="gm3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
     <string name="gm3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0, 1, 1)</string>
@@ -309,16 +338,13 @@ Only %4$s can set up supervision because %3$s is in their Google family group."<
     <string name="gm_sys_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
     <string name="graphic_content_detection_banner_description">If you want to change your settings, ask your parents</string>
     <string name="graphic_content_detection_banner_key">graphic_content_detection_banner_key</string>
-    <string name="graphic_content_detection_footer">Nude photo detection happens only on your devices. Your conversations are always private.</string>
     <string name="graphic_content_detection_footer_v2">Nude photo and video detection happens only on your devices. Your conversations are always private.</string>
     <string name="graphic_content_detection_incoming_photos_description_key">graphic_content_detection_incoming_photos_description_key</string>
-    <string name="graphic_content_detection_incoming_photos_description_subtitle">Photos with nudity in Google Messages are blurred &amp; can be deleted before viewing</string>
     <string name="graphic_content_detection_incoming_photos_description_subtitle_v2">Photos and videos with nudity in Google Messages are blurred &amp; can be deleted before viewing</string>
     <string name="graphic_content_detection_incoming_photos_description_title">Incoming photos are blurred</string>
     <string name="graphic_content_detection_item_key">graphic_content_detection_item_key</string>
     <string name="graphic_content_detection_item_subtitle">Blurs incoming nude photos &amp; requires confirmation before sending nude photos</string>
     <string name="graphic_content_detection_item_title">Sensitive content warnings</string>
-    <string name="graphic_content_detection_outgoing_photo_description_subtitle">If you try to send an image with nudity, you’ll be reminded of the risks &amp; you must confirm to continue</string>
     <string name="graphic_content_detection_outgoing_photo_description_subtitle_v2">If you try to send an image or video with nudity, you’ll be reminded of the risks &amp; you must confirm to continue</string>
     <string name="graphic_content_detection_outgoing_photos_description_key">graphic_content_detection_outgoing_photos_description_key</string>
     <string name="graphic_content_detection_outgoing_photos_description_title">Outgoing photos are discouraged</string>
@@ -364,10 +390,8 @@ Only %3$s can set up supervision for family members."</string>
     <string name="kids_admin_app_title_parental_controls">Family Link parental controls</string>
     <string name="kids_admin_desc_parental_controls">Family Link parental controls will be installed to help parents supervise the activity on this device.</string>
     <string name="kids_allowed_apps_suspend_by_downtime_dialog_text">This app isn’t available right now. Check back after downtime ends.</string>
-    <string name="kids_always_allowed_app_disabled_msg">Your parent removed %1$s from your always allowed apps</string>
     <string name="kids_always_allowed_app_disabled_title">Screen time limits now apply to %1$s</string>
     <string name="kids_always_allowed_app_enabled_msg">"Your parent made this change. Screen time limits won't apply to %1$s."</string>
-    <string name="kids_always_allowed_app_enabled_title">%1$s is now always allowed</string>
     <string name="kids_always_allowed_apps_by_bedtime_exit_title">Bedtime is on: only always allowed apps are available</string>
     <string name="kids_always_allowed_apps_by_downtime_exit_title">Downtime is on: only always allowed apps are available</string>
     <string name="kids_always_allowed_apps_by_override_exit_title">Time for a break: Your parent locked this device</string>
@@ -434,12 +458,11 @@ To exit this screen, tap “OK”."</string>
     <string name="kids_bonus_time_custom">Custom</string>
     <string name="kids_bonus_time_desc_adhoc">%1$s’s bonus time will start right away</string>
     <string name="kids_bonus_time_desc_no_name">Time will start right away</string>
-    <string name="kids_bonus_time_summary">"
-Device will lock back at "<b>%1$s</b></string>
     <string name="kids_bonus_time_title_adhoc">Bonus time</string>
     <string name="kids_bonus_time_unlock_by_time">%1$s</string>
     <string name="kids_bonus_time_unlock_for_today_label">Unlock for today</string>
     <string name="kids_bonus_time_will_lock_at">The device will lock back at <b>%1$s</b></string>
+    <string name="kids_credential_option_label">Use Google Family Link</string>
     <string name="kids_home_opt_out_consent_title">Turn off Kids Space?</string>
     <string name="kids_home_settings_footer">kids_home_settings_footer</string>
     <string name="kids_home_settings_learn_more_ota">FL_setupKS_OTA_Android</string>
@@ -466,7 +489,6 @@ Device will lock back at "<b>%1$s</b></string>
 To continue, enter the parent access code from Family Link to verify you’re a parent "</string>
     <string name="kids_pai_parent_access_code_description">To continue, enter the parent access code from Family Link to verify you’re a parent</string>
     <string name="kids_pai_parent_access_code_hint">Parent access code</string>
-    <string name="kids_pai_parent_access_pin_description">To continue, enter the Parent Access PIN to verify you’re a parent</string>
     <string name="kids_pai_parent_verification_headline">Parent access</string>
     <string name="kids_pai_parent_verification_password_hint">Parent password</string>
     <string name="kids_pai_parent_verification_password_subtitle">To continue, verify you’re a parent</string>
@@ -476,13 +498,9 @@ To continue, enter the parent access code from Family Link to verify you’re a 
     <string name="kids_pai_password_error_message_wrong_password">Wrong password. Try again.</string>
     <string name="kids_pai_password_eu_nd_custom_text">" "<b>Warning:</b>" If you turn off automatic updates, the parental controls you have set for your child on this device may not work in the future.
 To continue, verify you’re a parent "</string>
-    <string name="kids_pai_too_many_failed_attempts_error_text">Too many failed attempts.</string>
     <string name="kids_pai_try_another_way_button_label">Try another way</string>
     <string name="kids_pai_wrong_code_error_text">Wrong code. Try again.</string>
-    <string name="kids_pai_wrong_pin_error_text">Wrong PIN. Try again.</string>
     <string name="kids_per_app_limits_suspend_dialog_title">App paused</string>
-    <string name="kids_per_app_timelimit_less_than_one_hour_suspend_dialog_text">You can use %1$s for %2$dm tomorrow.</string>
-    <string name="kids_per_app_timelimit_suspend_dialog_text">You can use %1$s for %2$dh %3$dm tomorrow.</string>
     <string name="kids_schooltime_changed_message">New school time set</string>
     <string name="kids_schooltime_changed_title">Update from your parent</string>
     <string name="kids_set_screen_lock_notification_body">Your parent set a new screen lock</string>
@@ -531,9 +549,7 @@ To use this device again, ask a parent to help unlock it."</string>
     <string name="kids_time_limit_unlock_error_message">Wrong code. Try again.</string>
     <string name="kids_time_limit_unlock_title">Unlock device with parent code</string>
     <string name="kids_time_limit_usage_unlocks_future">This device is locked until %1$s at %2$s</string>
-    <string name="kids_time_limit_warning_notification_title_bedtime">Lights out soon</string>
     <string name="kids_time_limit_warning_notification_title_schooltime">It’s almost school time</string>
-    <string name="kids_time_limit_warning_notification_title_usage_or_adhoc">Almost time for a break</string>
     <string name="kids_today_downtime_changed_message">New downtime set for today</string>
     <string name="kids_today_schooltime_changed_message">New school time set for today</string>
     <string name="kids_today_usage_limit_changed_message">New screen time limit for today</string>
@@ -592,8 +608,6 @@ This app can’t be blocked entirely, because it helps this device run correctly
     <string name="kidsetup_get_youtube_kids_dialog_message_female">YouTube isn’t available for children, but %1$s can request to download YouTube Kids from Google Play instead.</string>
     <string name="kidsetup_get_youtube_kids_dialog_message_male">YouTube isn’t available for children, but %1$s can request to download YouTube Kids from Google Play instead.</string>
     <string name="kidsetup_get_youtube_kids_dialog_message_other">YouTube isn’t available for children, but %1$s can request to download YouTube Kids from Google Play instead.</string>
-    <string name="kidsetup_interrupted_notification_text">Tap to finish setup for your child</string>
-    <string name="kidsetup_interrupted_notification_title">Device isn’t ready</string>
     <string name="kidsetup_supervisee_app_selector_title_gold">Manage %1$s’s apps</string>
     <string name="lacks_birthday_error_description">To set up supervision for %1$s, you must verify you’re a parent by adding your birthday to your Google Account.&lt;br>&lt;br>To update your personal info, visit &lt;b>%2$s&lt;/b> on your own device.</string>
     <string name="lacks_birthday_error_title">Verify you’re a parent</string>
@@ -618,14 +632,19 @@ This app can’t be blocked entirely, because it helps this device run correctly
     <string name="local_controls_app_activity_show_all_apps_title">See all %1$s apps</string>
     <string name="local_controls_app_activity_time_spent">Time spent on app: %1$s</string>
     <string name="local_controls_app_activity_today_information">Shows this device’s app activity today. Parents can see this list and edit app limits using the Family Link app.</string>
+    <string name="local_controls_app_activity_unlimited_time">Unlimited time</string>
     <string name="local_controls_app_activity_usage_less_than">less than %1$s</string>
     <string name="local_controls_app_activity_usage_limit">Limit set</string>
     <string name="local_controls_app_activity_usage_per_day">%1$s/day</string>
     <string name="local_controls_app_activity_view_month">Month</string>
     <string name="local_controls_app_activity_view_week">Week</string>
     <string name="local_controls_app_limit_editor_allow_app">Allow app</string>
-    <string name="local_controls_app_limit_editor_app_blocked">App blocked</string>
+    <string name="local_controls_app_limit_editor_app_blocked">Blocked</string>
     <string name="local_controls_app_limit_editor_app_details">App details</string>
+    <string name="local_controls_app_limit_editor_gemini_dialog_text">"This limit only applies to the Google Gemini app.
+
+ To prevent %1$s from using Gemini Apps elsewhere, turn off the Gemini setting from Family Link on your device."</string>
+    <string name="local_controls_app_limit_editor_gemini_dialog_title">Only Google Gemini app will be blocked</string>
     <string name="local_controls_app_limit_editor_no_time_limit">No time limit</string>
     <string name="local_controls_app_limit_editor_set_time_limit">Set time limit</string>
     <string name="local_controls_app_limits_item_breadcrumb">Parental controls > App Limits</string>
@@ -638,15 +657,15 @@ This app can’t be blocked entirely because it helps the device run correctly."
     <string name="local_controls_app_state_editor_agsa_dialog_title">Only search in the Google app will be blocked</string>
     <string name="local_controls_app_state_editor_agsa_title">Search on Google app</string>
     <string name="local_controls_app_state_editor_blocked_app_toast">%1$s is blocked</string>
+    <string name="local_controls_app_state_editor_dialog_block_app_button">Block app</string>
     <string name="local_controls_app_state_editor_subtitle_v2">Choose apps you don’t want your child to access</string>
     <string name="local_controls_app_state_editor_unblocked_app_toast">%1$s is unblocked</string>
     <string name="local_controls_bedtime_end">End</string>
-    <string name="local_controls_bedtime_ended">Ended at %1$s</string>
     <string name="local_controls_bedtime_start">Start</string>
     <string name="local_controls_bedtime_time_of_day_range">%1$s–%2$s</string>
     <string name="local_controls_blocked_apps_subtitle">Only parents can decide which apps are blocked</string>
     <string name="local_controls_daily_limit_disabled_information">Manage the amount of time your child spends on their device daily</string>
-    <string name="local_controls_daily_limit_disclaimer_supervision">This device will lock when time is up. Calls will be allowed, but other apps won’t be available. PIN is required to unlock the device.</string>
+    <string name="local_controls_daily_limit_disclaimer_supervision">This device will lock when time is up. Calls will be allowed, but other apps won’t be available.</string>
     <string name="local_controls_daily_limit_enabled_disclaimer_v2">"Supervised Android phones and tablets and Chromebooks will lock when time is up. Calls will be allowed, in case your child needs to reach you. 
 
 Changes to the weekly schedule apply to all supervised devices. Changes to today’s schedule apply to this device only."</string>
@@ -669,6 +688,8 @@ Changes to the weekly schedule apply to all supervised devices. Changes to today
     <string name="local_controls_dashboard_communication_settings_list_item_title">Contacts, calls &amp; texts</string>
     <string name="local_controls_dashboard_communication_settings_list_item_title_bc25">Communication settings</string>
     <string name="local_controls_dashboard_daily_limits_item_title">Daily limit</string>
+    <string name="local_controls_dashboard_debug_activity_summary">Debug supervision features</string>
+    <string name="local_controls_dashboard_debug_activity_title">Debug Activity</string>
     <string name="local_controls_dashboard_device_offline_subtitle">Unavailable · Device offline</string>
     <string name="local_controls_dashboard_device_offline_subtitle_content_description">Unavailable, Device offline</string>
     <string name="local_controls_dashboard_downtime_item_title">Downtime</string>
@@ -690,7 +711,7 @@ Changes to the weekly schedule apply to all supervised devices. Changes to today
     <string name="local_controls_downtime_disclaimer">"Supervised Android phones and tablets and Chromebooks will lock during downtime. Calls will be allowed, in case your child needs to reach you. 
 
 Any changes made to Downtime will apply to all supervised devices"</string>
-    <string name="local_controls_downtime_disclaimer_supervision">This device will lock during downtime. Calls will be allowed, but other apps won’t be available. PIN is required to unlock the device.</string>
+    <string name="local_controls_downtime_disclaimer_supervision">This device will lock during downtime. Calls will be allowed, but other apps won’t be available.</string>
     <string name="local_controls_downtime_end">End time</string>
     <string name="local_controls_downtime_no_downtime">No downtime</string>
     <string name="local_controls_downtime_read_only_today_dialog_message">Your weekly schedule resumes tomorrow. To change tonight’s downtime, use Family Link.</string>
@@ -723,13 +744,17 @@ Any changes made to Downtime will apply to all supervised devices"</string>
     <string name="local_controls_kids_home_settings_footer">Access more Google Kids Space controls on your parent device.</string>
     <string name="local_controls_kids_home_settings_opt_out_summary">Your child will keep their apps, but lose access to their content library</string>
     <string name="local_controls_kids_home_settings_opt_out_title">Turn off Google Kids Space</string>
-    <string name="local_controls_limits_not_scheduled">Not scheduled</string>
     <string name="local_controls_limits_school_time_toggle_supervision">Use school time</string>
     <string name="local_controls_limits_weekly_schedule">Weekly schedule</string>
     <string name="local_controls_location_settings_gla_confirmation_content_auto_pick">%1$s’s device location may be less accurate and you won’t receive location notifications.</string>
     <string name="local_controls_location_settings_gla_confirmation_content_pin_primary">%1$s’s device location may be less accurate and you won’t receive location notifications for this device.</string>
     <string name="local_controls_location_settings_gla_confirmation_title">Turn off Google Location Accuracy?</string>
     <string name="local_controls_location_settings_gla_switch_label">Google Location Accuracy</string>
+    <string name="local_controls_location_settings_gla_switch_summary_section_1">When Location Accuracy is on, information about wireless signals, such as Wi-Fi access points, cellular network towers, and GPS, along with device sensor data, such as accelerometer and gyroscope, is used to estimate more accurate device location, which apps and services use to provide location-based features. To do this, Google periodically processes information about device sensors and wireless signals near your child to contribute to crowdsourced wireless signal locations.</string>
+    <string name="local_controls_location_settings_gla_switch_summary_section_2">Google uses this information without identifying your child to: improve location accuracy and location-based services; and improve, provide, and maintain Google’s services. Google processes this information based on the legitimate interests of Google and third parties to serve users’ needs.</string>
+    <string name="local_controls_location_settings_gla_switch_summary_section_3">"You can turn off Location Accuracy at any time on this screen. If Location Accuracy is off, no Location Accuracy data will be collected. Only GPS and device sensors are used, if available, to determine your child’s device location. This may impact the availability and accuracy of locations for apps and services such as Google Maps and finding a lost device.
+
+Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="local_controls_location_settings_gla_switch_summary_v2">"When Location Accuracy is on, information about wireless signals, such as Wi-Fi access points, cellular network towers, and GPS, along with device sensor data, such as accelerometer and gyroscope, is used to estimate more accurate device location, which apps and services use to provide location-based features. To do this, Google periodically processes information about device sensors and wireless signals near your child to contribute to crowdsourced wireless signal locations.
 
 Google uses this information without identifying your child to: improve location accuracy and location-based services; and improve, provide, and maintain Google’s services. Google processes this information based on the legitimate interests of Google and third parties to serve users’ needs.
@@ -750,11 +775,10 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="local_controls_privacy_notice_for_kids_overflow_menu_title">Privacy notice for kids</string>
     <string name="local_controls_privacy_notice_for_parents_overflow_menu_title">Privacy notice for parents</string>
     <string name="local_controls_school_time_break_time_of_day_range">Break: %1$s–%2$s</string>
+    <string name="local_controls_school_time_break_time_of_day_range_semantics_label">Break: %1$s to %2$s</string>
     <string name="local_controls_school_time_disclaimer">These are the settings your parents chose for this device. Changes can only be made by them through the Family Link app.</string>
-    <string name="local_controls_school_time_ended">Ended at %1$s</string>
     <string name="local_controls_school_time_settings_title">School time</string>
     <string name="local_controls_school_time_time_of_day_range">%1$s–%2$s</string>
-    <string name="local_controls_screen_time_usage_bonus_time_subtitle">Bonus time</string>
     <string name="local_controls_screen_time_usage_progress_description">Used ^1 out of ^2 limit</string>
     <string name="local_controls_screen_time_usage_progress_description_text">Used ^1, ^2</string>
     <string name="local_controls_signed_in_devices_item_title">Signed‐in devices</string>
@@ -765,20 +789,22 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="local_controls_sort_apps_by_name_label">Sort by name</string>
     <string name="local_controls_sort_apps_by_recently_installed">Recently installed</string>
     <string name="local_controls_sort_apps_by_recently_installed_label">Sort by recently installed</string>
-    <string name="local_controls_sort_apps_by_time_spent">Time spent</string>
-    <string name="local_controls_sort_apps_by_time_spent_label">Sort by time spent</string>
+    <string name="local_controls_sort_apps_by_time_spent">Time spent today</string>
+    <string name="local_controls_sort_apps_by_time_spent_label">Sort by time spent today</string>
     <string name="local_controls_stop_supervision_overflow_menu_title">Stop supervision</string>
     <string name="local_controls_supervised_communication_all_allowed">You can call &amp; text anyone</string>
+    <string name="local_controls_supervised_communication_all_allowed_school_time">You can call &amp; text anyone during school</string>
     <string name="local_controls_supervised_communication_allowlisted_and_semi_trusted_groups">You can only call &amp; text contacts your parent adds or approves and groups with at least one parent-managed contact</string>
+    <string name="local_controls_supervised_communication_allowlisted_and_semi_trusted_groups_school_time">You can call &amp; text contacts your parent adds as well as groups with at least one contact during school</string>
     <string name="local_controls_supervised_communication_disclaimer">You can always call emergency services.</string>
-    <string name="local_controls_supervised_communication_disclaimer_v2">You can always call emergency contacts and services.</string>
     <string name="local_controls_supervised_communication_only_trusted">You can only call &amp; text contacts your parent adds or approves</string>
+    <string name="local_controls_supervised_communication_only_trusted_school_time">You can only call &amp; text contacts your parent adds or approves during school</string>
     <string name="local_controls_supervised_communication_preference_title">Call &amp; text setting</string>
+    <string name="local_controls_supervised_communication_specific_contacts_school_time">You can only call &amp; text contacts your parent selected during school</string>
     <string name="local_controls_supervised_communication_subheading">Your parents chose these settings. To change them, ask your parent.</string>
     <string name="local_controls_time_limit_apply_all_button">Apply to all days</string>
     <string name="local_controls_time_limit_apply_all_updated_message">Time limit applied to all days of the week</string>
-    <string name="local_controls_time_limit_bonus_time">Extended to %1$s</string>
-    <string name="local_controls_time_limit_cancelled">Canceled</string>
+    <string name="local_controls_time_limit_bonus_time_until">Bonus time until %1$s</string>
     <string name="local_controls_time_limits_read_only_today_dialog_title">Changes won’t affect today</string>
     <string name="local_controls_tip_content_description">Tip for this screen. %1$s</string>
     <string name="local_controls_today_only_limit_row_disclaimer">Changes here won’t affect the weekly schedule</string>
@@ -787,6 +813,7 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="local_controls_tonight_only_title">Tonight only</string>
     <string name="local_controls_trusted_contacts_on_school_time_row_title">Allowed contacts</string>
     <string name="local_controls_trusted_contacts_on_school_time_section_title">Contacts, calls &amp; texts</string>
+    <string name="local_controls_trusted_contacts_on_school_time_title">Allowed contacts</string>
     <string name="local_controls_trusted_contacts_phone_format">%1$s • %2$s</string>
     <string name="local_controls_trusted_contacts_title">Parent-managed contacts (%1$d)</string>
     <string name="local_unlock_description">To unlock this device, enter the parent access code from Family Link</string>
@@ -807,6 +834,8 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="location_learn_more_url">https://support.google.com/families/answer/7103413</string>
     <string name="location_settings_gla_switch">location_settings_gla_switch</string>
     <string name="location_settings_gla_switch_summary">location_settings_gla_switch_summary</string>
+    <string name="location_settings_gla_switch_summary_section_2">location_settings_gla_switch_summary_2</string>
+    <string name="location_settings_gla_switch_summary_section_3">location_settings_gla_switch_summary_3</string>
     <string name="location_settings_mls_switch">location_settings_mls_switch</string>
     <string name="location_settings_mls_switch_summary">location_settings_mls_switch_summary</string>
     <string name="location_sharing_family_places_key">location_sharing_family_places_key</string>
@@ -817,6 +846,9 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="locked_by_device_supervision_button_text">Go to parental controls menu</string>
     <string name="locked_by_device_supervision_description">Go to the parental controls menu to turn them off, and then come back to make this change.</string>
     <string name="locked_by_device_supervision_heading">Turn off controls to make this change</string>
+    <string name="locked_by_platform_supervision_credentials_button_text">Go to delete PIN</string>
+    <string name="locked_by_platform_supervision_credentials_description">Changes to this setting are protected by parental controls</string>
+    <string name="locked_by_platform_supervision_credentials_heading">Delete PIN and turn off controls to make this change</string>
     <string name="m3_loading_indicator_content_description">Loading</string>
     <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
@@ -829,7 +861,10 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="m3_sys_motion_easing_linear">cubic-bezier(0, 0, 1, 1)</string>
     <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0, 0, 1)</string>
     <string name="m3c_dialog">Dialog</string>
+    <string name="manage_all_apps_no_apps_with_time_limits">No apps with time limits</string>
+    <string name="manage_all_apps_no_blocked_apps">No blocked apps</string>
     <string name="manage_all_apps_page_apps_category_key">manage_all_apps_page_apps_category_key</string>
+    <string name="manage_all_apps_page_zero_state_key">manage_all_apps_page_zero_state_key</string>
     <string name="manage_child_activity_learn_more">Learn more about Google’s activity controls.</string>
     <string name="manage_child_activity_learn_more_url">https://support.google.com/families?p=manage_child_activity</string>
     <string name="manage_family_group_url">g.co/yourfamily</string>
@@ -853,12 +888,16 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
     <string name="material_timepicker_am">AM</string>
     <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_clock_mode_tooltip">Switch to clock mode</string>
     <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_hour_error">Hour must be 1–12</string>
+    <string name="material_timepicker_hour_error_24h">Hour must be 0–23</string>
     <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_minute_error">Minute must be 0–59</string>
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
-    <string name="mc2_snackbar_pane_title">Alert</string>
+    <string name="material_timepicker_text_input_mode_tooltip">Switch to text input mode</string>
     <string name="member_sv_exit_complete_description">Your devices and account, %1$s, are no longer being supervised</string>
     <string name="member_sv_exit_complete_description_no_account">Your devices and account are no longer being supervised</string>
     <string name="member_sv_exit_complete_title">Supervision stopped</string>
@@ -880,8 +919,8 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="member_sv_exit_unlock_title">Enter parent access code</string>
     <string name="module_install_title">Downloading updates to Google Play services…</string>
     <string name="more_time_granted_message">Your device now locks at %1$s</string>
-    <string name="more_time_granted_title">Bonus! You got more screen time</string>
     <string name="mtrl_button_overflow_icon_content_description">Overflow menu</string>
+    <string name="mtrl_button_snackbar_close_content_description">Close</string>
     <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
     <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
@@ -902,14 +941,18 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="mtrl_picker_end_date_description">End date %1$s</string>
     <string name="mtrl_picker_navigate_to_current_year_description">Navigate to current year %1$d</string>
     <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$d</string>
+    <string name="mtrl_picker_next_month_tooltip">Next month</string>
     <string name="mtrl_picker_pane_title_calendar_view">Calendar view</string>
     <string name="mtrl_picker_pane_title_year_view">Year view</string>
+    <string name="mtrl_picker_prev_month_tooltip">Previous month</string>
     <string name="mtrl_picker_save">Save</string>
     <string name="mtrl_picker_start_date_description">Start date %1$s</string>
     <string name="mtrl_picker_today_description">Today %1$s</string>
     <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode_tooltip">Switch to calendar</string>
     <string name="mtrl_picker_toggle_to_day_selection">Switch to Calendar view</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode_tooltip">Switch to text input</string>
     <string name="mtrl_picker_toggle_to_year_selection">Switch to year view</string>
     <string name="mtrl_switch_thumb_group_name">circle_group</string>
     <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
@@ -924,7 +967,6 @@ Learn more about Location Accuracy at g.co/Android/LocationAccuracy"</string>
     <string name="my_account_url">myaccount.google.com</string>
     <string name="navbar_install_fl">Install Family Link</string>
     <string name="navbar_review_controls">Review controls</string>
-    <string name="navigation_menu">Navigation menu</string>
     <string name="no_intent_handler_app_found_message">You may not have a proper app for viewing this content</string>
     <string name="not_allowed_devices_description_female">%1$s’s Google Account will be signed out of these devices. She won’t be able to use her account with these devices unless they’re updated to a supported version.</string>
     <string name="not_allowed_devices_description_male">%1$s’s Google Account will be signed out of these devices. He won’t be able to use his account with these devices unless they’re updated to a supported version.</string>
@@ -976,7 +1018,6 @@ To remove this account, first verify it’s you."</string>
     <string name="parent_picker_use_pac_button_text">Use parent access code</string>
     <string name="parental_controls_app_limit_editor_agsa_blocked_text">This app is now hidden and unusable on this device. Android and other apps may no longer function as intended.</string>
     <string name="parental_controls_app_limit_editor_agsa_dialog_confirm">Block</string>
-    <string name="parental_controls_app_limit_editor_agsa_dialog_text">If you block this app, it will be hidden and unusable on this device. Android and other apps may no longer function as intended.</string>
     <string name="parental_controls_app_limit_editor_agsa_dialog_text_v2">If you block this app, Android and other apps may no longer function as intended.</string>
     <string name="parental_controls_app_limit_editor_app_blocked_text">This app is now blocked on this device. It can’t be seen or used.</string>
     <string name="parental_controls_app_limit_editor_block_dialog_title">Block app?</string>
@@ -1010,23 +1051,28 @@ To remove this account, first verify it’s you."</string>
     <string name="parental_controls_dashboard_remove_account_dialog_text">To stop parental supervision on this device, you need to remove your child’s account</string>
     <string name="parental_controls_dashboard_remove_account_dialog_title">Google Accounts for children must be supervised</string>
     <string name="parental_controls_dwb_intro_key">parental_controls_dwb_intro_key</string>
-    <string name="parental_controls_family_link_upsell_app_limits">Restrict content, approve apps, &amp; set limits</string>
+    <string name="parental_controls_family_link_supervision_app_details_for_kids_category_title">For kids</string>
+    <string name="parental_controls_family_link_supervision_app_details_for_parents_category_title">For parents</string>
+    <string name="parental_controls_family_link_supervision_app_details_upsell_title">Get Google Family Link app</string>
+    <string name="parental_controls_family_link_upsell_app_limits">Restrict content, approve apps &amp; set limits</string>
     <string name="parental_controls_family_link_upsell_download_information">Download the Family Link app on a parent’s device from Google Play or the App Store</string>
-    <string name="parental_controls_family_link_upsell_location">See where they are on a map, as long as they’re carrying their device</string>
+    <string name="parental_controls_family_link_upsell_location">See your kid’s location on a map, as long as they’re carrying their device</string>
     <string name="parental_controls_family_link_upsell_manage_settings">Manage screen time &amp; settings from the comfort of your own phone</string>
-    <string name="parental_controls_family_link_upsell_qr_download_information">Download the Family Link app on a parent’s device from Google Play or the App Store using the QR code below</string>
+    <string name="parental_controls_family_link_upsell_qr_download_information">Download the Google Family Link app on a parent device from Google Play or the App Store using the QR code below</string>
     <string name="parental_controls_family_link_upsell_subtitle">With the Google Family Link app</string>
     <string name="parental_controls_family_link_upsell_supervise_apps">Remotely block or approve apps from Google Play</string>
     <string name="parental_controls_family_link_upsell_supervise_device">Supervise your child from a parent’s device</string>
     <string name="parental_controls_family_link_upsell_supervise_location">See this device’s location and label important places</string>
     <string name="parental_controls_family_link_upsell_supervise_settings">Manage filters and controls on Google Search, Chrome and Play</string>
     <string name="parental_controls_family_link_upsell_title">Get more controls</string>
-    <string name="parental_controls_family_link_upsell_title_v2">Download Family Link</string>
+    <string name="parental_controls_family_link_upsell_title_v2">Download Google Family Link</string>
+    <string name="parental_controls_family_link_view_more_settings_title">View more settings</string>
     <string name="parental_controls_pac_subheading">To change this setting, enter the parent access code from Family Link</string>
     <string name="parental_controls_parent_picker_subheading">To change this setting, verify you’re a parent</string>
     <string name="parental_controls_privacy_notice_for_kids_url">https://families.google.com/familylink/privacy/child-disclosure/</string>
     <string name="parental_controls_privacy_notice_for_parents_url">https://families.google.com/familylink/privacy/child-policy/</string>
     <string name="parental_controls_remove_account_button_label">Go to remove account</string>
+    <string name="parental_controls_school_time_intro_title">Parents can change these settings only in Google Family Link</string>
     <string name="parental_controls_subtitle_key">parental_controls_subtitle_key</string>
     <string name="parental_controls_top_header_title">Parental Controls</string>
     <string name="password_toggle_content_description">Show password</string>
@@ -1084,21 +1130,17 @@ To remove this account, first verify it’s you."</string>
     <string name="pin_recovery_account_mismatch_msg">Looks like %1$s does’t match the recovery info you added.</string>
     <string name="pin_recovery_account_mismatch_msg_2">Make sure the account info you entered is correct.</string>
     <string name="pin_recovery_account_mismatch_screen_title">Can’t reset PIN</string>
-    <string name="pin_recovery_email_confirmation_title">Confirm recovery email</string>
+    <string name="pin_recovery_email_confirmation_title">Confirm Google Account</string>
     <string name="pin_recovery_email_hint">Must be a valid Google account</string>
     <string name="pin_recovery_email_label">Email</string>
     <string name="pin_recovery_error_screen_description">Try again later</string>
     <string name="pin_recovery_network_error_screen_back_button">Go back</string>
     <string name="pin_recovery_network_error_screen_description">Check your WiFi or mobile network and try again</string>
     <string name="pin_recovery_network_error_screen_title">Can’t connect</string>
-    <string name="pin_recovery_post_setup_verify_screen_title">Verify recovery email</string>
-    <string name="pin_recovery_reset_screen_title">Reset your PIN</string>
-    <string name="pin_recovery_screen_signin_description">Next, you’ll enter your Google Account email and password. Don’t worry, you won’t be signed in to this device.</string>
-    <string name="pin_recovery_setup_screen_description">If you forget your PIN, you’ll use your Google Account and password to reset it</string>
+    <string name="pin_recovery_setup_screen_description">If you forget your PIN, you’ll use your Google Account email and password to reset it</string>
     <string name="pin_recovery_setup_screen_email_error">Please enter a valid email address</string>
     <string name="pin_recovery_setup_screen_skip_button">Skip for now</string>
-    <string name="pin_recovery_setup_screen_title">Add recovery email</string>
-    <string name="pin_recovery_update_screen_title">Update Recovery Email</string>
+    <string name="pin_recovery_setup_screen_title">Add Google Account for recovery</string>
     <string name="play_country_mismatch_error_description">"%1$s’s country setting is different than yours.
 
 To set up supervision, you and %1$s must have the same country settings."</string>
@@ -1116,8 +1158,6 @@ To set up supervision, you and %1$s must have the same country settings."</strin
     <string name="primes_marker">PrImEs</string>
     <string name="quit_dialog_message_v2">If you quit now and try to set up supervision later, you’ll have to start over.</string>
     <string name="quit_dialog_title_v2">Quit supervision setup?</string>
-    <string name="range_end">Range end</string>
-    <string name="range_start">Range start</string>
     <string name="ring_device_notification_content">Ringing…</string>
     <string name="search_settings_safe_search_description">No filter is perfect, but Google SafeSearch should help block sexually explicit and violent Search results</string>
     <string name="search_settings_safe_search_off">Sexually explicit results aren’t blocked</string>
@@ -1147,8 +1187,8 @@ To set up supervision, you and %1$s must have the same country settings."</strin
 
 If you don’t want to install Family Link now, you can always install it later from Google Play or the App Store."</string>
     <string name="skip_installation_title">Skip installation?</string>
-    <string name="skip_pin_recovery_description">{DEVICE_TYPE, select, phone {Without one, you won’t be able to reset your PIN, and controls can be removed by factory resetting this phone.} tablet {Without one, you won’t be able to reset your PIN, and controls can be removed by factory resetting this tablet.} other {Without one, you won’t be able to reset your PIN, and controls can be removed by factory resetting this device.} }</string>
-    <string name="skip_pin_recovery_title">Recovery email recommended</string>
+    <string name="skip_pin_recovery_description">{DEVICE_TYPE, select, phone {Without recovery info, if you forget your PIN you must factory reset your phone to regain access to controls.} tablet {Without recovery info, if you forget your PIN you must factory reset your tablet to regain access to controls.} other {Without recovery info, if you forget your PIN you must factory reset your device to regain access to controls.} }</string>
+    <string name="skip_pin_recovery_title">Recovery info recommended</string>
     <string name="soft_time_limits_more_time_added_message">Your device will now lock at %1$s</string>
     <string name="soft_time_limits_more_time_added_title">Wrap-up time started</string>
     <string name="sort_apps_spinner_key">sort_apps_spinner_key</string>
@@ -1166,12 +1206,18 @@ If you don’t want to install Family Link now, you can always install it later 
     <string name="sudFontSecondaryMediumMaterialYou">google-sans-text-medium</string>
     <string name="sudFontSecondaryText">google-sans-text</string>
     <string name="sudGlifExpressiveDialogFontFamily">google-sans-flex</string>
+    <string name="sud_accessibility_button_label">Accessibility</string>
     <string name="sud_back_button_label">Back</string>
     <string name="sud_expressive_accessibility_more_button_label">Scroll down</string>
     <string name="sud_less_info">Less info</string>
+    <string name="sud_lottie_animation_view_accessibility_action_pause">pause</string>
+    <string name="sud_lottie_animation_view_accessibility_action_resume">resume</string>
+    <string name="sud_lottie_animation_view_accessibility_description">Animation</string>
     <string name="sud_more_button_label">More</string>
     <string name="sud_more_info">More info</string>
     <string name="sud_next_button_label">Next</string>
+    <string name="sud_setup_progress_indicator_icon_description">Setup progress indicator</string>
+    <string name="sud_setup_progress_percentage">%1$s%%</string>
     <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
     <string name="supervise_apps_item_key">supervise_apps_item_key</string>
     <string name="supervise_device_item_key">supervise_device_item_key</string>
@@ -1179,6 +1225,7 @@ If you don’t want to install Family Link now, you can always install it later 
     <string name="supervise_settings_item_key">supervise_settings_item_key</string>
     <string name="supervised_communications_preference">supervised_communications_key</string>
     <string name="supervision_age_of_consent_footer_title">Parents are required to manage Google Accounts for kids under the age of consent. &lt;a href=intent:https://support.google.com/families?p=device_supervision_account#Intent;action=android.intent.action.VIEW;end>Learn more&lt;/a></string>
+    <string name="supervision_age_of_consent_footer_title_v2">Parents are required to manage Google Accounts for kids under the age of consent.</string>
     <string name="supervision_already_set_up_description">"You can’t go back because supervision is already set up for %1$s’s Google Account.
 
 Once you’re done, you can always stop supervision from the Family Link app."</string>
@@ -1187,6 +1234,7 @@ Once you’re done, you can always stop supervision from the Family Link app."</
     <string name="supervision_app_limits_item_explanation">Block apps &amp; set limits</string>
     <string name="supervision_app_limits_item_no_limits">No app limits set</string>
     <string name="supervision_app_limits_item_with_limits">App limits set</string>
+    <string name="supervision_app_limits_summary_no_limits">None</string>
     <string name="supervision_browser_filters_chrome_app_summary">Helps block visits to sexually explicit sites on Chrome and some Android apps</string>
     <string name="supervision_browser_filters_chrome_app_title">Google Chrome</string>
     <string name="supervision_browser_filters_search_app_summary">Helps block visits to sexually explicit sites from search results on the Google app</string>
@@ -1196,18 +1244,23 @@ Once you’re done, you can always stop supervision from the Family Link app."</
     <string name="supervision_daily_limit_not_enabled">Daily limit off</string>
     <string name="supervision_daily_limit_reached">Limit reached</string>
     <string name="supervision_downtime_active">Until %1$s</string>
-    <string name="supervision_downtime_item_explanation">Limit device access at night</string>
+    <string name="supervision_downtime_item_explanation">Limit access at night</string>
     <string name="supervision_downtime_no_downtime_today">No downtime for today</string>
     <string name="supervision_downtime_not_enabled">Downtime off</string>
     <string name="supervision_family_link_upsell_subtitle">Manage parental controls from the comfort of your own device</string>
     <string name="supervision_family_link_upsell_title">Get the Family Link app</string>
+    <string name="supervision_school_time_active">Until %1$s</string>
+    <string name="supervision_school_time_no_school_time_today">No school time for today</string>
+    <string name="supervision_school_time_not_enabled">School time off</string>
     <string name="supervision_search_filters_chrome_app_title">Google Search on Chrome</string>
     <string name="supervision_search_filters_search_app_title">Google Search on Google app</string>
     <string name="supervision_search_filters_supported_app_summary">SafeSearch helps filter out explicit content, like sexual activity and graphic violence</string>
     <string name="supervision_supervised_upsell_summary">Parents can use their phone to manage these settings, see device location, &amp; more</string>
     <string name="supervision_supervised_upsell_title">Get Google Family Link</string>
+    <string name="supervision_supervised_upsell_title_v2">Google Family Link</string>
     <string name="supervision_supervisor_upsell_summary">Help manage parental controls for kids &amp; teens in your family</string>
     <string name="supervision_supervisor_upsell_title">Open Google Family Link</string>
+    <string name="supervision_time_limit_not_enabled">Off</string>
     <string name="supervision_web_content_filters_summary_both_off">None</string>
     <string name="supervision_web_content_filters_summary_both_on">Filtering sites &amp; search results</string>
     <string name="supervision_web_content_filters_summary_chrome_on">Filtering explicit websites</string>
@@ -1286,10 +1339,15 @@ You can still ask your parent to approve this number, even if you don’t know w
     <string name="trusted_contacts_item_title">Contacts, calls &amp; texts</string>
     <string name="trusted_contacts_key">trusted_contacts_key</string>
     <string name="trusted_contacts_notification_allow_all">Now you can call &amp; text anyone</string>
+    <string name="trusted_contacts_notification_allow_all_school_time">Now you can call &amp; text anyone during school time</string>
     <string name="trusted_contacts_notification_allowlisted_and_semi_trusted_group">You can only call &amp; text contacts your parent adds or approves and groups with at least one parent-managed contact</string>
+    <string name="trusted_contacts_notification_allowlisted_and_semi_trusted_group_school_time">You can only call &amp; text contacts your parent adds &amp; limited groups during school time</string>
     <string name="trusted_contacts_notification_allowlisted_only">You can only call &amp; text contacts your parent adds</string>
+    <string name="trusted_contacts_notification_allowlisted_only_school_time">You can only call &amp; text contacts your parent adds during school time</string>
     <string name="trusted_contacts_notification_contacts_only">You can call &amp; text your contacts only</string>
+    <string name="trusted_contacts_notification_specific_contacts_school_time">You can only call &amp; text contacts your parent selected during school</string>
     <string name="trusted_contacts_notification_update_title">Update from your parent</string>
+    <string name="trusted_contacts_on_school_time_key">trusted_contacts_on_school_time_key</string>
     <string name="trusted_contacts_outgoing_call_blocked_title">Blocked call to %1$s</string>
     <string name="trusted_contacts_parent_ok">A parent has to say it’s OK for you to send and receive calls &amp; texts from this number</string>
     <string name="trusted_contacts_parent_ok_plural">A parent has to say it’s OK for you to send and receive calls &amp; texts from these numbers</string>
@@ -1298,8 +1356,10 @@ You can still ask your parent to approve this number, even if you don’t know w
     <string name="trusted_contacts_review_subtitle_many">Approving new contacts allows your child to send and receive calls &amp; texts from them. You can edit the names your child added. <a href="https://support.google.com/families?p=contacts">Learn more</a></string>
     <string name="trusted_contacts_review_title">Review new contact</string>
     <string name="trusted_contacts_review_title_plural">Review new contacts</string>
-    <string name="trusted_contacts_school_time_conversation_unavailable_subtitle">Chat isn’t available when your device is in school time. You can always call and message Emergency services and the contacts your parent has selected.</string>
-    <string name="trusted_contacts_school_time_conversation_unavailable_title">Chat isn’t available during school time</string>
+    <string name="trusted_contacts_school_time_conversation_unavailable_call_subtitle">You can’t call this number while your device is in school time. You can always call and message Emergency services and the contacts your parent has selected.</string>
+    <string name="trusted_contacts_school_time_conversation_unavailable_call_title">This number isn’t available during school time</string>
+    <string name="trusted_contacts_school_time_conversation_unavailable_chat_subtitle">Chat isn’t available when your device is in school time. You can always call and message Emergency services and the contacts your parent has selected.</string>
+    <string name="trusted_contacts_school_time_conversation_unavailable_chat_title">Chat isn’t available during school time</string>
     <string name="unlock_for_notification_message">You can use your device until %1$s</string>
     <string name="unlock_for_notification_title">You got more screen time!</string>
     <string name="unsupervisable_platform_sign_in_permission_not_required">Parent permission isn’t required when %1$s signs in to iPads, iPhones, browsers &amp; platforms that can’t be supervised</string>

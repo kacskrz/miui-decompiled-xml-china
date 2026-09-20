@@ -6,10 +6,10 @@
     <array name="LC3_CG_FEATURE_VERSION" />
     <array name="TIME_STAMP" />
     <string-array name="accessibility_autoclick_control_selector_keys">
-        <item>accessibility_control_autoclick_default</item>
-        <item>accessibility_control_autoclick_200ms</item>
-        <item>accessibility_control_autoclick_600ms</item>
-        <item>accessibility_control_autoclick_1sec</item>
+        <item>accessibility_control_autoclick_off</item>
+        <item>accessibility_control_autoclick_short</item>
+        <item>accessibility_control_autoclick_medium</item>
+        <item>accessibility_control_autoclick_long</item>
         <item>accessibility_control_autoclick_custom</item>
     </string-array>
     <integer-array name="accessibility_autoclick_selector_values">
@@ -19,25 +19,25 @@
         <item>1000</item>
         <item>2000</item>
     </integer-array>
-    <string-array name="accessibility_button_gesture_selector_titles">
-        <item>Button</item>
-        <item>Gesture</item>
-    </string-array>
-    <string-array name="accessibility_button_gesture_selector_values">
+    <integer-array name="accessibility_button_location_selector_int_values">
         <item>1</item>
-        <item>2</item>
-    </string-array>
+        <item>0</item>
+    </integer-array>
     <string-array name="accessibility_button_location_selector_titles">
-        <item>Floating over other apps</item>
-        <item>Navigation bar</item>
+        <item>@string/accessibility_button_location_selector_floating</item>
+        <item>@string/accessibility_button_location_selector_navigation_bar</item>
     </string-array>
     <string-array name="accessibility_button_location_selector_values">
         <item>1</item>
         <item>0</item>
     </string-array>
+    <integer-array name="accessibility_button_size_selector_int_values">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
     <string-array name="accessibility_button_size_selector_titles">
-        <item>Small</item>
-        <item>Large</item>
+        <item>@string/accessibility_button_size_selector_small</item>
+        <item>@string/accessibility_button_size_selector_large</item>
     </string-array>
     <string-array name="accessibility_button_size_selector_values">
         <item>0</item>
@@ -63,6 +63,14 @@
         <item>@string/accessibility_timeout_30secs</item>
         <item>@string/accessibility_timeout_1min</item>
         <item>@string/accessibility_timeout_2mins</item>
+    </string-array>
+    <string-array name="action_corner_action_titles">
+        <item>None</item>
+        <item>Home</item>
+        <item>Recent apps</item>
+        <item>Notifications</item>
+        <item>Quick settings</item>
+        <item>Lockscreen</item>
     </string-array>
     <string-array name="add_wifi_security">
         <item>@string/wifi_security_none</item>
@@ -249,11 +257,6 @@
         <item>@string/aod_notification_style_none</item>
         <item>@string/aod_notification_style_screen_on</item>
         <item>@string/aod_notification_style_animation</item>
-    </string-array>
-    <string-array name="aod_show_style_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
     </string-array>
     <array name="aon_scanner_description_multiple_layout_array">
         <item>@layout/aon_scanner_first_diagram</item>
@@ -476,6 +479,20 @@
         <item>01</item>
         <item>02</item>
     </string-array>
+    <string-array name="autoclick_cursor_area_size_selector_titles">
+        <item>@string/autoclick_cursor_area_size_dialog_option_extra_small</item>
+        <item>@string/autoclick_cursor_area_size_dialog_option_small</item>
+        <item>@string/autoclick_cursor_area_size_dialog_option_default</item>
+        <item>@string/autoclick_cursor_area_size_dialog_option_large</item>
+        <item>@string/autoclick_cursor_area_size_dialog_option_extra_large</item>
+    </string-array>
+    <integer-array name="autoclick_cursor_area_size_selector_values">
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </integer-array>
     <string-array name="autofill_logging_level_entries">
         <item>Off</item>
         <item>Debug</item>
@@ -862,14 +879,14 @@
         <item>broadcast</item>
     </string-array>
     <string-array name="bluetooth_map_version_values">
-        <item>map12</item>
-        <item>map13</item>
         <item>map14</item>
+        <item>map13</item>
+        <item>map12</item>
     </string-array>
     <string-array name="bluetooth_map_versions">
-        <item>MAP 1.2 (Default)</item>
+        <item>MAP 1.4 (Default)</item>
         <item>MAP 1.3</item>
-        <item>MAP 1.4</item>
+        <item>MAP 1.2</item>
     </string-array>
     <string-array name="bluetooth_max_connected_audio_devices">
         <item>Use System Default: %1$d</item>
@@ -993,6 +1010,9 @@
         <item>disabled</item>
         <item>filtered</item>
         <item>full</item>
+        <item>snoopheadersfiltered</item>
+        <item>mediapktsfiltered</item>
+        <item>profilesfiltered</item>
     </string-array>
     <string-array name="bt_hci_snoop_log_values_enhanced">
         <item>snoopheadersfiltered</item>
@@ -1067,6 +1087,86 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="captioning_color_selector_including_transparent_titles">
+        <item>@string/color_none</item>
+        <item>@string/color_unspecified</item>
+        <item>@string/color_white</item>
+        <item>@string/color_black</item>
+        <item>@string/color_red</item>
+        <item>@string/color_yellow</item>
+        <item>@string/color_green</item>
+        <item>@string/color_cyan</item>
+        <item>@string/color_blue</item>
+        <item>@string/color_magenta</item>
+    </string-array>
+    <integer-array name="captioning_color_selector_including_transparent_values">
+        <item>0x00000000</item>
+        <item>0x00FFFFFF</item>
+        <item>0xFFFFFFFF</item>
+        <item>0xFF000000</item>
+        <item>0xFFFF0000</item>
+        <item>0xFFFFFF00</item>
+        <item>0xFF00FF00</item>
+        <item>0xFF00FFFF</item>
+        <item>0xFF0000FF</item>
+        <item>0xFFFF00FF</item>
+        <item>0xFF000055</item>
+        <item>0xFF0000AA</item>
+        <item>0xFF005500</item>
+        <item>0xFF005555</item>
+        <item>0xFF0055AA</item>
+        <item>0xFF0055FF</item>
+        <item>0xFF00AA00</item>
+        <item>0xFF00AA55</item>
+        <item>0xFF00AAAA</item>
+        <item>0xFF00AAFF</item>
+        <item>0xFF00FF55</item>
+        <item>0xFF00FFAA</item>
+        <item>0xFF550000</item>
+        <item>0xFF550055</item>
+        <item>0xFF5500AA</item>
+        <item>0xFF5500FF</item>
+        <item>0xFF555500</item>
+        <item>0xFF555555</item>
+        <item>0xFF5555AA</item>
+        <item>0xFF5555FF</item>
+        <item>0xFF55AA00</item>
+        <item>0xFF55AA55</item>
+        <item>0xFF55AAAA</item>
+        <item>0xFF55AAFF</item>
+        <item>0xFF55FF00</item>
+        <item>0xFF55FF55</item>
+        <item>0xFF55FFAA</item>
+        <item>0xFF55FFFF</item>
+        <item>0xFFAA0000</item>
+        <item>0xFFAA0055</item>
+        <item>0xFFAA00AA</item>
+        <item>0xFFAA00FF</item>
+        <item>0xFFAA5500</item>
+        <item>0xFFAA5555</item>
+        <item>0xFFAA55AA</item>
+        <item>0xFFAA55FF</item>
+        <item>0xFFAAAA00</item>
+        <item>0xFFAAAA55</item>
+        <item>0xFFAAAAAA</item>
+        <item>0xFFAAAAFF</item>
+        <item>0xFFAAFF00</item>
+        <item>0xFFAAFF55</item>
+        <item>0xFFAAFFAA</item>
+        <item>0xFFAAFFFF</item>
+        <item>0xFFFF0055</item>
+        <item>0xFFFF00AA</item>
+        <item>0xFFFF5500</item>
+        <item>0xFFFF5555</item>
+        <item>0xFFFF55AA</item>
+        <item>0xFFFF55FF</item>
+        <item>0xFFFFAA00</item>
+        <item>0xFFFFAA55</item>
+        <item>0xFFFFAAAA</item>
+        <item>0xFFFFAAFF</item>
+        <item>0xFFFFFF55</item>
+        <item>0xFFFFFFAA</item>
+    </integer-array>
     <string-array name="captioning_color_selector_titles">
         <item>@string/color_unspecified</item>
         <item>@string/color_white</item>
@@ -1756,6 +1856,9 @@
     <string-array name="config_allowedOngoingPackages">
         <item>com.tencent.mm</item>
     </string-array>
+    <array name="config_carrier_for_mobile_network_toggle_disable" />
+    <array name="config_carrier_for_wifi_scorer_toggle_off" />
+    <array name="config_carrier_id_list_for_satellite_geo_fence_check" />
     <array name="config_carrier_use_rac" />
     <string-array name="config_color_mode_options_strings">
         <item>@string/color_mode_option_natural</item>
@@ -1807,6 +1910,9 @@
     </string-array>
     <array name="config_preinstalled_speech_services" />
     <array name="config_psim_conversion_menu_enabled_carrier" />
+    <array name="config_resolutionsShownOnExternalDisplay" />
+    <array name="config_satellite_apps_for_lte_landing_page" />
+    <array name="config_satellite_apps_for_nbntn_landing_page" />
     <string-array name="config_screen_resolution_options_strings">
         <item>@string/screen_resolution_option_high</item>
         <item>@string/screen_resolution_option_full</item>
@@ -2196,28 +2302,18 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
-    <string-array name="fan_mode_entries">
-        <item>@string/intelligent_frequency_modulation</item>
-        <item>@string/high_speed_powerful_cooling</item>
-        <item>@string/quiet_mode</item>
+    <string-array name="ethernet_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
     </string-array>
-    <string-array name="fan_mode_range_entries">
-        <item>@string/fan_mode_partial_scene_usage</item>
-        <item>@string/fan_mode_full_scene_usage</item>
-    </string-array>
-    <string-array name="fan_mode_range_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="fan_mode_summaries">
-        <item>@string/intelligent_frequency_modulation_summary</item>
-        <item>@string/high_speed_powerful_cooling_summary</item>
-        <item>@string/quiet_mode_summary</item>
-    </string-array>
-    <string-array name="fan_mode_values">
-        <item>-1</item>
-        <item>0</item>
-        <item>1</item>
+    <string-array name="face_education_illustration">
+        <item>.surfaceContainer:@sud_system_surface_container_light</item>
+        <item>.primary:@sud_system_primary_light</item>
+        <item>.primaryContainer:@sud_system_primary_container_light</item>
+        <item>.outline:@sud_system_outline_light</item>
+        <item>.onSecondaryContainer:@sud_system_on_secondary_container_light</item>
+        <item>.tertiary:@sud_system_tertiary_light</item>
+        <item>.inversePrimary:@sud_system_primary_inverse_light</item>
     </string-array>
     <array name="fingerprint_acquired_ignore_list" />
     <string-array name="fingerprint_unlock_type_entries">
@@ -2475,17 +2571,62 @@
         <item>slide_zippo_open.ogg</item>
         <item>slide_zippo_close.ogg</item>
     </string-array>
-    <string-array name="keyguard_notification_status_entries">
-        <item>"Don't wake screen"</item>
-        <item>Wake screen</item>
-        <item>Show animation</item>
-    </string-array>
     <string-array name="keyguard_notification_status_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
     <array name="kg_wrong_puk_code_message_list" />
+    <string-array name="layout_animated_banner_customization">
+        <item>.primary:@sud_system_primary_light</item>
+        <item>.onPrimary:@sud_system_on_primary_light</item>
+        <item>.primaryContainer:@sud_system_primary_container_light</item>
+        <item>.onPrimaryContainer:@sud_system_on_primary_container_light</item>
+        <item>.primaryInverse:@sud_system_primary_inverse_light</item>
+        <item>.primaryFixed:@sud_system_primary_fixed_light</item>
+        <item>.primaryFixedDim:@sud_system_primary_fixed_dim_light</item>
+        <item>.onPrimaryFixed:@sud_system_on_primary_fixed_light</item>
+        <item>.onPrimaryFixedVariant:@sud_system_on_primary_fixed_variant_light</item>
+        <item>.secondary:@sud_system_secondary_light</item>
+        <item>.onSecondary:@sud_system_on_secondary_light</item>
+        <item>.secondaryContainer:@sud_system_secondary_container_light</item>
+        <item>.onSecondaryContainer:@sud_system_on_secondary_container_light</item>
+        <item>.secondaryFixed:@sud_system_secondary_fixed_light</item>
+        <item>.secondaryFixedDim:@sud_system_secondary_fixed_dim_light</item>
+        <item>.onSecondaryFixed:@sud_system_on_secondary_fixed_light</item>
+        <item>.onSecondaryFixedVariant:@sud_system_on_secondary_fixed_variant_light</item>
+        <item>.tertiary:@sud_system_tertiary_light</item>
+        <item>.onTertiary:@sud_system_on_tertiary_light</item>
+        <item>.tertiaryContainer:@sud_system_tertiary_container_light</item>
+        <item>.onTertiaryContainer:@sud_system_on_tertiary_container_light</item>
+        <item>.tertiaryFixed:@sud_system_tertiary_fixed_light</item>
+        <item>.tertiaryFixedDim:@sud_system_tertiary_fixed_dim_light</item>
+        <item>.onTertiaryFixed:@sud_system_on_tertiary_fixed_light</item>
+        <item>.onTertiaryFixedVariant:@sud_system_on_tertiary_fixed_variant_light</item>
+        <item>.error:@sud_system_error_light</item>
+        <item>.onError:@sud_system_on_error_light</item>
+        <item>.errorContainer:@sud_system_error_container_light</item>
+        <item>.onErrorContainer:@sud_system_on_error_container_light</item>
+        <item>.outline:@sud_system_outline_light</item>
+        <item>.outlineVariant:@sud_system_outline_variant_light</item>
+        <item>.onBackground:@sud_system_on_background_light</item>
+        <item>.surface:@sud_system_surface_light</item>
+        <item>.onSurface:@sud_system_on_surface_light</item>
+        <item>.surfaceVariant:@sud_system_surface_variant_light</item>
+        <item>.onSurfaceVariant:@sud_system_on_surface_variant_light</item>
+        <item>.surfaceInverse:@sud_system_surface_inverse_light</item>
+        <item>.onSurfaceInverse:@sud_system_on_surface_inverse_light</item>
+        <item>.surfaceBright:@sud_system_surface_bright_light</item>
+        <item>.surfaceDim:@sud_system_surface_dim_light</item>
+        <item>.surfaceContainer:@sud_system_surface_container_light</item>
+        <item>.surfaceContainerLow:@sud_system_surface_container_low_light</item>
+        <item>.surfaceContainerLowest:@sud_system_surface_container_lowest_light</item>
+        <item>.surfaceContainerHigh:@sud_system_surface_container_high_light</item>
+        <item>.surfaceContainerHighest:@sud_system_surface_container_highest_light</item>
+    </string-array>
+    <string-array name="layout_animated_icon_customization">
+        <item>.primary:@sud_system_primary_light</item>
+    </string-array>
     <string-array name="led_color_entries">
         <item>Blue</item>
         <item>Red</item>
@@ -2620,10 +2761,15 @@
         <item>@string/miheadset_key_config_call_ai</item>
         <item>@string/miheadset_play_pause</item>
     </string-array>
+    <integer-array name="long_press_timeout_selector_int_values">
+        <item>@integer/long_press_timeout_short</item>
+        <item>@integer/long_press_timeout_medium</item>
+        <item>@integer/long_press_timeout_long</item>
+    </integer-array>
     <string-array name="long_press_timeout_selector_list_titles">
-        <item>Short</item>
-        <item>Medium</item>
-        <item>Long</item>
+        <item>@string/accessibility_long_press_timeout_option_short</item>
+        <item>@string/accessibility_long_press_timeout_option_medium</item>
+        <item>@string/accessibility_long_press_timeout_option_long</item>
     </string-array>
     <string-array name="long_press_timeout_selector_titles">
         <item>Short</item>
@@ -2646,6 +2792,15 @@
         <item>Street-snap-picture</item>
         <item>Street-snap-movie</item>
         <item>public_transportation_shortcuts</item>
+    </string-array>
+    <string-array name="low_light_display_behavior_entries">
+        <item>@string/low_light_display_behavior_low_light_clock_dream</item>
+    </string-array>
+    <string-array name="low_light_display_behavior_supported_values">
+        <item>low_light_display_behavior_low_light_clock_dream</item>
+    </string-array>
+    <string-array name="low_light_display_behavior_values">
+        <item>low_light_display_behavior_low_light_clock_dream</item>
     </string-array>
     <string-array name="magnification_mode_summaries">
         <item>@string/accessibility_magnification_area_settings_full_screen_summary</item>
@@ -3267,10 +3422,9 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>Play video</item>
     </string-array>
     <string-array name="preferred_network_mode_choices">
-        <item>GSM/WCDMA preferred</item>
+        <item>GSM/WCDMA auto</item>
         <item>GSM only</item>
         <item>WCDMA only</item>
-        <item>GSM/WCDMA auto</item>
         <item>CDMA/EvDo auto</item>
         <item>CDMA w/o EvDo</item>
         <item>EvDo only</item>
@@ -3316,7 +3470,6 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>
-        <item>3</item>
         <item>4</item>
         <item>5</item>
         <item>6</item>
@@ -3961,6 +4114,12 @@ Note: Only for Ubuntu 8.04!"</item>
         <item>default</item>
         <item>celsius</item>
         <item>fahrenhe</item>
+    </string-array>
+    <string-array name="terms_of_address">
+        <item>Not specified</item>
+        <item>Neutral</item>
+        <item>Feminine</item>
+        <item>Masculine</item>
     </string-array>
     <string-array name="terms_of_address_supported_languages">
         <item>fr</item>
