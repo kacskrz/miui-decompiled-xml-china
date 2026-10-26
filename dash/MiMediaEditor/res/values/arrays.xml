@@ -59,6 +59,23 @@
         <item>@string/settings_ai_devices_p11u</item>
         <item>@string/settings_ai_devices_cam4063</item>
         <item>@string/settings_ai_devices_p10u</item>
+        <item>@string/settings_ai_devices_p12u</item>
+        <item>@string/settings_ai_devices_p12a</item>
+        <item>@string/settings_ai_devices_p12</item>
+        <item>@string/settings_ai_devices_p88</item>
+        <item>@string/settings_ai_devices_chicago</item>
+        <item>@string/settings_ai_devices_p3s</item>
+        <item>@string/settings_ai_devices_q18</item>
+        <item>@string/settings_ai_devices_brussels</item>
+        <item>@string/settings_ai_devices_p12x</item>
+        <item>@string/settings_ai_devices_yingtian</item>
+        <item>@string/settings_ai_devices_songyuan</item>
+        <item>@string/settings_ai_devices_athens</item>
+        <item>@string/settings_ai_devices_shuntian</item>
+        <item>@string/settings_ai_devices_q2</item>
+        <item>@string/settings_ai_devices_q3</item>
+        <item>@string/settings_ai_devices_q5</item>
+        <item>@string/settings_ai_devices_q10c</item>
     </string-array>
     <string-array name="alphabet_table">
         <item>A</item>
@@ -613,31 +630,7 @@
         <item>591×591+50×50</item>
     </string-array>
     <array name="magic_resource_white_list" />
-    <integer-array name="magic_string_white_list">
-        <item>2132018370</item>
-        <item>2132018371</item>
-        <item>2132018372</item>
-        <item>2132018373</item>
-        <item>2132018374</item>
-        <item>2132018375</item>
-        <item>2132018376</item>
-        <item>2132018377</item>
-        <item>2132018378</item>
-        <item>2132018379</item>
-        <item>2132018380</item>
-        <item>2132018381</item>
-        <item>2132018382</item>
-        <item>2132018383</item>
-        <item>2132018384</item>
-        <item>2132019424</item>
-        <item>2132019425</item>
-        <item>2132019426</item>
-        <item>2132019427</item>
-        <item>2132019428</item>
-        <item>2132019429</item>
-        <item>2132019430</item>
-        <item>2132019460</item>
-    </integer-array>
+    <array name="magic_string_white_list" />
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
@@ -691,7 +684,17 @@
         <item>com.miui.gallery</item>
         <item>com.miui.cloudservice</item>
         <item>com.android.deskclock</item>
+        <item>com.android.phone</item>
+        <item>com.miui.yellowpage</item>
+        <item>com.xiaomi.aiasst.service</item>
+        <item>com.xiaomi.bluetooth</item>
     </string-array>
+    <array name="navigator_btn_color_gradient">
+        <item>#ffff8d41</item>
+        <item>#ffe9a6ff</item>
+        <item>#ff5f85ff</item>
+        <item>#ff51aeff</item>
+    </array>
     <string-array name="photo_editor_adjust_curve_color_array">
         <item>\#FFFFFF</item>
         <item>\#FF5E66</item>
@@ -736,11 +739,13 @@
     </string-array>
     <string-array name="photo_editor_setting_saving_option_entries_array">
         <item>@string/photo_editor_save_option_dialog_cover_origin</item>
-        <item>@string/more_menu_save_as_copy</item>
+        <item>@string/more_menu_save_as_copy_v2</item>
+        <item>@string/photo_editor_save_option_ask_every_time</item>
     </string-array>
     <string-array name="photo_editor_setting_saving_option_entry_values_array">
         <item>cover_origin</item>
         <item>save_as_copy</item>
+        <item>ask_every_time</item>
     </string-array>
     <string-array name="pref_mix_text_1_entryvalues">
         <item>@string/pref_wm_mix_text_entryvalue_off</item>
@@ -842,6 +847,12 @@
         <item>8</item>
         <item>6</item>
     </integer-array>
+    <integer-array name="text_preset_sizes_large">
+        <item>14</item>
+        <item>12</item>
+        <item>10</item>
+        <item>8</item>
+    </integer-array>
     <string-array name="text_style">
         <item>@string/text_edit_dialog_style_bold</item>
         <item>@string/text_edit_dialog_style_stroke</item>
@@ -850,11 +861,48 @@
         <item>@string/text_edit_dialog_style_align_center</item>
         <item>@string/text_edit_dialog_style_align_right</item>
     </string-array>
+    <array name="top_mask_gradient_colors">
+        <item>@color/top_mask_gradient_0_default</item>
+        <item>@color/top_mask_gradient_1_default</item>
+        <item>@color/top_mask_gradient_2_default</item>
+        <item>@color/top_mask_gradient_3_default</item>
+        <item>@color/top_mask_gradient_4_default</item>
+    </array>
+    <string-array name="video_bitrate_hints">
+        <item>@string/vlog_quality_bitrate_low</item>
+        <item>@string/vlog_quality_bitrate_medium</item>
+        <item>@string/vlog_quality_bitrate_high</item>
+        <item>@string/vlog_quality_bitrate_auto</item>
+    </string-array>
     <array name="video_btn_color_gradient_ai_caption">
         <item>#fffe5a6c</item>
         <item>#ff3a98fc</item>
         <item>#ff465ffb</item>
     </array>
+    <string-array name="video_fps_hints">
+        <item>@string/vlog_quality_fps_24</item>
+        <item>@string/vlog_quality_fps_25</item>
+        <item>@string/vlog_quality_fps_30</item>
+        <item>@string/vlog_quality_fps_50</item>
+        <item>@string/vlog_quality_fps_60</item>
+    </string-array>
+    <integer-array name="video_origin_sound_sqb_preset_sizes">
+        <item>10</item>
+        <item>8</item>
+    </integer-array>
+    <string-array name="video_resolution_hints">
+        <item>@string/vlog_quality_resolution_480p</item>
+        <item>@string/vlog_quality_resolution_720p</item>
+        <item>@string/vlog_quality_resolution_1080p</item>
+        <item>@string/vlog_quality_resolution_4k</item>
+    </string-array>
+    <string-array name="video_speed_hints">
+        <item>@string/clip_speedX_0.25x</item>
+        <item>@string/clip_speedX_0.5x</item>
+        <item>@string/clip_speedX_1.0x</item>
+        <item>@string/clip_speedX_2.0x</item>
+        <item>@string/clip_speedX_3.0x</item>
+    </string-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
         <item>@string/monday</item>
