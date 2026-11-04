@@ -275,7 +275,14 @@
     <array name="config_desktopLaunchInFullscreenPackages" />
     <array name="config_desktopTransparentExemptionIgnoreList" />
     <array name="config_deviceAccSensorReversedFoldedDeviceStates" />
+    <array name="config_deviceAccSensorRotateFoldedDeviceStates" />
+    <array name="config_deviceGameRotationVectorSensorRotateFoldedDeviceStates" />
+    <array name="config_deviceGyroSensorRotateFoldedDeviceStates" />
+    <array name="config_deviceMagSensorRotateFoldedDeviceStates" />
     <array name="config_deviceOrientSensorReversedFoldedDeviceStates" />
+    <array name="config_deviceOrientSensorRotateFoldedDeviceStates" />
+    <array name="config_deviceOrientationSensorRotateFoldedDeviceStates" />
+    <array name="config_deviceRotationVectorSensorRotateFoldedDeviceStates" />
     <array name="config_deviceSpecificSystemServices" />
     <array name="config_deviceStatesAvailableForAppRequests" />
     <array name="config_deviceStatesOnWhichToSleep" />
@@ -406,6 +413,10 @@
     </array>
     <array name="config_foldedDeviceStates" />
     <array name="config_fontManagerServiceCerts" />
+    <string-array name="config_forceEnableDimming">
+        <item>com.google.android.apps.photos</item>
+        <item>com.gallery20</item>
+    </string-array>
     <array name="config_forceInvertPackageBlocklist" />
     <string-array name="config_forceQueryablePackages">
         <item>com.android.settings</item>
@@ -416,6 +427,27 @@
         <item>ims</item>
         <item>eims</item>
         <item>xcap</item>
+    </string-array>
+    <string-array name="config_freezeExemptPackages">
+        <item>com.miui.cloudservice</item>
+        <item>com.miui.securitycenter</item>
+        <item>com.miui.securitycenter:ui</item>
+        <item>com.miui.screenshot</item>
+        <item>com.sohu.inputmethod.sogou.xiaomi</item>
+        <item>com.miui.analytics.go</item>
+        <item>com.miui.msa.global:ui</item>
+        <item>com.miui.msa.global</item>
+        <item>com.android.permissioncontroller</item>
+        <item>com.milink.service</item>
+        <item>com.google.android.ondevicepersonalization.services</item>
+        <item>com.mediatek.satellite.service</item>
+        <item>android.voiceinteraction.service</item>
+        <item>android.voiceinteraction.service:interactor</item>
+        <item>android.voiceinteraction.service:session</item>
+        <item>com.miui.player</item>
+        <item>com.phonetest.application</item>
+        <item>android.scopedstorage.cts.testapp.A31.withres</item>
+        <item>android.scopedstorage.cts.testapp.B.noperms</item>
     </string-array>
     <string-array name="config_globalActionsList">
         <item>emergency</item>
@@ -638,6 +670,10 @@
     <array name="config_reversedFoldedDeviceStates" />
     <array name="config_ringtoneEffectUris" />
     <array name="config_ringtoneVibrationPatternToMetricIdMapping" />
+    <array name="config_roundedCornerBottomLeftRadiusArray">
+        <item>@dimen/rounded_corner_radius_bottom_left</item>
+        <item>@dimen/secondary_rounded_corner_radius_bottom_left</item>
+    </array>
     <array name="config_roundedCornerBottomRadiusAdjustmentArray">
         <item>@dimen/rounded_corner_radius_bottom_adjustment</item>
         <item>@dimen/secondary_rounded_corner_radius_bottom_adjustment</item>
@@ -645,6 +681,10 @@
     <array name="config_roundedCornerBottomRadiusArray">
         <item>@dimen/rounded_corner_radius_bottom</item>
         <item>@dimen/secondary_rounded_corner_radius_bottom</item>
+    </array>
+    <array name="config_roundedCornerBottomRightRadiusArray">
+        <item>@dimen/rounded_corner_radius_bottom_right</item>
+        <item>@dimen/secondary_rounded_corner_radius_bottom_right</item>
     </array>
     <array name="config_roundedCornerRadiusAdjustmentArray">
         <item>@dimen/rounded_corner_radius_adjustment</item>
@@ -654,6 +694,10 @@
         <item>@dimen/rounded_corner_radius</item>
         <item>@dimen/secondary_rounded_corner_radius</item>
     </array>
+    <array name="config_roundedCornerTopLeftRadiusArray">
+        <item>@dimen/rounded_corner_radius_top_left</item>
+        <item>@dimen/secondary_rounded_corner_radius_top_left</item>
+    </array>
     <array name="config_roundedCornerTopRadiusAdjustmentArray">
         <item>@dimen/rounded_corner_radius_top_adjustment</item>
         <item>@dimen/secondary_rounded_corner_radius_top_adjustment</item>
@@ -661,6 +705,10 @@
     <array name="config_roundedCornerTopRadiusArray">
         <item>@dimen/rounded_corner_radius_top</item>
         <item>@dimen/secondary_rounded_corner_radius_top</item>
+    </array>
+    <array name="config_roundedCornerTopRightRadiusArray">
+        <item>@dimen/rounded_corner_radius_top_right</item>
+        <item>@dimen/secondary_rounded_corner_radius_top_right</item>
     </array>
     <string-array name="config_satellite_providers">
         <item>310830</item>
@@ -699,6 +747,9 @@
     <array name="config_serialPorts" />
     <string-array name="config_serviceStateLocationAllowedPackages">
         <item>com.android.phone</item>
+    </string-array>
+    <string-array name="config_setColorMode">
+        <item>com.google.android.apps.photos</item>
     </string-array>
     <array name="config_setContactsDefaultAccountKnownSigners" />
     <string-array name="config_sfps_enroll_stage_thresholds">
@@ -1102,92 +1153,69 @@
         <item>@color/search_url_text_material_light</item>
     </array>
     <array name="preloaded_drawables">
-        <item>@drawable/btn_default_pressed_holo_light</item>
-        <item>@drawable/btn_default_normal_holo_light</item>
-        <item>@drawable/btn_default_focused_holo_light</item>
-        <item>@drawable/btn_default_disabled_holo_light</item>
-        <item>@drawable/btn_default_disabled_focused_holo_light</item>
-        <item>@drawable/btn_default_holo_light</item>
-        <item>@drawable/text_cursor_holo_light</item>
-        <item>@drawable/list_selector_holo_light</item>
-        <item>@drawable/progress_bg_holo_dark</item>
-        <item>@drawable/progress_horizontal_holo_dark</item>
-        <item>@drawable/progress_indeterminate_horizontal_holo</item>
-        <item>@drawable/progress_primary_holo_dark</item>
-        <item>@drawable/progress_secondary_holo_dark</item>
-        <item>@drawable/background_holo_light</item>
-        <item>@drawable/background_holo_dark</item>
-        <item>@drawable/scrollbar_handle_holo_dark</item>
-        <item>@drawable/cab_background_bottom_holo_dark</item>
-        <item>@drawable/cab_background_top_holo_light</item>
-        <item>@drawable/cab_background_bottom_holo_light</item>
-        <item>@drawable/cab_background_top_holo_dark</item>
-        <item>@drawable/list_divider_holo_dark</item>
-        <item>@drawable/list_divider_holo_light</item>
-        <item>@drawable/ab_transparent_dark_holo</item>
-        <item>@drawable/ab_stacked_transparent_dark_holo</item>
-        <item>@drawable/ab_bottom_transparent_dark_holo</item>
-        <item>@drawable/ab_solid_light_holo</item>
-        <item>@drawable/ab_stacked_solid_light_holo</item>
-        <item>@drawable/ab_bottom_solid_light_holo</item>
-        <item>@drawable/ab_solid_shadow_holo</item>
-        <item>@drawable/item_background_holo_dark</item>
-        <item>@drawable/item_background_holo_light</item>
-        <item>@drawable/ic_ab_back_holo_dark</item>
-        <item>@drawable/ic_ab_back_holo_light</item>
-        <item>@drawable/fastscroll_label_left_holo_light</item>
-        <item>@drawable/fastscroll_label_right_holo_light</item>
-        <item>@drawable/editbox_dropdown_background_dark</item>
-        <item>@drawable/list_longpressed_holo</item>
-        <item>@drawable/scrollbar_handle_vertical</item>
-        <item>@drawable/scrollbar_handle_horizontal</item>
-        <item>@drawable/list_selector_background_longpress</item>
-        <item>@drawable/list_focused_holo</item>
-        <item>@drawable/btn_default_selected</item>
-        <item>@drawable/btn_default_pressed</item>
-        <item>@drawable/btn_default_normal_disable_focused</item>
-        <item>@drawable/btn_default_normal_disable</item>
-        <item>@drawable/btn_default_normal</item>
-        <item>@drawable/btn_default</item>
-        <item>@drawable/list_selector_disabled_holo_light</item>
-        <item>@drawable/list_pressed_holo_light</item>
-        <item>@drawable/list_selector_background_pressed</item>
-        <item>@drawable/list_selector_background_focus</item>
-        <item>@drawable/list_selector_background_disabled</item>
-        <item>@drawable/ic_dialog_info</item>
-        <item>@drawable/bottom_bar</item>
-        <item>@drawable/toast_frame</item>
-        <item>@drawable/divider_horizontal_dark</item>
-        <item>@drawable/popup_top_dark</item>
-        <item>@drawable/popup_bottom_medium</item>
-        <item>@drawable/list_selector_background</item>
-        <item>@drawable/popup_center_dark</item>
-        <item>@drawable/tab_bottom_right</item>
-        <item>@drawable/tab_bottom_left</item>
-        <item>@drawable/tab_selected_bar_right</item>
-        <item>@drawable/tab_selected_bar_left</item>
-        <item>@drawable/tab_press_bar_right</item>
-        <item>@drawable/tab_press_bar_left</item>
-        <item>@drawable/tab_focus_bar_right</item>
-        <item>@drawable/tab_focus_bar_left</item>
-        <item>@drawable/list_pressed_holo_dark</item>
-        <item>@drawable/sym_def_app_icon</item>
-        <item>@drawable/spinner_white_16</item>
-        <item>@drawable/progressbar_indeterminate3</item>
-        <item>@drawable/progressbar_indeterminate2</item>
-        <item>@drawable/progressbar_indeterminate1</item>
-        <item>@drawable/list_selector_disabled_holo_dark</item>
-        <item>@drawable/title_bar</item>
-        <item>@drawable/progress_indeterminate_horizontal</item>
-        <item>@drawable/textfield_selected</item>
-        <item>@drawable/textfield_disabled_selected</item>
-        <item>@drawable/textfield_disabled</item>
-        <item>@drawable/textfield_default</item>
-        <item>@drawable/panel_background</item>
-        <item>@drawable/divider_horizontal_dark_opaque</item>
-        <item>@drawable/btn_check_label_background</item>
-        <item>@drawable/progress_horizontal</item>
-        <item>@drawable/edit_text</item>
+        <item>@drawable/action_bar_item_background_material</item>
+        <item>@drawable/activated_background_material</item>
+        <item>@drawable/btn_borderless_material</item>
+        <item>@drawable/btn_check_material_anim</item>
+        <item>@drawable/btn_colored_material</item>
+        <item>@drawable/btn_default_material</item>
+        <item>@drawable/btn_radio_material_anim</item>
+        <item>@drawable/btn_toggle_material</item>
+        <item>@drawable/control_background_32dp_material</item>
+        <item>@drawable/control_background_40dp_material</item>
+        <item>@drawable/dialog_background_material</item>
+        <item>@drawable/fastscroll_label_left_material</item>
+        <item>@drawable/fastscroll_label_right_material</item>
+        <item>@drawable/fastscroll_thumb_material</item>
+        <item>@drawable/fastscroll_track_material</item>
+        <item>@drawable/floating_popup_background</item>
+        <item>@drawable/ic_ab_back_material</item>
+        <item>@drawable/ic_ab_back_material_dark</item>
+        <item>@drawable/ic_ab_back_material_light</item>
+        <item>@drawable/ic_account_circle</item>
+        <item>@drawable/ic_arrow_drop_right_black_24dp</item>
+        <item>@drawable/ic_clear_material</item>
+        <item>@drawable/ic_dialog_alert_material</item>
+        <item>@drawable/ic_go_search_api_material</item>
+        <item>@drawable/ic_menu_copy_material</item>
+        <item>@drawable/ic_menu_cut_material</item>
+        <item>@drawable/ic_menu_moreoverflow_material</item>
+        <item>@drawable/ic_menu_paste_material</item>
+        <item>@drawable/ic_menu_selectall_material</item>
+        <item>@drawable/ic_menu_share_material</item>
+        <item>@drawable/ic_search_api_material</item>
+        <item>@drawable/ic_voice_search_api_material</item>
+        <item>@drawable/item_background_borderless_material</item>
+        <item>@drawable/item_background_borderless_material_dark</item>
+        <item>@drawable/item_background_borderless_material_light</item>
+        <item>@drawable/item_background_material</item>
+        <item>@drawable/item_background_material_dark</item>
+        <item>@drawable/item_background_material_light</item>
+        <item>@drawable/list_choice_background_material</item>
+        <item>@drawable/list_divider_material</item>
+        <item>@drawable/notification_material_action_background</item>
+        <item>@drawable/notification_material_media_action_background</item>
+        <item>@drawable/number_picker_divider_material</item>
+        <item>@drawable/popup_background_material</item>
+        <item>@drawable/progress_horizontal_material</item>
+        <item>@drawable/progress_indeterminate_horizontal_material</item>
+        <item>@drawable/progress_large_material</item>
+        <item>@drawable/progress_medium_material</item>
+        <item>@drawable/progress_small_material</item>
+        <item>@drawable/screen_background_dark</item>
+        <item>@drawable/screen_background_dark_transparent</item>
+        <item>@drawable/screen_background_light</item>
+        <item>@drawable/screen_background_light_transparent</item>
+        <item>@drawable/screen_background_selector_dark</item>
+        <item>@drawable/screen_background_selector_light</item>
+        <item>@drawable/scrollbar_handle_material</item>
+        <item>@drawable/seekbar_thumb_material_anim</item>
+        <item>@drawable/seekbar_tick_mark_material</item>
+        <item>@drawable/seekbar_track_material</item>
+        <item>@drawable/spinner_background_material</item>
+        <item>@drawable/switch_track_material</item>
+        <item>@drawable/tab_indicator_material</item>
+        <item>@drawable/text_cursor_material</item>
     </array>
     <string-array name="radioAttributes">
         <item>1,1</item>
@@ -1243,14 +1271,18 @@
         <item>@color/SIM_color_orange</item>
     </array>
     <string-array name="special_locale_codes">
-        <item>ar_EG</item>
         <item>zh_CN</item>
         <item>zh_TW</item>
+        <item>es_US</item>
+        <item>ar_EG</item>
+        <item>ar_EG_#u-nu-latn</item>
     </string-array>
     <string-array name="special_locale_names">
-        <item>العربية</item>
         <item>中文 (简体)</item>
         <item>中文 (繁體)</item>
+        <item>Español (América)</item>
+        <item>العربية</item>
+        <item>العربية ( الأرقام الغربية )</item>
     </string-array>
     <string-array name="stoppable_fgs_system_apps">
         <item>com.android.virtualization.terminal</item>
