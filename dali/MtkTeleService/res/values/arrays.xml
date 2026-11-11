@@ -281,7 +281,6 @@
         <item>in</item>
         <item>sg</item>
         <item>de</item>
-        <item>gb</item>
         <item>fr</item>
         <item>be</item>
         <item>ro</item>
@@ -325,6 +324,68 @@
     </string-array>
     <array name="config_md_gamemode_opt_country" />
     <array name="config_mdexpress_support_country" />
+    <integer-array name="config_modem_model_cfg_raw_data">
+        <item>60</item>
+        <item>-33</item>
+        <item>-122</item>
+        <item>-6</item>
+        <item>5</item>
+        <item>60</item>
+        <item>-33</item>
+        <item>-122</item>
+        <item>-6</item>
+        <item>5</item>
+        <item>460</item>
+        <item>5</item>
+        <item>101</item>
+        <item>10</item>
+        <item>101</item>
+        <item>10</item>
+        <item>101</item>
+        <item>10</item>
+        <item>30</item>
+        <item>5</item>
+        <item>101</item>
+        <item>10</item>
+        <item>45</item>
+        <item>200000</item>
+        <item>2</item>
+        <item>-110</item>
+        <item>5</item>
+        <item>0</item>
+        <item>5</item>
+        <item>460</item>
+        <item>2000</item>
+        <item>50</item>
+        <item>800</item>
+        <item>5</item>
+        <item>30</item>
+        <item>30</item>
+        <item>2500</item>
+        <item>2</item>
+        <item>1500</item>
+        <item>2500</item>
+        <item>2</item>
+        <item>15</item>
+        <item>1</item>
+        <item>15</item>
+        <item>1</item>
+        <item>1200</item>
+        <item>800</item>
+        <item>3</item>
+        <item>50</item>
+        <item>1</item>
+        <item>50</item>
+        <item>-3</item>
+        <item>-13</item>
+        <item>2</item>
+        <item>10</item>
+        <item>1</item>
+        <item>10</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+    </integer-array>
     <string-array name="config_rcs_provision_error_on_publish_response">
         <item>404 not found</item>
     </string-array>
@@ -650,6 +711,11 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
+    <string-array name="fiveg_low_band">
+        <item>N5</item>
+        <item>N8</item>
+        <item>N28</item>
+    </string-array>
     <array name="fiveg_network_mode_enabled_devices" />
     <string-array name="fiveg_network_mode_entries">
         <item>@string/fiveg_network_mode_default</item>
@@ -746,6 +812,18 @@
         <item>5</item>
         <item>10</item>
     </string-array>
+    <string-array name="network_state_display">
+        <item>@string/network_available</item>
+        <item>@string/network_active</item>
+    </string-array>
+    <string-array name="network_state_display_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="phone_type_values">
+        <item>@string/pstn_phone</item>
+        <item>@string/internet_phone</item>
+    </string-array>
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
@@ -799,18 +877,10 @@
         <item>com.miui.gallery</item>
         <item>com.miui.cloudservice</item>
         <item>com.android.deskclock</item>
-    </string-array>
-    <string-array name="network_state_display">
-        <item>@string/network_available</item>
-        <item>@string/network_active</item>
-    </string-array>
-    <string-array name="network_state_display_values">
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="phone_type_values">
-        <item>@string/pstn_phone</item>
-        <item>@string/internet_phone</item>
+        <item>com.android.phone</item>
+        <item>com.miui.yellowpage</item>
+        <item>com.xiaomi.aiasst.service</item>
+        <item>com.xiaomi.bluetooth</item>
     </string-array>
     <string-array name="plmn_network_type_entries">
         <item>2G</item>
@@ -941,6 +1011,11 @@
         <item>@string/sip_always</item>
         <item>@string/sip_address_only</item>
     </string-array>
+    <integer-array name="support_networktypes_cdma_master">
+        <item>32</item>
+        <item>10</item>
+        <item>7</item>
+    </integer-array>
     <string-array name="solar_terms">
         <item>@string/empty</item>
         <item>@string/solar_term_slight_cold</item>
@@ -968,11 +1043,6 @@
         <item>@string/solar_term_heavy_snow</item>
         <item>@string/solar_term_winter_solstice</item>
     </string-array>
-    <integer-array name="support_networktypes_cdma_master">
-        <item>32</item>
-        <item>10</item>
-        <item>7</item>
-    </integer-array>
     <integer-array name="support_networktypes_cdma_master_all">
         <item>33</item>
         <item>10</item>
@@ -1058,6 +1128,23 @@
         <item>LTE</item>
         <item>Triple mode</item>
     </string-array>
+    <string-array name="wechat_activity_list_default">
+        <item>com.tencent.mm.ui.halfscreen.HalfScreenTransparentActivity</item>
+        <item>com.tencent.mm.pluginsdk.ui.tools.FileSelectorUI</item>
+        <item>com.tencent.mm.ui.LauncherUI</item>
+        <item>com.tencent.mm.ui.chatting.ChattingUI</item>
+    </string-array>
+    <string-array name="wechat_package_list_default">
+        <item>com.tencent.mm</item>
+    </string-array>
+    <string-array name="wificall_preferred_entries">
+        <item>@string/wfcmode_mobile_preferred</item>
+        <item>@string/wfcmode_wifi_preferred</item>
+    </string-array>
+    <integer-array name="wificall_preferred_mode_values">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
     <string-array name="week_days">
         <item>@string/sunday</item>
         <item>@string/monday</item>
@@ -1085,14 +1172,6 @@
         <item>@string/friday_shortest</item>
         <item>@string/saturday_shortest</item>
     </string-array>
-    <string-array name="wificall_preferred_entries">
-        <item>@string/wfcmode_mobile_preferred</item>
-        <item>@string/wfcmode_wifi_preferred</item>
-    </string-array>
-    <integer-array name="wificall_preferred_mode_values">
-        <item>1</item>
-        <item>2</item>
-    </integer-array>
     <string-array name="wificall_with_ims_preferred_entries">
         <item>@string/wfcmode_mobile_preferred</item>
         <item>@string/wfcmode_wifi_preferred</item>
