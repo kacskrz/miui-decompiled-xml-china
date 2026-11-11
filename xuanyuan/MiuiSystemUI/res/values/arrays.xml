@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="activity_bottom_caption_black_list">
-        <item>com.zhihu.android/.app.ui.activity.LauncherActivity</item>
-        <item>com.cmcc.cmvideo/com.cmcc.migusso.sdk.activity.QRCodeScanActivity</item>
-        <item>com.ss.android.article.news/com.bytedance.ugc.publishaggr.AggrPublishActivity</item>
-    </string-array>
-    <string-array name="activity_dot_black_list">
-        <item>com.xiaomi.smarthome/.framework.plugin.rn.PluginRNActivityCamera</item>
-        <item>com.android.camera/.OneShotCamera</item>
-        <item>com.xiaomi.gamecenter/.ui.qrcode.CaptureActivity</item>
-        <item>tv.danmaku.bili/com.bilibili.bplus.following.publish.view.VideoClipRecordPermissionCheckActivity</item>
-        <item>com.tencent.mobileqq/com.tencent.av.ui.AVActivity</item>
-        <item>com.eg.android.AlipayGphone/com.alipay.mobile.permission.PrivacyBackgroundActivity</item>
-        <item>com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity</item>
-        <item>com.android.intentresolver/.ChooserActivity</item>
-        <item>com.android.thememanager/.settings.SettingsMineWallpaperTabDialogActivity</item>
-        <item>com.miui.gallery/.picker.PickGalleryActivity</item>
-        <item>com.android.thememanager/.activity.AiWallpaperRecordActivity</item>
-    </string-array>
     <string-array name="alphabet_table">
         <item>A</item>
         <item>B</item>
@@ -139,18 +121,6 @@
         <item>" | Active (media)"</item>
         <item>" | Active (call audio)"</item>
     </string-array>
-    <string-array name="bottom_caption_insets_black_list">
-        <item>cn.wps.moffice_eng</item>
-        <item>com.ss.android.article.news</item>
-    </string-array>
-    <array name="bouncer_pin_shapes">
-        <item>@drawable/pin_dot_shape_1_avd</item>
-        <item>@drawable/pin_dot_shape_2_avd</item>
-        <item>@drawable/pin_dot_shape_3_avd</item>
-        <item>@drawable/pin_dot_shape_4_avd</item>
-        <item>@drawable/pin_dot_shape_5_avd</item>
-        <item>@drawable/pin_dot_shape_6_avd</item>
-    </array>
     <array name="bt_icon_bg_colors">
         <item>@color/bt_color_bg_1</item>
         <item>@color/bt_color_bg_2</item>
@@ -199,6 +169,14 @@
         <item>#ccb0b0b0</item>
         <item>100</item>
         <item>#ffebff00</item>
+        <item>106</item>
+        <item>#99ffffff</item>
+        <item>3</item>
+    </array>
+    <array name="cc_detail_panel_selectable_items_single_selected_blend_colors_bionics">
+        <item>#ccb0b0b0</item>
+        <item>100</item>
+        <item>#ffbdf200</item>
         <item>106</item>
         <item>#99ffffff</item>
         <item>3</item>
@@ -286,6 +264,7 @@
         <item>"Don't show this icon"</item>
     </string-array>
     <string-array name="config_allowFloatPackages">
+        <item>com.xiaomi.bestphotos</item>
         <item>com.xiaomi.aicr</item>
         <item>com.apple.android.music</item>
         <item>com.amazon.avod.thirdpartyclient</item>
@@ -676,12 +655,6 @@
     <string-array name="config_allowedOngoingPackages">
         <item>com.tencent.mm</item>
     </string-array>
-    <string-array name="config_appsSupportMultiInstancesSplit">
-        <item>com.miui.notes</item>
-        <item>com.android.email</item>
-        <item>com.android.browser</item>
-        <item>cn.wps.moffice_eng</item>
-    </string-array>
     <array name="config_blockBadgePackages" />
     <array name="config_blockFloatPackages" />
     <array name="config_blockKeyguardPackages" />
@@ -766,6 +739,7 @@
         <item>com.miui.phrase</item>
         <item>com.miui.guardprovider</item>
         <item>com.xiaomi.misettings</item>
+        <item>com.miui.backup</item>
     </string-array>
     <string-array name="config_canCustomNotificationBg">
         <item>com.google.android.apps.maps</item>
@@ -879,11 +853,6 @@
         <item>cn.xuexi.android</item>
         <item>com.turkcell.bip</item>
     </string-array>
-    <array name="config_collapsed_statusbar_icon_blocklist">
-        <item>@android:string/status_bar_volume</item>
-        <item>@android:string/status_bar_alarm_clock</item>
-        <item>@android:string/status_bar_call_strength</item>
-    </array>
     <array name="config_communalWidgetAllowlist" />
     <array name="config_controlsPreferredPackages" />
     <string-array name="config_custom_notification_folding_whitelist">
@@ -937,6 +906,13 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+    <integer-array name="config_doze_brightness_sensor_to_wallpaper_scrim_opacity">
+        <item>-1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
     <string-array name="config_extra_timeout_media_whitelist">
         <item>com.kugou.android</item>
         <item>com.miui.player</item>
@@ -963,6 +939,7 @@
     </integer-array>
     <integer-array name="config_face_help_msgs_when_fingerprint_enrolled">
         <item>3</item>
+        <item>10</item>
         <item>25</item>
         <item>26</item>
     </integer-array>
@@ -974,6 +951,7 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
         <item>25</item>
         <item>26</item>
     </integer-array>
@@ -986,6 +964,9 @@
         <item>com.android.server.telecom</item>
         <item>com.miui.securitycenter</item>
     </string-array>
+    <string-array name="config_forceAllowFloatPackages">
+        <item>com.xiaomi.bestphotos</item>
+    </string-array>
     <string-array name="config_hidden_custom_actions_whitelist">
         <item>com.netease.cloudmusic.lite</item>
         <item>com.tencent.qqmusiclite</item>
@@ -993,6 +974,10 @@
         <item>com.apple.android.music</item>
         <item>com.google.android.apps.youtube.music</item>
         <item>com.spotify.music</item>
+    </string-array>
+    <string-array name="config_high_priority_notification_packages">
+        <item>com.aios.osbot|high_pri_</item>
+        <item>com.miui.voiceassist|high_pri_</item>
     </string-array>
     <string-array name="config_historicalFoldingPackages">
         <item>com.tencent.mm</item>
@@ -1045,6 +1030,13 @@
     <string-array name="config_miniWindowIntentFlagsSpecialList">
         <item>com.tencent.tim</item>
     </string-array>
+    <string-array name="config_not_support_block_focus_list">
+        <item>com.android.incallui</item>
+        <item>com.xiaomi.incallui</item>
+        <item>com.os.callservice</item>
+        <item>com.android.settings</item>
+        <item>com.miui.voiceassist</item>
+    </string-array>
     <integer-array name="config_notification_snooze_times">
         <item>15</item>
         <item>30</item>
@@ -1076,6 +1068,14 @@
     </string-array>
     <array name="config_quickSettingsHearingDevicesRelatedToolIcon" />
     <array name="config_quickSettingsHearingDevicesRelatedToolName" />
+    <array name="config_roundedCornerBottomDrawableArray">
+        <item>@drawable/rounded_corner_bottom</item>
+        <item>@drawable/rounded_corner_bottom_secondary</item>
+    </array>
+    <array name="config_roundedCornerTopDrawableArray">
+        <item>@drawable/rounded_corner_top</item>
+        <item>@drawable/rounded_corner_top_secondary</item>
+    </array>
     <string-array name="config_safemode_notification_whitelist">
         <item>updater_channel_id</item>
         <item>updater_progress_channel_id</item>
@@ -1146,6 +1146,83 @@
         <item>rotate</item>
         <item>ime</item>
     </string-array>
+    <string-array name="config_support_block_focus_global_list">
+        <item>com.android.deskclock</item>
+        <item>com.xiaomi.calendar</item>
+    </string-array>
+    <array name="config_support_block_focus_list" />
+    <string-array name="config_support_block_media_focus_list">
+        <item>com.miui.player</item>
+        <item>com.netease.cloudmusic</item>
+        <item>com.luna.music</item>
+        <item>com.tencent.qqmusic</item>
+        <item>com.kugou.android.lite</item>
+        <item>cn.kuwo.player</item>
+        <item>com.kugou.android</item>
+        <item>com.xs.fm.lite</item>
+        <item>com.xs.fm</item>
+        <item>cn.wenyu.bodian</item>
+        <item>com.ximalaya.ting.android</item>
+        <item>com.miui.fm</item>
+        <item>com.apple.android.music</item>
+        <item>com.spotify.music</item>
+        <item>com.google.android.apps.youtube.music</item>
+        <item>app.podcast.cosmos</item>
+        <item>cn.missevan</item>
+        <item>io.dushu.fandengreader</item>
+        <item>com.shinyv.cnr</item>
+        <item>com.psyone.brainmusic</item>
+        <item>com.yibasan.lizhifm</item>
+        <item>com.tencent.weread</item>
+        <item>com.dragon.read</item>
+        <item>com.kmxs.reader</item>
+        <item>com.qidian.QDReader</item>
+        <item>com.eggflower.read</item>
+        <item>com.shuqi.controller</item>
+        <item>com.woodleaves.read</item>
+        <item>bubei.tingshu</item>
+        <item>com.zhihu.vip.android</item>
+        <item>com.ximalaya.ting.lite</item>
+        <item>com.jd.app.reader</item>
+        <item>com.yueyou.adreader</item>
+        <item>com.shazam.android</item>
+        <item>com.amazon.mp3</item>
+        <item>deezer.android.app</item>
+        <item>com.aspiro.tidal</item>
+        <item>com.tencent.ibg.joox</item>
+        <item>com.skysoft.kkbox.android</item>
+        <item>fm.jewishmusic.application</item>
+    </string-array>
+    <string-array name="config_support_block_signatures_focus_list">
+        <item>com.android.deskclock</item>
+        <item>com.android.soundrecorder</item>
+        <item>com.android.mms</item>
+        <item>com.xiaomi.smarthome</item>
+        <item>com.mipay.wallet</item>
+        <item>com.mi.health</item>
+        <item>com.miui.weather2</item>
+        <item>com.android.calendar</item>
+        <item>miui.systemui.plugin</item>
+        <item>com.miui.securitycenter</item>
+        <item>android</item>
+        <item>com.xiaomi.gamecenter.sdk.service</item>
+        <item>com.xiaomi.payment</item>
+        <item>com.miui.mishare.connectivity</item>
+        <item>com.android.htmlviewer</item>
+        <item>com.xiaomi.mirror</item>
+        <item>com.milink.service</item>
+        <item>com.xiaomi.bluetooth</item>
+        <item>com.miui.audiomonitor</item>
+        <item>com.android.fileexplorer</item>
+        <item>com.xiaomi.finddevice</item>
+        <item>com.miui.tsmclient</item>
+        <item>com.miui.carlink</item>
+        <item>com.xiaomi.aon</item>
+        <item>com.xiaomi.market</item>
+        <item>com.miui.personalassistant</item>
+        <item>com.miui.guardprovider</item>
+        <item>com.xiaomi.account</item>
+    </string-array>
     <string-array name="config_systemUIServiceComponentsPerUser">
         <item>com.android.systemui.util.NotificationChannels</item>
     </string-array>
@@ -1199,29 +1276,6 @@
     <array name="data_type_name_mcc_mnc_key" />
     <array name="data_type_name_mcc_mnc_value" />
     <array name="data_type_name_mcc_value" />
-    <string-array name="decoration_immersive_no_delay_list">
-        <item>com.miui.gallery</item>
-        <item>com.miui.mediaviewer</item>
-    </string-array>
-    <string-array name="default_bubble_apps">
-        <item>com.tencent.mm</item>
-        <item>com.tencent.mobileqq</item>
-        <item>com.alibaba.android.rimet</item>
-        <item>com.tencent.wemeet.app</item>
-        <item>com.tencent.wework</item>
-        <item>com.ss.android.lark</item>
-        <item>com.ss.android.lark.kami</item>
-        <item>com.tencent.tim</item>
-        <item>com.xiaomi.channel</item>
-        <item>com.immomo.momo</item>
-        <item>com.tencent.qqlite</item>
-        <item>com.p1.mobile.putong</item>
-        <item>com.android.mms</item>
-        <item>com.microsoft.office.outlook</item>
-        <item>com.tencent.androidqqmail</item>
-        <item>com.android.email</item>
-        <item>com.android.emailhd</item>
-    </string-array>
     <string-array name="detailed_am_pms">
         <item>@string/midnight</item>
         <item>@string/early_morning</item>
@@ -1230,15 +1284,6 @@
         <item>@string/afternoon</item>
         <item>@string/evening</item>
         <item>@string/night</item>
-    </string-array>
-    <string-array name="dot_black_list">
-        <item>com.xiaomi.mihomemanager</item>
-        <item>com.miui.aod</item>
-        <item>com.android.systemui</item>
-        <item>com.xiaomi.misettings</item>
-        <item>com.miui.carlink</item>
-        <item>com.xiaomi.ucar.minimap</item>
-        <item>com.ctg.itrdc.clouddesk</item>
     </string-array>
     <array name="doze_brightness_sensor_name_posture_mapping" />
     <integer-array name="doze_single_tap_uses_prox_posture_mapping">
@@ -1284,6 +1329,138 @@
         <item>@string/eras_bc</item>
         <item>@string/eras_ad</item>
     </string-array>
+    <string-array name="focus_notification_glass_params_full_aod">
+        <item>2.0</item>
+        <item>2.0</item>
+        <item>0.4</item>
+        <item>0.2</item>
+        <item>0.4</item>
+        <item>1.6</item>
+        <item>0.15</item>
+        <item>0.4</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>0.02</item>
+        <item>0.06</item>
+        <item>0.06</item>
+        <item>0.06</item>
+        <item>0.50</item>
+        <item>0.26</item>
+        <item>0.3</item>
+        <item>1.8</item>
+        <item>1.0</item>
+        <item>72.0</item>
+        <item>3.8</item>
+        <item>80.0</item>
+        <item>1000.0</item>
+        <item>1.0</item>
+        <item>0.8</item>
+        <item>-0.4</item>
+        <item>0.6</item>
+        <item>-0.8</item>
+        <item>1.6</item>
+        <item>1.2</item>
+        <item>0.8</item>
+        <item>1.15</item>
+        <item>3.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+    </string-array>
+    <string-array name="focus_notification_glass_params_normal">
+        <item>0.6</item>
+        <item>0.22</item>
+        <item>0.24</item>
+        <item>0.0</item>
+        <item>0.2</item>
+        <item>1.8</item>
+        <item>0.1</item>
+        <item>0.3</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>0.02</item>
+        <item>0.06</item>
+        <item>0.06</item>
+        <item>0.06</item>
+        <item>0.70</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>72.0</item>
+        <item>3.8</item>
+        <item>80.0</item>
+        <item>1200.0</item>
+        <item>1.4</item>
+        <item>1.2</item>
+        <item>-0.4</item>
+        <item>0.6</item>
+        <item>-0.8</item>
+        <item>1.3</item>
+        <item>0.9</item>
+        <item>1.4</item>
+        <item>1.15</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+    </string-array>
+    <string-array name="focus_notification_glass_params_on_keyguard">
+        <item>0.0</item>
+        <item>2.0</item>
+        <item>0.5</item>
+        <item>0.8</item>
+        <item>0.15</item>
+        <item>1.4</item>
+        <item>0.3</item>
+        <item>0.2</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>0.02</item>
+        <item>0.06</item>
+        <item>0.06</item>
+        <item>0.06</item>
+        <item>0.5</item>
+        <item>0.15</item>
+        <item>0.4</item>
+        <item>1.36</item>
+        <item>1.0</item>
+        <item>72.0</item>
+        <item>3.8</item>
+        <item>80.0</item>
+        <item>1000.0</item>
+        <item>1.4</item>
+        <item>0.8</item>
+        <item>-0.4</item>
+        <item>0.6</item>
+        <item>-0.8</item>
+        <item>1.6</item>
+        <item>1.2</item>
+        <item>0.8</item>
+        <item>1.15</item>
+        <item>3.0</item>
+        <item>3.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+    </string-array>
     <string-array name="hearing_device_input_routing_options">
         <item>Hearing aid microphone</item>
         <item>"This phone's microphone"</item>
@@ -1300,6 +1477,7 @@
         <item>@string/heavenly_stems_ren</item>
         <item>@string/heavenly_stems_gui</item>
     </string-array>
+    <array name="hsu_allow_list_qs_tiles" />
     <string-array name="important_section_whitelist">
         <item>com.tencent.mm</item>
         <item>com.android.mms</item>
@@ -1342,6 +1520,9 @@
         <item>#33616161</item>
         <item>3</item>
     </array>
+    <string-array name="layout_animated_icon_customization">
+        <item>.primary:@sud_system_primary_light</item>
+    </string-array>
     <string-array name="lockscreen_num_pad_klondike">
         <item>+</item>
         <item></item>
@@ -1384,18 +1565,6 @@
         <item>@string/default_long_trace_size</item>
         <item>20480</item>
     </string-array>
-    <array name="media_notification_media_menu_blend_colors">
-        <item>#ff818181</item>
-        <item>100</item>
-        <item>#ff40e000</item>
-        <item>106</item>
-    </array>
-    <array name="media_notification_media_menu_keyguard_blend_colors">
-        <item>#997d7d7d</item>
-        <item>100</item>
-        <item>#ff4dc900</item>
-        <item>106</item>
-    </array>
     <integer-array name="miui_config_hideKeyguardPresentationDisplayIds">
         <item>-1</item>
     </integer-array>
@@ -1425,39 +1594,6 @@
         <item>@string/miui_lock_solar_term_light_snow</item>
         <item>@string/miui_lock_solar_term_heavy_snow</item>
         <item>@string/miui_lock_solar_term_winter_solstice</item>
-    </string-array>
-    <string-array name="miui_sosc_exit_packages_exclude_activity">
-        <item>com.sina.weibo/com.sina.weibo.windowplayer.pip.WBPicInPicActivity</item>
-        <item>com.sina.weibo/.windowplayer.pip.WBPicInPicActivity</item>
-    </string-array>
-    <string-array name="miui_sosc_exit_sosc_keyguard_visible">
-        <item>com.tencent.mm.plugin.voip.ui.VideoActivity</item>
-        <item>com.android.incallui.InCallActivity</item>
-    </string-array>
-    <string-array name="miui_sosc_exit_sosc_packages">
-        <item>com.sina.weibo</item>
-        <item>com.miui.yellowpage</item>
-    </string-array>
-    <string-array name="miui_sosc_home_packages_judge_version">
-        <item>com.miui.home</item>
-        <item>com.mi.android.globallauncher</item>
-    </string-array>
-    <string-array name="miui_sosc_need_cancel_send_state_changed_activity">
-        <item>com.android.thememanager.settings.ThemeAndWallpaperHomeEditDialogActivity</item>
-        <item>com.miui.personalassistant.picker.business.home.pages.PickerHomeActivity</item>
-        <item>com.miui.screenrecorder.activity.ScreenRecorderSettingActivity2</item>
-    </string-array>
-    <string-array name="miui_sosc_special_packages">
-        <item>com.android.camera</item>
-    </string-array>
-    <string-array name="miui_sosc_transition_adapter_compnent">
-        <item>com.tencent.mm,com.tencent.mm.ui.LauncherUI</item>
-    </string-array>
-    <string-array name="miui_sosc_transition_adapter_packages">
-        <item>com.tencent.mm</item>
-    </string-array>
-    <string-array name="miui_sosc_unsupported_activities">
-        <item>com.miui.home.settings.AllAppsSettingsActivity</item>
     </string-array>
     <array name="modal_miplay_container_blend_colors">
         <item>#b37d7d7d</item>
@@ -1507,15 +1643,6 @@
         <item>@string/month_november_shortest</item>
         <item>@string/month_december_shortest</item>
     </string-array>
-    <string-array name="mul_win_dot_adapter_activities">
-        <item>cn.wps.moffice.main.local.home.PadHomeActivity</item>
-    </string-array>
-    <string-array name="mul_win_dot_adapter_packages">
-        <item>cn.wps.moffice_eng</item>
-    </string-array>
-    <string-array name="mul_win_dot_suppressed_packages">
-        <item>android.systemui.cts</item>
-    </string-array>
     <string-array name="nav_bar_button_values">
         <item>clipboard</item>
         <item>key</item>
@@ -1540,12 +1667,152 @@
         <item>left,back,home,recent,right;space;space</item>
         <item>space;space;left,back,home,recent,right</item>
     </string-array>
+    <string-array name="notification_glass_params_full_aod">
+        <item>0.9</item>
+        <item>0.7</item>
+        <item>0.4</item>
+        <item>0.2</item>
+        <item>0.34</item>
+        <item>1.2</item>
+        <item>0.0</item>
+        <item>0.4</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>0.02</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>0.10</item>
+        <item>0.26</item>
+        <item>0.3</item>
+        <item>1.8</item>
+        <item>1.0</item>
+        <item>72.0</item>
+        <item>3.8</item>
+        <item>80.0</item>
+        <item>1000.0</item>
+        <item>1.0</item>
+        <item>0.8</item>
+        <item>-0.4</item>
+        <item>0.6</item>
+        <item>-0.8</item>
+        <item>1.1</item>
+        <item>0.6</item>
+        <item>0.8</item>
+        <item>1.15</item>
+        <item>3.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+    </string-array>
+    <string-array name="notification_glass_params_normal">
+        <item>0.67</item>
+        <item>0.16</item>
+        <item>0.09</item>
+        <item>0.0</item>
+        <item>0.24</item>
+        <item>1.4</item>
+        <item>-0.02</item>
+        <item>0.30</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>0.03</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>0.10</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>72.0</item>
+        <item>3.8</item>
+        <item>80.0</item>
+        <item>800.0</item>
+        <item>1.2</item>
+        <item>1.0</item>
+        <item>-0.4</item>
+        <item>0.6</item>
+        <item>-0.8</item>
+        <item>1.4</item>
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>1.15</item>
+        <item>4.0</item>
+        <item>2.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+    </string-array>
+    <string-array name="notification_glass_params_on_keyguard">
+        <item>0.0</item>
+        <item>2.0</item>
+        <item>0.3</item>
+        <item>0.4</item>
+        <item>0.15</item>
+        <item>1.4</item>
+        <item>0.08</item>
+        <item>0.2</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>0.03</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>1.0</item>
+        <item>0.15</item>
+        <item>0.15</item>
+        <item>0.4</item>
+        <item>1.2</item>
+        <item>1.0</item>
+        <item>72.0</item>
+        <item>3.8</item>
+        <item>80.0</item>
+        <item>1000.0</item>
+        <item>1.0</item>
+        <item>0.8</item>
+        <item>-0.4</item>
+        <item>0.6</item>
+        <item>-0.8</item>
+        <item>1.3</item>
+        <item>0.6</item>
+        <item>0.8</item>
+        <item>1.15</item>
+        <item>3.0</item>
+        <item>2.4</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.0</item>
+    </string-array>
     <string-array name="pin_open_white_list">
         <item>com.android.incallui</item>
         <item>com.miui.voiceassist</item>
     </string-array>
     <array name="proximity_sensor_posture_mapping" />
     <array name="proximity_sensor_secondary_posture_mapping" />
+    <string-array name="quick_settings_large_tiles_default_split">
+        <item>wifi</item>
+        <item>bt</item>
+        <item>cell</item>
+        <item>cast</item>
+        <item>dnd</item>
+        <item>wallet</item>
+    </string-array>
     <string-array name="recent_show_white_list">
         <item>com.tencent.mobileqq</item>
     </string-array>
@@ -1558,6 +1825,14 @@
         <item>US</item>
         <item>TR</item>
     </string-array>
+    <array name="screen_record_color_palette">
+        <item>#ff8e3e92</item>
+        <item>#ff232d67</item>
+        <item>#fff55e57</item>
+        <item>#ff4e8ff8</item>
+        <item>#ff1aa64a</item>
+        <item>#ffd37b00</item>
+    </array>
     <string-array name="services_always_show_magnification_settings">
         <item>com.android.switchaccess.SwitchAccessService</item>
         <item>com.google.android.apps.accessibility.voiceaccess.JustSpeakService</item>
@@ -1565,6 +1840,12 @@
     <array name="shade_blend_colors">
         <item>#52808080</item>
         <item>28</item>
+    </array>
+    <array name="shade_blend_colors_bionics">
+        <item>#ff999999</item>
+        <item>21</item>
+        <item>#ff0d8000</item>
+        <item>106</item>
     </array>
     <string-array name="solar_terms">
         <item>@string/empty</item>
@@ -1652,10 +1933,6 @@
         <item>com.oray.sunlogin.service</item>
         <item>com.magiear.handsfree.assistant</item>
     </string-array>
-    <string-array name="system_ui_packages">
-        <item>com.android.keyguard</item>
-        <item>com.android.systemui</item>
-    </string-array>
     <string-array name="tile_states_airplane">
         <item>Unavailable</item>
         <item>Off</item>
@@ -1717,11 +1994,6 @@
         <item>On</item>
     </string-array>
     <string-array name="tile_states_dnd">
-        <item>Unavailable</item>
-        <item>Off</item>
-        <item>On</item>
-    </string-array>
-    <string-array name="tile_states_dream">
         <item>Unavailable</item>
         <item>Off</item>
         <item>On</item>
@@ -1836,17 +2108,14 @@
         <item>Off</item>
         <item>On</item>
     </string-array>
-    <string-array name="top_caption_insets_black_list">
-        <item>com.ss.android.article.news</item>
-        <item>com.ss.android.article.search</item>
-        <item>com.tencent.ttpic</item>
-        <item>com.cubic.autohome</item>
-        <item>com.ss.android.article.daziban</item>
-        <item>com.cat.readall</item>
-        <item>com.ss.android.article.lite</item>
-        <item>com.alibaba.android.rimet</item>
-        <item>com.autonavi.minimap</item>
-    </string-array>
+    <array name="updated_bouncer_pin_shapes">
+        <item>@drawable/bouncer_shape_1</item>
+        <item>@drawable/bouncer_shape_2</item>
+        <item>@drawable/bouncer_shape_3</item>
+        <item>@drawable/bouncer_shape_4</item>
+        <item>@drawable/bouncer_shape_5</item>
+        <item>@drawable/bouncer_shape_6</item>
+    </array>
     <string-array name="week_days">
         <item>@string/sunday</item>
         <item>@string/monday</item>
@@ -1891,5 +2160,13 @@
     <array name="window_background_blend_colors">
         <item>#52808080</item>
         <item>28</item>
+    </array>
+    <array name="window_background_blend_colors_bionics">
+        <item>#73212121</item>
+        <item>28</item>
+        <item>#247c7c7c</item>
+        <item>120</item>
+        <item>#306e6e6e</item>
+        <item>3</item>
     </array>
 </resources>
