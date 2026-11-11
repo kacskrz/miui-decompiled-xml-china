@@ -59,10 +59,6 @@
         <item>@string/electronic_scale_overweight2</item>
         <item>@string/electronic_scale_obesity</item>
     </string-array>
-    <string-array name="about_coach_list">
-        <item>@string/about_coach_male</item>
-        <item>@string/about_coach_female</item>
-    </string-array>
     <string-array name="aivs_huami_command_list">
         <item>"What's the weather?"</item>
         <item>"How many steps I've taken?"</item>
@@ -1105,6 +1101,15 @@
         <item>Fri</item>
         <item>Sat</item>
     </string-array>
+    <array name="dashboardColors">
+        <item>#ff00ccc9</item>
+        <item>#ff00e0ad</item>
+        <item>#ff74d48a</item>
+        <item>#ffbcc75f</item>
+        <item>#ffd2bf4d</item>
+        <item>#ffe7b73a</item>
+        <item>#ffffa602</item>
+    </array>
     <string-array name="date_of_weeks">
         <item>Mon</item>
         <item>Tue</item>
@@ -1113,15 +1118,6 @@
         <item>Fri</item>
         <item>Sat</item>
         <item>Sun</item>
-    </string-array>
-    <string-array name="date_week">
-        <item>Monday</item>
-        <item>Tuesday</item>
-        <item>Wednesday</item>
-        <item>Thursday</item>
-        <item>Friday</item>
-        <item>Saturday</item>
-        <item>Sunday</item>
     </string-array>
     <string-array name="date_week_simple">
         <item>M</item>
@@ -1141,18 +1137,6 @@
         <item>Sat</item>
         <item>Sun</item>
     </string-array>
-    <integer-array name="default_card_stroke_gradient_colors_dark">
-        <item>0x1FFFFFFF</item>
-        <item>0x14FFFFFF</item>
-    </integer-array>
-    <integer-array name="default_card_stroke_gradient_colors_light">
-        <item>0x4DFFFFFF</item>
-        <item>0x36FFFFFF</item>
-    </integer-array>
-    <array name="default_card_stroke_gradient_colors_positions">
-        <item>@fraction/miuix_default_card_stroke_gradient_color_start_position</item>
-        <item>@fraction/miuix_default_card_stroke_gradient_color_end_position</item>
-    </array>
     <string-array name="detailed_am_pms">
         <item>@string/midnight</item>
         <item>@string/early_morning</item>
@@ -1835,7 +1819,7 @@
         <item>Energy</item>
         <item>Steps</item>
         <item>Calories</item>
-        <item>Standing</item>
+        <item>Breaks</item>
         <item>Battery</item>
         <item>Date</item>
         <item>Weather</item>
@@ -1945,7 +1929,7 @@
         <item>Energy</item>
         <item>Steps</item>
         <item>Calories</item>
-        <item>Standing</item>
+        <item>Breaks</item>
         <item>Battery</item>
         <item>Date</item>
         <item>Weather</item>
@@ -2010,18 +1994,6 @@
         <item>Every Saturday</item>
         <item>Every Sunday</item>
     </string-array>
-    <string-array name="health_deep_shallow_sleep_guide_descriptions">
-        <item>Place your phone next to you when you sleep to track body movements and generate sleep cycle stats.</item>
-        <item>"To get accurate stats, place your phone beside or under the pillow and make sure that it's no more than 50 cm away from your body."</item>
-        <item>When bedtime schedule is set up, your sleep will be tracked automatically.</item>
-        <item>Sleep tracking consumes only about 1% of your battery per night.</item>
-    </string-array>
-    <string-array name="health_deep_shallow_sleep_guide_titles">
-        <item>Track your sleep</item>
-        <item>Place your phone next to your pillow</item>
-        <item>Generate stats automatically</item>
-        <item>Low power consumption</item>
-    </string-array>
     <string-array name="health_n60_ecg_situation_array_list">
         <item>Sleeping</item>
         <item>Exercising</item>
@@ -2051,44 +2023,10 @@
         <item>Snoring</item>
         <item>Other</item>
     </string-array>
-    <string-array name="health_n60_label_situation">
-        <item>Sleeping</item>
-        <item>Exercising</item>
-        <item>Eating</item>
-        <item>Resting</item>
-        <item>When exhausted</item>
-        <item>When active</item>
-        <item>Using the toilet</item>
-    </string-array>
-    <string-array name="health_n60_label_symptom">
-        <item>Chest tightness</item>
-        <item>Chest tightness</item>
-        <item>Angina</item>
-        <item>Shortness of breath</item>
-        <item>Rapid/shallow breathing</item>
-        <item>Chest pain</item>
-        <item>Palpitations</item>
-        <item>Anxiety</item>
-        <item>Difficulty breathing</item>
-        <item>Anxiety</item>
-        <item>Rapid heartbeat</item>
-        <item>Chest pain in areas besides the heart</item>
-        <item>Night sweats</item>
-        <item>Fatigue</item>
-        <item>Dizziness/fainting</item>
-        <item>Nausea</item>
-        <item>Snoring</item>
-        <item>Other</item>
-    </string-array>
     <string-array name="health_n60_label_time">
         <item>Daily</item>
         <item>Once every 3-5 days</item>
         <item>Only once</item>
-    </string-array>
-    <string-array name="health_n60_label_title">
-        <item>Symptoms</item>
-        <item>When symptoms occur</item>
-        <item>Symptom frequency</item>
     </string-array>
     <string-array name="health_sleep_evaluation_daily_sleep_arr">
         <item>Limiting your nap to 30 minutes helps you drift off better.</item>
@@ -2159,16 +2097,6 @@
         <item>Higher than average amount of sleep but slightly irregular bedtime routine. If you feel groggy, adjust your sleep hours.</item>
         <item>Higher than average amount but irregular bedtime routine. Keep regular sleep hours.</item>
         <item>Fitful sleep. Set a schedule and stick to it.</item>
-    </string-array>
-    <string-array name="health_sleep_snore_guide_descriptions">
-        <item>Sound will be recorded while you sleep. Machine learning allows Mi Fitness to detect snoring, talking, and loud noises, and save the recordings on your phone.</item>
-        <item>Microphone will be turned on and off according to your bedtime schedule.</item>
-        <item>Make sure your phone is sufficiently charged before you go to bed. Low battery may interrupt sound recording.</item>
-    </string-array>
-    <string-array name="health_sleep_snore_guide_titles">
-        <item>Record audio using microphone</item>
-        <item>Detect sounds automatically</item>
-        <item>Keep your phone charged</item>
     </string-array>
     <string-array name="heartrate_citing_literature">
         <item>中华人民共和国卫生行业标准 WS/T 476-2015 营养名词术语</item>
@@ -2335,15 +2263,6 @@
         <item>Sat</item>
         <item>Sun</item>
     </string-array>
-    <string-array name="settingitem_date_week_simple">
-        <item>M</item>
-        <item>T</item>
-        <item>W</item>
-        <item>T</item>
-        <item>F</item>
-        <item>S</item>
-        <item>S</item>
-    </string-array>
     <string-array name="settingitem_date_week_simple1">
         <item>Mon</item>
         <item>Tue</item>
@@ -2426,20 +2345,6 @@
         <item>Not set</item>
         <item>Add</item>
         <item>Select from Contacts</item>
-    </string-array>
-    <string-array name="userinfo_energy_unit">
-        <item>kcal</item>
-        <item>kJ</item>
-    </string-array>
-    <string-array name="userinfo_gender_array">
-        <item>Not set</item>
-        <item>Male</item>
-        <item>Female</item>
-    </string-array>
-    <string-array name="userinfo_length_unit">
-        <item>cm</item>
-        <item>m</item>
-        <item>km</item>
     </string-array>
     <string-array name="userinfo_normal_blood_array">
         <item>Not set</item>
