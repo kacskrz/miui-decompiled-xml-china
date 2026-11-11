@@ -162,9 +162,9 @@
         <item>@string/chinese_symbol_animals_pig</item>
     </string-array>
     <string-array name="cmas_alert_extreme_channels_range_strings">
-        <item>0x1113-0x1114:rat=gsm, emergency=true</item>
-        <item>0x1001:rat=cdma, emergency=true</item>
-        <item>0x1120-0x1121:rat=gsm, emergency=true</item>
+        <item>0x1113-0x1114:rat=gsm, emergency=true, override_dnd=true</item>
+        <item>0x1001:rat=cdma, emergency=true, override_dnd=true</item>
+        <item>0x1120-0x1121:rat=gsm, emergency=true, override_dnd=true</item>
     </string-array>
     <string-array name="cmas_alerts_severe_range_strings">
         <item>0x1115-0x111A:rat=gsm, emergency=true</item>
@@ -177,13 +177,25 @@
         <item>0x1128:rat=gsm, emergency=true</item>
     </string-array>
     <string-array name="cmas_presidential_alerts_channels_range_strings">
-        <item>0x1112:rat=gsm, emergency=true, always_on=true</item>
-        <item>0x1000:rat=cdma, emergency=true, always_on=true</item>
-        <item>0x111F:rat=gsm, emergency=true, always_on=true</item>
+        <item>0x1112:rat=gsm, emergency=true, always_on=true, override_dnd=true</item>
+        <item>0x1000:rat=cdma, emergency=true, always_on=true, override_dnd=true</item>
+        <item>0x111F:rat=gsm, emergency=true, always_on=true, override_dnd=true</item>
     </string-array>
     <string-array name="cmas_roaming_network_strings">
         <item>XXX</item>
     </string-array>
+    <integer-array name="default_card_stroke_gradient_colors_dark">
+        <item>0x1FFFFFFF</item>
+        <item>0x14FFFFFF</item>
+    </integer-array>
+    <integer-array name="default_card_stroke_gradient_colors_light">
+        <item>0x4DFFFFFF</item>
+        <item>0x36FFFFFF</item>
+    </integer-array>
+    <array name="default_card_stroke_gradient_colors_positions">
+        <item>@fraction/miuix_default_card_stroke_gradient_color_start_position</item>
+        <item>@fraction/miuix_default_card_stroke_gradient_color_end_position</item>
+    </array>
     <integer-array name="default_notification_vibration_pattern">
         <item>0</item>
         <item>350</item>
@@ -486,6 +498,7 @@
         <item>uy:748</item>
         <item>fk:750</item>
     </string-array>
+    <array name="language_filter_primary_code" />
     <string-array name="months">
         <item>@string/month_january</item>
         <item>@string/month_february</item>
@@ -539,6 +552,10 @@
         <item>com.miui.gallery</item>
         <item>com.miui.cloudservice</item>
         <item>com.android.deskclock</item>
+        <item>com.android.phone</item>
+        <item>com.miui.yellowpage</item>
+        <item>com.xiaomi.aiasst.service</item>
+        <item>com.xiaomi.bluetooth</item>
     </string-array>
     <string-array name="operator_defined_alert_range_strings">
         <item>0x111E:rat=gsm, emergency=true</item>
