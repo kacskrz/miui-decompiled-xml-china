@@ -3,8 +3,12 @@
     <string name="CronetProviderClassName">com.google.android.gms.net.PlayServicesCronetProvider</string>
     <string name="MSG_APPOINTMENT_SCHEDULE_SUMMARY_FALLBACK">(No title)</string>
     <string name="MSG_BIRTHDAYS_CALENDAR_NAME">Birthdays</string>
+    <string name="MSG_CALENDAR_EVENT_LINK_FALLBACK">Event</string>
+    <string name="MSG_CHAT_LINK_FALLBACK">Chat</string>
     <string name="MSG_DEFAULT_DISPLAY_NAME">Unknown space</string>
     <string name="MSG_EVERYONE_IS_AVAILABLE">Everyone is available</string>
+    <string name="MSG_GENERIC_URL_LINK_FALLBACK">Link</string>
+    <string name="MSG_GMAIL_DEEP_LINK_FALLBACK">Email</string>
     <string name="MSG_GUEST_HAS_CONFLICT">{GUEST_NAME} has a conflict</string>
     <string name="MSG_HOLIDAYS_CALENDAR_NAME">Holidays</string>
     <string name="MSG_MULTIPLE_GUESTS_HAVE_CONFLICT">{NUM_GUESTS_WITH_CONFLICT, plural, =1 {Another guest has a conflict} other {# guests have conflicts}}</string>
@@ -223,6 +227,7 @@ Actual: %2$s."</string>
     <string name="agenda_view">Calendar schedule</string>
     <string name="agenda_view_label">Schedule</string>
     <string name="agenda_view_label_full">Schedule view</string>
+    <string name="agent_attribution_format">%1$s (Agent)</string>
     <string name="alarm_banner_settings">Go to Settings</string>
     <string name="all_day_description_prefix">All day:</string>
     <string name="all_day_reminder_time">%1$s before at %2$s</string>
@@ -669,10 +674,13 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="describe_visibility_icon">Visibility</string>
     <string name="description_hint">Add description</string>
     <string name="desk_label">Desk: %s</string>
+    <string name="dialog_body_make_public">Making your calendar public will make all events visible to the world, including via Google search. Are you sure?</string>
     <string name="dialog_header_calendar_title">Choose calendar</string>
     <string name="dialog_header_email_title">Choose email address</string>
     <string name="dialog_header_phone_title">Choose phone number</string>
+    <string name="dialog_positive_button_make_public">Make public</string>
     <string name="dialog_title_delete_list">Delete this list?</string>
+    <string name="dialog_title_make_public">Warning</string>
     <string name="disable_gcm_dialog_confirm_action">Revoke permission and share</string>
     <string name="disable_gcm_dialog_reject_action">Cancel</string>
     <string name="disable_gcm_dialog_text">To share this event, turn off the \"Guests can modify event\" permission</string>
@@ -817,7 +825,6 @@ Turn Calendar Storage back on in Settings."</string>
     <string name="fab_menu_expanded_content_description">Expanded</string>
     <string name="failed_to_copy_to_clipboard">Failed to copy to clipboard.</string>
     <string name="failed_to_create_conference">Failed to create conference</string>
-    <string name="failed_to_load_time_suggestions">Failed to find time suggestions</string>
     <string name="family_group_name">"%1$s's family group"</string>
     <string name="family_sharing_banner_add_event_button_text">Add an event</string>
     <string name="family_sharing_banner_body">"The '%1$s' calendar has been automatically created for your Google family. Add events on this calendar for members to see."</string>
@@ -1283,10 +1290,11 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="og_account_picker_dialog_a11y">Account picker dialog.</string>
     <string name="og_account_switching_deactivated">Account switching deactivated</string>
     <string name="og_add_another_account">Add another account</string>
+    <string name="og_ai_account_fallback_label">AI account</string>
+    <string name="og_ai_tier_label_format">AI %1$s account</string>
     <string name="og_bento_a11y_dialog">Dialog</string>
     <string name="og_bento_alert_greeting_with_name">Pay attention, %1$s!</string>
     <string name="og_bento_alert_greeting_without_name">Pay attention!</string>
-    <string name="og_bento_linked_apps_label">Linked apps</string>
     <string name="og_bento_more_from_product_fallback">More from this app</string>
     <string name="og_bento_unicorn_account_header_title">Your parent is helping to manage your account</string>
     <string name="og_card_loading_label_a11y">Loading details.</string>
@@ -1317,6 +1325,7 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="og_short_greeting_hi_message">Hi!</string>
     <string name="og_sign_in_">Sign In</string>
     <string name="og_signed_in_as_account">Signed in as %1$s</string>
+    <string name="og_signed_in_as_account_with_email">Signed in as %1$s %2$s</string>
     <string name="og_switch_account">Switch account</string>
     <string name="og_terms_of_service">Terms of Service</string>
     <string name="og_use_account_a11y_no_period">Use %1$s</string>
@@ -1368,7 +1377,8 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="people_intelligence_outside_working_hours">Outside of usual working hours - local time is %1$s</string>
     <string name="people_sheet_agent_badge_label">Agent</string>
     <string name="people_sheet_agent_badge_text_label">Agent</string>
-    <string name="people_sheet_agent_profile_description">This AI agent takes actions for <annotation id="agent_owner_profile_link">%s</annotation></string>
+    <string name="people_sheet_agent_profile_feedback_description">This is an AI agent. Send feedback and questions to <annotation id="agent_owner_profile_link">%s</annotation></string>
+    <string name="people_sheet_agent_profile_ownership_self">This is your AI agent</string>
     <string name="people_sheet_agent_provider_description">Powered by <annotation id="agent_provider_link">%s</annotation></string>
     <string name="people_sheet_badge_label">External</string>
     <string name="people_sheet_external_badge_label">External user not managed by admin</string>
@@ -1465,7 +1475,6 @@ Open the menu on the top left and tap on a calendar to see events."</string>
     <string name="provider_unavailable_fallback_message">This app is unavailable.</string>
     <string name="provider_unavailable_message">This app is unavailable because %1$s is blocked</string>
     <string name="provider_unavailable_title">App Unavailable</string>
-    <string name="pstn_removal_promo">Tap <b>%s</b> to get dial-in info</string>
     <string name="public_holidays_only">Public holidays only</string>
     <string name="quick_actions_call_content_description">Call %s.</string>
     <string name="quick_actions_chat_content_description">Send a Chat message to %s</string>
